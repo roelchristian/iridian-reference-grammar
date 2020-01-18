@@ -1,0 +1,182 @@
+\documentclass[10pt]{book}
+\usepackage[paperwidth=6in,paperheight=9in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[light]{kpfonts}
+
+\usepackage[scaled]{helvet}
+\usepackage{tipa}
+\usepackage{savetrees}
+\usepackage{microtype}
+\usepackage{float,microtype}
+\usepackage{expex}
+\usepackage{graphics,graphicx,amsmath,amssymb}
+\setcounter{secnumdepth}{2}
+
+\newcommand{\pn}[1]{[\textipa{#1}]}
+\newcommand{\eng}[1]{`{#1}'}
+\newcommand{\bt}[1]{/\textipa{#1}/}
+\newcommand{\nt}[1]{[\textipa{#1}]}
+\newcommand{\sx}[1]{\textsuperscript{#1}}
+\newcommand{\mk}[1]{\textsc{#1}}
+\newcommand{\dpu}{\textsubarch{u}}
+\newcommand{\nn}{\textltailn}
+\newcommand{\jjg}{\textbardotlessj}
+\newcommand{\llt}{\textltilde}
+\newcommand{\llb}{\textbeltl}
+\newcommand{\ttb}[1]{\texttoptiebar{#1}}
+\newcommand{\jn}[1]{\texttoptiebar{#1}}
+\newcommand{\tsa}[1]{\textsubarch{#1}}
+\newcommand{\glot}{\textglotstop}
+\newcommand{\tss}[1]{\textsubscript{#1}}
+\newcommand{\tsup}[1]{\textsuperscript{#1}}
+\newcommand{\asp}[1]{{#1}\textsuperscript{h}}
+\newcommand{\ird}[1]{\textbf{#1}}
+\newcommand{\dto}{o\textsubarch{u}}
+\newcommand{\dte}{e\textsubarch{I}}
+\newcommand{\dty}{\o\textsubarch{Y}}
+\newcommand{\rec}[1]{*\textit{#1}}
+\newcommand{\trsl}[1]{`#1'}
+
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{minitoc}
+\usepackage{afterpage}
+\usepackage{xcolor,colortbl}
+\lingset{everygla=\bf,everyglb=\footnotesize,aboveexskip=6pt,aboveglftskip=0pt,belowexskip=3pt}
+
+%%Formatting of section headings
+\usepackage{titlesec}
+\makeatletter
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
+\def\@makechapterhead#1{%
+	\vspace*{10\p@}%
+	{\parindent \z@ \centering \reset@font
+		{\Large \scshape \thechapter}
+		\par
+		\vspace*{1\p@}%
+		\interlinepenalty\@M
+		\setlength{\arrayrulewidth}{2pt}
+		\par\noindent
+		\rule{24pt}{2pt}
+		\\
+		\begin{tabular}{@{\qquad}c@{\qquad}}
+			
+			\\
+			{\Huge \scshape \MakeLowercase{#1}\par\nobreak} \\
+			\\
+			
+		\end{tabular}
+		\vskip 30\p@
+}}
+\def\@makeschapterhead#1{%
+	\vspace*{\p@}%
+	{\parindent \z@ \centering \reset@font
+		{\Large \scshape \vphantom{\thechapter}}
+		\par\nobreak
+		\vspace*{15\p@}%
+		\interlinepenalty\@M
+		\setlength{\arrayrulewidth}{2pt}
+		\par\noindent
+		\rule{24pt}{2pt}
+		\\
+		\begin{tabular}{@{\qquad}c@{\qquad}}
+		
+			\\
+			{\LARGE \scshape \MakeLowercase{#1}\par\nobreak} \\
+			\\
+		
+		\end{tabular}
+		\vskip 100\p@
+}}
+
+%\titleformat{\chapter}[hang]
+%{\huge\itshape}{\thechapter}{1em}{\huge}
+\titleformat{\section}
+{\centering \Large}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\itshape\centering\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\scshape\centering}{\thesubsubsection}{1em}{\normalsize}
+
+
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr,textcase}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[LE,RO]{\footnotesize\thepage}
+\fancyhead[RE]{\small\itshape{\nouppercase\leftmark}}
+\fancyhead[LO]{\small\itshape{\nouppercase\rightmark}}
+\cfoot{}
+
+\usepackage{siunitx,tabularx,ragged2e,booktabs,tabu,multicol}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{M}{>{\centering\arraybackslash}X}
+\newcolumntype{T}[1]{S[table-format=#1]}
+% Restart numbering each chapter
+\usepackage{etoolbox}
+\pretocmd{\chapter}{\excnt=1}{}{}
+
+\begin{document}
+
+\author{}
+\title{A Reference Grammar of the Iridian Language}
+\date{}
+
+\frontmatter
+\maketitle
+%copyright notice
+\thispagestyle{empty}
+
+    \vspace*{\fill}
+\begin{flushleft}
+
+\begin{tabularx}{\textwidth}{Y}
+Copyright © 2019 Roel Christian Yambao\\
+\addlinespace
+All rights reserved. This book or any portion thereof may not be reproduced or used in any manner whatsoever without the express written permission of the publisher except for the use of brief quotations in a book review.\\
+\addlinespace
+First published online, 2019	
+	
+\end{tabularx}
+
+\end{flushleft}
+
+
+\tableofcontents
+\cleardoublepage
+\listoftables
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+\include{./TeX_files/abbrev}
+
+\mainmatter
+\include{./TeX_files/chapter00}
+
+
+\part{Phonology}
+\include{./TeX_files/chapter01}
+\part{Morphology and Syntax}
+\include{./TeX_files/chapter02}
+\include{./TeX_files/chapter03}
+\include{./TeX_files/chapter04}
+\include{./TeX_files/chapter05}
+
+\include{./TeX_files/chapter06}
+
+\include{./TeX_files/chapter07}
+
+
+\appendix
+
+\include{./TeX_files/appx01}
+% bibliography, glossary and index would go here.
+
+\end{document}
