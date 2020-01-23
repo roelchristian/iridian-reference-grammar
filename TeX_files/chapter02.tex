@@ -3,7 +3,7 @@
 \par Finite verbs (\textbf{lounehlý}) are marked for the following grammatical categories:
 \begin{enumerate}
 	\item \textit{Aspect}. Iridian has three primary aspects: perfective, imperfective and contemplative; and two secondary ones: retrospective and prospective.
-	\item \textit{Focus}. Iridian has a strong tendency to leave the topic of the sentence unmarked, instead encoding the primary information on the verb. Due to this, voice must be explicitly marked on the verb. Iridian has the following grammatical voices:: agentive, patientive, benefactive, instrumental, locative and reflexive.
+	\item \textit{Voice}. Iridian has a strong tendency to leave the topic of the sentence unmarked, instead encoding the primary information on the verb. Due to this, voice must be explicitly marked on the verb. Iridian has the following grammatical voices:: agentive, patientive, benefactive, instrumental, locative and reflexive.
 	\item \textit{Mood}. Besides the unmarked indicative, Iridian has the following grammatical moods: subjunctive, conditional, hortative, optative, abilitative, permissive and non-volitive. In addition, secondary prefixes are used to express what would otherwise could be considered as moods: inceptive, causative and reciprocative.
 \end{enumerate}
 
@@ -148,7 +148,7 @@ There are two types of verb stems in Iridian: verbal and nominal. Iridian does n
 \subsubsection{copulative form}
 \par Verbs have two copulative forms in Iridian. The copulative in \ird{je-} is a slot B prefix while the copulative in \ird{ut/uit} is a slot A infix. If not followed by he prefix \ird{je-} requires an epenthetic \ird{-o/-eu}, analyzed as a slot 5 suffix.
 
-\ex \ird{jemohlam}, `I am living.'
+\ex \ird{jemo\v{z}lam}, `I am living.'
 
 \begin{center}
 	\small
@@ -157,7 +157,7 @@ There are two types of verb stems in Iridian: verbal and nominal. Iridian does n
 		C&B&A&{\sc stem}&1&2&3&4&5\\
 		\midrule
 		\addlinespace
-		-&je-&-&mohl&-&-&-&-am&-\\
+		-&je-&-&mo\v{z}l&-&-&-&-am&-\\
 		\bottomrule
 	\end{tabu}
 \end{center}
@@ -180,42 +180,82 @@ There are two types of verb stems in Iridian: verbal and nominal. Iridian does n
 
 \section{Voice}
 
-\par Iridian often prefers to encode information on the verb instead of through case marking on nouns. As such, all verbs must be explicitly marked for voice.
-\par Voice markers are infixing. They are inserted into the verb stem, following the initial consonant or consonant cluster. 
-
+Iridian often prefers to encode information on the verb instead of through case marking on nouns. As such, all verbs must be explicitly marked for voice.
 \begin{table}[h!]
 	\small \centering
-	\caption{Infixes used in marking voice.}
-	\begin{tabu} to 0.8\textwidth{YMM}
+	\caption{Suffixes used to mark grammatical voice.}
+	\begin{tabu} to 0.8\textwidth{YM}
 		\toprule
-		&\multicolumn{2}{c}{\sc stem type}\\ \addlinespace
-		\cmidrule{2-3} \addlinespace
-		& Verbal&Nominal\\ 
+		&{\sc ending}\\
 		\midrule
-		Agentive	& -ov-/-oiv-&-un-/-uin-\\ \addlinespace
-		Patientive	& -in- & -az-/-ez-\\ \addlinespace
-		Benefactive	& -ul-/&-us-/-uis-\\ \addlinespace
-		Locative	& -át-/-áit- & -át-/-áit-\\ \addlinespace
-		Instrumental& -a\v{s}-/-e\v{s}- & -a\v{s}-/-e\v{s}-\\ \addlinespace
-		Reflexive	& -iz-&-a\v{s}t-/ -e\v{s}t-\\ \addlinespace
-		Reciprocal	& -ol-/-oil- & -olt-/-oilt-\\ \addlinespace
-		
+		Agentive	& -a\v{s}-\\ \addlinespace
+		Patientive	& -in-\\ \addlinespace
+		Benefactive	& -ar-\\ \addlinespace
+		Locative	& -á-\\ \addlinespace
+		Instrumental& -\\ \addlinespace
+		Reflexive	& -\\ \addlinespace
+		Reciprocal	& \\ \addlinespace
 		\bottomrule
 	\end{tabu}
 \end{table}
 
 
 \subsection{Agentive voice}
-\par A verb in the actor focus indicates that the topic of the sentence is the agent of the verb.
+\par The agentive voice is used if the subject of the verb is the agent of the action.
 
 \pex 
 \begingl
-\gla Z povia\v{s}tak.//
-\glb already \mk{<av>}eat-\mk{pf}//
+\gla Sa pia\v{s}\v{c}ek.//
+\glb already eat-\mk{av-pf}//
 \glft `(I) already ate.'//
 \endgl
 \xe
 
+The affix \ird{-a\v{s}-} assimilates to the consonant ending the root, with the vowel \bt{5} normally dropped, subject to the following rules:
+\begin{itemize} 
+	\item \v{c}: for roots ending with c, \v{c}, k, t
+	\begin{itemize}
+		\item jelc\'a + -a\v{s}- $\rightarrow$ jel\v{c}-, \trsl{to dance}
+		\item zdiek\'a + -a\v{s}- $\rightarrow$ zd\'i\v{c}-, \trsl{to blow}
+		\item pia\v{s}t\'a + -a\v{s}- $\rightarrow$ pia\v{s}\v{c}-, \trsl{to eat}
+	\end{itemize}
+	\item z: for roots ending with b, l, m, n, r\footnote{This change does not involve the deletion of the final consonant in the root.}
+	\item \v{z}: for roots ending with d, g, z, \v{z}
+	\begin{itemize}
+		\item ba\v{z}- + -a\v{s}- $\rightarrow$ b\'a\v{z}-, \trsl{to give}
+		\item stoj\'a + -a\v{s}- $\rightarrow$ st\'o\v{z}-, \trsl{to go}
+	\end{itemize}
+	\item \v{s}: for all other endings\footnote{\ird{-h + -a\v{s}-} , \ird{-s + -a\v{s}-} and \ird{-\v{s} + -a\v{s}-} both simplify to \ird{-\v{s}-}, while the rest retain the final consonant.}
+\end{itemize}
+
+Where the assimilation involves the deletion of the final consonant in the root, the preceding vowel is lengthened in compensation if the resulting root would then end in an open syllable.
+\pex
+\ird{Zd\'u\v{s}ek.}\\
+(instead of \ird{*zdu\v{s}ek} from zdu\v{s}\'a + -a\v{s}-)\\
+\trsl{(I) took a shower.}
+\xe
+\pex
+\ird{Pia\v{s}\v{c}ek.}\\
+(not \ird{*pi\'a\v{s}\v{c}ek.})\\
+\trsl{(I) ate.}
+\xe
+
+If the remnant vowel is the i-glide \ird{-ie-} or the diphthongs \ird{-ei-} and \ird{-ou-}, the remaining vowel would simplify to \ird{\'i}, \ird{\'i} and \ird{\'u}, respectively. Consider for example the verb \ird{zdiek\'a} \trsl{to blow}:
+
+\pex
+\begingl
+\gla Lest zdi\v{c}al\'i.//
+\glb wind blow-\mk{av-prog}//
+\glft \trsl{The wind is blowing.}//
+\endgl
+\xe
+
+Nevertheless the vowel \nt{5} in the root resurfaces in the following cases:
+
+\begin{itemize}
+	\item Verbs ending in -irn\'a:
+	\item Verb root ending in a consonant cluster with a final liquid, nasal, or v
+\end{itemize}
 
 \subsection{Patientive focus}
 \par A verb in the patient focus (glossed \mk{pat}) indicates that the topic of the sentence is the patient of the verb.
@@ -234,14 +274,29 @@ There are two types of verb stems in Iridian: verbal and nominal. Iridian does n
 
 \pex
 \begingl
-\gla Maty sega vstulunek.//
-\glb mother flower-\mk{pat} \mk{<ben>}buy-\mk{pf}//
+\gla Ma\v{c} sega nazdarek.//
+\glb mother flower-\mk{pat} buy-\mk{ben-pf}//
 \glft `(I) bought my mother flowers.'//
 \endgl
 \xe
 
+\pex
+\begingl
+\gla Kova pia\v{s}taral\'i.//
+\glb cow eat-\mk{ben-prog}//
+\glft \trsl{(I am) feeding the cows.}//
+\endgl
+\xe
 
 \subsection{Locative Focus}
+
+\pex
+\begingl
+\gla J\'e kopna\v{z}al\'ic.//
+\glb you laugh-\mk{loc-prog-3s.anim}//
+\glft \trsl{He is laughing at you.}//
+\endgl
+\xe
 
 \subsection{Instrumental Focus}
 
@@ -267,8 +322,8 @@ There are two types of verb stems in Iridian: verbal and nominal. Iridian does n
 		Perfective		& -ek\\
 		Retrospective	& -an\'i\\
 		Imperfective	& -\'al\\
+		Progressive		& -al\'i \\
 		Contemplative	& -\k{a}c\\
-		Progressive		& -\'au \\
 		Prospective		& -il\\
 		Cessative		& -eic\\
 		\bottomrule
@@ -317,16 +372,16 @@ The perfective aspect (glossed {\sc pf}) indicates an action that has been compl
 
 \pex
 \begingl
-\gla Z\'at\'el\'evonirnek.//
-\glb \mk{neg}-telephone-\mk{pf}//
+\gla Z\'at\'el\'evonirna\v{s}ek.//
+\glb \mk{neg}-telephone-\mk{av-pf}//
 \glft `(I) failed to call.' //
 \endgl
 \xe
 
 \pex
 \begingl
-\gla Z\'at\'el\'evonirnan\'i.//
-\glb \mk{neg}-telephone-\mk{ret}//
+\gla Z\'at\'el\'evonirna\v{s}an\'i.//
+\glb \mk{neg}-telephone-\mk{av-ret}//
 \glft `(I) didn't call.' //
 \endgl
 \xe
@@ -336,8 +391,8 @@ The perfective aspect (glossed {\sc pf}) indicates an action that has been compl
 
 \pex<ret-pres1>
 \begingl
-\gla Hroná ko tímu na Budape\v{s}ta mohlan\'im.//
-\glb three \mk{att} year-\mk{inst} \mk{loc} Budapest-\mk{pat} live-\mk{ret-1s}//
+\gla Hroná tímu na Budape\v{s}ta mo\v{z}la\v{s}an\'im.//
+\glb three year-\mk{inst} \mk{loc} Budapest-\mk{pat} live-\mk{av-ret-1s}//
 \glft `I have been living in Budapest for three years.'//
 \endgl
 \xe
@@ -354,8 +409,8 @@ The perfective aspect (glossed {\sc pf}) indicates an action that has been compl
 
 \pex
 \a	\begingl
-\gla Vde\v{s}ek \v{s}e neicezu\v{s}talan\'im.//
-\glb see-\mk{2s-pf} with \mk{incep}-be.happy-\mk{ret-1s}//
+\gla Vde\v{s}ek \v{s}e neicezu\v{s}tala\v{s}an\'im.//
+\glb see-\mk{2s-pf} with \mk{incep}-be.happy-\mk{av-ret-1s}//
 \glft `I became happy when I saw you.' //
 \endgl
 \a	\begingl
@@ -372,74 +427,51 @@ The perfective aspect (glossed {\sc pf}) indicates an action that has been compl
 \endgl
 \xe
 
-\subsection{Imperfective aspect}
-
-\par The imperfect aspect (glossed \mk{ipf}) is used for actions not viewed as being complete or still in the process of happening, as well as habitual actions or general truths. The suffix \textbf{-ê} becomes \textbf{-êm-} before \textbf{a} or \textbf{á} and \textbf{-ên-} before any other vowel. 
-
+\subsection{Continuous and progressive aspects}
+Iridian uses the continuous and progressive aspects to denote actions that have not been completed yet and/or are in the process of happening/occuring. The continuous aspect (glossed \mk{cont}) is used to mark a state of being while the progressive aspect (glossed \mk{prog}) is used to mark a dynamic activity.
 \pex
 \begingl
-\gla Prahá jemohlem.//
-\glb Prague-\mk{loc} \mk{cop.stat}-live-\mk{1s}//
-\glft `I live in Prague.' //
+\gla N\'au ri\v{s}tn\'al.//
+\glb clothes wear-\mk{pv-cont}//
+\glft \trsl{(I'm) wearing clothes.} //
 \endgl
 \xe
 
 \pex
 \begingl
-\gla Vsholu de gnazsa vtênuh. //
-\glb daily-\mk{inst} \mk{ill}  school-\mk{pat} go-\mk{ipf-1pl.incl}//
-\glft `We go to school everyday.'//
+\gla N\'au ri\v{s}tnal\'i.//
+\glb clothes wear-\mk{pv-prog}//
+\glft \trsl{(I'm) putting on clothes.} //
 \endgl
 \xe
 
-\par To emphasize the habitual nature of an action, the verb is often nominalized.
+The continuous aspect is also used to denote a habitual action.
 
 \pex
-\a	\begingl
-	\gla Po\v{s}nej radzê. //
-	\glb father-\mk{3s.anim} smoke\mk{-ipf}//
-	\glft `His father is smoking (right now).' //
-	\endgl
-\a	\begingl
-	\gla Po\v{s}nej radzênou.//
-	\glb father-\mk{3s.anim} smoke\mk{-ipf-nz}//
-	\glft `His father is a smoker.' //
-	\endgl
+\begingl
+\gla Sholu de gna\v{z}a sto\v{z}\'al.//
+\glb daily-\mk{inst} \mk{ill} school-\mk{pat} go-\mk{av-cont}//
+\glft \trsl{(We) go to school everyday.} //
+\endgl
 \xe
-
-\subsection{Progressive aspect}
-\par The progressive aspect (glossed \mk{prog}) is used to express an incomplete action that is in progress at a specific point in time.
 
 \pex
-\a	\begingl
-\gla Csuid etoren. //
-\glb history study-\mk{ipf}//
-\glft `(I am) studying history.' //
-\endgl
-
-\a	\begingl
-\gla Óilen etorlava.//
-\glb exam study\mk{-ben-prog}//
-\glft `(I am) studying for the exam.' //
+\begingl
+\gla D\'a na Praha mo\v{z}l\'al.//
+\glb \mk{1s.str} \mk{loc} Prague-\mk{pat} live-\mk{cont}//
+\glft \trsl{I live in Prague.} //
 \endgl
 \xe
 
-\par Some verbs, especially stative verbs, change meaning when used in the progressive aspect.
+To emphasize the habitual nature of an action, a nominalized construction is often used.
 
 \pex
-\a	\begingl
-\gla He\v{s} dóilninen.//
-\glb reason know\mk{-pv-ipf.neg}//
-\glft `(I) don't know the reason.' //
-\endgl
-
-\a	\begingl
-\gla He\v{s} doilnineve.//
-\glb reason know\mk{-pv-prog}//
-\glft `(I am) trying to know the reason.' //
+\begingl
+\gla Na\v{z}em r\k{a}cen\'alou.//
+\glb friend-\mk{1s} smoke-\mk{cont-nz}//
+\glft \trsl{My friend is a smoker.} //
 \endgl
 \xe
-
 
 \subsection{Prospective aspect}
 \par The prospective aspect (glossed {\sc prosp}) is primarily used in secondary clauses to indicate actions that are about to be started in relation to another action. It can also be used in the main clause to indicate an action in the immediate future.
@@ -479,7 +511,7 @@ In addition to the prefixes used for verbal derivation, Iridian has three prefix
 
 \par The imperative can be combined with the reciprocative prefix \textbf{so-} to form the adhortative, similar in meaning to the English `Let's\ldots'. Nevertheless, the hortative construction with verbs in \textbf{so-} is still preferred.
 \subsection{Subjunctive}
-\par The subjunctive mood (glossed \mk{sbj}) is used for actions or events that are not or are not known to be true or factual. The subjunctive has two forms: the perfective subjunctive in \textbf{-á(m)} and the imperfective subjunctive in \textbf{-ú(m)}, glossed as \mk{sbj.pf} and \mk{sbj.ipf} respectively.
+\par The subjunctive mood (glossed \mk{sbj}) is used for actions or events that are not or are not known to be true or factual. The subjunctive has two forms: the perfective subjunctive in \ird{-\'il} and the imperfective subjunctive in \textbf{-ú}, glossed as \mk{sbj.pf} and \mk{sbj.ipf} respectively.
 \par The copula has the following forms in the subjunctive, all of which are not inflected:
 
 \begin{table}[h!]
@@ -489,29 +521,25 @@ In addition to the prefixes used for verbal derivation, Iridian has three prefix
 		\toprule
 		&{\sc non-neg}&{\sc neg}\\
 		\midrule
-		Imperfective&niec &poce\\ \addlinespace
-		Perfective& vace & náh\\
+		Imperfective&niec &po\v{s}c\\ \addlinespace
+		Perfective& vace & nav\\
 		\bottomrule
 	\end{tabularx}
 \end{table}
-\par The perfective-imperfective distinction of the subjunctive is more properly analyzed as a temporal distinction, i.e., past and non-past subjunctive. Iridian does have, howevever has a periphrastic construction for the progressive subjunctive formed by the imperfective converbial in \textbf{-iec} and the perfective subjunctive copula. Similarly, the future subjunctive also uses a periphrastic construction with the imperfective converbial in \textbf{-iec} and the imperfective subjunctive copula. Table \ref{pia\v{s}ta} shows the conjugation paradigm of the verb \textbf{pia\v{s}tá} in the subjunctive mood.
+\par The perfective-imperfective distinction of the subjunctive is more properly analyzed as a temporal distinction, i.e., past and non-past subjunctive. Table \ref{pia\v{s}ta} shows the conjugation paradigm of the verb \ird{pia\v{s}tá} in the subjunctive mood.
 \begin{table}[h!]
 	
 	\centering \small 
 	
-	\caption{Conjugation, paradigm, subjunctive mood.}
+	\caption{Conjugation paradigm, subjunctive mood.}
 	\begin{tabu} to 0.7\textwidth{Y>{\bfseries}Y}
 		\toprule
-		\multicolumn{2}{c}{\textbf{pia\v{s}tá} `to eat'}\\
+		\multicolumn{2}{c}{\ird{pia\v{s}tá} `to eat'}\\
 		\midrule \addlinespace
 		 Imperfective& pia\v{s}tú\\ \addlinespace
-		 Negative imperfective & nápia\v{s}tú\\ \addlinespace
-		 Perfective & pia\v{s}tá\\ \addlinespace
-		 Negative perfective & nápia\v{s}tá\\ \addlinespace
-		 Progressive&pia\v{s}tiec vace\\ \addlinespace
-		 Negative progressive&pia\v{s}tiec náh\\ \addlinespace
-		 Future & pia\v{s}tiec niec\\ \addlinespace
-		 Negative Future & pia\v{s}tiec poce\\ \addlinespace
+		 Negative imperfective & zápia\v{s}tú\\ \addlinespace
+		 Perfective & pia\v{s}t\'il\\ \addlinespace
+		 Negative perfective & z\'apia\v{s}t\'il\\ \addlinespace
 		 \bottomrule
 	\label{pia\v{s}ta}		 
 	\end{tabu}
@@ -521,15 +549,15 @@ In addition to the prefixes used for verbal derivation, Iridian has three prefix
 \par The subjunctive is used in indirect constructions of verbs for issuing orders, commanding, exhorting, etc.
 \pex
 \begingl
-\gla Martin na America mágnazsivú to csehnêmas.//
-\glb Martin \mk{loc} America-\mk{pat} go.to.school-\mk{sbj.ipf} \mk{rz} want-\mk{ipf-3s.anim}//
+\gla Martin na America \v{z}nohú to \v{c}ezn\'alic.//
+\glb Martin \mk{loc} America-\mk{pat} study-\mk{sbj.ipf} \mk{rz} want-\mk{cont-3s.anim}//
 \glft `He wants Martin to study in America.'//
 \endgl
 \xe
 
 \pex
 \begingl
-\gla Marek a\v{s}ná to Tunek dálek.//
+\gla Marek za\v{s}n\'il to Tunek dálek.//
 \glb Marek sing-\mk{sbj.ipf} \mk{rz} Tunek say-\mk{pf}//
 \glft `Tunek told Marek to sing.'//
 \endgl
@@ -538,7 +566,17 @@ In addition to the prefixes used for verbal derivation, Iridian has three prefix
 \subsubsection{dubitative}
 \par The subjunctive is used with verbs expressing doubt, uncertainty or disbelief.
 
+
+
 \subsubsection{with verbs expressing emotion}
+
+\pex
+\begingl
+\gla Marek za\v{s}n\'il to Tunek dálek.//
+\glb Marek sing-\mk{sbj.ipf} \mk{rz} Tunek say-\mk{pf}//
+\glft `Tunek told Marek to sing.'//
+\endgl
+\xe
 
 
 \subsubsection{with the conditional mood}
@@ -565,14 +603,14 @@ In addition to the prefixes used for verbal derivation, Iridian has three prefix
 		&{\scshape regular verbs} & {\scshape copula}\\
 		\midrule
 		
-		\textit{Realis} &-ouhna&vsiec\\
-		Neg. \textit{Realis}&-ouhnit&vsiemý\\
+		\textit{Realis} &-ouhn\'a &viec\\
+		Neg. \textit{Realis}&-ouhn\'al&ven\\
 		
 		Non-Past \textit{Irrealis} & -ouc & jenouc\\
-		Neg. Non-Past \textit{Irrealis} & -oucit& piêc\\
+		Neg. Non-Past \textit{Irrealis} & -oucik & pi\k{e}c\\
 		
-		Past \textit{Irrealis} & -ane & jenem\\
-		Neg. Past \textit{Irrealis} & -oucnit & jet\\
+		Past \textit{Irrealis} & -\'ane & jenem\\
+		Neg. Past \textit{Irrealis} & -oucn\'a & jet\\
 		\bottomrule
 	\end{tabu}
 \end{table}
@@ -796,40 +834,61 @@ ago
 \xe
 \section{Non-Finite Verb Forms}
 
-\subsection{Copulative form}
-\par Verbs have two copulative forms: the adjectival copulative formed with the infix \textbf{-ut-/-uit-} and the stative copulative formed with the prefix \textbf{je-}.
-\par The adjective
-
-\begin{table}[h!]
-	\small\centering
-	\begin{tabularx}{0.8\textwidth}{YMY}
-		\textbf{niva} `speed' &$\rightarrow$&\textbf{nutiva} `fast'\\
-		\textbf{kiazó} `darkness'&$\rightarrow$&\textbf{kutiazó} `dark'\\
-		\textbf{kocska} `distance'&$\rightarrow$&\textbf{kutocska} `far'\\
-		\textbf{trápe} `cloud'&$\rightarrow$&\textbf{turtápe} `cloudy'\\
-	\end{tabularx}
-\end{table}
-
-\par The stative copulative is formed with the prefix \textbf{je-} and can only be used with verbs that express a state, condition or position.
-
-\begin{table}[h!]
-	\small\centering
-	\begin{tabularx}{0.8\textwidth}{YMY}
-		\textbf{sort-} `stand' &$\rightarrow$&\textbf{jesort-} `standing'\\
-		\textbf{mohl-} `live'&$\rightarrow$&\textbf{jemohl-} `living'\\
-		\textbf{vtiel-} `open'&$\rightarrow$&\textbf{kutocska} `open'\\
-	\end{tabularx}
-\end{table}
-
-
 \subsection{Gerund}
-\par The gerund (glossed \mk{ger}) refers to the non-finite verb form used as a noun. The gerundive prefix \textbf{po-} is always used with the nominalizing suffix \textit{ou}.
+\par The gerund (glossed \mk{ger}) refers to the non-finite verb form used as a noun. The gerundive prefix \ird{po-} is always used with the nominalizing suffix \ird{-ou}, both of which are added to the uninflected verb root.
 
 \pex
+\a
 \begingl
-\gla Po\v{s}csênou nauhlý.//
+\gla \v{S}\v{c}enek.//
+\glb forget-\mk{pf}//
+\glft \trsl{He forgot (it).}//
+\endgl
+\a
+\begingl
+\gla \v{S}\v{c}enekou Jan.//
+\glb forget-\mk{pf-nz} Jan//
+\glft \trsl{Jan (is) the one who forgot (it).}//
+\endgl
+\a
+\begingl
+\gla Po\v{s}\v{c}enou nauhl\'y.//
 \glb \mk{ger}-forget-\mk{nz} difficult//
-\glft `Forgetting is difficult.'//
+\glft \trsl{Forgetting is difficult.}//
+\endgl
+\xe
+
+When nominalizing complex clauses, both the agent and the theme are marked in the genitive, with the agent aways appearing first.
+
+\pex
+\a
+\begingl
+\gla P\'a\v{s}ta Janom vo\v{s}tnek.//
+\glb pasta Jan-\mk{agt} cook-\mk{pv-pf}//
+\glft \trsl{Jan cooked (some) pasta.}//
+\endgl
+\a
+\begingl
+\gla Jan\'i p\'a\v{s}t\'i povo\v{s}tou//
+\glb Jan-\mk{gen} pasta-\mk{gen} \mk{ger-}cook-\mk{nz}//
+\glft \trsl{Jan's cooking of the pasta}//
+\endgl
+\xe
+
+The suffix \ird{-\'al}, used to mark the continuous aspect, may be infixed to the gerund to indicate that the action is repetitive.
+
+\pex
+\a
+\begingl
+\gla Jan nidek.//
+\glb Jan stand.up-\mk{pf}//
+\glft \trsl{Jan stood up.}//
+\endgl
+\a
+\begingl
+\gla Jan\'i ponid\'alou buvec.//
+\glb Jan-\mk{gen} \mk{ger}-stand.up-\mk{cont-nz} annoying//
+\glft \trsl{Jan's standing up again and again is annoying.}//
 \endgl
 \xe
 
@@ -1011,13 +1070,15 @@ Iridian also distinguishes between attributive clauses expressing permanent cond
 
 A full list of adjectives/modifiers that use the existential construction can be found in the section~\ref{sec:exst}.
 
+The copula, however, cannot be ommitted in grammatical moods other than the indicative.
+
 \subsection{Negative copula}
 
-Iridian has the negative copula \ird{csesná}.
+Iridian has the negative copula \ird{\v{c}esná}.
 
 \pex
 \begingl
-\gla Marek doktor csesná.//
+\gla Marek doktor \v{c}esná.//
 \glb Marek doctor \mk{cop.neg}//
 \glft \eng{Marek is not (a/the) doctor.}//
 \endgl
@@ -1027,7 +1088,7 @@ Iridian has the negative copula \ird{csesná}.
 
 \pex
 \begingl
-\gla Doktor Marek csesná.//
+\gla Doktor Marek \v{c}esná.//
 \glb doctor Marek \mk{cop.neg}//
 \glft \eng{Marek is not the doctor.}//
 \endgl
@@ -1035,6 +1096,99 @@ Iridian has the negative copula \ird{csesná}.
 
 \section{Existential Constructions}
 \label{sec:exst}
+An existential sentence is a specialized construction used to express the existence or presence of someone or something. The particle \ird{je\v{s}} and its inverse \ird{niho} are used to form existential sentences.
+
+\pex
+\begingl
+\gla To je\v{s} zarno.//
+\glb here \mk{exst} people//
+\glft \eng{There are people here.}//
+\endgl
+\xe
+
+\pex
+\begingl
+\gla To niho zarno.//
+\glb here \mk{exst.neg} people//
+\glft \eng{There is no one here.}//
+\endgl
+\xe
+
+Statements expressing location use a copular construction, although an existential construction is used in the negative.
+
+\pex
+\begingl
+\gla D\'a na duma.//
+\glb \mk{1s.str} \mk{loc} house-\mk{pat}//
+\glft \eng{I'm at home.}//
+\endgl
+\xe
+
+\pex
+\begingl
+\gla Na duma niho d\'a.//
+\glb \mk{loc} house-\mk{pat} \mk{exst.neg} \mk{1s.str}//
+\glft \eng{I'm not at home.}//
+\endgl
+\xe
+
+The particles \ird{je\v{s}} and \ird{niho} must always precede the noun whose presence or existence is being expressed.
+
+\pex
+\begingl
+\gla Na r\'anema ona je\v{s} hto\v{s}.//
+\glb \mk{loc} desk-\mk{1s-pat} one \mk{exst} book//
+\glft \eng{There is one book on my desk.}//
+\endgl
+\xe
+
+\pex
+\begingl
+\gla M\"y je\v{s} mula\v{z}.//
+\glb two \mk{exst} door//
+\glft \eng{There are two doors.}//
+\endgl
+\xe
+
+\subsection{Conjugation paradigm}
+
+
+\subsection{Possession}
+Existential constructions are also used to indicate possession, with the possessor marked in the patientive case.
+
+\pex
+\begingl
+\gla Marka je\v{s} obla\v{s}c.//
+\glb Marek-\mk{pat} \mk{exst} pet//
+\glft \eng{Marek has a pet.}//
+\endgl
+\xe
+
+\pex
+\begingl
+\gla Tom\'a\v{s}a niho mlaz.//
+\glb Tom\'a\v{s}-\mk{pat} \mk{exst} brother//
+\glft \eng{Tom\'a\v{s} does not have a brother.}//
+\endgl
+\xe
+
+\subsection{Impersonal constructions}
+\pex
+\begingl
+\gla Martina je\v{s} tre\v{s}nikou na tropa.//
+\glb Martin-\mk{pat} \mk{exst} write-\mk{pv-pf-nz} \mk{loc} wall-\mk{pat}//
+\glft \eng{Martin wrote something on the wall.}//
+\endgl
+\xe
+
+\pex
+\begingl
+\gla Vo\v{s}tnikouva sa je\v{s} pia\v{s}\v{c}kou?//
+\glb cook-\mk{pv-pf-nz-pat} already \mk{exst} eat-\mk{av-pf-nz}//
+\glft \eng{Did somebody eat what (I) cooked?}//
+\endgl
+\xe
+
 
 \section{Formation of Verbs}
 \subsection{External Derivation}

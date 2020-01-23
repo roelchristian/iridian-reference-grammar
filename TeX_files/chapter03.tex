@@ -1,95 +1,62 @@
 \chapter{Nouns}
 
-\section{Grammatical Categories}
-\section{Animacy}
-Iridian verbs can be grouped into five classes, traditionally identified as \textbf{genders}, although they more correctly pertain to a noun's animacy:
+Nominal morphology in Iridian is relatively simpler compared to the corresponding process. 
 
-\begin{table}[h!]
-	\centering \small
-	\caption{Noun classes in Iridian.}
-	\begin{tabu} to \textwidth {M[0.6]YY}
-		\toprule
-		{\sc class} & \multicolumn{1}{c}{\sc used for}& \multicolumn{1}{c}{\sc examples}\\
-		\midrule
-		Class I & names of persons & \textbf{Marek, Lukász, Tomász, Ána, Tereza, Luda}\\ \addlinespace
-		Class II & common nouns referring to humans or groups of humans & \textbf{syn} `son', \textbf{cena} `family', \textbf{}\\ \addlinespace
-		Class III & non-human animate nouns, e.g., animals, plants etc. & \textbf{jec} `dog'\\ \addlinespace
-		Class IV & countable concrete and abstract inanimate nouns &\\ \addlinespace
-		Class V & uncountable and mass concrete inanimate nouns &\\ \addlinespace
-		Class VI & abstract inanimate nouns&\\ \bottomrule
-	\end{tabu}
-\end{table}
+\section{Grammatical Categories}
 
 \section{Number}
-\par Nouns can be marked for number. However, grammatical number does not always correspond with semantic number, as there are several constructions, discussed later in this section, where semantic number is expressed lexically without a corresponding morphological change.
 
-\par There are three ways to form the plural morphologically in Iridian: (1) by a change in the quality of the vowels in the noun, in accordance with certain rules; (2) by suffixation; or (3) irregularly, most likely due to historical sound changes. Some nouns may have variant plural forms, allowing mostly either vowel change or suffixation.
+Nouns in Iridian do not inflect for number. Thus the word \ird{byl}, for example, can mean either \trsl{child} or \trsl{children} depending in context. The same form is used when the noun is preceded by a numeral.
 
-\subsection{Vowel change}
+\pex
+\begingl
+\gla hron\'a byl//
+\glb three child//
+\glft \trsl{three children}//
+\endgl
+\xe
 
-\par Tha most common method of forming the plural is altering the quality of the vowel(s) in the noun stem. The changes are subject to the rules listed below:
+Nevertheless, the particle \ird{nie} can be used to denote plurality, although this is largely optional and would be often dropped if the grammatical number of the noun is clear from the context. This is more common for inanimate nouns. Note also that \ird{nie} cannot be used for mass nouns.
 
-\begin{enumerate}
-	\item Vowel length is retained.
-	\item If the stem is composed only of harmonic vowels or only of disharmonic vowels, all vowels will be changed. However, if the stem is made of both harmonic and disharmonic vowels, only the harmonic vowels are altered.
-	\item Back vowels are fronted.
-		\begin{table}[h!]
-			\centering \small
-			\begin{tabu}  to 0.8\textwidth	{>{\bfseries}YM>{\bfseries}YY}
-				pápyr & $\rightarrow$ & páipyr & 'papers'\\
-				lóbek & $\rightarrow$ & lóibek & 'apples'\\
-				
-			\end{tabu} 
-		\end{table}
-	\item Non-high front vowels are raised.
-	\item The unrounded high front vowels \bt{Y~y:} are rounded to \bt{I~i:}.
-	\item The rounded high front vowels \bt{I~i:} are dipthongized to \bt{e\tsa{I}}.
-	\item The front vowels \bt{E~e:} can either be raised to \bt{I~i:} or dipthongized to \bt{e\tsa{I}}.
-	\item The diphthong \bt{e\tsa{I}} simplifies to \bt{i:}.
-	\item The dipthong \bt{o\dpu} simplifies to either \bt{y:} or \bt{\o:}.
-	\item The nasal vowels \bt{\~5~\~O~\~u} becomes \bt{\~E}.
-	\item The nasal vowel \bt{\~E} becomes \bt{in}
-			\begin{table}[h!]
-		\centering \small
-		\begin{tabu}  to 0.8\textwidth	{>{\bfseries}YM>{\bfseries}YY}
-			szviêce & $\rightarrow$ & szvýnce & 'candles'\\	
-		\end{tabu} 
-	\end{table}
-	
-\end{enumerate}
+\pex
+\begingl
+\gla Nie byl zap\'o\v{c}ek.//
+\glb \mk{pl} child laugh-\mk{av-pf}//
+\glft \trsl{The children jumped.}//
+\endgl
+\xe
 
-\par Table \ref{vowels-pl} summarize.
+\pex
+\begingl
+\gla *Na duma nie je\v{s} pia\v{s}tou.//
+\glb \mk{loc} house \mk{pl} \mk{exst} food//
+\glft \trsl{There is food in the house.}//
+\endgl
+\xe
 
-\par Class I nouns cannot be pluralized using this method.
+The particle \ird{nie} always precedes the noun it modifies, except in existential clauses where it comes before the existential particle \ird{je\v{s}}\footnote{The sequence is pronounced as if written n\'ije\v{s} \nt{\nn i:jES}}. \ird{Nie} can obviously not be used with the negative particle \ird{niho}.
 
-\begin{table}[h!]
-	\centering
-		\caption{Vowel changes used to mark grammatical number}
-	\begin{tabu} to \textwidth {MMM[0.1]MMM[0.1]MM}
-		\toprule
-		\multicolumn{2}{c}{\sc strong}&&\multicolumn{2}{c}{\sc weak}&&\multicolumn{2}{c}{\sc neutral}\\
-		\cmidrule{1-2}\cmidrule{4-5}\cmidrule{7-8}
-		Sing. & Pl.&&Sing. & Pl.&&Sing. & Pl\\
-		\midrule
-		a & ai && ai & oi && e & ei, i\\
-		á & ái && ái & ói && é & ei, í\\
-		o & oi && oi & ui && ei & í\\
-		ó & ói && ói & úi && i & ei\\
-		u & ui && ui & i && í & ei\\
-		ú & úi && úi & í &&  & \\
-		â, ô, û & ê && ê & ýn && &\\
-		ou & eu && eu & úi && &\\
-		\bottomrule
-			\label{vowels-pl}		
-	\end{tabu}
-\end{table}
+\pex
+\a
+\begingl
+\gla nie b\v{z}\k{e}//
+\glb \mk{pl} bee//
+\glft \trsl{bees}//
+\endgl
+\a
+\begingl
+\gla Nie je\v{s} b\v{z}\k{e}//
+\glb \mk{pl} \mk{exst} bee//
+\glft \trsl{There are bees.}//
+\endgl
+\a
+\begingl
+\gla *Nie niho b\v{z}\k{e}//
+\glb \mk{pl} \mk{exst.neg} bee//
+\glft \trsl{There are bees.}//
+\endgl
+\xe
 
-\subsection{Suffixation}
-\par Some nouns can be pluralized using the suffix \textbf{-ac} or \textbf{-ec}, depending on the vowels in the stem.
-\par This method is most often used with loanwords
-
-\subsection{Irregular plurals}
-\subsection{Variant plurals}
 
 \section{Nominal declension}
 
@@ -153,6 +120,7 @@ The ablative case (glossed \mk{abl}) is fo
 \glft `I am taller than Marek.'//
 \endgl
 \xe
+
 
 \section{Pronouns}
 
@@ -264,3 +232,49 @@ Iridian counting starts from the smallest component of the number to the largest
 
 \subsection{Use of numerals}
 
+\section{Derivational Morphology}
+
+\subsection{-ou}
+The nominalizing suffix \ird{-ou} is a non-productive affix used to form nouns from certain verbs.
+
+\begin{table}[h!]
+	\centering\small
+	\caption{Nominal derivation using \ird{-ou}}
+	\begin{tabu} to \textwidth{YYY[0.5]YY}
+		\toprule
+		\multicolumn{2}{c}{\sc verb root}&&\multicolumn{2}{c}{\sc derived noun}\\
+		\addlinespace
+		\midrule
+		\ird{milovan\'a}&\trsl{to learn}&$\rightarrow$& \ird{milovanou} &\trsl{lesson}\\
+		\ird{palz\'a}&\trsl{to leave}&$\rightarrow$& \ird{palzou} &\trsl{departure}\\
+		\ird{pia\v{s}t\'a}&\trsl{to eat}&$\rightarrow$& \ird{pia\v{s}tou} &\trsl{food}\\
+		\ird{scen\'a}&\trsl{to arrive}&$\rightarrow$& \ird{scenou} &\trsl{arrival}\\
+		\ird{niek\'a}&\trsl{to open}&$\rightarrow$& \ird{niekou} &\trsl{entrance}\\
+
+		\bottomrule
+	
+	\end{tabu}
+
+\end{table}
+
+\subsection{-ou\v{s}c}
+The suffix \ird{-ou\v{s}c} (pronounced as if written \ird{-\'o\v{s}t} \bt{o:St}, or in some dialects as \ird{-ou\v{s}t} \nt{\dto{}St}) is used to form a noun indicating someone or something associated to a certain thing or performing a certain action.
+
+\begin{table}[h!]
+	\centering\small
+	\caption{Nominal derivation using \ird{-ou\v{s}c}}
+	\begin{tabu} to \textwidth{YYY[0.5]YY}
+		\toprule
+		\multicolumn{2}{c}{\sc verb root}&&\multicolumn{2}{c}{\sc derived noun}\\
+		\addlinespace
+		\midrule
+		\ird{jork\'a}&\trsl{to travel}&$\rightarrow$& \ird{jorkou\v{s}c} &\trsl{traveller}\\
+		\ird{mo\v{z}l\'a}&\trsl{to live}&$\rightarrow$& \ird{mo\v{z}lou\v{s}c} &\trsl{resident}\\
+		\ird{umiel\'a}&\trsl{to get drunk}&$\rightarrow$& \ird{um\'ilou\v{s}c} &\trsl{drunkard}\\
+		\ird{virk\'a}&\trsl{to write}&$\rightarrow$& \ird{virkou\v{s}c} &\trsl{writer}\\
+		\ird{zdiev\'a} &\trsl{to fool (sm.)}&$\rightarrow$& \ird{zd\'ivou\v{s}c} &\trsl{swindler}\\
+		\bottomrule
+	
+	\end{tabu}
+
+\end{table}
