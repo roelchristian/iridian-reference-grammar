@@ -1,12 +1,12 @@
-\documentclass[10pt]{book}
-\usepackage[paperwidth=6in,paperheight=9in]{geometry}
+\documentclass[10pt,a5paper]{book}
+\usepackage[margin=0.8in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
 \usepackage[light]{kpfonts}
-%\usepackage{tgschola}
+\usepackage{biolinum}
 
-\usepackage[scaled]{helvet}
+%\usepackage[scaled]{helvet}
 \usepackage{tipa}
 \usepackage{savetrees}
 \usepackage{microtype}
@@ -15,6 +15,10 @@
 \usepackage{graphics,graphicx,amsmath,amssymb}
 \setcounter{secnumdepth}{2}
 
+\usepackage{makeidx}
+\usepackage[font=footnotesize]{idxlayout}
+\makeindex
+\newcommand{\aie}{\textbari}
 \newcommand{\pn}[1]{[\textipa{#1}]}
 \newcommand{\eng}[1]{`{#1}'}
 \newcommand{\bt}[1]{/\textipa{#1}/}
@@ -39,6 +43,8 @@
 \newcommand{\dty}{\o\textsubarch{Y}}
 \newcommand{\rec}[1]{*\textit{#1}}
 \newcommand{\trsl}[1]{`#1'}
+\newcommand{\rrr}{\textinvscr}
+
 
 \usepackage[font=footnotesize,labelfont=bf]{caption}
 \usepackage{longtable}
@@ -96,11 +102,11 @@
 %\titleformat{\chapter}[hang]
 %{\huge\itshape}{\thechapter}{1em}{\huge}
 \titleformat{\section}
-{\centering \Large}{\thesection}{1em}{}
+{\large\sffamily}{\thesection}{1em}{\large}
 \titleformat{\subsection}
-{\normalfont\itshape\centering\bfseries}{\thesubsection}{1em}{}
+{\normalfont\sffamily}{\thesubsection}{1em}{\small}
 \titleformat{\subsubsection}
-{\scshape\centering}{\thesubsubsection}{1em}{\normalsize}
+{\normalfont\itshape}{\thesubsubsection}{1em}{\small}
 
 
 
@@ -154,31 +160,26 @@ First published online, 2019
 \tableofcontents
 \cleardoublepage
 \listoftables
-\chapter*{Preface}
-\addcontentsline{toc}{chapter}{Preface}
+\include{./TeX_files/preface}
 \include{./TeX_files/abbrev}
 
 \mainmatter
 \include{./TeX_files/chapter00}
 
-
-\part{Phonology}
 \include{./TeX_files/chapter01}
-\part{Morphology and Syntax}
 \include{./TeX_files/chapter02}
-\include{./TeX_files/chapter03}
+\include{./TeX_files/chapter03} % nouns
+\include{./TeX_files/pronoun} % pronouns
 \include{./TeX_files/chapter04}
 \include{./TeX_files/chapter05}
-
 \include{./TeX_files/chapter06}
-
 \include{./TeX_files/chapter07}
-\part{Semantics and Usage}
 \include{./TeX_files/chapter08}
 
 \appendix
 
 \include{./TeX_files/appx01}
 % bibliography, glossary and index would go here.
-
+\cleardoublepage
+\printindex
 \end{document}

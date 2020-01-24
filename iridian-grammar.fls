@@ -53,8 +53,18 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/libertine/biolinum.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/libertine/biolinum.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 INPUT /usr/share/texmf/tex/latex/tipa/tipa.sty
 INPUT /usr/share/texmf/tex/latex/tipa/tipa.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
@@ -64,19 +74,13 @@ INPUT /usr/share/texmf/tex/latex/tipa/t3enc.def
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsl1000.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrb1000.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/savetrees/savetrees.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/savetrees/savetrees.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
@@ -107,6 +111,25 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/idxlayout/idxlayout.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/idxlayout/idxlayout.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+OUTPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.idx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
@@ -367,8 +390,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
@@ -421,14 +442,13 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/abbrev.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/abbrev.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter00.aux
@@ -439,6 +459,8 @@ INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
@@ -671,14 +693,9 @@ INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.toc
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmsc8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsc8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsce.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbn8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbne.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbn8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbne.tfm
@@ -694,12 +711,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmne.tfm
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.toc
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.lot
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.lot
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmit8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmite.tfm
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.lot
+OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.tex
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmit8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmite.tfm
@@ -718,32 +733,22 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsc8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsc8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmsc8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsc8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsce.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmsc8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsc8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsce.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmn8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmne.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbn8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbne.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbn8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbne.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter01.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter01.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter01.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbit8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbit8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
 INPUT /usr/share/texmf/fonts/tfm/fkr/tipa/tipa10.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -755,9 +760,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsc8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsc8t.tfm
 INPUT /usr/share/texmf/fonts/tfm/fkr/tipa/tipa9.tfm
 INPUT /usr/share/texmf/fonts/tfm/fkr/tipa/tipa9.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbit8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbit8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbite.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbn8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbne.tfm
@@ -767,6 +773,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsce.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmn8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmne.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
 INPUT /usr/share/texmf/fonts/tfm/fkr/tipa/tipa8.tfm
@@ -816,6 +824,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplexa.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplexa.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplexa.tfm
 INPUT /usr/share/texmf/fonts/tfm/fkr/tipa/tipa8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmit8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmite.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbn8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbne.tfm
@@ -837,6 +848,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbsc8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbsc8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbsce.tfm
@@ -852,17 +865,18 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmite.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbn8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbne.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmn8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmne.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmn8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmne.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmit8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmite.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmn8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmn8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmne.tfm
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.tex
@@ -873,18 +887,22 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsc8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmsce.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplmit8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmit8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplmite.tfm
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.tex
+OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.tex
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.tex
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.tex
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1--base.tfm
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.tex
@@ -897,10 +915,19 @@ INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.tex
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkplbn8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbn8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkplbne.tfm
+INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.ind
+INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.ind
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.maf
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.mtc
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.mtc0
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/abbrev.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/abbrev.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter00.aux
@@ -911,6 +938,8 @@ INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
@@ -925,8 +954,11 @@ INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.out
 INPUT /home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.out
+INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbit8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbn8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbne.pfb
