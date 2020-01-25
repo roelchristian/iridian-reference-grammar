@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.1)  24 JAN 2020 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.1)  25 JAN 2020 08:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1929,49 +1929,49 @@ LaTeX Warning: Label `3099' multiply defined.
 ) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.aux))
 \openout1 = `iridian-grammar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 134.
-LaTeX Font Info:    Try loading font information for OML+jkpl on input line 134.
+LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 135.
+LaTeX Font Info:    Try loading font information for OML+jkpl on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omljkpl.fd
 File: omljkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 134.
-LaTeX Font Info:    Try loading font information for OMS+jkpl on input line 134.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 135.
+LaTeX Font Info:    Try loading font information for OMS+jkpl on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omsjkpl.fd
 File: omsjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 134.
-LaTeX Font Info:    Try loading font information for OMX+jkpl on input line 134.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 135.
+LaTeX Font Info:    Try loading font information for OMX+jkpl on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omxjkpl.fd
 File: omxjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 134.
-LaTeX Font Info:    Try loading font information for U+jkplexa on input line 134.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 135.
+LaTeX Font Info:    Try loading font information for U+jkplexa on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplexa.fd
 File: ujkplexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 134.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 134.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 134.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 135.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 135.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Try loading font information for T1+jkpl on input line 134.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Try loading font information for T1+jkpl on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkpl.fd
 File: t1jkpl.fd 2007/08/30 Fontinst v1.928 font definitions for T1/jkpl.
 )
@@ -2011,7 +2011,7 @@ File: t1jkpl.fd 2007/08/30 Fontinst v1.928 font definitions for T1/jkpl.
 
 \c@mv@tabular=\count337
 \c@mv@boldtabular=\count338
-LaTeX Info: Redefining \microtypecontext on input line 134.
+LaTeX Info: Redefining \microtypecontext on input line 135.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2089,7 +2089,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                of loading the ``hyperref'' package.
 
 \AtBeginShipoutBox=\box98
-Package hyperref Info: Link coloring OFF on input line 134.
+Package hyperref Info: Link coloring OFF on input line 135.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -2097,9 +2097,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count345
 )
-LaTeX Info: Redefining \ref on input line 134.
-LaTeX Info: Redefining \pageref on input line 134.
-LaTeX Info: Redefining \nameref on input line 134.
+LaTeX Info: Redefining \ref on input line 135.
+LaTeX Info: Redefining \pageref on input line 135.
+LaTeX Info: Redefining \nameref on input line 135.
  (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.out) (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.out)
 \@outlinefile=\write6
 \openout6 = `iridian-grammar.out'.
@@ -2109,9 +2109,9 @@ Dictionary: translator-basic-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 134.
+LaTeX Info: Redefining \selectfont on input line 135.
 \c__siunitx_mathsf_int=\count346
-LaTeX Font Info:    Try loading font information for OT1+jkpl on input line 134.
+LaTeX Font Info:    Try loading font information for OT1+jkpl on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkpl.fd
 File: ot1jkpl.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkpl.
 )
@@ -2119,27 +2119,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpl' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for U+jkplmia on input line 134.
+LaTeX Font Info:    Try loading font information for U+jkplmia on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplmia.fd
 File: ujkplmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 134.
+LaTeX Font Info:    Try loading font information for U+msa on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 134.
+LaTeX Font Info:    Try loading font information for U+msb on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+jkplsyc on input line 134.
+LaTeX Font Info:    Try loading font information for U+jkplsyc on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplsyc.fd
 File: ujkplsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for OT1+jkpss on input line 134.
+LaTeX Font Info:    Try loading font information for OT1+jkpss on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -2148,7 +2148,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \c__siunitx_mathtt_int=\count347
-LaTeX Font Info:    Try loading font information for OT1+jkptt on input line 134.
+LaTeX Font Info:    Try loading font information for OT1+jkptt on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkptt.fd
 File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
 )
@@ -2224,662 +2224,659 @@ LaTeX Font Warning: Font shape `T3/jkpl/m/n' undefined
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) [3]
+)
+Overfull \hbox (0.7076pt too wide) in paragraph at lines 19--19
+ []|[]| 
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4]
-Underfull \vbox (badness 2460) has occurred while \output is active []
+Overfull \hbox (11.0698pt too wide) in paragraph at lines 19--19
+ []|\T1/jkpl/m/n/9/-25ls (-50) Unrounded| 
+ []
 
- [5] [6] [7] [8]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (2.30603pt too wide) in paragraph at lines 19--19
+ []|\T1/jkpl/m/n/9/-25ls (-50) Rounded| 
+ []
 
-[9]
-Overfull \hbox (2.36157pt too wide) in paragraph at lines 337--337
+[3] [4] [5] [6] [7] [8] [9] [10]
+Overfull \hbox (2.36157pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) p| 
  []
 
 
-Overfull \hbox (2.01958pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.01958pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) b| 
  []
 
 
-Overfull \hbox (2.31883pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.31883pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) d| 
  []
 
 
-Overfull \hbox (2.09651pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.09651pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) k| 
  []
 
 
-Overfull \hbox (1.78017pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.78017pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) g| 
  []
 
 
-Overfull \hbox (4.74702pt too wide) in paragraph at lines 337--337
+Overfull \hbox (4.74702pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) m| 
  []
 
 
-Overfull \hbox (2.27608pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.27608pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) n| 
  []
 
 
-Overfull \hbox (0.71143pt too wide) in paragraph at lines 337--337
+Overfull \hbox (0.71143pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) r| 
  []
 
 
-Overfull \hbox (0.77982pt too wide) in paragraph at lines 337--337
+Overfull \hbox (0.77982pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) s| 
  []
 
 
-Overfull \hbox (1.34413pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.34413pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) z| 
  []
 
 
-Overfull \hbox (4.67007pt too wide) in paragraph at lines 337--337
+Overfull \hbox (4.67007pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) sz| 
  []
 
 
-Overfull \hbox (4.67007pt too wide) in paragraph at lines 337--337
+Overfull \hbox (4.67007pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) zs| 
  []
 
 
-Overfull \hbox (1.82292pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.82292pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) v| 
  []
 
 
-Overfull \hbox (4.45631pt too wide) in paragraph at lines 337--337
+Overfull \hbox (4.45631pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) cs| 
  []
 
 
-Overfull \hbox (5.99533pt too wide) in paragraph at lines 337--337
+Overfull \hbox (5.99533pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) dc| 
  []
 
 
-Overfull \hbox (1.13037pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.13037pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) c| 
  []
 
 
-Overfull \hbox (6.20909pt too wide) in paragraph at lines 337--337
+Overfull \hbox (6.20909pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) dz| 
  []
 
 
-Overfull \hbox (2.21622pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.21622pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) h| 
  []
 
 
-Overfull \hbox (2.36157pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.36157pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) p|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.01958pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.01958pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) b|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.31883pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.31883pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) d|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.09651pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.09651pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) k|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (1.78017pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.78017pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) g|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (4.74702pt too wide) in paragraph at lines 337--337
+Overfull \hbox (4.74702pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) m|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.27608pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.27608pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) n|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (0.71143pt too wide) in paragraph at lines 337--337
+Overfull \hbox (0.71143pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) r|  
  []
 
 
-Overfull \hbox (0.77982pt too wide) in paragraph at lines 337--337
+Overfull \hbox (0.77982pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) s|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (1.34413pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.34413pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) z|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (4.67007pt too wide) in paragraph at lines 337--337
+Overfull \hbox (4.67007pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) sz|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (4.67007pt too wide) in paragraph at lines 337--337
+Overfull \hbox (4.67007pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) zs|  
  []
 
 
-Overfull \hbox (1.82292pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.82292pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) v|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (4.45631pt too wide) in paragraph at lines 337--337
+Overfull \hbox (4.45631pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) cs|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (5.99533pt too wide) in paragraph at lines 337--337
+Overfull \hbox (5.99533pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) dc|  
  []
 
 
-Overfull \hbox (1.13037pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.13037pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) c|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (6.20909pt too wide) in paragraph at lines 337--337
+Overfull \hbox (6.20909pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) dz|  
  []
 
 
-Overfull \hbox (2.21622pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.21622pt too wide) in paragraph at lines 379--379
 []|\T1/jkpl/m/n/9/-25ls (-50) h|  
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
 
-Overfull \hbox (2.59244pt too wide) in paragraph at lines 337--337
+Overfull \hbox (2.59244pt too wide) in paragraph at lines 379--379
  []|\T1/jkpl/m/n/9/-25ls (-50) +| 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10] [11] [12]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13] [14]
+[11] [12] [13] [14] [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 601.
+(hyperref)                removing `math shift' on input line 643.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sim' on input line 601.
+(hyperref)                removing `\sim' on input line 643.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 601.
+(hyperref)                removing `math shift' on input line 643.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 617.
+(hyperref)                removing `math shift' on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sim' on input line 617.
+(hyperref)                removing `\sim' on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 617.
-
-[15]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 646.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sim' on input line 646.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 646.
+(hyperref)                removing `math shift' on input line 659.
 
 [16]
 
-LaTeX Font Warning: Font shape `T3/jkpl/b/n' undefined
-(Font)              using `T3/jkpl/m/n' instead
-(Font)              for symbol `textglotstop' on input line 697.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 688.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sim' on input line 688.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 688.
 
 [17]
-Underfull \vbox (badness 10000) detected at line 774
+
+LaTeX Font Warning: Font shape `T3/jkpl/b/n' undefined
+(Font)              using `T3/jkpl/m/n' instead
+(Font)              for symbol `textglotstop' on input line 739.
+
+[18]
+Underfull \vbox (badness 10000) detected at line 816
  []
 
-) [18]
+) [19]
 \openout2 = `./TeX_files/chapter02.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.tex
+ (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.tex [20
+
+
+
+]
 Chapter 3.
-[19
-
-
-
-] [20] [21]
+[21] [22] [23]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22] [23] [24]
+[24] [25] [26]
 Underfull \hbox (badness 10000) in paragraph at lines 347--351
 
  []
 
-[25] [26] [27] [28]
+[27] [28] [29] [30]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29] [30] [31]
+[31] [32] [33]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32] [33] [34] [35] [36] [37] [38] [39] [40] [41]) [42]
+[34] [35] [36] [37] [38] [39] [40] [41] [42] [43]) [44]
 \openout2 = `./TeX_files/chapter03.aux'.
 
  (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.tex
 Chapter 4.
-[43
+[45
 
 
 
-] [44] [45] [46] [47] [48] [49]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+] [46] [47] [48] [49] [50] [51]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[50]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [51] [52]
+[52]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [53] [54]
 \openout2 = `./TeX_files/pronoun.aux'.
 
  (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.tex
@@ -2887,23 +2884,23 @@ Chapter 5.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53
+ [55
 
 
 
-] [54]
+] [56]
 \openout2 = `./TeX_files/chapter04.aux'.
 
  (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.tex
 Chapter 6.
-) [55
+) [57
 
 
 
 ]
 \openout2 = `./TeX_files/chapter05.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex [56
+ (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex [58
 
 
 
@@ -2911,28 +2908,28 @@ Chapter 6.
 Chapter 7.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 11.
-) [57]
+) [59]
 \openout2 = `./TeX_files/chapter06.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.tex [58
+ (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.tex [60
 
 
 
 ]
 Chapter 8.
-) [59]
+) [61]
 \openout2 = `./TeX_files/chapter07.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.tex [60
+ (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.tex [62
 
 
 
 ]
 Chapter 9.
-) [61]
+) [63]
 \openout2 = `./TeX_files/chapter08.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.tex [62
+ (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.tex [64
 
 
 
@@ -2943,18 +2940,18 @@ Overfull \hbox (15.08469pt too wide) in paragraph at lines 1--1
  [][] 
  []
 
-) [63]
+) [65]
 \openout2 = `./TeX_files/appx01.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.tex [64
+ (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.tex [66
 
 
 
-] [65] [66]
+] [67] [68]
 Appendix A.
-) [67
+) [69
 
-] [68
+] [70
 
 
 ] (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.ind)
@@ -2974,16 +2971,16 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the iridian-grammar.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
-[69
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+[71
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
  (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.aux (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/abbrev.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter00.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter01.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 Package rerunfilecheck Info: File `iridian-grammar.out' has not changed.
-(rerunfilecheck)             Checksum: 39A1EF2DD497C2B9983F428C7C48D929;9058.
+(rerunfilecheck)             Checksum: 0F1B4D9BF9C6E9503A1901D20D0BCA7A;9135.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2993,18 +2990,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29781 strings out of 492982
- 529084 string characters out of 6134896
- 692708 words of memory out of 5000000
- 31536 multiletter control sequences out of 15000+600000
- 1035797 words of font info for 692 fonts, out of 8000000 for 9000
+ 29797 strings out of 492982
+ 529267 string characters out of 6134896
+ 690363 words of memory out of 5000000
+ 31538 multiletter control sequences out of 15000+600000
+ 1037482 words of font info for 700 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,23n,92p,10430b,1124s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbsc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmnc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmsc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa8.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa9.pfb>
-Output written on "/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.pdf" (81 pages, 409874 bytes).
+Output written on "/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.pdf" (83 pages, 413681 bytes).
 PDF statistics:
- 1484 PDF objects out of 1728 (max. 8388607)
- 1369 compressed objects within 14 object streams
- 436 named destinations out of 1000 (max. 500000)
- 170577 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 1522 PDF objects out of 1728 (max. 8388607)
+ 1404 compressed objects within 15 object streams
+ 439 named destinations out of 1000 (max. 500000)
+ 174681 words of extra memory for PDF output out of 184870 (max. 10000000)
 

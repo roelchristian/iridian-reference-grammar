@@ -1,18 +1,19 @@
 \chapter{Phonology}
-\section{Vowels}
-\subsection{Oral Vowels}
-Iridian has seven pairs of corresponding long and short vowels. With the exception of \bt{5~a:} and \bt{u~u:}, long vowels are tenser than their short counterparts.
+\section{Vowels}\index{vowel}
+\subsection{Oral Vowels}\index{vowel!oral}
+Iridian has seven pairs of corresponding long and short vowels. With the exception of \bt{5~a:} and \bt{u~u:}, long vowels are tenser than their short counterparts. In addition standard Iridian also features the high central vowel \nt{1} as an allophone of \nt{E} and \nt{I} in unstressed positions.
 
-\begin{table}[h!]
+\begin{table}[h!]\index{vowel!inventory}
 	\small
 	\caption{Vowel inventory of standard Iridian.}
 	\centering
-	\begin{tabularx}{0.7\textwidth}{YMMM}
+	\begin{tabularx}{0.7\textwidth}{YMMMM}
 		\toprule
-		&\multicolumn{2}{c}{\sc front}&\multirow{2}{*}{\sc back}\\ \cmidrule{2-3}			&{Unrounded} &{Rounded}&\\\midrule
-		Close & \textipa{I i:} & \textipa{Y y:}& \textipa{u u:}\\
-		Mid & \textipa{E e:} & \textipa{\oe~\o:} & \textipa{O o:}\\
-		Open&&&\textipa{5 a:}\\
+		&\multicolumn{2}{c}{\sc front}&\multirow{2}{*}{\sc central}&\multirow{2}{*}{\sc back}\\
+		\cmidrule{2-3} &{Unrounded} &{Rounded}&&\\\midrule
+		Close & \textipa{I i:} & \textipa{Y y:}&\textipa{(1)}& \textipa{u u:}\\
+		Mid & \textipa{E e:} & \textipa{\oe~\o:} && \textipa{O o:}\\
+		Open&&&\textipa{5 a:}&\\
 		\bottomrule
 		\label{table:vowels}
 	\end{tabularx}
@@ -41,15 +42,32 @@ Note that since \ird{y} is used to represent palatalization of a consonant in co
 
 The rounded vowels \bt{Y~y:} and \bt{\oe~\o:} are diphthongized to \nt{Y\tsa{5}~y:\tsa{5}} and \nt{\oe\tsa{Y}~\o y} at the end of a word.
 
-\subsection{Diphthongs}
-Iridian has three oral diphthongs: \ird{av} \nt{a\tsa{u}}, \ird{ei} \nt{\dte}, \ird{ou} \nt{\dto}. In addition, diphthongs may also arise marginally in the following cases:
+\subsection{Diphthongs}\index{diphthong}
+Iridian has three phonemic oral diphthongs: \ird{av} \nt{a\tsa{u}}, \ird{ei} \nt{\dte}, \ird{ou} \nt{\dto}. In addition, the diphthongs \ird{oi} \nt{O\tsa{I}} and \ird{ui} \nt{u\tsa{I}} also occur phonemically, but their occurence is marginal, normally appearing only in fixed expressions such as interjections and expletives.
+
+\ex
+\ird{Avui!} \trsl{Damn it!}\\
+\nt{P5"vu\tsa{I}P} 
+\xe
+
+\ex
+\ird{p\v{s}ehui}, \trsl{annoying}\\
+\nt{"pCexu\tsa{I}P} 
+\xe
+
+
+\ex
+\ird{Oi!} \trsl{Hey!}\\
+\nt{PO\tsa{I}P} 
+\xe
+
 \begin{itemize}
 	\item \nt{O\tsa{I}} and \nt{U\tsa{I}} can be found in the interjections such \ird{avui!} \nt{P5"vU\tsa{I}P} (\trsl{Damn!}) and \ird{oi!} \nt{PO\tsa{I}P} \trsl{Hey!}, often followed by an emphatic glottal stop.
 	\item Diphthongization of word-final \nt{Y~y:} and \nt{\oe~\o:} (see \textit{supra}).
-	\item L-vocalization in coda position. This is however analyzed as a vowel-approximant sequence and not as a diphthong. E.g.,: \ird{aktvel} \nt{P5xt"vEw} \trsl{current}.
+	\item L-vocalization in coda position. This is however analyzed as a vowel-approximant sequence and not as a diphthong. E.g.,: \ird{aktvel} \nt{P5xt"vEw} \trsl{current}.\index{l-vocalization}
 \end{itemize}
 
-\subsection{Nasal Vowels}
+\subsection{Nasal Vowels}\index{vowel!nasal}
 Iridian has three nasal vowels: \ird{\k{a}} \nt{\~5\~w}, \ird{\k{e}} \nt{\~E\~w} and \ird{\k{o}} \nt{\~O}. Nasal vowels are not disinguished for length. In addition, nasal consonants in coda position are normally deleted, and the preceding vowel becomes phonemically nasal. In cases of nasal coda deletion, \ird{a} \nt{5} and \ird{e} \nt{E} are also dipthongized to \nt{\~5\~w} and \nt{\~E\~w}. Unstressed \nt{\~E\~w} is further reduced to \nt{\~@\~w}. This brings the inventory of nasal and nasalized consonants in Iridian to the following: \bt{\~5\~w \~E\~w \~@\~w \~I \~O \~u}
 
 \begin{table}[h!]
@@ -59,7 +77,31 @@ Iridian has three nasal vowels: \ird{\k{a}} \nt{\~5\~w}, \ird{\k{e}} \nt{\~E\~w}
 	\end{tabularx}
 \end{table}
 
-\section{Dipthongs}
+\subsection{Vowel length}\index{vowel length}\index{long vowel|see{vowel length}}
+
+Vowel length is phonemic in Iridian.
+
+\subsection{Vowel reduction}\index{vowel reduction}
+The short vowels \bt{E} and \bt{I} are reduced to \nt{1} in unstressed positions. In less careful speech, this could even the elision of the vowel and the formation of consonant clusters or the realization of the preceding consonant as syllabic (especially if it is a liquid or a nasal).
+
+\ex
+	\ird{pi\'a\v{s}\v{c}em}\\
+	\nt{"p\sx{j}a:C\jn{tC}1m} \emph{or} \nt{"p\sx{j}a:C\jn{tC}\textsyllabic{m}}
+\xe
+
+In a word-final position, it is especially common in casual speech to drop the \nt{1} and lengthen the preceding consonant or, if it is a plosive, to aspirate it. This pronunciation, however, is not considered standard.
+
+\pex
+	\a
+	\ird{r\'ome}\\
+	\nt{\rrr o:m1} \emph{vs} \nt{\rrr o:m:}
+	\a
+	\ird{kante}\\
+	\nt{\jn{kx}ant1} \emph{vs} \nt{\jn{kx}ant\sx{h}:}
+\xe
+
+
+
 
 \section{Consonants}
 
@@ -73,7 +115,7 @@ Iridian has three nasal vowels: \ird{\k{a}} \nt{\~5\~w}, \ird{\k{e}} \nt{\~E\~w}
 		Plosive & p~b		& t~d	&		& 	& \textipa{k~g} \\
 		Nasal	& m				& n		&		& 	& 		\\
 		Liquid	&				& r~l		&		&		&	\\
-		Sib. Fric.& 			&s~z	& \textipa{S~Z} &  &\\
+		Sib. Fric.& 			&s~z	& & \textipa{S~\zz} &\\
 		Non-Sib. Fric.& 		v	&	&  &  &\textipa{x}\\
 		Affricate &				& \textipa{\ttb{ts}}	& \textipa{\ttb{tS}} &  &  \\
 
@@ -94,7 +136,7 @@ Iridian has an extensive system of consonant allophony. Table \ref{table:fullcon
 		Plosive & p~b		& t~d	 &		& (c~\textbardotlessj)	& \textipa{k~g} \\ \addlinespace
 		Nasal	& \textipa{m~(M)}			& n		&		& (\nn)	& 	\textipa{(N)}	\\ \addlinespace
 		Liquid	&				& r~(\textipa{\rrr})~l		&		&	(\textipa{L})	&	\\ \addlinespace
-		Sib. Fric.& 			&s~z	& \textipa{S~Z} & \textipa{(C~\textctz)} &\\ \addlinespace
+		Sib. Fric.& 			&s~z	&  & \textipa{C~\textctz} &\\ \addlinespace
 		Non-Sib. Fricative& 		v	&	&  & (ç) &\textipa{x~(G)}\\ \addlinespace
 		Sib. Affricate &				& \textipa{\ttb{ts}~(\ttb{dz})}	& \textipa{\ttb{tS}~(\ttb{dZ})} &\textipa{(\ttb{tC}~\ttb{d\textctz})}  &  \\ \addlinespace
 		Non-Sib. Aff. &				& \textipa{(\ttb{\|[tT}~\ttb{\|[dD})}	& &\textipa{(\ttb{cç}~\ttb{\jjg J})}  & \textipa{(\ttb{kx}~\ttb{gG})} \\ \addlinespace
