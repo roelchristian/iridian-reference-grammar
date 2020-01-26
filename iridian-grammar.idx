@@ -6,8 +6,9 @@
 \indexentry{vowel!nasal|hyperpage}{4}
 \indexentry{vowel length|hyperpage}{4}
 \indexentry{long vowel|hyperindexformat{\see{vowel length}}}{4}
-\indexentry{vowel reduction|hyperpage}{4}
-\indexentry{yes-no questions|hyperpage}{18}
+\indexentry{acute accent|hyperpage}{4}
+\indexentry{vowel reduction|hyperpage}{5}
+\indexentry{yes-no questions|hyperpage}{19}
 \indexentry{alphabet|hyperpage}{20}
 \indexentry{citation form|hyperpage}{23}
 \indexentry{infinitive|hyperpage}{23}
@@ -16,9 +17,14 @@
 \indexentry{agentive voice|hyperpage}{27}
 \indexentry{compensatory lengthening|hyperpage}{27}
 \indexentry{benefactive focus|hyperpage}{28}
-\indexentry{imperative mood|hyperpage}{33}
-\indexentry{adhortative|hyperpage}{33}
-\indexentry{hortative|hyperpage}{33}
+\indexentry{reciprocative|hyperpage}{33}
+\indexentry{plural|hyperpage}{33}
+\indexentry{comitative|hyperpage}{33}
+\indexentry{mood|hyperpage}{34}
+\indexentry{modality|hyperindexformat{\see{mood}}}{34}
+\indexentry{imperative mood|hyperpage}{34}
+\indexentry{adhortative|hyperpage}{34}
+\indexentry{hortative|hyperpage}{34}
 \indexentry{grammatical number|hyperpage}{47}
 \indexentry{plural|hyperpage}{47}
 \indexentry{niho|hyperpage}{48}
@@ -30,9 +36,30 @@
 \indexentry{agentive case|hyperpage}{49}
 \indexentry{comparison|hyperpage}{49}
 \indexentry{agentive of comparison|hyperpage}{49}
-\indexentry{demonstratives|hyperpage}{57}
-\indexentry{demonstrative pronouns|hyperpage}{57}
-\indexentry{demonstratives|hyperpage}{59}
-\indexentry{conjunctions|hyperpage}{61}
-\indexentry{vo|hyperpage}{61}
-\indexentry{agentive case|hyperpage}{61}
+\indexentry{person, grammatical|hyperpage}{57}
+\indexentry{strong form|hyperpage}{57}
+\indexentry{clitic form|hyperpage}{58}
+\indexentry{politeness|hyperpage}{58}
+\indexentry{T-V distinction|hyperpage}{58}
+\indexentry{forms of address|hyperpage}{58}
+\indexentry{demonstratives|hyperpage}{58}
+\indexentry{demonstrative pronouns|hyperpage}{58}
+\indexentry{wh- questions|hyperpage}{58}
+\indexentry{interrogative pronouns|hyperpage}{58}
+\indexentry{demonstratives|hyperpage}{61}
+\indexentry{conjunctions|hyperpage}{63}
+\indexentry{vo|hyperpage}{63}
+\indexentry{agentive case|hyperpage}{63}
+\indexentry{questions!syntax of|hyperpage}{65}
+\indexentry{yes-no questions|hyperpage}{65}
+\indexentry{tag questions|hyperpage}{66}
+\indexentry{existential constructions|hyperpage}{66}
+\indexentry{je\v{s}|hyperpage}{66}
+\indexentry{wh- questions|hyperpage}{68}
+\indexentry{information question|hyperindexformat{\see{wh-questions}}}{68}
+\indexentry{yes-no questions|hyperpage}{68}
+\indexentry{echo response|hyperpage}{68}
+\indexentry{proclisis|hyperpage}{69}
+\indexentry{literary register|hyperpage}{69}
+\indexentry{forms of address|hyperpage}{75}
+\indexentry{idiomatic expressions|hyperpage}{75}

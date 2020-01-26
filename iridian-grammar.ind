@@ -1,7 +1,8 @@
 \begin{theindex}
 
-  \item adhortative, \hyperpage{33}
-  \item agentive case, \hyperpage{49}, \hyperpage{61}
+  \item acute accent, \hyperpage{4}
+  \item adhortative, \hyperpage{34}
+  \item agentive case, \hyperpage{49}, \hyperpage{63}
   \item agentive of comparison, \hyperpage{49}
   \item agentive voice, \hyperpage{27}
   \item alphabet, \hyperpage{20}
@@ -13,19 +14,27 @@
   \indexspace
 
   \item citation form, \hyperpage{23}
+  \item clitic form, \hyperpage{58}
+  \item comitative, \hyperpage{33}
   \item comparison, \hyperpage{49}
   \item compensatory lengthening, \hyperpage{27}
-  \item conjunctions, \hyperpage{61}
+  \item conjunctions, \hyperpage{63}
 
   \indexspace
 
-  \item demonstrative pronouns, \hyperpage{57}
-  \item demonstratives, \hyperpage{57}, \hyperpage{59}
+  \item demonstrative pronouns, \hyperpage{58}
+  \item demonstratives, \hyperpage{58}, \hyperpage{61}
   \item diphthong, \hyperpage{4}
 
   \indexspace
 
+  \item echo response, \hyperpage{68}
   \item existential construction, \hyperpage{48}
+  \item existential constructions, \hyperpage{66}
+
+  \indexspace
+
+  \item forms of address, \hyperpage{58}, \hyperpage{75}
 
   \indexspace
 
@@ -34,21 +43,30 @@
 
   \indexspace
 
-  \item hortative, \hyperpage{33}
+  \item hortative, \hyperpage{34}
 
   \indexspace
 
-  \item imperative mood, \hyperpage{26}, \hyperpage{33}
+  \item idiomatic expressions, \hyperpage{75}
+  \item imperative mood, \hyperpage{26}, \hyperpage{34}
   \item infinitive, \hyperpage{23}
+  \item information question, \hyperindexformat{\see{wh-questions}}{68}
+  \item interrogative pronouns, \hyperpage{58}
 
   \indexspace
 
-  \item je\v{s}, \hyperpage{48}
+  \item je\v{s}, \hyperpage{48}, \hyperpage{66}
 
   \indexspace
 
   \item l-vocalization, \hyperpage{4}
+  \item literary register, \hyperpage{69}
   \item long vowel, \hyperindexformat{\see{vowel length}}{4}
+
+  \indexspace
+
+  \item modality, \hyperindexformat{\see{mood}}{34}
+  \item mood, \hyperpage{34}
 
   \indexspace
 
@@ -56,8 +74,29 @@
 
   \indexspace
 
-  \item plural, \hyperpage{47}
+  \item person, grammatical, \hyperpage{57}
+  \item plural, \hyperpage{33}, \hyperpage{47}
   \item pluralia tantum, \hyperpage{48}
+  \item politeness, \hyperpage{58}
+  \item proclisis, \hyperpage{69}
+
+  \indexspace
+
+  \item questions
+    \subitem syntax of, \hyperpage{65}
+
+  \indexspace
+
+  \item reciprocative, \hyperpage{33}
+
+  \indexspace
+
+  \item strong form, \hyperpage{57}
+
+  \indexspace
+
+  \item T-V distinction, \hyperpage{58}
+  \item tag questions, \hyperpage{66}
 
   \indexspace
 
@@ -65,17 +104,22 @@
 
   \indexspace
 
-  \item vo, \hyperpage{61}
+  \item vo, \hyperpage{63}
   \item voice, \hyperpage{26}
   \item vowel, \hyperpage{3}
     \subitem inventory, \hyperpage{3}
     \subitem nasal, \hyperpage{4}
     \subitem oral, \hyperpage{3}
   \item vowel length, \hyperpage{4}
-  \item vowel reduction, \hyperpage{4}
+  \item vowel reduction, \hyperpage{5}
 
   \indexspace
 
-  \item yes-no questions, \hyperpage{18}
+  \item wh- questions, \hyperpage{58}, \hyperpage{68}
+
+  \indexspace
+
+  \item yes-no questions, \hyperpage{19}, \hyperpage{65}, 
+		\hyperpage{68}
 
 \end{theindex}
