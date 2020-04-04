@@ -14,46 +14,44 @@
 \contentsline {subsection}{\numberline {2.2.2}Nasals}{7}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Liquids}{8}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Fricatives and Affricates}{8}{subsection.2.2.4}
-\contentsline {subsubsection}{Affricates}{9}{subsubsection*.9}
-\contentsline {subsubsection}{Aspiration}{10}{subsubsection*.10}
-\contentsline {subsection}{\numberline {2.2.5}Sandhi}{10}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Phonetic realization}{10}{subsection.2.2.6}
-\contentsline {subsubsection}{Voicing}{10}{subsubsection*.11}
-\contentsline {subsubsection}{palatalization}{10}{subsubsection*.13}
-\contentsline {section}{\numberline {2.3}Phonotactics}{11}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Syllable structure}{11}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Onset}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Nucleus}{17}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Coda}{17}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Prosody}{17}{section.2.4}
-\contentsline {section}{\numberline {2.5}Consonant Alternations}{17}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Simple palatalization}{17}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Mutation of labials}{17}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Mutation of dentals and velars}{17}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Compound alternations}{17}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Consonant$\sim $zero alternations}{17}{subsection.2.5.5}
-\contentsline {subsection}{\numberline {2.5.6}Voicing and devoicing}{17}{subsection.2.5.6}
-\contentsline {section}{\numberline {2.6}Vowel Alternations}{17}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Compensatory vowel lengthening}{17}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}Other Phonological Processes}{17}{section.2.7}
-\contentsline {section}{\numberline {2.8}Phonological Processes}{17}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Assimilation of loanwords}{17}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Vowel$\sim $zero alternation}{17}{subsection.2.8.2}
-\contentsline {subsubsection}{\_cvcvc stems}{18}{subsubsection*.18}
-\contentsline {subsubsection}{Stem-final vowel$\sim $zero alternation}{18}{subsubsection*.19}
-\contentsline {subsubsection}{Suffix-initial vowel$\sim $zero alternation}{18}{subsubsection*.20}
-\contentsline {subsection}{\numberline {2.8.3}Vowel$\sim $vowel alternation}{18}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}Reduplication}{19}{subsection.2.8.4}
-\contentsline {subsection}{\numberline {2.8.5}Metathesis}{20}{subsection.2.8.5}
-\contentsline {subsubsection}{slot a infixes}{20}{subsubsection*.21}
-\contentsline {section}{\numberline {2.9}Orthographic representation}{20}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Alphabet}{20}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.2.5}Palatalization}{9}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Sandhi}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Phonetic realization}{11}{subsection.2.3.1}
+\contentsline {subsubsection}{Voicing}{11}{subsubsection*.10}
+\contentsline {section}{\numberline {2.4}Phonotactics}{11}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Syllable structure}{11}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Onset}{12}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Nucleus}{17}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Coda}{17}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}Prosody}{17}{section.2.5}
+\contentsline {section}{\numberline {2.6}Consonant Alternations}{17}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Simple palatalization}{17}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Mutation of labials}{17}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Mutation of dentals and velars}{17}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}Compound alternations}{17}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.6.5}Consonant$\sim $zero alternations}{17}{subsection.2.6.5}
+\contentsline {subsection}{\numberline {2.6.6}Voicing and devoicing}{17}{subsection.2.6.6}
+\contentsline {section}{\numberline {2.7}Vowel Alternations}{17}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Compensatory vowel lengthening}{17}{subsection.2.7.1}
+\contentsline {section}{\numberline {2.8}Other Phonological Processes}{17}{section.2.8}
+\contentsline {section}{\numberline {2.9}Phonological Processes}{17}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Assimilation of loanwords}{17}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Vowel$\sim $zero alternation}{17}{subsection.2.9.2}
+\contentsline {subsubsection}{\_cvcvc stems}{18}{subsubsection*.15}
+\contentsline {subsubsection}{Stem-final vowel$\sim $zero alternation}{18}{subsubsection*.16}
+\contentsline {subsubsection}{Suffix-initial vowel$\sim $zero alternation}{18}{subsubsection*.17}
+\contentsline {subsection}{\numberline {2.9.3}Vowel$\sim $vowel alternation}{18}{subsection.2.9.3}
+\contentsline {subsection}{\numberline {2.9.4}Reduplication}{19}{subsection.2.9.4}
+\contentsline {subsection}{\numberline {2.9.5}Metathesis}{20}{subsection.2.9.5}
+\contentsline {subsubsection}{slot a infixes}{20}{subsubsection*.18}
+\contentsline {section}{\numberline {2.10}Orthographic representation}{20}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Alphabet}{20}{subsection.2.10.1}
 \contentsline {chapter}{\numberline {3}Verbs}{23}{chapter.3}
 \contentsline {section}{\numberline {3.1}Categories}{23}{section.3.1}
 \contentsline {section}{\numberline {3.2}Verb stems and citation forms}{23}{section.3.2}
 \contentsline {section}{\numberline {3.3}Order of Affixes and Assimilation}{24}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Assimilation of Affixes}{24}{subsection.3.3.1}
-\contentsline {subsubsection}{Type I assimilation (c/\v {c})}{24}{subsubsection*.24}
+\contentsline {subsubsection}{Type I assimilation (c/\v {c})}{24}{subsubsection*.21}
 \contentsline {section}{\numberline {3.4}Voice}{24}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Agentive voice}{24}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Patientive focus}{25}{subsection.3.4.2}
@@ -75,15 +73,15 @@
 \contentsline {subsection}{\numberline {3.7.1}Indicative}{31}{subsection.3.7.1}
 \contentsline {subsection}{\numberline {3.7.2}Imperative}{31}{subsection.3.7.2}
 \contentsline {subsection}{\numberline {3.7.3}Subjunctive}{32}{subsection.3.7.3}
-\contentsline {subsubsection}{jussive/desiderative}{33}{subsubsection*.28}
-\contentsline {subsubsection}{dubitative}{33}{subsubsection*.29}
-\contentsline {subsubsection}{with verbs expressing emotion}{33}{subsubsection*.30}
-\contentsline {subsubsection}{with the conditional mood}{33}{subsubsection*.31}
-\contentsline {subsubsection}{expressing judgment}{33}{subsubsection*.32}
-\contentsline {subsubsection}{irrealis}{34}{subsubsection*.33}
+\contentsline {subsubsection}{jussive/desiderative}{33}{subsubsection*.25}
+\contentsline {subsubsection}{dubitative}{33}{subsubsection*.26}
+\contentsline {subsubsection}{with verbs expressing emotion}{33}{subsubsection*.27}
+\contentsline {subsubsection}{with the conditional mood}{33}{subsubsection*.28}
+\contentsline {subsubsection}{expressing judgment}{33}{subsubsection*.29}
+\contentsline {subsubsection}{irrealis}{34}{subsubsection*.30}
 \contentsline {subsection}{\numberline {3.7.4}Conditional}{34}{subsection.3.7.4}
-\contentsline {subsubsection}{conditional realis}{34}{subsubsection*.35}
-\contentsline {subsubsection}{conditional irrealis}{34}{subsubsection*.36}
+\contentsline {subsubsection}{conditional realis}{34}{subsubsection*.32}
+\contentsline {subsubsection}{conditional irrealis}{34}{subsubsection*.33}
 \contentsline {subsection}{\numberline {3.7.5}Hortative}{34}{subsection.3.7.5}
 \contentsline {subsection}{\numberline {3.7.6}Optative}{35}{subsection.3.7.6}
 \contentsline {subsection}{\numberline {3.7.7}Quotative }{35}{subsection.3.7.7}
@@ -162,7 +160,7 @@
 \contentsline {subsection}{\numberline {7.4.2}Wh- questions}{62}{subsection.7.4.2}
 \contentsline {subsection}{\numberline {7.4.3}Indirect questions}{62}{subsection.7.4.3}
 \contentsline {subsection}{\numberline {7.4.4}Answering questions}{63}{subsection.7.4.4}
-\contentsline {subsubsection}{Answering yes-no questions}{63}{subsubsection*.53}
+\contentsline {subsubsection}{Answering yes-no questions}{63}{subsubsection*.50}
 \contentsline {section}{\numberline {7.5}Negation}{64}{section.7.5}
 \contentsline {section}{\numberline {7.6}Existential Constructions}{65}{section.7.6}
 \contentsline {subsection}{\numberline {7.6.1}Possession}{65}{subsection.7.6.1}
