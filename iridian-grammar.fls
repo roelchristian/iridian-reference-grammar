@@ -461,8 +461,6 @@ INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
-INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
-INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.aux
@@ -899,22 +897,23 @@ INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.tex
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.tex
-OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
-INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.tex
-INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.tex
-OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
-INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex
-INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1--base.tfm
+OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex
+INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.tex
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1--base.tfm
 OUTPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.tex
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.tex
@@ -952,8 +951,6 @@ INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux
-INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
-INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux
 INPUT /home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.aux
@@ -974,6 +971,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbit8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbite.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbn8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbne.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbsc8a.pfb

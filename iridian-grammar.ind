@@ -1,111 +1,117 @@
 \begin{theindex}
 
   \item acute accent, \hyperpage{4}
-  \item adhortative, \hyperpage{34}
-  \item agentive case, \hyperpage{49}, \hyperpage{63}
-  \item agentive of comparison, \hyperpage{49}
-  \item agentive voice, \hyperpage{27}
+  \item adhortative, \hyperpage{31}
+  \item agentive case, \hyperpage{45}, \hyperpage{57}
+  \item agentive of comparison, \hyperpage{45}
+  \item agentive voice, \hyperpage{24}
   \item alphabet, \hyperpage{20}
+  \item attributive verbs, \hyperpage{40}
 
   \indexspace
 
-  \item benefactive focus, \hyperpage{28}
+  \item benefactive focus, \hyperpage{25}
 
   \indexspace
 
   \item citation form, \hyperpage{23}
-  \item clitic form, \hyperpage{58}
-  \item comitative, \hyperpage{33}
-  \item comparison, \hyperpage{49}
-  \item compensatory lengthening, \hyperpage{27}
-  \item conjunctions, \hyperpage{63}
+  \item clitic form, \hyperpage{54}
+  \item comitative, \hyperpage{31}
+  \item comparison, \hyperpage{45}
+  \item compensatory lengthening, \hyperpage{25}
+  \item conjunctions, \hyperpage{57}
+  \item converb, \hyperpage{38}, \hyperpage{69}
 
   \indexspace
 
-  \item demonstrative pronouns, \hyperpage{58}
-  \item demonstratives, \hyperpage{58}, \hyperpage{61}
+  \item demonstrative pronouns, \hyperpage{54}
+  \item demonstratives, \hyperpage{54}
   \item diphthong, \hyperpage{4}
 
   \indexspace
 
-  \item echo response, \hyperpage{68}
-  \item existential construction, \hyperpage{48}
-  \item existential constructions, \hyperpage{66}
+  \item echo response, \hyperpage{63}
+  \item existential construction, \hyperpage{44}
+  \item existential constructions, \hyperpage{61}
 
   \indexspace
 
-  \item forms of address, \hyperpage{58}, \hyperpage{75}
+  \item forms of address, \hyperpage{54}, \hyperpage{71}
 
   \indexspace
 
-  \item generic statements, \hyperpage{48}
-  \item grammatical number, \hyperpage{47}
+  \item generic statements, \hyperpage{44}
+  \item grammatical number, \hyperpage{43}
 
   \indexspace
 
-  \item hortative, \hyperpage{34}
+  \item hortative, \hyperpage{32}
 
   \indexspace
 
-  \item idiomatic expressions, \hyperpage{75}
-  \item imperative mood, \hyperpage{26}, \hyperpage{34}
+  \item idiomatic expressions, \hyperpage{71}
+  \item imperative mood, \hyperpage{31}
   \item infinitive, \hyperpage{23}
-  \item information question, \hyperindexformat{\see{wh-questions}}{68}
-  \item interrogative pronouns, \hyperpage{58}
+  \item information question, \hyperindexformat{\see{wh-questions}}{62}
+  \item interrogative pronouns, \hyperpage{55}
 
   \indexspace
 
-  \item je\v{s}, \hyperpage{48}, \hyperpage{66}
+  \item je\v{s}, \hyperpage{44}, \hyperpage{61}
 
   \indexspace
 
   \item l-vocalization, \hyperpage{4}
-  \item literary register, \hyperpage{69}
+  \item literary register, \hyperpage{64}
   \item long vowel, \hyperindexformat{\see{vowel length}}{4}
 
   \indexspace
 
-  \item modality, \hyperindexformat{\see{mood}}{34}
-  \item mood, \hyperpage{34}
+  \item modality, \hyperindexformat{\see{mood}}{31}
+  \item mood, \hyperpage{31}
 
   \indexspace
 
-  \item niho, \hyperpage{48}
+  \item negative pronouns, \hyperpage{55}
+  \item niho, \hyperpage{44}
 
   \indexspace
 
-  \item person, grammatical, \hyperpage{57}
-  \item plural, \hyperpage{33}, \hyperpage{47}
-  \item pluralia tantum, \hyperpage{48}
-  \item politeness, \hyperpage{58}
-  \item proclisis, \hyperpage{69}
+  \item person, grammatical, \hyperpage{53}
+  \item plural, \hyperpage{30}, \hyperpage{43}
+  \item pluralia tantum, \hyperpage{44}
+  \item politeness, \hyperpage{54}
+  \item proclisis, \hyperpage{64}
 
   \indexspace
 
   \item questions
-    \subitem syntax of, \hyperpage{65}
+    \subitem syntax of, \hyperpage{59}
 
   \indexspace
 
-  \item reciprocative, \hyperpage{33}
+  \item reciprocative, \hyperpage{30}
 
   \indexspace
 
-  \item strong form, \hyperpage{57}
+  \item strong form, \hyperpage{53}
 
   \indexspace
 
-  \item T-V distinction, \hyperpage{58}
-  \item tag questions, \hyperpage{66}
+  \item T-V distinction, \hyperpage{54}
+  \item tag questions, \hyperpage{60}
 
   \indexspace
 
-  \item universals, \hyperpage{48}
+  \item universal pronouns, \hyperpage{55}
+  \item universals, \hyperpage{44}
 
   \indexspace
 
-  \item vo, \hyperpage{63}
-  \item voice, \hyperpage{26}
+  \item verbal adjectives, 
+		\hyperindexformat{\see{attributive verbs}}{40}
+  \item vo, \hyperpage{57}
+  \item voice, \hyperpage{24}
   \item vowel, \hyperpage{3}
     \subitem inventory, \hyperpage{3}
     \subitem nasal, \hyperpage{4}
@@ -115,11 +121,11 @@
 
   \indexspace
 
-  \item wh- questions, \hyperpage{58}, \hyperpage{68}
+  \item wh- questions, \hyperpage{55}, \hyperpage{62}
 
   \indexspace
 
-  \item yes-no questions, \hyperpage{19}, \hyperpage{65}, 
-		\hyperpage{68}
+  \item yes-no questions, \hyperpage{19}, \hyperpage{59}, 
+		\hyperpage{63}
 
 \end{theindex}
