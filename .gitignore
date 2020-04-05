@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.out
+*.ilg
+*.ind
+*.mtc
+*.mtc0
+*.maf
+*.idx
+*.lot

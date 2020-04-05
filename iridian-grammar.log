@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.1)  5 APR 2020 22:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.1)  6 APR 2020 01:22
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.tex"
-(/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.tex
+**iridian-grammar.tex
+(./iridian-grammar.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
@@ -24,17 +23,22 @@ File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -49,17 +53,20 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
- (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -299,7 +306,8 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
- (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -339,7 +347,8 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
- (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -362,14 +371,18 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/kpfonts.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/kpfonts.sty
 Package: kpfonts  2010/08/20 v3.31
- (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -384,11 +397,13 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 Package textcomp Info: Changing ? sub-encoding to TS1/0 on input line 80.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -485,6 +500,7 @@ Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
 Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
 Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
 Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
 Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
 Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
 Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
@@ -522,21 +538,25 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen111
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen112
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count91
@@ -836,54 +856,74 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `rm'
 (Font)                  U/jkplexa/m/n --> U/jkplexa/m/n on input line 617.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldrm'
+
 (Font)                  U/jkplexa/m/n --> U/jkplexa/bx/n on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `sf'
 (Font)                  U/jkplexa/m/n --> U/jkpexa/m/n on input line 619.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldsf'
+
 (Font)                  U/jkplexa/m/n --> U/jkpexa/bx/n on input line 620.
 LaTeX Info: Redefining \not on input line 1580.
-) (/usr/share/texlive/texmf-dist/tex/latex/libertine/biolinum.sty
-Package: biolinum 2014/02/11 (Bob Tennent) Supports Biolinum fonts for all LaTeX engines.
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/libertine/biolinum.sty
+Package: biolinum 2014/02/11 (Bob Tennent) Supports Biolinum fonts for all LaTe
+X engines.
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-) (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
- (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks23
 \XKV@tempa@toks=\toks24
 )
 \XKV@depth=\count107
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
-)) (/usr/share/texmf/tex/latex/tipa/tipa.sty
+))
+(/usr/share/texmf/tex/latex/tipa/tipa.sty
 Package: tipa 2002/08/08 TIPA version 1.1
- (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
- (/usr/share/texmf/tex/latex/tipa/t3enc.def
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
 Now handling font encoding T3 ...
 ... no UTF-8 mapping file for font encoding T3
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 357.
- (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
-File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
+nput line 357.
+
+(/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
+File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
+uxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 357.
-) (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))) (/usr/share/texlive/texmf-dist/tex/latex/savetrees/savetrees.sty
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/savetrees/savetrees.sty
 Package: savetrees 2016/04/13 v2.4 Pack as much text as possible onto each page
+
 \everypar=\toks25
-) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box28
 \beforetitleunit=\skip46
@@ -894,7 +934,8 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidth=\dimen122
 \titlewidthlast=\dimen123
 \titlewidthfirst=\dimen124
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count108
 \calc@Bcount=\count109
@@ -906,7 +947,8 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count110
 \calc@Cskip=\skip50
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks27
 \MT@count=\count111
@@ -914,25 +956,31 @@ LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen127
 LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
 \MT@listname@count=\count112
- (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
+
 LaTeX Info: Redefining \lsstyle on input line 913.
 LaTeX Info: Redefining \lslig on input line 913.
 \MT@outer@space=\skip51
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
-)) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count113
 \float@exts=\toks28
 \float@box=\box29
 \@float@everytoks=\toks29
 \@floatcapt=\box30
-) (/usr/share/texlive/texmf-dist/tex/generic/expex/expex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/expex/expex.sty
 Package: expex 5/1/2017 v5.1b LaTex wrapper for expex.tex (JF)
- (/usr/share/texlive/texmf-dist/tex/generic/expex/expex.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/expex/expex.tex
 File: expex.tex 5/25/2017 v5.1b ExPex linguistics example formatter (JF)
 \ep@dima=\dimen128
 \ep@dimb=\dimen129
@@ -971,23 +1019,30 @@ File: expex.tex 5/25/2017 v5.1b ExPex linguistics example formatter (JF)
 \glwcascade@pshapelinewd=\dimen143
 \ssleftwd=\dimen144
 \ssrightwd=\dimen145
-)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen146
 \Gin@req@width=\dimen147
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 59.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
@@ -1029,20 +1084,26 @@ LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 48.
 LaTeX Font Info:    Redeclaring math symbol \centerdot on input line 49.
 LaTeX Font Info:    Redeclaring math symbol \blacklozenge on input line 51.
 LaTeX Font Info:    Redeclaring math symbol \circlearrowright on input line 52.
+
 LaTeX Font Info:    Redeclaring math symbol \circlearrowleft on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 56
+.
 LaTeX Font Info:    Redeclaring math symbol \boxminus on input line 57.
 LaTeX Font Info:    Redeclaring math symbol \Vdash on input line 58.
 LaTeX Font Info:    Redeclaring math symbol \Vvdash on input line 59.
 LaTeX Font Info:    Redeclaring math symbol \vDash on input line 60.
-LaTeX Font Info:    Redeclaring math symbol \twoheadrightarrow on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \twoheadrightarrow on input line 61
+.
 LaTeX Font Info:    Redeclaring math symbol \twoheadleftarrow on input line 62.
+
 LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 63.
 LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 64.
+
 LaTeX Font Info:    Redeclaring math symbol \upuparrows on input line 65.
 LaTeX Font Info:    Redeclaring math symbol \downdownarrows on input line 66.
 LaTeX Font Info:    Redeclaring math symbol \upharpoonright on input line 67.
 LaTeX Font Info:    Redeclaring math symbol \downharpoonright on input line 69.
+
 LaTeX Font Info:    Redeclaring math symbol \upharpoonleft on input line 70.
 LaTeX Font Info:    Redeclaring math symbol \downharpoonleft on input line 71.
 LaTeX Font Info:    Redeclaring math symbol \rightarrowtail on input line 72.
@@ -1051,7 +1112,8 @@ LaTeX Font Info:    Redeclaring math symbol \leftrightarrows on input line 74.
 LaTeX Font Info:    Redeclaring math symbol \rightleftarrows on input line 75.
 LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 76.
 LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 77.
-LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 
+79.
 LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 80.
 LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 81.
 LaTeX Font Info:    Redeclaring math symbol \circeq on input line 82.
@@ -1083,9 +1145,12 @@ LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 108.
 LaTeX Font Info:    Redeclaring math symbol \gtrless on input line 109.
 LaTeX Font Info:    Redeclaring math symbol \bigstar on input line 117.
 LaTeX Font Info:    Redeclaring math symbol \between on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 119.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 11
+9.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
+20.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 12
+1.
 LaTeX Font Info:    Redeclaring math symbol \vartriangle on input line 122.
 LaTeX Font Info:    Redeclaring math symbol \blacktriangle on input line 123.
 LaTeX Font Info:    Redeclaring math symbol \triangledown on input line 124.
@@ -1112,6 +1177,7 @@ LaTeX Font Info:    Redeclaring math symbol \curlywedge on input line 148.
 LaTeX Font Info:    Redeclaring math symbol \curlyvee on input line 149.
 LaTeX Font Info:    Redeclaring math symbol \leftthreetimes on input line 150.
 LaTeX Font Info:    Redeclaring math symbol \rightthreetimes on input line 151.
+
 LaTeX Font Info:    Redeclaring math symbol \subseteqq on input line 152.
 LaTeX Font Info:    Redeclaring math symbol \supseteqq on input line 153.
 LaTeX Font Info:    Redeclaring math symbol \bumpeq on input line 154.
@@ -1180,8 +1246,10 @@ LaTeX Font Info:    Redeclaring math symbol \nvdash on input line 219.
 LaTeX Font Info:    Redeclaring math symbol \nVdash on input line 220.
 LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 221.
 LaTeX Font Info:    Redeclaring math symbol \nVDash on input line 222.
-LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 223.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 223
+.
 LaTeX Font Info:    Redeclaring math symbol \ntrianglelefteq on input line 224.
+
 LaTeX Font Info:    Redeclaring math symbol \ntriangleleft on input line 225.
 LaTeX Font Info:    Redeclaring math symbol \ntriangleright on input line 226.
 LaTeX Font Info:    Redeclaring math symbol \nleftarrow on input line 227.
@@ -1189,7 +1257,9 @@ LaTeX Font Info:    Redeclaring math symbol \nrightarrow on input line 228.
 LaTeX Font Info:    Redeclaring math symbol \nLeftarrow on input line 229.
 LaTeX Font Info:    Redeclaring math symbol \nRightarrow on input line 230.
 LaTeX Font Info:    Redeclaring math symbol \nLeftrightarrow on input line 231.
+
 LaTeX Font Info:    Redeclaring math symbol \nleftrightarrow on input line 232.
+
 LaTeX Font Info:    Redeclaring math symbol \divideontimes on input line 233.
 LaTeX Font Info:    Redeclaring math symbol \varnothing on input line 234.
 LaTeX Font Info:    Redeclaring math symbol \nexists on input line 235.
@@ -1214,33 +1284,43 @@ LaTeX Font Info:    Redeclaring math symbol \succapprox on input line 255.
 LaTeX Font Info:    Redeclaring math symbol \precapprox on input line 256.
 LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 257.
 LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 258.
+
 LaTeX Font Info:    Redeclaring math symbol \digamma on input line 259.
 LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
 LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
-) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/idxlayout/idxlayout.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/idxlayout/idxlayout.sty
 Package: idxlayout 2012/03/30 v0.4d Configurable index layout
- (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count121
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-))) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \c@tracingmulticols=\count122
 \mult@box=\box35
@@ -1302,7 +1382,8 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 Writing index file iridian-grammar.idx
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
- (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen157
@@ -1315,7 +1396,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@ContinuedFloat=\count132
 Package caption Info: float package is loaded.
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip58
 \LTright=\skip59
@@ -1332,15 +1414,19 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@tables=\count136
 \c@LT@chunks=\count137
 \LT@p@ftn=\toks36
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-) (/usr/share/texlive/texmf-dist/tex/latex/minitoc/minitoc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/minitoc.sty
 Package: minitoc 2015/07/13 v61 Package minitoc
- (/usr/share/texlive/texmf-dist/tex/latex/minitoc/mtcmess.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/mtcmess.sty
 Package: mtcmess 2006/03/14
 )
 Package minitoc Info: I0001
@@ -1363,7 +1449,8 @@ Package minitoc Info: I0002
 
 \openout5 = `iridian-grammar.mtc'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.mtc0)
+
+(./iridian-grammar.mtc0)
 Package minitoc Info: I0012
 (minitoc)             Long extensions (Unix-like) will be used.
 Package minitoc Info: I0031
@@ -1381,18 +1468,23 @@ Package minitoc Info: I0031
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4909.
- (/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
+
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
 File: english.mld 2006/01/13
-) (/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
 File: english.mld 2006/01/13
-)) (/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks38
 \AP@partial=\box67
 \AP@footins=\box68
-) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -1405,9 +1497,11 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
- (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen165
 \extrarowheight=\dimen166
@@ -1417,11 +1511,15 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 )
 \everycr=\toks40
 \minrowclearance=\skip67
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1433,13 +1531,15 @@ Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
 Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
@@ -1451,19 +1551,22 @@ Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen167
 \Hy@linkcounter=\count142
 \Hy@pagecounter=\count143
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count144
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4509.
@@ -1474,7 +1577,8 @@ Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count145
- (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -1497,17 +1601,22 @@ LaTeX Info: Redefining \pageref on input line 6443.
 \c@Hfootnote=\count149
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count150
 \c@bookmark@seq@number=\count151
- (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip68
-) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
 \f@nch@headwidth=\skip69
 \f@nch@O@elh=\skip70
 \f@nch@O@erh=\skip71
@@ -1517,11 +1626,15 @@ Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
 \f@nch@O@erf=\skip75
 \f@nch@O@olf=\skip76
 \f@nch@O@orf=\skip77
-) (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2018/02/21 L3 programming layer (loader) 
- (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/02/21 L3 programming layer (code)
 \c_max_int=\count152
 \l_tmpa_int=\count153
@@ -1664,11 +1777,13 @@ Package: expl3 2018/02/21 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen199
 \l__coffin_scaled_total_height_dim=\dimen256
 \l__coffin_scaled_width_dim=\dimen257
-) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count301
 \l__driver_tmp_box=\box84
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2018/02/21 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count302
 \g__xparse_grabber_int=\count303
@@ -1677,7 +1792,8 @@ Package: xparse 2018/02/21 L3 Experimental document command parser
 \l__xparse_v_nesting_int=\count306
 )
 Package: siunitx 2017/11/26 v2.7k A comprehensive (SI) units package
- (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box85
@@ -1836,9 +1952,11 @@ Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 . Defining command \siInBookmark with sig. 'om' on line 7432.
 .................................................
 \g__file_internal_ior=\read2
- (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
-)) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@col@width=\dimen270
 \TX@old@table=\dimen271
@@ -1847,9 +1965,11 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@delta=\dimen274
 \TX@cols=\count324
 \TX@ftn=\toks41
-) (/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
- (/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip88
@@ -1866,7 +1986,8 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedLeftParindent=\skip99
 \RaggedRightParindent=\skip100
 \JustifyingParindent=\skip101
-) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen275
 \lightrulewidth=\dimen276
@@ -1885,9 +2006,11 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count327
 \@lastruleclass=\count328
 \@thisrulewidth=\dimen287
-) (/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
- (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box92
 \sift@deathcycles=\count329
@@ -1916,21 +2039,29 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@hleads=\box95
 \tabu@vleads=\box96
 \tabu@cellskip=\skip102
-) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip103
 \multirow@cntb=\count336
 \multirow@dima=\skip104
 \bigstrutjot=\dimen299
-) (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.aux (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/abbrev.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter00.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter01.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux
+)
+(./iridian-grammar.aux (./TeX_files/preface.aux) (./TeX_files/abbrev.aux)
+(./TeX_files/chapter00.aux) (./TeX_files/chapter01.aux)
+(./TeX_files/chapter02.aux) (./TeX_files/chapter03.aux
 
 LaTeX Warning: Label `3099' multiply defined.
 
-) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.aux) (/home/roel/Documents/TeX/Iridian Grammar/TeX_files/samptexts.aux))
+) (./TeX_files/pronoun.aux) (./TeX_files/chapter05.aux)
+(./TeX_files/chapter06.aux) (./TeX_files/chapter07.aux)
+(./TeX_files/chapter08.aux) (./TeX_files/appx01.aux) (./TeX_files/samptexts.aux
+))
 \openout1 = `iridian-grammar.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 135.
-LaTeX Font Info:    Try loading font information for OML+jkpl on input line 135.
+LaTeX Font Info:    Try loading font information for OML+jkpl on input line 135
+.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omljkpl.fd
 File: omljkpl.fd 2006/08/15 v1.0
 )
@@ -1940,39 +2071,50 @@ LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 135.
-LaTeX Font Info:    Try loading font information for OMS+jkpl on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omsjkpl.fd
+LaTeX Font Info:    Try loading font information for OMS+jkpl on input line 135
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omsjkpl.fd
 File: omsjkpl.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 135.
-LaTeX Font Info:    Try loading font information for OMX+jkpl on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omxjkpl.fd
+LaTeX Font Info:    Try loading font information for OMX+jkpl on input line 135
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omxjkpl.fd
 File: omxjkpl.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 135.
-LaTeX Font Info:    Try loading font information for U+jkplexa on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplexa.fd
+LaTeX Font Info:    Try loading font information for U+jkplexa on input line 13
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplexa.fd
 File: ujkplexa.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 135.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 135.
- (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Try loading font information for T1+jkpl on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkpl.fd
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkpl.fd
 File: t1jkpl.fd 2007/08/30 Fontinst v1.928 font definitions for T1/jkpl.
 )
 *geometry* driver: auto-detecting
@@ -2041,20 +2183,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
- (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
@@ -2092,7 +2240,8 @@ Package minitoc(hints) Warning: W0023
 Package hyperref Info: Link coloring OFF on input line 135.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count345
@@ -2100,47 +2249,64 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 135.
 LaTeX Info: Redefining \pageref on input line 135.
 LaTeX Info: Redefining \nameref on input line 135.
- (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.out) (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.out)
+
+(./iridian-grammar.out) (./iridian-grammar.out)
 \@outlinefile=\write6
 \openout6 = `iridian-grammar.out'.
 
- (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
+-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
-) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
-) ABD: EverySelectfont initializing macros
+)
+ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 135.
 \c__siunitx_mathsf_int=\count346
-LaTeX Font Info:    Try loading font information for OT1+jkpl on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkpl.fd
+LaTeX Font Info:    Try loading font information for OT1+jkpl on input line 135
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkpl.fd
 File: ot1jkpl.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkpl.
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpl' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for U+jkplmia on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplmia.fd
+LaTeX Font Info:    Try loading font information for U+jkplmia on input line 13
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplmia.fd
 File: ujkplmia.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+jkplsyc on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplsyc.fd
+LaTeX Font Info:    Try loading font information for U+jkplsyc on input line 13
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkplsyc.fd
 File: ujkplsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for OT1+jkpss on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
+LaTeX Font Info:    Try loading font information for OT1+jkpss on input line 13
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2148,8 +2314,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \c__siunitx_mathtt_int=\count347
-LaTeX Font Info:    Try loading font information for OT1+jkptt on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkptt.fd
+LaTeX Font Info:    Try loading font information for OT1+jkptt on input line 13
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkptt.fd
 File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2160,10 +2328,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkpl.fd)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkpl.fd)
 \excnt=1
 \excnt=1
-[2] (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.toc [3
+[2] (./iridian-grammar.toc [3
 
 ] [4] [5] [6])
 \tf@toc=\write7
@@ -2171,7 +2340,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 
  [7] [8
 
-] (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.lot [9
+] (./iridian-grammar.lot
+[9
 
 ])
 \tf@lot=\write8
@@ -2180,20 +2350,21 @@ Package microtype Info: Loading generic protrusion settings for font family
  [10]
 \openout2 = `./TeX_files/preface.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.tex) [11
+ (./TeX_files/preface.tex) [11
 
 
 ]
 \openout2 = `./TeX_files/abbrev.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/abbrev.tex [12
+ (./TeX_files/abbrev.tex [12
 
 
 
-] [13]) [14]
+] [13])
+[14]
 \openout2 = `./TeX_files/chapter00.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter00.tex
+ (./TeX_files/chapter00.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 3.
@@ -2209,7 +2380,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 ]
 \openout2 = `./TeX_files/chapter01.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter01.tex [2
+ (./TeX_files/chapter01.tex [2
 
 
 
@@ -2224,7 +2395,8 @@ LaTeX Font Warning: Font shape `T3/jkpl/m/n' undefined
 (Font)              using `T3/cmr/m/n' instead on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
 )
 Overfull \hbox (0.7076pt too wide) in paragraph at lines 19--19
  []|[]| 
@@ -2831,7 +3003,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) [21] [22] [23]
 \openout2 = `./TeX_files/chapter02.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.tex [24
+ (./TeX_files/chapter02.tex [24
 
 
 
@@ -2850,19 +3022,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37] [38] [39] [40] [41] [42]) [43]
+[37] [38] [39] [40] [41]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42] [43]) [44]
 \openout2 = `./TeX_files/chapter03.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.tex [44
+ (./TeX_files/chapter03.tex
+Chapter 4.
+[45
 
 
 
 ]
-Chapter 4.
-[45]
 Underfull \vbox (badness 1052) has occurred while \output is active []
 
- [46] [47] [48] [49] [50] [51]
+ [46]
+[47] [48] [49] [50] [51]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2879,7 +3056,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) [53] [54]
 \openout2 = `./TeX_files/pronoun.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.tex
+ (./TeX_files/pronoun.tex
 Chapter 5.
 
 Underfull \vbox (badness 7326) has occurred while \output is active []
@@ -2900,36 +3077,31 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [57] [58]
-\openout2 = `./TeX_files/chapter04.aux'.
+\openout2 = `./TeX_files/chapter05.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.tex
+ (./TeX_files/chapter05.tex
 Chapter 6.
 [59
 
 
 
-]) [60]
-\openout2 = `./TeX_files/chapter05.aux'.
-
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.tex
-Chapter 7.
-) [61
-
-
+] [60
 
 ]
+Chapter 7.
+[61]) [62]
 \openout2 = `./TeX_files/chapter06.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.tex [62
-
-
-
-]
+ (./TeX_files/chapter06.tex
 Chapter 8.
-[63] [64] [65] [66] [67] [68] [69] [70] [71]) [72]
+[63
+
+
+
+] [64] [65] [66] [67] [68] [69] [70] [71]) [72]
 \openout2 = `./TeX_files/chapter07.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.tex
+ (./TeX_files/chapter07.tex
 Chapter 9.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 3.
@@ -2940,7 +3112,7 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 ]
 \openout2 = `./TeX_files/chapter08.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.tex [74
+ (./TeX_files/chapter08.tex [74
 
 
 
@@ -2949,7 +3121,7 @@ Chapter 10.
 ) [75]
 \openout2 = `./TeX_files/appx01.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.tex [76
+ (./TeX_files/appx01.tex [76
 
 
 
@@ -2960,7 +3132,7 @@ Appendix A.
 ]
 \openout2 = `TeX_files/samptexts.aux'.
 
- (/home/roel/Documents/TeX/Iridian Grammar/TeX_files/samptexts.tex [80
+ (./TeX_files/samptexts.tex [80
 
 
 
@@ -2969,9 +3141,8 @@ Appendix B.
 ) [81] [82
 
 
-] (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.ind [83
-
-])
+]
+No file iridian-grammar.ind.
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the iridian-grammar.maf file.
@@ -2983,19 +3154,24 @@ Package minitoc(hints) Info: I0053
 (minitoc(hints))             facilities can not be used for new types 
 (minitoc(hints))             of floats defined by the float package.
 
-
 Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the iridian-grammar.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
-[84]
+[83]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
- (/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.aux (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/preface.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/abbrev.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter00.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter01.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter02.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter03.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/pronoun.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter04.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter05.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter06.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter07.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/chapter08.aux) (/home/roel/Documents/TeX/Iridian Grammar/./TeX_files/appx01.aux) (/home/roel/Documents/TeX/Iridian Grammar/TeX_files/samptexts.aux))
+ (./iridian-grammar.aux (./TeX_files/preface.aux) (./TeX_files/abbrev.aux)
+(./TeX_files/chapter00.aux) (./TeX_files/chapter01.aux)
+(./TeX_files/chapter02.aux) (./TeX_files/chapter03.aux)
+(./TeX_files/pronoun.aux) (./TeX_files/chapter05.aux)
+(./TeX_files/chapter06.aux) (./TeX_files/chapter07.aux)
+(./TeX_files/chapter08.aux) (./TeX_files/appx01.aux) (./TeX_files/samptexts.aux
+))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `iridian-grammar.out' has not changed.
-(rerunfilecheck)             Checksum: DDD366495DA8E79B9C816B1E7E26C081;11327.
+(rerunfilecheck)             Checksum: 94023A39AC9E29362F26D5C43CB9011C;11248.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3005,20 +3181,38 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29935 strings out of 492982
- 531599 string characters out of 6134896
- 681652 words of memory out of 5000000
- 31586 multiletter control sequences out of 15000+600000
- 1060015 words of font info for 732 fonts, out of 8000000 for 9000
+ 29925 strings out of 492982
+ 527024 string characters out of 6134896
+ 681197 words of memory out of 5000000
+ 31585 multiletter control sequences out of 15000+600000
+ 1060671 words of font info for 736 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,24n,92p,10430b,1118s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exist, replaced by a fixed one
+ 53i,24n,92p,10387b,1144s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not ex
+ist, replaced by a fixed one
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbite.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbsc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmnc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmsc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa8.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa9.pfb>
-Output written on "/home/roel/Documents/TeX/Iridian Grammar/iridian-grammar.pdf" (98 pages, 464586 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/
+share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share
+/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/
+fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/kpfonts/jkplbit8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/kpfonts/jkplbite.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/kpfonts/jkplbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts
+/jkplbne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplbsc8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmit8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmn8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/kpfonts/jkplmnc.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/kpfonts/jkplmne.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/kpfonts/jkplmsc8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/kpfonts/jkplsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10
+.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa8.pfb></usr/share/texmf/fonts/t
+ype1/fkr/tipa/tipa9.pfb>
+Output written on iridian-grammar.pdf (97 pages, 461272 bytes).
 PDF statistics:
- 1807 PDF objects out of 2073 (max. 8388607)
- 1669 compressed objects within 17 object streams
- 480 named destinations out of 1000 (max. 500000)
- 172369 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 1725 PDF objects out of 1728 (max. 8388607)
+ 1589 compressed objects within 16 object streams
+ 478 named destinations out of 1000 (max. 500000)
+ 172361 words of extra memory for PDF output out of 184870 (max. 10000000)
 

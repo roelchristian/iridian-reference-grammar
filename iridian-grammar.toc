@@ -87,11 +87,10 @@
 \contentsline {subsection}{\numberline {3.7.1}Gerund}{40}{subsection.3.7.1}
 \contentsline {subsection}{\numberline {3.7.2}Converbs}{41}{subsection.3.7.2}
 \contentsline {subsection}{\numberline {3.7.3}Supine}{41}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}Periphrastic Constructions}{42}{section.3.8}
-\contentsline {section}{\numberline {3.9}Attributive Verbs}{42}{section.3.9}
-\contentsline {section}{\numberline {3.10}Formation of Verbs}{42}{section.3.10}
-\contentsline {subsection}{\numberline {3.10.1}External Derivation}{42}{subsection.3.10.1}
-\contentsline {subsection}{\numberline {3.10.2}Internal Derivation}{43}{subsection.3.10.2}
+\contentsline {section}{\numberline {3.8}Attributive Verbs}{42}{section.3.8}
+\contentsline {section}{\numberline {3.9}Formation of Verbs}{42}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}External Derivation}{42}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Internal Derivation}{43}{subsection.3.9.2}
 \contentsline {chapter}{\numberline {4}Nouns}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}Grammatical Categories}{45}{section.4.1}
 \contentsline {section}{\numberline {4.2}Number}{45}{section.4.2}
@@ -136,17 +135,17 @@
 \contentsline {section}{\numberline {5.5}Indefinite pronouns and quantifiers}{57}{section.5.5}
 \contentsline {section}{\numberline {5.6}Interrogative pronouns}{57}{section.5.6}
 \contentsline {section}{\numberline {5.7}Negative and Universal Pronouns}{57}{section.5.7}
-\contentsline {chapter}{\numberline {6}Modifiers}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Adjectives}{59}{section.6.1}
-\contentsline {section}{\numberline {6.2}Demonstratives}{59}{section.6.2}
-\contentsline {section}{\numberline {6.3}Quantifiers}{59}{section.6.3}
-\contentsline {chapter}{\numberline {7}Minor Word Classes}{61}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conjunctions}{61}{section.7.1}
-\contentsline {section}{\numberline {7.2}Prepositions}{61}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}na}{61}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}\v {s}e}{61}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}\textbf {vo}}{61}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}za}{61}{subsection.7.2.4}
+\contentsline {chapter}{\numberline {6}Minor Word Classes}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conjunctions}{59}{section.6.1}
+\contentsline {section}{\numberline {6.2}Prepositions}{59}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}na}{59}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}\v {s}e}{59}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}\textbf {vo}}{59}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}za}{59}{subsection.6.2.4}
+\contentsline {chapter}{\numberline {7}Modifiers}{61}{chapter.7}
+\contentsline {section}{\numberline {7.1}Adjectives}{61}{section.7.1}
+\contentsline {section}{\numberline {7.2}Demonstratives}{61}{section.7.2}
+\contentsline {section}{\numberline {7.3}Quantifiers}{61}{section.7.3}
 \contentsline {chapter}{\numberline {8}Syntax of Simple Clauses}{63}{chapter.8}
 \contentsline {section}{\numberline {8.1}Introduction}{63}{section.8.1}
 \contentsline {section}{\numberline {8.2}The Noun Phrase}{63}{section.8.2}
