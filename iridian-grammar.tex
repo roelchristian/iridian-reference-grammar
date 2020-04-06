@@ -15,7 +15,7 @@
 \usepackage{graphics,graphicx,amsmath,amssymb}
 \setcounter{secnumdepth}{2}
 
-\usepackage{makeidx}
+\usepackage{imakeidx}
 \usepackage[font=footnotesize]{idxlayout}
 \makeindex
 \newcommand{\zz}{\textctz}
@@ -38,7 +38,7 @@
 \newcommand{\tss}[1]{\textsubscript{#1}}
 \newcommand{\tsup}[1]{\textsuperscript{#1}}
 \newcommand{\asp}[1]{{#1}\textsuperscript{h}}
-\newcommand{\ird}[1]{\textbf{#1}}
+\newcommand{\ird}[1]{\textit{#1}}
 \newcommand{\dto}{o\textsubarch{u}}
 \newcommand{\dte}{e\textsubarch{I}}
 \newcommand{\dty}{\o\textsubarch{Y}}
@@ -53,7 +53,7 @@
 \usepackage{minitoc}
 \usepackage{afterpage}
 \usepackage{xcolor,colortbl}
-\lingset{everygla=\bf,everyglb=\footnotesize,everyglc=\footnotesize,aboveexskip=6pt,aboveglftskip=0pt,belowexskip=3pt}
+\lingset{everygla=\it,everyglb=\footnotesize,everyglc=\footnotesize,aboveexskip=6pt,aboveglftskip=0pt,belowexskip=3pt}
 
 %%Formatting of section headings
 \usepackage{titlesec}
@@ -71,11 +71,11 @@
 		\rule{24pt}{2pt}
 		\\
 		\begin{tabular}{@{\qquad}c@{\qquad}}
-			
+
 			\\
 			{\Huge \scshape \MakeLowercase{#1}\par\nobreak} \\
 			\\
-			
+
 		\end{tabular}
 		\vskip 30\p@
 }}
@@ -91,11 +91,11 @@
 		\rule{24pt}{2pt}
 		\\
 		\begin{tabular}{@{\qquad}c@{\qquad}}
-		
+
 			\\
 			{\LARGE \scshape \MakeLowercase{#1}\par\nobreak} \\
 			\\
-		
+
 		\end{tabular}
 		\vskip 100\p@
 }}
@@ -151,8 +151,8 @@ Copyright © 2019 Roel Christian Yambao\\
 \addlinespace
 All rights reserved. This book or any portion thereof may not be reproduced or used in any manner whatsoever without the express written permission of the publisher except for the use of brief quotations in a book review.\\
 \addlinespace
-First published online, 2019	
-	
+First published online, 2019
+
 \end{tabularx}
 
 \end{flushleft}
@@ -161,26 +161,26 @@ First published online, 2019
 \tableofcontents
 \cleardoublepage
 \listoftables
-\include{./TeX_files/preface}
-\include{./TeX_files/abbrev}
+\include{./chapters/preface}
+\include{./chapters/abbrev}
 
 \mainmatter
-\include{./TeX_files/chapter00}
+\include{./chapters/chapter00}
 
-\include{./TeX_files/chapter01}
-\include{./TeX_files/chapter02}
-\include{./TeX_files/chapter03} % nouns
-\include{./TeX_files/pronoun} % pronouns
-%\include{./TeX_files/chapter04}
-\include{./TeX_files/chapter05}
-\include{./TeX_files/chapter06}
-\include{./TeX_files/chapter07}
-\include{./TeX_files/chapter08}
+\include{./chapters/chapter01}
+\include{./chapters/chapter02}
+\include{./chapters/chapter03} % nouns
+\include{./chapters/pronoun} % pronouns
+%\include{./chapters/chapter04}
+\include{./chapters/chapter05}
+\include{./chapters/chapter06}
+\include{./chapters/chapter07}
+\include{./chapters/chapter08}
 
 \appendix
 
-\include{./TeX_files/appx01}
-\include{TeX_files/samptexts}
+\include{./chapters/appx01}
+\include{./chapters/samptexts}
 % bibliography, glossary and index would go here.
 \cleardoublepage
 \printindex
