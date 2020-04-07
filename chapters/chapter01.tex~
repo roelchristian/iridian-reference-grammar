@@ -413,13 +413,13 @@ Ignoring the possible complexity of the onset, nucleus or coda, the basic struct
 	\item \bt{k} or \bt{p} before \bt{s} or \bt{S} or their soft counterparts:
 	\begin{enumerate}
 		\item \bt{ps}:\footnote{This is a marginal cluster, occuring only in mostly Greek loanwords.} \ird{psyhologa} \bt{psIxOlO"G5}, `psychologist';
-		\item \bt{pS}: \ird{pszehuj} \bt{"pSExu\tsa{I}}, \eng{annoyance}; \ird{pszêcem} \bt{"pS\~E\~w\ttb{ts}Em}, \eng{grain}
+		\item \bt{pS}: \ird{pszehuj} \bt{"pSExu\tsa{I}}, \trsl{annoyance}; \ird{pszêcem} \bt{"pS\~E\~w\ttb{ts}Em}, \trsl{grain}
 		\item \bt{ks}:\footnote{This is another marginal cluster, occuring only in mostly Greek loanwords.} 
-		\item \bt{kS}: \ird{kszêtva} \bt{"kS\~E\~wtv5}, \eng{chain}; \ird{kszévet} \bt{"kSe:vEt}, \eng{basket}
+		\item \bt{kS}: \ird{kszêtva} \bt{"kS\~E\~wtv5}, \trsl{chain}; \ird{kszévet} \bt{"kSe:vEt}, \trsl{basket}
 	\end{enumerate}
 	\item Dental stops followed by \bt{m}:
 	\begin{enumerate}
-		\item \bt{tm}: \ird{tmeny} \bt{tmE\nn}, \eng{belt}; \ird{tmou} \bt{tm\dto}, \eng{waist}
+		\item \bt{tm}: \ird{tmeny} \bt{tmE\nn}, \trsl{belt}; \ird{tmou} \bt{tm\dto}, \trsl{waist}
 		\item \bt{dm}:
 	\end{enumerate}
 		\item \bt{p}, \bt{d}, \bt{k} or \bt{g}  followed by \bt{n}:
@@ -427,13 +427,13 @@ Ignoring the possible complexity of the onset, nucleus or coda, the basic struct
 		\item \bt{pn}:
 		\item \bt{dn}:
 		\item \bt{kn}:
-		\item \bt{gn}:\footnote{Realized as \bt{Gn} after a vowel-final word and \bt{kn} elsewhere.} \ird{gnasz} \bt{kn5S}, \eng{school}; \ird{gnuma} \bt{knUm5}, \eng{mattress}
+		\item \bt{gn}:\footnote{Realized as \bt{Gn} after a vowel-final word and \bt{kn} elsewhere.} \ird{gnasz} \bt{kn5S}, \trsl{school}; \ird{gnuma} \bt{knUm5}, \trsl{mattress}
 	\end{enumerate}
 
 		\item \bt{m} followed by \bt{n} or \bt{n} followed by \bt{l}:
 	\begin{enumerate}
-		\item \bt{mn}: \ird{mnucs} \bt{mnU\ttb{tS}}, \eng{husband}; \ird{mnouvaty} \bt{"mn\dto v5c}, \eng{hunchback}
-		\item \bt{nl}:\footnote{This is realized as palatal \bt{\nn L}.} \ird{nlâsz} \bt{\nn L\~5\~wS}, \eng{castle}; \ird{nlúi} \bt{\nn Ly:}, \eng{horse}
+		\item \bt{mn}: \ird{mnucs} \bt{mnU\ttb{tS}}, \trsl{husband}; \ird{mnouvaty} \bt{"mn\dto v5c}, \trsl{hunchback}
+		\item \bt{nl}:\footnote{This is realized as palatal \bt{\nn L}.} \ird{nlâsz} \bt{\nn L\~5\~wS}, \trsl{castle}; \ird{nlúi} \bt{\nn Ly:}, \trsl{horse}
 	\end{enumerate}
 
 		\item \bt{S} followed by a voiceless stop:
