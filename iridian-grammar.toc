@@ -14,17 +14,17 @@
 \contentsline {subsection}{\numberline {2.2.2}Nasals}{7}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Liquids}{8}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Fricatives and Affricates}{8}{subsection.2.2.4}
-\contentsline {subsubsection}{Voicing}{9}{subsubsection*.9}
+\contentsline {subsubsection}{Voicing}{10}{subsubsection*.9}
 \contentsline {section}{\numberline {2.3}Phonotactics}{10}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Syllable structure}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Onset}{10}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Onset}{11}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Nucleus}{15}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Coda}{15}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Consonant Alternations}{15}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Simple palatalization}{15}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Palatalization}{15}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Mutation of labials}{16}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Mutation of dentals and velars}{16}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.1}Simple palatalization}{16}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Palatalization}{16}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Mutation of labials}{17}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Mutation of dentals and velars}{17}{subsection.2.4.4}
 \contentsline {subsection}{\numberline {2.4.5}Compound alternations}{17}{subsection.2.4.5}
 \contentsline {subsection}{\numberline {2.4.6}Consonant$\sim $zero alternations}{17}{subsection.2.4.6}
 \contentsline {subsection}{\numberline {2.4.7}Voicing and devoicing}{17}{subsection.2.4.7}
@@ -35,17 +35,17 @@
 \contentsline {section}{\numberline {2.7}Phonological Processes}{17}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Assimilation of loanwords}{17}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Vowel$\sim $zero alternation}{17}{subsection.2.7.2}
-\contentsline {subsubsection}{\_cvcvc stems}{17}{subsubsection*.16}
+\contentsline {subsubsection}{\_cvcvc stems}{18}{subsubsection*.16}
 \contentsline {subsubsection}{Stem-final vowel$\sim $zero alternation}{18}{subsubsection*.17}
 \contentsline {subsubsection}{Suffix-initial vowel$\sim $zero alternation}{18}{subsubsection*.18}
 \contentsline {subsection}{\numberline {2.7.3}Vowel$\sim $vowel alternation}{18}{subsection.2.7.3}
 \contentsline {subsection}{\numberline {2.7.4}Reduplication}{19}{subsection.2.7.4}
-\contentsline {subsection}{\numberline {2.7.5}Metathesis}{19}{subsection.2.7.5}
-\contentsline {subsubsection}{slot a infixes}{19}{subsubsection*.19}
+\contentsline {subsection}{\numberline {2.7.5}Metathesis}{20}{subsection.2.7.5}
+\contentsline {subsubsection}{slot a infixes}{20}{subsubsection*.19}
 \contentsline {section}{\numberline {2.8}Prosody}{20}{section.2.8}
 \contentsline {section}{\numberline {2.9}Orthographic representation}{21}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}Alphabet}{21}{subsection.2.9.1}
-\contentsline {chapter}{\numberline {3}Verbs}{25}{chapter.3}
+\contentsline {chapter}{\numberline {3}Verbal Morphology}{25}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{25}{section.3.1}
 \contentsline {section}{\numberline {3.2}Verb stems and citation forms}{25}{section.3.2}
 \contentsline {section}{\numberline {3.3}Voice}{26}{section.3.3}
@@ -87,11 +87,14 @@
 \contentsline {subsection}{\numberline {3.7.1}Gerund}{40}{subsection.3.7.1}
 \contentsline {subsection}{\numberline {3.7.2}Converbs}{41}{subsection.3.7.2}
 \contentsline {subsection}{\numberline {3.7.3}Supine}{41}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}Attributive Verbs}{42}{section.3.8}
-\contentsline {section}{\numberline {3.9}Formation of Verbs}{42}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}External Derivation}{42}{subsection.3.9.1}
+\contentsline {section}{\numberline {3.8}Stative Verbs}{42}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Copulative Form}{42}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Attributive Form}{42}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Nominal Form}{42}{subsection.3.8.3}
+\contentsline {section}{\numberline {3.9}Derivational Morphology}{43}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}External Derivation}{43}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Internal Derivation}{43}{subsection.3.9.2}
-\contentsline {chapter}{\numberline {4}Nouns}{45}{chapter.4}
+\contentsline {chapter}{\numberline {4}Nominal Morphology}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}Grammatical Categories}{45}{section.4.1}
 \contentsline {section}{\numberline {4.2}Number}{45}{section.4.2}
 \contentsline {section}{\numberline {4.3}Definiteness}{46}{section.4.3}
@@ -109,76 +112,77 @@
 \contentsline {subsection}{\numberline {4.7.2}Genitive of material}{49}{subsection.4.7.2}
 \contentsline {subsection}{\numberline {4.7.3}Genitive of the whole}{50}{subsection.4.7.3}
 \contentsline {subsection}{\numberline {4.7.4}Genitive of movement}{50}{subsection.4.7.4}
-\contentsline {section}{\numberline {4.8}Instrumental case}{51}{section.4.8}
+\contentsline {section}{\numberline {4.8}Instrumental case}{50}{section.4.8}
 \contentsline {subsection}{\numberline {4.8.1}With some prepositions}{51}{subsection.4.8.1}
 \contentsline {subsection}{\numberline {4.8.2}With expressions of time and duration}{51}{subsection.4.8.2}
-\contentsline {section}{\numberline {4.9}Numerals}{51}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Ordinal numbers}{52}{subsection.4.9.1}
-\contentsline {subsection}{\numberline {4.9.2}Fractions and decimals}{52}{subsection.4.9.2}
-\contentsline {subsection}{\numberline {4.9.3}Use of numerals}{52}{subsection.4.9.3}
-\contentsline {section}{\numberline {4.10}Derivational Morphology}{52}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}-ma\v {s}t}{52}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}-ou}{52}{subsection.4.10.2}
-\contentsline {subsection}{\numberline {4.10.3}-ou\v {s}c}{53}{subsection.4.10.3}
-\contentsline {chapter}{\numberline {5}Pronouns}{55}{chapter.5}
-\contentsline {section}{\numberline {5.1}Personal pronouns}{55}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Grammatical person}{55}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Strong form}{55}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Weak form}{56}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Clitic form}{56}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Pronoun dropping}{56}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}Use of Personal Pronouns}{56}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}T-V Distinction}{56}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Possessive Pronouns}{56}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}The reflexive \textbf {m\'am}}{56}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Demonstratives}{56}{section.5.4}
-\contentsline {section}{\numberline {5.5}Indefinite pronouns and quantifiers}{57}{section.5.5}
-\contentsline {section}{\numberline {5.6}Interrogative pronouns}{57}{section.5.6}
-\contentsline {section}{\numberline {5.7}Negative and Universal Pronouns}{57}{section.5.7}
-\contentsline {chapter}{\numberline {6}Minor Word Classes}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conjunctions}{59}{section.6.1}
-\contentsline {section}{\numberline {6.2}Prepositions}{59}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}na}{59}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}\v {s}e}{59}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}\textbf {vo}}{59}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}za}{59}{subsection.6.2.4}
-\contentsline {chapter}{\numberline {7}Modifiers}{61}{chapter.7}
-\contentsline {section}{\numberline {7.1}Adjectives}{61}{section.7.1}
-\contentsline {section}{\numberline {7.2}Demonstratives}{61}{section.7.2}
-\contentsline {section}{\numberline {7.3}Quantifiers}{61}{section.7.3}
-\contentsline {chapter}{\numberline {8}Syntax of Simple Clauses}{63}{chapter.8}
-\contentsline {section}{\numberline {8.1}Introduction}{63}{section.8.1}
-\contentsline {section}{\numberline {8.2}The Noun Phrase}{63}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Nuclear constructions}{63}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}With adjectival clauses}{63}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}With prepositional phrases}{63}{subsection.8.2.3}
-\contentsline {subsection}{\numberline {8.2.4}With relative clauses}{63}{subsection.8.2.4}
-\contentsline {section}{\numberline {8.3}Constituent Word Order}{63}{section.8.3}
-\contentsline {section}{\numberline {8.4}Questions}{63}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Yes-no questions}{63}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}Wh- questions}{66}{subsection.8.4.2}
-\contentsline {subsection}{\numberline {8.4.3}Indirect questions}{67}{subsection.8.4.3}
-\contentsline {subsection}{\numberline {8.4.4}Answering questions}{67}{subsection.8.4.4}
-\contentsline {subsubsection}{Answering yes-no questions}{67}{subsubsection*.50}
-\contentsline {section}{\numberline {8.5}Negation}{69}{section.8.5}
-\contentsline {section}{\numberline {8.6}Existential Constructions}{69}{section.8.6}
-\contentsline {subsection}{\numberline {8.6.1}Possession}{70}{subsection.8.6.1}
-\contentsline {subsection}{\numberline {8.6.2}Impersonal constructions}{70}{subsection.8.6.2}
-\contentsline {section}{\numberline {8.7}Copular Constructions}{70}{section.8.7}
-\contentsline {subsection}{\numberline {8.7.1}Null copula}{70}{subsection.8.7.1}
-\contentsline {subsection}{\numberline {8.7.2}Negative copula}{72}{subsection.8.7.2}
-\contentsline {subsection}{\numberline {8.7.3}Conjugation paradigm}{72}{subsection.8.7.3}
-\contentsline {chapter}{\numberline {9}Complex Sentences}{73}{chapter.9}
-\contentsline {section}{\numberline {9.1}Clause-linking with \textbf {\v {s}e}}{73}{section.9.1}
-\contentsline {section}{\numberline {9.2}Converbial Constructions}{73}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}The imperfective in \textbf {-iec}}{73}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}The perfective in \textbf {-e}}{73}{subsection.9.2.2}
-\contentsline {chapter}{\numberline {10}Semantics and Usage}{75}{chapter.10}
-\contentsline {section}{\numberline {10.1}Register}{75}{section.10.1}
-\contentsline {section}{\numberline {10.2}Forms of Address and Treatment}{75}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}Terms of courtesy}{75}{subsection.10.2.1}
-\contentsline {section}{\numberline {10.3}Idiomatic Expressions}{75}{section.10.3}
-\contentsline {section}{\numberline {10.4}Punctuation}{75}{section.10.4}
+\contentsline {section}{\numberline {4.9}Unmarked Form}{51}{section.4.9}
+\contentsline {section}{\numberline {4.10}Personal Pronouns}{51}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Grammatical person}{51}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Strong form}{51}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.3}Weak form}{52}{subsection.4.10.3}
+\contentsline {subsection}{\numberline {4.10.4}Clitic form}{52}{subsection.4.10.4}
+\contentsline {subsection}{\numberline {4.10.5}Third-Person Pronouns and Demonstratives}{52}{subsection.4.10.5}
+\contentsline {subsection}{\numberline {4.10.6}Ellipsis}{52}{subsection.4.10.6}
+\contentsline {section}{\numberline {4.11}Demonstratives}{52}{section.4.11}
+\contentsline {section}{\numberline {4.12}Use of Personal Pronouns}{54}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}T-V Distinction}{54}{subsection.4.12.1}
+\contentsline {section}{\numberline {4.13}Possessive Pronouns}{54}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}The reflexive \textit {m\'am}}{54}{subsection.4.13.1}
+\contentsline {section}{\numberline {4.14}Demonstratives}{54}{section.4.14}
+\contentsline {section}{\numberline {4.15}Indefinite pronouns and quantifiers}{55}{section.4.15}
+\contentsline {section}{\numberline {4.16}Interrogative pronouns}{55}{section.4.16}
+\contentsline {section}{\numberline {4.17}Negative and Universal Pronouns}{55}{section.4.17}
+\contentsline {section}{\numberline {4.18}Numerals}{55}{section.4.18}
+\contentsline {subsection}{\numberline {4.18.1}Ordinal numbers}{58}{subsection.4.18.1}
+\contentsline {subsection}{\numberline {4.18.2}Fractions and decimals}{58}{subsection.4.18.2}
+\contentsline {subsection}{\numberline {4.18.3}Use of numerals}{58}{subsection.4.18.3}
+\contentsline {section}{\numberline {4.19}Derivational Morphology}{58}{section.4.19}
+\contentsline {subsection}{\numberline {4.19.1}-ma\v {s}t}{58}{subsection.4.19.1}
+\contentsline {subsection}{\numberline {4.19.2}-ou}{58}{subsection.4.19.2}
+\contentsline {subsection}{\numberline {4.19.3}-ou\v {s}c}{58}{subsection.4.19.3}
+\contentsline {chapter}{\numberline {5}Minor Word Classes}{61}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conjunctions}{61}{section.5.1}
+\contentsline {section}{\numberline {5.2}Prepositions}{61}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}na}{61}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}\v {s}e}{61}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}\textit {vo}}{61}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}za}{61}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Adjectives}{61}{section.5.3}
+\contentsline {section}{\numberline {5.4}Demonstratives}{62}{section.5.4}
+\contentsline {section}{\numberline {5.5}Quantifiers}{62}{section.5.5}
+\contentsline {chapter}{\numberline {6}Syntax of Simple Clauses}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{63}{section.6.1}
+\contentsline {section}{\numberline {6.2}The Noun Phrase}{63}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Nuclear constructions}{63}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}With adjectival clauses}{63}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Wsith prepositional phrases}{63}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}With relative clauses}{63}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Relative and Comparative Constructions}{63}{section.6.3}
+\contentsline {section}{\numberline {6.4}Questions}{65}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Yes-no questions}{65}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Wh- questions}{68}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Indirect questions}{68}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Answering questions}{69}{subsection.6.4.4}
+\contentsline {subsubsection}{Answering yes-no questions}{69}{subsubsection*.50}
+\contentsline {section}{\numberline {6.5}Negation}{71}{section.6.5}
+\contentsline {section}{\numberline {6.6}Existential Constructions}{71}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Possession}{71}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Impersonal constructions}{72}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Copular Constructions}{72}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Null copula}{72}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Negative copula}{74}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Conjugation paradigm}{74}{subsection.6.7.3}
+\contentsline {chapter}{\numberline {7}Complex Sentences}{75}{chapter.7}
+\contentsline {section}{\numberline {7.1}Clause-linking with \textit {\v {s}e}}{75}{section.7.1}
+\contentsline {section}{\numberline {7.2}Converbial Constructions}{75}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}The imperfective in \textit {-iec}}{75}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}The perfective in \textit {-e}}{75}{subsection.7.2.2}
+\contentsline {chapter}{\numberline {8}Semantics and Usage}{77}{chapter.8}
+\contentsline {section}{\numberline {8.1}Register}{77}{section.8.1}
+\contentsline {section}{\numberline {8.2}Forms of Address and Treatment}{77}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Terms of courtesy}{77}{subsection.8.2.1}
+\contentsline {section}{\numberline {8.3}Idiomatic Expressions}{77}{section.8.3}
+\contentsline {section}{\numberline {8.4}Punctuation}{77}{section.8.4}
 \partbegin 
-\contentsline {chapter}{\numberline {A}The Dialects of Iridian}{79}{appendix.A}
-\contentsline {chapter}{\numberline {B}Sample Texts}{81}{appendix.B}
+\contentsline {chapter}{\numberline {A}The Dialects of Iridian}{81}{appendix.A}
+\contentsline {chapter}{\numberline {B}Sample Texts}{83}{appendix.B}
