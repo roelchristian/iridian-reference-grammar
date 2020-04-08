@@ -1,3 +1,4 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \contentsline {chapter}{Preface}{xi}{chapter*.3}
 \contentsline {chapter}{Abbreviations}{xiii}{chapter*.4}
 \contentsline {chapter}{\numberline {1}An Overview of Iridian}{1}{chapter.1}
@@ -152,37 +153,39 @@
 \contentsline {section}{\numberline {5.5}Quantifiers}{62}{section.5.5}
 \contentsline {chapter}{\numberline {6}Syntax of Simple Clauses}{63}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{63}{section.6.1}
-\contentsline {section}{\numberline {6.2}The Noun Phrase}{63}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Nuclear constructions}{63}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}With adjectival clauses}{63}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Wsith prepositional phrases}{63}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}With relative clauses}{63}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Relative and Comparative Constructions}{63}{section.6.3}
-\contentsline {section}{\numberline {6.4}Questions}{65}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Yes-no questions}{65}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Wh- questions}{68}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Indirect questions}{68}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Answering questions}{69}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.2}Topic-Predicate Constructions}{63}{section.6.2}
+\contentsline {section}{\numberline {6.3}The Noun Phrase}{64}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Nuclear constructions}{64}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}With adjectival clauses}{64}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Wsith prepositional phrases}{64}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}With relative clauses}{64}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Relative and Comparative Constructions}{64}{section.6.4}
+\contentsline {section}{\numberline {6.5}Questions}{66}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Yes-no questions}{66}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Wh- questions}{69}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Indirect questions}{69}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.4}Answering questions}{69}{subsection.6.5.4}
 \contentsline {subsubsection}{Answering yes-no questions}{69}{subsubsection*.50}
-\contentsline {section}{\numberline {6.5}Negation}{71}{section.6.5}
-\contentsline {section}{\numberline {6.6}Existential Constructions}{71}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Possession}{71}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Impersonal constructions}{72}{subsection.6.6.2}
-\contentsline {section}{\numberline {6.7}Copular Constructions}{72}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Null copula}{72}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Negative copula}{74}{subsection.6.7.2}
-\contentsline {subsection}{\numberline {6.7.3}Conjugation paradigm}{74}{subsection.6.7.3}
-\contentsline {chapter}{\numberline {7}Complex Sentences}{75}{chapter.7}
-\contentsline {section}{\numberline {7.1}Clause-linking with \textit {\v {s}e}}{75}{section.7.1}
-\contentsline {section}{\numberline {7.2}Converbial Constructions}{75}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}The imperfective in \textit {-iec}}{75}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}The perfective in \textit {-e}}{75}{subsection.7.2.2}
-\contentsline {chapter}{\numberline {8}Semantics and Usage}{77}{chapter.8}
-\contentsline {section}{\numberline {8.1}Register}{77}{section.8.1}
-\contentsline {section}{\numberline {8.2}Forms of Address and Treatment}{77}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Terms of courtesy}{77}{subsection.8.2.1}
-\contentsline {section}{\numberline {8.3}Idiomatic Expressions}{77}{section.8.3}
-\contentsline {section}{\numberline {8.4}Punctuation}{77}{section.8.4}
+\contentsline {section}{\numberline {6.6}Negation}{71}{section.6.6}
+\contentsline {section}{\numberline {6.7}Existential Constructions}{71}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Possession}{72}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Impersonal constructions}{72}{subsection.6.7.2}
+\contentsline {section}{\numberline {6.8}Copular Constructions}{73}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Null copula}{73}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Negative copula}{74}{subsection.6.8.2}
+\contentsline {subsection}{\numberline {6.8.3}Conjugation paradigm}{75}{subsection.6.8.3}
+\contentsline {section}{\numberline {6.9}Interjections}{75}{section.6.9}
+\contentsline {chapter}{\numberline {7}Complex Sentences}{77}{chapter.7}
+\contentsline {section}{\numberline {7.1}Clause-linking with \textit {\v {s}e}}{77}{section.7.1}
+\contentsline {section}{\numberline {7.2}Converbial Constructions}{77}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}The imperfective in \textit {-iec}}{77}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}The perfective in \textit {-e}}{77}{subsection.7.2.2}
+\contentsline {chapter}{\numberline {8}Semantics and Usage}{79}{chapter.8}
+\contentsline {section}{\numberline {8.1}Register}{79}{section.8.1}
+\contentsline {section}{\numberline {8.2}Forms of Address and Treatment}{79}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Terms of courtesy}{79}{subsection.8.2.1}
+\contentsline {section}{\numberline {8.3}Idiomatic Expressions}{79}{section.8.3}
+\contentsline {section}{\numberline {8.4}Punctuation}{79}{section.8.4}
 \partbegin 
-\contentsline {chapter}{\numberline {A}The Dialects of Iridian}{81}{appendix.A}
-\contentsline {chapter}{\numberline {B}Sample Texts}{83}{appendix.B}
+\contentsline {chapter}{\numberline {A}The Dialects of Iridian}{83}{appendix.A}
+\contentsline {chapter}{\numberline {B}Sample Texts}{85}{appendix.B}
