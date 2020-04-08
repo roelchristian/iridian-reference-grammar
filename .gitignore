@@ -10,3 +10,7 @@
 *.lot
 iridian-grammar-tags.tex
 *.toc
+*.run.xml
+*.bbl
+*.blg
+*.bcf

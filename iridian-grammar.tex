@@ -36,6 +36,14 @@
 \usepackage[font=footnotesize]{idxlayout}
 \usepackage[hidelinks]{hyperref}
 
+\usepackage[authordate-trad,natbib,backend=biber]{biblatex-chicago}
+\DeclareFieldFormat[article]{title}{\mkbibquote{#1}} % make article titles in quotes
+\DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}} % make theses italics
+\addbibresource{bibliography.bib}
+\renewcommand*{\postnotedelim}{\addcolon\addspace}
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+
 
 \makeindex
 \setcounter{secnumdepth}{2}
@@ -67,9 +75,14 @@
 % TODO: Rewrite instances of this command and delete
 \newcommand{\asp}[1]{{#1}\textsuperscript{h}}
 
+%% Set block quotes to font size \small
+
+\expandafter\def\expandafter\quote\expandafter{\quote\small}
+
 %% Formatting of linguistic glosses
 
 \lingset{everygla=\it,everyglb=\footnotesize,everyglc=\footnotesize,aboveexskip=6pt,aboveglftskip=0pt,belowexskip=3pt}
+
 
 %%Formatting of section headings
 
@@ -183,6 +196,10 @@
 
 \include{./chapters/appx01}					% Dialectology
 \include{./chapters/samptexts}			% Sample Texts
+
+\cleardoublepage
+\nocite{*}
+\printbibliography
 
 \cleardoublepage
 \printindex
