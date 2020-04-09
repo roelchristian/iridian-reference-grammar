@@ -14,3 +14,4 @@ iridian-grammar-tags.tex
 *.bbl
 *.blg
 *.bcf
+*.lof
