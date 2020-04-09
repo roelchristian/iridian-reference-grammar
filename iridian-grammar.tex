@@ -31,6 +31,14 @@
 \usepackage{etoolbox}
 \usepackage{multirow}
 
+%% to draw linguistic trees
+\usepackage{tikz}
+\usepackage[linguistics]{forest}
+\usetikzlibrary{positioning}
+\usetikzlibrary{tikzmark}
+\forestset{
+sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
+
 %% Indexing and Cross-referencing
 \usepackage{imakeidx}
 \usepackage[font=footnotesize]{idxlayout}
@@ -178,6 +186,7 @@
 \cleardoublepage
 
 \listoftables
+\listoffigures
 
 \include{./chapters/preface}				% Preface
 \include{./chapters/abbrev}					% Abbreviations Used
