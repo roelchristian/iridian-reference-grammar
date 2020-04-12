@@ -90,6 +90,10 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \newcommand{\trsl}[1]{`#1'}								% translation in quotes
 \newcommand{\rrr}{\textinvscr}						% uvular r
 \newcommand{\irdp}[2]{\ird{#1}, \trsl{#2}}
+\newcommand{\ttla}[1]{`#1'}								% title of an article, short story setcounter
+\newcommand{\ttlb}[1]{\emph{#1}}					% title of a book
+
+
 
 % TODO: Rewrite instances of this command and delete
 \newcommand{\asp}[1]{{#1}\textsuperscript{h}}
@@ -164,11 +168,13 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 %% Formatting of page headers
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhf{}
-\fancyhead[LE,RO]{\footnotesize\thepage}
-\fancyhead[RE]{\small\itshape{\nouppercase\leftmark}}
-\fancyhead[LO]{\small\itshape{\nouppercase\rightmark}}
+
+
+\fancyhead[RE]{\sffamily\footnotesize{\nouppercase\leftmark}\quad{\sffamily\bfseries\footnotesize\thepage}}
+\fancyhead[LO]{{\sffamily\bfseries\footnotesize\thepage}\quad\sffamily\footnotesize{\nouppercase\rightmark}}
 \cfoot{}
 
 \usepackage[bottom,hang,norule]{footmisc}
