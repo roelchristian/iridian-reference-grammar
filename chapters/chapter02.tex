@@ -467,12 +467,55 @@ Where the agent and the patient are syntactically distinct, the agent is usually
 \subsection{Causative Constructions}\index{causative}
 A causative construction is formed by the prefix \ird(ne-)
 
-Causatives may either be lexical or morphological. Lexical causatives involve the encoding of the causation on the verb itself leading the causative form of the verb to be a different form altogether. The suppletive nature of lexical causatives \cite{velupillai2012}
+Causatives may either be lexical, analytical or morphological. Lexical causatives involve the encoding of the causation on the verb itself leading the causative form of the verb to be a different form altogether. An analytical causative, on the other hand uses a different verb (usually a verb like \emph{to do} or \emph{to make}) in conjunction with the main verb, to express the idea of causation (e.g., English \trsl{make someone do something.}) Finally, morphological causatives involve morphologically changing the main verb to express the notion of causation.
+
+\begin{table}[h!]
+\sffamily\footnotesize
+\caption{Causative forms of the verb \irdp{shrad\'a}{to die.}}
+	\label{tbl:causative}
+
+    \begin{tabu}to \textwidth{Y[0.5]Y[0.6]YY}
+         \toprule\addlinespace
+		 										& {\sc causative } &{\sc regular meaning} & {\sc causative meaning}\\\addlinespace
+												\midrule\addlinespace
+		 		Agentive				& \ird{neshr\'a\v{z}\'a}			& to die & to kill\\ \addlinespace
+		 		Patientive			& \ird{neshradin\'a}					& to be killed & to be caused to be killed\\\addlinespace
+				Benefactive			& \ird{neshrad\'eb\'a}				& to have someone die for oneself	& to have someone be killed for oneself\\\addlinespace
+				Locative				& \ird{neshradoun\'a}					& to have someone related die&\emph{(defective)}\\\addlinespace
+				Instrumental		& \ird{doneshradoun\'a}&to be the reason for dying&to to be used for killing\\\addlinespace
+				Reflexive				& \ird{uneshra\v{z}\'a}&to kill oneself&to cause one to commit suicide\\
+		 		\addlinespace
+				\bottomrule
+
+    \end{tabu}
+
+\end{table}
+
+Perhaps due to this suppletive nature lexical causatives imply a more direct causation, or a tighter link between cause and event (\cite{velupillai2012}), than analytical or morphological causatives. Consider for example the three sentences in English below:
+
 
 \pex
-\a Joseph \emph{died}.
-\a Joseph \emph{killed} the man
-\a Joseph \emph{made} the man die.
+\a Joseph \emph{died}.\deftagex{caus}
+\a Joseph \emph{killed} the man.\deftagex{caus}\deftaglabel{kill}
+\a Joseph \emph{made} the man \emph{die.}\deftagex{caus}\deftaglabel{made}
+\xe
+
+
+The suppletive \emph{kill} in example (\getfullref{caus.kill}) implies more agency on the part of the subject than the more indirect-sounding (\getfullref{caus.made}). In (\getfullref{caus.kill}) the \emph{death} of the patient (\trsl{the man}) is the goal of the act while (\getfullref{caus.made}) it might be inferred that the \emph{dying} was an indirect consequence of an unmentioned second act.
+
+Iridian does not employ lexical causatives as in English; instead causatives are formed morphologically by adding the prefix \ird{ne-} (glossed as \mk{caus}) to the verb stem. Although the prefix \ird{ne-} is required to form the causative morphologically, some verbs, particularly stative verbs like \irdp{shrad\'a}{to die, to be dead} in table \ref{tbl:causative} may already contain the notion of causation in some of its regular conjugated forms. This is because by default stative verbs\index{stative verb} are intransitive (i.e., the only argument required is the actor/agent\index{agent}) while some verbal voices\index{voice} like the patientive\index{patientive voice} and benefactive\index{benefactive voice} inherently require two or three arguments\index{argument of a verb} respectively.
+
+%% TODO add section reference
+
+Of course Iridian's definition of which verbs are stative and which ones are dynamic\index{dynamic verb} does not neatly align with the definition those classes have in English (cf. \S~XX). For instance the verbs \emph{to stand} and \emph{to eat} are both dynamic verbs in English, while in Iridian \irdp{zdav\'a}{to stand, to be standing} is stative and only \irdp{pia\v{s}t\'a}{to eat} is dynamic. This is why as we see in example (\getref{stat-dyn}) below, some forms of the verb \ird{zdav\'a} already contain the notion of causation in some of its regular conjugated forms.
+
+\pex
+\a  \irdp{zdav\'a}{to stand, to be standing}\deftagex{stat-dyn}\\
+    \irdp{zdavin\'a}{to be made to stand}\\
+    \irdp{nezdav\v{z}\'a}{to make someone stand}\\
+\a  \irdp{pia\v{s}t\'a}{to eat}
+    \irdp{pia\v{s}tin\'a}{to be eaten}\\
+    \irdp{nepia\v{s}\v{c}\'a}{to make someone eat}\
 \xe
 
 \section{Grammatical Mood}\index{mood}\index{modality|see{mood}}
