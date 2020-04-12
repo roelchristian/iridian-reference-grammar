@@ -478,7 +478,8 @@ Causatives may either be lexical, analytical or morphological. Lexical causative
          \toprule\addlinespace
 		 										& {\sc causative } &{\sc regular meaning} & {\sc causative meaning}\\\addlinespace
 												\midrule\addlinespace
-		 		Agentive				& \ird{neshr\'a\v{z}\'a}			& to die & to kill\\ \addlinespace
+				unmarked				& neshrad\'a									& to die, to be dead 	& \emph{(defective)} \\ \addlinespace
+		 		Agentive				& \ird{neshr\'a\v{z}\'a}			& to kill & to cause someone to kill\\ \addlinespace
 		 		Patientive			& \ird{neshradin\'a}					& to be killed & to be caused to be killed\\\addlinespace
 				Benefactive			& \ird{neshrad\'eb\'a}				& to have someone die for oneself	& to have someone be killed for oneself\\\addlinespace
 				Locative				& \ird{neshradoun\'a}					& to have someone related die&\emph{(defective)}\\\addlinespace
@@ -503,7 +504,7 @@ Due to this suppletive nature, lexical causatives imply a more direct causation,
 The suppletive \emph{kill} in example (\getfullref{caus.kill}) implies more agency on the part of the subject than the more indirect-sounding (\getfullref{caus.made}). In (\getfullref{caus.kill}) the \emph{death} of the patient (\trsl{the man}) is the goal of the act while (\getfullref{caus.made}) it might be inferred that the \emph{dying} was an indirect consequence of an unmentioned second act.
 
 
-Iridian does not employ lexical causatives as in English; instead causatives are formed morphologically by adding the prefix \ird{ne-} (glossed as \mk{caus}) to the verb stem. Although the prefix \ird{ne-} is required to form the causative morphologically, some verbs, particularly stative verbs like \irdp{shrad\'a}{to die, to be dead} in table \ref{tbl:causative} may already contain the notion of causation in some of its regular conjugated forms. This is because by default stative verbs\index{stative verb} are intransitive (i.e., the only argument required is the actor/agent\index{agent}) while some verbal voices\index{voice} like the patientive\index{patientive voice} and benefactive\index{benefactive voice} inherently require two or three arguments\index{argument of a verb} respectively.
+Iridian does not employ lexical causatives as in English; instead causatives are formed morphologically by adding the prefix \ird{ne-} (glossed as \mk{caus}) to the verb stem. Although \ird{ne-} is required to form the causative morphologically, some verbs, particularly stative verbs like \irdp{shrad\'a}{to die, to be dead} in table \ref{tbl:causative} may already contain the notion of causation in some of its regular conjugated forms. This is because by default stative verbs\index{stative verb} are intransitive (i.e., the only argument required is the actor/agent\index{agent}) while some verbal voices\index{voice} like the patientive\index{patientive voice} and benefactive\index{benefactive voice} inherently imply the existence of a second and a third argument of a verb\index{argument of a verb} respectively.
 
 %% TODO add section reference
 
@@ -518,7 +519,77 @@ Of course Iridian's definition of which verbs are stative and which ones are dyn
     \irdp{nepia\v{s}\v{c}\'a}{to make someone eat}
 \xe
 
-Stative verbs 
+Since causative constructions in Iridian are purely morphological\footnote{To contrast, consider Japanese which also forms causative constructions morphologically (using the suffix \emph{-sase}) but which in addition also has synthetic but not fully suppletive forms for some verbs (e.g., \irdp{agaru}{to rise} and \irdp{ageru}{to raise}).} the degree of agency of the causer can be implied from other incidental properties of the verb such as aspect or voice markings.
+
+We pay particular attention first on the interaction of the causative prefix \ird{ne-} with the patientive voice marker \ird{-in} and the benefactive voice marker \ird{-\'eb}. We begin with stative verbs, since as mentioned earlier and in \S~XX, most stative verbs will have a causative reading when used with the agentive or benefactive voice. Stative verbs encode the state of the subject and cannot therefore express the idea of an agent nor that of a patient. By conjugating stative verbs for voice, their stative nature is therefore lost; that is why a causative cannot be derived from the unmarked form of a stative verb: a causative construction precludes the existence of a causer and a causee, which at times may be different from the subject, while the unmarked stative only that of the subject itself.
+
+
+\begin{figure}[H]
+	{
+	\footnotesize
+  \begin{forest}
+    [\irdp{shrad\'a}{to die},
+      [\ird{shra\v{z}\'a}\\
+				agentive\\
+				{Arg = 1}
+					[$
+					\begin{bmatrix}
+						+ Agent
+					\end{bmatrix}
+					$]
+					]
+			[\ird{shradin\'a}\\
+				patientive\\
+				{Arg = 2}
+					[$
+					\begin{bmatrix}
+						+ Agent\\
+						+ Patient
+					\end{bmatrix}
+					$]
+					]
+			[\ird{shrad\'eb\'a}\\
+				benefactive\\
+				{Arg= 3}
+				[$
+				\begin{bmatrix}
+					+ Agent\\
+					+ Patient\\
+					+ Benefactor
+				\end{bmatrix}
+				$]
+			]
+		]
+  \end{forest}
+
+	}\caption{The patientive and the benefactive voice as valence-increasing operations.}
+  \label{causative-reading}
+\end{figure}
+
+This analysis of both the agentive and benefactive forms as valency-increasing operations as we see in figure \ref{causative-reading} supports their causative reading even without the addition of the causative prefix {ne-.}
+
+
+
+\pex
+\a
+\begingl
+	\gla Martin ale shradek.//
+	\glb Martin today die-\mk{pf}//
+	\glft \trsl{Martin is already dead.} or \trsl{Martin has died.}//
+\endgl
+\a
+\begingl
+	\gla Martin n\'esta najeviec shra\v{z}ek.//
+	\glb Martin deer-\mk{pat} drive-\mk{cv} die-\mk{av-pf}//
+	\glft \trsl{Martin ran over a deer.}//
+\endgl
+\a
+\begingl
+	\gla Martin shradinek.//
+	\glb Martin die-\mk{pv-pf}//
+	\glft \trsl{Martin was killed.}//
+\endgl
+\xe
 
 
 \section{Grammatical Mood}\index{mood}\index{modality|see{mood}}
