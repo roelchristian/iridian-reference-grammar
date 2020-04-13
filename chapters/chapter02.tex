@@ -511,9 +511,11 @@ Iridian does not employ lexical causatives as in English; instead causatives are
 Of course Iridian's definition of which verbs are stative and which ones are dynamic\index{dynamic verb} does not neatly align with the definition those classes have in English (v. \S~XX). For instance the verbs \emph{to stand} and \emph{to eat} are both dynamic verbs in English, while in Iridian \irdp{zdav\'a}{to stand, to be standing} is stative and only \irdp{pia\v{s}t\'a}{to eat} is dynamic. This is why as we see in example (\getfullref{statdyn.1}) below, some forms of the verb \ird{zdav\'a} already contain the notion of causation in some of its regular conjugated forms.
 
 \pex
-\a  \irdp{zdav\'a}{to stand, to be standing}\deftagex{statdyn}\deftaglabel{1}\\
-    \irdp{zdavin\'a}{to be made to stand}\\
-    \irdp{nezdav\v{z}\'a}{to make someone stand}
+\a  \irdp{zdav\'a}{to be standing}\deftagex{stat-dyn}\\
+		\irdp{zdav\'a}{to stand}\deftagex{stat-dyn}\\
+    \irdp{zdavn\'a}{to be made standing, to erect}\\
+    \irdp{nezdav\v{z}\'a}{to make so./sth. stand}\\
+    \irdp{nezdavn\'a}{to be made to make so./sth. standing}
 \a  \irdp{pia\v{s}t\'a}{to eat}\\
     \irdp{pia\v{s}tin\'a}{to be eaten}\\
     \irdp{nepia\v{s}\v{c}\'a}{to make someone eat}
@@ -529,25 +531,35 @@ We pay particular attention first on the interaction of the causative prefix \ir
 	\footnotesize
   \begin{forest}
     [\irdp{shrad\'a}{to die},
+		[\ird{shradin\'a}\\
+			patientive\\
+			{Arg = 1}
+				[$
+				\begin{bmatrix}
+					\textbf{+ Patient}
+				\end{bmatrix}
+				$]
+				]
       [\ird{shra\v{z}\'a}\\
 				agentive\\
-				{Arg = 1}
+				{Arg = 2}
 					[$
 					\begin{bmatrix}
+						\textrm{+ Patient}\\
 						\textbf{+ Agent}
 					\end{bmatrix}
 					$]
 					]
-			[\ird{shradin\'a}\\
-				patientive\\
-				{Arg = 2}
-					[$
-					\begin{bmatrix}
-						\textrm{+ Agent}\\
-						\textbf{+ Patient}
-					\end{bmatrix}
-					$]
-					]
+					[\ird{ushra\v{z}\'a}\\
+						reflexive\\
+						{Arg = 2}
+							[$
+							\begin{bmatrix}
+								\textrm{+ Patient}\\
+								\textbf{+ Agent}
+							\end{bmatrix}
+							$]
+							]
 			[\ird{shrad\'eb\'a}\\
 				benefactive\\
 				{Arg = 3}
@@ -562,13 +574,28 @@ We pay particular attention first on the interaction of the causative prefix \ir
 		]
   \end{forest}
 
-	}\caption[The patientive and the benefactive voice as valence-increasing operations.]{The patientive and the benefactive voice as valence-increasing operations. The number of elements includes all those required to create a well-formed sentence notwithstanding Iridian's tendency to drop elements that can be implied from context, with the element in bold representing whichever element is most likely to surface in speech.}
+	}\caption[Voice markings as valence operations in stative verbs.]{Voice markings as valence operations in stative verbs. The number of elements includes all those required to create a well-formed sentence notwithstanding Iridian's tendency to drop elements that can be implied from context, with the element in bold representing whichever element is most likely to surface in speech.}
   \label{causative-reading}
 \end{figure}
 
-This analysis of both the agentive and benefactive forms as valency-increasing operations as we see in figure \ref{causative-reading} supports their causative reading even without the addition of the causative prefix {ne-.}
+We see in figure \ref{causative-reading} that this causative reading of the patientive voice with stative verbs is due to properties of stative verbs and not of the patientive voice. We know this is true since this causative reading of the patientive does not exist with non-stative verbs, which are transitive by default in Iridian.
 
+\pex
+\a
+\begingl
+    \gla \ljudge{*}M\'amka prehlavnik.//
+    \glb mother buy-\mk{pv-pf}//
+    \glft \trsl{*I bought my mother.}//
+\endgl
+\a
+\begingl
+    \gla M\'amka zu\v{s}talnik.//
+    \glb mother happy-\mk{pv-pf}//
+    \glft \trsl{I made my mother happy.}//
+\endgl
+\xe
 
+The patientive voice only requires a patient as argument; however since this argument does not exist in stative constructions, the role of an agent must first be created for the subject of the stative construction to be able to occupy the role of the patient in the patientive voice. Essentially this means that conjugating a stative verb for the patientive voice is equivalent to creating a biclausal causative construction where the subject becomes the causee and the state the action brought about by the (optionally named) causer. This reading is not possible with dynamic verbs because the patientive voice would only shift the role of the patient to that of the topic without having to create the new role for the agent.
 
 \pex
 \a
