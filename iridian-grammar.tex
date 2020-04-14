@@ -18,6 +18,7 @@
 
 %% Fonts
 \usepackage{kpfonts}
+
 \usepackage{FiraSans}
 \usepackage{savetrees}
 \usepackage{microtype}
@@ -107,6 +108,39 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \lingset{exno=\small,everyex=\small,everygla=\it,everyglb=\footnotesize,everyglc=\footnotesize,aboveexskip=6pt,aboveglftskip=0pt,belowexskip=3pt}
 
 
+% Possessive citations like "Doe's (1992)"
+% https://tex.stackexchange.com/a/307461
+\DeclareNameFormat{labelname:poss}{% Based on labelname from biblatex.def
+  \nameparts{#1}% Not needed if using Biblatex 3.4
+  \ifcase\value{uniquename}%
+    \usebibmacro{name:family}{\namepartfamily}{\namepartgiven}{\namepartprefix}{\namepartsuffix}%
+  \or
+    \ifuseprefix
+      {\usebibmacro{name:first-last}{\namepartfamily}{\namepartgiveni}{\namepartprefix}{\namepartsuffixi}}
+      {\usebibmacro{name:first-last}{\namepartfamily}{\namepartgiveni}{\namepartprefixi}{\namepartsuffixi}}%
+  \or
+    \usebibmacro{name:first-last}{\namepartfamily}{\namepartgiven}{\namepartprefix}{\namepartsuffix}%
+  \fi
+  \usebibmacro{name:andothers}%
+  \ifnumequal{\value{listcount}}{\value{liststop}}{'s}{}}
+\DeclareFieldFormat{shorthand:poss}{%
+  \ifnameundef{labelname}{#1's}{#1}}
+\DeclareFieldFormat{citetitle:poss}{\mkbibemph{#1}'s}
+\DeclareFieldFormat{label:poss}{#1's}
+\newrobustcmd*{\posscitealias}{%
+  \AtNextCite{%
+    \DeclareNameAlias{labelname}{labelname:poss}%
+    \DeclareFieldAlias{shorthand}{shorthand:poss}%
+    \DeclareFieldAlias{citetitle}{citetitle:poss}%
+    \DeclareFieldAlias{label}{label:poss}}}
+\newrobustcmd*{\posscite}{%
+  \posscitealias%
+  \textcite}
+\newrobustcmd*{\Posscite}{\bibsentence\posscite}
+\newrobustcmd*{\posscites}{%
+  \posscitealias%
+  \textcites}
+
 %%Formatting of section headings
 
 \makeatletter
@@ -179,6 +213,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 \usepackage[bottom,hang,norule]{footmisc}
 \setlength{\footnotesep}{0.75\baselineskip}
+
 
 
 %% Custom column types
