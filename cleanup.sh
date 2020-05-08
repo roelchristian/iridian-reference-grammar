@@ -24,3 +24,5 @@ find . -type f -name '*.mtc' -exec rm {} +
 find . -type f -name '*.mtc0' -exec rm {} +
 find . -type f -name '*.xml' -exec rm {} +
 find . -type f -name '*.toc' -exec rm {} +
+
+echo "Done cleaning up the working directory."
