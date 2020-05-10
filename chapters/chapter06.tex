@@ -4,7 +4,7 @@
 
 The constituent word order of Iridian sentences is SOV, but the agglutinative nature of the language and the presence of case-marking on nouns makes word order typically flexible, with the only universal rule being that the main verb should appear at the end of a sentence.
 
-\section{Topic-Predicate Constructions}\index{topic}\index{predicate}
+\section{Topic-Predicate Constructions}\index{topic}\index{predicate}\label{sec:topic-pred}
 The Iridian sentence can be divided primarily into a topic part and a predicate
 or comment part. The topic is what the sentence is about, while the predicate or comment represents the information presented in the sentence about the topic. While both the topic and the predicate are pragmatic constructs, the topic-predicate construction is important as it determines how the rest of the sentence is structured.
 
@@ -67,9 +67,127 @@ Iridian is a strongly head-final language.
 
 \section{Topicless Sentences}\label{sec:topicless}\index{topicless sentence}
 
-\section{Definiteness}\index{definitiness}\label{sec:definiteness}
+\section{Definiteness}\index{definiteness}\label{sec:definiteness}
+
+Iridian lacks a specific class of articles\index{articles} such as English
+\trsl{a} or \trsl{the} to mark the opposition between definite and indefinite
+nouns. For example, the word \ird{jec} can mean both \trsl{a dog} or \trsl{the
+dog} depending on the context (or in some environments the same word can be
+interpreted as \trsl{dogs,} \trsl{some dogs} or \trsl{the dogs}).
+
+A common way to specificy the definiteness of a noun is to promote it to the
+topic position in the sentence. As discussed in \S\ref{sec:topic-pred}, the
+topic of a sentence must be specific and referential, and therefore it is often,
+but not always, definite. Consider for example the two sentences below.
+
+\begin{multicols}{2}
+  \pex
+  \a
+  \begingl
+  \gla Pit\'ar pi\v{z}mo.//
+  \glb Pit\'ar farmer//
+  \glft \trsl{Pitar is \textbf{a} farmer.}//
+  \endgl
+  \a
+  \begingl
+  \gla Pi\v{z}mo Pit\'ar.//
+  \glb farmer Pit\'ar//
+  \glft \trsl{Pit\'ar is \textbf{the} farmer.}//
+  \endgl
+  \xe
+\end{multicols}
+
+This can be extended to non-copular constructions.
+
+\begin{multicols}{2}
+  \pex
+  \a
+  \begingl
+  \gla Vli\v{c}e \v{s}tan\v{z}ice.//
+  \glb milk-\mk{gen} drink-\mk{av-pf-quot}//
+  \glft \trsl{(I) drank some milk.}//
+  \endgl
+  \a
+  \begingl
+  \gla Vliko \v{s}tanimce.//
+  \glb milk drink-\mk{pv-pf-quot}//
+  \glft \trsl{(I) drank the milk.}//
+  \endgl
+  \xe
+\end{multicols}
+
+If the topic is quantified\index{quantifier} by a numeral\index{numeral}, indefiniteness can be expressed by nominalizing\index{nominalization} the main verb and promoting it to topic.
+
+\pex
+\a
+\begingl
+\gla Jaro okr\'ad za propozica niebid\v{c}ek.//
+\glb five district for proposal-\mk{pat} vote:against-\mk{av-pf}//
+\glft \trsl{The five districts voted against the proposal.}//
+\endgl
+\a
+\begingl
+\gla Za propozica niebide\v{c}kou jaro okr\'ad.//
+\glb for proposal-\mk{pat} vote:against-\mk{av-pf-nz} five district//
+\glft \trsl{Five districts voted against the proposal.}//
+\endgl
+\a
+\begingl
+\gla Za propozica niebide\v{c}kou ko okr\'ad jaro.//
+\glb for proposal-\mk{pat} vote:against-\mk{av-pf-nz} \mk{rz} district five//
+\glft \trsl{Five is the number of districts that voted against the proposal.}//
+\endgl
+\xe
+
+The number one (\ird{on\'i})
+
+\pex
+\a
+\begingl
+\gla T\'om ona\v{z}ev\'i.//
+\glb book be:lost-\mk{cont}//
+\glft \trsl{The book is missing.}//
+\endgl
+\a
+\begingl
+\gla On\'i t\'om ona\v{z}ev\'i.//
+\glb one book be:lost-\mk{cont}//
+\glft \trsl{One of the books is missing.}//
+\endgl
+\a
+\begingl
+\gla Ona\v{z}ivou pn\'i t\'om.//
+\glb one book be:lost-\mk{cont}//
+\glft \trsl{One of the books is missing.}//
+\endgl
+\a
+\begingl
+\gla Ona\v{z}ivou pn\'i t\'om.//
+\glb one book be:lost-\mk{cont}//
+\glft \trsl{One of the books is missing.}//
+\endgl
+\xe
 
 
+Note that this rule is not universal and the topic of a sentence does not necessarily have to be definite, especially where the sentence is merely expressing a fact or a general truth:
+
+\pex
+\begingl
+\gla Jec hv\'arem.//
+\glb dog animal//
+\glft \trsl{Dogs are animals.}//
+\endgl
+\xe
+
+
+
+\pex
+\begingl
+\gla To >>jec<< hv\'arem \v{z}e: to robot//
+\glb \mk{dem} dog animal \mk{ncop} \mk{dem} robot//
+\glft \trsl{The ``dog'' is not a real animal but a robot.}//
+\endgl
+\xe
 
 
 \section{Relative and Comparative Constructions}\label{relativecomparative}\index{comparative constructions}
@@ -91,6 +209,7 @@ The clitic\index{clitic} \ird{t\'am} is used to form simple comparative and rela
 \glft \trsl{Marek is taller than Janek.}//
 \endgl
 \xe
+
 \pex
 \a
 \begingl
