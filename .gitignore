@@ -15,3 +15,6 @@ iridian-grammar-tags.tex
 *.blg
 *.bcf
 *.lof
+*.txt
+*.pdf
+*.fls
