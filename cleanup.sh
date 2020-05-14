@@ -10,9 +10,6 @@
 
 find . -type f -name '*.aux' -exec rm {} +
 find . -type f -name '*.out' -exec rm {} +
-find . -type f -name '*.bbl' -exec rm {} +
-find . -type f -name '*.bcf' -exec rm {} +
-find . -type f -name '*.blg' -exec rm {} +
 find . -type f -name '*.idx' -exec rm {} +
 find . -type f -name '*.ilg' -exec rm {} +
 find . -type f -name '*.ind' -exec rm {} +
@@ -24,5 +21,7 @@ find . -type f -name '*.mtc' -exec rm {} +
 find . -type f -name '*.mtc0' -exec rm {} +
 find . -type f -name '*.xml' -exec rm {} +
 find . -type f -name '*.toc' -exec rm {} +
+find . -type f -name '*.ent' -exec rm {} +
+
 
 echo "Done cleaning up the working directory."
