@@ -18,14 +18,13 @@
     verbose,
     tmargin  =1.1in,
     bmargin  =1.1in,
-    lmargin  =0.75in,
-    rmargin  =0.75in,
+    lmargin  =0.6in,
+    rmargin  =0.6in,
 }
 
 %% Fonts
 
 %\usepackage[oldstylenums]{kpfonts}
-
 \usepackage{ifluatex}
 \ifluatex
   \usepackage{fontspec}
@@ -37,7 +36,7 @@
   \usepackage{textgreek}
 \fi
 
-\usepackage{savetrees}
+%\usepackage{savetrees} % for drafts
 \usepackage{microtype}
 \usepackage{float,microtype}
 
@@ -46,8 +45,8 @@
 \usepackage{expex}
 \usepackage[russian,english]{babel}
 
-%% Tables and Graphics
 \usepackage{graphics,graphicx,amsmath,amssymb}
+%% Tables and Graphics
 \usepackage[font=footnotesize,labelfont=bf]{caption}
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \usepackage{longtable}
@@ -238,7 +237,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 % fancy footnotes
 
-\usepackage[bottom,hang,norule]{footmisc}
+\usepackage[hang,norule]{footmisc}
 
 
 
