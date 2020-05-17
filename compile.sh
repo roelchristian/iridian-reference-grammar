@@ -6,4 +6,4 @@
 # Do not run this file if auxiliary files have just been cleaned up.
 # Instead run initial-compile.sh first.
 
-xelatex iridian-grammar.tex
+lualatex iridian-grammar.tex
