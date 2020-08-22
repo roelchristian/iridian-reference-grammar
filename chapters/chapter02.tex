@@ -56,8 +56,10 @@ Iridian often prefers to encode information on the verb instead of through case 
 	\end{tabu}
 \end{table}
 
+\subsection{Morphophonemic Changes}
 
-\subsection{Agentive voice}\index{agentive voice}
+
+\subsection{Agentive Voice}\index{agentive voice}
 \par The agentive voice is used if the subject of the verb is the agent of the action.
 
 \pex
@@ -234,9 +236,8 @@ The reflexive voice may also be used emphatically, especially in spoken Iridian,
 
 \section{Grammatical Aspect}
 \begin{table}[h!]
-	\footnotesize\sffamily
-	%\centering
 	\caption{Aspect markers in the indicative mood.}
+	\medskip
 	\begin{tabu} to 0.5\textwidth{YY[0.5]}
 		\toprule
 		{\sc aspect}	& {\sc affix}\\
@@ -437,14 +438,15 @@ Causatives may either be lexical, analytical or morphological. Lexical causative
 \begin{table}
 \sffamily\footnotesize
 \caption{Causative forms of the verb \irdp{shradá}{to die.}}
+\medskip
 	\label{tbl:causative}
 
     \begin{tabu}to \textwidth{Y[0.5]Y[0.6]YY}
          \toprule\addlinespace
 		 										& {\sc causative } &{\sc regular meaning} & {\sc causative meaning}\\\addlinespace
 												\midrule\addlinespace
-				unmarked				& neshradá									& to die, to be dead 	& \emph{(defective)} \\ \addlinespace
-		 		Agentive				& \ird{neshrážá}			& to kill & to cause someone to kill\\ \addlinespace
+				Unmarked				& neshradá									& to die, to be dead 	& \emph{(defective)} \\ \addlinespace
+		 		Asgentive				& \ird{neshrážá}			& to kill & to cause someone to kill\\ \addlinespace
 		 		Patientive			& \ird{neshradiná}					& to be killed & to be caused to be killed\\\addlinespace
 				Benefactive			& \ird{neshradébá}				& to have someone die for oneself	& to have someone be killed for oneself\\\addlinespace
 				Locative				& \ird{neshradouná}					& to have someone related die&\emph{(defective)}\\\addlinespace
@@ -1346,55 +1348,58 @@ The supine is a non-finite verb form formed used to indicate necessity or purpos
 
 \section{Stative Verbs}\index{verbal adjectives|see{stative verbs}}\index{stative verbs}\index{adjectives}\label{sec:statives}
 
-Iridian lacks a distinct class of adjectives.\footnote{There is however a small class of attributives, which includes deictics\index{deictics} and quantifiers\index{quantifiers} among others, which can function as modifiers. They are different in that these words cannot be used as the predicate\index{predicate} of a sentence. They are discussed in detail on Chapter \ref{chap:minor}.} Instead, a special class of verbs called stative verbs are used to modify noun or noun-like classes. Unlike most verbs, however, stative verbs can only be marked for aspect, and optionally for voice. In addition to this base form (called the copulative), stative verbs also have an attributive form (used when the verb is preceding the noun or noun phrase) and nominative form (representing a concrete nominalization of the verb), both of which are absent in non-attributives verbs. Consider for example the verb \ird{všihná} \trsl{to be angry}:
+Iridian lacks a distinct class of adjectives.\footnote{There is however a small class of attributives, which includes deictics\index{deictics} and quantifiers\index{quantifiers} among others, which can function as modifiers. They are different in that these words cannot be used as the predicate\index{predicate} of a sentence. They are discussed in detail on Chapter \ref{chap:minor}.} Instead, a special class of verbs called {\sc stative verbs} are used to modify noun or noun-like classes. Unlike most verbs, however, stative verbs can only be marked for aspect, and optionally for voice. In addition to this base form (called the {\sc copulative}), stative verbs also have an {\sc attributive} form (used when the verb is preceding the noun or noun phrase) and {\sc nominative} form (representing a concrete nominalization of the verb), both of which are absent in non-attributives verbs. Consider for example the verb \ird{všihná} \trsl{to be angry}:
 
-\pex
-\a
-\begingl
-\gla Maty všihnev\'.//
-\glb mother to:be:angry-\mk{cont}//
-\glft \trsl{Mother is angry.}//
-\endgl
+\begin{table}[h!]
+	\small
+	\caption{Conjugation pattern for stative verbs}
+	\begin{tabu} to 0.7\textwidth{YY[0.8]Y}
+		\toprule
+		&{\sc ending}&{\sc example}\\
+		\midrule
+		Copulative & varies & varies\\
+		Attributive & \ird{-\'i} & \ird{v\v{s}ihn\'i}\\
+		Nominative & \ird{-ou}	& \ird{v\v{s}ihnou}\\
+		\bottomrule
+	\end{tabu}
+\end{table}
 
-\a
-\begingl
-\gla Všihní rám télévonirnašek.//
-\glb to:be:angry-\mk{att} customer telephone-\mk{av-pf}//
-\glft \trsl{An angry customer called.}//
-\endgl
-
-\a
-\begingl
-\gla Všihnou télévonirnašek.//
-\glb to:be:angry-\mk{nz} telephone-\mk{av-pf}//
-\glft \trsl{An angry person called.}//
-\endgl
-
-\xe
-
-\subsection{Copulative Form}
-The copulative form of a stative verbum
-
-\subsection{Attributive Form}
-The attributive form is derived by replacing the infinitive marker \ird{-á} with \ird{-í}. Other than its conjugated comparative form ending in \ird{-ení}, the attributive
+\subsection{Copulative and attributive forms}
+The copulative form of stative verbs is used when the verb is the predicate of the sentence. This form is only conjugated for aspect, and optionally for voice. Unlike normal verbs, however, stative verbs cannot be conjugated in the agentive voice since Iridian grammar does not distinguish between agency in an actor and the description of a state in stative verbs, both of which are encoded in the definition of this class. 
 
 \ex
 \begingl
-\gla Všihnou télévonirnašek.//
-\glb to:be:angry-\mk{nz} telephone-\mk{av-pf}//
-\glft \trsl{An angry person called.}//
+\gla Mamka v\v{s}ihnev\'i \emph{(not} *v\v{s}ihna\v{s}ev\'i\emph{)}//
+\glb mother-\mk{dim} be:angry-\mk{cont} not be:angry-\mk{av-cont}//
+\glft \trsl{My mother is angry.}//
 \endgl
-
 \xe
 
 
-\subsection{Nominal Form}
-The nominal form is derived by replacing the infinitive marker \ird{-á} with the nominalizing suffix \ird{-ou}.
+The attributive form is derived by replacing the infinitive marker \ird{-á} with \ird{-í}. Other than its conjugated comparative form ending in \ird{-ení}, the attributive form is invariable. The comparative form\index{comparative constructions}\index{comparison} is often used, especially in colloquial speech, as an intensifier, even if the stative verb is not actually used in a comparison.
+
+\ex
+\begingl
+\gla V\v{s}ihnen\'i mamka t\'el\'evonir\v{z}ek.//
+\glb be:angry-\mk{comp-att} mother-\mk{dim} call-\mk{av-pf}//
+\glft \trsl{Mother was fuming (\emph{lit.,} angrier) when she called us.}//
+\endgl
+\xe
+
+Because of the invariability of the attributive form, the copulative form may sometimes be used as a modifier, similar to a normal verb, separated from the noun it modifies with the particle \ird{ko}. Note, however, that when conjugated in the continuous aspect (except when marked explicitly for voice), such usage is not grammatical, with Iridian only allowing the attributive.
+
+\ex
+\begingl
+\gla V\v{s}ihninek ko tieho snov upro\v{z}ilz\'ach.//
+\glb be:angry-\mk{pv-pf} \mk{att} god soon \mk{ref-}avenge-\mk{av-ctpv} //
+\glft \trsl{God whom you have angered will seek vengeance soon.}//
+\endgl
+\xe
 
 
+\subsection{Nominative Form}
+The nominative form is derived by replacing the infinitive marker \ird{-á} with the nominalizing suffix \ird{-ou}. This is the same nominalizing suffix used to form nouns from regular verbs, the only difference being that stative verbs allow the suffix to be attached directly on the verb's root. 
 
-
-The use of stative verbs in relative and comparative constructions is discussed in detail in Section \ref{relativecomparative}
 \section{Derivational Morphology}
 \subsection{External Derivation}
 \par Loanwords ending in \textbf{-ace} from the Latin change the final e to á:
