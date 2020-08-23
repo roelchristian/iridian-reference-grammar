@@ -253,6 +253,21 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 \usepackage[hang,norule]{footmisc}
 
+% Glosses in footnotes
+\newcounter{fnexno}
+\setcounter{fnexno}{1}
+\definelingstyle{fnex}{
+% exno=\footnotesize\roman{fnexno}\stepcounter{fnexno},
+  exno=\roman{fnexno}\stepcounter{fnexno},
+  everyex=\footnotesize,
+  numoffset=\footnotemargin,
+  aboveexskip=2ex,
+  belowglpreambleskip=-1ex,
+  interpartskip=0.5ex,
+  aboveglftskip=-1ex,
+  belowexskip=0ex,
+}
+
 %% Custom column types
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 \newcolumntype{Z}{>{\RaggedRight\everypar{\hangindent=1em}\arraybackslash}X}
@@ -335,6 +350,6 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \printindex
 \addcontentsline{toc}{chapter}{Index}
 \markboth{index}{index}
-
+\cleardoublepage
 
 \end{document}
