@@ -20,3 +20,14 @@ iridian-grammar-tags.tex
 *.fls
 *.ent
 latex-build
+
+# glossary files
+*.acn
+*.glg
+*.glo
+*.gls
+*.ist
+*.lpz
+*.lzo
+*.lzs
+

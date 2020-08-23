@@ -136,7 +136,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 %% Formatting of linguistic glosses
 
-\lingset{everygla=\it,everyglb=\footnotesize,everyglft=\small,aboveexskip=5pt,aboveglftskip=0pt,belowexskip=5pt}
+\lingset{everygla=\it\small,everyglb=\footnotesize,everyglft=\small,aboveexskip=5pt,aboveglftskip=0pt,belowexskip=5pt}
 
 
 % Possessive citations like "Doe's (1992)"
@@ -275,6 +275,8 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 % Restart numbering each chapter
 \pretocmd{\chapter}{\excnt=1}{}{}
 
+\input{./preamble/leipzig.tex}
+
 \begin{document}
 
 \author{}
@@ -342,12 +344,11 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \nocite{*}
 \printbibliography
 \addcontentsline{toc}{chapter}{Bibliography}
-\markboth{bibliography}{bibliography}
+\markboth{Bibliography}{Bibliography}
 
 \cleardoublepage
 \printindex
 \addcontentsline{toc}{chapter}{Index}
-\markboth{index}{index}
-\cleardoublepage
+\markboth{Index}{Index}
 
 \end{document}
