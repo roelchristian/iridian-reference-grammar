@@ -19,3 +19,4 @@ iridian-grammar-tags.tex
 *.pdf
 *.fls
 *.ent
+latex-build
