@@ -5,4 +5,5 @@
 
 lualatex iridian-grammar.tex
 biber iridian-grammar
+makeglossaries iridian-grammar
 lualatex iridian-grammar.tex
