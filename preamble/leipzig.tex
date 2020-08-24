@@ -1,11 +1,70 @@
 \usepackage[style=super,nogroupskip]{glossaries}
 \usepackage{glossary-inline}%
+\usepackage{glossary-super}
 \setglossarysection{section}
+\newglossarystyle{myglosses}{%
+  \renewenvironment{theglossary}%
+	{\begin{multicols}{2}\raggedright}
+	{\end{multicols}}
 
-\usepackage[glosses,nonumberlist,]{leipzig}
-\newleipzig{Av}{av}{agentive voice}
-\newleipzig{Pf}{pf}{perspective aspect}
-\newleipzig{Pat}{pat}{patient case}
-\newleipzig{Agt}{agt}{agent case}
+	    \renewcommand*{\glossaryheader}{}
+	    \renewcommand*{\glsgroupheading}[1]{}
+	    \renewcommand*{\glsgroupskip}{}
+	    \renewcommand*{\glsclearpage}{} 
+
+	     % set how each entry should appear:
+	      \renewcommand*{\glossentry}[2]{
+	       \noindent\makebox[4em][l]{\glstarget{##1}{\textsc{\glossentryname{##1}}}}
+	        \glossentrydesc{##1}\par
+	    }
+
+
+	    \renewcommand*{\subglossentry}[3]{%
+	        \glossentry{##2}{##3}
+	    }
+	}
+
+\usepackage[glosses,nonumberlist,mcolblock]{leipzig}
+\usepackage{multicol}
+
+\newleipzig{Av}{av}{agentive}
+\newleipzig{Pf}{pf}{perfective}
+\newleipzig{Pat}{pat}{patient}
+\newleipzig{Pv}{pv}{patientive}
+\newleipzig{Agt}{agt}{agent}
+\newleipzig{Lnk}{lnk}{linking particle}
+\newleipzig{Dim}{dim}{diminutive}
+\newleipzig{Cont}{cont}{continuous}
+\newleipzig{Ctp}{ctpv}{contemplative}
+\newleipzig{N}{n}{negative}
+\newleipzig{Exst}{exst}{existential particle}
+\newleipzig{Quot}{quot}{quotative mood}
+\newleipzig{Pot}{pot}{potential mood}
+\newleipzig{Sbj}{sbj}{subjunctive mood}
+\newleipzig{Ipf}{ipf}{imperfective}
+\newleipzig{Cv}{cv}{converb}
+\newleipzig{Rz}{rz}{relativizer}
+\newleipzig{Nz}{nz}{nominalizer}
+\newleipzig{Att}{att}{attrbutive}
+\newleipzig{Sup}{sup}{supine}
+\newleipzig{Foc}{foc}{focus}
+\newleipzig{Hon}{hon}{honorific}
+\newleipzig{Rec}{rec}{reciprocative}
+\newleipzig{Comp}{comp}{comparative}
+\newleipzig{Ade}{ade}{adessive}
+\newleipzig{Med}{med}{medial}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \makeglossaries
