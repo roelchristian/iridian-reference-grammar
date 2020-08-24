@@ -3,7 +3,7 @@
 Verbs (\ird{sládek}) in Iridian are heavily marked. There is a tendency to encode most of the information contained in the sentence on the verb leaving the noun or noun phrase unmarked if possible.
 
 \par Finite verbs are marked\index{markedness} for the following grammatical categories\index{grammatical categories}:
-\begin{enumerate}
+\begin{enumerate}[nosep]
 	\item \textit{Aspect}.\index{aspect} Iridian has three primary aspects: perfective, imperfective and contemplative; and two secondary ones: retrospective and prospective.
 	\item \textit{Voice}.\index{voice} Iridian has a strong tendency to leave the topic of the sentence unmarked, instead encoding the primary information on the verb. Due to this, voice must be explicitly marked on the verb. Iridian has the following grammatical voices: agentive, patientive, benefactive, instrumental, locative and reflexive.
 	\item \textit{Mood}.\index{mood} Besides the unmarked indicative, Iridian has the following grammatical moods: subjunctive, conditional, hortative, optative, abilitative, permissive and non-volitive. In addition, secondary prefixes are used to express what would otherwise could be considered as moods: inceptive, causative and reciprocative.
@@ -39,8 +39,8 @@ Type II verbs include those whose stems end in \ird{-d}, \ird{-g}, \ird{-z}, \ir
 
 Iridian often prefers to encode information on the verb instead of through case marking on nouns. As such, all verbs must be explicitly marked for voice.
 \begin{table}[h!]
-	\small \centering
-	\caption{Suffixes used to mark grammatical voice.}
+	\small
+	\caption{Suffixes used to mark grammatical voice.}\medskip
 	\begin{tabu} to 0.8\textwidth{YM}
 		\toprule
 		&{\sc ending}\\
@@ -65,7 +65,7 @@ Iridian often prefers to encode information on the verb instead of through case 
 \pex
 \begingl
 \gla Sa piašček.//
-\glb already eat-\mk{av-pf}//
+\glb already eat-\Av{}\Pf{}//
 \glft `(I) already ate.'//
 \endgl
 \xe
@@ -105,8 +105,8 @@ If the remnant vowel is the i-glide \ird{-ie-} or the diphthongs \ird{-ei-} and 
 
 \pex
 \begingl
-\gla Lest zdičalí.//
-\glb wind blow-\mk{av-prog}//
+\gla Lest zdič\'ar.//
+\glb wind blow-\Av{}-\Prog{}//
 \glft \trsl{The wind is blowing.}//
 \endgl
 \xe
@@ -133,28 +133,32 @@ Nevertheless the vowel \nt{5} in the root resurfaces in the following cases:
 \subsection{Benefactive focus}\index{benefactive focus}
 \par The benefactive focus (glossed \mk{ben}) is used when the subject of the sentence is the benefactor or director object of the verb. Verbs often change meaning when used in the benefactive focus.
 
+
+\begin{multicols}{2}
 \pex
 \begingl
 \gla Mač sega nazdébik.//
-\glb mother flower-\mk{pat} buy-\mk{ben-pf}//
+\glb mother flower-\Pat{} buy-\Ben{}-\Pf{}//
 \glft `(I) bought my mother flowers.'//
 \endgl
 \xe
 
 \pex
 \begingl
-\gla Kova piaštébalí.//
-\glb cow eat-\mk{ben-prog}//
+\gla Kova piaštéb\'ar.//
+\glb cow eat-\Ben{}-\Prog{} //
 \glft \trsl{(I am) feeding the cows.}//
 \endgl
 \xe
+
+\end{multicols}
 
 The benefactive is also used idiomatically with verbs of judgment including \ird{novietá} \trsl{to like}
 
 \pex
 \begingl
-\gla Dá čehóvám zánovítébál.//
-\glb \mk{1s} sports-\mk{agt} \mk{neg}-like-\mk{ben-prog}//
+\gla Dá čehóvám zánovítébár.//
+\glb \First\Sg{} sports-\Agt{} \Neg{}-like-\Ben{}-\Prog{}//
 \glft \trsl{I don't like sports.}//
 \endgl
 \xe
@@ -174,30 +178,30 @@ The benefactive is also used idiomatically with verbs of judgment including \ird
 
 \subsection{Reflexive Voice}
 
-The reflexive voice (glossed \mk{ref}) is used when the patient of the verb is also the agent of the action. Morphogically, the reflexive voice is not a separate voice but is derived from the agentive form of the verb and the addition of the prefix \ird{u(d)-}.
+The reflexive voice (glossed {\Refl}) is used when the patient of the verb is also the agent of the action. Morphogically, the reflexive voice is not a separate voice but is derived from the agentive form of the verb and the addition of the prefix \ird{u(d)-}.
 
 \pex
 \begingl
-\gla Na šarta uvižkem.//
-\glb \mk{loc} mirror-\mk{pat} \mk{ref}-see-\mk{av-pf-1s}//
+\gla Na šarta uvižek.//
+\glb \Loc{} mirror-Pat{} \Refl{}-see-\Av{}-\Pf{}//
 \glft \trsl{I saw myself in the mirror.}//
 \endgl
 \xe
 
-The use of the reflexive voice is more extensive in Iridian than in English, and is somehow similar to how the reflexive construction is used in Romance languages.
+The use of the reflexive voice is more extensive in Iridian than in English\index{English}, and is somehow similar to how the reflexive construction is used in Romance languages.
 
 \pex
 \begingl
 \gla Uštižek.//
-\glb \mk{ref}-take:a:bath-\mk{av-pf}//
+\glb \Refl{}-take:a:bath-\Av{}-\Pf{}//
 \glft \trsl{(I) took a bath.}//
 \endgl
 \xe
 
 \pex
 \begingl
-\gla Umúšalí.//
-\glb \mk{ref}-comb-\mk{av-prog}//
+\gla Umúš\'ar.//
+\glb \Refl{}-comb-\Av{}-\Prog{}//
 \glft \trsl{(I) am combing my hair.}//
 \endgl
 \xe
@@ -237,7 +241,7 @@ The reflexive voice may also be used emphatically, especially in spoken Iridian,
 \par The differences
 
 \section{Grammatical Aspect}
-\begin{table}[h!]
+\begin{table}[h!]\small
 	\caption{Aspect markers in the indicative mood.}
 	\medskip
 	\begin{tabu} to 0.5\textwidth{YY[0.5]}
@@ -256,7 +260,7 @@ The reflexive voice may also be used emphatically, especially in spoken Iridian,
 
 \end{table}
 \subsection{Perfective aspect}
-The perfective aspect (glossed {\sc pf}) indicates an action that has been completed at some specific point in time. The thematic ending for the perfective aspect is \ird{-ek}, but the initial $\langle$e$\rangle$ is rather unstable and often changes depending on the environment. The initial $\langle$e$\rangle$ becomes $\langle$i$\rangle$ when used with \ird{-in} (the suffix indicating the patientive voice), with the initial $\langle$i$\rangle$ in the preceding suffix often dropped or replaced by an $\langle$e$\rangle$. This change also occurs when following the benefactive suffix \ird{-\'eb} and when followed by the quotative suffix \ird{-e} (in which case the final \ird{-k} is fricativized to $\langle$c$\rangle$).
+The perfective aspect (glossed \Pf{}) indicates an action that has been completed at some specific point in time. The thematic ending for the perfective aspect is \ird{-ek}, but the initial $\langle$e$\rangle$ is rather unstable and often changes depending on the environment. The initial $\langle$e$\rangle$ becomes $\langle$i$\rangle$ when used with \ird{-in} (the suffix indicating the patientive voice), with the initial $\langle$i$\rangle$ in the preceding suffix often dropped or replaced by an $\langle$e$\rangle$. This change also occurs when following the benefactive suffix \ird{-\'eb} and when followed by the quotative suffix \ird{-e} (in which case the final \ird{-k} is fricativized to $\langle$c$\rangle$).
 
 \pex
 \a\begingl
@@ -413,7 +417,7 @@ Avalent verbs \index{avalent verb} are verbs that have zero core arguments. In I
 
 \subsection{Causative Constructions}\index{causative}
 
-Causatives may either be lexical, analytical or morphological. Lexical causatives involve the encoding of the causation on the verb itself leading the causative form of the verb to be a different form altogether. An analytical causative, on the other hand uses a different verb (usually a verb like \emph{to do} or \emph{to make}) in conjunction with the main verb, to express the idea of causation (e.g., English \trsl{make someone do something.}) Finally, morphological causatives involve morphologically changing the main verb to express the notion of causation. Iridian causative constructions are primarily morphological, formed using the prefix \ird{-ne}.
+Causatives may either be lexical, analytical or morphological. Lexical causatives involve the encoding of the causation on the verb itself leading the causative form of the verb to be a different form altogether. An analytical causative, on the other hand uses a different verb (usually a verb like \emph{to do} or \emph{to make}) in conjunction with the main verb, to express the idea of causation (e.g., English\index{English} \trsl{make someone do something.}) Finally, morphological causatives involve morphologically changing the main verb to express the notion of causation. Iridian causative constructions are primarily morphological, formed using the prefix \ird{-ne}.
 
 \begin{table}
 \sffamily\footnotesize
@@ -439,7 +443,7 @@ Causatives may either be lexical, analytical or morphological. Lexical causative
 
 \end{table}
 
-Due to this suppletive nature, lexical causatives imply a more direct causation, or a tighter link between cause and event\footnote{\textcite{haiman1983} offers a thorough discussion of how the linguistic distance exhibited by the forms of causative constructions existing in a language (e.g., \emph{to cause to die} on one end of the spectrum versus \emph{to kill} on the other) correspond to the conceptual distance between the action of the causer and the result of the action to the causee. In a purely synthetic construction like \emph{kill}, for example, where the linguistic distance is the least, the conceptual distance between the action and the resulting state is also the smallest, with the opposite being true in purely analytical constructions like \emph{to cause to die}.}, than analytical or morphological causatives (\cite{velupillai2012, haiman1983}). Consider for example the three sentences in English below:
+Due to this suppletive nature, lexical causatives imply a more direct causation, or a tighter link between cause and event\footnote{\textcite{haiman1983} offers a thorough discussion of how the linguistic distance exhibited by the forms of causative constructions existing in a language (e.g., \emph{to cause to die} on one end of the spectrum versus \emph{to kill} on the other) correspond to the conceptual distance between the action of the causer and the result of the action to the causee. In a purely synthetic construction like \emph{kill}, for example, where the linguistic distance is the least, the conceptual distance between the action and the resulting state is also the smallest, with the opposite being true in purely analytical constructions like \emph{to cause to die}.}, than analytical or morphological causatives (\cite{velupillai2012, haiman1983}). Consider for example the three sentences in English\index{English} below:
 
 
 \pex
@@ -451,15 +455,15 @@ Due to this suppletive nature, lexical causatives imply a more direct causation,
 The suppletive \emph{kill} in example (\getfullref{caus.kill}) implies more agency on the part of the subject than the more indirect-sounding (\getfullref{caus.made}). In (\getfullref{caus.kill}) the \emph{death} of the patient (\trsl{the man}) is the goal of the act while (\getfullref{caus.made}) it might be inferred that the \emph{dying} was an indirect consequence of an unmentioned second act.
 
 
-Iridian does not employ lexical causatives as in English; instead causatives are formed morphologically by adding the prefix \ird{ne-} (glossed as \mk{caus}) to the verb stem. Although \ird{ne-} is required to form the causative morphologically, some verbs, particularly stative verbs like \irdp{shradá}{to die, to be dead} in table \ref{tbl:causative} may already contain the notion of causation in some of its regular conjugated forms. This is because by default stative verbs\index{stative verb} are intransitive (i.e., the only argument required is the actor/agent\index{agent}) while some verbal voices\index{voice} like the patientive\index{patientive voice} and benefactive\index{benefactive voice} inherently imply the existence of a second and a third argument of a verb\index{argument of a verb} respectively.
+Iridian does not employ lexical causatives as in English\index{English}; instead causatives are formed morphologically by adding the prefix \ird{ne-} (glossed as \mk{caus}) to the verb stem. Although \ird{ne-} is required to form the causative morphologically, some verbs, particularly stative verbs like \irdp{shradá}{to die, to be dead} in table \ref{tbl:causative} may already contain the notion of causation in some of its regular conjugated forms. This is because by default stative verbs\index{stative verb} are intransitive (i.e., the only argument required is the actor/agent\index{agent}) while some verbal voices\index{voice} like the patientive\index{patientive voice} and benefactive\index{benefactive voice} inherently imply the existence of a second and a third argument of a verb\index{argument of a verb} respectively.
 
 %% TODO add section reference
 
-Of course Iridian's definition of which verbs are stative and which ones are dynamic\index{dynamic verb} does not neatly align with the definition those classes have in English (v. \S\,\ref{sec:statives}). For instance the verbs \emph{to stand} and \emph{to eat} are both dynamic verbs in English, while in Iridian \irdp{zdavá}{to stand, to be standing} is stative and only \irdp{piaštá}{to eat} is dynamic. This is why as we see in example (\getfullref{statdyn.1}) below, some forms of the verb \ird{zdavá} already contain the notion of causation in some of its regular conjugated forms.
+Of course Iridian's definition of which verbs are stative and which ones are dynamic\index{dynamic verb} does not neatly align with the definition those classes have in English\index{English} (v. \S\,\ref{sec:statives}). For instance the verbs \emph{to stand} and \emph{to eat} are both dynamic verbs in English\index{English}, while in Iridian \irdp{zdavá}{to stand, to be standing} is stative and only \irdp{piaštá}{to eat} is dynamic. This is why as we see in example (\getfullref{statdyn.1}) below, some forms of the verb \ird{zdavá} already contain the notion of causation in some of its regular conjugated forms.
 
 \pex
-\a  \irdp{zdavá}{to be standing}\deftagex{stat-dyn}\\
-		\irdp{zdavžá}{to stand}\deftagex{stat-dyn}\\
+\a  \irdp{zdavá}{to be standing}\deftagex{statdyn}\deftaglabel{1}\\
+	\irdp{zdavžá}{to stand}\\
     \irdp{zdavná}{to be made standing, to erect}\\
     \irdp{nezdavžá}{to make so./sth. stand}\\
     \irdp{nezdavná}{to be made to make so./sth. standing}
@@ -546,6 +550,7 @@ The patientive voice only requires a patient as argument; however since this arg
 
 As could have been predicted from \posscite{haiman1983} theory, these indirect forms of the causative express a more direct link between the causer and the action. True morphological causatives, i.e., those formed using the prefix \ird{ne-}, imply that the caused action was brought about by an intermediary.
 
+\begin{multicols}{2}
 \pex
 \a
 \begingl
@@ -560,6 +565,7 @@ As could have been predicted from \posscite{haiman1983} theory, these indirect f
 \glft \trsl{I made someone break the vase.}//
 \endgl
 \xe
+\end{multicols}
 
 If the intermediary appears in the sentence it can be marked either in the genitive or in the patientive. Marking the causee in the genitive is the \trsl{neutral} configuration; using the patientive case on the other hand forms what can be called a \emph{coercive} causative (\cite{shibatani1990,lehmann2006}), which in Iridian\footnote{We can compare this to a similar distinction between a dative causative (formed with the clitic \emph{ni}) and the accusative causative (formed with \emph{o}) in Japanese. \textcite{lehmann2006} calls the former a coercive causative construction while the latter a permissive causative construction. There are two main differences between the Japanese\index{Japanese} and Iridian systems however. First the coercive causative in Iridian also implies that the agent has effective control over the action or the causee or both, something not necessarily expressed by the Japanese \emph{o}-form; and second, both the patientive and the genitive forms of the causative in Iridian allow `permissive' readings, as we illustrate later in this section.
 
@@ -571,7 +577,7 @@ could imply either of two things: (i) that the act was made without or against t
 \a
 \begingl
 \gla Váz Jancie nenopriznek.//
-\glb vase Janek-\mk{gen} \mk{caus-}break-\mk{pv-pf}//
+\glb vase Janek-\Gen{} \mk{caus-}break-\mk{pv-pf}//
 \glft \trsl{(I) made John break the vase.}//
 \endgl
 \a
@@ -587,7 +593,7 @@ could imply either of two things: (i) that the act was made without or against t
 
 Nevertheless the degree of control exerted by the causer over the action itself may vary between these constructions.
 
-A common way to formally mark the causer's control or lack thereof in Iridian is the opposition between the retrospective aspect and the perfective aspect. Consider for example the two sentences in Iridian below, both of which have the same general translation in English.
+A common way to formally mark the causer's control or lack thereof in Iridian is the opposition between the retrospective aspect and the perfective aspect. Consider for example the two sentences in Iridian below, both of which have the same general translation in English\index{English}.
 
 \pex
 \a
@@ -610,7 +616,7 @@ The reciprocative prefix \ird{so-} is used with the agentive voice to indicate t
 
 \pex
 \begingl
-\gla Karlu sodalšalím še Marek ščenžek.//
+\gla Karlu sodalšar\v{z}ím še Marek ščenžek.//
 \glb Karel-\mk{inst} \mk{rec}-talk-\mk{av-prog-1s} with Marek arrive-\mk{av-pf}//
 \glft \trsl{Karel and I were talking when Marek arrived.}//
 \endgl
@@ -774,7 +780,7 @@ considered impolite in most settings, and is often used only when speaking with
 friends, family or children. This distinction does not exist in the written
 language, where the imperative is used almost exclusively for these functions.
 However in signs that give orders or warnings (i.e., `Stop,' `Do not enter')
-where English may sometimes use imperative constructions, Iridian uses modal
+where English\index{English} may sometimes use imperative constructions, Iridian uses modal
 constructions\index{modality} (cf. \S\,\ref{sec:modality}) as they are not treated
  as direct commands or prohibitions.
 
@@ -999,9 +1005,9 @@ Dependent clauses expressing purpose are marked in the subjunctive and normally 
 \par The conditional mood is used for conditional or hypothetical clauses. The table below shows the conjugation paradigm for the conditional mood for both regular verbs and the copula. The Iridian conditional mood is not a true conditional mood grammatically, since it is marked on the verb in the dependent clause (protasis), instead of the main clause.
 
 \begin{table}[h!]
-	\footnotesize\sffamily
-	\caption{Conjugation paradigm in the conditional mood for regular \\verbs, the copula and the existential particle \ird{ješ}.}
-	\begin{tabu} to 0.8 \textwidth	{Y[1.3]Y[1.3]YY}
+	\small
+	\caption{Conjugation paradigm in the conditional mood for regular \\verbs, the copula and the existential particle \ird{ješ}.}\medskip
+	\begin{tabu} to 0.9 \textwidth	{Y[1.3]Y[1.3]YY}
 		\toprule
 		&{\scshape regular verbs} & {\scshape copula} & {\scshape existential}\\
 		\midrule
@@ -1128,7 +1134,7 @@ hvaš
 
 \section{Modality}\index{modality}\label{sec:modality}
 
-Iridian can express modality either through verbal morphology, using the affixes listed in table \ref{tbl:modality}, or through a periphrastic construction. In general a periphrastic construction is preferred when the verb is non-dynamic, i.e., the sentence is merely descriptive or stative in nature (compare, for example English \trsl{Mary can sing} vs. \trsl{Mary was able to finish baking the cake}), while the morphological method is used otherwise.
+Iridian can express modality either through verbal morphology, using the affixes listed in table \ref{tbl:modality}, or through a periphrastic construction. In general a periphrastic construction is preferred when the verb is non-dynamic, i.e., the sentence is merely descriptive or stative in nature (compare, for example English\index{English} \trsl{Mary can sing} vs. \trsl{Mary was able to finish baking the cake}), while the morphological method is used otherwise.
 
 \begin{table}[h!]
     \small
@@ -1210,9 +1216,9 @@ The debitive form of a verb expresses necessity. This verb form is now mainly co
 \subsection{Periphrastic constructions}
 
 
-\section{Non-Finite Verb Forms}
+\section{Non-finite verb forms}
 
-\subsection{Gerund}
+\subsection{Gerunds and nominalized verbs}
 \par The gerund (glossed \mk{ger}) refers to the non-finite verb form used as a noun. The gerundive prefix \ird{po-} is always used with the nominalizing suffix \ird{-ou}, both of which are added to the uninflected verb root.
 
 \pex
@@ -1320,7 +1326,7 @@ These four forms are invariable. The endings attach to the verb after the root h
 \endgl
 
 \a\begingl
-\gla Tóm behlenik to oštnice.//
+\gla Tóm behlenik to oštnit.//
 \glb book buy-\mk{pv-pf} \mk{rz} read-\mk{pv-sup}//
 \glft `I bought the book to read.'//
 \endgl
@@ -1330,13 +1336,13 @@ The supine\index{supine} is quite heavily employed in Iridian. In colloquial spe
 
 \pex
 \begingl
-\gla Dá oščit.//
-\glb \mk{1s} read-\mk{av-sup}//
-\glft `I will be reading.' \emph{Lit.,} `I am someone whose purpose is reading.'//
+\gla Dá to t\'om\'i oščit.//
+\glb \mk{1s} this book-\mk{gen} read-\mk{av-sup}//
+\glft `I will be reading this book.' \emph{Lit.,} `I am someone whose purpose is the reading of this book.'//
 \endgl
 \xe
 
-Another common construction involves the supine of necessity with the words \irdp{shlac}{now} \irdp{mál}{time} (or less frequently \irdp{ór}{hour}). This construction is somehow similar to English \trsl{It's time we left} or \trsl{It's time for us to go.} When used this way, the supine is conjugated in the locative voice.\index{supine}
+Another common construction involves the supine of necessity with the words \irdp{shlac}{now} \irdp{mál}{time} (or less frequently \irdp{ór}{hour}). This construction is somehow similar to English\index{English} \trsl{It's time we left} or \trsl{It's time for us to go.} When used this way, the supine is conjugated in the locative voice.\index{supine}
 
 \pex
 \begingl
@@ -1348,7 +1354,7 @@ Another common construction involves the supine of necessity with the words \ird
 \pex
 \begingl
 \gla Sa tet. Shlac zdalounášce mál.//
-\glb already noon time have:breakfast-\mk{lv-sup}//
+\glb already noon now have:breakfast-\mk{lv-sup} time//
 \glft `It's already late (\emph{lit.,} noon). It's time (we) had breakfast.'//
 \endgl
 \xe
