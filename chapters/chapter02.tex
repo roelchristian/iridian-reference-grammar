@@ -38,20 +38,20 @@ Type II verbs include those whose stems end in \ird{-d}, \ird{-g}, \ird{-z}, \ir
 \section{Voice}\index{voice}
 
 Iridian often prefers to encode information on the verb instead of through case marking on nouns. As such, all verbs must be explicitly marked for voice.
-\begin{table}[h!]
+\begin{table}[!ht]
 	\small
 	\caption{Suffixes used to mark grammatical voice.}\medskip
-	\begin{tabu} to 0.8\textwidth{YM}
+	\begin{tabu} to 0.5\textwidth{YY[0.5]}
 		\toprule
 		&{\sc ending}\\
 		\midrule
-		Agentive	& -aš-\\ \addlinespace
-		Patientive	& -in-\\ \addlinespace
-		Benefactive	& -éb-\\ \addlinespace
-		Locative	& -á-\\ \addlinespace
-		Instrumental& -\\ \addlinespace
-		Reflexive	& -\\ \addlinespace
-		Reciprocal	& \\ \addlinespace
+		Agentive	& \ird{-aš-}\\
+		Patientive	& \ird{-in-}\\ 
+		Benefactive	& \ird{-éb-}\\ 
+		Locative	& \ird{-oun-}\\ 
+		Instrumental& \ird{do-\,-oun-}\\ 
+		Reflexive	& -\\ 
+		Reciprocal	& \\ 
 		\bottomrule
 	\end{tabu}
 \end{table}
@@ -265,7 +265,7 @@ The perfective aspect (glossed \Pf{}) indicates an action that has been complete
 \pex
 \a\begingl
 \gla Bych na gnaža Marek vdenik.//
-\glb yesterday \mk{loc} school-\mk{pat} Marek see-\mk{pv-pf}//
+\glb yesterday \Loc{} school-\mk{pat} Marek see-\mk{pv-pf}//
 \glft \trsl{(I) saw Marek at school yesterday.}//
 \endgl
 \a\begingl
@@ -299,7 +299,7 @@ When negated, the perfective indicates something that ought to be done but had n
 \pex<ret-pres1>
 \begingl
 \gla Hroná tímu na Budapešta možlašaním.//
-\glb three year-\mk{inst} \mk{loc} Budapest-\mk{pat} live-\mk{av-ret-1s}//
+\glb three year-\mk{inst} \Loc{} Budapest-\mk{pat} live-\mk{av-ret-1s}//
 \glft `I have been living in Budapest for three years.'//
 \endgl
 \xe
@@ -365,7 +365,7 @@ The continuous aspect is also used to denote a habitual action.
 \pex
 \begingl
 \gla Dá na Praha možleví.//
-\glb \mk{1s.str} \mk{loc} Prague-\mk{pat} live-\mk{cont}//
+\glb \mk{1s.str} \Loc{} Prague-\mk{pat} live-\mk{cont}//
 \glft \trsl{I live in Prague.} //
 \endgl
 \xe
@@ -627,7 +627,7 @@ The use of the reciprocative inherently implies plurality on the part of the sub
 \pex
 \begingl
 \gla To na hruma horka sokonížek.//
-\glb \mk{dem} \mk{loc} church-\mk{pat} parents \mk{rec}-wed-\mk{av-pf}//
+\glb \mk{dem} \Loc{} church-\mk{pat} parents \mk{rec}-wed-\mk{av-pf}//
 \glft \trsl{(My) parents were married in this church.}//
 \endgl
 \xe
@@ -635,7 +635,7 @@ The use of the reciprocative inherently implies plurality on the part of the sub
 \pex
 \begingl
 \gla Nie senátor sožubalšalí to na televiza vížek.//
-\glb \mk{pl=} senator \mk{rec}-shout-\mk{av-prog} \mk{rz} \mk{loc} television-\mk{pat} see-\mk{av-pf}//
+\glb \mk{pl=} senator \mk{rec}-shout-\mk{av-prog} \mk{rz} \Loc{} television-\mk{pat} see-\mk{av-pf}//
 \glft \trsl{(I) saw the senators shouting at each other on tv.}//
 \endgl
 \xe
@@ -660,7 +660,7 @@ Where both elements of the agent-patient pair are present in the sentence, one o
 
 
 
-\section{Grammatical Mood}\index{mood}\index{modality|see{mood}}
+\section{Grammatical Mood}\index{mood}
 
 \subsection{Indicative}
 
@@ -943,7 +943,7 @@ Dependent clauses expressing purpose are marked in the subjunctive and normally 
 \pex
 \begingl
 \gla Martin na America žnožíl to čeznašálic.//
-\glb Martin \mk{loc} America-\mk{pat} study-\mk{av-sbj} \mk{rz} want-\mk{av-cont-3s.anim}//
+\glb Martin \Loc{} America-\mk{pat} study-\mk{av-sbj} \mk{rz} want-\mk{av-cont-3s.anim}//
 \glft `He wants Martin to study in America.'//
 \endgl
 \xe
@@ -1035,7 +1035,7 @@ The conditional \emph{realis} mood requires the verb in the main clause to be in
 \pex
 \begingl
 \gla Nebo 100 céntigrádu nékrasébič ustručnaševí.//
-\glb water 100 Celcius-\mk{inst} \mk{caus}-heat-\mk{ben-cond.rl} \mk{ref-}boil-\mk{av-cont}//
+\glb water 100 Celcius-\Ins{} \mk{caus}-heat-\mk{ben-cond.rl} \mk{ref-}boil-\mk{av-cont}//
 \glft \trsl{If you heat water to 100 C, it will boil.}//
 \endgl
 \xe
@@ -1059,7 +1059,7 @@ The conditional \emph{realis} mood requires the verb in the main clause to be in
 \pex
 \begingl
 \gla Mém na prezna víne, dekání byróva stóžka.//
-\glb name \mk{loc} list-\mk{pat} \mk{cop.cond.rl} dean-\mk{gen} office-\mk{pat} go-\mk{av-hort}//
+\glb name \Loc{} list-\mk{pat} \mk{cop.cond.rl} dean-\mk{gen} office-\mk{pat} go-\mk{av-hort}//
 \glft \trsl{If your name is on the list, please go to the dean's office.}//
 \endgl
 \xe
@@ -1168,7 +1168,7 @@ As in most languages, modal constructions in Iridian exhibit significant {\sc po
 \pex
 \begingl
 \gla Tomáš rušku zahviržétách.//
-\glb Tomáš Russian-\mk{inst} speak-\mk{av-pot-ctpv}//
+\glb Tomáš Russian-\Ins{} speak-\Av{}-\Pot{}-\Ctp{}//
 \glft \trsl{Tomáš will be able to speak Russian}//
 \endgl
 \xe
