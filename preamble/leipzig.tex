@@ -1,6 +1,7 @@
-\usepackage[style=super,nogroupskip]{glossaries}
+\usepackage[nogroupskip,acronym,nomain]{glossaries}
 \usepackage{glossary-inline}%
 \usepackage{glossary-super}
+
 \setglossarysection{section}
 \newglossarystyle{myglosses}{%
   \renewenvironment{theglossary}%
@@ -15,6 +16,27 @@
 	     % set how each entry should appear:
 	      \renewcommand*{\glossentry}[2]{
 	       \noindent\makebox[4em][l]{\glstarget{##1}{\textsc{\glossentryname{##1}}}}
+	        \glossentrydesc{##1}\par
+	    }
+
+
+	    \renewcommand*{\subglossentry}[3]{%
+	        \glossentry{##2}{##3}
+	    }
+	}
+\newglossarystyle{langlist}{%
+  \renewenvironment{theglossary}%
+	{\begin{multicols}{2}\raggedright}
+	{\end{multicols}}
+
+	    \renewcommand*{\glossaryheader}{}
+	    \renewcommand*{\glsgroupheading}[1]{}
+	    \renewcommand*{\glsgroupskip}{}
+	    \renewcommand*{\glsclearpage}{} 
+
+	     % set how each entry should appear:
+	      \renewcommand*{\glossentry}[2]{
+	       \noindent\makebox[4em][l]{\glstarget{##1}{{\glossentryname{##1}}}}
 	        \glossentrydesc{##1}\par
 	    }
 
@@ -59,18 +81,19 @@
 \newleipzig{Wk}{wk}{weak form}
 
 
+%% language abbreviations
 
+% macro to call full name of language
+\newcommand{\printlang}[1]{\acrlong{#1}}
+\newcommand{\citelang}[1]{\acrshort{#1}}
 
-
-
-
-
-
-
-
-
+% list of abbreviations used
+\newacronym{en}{en}{English}
+\newacronym{cs}{cz}{Czech}
 
 
 
 
 \makeglossaries
+
+
