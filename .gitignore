@@ -24,10 +24,12 @@ latex-build
 # glossary files
 *.acn
 *.glg
-*.glo
+*glo
 *.gls
 *.ist
 *.lpz
 *.lzo
 *.lzs
+*.acr
+*.alg
 
