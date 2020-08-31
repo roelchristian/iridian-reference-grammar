@@ -32,6 +32,7 @@
   \setmainfont{Linux Libertine O}
   \setsansfont{Linux Libertine O}
 
+
 \else
   \usepackage[utf8]{inputenc}
   \usepackage[T1]{fontenc}
@@ -42,14 +43,25 @@
 %\usepackage{savetrees} % for drafts
 \usepackage{microtype}
 \usepackage{float,microtype}
-\widowpenalty10000
-\clubpenalty10000
+\widowpenalty=1000000
+\clubpenalty=1000000
+
 
 %% Lingustics packages
 \usepackage{tipa}
 \usepackage{expex}
 
 \gathertags
+
+% Third level examples in expex
+% http://tex.stackexchange.com/a/77941
+\def\beginsubsub{%
+\par
+\begingroup
+\advance\leftskip by 2em
+\def\b##1{\par\leavevmode\llap{\hbox to 2em{##1\hfil}}\ignorespaces}}
+\def\endsubsub{\par\endgroup}
+
 \usepackage[russian,english]{babel}
 \usepackage[german=guillemets]{csquotes}
 
@@ -69,6 +81,8 @@
 \usepackage{enumitem}
 \usepackage[british]{datetime2}
 
+\setlist[enumerate]{leftmargin=*}
+
 %% to draw linguistic trees
 \usepackage{tikz}
 \usepackage[linguistics]{forest}
@@ -80,8 +94,11 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 %% Indexing and Cross-referencing
 \usepackage{imakeidx}
 \usepackage[font=footnotesize]{idxlayout}
-% \usepackage[hidelinks,unicode]{hyperref} % for final copy
-\usepackage[unicode]{hyperref} % for drafts
+\usepackage[hidelinks,unicode]{hyperref} % for final copy
+%\usepackage[unicode]{hyperref} % for drafts
+
+% fancy footnotes
+\usepackage[norule,splitrule]{footmisc}
 
 \usepackage[authordate,natbib,backend=biber]{biblatex-chicago}
 \DeclareFieldFormat[article]{title}{\mkbibquote{#1}} % make article titles in quotes
@@ -89,14 +106,17 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \addbibresource{./bibliography/bibliography.bib}
 
 
+
 \renewcommand*{\postnotedelim}{\addcolon\addspace}
 \DeclareFieldFormat{postnote}{#1}
 \DeclareFieldFormat{multipostnote}{#1}
-\renewcommand*{\bibfont}{\small}
+
 
 
 \makeindex
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
 
 %% CUSTOM COMMANDS
 
@@ -114,8 +134,11 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \newcommand{\tsa}[1]{\textsubarch{#1}}
 \newcommand{\glot}{\textglotstop}					% glottal stop
 \newcommand{\tss}[1]{\textsubscript{#1}}
+\newcommand{\nf}[1]{\normalfont {#1}}
+
 \newcommand{\tsup}[1]{\textsuperscript{#1}}
 \newcommand{\ird}[1]{\textit{#1}}					% text in Iridian
+\newcommand{\foreign}[1]{\textit{#1}}         % text in another language
 %\newcommand{\ird}[1]{\colorbox{pink}{\textit{#1}}} % for drafts        % text in Iridian
 \newcommand{\dto}{o\textsubarch{u}}				% ou diphthong
 \newcommand{\dte}{e\textsubarch{I}}				% ei diphthong
@@ -241,7 +264,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 %% Formatting of subsubsections
 \titleformat{\subsubsection}
-{\itshape}{\thesubsubsection}{1em}{}
+{\small\bfseries}{\thesubsubsection}{1em}{\small\bfseries}
 
 %% Formatting of page headers
 \pagestyle{fancy}
@@ -254,9 +277,6 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \fancyhead[LO]{{\thepage}\quad{\itshape{\rightmark}}}
 \cfoot{}
 
-% fancy footnotes
-
-\usepackage[hang,norule]{footmisc}
 
 % Glosses in footnotes
 \newcounter{fnexno}
@@ -293,18 +313,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \frontmatter
 
 
-\begin{titlepage}
-        \centering
-        \vspace{4\baselineskip}
-        {\Huge
-        A Reference Grammar\\of the Iridian Language\par}
-        \vspace{\baselineskip}
-        {\Large\itshape Ircevní koštgramátik}
-
-        \vfill
-        {\em First Edition}\par
-        {2020}
-\end{titlepage}
+\include{./preamble/titlepage}
 
 \include{./chapters/colophon}				% Colophon
 
@@ -331,7 +340,6 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \include{./chapters/chapter05}			% Minor Word Classes
 \include{./chapters/lexder}         % Lexicon and Derivational Morphology
 \include{./chapters/chapter06}			% Syntax of Simple Clauses
-\include{./chapters/chapter07}			% Complex Sentences
 \include{./chapters/chapter08}			% Semantics and Usage
 
 \appendix
