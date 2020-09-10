@@ -642,7 +642,7 @@ The past converbial form is used in expressing gratitude, approbation or condole
 \endgl\xe}\\
 \begingl
 \gla Pápkám shradu am množniká.//
-\glb father-\mk{dim-agt} die-\mk{cv-pf} because console-\mk{pv-hort}//
+\glb father-\Dim{}-\Agt{} die-\Cv{}.\Pf{} because console-\mk{pv-hort}//
 \glft `I'm sorry for your father's death.'//
 \endgl
 \a Expressing approbation:\\
@@ -654,37 +654,61 @@ The past converbial form is used in expressing gratitude, approbation or condole
 \xe
 
 
-\section{Reported speech and evidentiality}\label{sec:reportedspeech}\index{reported speech}\index{indirect speech|see{reported speech}}\index{evidentiality}
+\section{Quotative constructions and  evidentiality}\label{sec:reportedspeech}\index{reported speech}\index{indirect speech|see{reported speech}}\index{evidentiality}
 
-The reported statement and the main clause are separated by the quotative particle \ird{to-že}\footnote{This particle will simply be glossed as {\scshape qp} even though it actually consist of two parts: the relativizing particle \ird{to} and the cliticized quotative particle \ird{že}.}.
+
+{\sc evidentiality} is a grammatical category that is concered in the explicit encoding of a source of information or knowledge (i.e. evidence) which the speaker claims to have made use of for producing the primary proposition of the utterance (\cite[1-2]{diewald2010}). Iridian is unique among languages of Central Europe (and of Europe in general) in possessing a grammaticalised evidentiality system. Even non-Indo European languages in the region such as Hungarian (cf. author) or Basque (cf. \cite{alcazar2010}) do not possess an overt evidential. Of course a speaker’s source of information may be expressed through other methods
+
+The Iridian evidentiality system more or less falls under \posscite{aikhenvald2004} A3 category, where the distinction is between the marked quotative form for reported speech/hearsay and the unmarked ‘everything else’ category which is evidentiality-neutral
+
+\subsection{Quotative constructions and reported speech}
+
+The principal use of the quotative is to explicitly mark reported speech. The reported clause is separated from the rest of the sentence by the particle \ird{to-že}.\footnote{In colloquial speech, \ird{to-\v{z}e} is often reduced to \ird{\v{c}e}, or less commonly \ird{d\v{z}e}.}
 
 \pex
-\begingl
-\gla Maša advokát neví to-že zíček.//
-\glb Maša lawyer \mk{cop.quot} \mk{qp} say-\Av{}-\Pf{}//
-\glft \trsl{(He) said that Maša is a lawyer}//
-\endgl
+  \begingl
+    \gla Koleč sní upolšice to-že Lukáš žiček.//
+    \glb key \Refl{}.\Acc{} \Refl{}-lose-\Av{}-\Pf{}-\Quot{} {\Rel{}=\Quot{} (:=\Qp{})} Lukáš say-\Av{}-\Pf{}//
+    \glft ‘Lukáš said he lost his keys.’//
+  \endgl
 \xe
 
-The reported part is treated as a subordinate clause and must appear before the main clause. In general reported speech takes the form
+The particle \ird{to-že} is in fact made up of two separate clitics: the particle \ird{to} which is used to mark relative clauses, and \ird{-že} which is the primary quotative particle. This is made more evident in nested quotations, where \ird{-že} can only be attached to the rightmost reported clause:
 
-\ex\deftagex{ex:repstruct}{\small
-\bigg[ \Big[ \big[ [TOP*] [PRED in quotative mood] \big] + \big[\ird{to-že}*\big] \Big] \bigg] + \bigg[verbum dicendi*\bigg],
-}\xe
-
-\ex
-\begin{forest}
-  [S,
-    [{TOP}, [TOP] [VP] ]
-    [{PRED}, [QP] [VP,  [NP] [VP]]
-    ]]
-\end{forest}
+\pex
+  \begingl
+    \gla Dá dněm vednice to Marek žičice to-že Lukáš žiček.//
+    \glb \First{}\Sg{} \Dem{}.\Agt{} see-\Pv{}-\Pf{}-\Quot{} \Rel{} Marek say-\Av{}-\Pf{}-\Quot{} \Qp{} Lukáš say-\Av{}-\Pf{}//
+    \glft \trsl{Lukáš said Marek said he (Marek) saw me.}//
+  \endgl
 \xe
-where the elements followed by an asterisk (*) are optional.
 
-The \emph{verbum dicendi}\index{verbum dicendi} (Latin for verb of speech/speaking) is the verb in the main clause that signals that the subordinate clause is a quoted clause and that its main clause should therefore appear in the quotative mood. Examples of \emph{verba dicendi} in Iridian include \irdp{zieká}{to say}; \irdp{vadá}{to think}; \irdp{kvuštá}{to hear}; \irdp{vidá}{to see}; \irdp{hloupá}{to ask}; \irdp{ohletá}{to remember}; \irdp{shová}{to recount, to tell a story}. Note that although they are called verbs ``of speaking'' they do not necessarily introduce speech as much as function as grammaticalized tags marking the quotative,  which is more properly analyzed to mark not just speech but inferentiality and evidentiality as well.
 
-More complex \emph{verba dicendi} can be formed by using an imperfect converbial construction (the converb form in \ird{-iec}) with a canonical \emph{verbum dicendi}. To understand this consider the following sentences in English:
+Direct quotations do not require the quotative, although they are still separated from the main clause by to-že.
+
+\pex
+  \begingl
+    \gla „Dá záščenžit” to-že žiček.//
+    \glb \First{}\Sg{} \Neg{}-come-\Av{}-\SupP{} \Qp{} say-\Av{}-\Pf{}//
+    \glft \trsl{“I won’t be coming,” (he) said.}//
+  \endgl
+\xe
+
+
+
+The use of pronouns in quoted clauses is similar to English, with the main exception being the use of the reflexive se if the subject of the quoted clause is the same as the subject of the main clause. This is true even if the subject of the main clause is a pronoun.
+
+\pex
+  \begingl
+    \gla Se to obru na večera záščenžitej\'i to-že Marek (dá) žiček. //
+    \glb \Refl{} \Dem{} night-\Ins{} \Loc{} party-\Acc{} \Neg{}-come-\Av{}-\SupP{}-\Quot{} \Qp{} Marek \First\Sg{} say-\Av{}-\Pf{} //
+    \glft \trsl{Marek/I said he/I won't be coming to the party tonight.}//
+  \endgl
+\xe
+
+The verb \irdp{zěká}{to say} is called a \emph{verbum dicendi}\index{verbum dicendi} from the Latin meaning ‘verb of speech/speaking.’ Other \emph{verba dicendi} in Iridian include \irdp{vadá}{to think}; \irdp{kvuštá}{to hear}; \irdp{vidá}{to see}; \irdp{hloupá}{to ask}; \irdp{ohletá}{to remember}; \irdp{sehová}{to recount, to tell a story}. Note that although they are called verbs ``of speaking'' they do not necessarily introduce speech as much as function as grammaticalized tags marking the quotative,  which is more properly analyzed to mark not just speech but inferentiality and evidentiality as well.
+
+More complex \emph{verba dicendi} can be formed by using an imperfect converbial construction (the converb form in \ird{-\v{e}c}) with a canonical \emph{verbum dicendi}. To illustrate this consider the following sentences in English:
 
 \pex[*=?*,interpartskip=0pt]
 \a She said no.\deftagex{vd}\deftaglabel{1}
@@ -706,61 +730,24 @@ In Iridian, however, constructions like (\getfullref{vd.2}) are not permitted, w
 \endgl
 \xe
 
-
-This converbial construction is not limited to what is essentially describing how the verbum dicendi was  Other more idiomatic treatments include
-
-%% EXAMPLES HERE
-
 It should be noted as well how the verb \irdp{vadá}{to think} and its derived forms, due to their inherent meanings, require the subjunctive to be used in the reported clause. This is true whether or not the subjunctive would have been used had the reported clause been a regular dependent clause.
 
 
 \pex
-\a
 \begingl
-  \gla Já mnou.//
-  \glb you correct//
-  \glft \trsl{You're right.}//
-\endgl
-\a
-\begingl
-  \gla Já mnou neví.//
-  \glb you correct \mk{cop.quot}//
-  \glft \trsl{(I heard) you're right}//
-\endgl
-\a
-\begingl
-  \gla Já mnou nehlí to-že Martin spouviec vážál.//
-  \glb you correct \mk{cop.quot.sbj} \mk{qp} Martin agree-\Cv{} think-\Av{}-\Cont{}//
+  \gla Já mnou nehlí to-že Martin spouviec vážev\'i.//
+  \glb you correct \Cop{}.\Sbj{}.\Quot{} \Qp{} Martin agree-\Cv{}.\Ipf{} think-\Av{}-\Cont{}//
   \glft \trsl{Martin agrees that you are right.}//
 \endgl
 \xe
 
 
 
-We see from (\getfullref{ex:repstruct}) that when it comes to reported speech and similar constructions in Iridian, the \ird{verbum dicendi}\index{verbum dicendi} is not necessary to create a well-formed sentence. The same is true with the quotative particle \ird{to-že}. Both can be omitted without making the sentence grammatically incorrect since the quotative particle is enough to identify the reported clause.\index{reported speech}.
+We see from  that when it comes to reported speech and similar constructions in Iridian, the \ird{verbum dicendi}\index{verbum dicendi} is not necessary to create a well-formed sentence. The same is true with the quotative particle \ird{to-že}. Both can be omitted without making the sentence grammatically incorrect since the quotative particle is enough to identify the reported clause.\index{reported speech}.
 
 In most instances, however, removing either the main verb or the main verb and the quotative particle can cause the resulting sentence to acquire a new meaning. This is especially true when the quotative mood is used not to report speech but to imply a certain unsureness on the part of the speaker about the information being presented, or for the speaker to distance themself by implying through the use of the quotative that the information is secondhand and not theirs.
 
-Generally \ird{to-že} is kept when the speaker is quoting themself, to repeat or emphasize what they have said, or expletively, to express their frustration or affirmation.\footnote{When used this way the pronunciation of \ird{to-že} is closer to an emphatic \nt{"to\dpu\textctz{}E} or even \nt{"to\dpu:\textctz{}EP}}
-
-%% TODO remove affrication of initial dental stops in Phonology section!!!
-
-\pex
-\begingl
-\gla Mnou neví to-že!//
-\glb correct \mk{cop.quot} \mk{qp}//
-\glft \trsl{I've been telling you) it is right.}//
-\endgl
-\xe
-
-\pex
-\begingl
-\gla Dá roctymút to!//
-\glb \First{}\Sg{} dance-\mk{abl-quot.ipf} \mk{rz}//
-\glft `(But) I can dance.'//
-\endgl
-\xe
-
+Generally \ird{to-že} is kept when the speaker is quoting themself, to repeat or emphasize what they have said, or expletively, to express their frustration or affirmation.
 
 Interestingly, commands and requests are not treated as reported speech but as regular subordinate clauses governed by \ird{to} and not by \ird{to-že}.
 
@@ -782,6 +769,55 @@ When the quoted clause is a question, whether a direct one or not, the quoted cl
 }//
 \endgl
 \xe
+
+\subsection{Emotivity and other semantic/pragmatic uses of the quotative}
+
+\subsection{Epistemic extensions}
+
+As in most other languages with an overt evidential system, the Iridian quotative has secondary epistemic extensions. This may be realised either by using the quotative by itself or through auxiliary epistemic markers. As we have established in the previous sections, the quotative can be used by a speaker both to distance themself from the statement on the one hand and to assert their belief in its truthfulness on the other; the use of a secondary epistemic marker eliminates this possible confusion in what would otherwise have been a contradictory usage of the same grammatical category. These auxiliary particles, nonetheless, may of course be left out in discourse if the speaker thinks the epistemic usage of the quotative is clear enough from the context.
+
+A speaker’s judgement of the truthfulness of a statement may be made clear by the dubitative bude or the affirmative toleto. When using the quotative to quote oneself, bude express a disbelief predicated upon surprise rather than on a judgement of a statement’s veracity; in the same manner, toleto, acquire a secondary meaning of insistence, even annoyance.
+
+\pex
+\begingl
+  \gla Sól bude tahatnitejí.//
+  \glb peace \Dub{} bring-\Pv{}-\SupP{}-\Quot{}//
+  \glft \trsl{They say they come in peace but I don’t believe it.}//
+\endgl
+\xe
+
+\pex
+\begingl
+  \gla Ma já bude ža konědnitejí to!//
+  \glb but \Second{}\Sg{} \Dub{} already marry-\Pv{}-\SupP{}-\Quot{} \Rel{}//
+  \glft \trsl{I still can’t believe you’re already getting married!}//
+\endgl
+\xe
+
+
+\pex
+\begingl
+  \gla Marek toleto poslem všihnébice.//
+  \glb Marek \Aff{} message-\Agt{} be:angry-\Ben{}-\Pf{}-\Quot{}//
+  \glft \trsl{I’m telling you the message really made Marek angry.}//
+\endgl
+\xe
+
+\pex
+\begingl
+  \gla Méva toleto sehovn\'an\v{e}!//
+  \glb all \Aff{} recount-\Pv{}-\Ret{}-\Quot{}//
+  \glft \trsl{But I’ve told you everything I know already!}//
+\endgl
+\xe
+
+
+
+
+
+
+
+
 
 
 
