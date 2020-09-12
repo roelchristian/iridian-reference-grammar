@@ -1,17 +1,4 @@
-filename=iridian-grammar.tex
-
-pdf: ps
-	ps2pdf ${filename}.ps
-
-pdf-print: ps
-	ps2pdf -dColorConversionStrategy=/LeaveColorUnchanged -dPDFSETTINGS=/printer ${filename}.ps
-
-text: html
-	html2text -width 100 -style pretty ${filename}/${filename}.html | sed -n '/./,$$p' | head -n-2 >${filename}.txt
-
-html:
-	@#latex2html -split +0 -info "" -no_navigation ${filename}
-	htlatex ${filename}
+filename=iridian-grammar
 
 all:
 	lualatex ${filename}
@@ -58,5 +45,9 @@ clean:
 	find . -type f -name '*.ent' -exec rm {} +
 	find . -type f -name '*.lg' -exec rm {} +
 	find . -type f -name '*.dvi' -exec rm {} +
+	find . -type f -name '*.idv' -exec rm {} +
+	find . -type f -name '*.4ct' -exec rm {} +
+	find . -type f -name '*.4tc' -exec rm {} +
+
 
 	echo "Done cleaning up the working directory."
