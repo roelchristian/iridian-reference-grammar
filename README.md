@@ -1,6 +1,6 @@
 # A reference grammar of the Iridian language
 
-Work on the current version of this grammar started on May/June 2020.
+Work on the current version of this grammar started on May/June 2019.
 
 You can learn more about this project by visiting https://lang.roelchristian.com
 
