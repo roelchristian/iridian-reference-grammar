@@ -11,6 +11,13 @@ all:
 quick:
 	lualatex ${filename}
 
+bib:
+	biber ${filename}
+
+glossaries:
+	makeglossaries ${filename}
+
+
 update-bib:
 	lualatex ${filename}
 	biber ${filename}
@@ -58,11 +65,4 @@ clean:
 	find . -type f -name '*.lzo' -exec rm {} +
 	find . -type f -name '*.lzs' -exec rm {} +
 	find . -type f -name '*.ist' -exec rm {} +
-
-
-
-
-
-
-
 	echo "Done cleaning up the working directory."
