@@ -48,6 +48,21 @@ clean:
 	find . -type f -name '*.idv' -exec rm {} +
 	find . -type f -name '*.4ct' -exec rm {} +
 	find . -type f -name '*.4tc' -exec rm {} +
+	find . -type f -name '*.acn' -exec rm {} +
+	find . -type f -name '*.acr' -exec rm {} +
+	find . -type f -name '*.alg' -exec rm {} +
+	find . -type f -name '*.bbl' -exec rm {} +
+	find . -type f -name '*.bcf' -exec rm {} +
+	find . -type f -name '*.blg' -exec rm {} +
+	find . -type f -name '*.lpz' -exec rm {} +
+	find . -type f -name '*.lzo' -exec rm {} +
+	find . -type f -name '*.lzs' -exec rm {} +
+	find . -type f -name '*.ist' -exec rm {} +
+
+
+
+
+
 
 
 	echo "Done cleaning up the working directory."
