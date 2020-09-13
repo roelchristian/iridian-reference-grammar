@@ -47,6 +47,8 @@
   \usepackage{textgreek}
 \fi
 
+
+
 %\usepackage{savetrees} % for drafts
 \usepackage{microtype}
 
@@ -55,6 +57,7 @@
 \widowpenalty=10000
 \clubpenalty=10000
 \brokenpenalty=10000
+
 
 %% Lingustics packages
 \usepackage{tipa}
@@ -76,7 +79,7 @@
 
 \usepackage{graphics,graphicx,amsmath,amssymb}
 %% Tables and Graphics
-\usepackage[justification=raggedright,labelfont=it,font=footnotesize,labelsep=quad]{caption}
+\usepackage[justification=raggedright,labelfont=sc,font={sf,footnotesize},labelsep=quad]{caption}
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \usepackage{longtable}
 \usepackage{minitoc}
@@ -88,6 +91,7 @@
 \usepackage{etoolbox}
 \usepackage{multirow}
 \usepackage{enumitem}
+\usepackage{metalogo}
 \usepackage[british]{datetime2}
 
 
@@ -110,6 +114,11 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 %\usepackage[unicode]{hyperref} % for drafts
 \usepackage{url}
 \urlstyle{same}
+\usepackage{filecontents}
+\begin{filecontents}{\jobname.mst}
+suffix_2p "}{~sq."
+suffix_3p "~sqq."
+\end{filecontents}
 
 % fancy footnotes
 \usepackage[norule,splitrule]{footmisc}
@@ -135,7 +144,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 
 %% CUSTOM COMMANDS
-
+\newcommand{\cscaps}{\CardoSmallCaps}
 \newcommand{\zz}{\textctz}								% voiced palatal sibilant
 \newcommand{\bt}[1]{/\textipa{#1}/}				% broad transcription
 \newcommand{\nt}[1]{[\textipa{#1}]}				% narrow transcription
@@ -223,6 +232,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 %%Formatting of section headings
 
+
 \makeatletter
 \def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
 \def\@makechapterhead#1{%
@@ -269,13 +279,13 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 %% Formatting of sections
 \titleformat{\section}
-{}{\thesection}{1em}{\CardoSmallCaps\large\lowercase}
+{}{\thesection}{1em}{\CardoSmallCaps\lowercase}
 \titlespacing*{\section}
 {0pt}{3ex plus 1ex minus .2ex}{4pt}
 
 %% Formatting of subsections
 \titleformat{\subsection}[hang]
-{}{\thesubsection}{1em}{\CardoSmallCaps\small\lowercase}
+{\sffamily\footnotesize}{\thesubsection}{1em}{\sffamily\footnotesize}
 \titlespacing*{\subsection}
 {0pt}{3ex plus 1ex minus .2ex}{4pt}
 
