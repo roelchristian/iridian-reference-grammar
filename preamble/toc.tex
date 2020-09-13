@@ -1,0 +1,60 @@
+
+% default definition of the toc format of sections
+%\titlecontents{section}
+%[3.8em] % left
+%{}  % above code
+%{\contentslabel{2.3em}}    % numbered-entry-format
+%{\hspace*{-2.3em}}         % numberless-entry-format
+%{\titlerule*[1pc]{.}\contentspage} % filler-page-format
+%[]      % below code
+
+% Define partial toc for part pages
+%\contentsmargin{0cm} % Removes the default margin
+% Chapter text styling
+\titlecontents{chapter}[1cm] % Indentation
+{\addvspace{8pt}\scshape} % Spacing and font options for chapters
+{\contentslabel[\thecontentslabel]{1cm}} % Chapter number
+{}  
+{\normalfont\quad\thecontentspage} % Page number
+% Section text styling
+\titlecontents{section}[2cm] % Indentation
+{\addvspace{2pt}} % Spacing and font options for sections
+{\contentslabel[\scshape{\thecontentslabel}]{1.0cm}} % Section number
+{}
+{\quad\normalfont\thecontentspage} % Page number
+[]
+% Subsection text styling
+\titlecontents{subsection}[3cm] % Indentation
+{\addvspace{1pt}\small} % Spacing and font options for subsections
+{\contentslabel[\thecontentslabel]{1cm}} % Subsection number
+{\quad}
+{\quad\small\thecontentspage} % Page number
+[] 
+%\contentsmargin{2cm}
+\titlecontents{figure}[2cm] % Indentation
+{\addvspace{2pt}} % Spacing and font options for sections
+{\contentslabel[\textsc{\thecontentslabel}]{1.0cm}} % Section number
+{}
+{\quad\normalfont\thecontentspage} % Page number
+[]
+\titlecontents{table}[2cm] % Indentation
+{\addvspace{2pt}} % Spacing and font options for sections
+{\contentslabel[\textsc{\thecontentslabel}]{1.0cm}} % Section number
+{}
+{\quad\normalfont\thecontentspage} % Page number
+[]
+% Section text styling
+\titlecontents{lsection}[0em] % Indendating
+{\footnotesize\sffamily} % Font settings
+{}
+{}
+{}
+% Subsection text styling
+
+\titlecontents{lsubsection}[.5em] % Indentation
+{\normalfont\footnotesize\sffamily} % Font settings
+{}
+{}
+{}
+% Thanks to egreg, for providing this code at
+% http://tex.stackexchange.com/questions/101773/write-to-back-page-of-part
