@@ -1,5 +1,4 @@
 \usepackage[nogroupskip,acronym,nomain]{glossaries}
-
 \setglossarysection{section}
 \newglossarystyle{myglosses}{%
   \renewenvironment{theglossary}%
@@ -13,7 +12,7 @@
 
 	     % set how each entry should appear:
 	      \renewcommand*{\glossentry}[2]{
-	       \noindent\makebox[4em][l]{\glstarget{##1}{\textsc{\glossentryname{##1}}}}
+	       \noindent\makebox[4em][l]{\glstarget{##1}{\CardoSmallCaps{\glossentryname{##1}}}}
 	        \glossentrydesc{##1}\par
 	    }
 
@@ -45,6 +44,7 @@
 	}
 
 \usepackage[glosses,nonumberlist,mcolblock]{leipzig}
+\renewcommand*{\leipzigfont}[1]{{\CardoSmallCaps{#1}}}
 \usepackage{multicol}
 
 \newleipzig{Av}{av}{active voice}

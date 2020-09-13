@@ -32,9 +32,14 @@
 \usepackage{ifluatex}
 \ifluatex
   \usepackage{fontspec}
-  \defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle}% ,Scale=MatchLowercase} bug in current Biolinum
-  \setmainfont{EB Garamond}
+  \defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle}
+  %\defaultfontfeatures{Ligatures=TeXNumbers=OldStyle}% ,Scale=MatchLowercase} bug in current Biolinum
+  \setmainfont{Cardo}[Scale=0.94]
   \setsansfont{Linux Biolinum O}
+  \newfontfamily\CardoSmallCaps
+  [Ligatures={NoRequired, NoCommon, NoContextual},
+  Letters={UppercaseSmallCaps,SmallCaps},Scale=1.05]
+  {Cardo}
 \else
   \usepackage[utf8]{inputenc}
   \usepackage[T1]{fontenc}
@@ -44,6 +49,7 @@
 
 %\usepackage{savetrees} % for drafts
 \usepackage{microtype}
+
 \usepackage{float}
 \doublehyphendemerits=1000000000
 \widowpenalty=10000
@@ -222,7 +228,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \def\@makechapterhead#1{%
 	\vspace*{10\p@}%
 	{\parindent \z@ \centering \reset@font
-		{\Large \scshape \thechapter}
+		{\Large \CardoSmallCaps \thechapter}
 		\par
 		\vspace*{1\p@}%
 		\interlinepenalty\@M
@@ -233,7 +239,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 		\begin{tabular}{@{\qquad}c@{\qquad}}
 
 			\\
-			{\LARGE \scshape \MakeLowercase{#1}\par\nobreak} \\
+			{\LARGE \CardoSmallCaps \MakeLowercase{#1}\par\nobreak} \\
 			\\
 
 		\end{tabular}
@@ -242,7 +248,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \def\@makeschapterhead#1{%
 	\vspace*{\p@}%
 	{\parindent \z@ \centering \reset@font
-		{\Large \scshape \vphantom{\thechapter}}
+		{\Large \CardoSmallCaps \vphantom{\thechapter}}
 		\par\nobreak
 		\vspace*{15\p@}%
 		\interlinepenalty\@M
@@ -253,7 +259,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 		\begin{tabular}{@{\qquad}c@{\qquad}}
 
 			\\
-			{\LARGE \scshape \MakeLowercase{#1}\par\nobreak} \\
+			{\LARGE \CardoSmallCaps \MakeLowercase{#1}\par\nobreak} \\
 			\\
 
 		\end{tabular}
@@ -263,13 +269,13 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 %% Formatting of sections
 \titleformat{\section}
-{}{\thesection}{1em}{\scshape\large\lowercase}
+{}{\thesection}{1em}{\CardoSmallCaps\large\lowercase}
 \titlespacing*{\section}
 {0pt}{3ex plus 1ex minus .2ex}{4pt}
 
 %% Formatting of subsections
 \titleformat{\subsection}[hang]
-{}{\thesubsection}{1em}{\scshape\small\lowercase}
+{}{\thesubsection}{1em}{\CardoSmallCaps\small\lowercase}
 \titlespacing*{\subsection}
 {0pt}{3ex plus 1ex minus .2ex}{4pt}
 
@@ -289,8 +295,8 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhf{}
-\fancyhead[RE]{{{\scshape\footnotesize\MakeLowercase{\leftmark}}}\hfill{\footnotesize\thepage}}
-\fancyhead[LO]{{\footnotesize\thepage}\hfill{\scshape\footnotesize\MakeLowercase{\rightmark}}}
+\fancyhead[RE]{{{\CardoSmallCaps\footnotesize\MakeLowercase{\leftmark}}}\hfill{\footnotesize\thepage}}
+\fancyhead[LO]{{\footnotesize\thepage}\hfill{\CardoSmallCaps\footnotesize\MakeLowercase{\rightmark}}}
 \cfoot{}
 
 
