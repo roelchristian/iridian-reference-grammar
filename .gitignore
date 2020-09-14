@@ -33,3 +33,5 @@ latex-build
 *.acr
 *.alg
 
+*.draft
+
