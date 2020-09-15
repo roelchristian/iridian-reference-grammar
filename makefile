@@ -7,6 +7,7 @@ all:
 	lualatex ${filename}
 	lualatex ${filename}
 	lualatex ${filename}
+	lualatex ${filename}
 
 quick:
 	lualatex ${filename}
