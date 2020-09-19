@@ -1,6 +1,3 @@
-% !Mode:: "TeX:UTF-8"
-% encoding:					UTF-8
-% compiled with:		luatex
 \documentclass[11pt]{scrbook}
 \areaset[0.50in]{4.5in}{8in}
 % Load packages used
@@ -34,12 +31,13 @@
   \usepackage{fontspec}
   \defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle}
   %\defaultfontfeatures{Ligatures=TeXNumbers=OldStyle}% ,Scale=MatchLowercase} bug in current Biolinum
-  \setmainfont{Cardo}[Scale=0.95]
+  \setmainfont{Cardo}
   \setsansfont{SourceSansPro}
   \newfontfamily\CardoSmallCaps
   [Ligatures={NoRequired, NoCommon, NoContextual},
   Letters={UppercaseSmallCaps,SmallCaps}]
   {Cardo}
+  \newfontfamily\cyrtext[Scale=0.87]{PT Serif}
 \else
   \usepackage[utf8]{inputenc}
   \usepackage[T1]{fontenc}
@@ -93,7 +91,7 @@
 \usepackage{multirow}
 \usepackage{enumitem}
 \usepackage{metalogo}
-\usepackage[british]{datetime2}
+
 
 
 \setlist[enumerate]{leftmargin=*}
@@ -236,7 +234,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \def\@makechapterhead#1{%
 	\vspace*{10\p@}%
 	{\parindent \z@ \centering \reset@font
-		{\Large \scshape\sffamily  \thechapter}
+		{\Large \scshape  \thechapter}
 		\par
 		\vspace*{1\p@}%
 		\interlinepenalty\@M
@@ -247,7 +245,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 		\begin{tabular}{@{\qquad}c@{\qquad}}
 
 			\\
-			{\LARGE \scshape\sffamily  \MakeLowercase{#1}\par\nobreak} \\
+			{\LARGE \cscaps  \MakeLowercase{#1}\par\nobreak} \\
 			\\
 
 		\end{tabular}
@@ -256,7 +254,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \def\@makeschapterhead#1{%
 	\vspace*{\p@}%
 	{\parindent \z@ \centering \reset@font
-		{\Large \scshape\sffamily  \vphantom{\thechapter}}
+		{\Large \scshape  \vphantom{\thechapter}}
 		\par\nobreak
 		\vspace*{15\p@}%
 		\interlinepenalty\@M
@@ -267,7 +265,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 		\begin{tabular}{@{\qquad}c@{\qquad}}
 
 			\\
-			{\LARGE \scshape\sffamily \MakeLowercase{#1}\par\nobreak} \\
+			{\LARGE \cscaps \MakeLowercase{#1}\par\nobreak} \\
 			\\
 
 		\end{tabular}
