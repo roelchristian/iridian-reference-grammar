@@ -276,13 +276,13 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 %% Formatting of sections
 \titleformat{\section}
-{\sffamily}{\thesection}{1em}{\large\scshape\sffamily\lowercase}
+{}{\thesection}{1em}{\large}
 \titlespacing*{\section}
 {0pt}{3ex plus 1ex minus .2ex}{4pt}
 
 %% Formatting of subsections
 \titleformat{\subsection}[hang]
-{\small\sffamily}{\thesubsection}{1em}{\normalfont\scshape\sffamily\lowercase}
+{\small}{\thesubsection}{1em}{\normalfont\itshape}
 \titlespacing*{\subsection}
 {0pt}{3ex plus 1ex minus .2ex}{4pt}
 
@@ -304,8 +304,8 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhf{}
-\fancyhead[RE]{{{\scshape\sffamily\small\MakeLowercase{\leftmark}}}\hfill{\small\sffamily\thepage}}
-\fancyhead[LO]{{\small\sffamily\thepage}\hfill{\scshape\sffamily\small\MakeLowercase{\rightmark}}}
+\fancyhead[RE]{{{\scshape\small\MakeLowercase{\leftmark}}}\hfill{\small\thepage}}
+\fancyhead[LO]{{\small\thepage}\hfill{\scshape\small\MakeLowercase{\rightmark}}}
 \cfoot{}
 
 
