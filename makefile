@@ -9,8 +9,10 @@ all:
 	lualatex ${filename}
 	lualatex ${filename}
 
-quick:
+quick-build:
 	lualatex ${filename}
+
+once: quick-build clean
 
 bib:
 	biber ${filename}
