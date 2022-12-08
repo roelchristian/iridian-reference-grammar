@@ -9,7 +9,7 @@ all:
 	lualatex ${filename}
 	lualatex ${filename}
 
-quick-build:
+quick:
 	lualatex ${filename}
 
 once: quick-build clean
@@ -33,7 +33,7 @@ update-glo:
 	lualatex ${filename}
 
 read:
-	evince ${filename}.pdf &
+	open -a Safari.app ${filename}.pdf &
 
 aread:
 	acroread ${filename}.pdf
