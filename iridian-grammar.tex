@@ -14,6 +14,7 @@
 \areaset[0.50in]{4.5in}{8in}
 
 \input{./preamble/packages.tex}
+\input{./preamble/commands.tex}
 \input{./preamble/toc.tex}
 \input{./preamble/leipzig.tex}
 
@@ -25,13 +26,10 @@
 
 \frontmatter
 
-
 \include{./preamble/titlepage}
-
 \include{./preamble/colophon}				% Colophon
 
 \tableofcontents
-
 \cleardoublepage
 
 \listoftables
@@ -40,8 +38,7 @@
 \listoffigures
 \addcontentsline{toc}{chapter}{List of Figures}
 
-
-\include{./chapters/00-01-preface}				% Preface
+\include{./chapters/00-01-preface}          % Preface
 \include{./chapters/00-02-abbreviations}	% Abbreviations Used
 
 \mainmatter
@@ -54,7 +51,6 @@
 \include{./chapters/06-derivational-morphology} 
 \include{./chapters/07-clause-structure}
 \include{./chapters/08-semantics-and-usage}
-
 
 \appendix
 \part*{Appendices}

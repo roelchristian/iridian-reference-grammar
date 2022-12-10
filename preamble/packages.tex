@@ -1,11 +1,8 @@
-
-
-
-%% PACKAGES USED
+% path: preamble/packages.tex
+% PACKAGES USED
 
 %% Page layout and encoding
 \usepackage[paperwidth=6in,paperheight=9in]{geometry}
-
 \geometry {
     verbose,
     tmargin  =1.1in,
@@ -14,38 +11,23 @@
     rmargin  =0.7in,
 }
 
-
-%% PACKAGES USED
-
-%% Page layout and encoding
-
-%% Fonts
-
-%\usepackage[oldstylenums]{kpfonts}
+% Check if we are using LuaTeX
 \usepackage{ifluatex}
 \ifluatex
   \usepackage{fontspec}
   \defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle}
-  %\defaultfontfeatures{Ligatures=TeXNumbers=OldStyle}% ,Scale=MatchLowercase} bug in current Biolinum
   \setmainfont{Junicode}
   \setsansfont{SourceSansPro}
-  \newfontfamily\CardoSmallCaps
-  [Ligatures={NoRequired, NoCommon, NoContextual},
-  Letters={UppercaseSmallCaps,SmallCaps}]
-  {Cardo}
   \newfontfamily\cyrtext[Scale=1.12]{EB Garamond}
 \else
   \usepackage[utf8]{inputenc}
   \usepackage[T1]{fontenc}
-  \usepackage{kpfonts}
+  \usepackage{kpfonts}          % substitute for Junicode
   \usepackage{textgreek}
 \fi
 
-
-
-%\usepackage{savetrees} % for drafts
+% Typesetting
 \usepackage{microtype}
-
 \usepackage{float}
 \doublehyphendemerits=1000000000
 \widowpenalty=10000
@@ -53,11 +35,10 @@
 \brokenpenalty=10000
 
 
-%% Lingustics packages
-\usepackage{tipa}
+% Linguistics and language-related packages
+\usepackage{tipa} % TODO: deprecated, replace instances of \textipa in code
 \usepackage{expex}
-
-\gathertags
+\gathertags % for expex
 
 % Third level examples in expex
 % http://tex.stackexchange.com/a/77941
@@ -70,11 +51,9 @@
 
 \usepackage[russian,english]{babel}
 \usepackage[german=guillemets]{csquotes}
-\usepackage{CJKutf8}
 
-
+% Tables and figures
 \usepackage{graphics,graphicx,amsmath,amssymb}
-%% Tables and Graphics
 \usepackage[justification=raggedright,labelfont=sc,font={sf,footnotesize},labelsep=quad]{caption}
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \usepackage{longtable}
@@ -90,11 +69,8 @@
 \usepackage{enumitem}
 \usepackage{metalogo}
 
-
-
 \setlist[enumerate]{leftmargin=*}
 \setlist[itemize]{leftmargin=*}
-
 
 %% to draw linguistic trees
 \usepackage{tikz}
@@ -107,8 +83,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 %% Indexing and Cross-referencing
 \usepackage{imakeidx}
 \usepackage[font=footnotesize]{idxlayout}
-\usepackage[hidelinks,unicode]{hyperref} % for final copy
-%\usepackage[unicode]{hyperref} % for drafts
+\usepackage[hidelinks,unicode]{hyperref}
 \usepackage{url}
 \urlstyle{same}
 
@@ -129,56 +104,9 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \DeclareFieldFormat{postnote}{#1}
 \DeclareFieldFormat{multipostnote}{#1}
 
-
-
 \makeindex
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
-
-
-%% CUSTOM COMMANDS
-\newcommand{\cscaps}{\CardoSmallCaps}
-\newcommand{\zz}{\textctz}								% voiced palatal sibilant
-\newcommand{\bt}[1]{/\textipa{#1}/}				% broad transcription
-\newcommand{\nt}[1]{[\textipa{#1}]}				% narrow transcription
-\newcommand{\sx}[1]{\textsuperscript{#1}}	% superscript phoneme
-\newcommand{\mk}[1]{\textsc{#1}}					% glossing abbreviation
-\newcommand{\dpu}{\textsubarch{u}}
-\newcommand{\nn}{\textltailn}							% palatal n
-\newcommand{\jjg}{\textbardotlessj}				% voiced palatal stop
-\newcommand{\llt}{\textltilde}						% dark l
-\newcommand{\llb}{\textbeltl}							% nahuatl l
-\newcommand{\jn}[1]{\texttoptiebar{#1}}		% top tie for affricates
-\newcommand{\tsa}[1]{\textsubarch{#1}}
-\newcommand{\glot}{\textglotstop}					% glottal stop
-\newcommand{\tss}[1]{\textsubscript{#1}}
-\newcommand{\nf}[1]{\normalfont {#1}}
-\newcommand{\tsup}[1]{\textsuperscript{#1}}
-\newcommand{\ird}[1]{\textit{#1}}					% text in Iridian
-\newcommand{\foreign}[1]{\textit{#1}}         % text in another language
-%\newcommand{\ird}[1]{\colorbox{pink}{\textit{#1}}} % for drafts        % text in Iridian
-\newcommand{\dto}{o\textsubarch{u}}				% ou diphthong
-\newcommand{\dte}{e\textsubarch{I}}				% ei diphthong
-\newcommand{\rec}[1]{*\textit{#1}}				% reconstruction in Old Iridian
-\newcommand{\trsl}[1]{`#1'}								% translation in quotes
-\newcommand{\rrr}{\textinvscr}						% uvular r
-\newcommand{\irdp}[2]{\ird{#1}, \trsl{#2}}
-\newcommand{\irdU}[1]{#1} % non-italicised Iridian text
-\newcommand{\ttla}[1]{`#1'}								% title of an article, short story setcounter
-\newcommand{\ttlb}[1]{\emph{#1}}					% title of a book
-\newcommand{\irdt}[3]{\textit{#1} \nt{#2}, \trsl{#3}}
-\newcommand{\orth}[1]{$\langle$#1$\rangle$}
-\newcommand{\phon}[3]{\ird{#1} [#2] \trsl{#3}}
-\newcommand{\su}[1]{$_{#1}$}
-\newcommand{\SubjI}{\Subj{}.\Ipf{}}
-\newcommand{\SubjP}{\Subj{}.\Pf{}}
-
-
-
-
-
-% TODO: Rewrite instances of this command and delete
-\newcommand{\asp}[1]{{#1}\textsuperscript{h}}
 
 %% Set block quotes to font size \small
 
@@ -224,7 +152,6 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
   \textcites}
 
 %%Formatting of section headings
-
 
 \makeatletter
 \def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
