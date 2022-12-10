@@ -247,7 +247,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 		\begin{tabular}{@{\qquad}c@{\qquad}}
 
 			\\
-			{\LARGE \cscaps  \MakeLowercase{#1}\par\nobreak} \\
+			{\LARGE \scshape  \MakeLowercase{#1}\par\nobreak} \\
 			\\
 
 		\end{tabular}
@@ -267,7 +267,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 		\begin{tabular}{@{\qquad}c@{\qquad}}
 
 			\\
-			{\LARGE \cscaps \MakeLowercase{#1}\par\nobreak} \\
+			{\LARGE \scshape \MakeLowercase{#1}\par\nobreak} \\
 			\\
 
 		\end{tabular}
@@ -283,14 +283,15 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 %% Formatting of subsections
 \titleformat{\subsection}[hang]
-{\small}{\thesubsection}{1em}{\normalfont\itshape}
+{\small\sffamily}{\thesubsection}{1em}{\small\sffamily}
 \titlespacing*{\subsection}
 {0pt}{3ex plus 1ex minus .2ex}{4pt}
 
 
+
 %% Formatting of subsubsections
 \titleformat{\subsubsection}
-{\small}{\thesubsubsection}{1em}{\small\itshape}
+{\small}{\thesubsubsection}{1em}{\small}
 
 \titleformat{\paragraph}[runin]{\bfseries\normalsize}{\theparagraph}{2em}{}
 
