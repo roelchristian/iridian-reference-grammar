@@ -773,25 +773,86 @@ The translation in the gloss demonstrates how idiomatic English uses periphrasti
 \endgl
 \xe
 
-\section{Interrogative pronouns}\index{wh-question@\emph{wh}-question}\index{interrogative pronoun}\label{sec:int-pron}
+\section{Interrogatives and derived forms}\label{sec:int-pron}
+\index{wh-question@\emph{wh}-question}\index{interrogative pronoun}
 
-\begin{table}[h!]
+Interrogatives are a special class of words used to ask questions.
+
+\begin{table}
 	\sffamily\footnotesize
-	\caption{Interrogative pronouns in Iridian.}
+    \label{tab:int-pron}
+	\caption{Interrogatives in Iridian.}
     \medskip
 	\begin{tabu} to 0.8\textwidth{@{}YYYY@{}}
-		\toprule
-		&{\sc english}&&{\sc english}\\ 
-		\midrule
-		jede 		& who &jach &which\\ 
-		ježe 	& what 		& zajehu 	&why\\ 
-		jehát 	& whom		& jiká 	&how many\\ 
-		jehu 		& how		&jišká&how much\\ 
-		jemí 		& when 		& jeně 	&to where\\ 
-		jena 		& where 	& jení 	&from where\\ 
+		\toprule \addlinespace
+		&{\sc english}&&{\sc english}\\ \addlinespace
+		\midrule \addlinespace
+		jede 		& who &jak &which\\ \addlinespace
+		ježe 	& what 		& zajehu 	&why\\ \addlinespace
+		jehát 	& whom		& jiká 	&how many\\ \addlinespace
+		jehu 		& how		&jišká&how much\\  \addlinespace
+		jemí 		& when 		& jeně 	&to where\\ \addlinespace
+		jena 		& where 	& jení 	&from where\\ \addlinespace
 		\bottomrule
 	\end{tabu}
 \end{table}
+
+Interrogatives may also be used as determiners before a noun phrase to indicate
+that the expected answer is a member of the class described by the noun phrase.
+When used in this manner, \irdp{jak}{which} is used when the preferred answer is
+from a closed set of alternatives while the rest of the interrogatives
+otherwise.
+
+
+\pex
+\begingl
+\gla Jede ruščevní svirkošc to tóma svirček?//
+\glb who russian-\Att{} author this book-\Acc{} write-\Av{}-\Pf{}//
+\glft \trsl{What (Which) Russian author wrote this book?}//
+\endgl
+\xe
+
+In the example above, we can replace \irdp{jede}{who} with \irdp{jak}{which} to
+indicate that the answer is expected to be from a specific set of authors which
+have been previously mentioned in the discourse. Another, more marked,
+alternative to emphasize the restrictiveness of the expected answer would be to
+change the noun phrase to a \ird{na}-phrase first before adding \ird{jak}.
+
+\pex
+\a\begingl
+\gla Jak ruščevní svirkošc to tóma svirček?//
+\glb which russian-\Att{} author this book-\Acc{} write-\Av{}-\Pf{}//
+\glft \trsl{Which Russian author wrote this book?}//
+\endgl
+\a\begingl
+\gla Jak na ně ruščevní svirkošta to tóma svirček?//
+\glb which \Loc{} \Pl{}= russian-\Att{} author=\Acc{} this book-\Acc{} write-\Av{}-\Pf{}//
+\glft \trsl{Which of these Russian authors wrote this book?}//
+\endgl
+\xe
+
+Notice how in Iridian, when interrogatives are used as determiners before a noun
+phrase, the choice is not limited between \ird{jede} and \ird{jak} as in
+English. Instead the interrogative qua determiner follows the same role as the
+noun phrase it modifies. Thus a sentence like \trsl{What year were you born in?}
+is translated in Iridian as \ird{Jemí hletu nebrinek?}, i.e., literally as
+\trsl{When year were you born?} with \ird{jemí} used instead of
+\ird{jede}.\footnote{Compare this to \irdp{Jak hur?}{What time is it?} where
+\ird{jak} is used instead of \ird{jemí} even though the noun \ird{hur} is
+temporal, since the number of hours in a day restricts the possible answers to a
+closed set.}
+
+An interrogative may also be modified by the particle \irdp{každý}{any, each,
+even}, in which case the resulting phrase takes an indefinite meaning similar to
+English \trsl{anyone,} \trsl{anything,} etc.
+
+\pex
+\begingl
+\gla Každý jede vtaru do katedrála zahranéževí.//
+\glb each who morning-\Ins{} into cathedral-\Acc{} enter-\Pot{}-\Av{}-\Prog{}//
+\glft \trsl{Anyone can enter the cathedral in the morning.}//
+\endgl
+\xe
 
 \section{Indefinite pronouns}\index{indefinite pronoun}\label{sec:indef-pron}
 
@@ -809,7 +870,7 @@ respectively). The forms are listed in Table~\ref{tab:indef-pron}.
 	\caption{Negative and universal pronouns.}
     \label{tab:indef-pron}
     \medskip
-	\begin{tabu} to 0.9 \textwidth{@{}YY[1.2]YY[1.2]@{}}
+	\begin{tabu} to 0.8 \textwidth{@{}YY[1.2]YY[1.2]@{}}
 		\toprule \addlinespace
 		\multicolumn{2}{@{}l}{\sc negative} & \multicolumn{2}{@{}l}{\sc universal}\\ \addlinespace
 		\midrule \addlinespace
@@ -844,7 +905,7 @@ Wikipedia: ``Elective existential pronouns are often used with negatives (I
 can't see anyone), while dubitative existential pronouns are used in questions
 when there is doubt as to the existence of the pronoun's assumed referent (Is
 anybody here a doctor?).'' Both of these examples would use an existential
-construction in Iridian.} like English \trsl{anyone} or \ird{anybody.} Instead
+construction in Iridian.} like English \trsl{anyone} or \trsl{anybody.} Instead
 their function is satisfied by the equivalent interrogative pronoun modified by
 \ird{každý}, a Slavic borrowing meaning \trsl{any} in Iridian, or by existential
 constructions. For more examples of the former, see \S\,\ref{sec:int-pron}.
