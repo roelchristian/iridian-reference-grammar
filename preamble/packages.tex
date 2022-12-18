@@ -86,6 +86,9 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \usepackage{url}
 \urlstyle{same}
 
+% Redefine \emptyset to \varnothing
+\let\oldemptyset\emptyset
+\let\emptyset\varnothing
 
 % fancy footnotes
 \usepackage[norule,splitrule]{footmisc}
@@ -96,8 +99,6 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \addbibresource{./bib/bibliography.bib}
 \setlength\bibitemsep{0.4\itemsep}
 \renewcommand*{\bibfont}{\small}
-
-
 
 \renewcommand*{\postnotedelim}{\addcolon\addspace}
 \DeclareFieldFormat{postnote}{#1}
