@@ -1,8 +1,15 @@
-% path: preamble/packages.tex
-% PACKAGES USED
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{iridian-grammar}[2022/12/19 v1.0.0 Custom class for Iridian Grammar]
 
-%% Page layout and encoding
-\usepackage[paperwidth=6in,paperheight=9in]{geometry}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{scrbook}}
+\ProcessOptions\relax
+
+% Load the scrbook class as the base class
+\LoadClass[11pt]{scrbook}
+\areaset[0.50in]{4.5in}{8in}
+
+% Page layout
+\RequirePackage[paperwidth=6in,paperheight=9in]{geometry}
 \geometry {
     verbose,
     tmargin  =1.1in,
@@ -11,33 +18,22 @@
     rmargin  =0.7in,
 }
 
-% Check if we are using LuaTeX
-\usepackage{ifluatex}
-\ifluatex
-  \usepackage{fontspec}
-  \defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle}
-  \setmainfont{Junicode}
-  \setsansfont{SourceSansPro}
-  \newfontfamily\cyrtext[Scale=1.02]{EB Garamond}
-\else
-  \usepackage[utf8]{inputenc}
-  \usepackage[T1]{fontenc}
-  \usepackage{kpfonts}          % substitute for Junicode
-  \usepackage{textgreek}
-\fi
-
-% Typesetting
-\usepackage{microtype}
-\usepackage{float}
+% General font and typography
+\RequirePackage{microtype}
+\RequirePackage{float}
 \doublehyphendemerits=1000000000
 \widowpenalty=10000
 \clubpenalty=10000
 \brokenpenalty=10000
+\RequirePackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle}
+\setmainfont{Junicode}
+\setsansfont{SourceSansPro}
+\newfontfamily\cyrtext[Scale=1.02]{EB Garamond}
 
-
-% Linguistics and language-related packages
-\usepackage{expex}
-\gathertags % for expex
+% Examples and glosses
+\RequirePackage{expex}
+\gathertags
 
 % Third level examples in expex
 % http://tex.stackexchange.com/a/77941
@@ -48,42 +44,47 @@
 \def\b##1{\par\leavevmode\llap{\hbox to 2em{##1\hfil}}\ignorespaces}}
 \def\endsubsub{\par\endgroup}
 
-\usepackage[russian,english]{babel}
-\usepackage[german=guillemets]{csquotes}
+% Language support
+\RequirePackage[russian,english]{babel}
+\RequirePackage[german=guillemets]{csquotes}
 
 % Tables and figures
-\usepackage{graphics,graphicx,amsmath,amssymb}
-\usepackage[justification=raggedright,labelfont=sc,font={sf,footnotesize},labelsep=quad]{caption}
+\RequirePackage{graphics}
+\RequirePackage{graphicx}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage[justification=raggedright,labelfont=sc,font={sf,footnotesize},labelsep=quad]{caption}
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\usepackage{longtable}
-\usepackage{minitoc}
-\usepackage{afterpage}
-\usepackage{xcolor,colortbl}
-\usepackage{fancyhdr,textcase}
-\usepackage{siunitx,tabularx,ragged2e,booktabs,tabu,multicol}
-\usepackage{gensymb}
-\usepackage{titlesec}
-\usepackage{etoolbox}
-\usepackage{multirow}
-\usepackage{enumitem}
-\usepackage{metalogo}
+\RequirePackage{longtable}
+\RequirePackage{minitoc}
+\RequirePackage{afterpage}
+\RequirePackage{fancyhdr}
+\RequirePackage{textcase}
+\RequirePackage{tabularray}
+\UseTblrLibrary{booktabs}
+\RequirePackage{gensymb}
+\RequirePackage{titlesec}
+\RequirePackage{etoolbox}
+\RequirePackage{multirow}
+\RequirePackage{enumitem}
+\RequirePackage{metalogo}
 
 \setlist[enumerate]{leftmargin=*}
 \setlist[itemize]{leftmargin=*}
 
 %% to draw linguistic trees
-\usepackage{tikz}
-\usepackage[linguistics]{forest}
+\RequirePackage{tikz}
+\RequirePackage[linguistics]{forest}
 \usetikzlibrary{positioning}
 \usetikzlibrary{tikzmark}
 \forestset{
 sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 %% Indexing and Cross-referencing
-\usepackage{imakeidx}
-\usepackage[font=footnotesize]{idxlayout}
-\usepackage[hidelinks,unicode]{hyperref}
-\usepackage{url}
+\RequirePackage{imakeidx}
+\RequirePackage[font=footnotesize]{idxlayout}
+\RequirePackage[hidelinks,unicode]{hyperref}
+\RequirePackage{url}
 \urlstyle{same}
 
 % Redefine \emptyset to \varnothing
@@ -91,7 +92,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \let\emptyset\varnothing
 
 % fancy footnotes
-\usepackage[norule,splitrule]{footmisc}
+\RequirePackage[norule,splitrule]{footmisc}
 
 \RequirePackage[authordate,backend=biber]{biblatex-chicago}
 \DeclareFieldFormat[article]{title}{\mkbibquote{#1}} % make article titles in quotes
@@ -217,7 +218,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 
 \titleformat{\paragraph}[runin]{\bfseries\normalsize}{\theparagraph}{2em}{}
 
-\usepackage{titletoc}
+\RequirePackage{titletoc}
 
 %% Formatting of page headers
 
@@ -247,11 +248,11 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
   belowexskip=0ex,
 }
 
-%% Custom column types
-\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
-\newcolumntype{Z}{>{\RaggedRight\everypar{\hangindent=1em}\arraybackslash}X}
-\newcolumntype{M}{>{\centering\arraybackslash}X}
-\newcolumntype{T}[1]{S[table-format=#1]}
-
 % Restart numbering each chapter
 \pretocmd{\chapter}{\excnt=1}{}{}
+
+\endinput
+
+
+
+
