@@ -131,8 +131,7 @@ shows some examples of increasing complexity.
 	\label{fig:verb-structure}
 	\caption{The structure of an Iridian verb.}
 	\bigskip
-	\begin{tabu} to \textwidth{@{}YYY[0.8]YY[0.8]YY[0.8]Y[1.2]@{}}
-
+	\begin{tblr}{width=\textwidth,colspec={X[1.2]XXXX[1.4]XXX[1.2]}}
 		\toprule
 		{\sc b} &
 		{\sc a} &
@@ -155,7 +154,7 @@ shows some examples of increasing complexity.
 		\bottomrule \addlinespace
 
 		& & & & & & & \\ \addlinespace % empty line
-		\multicolumn{8}{@{}l}{\irdp{zápiašček}{(I) did not eat.}}\\ \addlinespace
+		\SetCell[c=8]{} \irdp{zápiašček}{(I) did not eat.}\\ \addlinespace
 		zá- &
 		$\emptyset$ &
 		-piašt- &
@@ -167,7 +166,7 @@ shows some examples of increasing complexity.
 		\\ \addlinespace
 
 		& & & & & & & \\ \addlinespace % empty line
-		\multicolumn{8}{@{}l}{\irdp{zánepiaštébice}{(He) was said to not have fed.}}\\ \addlinespace
+		\SetCell[c=8]{} \irdp{zánepiaštébice}{(He) was said to not have fed.}\\ \addlinespace
 
 		zá- &
 		-ne- &
@@ -179,7 +178,7 @@ shows some examples of increasing complexity.
 		-e \\ \addlinespace
 
 		& & & & & & & \\ \addlinespace % empty line
-		\multicolumn{8}{@{}l}{\irdp{zánepiaštébalnile}{If he were said to not have been able to feed.}}\\ \addlinespace
+		\SetCell[c=8]{} \irdp{zánepiaštébalnile}{If he were said to not have been able to feed.}\\ \addlinespace
 
 		zá- &
 		-ne- &
@@ -190,7 +189,7 @@ shows some examples of increasing complexity.
 		-il- &
 		-e \\ \addlinespace
 
-	\end{tabu}
+	\end{tblr}
 \end{figure}
 
 
@@ -203,7 +202,7 @@ marking on nouns. As such, all verbs must be explicitly marked for voice.
 \begin{table}
 	\sffamily\footnotesize
 	\caption{Suffixes used to mark grammatical voice.}\medskip
-	\begin{tabu} to 0.5\textwidth{@{}YY[0.5]@{}}
+	\begin{tblr}{width=0.8\textwidth,colspec={XX}}
 		\toprule \addlinespace
 		&{\scshape ending}\\ \addlinespace
 		\midrule \addlinespace
@@ -213,7 +212,7 @@ marking on nouns. As such, all verbs must be explicitly marked for voice.
 		Locative	& {-oun-}\\ \addlinespace
 		Instrumental& {-íj-}\\ \addlinespace
 		\bottomrule
-	\end{tabu}
+	\end{tblr}
 \end{table}
 
 \subsection{Agentive voice}\index{agentive voice}
@@ -450,10 +449,11 @@ aspect of an independent main verb while two are called {\scshape secondary}
 since they represent a verb's aspect in relation to some other event.
 
 \begin{table}
+	\label{tab:aspect}
 	\footnotesize\sffamily
 	\caption{Aspect markers in the indicative mood.}
 	\medskip
-	\begin{tabu} to 0.5\textwidth{@{}YY[0.5]}
+	\begin{tblr}{width=0.8\textwidth,colspec={XX[0.5]}}
 		\toprule \addlinespace
 		{\sc aspect}	& {\sc affix}\\ \addlinespace
 		\midrule \addlinespace
@@ -465,8 +465,7 @@ since they represent a verb's aspect in relation to some other event.
 		Prospective		& {-ujam}\\ \addlinespace
 		Cessative		& {-óvít}\\ \addlinespace
 		\bottomrule
-	\end{tabu}
-
+	\end{tblr}
 \end{table}
 
 
@@ -641,7 +640,6 @@ often used.
 \endgl
 \xe
 
-
 \subsection{Contemplative aspect}
 
 The contemplative aspect (glossed \Ctp{}) is used to mark an action that has not
@@ -744,22 +742,43 @@ primarily morphological, formed using the prefix \ird{ne-}.
 \caption{Causative forms of the verb \irdp{shradá}{to die.}}
 \medskip
 	\label{tbl:causative}
-    \begin{tabu}to \textwidth{@{}Y[0.2]Y[0.5]YY@{}}
-        \toprule
-		 		{\sc voice}& {\sc causative } &{\sc regular meaning} & {\sc causative meaning}\\
-		\midrule
-				Inf.				& neshradá									& to die, to be dead 	& \emph{(defective)} \\ 
-		 		Agt.				& {neshrážá}			& to kill & to cause someone to kill\\ 
-		 		Pat.			& {neshradiná}					& to be killed & to be caused to be killed\\
-				Ben.			& {neshradébá}				& to have someone die	& to have someone be killed\\
-				Loc.				& {neshradouná}					& to have someone related die&\emph{(defective)}\\
-				Ins.		& {doneshradouná}&to be the reason for dying&to be used for killing\\
-				Refl.				& {uneshražá}&to kill oneself&to cause one to kill oneself\\
-		 		
-				\bottomrule
+	\begin{tblr}{width=0.8\textwidth,colspec={X[0.2]X[0.5]XX}}
+        \toprule \addlinespace
+		 		{\sc voice}& {\sc causative } &{\sc regular meaning} & {\sc causative meaning}\\ \addlinespace
+		\midrule \addlinespace
+				Inf. &
+				neshradá &
+				to die, to be dead &
+				\emph{(defective)} \\ \addlinespace
 
-    \end{tabu}
+		 		Agt. &
+				{neshrážá} &
+				to kill &
+				to cause someone to kill \\  \addlinespace
 
+		 		Pat. &
+				{neshradiná} &
+				to be killed &
+				to be caused to be killed \\ \addlinespace
+				Ben. &
+				{neshradébá} &
+				to have someone die	&
+				to have someone be killed \\ \addlinespace
+
+				Loc. &
+				{neshradouná} &
+				to have someone related die&\emph{(defective)}\\ \addlinespace
+
+				Ins. &
+				{doneshradouná} &
+				to be the reason for dying&to be used for killing\\ \addlinespace
+				
+				Refl. &
+				{uneshražá} &
+				to kill oneself &
+				to cause one to kill oneself\\ \addlinespace		 		
+		\bottomrule
+    \end{tblr}
 \end{table}
 
 Due to this suppletive nature, lexical causatives imply a more direct causation,
@@ -1190,7 +1209,8 @@ commands/prohibitions.
 	\caption{Conjugation of the verb \ird{piaštá}\\ in the imperative mood.}
 	\label{tbl:imperative}
 \medskip
-    \begin{tabu}to 0.7\textwidth{@{}YYY@{}}
+	\begin{tblr}{width=0.7\textwidth,colspec={XXX}}
+
          \toprule \addlinespace
          &{\sc imperative}&{\sc neg. imperative}  \\ \addlinespace
          \midrule \addlinespace
@@ -1216,7 +1236,7 @@ commands/prohibitions.
          {dopiaštouní}\\ \addlinespace
 
          \bottomrule
-    \end{tabu}
+    \end{tblr}
 
 \end{table}
 
@@ -1274,7 +1294,8 @@ as \ird{-u} after the locative and instrumental voice markers.
 		\caption{Conjugation of the verb \ird{piaštá} in the hortative mood.}
 		\label{tbl:hortative}
 		\medskip
-    \begin{tabu}to 0.7\textwidth{@{}YYY@{}}
+	\begin{tblr}{width=0.8\textwidth,colspec={XXX}}
+
          \toprule \addlinespace
          &{\sc hortative}&{\sc neg. hortative}  \\ \addlinespace
          \midrule \addlinespace
@@ -1299,7 +1320,7 @@ as \ird{-u} after the locative and instrumental voice markers.
 		 {dopiaštounu}\\ \addlinespace
 
          \bottomrule
-    \end{tabu}
+    \end{tblr}
 
 \end{table}
 
@@ -1397,7 +1418,8 @@ mood.
 		\caption{Conjugation of the verb \irdp{piaštá}{to eat} in the conditional mood.}
 		\label{tbl:conditional}
 		\medskip
-    \begin{tabu}to 0.7\textwidth{@{}YYY@{}}
+    \begin{tblr}{width=0.7\textwidth,colspec={XXX}}
+
          \toprule \addlinespace
          &{\sc imperfective}&{\sc neg. perfective}  \\ \addlinespace
          \midrule \addlinespace
@@ -1422,7 +1444,7 @@ mood.
 		 {dopiaštounil}\\ \addlinespace
 
          \bottomrule
-    \end{tabu}
+    \end{tblr}
 
 \end{table}
 
@@ -1569,7 +1591,7 @@ detail in \S\,\ref{sec:quotative-const}.
 	\caption{Sound changes when deriving the quotative form.}
 	\medskip
 	\label{tbl:quotative}
-	\begin{tabu} to \textwidth {@{}Y[0.9]Y[0.7]Y@{}}
+	\begin{tblr}{width=\textwidth,colspec={X[0.9]X[0.7]X}}
 		\toprule \addlinespace
 		{\sc verbal form}			&	{\sc sound change}				& {\sc example}\\ \addlinespace
 		\midrule \addlinespace
@@ -1642,21 +1664,8 @@ detail in \S\,\ref{sec:quotative-const}.
 				-áš → -áše &
 				piaščáš → piaščáše \\ \addlinespace
 			\bottomrule
-	\end{tabu}
+	\end{tblr}
 
-\end{table}
-
-\begin{table}
-	\footnotesize\sffamily
-	\caption{Quotative forms of the copula and the existential particle}\medskip
-	\begin{tabu} to 0.9 \textwidth	{@{}Y[1.1]YYYY@{}}
-		\toprule
-		 & {\sc copula} & {\sc neg. cop.} & {\sc exist.} & {\sc neg. exist.}\\
-		\midrule
-		Indicative & neví & hvem & jeho & nežní\\
-		Subjunctive & nehlí & niec & houve & hvaš\\
-		\bottomrule
-	\end{tabu}
 \end{table}
 
 \section{Modality}\index{modality}\label{sec:modality}
@@ -1673,7 +1682,7 @@ finish baking the cake}), while the morphological method is used otherwise.
     \caption{Verbal affixes to express modality.}
     \medskip
     \label{tbl:modality}
-    \begin{tabu}to 0.5\textwidth{@{}Y[1.4]Y@{}}
+	\begin{tblr}{width=0.5\textwidth,colspec={X[1.4]X}}
 			\toprule \addlinespace
 			{\sc modality} & {\sc affix} \\ \addlinespace
 			\midrule \addlinespace
@@ -1681,7 +1690,7 @@ finish baking the cake}), while the morphological method is used otherwise.
 				Desiderative\index{desiderative modality} & -évn- \\ \addlinespace
 				Debitive\index{debitive modality} & -ušh- \\ \addlinespace
 			\bottomrule
-    \end{tabu}
+    \end{tblr}
 \end{table}
 
 As in most languages, modal constructions in Iridian exhibit significant
@@ -1895,18 +1904,18 @@ indicate necessity or purpose. Both usage has a nominal and a non-nominal form
 (used similar to an adverb or an adjective), giving the supine a total of four
 forms, as shown below:
 
-\begin{table}[ht!]
+\begin{table}
 	\sffamily\footnotesize
 	\caption{Endings used for the supine.}
 	\medskip
-	\begin{tabu} to 0.6\textwidth{@{}YYY@{}}
-		\toprule
-		&{\sc purpose}&{\sc necessity}\\
-		\midrule
-		Nominal & {-it} & {-áš}\\
-		Non-nominal & {-ite} & {-ášce}\\
+	\begin{tblr}{width=0.6\textwidth,colspec={XXX}}
+		\toprule \addlinespace
+		&{\sc purpose}&{\sc necessity}\\ \addlinespace
+		\midrule \addlinespace
+		Nominal & {-it} & {-áš}\\ \addlinespace
+		Non-nominal & {-ite} & {-ášce}\\ \addlinespace
 		\bottomrule
-	\end{tabu}
+	\end{tblr}
 \end{table}
 
 These four forms are invariable. The endings attach to the verb after the root
@@ -2036,15 +2045,15 @@ example the verb \ird{všihná} \trsl{to be angry}:
 	\sffamily\footnotesize
 	\caption{Conjugation pattern for stative verbs}
 	\medskip
-	\begin{tabu} to 0.7\textwidth{@{}YY[0.8]Y@{}}
-		\toprule
+	\begin{tblr}{width=0.7\textwidth,colspec={XX[0.8]X}}
+		\toprule\addlinespace
 		&{\sc ending}&{\sc example}\\\addlinespace
 		\midrule\addlinespace
 		Copulative & varies & varies\\\addlinespace
 		Attributive & {-é} & {všihné}\\\addlinespace
 		Nominative & {-ou}	& {všihnou}\\\addlinespace
 		\bottomrule
-	\end{tabu}
+	\end{tblr}
 \end{table}
 
 \subsection{Copulative and attributive forms}\index{stative verb}

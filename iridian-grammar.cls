@@ -60,7 +60,8 @@
 \RequirePackage{afterpage}
 \RequirePackage{fancyhdr}
 \RequirePackage{textcase}
-\RequirePackage{siunitx,tabularx,ragged2e,booktabs,tabu,multicol}
+\RequirePackage{tabularray}
+\UseTblrLibrary{booktabs}
 \RequirePackage{gensymb}
 \RequirePackage{titlesec}
 \RequirePackage{etoolbox}
@@ -247,14 +248,10 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
   belowexskip=0ex,
 }
 
-%% Custom column types
-\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
-\newcolumntype{Z}{>{\RaggedRight\everypar{\hangindent=1em}\arraybackslash}X}
-\newcolumntype{M}{>{\centering\arraybackslash}X}
-\newcolumntype{T}[1]{S[table-format=#1]}
-
 % Restart numbering each chapter
 \pretocmd{\chapter}{\excnt=1}{}{}
+
+\endinput
 
 
 
