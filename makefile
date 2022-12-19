@@ -1,11 +1,10 @@
 filename=iridian-grammar
+AUX_EXTS = aux out idx ilg ind log lot lof maf mtc mtc0 xml toc ent lg dvi idv 4ct 4tc acn acr alg bbl bcf blg lpz lzo lzs ist
 
 all:
 	lualatex ${filename}
 	biber ${filename}
 	makeglossaries ${filename}
-	lualatex ${filename}
-	lualatex ${filename}
 	lualatex ${filename}
 	lualatex ${filename}
 
@@ -20,7 +19,6 @@ bib:
 glossaries:
 	makeglossaries ${filename}
 
-
 update-bib:
 	lualatex ${filename}
 	biber ${filename}
@@ -33,39 +31,18 @@ update-glo:
 	lualatex ${filename}
 
 read:
-	open -a Safari.app ${filename}.pdf &
-
-aread:
-	acroread ${filename}.pdf
+	if [ ! -f $(filename) ]; then \
+		echo "Error: $(filename) does not exist"; \
+		exit 1; \
+	fi
+	
+	if [ "$(shell uname)" = "Darwin" ]; then \
+		open $(filename); \
+	elif [ "$(shell uname)" = "Linux" ]; then \
+		xdg-open $(filename); \
+	fi
 
 clean:
-	find . -type f -name '*.aux' -exec rm {} +
-	find . -type f -name '*.out' -exec rm {} +
-	find . -type f -name '*.idx' -exec rm {} +
-	find . -type f -name '*.ilg' -exec rm {} +
-	find . -type f -name '*.ind' -exec rm {} +
-	find . -type f -name '*.log' -exec rm {} +
-	find . -type f -name '*.lot' -exec rm {} +
-	find . -type f -name '*.lof' -exec rm {} +
-	find . -type f -name '*.maf' -exec rm {} +
-	find . -type f -name '*.mtc' -exec rm {} +
-	find . -type f -name '*.mtc0' -exec rm {} +
-	find . -type f -name '*.xml' -exec rm {} +
-	find . -type f -name '*.toc' -exec rm {} +
-	find . -type f -name '*.ent' -exec rm {} +
-	find . -type f -name '*.lg' -exec rm {} +
-	find . -type f -name '*.dvi' -exec rm {} +
-	find . -type f -name '*.idv' -exec rm {} +
-	find . -type f -name '*.4ct' -exec rm {} +
-	find . -type f -name '*.4tc' -exec rm {} +
-	find . -type f -name '*.acn' -exec rm {} +
-	find . -type f -name '*.acr' -exec rm {} +
-	find . -type f -name '*.alg' -exec rm {} +
-	find . -type f -name '*.bbl' -exec rm {} +
-	find . -type f -name '*.bcf' -exec rm {} +
-	find . -type f -name '*.blg' -exec rm {} +
-	find . -type f -name '*.lpz' -exec rm {} +
-	find . -type f -name '*.lzo' -exec rm {} +
-	find . -type f -name '*.lzs' -exec rm {} +
-	find . -type f -name '*.ist' -exec rm {} +
-	echo "Done cleaning up the working directory."
+	for ext in $(AUX_EXTS); do \
+		find . -name "*.$$ext" -exec rm {} \; ; \
+	done
