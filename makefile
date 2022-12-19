@@ -31,15 +31,15 @@ update-glo:
 	lualatex ${filename}
 
 read:
-	if [ ! -f $(filename) ]; then \
-		echo "Error: $(filename) does not exist"; \
+	if [ ! -f $(filename).pdf ]; then \
+		echo "Error: $(filename).pdf does not exist"; \
 		exit 1; \
 	fi
 	
 	if [ "$(shell uname)" = "Darwin" ]; then \
-		open $(filename); \
+		open $(filename).pdf; \
 	elif [ "$(shell uname)" = "Linux" ]; then \
-		xdg-open $(filename); \
+		xdg-open $(filename).pdf; \
 	fi
 
 clean:
