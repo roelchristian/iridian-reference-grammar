@@ -1,3 +1,4 @@
+# LaTeX auxiliary files
 *.aux
 *.log
 *.out
@@ -8,7 +9,6 @@
 *.maf
 *.idx
 *.lot
-iridian-grammar-tags.tex
 *.toc
 *.run.xml
 *.bbl
@@ -20,6 +20,9 @@ iridian-grammar-tags.tex
 *.fls
 *.ent
 latex-build
+
+# Expex tags
+iridian-grammar-tags.tex
 
 # glossary files
 *.acn
@@ -33,7 +36,10 @@ latex-build
 *.acr
 *.alg
 
+# Local drafts
+drafts/
 *.draft
 
+# DS_Store
 *.DS_Store
 
