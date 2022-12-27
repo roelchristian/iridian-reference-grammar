@@ -26,10 +26,10 @@
 \clubpenalty=10000
 \brokenpenalty=10000
 \RequirePackage{fontspec}
-\defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle}
-\setmainfont{Junicode}
-\setsansfont{SourceSansPro}
-\newfontfamily\cyrtext[Scale=1.02]{EB Garamond}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+\newfontfamily\cyrtext[Scale=1]{Linux Libertine O}
 
 % Examples and glosses
 \RequirePackage{expex}
@@ -83,7 +83,14 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 %% Indexing and Cross-referencing
 \RequirePackage{imakeidx}
 \RequirePackage[font=footnotesize]{idxlayout}
-\RequirePackage[hidelinks,unicode]{hyperref}
+\RequirePackage{hyperref}
+\makeatletter\let\Title\@title\makeatother
+\hypersetup{
+  hidelinks,
+  unicode,
+  pdftitle={\Title}
+}
+
 \RequirePackage{url}
 \urlstyle{same}
 
@@ -159,7 +166,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \def\@makechapterhead#1{%
 	\vspace*{10\p@}%
 	{\parindent \z@ \centering \reset@font
-		{\Large \scshape  \thechapter}
+		{\Large \sffamily\scshape  \thechapter}
 		\par
 		\vspace*{1\p@}%
 		\interlinepenalty\@M
@@ -170,7 +177,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 		\begin{tabular}{@{\qquad}c@{\qquad}}
 
 			\\
-			{\LARGE \scshape  \MakeLowercase{#1}\par\nobreak} \\
+			{\LARGE \sffamily\scshape  \MakeLowercase{#1}\par\nobreak} \\
 			\\
 
 		\end{tabular}
@@ -179,7 +186,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 \def\@makeschapterhead#1{%
 	\vspace*{\p@}%
 	{\parindent \z@ \centering \reset@font
-		{\Large \scshape  \vphantom{\thechapter}}
+		{\Large \sffamily \scshape  \vphantom{\thechapter}}
 		\par\nobreak
 		\vspace*{15\p@}%
 		\interlinepenalty\@M
@@ -190,7 +197,7 @@ sn edges/.style={for tree={parent anchor=south, child anchor=north}}}
 		\begin{tabular}{@{\qquad}c@{\qquad}}
 
 			\\
-			{\LARGE \scshape \MakeLowercase{#1}\par\nobreak} \\
+			{\LARGE \sffamily \scshape \MakeLowercase{#1}\par\nobreak} \\
 			\\
 
 		\end{tabular}
