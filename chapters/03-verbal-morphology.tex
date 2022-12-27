@@ -126,10 +126,16 @@ shows some examples of increasing complexity.
 
 \begin{figure}
 	\sffamily\scriptsize
-	\label{fig:verb-structure}
 	\caption{The structure of an Iridian verb.}
+	\label{fig:verb-structure}
 	\bigskip
-	\begin{tblr}{width=\textwidth,colspec={X[1.2]XXXX[1.4]XXX[1.2]}}
+	\begin{tblr}{
+			width=\textwidth,
+			colspec={|X[1.2]|X|X|X|X[1.4]|X|X|X[1.2]|},
+			rowsep=1pt,
+			column{3}={gray9}
+		}
+
 		\toprule
 		{\sc b} &
 		{\sc a} &
@@ -140,7 +146,6 @@ shows some examples of increasing complexity.
 		{\sc iv} &
 		{\sc v} \\ 
 
-		\scriptsize
 		negation\index{negation} &
 		valency\index{valency} &
 		root\index{verb root} &
@@ -151,7 +156,11 @@ shows some examples of increasing complexity.
 		quotative\index{quotative} \\ 
 		\bottomrule 
 
+	\end{tblr}
+	\begin{tblr}{width=\textwidth,colspec={X[1.2]XXXX[1.4]XXX[1.2]}, rowsep=1pt}
+
 		& & & & & & & \\  % empty line
+
 		\SetCell[c=8]{} \irdp{zápiašček}{(I) did not eat.}\\ 
 		zá- &
 		$\emptyset$ &
@@ -716,7 +725,7 @@ below.
 \pex\deftagex{exw}
 \irdp{hravá}{to have the sun shine}\\
 \irdp{žužá}{to snow}\\
-\irdp{pozběšá}{to rain}\\
+\irdp{pozbá}{to rain}\\
 \irdp{néšá}{to rain lightly, to drizzle}\\
 \irdp{boboržá}{to have thunder}\\
 \irdp{kopriká}{to have lightning}\\
