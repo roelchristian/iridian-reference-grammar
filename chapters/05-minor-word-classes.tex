@@ -13,16 +13,98 @@ discussed in this section, adverbial particles must obligatorily appear before
 the predicate they modify. While we use the term `adverbial particle' to refer
 to this class of words, their usage is rather varied and some may function as
 discourse markers. A single particle may also be used in multiple ways, as we
-will see in the following sections.
+will see in the following sections. The full list of adverbial particles is
+given in Table~\ref{tab:adv-particles}.
 
-Iridian has the following adverbial particles: 
+\begin{table}
+	\sffamily\scriptsize
+	\caption[Adverbial particles]{Adverbial particles. The linguistic glosses, much like the translations, only provide approximations of the meanings of each particle and may not be fully equivalent to the actual meanings of the linguistic categories listed here.}\label{tab:adv-particles}
+	\medskip
+	\begin{tblr}{width=0.9\textwidth,colspec={X[0.5]X[1.4]X[0.4]X[1.2]}, rowsep=6pt}
+		\toprule 
+		{\sc particle} &
+		{\sc approx. trans.} &
+		{\sc gloss} &
+		{}\\ 
+		\midrule 
 
- 
-When two or more particles are proclitic to the same predicate, their relative word order may be described in terms of the following hierarchy, in relation to their distance from the predicate:
+		že &
+		\trsl{already} &
+		\Pfv{} &
+		Perfective particle \\ 
+
+		po &
+		\trsl{still, yet} &
+		\Ipfv{} &
+		Imperfective particle \\ 
+
+		lí &
+		\trsl{whether, if} &
+		\Q{} &
+		Question particle \\ 
+
+		može &
+		\trsl{also, too} &
+		\Add{} &
+		Additive particle \\ 
+
+		što &
+		\trsl{indeed, truly} &
+		\Aff{} &
+		Affirmative particle \\ 
+
+		kamo &
+		\trsl{apparently, according to} &
+		\Rep{} &
+		Reportative particle \\ 
+
+		samo &
+		\trsl{only, just} &
+		\Excl{} &
+		Exclusive particle \\ 
+
+		pro &
+		\trsl{on the other hand} &
+		\Cntr{} &
+		Contrastive particle \\ 
+
+		neko &
+		\trsl{before} &
+		\Antess{} &
+		Antessive particle \\ 
+
+		iz &
+		\trsl{apparently, may be} &
+		\Dub{} &
+		Dubitative particle \\ 
+
+		oče &
+		\trsl{contrary to my expectations} &
+		\Mir{} &
+		Mirative particle \\ 
+
+		nadě &
+		\trsl{as a result} &
+		\Conseq{} &
+		Consequential particle \\ 
+
+		delí &
+		\trsl{perhaps} &
+		\Spec{} &
+		Speculative particle\\
+
+		\bottomrule
+
+\end{tblr}
+\end{table}
+
+When two or more particles are proclitic to the same predicate, their relative
+word order may be described in terms of the following hierarchy, in relation to
+their distance from the predicate:
 \begin{itemize}[nosep]
 	\item Class 1: \ird{že} and \ird{po}
-	\item Class 2: \ird{li}, \ird{može}, \ird{što}, \ird{kamo}, \ird{samo}, \ird{jate} and \ird{prev}
-	\item Class 3: \ird{dvé}, \ird{oče}, \ird{nadě} and \ird{delí}
+	\item Class 2: \ird{li}, \ird{može}, \ird{što}, \ird{kamo}, \ird{samo}, \ird{pro} and \ird{neko}
+	\item Class 3: \ird{iz}, \ird{oče}, \ird{nadě} and \ird{delí}
 \end{itemize}
 
 \subsection{Class 1: \ird{že} and \ird{po}}
@@ -87,7 +169,7 @@ English present perfect. Compare for example the two sentences below:
 \a
 \begingl
 	\gla Janek že ščenžek.//
-	\glb Janek že arrive-\Av{}-\Pf{}//
+	\glb Janek \Pfv{} arrive-\Av{}-\Pf{}//
 	\glft \trsl{Janek has (already) arrived (at some unspecified time in the past).}//
 \endgl
 \xe
@@ -104,13 +186,13 @@ future perfect depending on the aspect of the verb in the preceding clause
 \a
 \begingl
 	\gla Marek ščenžek še Janek že piaščaní.//
-	\glb Marek arrive-\Av{}-\Pf{} with Janek že eat-\Av{}-\Ret{}//
+	\glb Marek arrive-\Av{}-\Pf{} with Janek \Pfv{} eat-\Av{}-\Ret{}//
 	\glft \trsl{Janek had already eaten when Marek arrived.}//
 \endgl
 \a
 \begingl
 	\gla Marek ščenžách še Janek že piaščaní.//
-	\glb Marek arrive-\Av{}-\Ctp{} with Janek že eat-\Av{}-\Ret{}//
+	\glb Marek arrive-\Av{}-\Ctp{} with Janek \Pfv{} eat-\Av{}-\Ret{}//
 	\glft \trsl{Janek will have already eaten when Marek arrives.}//
 \endgl
 \xe
@@ -123,7 +205,7 @@ in English:
 \pex
 \begingl
 	\gla Do magazina bych što po štožek.//
-	\glb into store-\Acc{} yesterday što po go-\Av{}-\Pf{}//
+	\glb into store-\Acc{} yesterday \Aff{} \Ipfv{} go-\Av{}-\Pf{}//
 	\glft \trsl{I even went to the store yesterday.}//
 \endgl
 \xe
@@ -134,7 +216,7 @@ questions, \ird{po} corresponds to the English \trsl{else}:
 \pex
 \begingl
 	\gla Jede Marcí dumu po ščenžek?//
-	\glb who Marek-\Gen{} house-\Ins{} po arrive-\Av{}-\Pf{}?//
+	\glb who Marek-\Gen{} house-\Ins{} \Ipfv{} arrive-\Av{}-\Pf{}?//
 	\glft \trsl{Who else arrived at Marek's house?}//
 \endgl
 \xe
@@ -149,7 +231,7 @@ For example:
 \pex
 \begingl
 	\gla Janek može uzdravževí.//
-	\glb Janek može sleep-\Av{}-\Cont{}//
+	\glb Janek \Add{} sleep-\Av{}-\Cont{}//
 	\glft \trsl{Janek is also sleeping.}//
 \endgl
 \xe
@@ -157,7 +239,7 @@ For example:
 \pex
 \begingl
 	\gla Janek može záščenžek.//
-	\glb Janek može \Neg{}-arrive-\Av{}-\Pf{}//
+	\glb Janek \Add{} \Neg{}-arrive-\Av{}-\Pf{}//
 	\glft \trsl{Janek hasn't arrived either.}//
 \endgl
 \xe
@@ -167,7 +249,7 @@ For example:
 \pex
 \begingl
 	\gla Já može že vednik!//
-	\glb \Second{}.\Sg{} može že see-\Pv{}-\Pf{}//
+	\glb \Second{}.\Sg{} \Add{} \Ipfv{} see-\Pv{}-\Pf{}//
 	\glft \trsl{I've seen you at last!}//
 \endgl
 \xe
@@ -178,7 +260,7 @@ For example:
 \pex
 \begingl
 	\gla Janek što že ščenžek.//
-	\glb Janek što already arrive-\Av{}-\Pf{}//
+	\glb Janek \Aff{} already arrive-\Av{}-\Pf{}//
 	\glft \trsl{Janek has indeed arrived (contrary to what I thought).}//
 \endgl
 \xe
@@ -190,6 +272,16 @@ This particle is most likely of Slavic origin, as evidenced by cognates like
 
 
 \subsection{Class 3 particles}\label{sec:class3-particles}
+
+\paragraph{iz} \ird{Iz} is used to express doubt or uncertainty. For example:
+
+\pex
+\begingl
+	\gla Janek iz že ščenžek.//
+	\glb Janek \Dub{} \Pfv{} arrive-\Av{}-\Pf{}//
+	\glft \trsl{Janek may have already arrived.}//
+\endgl
+\xe
 
 \subsection{Order of particles}\label{sec:order-of-particles}
 
@@ -203,14 +295,15 @@ separate class is trivial:
 \pex\label{ex:multiple-particles-diff-class}
 \begingl
 	\gla Janek oče može po uzdravževí.//
-	\glb Janek oče može po \Refl{}-sleep-\Av{}-\Cont{}//
+	\glb Janek \Mir{} \Add{} \Ipfv{} \Refl{}-sleep-\Av{}-\Cont{}//
 	\glft \trsl{To my surprise, Janek is also still asleep.}//
 \endgl
 \xe
 
 In the above example, the Class 1 particle \ird{po} appears nearest to the
 predicate, followed by the Class 2 particle \ird{može}, and finally the Class 3
-particle \ird{oče}. The order of particles in Iridian is strict and thus sentences like the following are not grammatical:
+particle \ird{oče}. The order of particles in Iridian is strict and thus
+sentences like the following are not grammatical:
 
 \pex
 \a \ljudge{*} \ird{Janek može oče po uzdravževí.}
@@ -220,6 +313,44 @@ particle \ird{oče}. The order of particles in Iridian is strict and thus senten
 \a \ljudge{*} \ird{Janek oče po može uzdravževí.}
 \xe
 
+The order of particles in sentences where two or more particles belong to the
+same class is more complicated. The Class 1 particles \ird{že} and \ird{po}
+cannot appear simultaneously in the same sentence, as they carry opposite,
+temporal meanings. Thus the position occupied by Class 1 particles can only be
+filled by one and only one particle or by none at all. Class 2 particles, on the
+other hand, can appear simultaneously in the same sentence; in general, the
+order they appear follows the formula below:
+
+\pex
+	{pro + neko + lí + kamo + samo + može + što}
+\xe
+
+Finally, Class 3 particles appear farthest from the predicate; they may occur in
+any order relative to one another. For example, sentences like
+(\ref{ex:oce-iz-gramm}) and (\ref{ex:iz-oce-gramm}) are grammatical, but
+(\ref{ex:oce-iz-ungramm}) is not. There is no difference in meaning between
+(\ref{ex:oce-iz-gramm}) and (\ref{ex:iz-oce-gramm}).
+
+\pex
+\a\label{ex:oce-iz-gramm}
+\begingl
+	\gla Janek oče iz že ščenžek.//
+	\glb Janek \Mir{} \Dub{} \Pfv{} arrive-\Av{}-\Pf{}//
+	\glft \trsl{Janek may have already arrived apparently.}//
+\endgl
+\a\label{ex:iz-oce-gramm}
+\begingl
+	\gla Janek iz oče že ščenžek.//
+	\glb Janek \Dub{} \Mir{} \Pfv{} arrive-\Av{}-\Pf{}//
+	\glft \trsl{Janek may have already arrived apparently.}//
+\endgl
+\a\label{ex:oce-iz-ungramm}
+\begingl
+	\gla \ljudge{*}Janek že oče iz ščenžek.//
+	\glb Janek \Pfv{} \Mir{} \Dub{} arrive-\Av{}-\Pf{}//
+	\glft \trsl{Janek may have already arrived apparently.}//
+\endgl
+\xe
 
 
 \section{Conjunctions}\label{sec:conj}
@@ -381,6 +512,7 @@ to the clitic \ird{-něm} with the preposition \ird{še} (with). The clitic
 \ird{-něm} is derived from the word for number 10, \ird{nau}, which itself
 comes from the Old Iridian \rec{nagu}, `half.'
 
+	
 \begin{table}
 \footnotesize\sffamily
 \caption{Iridian numerals from 1 to 20.}
