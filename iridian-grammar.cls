@@ -62,6 +62,7 @@
 \RequirePackage{textcase}
 \RequirePackage{tabularray}
 \UseTblrLibrary{booktabs}
+\SetTblrInner{rowsep=6pt}
 \RequirePackage{gensymb}
 \RequirePackage{titlesec}
 \RequirePackage{etoolbox}
