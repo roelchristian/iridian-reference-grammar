@@ -67,7 +67,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{etoolbox}
 \RequirePackage{multirow}
-\RequirePackage{enumitem}
+\RequirePackage[shortlabels]{enumitem}
 \RequirePackage{metalogo}
 
 \setlist[enumerate]{leftmargin=*}
