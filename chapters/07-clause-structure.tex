@@ -1,25 +1,31 @@
-\chapter{Clause structure}
+\chapter{Clause structure}\label{chap:clause-structure}
 
-\section{Introduction}
+Thus far, we have focused our discussion on the behavior of individual words,
+examining their functions, forms, and meanings. In this chapter, we will shift
+our focus to how these words interact with each other to form sentences and
+communicate meaning. Syntax is the set of rules that govern the structure and
+arrangement of words in a language, and it plays a crucial role in ensuring the
+effectivity of communication. In this chapter, we will examine the basic
+syntactic structure of Iridian, then explore the different clause linking
+strategies that makes it possible to form more complex sentences, and finally go
+over special construction types such as questions, existential constructions,
+copular constructions, etc.
 
-The constituent word order of Iridian sentences is SOV, but the
-agglutinative nature of the language and the presence of case-marking on nouns
-makes word order typically flexible, with the only universal rule being that the
-main verb should appear at the end of a sentence. This is not to say that word
-order is completely free, however, as there are a number of restrictions on the
-order of constituents in a sentence. In this chapter, we will discuss the basic
-word order patterns of Iridian sentences, as well as the different types of
-clauses that can be found in the language.
+\section{Basic clause structure}\label{sec:basic-clause-structure}
 
-\section{Topic-predicate constructions}
-\index{topic}\index{predicate}\label{sec:topic-pred}
+The two most salient features of Iridian syntax are the following: (1) SOV word
+order and (2) strong head-finality. The constituent word order is
+subject-object-verb (SOV); there is little variation in how the constituents of
+a sentence are ordered, although the language might allow non-topic NP
+constituents to be scrambled for stylistic or other reasons. Iridian is strongly
+head-final, meaning that the head of a phrase always appears at the end of the
+phrase. This includes all modifiers, including adverbials and determiners, and
+non-main clauses, such as relative or subordinate clauses.
 
-The Iridian sentence can be divided primarily into a topic part and a predicate
+While we have been talking about an SOV word order, it would be more accurate to
+analyze Iridian sentences to divided primarily into a topic part and a predicate
 or comment part. The topic is what the sentence is about, while the predicate or
 comment represents the information presented in the sentence about the topic.
-This is of course not very rigorous definitions of the terms `topic' and
-`predicate', but they are sufficient for our purposes.
-
 While both the topic and the predicate are pragmatic constructs, the
 topic-predicate construction is important as it determines how the rest of the
 sentence is structured. In general, the topic of the sentence is the constituent
@@ -43,49 +49,33 @@ and its influence on how the predicate is structured means that for the most
 part, where the topic has already been established earlier, only the predicate
 is needed to create a well-formed sentence. 
 
-The topic of the sentence does not necessarily coincide with the subject of the
-sentence. This is true as well in English, as we see in example
-(\ref{ex:engtop}); although where English allows the topic to appear anywhere in
-the sentence, as long as the subject is placed first, Iridian, typical of
-topic-prominent languages, requires the topic to always be introduced first,
-leaving the rest of the information afterwards. Where, however, other
-topic-prominent languages like Japanese or Korean require the explicit marking
-of the topic (e.g., by using a special topic marker like Japanese \trsl{wa} or
-Korean \trsl{(n)eun}), Iridian does not; instead, Iridian relies solely on the
-word order.
-
-\pex\label{ex:engtop}
-\a Martha saw John.
-\a A dog bit \emph{Martha}.
-\a It is raining \emph{today},
-\xe
+In most topic-prominent languages, the topic does not necessarily coincide with
+the subject. For example, the following sentences are grammatical in Korean:
 
 \pex
 \a
 \begingl
-\gla \relax[Janek]\tss{\mk{Top}} [mlazka boulešik.]\tss{\mk{Pred}}//
-\glft \trsl{As for Janek, he killed his brother}.//
+\gla seylinun paykhyellul coahanta.//
+\glb Seri-\Top{} Baekhyun-\Obj{} like.//
+\glft \trsl{As for Seri, she likes Baekhyun.}//
 \endgl
-
 \a
 \begingl
-\gla \relax[Tereza]\tss{\mk{Top}} [jecám nalečnik.]\tss{\mk{Pred}}//
-\glft \trsl{As for Tereza, she was bitten by a dog}//
-\endgl
-
-\a
-\begingl
-\gla \relax[Shléd]\tss{\mk{Top}} [zniepšime.]\tss{\mk{Pred}}//
-\glft \trsl{As for today, it is raining.}//
+\gla seylika paykhyennun coahanta.//
+\glb Seri-\Subj{} Baekhyun-\Top{} like.//
+\glft \trsl{As for Baekhyun, Seri likes him.}//
 \endgl
 \xe
 
-As has been demonstrated above, the topic function is not linked to a particular
-grammatical function. Nevertheless, while it is theoretically possible to
-promote any constituent noun phrase of a sentence to the topic position, in
-practice, the topic is usually a noun phrase that is specific and referential.
-In most cases, this means that the topic is a proper noun or definite noun
-phrase. As \textcite{kiss2004} observes,
+In Iridian, however, the topic and the subject are the same. By promoting a noun
+phrase as the topic, it automatically becomes the subject of the sentence, as
+the voice marking in the main verb is determined by the thematic role of the topic in the sentence.
+
+The topic function is not linked to a particular grammatical function.
+Nevertheless, while it is theoretically possible to promote any constituent noun
+phrase of a sentence to the topic position, in practice, the topic is usually a
+noun phrase that is specific and referential. In most cases, this means that the
+topic is a proper noun or definite noun phrase. As \textcite{kiss2004} observes,
 \begin{quote}
   We tend to describe events from a human perspective, as statements about their
   human participants – and subjects are more often {\sc[+human]} than objects
@@ -96,122 +86,9 @@ phrase. As \textcite{kiss2004} observes,
   state, the possessor is usually topicalized[.]
 \end{quote}
 
+\section{Internal clause structure}\label{sec:internal-clause-structure}
 
-\section{The noun phrase}
-
-As mentioned in \S\,\ref{sec:topic-pred}, the topic of a sentence is usually a
-noun phrase. In Iridian, the noun phrase is a syntactic category that is formed
-by a head noun and its modifiers. Iridian is a strongly head-final language,
-i.e., the head noun must always come last in the noun phrase.
-
-\section{Topicless sentences}\label{sec:topicless}\index{topicless sentence}
-
-As mentioned in \S\,\ref{sec:topic-pred}, the topic of a sentence is not always
-necessary. In fact, in Iridian, it is possible to have a sentence without a
-topic as long as the predicate is well-formed. 
-
-We will distinguish between two types of topicless sentences: those that are
-topicless by default (real), and those that are topicless by virtue of topic
-ellipsis (apparent). In this section we will only discuss real topicless
-sentences.
-
-
-
-\section{Definiteness}\index{definiteness}\label{sec:definiteness}
-
-Iridian lacks a specific class of articles\index{articles} such as English
-\trsl{a} or \trsl{the} to mark the opposition between definite and indefinite
-nouns. For example, the word \ird{jec} can mean both \trsl{a dog} or \trsl{the
-dog} depending on the context (or in some environments the same word can be
-interpreted as \trsl{dogs,} \trsl{some dogs} or \trsl{the dogs}).
-
-A common way to specify the definiteness of a noun is to promote it to the
-topic position in the sentence. As discussed in \S\,\ref{sec:topic-pred}, the
-topic of a sentence must be specific and referential, and therefore it is often,
-but not always, definite. Consider for example the two sentences below.
-
-\begin{multicols}{2}
-  \pex
-  \a
-  \begingl
-  \gla Pitár pižmo.//
-  \glb Pitár farmer//
-  \glft \trsl{Pitár is {a} farmer.}//
-  \endgl
-  \a
-  \begingl
-  \gla Pižmo Pitár.//
-  \glb farmer Pitár//
-  \glft \trsl{The farmer is Pitár.}//
-  \endgl
-  \xe
-\end{multicols}
-
-This can be extended to non-copular constructions.
-
-\begin{multicols}{2}
-  \pex
-  \a
-  \begingl
-  \gla Vliče štanžek.//
-  \glb milk-\Gen{} drink-\Av{}-\Pf{}//
-  \glft \trsl{(I) drank some milk.}//
-  \endgl
-  \a
-  \begingl
-  \gla Vliko štanenik.//
-  \glb milk drink-\Pv{}-\Pf{}//
-  \glft \trsl{(I) drank the milk.}//
-  \endgl
-  \xe
-\end{multicols}
-
-If the topic is quantified\index{quantifier} by a numeral\index{numeral},
-indefiniteness can be expressed by nominalizing\index{nominalization} the main
-verb and promoting it to topic.
-
-\pex
-\a
-\begingl
-\gla Jed okrád za propozica něbiček.//
-\glb five district for proposal-\Acc{} vote:against-\Av{}-\Pf{}//
-\glft \trsl{Five districts voted against the
-proposal.}//
-\endgl
-\a
-\begingl
-\gla Za propozica něbičkou jed okrád.// \glb for proposal-\Acc{}
-vote:against-\Av{}-\Pf{}-\Nz{} five district// \glft \trsl{Five districts voted
-against the proposal.}//
-\endgl
-\a
-\begingl
-\gla Za propozica něbičkou okrád jed.// \glb for proposal-\Acc{}
-vote:against-\Av{}-\Pf{}-\Nz{} \mk{rz} district five// \glft \trsl{Five is the
-number of districts that voted against the proposal.}//
-\endgl
-\xe
-
-Note that this rule is not universal and the topic of a sentence does not necessarily have to be definite, especially where the sentence is merely expressing a fact or a general truth:
-
-\pex
-\begingl
-\gla Jec hvárem.//
-\glb dog animal//
-\glft \trsl{Dogs are animals.}//
-\endgl
-\xe
-
-
-
-\pex
-\begingl
-\gla To >>jec<< hvárem že: to robot//
-\glb \Dem{} dog animal \N{}\Cop{} \Dem{} robot//
-\glft \trsl{The ``dog'' is not a real animal but a robot.}//
-\endgl
-\xe
-
+\section{Topicalization}\label{sec:topicalization}
 
 \section{Coordination}\label{sec:coordination}
 \index{coordination}
@@ -1580,115 +1457,89 @@ otherwise. The same is true with invariable modifiers like \ird{nahte},
 \endgl
 \xe
 
-\section{Specific construction types}
-\subsection{Questions}\index{questions!syntax of}\index{interrogative
-sentence|see{questions!syntax of}}
+\section{Questions}\label{sec:questions-syntax}
+\index{questions!syntax of}
+\index{interrogative sentence|see{questions!syntax of}}
 
-There are two  main  categories  of  interrogative  sentences in Iridian: yes-no
-and  question-word questions (or \emph{wh-}questions).
+\subsection{Yes-no questions}\label{sec:questions-yesno}
 
-\subsubsection{Yes-no questions}\index{questions!yes-no}\index{questions!syntax
-of}
-
-A declarative sentence can be made into a question by a simple rise in
-intonation at the end of the phrase:
-
-\pex
-\a
-\begingl
-\gla Janek ža uzdravšek.//
-\glb Janek already \Refl{}-sleep-\Av{}-\Pf{}//
-\glft \trsl{Janek has fallen asleep.}//
-\endgl
-\a
-\begingl
-\gla Janek ža uzdravšek?//
-\glb Janek already \Refl{}-sleep-\Av{}-\Pf{}//
-\glft \trsl{Has Janek fallen asleep yet?}//
-\endgl
-\xe
-
-Yes-no questions, especially longer ones, may also be formed using the clitic
-\ird{no}, which immediately follows the element of the sentence being
-questioned. To question the sentence as a whole, \ird{no} sentence-initially.
-\ird{No} may also appear after other elements of the sentence, but the resulting
-word order is generally more emphatic and often includes promoting the element
-where \ird{no} to the topic position and the nominalization of the resulting
-verb phrase if possible.
-
+A declarative sentence can be turned into a yes-no question by a simple rise in
+intonation, as in English. Alternatively, the interrogative particle \ird{lí}
+can be used. \ird{Lí} like all adverbial particles are proclitic and must
+necessarily appear before the predicate. While \ird{lí} is optional, its
+omission when forming a yes-no question would often be imply some level of
+surprise or disbelief on the part of the speaker. Thus a sentence like
+\irdp{Janek uzdravževí}{Janek is sleeping} can be transformed into a yes-no
+question as either \irdp{Janek uzdravževí?}{Is Janek sleeping?} or \irdp{Janek
+lí uzdravževí?}{Is Janek sleeping?} with the choice decided by the current
+context. In the written language, especially in longer sentences or in formal
+contexts, the interrogative particle is never omitted. The same is true with
+copular sentences.
 
 \pex
-\a Sentence-initial \ird{no}:\\
-  \begingl
-  \gla No Balžaróma Europevní Unijí čelina?//
-  \glb \Q{} Bulgaria European-\Att{} Union-\Gen{} member//
+\begingl
+  \gla Balžaróma Europevní Unijí lí čelina?//
+  \glb Bulgaria European-\Att{} Union-\Gen{} \Q{} member//
   \glft \trsl{Is Bulgaria a member of the European Union?}//
-  \endgl
-\a Cliticized \ird{no}:\\
-  \begingl
-  \gla Janek zmáčime-no?//
-  \glb Janek run-\Av{}-\Prog{}=\Q{}//
-  \glft \trsl{Is it running that Janek is doing now?}//
-  \endgl
-\a Cliticized \ird{no} triggering topicalization of questioned element:\\
-  \begingl
-  \gla Janek-no zmáčimou?//
-  \glb Janek=\Q{} run-\Av{}-\Prog{}-\Nz{}//
-  \glft \trsl{Is it Janek who is running now?}//
-  \endgl
+\endgl
 \xe
 
-\irdp{Ane}{whether} may also be used instead of \ird{no} to indicate uncertainty
-on the part of the speaker, or in polite or formal speech, to avoid asking a
-direct question. \ird{Ane} functions the same way as \ird{no} and may be used
-sentence initially or as a clitic.
+The particle \ird{děne} (v. \S\,\ref{sec:class3-particles}) is used to form
+indirect questions, similar to the English \trsl{I wonder\ldots}. \ird{Děne} and
+\ird{lí} may be used together in the same sentence, especially in the written
+language, although in colloquial speech, \ird{lí} would often be dropped in such
+cases. The use of \ird{děne} may sometimes be used to `soften' an otherwise
+direct question by making it less direct.
+
+\pex
+\begingl
+  \gla Marek na Praha děne lí že ščenžaní?//
+  \glb Marek \Loc{} Prague-\Acc{} \Spec{} \Q{} \Pfv{} arrive-\Av{}-\Ret{}//
+  \glft \trsl{I wonder if Marek has already arrived in Prague.}//
+\endgl
+\xe
+
+The scope of a yes-no question is generally understood to be that of the whole
+utterance, although the focus may be shifted to any constituent of the sentence,
+subject to the usual rules for topicalization discussed in
+\S\,\ref{sec:topicalization}.
 
 \pex
 \a\begingl
-  \gla Ane Stám Kovárž niehu na sésta o leguánu hvaružnašách?//
-  \glb whether mister Kovárž later-\Ins{} \Loc{} convention-\Acc{} about iguana-\Ins{} give:a:speech-\Av{}-\Ctp{}//
+  \gla Stám Kovárž nevo séstu o leguánu děne lí hvaružnašách?//
+  \glb mister Kovárž later convention-\Ins{} about iguana-\Ins{} \Spec{} \Q{} give:a:speech-\Av{}-\Ctp{}//
   \glft \trsl{Would Mr Kovárž be giving a speech about iguanas later at the convention?}//
   \endgl
 \a\begingl
-  \gla Stám Kovárž-ane niehu na sésta o leguánu hvaružnašit?//
-  \glb mister Kovárž=whether later-\Ins{} \Loc{} convention-\Acc{} about iguana-\Ins{} give:a:speech-\Av{}-\Sup{}//
-  \glft \trsl{Would it be Mr Kovárž who will be giving a speech about iguanas later at the convention?}//
+  \gla Stám Kovárž nevo séstu o leguánu děne lí hvaružnašáchou?//
+  \glb mister Kovárž later convention-\Ins{} about iguana-\Ins{} \Spec{} \Q{} give:a:speech-\Av{}-\Ctp{}-\Nz{}//
+  \glft \trsl{Would it be Mr Kovárž who would be giving a speech about iguanas later at the convention?}//
   \endgl
 \xe
 
-To make an existential sentence\index{existential construction} a yes-no
-question, it is first transformed to the negative and the particle \ird{no/ane}
-is then attached to the word \ird{niho}. If however, the theme of the sentence
-is quantified, the word \ird{ješ}\index{ješ@\emph{ješ}} is kept (but shifted to
-the front of the quantifier), and \ird{no} is attached to the quantifier. The
-form \ird{ješ-no} is ungrammatical. A sentence-initial \ird{no/ane} cannot be
-used in transforming an existential construction.
+Yes-no questions are similarly formed from existential sentences by the use of
+\ird{lí} and/or \ird{děne}. However, only \ird{ješ} accepts this transformation,
+and a negative existential sentence would first need to be transformed into a
+positive one before \ird{lí} and/or \ird{děne} can be added.
 
 \pex
-\begingl
-\gla Marka niho-no oblašc?//
-\glb Marek-\Acc{} \N{}\Exst{}=\Q{} pet//
-\glft \trsl{Does Marek have a pet?}//
-\endgl
+\a \begingl
+  \gla Na to parka niho seh.//
+  \glb \Loc{} \Dem{} park-\Acc{} \N{}\Exst{} flower//
+  \glft \trsl{There are no flowers in this park.}//
+  \endgl
+\a \begingl
+  \gla Na to parka lí ješ seh?//
+  \glb \Loc{} \Dem{} park-\Acc{} \Q{} \Exst{} flower//
+  \glft \trsl{Are there flowers in this park?}//
+  \endgl
 \xe
 
-\pex
-\a
-\begingl
-\gla Co bibliotécě Marka hroná ješ kupénenik ko tóm.//
-\glb \Abl{} library-\Gen{} Marek-\Acc{} three \Exst{} borrow-\Pv{}-\Pf{} \Lnk{} book//
-\glft \trsl{Marek borrowed three books from the library.}//
-\endgl
-\a
-\begingl
-\gla Co bibliotécě Marka ješ hroná-no kupénenik ko tóm?//
-\glb \Abl{} library-\Gen{} Marek-\Acc{} \Exst{} three=\Q{} borrow-\Pv{}-\Pf{} \Lnk{} book//
-\glft \trsl{Did Marek borrow three books from the library.}//
-\endgl
-\xe
+A sentence like \ird{Na to parka lí niho seh?}{Aren't there any flowers in this
+park?} is not grammatical.
 
-Tag questions may be formed by appending the phrase \irdp{no/ane zám
-leť}{isn't it the truth} (cf. Russian\index{Russian} \textit{\cyrtext не
+Tag questions\index{tag question} may be formed by appending the phrase \irdp{lí
+zám let}{isn't it the truth} (cf. Russian\index{Russian} \textit{\cyrtext не
 правда ли}) to the end of the sentence. In colloquial speech, it is also common
 to simply use \irdp{da}{yes} instead.
 
@@ -1700,7 +1551,7 @@ to simply use \irdp{da}{yes} instead.
 \endgl
 \xe
 
-\subsubsection{Contentquestions}\label{sec:content-questions}
+\subsection{Content questions}\label{sec:content-questions}
 \index{wh-question@\emph{wh-}question}\index{information
 question|see{\emph{wh}-question}}\index{content
 question|see{\emph{wh}-question}}
@@ -1811,7 +1662,7 @@ In the case of more complex \emph{wh}-questions involving the movement of a
 \smallskip
   \ex[lingstyle=fnex,belowexskip=-1em,aboveglftskip=1pt]
     \begingl 
-    \gla Ježe jehát Borisám dejatnách to zíknou?//
+    \gla Ježe jehát Borisám ditnách to zíknou?//
     \glb what to:whom Boris-\Agt{} give-\Pv{}-\Ctp{} \Rz{} say-\Pv{}-\Pf{}-\Nz{}//
     \glft \trsl{What did Boris say that (he) would give to whom?}//
   \endgl
@@ -1828,7 +1679,7 @@ In the case of more complex \emph{wh}-questions involving the movement of a
 \xe
 
 
-\subsubsection{Answering questions}\label{sec:ansyn}
+\subsection{Answering questions}\label{sec:ansyn}
 
 Most yes-no questions may be answered by repeating the focal word or phrase in
 the original question or echoing the syntax of the question itself.
@@ -1901,7 +1752,8 @@ The answer does not need to be positive for \ird{da} or \ird{a da} to be used.
 As for questions involving existential constructions
 
 
-\subsection{Negation}\index{negation}
+\section{Negation}\label{sec:negation}
+\index{negation}
 
 In Iridian sentences, negation is performed by the particle \ird{zám}, which
 attaches to the beginning of the word or phrase  it negates. The default
@@ -2010,7 +1862,7 @@ the predicate\index{predicate}.
 
 
 
-\subsection{Existential construction}\index{existential construction}
+\section{Existential constructions}\index{existential construction}
 \label{sec:exst}
 
 \subsubsection{In general}
@@ -2204,7 +2056,7 @@ constructions over indefinite pronouns in Iridian, we can replace the subject of
 \endgl
 \xe
 
-\subsection{Copular constructions}
+\section{Copular constructions}
 \subsubsection{Null copula}
 
 Copular sentences are a minor sentence type where the predicate is not a verb.
