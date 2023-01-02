@@ -757,11 +757,54 @@ maša}{the man who saw something at the store}.
 
 \section{Complementation}\label{sec:complementation}
 
-\subsection{Complement clauses: introduction}\label{sec:complement-clauses}
+\subsection{Complement clauses in general}\label{sec:complement-clauses}
 
-There are two main types of complement clauses in Iridian: quotative clauses 
+There are two main types of complement clauses in Iridian: quotative clauses
+with \ird{by} and subordinate clauses with \ird{-no}. Both require its verb
+argument to be in the conjunctive form. Quotative clauses are used primarily to
+mark indirect speech, although they can also take non-speech act arguments and
+express indirectness in general. Subordinate clauses, on the other hand, are
+used to express a variety of different relations, including causal, concessive,
+conditional, and purpose clauses, among others.
 
-\subsection{Quotative constructions in general}\label{sec:reportedspeech}
+\pex
+\a \begingl
+  \gla Tereza Jankám hloubževě by Markám bych zěknik.//
+  \glb Tereza Janek-\Agt{} love-\Pv{}-\Cont{}-\Cnj{} \Quot{} Markám-\Agt{} yesterday say-\Pv{}-\Pf{}//
+  \glft \trsl{Yesterday Janek said that Marek loves Tereza.}//
+\endgl
+\a \begingl
+  \gla Tereza Jankám hloubnevěno Markám děne hévorneví?//
+  \glb pet Janek-\Agt{} love-\Av{}-\Cont{}-\Cnj{}-\Comp{} Marek-\Agt{} \Spec{} know-\Pv{}-\Cont{}//
+  \glft \trsl{Do you think Marek knows that Janek loves Tereza?}//
+\endgl
+\xe
+
+Iridian requires that the complement clause also be the subject of the sentence.
+This means that the verb in the main clause is required to be marked in the
+patientive voice. Compare this to a similar process in English where the verb in
+the main clause is passivized if the complement clause is the subject of the
+sentence, as shown in (\ref{ex:english-comp-passive}). However, English does not
+restrict the complement clause to the subject position, as we see in
+(\ref{ex:english-comp-canonical}) where the complement clause is the object of
+the verb. Iridian, however, only allows constructions like
+(\ref{ex:english-comp-passive}); nonetheless this does not mean that the
+complement clause must necessarily be the first element of the sentence, as we
+see in \ref{ex:ird-complementation-canonical}, although it is more common for it
+to be so. 
+
+\pex
+\a\label{ex:english-comp-passive} {[That Janek loves Tereza] \emph{is known} by Marek.}
+\a\label{ex:english-comp-canonical} {Marek \emph{knows} [that Janek loves Tereza].}
+\xe
+
+\pex\label{ex:ird-complementation-canonical}
+\a {[Tereza Jankám hloubževě by]\(\lsub{CP}\) Markám bych zěknik.}
+\a {Markám [Tereza Jankám hloubževě by]\(\lsub{CP}\) bych zěknik.}
+\a {Markám bych [Tereza Jankám hloubževě by]\(\lsub{CP}\) zěknik.}
+\xe
+
+\subsection{Quotative constructions}\label{sec:reported-speech}
 \index{reported speech}\index{indirect speech|see{reported speech}}
 \index{evidentiality}
 
@@ -814,11 +857,13 @@ quoted clause is the same as the subject of the main clause. This is true even
 if the subject of the main clause is a pronoun.
 
 \pex
+\a
   \begingl
     \gla Se obru na večera záščenžite by Marek zíček. //
     \glb \Refl{} night-\Ins{} \Loc{} party-\Acc{} \Neg{}-come-\Av{}-\SupP{}-\Cnj{} \Quot{} Marek say-\Av{}-\Pf{} //
     \glft \trsl{Marek said he won't be coming to the party tonight.}//
   \endgl
+\a
   \begingl
   \gla Se obru na večera záščenžite by dá zíček. //
   \glb \Refl{} night-\Ins{} \Loc{} party-\Acc{} \Neg{}-come-\Av{}-\SupP{}-\Cnj{} \Quot{} I say-\Av{}-\Pf{} //
@@ -894,20 +939,24 @@ the resulting construction often having a more explanatory meaning.
 
 We see from  that when it comes to reported speech and similar constructions in
 Iridian, the \ird{verbum dicendi}\index{verbum dicendi} is not necessary to
-create a well-formed sentence. The same is true with the quotative particle
-\ird{by}. Both can be omitted without making the sentence grammatically
-incorrect since the quotative particle is enough to identify the reported
-clause.\index{reported speech}.
+create a well-formed sentence. Quotative constructions with an omitted main
+clause are called {\sc bare quotatives}\index{bare quotative}.
 
-In most instances, however, removing either the main verb or the main verb and
-the quotative particle can cause the resulting sentence to acquire a new
-meaning. This is especially true when the quotative mood is used not to report
-speech but to imply a certain unsureness on the part of the speaker about the
-information being presented, or for the speaker to distance themself by implying
-through the use of the quotative that the information is secondhand and not
-theirs. Generally \ird{by} is kept when the speaker is quoting themself, to
-repeat or emphasize what they have said, or expletively, to express their
-frustration or affirmation.
+\pex
+\begingl
+  \gla Krasouv Markám nakdenice By.//
+  \glb jewelry Marek-\Agt{} steal-\Pv{}-\Pf{}-\Cnj{} \Quot{}//
+  \glft \trsl{(I heard that) Marek stole the jewelry.}//
+\endgl
+\xe
+
+In most instances, removing the main clause can cause the resulting sentence to
+acquire a new meaning. This is especially true when the quotative mood is used
+not to report speech but to imply a certain unsureness on the part of the
+speaker about the information being presented, or for the speaker to distance
+themself by implying through the use of the quotative that the information is
+secondhand and not theirs. Bare quotatives are discussed in detail in
+\S\,\ref{sec:bare-quotatives}.
 
 When the quoted clause is a question, whether a direct one or not, the quoted
 clause is terminated by the conjunctive ending \ird{-no} instead of \ird{by}.
@@ -931,37 +980,46 @@ This is discussed in detail in \S\,\ref{sec:complemetation-no}.
 \xe
 
 \subsection{Bare quotatives}
+\label{sec:bare-quotatives}
 
-Quoted clauses in Iridian may also appear without an overt predicate. We will
-call this construction a {\sc bare quotative} after the terminology in
-\textcite{tomioka2019} in reference to embedded quotative constructions in
-Japanese and Korean without overt predicates. Bare quotatives are often used not
-to mark a speech act but to indicate the epistemic value of (viz., to pass the
-speaker's judgment on) a proposition. This usage is similar to the use of the
-conjunctive ending \ird{-má} as discussed in \S\,\ref{sec:conj-contrast} as a
-hedging strategy to `soften' a statement. With the bare quotative, on the other
-hand, the hedge is on the source of the information; that is, in cases where the
-quotative is used not to mark a speech act, the purpose then becomes to mark the
-emotional or cognitive distance between the speaker and the information being
-presented. This might be done because the speaker is not sure of the information
-and does not want to be held accountable for it, or as a politeness strategy to
-avoid being too direct with the listener.
+As has been briefly mentioned in \S\,\ref{sec:reported-speech}, quotative
+constructions may also appear without an overt main clause. We call this
+construction a {\sc bare quotative} after the terminology in
+\textcite{tomioka2019}. In most cases, bare quotatives are not used to mark a
+speech act, but rather to indicate the speaker's judgment or evaluation of a
+proposition. This usage is similar to the use of a conjunctive ending \ird{-má}
+to `soften' a statement (see \S\,\ref{sec:conj-contrast}) and show hesitation or
+uncertainty. When a bare quotative is used in this way, it serves to show the
+speaker's emotional or cognitive distance from the information being presented.
+This can be done for various reasons, such as to avoid being held accountable
+for the information if the speaker is unsure of its accuracy, to be polite by
+not being too direct with the listener, or to express irony or sarcasm. This
+non-reportative use can be extended even to utterances which directly come from
+the speaker but from which the speaker wishes to establish distance due to the
+reasons stated above.
 
-A speaker's uncertainty may also be expressed using the quotative even when the
-statement directly came from the speaker. The uncertainty may refer to both the
-factuality of the statement or to its source. This uncertainty can be further
-amplified by the use of the reportative particle \ird{kamo}, which implies a
-greater degree of disjunction between the speaker and the statement than the
-plain quotative. Although it does not pass a judgment on the truth value of the
-statement, \ird{kamo} makes it clear that the statement did not come from the
-speaker and that the use of the quotative is not a hedging strategy. As such,
-\ird{kamo} is not used if the use of the bare quotative is for reasons of
-politeness. \ird{Kamo} is particularly common in newscasts or in other formal
-settings where the speaker is communicating statements from another speaker or
-group and the identity of the speaker or group has already been established
-earlier in the conversation and is thus known to everyone. \ird{Kamo} is often
-dropped when the main clause is present, although it might be retained in
-similar cases where emphasis on the source of the statement is desired.
+\pex
+  \a
+  \begingl
+  \glpreamble \lingcontext{The speaker ironically comments about another customer in the shop who is complaining at the counter, blind with rage.}//
+  \gla Děne všihnevě by.//
+  \glb \Spec{} angry-\Cont{}-\Cnj{} \Quot{}//
+  \glft \trsl{You can tell he's angry.}//
+  \endgl
+\xe
+
+When the bare quotative is used to report speech and not to express the
+speaker's judgment, the reportative particle \ird{kamo} is used to make it clear
+that the statement is in fact reported speech. Although it does not pass a
+judgment on the truth value of the statement, \ird{kamo} makes it clear that the
+statement did not come from the speaker and that the use of the quotative is not
+a hedging strategy. \ird{Kamo} is particularly common in newscasts or in other
+formal settings where the speaker is communicating statements from another
+speaker or group and the identity of the speaker or group has already been
+established earlier in the conversation and is thus known to everyone.
+\ird{Kamo} is often dropped when the main clause is present, although it might
+be retained in similar cases where emphasis on the source of the statement is
+desired.
 
 \pex
 \a
@@ -977,6 +1035,10 @@ similar cases where emphasis on the source of the statement is desired.
   \glft \trsl{He said that they will have dinner at the \emph{Hospoda} tonight.}//
 \endgl
 \xe
+
+Bare quotatives may be embedded in other clauses,
+
+
 
 \subsection{Complementation with \ird{no}}
 \label{sec:complementation-no}
