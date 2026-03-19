@@ -1,0 +1,713 @@
+\chapter{Nouns and the Noun Phrase}\label{ch:nouns}
+
+\section{Introduction}
+
+Nominal morphology in Iridian is relatively straightforward. Nouns are inflected for case; there is no grammatical gender, and number marking is optional. The case system interacts closely with the verbal aspect system: the morphological role of a noun phrase in a clause depends in part on the aspect of the verb, a consequence of Iridian's split-ergative alignment (discussed in detail in Chapter~\ref{ch:verbs}).
+
+\section{The case system}
+
+Iridian has three productive cases: the \textbf{direct}, the \textbf{transitive}, and the \textbf{indirect}. A fourth case, the \textbf{vocative}, exists for a restricted set of nouns used in direct address. The direct case is the default, uninflected form from which all other cases are derived.
+
+The functions of each case are closely tied to the aspect of the verb in the clause:
+
+\begin{itemize}
+	\item The \textbf{direct case} (\Dir{}) is the unmarked or citation form of a noun. It functions as the unmarked or core argument of the clause: the subject of an intransitive verb, the subject of a transitive verb in the nominative-alignment aspects (continuous, progressive, contemplative), and the object of a transitive verb in the transitive-alignment aspects (perfective and retrospective). It is also used as the predicative complement in equative constructions (zero copula) and with the overt copular verb \ird{neh-}; and as the entity whose existence is asserted in existential constructions with \ird{jec-} and \ird{zad-}.
+
+	\item The \textbf{transitive case} (\Trs{}) is the ergative case. It marks the agent of a transitive verb in the perfective and retrospective aspects. Outside of those contexts, it does not appear as a core argument.
+
+	\item The \textbf{indirect case} (\Ind{}) is the oblique or non-core case. It marks the patient of a transitive verb in the nominative aspects (continuous, progressive, contemplative); it also marks instruments, beneficiaries, locations, and other peripheral arguments regardless of aspect. Its function is thus both grammatical and adverbial.
+
+	\item The \textbf{vocative} (\Voc{}) is used for direct address. It exists only for personal names and a small set of common nouns, primarily kinship terms.
+\end{itemize}
+
+\pex
+\a
+\begingl
+\gla Marek zmacime.//
+\glb Marek.\Dir{} run-\Prog{}//
+\glft \trsl{Marek is running.} \lingcontext{intransitive; agent = \Dir{}}//
+\endgl
+\a
+\begingl
+\gla Travat Marku piaštnik.//
+\glb bread.\Dir{}.\Def{} Marek.\Trs{} eat-\Pf{}//
+\glft \trsl{Marek ate the bread.} \lingcontext{transitive perfective; P = \Dir{}, A = \Trs{}}//
+\endgl
+\a
+\begingl
+\gla Marek travě piastime.//
+\glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
+\glft \trsl{Marek is eating bread.} \lingcontext{transitive progressive; A = \Dir{}, P = \Ind{}}//
+\endgl
+\xe
+
+\section{Inflectional classes}
+
+Nouns in Iridian are best described through two intersecting systems: \textbf{declension class} and \textbf{stem grade}. The declension class determines which case endings a noun selects; the stem grade determines which shape of the stem appears before that ending. This allows the grammar to treat forms such as \ird{Marek} $\rightarrow$ \ird{Marku} / \ird{Marcí}, \ird{obel} $\rightarrow$ \ird{oblu} / \ird{oblí}, and \ird{lobek} $\rightarrow$ \ird{lubku} as regular consequences of the same morphophonemic system described in Chapter~\ref{ch:phon}.
+
+The surface case inventory remains simple --- direct, transitive, indirect, and vocative --- but the stems that feed those cases may occur in four grades:
+
+\begin{itemize}
+	\item the \textbf{basic stem}, used in the direct/citation form;
+	\item the \textbf{zero-grade stem}, where an unstable \ird{e} is deleted before a vowel-initial ending;
+	\item the \textbf{raised stem}, where zero-grade formation further triggers \ird{e/ě/é $\rightarrow$ i/í} or \ird{o $\rightarrow$ u};
+	\item the \textbf{soft stem}, where a front-vocalic ending palatalizes the final consonant.
+\end{itemize}
+
+Not every noun shows all four grades, but every morphophonemically complex noun can be described in these terms. Dictionaries should therefore list nouns by three principal parts: \textbf{Direct}, \textbf{Transitive}, and \textbf{Indirect}.
+
+Nouns are assigned to one of three broad declension classes. The class of a noun is partly predictable from the shape of the direct form, but must ultimately be learned lexeme by lexeme. The three classes are distinguished primarily by the transitive ending; the indirect case is more uniform, but it is also the case most likely to reveal a soft stem.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Case paradigms for the three inflectional classes.}\label{tab:declension}
+	\medskip
+	\begin{tabularx}{0.9\textwidth}{L l l l l}
+		\toprule
+		{\sc case} & {\sc gloss} & {\sc class i} \ird{Marek} & {\sc class ii} \ird{trava} & {\sc class iii} \ird{byl} \\
+		\midrule
+		Direct     & & \ird{Marek} & \ird{trava} & \ird{byl} \\
+		Transitive & \Trs{} & \ird{Marku} & \ird{travy} & \ird{byla} \\
+		Indirect   & \Ind{} & \ird{Marcí} & \ird{travě} & \ird{bylam} \\
+		Vocative   & \Voc{} & \ird{Marko} & --- & \ird{byle} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The nouns in Table~\ref{tab:declension} are \irdp{Marek}{Marek} (class~I), \irdp{trava}{bread} (class~II), and \irdp{byl}{child} (class~III). The noun \ird{trava} does not have a vocative form; \ird{byl} has the vocative \ird{byle}, used when addressing a child directly.
+
+\subsection{Class I}
+
+Class I nouns typically end in a hard consonant in the direct case. The transitive case is formed with the suffix \ird{-u}; because this suffix is vowel-initial, it may trigger unstable-vowel deletion and, in some subclasses, vowel raising. The indirect case is formed with a front-vocalic ending in \ird{-í}, which selects the soft stem and therefore regularly triggers palatalization. Thus \ird{Marek} gives \ird{Marku} in the transitive but \ird{Marcí} in the indirect. A noun such as \ird{lobek} belongs to the same broad class, but uses a raised transitive stem: \ird{lobek} $\rightarrow$ \ird{lubku}.
+
+\subsection{Class II}
+
+Class II nouns typically end in a vowel \ird{-a} or in a consonant already belonging to the soft/sibilant series. The transitive case is formed by replacing the final vowel with \ird{-y} or by adding \ird{-y} after a consonant. The indirect case ends in \ird{-ě}. Because these nouns often already contain a front vowel or a soft consonant, the stem alternations are usually lighter than in Class~I, though some members still show zero-grade behavior.
+
+\subsection{Class III}
+
+Class III nouns typically end in a consonant and form the transitive case with the suffix \ird{-a}. The indirect case is formed with \ird{-am}. This class is the most heterogeneous of the three: the endings themselves are regular, but the distribution between Class~I and Class~III, especially among consonant-final stems, must be learned lexically.
+
+\subsection{Case endings and stem selection}\label{sec:noun-stem-grades}
+
+The relation between case and stem grade is summarized below.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Case endings and their morphophonemic effects.}\label{tab:noun-stem-selection}
+	\medskip
+	\begin{tabularx}{0.95\textwidth}{L L L}
+		\toprule
+		{\sc case} & {\sc typical ending} & {\sc effect on stem} \\
+		\midrule
+		Direct & zero & basic stem \\
+		Transitive & \ird{-u}, \ird{-y}, \ird{-a} & may select zero-grade; some subclasses also raise \ird{o $\rightarrow$ u} or \ird{e/ě $\rightarrow$ i/í} \\
+		Indirect & \ird{-í}, \ird{-ě}, \ird{-am} & front-vocalic endings select soft stem; some vowel-initial endings also expose zero-grade alternations \\
+		Vocative & class-specific & usually built from the basic stem, occasionally analogical to a soft stem \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The transitive and indirect cases are therefore not merely suffixes added to an invariant base. Rather, the ending first selects a stem grade, and only then surfaces in its overt form. The rule order is the same as in Chapter~\ref{ch:phon}: suffix selection first, then unstable-vowel deletion, then any vowel raising, then palatalization if the ending is front-vocalic.
+
+Irregularity in the noun system is best understood as \emph{stem-grade irregularity}, not as irregular case endings. Some nouns fail to raise where the general pattern would suggest it, some preserve a zero-grade in only one case, and a few common nouns or names retain archaic soft-stem spellings. The endings themselves remain largely stable across the system.
+
+\pex
+\a \ird{Marek} $\rightarrow$ \ird{Marku} / \ird{Marcí}
+\a \ird{obel} $\rightarrow$ \ird{oblu} / \ird{oblí}
+\a \ird{lobek} $\rightarrow$ \ird{lubku}
+\xe
+
+\subsection{Irregular nouns}
+
+A small number of nouns have irregular inflectional patterns that do not conform to any of the three classes. These must be learned individually. Dictionaries list the transitive and indirect case forms alongside the direct case entry.
+
+\section{The vocative}
+
+The vocative is used for direct address. It is productive for personal names and for a closed set of common nouns, mostly kinship terms. Outside this set, nouns are addressed with the direct case form.
+
+Nouns with vocative forms include the following kinship terms:
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Kinship terms with vocative forms.}\label{tab:vocative}
+	\medskip
+	\begin{tabularx}{0.7\textwidth}{L l l}
+		\toprule
+		{\sc direct} & {\sc vocative} & {\sc meaning} \\
+		\midrule
+		\ird{papka}  & \ird{papko}  & father \\
+		\ird{mamka}  & \ird{mamko}  & mother \\
+		\ird{mlazka} & \ird{mlazko} & brother \\
+		\ird{voska}  & \ird{vosko}  & sister \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+For personal names the vocative is formed in a manner predictable from the inflectional class of the name (see Table~\ref{tab:declension} for the class~I name \ird{Marek}, vocative \ird{Marko}). The vocative list is not exhaustive; other common nouns may have vocatives, but their use has become increasingly restricted to formal and literary registers.
+
+\section{Definiteness}\label{sec:definiteness}
+
+Iridian possesses a postposed determiner, which appears as \ird{-ot} after a consonant and as \ird{-t} after a vowel. Thus \ird{bylot} signifies \trsl{the child}, and \ird{travat} \trsl{the bread}. This suffix is not to be understood as answering in every particular to the English definite article. Its office is rather to mark a noun as referring to something already present to the mind of the speaker and hearer, whether by previous mention, by the circumstances of the utterance, or by some other sort of immediate intelligibility. It is therefore more exact to say that the suffix marks an \textit{anchored} or \textit{determinate} reference than that it merely marks definiteness in the narrower sense.
+
+In form the determiner is attached to the fully inflected noun. Since the direct case is without overt ending, the suffix there appears immediately upon the nominal stem; where, however, the noun bears some case termination, the determiner follows that termination. One may accordingly set side by side such forms as \ird{byl} \trsl{child}, \ird{bylot} \trsl{the child}, \ird{bylam} \trsl{child} in the indirect case, and \ird{bylamot} \trsl{the child} in the same case.
+
+\ex
+\begingl
+\gla byl \qquad bylot \qquad bylam \qquad bylamot//
+\glb child.\Dir{} \qquad child.\Dir{}.\Def{} \qquad child.\Ind{} \qquad child.\Ind{}.\Def{}//
+\glft \trsl{child, the child, child (oblique), the child (oblique)}//
+\endgl
+\xe
+
+The use of the determiner is optional. The bare noun is the ordinary and least marked form, and may be employed where the reference is indefinite, generic, kind-denoting, weak, or otherwise not yet fixed to the common ground of discourse. The suffixed form, on the other hand, presents the referent as one which is in some manner already recoverable. Very often it is anaphoric; not seldom it is situationally unique; at other times it is contrastively selected or resumed as a discourse-prominent participant. The opposition is therefore not simply that between \trsl{definite} and \trsl{indefinite}, but rather that between a noun which is left unanchored and one which is brought into a more determinate relation with the discourse.
+
+This may be seen from a simple contrast. In the sentence below the object is construed as a particular loaf or portion of bread already identifiable in the context:
+
+\ex
+\begingl
+\gla Travat Marku piaštnik.//
+\glb bread.\Dir{}.\Def{} Marek.\Trs{} eat-\Pf{}//
+\glft \trsl{Marek ate the bread.}//
+\endgl
+\xe
+
+If, however, the noun appears without the determiner, the reference is left less fixed and may be understood in a weaker or less individuated sense:
+
+\ex
+\begingl
+\gla Trava Marku piaštnik.//
+\glb bread.\Dir{} Marek.\Trs{} eat-\Pf{}//
+\glft \trsl{Marek ate bread; Marek ate some bread.}//
+\endgl
+\xe
+
+It must be observed that this suffix does not serve to indicate grammatical relation as such. It does not mark subjecthood, nor is it imposed by the mere fact that a noun stands as a core argument. In transitive clauses of the perfective or retrospective, it is indeed especially frequent with direct-case patient nouns; but this is because such nouns are often conceived as individuated and discourse-recoverable, not because the syntax requires the suffix. The same determiner may, where the sense calls for it, be found upon nouns in other cases also; yet outside the direct case such use is generally less neutral and more plainly expressive of topical, resumptive, contrastive, or otherwise salient reference.
+
+The vocative excludes the determiner. In forms of direct address the person addressed is already sufficiently identified by the speech-act itself, and no further anchoring is needed. Generic expressions likewise dispense with the suffix as a rule, the bare noun being in such contexts the ordinary vehicle of the class or kind as such.
+
+Beside this determiner the language possesses two preposed particles, \ird{si} and \ird{druh}, which are employed when the speaker wishes to introduce a referent as particularized, yet not as already established in the common ground. These particles thus stand, in point of meaning, between the wholly bare noun and the noun provided with the determiner. They do not make the noun definite; rather, they indicate what may be called specific indefiniteness.
+
+Of these two particles, \ird{si} is the lighter and more usual. It answers approximately to \trsl{a certain} or \trsl{some particular}, and is the common means of introducing a referent which the speaker has in view, though the hearer has not yet been led to identify it.
+
+\ex
+\begingl
+\gla si byl//
+\glb \Spec{} child.\Dir{}//
+\glft \trsl{a certain child; some particular child}//
+\endgl
+\xe
+
+The particle \ird{druh} is weightier in tone and somewhat more selective in force. It often suggests \trsl{a given} or \trsl{one particular}, and may accordingly appear where the speaker means to single out the referent with greater insistence, or where the style is more elevated or deliberate.
+
+\ex
+\begingl
+\gla druh byl//
+\glb \Spec{} child.\Dir{}//
+\glft \trsl{a certain particular child; one given child}//
+\endgl
+\xe
+
+The difference between \ird{si} and \ird{druh} is not absolute, and their spheres overlap. In many passages either may stand without serious change of denotation. Still, the general tendency is plain enough: \ird{si} is slighter, more colourless, and more readily employed in ordinary discourse, whereas \ird{druh} is stronger, more selective, and not seldom somewhat more literary in effect.
+
+These particles do not ordinarily co-occur with the determiner \ird{-ot/-t}. The reason is semantic. A noun marked by \ird{si} or \ird{druh} is presented as particularized indeed, but not yet anchored; a noun marked by \ird{-ot/-t} is presented as already anchored and recoverable. The two constructions are therefore, in the normal language, held apart.
+
+Number does not directly alter this opposition. The noun itself is not obligatorily inflected for singular and plural. Plurality, where it is to be expressly marked, is indicated by the proclitic \ird{ne}, which stands at the left edge of the noun phrase. The plural marker and the determiner are independent of one another in form and function: the former denotes plurality, the latter anchoring.
+
+\ex
+\begingl
+\gla ne byl \qquad ne bylot//
+\glb \Pl{} child.\Dir{} \qquad \Pl{} child.\Def{}//
+\glft \trsl{children \qquad the children}//
+\endgl
+\xe
+
+The particles of specific indefiniteness may likewise accompany plural expressions:
+
+\ex
+\begingl
+\gla ne si byl \qquad ne druh byl//
+\glb \Pl{} \Spec{} child.\Dir{} \qquad \Pl{} \Spec{} child.\Dir{}//
+\glft \trsl{some particular children \qquad a certain set of children}//
+\endgl
+\xe
+
+When \ird{ne} is joined with a numeral or other quantifying word, it no longer denotes mere plurality, but rather an approximate number. In such combinations the determiner, as well as the particles \ird{si} and \ird{druh}, is ordinarily avoided, since approximate quantified expressions are not commonly treated as either anchored or narrowly individualized noun phrases.
+
+A word must also be added concerning demonstratives. In the unmarked construction a demonstrative stands without the postposed determiner. Nevertheless, the language permits, in emphatic or contrastive style, the combination of demonstrative and determiner in the same noun phrase. Such double determination is not neutral, but serves to single out the referent with unusual force, whether resumptive, affective, or contrastive.
+
+\ex
+\begingl
+\gla ša byl \qquad ša bylot//
+\glb \Dem{}.\Prox{} child.\Dir{} \qquad \Dem{}.\Prox{} child.\Def{}//
+\glft \trsl{this child \qquad this very child; this particular child here}//
+\endgl
+\xe
+
+The full semantic range of the determiner, together with its relation to deixis, anaphora, topicality, contrast, and the introduction and subsequent tracking of referents, will be considered more fully in Chapter~\ref{ch:discourse}. The formal paradigm of the demonstratives themselves is given in Section~\ref{sec:demonstratives}.
+\section{Number}
+
+Iridian nouns are not formally inflected for number. A noun in the direct case form may be interpreted as singular or plural depending on context. The plural particle \ird{ne} may be used to explicitly mark plurality; it is a proclitic attaching to the leftmost element of the noun phrase.
+
+\ex
+\begingl
+\gla ne byl//
+\glb \Pl{} child//
+\glft \trsl{children}//
+\endgl
+\xe
+
+The use of \ird{ne} is optional. In contexts where number is recoverable from numerals, quantifiers, or shared knowledge, the particle is typically omitted. When used with a numeral or other quantifier, \ird{ne} signals approximation rather than plain plurality: \ird{ne hrona byl} means \trsl{about three children}, not \trsl{three children.}
+
+\ird{Ne} is a proclitic and attaches to the front of the noun phrase, including any preceding demonstratives or modifiers. It cannot appear inside a possessive noun phrase between an oblique possessor and the head noun. \ird{Ne} cannot be combined with a \ird{zad-} (negative existential) clause.
+
+\section{Uses of the indirect case}\label{sec:indirect-uses}
+
+Beyond its role as the patient case of transitive clauses in the nominative-alignment aspects, the indirect case is the general non-core case of the noun phrase. It covers the functions that in older descriptions were distributed across several narrower cases. In modern analysis these uses form a single domain: the indirect marks dependence on another noun, relation to a source or whole, and a wide range of peripheral participant roles.
+
+\subsection{Possession and nominal dependence}
+
+The most basic non-core use of the indirect is to mark a dependent noun within the noun phrase, especially a possessor. The dependent noun precedes the head noun and forms a tight constituent with it.
+
+\pex
+\irdp{Marcí dum}{Marek's house}\\
+\irdp{mámcí hašek}{my mother's bag}\\
+\irdp{ša študencí tóm}{this student's book}
+\xe
+
+Demonstratives and other phrasal modifiers precede the entire possessive phrase and do not intervene between the oblique possessor and the head noun. The plural clitic \ird{ne}, by contrast, is placed immediately before the element whose plurality it marks.
+
+\pex
+\a \irdp{ša študencí tóm}{this student's book}
+\a \irdp{ně študencí tóm}{the students' book}
+\a \irdp{študencí ně tóm}{the student's books}
+\xe
+
+The same oblique dependency is used more broadly for close nominal relations that English often renders with \trsl{of}: kinship, authorship, association, and other kinds of inherent or identifying linkage.
+
+\subsection{Material and partitive relations}
+
+The indirect also marks the substance from which something is made and the noun that supplies the whole or source domain in a partitive relation. In this use the head noun denotes an object, measure, or portion, while the indirect noun names the material or larger whole from which it is drawn.
+
+\ex
+\irdp{kuní prosc}{silver spoon}
+\xe
+
+\ex
+\begingl
+\gla Ona pive štava unarížčem.//
+\glb one beer-\Ind{} mug-\Dir{} \Refl{}-order-\mk{av-pv-1s}//
+\glft \trsl{I ordered a mug of beer.}//
+\endgl
+\xe
+
+Where the construction refers to an unbounded substance or to a portion abstracted from a whole, the indirect is the normal choice. By contrast, when the language counts discrete members of a set, Iridian prefers an overt quantificational construction rather than a bare oblique partitive dependent.
+
+\pex
+\a
+\begingl
+\gla Na kroumašta po zma jeca pivo.//
+\glb \Loc{} refrigerator.\Trs{} still few \Exst{}-\Cont{} beer.\Dir{}//
+\glft \trsl{There's still some beer left in the refrigerator.}//
+\endgl
+\a
+\begingl
+\gla Na žnohoušca hroná.//
+\glb \Loc{} student-\Ind{} three//
+\glft \trsl{three of the students}//
+\endgl
+\xe
+
+\subsection{Source and movement away}
+
+With verbs of departure, removal, and separation, the indirect marks the source from which motion proceeds. This source reading contrasts with the direct case, which in comparable verbal environments may instead foreground the affected place as a more central argument.
+
+\pex
+\a
+\begingl
+\gla Dumí palžek.//
+\glb house-\Ind{} leave-\Pf{}//
+\glft \trsl{I left the house.}//
+\endgl
+\a
+\begingl
+\gla Dum palzinek.//
+\glb house.\Dir{} leave-\Pf{}//
+\glft \trsl{I left the \emph{house}.}//
+\endgl
+\xe
+
+The same source-oriented oblique extends naturally to nouns followed by postpositions of separation, origin, exclusion, and replacement.
+
+\section{Pronouns}\label{sec:pronouns}
+
+% ============================================================
+% STATUS: STUB — port and revise from archive/2020/chapters/04-nominal-morphology.tex
+% Sections needed:
+%   - Personal pronouns (1sg, 2sg, 1pl, 2pl) + declension table
+%   - The T-V distinction and politeness
+%   - Demonstratives (proximal ša/to, medial kako/jáne, distal dní/děn + locatives)
+%     + animacy distinction + declension table
+%   - The obviative/proximate system with demonstratives
+%   - Interrogatives (jede, ježe, etc.) + derived uses
+%   - The reflexive se (declension + uses)
+%   - Indefinite and negative pronouns (nět, zide, etc.)
+% All case labels from the 2020 archive must be updated to Direct/Transitive/Indirect.
+% ============================================================
+
+\subsection{Personal pronouns}
+
+Iridian distinguishes first and second person in a set of personal pronouns. There are no third-person personal pronouns; third-person reference is expressed by demonstratives (Section~\ref{sec:demonstratives}). Iridian is consistently pro-drop: pronouns are supplied only when not recoverable from context or when contrastive. The second-person plural is used as a polite singular (the T-V distinction).
+
+% [Port declension table from 2020 archive, update case labels]
+
+\subsection{Demonstratives}\label{sec:demonstratives}
+
+The demonstrative system makes a three-way distance distinction (proximal, medial, distal) and distinguishes animate from inanimate referents. Demonstratives cover third-person reference and function both anaphorically and deictically.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Demonstrative pronouns in Iridian.}\label{tab:demonstratives}
+	\medskip
+	\begin{tabularx}{0.75\textwidth}{L l l l}
+		\toprule
+		          & {\sc animate} & {\sc inanimate} & {\sc locative} \\
+		\midrule
+		Proximal  & \ird{ša}   & \ird{to}   & \ird{tak}  \\
+		Medial    & \ird{kako} & \ird{jáne} & \ird{jení} \\
+		Distal    & \ird{dní}  & \ird{děn}  & \ird{dně}  \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The proximate/obviative distinction (using the proximal versus the distal demonstrative) allows Iridian to unambiguously track two third-person referents within a discourse. The proximal demonstrative refers to the topic-proximate or coreferent participant; the distal demonstrative refers to a non-coreferent third party. This system is described in detail in Chapter~\ref{ch:discourse}.
+
+% [Port declension table and examples from 2020 archive]
+
+\subsection{The reflexive \ird{se}}
+
+The reflexive clitic \ird{se} (a Slavic borrowing, possibly from Proto-Slavic \rec{sę}) refers back to the topic of the sentence. It is used in reflexive constructions and with what were formerly reflexive-marked verbs. Its full declension and interaction with the valency operations are described here.
+
+% [Port from 2020 archive]
+
+\subsection{Interrogatives}
+
+% [Port from 2020 archive — jede, ježe, jehát, jehu, jemí, jena, jak, zajehu, jiká, jišká, jeně, jení]
+
+\subsection{Indefinite and negative pronouns}
+
+% [Port from 2020 archive — nět/zide, niže/niho, etc.; note niho is superseded by zad- in the current analysis]
+
+\section{Postpositions and case governance}\label{sec:prepositions}
+
+Iridian is strictly head-final in its adpositional phrases. The noun phrase precedes the relational marker, and the marker itself is therefore analyzed as a \textbf{postposition}. These postpositions associate either with the direct case or with the indirect case. Direct-associated postpositions typically encode location, goal, proximity, or benefit; indirect-associated postpositions encode accompaniment, source, exclusion, replacement, and related dependent relations.
+
+The principal direct-associated postpositions are \ird{na} \trsl{in, inside, on}, \ird{de} \trsl{into}, \ird{my} \trsl{for}, and \ird{u} \trsl{near, by}. In these constructions the noun phrase stands first, and the postposition follows it as the head of the phrase.
+
+\pex
+\a \irdp{duma na}{in the house; at home}
+\a \irdp{duma de}{into the house}
+\a \irdp{bolte my}{for the party}
+\a \irdp{Praha u}{near Prague}
+\xe
+
+The indirect-associated postpositions collect the non-core relations that in older descriptions were split across several oblique cases. Most prominent among them are accompaniment (\ird{še} \trsl{with}), source and separation (\ird{z} \trsl{from, out of}, \ird{nam} \trsl{without}), and replacement and exclusion (\ird{pale} \trsl{instead of}, \ird{ahte} \trsl{except for}). All of these follow an indirect noun phrase because they introduce a dependent, non-central participant rather than the primary ground or goal of the relation.
+
+\pex
+\a \irdp{Marcí z houba}{a gift from Marek}
+\a \irdp{záhárí nam}{without sugar}
+\a \irdp{Jancí pale}{instead of Janek}
+\a \irdp{Jancí ahte}{except for Janek}
+\xe
+
+The comitative postposition \ird{še} belongs to the same oblique domain. Its noun phrase appears in the indirect case whether the construction denotes accompaniment, association, or the participant together with whom an action is carried out.
+
+\ex
+\begingl
+\gla Bolte my Janku še stóžách.//
+\glb party-\Dir{} for Janek-\Ind{} with go-\Ctp{}//
+\glft \trsl{(I am) coming to the party with Janek.}//
+\endgl
+\xe
+
+Postpositional case-association is therefore best understood semantically rather than as a residue of older case labels: direct-associated postpositions encode location, goal, proximity, and benefit, whereas indirect-associated postpositions encode accompaniment, source, exclusion, and other dependent relations. In all such phrases the dependent noun phrase precedes the postposition, in keeping with the language's broader head-final syntax.
+
+\section{Noun phrase structure}\label{sec:np-structure}
+
+% ============================================================
+% STATUS: STUB — to be developed
+% The NP in Iridian is head-final: modifiers precede the head noun.
+% Order within the NP:
+%   ne (plural) > demonstrative > oblique possessor > stative-verb modifier > head
+% Stative verbs as attributives: this is the primary adjectival strategy.
+% The attributive suffix -ní can nominalize/adjectivalize a stative verb
+% but the stative converb is also used.
+% ============================================================
+
+The canonical Iridian noun phrase is head-final. Modifiers of all kinds precede the head noun. The general ordering within the noun phrase is:
+
+\medskip
+\ird{ne} (plural) $>$ demonstrative $>$ oblique possessor $>$ stative-verb modifier $>$ head noun
+\medskip
+
+Possessors therefore occupy the same prenominal dependent slot described in Section~\ref{sec:indirect-uses}: they stand directly before the head noun and remain inside the noun phrase, while demonstratives and the plural clitic attach outside the possessive grouping.
+
+Stative verbs (see Section~\ref{sec:stative} in Chapter~\ref{ch:verbs}) serve as the primary attributive modification strategy. Where English uses an adjective before a noun, Iridian uses either a stative verb in a converb form or a nominalized stative verb:
+
+% [Examples to be added]
+
+\section{Event and participant nominals}\label{sec:event-nominals}
+
+Iridian can form nouns directly from verbs. The resulting forms — called
+\textbf{event nominals} and \textbf{participant nominals} — behave like
+ordinary nouns in every grammatical respect, taking case endings, the
+definiteness marker, and the plural clitic on exactly the same terms as
+any other noun. What distinguishes them is their meaning: an event nominal
+names the action or event itself (roughly what English does with
+\trsl{the eating} or \trsl{the running}), while a participant nominal names
+a person or thing defined by the role they play in that event (as English
+does with \trsl{the eater} or \trsl{the food}).
+
+Both types are formed by adding the suffix \ird{-ou} to a verb stem.
+The details of which stem form to use in each case are treated in
+Chapter~\ref{ch:verbs}; here the concern is with the resulting nouns
+as noun phrases: how they inflect, how they interact with definiteness, and
+how they encode the participants of the original event.
+
+\subsection{Inflection and definiteness}
+
+Nouns ending in \ird{-ou} follow the inflectional pattern of Class~II
+nouns (see the section on inflectional classes above). In the direct case
+the form ends in \ird{-ou}; the transitive ending is \ird{-ovy}; the
+indirect is \ird{-ově}. The noun \ird{piaščikou} \trsl{the one who ate}
+illustrates the full set:
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Inflection and definiteness for the participant nominal
+	\ird{piaščikou}.}\label{tab:ou-inflection}
+	\medskip
+	\begin{tabularx}{0.72\textwidth}{L l l}
+		\toprule
+		{\sc case} & {\sc plain} & {\sc definite} \\
+		\midrule
+		Direct     & \ird{piaščikou}  & \ird{piaščikovat}  \\
+		Transitive & \ird{piaščikovy} & \ird{piaščikovyt}  \\
+		Indirect   & \ird{piaščikově} & \ird{piaščikovět}  \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The definiteness marker (see Section~\ref{sec:definiteness}) attaches
+after whichever case ending the noun already bears. The only irregularity
+is in the direct case: the sequence \ird{-ou\,+\,-ot} does not surface as
+\ird{*-out} but contracts to \ird{-ovat}. In the other cases the marker is
+added without contraction: \ird{-ovy} yields \ird{-ovyt}, and \ird{-ově}
+yields \ird{-ovět}.
+
+\subsection{Two kinds of verb-derived noun}
+
+Among nouns built on \ird{-ou}, it is useful to draw a line between two
+kinds.
+
+The first kind is the \textbf{lexical} or \textbf{resultant nominal}: a
+noun tied to a specific verb that names the typical result, product, or
+correlate of that verb's action. The verb for \trsl{to eat} can produce
+\ird{piaštou} with the conventionalised meaning \trsl{food} — not any
+particular act of eating, but the thing characteristically eaten or
+produced by eating. Such forms must be learned verb by verb; many verbs
+lack them entirely, relying instead on unrelated or inherited nouns.
+
+The second kind is the \textbf{gerund}: the fully productive way of
+turning any verb into a noun that names the event itself. Gerunds are
+formed freely from any verb and always refer to the action as an abstract
+event rather than to a fixed result. They correspond most closely to the
+English nominalisation in \trsl{-ing} when used as a noun (\trsl{the
+eating}, \trsl{the running}, \trsl{the remembering}).
+
+Gerunds admit a further distinction based on what they contain. A
+\textbf{simple} gerund names the event without specifying who was involved:
+it means just \trsl{the eating}, nothing more. A \textbf{complex} gerund
+names the event and also expresses the participants of that event inside the
+noun phrase: \trsl{Marek's eating of the bread}, \trsl{Janek's
+remembering}. No separate morphology marks the difference; the same
+\ird{-ou} suffix produces both. What makes a given gerund simple or complex
+is simply whether case-marked nouns appear inside it.
+
+\subsection{Complex gerunds and their participants}
+
+When a gerund expresses its participants internally, both the doer
+(\textit{agent}) and the thing acted upon (\textit{theme}) appear in the
+indirect case. This is the same case used throughout the noun phrase for
+possession and dependent relations (see Section~\ref{sec:indirect-uses}).
+The pattern is consistent with the rest of the grammar: just as
+\ird{Marcí dum} means \trsl{Marek's house}, with the possessor Marek
+in the indirect case, the doer of a gerundival event also appears in the
+indirect case when expressed inside the noun phrase.
+
+One consequence is that a complex gerund containing both a doer and a
+theme will have two indirect-case nouns with no formal difference between
+them. Consider:
+
+\ex
+\ird{Jancí podohletou} --- \trsl{the act of remembering Janek}
+\textit{or} \trsl{Janek's act of remembering}
+\xe
+
+This is a genuine ambiguity. The indirect-case noun \ird{Jancí} (Janek)
+could be either the person doing the remembering or the person being
+remembered. Iridian does not resolve this ambiguity by grammatical rule.
+A reader or listener is expected to use context, and this is by design:
+complex event nominals regularly carry a degree of referential looseness
+that a full finite clause would not. The grammar treats this as a natural
+property of the construction rather than a defect.
+
+When the speaker wishes to be explicit, two strategies are available.
+The first is \textbf{word order}: the doer-indirect precedes the
+theme-indirect. In a construction of the form \textit{A B gerund}, A is
+the doer and B is the theme. The second is the \textbf{definiteness
+marker}: a theme noun bearing the \ird{-ot/-t} suffix
+(Section~\ref{sec:definiteness}) is read unambiguously as the theme and
+not as the doer. Since the \ird{-ou} direct ending contracts with \ird{-ot}
+to give \ird{-ovat}, this marker is visually distinctive when the theme
+itself is a nominalized form.
+
+\subsection{Participant nominals}
+
+Participant nominals use the same \ird{-ou} suffix, but instead of naming
+an event they name a \textit{participant} in that event, identified by the
+role they occupy. The role a given noun names is determined by which verb
+stem the suffix is attached to.
+
+Iridian inflects verbs to foreground different participants as their
+central argument (the system is described in Chapter~\ref{ch:verbs}).
+Attaching \ird{-ou} to a given stem form yields a noun naming whichever
+participant that form places at the centre. Three stem types are relevant
+here:
+
+\begin{itemize}
+
+	\item The \textbf{antipassive stem} is the form of a transitive verb
+	in which the doer of the action is treated as the central argument and
+	the thing acted upon is expressed as a peripheral, indirect-case
+	dependent. Adding \ird{-ou} to this stem produces an
+	\textbf{agent-oriented} participant nominal meaning \trsl{the one who
+	does X}. Two antipassive stems combine with \ird{-ou}, each with a
+	regular contraction: the perfective antipassive \ird{-ek} yields
+	\ird{-ikou} (so \ird{piaščikou} means \trsl{the one who ate}), and
+	the continuous antipassive \ird{-eví} yields \ird{-ívou} (so
+	\ird{piaščivou} means \trsl{the one who eats} or \trsl{the one who is
+	eating}, whether habitually or at the present moment).
+
+	\item The \textbf{plain transitive stem} — the ordinary, unmarked form
+	of a transitive verb — produces a \textbf{patient-oriented} participant
+	nominal meaning \trsl{the thing that X is done to}. In Iridian's default
+	treatment of transitive verbs (discussed in Chapter~\ref{ch:verbs}),
+	it is the thing acted upon that occupies the central argument position
+	of the construction. Attaching \ird{-ou} to this stem therefore names
+	the recipient of the action. Hence \ird{piaštnikou}, built on the plain
+	transitive stem of the verb for \trsl{to eat}, means \trsl{that which
+	is eaten}, or more concretely, \trsl{food} understood as the participant
+	affected by eating.
+
+	\item The \textbf{applicative stem} is the form of a verb that promotes
+	an indirect participant — typically a beneficiary, recipient, or other
+	non-patient role — into the central argument position. Attaching \ird{-ou}
+	to this stem produces a noun referring to that promoted participant.
+	Thus \ird{piaštébikou}, built on the applicative stem of the verb for
+	\trsl{to eat}, means \trsl{the one who was fed} or \trsl{the one for
+	whom eating was done}.
+
+\end{itemize}
+
+The logic throughout is the same: whichever participant a given verb form
+treats as its central argument, attaching \ird{-ou} to that form yields a
+noun that names that participant. Antipassive-based nominals name the
+doer; plain-transitive-based nominals name the thing acted upon;
+applicative-based nominals name the participant promoted by the
+applicative.
+
+Participant nominals are particularly useful when the speaker wants to
+identify someone by what they do or what is done to them, rather than by a
+separate descriptive noun. They therefore tend to appear in constructions
+that introduce or identify discourse participants, a topic taken up in
+Chapter~\ref{ch:discourse}.
+
+\subsection{The attributive form in \ird{-ovní}}
+
+Participant nominals are Iridian's primary means of expressing what English
+conveys with the relative pronouns \trsl{who}, \trsl{which}, and
+\trsl{that}. The \ird{-ou} nominal stands alone as a freestanding noun; its
+counterpart, the \textbf{attributive form} in \ird{-ovní}, is built from the
+same verb stem and serves as a modifier directly preceding a head noun. The
+construction that results is Iridian's standard equivalent of a restrictive
+relative clause.
+
+The two forms share a single organising principle: a nominalized verb phrase
+denotes whichever participant is structurally \textit{privileged} within that
+clause package. The suffix \ird{-ou} or \ird{-ovní} identifies the privileged
+participant; every other core argument within the same nominalized domain
+appears in the indirect case. The nominalized clause is its own enclosed
+domain, so this rule operates within it independently of any surrounding
+structure. When the noun phrase headed or modified by \ird{-ovní} is
+embedded in a higher clause, it takes whatever case that outer clause
+requires.
+
+The paradigm below uses \ird{vrava} (Class~III, \trsl{letter}), \ird{pres}
+(Class~II, \trsl{man}), and the verb \ird{obroh-} \trsl{to read}:
+
+\pex
+\a \ird{vravat presy obrohnik.} --- \trsl{The man read the letter.}
+\a \ird{vravět obrohnikou} --- \trsl{the one who read the letter}
+\a \ird{vravět obrohnikovní pres} --- \trsl{the man who read the letter}
+\xe
+
+In (\lastx b), the participant nominal picks out the reader as its referent.
+The letter appears in the indirect case — \ird{vravě}, with the definiteness
+suffix giving \ird{vravět} — as a non-privileged argument inside the
+nominalized domain. In (\lastx c), the same stem takes the attributive suffix
+\ird{-ovní} and immediately precedes the head noun \ird{pres}. The head noun
+takes whatever case the surrounding clause requires; the \ird{-ovní} form
+does not change.
+
+\subsubsection*{Definiteness}
+
+The attributive form \ird{-ovní} qualifies the head noun as something defined
+by a verbal notion but does not itself encode definiteness. Definiteness,
+where intended, is shown by the ordinary suffix \ird{-t}/\ird{-ot} on the
+head noun, following case-inflection in the regular way; the \ird{-ovní}
+modifier is unaffected.
+
+\subsubsection*{Nested attributives}
+
+Because each nominalized clause is its own domain, attributives may be
+stacked recursively. The inner nominalized phrase becomes an argument within
+the outer nominalized clause, appearing there in the indirect case as
+required. The example below, introducing additionally \ird{zasd-} \trsl{to
+write} and \ird{naz} \trsl{woman}, embeds one attributive inside another:
+
+\pex
+\a \ird{vravat naza zasdnik.} --- \trsl{The woman wrote the letter.}
+\a \ird{nazam zasdnikovní vrava} --- \trsl{the letter that the woman wrote}
+\a \ird{[nazam zasdnikovní vravět] obrohnikovní pres} ---
+   \trsl{the man who read the letter that the woman wrote}
+\xe
+
+In (\lastx b), considered in isolation, the head noun \ird{vrava} appears in
+the direct case: the letter is the privileged participant of the inner domain
+(the thing written), and the woman appears as \ird{nazam} in the indirect.
+In (\lastx c), this same inner phrase is embedded as a non-privileged
+argument of the outer nominalized clause. Accordingly the inner head noun
+shifts to the indirect: \ird{vrava} surfaces as \ird{vravět} (indirect with
+definiteness suffix). The head noun of an \ird{-ovní} phrase always takes the
+case required by the clause it is embedded in, not the case it would bear if
+freestanding.
+
+\subsubsection*{Practical limits on embedding}
+
+The system is formally recursive, but in practice speakers rarely go beyond
+two or three levels of embedding, and a single embedded attributive is by far
+the most common. Deeper nesting produces noun phrases that are unwieldy to
+produce and difficult to parse in speech. Speakers typically rephrase heavily
+embedded content as a sequence of simpler clauses or a converb chain rather
+than extending the nominalization further.

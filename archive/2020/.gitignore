@@ -1,0 +1,45 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.ilg
+*.ind
+*.mtc
+*.mtc0
+*.maf
+*.idx
+*.lot
+*.toc
+*.run.xml
+*.bbl
+*.blg
+*.bcf
+*.lof
+*.txt
+*.pdf
+*.fls
+*.ent
+latex-build
+
+# Expex tags
+iridian-grammar-tags.tex
+
+# glossary files
+*.acn
+*.glg
+*glo
+*.gls
+*.ist
+*.lpz
+*.lzo
+*.lzs
+*.acr
+*.alg
+
+# Local drafts
+drafts/
+*.draft
+
+# DS_Store
+*.DS_Store
+
