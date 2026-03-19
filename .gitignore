@@ -20,6 +20,7 @@
 *.fls
 *.ent
 latex-build
+*.fdb_latexmk
 
 # Expex tags
 iridian-grammar-tags.tex
@@ -38,8 +39,16 @@ iridian-grammar-tags.tex
 
 # Local drafts
 drafts/
+util/
 *.draft
 
 # DS_Store
 *.DS_Store
+
+# binaries
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.texlive-cache/
 
