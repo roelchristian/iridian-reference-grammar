@@ -41,18 +41,15 @@ iridian-grammar-tags.tex
 drafts/
 util/
 *.draft
-*.draft.md
 
 # DS_Store
 *.DS_Store
 
-# binaries
+# binaries and other generated files
 *.pdf
 *.docx
 *.doc
 *.xlsx
-*.texlive*/
-*.texmf-var/
+*.texlive-cache/
 *.html
-*.tmp
 
