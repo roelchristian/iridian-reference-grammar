@@ -45,10 +45,11 @@ util/
 # DS_Store
 *.DS_Store
 
-# binaries
+# binaries and other generated files
 *.pdf
 *.docx
 *.doc
 *.xlsx
 *.texlive-cache/
+*.html
 
