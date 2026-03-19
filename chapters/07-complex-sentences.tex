@@ -1,72 +1,14 @@
 \chapter{Complex Sentences and Clause Chaining}\label{ch:complex}
 
-\section{Theoretical framework for complex sentences: subordination types
-and the clause-combining hierarchy}
-\label{sec:th-complex-overview}
+\section{Overview: clause-combining strategies}
 
-The major strategies for combining clauses in Iridian reflect a unified
-structural principle: \emph{head-finality at all levels of embedding}. A
-dependent clause, whether it functions as an adverbial modifier, an argument,
-or an attributive modifier, precedes the higher constituent whose head it is
-the complement of. This property is not merely linear: it is a structural
-entailment of head-final phrase structure applied recursively across clausal
-levels. Table~\ref{tab:th-combining-strategies} gives the main combining
-strategies and their formal properties.
+Iridian employs several strategies for combining clauses. The dominant strategy is \term{converb chaining}, in which all non-final clauses are expressed as non-finite converb forms linked to a single main (finite) clause. Additional strategies include coordination with conjunctions, and finite complement clauses: the \ird{po}-clause for finite propositional content and the \ird{poby}-clause for polar non-assertive content, including indirect questions of the \textit{whether/if} type.
 
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Main clause-combining strategies in Iridian.}\label{tab:th-combining-strategies}
-	\medskip
-	\begin{tabularx}{\textwidth}{l L L l}
-		\toprule
-		{\sc strategy} & {\sc formal means} & {\sc function} & {\sc ref.} \\
-		\midrule
-		Converb chaining &
-		Non-finite converb suffixes (\ird{-u}, \ird{-ení}, \ird{-ěc},
-		\ird{-ic}, \ird{-it}, \ird{-ouc}, \ird{-ema}, etc.) &
-		Adverbial subordination: temporal, causal, conditional,
-		concessive, purposive, contrastive &
-		§\,\ref{sec:converb-chains} \\[4pt]
-		Finite \ird{po}-complementation &
-		Finite embedded clause + linker \ird{-e} + \ird{po} &
-		Propositional complementation: saying, thinking, knowing,
-		believing, etc. &
-		§\,\ref{sec:complementation} \\[4pt]
-		Non-assertive \ird{poby} &
-		Finite embedded clause + linker \ird{-e} + \ird{poby} &
-		Polar embedding: whether-questions, embedded yes/no content &
-		§\,\ref{sec:poby} \\[4pt]
-		Purposive converb complement &
-		Purposive converb + topic-coreferent subject &
-		Event complementation: wanting, trying, intending, beginning &
-		§\,\ref{sec:purposive} \\[4pt]
-		Coordination &
-		\ird{a}, \ird{še}, \ird{má}/\ird{ozná}, disjunctives &
-		Symmetric clause-level coordination &
-		§\,\ref{sec:coordination} \\[4pt]
-		Relativization &
-		Relative-converb construction (see below) &
-		Nominal modification by a clausal relative &
-		§\,\ref{sec:th-relativization} \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-\subsection{Head-finality in clause combining}
-\label{sec:th-subord-headfinal}
-
-The unmarked pattern in clause combining is as follows:
+Across these strategies, subordination in Iridian follows the same structural principle that governs the language more generally: strong head-finality. In clause combining, this means that a dependent clause normally precedes the higher clause in which it is embedded, while the matrix verbal head remains final. The unmarked pattern is therefore not \textit{main clause + subordinate clause}, as in many European languages, but rather:
 
 \begin{center}
-\term{[subordinate clause] \quad [matrix-clause material] \quad [matrix verb]}
+\term{[SUBORDINATE CLAUSE] [MATRIX-CLAUSE MATERIAL] [MATRIX VERB]}
 \end{center}
-
-The subordinate clause occupies the left side of the construction; the matrix
-predicate closes it. This ordering holds across all of the major subordinate
-clause types: converb chains, finite complement clauses, embedded wh-clauses,
-and relative clauses all precede the higher predicate they are embedded under.
-The same head-final logic applies inside the subordinate clause itself,
-which is internally verb-final.
 
 \begin{figure}[ht]
 	\centering
@@ -78,50 +20,20 @@ which is internally verb-final.
 			l sep=12pt,
 			s sep=16pt,
 		}
-		[S
-			[{XP\\{\footnotesize subordinate clause}}]
-			[VP
-				[{XP\\{\footnotesize matrix-clause material}}]
-				[{V\\{\footnotesize matrix}}]
+		[\textsc{s}
+			[\textsc{Subordinate}\\\textsc{clause}]
+			[\textsc{Matrix predicate}
+				[\textsc{Matrix-clause}\\\textsc{material}]
+				[\textsc{Matrix verb}]
 			]
 		]
 	\end{forest}
 	\caption{Head-final organization of subordinate constructions.}
 \end{figure}
 
-There is a practical consequence for information structure. In a converb
-chain, all aspectual contrasts and alignment contrasts are borne by the
-single finite verb at the end of the chain; converbs are aspectually
-neutral and take nominative-accusative alignment regardless of the aspect
-that the matrix verb will bear. This creates an asymmetry between
-converb-internal and matrix-level information marking that is discussed in
-§\,\ref{sec:converb-chains}.
+The same head-final logic holds inside the subordinate clause itself. Its arguments and adjuncts precede its own verbal head, so the subordinate clause is internally verb-final, while the larger construction as a whole culminates in the final verb of the matrix clause. Iridian subordination is thus characterized primarily by ordering: dependent clausal material precedes the higher clause, and the matrix predicate closes the sentence. This generalization holds across the major subordinate clause types, even though those types differ morphologically in how the dependency is marked.
 
-\subsection{Subordination types: a typological note}
-\label{sec:th-subord-types}
-
-Following standard typological distinctions (Haspelmath
-1995; Nikolaeva 2007), Iridian
-clause-combining strategies may be classified along two parameters: the
-\emph{morphological type of the dependent verb} (finite or non-finite) and
-the \emph{semantic relationship} between dependent and matrix clause.
-
-Non-finite (converb) subordination is the dominant strategy for adverbial
-clauses. Finite subordination by means of \ird{po}/\ird{poby} is restricted
-to argument clauses (complement clauses). There is no dedicated relative
-clause morphology comparable to an overt relative pronoun or a relative
-complementizer: relativization is expressed through a converb-based
-construction in which a non-finite clause modifies the head noun (see
-§\,\ref{sec:th-relativization}).
-
-The dominance of converb-based strategies means that what in a European
-language would be expressed as two (or more) finite clauses typically
-appears in Iridian as a converb chain followed by a single finite verb. The
-aspectual and alignment information that would be distributed across multiple
-finite verbs in a Slavic language is therefore concentrated at the right edge
-of the chain. This property has implications for switch-reference tracking
-(§\,\ref{sec:switch-reference}) and for discourse structure
-(Chapter~\ref{ch:discourse}).
+In practical terms, adverbial subordination is expressed chiefly through converbs, while finite subordination is handled by the \ird{po}/\ird{poby} complement system. The centrality of the converb to Iridian clause-combining means that what would be expressed as multiple finite clauses in a Slavic language typically appears in Iridian as a chain of converbs followed by a single finite verb. This has consequences for information structure (only the final, finite verb carries aspect and alignment), for switch-reference tracking, and for discourse organization (see Chapter~\ref{ch:discourse}).
 
 \section{Converb chains: structure and alignment}\label{sec:converb-chains}
 
@@ -135,7 +47,7 @@ Case marking within converb clauses always follows nominative-accusative alignme
 
 \subsection{Switch-reference and topic continuity}\label{sec:switch-reference}
 
-By default, the subject of a converb clause is coreferent with the subject of the following clause (same-subject, SS reading). When the subjects differ (different-subject, DS), the contrast is signaled by overt lexical NPs, demonstratives, or the discourse structure itself; Iridian has no grammaticalized switch-reference clitic. Where both clauses supply full nominal subjects, disambiguation is immediate; where one subject is omitted, recoverability from discourse context determines the SS or DS reading.
+By default, the subject of a converb clause is coreferent with the subject of the following clause (same-subject, SS reading). When the subjects differ (different-subject, DS), a pronominal clitic is attached to the converb to mark the switch. If both clauses have full nominal subjects, the full NPs disambiguate and no clitic is required.
 
 \section{Sequential constructions}\label{sec:sequential}
 
@@ -169,12 +81,6 @@ The marked copular verb \ird{neh-} (see §\,\ref{sec:neh} of Chapter~\ref{ch:sim
 \subsection{The simultaneous / manner converb (\ird{-ěc})}
 
 The simultaneous converb (\ird{-ěc}) describes an action that is ongoing or co-occurring with the main clause event, and also functions as a manner converb. The suffix belongs to the palatalizing domain of front-vocalic morphology (see Section~\ref{sec:front-palatalization}), not to the special sibilant-replacement system of the antipassive. When the converb and main clause have different subjects, the sequential \ird{-ení} is preferred for purely simultaneous meaning.
-
-This converb should not be confused with the derived manner-adverb suffix
-\ird{-ě} discussed in §\,\ref{sec:stative-adv}. The converb in \ird{-ěc}
-remains a non-finite verbal form used for clause-linking and event-structural
-modification, whereas forms such as \ird{skorně} \trsl{quickly} are lexical
-adverbs, not reduced clauses and not members of the converb paradigm.
 
 \subsection{The six temporal converbs}
 
@@ -240,12 +146,12 @@ The purposive converb (\ird{-it}) expresses purpose (`in order to X') and serves
 
 \subsection{The intentional future reanalysis}
 
-In colloquial speech, the purposive converb has been reanalyzed as a future/intentional marker when no governing verb is present. The first-person subject pronoun \ird{dá} is typically retained overtly in this construction, as the purposive suffix alone does not encode person:
+In colloquial speech, the purposive converb has been reanalyzed as a future/intentional marker with first-person clitics when no governing verb is present:
 
 \ex
 \begingl
-\gla Dá trave piašcit.//
-\glb \textsc{1sg} bread.\Ind{} eat-\Purp{}//
+\gla Dá trave piašcitem.//
+\glb \textsc{1sg} bread.\Ind{} eat-\Purp{}-\textsc{1sg}//
 \glft \trsl{I'm gonna eat bread.} \lingcontext{colloquial intentional future}//
 \endgl
 \xe
@@ -264,137 +170,57 @@ The contrastive converb (\ird{-ema}) introduces a contrasting clause (`X, but/wh
 
 Coordination is expressed by \ird{a} (additive), \ird{še} (additive, also complementizer), \ird{má} / \ird{ozná} (adversative), and a set of disjunctives.
 
-\section{Relativization}
-\label{sec:th-relativization}
-
-\subsection{Structure of the relative construction}
-\label{sec:th-rel-structure}
-
-Iridian lacks a dedicated relative pronoun or overt relative complementizer.
-Relative clauses are formed using a converb-based strategy: the verb of the
-relative clause bears a relativizing non-finite form and the entire relative
-clause precedes the head noun it modifies, consistent with the general
-head-final principle. The head noun appears after the relative clause in the
-surface string.
-
-\begin{center}
-\term{[relative clause + \textsc{rel.form}] \quad [head noun]}
-\end{center}
-
-The structure is thus the mirror image of postnominal relative constructions
-in European languages. Where English says \textit{the man who bought the
-book}, Iridian places the relative clause before its head: the element
-corresponding to \textit{who bought the book} precedes the element
-corresponding to \textit{the man}.
-
-\subsection{Head-finality and the placement of relative clauses}
-\label{sec:th-rel-headfinal}
-
-Because the relative clause is an attributive modifier, it modifies the
-head noun from which it is separated only by the nominal head. This prenominal
-position is the expected one under head-finality: just as adjectival modifiers
-and demonstratives precede the noun they modify in other nominal constructions,
-so the clausal relative modifier precedes its head. No extraposition or
-rightward movement of relative clauses occurs in standard Iridian.
-
-The head noun itself assigns case to its argument position in the matrix clause,
-independently of whatever role the coreferent argument plays inside the relative
-clause. Case-mismatch between the head noun's matrix role and its relative-clause
-role is resolved by the relativization construction itself rather than by any
-case variation on the head noun.
-
-\subsection{The gap, resumption, and argument-relativization hierarchy}
-\label{sec:th-rel-gap}
-
-% ============================================================
-% STATUS: STUB — relativization morphology not yet fully
-% documented in the 2026 rewrite. The following describes the
-% expected properties; update with attested data once the
-% relativization section of ch.\ 04 is written.
-% ============================================================
-
-The relativized argument position inside the relative clause is typically
-represented by a gap (silent trace). The accessibility hierarchy of
-relativization positions is expected to follow the standard cross-linguistic
-pattern (Keenan \& Comrie 1977), with subjects and direct objects the most
-freely relativizable positions. Indirect objects and oblique arguments may
-employ a resumptive pronoun strategy in contexts where a gap would yield
-structural ambiguity; this expectation should be verified against corpus
-data.
-
-Relativization of the locative and other oblique positions proceeds with the
-postpositional phrase intact and the oblique noun gapped or resumed within the
-relative clause. The head noun of such a construction is the entire gapped-PP
-antecedent; the postposition does not strand to the right of the head.
-
-
-\subsection{}
-
-Iridian possesses a special non-finite suffix -eň, used with nominal predicates
-and with a restricted class of stative predicates to form state-frame adverbial
-clauses. The construction expresses meanings such as ‘while X’, ‘when in the
-state of X’, and ‘as X’. It is functionally parallel to the ordinary converb
-system in that it forms a preverbal adverbial dependent clause, but it is not
-part of the regular converb inventory and does not replace an ordinary Asp.Align
-morpheme in the verbal paradigm.
-
-Semantically, -eň backgrounds a classification or state as the temporal or
-circumstantial frame for the matrix event. The clause does not assert entry into
-the state, progression toward it, or completion of a transition. In this it
-contrasts sharply with neh-, whose function is explicitly transitional and
-inchoative: neh- introduces an event of becoming and projects a full verbal
-spine under AspP. A form such as \ird{byl nesu} would therefore mean something
-like ‘while becoming a child’ or ‘while entering child-status’, not the intended
-simple background reading ‘while a child’. The state-frame converb -eň is the
-dedicated exponent of the latter meaning.
-
-Syntactically, a -eň clause behaves like other Iridian adverbial subordinate clauses. It precedes the matrix clause in accordance with general head-finality, and its interpretation is normally same-subject unless context or overt nominal material indicates otherwise. Because the construction is not an ordinary finite clause, it bears no independent aspect or alignment morphology; the matrix finite verb remains the sole carrier of aspect, mood, and alignment in the chain, in accordance with the general finite-verb-final rule for Iridian subordination.
-
-
-The suffix is primarily used with class-membership nouns and age/status predicates:
-byl-eň ‘while a child, as a child’
-kral-eň ‘while king, as king’
-vdov-eň ‘while a widow’
-
-The phasal particle s may occur with the state-frame converb -eň. In such cases it scopes over the predicative state expressed by the converb and marks that state as still holding at the reference time of the subordinate clause. Thus byleň means ‘while a child’, whereas s byleň means ‘while still a child’. Any implication that the state no longer holds at speech time arises pragmatically from discourse perspective, not from the particle itself.
-
-
 \section{Clausal complementation}\label{sec:complementation}
 
-\subsection{The propositional/event-complement distinction}
-\label{sec:th-compl-distinction}
+A complement clause is a subordinate clause which stands to a higher
+predicate as one of its arguments. In Iridian such clauses are used for the
+content of saying, thought, belief, report, memory, inference, perception
+understood as reportable content, evaluation, and the like. Earlier
+descriptions often treated much of this domain under the heading
+\textit{quotative}. That term is not adopted here as the principal category,
+since the construction extends well beyond quotation in the narrow sense.
 
-Iridian distinguishes two major types of clausal complementation according to
-the semantic type of the embedded content: \term{propositional complementation}
-and \term{event complementation}. This distinction, which parallels the
-broad cross-linguistic division between that-clause and to-infinitive
-complements in English, is encoded formally by different constructions in
-Iridian.
+Thus, where English says \textit{Marek said that Janek left}, or \textit{It
+seems odd to me that he has not called}, Iridian treats the bracketed clause
+as the complement of the higher predicate. Two chief constructions must be
+distinguished. A full proposition, stated as such, is expressed by the finite
+\ird{po}-construction. An event viewed as intended, attempted, controlled,
+incipient, or otherwise projected is expressed instead by the purposive
+converb, which serves here as a controlled or prospective event complement.
 
-Propositional complementation is expressed by the finite \ird{po}-clause:
-the embedded clause remains fully finite, retaining all verbal categories
-of an independent clause, and is subordinated by the linker \ird{-e}
-followed by \ird{po}. Event complementation is expressed by the purposive
-converb: the embedded verb is non-finite and the construction is semantically
-of the controlled or prospective type.
-
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Propositional complement (\ird{po}):] used with predicates of
-	saying, reporting, thinking, knowing, believing, remembering, inferring,
-	perceiving a proposition, and evaluating a proposition. The complement
-	presents a state of affairs as held to be true (or false, or probable,
-	etc.).\ by the matrix subject.
-\item[\upshape Event complement (purposive converb):] used with predicates of
-	wanting, trying, intending, beginning, going (purposively), and related
-	predicates of desire, attempt, inception, and motion. The complement
-	presents an event as projected, volitional, incipient, or
-	purpose-oriented rather than as a proposition held to be true.
-\end{description}
-
-\noindent The distinction is not merely semantic: it has formal consequences.
-Propositional complements are always finite; event complements are always
-non-finite. In languages where the distinction collapses (as it does for many
-predicates in colloquial registers), Iridian preserves it morphologically.
+\begin{figure}[ht]
+  \centering
+  \begin{forest}
+    for tree={
+      align=center,
+      parent anchor=south,
+      child anchor=north,
+      l sep=10pt,
+      s sep=14pt,
+    }
+    [\textsc{sentence}
+      [\textsc{clause}
+        [\textsc{clause}
+          [\textsc{core}
+            [\textsc{arg}\\\textit{Lobek}]
+            [\textsc{arg}\\\textit{Marku}]
+            [\textsc{nuc}
+              [\textit{piaštnic-e}]
+            ]
+          ]
+          [\textsc{comp}\\\ird{po}]
+        ]
+        [\textsc{core}
+          [\textsc{arg}\\\textit{Janku}]
+          [\textsc{nuc}
+            [\textit{dalnik}]
+          ]
+        ]
+      ]
+    ]
+  \end{forest}
+  \caption{RRG clausal juncture (subordinate nexus): \ird{po}-complement construction.}
+\end{figure}
 
 \subsection{The finite \ird{po}-construction}
 
@@ -528,11 +354,12 @@ frequently approach one another in use, since hearsay lies near the border of
 both; but they are not the same thing.
 
 Morphologically the indirect evidential belongs to the finite verbal complex.
-It stands before the complement linker \ird{-e}, occupying the outermost
-position in the finite inflectional spine. The order is therefore as follows:
+It stands before the complement linker \ird{-e}; person clitics, when
+present, also remain inside the embedded finite complex and likewise precede
+the linker. The order is therefore as follows:
 
 \begin{center}
-\textsc{stem} + \textsc{asp.align} + (\textsc{mood}) + (\textsc{ind.evid}) + \ird{-e} + \ird{po}/\ird{poby}
+\textsc{stem} + \textsc{asp.align} + (\textsc{mood}) + (\textsc{ind.evid}) + (\textsc{person}) + \ird{-e} + \ird{po}/\ird{poby}
 \end{center}
 
 If the indirect evidential has the form \ird{-ejte}, then an embedded finite
@@ -575,59 +402,3 @@ reduced commitment, but whose core meaning is not evidential in itself.
 % Thanks, apologies, congratulations, greetings that are historically
 % grammaticalized converb forms — to be documented.
 % ============================================================
-
-\section{Integrating the adverbial particle analysis: a roadmap}
-\label{sec:th-particle-integration}
-
-The adverbial particle analysis of §\,\ref{sec:adv-particles}
-(Chapter~\ref{ch:function-words}) provides the primary empirical and
-theoretical foundation for the left-peripheral architecture described in
-this chapter. The integration works at two levels.
-
-\emph{Empirically}, the particle ordering, scope interactions, and
-fragment-licensing diagnostics establish the functional hierarchy
-summarized in Table~\ref{tab:th-clause-spine} and
-Figure~\ref{fig:th-left-periphery}. Any account of interrogation,
-evidentiality, or discourse structure in the simple or complex sentence
-chapters should treat the particle hierarchy as the structural baseline.
-
-\emph{Theoretically}, the architecture allows a unified analysis of several
-phenomena that would otherwise require separate stipulations. The ban on
-in-situ wh-phrases in polar questions without overt \ird{by} follows from
-the licensing principle in §\,\ref{sec:th-multiple-wh}: interrogative
-variables must be within the scope of the clause-level interrogative operator.
-The surface-initial appearance of peripheral particles in topic-drop clauses
-follows from null-topic rather than any separate particle-fronting rule.
-The scope separation between \ird{by} and the comment-domain operators
-(§\,\ref{sec:by-kamo}) follows from their distinct projections. And the
-interaction between the indirect evidential and the matrixless \ird{po}-clause
-follows from their being in distinct grammatical components (morphological
-verbal complex vs.\ clause-peripheral particle).
-
-The following cross-references indicate where the theoretical discussion in
-this chapter is empirically supported or extended:
-
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Left-periphery structure (§\,\ref{sec:th-left-periphery}):] see
-	§\,\ref{sec:adv-particles} for the full particle inventory, ordering tests,
-	and scope diagnostics that motivate Figures~\ref{fig:th-clause-fields}
-	and~\ref{fig:th-left-periphery}.
-\item[\upshape Polar questions (§\,\ref{sec:th-polar-questions}):] see
-	§\,\ref{sec:by-operator} for \ird{by} as clause-typing operator and the
-	predicate-focus variant; §\,\ref{sec:by-kamo} for scope independence from
-	comment-domain operators.
-\item[\upshape \textit{Wh}-interrogation (§\,\ref{sec:th-wh-interrogation}):] see
-	§\,\ref{sec:wh-questions} for single- and multiple-wh patterns, the
-	in-situ licensing principle, and the typology of question types.
-\item[\upshape Evidential particles (§\,\ref{sec:th-evidential}):] see
-	§\,\ref{sec:evidential-ops} (\ird{hlavdy}, \ird{ktady}, \ird{oče},
-	\ird{či}) and §\,\ref{sec:complementation} for the interface between
-	evidential morphology and attributed discourse.
-\item[\upshape Complementation (§\,\ref{sec:th-complementation}):] see
-	§\,\ref{sec:complementation} for the full treatment of \ird{po}/\ird{poby},
-	the purposive converb complement, and the matrixless \ird{po}-clause.
-\item[\upshape Head-finality and subordination (§\,\ref{sec:th-subord-headfinal}):] see
-	§\,\ref{sec:converb-chains} for the syntax and information structure of
-	converb chains, and §\,\ref{sec:sequential}--§\,\ref{sec:purposive} for
-	individual subordinate types.
-\end{description}
