@@ -1,0 +1,614 @@
+\chapter{Verbs}\label{ch:verbs}
+
+\section{Introduction}
+
+The verb is the morphological nucleus of the Iridian clause, and upon it falls the principal burden of grammatical expression. Whilst nouns admit of inflection for case alone and are in all other respects morphologically inert, the verb concentrates within itself all information pertaining to the nature of the event described, the relation of its participants, and the speaker's orientation toward what is asserted. Every finite verb bears the aspect-alignment suffix, which is the sole obligatory element of the verbal complex; beyond this the verb may carry markers of voice, mood, evidentiality, and person, in an order fixed by the morphological template set out in the following section. Tense, gender, and number agreement find no expression on the Iridian verb.
+
+\section{The morphological template}
+
+The structure of a finite verb in Iridian is given by the following template, wherein parentheses enclose optional elements and the sole obligatory position is that of the aspect-alignment suffix:
+
+\medskip
+\begin{center}
+(\Neg{}) + \Stem{} + (\Antip{} / \Appl{}) + (\Caus{}) + \Asp{}.\textsc{align} + (\textsc{mood}) + (\textsc{evid}) + (\textsc{person})
+\end{center}
+\medskip
+
+The \textsc{asp.align} slot fuses aspect and alignment into a single morpheme and is the one element no finite verb may lack. The mood slot may be analysed as containing a null morpheme in the indicative. The negative prefix \ird{zá-} stands before the entire stem complex. Evidential suffixes are attested in the literature but remain insufficiently described; they are accordingly omitted from the present chapter.
+
+Pronominal clitics, which occupy the \textsc{person} slot, encode the grammatical person of the absolutive argument and are described in Section~\ref{sec:clitics}.
+
+\section{The verb stem and thematic classes}
+
+Iridian verbs admit no citation form. Lexicographers record the bare stem with a following hyphen to indicate its character as a bound form requiring at least one suffix; the verb rendered in English as \textit{to eat} is thus entered as \ird{piašt-}, where \ird{t} constitutes the \textbf{thematic consonant}.
+
+The thematic consonant, being the final consonant of the stem, is phonologically active: it undergoes regular alternations when certain suffixes are adjoined. Two mutation systems must be distinguished. Some suffixes trigger \textbf{sibilant replacement}, a closed morphologized stem mutation whose chief exponent is the antipassive \ird{-aš-}. Others trigger ordinary \textbf{palatalization}, the productive softening caused by front-vocalic suffixes such as \ird{-ěv}, \ird{-ěc}, and the conjunctive linker \ird{-e}. The five thematic classes in Table~\ref{tab:verbclasses} govern sibilant replacement only.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Thematic consonant classes.}\label{tab:verbclasses}
+	\medskip
+	\begin{tabularx}{\textwidth}{l L L L}
+		\toprule
+		{\sc class} & {\sc thematic consonants} & {\sc change before \Antip{}} & {\sc example} \\
+		\midrule
+		I    & -t, -k, -c, -č  & → -č                    & \ird{piašt-} → \ird{piašč-} \\
+		II   & -s, -š          & → -š                    & \ird{tras-} → \ird{traš-} \\
+		II-A & -l, -p          & add -š                  & \ird{dal-} → \ird{dalš-} \\
+		III  & -d, -h, -j, -z, -ž & → -ž               & \ird{vad-} → \ird{váž-} \\
+		III-A & all remaining  & add -ž                  & \ird{ščen-} → \ird{ščenž-} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+Loan stems with surface \orth{g} are assigned analogically to the voiced velar/fricative series and do not require a native phoneme /g/. Palatalizing suffixes do \emph{not} follow Table~\ref{tab:verbclasses}; they invoke the broader front-vocalic mutation system described in Section~\ref{sec:front-palatalization} of Chapter~\ref{ch:phon}.
+
+\section{Valency operations}
+
+Three derivational operations may be applied to the verb stem before the aspect-alignment suffix: the antipassive, the applicative, and the causative. Where more than one is present, the order is fixed: antipassive or applicative precedes the causative.
+
+\subsection{The antipassive (\ird{-aš-})}
+
+The antipassive removes the patient argument from the grammatical core, promoting the agent to the absolutive. In the perfective and retrospective aspects it is the obligatory non-ergative construction for any verb capable of bearing the transitive marker \ird{-n-}: such a verb must appear in an ergative aspect with either \ird{-n-} (ergative alignment) or \ird{-aš-} (antipassive). The bare perfective suffix serves no antipassive function and is reserved exclusively for inherently intransitive verbs, as described in Section~\ref{sec:ambitransitive}.
+
+The antipassive suffix is \ird{-aš-}, though its phonological realisation depends upon the thematic consonant class of the stem, following the alternations set out in Table~\ref{tab:verbclasses}. The stem-final consonant is replaced or augmented as shown; the underlying \ird{-aš-} string surfaces as the modified stem consonant followed by the relevant sibilant. Thus \ird{piašt-} yields \ird{piašč-} as its antipassive stem:
+
+\pex
+\a
+\begingl
+\gla Marek piašček.//
+\glb Marek.\Dir{} eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek ate.}//
+\endgl
+\a
+\begingl
+\gla Marek houlam se piašček.//
+\glb Marek.\Dir{} spoon.\Ind{} \textsc{inst} eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek ate with a spoon.} \lingcontext{instrument adjunct in \Ind{}}//
+\endgl
+\xe
+
+The patient, being wholly suppressed by the antipassive, may not be expressed in any case form; it is accordingly inadmissible as an indirect-case argument, as may be seen from the following:
+
+\ex
+\begingl
+\gla *Marek travě piašček.//
+\glb Marek.\Dir{} bread.\Ind{} eat-\Antip{}-\Pf{}//
+\glft \trsl{(intended: Marek ate bread.)}//
+\endgl
+\xe
+
+\noindent Where a patient is to be expressed in any form, the ergative construction is required. Instrument and adjunct arguments, which bear no patient relation to the predicate, remain fully admissible in the indirect case, as in the spoon example above. It is further to be observed that suppression of the patient in the antipassive does not constitute a denial of its existence: for an inherently transitive verb the patient is typically understood as part of the event, though the speaker has chosen to treat it as no object of discursive concern. What is asserted is the agent's activity; what is withheld is the patient's status as a discourse referent.
+
+Equally, for a transitive verb, the bare perfective without either \ird{-n-} or \ird{-aš-} is ungrammatical:
+
+\ex
+\begingl
+\gla *Marek piaštek.//
+\glb Marek.\Dir{} eat-\Pf{}//
+\glft \trsl{(intended: Marek ate.)} \lingcontext{bare perfective illicit for transitive verb}//
+\endgl
+\xe
+
+\noindent\textit{Note:} The antipassive and the applicative are in complementary distribution; a verb cannot take both simultaneously.
+
+\subsection{The applicative (\ird{-éb-})}
+
+The applicative promotes a peripheral argument --- most commonly a beneficiary or recipient, but also a goal, location, or instrument --- to core argument status, placing it in the absolutive. The suffix \ird{-éb-} derives from an older benefactive morpheme and still defaults to a beneficiary or recipient reading when such an interpretation is available. Where the lexical semantics of the verb or the wider clause exclude a benefactive reading, the applicative is interpreted instead as promoting the most discourse-salient non-core participant, typically a goal, location, or instrument. Only one applicative argument may be promoted in a single clause.
+
+The contrast is most readily observed in nominative-alignment contexts, where the applied participant becomes the direct-case object that would otherwise have remained oblique:
+
+\pex
+\a
+\begingl
+\gla Marek děvčatě piastime.//
+\glb Marek.\Dir{} child.\Ind{} eat-\Prog{}//
+\glft \trsl{Marek is eating for the child.} \lingcontext{beneficiary remains oblique}//
+\endgl
+\a
+\begingl
+\gla Marek děvča piaštébime.//
+\glb Marek.\Dir{} child.\Dir{} eat-\Appl{}-\Prog{}//
+\glft \trsl{Marek is feeding the child.} \lingcontext{beneficiary promoted to core status}//
+\endgl
+\xe
+
+\noindent With verbs of motion and placement the same suffix promotes a goal or location rather than a beneficiary:
+
+\pex
+\a
+\begingl
+\gla Marek hradě stachime.//
+\glb Marek.\Dir{} town.\Ind{} go-\Prog{}//
+\glft \trsl{Marek is going toward the town.}//
+\endgl
+\a
+\begingl
+\gla Marek hrad stéběme.//
+\glb Marek.\Dir{} town.\Dir{} go-\Appl{}-\Prog{}//
+\glft \trsl{Marek is entering the town / making the town his destination.}//
+\endgl
+\xe
+
+\noindent Instrumental promotion is likewise possible, though it is pragmatically more marked, being preferred where the instrument itself is the discourse-relevant participant:
+
+\pex
+\a
+\begingl
+\gla Marek houlam se piašček.//
+\glb Marek.\Dir{} spoon.\Ind{} \textsc{inst} eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek ate with a spoon.} \lingcontext{instrument remains adjunct}//
+\endgl
+\a
+\begingl
+\gla Marek houlam piaštébime.//
+\glb Marek.\Dir{} spoon.\Dir{} eat-\Appl{}-\Prog{}//
+\glft \trsl{Marek is using the spoon for eating / is eating with the spoon as the relevant implement.}//
+\endgl
+\xe
+
+\noindent In the imperative and hortative the same promotion yields benefactive readings by default:
+
+\pex
+\a
+\begingl
+\gla piašt-éb-ím//
+\glb eat-\Appl{}-\Imp{}//
+\glft \trsl{Feed someone!}//
+\endgl
+\a
+\begingl
+\gla piašt-éb-ká//
+\glb eat-\Appl{}-\Hort{}//
+\glft \trsl{Let's feed someone!}//
+\endgl
+\xe
+
+\noindent The antipassive and the applicative are in complementary distribution. This is not an accidental gap: the antipassive suppresses the patient from the grammatical core, whereas the applicative creates a new core object out of a peripheral participant. The two operations therefore compete for the same argument-structural domain and cannot be combined on a single finite stem.
+
+\subsection{The causative (\ird{-na-})}
+
+The causative \ird{-na-} adds an external causer argument to the event. In nominative-alignment contexts the causer stands in the direct case, the original agent or sole participant is demoted to the indirect, and any patient licensed by the base verb remains indirect. In ergative-alignment contexts the causer takes the transitive case. With transitive bases, the original patient remains the direct argument and the causee falls into the indirect; with intransitive bases, the causee itself occupies the direct as the sole affected participant. The causative thus increases valency by one while preserving the aspect-driven alignment pattern of the clause as a whole. Before a following vowel-initial aspect or mood suffix, \ird{-na-} inserts an epenthetic glide and surfaces as \ird{-naj-}; before consonant-initial material, including the ergative transitive marker \ird{-n-}, it remains \ird{-na-}.
+
+\pex
+\a
+\begingl
+\gla Marek bylam zmacnajime.//
+\glb Marek.\Dir{} child.\Ind{} run-\Caus{}-\Prog{}//
+\glft \trsl{Marek is making the child run.} \lingcontext{causative of intransitive base; nominative alignment}//
+\endgl
+\a
+\begingl
+\gla Travat Marku bylam piašt-na-nik.//
+\glb bread.\Dir{}.\Def{} Marek.\Trs{} child.\Ind{} eat-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek made the child eat the bread.} \lingcontext{causative of transitive base; ergative alignment}//
+\endgl
+\xe
+
+\noindent The semantic character of the causation is expressed primarily through aspect. In the perfective the causative presents the causer as exercising effective control over the caused event: the construction is read as direct, interventionist, or coercive according to context. In the retrospective the same morphology presents a looser relation between causer and event, yielding readings of indirect causation, accidental bringing-about, delegated agency, or permission.
+
+\pex
+\a
+\begingl
+\gla Marek bylam piaštnajime.//
+\glb Marek.\Dir{} child.\Ind{} eat-\Caus{}-\Prog{}//
+\glft \trsl{Marek is having the child eat / is feeding the child.}//
+\endgl
+\a
+\begingl
+\gla Travat Marku bylam piašt-na-n-aní.//
+\glb bread.\Dir{}.\Def{} Marek.\Trs{} child.\Ind{} eat-\Caus{}-\textsc{trs}-\Ret{}//
+\glft \trsl{Marek has let the child eat the bread / has ended up getting the child to eat it.}//
+\endgl
+\xe
+
+\noindent The causative is fully compatible with the applicative, provided the applicative is formed first in accordance with the morphological template:
+
+\pex
+\a
+\begingl
+\gla Marek bylam piaštébnajime.//
+\glb Marek.\Dir{} child.\Ind{} eat-\Appl{}-\Caus{}-\Prog{}//
+\glft \trsl{Marek is making someone feed the child.}//
+\endgl
+\a
+\begingl
+\gla piašt-naj-ím//
+\glb eat-\Caus{}-\Imp{}//
+\glft \trsl{Make someone eat!}//
+\endgl
+\a
+\begingl
+\gla piašt-na-ká//
+\glb eat-\Caus{}-\Hort{}//
+\glft \trsl{Let's make someone eat!}//
+\endgl
+\xe
+
+\noindent Synchronically, \ird{-na-} is distinct from the ergative transitive marker \ird{-n-}. The former is a valency-changing derivation occupying the causative slot of the verbal template; the latter is an alignment marker inserted immediately before the perfective and retrospective suffixes. Earlier notes used \ird{-ne-} for the causative, but the present grammar regularises \ird{-na-} in order to keep the derivational causative distinct in form from the simple transitive marker.
+
+\subsection{Pragmatic use of valency operations}
+
+The choice among ergative, antipassive, applicative, and causative is not purely mechanical. Each construction offers the speaker a distinct way of packaging the event for discourse. The antipassive is used when the patient is generic, non-referential, semantically incorporated into the activity, recoverable from context, or intentionally backgrounded. Its effect is to keep the agent in absolutive position and to present the clause as being about what the agent did rather than about what happened to some patient.
+
+The applicative serves the opposite discourse function: it pulls a formerly peripheral participant into the centre of the clause. A beneficiary, destination, location, or instrument is promoted when that participant is the one the discourse is tracking, when it will remain topical in subsequent clauses, or when the speaker wishes to construe the event from its perspective rather than from that of an unexpressed or backgrounded patient.
+
+The causative likewise has a pragmatic life beyond its valency-changing effect. By choosing a causative rather than a simple predicate, the speaker frames the event in terms of inducement, delegated agency, or control. In direct contexts this may foreground authority or coercion; in weaker retrospective contexts it may soften the causer's responsibility, presenting the caused event as something merely permitted, arranged, or indirectly brought about rather than personally carried out.
+
+The applicative and causative are compatible with the imperative and hortative and occupy their regular positions in the morphological template before the mood suffix.
+
+\section{Aspect and alignment}\label{sec:aspect}
+
+Iridian possesses five aspects: the \textbf{perfective}, the \textbf{retrospective}, the \textbf{continuous}, the \textbf{progressive}, and the \textbf{contemplative}. Aspect and alignment are fused into a single suffix, and the choice of aspect governs the syntactic alignment of the clause: the perfective and retrospective trigger ergative-absolutive alignment; the continuous, progressive, and contemplative trigger nominative-accusative alignment.
+
+\subsection{Alignment in nominative aspects (continuous, progressive, contemplative)}
+
+In the continuous, progressive, and contemplative aspects the main argument of the verb stands in the direct case regardless of transitivity, whilst the patient of a transitive verb appears in the indirect. This is a nominative-accusative pattern, the direct case serving as the absolutive and the indirect as the oblique.
+
+\pex
+\a
+\begingl
+\gla Marek zmacime.//
+\glb Marek.\Dir{} run-\Prog{}//
+\glft \trsl{Marek is running.} \lingcontext{intransitive}//
+\endgl
+\a
+\begingl
+\gla Marek travě piastime.//
+\glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
+\glft \trsl{Marek is eating bread.} \lingcontext{transitive; P = \Ind{}}//
+\endgl
+\a
+\begingl
+\gla Vytam shoda.//
+\glb shirt.\Dir{} wear-\Cont{}//
+\glft \trsl{(I) am wearing a shirt.} \lingcontext{stative continuous}//
+\endgl
+\a
+\begingl
+\gla Vytam shodime.//
+\glb shirt.\Dir{} wear-\Prog{}//
+\glft \trsl{(I) am putting on a shirt.} \lingcontext{dynamic progressive}//
+\endgl
+\xe
+
+\subsection{Alignment in ergative aspects (perfective and retrospective)}
+
+In the perfective and retrospective aspects the patient of a transitive verb is placed in the direct case, and the agent takes the transitive case. This is an ergative-absolutive pattern; what Iridian grammar calls the \emph{transitive case} is, in typological terms, the ergative, and the \emph{direct case} serves as the absolutive. For a transitive verb to trigger ergative alignment, it must carry the transitive marker \ird{-n-} immediately before the aspect suffix.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Aspect-alignment suffixes.}\label{tab:aspect}
+	\medskip
+	\begin{tabularx}{0.85\textwidth}{L l L}
+		\toprule
+		{\sc aspect} & {\sc suffix} & {\sc notes} \\
+		\midrule
+		Perfective              & \ird{-ek} / \ird{-ik}  & \ird{-ik} when stem vowel is \ird{ě} or \ird{e} (dissimilation; see §\ref{sec:aspect-pf}); \ird{-nik} after transitive \ird{-n-} \\
+		Retrospective           & \ird{-aní} & \\
+		Continuous              & \ird{-a}   & \\
+		Progressive             & \ird{-ime} & \\
+		Contemplative           & \ird{-ach} & \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+Three configurations are available in the ergative aspects. When the transitive marker \ird{-n-} is present, the clause takes full ergative alignment: the patient appears in the direct case and the agent takes the transitive. When \ird{-n-} is absent and the verb bears the antipassive suffix \ird{-aš-}, the agent appears in the direct case and the patient is suppressed from the clause entirely. When neither marker is present, the bare perfective suffix is used, a form grammatical only with inherently intransitive verbs, for which the question of alignment does not arise. For a transitive verb the bare perfective is inadmissible.
+
+\pex
+\a
+\begingl
+\gla Travat Marku piaštnik.//
+\glb bread.\Dir{}.\Def{} Marek.\Trs{} eat-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek ate the bread.} \lingcontext{ergative; P = \Dir{}}//
+\endgl
+\a
+\begingl
+\gla Marek piašček.//
+\glb Marek.\Dir{} eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek ate.} \lingcontext{antipassive; A = \Dir{}}//
+\endgl
+\xe
+
+The choice between these constructions is governed primarily by the discourse status of the patient. The ergative construction foregrounds the patient: it is the construction of a specific, discourse-trackable participant who is either newly introduced or reactivated, and the event is asserted as bringing about a change of state in that participant. It is accordingly characteristic of narrative foreground, where the consequences of events for particular persons or things constitute the substance of what is related. Patient definiteness correlates strongly with the ergative, and the definite marker \ird{-t} most commonly appears on the patient noun in this construction, though it is not formally required.
+
+The antipassive construction, by contrast, foregrounds the agent's activity without reference to any outcome in a patient. It is the construction of choice when the patient is non-referential, semantically incorporated, or of no discursive moment: in habitual and generic statements, in activity-focus contexts wherein the event itself and not its effect upon some participant is what is asserted, and wherever the clause contains no patient at all. The guiding principle is that the patient, where it exists, must either be present through the ergative construction or wholly absent; the antipassive admits of no intermediate state in which a patient is demoted to an oblique position.
+
+\subsection{The perfective}\label{sec:aspect-pf}
+
+The perfective encodes a completed action viewed as a whole at a specific point in time, and is the primary narrative aspect.
+
+The bare intransitive perfective suffix presents two allomorphs: \ird{-ek} is the default form, and \ird{-ik} appears where the stem's final syllable has \ird{ě} or \ird{e} as its nucleus. The raising is dissimilatory in character: adjoining \ird{-ek} directly to such a stem would produce a CěCe or CeCe sequence across a single intervening consonant, which the language avoids. The allomorphy is thus conditioned by the stem vowel and not by the thematic consonant class. Where a valency morpheme --- the antipassive \ird{-aš-}, the applicative \ird{-éb-}, or the causative \ird{-na-} --- intervenes between stem and suffix, it contributes its own vowel and breaks the sequence; raising accordingly does not apply in derived forms. The ergative perfective \ird{-nik}, which always follows the transitive marker, is a fixed form and does not derive from this rule. % Cross-reference: this dissimilation should be described in the phonology chapter alongside the other vowel alternations.
+
+When negated, the perfective carries a specific implicature: the negated perfective describes something that was expected to occur but did not. For the neutral negation of a past event, free from this implication, the retrospective is preferred.
+
+\pex
+\a
+\begingl
+\gla Marek zapiaščik.//
+\glb Marek.\Dir{} \Neg{}-eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek didn't eat (but he should have).}//
+\endgl
+\a
+\begingl
+\gla Marek zapiaščaní.//
+\glb Marek.\Dir{} \Neg{}-eat-\Antip{}-\Ret{}//
+\glft \trsl{Marek didn't eat (neutral past).}//
+\endgl
+\xe
+
+\subsection{The retrospective}
+
+The retrospective (\ird{-aní}) describes a past action with continuing present relevance, or an action that was non-volitional or accidental. It corresponds in certain uses to the English perfect, in others to a non-volitional past.
+
+\pex
+\a
+\begingl
+\gla Praže na stožaní.//
+\glb Prague.\Dir{} \textsc{all} go-\Ret{}//
+\glft \trsl{(I) have (been to) Prague before.}//
+\endgl
+\a Compare:
+\begingl
+\gla Bych Praže na stožek.//
+\glb yesterday Prague.\Dir{} \textsc{all} go-\Pf{}//
+\glft \trsl{Yesterday I went to Prague.} \lingcontext{specific past event; perfective}//
+\endgl
+\xe
+
+The ergative and antipassive constructions encode distinct kinds of continuing relevance in the retrospective. The transitive retrospective (\ird{-n-aní}) situates the relevance in the outcome state of the patient: something has been affected, and that effect persists or bears upon the present situation. The antipassive retrospective (\ird{-aš-aní}) locates the relevance in the experience of the agent: the event is part of the agent's history, not a change in some external participant. This distinction parallels the English opposition between \textit{the bread has been eaten} --- outcome-relevant, a fact about the bread --- and \textit{I have eaten} --- experiential, a fact about the speaker.
+
+\subsection{Ambitransitive verbs}\label{sec:ambitransitive}
+
+A small class of verbs possesses two readings of different argument structure: an intransitive reading, in which no patient is structurally available, and a transitive reading, in which a patient is licensed. These are lexical ambitransitives; neither reading is derived from the other through the antipassive, applicative, or causative, but both are basic senses of the verb. Two examples are \ird{lov-} (\trsl{hunt, forage [intrans.]; catch, take [trans.]}) and \ird{kěl-} (\trsl{sing, perform [intrans.]; sing a song, chant a text [trans.]}).
+
+The diagnostic for membership in this class is whether the transitive marker \ird{-n-} is admissible in one reading but impossible in the other. For \ird{lov-}: \ird{lovnik} is grammatical in the transitive reading, as something was caught; no \ird{-n-} form is available in the intransitive reading, wherein the event is construed as the activity of hunting itself, with no quarry in the event frame. The bare perfective accesses only the intransitive reading; the antipassive and ergative access only the transitive.
+
+\pex
+\a
+\begingl
+\gla Marek bych lovek.//
+\glb Marek.\Dir{} yesterday hunt-\Pf{}//
+\glft \trsl{Marek went hunting yesterday.} \lingcontext{intransitive reading; bare \ird{-ek}}//
+\endgl
+\a
+\begingl
+\gla Zvěrat Marku lovnik.//
+\glb game.\Dir{}.\Def{} Marek.\Trs{} hunt-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek caught the game.} \lingcontext{transitive reading; ergative}//
+\endgl
+\a
+\begingl
+\gla Marek bych lovžek.//
+\glb Marek.\Dir{} yesterday hunt-\Antip{}-\Pf{}//
+\glft \trsl{Marek was hunting yesterday.} \lingcontext{transitive reading; antipassive}//
+\endgl
+\xe
+
+The two non-ergative forms, though they may coincide in surface expression in many contexts, are not interchangeable. \ird{Lovek} belongs to the intransitive reading: hunting is construed as a pure activity, with no quarry present even in the conceptual frame of the event. \ird{Lovžek} belongs to the transitive reading: the hunt is directed toward prey, and that prey --- though it may not be expressed in any case form, the antipassive suppressing it entirely --- is none the less understood as part of the event. The distinction corresponds, in practice, to the difference between going out to hunt and being engaged in the act of hunting something.
+
+For \ird{kěl-}, the stem vowel is \ird{ě}, so the bare intransitive perfective takes the \ird{-ik} allomorph by dissimilation: \ird{kělek} would create a CěCe sequence across the single intervening \ird{-l-}, which is avoided. The antipassive \ird{kělšek} is unaffected, the \ird{-š-} of the antipassive introducing its own vowel and breaking the sequence. The ergative \ird{kělnik} is the fixed ergative form; it and the bare \ird{kělik} are distinguished only by the presence or absence of \ird{-n-}:
+
+\pex
+\a \ird{kělik} \trsl{sang, performed} \lingcontext{intransitive; bare \ird{-ik}: no song in event frame}
+\a \ird{kělnik} \trsl{sang it (a specific song)} \lingcontext{ergative; \ird{-n-ik}: song = \Dir{}}
+\a \ird{kělšek} \trsl{was singing} \lingcontext{antipassive; \ird{-š-ek}: Class~II-A augment}
+\xe
+
+The minimal pair \ird{kělik} / \ird{kělnik} provides the clearest illustration in the grammar of the bare perfective opposed to the ergative, the two forms differing only by the inserted \ird{-n-}.
+
+\subsection{The continuous}
+
+The continuous (\ird{-a}) encodes an ongoing state or a habitual, generic action and is stative in character.
+
+\ex
+\begingl
+\gla Praže to mulša.//
+\glb Prague.\Ind{} \textsc{loc} live-\Cont{}//
+\glft \trsl{(I) live in Prague.}//
+\endgl
+\xe
+
+\subsection{The progressive}
+
+The progressive (\ird{-ime}) encodes a dynamic activity in progress, distinguished from the continuous by its dynamic rather than stative character. Compare the stative \ird{Vytam shoda}, \textit{I am wearing a shirt} --- a state of affairs obtaining at the time of speaking --- with the progressive \ird{Vytam shodime}, \textit{I am putting on a shirt}, which describes an action actively in course.
+
+\subsection{The contemplative}
+
+The contemplative (\ird{-ach}) encodes a mental state directed toward a potential future action: intention, consideration, or disposition toward an act not yet performed. It may be rendered in English as \textit{about to}, \textit{considering}, or \textit{intending to}, according to context.
+
+\section{Negation}
+
+The negative prefix \ird{zá-} --- reduced to \ird{za-} in unstressed environments --- stands before the entire verbal complex. In the indicative it accordingly precedes the stem itself. In the imperative and hortative, negation is expressed by distinct suffixes rather than by \ird{zá-}; see Section~\ref{sec:mood}.
+
+\section{Mood}\label{sec:mood}
+
+The mood system comprises the indicative, the imperative, the hortative, and the irrealis. Mood is expressed by a suffix occupying the position immediately following the aspect-alignment morpheme; in the indicative this suffix is null. Where a mood suffix is present, the aspect-alignment slot is suppressed, the mood suffix replacing the full aspect complex.
+
+\subsection{Indicative}
+
+The indicative is the unmarked mood. It alone hosts the full five-way aspect system and the split-ergative alignment described in Section~\ref{sec:aspect}; it is accordingly the only mood in which the antipassive-transitive distinction is operative.
+
+\subsection{Imperative and prohibitive}
+
+The imperative (\ird{-ím}) encodes a direct command; the prohibitive (\ird{-éma}) a negative command. The regular negative prefix \ird{zá-} does not combine with the prohibitive, the suffix carrying the negative force within itself. In both the imperative and the hortative, case marking on nouns follows nominative-accusative alignment: the agent stands in the absolutive and the patient appears in the indirect. The imperative is inherently second person and requires no pronominal clitic.
+
+\pex
+\a
+\begingl
+\gla Travě piaštím.//
+\glb bread.\Ind{} eat-\Imp{}//
+\glft \trsl{Eat the bread!}//
+\endgl
+\a
+\begingl
+\gla Ty hrabním.//
+\glb \Dem{}.\Prox{}.\Ind{} listen-\Imp{}//
+\glft \trsl{Listen to this!}//
+\endgl
+\xe
+
+Valency operations are compatible with the imperative and prohibitive and occupy their regular positions in the template before the mood suffix, as: \ird{piašt-éb-ím} \textit{Feed someone!} and \ird{piašt-naj-ím} \textit{Make someone eat!}
+
+\subsection{Hortative}
+
+The hortative is used for suggestions, invitations, and polite requests, including first-person plural uses of the type \textit{let us}. It serves as the default polite register in ordinary speech, typically preferred over the imperative in everyday conversation. Like the imperative, it employs nominative-accusative alignment and requires no aspect suffix. The hortative takes two forms: the positive \ird{-ká} and the negative \ird{-ku}.
+
+\pex
+\a \ird{piašt-ká} \trsl{Let's eat / Shall we eat?}
+\a \ird{piašt-ku} \trsl{Let's not eat.}
+\a \ird{piašt-éb-ká} \trsl{Let's feed someone.}
+\a \ird{piašt-na-ká} \trsl{Let's make someone eat.}
+\xe
+
+\subsection{Irrealis}
+
+The irrealis (\ird{-ěv}) is used for counterfactual, hypothetical, or non-actual situations. It belongs to the palatalizing, not the sibilant-replacing, domain:
+
+\ex
+\ird{piašt-} + \ird{-ěv} → \ird{piaščev}
+\xe
+
+In stems with the appropriate grade alternations, the front vowels /ɛ/ and /eː/ further raise to /i/ and /iː/ before this palatalizing suffix:
+
+\ex
+\ird{zděk-} `to bring' → \ird{zdíčev} \lingcontext{-e- raised to -í-; -k- palatalized to -č-}
+\xe
+
+The irrealis is compatible with all three converb moods and serves as the main-clause mood in concessive constructions; both uses are treated in Chapter~\ref{ch:complex}.
+
+\section{Pronominal clitics}\label{sec:clitics}
+
+Grammatical person is not encoded through verb agreement in Iridian but through optional pronominal clitics that enclitize to the right edge of the verbal complex, in the final slot of the morphological template. The clitics cross-reference the absolutive argument; their use is optional, and they are most commonly omitted where the referent is recoverable from context. Where present, they serve as light disambiguators or carry mild contrastive emphasis.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Pronominal clitics.}\label{tab:clitics}
+	\medskip
+	\begin{tabularx}{0.7\textwidth}{L l l}
+		\toprule
+		{\sc person} & {\sc full form} & {\sc reduced form} \\
+		\midrule
+		1\textsc{sg} & \ird{-em}  & \ird{-m}  \\
+		2\textsc{sg} & \ird{-eš}  & \ird{-š}  \\
+		3\textsc{sg} anim. & \ird{-ic}  & \ird{-c}  \\
+		1\textsc{pl} & \ird{-om}  & \ird{-m}  \\
+		2\textsc{pl} & \ird{-ot}  & \ird{-t}  \\
+		3\textsc{pl} & \ird{-ec}  & \ird{-c}  \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The reduced forms appear after aspect-alignment suffixes ending in a vowel; the full forms after consonant-final suffixes. The third-person singular animate clitic \ird{-ic} / \ird{-c} has no corresponding inanimate form; third-person inanimate reference is left unexpressed and inferred from context.
+
+\pex
+\a \ird{piašček-em} `I ate.'
+\a \ird{piaštnik-em} `I ate it.'
+\a \ird{piastime-š} `you are eating.'
+\xe
+
+\section{Non-finite forms: converb morphology}\label{sec:converb-morphology}
+
+% ============================================================
+% STATUS: MORPHOLOGY-ONLY SECTION
+% This section documents what the converb suffixes look like and how
+% they attach. The syntax and semantics of converb constructions are
+% treated in Chapter~\ref{ch:complex}.
+% ============================================================
+
+Converb suffixes replace the aspect-alignment slot entirely. A verb carrying a converb suffix accordingly bears no aspect, no mood, and no alignment. The morphological structure of a converb is:
+
+\medskip
+\begin{center}
+(\textsc{lex-prefix}) + \Stem{} + (\Appl{}) + (\Caus{}) + \textsc{converb-suffix}
+\end{center}
+\medskip
+
+The converb suffixes and the stem mutations they occasion are set out in the following table:
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Converb suffixes and their phonological effects.}\label{tab:converb-morph}
+	\medskip
+	\begin{tabularx}{\textwidth}{L L L L}
+		\toprule
+		{\sc converb} & {\sc suffix(es)} & {\sc stem mutation} & {\sc notes} \\
+		\midrule
+		Sequential    & \ird{-u}, \ird{-ení} & none & \ird{-ní} after applicative/causative \\
+		Simultaneous/manner & \ird{-ěc} & palatalization & front-vocalic trigger; may coincide with older sibilantized outputs in some stems \\
+		Temporal (6)  & \ird{-ezak}, \ird{-eškady}, \ird{-eeby}, \ird{-ešhoume}, \ird{-eebymy}, \ird{-esny} & none & all add \ird{-e-} linker \\
+		Concessive    & \ird{-ouc} & none & \\
+		Conditional   & \ird{-ic}, \ird{-emy}, \ird{-ezmy}, \ird{-ena} & none for \ird{-ic}; see note & \ird{-ic} does not trigger palatalization \\
+		Purposive     & \ird{-it} & irregular; mainly Class I & \\
+		Contrastive   & \ird{-ema} & none & \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The simultaneous/manner converb \ird{-ěc} and the irrealis mood \ird{-ěv} belong to the palatalizing domain, while the antipassive \ird{-aš-} is the clearest instance of true sibilant replacement. The conditional \ird{-ic} does not palatalize despite its initial front vowel; the historical reasons for this exception are discussed in Section~\ref{sec:cond-nopala} of Chapter~\ref{ch:complex}. Stronger irregularity is concentrated instead in a few high-frequency linker and quotative forms, where analogical leveling has obscured the older outputs.
+
+\subsection{The nominalized verb forms}\label{sec:nominalized}
+
+% ============================================================
+% STATUS: STUB — to be developed
+% The 2020 archive describes the following nominalized forms:
+%   - Generic nominal in -ou (from inflected stem)
+%   - Participant nominals (agent nominal -kou, patient nominal)
+%   - Event nominals
+% These interact with definiteness, argument structure, and focus
+% (the "nominalization for indefiniteness" construction described in Ch. 4).
+% ============================================================
+
+Iridian possesses several forms that nominalize the verb. One is the lexical or resultant nominal in \ird{-ou}, often semi-productive and lexeme-specific, which yields nouns such as \ird{piaštou} \trsl{food}. Another is the inherited gerundal strategy, which remains the productive event-nominal formation. Participant nominals likewise employ \ird{-ou}, but they are built from stems whose morphology already fixes which participant occupies the absolutive pivot.
+
+Antipassive stems yield agent-oriented participant nominals, unmarked transitive stems patient-oriented ones, and applicative stems nominals referring to the promoted participant.
+
+Only the perfective and continuous are used productively in these participant nominals. In this formation \ird{-ek + -ou} contracts to \ird{-ikou}, while \ird{-eví + -ou} contracts to \ird{-ívou}: thus \ird{piaščikou} \trsl{the one who ate}, \ird{piaščivou} \trsl{the one who is eating}, \ird{piaštnikou} \trsl{that which is eaten}, and \ird{piaštébikou} \trsl{the one who was fed}. Their syntax, definiteness properties, and argument structure are treated in Section~\ref{sec:event-nominals} of Chapter~\ref{ch:nouns}.
+
+\section{The conjunctive / quotative linker}\label{sec:conjunctive-linker}
+
+Iridian has a verbal linking form in \ird{-e}, used in clause linking and quotative constructions. Synchronically this \ird{-e} is a front-vocalic palatalizing suffix added to the fully inflected verb. It therefore belongs with the palatalization system described in Chapter~\ref{ch:phon}, not with sibilant replacement.
+
+\pex
+\a \ird{piašček} $\rightarrow$ \ird{piaščice}
+\a \ird{piaščaní} $\rightarrow$ \ird{piaščěně}
+\xe
+
+The exact output depends on the segment immediately preceding the linker. Velars typically yield \orth{c/ce}; other endings show the regular soft reflexes of the final consonant or syllable in standard spelling, without introducing separate haček letters for soft \orth{t}, \orth{d}, or \orth{l}. Some older conjunctive formations are analogically levelled and remain morphologized, but the synchronic generalization is clear: \ird{-e} selects a palatalized form of the preceding material. The syntax of this linker is treated in Chapter~\ref{ch:complex}.
+
+\section{Stative verbs}\label{sec:stative}
+
+% ============================================================
+% STATUS: STUB — to be developed
+% Iridian has a class of stative verbs that differ from active verbs in:
+%   - They strongly prefer the continuous or contemplative aspect
+%   - In the continuous, they read as pure states rather than habits
+%   - They can function as attributive modifiers of nouns (adjectival use)
+%   - The progressive aspect with a stative verb reads as "coming to be in
+%     the state" (inceptive), not as an ongoing dynamic activity
+% Examples:
+%   - vytam shoda (I am wearing a shirt — stative continuous)
+%   - vytam shodime (I am putting on a shirt — progressive = inceptive)
+% The adjectival use of stative verbs is relevant to NP structure (Ch. 4)
+% and is the primary device for attributive modification in Iridian
+% (there is no separate adjective class in the traditional sense).
+% ============================================================
+
+A class of stative verbs describes states rather than events. These verbs differ from active verbs in their aspect profile: they occur most naturally in the continuous or contemplative, and the progressive aspect with a stative verb yields an inceptive reading --- \textit{coming to be in the state} --- rather than a dynamic activity in progress.
+
+\pex
+\a
+\begingl
+\gla Vytam shoda.//
+\glb shirt.\Dir{} wear-\Cont{}//
+\glft \trsl{(I) am wearing a shirt.} \lingcontext{stative: ongoing state}//
+\endgl
+\a
+\begingl
+\gla Vytam shodime.//
+\glb shirt.\Dir{} wear-\Prog{}//
+\glft \trsl{(I) am putting on a shirt.} \lingcontext{inceptive: coming to be in the state}//
+\endgl
+\xe
+
+Stative verbs may further function as attributive modifiers of nouns, serving as the primary attributive strategy in Iridian. This use is described in Chapter~\ref{ch:nouns}.
