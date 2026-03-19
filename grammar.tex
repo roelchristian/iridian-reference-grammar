@@ -1,0 +1,151 @@
+%!TEX program = lualatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% A Reference Grammar of the Iridian Language                               %%
+%% 2026 Rewrite                                                               %%
+%% Copyright (C) 2019--2026 by Roel Christian Yambao                         %%
+%% This work may be distributed and/or modified under the conditions of the  %%
+%% MIT License.                                                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{amsbook}
+
+\usepackage[
+	papersize={6in,9in},
+	inner=0.9in,
+	outer=0.75in,
+	top=0.85in,
+	bottom=0.9in
+]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{EB Garamond}[
+	RawFeature={+liga,+clig,+dlig},
+	Numbers={OldStyle,Monospaced}
+]
+
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+%% Convenience column types for tabularx
+%% L = left-aligned flex column (wrapping)
+%% C = centred flex column
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{C}{>{\Centering\arraybackslash}X}
+
+%% Interlinear glosses (expex)
+\usepackage{expex}
+\lingset{everygla=\it, everyglb=\small, everyglft=, aboveglftskip=0pt}
+
+%% Leipzig glossing abbreviations
+\usepackage[glosses]{leipzig}
+
+%% Custom glossing abbreviations for the 2026 Iridian grammar
+%% Core case / alignment (Iridian grammatical tradition)
+\newleipzig{Dir}{dir}{direct case}
+\newleipzig{Trs}{trs}{transitive case}
+\newleipzig{Ind}{ind}{indirect case}
+\newleipzig{Voc}{voc}{vocative}
+
+%% Aspect
+\newleipzig{Pf}{pf}{perfective}
+\newleipzig{Ret}{ret}{retrospective}
+\newleipzig{Cont}{cont}{continuous}
+\newleipzig{Prog}{prog}{progressive}
+\newleipzig{Ctp}{ctp}{contemplative}
+
+%% Valency operations
+\newleipzig{Antip}{antip}{antipassive}
+\newleipzig{Appl}{appl}{applicative}
+\newleipzig{Caus}{caus}{causative}
+
+%% Mood
+\newleipzig{Imp}{imp}{imperative}
+\newleipzig{Proh}{proh}{prohibitive}
+\newleipzig{Hort}{hort}{hortative}
+\newleipzig{Irr}{irr}{irrealis}
+
+%% Non-finite / converb
+\newleipzig{Seq}{seq}{sequential converb}
+\newleipzig{Sim}{sim}{simultaneous converb}
+\newleipzig{Purp}{purp}{purposive converb}
+\newleipzig{Cncs}{cncs}{concessive converb}
+\newleipzig{Cntr}{cntr}{contrastive converb}
+\newleipzig{Cond}{cond}{conditional converb}
+\newleipzig{Cv}{cv}{converb (generic)}
+
+%% Nominal / discourse
+\newleipzig{Neg}{neg}{negation}
+\newleipzig{Def}{def}{definiteness marker}
+\newleipzig{Spec}{spec}{specificity marker}
+\newleipzig{Pl}{pl}{plural}
+\newleipzig{Dem}{dem}{demonstrative}
+\newleipzig{Prox}{prox}{proximal}
+\newleipzig{Med}{med}{medial}
+\newleipzig{Dist}{dist}{distal}
+\newleipzig{Anim}{anim}{animate}
+\newleipzig{Inan}{inan}{inanimate}
+\newleipzig{Refl}{refl}{reflexive}
+\newleipzig{Quot}{quot}{quotative}
+\newleipzig{Exst}{exst}{existential}
+\newleipzig{Cop}{cop}{copula}
+\newleipzig{NegExst}{neg.exst}{negative existential}
+\newleipzig{Nmlz}{nmlz}{nominalizer}
+
+%% Custom commands (matching 2020 archive conventions)
+\newcommand{\ird}[1]{\textit{#1}}
+\newcommand{\foreign}[1]{\textit{#1}}
+\newcommand{\rec}[1]{*\textit{#1}}
+\newcommand{\trsl}[1]{`#1'}
+\newcommand{\irdp}[2]{\ird{#1}, \trsl{#2}}
+\newcommand{\orth}[1]{$\langle$#1$\rangle$}
+\newcommand{\phon}[3]{\ird{#1} [#2] \trsl{#3}}
+\newcommand{\mk}[1]{\textsc{#1}}
+\newcommand{\sx}[1]{\textsuperscript{#1}}
+\newcommand{\lingcontext}[1]{{\small\itshape [#1]}}
+
+%% Abbreviations used in morpheme templates
+\newcommand{\Stem}{\textsc{stem}}
+\newcommand{\Asp}{\textsc{asp.align}}
+
+\title{A Reference Grammar of the Iridian Language}
+\author{Roel Christian Yambao}
+\date{2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+%% Chapter 1: Overview
+\include{chapters/01-overview}
+
+%% Chapter 2: Phonology
+\include{chapters/02-phonology}
+
+%% Chapter 3: The Verb
+\include{chapters/03-verbs}
+
+%% Chapter 4: The Noun Phrase
+\include{chapters/04-nouns}
+
+%% Chapter 5: The Simple Sentence
+\include{chapters/05-simple-sentence}
+
+%% Chapter 6: Complex Sentences and Clause Chaining
+\include{chapters/06-complex-sentences}
+
+%% Chapter 7: Discourse
+\include{chapters/07-discourse}
+
+%% Chapter 8: Derivational Morphology
+\include{chapters/08-derivational}
+
+%% Chapter 9: Semantics, Pragmatics, and Usage
+\include{chapters/09-semantics}
+
+\end{document}
