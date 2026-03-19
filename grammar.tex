@@ -7,21 +7,29 @@
 %% MIT License.                                                               %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[12pt]{amsbook}
+\documentclass[11pt]{amsbook}
 
 \usepackage[
 	papersize={6in,9in},
-	inner=0.9in,
+	inner=0.75in,
 	outer=0.75in,
 	top=0.85in,
 	bottom=0.9in
 ]{geometry}
 
 \usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
 \setmainfont{EB Garamond}[
-	RawFeature={+liga,+clig,+dlig},
-	Numbers={OldStyle,Monospaced}
+	Numbers={OldStyle,Proportional}
 ]
+\newfontfamily\titlefont{EB Garamond}[
+	Letters=SmallCaps,
+	LetterSpace=8,
+	Numbers={OldStyle,Proportional}
+]
+\newcommand{\trackedscshape}{\addfontfeatures{Letters=SmallCaps,LetterSpace=8}\scshape}
+\newcommand{\trackedsc}[1]{{\trackedscshape\MakeLowercase{#1}}}
+\newcommand{\term}[1]{\trackedsc{#1}}
 
 \usepackage{microtype}
 \usepackage{booktabs}
@@ -29,7 +37,33 @@
 \usepackage{ragged2e}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage[font=small,labelfont={sc},labelsep=period]{caption}
+\usepackage{fancyhdr}
 \usepackage{hyperref}
+\usepackage[linguistics]{forest}
+\usepackage{tikz}
+
+\hypersetup{
+	hidelinks,
+	pdftitle={A Reference Grammar of the Iridian Language},
+	pdfauthor={Roel Christian Yambao}
+}
+
+\setlength{\emergencystretch}{2em}
+\doublehyphendemerits=1000000000
+\widowpenalty=10000
+\clubpenalty=10000
+\brokenpenalty=10000
+\setlength{\parindent}{1.35em}
+\setlength{\parskip}{0pt}
+\setlength{\headheight}{14pt}
+
+\captionsetup{
+	singlelinecheck=false,
+	justification=raggedright
+}
+\setlength{\abovecaptionskip}{6pt}
+\setlength{\belowcaptionskip}{2pt}
 
 %% Convenience column types for tabularx
 %% L = left-aligned flex column (wrapping)
@@ -39,7 +73,15 @@
 
 %% Interlinear glosses (expex)
 \usepackage{expex}
-\lingset{everygla=\it, everyglb=\small, everyglft=, aboveglftskip=0pt}
+\lingset{
+	everygla=\itshape,
+	everyglb=\footnotesize,
+	everyglft=\normalfont,
+	aboveexskip=0.85\baselineskip,
+	belowexskip=0.75\baselineskip,
+	aboveglftskip=2pt,
+	extraglskip=0.15em
+}
 
 %% Leipzig glossing abbreviations
 \usepackage[glosses]{leipzig}
@@ -91,6 +133,8 @@
 \newleipzig{Inan}{inan}{inanimate}
 \newleipzig{Refl}{refl}{reflexive}
 \newleipzig{Quot}{quot}{quotative}
+\newleipzig{Compl}{compl}{complementizer}
+\newleipzig{Lnk}{lnk}{linker}
 \newleipzig{Exst}{exst}{existential}
 \newleipzig{Cop}{cop}{copula}
 \newleipzig{NegExst}{neg.exst}{negative existential}
@@ -104,13 +148,88 @@
 \newcommand{\irdp}[2]{\ird{#1}, \trsl{#2}}
 \newcommand{\orth}[1]{$\langle$#1$\rangle$}
 \newcommand{\phon}[3]{\ird{#1} [#2] \trsl{#3}}
-\newcommand{\mk}[1]{\textsc{#1}}
+\newcommand{\mk}[1]{\trackedsc{#1}}
 \newcommand{\sx}[1]{\textsuperscript{#1}}
-\newcommand{\lingcontext}[1]{{\small\itshape [#1]}}
+\newcommand{\lingcontext}[1]{{\footnotesize\itshape [#1]}}
 
 %% Abbreviations used in morpheme templates
 \newcommand{\Stem}{\textsc{stem}}
 \newcommand{\Asp}{\textsc{asp.align}}
+
+\newcommand{\booktitlepage}{%
+	\begin{titlepage}
+		\thispagestyle{empty}
+		\centering
+		\vspace*{0.16\textheight}
+		{\titlefont\Large A Reference Grammar\par}
+		\vspace{0.5\baselineskip}
+		{\titlefont\Large of the\par}
+		\vspace{0.5\baselineskip}
+		{\titlefont\huge Iridian Language\par}
+		\vspace{1.75\baselineskip}
+		{\large\itshape Ircevni kostgramatik\par}
+		\vfill
+		{\small First Edition\par}
+		\vspace{0.35\baselineskip}
+		{\small 2026\par}
+		\vspace{3\baselineskip}
+		{\small Roel Christian Yambao\par}
+	\end{titlepage}
+}
+
+\makeatletter
+\def\@makechapterhead#1{%
+	\thispagestyle{empty}%
+	\vspace*{2\baselineskip}%
+	{\parindent \z@ \centering \normalfont
+		{\titlefont \thechapter\par}
+		\vspace{0.9\baselineskip}
+		\rule{2.2em}{0.6pt}\par
+		\vspace{1.1\baselineskip}
+		{\titlefont\huge \MakeLowercase{#1}\par}
+		\vspace{1.6\baselineskip}}}
+
+\def\@makeschapterhead#1{%
+	\thispagestyle{empty}%
+	\vspace*{2\baselineskip}%
+	{\parindent \z@ \centering \normalfont
+		\rule{2.2em}{0.6pt}\par
+		\vspace{1.1\baselineskip}
+		{\titlefont\huge \MakeLowercase{#1}\par}
+		\vspace{1.6\baselineskip}}}
+
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+	{-2.2\baselineskip}%
+	{0.7\baselineskip}%
+	{\normalfont\large\trackedscshape\MakeLowercase}}
+
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+	{-1.55\baselineskip}%
+	{0.45\baselineskip}%
+	{\normalfont\normalsize\itshape\MakeLowercase}}
+
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+	{-\baselineskip}%
+	{0.35\baselineskip}%
+	{\normalfont\normalsize\itshape\MakeLowercase}}
+
+\renewcommand{\contentsname}{Contents}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeLowercase{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ \MakeLowercase{#1}}}
+\makeatother
+
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\thepage\hfill{\trackedscshape\small\leftmark}}
+\fancyhead[RO]{{\trackedscshape\small\rightmark}\hfill\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{1}
 
 \title{A Reference Grammar of the Iridian Language}
 \author{Roel Christian Yambao}
@@ -118,8 +237,10 @@
 
 \begin{document}
 
-\maketitle
+\frontmatter
+\booktitlepage
 \tableofcontents
+\mainmatter
 
 %% Chapter 1: Overview
 \include{chapters/01-overview}
