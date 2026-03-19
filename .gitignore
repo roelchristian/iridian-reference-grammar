@@ -51,6 +51,7 @@ util/
 *.doc
 *.xlsx
 *.texlive-cache/
+*.texmf-var/
 *.html
 *.tmp
 
