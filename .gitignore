@@ -46,7 +46,7 @@ util/
 # DS_Store
 *.DS_Store
 
-# binaries and other generated files
+# binaries
 *.pdf
 *.docx
 *.doc
