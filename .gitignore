@@ -52,4 +52,5 @@ util/
 *.xlsx
 *.texlive-cache/
 *.html
+*.tmp
 
