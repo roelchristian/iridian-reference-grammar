@@ -10,19 +10,18 @@
 \documentclass[12pt]{amsbook}
 
 \usepackage[
-	paperwidth=7in,
-	paperheight=10in,
-	inner=1in,
-	outer=1in,
-	top=1in,
-	bottom=1in
+	papersize={6in,9in},
+	inner=0.9in,
+	outer=0.75in,
+	top=0.85in,
+	bottom=0.9in
 ]{geometry}
 
-
-\newcommand{\trackedscshape}{\addfontfeatures{Letters=SmallCaps,LetterSpace=8}\scshape}
-\newcommand{\trackedsc}[1]{{\trackedscshape\MakeLowercase{#1}}}
-\newcommand{\term}[1]{\trackedsc{#1}}
-\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{fontspec}
+\setmainfont{EB Garamond}[
+	RawFeature={+liga,+clig,+dlig},
+	Numbers={OldStyle,Monospaced}
+]
 
 \usepackage{microtype}
 \usepackage{booktabs}
@@ -30,73 +29,7 @@
 \usepackage{ragged2e}
 \usepackage{multicol}
 \usepackage{enumitem}
-\usepackage[font=small,labelfont={sc},labelsep=period]{caption}
-\usepackage{fancyhdr}
 \usepackage{hyperref}
-\usepackage[linguistics]{forest}
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,calc,fit,matrix,shapes.geometric,decorations.pathreplacing}
-
-\forestset{
-	syntax tree/.style={
-		for tree={
-			align=center,
-			parent anchor=south,
-			child anchor=north,
-			l sep=12pt,
-			s sep=10pt,
-			inner sep=1pt,
-			edge={semithick}
-		}
-	}
-}
-
-\tikzset{
-	syn band/.style={
-		draw,
-		rectangle,
-		align=center,
-		minimum height=9mm,
-		inner sep=4pt
-	},
-	syn box/.style={
-		draw,
-		rectangle,
-		align=center,
-		inner sep=4pt
-	},
-	scope arrow/.style={
-		-{Latex[length=2mm]},
-		semithick
-	},
-	scope brace/.style={
-		semithick,
-		decorate,
-		decoration={brace,amplitude=4pt}
-	}
-}
-
-\hypersetup{
-	hidelinks,
-	pdftitle={A Reference Grammar of the Iridian Language},
-	pdfauthor={Roel Christian Yambao}
-}
-
-\setlength{\emergencystretch}{2em}
-\doublehyphendemerits=1000000000
-\widowpenalty=10000
-\clubpenalty=10000
-\brokenpenalty=10000
-\setlength{\parindent}{1.35em}
-\setlength{\parskip}{0pt}
-\setlength{\headheight}{14pt}
-
-\captionsetup{
-	singlelinecheck=false,
-	justification=raggedright
-}
-\setlength{\abovecaptionskip}{6pt}
-\setlength{\belowcaptionskip}{2pt}
 
 %% Convenience column types for tabularx
 %% L = left-aligned flex column (wrapping)
@@ -106,32 +39,7 @@
 
 %% Interlinear glosses (expex)
 \usepackage{expex}
-\lingset{
-	everygla=\itshape,
-	everyglb=\footnotesize,
-	everyglft=\normalfont,
-	aboveexskip=0.85\baselineskip,
-	belowexskip=0.75\baselineskip,
-	aboveglftskip=2pt,
-	extraglskip=0.15em
-}
-
-\usepackage{fontspec}
-\defaultfontfeatures{Ligatures=TeX}
-\setmainfont{EB Garamond}[
-	Numbers={OldStyle,Proportional}
-]
-\setsansfont{EB Garamond}[
-	Numbers={OldStyle,Proportional}
-]
-\usepackage[italic]{mathastext}
-\newfontfamily\titlefont{EB Garamond}[
-	Letters=SmallCaps,
-	LetterSpace=8,
-	Numbers={OldStyle,Proportional}
-]
-
-
+\lingset{everygla=\it, everyglb=\small, everyglft=, aboveglftskip=0pt}
 
 %% Leipzig glossing abbreviations
 \usepackage[glosses]{leipzig}
@@ -183,11 +91,8 @@
 \newleipzig{Inan}{inan}{inanimate}
 \newleipzig{Refl}{refl}{reflexive}
 \newleipzig{Quot}{quot}{quotative}
-\newleipzig{Compl}{compl}{complementizer}
-\newleipzig{Lnk}{lnk}{linker}
 \newleipzig{Exst}{exst}{existential}
 \newleipzig{Cop}{cop}{copula}
-\newleipzig{NegCop}{neg.cop}{negative copula}
 \newleipzig{NegExst}{neg.exst}{negative existential}
 \newleipzig{Nmlz}{nmlz}{nominalizer}
 
@@ -199,88 +104,13 @@
 \newcommand{\irdp}[2]{\ird{#1}, \trsl{#2}}
 \newcommand{\orth}[1]{$\langle$#1$\rangle$}
 \newcommand{\phon}[3]{\ird{#1} [#2] \trsl{#3}}
-\newcommand{\mk}[1]{\trackedsc{#1}}
+\newcommand{\mk}[1]{\textsc{#1}}
 \newcommand{\sx}[1]{\textsuperscript{#1}}
-\newcommand{\lingcontext}[1]{{\footnotesize\itshape [#1]}}
+\newcommand{\lingcontext}[1]{{\small\itshape [#1]}}
 
 %% Abbreviations used in morpheme templates
 \newcommand{\Stem}{\textsc{stem}}
 \newcommand{\Asp}{\textsc{asp.align}}
-
-\newcommand{\booktitlepage}{%
-	\begin{titlepage}
-		\thispagestyle{empty}
-		\centering
-		\vspace*{0.16\textheight}
-		{\titlefont\Large A Reference Grammar\par}
-		\vspace{0.5\baselineskip}
-		{\titlefont\Large of the\par}
-		\vspace{0.5\baselineskip}
-		{\titlefont\huge Iridian Language\par}
-		\vspace{1.75\baselineskip}
-		{\large\itshape Ircevni kostgramatik\par}
-		\vfill
-		{\small First Edition\par}
-		\vspace{0.35\baselineskip}
-		{\small 2026\par}
-		\vspace{3\baselineskip}
-		{\small Roel Christian Yambao\par}
-	\end{titlepage}
-}
-
-\makeatletter
-\def\@makechapterhead#1{%
-	\thispagestyle{empty}%
-	\vspace*{2\baselineskip}%
-	{\parindent \z@ \centering \normalfont
-		{\titlefont \thechapter\par}
-		\vspace{0.9\baselineskip}
-		\rule{2.2em}{0.6pt}\par
-		\vspace{1.1\baselineskip}
-		{\titlefont\huge \MakeLowercase{#1}\par}
-		\vspace{1.6\baselineskip}}}
-
-\def\@makeschapterhead#1{%
-	\thispagestyle{empty}%
-	\vspace*{2\baselineskip}%
-	{\parindent \z@ \centering \normalfont
-		\rule{2.2em}{0.6pt}\par
-		\vspace{1.1\baselineskip}
-		{\titlefont\huge \MakeLowercase{#1}\par}
-		\vspace{1.6\baselineskip}}}
-
-\renewcommand\section{\@startsection{section}{1}{\z@}%
-	{-2.2\baselineskip}%
-	{0.7\baselineskip}%
-	{\normalfont\large\trackedscshape\MakeLowercase}}
-
-\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-	{-1.55\baselineskip}%
-	{0.45\baselineskip}%
-	{\normalfont\normalsize\itshape\MakeLowercase}}
-
-\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-	{-\baselineskip}%
-	{0.35\baselineskip}%
-	{\normalfont\normalsize\itshape\MakeLowercase}}
-
-\renewcommand{\contentsname}{Contents}
-\renewcommand{\chaptermark}[1]{\markboth{\MakeLowercase{#1}}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection.\ \MakeLowercase{#1}}}
-\makeatother
-
-\fancypagestyle{plain}{%
-	\fancyhf{}
-	\renewcommand{\headrulewidth}{0pt}
-}
-
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LE]{\small\thepage\hfill{\trackedscshape\small\leftmark}}
-\fancyhead[RO]{{\trackedscshape\small\rightmark}\hfill\small\thepage}
-\renewcommand{\headrulewidth}{0pt}
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{1}
 
 \title{A Reference Grammar of the Iridian Language}
 \author{Roel Christian Yambao}
@@ -288,10 +118,8 @@
 
 \begin{document}
 
-\frontmatter
-\booktitlepage
+\maketitle
 \tableofcontents
-\mainmatter
 
 %% Chapter 1: Overview
 \include{chapters/01-overview}
@@ -305,30 +133,19 @@
 %% Chapter 4: The Noun Phrase
 \include{chapters/04-nouns}
 
-%% Chapter 5: Function Words and Particles
-\include{chapters/05-function-words}
+%% Chapter 5: The Simple Sentence
+\include{chapters/05-simple-sentence}
 
-%% Chapter 6: The Simple Sentence
-\include{chapters/06-simple-sentence}
+%% Chapter 6: Complex Sentences and Clause Chaining
+\include{chapters/06-complex-sentences}
 
-%% Chapter 7: Complex Sentences and Clause Chaining
-\include{chapters/07-complex-sentences}
+%% Chapter 7: Discourse
+\include{chapters/07-discourse}
 
-%% Chapter 8: Discourse
-\include{chapters/08-discourse}
+%% Chapter 8: Derivational Morphology
+\include{chapters/08-derivational}
 
-%% Chapter 9: Derivational Morphology
-\include{chapters/09-derivational}
-
-%% Chapter 10: Semantics, Pragmatics, and Usage
-\include{chapters/10-semantics}
-
-%% Chapter 11: Spoken and colloquial Iridian
-\include{chapters/11-spoken-colloquial}
-
-%% TEMPORARY STUBS
-\include{util/lexicon}
-% \include{util/stub/theory}
-% \include{util/stub/verb-minim}
+%% Chapter 9: Semantics, Pragmatics, and Usage
+\include{chapters/09-semantics}
 
 \end{document}
