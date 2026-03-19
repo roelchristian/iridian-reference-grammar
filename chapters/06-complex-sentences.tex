@@ -2,9 +2,38 @@
 
 \section{Overview: clause-combining strategies}
 
-Iridian employs several strategies for combining clauses. The dominant strategy is \textbf{converb chaining}, in which all non-final clauses are expressed as non-finite converb forms linked to a single main (finite) clause. Additional strategies include coordination with conjunctions, quotative constructions for reported speech, and \ird{še}-clauses for a limited set of complement and adjunct types.
+Iridian employs several strategies for combining clauses. The dominant strategy is \textbf{converb chaining}, in which all non-final clauses are expressed as non-finite converb forms linked to a single main (finite) clause. Additional strategies include coordination with conjunctions, and finite complement clauses: the \ird{po}-clause for finite propositional content and the \ird{poby}-clause for polar non-assertive content, including indirect questions of the \textit{whether/if} type.
 
-The centrality of the converb to Iridian clause-combining means that what would be expressed as multiple finite clauses in a Slavic language typically appears in Iridian as a chain of converbs followed by a single finite verb. This has consequences for information structure (only the final, finite verb carries aspect and alignment), for switch-reference tracking, and for discourse organization (see Chapter~\ref{ch:discourse}).
+Across these strategies, subordination in Iridian follows the same structural principle that governs the language more generally: strong head-finality. In clause combining, this means that a dependent clause normally precedes the higher clause in which it is embedded, while the matrix verbal head remains final. The unmarked pattern is therefore not \textit{main clause + subordinate clause}, as in many European languages, but rather:
+
+\begin{center}
+\textbf{[SUBORDINATE CLAUSE] [MATRIX-CLAUSE MATERIAL] [MATRIX VERB]}
+\end{center}
+
+\begin{figure}[ht]
+	\centering
+	\begin{forest}
+		for tree={
+			align=center,
+			parent anchor=south,
+			child anchor=north,
+			l sep=12pt,
+			s sep=16pt,
+		}
+		[\textsc{s}
+			[\textsc{Subordinate}\\\textsc{clause}]
+			[\textsc{Matrix predicate}
+				[\textsc{Matrix-clause}\\\textsc{material}]
+				[\textsc{Matrix verb}]
+			]
+		]
+	\end{forest}
+	\caption{Head-final organization of subordinate constructions.}
+\end{figure}
+
+The same head-final logic holds inside the subordinate clause itself. Its arguments and adjuncts precede its own verbal head, so the subordinate clause is internally verb-final, while the larger construction as a whole culminates in the final verb of the matrix clause. Iridian subordination is thus characterized primarily by ordering: dependent clausal material precedes the higher clause, and the matrix predicate closes the sentence. This generalization holds across the major subordinate clause types, even though those types differ morphologically in how the dependency is marked.
+
+In practical terms, adverbial subordination is expressed chiefly through converbs, while finite subordination is handled by the \ird{po}/\ird{poby} complement system. The centrality of the converb to Iridian clause-combining means that what would be expressed as multiple finite clauses in a Slavic language typically appears in Iridian as a chain of converbs followed by a single finite verb. This has consequences for information structure (only the final, finite verb carries aspect and alignment), for switch-reference tracking, and for discourse organization (see Chapter~\ref{ch:discourse}).
 
 \section{Converb chains: structure and alignment}\label{sec:converb-chains}
 
@@ -141,20 +170,231 @@ The contrastive converb (\ird{-ema}) introduces a contrasting clause (`X, but/wh
 
 Coordination is expressed by \ird{a} (additive), \ird{še} (additive, also complementizer), \ird{má} / \ird{ozná} (adversative), and a set of disjunctives.
 
-\section{Quotative constructions and reported speech}\label{sec:quotative}
+\section{Clausal complementation}\label{sec:complementation}
 
-% ============================================================
-% STATUS: STUB — quotative complementizer to-že, direct quotatives,
-% evidential/quotative verbal suffix. Port from 2020 archive.
-% ============================================================
+A complement clause is a subordinate clause which stands to a higher
+predicate as one of its arguments. In Iridian such clauses are used for the
+content of saying, thought, belief, report, memory, inference, perception
+understood as reportable content, evaluation, and the like. Earlier
+descriptions often treated much of this domain under the heading
+\textit{quotative}. That term is not adopted here as the principal category,
+since the construction extends well beyond quotation in the narrow sense.
 
-Reported speech uses the quotative complementizer \ird{to-že} for indirect quotation and allows fronted direct quotations before a \textit{verbum dicendi}. Clause-linking and certain quotative constructions further employ the verbal linker \ird{-e}, whose morphophonemics are described in Section~\ref{sec:conjunctive-linker} of Chapter~\ref{ch:verbs}. The evidential/quotative morpheme on the verb signals attribution to another speaker.
+Thus, where English says \textit{Marek said that Janek left}, or \textit{It
+seems odd to me that he has not called}, Iridian treats the bracketed clause
+as the complement of the higher predicate. Two chief constructions must be
+distinguished. A full proposition, stated as such, is expressed by the finite
+\ird{po}-construction. An event viewed as intended, attempted, controlled,
+incipient, or otherwise projected is expressed instead by the purposive
+converb, which serves here as a controlled or prospective event complement.
 
-\section{Epistemic particles and evidential extensions}\label{sec:evidential-particles}
+\begin{figure}[ht]
+  \centering
+  \begin{forest}
+    for tree={
+      align=center,
+      parent anchor=south,
+      child anchor=north,
+      l sep=10pt,
+      s sep=14pt,
+    }
+    [\textsc{sentence}
+      [\textsc{clause}
+        [\textsc{clause}
+          [\textsc{core}
+            [\textsc{arg}\\\textit{Lobek}]
+            [\textsc{arg}\\\textit{Marku}]
+            [\textsc{nuc}
+              [\textit{piaštnic-e}]
+            ]
+          ]
+          [\textsc{comp}\\\ird{po}]
+        ]
+        [\textsc{core}
+          [\textsc{arg}\\\textit{Janku}]
+          [\textsc{nuc}
+            [\textit{dalnik}]
+          ]
+        ]
+      ]
+    ]
+  \end{forest}
+  \caption{RRG clausal juncture (subordinate nexus): \ird{po}-complement construction.}
+\end{figure}
 
-% ============================================================
-% STATUS: STUB — see open question in ROADMAP.md §3.
-% ============================================================
+\subsection{The finite \ird{po}-construction}
+
+The ordinary means of embedding a full proposition is the finite
+\ird{po}-clause. Its form is:
+
+\begin{center}
+\textbf{[finite embedded clause + linker \ird{-e}] \ird{po}}
+\end{center}
+
+The embedded clause remains fully finite. It preserves the same verbal
+categories as an independent clause, including aspect, the alignment
+distinctions associated with aspect, voice, and, where required by the sense,
+mood. The construction is therefore not a reduced verbal form, but a true
+finite clause made subordinate by the linker \ird{-e} and the complement
+marker \ird{po}.
+
+An independent clause such as the following:
+
+\ex
+\begingl
+\gla Lobek Marku piaštnik.//
+\glb apple.\Dir{} Marek.\Trs{} eat-\Pf{}//
+\glft \trsl{Marek ate the apple.}//
+\endgl
+\xe
+
+may be embedded without loss of finiteness:
+
+\ex
+\begingl
+\gla Lobek Marku piaštnice po Janku dalnik.//
+\glb apple.\Dir{} Marek.\Trs{} eat-\Pf{}-\Lnk{} \Compl{} Janek.\Trs{} say-\Pf{}//
+\glft \trsl{Janek said that Marek ate the apple.}//
+\endgl
+\xe
+
+The same construction is used after predicates of saying, reporting,
+thinking, knowing, believing, remembering, inferring, perceiving a
+proposition, and evaluating a proposition. In all such cases the complement
+is construed as a full proposition, not merely as a projected event.
+
+The \ird{po}-clause may also appear without an overt matrix predicate. Such
+forms were formerly described as \textit{bare quotatives}; synchronically it
+is better to treat them as matrixless uses of the same finite complement
+construction. In such cases the proposition is presented not as a simple
+speaker-assertion, but as attributed content. According to context, this may
+yield a reportive, hearsay, echoic, reflective, distancing, ironic, or
+reservation-marking effect.
+
+\ex
+\begingl
+\gla Lobek Marku piaštnice po.//
+\glb apple.\Dir{} Marek.\Trs{} eat-\Pf{}-\Lnk{} \Compl{}//
+\glft \trsl{Marek ate the apple, I hear.}//
+\endgl
+\xe
+
+The precise omitted frame need not be supplied in every instance. One may
+understand such clauses loosely as equivalent to \textit{it is said},
+\textit{I hear}, \textit{one gathers}, \textit{so they say}, or the like;
+but grammatically the essential fact is that the proposition is cast as
+attributed rather than directly asserted.
+
+\subsection{Prospective and controlled event complements}
+
+The finite \ird{po}-construction must be kept distinct from the complement
+used for intended, attempted, controlled, or projected events. This second
+construction belongs to the domain of the purposive converb. It is employed
+with predicates such as \textit{want}, \textit{try}, \textit{intend},
+\textit{go in order to}, \textit{begin}, and similar verbs whose complement
+denotes not a proposition as such, but an event regarded as prospective,
+volitional, incipient, or purposive.
+
+In this use the complement is non-finite. It does not present an independent
+state of affairs as true, reported, believed, or remembered, but rather an
+event toward which the matrix predicate is directed. The distinction is
+therefore one between propositional complementation and event
+complementation. The former is the province of finite \ird{po}-clauses; the
+latter, of the purposive converb.
+
+\subsection{The non-assertive complement \ird{poby}}\label{sec:poby}
+
+Alongside \ird{po} there stands a parallel construction in \ird{poby}, used
+when the embedded content is not presented as declarative content, but as an
+open question, unresolved alternative, or indirect polar interrogative of
+the \textit{whether} type. Its form is:
+
+\begin{center}
+\textbf{[finite embedded clause + linker \ird{-e}] \ird{poby}}
+\end{center}
+
+Here again the embedded clause remains fully finite. The opposition between
+\ird{po} and \ird{poby} is thus broadly comparable to that between English
+\textit{that} and \textit{whether}. One may say, in effect, that \ird{po}
+embeds a proposition as content, while \ird{poby} embeds it as an unsettled
+issue.
+
+\ex
+\begingl
+\gla Lobek Marku piaštnice poby Janku houstnik.//
+\glb apple.\Dir{} Marek.\Trs{} eat-\Pf{}-\Lnk{} \Compl{} Janek.\Trs{} ask-\Pf{}//
+\glft \trsl{Janek asked whether Marek ate the apple.}//
+\endgl
+\xe
+
+This construction is accordingly found after verbs such as \textit{ask},
+\textit{wonder}, \textit{inquire}, \textit{investigate}, \textit{check},
+\textit{doubt}, \textit{decide}, and predicates of \textit{knowing whether}.
+It is not the ordinary complement of verbs such as \textit{say},
+\textit{believe}, \textit{remember}, or \textit{know that}, which require
+the declarative \ird{po}-construction.
+
+\subsection{Indirect evidentiality and attributed content}
+
+Finite clauses in Iridian are, in themselves, evidentially unmarked. The
+ordinary declarative does not grammatically specify whether the speaker knows
+the matter directly or indirectly, though in practice it is often compatible
+with direct knowledge. Where the source of knowledge is explicitly indirect,
+Iridian employs a special indirect evidential. This marks that the
+proposition rests on report, inference, visible result, or post hoc
+discovery rather than on firsthand evidence. In suitable contexts a mirative
+colour may arise from this meaning, especially where the information is
+sudden or contrary to expectation; but the grammatical value remains that of
+indirect evidence.
+
+This category must not be confused with the matrixless \ird{po}-construction.
+The indirect evidential concerns the source of knowledge. A matrixless
+\ird{po}-clause concerns the mode of presentation in discourse. The two
+frequently approach one another in use, since hearsay lies near the border of
+both; but they are not the same thing.
+
+Morphologically the indirect evidential belongs to the finite verbal complex.
+It stands before the complement linker \ird{-e}; person clitics, when
+present, also remain inside the embedded finite complex and likewise precede
+the linker. The order is therefore as follows:
+
+\begin{center}
+\textsc{stem} + \textsc{asp.align} + (\textsc{mood}) + (\textsc{ind.evid}) + (\textsc{person}) + \ird{-e} + \ird{po}/\ird{poby}
+\end{center}
+
+If the indirect evidential has the form \ird{-ejte}, then an embedded finite
+clause will show:
+
+\begin{center}
+\textbf{[finite clause-\ird{ejte}-\ird{-e}] \ird{po}}
+\end{center}
+
+Compare the simple finite clause:
+
+\ex
+\begingl
+\gla Lobek Marku piaštnicejte.//
+\glb apple.\Dir{} Marek.\Trs{} eat-\Pf{}-\textsc{ind.evid}//
+\glft \trsl{Marek ate the apple, apparently.}//
+\endgl
+\xe
+
+When the speaker chiefly wishes to indicate that the information is
+second-hand, inferred, or otherwise non-firsthand, the indirect evidential is
+the ordinary means. When the speaker chiefly wishes to cast the proposition
+as attributed discourse, with reportive, distancing, sceptical, ironic, or
+echoic effect, the matrixless \ird{po}-construction is the ordinary means.
+The two may co-occur, but such co-occurrence is marked, and yields a layered
+interpretation: a proposition already marked as indirectly known is then
+further presented as attributed content. This is suitable for rumour,
+mediated narration, gossip, and similar discourse types, but should not be
+treated as the unmarked way of expressing hearsay.
+
+The two categories are therefore to be kept distinct. The indirect
+evidential is a grammatical marker of indirect source of knowledge. The
+matrixless \ird{po}-clause is a construction of attributed content, whose
+pragmatic effects often include distance, reserve, scepticism, irony, or
+reduced commitment, but whose core meaning is not evidential in itself.
 
 \section{Fixed expressions with converbs}\label{sec:fixed-converbs}
 
