@@ -41,6 +41,7 @@ iridian-grammar-tags.tex
 drafts/
 util/
 *.draft
+*.draft.md
 
 # DS_Store
 *.DS_Store
@@ -50,7 +51,7 @@ util/
 *.docx
 *.doc
 *.xlsx
-*.texlive-cache/
+*.texlive*/
 *.texmf-var/
 *.html
 *.tmp
