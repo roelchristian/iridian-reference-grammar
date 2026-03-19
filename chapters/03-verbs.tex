@@ -168,6 +168,8 @@ The contrast is most readily observed in nominative-alignment contexts, where th
 
 \subsection{The causative (\ird{-na-})}
 
+Cross-linguistically, causation may be expressed lexically, analytically, or morphologically. Some languages employ distinct lexical verbs comparable to English \textit{kill}, while others use periphrastic constructions equivalent to \textit{make} or \textit{cause} plus a second predicate. Iridian belongs to the third type: causation is expressed by a productive morphological operation, realized synchronically as the suffix \ird{-na-}.
+
 The causative \ird{-na-} adds an external causer argument to the event. In nominative-alignment contexts the causer stands in the direct case, the original agent or sole participant is demoted to the indirect, and any patient licensed by the base verb remains indirect. In ergative-alignment contexts the causer takes the transitive case. With transitive bases, the original patient remains the direct argument and the causee falls into the indirect; with intransitive bases, the causee itself occupies the direct as the sole affected participant. The causative thus increases valency by one while preserving the aspect-driven alignment pattern of the clause as a whole. Before a following vowel-initial aspect or mood suffix, \ird{-na-} inserts an epenthetic glide and surfaces as \ird{-naj-}; before consonant-initial material, including the ergative transitive marker \ird{-n-}, it remains \ird{-na-}.
 
 \pex
@@ -185,7 +187,7 @@ The causative \ird{-na-} adds an external causer argument to the event. In nomin
 \endgl
 \xe
 
-\noindent The semantic character of the causation is expressed primarily through aspect. In the perfective the causative presents the causer as exercising effective control over the caused event: the construction is read as direct, interventionist, or coercive according to context. In the retrospective the same morphology presents a looser relation between causer and event, yielding readings of indirect causation, accidental bringing-about, delegated agency, or permission.
+\noindent The semantic character of the causation is expressed primarily through aspect. In the perfective the causative presents the causer as exercising effective control over the caused event and therefore tends toward direct, interventionist, or coercive readings. In the retrospective the same morphology presents a looser relation between causer and event, so that the clause more readily receives indirect, delegated, accidental, or permissive interpretations. For the discourse consequences of this contrast, see Chapter~\ref{ch:discourse}.
 
 \pex
 \a
@@ -578,53 +580,262 @@ The exact output depends on the segment immediately preceding the linker. Velars
 
 \section{Stative verbs}\label{sec:stative}
 
-% ============================================================
-% STATUS: PARTIAL DRAFT
-% Stative verbs encode the bulk of property predication in Iridian.
-% A small closed class of lexical property roots survives in the modifier
-% system, but these are primarily adnominal describers; ordinary predication
-% is handled by stative verbs derived from those roots or lexical stative
-% verbs proper.
-% ============================================================
-
 A class of stative verbs describes states rather than events. These verbs are
 the language's primary means of expressing properties predicatively: where
 English often uses an adjective, Iridian normally uses a stative verb. This
-includes both underived stative verbs such as \trsl{wear} in its stative sense
-and stative predicates derived from a very small closed set of lexical property
-roots denoting especially salient evaluative or descriptive notions such as
-\trsl{good}, \trsl{beautiful}, and \trsl{bad}. The bare property root belongs
-to the modifier system and is used chiefly for adnominal description; the
-ordinary clause predicate is the corresponding stative verb.
+includes both underived stative verbs such as \ird{shodn-} \trsl{wear} in its
+stative sense and stative predicates derived by the verbalising suffix
+\ird{-n-} from a closed set of lexical property roots. Stative verbs are true
+verbs and accordingly require no copula to function as predicates.
 
-Stative verbs differ from active verbs in their aspect profile: they occur most
-naturally in the continuous or contemplative, and the progressive aspect with a
-stative verb yields an inceptive reading --- \textit{coming to be in the
-state} --- rather than a dynamic activity in progress. This gives property
-predicates a characteristic pattern: the continuous expresses a current state
-(\trsl{is beautiful}, \trsl{is good}), while the progressive expresses entry
-into that state (\trsl{is becoming beautiful}, \trsl{is getting better}).
+\subsection{Property roots and the verbalising suffix \ird{-n-}}
+
+A small closed class of property roots each denotes an abstract property as a
+nominal. The verbalising suffix \ird{-n-} is added to the root to yield a
+stative verb stem, which then conjugates as a regular intransitive verb:
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Property roots and derived stative verbs.}\label{tab:statroots}
+	\medskip
+	\begin{tabularx}{\textwidth}{l L l L}
+		\toprule
+		{\sc root} & {\sc gloss} & {\sc stative stem} & {\sc gloss} \\
+		\midrule
+		\ird{hrad} & goodness  & \ird{hradn-}  & to be good \\
+		\ird{mroc} & beauty    & \ird{mrocn-}  & to be beautiful \\
+		\ird{trpa} & badness   & \ird{trpan-}  & to be bad \\
+		\ird{svor} & bigness   & \ird{svorn-}  & to be big \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The derived stative verb conjugates across the full five-way aspect system.
+The continuous is closest to an equative property predication; the other
+aspects carry characteristically dynamic or inchoative readings. The full
+paradigm of \ird{mrocn-} \trsl{be beautiful} illustrates the system:
+
+\pex
+\a
+\begingl
+\gla Nužot mrocna.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Cont{}//
+\glft \trsl{The city is beautiful.} \lingcontext{continuous: current state}//
+\endgl
+\a
+\begingl
+\gla Nužot mrocnime.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Prog{}//
+\glft \trsl{The city is becoming beautiful.} \lingcontext{progressive: entering the state}//
+\endgl
+\a
+\begingl
+\gla Nužot mrocnik.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Pf{}//
+\glft \trsl{The city became beautiful.} \lingcontext{perfective: ingressive}//
+\endgl
+\a
+\begingl
+\gla Nužot mrocnaní.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Ret{}//
+\glft \trsl{The city was beautiful.} \lingcontext{retrospective: past state}//
+\endgl
+\a
+\begingl
+\gla Nužot mrocnach.//
+\glb city.\Dir{}.\Def{} be.beautiful-\textsc{contempl}//
+\glft \trsl{The city will be beautiful.} \lingcontext{contemplative: expected state}//
+\endgl
+\xe
+
+In bounded or developmental aspects --- the progressive, perfective, and
+retrospective --- stative verbs are normally interpreted ingressively unless
+context strongly resists it. The perfective thus yields \trsl{became
+beautiful}, not simply \trsl{was beautiful}; that reading belongs to the
+retrospective, which describes a past state conceived as a complete episode, a
+state that no longer obtains, or one that is no longer at issue in the current
+discourse. The continuous, by contrast, gives plain property predication
+without any implication of change, and is the unmarked form for simple
+description.
+
+The same aspectual pattern holds for underived stative verbs:
 
 \pex
 \a
 \begingl
 \gla Vytam shoda.//
 \glb shirt.\Dir{} wear-\Cont{}//
-\glft \trsl{(I) am wearing a shirt.} \lingcontext{stative: ongoing state}//
+\glft \trsl{(I) am wearing a shirt.} \lingcontext{continuous: ongoing state}//
 \endgl
 \a
 \begingl
 \gla Vytam shodime.//
 \glb shirt.\Dir{} wear-\Prog{}//
-\glft \trsl{(I) am putting on a shirt.} \lingcontext{inceptive: coming to be in the state}//
+\glft \trsl{(I) am putting on a shirt.} \lingcontext{progressive: coming to be in the state}//
 \endgl
 \xe
 
-In the perfective and retrospective, the same system yields naturally ingressive
-readings for property predicates such as \trsl{became beautiful},
-\trsl{turned good}, or \trsl{came to be bad}. Iridian therefore does not
-normally require an overt copular paraphrase for such meanings: the aspectual
-paradigm of the stative verb itself carries the relevant contrast.
+Stative verbs in the perfective take the raised allomorph \ird{-ik} rather
+than \ird{-ek}; the verbalising suffix \ird{-n-} conditions this allomorphy in
+the same manner as a stem-final \ird{e} or \ird{ě} (§\ref{sec:aspect-pf}).
+
+\subsection{Attributive forms}\label{sec:stative-attr}
+
+\subsubsection{The direct attributive in \ird{-á}}
+
+Unlike regular verbs, stative verbs derived from property roots possess a
+dedicated attributive form built by adding \ird{-á} directly to the verbalised
+root. This form is tenseless, carries no aspectual or alignment marking, and
+is used exclusively as a direct modifier within the noun phrase:
+
+\pex
+\a \ird{mrocná nuž} \trsl{a beautiful city}
+\a \ird{hradná byl} \trsl{a good child}
+\a \ird{svorná dum} \trsl{a big house}
+\xe
+
+The \ird{-á} form cannot be used predicatively. For predication, the full
+stative verb form is required:
+
+\pex
+\a \ird{Nužot mrocna.} \trsl{The city is beautiful.} \lingcontext{predicative: stative verb required}
+\a \ird{*Nužot mrocná.} \lingcontext{ungrammatical: attributive form in predicative position}
+\xe
+
+\noindent The \ird{-á} attributive functions as the adnominal counterpart of
+the continuous stative, expressing the property directly without tense or
+aspect. Its position within the noun phrase relative to determiners and other
+modifiers is treated in Chapter~\ref{ch:nouns}.
+
+\subsubsection{Superlative: \ird{-ěsk-}}
+
+A superlative or intensifying degree is formed by inserting \ird{-ěsk-}
+between the root and the \ird{-á} ending:
+
+\pex
+\a \ird{hradněská} \trsl{very good, extremely good}
+\a \ird{mrocněská} \trsl{very beautiful, extremely beautiful}
+\xe
+
+\noindent The \ird{-ěsk-} suffix is confined to the \ird{-á} attributive and
+does not attach to the finite stative verb stem.
+
+\subsection{Nominalisation of stative verbs}
+
+Finite stative verbs are nominalised by the same \ird{-ou} mechanism that
+applies to all verbs (§\ref{sec:nominalized}). The nominalised form yields a
+substantive or classifying reading rather than a simple description: the
+speaker is not merely ascribing a property but identifying a referent by that
+property or setting it in contrast to others.
+
+\pex
+\a \ird{Nužot mrocna.} \trsl{The city is beautiful.} \lingcontext{simple property predication}
+\a \ird{Nužot mrocnova.} \trsl{The city is the beautiful one.} \lingcontext{substantive: identifying or contrastive}
+\xe
+
+\pex
+\a \ird{Bylot svornik.} \trsl{The child became big (i.e.\ grew up).} \lingcontext{ingressive perfective}
+\a \ird{Bylot svornikou.} \trsl{The child is the one who grew up.} \lingcontext{nominalised perfective}
+\xe
+
+When a nominalised stative verb is used adnominally, it takes the standard
+\ird{-ovní} form:
+
+\ex
+\begingl
+\gla Svornikovní bylot Marek.//
+\glb be.big-\Pf{}-\textsc{nmlz}-\textsc{attr} child.\Dir{}.\Def{} Marek.\Dir{}//
+\glft \trsl{Marek is the child who grew up.}//
+\endgl
+\xe
+
+The continuous is an exception: the continuous stative nominalised in
+\ird{-ova} cannot be used adnominally with \ird{-ovní}. In adnominal position
+the \ird{-á} attributive must be used instead:
+
+\pex
+\a \ird{mrocná nuž} \trsl{a beautiful city} \lingcontext{correct: \ird{-á} attributive}
+\a \ird{*mrocnavní nuž} \lingcontext{ungrammatical: \ird{-ovní} built on continuous stem}
+\xe
+
+\subsection{Stable and temporary states}\label{sec:stative-stability}
+
+Not all states predicated by stative verbs are equally permanent. Some roots
+denote enduring or characteristic properties --- canonical evaluative qualities
+such as \ird{hrad} \trsl{goodness} or \ird{mroc} \trsl{beauty}, and
+dimensional properties such as \ird{svor} \trsl{bigness} --- whilst others
+denote contingent or temporary conditions: \ird{ptakn-} \trsl{be tired},
+\ird{smrn-} \trsl{be sick}, \ird{hvodn-} \trsl{be open}, \ird{žbirn-}
+\trsl{be wet}. This distinction is not encoded grammatically, but it shapes
+the naturalness and interpretation of aspectual forms.
+
+For a stable property, the continuous yields plain predication and the
+progressive is somewhat marked, carrying a clearly developmental reading that
+implies a process of change (\trsl{getting better}, \trsl{getting bigger}).
+For a temporary condition, the continuous describes a contingent present state
+(\trsl{is tired right now}) and the progressive more readily receives an
+ingressive reading (\trsl{is starting to feel tired}, \trsl{is getting sick}).
+
+Three semantic classes within the stative system may accordingly be
+distinguished: \textbf{canonical quality statives}, which denote evaluative
+properties of things (\trsl{be good}, \trsl{be beautiful}, \trsl{be bad});
+\textbf{dimensional statives}, which denote extent or scale properties
+(\trsl{be big}); and \textbf{experiential and bodily-condition statives}, which
+denote states of persons (\trsl{be ill}, \trsl{be hungry}, \trsl{be ashamed}).
+The last class most readily admits progressive and retrospective readings, since
+temporary and personally felt states support aspectual dynamics more naturally
+than stable properties do.
+
+\subsection{Valency operations with stative verbs}\label{sec:stative-valency}
+
+\subsubsection{The causative}
+
+Stative verbs admit the causative \ird{-na-}, following the same alignment
+conditions as other verbs (§\ref{sec:aspect}): nominative alignment in the
+progressive and contemplative, ergative alignment in the perfective and
+retrospective. Because stative stems end in \ird{-n-}, the causative suffix
+surfaces as \ird{-an-} rather than \ird{-na-}, the order being reversed to
+avoid a geminate cluster at the morpheme boundary:
+
+\pex
+\a
+\begingl
+\gla Marek problemam svornanime.//
+\glb Marek.\Dir{} problem.\Ind{} be.big-\Caus{}-\Prog{}//
+\glft \trsl{Marek is making the problem bigger.} \lingcontext{causative progressive; nominative alignment}//
+\endgl
+\a
+\begingl
+\gla Problem Marku svornanik.//
+\glb problem.\Dir{} Marek.\Trs{} be.big-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek made the problem bigger.} \lingcontext{causative perfective; ergative alignment}//
+\endgl
+\xe
+
+\subsubsection{The applicative}
+
+The applicative \ird{-éb-} is admitted with stative verbs but is semantically
+more restricted than with active verbs. It yields a circumstantial reading in
+which a causally implicated participant --- typically the entity or situation
+responsible for bringing about the state --- is introduced. This use is close
+to an experiencer-causative in English (\trsl{gladden}, \trsl{please}). The
+causing entity stands in the direct case; the affected participant appears in
+the indirect:
+
+\ex
+\begingl
+\gla Senica Marcí všihnébik.//
+\glb news.\Dir{} Marek.\Ind{} be.happy-\Appl{}-\Pf{}//
+\glft \trsl{The news gladdened Marek.} \lingcontext{\ird{všihn-}: be happy, be glad}//
+\endgl
+\xe
+
+\subsubsection{The antipassive}
+
+Stative verbs do not possess a transitive form and accordingly do not admit the
+antipassive. The antipassive is licensed only where an ergative transitive
+reading would otherwise be available; since stative verbs are inherently
+intransitive, no such reading exists.
 
 Stative verbs may further function as attributive modifiers of nouns and remain
 the productive attributive strategy in Iridian. Alongside them stands the small
