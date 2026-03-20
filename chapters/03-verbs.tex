@@ -43,6 +43,8 @@ The thematic consonant, being the final consonant of the stem, is phonologically
 
 Loan stems with surface \orth{g} are assigned analogically to the voiced velar/fricative series and do not require a native phoneme /g/. Palatalizing suffixes do \emph{not} follow Table~\ref{tab:verbclasses}; they invoke the broader front-vocalic mutation system described in Section~\ref{sec:front-palatalization} of Chapter~\ref{ch:phon}.
 
+Outside the closed antipassive classes, verbs use the same general morphophonemic engine as nouns: suffix class selection, weak-\ird{e} deletion or retention, grade formation where licensed, soft-stem selection, and finally cluster and voicing cleanup. The difference is one of density rather than mechanism. Nouns expose that engine most heavily in their case paradigms, while verbs deploy it more selectively in the irrealis, the simultaneous converb, the conjunctive linker, and certain nominalizing formations.
+
 \section{Valency operations}
 
 Three derivational operations may be applied to the verb stem before the aspect-alignment suffix: the antipassive, the applicative, and the causative. Where more than one is present, the order is fixed: antipassive or applicative precedes the causative.
@@ -419,9 +421,13 @@ The progressive (\ird{-ime}) encodes a dynamic activity in progress, distinguish
 
 The contemplative (\ird{-ach}) encodes a mental state directed toward a potential future action: intention, consideration, or disposition toward an act not yet performed. It may be rendered in English as \textit{about to}, \textit{considering}, or \textit{intending to}, according to context.
 
-\section{Negation}
+\section{Negation}\label{sec:negation}
 
 The negative prefix \ird{zá-} --- reduced to \ird{za-} in unstressed environments --- stands before the entire verbal complex. In the indicative it accordingly precedes the stem itself. In the imperative and hortative, negation is expressed by distinct suffixes rather than by \ird{zá-}; see Section~\ref{sec:mood}.
+
+This section describes verbal negation --- the use of \ird{zá-} with finite predicates --- exclusively. Negation in equative clauses (zero-copula constructions) and existential clauses (the \ird{jec-}/\ird{zad-} alternation) is treated in §\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}; the theoretical analysis of all three negation strategies as reflexes of a single NegP projection is developed in §\,\ref{sec:vm-neg} and §\,\ref{sec:vm-neg-exponents} of the verbal morphosyntax companion (\texttt{util/stub/verb-minim.tex}).
+
+The absence of \ird{zá-} in the prohibitive (\ird{-éma}) and in the negative hortative (\ird{-ku}) is not arbitrary. Both suffixes carry inherent negative force: in theoretical terms, [+\textsc{neg}] is a feature of the MoodP head itself in these forms, and NegP is therefore not projected. Compare the regular indicative negation, where the MoodP head is null (indicative) and NegP is projected with overt \ird{zá-}. The blocking of \ird{zá-} in prohibitive and negative hortative contexts thus follows from the general principle that [+\textsc{neg}] may be discharged at most once per clause; see §\,\ref{sec:vm-moodp} for the MoodP analysis.
 
 \section{Mood}\label{sec:mood}
 
@@ -566,6 +572,64 @@ Iridian possesses several forms that nominalize the verb. One is the lexical or 
 Antipassive stems yield agent-oriented participant nominals, unmarked transitive stems patient-oriented ones, and applicative stems nominals referring to the promoted participant.
 
 All five indicative aspects are used productively in these participant nominals: perfective, retrospective, continuous, progressive, and contemplative. The same voice-sensitive stem that determines the nominal's orientation also carries the aspectual morphology, so the nominal may refer to a completed participant, an experientially or result-relevant past participant, an ongoing or habitual participant, a participant in an event now in progress, or a participant associated with an intended or contemplated event. In this formation \ird{-ek + -ou} contracts to \ird{-ikou}, \ird{-aní + -ou} to \ird{-anou}, \ird{-a + -ou} to \ird{-ova}, and \ird{-ime + -ou} to \ird{-imou}; the contemplative stem takes \ird{-ou} without further special contraction. Thus \ird{piaščikou} \trsl{the one who ate}, \ird{piaščanou} \trsl{the one who has eaten}, \ird{piaščova} \trsl{the one who eats / is eating}, \ird{piaščimou} \trsl{the one who is in the act of eating}, \ird{piaščachou} \trsl{the one who is about to eat}, \ird{piaštnikou} \trsl{that which was eaten}, \ird{piaštnanou} \trsl{that which has been eaten}, and \ird{piaštébikou} \trsl{the one who was fed}. Their syntax, definiteness properties, and argument structure are treated in Section~\ref{sec:event-nominals} of Chapter~\ref{ch:nouns}.
+
+\subsubsection{Predicative use: participant nominals in identificational equatives}
+\label{sec:nmlz-predicative}
+
+Participant nominals may serve as the predicative complement of a zero-copula equative clause, with the topic DP identified as the entity satisfying the nominalized description. This construction has the schematic form:
+
+\begin{center}
+[\textit{topic-DP}] \ \ [\textit{(internal-arg.\Ind{})} \ \ \textit{participant-nominal}]
+\end{center}
+
+\noindent Compare the base transitive clause with its patient-nominal equative counterpart:
+
+\pex
+\a
+\begingl
+\gla Lobek Janku piaštnik.//
+\glb apple.\Dir{} Janek.\Trs{} eat-\textsc{trs}-\Pf{}//
+\glft \trsl{Janek ate the apple.} \lingcontext{standard ergative clause}//
+\endgl
+\a
+\begingl
+\gla Lobek Jancí piaštnikou.//
+\glb apple.\Dir{} Janek.\Ind{} eat-\textsc{trs}-\Pf{}-\textsc{nmlz}//
+\glft \trsl{The apple is what Janek ate.} \lingcontext{patient nominal as equative predicate}//
+\endgl
+\xe
+
+\noindent And with an agent-nominal equative:
+
+\ex
+\begingl
+\gla Janek lubcí piaščikou.//
+\glb Janek.\Dir{} apple.\Ind{} eat-\Antip{}-\Pf{}-\textsc{nmlz}//
+\glft \trsl{Janek is the one who ate the apple.} \lingcontext{agent nominal as equative predicate}//
+\endgl
+\xe
+
+Two features of the case marking are notable. First, the agent of the base
+transitive clause, which bears the transitive case in the finite verb
+construction (\ird{Janku}, \Trs{}), shifts to the indirect case
+(\ird{Jancí}, \Ind{}) when it appears as an internal argument of the
+patient nominal. Second, the patient argument suppressed by the antipassive
+in a finite clause may reappear in the indirect case as an internal argument
+of the agent nominal (\ird{lubcí} in the second example above). In both
+cases all internal arguments of the nominalized event appear in the indirect
+case, since the absolutive/direct slot of the equative clause is occupied
+by the external topic DP and no verbal case-assigning machinery operates
+within the nominalized predicate.
+
+The semantic effect of predicating a participant nominal is
+\term{identificational}: the topic DP is being identified as the unique
+referent satisfying the description encoded in the nominal. This contrasts
+with simple property-ascription equatives (\ird{Marek doktor}, \trsl{Marek
+is a doctor}) and with the plain verbal assertion (\ird{Lobek Janku
+piaštnik}, \trsl{Janek ate the apple}). Negation of identificational
+equatives with \ird{staly} and its semantic contrast with the verbal
+\ird{zá-} are treated in §\,\ref{sec:ident-equative} and
+§\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}.
 
 \section{The conjunctive / quotative linker}\label{sec:conjunctive-linker}
 
