@@ -767,11 +767,13 @@ the Mood head, which assigns nominative-style alignment by default.
 
 \section{Negation}\label{sec:negation}
 
-The negative prefix \ird{zá-} --- reduced to \ird{za-} in unstressed environments --- stands before the entire verbal complex. In the indicative it accordingly precedes the stem itself. In the imperative and hortative, negation is expressed by distinct suffixes rather than by \ird{zá-}; see Section~\ref{sec:mood}.
+The negative prefix \ird{zá-} --- reduced to \ird{za-} in unstressed environments --- stands before the entire verbal complex. In the indicative it accordingly precedes the stem itself. In the imperative, hortative, and irrealis, negation is expressed by distinct mood-specific negative suffixes rather than by \ird{zá-}; see Section~\ref{sec:mood} and §\,\ref{sec:vm-moodp}.
 
-This section describes verbal negation --- the use of \ird{zá-} with finite predicates --- exclusively. Negation in equative clauses (zero-copula constructions) and existential clauses (the \ird{jec-}/\ird{zad-} alternation) is treated in §\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}.
+This section describes verbal negation --- the use of \ird{zá-} with finite indicative predicates --- exclusively. Negation in equative clauses (zero-copula constructions) and existential clauses (the \ird{jec-}/\ird{zad-} alternation) is treated in §\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}.
 
-The absence of \ird{zá-} in the prohibitive (\ird{-é}) and in the negative hortative (\ird{-ku}) is not arbitrary. Both suffixes carry inherent negative force: in theoretical terms, [+\textsc{neg}] is a feature of the MoodP head itself in these forms, and NegP is therefore not projected. Compare the regular indicative negation, where the MoodP head is null (indicative) and NegP is projected with overt \ird{zá-}. The blocking of \ird{zá-} in prohibitive and negative hortative contexts thus follows from the general principle that [+\textsc{neg}] may be discharged at most once per clause; see §\,\ref{sec:vm-moodp} for the MoodP analysis.
+One framing point is worth flagging before the formal analysis. \ird{Zá-} is the most morphologically prominent of the three NegP exponents in Iridian, but it is also the structurally anomalous one: it surfaces as a prefix rather than in the head-final position that NegP occupies in the clause spine. In equative clauses, by contrast, Neg\textsuperscript{0} is realized as the free morpheme \ird{staly}, which surfaces exactly where the clause spine predicts --- clause-finally, after its two nominal arguments. \ird{Staly} thus provides the clearest direct evidence for the head-final status of NegP; the prefix position of \ird{zá-} is a PF-level cliticization effect, not the canonical position of the negation head. The full argument is in §\,\ref{sec:vm-neg-exponents}.
+
+The absence of \ird{zá-} in the prohibitive (\ird{-é}), the negative hortative (\ird{-ku}), and the negative irrealis (\ird{-ir}) is not arbitrary. Each of these suffixes carries [+\textsc{neg}] as a lexically inherent feature of the MoodP Vocabulary Item; when such a head is selected, NegP is simply absent from the derivation and \ird{zá-} has no Neg\textsuperscript{0} node to spell out. There is no separate blocking principle at work: the absence of NegP is the full explanation. See §\,\ref{sec:vm-moodp} for the MoodP paradigm and analysis.
 
 
 \subsection{Formal analysis: NegP and the prefix paradox}
@@ -870,23 +872,10 @@ zero-copula domain.
   \textit{var}; Japanese \textit{nai}/positive \textit{aru}).
 \end{description}
 
-\noindent The environments and their negation types:
-
-\begin{center}
-\begin{tabular}{l l l l}
-\toprule
-\textsc{predicate type} & \textsc{affirmative} & \textsc{negative} & \textsc{negation type} \\
-\midrule
-Verbal              & verbal complex        & \ird{zá-} + verbal complex & propositional \\
-Equative (plain DP) & $\emptyset$ copula    & \ird{staly}                & predicational \\
-Equative (part.\ nom.) & part.\ nom.\ + $\emptyset$ & part.\ nom.\ + \ird{staly} & identificational \\
-Existential         & \ird{jec-}            & \ird{zad-}                 & propositional \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-\medskip
-\noindent This is a conditioned allomorphy of a single
+\noindent The complete distribution, including mood-internal negation, is
+summarized in Table~\ref{tab:neg-exponents} of Chapter~\ref{ch:simple}.
+The three environments above --- verbal, equative, and existential --- are
+a conditioned allomorphy of a single
 Neg\textsuperscript{0} head, not distinct lexical negation strategies.
 The NegP projection occupies the same structural position (above AspP,
 below MoodP) in all clause types; what varies is (a) the PF exponent of
@@ -925,10 +914,13 @@ consequence of the analysis rather than a separate blocking rule.
 
 The relationship between Neg\textsuperscript{0} and the inherently
 negative mood forms (prohibitive \ird{-é}, negative hortative
-\ird{-ku}) parallels the \ird{zad-} case: these MoodP heads themselves
-carry [+\textsc{neg}], discharging the negative feature at MoodP level
-and blocking NegP projection entirely. See §\,\ref{sec:vm-moodp} for
-the MoodP analysis.
+\ird{-ku}, negative irrealis \ird{-ir}) parallels the \ird{zad-} case
+in its effect on NegP projection: when MoodP carries [+\textsc{neg}]
+as a VI-internal feature, NegP is absent from the derivation and
+\ird{zá-} accordingly does not surface. The full analysis of MoodP
+[+\textsc{neg}] --- including the semantic distinction between
+directive-scoped and propositional negation, and the restricted
+palatalizing behavior of \ird{-ir} --- is in §\,\ref{sec:vm-moodp}.
 
 \subsubsection{Identificational negation and the scope of \ird{staly}}
 \label{sec:vm-ident-neg}
@@ -991,6 +983,15 @@ whether an event occurred, \ird{zá-} is used; if the question is which
 entity was involved in a presupposed event, \ird{staly} with a participant
 nominal is used. Both are structurally expressions of a single NegP.
 
+Note also that the nominal-domain negative operators (\ird{zide}
+\trsl{no one}, \ird{niho} \trsl{nothing}, etc.; see
+§\,\ref{sec:nm-pron-operators} of Chapter~\ref{ch:nouns}) are not
+part of the clausal NegP system described here. Their interaction
+with the NegP projection --- in particular, whether they project
+their own NegP, co-occur with \ird{zá-}, or block NegP projection
+--- is an open descriptive question discussed at the relevant section
+of Chapter~\ref{ch:nouns}.
+
 \section{Mood}\label{sec:mood}
 
 The mood system comprises the indicative, the imperative, the hortative, and the irrealis. Mood is expressed by a suffix occupying the position immediately following the aspect-alignment morpheme; in the indicative this suffix is null. Where a mood suffix is present, the aspect-alignment slot is suppressed, the mood suffix replacing the full aspect complex.
@@ -1047,6 +1048,13 @@ In stems with the appropriate grade alternations, the front vowels /ɛ/ and /eː
 
 The irrealis is compatible with all three converb moods and serves as the main-clause mood in concessive constructions; both uses are treated in Chapter~\ref{ch:complex}.
 
+The negative counterpart of the irrealis is \ird{-ir}, a competing negative Vocabulary Item at MoodP rather than a suppletive form in the strict sense. Like the prohibitive \ird{-é} (negative imperative) and the negative hortative \ird{-ku}, it is inherently negative and therefore does not co-occur with the negative prefix \ird{zá-}. Phonologically, \ird{-ir} does not trigger the full palatalizing pattern of \ird{-ěv}: stems in \ird{-k} show the restricted alternation \ird{k $\rightarrow$ c}, but there is no broader \ird{-ěv}-type palatalization and no associated vowel raising. Thus the same stem that yields \ird{piaščev} in the affirmative irrealis yields \ird{piaštir} in the negative irrealis, while \ird{zděk-} forms \ird{zděcir} rather than \ird{zdíčev}. The formal analysis is in §\,\ref{sec:vm-moodp}.
+
+\pex
+\a \ird{piaštir} \trsl{would/might not eat; irrealis non-eating}
+\a \ird{zděcir} \trsl{would not bring} \lingcontext{restricted \ird{k $\rightarrow$ c}; no vowel raising; cf.\ affirmative \ird{zdíčev}}
+\xe
+
 
 \subsection{Formal analysis: the IP domain}\label{sec:vm-ip}
 
@@ -1063,10 +1071,73 @@ morpheme appears and simultaneously suppresses AspP (see
 The ordering of Mood above Asp is consistent with the cross-linguistic
 tendency for tense and mood to dominate aspect (Cinque's
 (1999) functional hierarchy places Mood$_\text{irrealis}$
-above Asp$_\text{perfective/imperfective}$). The suppletive mood
-paradigms (indicative zero, imperative \ird{-ím}, prohibitive
-\ird{-é}, hortative \ird{-ká/-ku}, irrealis \ird{-ěv}) are
-competing Vocabulary Items inserted at the MoodP head.
+above Asp$_\text{perfective/imperfective}$). The mood paradigm
+consists of competing Vocabulary Items inserted at the MoodP head:
+
+\begin{center}
+\begin{tabular}{l l l}
+\toprule
+\textsc{mood} & \textsc{affirmative vi} & \textsc{negative vi} \\
+\midrule
+Indicative   & $\emptyset$      & ---\quad (NegP projected; \ird{zá-}) \\
+Imperative   & \ird{-ím}        & \ird{-é} \hspace{3pt}(prohibitive) \\
+Hortative    & \ird{-ká}        & \ird{-ku} \\
+Irrealis     & \ird{-ěv}        & \ird{-ir} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip
+\noindent Three of the eight cells above carry a lexically specified
+[+\textsc{neg}] feature as part of their Vocabulary Item: the prohibitive
+\ird{-é}, the negative hortative \ird{-ku}, and the negative irrealis
+\ird{-ir}. This is a property of the individual VI, not a productive
+morphological operation; there is no synchronic rule that derives the
+negative cell from the affirmative. The affirmative/negative pairing
+is an artifact of their paradigmatic organization at MoodP, not of
+compositional negation.
+
+When a MoodP head bearing [+\textsc{neg}] is selected, NegP is absent
+from the derivation entirely: the clause is assembled with the negative
+MoodP merging directly above AspP, and no Neg\textsuperscript{0} head
+enters the numeration. \ird{Zá-}, as the PF exponent of
+Neg\textsuperscript{0}, therefore has no node at which to be inserted
+and does not surface. No independent blocking principle is required;
+the absence of \ird{zá-} is a simple consequence of NegP not being
+projected.
+
+An important asymmetry follows. The indicative is the only mood that
+projects NegP and uses \ird{zá-}: it is the only cell in the MoodP
+paradigm whose negative value is expressed by a separate functional
+projection rather than by an inherently negative VI. The three
+non-indicative moods each have their own negative VI, rendering NegP
+superfluous in those environments.
+
+The semantic character of MoodP [+\textsc{neg}] differs from that of
+NegP [+\textsc{neg}]. NegP negation is propositional: it operates over
+a truth-evaluable event description and inverts its truth conditions.
+MoodP [+\textsc{neg}] is directive-scoped: it negates the force or
+modality encoded by the MoodP head (a command, a suggestion, a
+hypothetical situation), not a proposition. A prohibitive such as
+\ird{piaštéb-é} \trsl{Don't feed anyone!} does not have
+truth conditions in the ordinary sense; its negation qualifies the
+directive illocution, not a predicate. Likewise, the negative
+irrealis \ird{piaštir} denies the hypothetical or counterfactual
+applicability of the event, rather than asserting that a proposition
+is false. The two types of [+\textsc{neg}] are formally parallel in
+their blocking of NegP projection; they are semantically distinct in
+scope and illocutionary function.
+
+The negative irrealis \ird{-ir} shows only a restricted front-vocalic
+effect. In stems ending in \ird{-k}, it triggers the alternation
+\ird{k $\rightarrow$ c}, but it does not otherwise trigger the broader
+verbal palatalization pattern associated with \ird{-ěv}: there is no
+\ird{č}-output and no accompanying vowel raising. This partial behavior
+sets it apart both from fully palatalizing \ird{-ěv} and from wholly
+non-palatalizing \ird{-ic}. Accordingly, \ird{zděc-ir} is the correct
+negative irrealis of \ird{zděk-} \trsl{bring}, not \ird{*zděkir} and
+not \ird{*zdíčir}; stems such as \ird{piašt-} still surface simply as
+\ird{piaštir}.
 
 
 \subsubsection{Inner evidential (EvidP$_\text{inner}$)}
@@ -2008,6 +2079,46 @@ descriptions. Asp does not cease to apply to stative predicates; rather, its
 semantic contribution is interpreted over a predicate whose lexical content is
 stative.
 
+A consequence of this analysis for negation deserves explicit statement,
+since the surface form of stative predications can resemble zero-copula
+equatives. Consider the contrast:
+
+\begin{center}
+\begin{tabular}{l l l}
+\toprule
+\textsc{predication type} & \textsc{affirmative} & \textsc{negative} \\
+\midrule
+Zero-copula equative & \ird{Marek doktor} & \ird{Marek doktor staly} \\
+Stative verbal       & \ird{Nužot mrocna} & \ird{Nužot zámrocna} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip
+\noindent The two clause types are superficially similar: both surface as [DP
+Pred V?] with no overt copula and no aspectual suffix. Yet their negation
+strategies differ sharply. The zero-copula equative takes \ird{staly} (the
+free-morpheme Neg\textsuperscript{0} exponent), because there is no verbal host
+for \ird{zá-} to cliticize onto. The stative verbal predication takes \ird{zá-},
+because \ird{mrocna} is a finite verb (the continuous form of \ird{mrocn-}
+\trsl{be beautiful}), which provides the verbal host that cliticization requires.
+
+The structural distinction is therefore the presence or absence of a finite
+verbal head. In zero-copula equatives, the predicate is a bare DP (or
+participant nominal); there is no V head in the clause and AspP is not
+projected. In stative verbal predications, the property root combines with
+the stativizing suffix \ird{-n-} to yield a proper verbal stem, which is
+inflected for Asp.Align in the usual way. Neg\textsuperscript{0} therefore
+takes a verbal complement and its exponent is \ird{zá-}. The two predicate
+types are formally distinguished by the presence of \ird{-n-} (and the
+resulting finite Asp slot), not by anything special about the NegP layer.
+
+The boundary becomes potentially unclear only with underived property adjuncts
+that lack \ird{-n-}, if any such items exist; the present analysis treats all
+property predications as going through the \ird{-n-} stativizer. See
+§\,\ref{sec:vm-tension-neg} for the related open question about
+complementarity of the three Neg\textsuperscript{0} exponents.
+
 The syntactic infrastructure of the stative domain therefore distinguishes
 three outputs from the same lexical base. First, the finite stative verb heads
 the clause's verbal predicate and requires no copula in ordinary property
@@ -2438,28 +2549,31 @@ prediction that NegP, being above AspP, should correspond to a
 morpheme outside AspP (i.e., as a suffix). Cross-linguistic
 research on verbal negation in SOV languages (Dryer 2013) shows that prefix negation is common in
 such languages, suggesting a systematic PF convention rather than
-a Mirror Principle violation. The preferred account (morphological
-incorporation at PF) should be tested against the following: (a)
-Does \ird{zá-} form an independent prosodic word? (b) Can anything
-intervene between \ird{zá-} and the stem (e.g., focus particles)?
-(c) In ellipsis or fragment contexts, can \ird{zá-} appear without
-the full verbal complex? These tests would confirm or disconfirm
-the cliticization analysis.
+a Mirror Principle violation. The preferred account --- morphological
+incorporation at PF --- makes the following empirical predictions
+that can be tested directly: (a) \ird{Zá-} does not form an
+independent prosodic word; it is a bound clitic on the verbal
+complex and cannot receive independent stress or be separated by
+an intervening focus particle. (b) Nothing may intervene between
+\ird{zá-} and the stem; if focus or evidential particles can split
+the two, the cliticization analysis would need revision. (c) In
+ellipsis or fragment contexts, \ird{zá-} cannot appear stranded
+without the full verbal complex (unlike a free-standing negative
+head, which should be able to survive ellipsis of its complement).
 
-Two additional diagnostics bear on the three-exponent analysis
-developed in §\,\ref{sec:vm-neg-exponents}: (d) Does \ird{staly}
-exhibit any paradigmatic variation (aspect, person, mood, or
-iterative forms)? If it is fully invariant --- bearing no
-morphological marking of the sort that a finite verbal head
-would carry --- this strongly supports treating it as a
-Neg\textsuperscript{0} head rather than as a defective verbal
-root. (e) Is the conditioning environment for the three exponents
-(\ird{zá-}, \ird{staly}, \ird{zad-}) strictly complementary, or
-are there overlap contexts --- e.g., a negated \ird{neh-} clause or
-a negated stative predication --- that require further
-disambiguation? The current description treats the three domains
-as mutually exclusive, but edge cases near the equative/stative
-boundary (§\,\ref{sec:vm-tension-stative}) should be examined.
+Two additional predictions bear on the three-exponent analysis
+developed in §\,\ref{sec:vm-neg-exponents}: (d) \ird{Staly} is
+fully invariant, bearing no aspect, person, mood, or iterative
+marking. If future data reveal paradigmatic variation, the
+Neg\textsuperscript{0} analysis would need revision in favour of
+a defective verbal root. (e) The conditioning environments for
+the three exponents (\ird{zá-}, \ird{staly}, \ird{zad-}) are
+strictly complementary, delineated by the presence or absence of
+a finite verbal host (see §\,\ref{sec:vm-tension-stative} for the
+equative/stative boundary, which is now explicitly resolved). Any
+attested overlap context --- a clause where the predicate is
+ambiguous between equative and stative --- would require the
+complementarity claim to be refined.
 
 \subsection{The person clitic and the absolutive Agr problem}
 \label{sec:vm-tension-agr}
@@ -2521,7 +2635,7 @@ the morphological exponents of each relevant layer.
     & Person clitic; optional; absolutive cross-reference \\
     & \textsc{EvidP}$_\text{inner}$ & \ird{-ejte} (?)
     & Indirect evidential; inside verbal complex \\
-    & \textsc{MoodP} & \ird{-ím, -é, -ká, -ku, -ěv}, $\emptyset$
+    & \textsc{MoodP} & \ird{-ím, -é, -ká, -ku, -ěv, -ir}, $\emptyset$
     & Non-indicative moods; suppresses Asp when overt \\
     & \textsc{NegP} & \ird{zá-} (prefix)
     & Clausal negation; PF-cliticized to verbal complex \\
