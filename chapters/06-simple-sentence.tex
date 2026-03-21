@@ -33,6 +33,55 @@ Aspect choice is therefore partly a pragmatic decision: the speaker selects the 
 
 The canonical word order in Iridian is SOV (subject-object-verb), where the finite verb is clause-final. This order is relatively rigid for the finite verb itself, which must appear last. The ordering of nominal arguments before the verb is more flexible and is governed by information structure rather than strict grammatical requirements. Topic-initial and focus-final tendencies apply within the pre-verbal domain.
 
+\subsection{Lexical manner and frequency adverbs in the preverbal field}
+\label{sec:lexical-adverb-position}
+
+Lexical adverbs belong to the comment domain of the clause rather than to the
+topic field. In the unmarked structure, derived manner adverbs in \ird{-ě} are
+best analyzed as low adjuncts adjoined to vP or to the outer VP. Because
+Iridian is head-final, these adverbs surface in the preverbal field, below
+topic and focus material and outside the fixed hierarchy of preverbal particles
+described in Chapter~\ref{ch:function-words}. Their neutral placement is
+therefore lower than that of clause-typing or stance particles but still to
+the left of the finite verb.
+
+\begin{center}
+\term{[TopP Topic [IP \ldots [vP MANNER-ADV [VP Object V ]]]]}
+\end{center}
+
+\noindent The neutral surface order in an intransitive clause is accordingly
+\term{Adverb $>$ Verb}:
+
+\pex
+\a
+\begingl
+\gla Skorně zmačime.//
+\glb quickly run-\Prog{}//
+\glft \trsl{I am running quickly.}//
+\endgl
+\xe
+
+\noindent In a transitive clause, where the object remains in the low
+complement domain, the neutral order is \term{Adverb $>$ Object $>$ Verb}:
+
+\pex
+\a
+\begingl
+\gla Skorně bylam piaštébime.//
+\glb quickly child.\Dir{} eat-\Appl{}-\Prog{}//
+\glft \trsl{I am feeding the child quickly.}//
+\endgl
+\xe
+
+\noindent Frequency adverbs such as \ird{ohly} \trsl{sometimes},
+\ird{roca} \trsl{often}, \ird{člíně} \trsl{infrequently}, and \ird{sabo}
+\trsl{never} belong to the same broad lexical-adverb domain, though their
+semantics are higher and more event-quantificational than those of pure manner
+adverbs. Even so, they are not members of the rigid particle series. More
+leftward placement of lexical adverbs is possible under discourse pressure, but
+such ordering belongs to marked information structure and should not be taken
+as the neutral pattern.
+
 % [Examples: SOV default, pragmatic reordering, focus movement]
 
 \section{The copula and existential constructions}\label{sec:copula}
@@ -254,31 +303,64 @@ In the continuous aspect, \ird{neh-} may describe a newly entered or recently ch
 
 The sequential converb \ird{nesu} --- colloquially \ird{nu} --- is a suppletive form established independently of the regular aspect paradigm. Its grammaticalization as a discourse particle is described in Section~\ref{sec:seq-copula} of Chapter~\ref{ch:complex}.
 
-\subsection{The existential verb \ird{jec-}: existence, presence, and having}\label{sec:jec}
+\section{Existential constructions}
+\label{sec:existential-constructions}
 
-The existential verb \ird{jec-} is a true clause-final verb asserting the existence or presence of a referent. It inflects for all aspects; its paradigm is strongly suppletive and morphologically irregular, with the perfective and retrospective built on a distinct suppletive root. Principal forms are given in Table~\ref{tab:jec-paradigm}.
+\subsection{Overview}
+\label{sec:existential-overview}%
+\label{sec:jec}% retained for cross-reference compatibility
+\label{sec:zad}% retained for cross-reference compatibility
+\label{sec:jec-zad}% retained for cross-reference compatibility
+
+Iridian expresses existential predication through a pair of suppletive verbal
+roots that together constitute the affirmative/negative alternation of a single
+functional head, Exist\textsuperscript{0}. The affirmative root \ird{jec-}
+asserts the existence or presence of a referent; the negative root \ird{zad-}
+denies it. Both inflect for the full aspect system; both are morphologically
+irregular and suppletive, with the perfective and retrospective built on
+distinct suppletive stems. The two paradigms are given together in
+Table~\ref{tab:jec-zad-paradigm}.
 
 \begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Principal forms of \ird{jec-} (existential verb).}\label{tab:jec-paradigm}
-	\medskip
-	\begin{tabularx}{0.72\textwidth}{L l}
-		\toprule
-		{\sc form} & {\sc iridian} \\
-		\midrule
-		Continuous          & \ird{jeca} \\
-		Progressive         & \ird{jecime} \\
-		Contemplative       & \ird{jecach} \\
-		Perfective          & \ird{žek} \\
-		Retrospective       & \ird{žaní} \\
-		Sequential converb  & \ird{žu} \\
-		\bottomrule
-	\end{tabularx}
+  \footnotesize\sffamily
+  \caption{Principal forms of \ird{jec-} (\textsc{exst}) and \ird{zad-} (\textsc{neg.exst}).}\label{tab:jec-zad-paradigm}
+  \medskip
+  \begin{tabularx}{0.88\textwidth}{L l l}
+    \toprule
+    {\sc form} & \ird{jec-} (\textsc{exst}) & \ird{zad-} (\textsc{neg.exst}) \\
+    \midrule
+    Continuous          & \ird{jeca}   & \ird{zada} \\
+    Progressive         & \ird{jecime} & \ird{zdíme} \\
+    Contemplative       & \ird{jecach} & \ird{zadach} \\
+    Perfective          & \ird{jak}    & \ird{zděk} \\
+    Retrospective       & \ird{ján}   & \ird{znení} \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
-The division of labour between \ird{jec-} and the zero-copula construction is loosely parallel to the Japanese distinction between the existential verbs \textit{iru} and \textit{aru} on the one hand and the equative \textit{da}/\textit{desu} on the other: \ird{jec-} covers existence and presence; zero copula covers identity and class membership.
+The two roots are not independent lexical items but are best understood as
+suppletive allomorphs of the same Exist\textsuperscript{0} head: \ird{jec-} is
+the default exponent, inserted when NegP is absent from the derivation;
+\ird{zad-} replaces it when NegP is present, absorbing the negative feature
+entirely and leaving Neg\textsuperscript{0} with no independent PF reflex. The
+structural and distributional consequences of this analysis are developed in
+§\,\ref{sec:neg-exst-alternation} and §\,\ref{sec:vm-jec-zad} below. The
+division of labour between \ird{jec-} and the zero-copula construction is
+loosely parallel to the Japanese distinction between the existential verbs
+\textit{iru} and \textit{aru} on the one hand and the equative
+\textit{da}/\textit{desu} on the other: \ird{jec-} covers existence and
+presence; zero copula covers identity and class membership.
 
-\paragraph{Existence and presence.} The primary use of \ird{jec-} is to assert that a referent exists or is present. The entity in question stands in the direct case.
+Iridian has three main productive uses of the existential construction: to
+assert existence or presence, including location in a particular place
+(\S\,\ref{sec:existence-and-presence}), to express possession
+(\S\,\ref{sec:existence-possession}), and certain idiomatic presentational
+constructions (\S\,\ref{sec:existential-presentatives}).
+
+
+\subsection{Existence and presence}\label{sec:existence-and-presence}
+
+The primary use of \ird{jec-} is to assert that a referent exists or is present at the moment of utterance or within a contextually given frame. The entity in question stands in the direct case. \ird{Zad-} forms the direct negative counterpart, asserting non-existence or absence under the same structural conditions.
 
 \pex
 \a
@@ -289,13 +371,69 @@ The division of labour between \ird{jec-} and the zero-copula construction is lo
 \endgl
 \a
 \begingl
-\gla Kroumaště na po zma jeca pivo.//
-\glb refrigerator.\Ind{} in still few \Exst{}-\Cont{} beer.\Dir{}//
-\glft \trsl{There is still some beer left in the refrigerator.}//
+\gla Byl zada.//
+\glb child.\Dir{} \NegExst{}-\Cont{}//
+\glft \trsl{There is no child. / No child is present.}//
 \endgl
 \xe
 
-\paragraph{Location.} \ird{Jec-} is also used when locating an entity: the entity appears in the direct case and the location is expressed by an indirect noun phrase followed by a postposed clitic adposition.
+\pex
+\a
+\begingl
+\gla Kroumaště na pivo s jeca.//
+\glb refrigerator.\Ind{} in beer.\Dir{} still \Exst{}-\Cont{}//
+\glft \trsl{There is still (some) beer left in the refrigerator.}//
+\endgl
+\a
+\begingl
+\gla Kroumaště na pivo zada.//
+\glb refrigerator.\Ind{} in beer.\Dir{} \NegExst{}-\Cont{}//
+\glft \trsl{There is no beer in the refrigerator.}//
+\endgl
+\xe
+
+Within the Minimalist framework, \ird{jec-} is the phonological exponent of a dedicated functional head, \term{Exist}\textsuperscript{0}, which projects \term{ExistP} as the innermost stratum of the clause spine --- the slot occupied by root VP in ordinary verbal clauses. The sole argument it licenses is the \term{existential pivot}: the DP asserted to exist, bearing the direct case as the complement of Exist\textsuperscript{0}. ExistP is then selected by Asp\textsuperscript{0}, which contributes the aspect suffix, and feeds the higher functional sequence including NegP. When NegP is absent, Exist\textsuperscript{0} is spelled out as \ird{jec-}; when NegP is present, suppletive Vocabulary Insertion replaces \ird{jec-} with \ird{zad-}, leaving Neg\textsuperscript{0} with no independent PF exponent. The affirmative and negative structures of \ird{Byl jeca} and \ird{Byl zada} are shown below:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{AspP}
+    [\textit{byl}\\child.\Dir{}\\{\small(pivot)}]
+    [\textsc{Asp$'$}
+      [\textsc{Asp}\\\textsc{[cont]}: \ird{-a}]
+      [\textsc{ExistP}
+        [\textsc{Exist$'$}
+          [\textsc{Exist}\\\ird{jec-}]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\hspace{2em}
+\begin{forest}
+  syntax tree
+  [\textsc{NegP}
+    [\textit{byl}\\child.\Dir{}\\{\small(pivot)}]
+    [\textsc{Neg$'$}
+      [\textsc{Neg}\\{\small($\varnothing$: absorbed by suppletive)}]
+      [\textsc{AspP}
+        [\textsc{Asp$'$}
+          [\textsc{Asp}\\\textsc{[cont]}: \ird{-a}]
+          [\textsc{ExistP}
+            [\textsc{Exist$'$}
+              [\textsc{Exist}\\\ird{zad-}\\{\small(suppletive)}]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The pivot surfaces to the left as the absolutive topic constituent, base-generated preverbal under head-finality; no movement is required. In the affirmative it occupies Spec,AspP; in the negative it occupies Spec,NegP. The Neg\textsuperscript{0} feature is discharged by conditioning the suppletive readjustment \ird{jec-} $\rightarrow$ \ird{zad-} at Exist\textsuperscript{0}, and has no residual PF exponent of its own.
+
+\paragraph{Location.} \ird{Jec-} is also used to locate an entity: the entity appears in the direct case and the location is expressed by an indirect noun phrase followed by a postposed clitic adposition. \ird{Zad-} negates location, asserting that the referent is not present at the named location.
 
 \pex
 \a
@@ -304,54 +442,126 @@ The division of labour between \ird{jec-} and the zero-copula construction is lo
 \glb Marek.\Dir{} house.\Ind{} in \Exst{}-\Cont{}//
 \glft \trsl{Marek is at home.}//
 \endgl
+\a
+\begingl
+\gla Marek dumě na zada.//
+\glb Marek.\Dir{} house.\Ind{} in \NegExst{}-\Cont{}//
+\glft \trsl{Marek is not at home. / Marek is absent.}//
+\endgl
 \xe
 
-\paragraph{Having.} Possession is expressed through \ird{jec-} with an oblique possessor: `I have X' is construed as `there is X at me', with the possessor in the indirect case and the possessed item in the direct.
+\noindent The locative phrase is merged as a PP adjunct to ExistP, introducing the spatial domain within which the existential relation holds, without altering the valency of Exist\textsuperscript{0}. The pivot remains the sole direct argument; the structures parallel those for bare existentials above, with the PP adjoined at the ExistP periphery in both affirmative and negative derivations.
+
+
+\subsection{Possession}\label{sec:existence-possession}
+
+Iridian has no separate verb meaning \trsl{have}. What English presents as \trsl{I have X} is in Iridian construed as \trsl{there is X at me}: the possessor stands in the indirect case, the possessed thing in the direct, and the construction is a special case of existential predication. \ird{Zad-} produces the negative possessive, asserting that the possessed item does not exist within the possessor's sphere.
+
+The ordinary arrangement of the clause places the possessor phrase first, the possessed noun next, and the existential verb last:
+
+\begin{center}
+[\emph{possessor}.\Ind{} \ \ird{na}] \ \ [\emph{possessee}.\Dir{}] \ \ \ird{jec-} / \ird{zad-}
+\end{center}
+
+\noindent The possessed noun is the thing whose existence is asserted or denied relative to the possessor as reference point. In grammatical terms it is the existential pivot --- the direct argument of Exist\textsuperscript{0} --- while the possessor is an oblique locative domain, a PP adjunct to ExistP, within which the existential relation holds.
 
 \pex
 \a
 \begingl
 \gla Bylam na tóm jeca.//
 \glb child.\Ind{} in/on book.\Dir{} \Exst{}-\Cont{}//
-\glft \trsl{The child has a book. (Lit.\ At the child there is a book.)}//
+\glft \trsl{The child has a book.}//
+\endgl
+\a
+\begingl
+\gla Bylam na tóm zada.//
+\glb child.\Ind{} in/on book.\Dir{} \NegExst{}-\Cont{}//
+\glft \trsl{The child does not have a book.}//
 \endgl
 \xe
 
-In addition to bare existential assertions, the continuous existential form
-\ird{jeca} licenses a
-\term{presentational} construction in which the referent introduced by the
-existential is modified by a nominalized participial attributive. This
-construction is used not to report an event as such, but to bring a referent
-into the discourse by anchoring it to an event in which that referent is the
-salient non-agentive participant. Its canonical shape is:
+\pex
+\a
+\begingl
+\gla Tóm bylam na jeca.//
+\glb book.\Dir{} child.\Ind{} in/on \Exst{}-\Cont{}//
+\glft \trsl{As for the book, it is with the child.}//
+\endgl
+\a
+\begingl
+\gla Tóm bylam na zada.//
+\glb book.\Dir{} child.\Ind{} in/on \NegExst{}-\Cont{}//
+\glft \trsl{As for the book, the child does not have it.}//
+\endgl
+\xe
+
+\noindent The second pair illustrates that topic-initial order is fully available with \ird{zad-} on the same terms as with \ird{jec-}: the alternation belongs to the preverbal field and is independent of the affirmative/negative opposition.
+
+Following Freeze (1992) and the localist tradition, possession is treated here as a structural subtype of location: \trsl{the book exists at the child}. The possessor phrase [\textit{possessor}.\Ind{} \ird{na}] and a plain locative phrase [\textit{location}.\Ind{} \ird{na}] are structurally parallel: both are oblique PPs that modify ExistP without altering the valency of Exist\textsuperscript{0}. The affirmative and negative possessive structures are:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{ExistP}
+    [\textit{PP}\\{\ird{bylam na}}\\{\small(possessor)}]
+    [\textsc{ExistP}
+      [\textit{tóm}\\book.\Dir{}\\{\small(pivot)}]
+      [\textsc{Exist$'$}
+        [\textsc{Exist}\\\ird{jec-}]
+      ]
+    ]
+  ]
+\end{forest}
+\hspace{2em}
+\begin{forest}
+  syntax tree
+  [\textsc{NegP}
+    [\textit{tóm}\\book.\Dir{}\\{\small(pivot)}]
+    [\textsc{Neg$'$}
+      [\textsc{Neg}\\{\small($\varnothing$)}]
+      [\textsc{AspP}
+        [\textsc{Asp$'$}
+          [\textsc{Asp}\\\textsc{[cont]}: \ird{-a}]
+          [\textsc{ExistP}
+            [\textit{PP}\\{\ird{bylam na}}\\{\small(possessor)}]
+            [\textsc{ExistP}
+              [\textsc{Exist$'$}
+                [\textsc{Exist}\\\ird{zad-}\\{\small(suppletive)}]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The structural parallelism between locative and possessive existentials is a direct consequence of this unified analysis: both constructions merge a PP at the ExistP periphery, and the only grammatical difference is the semantic content of the oblique phrase itself. The suppletive readjustment applies identically in both frames; the PP adjunct is unaffected by the presence or absence of NegP.
+
+Since possession is expressed through the existential verb, possessive clauses naturally inflect across the full aspectual system, and \ird{jec-} and \ird{zad-} participate symmetrically in these aspectual contrasts. The continuous is the common unmarked form: \ird{Bylam na tóm jeca} \trsl{the child has a book}; \ird{Bylam na tóm zada} \trsl{the child does not have a book}. The progressive conveys a relation in the course of arising: \ird{Bylam na tóm jecime} \trsl{the child is getting a book}. The contemplative projects into prospect: \ird{Bylam na tóm jecach} \trsl{the child will have a book}. The perfective, applied to so stative a predicate, yields an inchoative sense: \ird{Bylam na tóm jak} \trsl{the child got a book}. The retrospective places the relation in a prior frame: \ird{Bylam na tóm žaní} \trsl{the child had a book}. In all these forms the construction remains fundamentally existential: the possessed noun remains the direct pivot, the possessor remains oblique, and the aspect alters only the speaker's view of the relation.
+
+Since the possessed noun is the existential pivot, indefinite possessees are especially natural. Definite possessees are not excluded, but with them the clause more readily shades toward a meaning of location, availability, or custody rather than settled ownership --- a consequence of the existential source of the construction.
+
+
+\subsection{The presentational construction}\label{sec:existential-presentatives}
+
+The continuous form \ird{jeca} licenses a \term{presentational} construction in which the existential pivot is a complex DP modified by a nominalized participial attributive. This construction introduces a referent into discourse by anchoring it to an event in which that referent is the salient non-agentive participant, rather than reporting the event itself. Its canonical shape is:
 
 \begin{center}
 [\textit{internal-arg.\Ind{}} \ \textit{participant-oriented-attributive} \ \textit{head-NP}.\Dir{}] \ \ \ird{jeca}
 \end{center}
 
-\noindent The modifier is canonically oriented toward the participant that the
-embedded stem privileges: the patient or theme of a transitive predicate, the
-recipient or beneficiary of an applicative stem, or more generally the
-non-agentive participant that emerges from the event as the discourse-relevant
-referent. The construction therefore occupies a niche between simple existential
-presentation and ordinary event-reporting: it introduces \trsl{a letter that
-the woman wrote}, \trsl{an apple Janek ate}, or \trsl{a child someone fed},
-rather than asserting the writing, eating, or feeding event for its own sake.
+\noindent The modifier is canonically oriented toward the participant the embedded stem privileges: the patient or theme of a transitive predicate, the recipient or beneficiary of an applicative stem, or more generally the non-agentive participant that emerges from the event as the discourse-relevant referent. The construction therefore introduces \trsl{a letter that the woman wrote} or \trsl{a child someone fed} rather than asserting the writing or feeding for its own sake.
 
-\ird{Jeca} is fixed in this use. The construction is not freely productive
-across the aspectual paradigm of the existential verb. Temporal and
-aspectual interpretation instead comes from the embedded participant-oriented
-modifier itself, which may be perfective, retrospective, continuous,
-progressive, or contemplative according to the event being used to identify the
-referent. The matrix \ird{jeca} simply signals that the referent is being
-introduced into the current discourse.
+\ird{Jeca} is fixed in this use. Temporal and aspectual interpretation come from the embedded participant-oriented modifier, which may be perfective, retrospective, continuous, progressive, or contemplative. The matrix \ird{jeca} signals only that the referent is being introduced into the current discourse.
 
 \pex
 \a
 \begingl
 \gla Obrohnikovní senica jeca.//
 \glb read-\textsc{trs}-\Pf{}-\textsc{attr} news.\Dir{} \Exst{}-\Cont{}//
-\glft \trsl{There is some news that (I) read.} \lingcontext{presentational existential; patient/theme introduced}//
+\glft \trsl{There is some news that (I) read.} \lingcontext{patient/theme introduced}//
 \endgl
 \a
 \begingl
@@ -373,92 +583,132 @@ introduced into the current discourse.
 \endgl
 \xe
 
-Because the function of this construction is presentational, agentive
-heads are disfavoured. An agent is ordinarily presented by a plain verbal clause
-or, where identification is intended, by an identificational equative
-(§\,\ref{sec:ident-equative}); the existential-presentational construction is
-instead the natural means of introducing a participant that has been perceived,
-affected, selected, or otherwise brought into discourse by the event. Agentive
-head nouns are accordingly at best marked extensions, typically requiring an
-agent-oriented derivation and a special discourse setting in which the agent
-itself is being introduced as the unexpected or newly relevant referent.
+\noindent The structural basis for this construction is that the pivot position of ExistP may be occupied by any DP of appropriate referential properties. When the pivot is a complex DP --- a head noun modified by a participant-oriented attributive --- ExistP introduces into discourse a referent identified and anchored via an event in which that referent is the salient non-agentive participant. The attributive is an adjunct within the pivot DP; it is \emph{not} a predicate of the matrix clause and contributes no independent propositional content at the matrix level. The matrix Exist\textsuperscript{0} asserts only $\textsc{exist}(x)$ for the complex, event-anchored pivot $x$. This decomposition directly accounts for the fixedness of \ird{jeca}: because the existential head's semantic contribution is reduced to discourse introduction, the least-marked aspect (continuous, unbounded) is the appropriate exponent; any other aspect would impose a viewpoint on the existential state itself, conflicting with the temporal interpretation already contributed by the embedded attributive.
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{AspP}
+    [\textsc{DP}\\{\small(pivot)}
+      [\textit{AttrP}\\\ird{obrohnikovní}\\{\small read-\textsc{trs}-\Pf{}-\textsc{attr}}]
+      [\textit{NP}\\\ird{senica}\\news.\Dir{}]
+    ]
+    [\textsc{Asp$'$}
+      [\textsc{Asp}\\\ird{jec-a}\\{\small(Exist+Cont)}]
+      [\textsc{ExistP}
+        [\textsc{Exist$'$}
+          [\textsc{Exist}\\\ird{jec-}]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+Because the function of this construction is presentational, agentive heads are disfavoured. An agent is ordinarily presented by a plain verbal clause or, where identification is intended, by an identificational equative (§\,\ref{sec:ident-equative}); the existential-presentational construction is instead the natural means of introducing a participant that has been perceived, affected, selected, or otherwise brought into discourse by the event.
 
 \ex
 \begingl
 \gla ?Senicět obroždkovní chrás jeca.//
 \glb news.\Ind{}.\Def{} read-\textsc{antip}-\Pf{}-\textsc{attr} person.\Dir{} \Exst{}-\Cont{}//
-\glft \trsl{There is a person who read the news.} \lingcontext{formally possible, but marked: agentive head disfavoured in the presentational existential}//
+\glft \trsl{There is a person who read the news.} \lingcontext{formally possible, but marked: agentive head disfavoured}//
 \endgl
 \xe
 
-The pragmatic trigger for the construction is therefore not merely
-\trsl{focus on the patient}, but the introduction of a discourse referent by
-way of an event in which that referent is the salient non-agentive pivot. It is
-especially natural on first mention, in recognition or discovery contexts, and
-at points of topic shift where the new discourse centre is what was seen, read,
-heard, found, given, or otherwise affected. In this respect the construction is
-parallel to presentational patterns in languages that preferentially relativize
-or nominalize the non-agentive pivot. Its limited productivity --- fixed matrix
-\ird{jeca}, participant-oriented modifier, and strong preference for
-non-agentive heads --- is part of what defines it as a discourse construction
-rather than as a general existential clause type.
+\noindent This disfavour is structurally grounded: existential predicates cross-linguistically require their pivot to be discourse-new and referentially non-presupposed (the Iridian analogue of Milsark's 1974 definiteness restriction). Agents, as the prototypical topical and volitional participants, are characteristically presupposed or previously introduced, making them poor existential pivots. Patients, themes, recipients, and other non-agentive participants are characteristically discourse-new and are therefore the natural heads of a presentational pivot DP.
 
-\subsection{The negative existential verb \ird{zad-}}\label{sec:zad}
-
-The root \ird{zad-} is the suppletive negative counterpart of \ird{jec-}: it
-asserts the non-existence or absence of a referent, and it carries the full
-aspect paradigm of a finite verbal root. In structural terms, \ird{zad-} is
-the Vocabulary Item inserted at the existential root node when
-Neg\textsuperscript{0} is present in the derivation. Rather than spelling out
-Neg\textsuperscript{0} as a separate prefix, negation is absorbed into the
-root through DM-style suppletive readjustment: \ird{jec-} is replaced by
-\ird{zad-}, and Neg\textsuperscript{0} has no independent PF exponent. This
-is the same mechanism by which suppletive negative existentials function
-cross-linguistically (cf.\ Japanese \textit{nai}/\textit{aru}).
-
-The incompatibility of \ird{zad-} with the prefix \ird{zá-} follows from this
-analysis: since Neg\textsuperscript{0} is already discharged by triggering the
-suppletive root, there is no NegP head left to spell out as \ird{zá-}.
-Combining \ird{zá-} with \ird{zad-} would require two Neg\textsuperscript{0}
-heads in the same clause, which would be structurally ill-formed and
-semantically uninterpretable as double negation. Its paradigm is given in
-Table~\ref{tab:zad-paradigm}.
-
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Principal forms of \ird{zad-} (negative existential verb).}\label{tab:zad-paradigm}
-	\medskip
-	\begin{tabularx}{0.72\textwidth}{L l}
-		\toprule
-		{\sc form} & {\sc iridian} \\
-		\midrule
-		Continuous          & \ird{zada} \\
-		Progressive         & \ird{zadime} \\
-		Contemplative       & \ird{zadach} \\
-		Perfective          & \ird{žatek} \\
-		Retrospective       & \ird{žataní} \\
-		Sequential converb  & \ird{zadu} \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
+The negative counterpart of the presentational construction is formed with \ird{zada}. The negative presentational denies the existence of the event-anchored discourse referent rather than negating the event itself: NegP scopes over ExistP, and the negative asserts that no referent satisfying the event-anchored description exists. As with \ird{jeca}, the continuous form \ird{zada} is fixed in this use; the aspectual interpretation of the embedded event comes entirely from the attributive.
 
 \pex
 \a
 \begingl
-\gla Pivo zada.//
-\glb beer.\Dir{} \NegExst{}-\Cont{}//
-\glft \trsl{There is no beer.}//
+\gla Obrohnikovní senica zada.//
+\glb read-\textsc{trs}-\Pf{}-\textsc{attr} news.\Dir{} \NegExst{}-\Cont{}//
+\glft \trsl{There is no news that (I) read.} \lingcontext{negative presentational; event-anchored referent denied}//
 \endgl
 \a
 \begingl
-\gla Marek zada.//
-\glb Marek.\Dir{} \NegExst{}-\Cont{}//
-\glft \trsl{Marek is not here. / Marek is absent.}//
+\gla Verce blětébovní byl zada.//
+\glb toy.\Ind{} give-\Appl{}-\Pf{}-\textsc{attr} child.\Dir{} \NegExst{}-\Cont{}//
+\glft \trsl{There is no child that he gave a toy to.} \lingcontext{negative presentational; recipient referent denied}//
 \endgl
 \xe
 
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{NegP}
+    [\textsc{DP}\\{\small(pivot)}
+      [\textit{AttrP}\\\ird{obrohnikovní}\\{\small read-\textsc{trs}-\Pf{}-\textsc{attr}}]
+      [\textit{NP}\\\ird{senica}\\news.\Dir{}]
+    ]
+    [\textsc{Neg$'$}
+      [\textsc{Neg}\\{\small($\varnothing$)}]
+      [\textsc{AspP}
+        [\textsc{Asp$'$}
+          [\textsc{Asp}\\\ird{zad-a}\\{\small(NegExst+Cont)}]
+          [\textsc{ExistP}
+            [\textsc{Exist$'$}
+              [\textsc{Exist}\\\ird{zad-}\\{\small(suppletive)}]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The Exist\textsuperscript{0} head now asserts $\neg\textsc{exist}(x)$ for the complex pivot: no referent satisfying the event-anchored description exists in the discourse. The attributive remains an adjunct within the pivot DP with no matrix-level propositional force. The disfavour of agentive pivot heads carries over to \ird{zada} by the same definiteness-restriction logic.
+
 The plural particle \ird{ne} cannot be combined with a \ird{zad-} clause; see Section~\ref{sec:definiteness} of Chapter~\ref{ch:nouns}.
 
+
+\subsection{Suppletive exclusivity: \ird{jec-}, \ird{zad-}, and the NegP alternation}\label{sec:neg-exst-alternation}%
+\label{sec:vm-jec-zad}%
+\label{sec:vm-jec}
+
+\ird{Jec-} and \ird{zad-} are in strict complementary distribution conditioned by the presence or absence of NegP in the derivation. Wherever NegP is absent, Exist\textsuperscript{0} is spelled out as \ird{jec-}; wherever NegP is present, it is spelled out as \ird{zad-} and \ird{jec-} is excluded. This is an instance of the same conditioned allomorphy that governs Neg\textsuperscript{0}'s exponence across all Iridian clause types: \ird{zá-} (prefix) in verbal clauses, \ird{staly} (free morpheme) in equative clauses, and suppletive root replacement in existential clauses. The three are not separate lexical negation strategies but conditioned phonological reflexes of a single NegP head.
+
+The semantic content of the alternation is straightforwardly compositional. \ird{Jec-} contributes $\textsc{exist}(x)$; \ird{zad-} contributes $\neg\textsc{exist}(x)$, where the negation is the propositional negation licensed by NegP. The same opposition is preserved across all construction types --- bare existential, locative, possessive, and presentational --- and there is no grammatical asymmetry between the two roots in terms of which construction types each permits.
+
+The sole constructional asymmetry is pragmatic. In the presentational use, both \ird{jeca} and \ird{zada} are fixed continuous forms, but the positive presentational functions as a discourse-introducing device (it asserts and presents a new referent), whereas the negative presentational presupposes the availability of the event-anchored description in order to deny a referent matching it. This follows from general properties of existential negation and requires no grammatical stipulation.
+
+\paragraph{The impossibility of \ird{*zájec-}.} A natural question is whether the NEG prefix \ird{zá-} can be used with \ird{jec-} to form a negative existential. It cannot. Forms like \ird{*zájeca} and \ird{*zájecime} are ungrammatical across all existential construction types; negative existential predication is always and exclusively expressed by \ird{zad-}.
+
+\pex
+\a
+\begingl
+\gla Bylam na tóm zada.//
+\glb child.\Ind{} in/on book.\Dir{} \NegExst{}-\Cont{}//
+\glft \trsl{The child does not have a book.} \lingcontext{\ird{zad-} obligatory in the negative possessive}//
+\endgl
+\a
+\begingl
+\gla {*}Bylam na tóm zájeca.//
+\glb child.\Ind{} in/on book.\Dir{} \Neg{}-\Exst{}-\Cont{}//
+\glft \trsl{(intended: the child does not have a book)} \lingcontext{\ird{zá-} cannot prefix \ird{jec-}}//
+\endgl
+\xe
+
+\pex
+\a
+\begingl
+\gla Obrohnikovní senica zada.//
+\glb read-\textsc{trs}-\Pf{}-\textsc{attr} news.\Dir{} \NegExst{}-\Cont{}//
+\glft \trsl{There is no news that (I) read.} \lingcontext{\ird{zad-} obligatory in the negative presentational}//
+\endgl
+\a
+\begingl
+\gla {*}Obrohnikovní senica zájeca.//
+\glb read-\textsc{trs}-\Pf{}-\textsc{attr} news.\Dir{} \Neg{}-\Exst{}-\Cont{}//
+\glft \trsl{(intended: there is no news that (I) read)} \lingcontext{\ird{zá-} cannot prefix \ird{jec-}}//
+\endgl
+\xe
+
+The structural basis is straightforward. When Neg\textsuperscript{0} is present in an existential clause, it triggers suppletive Vocabulary Insertion at the Exist\textsuperscript{0} node, replacing \ird{jec-} with \ird{zad-}. The Neg\textsuperscript{0} feature is thereby discharged structurally in full; no NegP head remains to be spelled out as \ird{zá-}. The prefix \ird{zá-} is the PF reflex of Neg\textsuperscript{0} only when Neg\textsuperscript{0} has not already been discharged through suppletive readjustment. In verbal clauses, where no suppletive alternation is available at the predicate root, \ird{zá-} is the sole exponent; in existential clauses, the suppletive root exhausts the Neg\textsuperscript{0} feature and \ird{zá-} accordingly never surfaces.
+
+The form \ird{*zájeca} would require Neg\textsuperscript{0} to be doubly exponed: once as the suppletive trigger replacing \ird{jec-} at Exist\textsuperscript{0}, and again as a prefix attaching to the surviving positive root. Since a single syntactic head cannot discharge twice, this configuration is structurally ill-formed. The same logic excludes \ird{*zázada}: stacking \ird{zá-} onto the already-negative \ird{zad-} would require two independent Neg\textsuperscript{0} heads in the same clause, violating the uniqueness of the NegP projection. The prohibition on \ird{zá-} in existential clauses and the prohibition on \ird{*zázad-} are therefore the same prohibition, both following from the single-NegP constraint on the clause spine.
 \section{Questions}\label{sec:questions}
 
 \subsection{Yes-no questions}
