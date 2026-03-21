@@ -9,6 +9,482 @@
 % the ergative demotes the agent away from topic status.
 % ============================================================
 
+\section{Theoretical background and analytical conventions}
+\label{sec:th-background}
+
+Within generative syntax, Chomsky's work provides the general architecture:
+syntax is built by recursive structure formation, constrained by interface
+conditions and economy, and organized through hierarchies of lexical and
+functional projections. In its Minimalist form, this approach seeks to
+derive surface variation from a small set of general operations, especially
+Merge, feature valuation, and movement as Internal Merge, rather than from a
+large inventory of construction-specific rules.
+
+Rizzi's contribution is complementary rather than alternative. Building on
+the same generative foundations, he argues that the clause periphery is not
+a single undifferentiated domain but an articulated sequence of projections
+encoding clause type, finiteness, topic, focus, and related discourse
+functions. Cartography in this sense refines the broad architecture inherited
+from Chomsky by specifying where these interpretive distinctions are
+structurally represented. In the present grammar, Chomsky supplies the
+general assumptions about structure building, locality, and functional
+categories, while Rizzi supplies the fine-grained map of the left periphery
+needed to analyze topic-comment articulation, interrogation, complementation,
+and the placement of high particles in Iridian.
+
+On that basis, the syntactic analysis in Chapters~\ref{ch:simple}
+and~\ref{ch:complex} draws on the framework of Minimalist syntax
+(Chomsky 1995, 2000), with a
+Cartographic treatment of the clause periphery following Rizzi
+(1997, 2004) and Cinque (1999).
+Information structure is analyzed in terms of a topic-comment bipartition
+broadly consistent with Lambrecht (1994); the
+evidential, epistemic, and speech-act layers of the left periphery follow
+the segmentation proposed in Speas and Tenny (2003).
+This section sets out the principal constructs and conventions used
+throughout the two chapters and explains how the analyses developed here
+integrate with the adverbial particle analysis of
+Chapter~\ref{ch:function-words}.
+
+The central claim is that the architecture of the Iridian clause, though
+superficially unusual from a European perspective, follows from two
+independently motivated principles: \emph{pervasive head-finality} and
+\emph{topic-comment as the primary organizing dimension of information
+structure}. The split-ergative alignment, the ordering of particles, the
+placement of subordinate clauses, the distribution of wh-phrases, and the
+structure of the complement system are all, on the analysis adopted here,
+reflex of these two underlying properties operating at different levels of
+the grammar.
+
+\subsection{Clause structure and the functional sequence}
+\label{sec:th-clause-structure}
+
+The Iridian clause is built up from the predicate outward through a
+structured sequence of functional projections. Table~\ref{tab:th-clause-spine}
+gives the full spine from innermost to outermost; the projections directly
+implicated in the particle system are discussed in detail in
+§\,\ref{sec:th-particle-framework}.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{The Iridian clause spine (innermost to outermost).}\label{tab:th-clause-spine}
+	\medskip
+	\begin{tabularx}{\textwidth}{l l L}
+		\toprule
+		{\sc level} & {\sc projection} & {\sc content} \\
+		\midrule
+		1 (lowest) & \textsc{PhasP} & Phasal contour: attained state (\ird{v}) vs.\ ongoing interval (\ird{s}) \\
+		2 & \textsc{PredP} & Lexical predicate; root + aspect-alignment morphology \\
+		3 & \textsc{AspP} & Comment-domain operators: additive, exclusive, affirmative,
+		                     interim-sequential \\
+		4 & \textsc{NegP} & Clausal negation: \ird{zá-} (prefix, verbal predicates);
+		                     \ird{staly} (free morpheme, equative/zero-copula predicates);
+		                     suppletive root \ird{zad-} (existential predicates, Neg\textsuperscript{0}
+		                     absorbed into root) \\
+		5 & \textsc{IP} & Inflection: finiteness, mood, person \\
+		6 & \textsc{FocP} & Focus position; hosts moved wh-phrases \\
+		7 & \textsc{PolP} & Interrogative clause typing: \ird{by} \\
+		8 & \textsc{TopP} & Topic: typically the absolutive argument \\
+		9 & \textsc{EvidP} & Evidential and epistemic operators:
+		                      \ird{oče}, \ird{hlavdy}, \ird{ktady}, \ird{či} \\
+		10 (highest) & \textsc{SpeechActP} & Illocutionary and discourse-relational
+		                      framing: \ird{nadě}, \ird{mlada}, \ird{jse} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\noindent Because Iridian is rigorously head-final, specifiers and
+complements both precede their heads. The predicate therefore surfaces last;
+projections that scope over it surface progressively earlier in the string.
+Reading the clause from left to right is thus equivalent to reading the
+functional sequence from the highest (SpeechActP) to the lowest (PhasP)
+projection. This principle, elaborated in §\,\ref{sec:th-head-finality},
+provides the primary explanatory tool for understanding both particle ordering
+and clause-combining word order.
+
+One projection in the spine requires special comment. NegP (projection 4)
+has a single structural position in all Iridian clause types, but its
+phonological realization varies by predicate type. In verbal clauses,
+Neg\textsuperscript{0} is spelled out as the procliticized prefix \ird{zá-},
+which attaches to the left edge of the clause-final verbal complex. In
+zero-copula equative clauses, where there is no verbal host available,
+Neg\textsuperscript{0} is spelled out as the free morpheme \ird{staly},
+which surfaces in the canonical clause-final position expected of a
+head-final NegP head. In existential clauses, Neg\textsuperscript{0}
+triggers suppletive root replacement: the existential root \ird{jec-} is
+replaced by \ird{zad-}, and Neg\textsuperscript{0} itself has no
+independent PF exponent. These are three phonological reflexes of one
+syntactic head, not three independent negation strategies; the structural
+position of NegP is the same in all three cases.
+
+Within the zero-copula domain, a further distinction in semantic scope
+arises from the type of the predicative complement. When the predicate is
+a plain DP, \ird{staly} produces predicational negation. When the predicate
+is a participant nominal (a nominalized verb form carrying its own internal
+argument structure; see §\,\ref{sec:nmlz-predicative} of
+Chapter~\ref{ch:verbs}), the zero-copula equative becomes identificational
+and \ird{staly} produces identificational negation --- the denial that the
+topic DP is the unique satisfier of the nominalized description, with the
+contrastive implication that the correct referent exists. This scope
+difference does not require any modification to the clause spine or to the
+analysis of NegP; it is a consequence of the semantics of the predication
+that NegP scopes over. The full analysis is developed in
+§\,\ref{sec:vm-neg-exponents} and §\,\ref{sec:vm-ident-neg} of the verbal
+morphosyntax companion and
+§\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}.
+
+The clause fields are schematized in Figure~\ref{fig:th-clause-fields};
+Figure~\ref{fig:th-left-periphery} shows the detailed hierarchical structure
+of the left periphery.
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[font=\footnotesize]
+		\node[syn band, minimum width=18mm] (top)  {Topic\\\textsc{TopP}};
+		\node[syn band, minimum width=42mm, right=0pt of top]  (op)
+			{Speech-act \& evidential field\\\textsc{SpeechActP / EvidP}};
+		\node[syn band, minimum width=16mm, right=0pt of op]   (pol)
+			{Clause typing\\\textsc{PolP}};
+		\node[syn band, minimum width=34mm, right=0pt of pol]  (tp)
+			{Comment domain\\\textsc{IP / FocP}};
+		\node[syn band, minimum width=20mm, right=0pt of tp]   (asp)
+			{Phasal\\\textsc{PhasP}};
+		\node[syn band, minimum width=14mm, right=0pt of asp]  (pred)
+			{Pred.\\\textsc{PredP}};
+	\end{tikzpicture}
+	\caption{Clause fields of the Iridian clause.}\label{fig:th-clause-fields}
+\end{figure}
+
+\begin{figure}[ht]
+	\footnotesize\sffamily
+	\caption{Hierarchical structure of the Iridian left periphery (SpeechActP
+	to IP).}\label{fig:th-left-periphery}
+	\medskip
+	\centering
+	\begin{forest}
+		syntax tree
+		[\textsc{SpeechActP}
+			[\textsc{SpeechAct}\\\ird{nadě} / \ird{mlada} / \ird{jse}]
+			[\textsc{EvidP}
+				[\textsc{Evid}\\\ird{oče} / \ird{hlavdy} / \ird{ktady} / \ird{či}]
+				[\textsc{TopP}
+					[\textit{topic DP}]
+					[\textsc{Top$'$}
+						[\textsc{Top}]
+						[\textsc{PolP}
+							[\textsc{Pol}\\\ird{by}]
+							[\textsc{Pol$'$}
+								[\textsc{Pol}]
+								[\textsc{FocP}
+									[\textsc{XP}\\\textit{wh-phrase}]
+									[\textsc{Foc$'$}
+										[\textsc{Foc}]
+										[\textsc{IP} [\ldots]]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+		]
+	\end{forest}
+\end{figure}
+
+\subsection{Topic-comment structure as the primary information-structural
+dimension}
+\label{sec:th-topic-comment-theory}
+
+The Iridian clause is organized around a \term{topic-comment bipartition}.
+The \term{topic} --- the constituent the clause is semantically `about' ---
+is realized in the absolutive (direct) case and occupies the specifier of
+TopP, the highest argument-hosting projection in the left periphery. The
+\term{comment} --- the predication made about the topic --- corresponds
+broadly to the IP-internal material and the predicate.
+
+This architecture has consequences for the alignment system. The split-ergative
+pattern of Iridian (perfective/retrospective aspects trigger ergative-absolutive
+case marking; the nominative aspects trigger nominative-absolutive marking) is
+not a syntactically arbitrary quirk: both patterns converge on placing the most
+discourse-salient argument in the absolutive (direct) case, thereby licensing it
+as the clause topic. In the perfective/retrospective, the patient is the typical
+topic and therefore receives the absolutive; the agent is demoted to the
+transitive (ergative) case because it is not the topic. In the nominative
+aspects, the agent/subject is typically topic and receives the absolutive
+accordingly. The aspect system is therefore partly an information-structural
+resource, allowing the speaker to select which argument will bear topic status
+(see §\,\ref{sec:topic-comment} for detailed illustration).
+
+The practical effects of this architecture for word order are described in
+§\,\ref{sec:word-order}: the topic-initial, verb-final order is the unmarked
+pattern, and any departures from it are driven by information-structural
+rather than purely grammatical requirements.
+
+\subsection{Head-finality}
+\label{sec:th-head-finality}
+
+Iridian is a rigorously head-final language. Both phrases and clauses are
+internally verb-final or head-final: arguments precede their predicates,
+modifiers precede their heads, adpositions follow their nominal complements
+(as postpositions, cf.\ §\,\ref{sec:adpositions}), and subordinate clauses
+precede the matrix predicate. This property, which is statable as a general
+principle of phrase structure and applies at every level of embedding, has
+several major consequences that recur throughout the syntactic analysis.
+
+For the clause in isolation, head-finality means that the finite verb is
+always clause-final in standard Iridian: it is the head of the highest
+verbal projection and accordingly surfaces after all its specifiers and
+complements. For clause-combining, it means that subordinate clauses
+precede the matrix clause whose head they are complements of (see
+§\,\ref{sec:th-subordination} below). For the particle system, it means
+that particles in higher projections surface earlier in the linear string:
+an operator that takes scope over the full IP will surface before the topic
+and before IP-internal material, because the specifier of a high projection
+must precede the head of a lower one.
+
+Head-finality also has consequences for relativization and
+complementation. Relative clauses precede the head noun they modify;
+finite complement clauses precede the matrix predicate that embeds them;
+and purpose-clause converbs precede the verb they are oriented toward.
+These properties are not stipulated separately but follow from the single
+head-final phrase structure combined with the clause-spine in
+Table~\ref{tab:th-clause-spine}.
+
+\subsection{The particle framework and its integration into the syntax
+chapters}
+\label{sec:th-particle-framework}
+
+The adverbial particle system, analyzed in detail in
+§\,\ref{sec:adv-particles} of Chapter~\ref{ch:function-words}, establishes
+the main empirical evidence for the left-peripheral structure summarized in
+Figures~\ref{fig:th-clause-fields} and \ref{fig:th-left-periphery}. The
+particles serve here as syntactic diagnostics: their obligatory ordering
+relative to one another, their scope properties, and their ability or
+inability to license fragment answers are all direct reflex of the
+projections they occupy.
+
+Three structural zones are distinguished in the particle system, corresponding
+to three regions of the functional hierarchy:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Zone~\textsc{i} (peripheral).] Speech-act and discourse-relational
+	particles (\ird{nadě}, \ird{mlada}, \ird{jse}) and evidential/epistemic
+	particles (\ird{oče}, \ird{hlavdy}, \ird{ktady}, \ird{či}) occupy
+	\textsc{SpeechActP} and \textsc{EvidP}. The interrogative clause-typing
+	particle \ird{by} occupies \textsc{PolP} (§\,\ref{sec:th-polar-questions}).
+	All Zone~\textsc{i} particles are post-topic and scope over the full IP.
+\item[\upshape Zone~\textsc{ii} (comment-domain).] Operators whose scope is
+	restricted to the comment domain --- \ird{och} (additive), \ird{moc}
+	(affirmative), \ird{kamo}/\ird{kam} (exclusive), \ird{dlí} (interim
+	sequential) --- occupy the \textsc{AspP} tier below IP. They are
+	focus-sensitive where applicable and scope over the predicate domain, not the
+	full proposition.
+\item[\upshape Zone~\textsc{iii} (phasal).] The phasal particles \ird{v}
+	(\trsl{already}) and \ird{s} (\trsl{still} / \trsl{not yet}) occupy
+	\textsc{PhasP} immediately above \textsc{PredP}. Their scope is strictly
+	predicational.
+\end{description}
+
+\noindent The ordering of zones from outer (leftmost) to inner (rightmost) in
+the linear string --- peripheral > comment-domain > phasal > predicate ---
+is a direct consequence of the clause spine combined with head-finality. The
+particle analysis therefore serves double duty: it supports the structural
+claims made here and provides detailed evidence for the scope properties of
+individual projections. Cross-references from the simple and complex sentence
+chapters to §\,\ref{sec:adv-particles} are intended to be followed for formal
+motivation.
+
+
+\section{The left periphery: topics, operators, and clause typing}
+\label{sec:th-left-periphery}
+
+\subsection{Topic and topic drop}
+\label{sec:th-topic}
+
+The specifier of TopP hosts the clause topic. In canonical declaratives the
+topic is the absolutive argument of the predicate; it surfaces clause-initially
+and is invariably in the direct case. Because Iridian permits pro-drop, the topic
+position may be phonologically empty when the referent is recoverable from
+the discourse. Topic drop is the default in contexts of topical continuity;
+overt topicalization of a pronominal --- especially with the peripheral
+particles --- carries contrastive or focus-related force.
+
+When the topic is dropped, Zone~\textsc{i} particles appear at the left
+edge of the string without any overt nominal to their left. This is a
+phonological consequence of null-topic, not a separate fronting operation:
+the particles remain in their regular post-topic positions (§\,\ref{sec:adv-particles}).
+
+\pex
+\a
+\begingl
+\gla Janek zdravime.//
+\glb Janek.\Dir{} sleep-\Prog{}//
+\glft \trsl{Janek is sleeping.} \lingcontext{canonical topic-initial}//
+\endgl
+\a
+\begingl
+\gla Zdravime.//
+\glb sleep-\Prog{}//
+\glft \trsl{[He] is sleeping.} \lingcontext{topic drop; referent established}//
+\endgl
+\a
+\begingl
+\gla Oče zdravime.//
+\glb \textsc{mir} sleep-\Prog{}//
+\glft \trsl{Oh, [he] is sleeping!} \lingcontext{topic drop with peripheral mirative; \ird{oče} in post-topic position}//
+\endgl
+\xe
+
+\subsection{Focus and focus movement}
+\label{sec:th-focus}
+
+The \textsc{FocP} position immediately below \textsc{PolP} is the target for
+focus movement. In the unmarked declarative clause, focus falls in situ on the
+rightmost comment-domain constituent immediately before the verb (the
+``comment-final'' position), consistent with the general word-order tendency
+toward late-focus. In marked constructions --- content questions and
+topicalized foci --- the focused constituent or wh-phrase moves overtly to
+\textsc{SpecFocP}, surface-initially after any peripheral particles (see
+§\,\ref{sec:th-wh-interrogation}).
+
+It follows from this architecture that \textsc{SpecFocP} is not an exclusively
+interrogative position: it is the target of focus movement in general. A
+focalized non-wh constituent moves there in much the same way as a wh-phrase.
+The functional difference --- between a focused declarative and a content
+question --- comes from the clause-level interrogative operator (\ird{by} or
+a phonologically null counterpart in \textsc{PolP}), not from the focus
+position itself.
+
+\subsection{The clause-typing operator \ird{by} and polar questions}
+\label{sec:th-polar-questions}
+
+Polar interrogatives are formed by merging the particle \ird{by} as the head
+of \textsc{PolP}. In this configuration, \ird{by} types the full clause as a
+polar question: the speaker queries whether the proposition expressed by the
+complement IP is true of the world (§\,\ref{sec:by-operator}).
+
+\pex
+\a
+\begingl
+\gla Marek by zdravime?//
+\glb Marek.\Dir{} \textsc{q} sleep-\Prog{}//
+\glft \trsl{Is Marek sleeping?}//
+\endgl
+\a
+\begingl
+\gla Janek by v ščenik?//
+\glb Janek.\Dir{} \textsc{q} already arrive-\Pf{}//
+\glft \trsl{Has Janek already arrived?}//
+\endgl
+\xe
+
+A marked alternative places \ird{by} in the preverbal AspP field, between the
+comment-domain operators and the phasal particles. Here \ird{by} takes scope
+only over the VP, yielding a \term{predicate-focus interrogative} that queries
+the predicate domain specifically rather than the full proposition (see
+Table~\ref{tab:by-scope} for contrastive examples).
+
+The interaction of \ird{by} with Zone~\textsc{i} particles (evidential and
+speech-act operators) follows directly from their relative positions in the
+functional hierarchy. Because those particles occupy projections above
+\textsc{PolP}, they scope over the interrogative force introduced by \ird{by}:
+a mirative question (\ird{oče~by}) presents the polar question as
+counterexpectational; a reportative question (\ird{či~by}) presents it as
+relayed from another source.
+
+\pex
+\a
+\begingl
+\gla Tak tóm oče by Janku v koupnik?//
+\glb this book.\Dir{} \textsc{mir} \textsc{q} Janek.\Trs{} already buy-\Trs{}-\Pf{}//
+\glft \trsl{Has Janek, surprisingly, already bought this book?}//
+\endgl
+\xe
+
+
+\section{Questions and \textit{wh}-interrogation}
+\label{sec:th-wh-interrogation}
+
+\subsection{Single \textit{wh}-fronting}
+\label{sec:th-single-wh}
+
+Content questions require the interrogative phrase to move to
+\textsc{SpecFocP}, which surfaces before the IP but after any Zone~\textsc{i}
+peripheral particles. This movement is obligatory in standard Iridian: in-situ
+interrogatives with a single wh-phrase are not grammatical in the default
+declarative register. The wh-phrase thus surfaces immediately after any
+evidential operators and before IP-internal arguments.
+
+\pex
+\a
+\begingl
+\gla Jena Marek mulša?//
+\glb where Marek.\Dir{} live-\Cont{}//
+\glft \trsl{Where does Marek live?}//
+\endgl
+\a
+\begingl
+\gla Jeda tak tóm koupnik?//
+\glb who this book.\Dir{} buy-\Pf{}//
+\glft \trsl{Who bought this book?}//
+\endgl
+\a
+\begingl
+\gla Jena hlavdy Marek mulša?//
+\glb where \textsc{infr} Marek.\Dir{} live-\Cont{}//
+\glft \trsl{Where would Marek presumably be living?}\\
+      \lingcontext{wh-phrase to SpecFocP; \ird{hlavdy} in EvidP above it}//
+\endgl
+\xe
+
+\noindent In the plain content question, the \textsc{PolP} head is
+phonologically null: interrogative force is satisfied by the wh-phrase
+occupying \textsc{SpecFocP}, without requiring an overt \ird{by}. When
+\ird{by} is overtly present in a content question, it adds emphatic or
+explicit interrogative force (§\,\ref{sec:by-wh}).
+
+\subsection{Multiple \textit{wh} and in-situ licensing}
+\label{sec:th-multiple-wh}
+
+When the clause contains more than one wh-phrase, at most one fronts to
+\textsc{SpecFocP}. The remaining wh-phrases are interpreted as interrogative
+variables in their base positions, licensed by the clause-level interrogative
+operator (overt \ird{by} or a null \textsc{PolP} head).
+
+\pex
+\a
+\begingl
+\gla Jede ježe koupnik?//
+\glb who what buy-\Pf{}//
+\glft \trsl{Who bought what?}//
+\endgl
+\a
+\begingl
+\gla Jede jena mulša?//
+\glb who where live-\Cont{}//
+\glft \trsl{Who lives where?}//
+\endgl
+\xe
+
+\noindent In these multiple-wh clauses no phrase fronts; both remain in their
+IP-internal base positions and are bound by the null interrogative operator.
+The general licensing principle is: a wh-word within the scope domain of the
+clause-level interrogative operator is interpreted as an interrogative variable,
+regardless of its surface position. Overt movement to \textsc{SpecFocP} is
+sufficient to establish interrogative force, but it is not necessary when the
+operator is independently present.
+
+\subsection{Tag, echo, and indirect questions}
+\label{sec:th-tag-echo}
+
+Tag and echo questions, and indirect questions embedded under
+\ird{poby}, are treated in §\,\ref{sec:questions} and
+§\,\ref{sec:poby} respectively. The relevant structural observation for
+the present discussion is that embedded content questions show the same
+wh-fronting behavior inside the embedded clause as matrix content questions
+do: the wh-phrase fronts within the subordinate clause's own left periphery,
+which is embedded under the \ird{poby} complement marker.
+
 \section{Topic-comment structure and information structure}\label{sec:topic-comment}
 
 % ============================================================
@@ -84,61 +560,137 @@ as the neutral pattern.
 
 % [Examples: SOV default, pragmatic reordering, focus movement]
 
-\section{The copula and existential constructions}\label{sec:copula}
+\section{The copula}\label{sec:copula}
 
-Iridian distributes predication across three structurally and semantically distinct constructions. Where many European languages rely on a single copular verb for all such functions, Iridian treats equative identity, marked stative or inchoative predication, and existential predication separately. All overt predicative verbs are clause-final and inflect for the full aspect system; each paradigm is strongly suppletive and morphologically irregular.
+Iridian distributes equative and classificatory predication across two
+constructions that differ both structurally and semantically. The default
+strategy is the \term{zero copula}: a null functional head that licenses a bare
+equative predication without event structure. The second strategy is the overt
+marked copular verb \ird{neh-}, which introduces an event of transition and
+projects a full verbal spine. The two constructions are not merely stylistic
+variants; they encode a principled semantic contrast between atemporal
+classification on the one hand and entering a classification on the other.
 
-Ordinary property predication belongs to the verbal system. Meanings such as
-\trsl{be beautiful}, \trsl{be good}, and \trsl{be open} are normally expressed
-with stative verbs, not with bare adjectival predicates. For the small closed
-set of lexical property roots discussed in Chapters~\ref{ch:overview} and
-\ref{ch:verbs}, the root itself is chiefly adnominal, while the corresponding
-stative verb serves as the regular clause predicate. Because stative verbs
-already distinguish state from entry into state aspectually, the progressive
-naturally yields inchoative readings such as \trsl{becoming beautiful} or
-\trsl{getting better}, while the perfective yields \trsl{became beautiful} or
-\trsl{turned good}.
+Property predication --- the expression of adjectival meanings such as
+\trsl{be beautiful} or \trsl{be good} --- belongs to the stative verb system and
+is not treated here; see Chapters~\ref{ch:overview} and \ref{ch:verbs}. Existential
+predication through the \ird{jec-}/\ird{zad-} pair is structurally distinct and
+treated separately in §\,\ref{sec:existential-constructions}. The
+equative strategies, their structural type, negation, and temporal range are
+summarized in Table~\ref{tab:copula-overview}.
 
-\subsection{Equative and class-membership clauses: the zero copula}\label{sec:zero-copula}
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Equative and classificatory predication strategies.}\label{tab:copula-overview}
+  \medskip
+  \begin{tabularx}{\textwidth}{L L L L}
+    \toprule
+    \textsc{predication type} & \textsc{construction} &
+    \textsc{negation} & \textsc{temporal range} \\
+    \midrule
+    Equative / class-membership & zero copula
+      ($\varnothing$Cop\textsuperscript{0}) &
+      \ird{staly} (free morpheme) & present / atemporal \\
+    Transitional / inchoative & \ird{neh-} (overt verb) &
+      \ird{zá-neh-} (prefix) & full aspect paradigm \\
+    Property / stative & stative verb &
+      \ird{zá-} + stative verb & full aspect paradigm \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Equative and class-membership clauses: the zero copula}%
+\label{sec:zero-copula}
+
+\subsubsection{The construction and its distribution}
 
 The default pattern for equative clauses --- those asserting identity, role, or
-class membership --- is zero copula in the indicative. The predicative
-complement appears in the direct case in clause-final position; no overt verb is
-present. This is the stylistically neutral, unmarked construction. When such
-clauses are negated, \ird{staly} appears in the clause-final position. The verbal
-negative prefix \ird{zá-} is not used: it requires an overt verbal host, which
-the zero-copula construction lacks.
-
-Structurally, \ird{staly} is the phonological exponent of the NegP head
-(Neg\textsuperscript{0}) in equative contexts, not a copular verb. It bears no
-aspect marking, has no paradigmatic alternants, and cannot appear in any
-non-negative environment. Its clause-final position is the expected one under
-head-finality: as the head of NegP, it follows its complement (the nominal
-predication). In verbal clauses the same NegP head is spelled out as the prefix
-\ird{zá-}, which cliticizes to the verbal complex; in equative clauses, with no
-verbal host available, Neg\textsuperscript{0} surfaces in its canonical
-head-final position as a free morpheme. See §\,\ref{sec:clausal-negation} for
-the unified treatment and §\,\ref{sec:vm-neg-exponents} (\texttt{verb-minim.tex})
-for the formal analysis.
+class membership --- is zero copula. The topic DP occupies the initial position
+and the predicative complement appears in the direct case in clause-final
+position; no overt verb is present. This is the stylistically neutral, unmarked
+construction.
 
 \pex
 \a
 \begingl
 \gla Marek doktor.//
+\glb Marek.\Dir{} doctor.\Dir{}//
 \glft \trsl{Marek is a doctor.}//
 \endgl
 \a
 \begingl
 \gla Bách němscvení kompozitor.//
+\glb Bach.\Dir{} German.\textsc{attr} composer.\Dir{}//
 \glft \trsl{Bach is a German composer.}//
 \endgl
-
 \xe
 
-Inclusive and class-membership predications --- of the type \textit{dogs are
-animals} --- follow the same zero-copula pattern and carry no inference beyond
-simple predication. The predicative complement always appears in the direct case
-regardless of which case would otherwise be assigned in the same position.
+Inclusive and class-membership predications follow the same zero-copula pattern
+and carry no inference beyond simple predication. The predicative complement
+always appears in the direct case regardless of which case would otherwise be
+assigned in the same structural position.
+
+\subsubsection{Structural analysis: EquP and the absence of AspP}
+
+The zero copula is not merely absent from the surface string; it is the
+phonologically null exponent of a dedicated functional head,
+Cop\textsuperscript{0}, which projects an \term{equative phrase} (EquP). EquP
+is the functional layer that licenses the predication relation between the topic
+DP and the predicative DP. Crucially, EquP is \emph{not} selected by
+Asp\textsuperscript{0}: no aspectual projection is present in the
+zero-copula clause.
+
+The reason is structural. Aspect requires an eventuality --- a state, process,
+or transition --- to scope over. Equative predications of the type \trsl{Marek
+is a doctor} or \trsl{Bach is a composer} express a relation between two
+individuals, not an eventuality in any aspectual sense. There is no event of
+being-a-doctor that could be viewed as complete, ongoing, or prospective in the
+way that eating or arriving can. In the absence of an eventuality, AspP cannot
+be projected, and EquP is selected directly by NegP (when present) or by the
+higher IP layer. The affirmative clause structure is:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{EquP}
+    [\textit{Marek}\\\textsc{dir}\\{\small(topic)}]
+    [\textsc{Eq$'$}
+      [\textit{doktor}\\\textsc{dir}\\{\small(pred)}]
+      [\textsc{Eq$^{0}$}\\{$\varnothing$}]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+The two DPs bear the direct case as the default case assigned under EquP: both
+the topic and the predicative complement are direct-case nominals within a
+caseless, event-free predication domain.
+
+\subsubsection{Temporal restriction}
+
+The temporal corollary of the absence of AspP is that the zero-copula
+construction is restricted to \term{present-time} and \term{atemporal} or
+\term{generic} predications. A sentence like \ird{Marek doktor} is interpreted
+as holding at the moment of utterance or as a classification that transcends any
+particular time. It cannot, without additional context, be interpreted as a past
+or future statement. This restriction follows directly from the lack of any
+tense or aspect projection: there is no functional head in the clause that could
+anchor the predication to a non-present time.
+
+For past equative predications, \ird{neh-} in the retrospective (\ird{naní}) is
+used; see §\,\ref{sec:neh-past}. For future-oriented predictions, the
+contemplative of \ird{neh-} (\ird{nách}) is available. The zero copula's
+restriction to present and generic contexts thus parallels the zero-copula
+pattern found in Russian, Arabic, and Hebrew, where the copula is similarly
+absent in the present indicative but required in other tenses --- though in
+Iridian the structural basis is the absence of EquP's eventuality rather than
+the suppression of a tensed copula.
+
+\subsubsection{Negation: \ird{staly} as the canonical Neg\textsuperscript{0} exponent}
+
+When a zero-copula equative is negated, \ird{staly} appears in clause-final
+position. The verbal negative prefix \ird{zá-} does not arise: it requires a
+phonological host within the verbal complex, and no such host is present.
 
 \pex
 \a
@@ -155,21 +707,64 @@ regardless of which case would otherwise be assigned in the same position.
 \endgl
 \xe
 
-\noindent The two examples differ in which DP occupies the topic (initial)
-position, not in the position of \ird{staly}. Since \ird{staly} is the
-clause-final NegP head, it is invariably last; the two nominal DPs may
-permute before it in accordance with the general topic-comment organization
-of Iridian clauses (§\,\ref{sec:topic-comment}). The semantic contrast --- not
-a doctor vs.\ not the doctor --- arises from which DP is topicalized, not from
-any change in the negation structure.
+\noindent The two examples differ in which DP occupies the topic position,
+not in the position of \ird{staly}. The semantic contrast --- \trsl{not a
+doctor} (predicational) vs.\ \trsl{not the doctor} (identificational) --- arises
+from topicalization, not from any change in the negation structure.
 
-\ird{Staly} is restricted to the negation of equative and
-class-membership clauses. It does not replace \ird{neh-}, whose overt use
-remains semantically marked for becoming or entry into a state, and it does not
-replace the existential negative verb \ird{zad-}, which is used for absence and
-non-existence.
+Structurally, \ird{staly} is the phonological exponent of
+Neg\textsuperscript{0} in equative contexts. It bears no aspect marking, has no
+paradigmatic alternants, and cannot appear in any non-negative environment ---
+all properties consistent with its status as a functional head rather than a
+verbal root. Its clause-final position is not exceptional: as the head of NegP
+in a head-final language, it follows its complement (the EquP predication). NegP
+selects EquP directly, with no intervening AspP:
 
-\subsection{Identificational equatives and participant nominals}\label{sec:ident-equative}
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{NegP}
+    [\textit{Marek}\\\textsc{dir}\\{\small(topic)}]
+    [\textsc{Neg$'$}
+      [\textsc{Neg$^{0}$}\\\ird{staly}]
+      [\textsc{EquP}
+        [\textit{doktor}\\\textsc{dir}\\{\small(pred)}]
+        [\textsc{Eq$'$}
+          [\textsc{Eq$^{0}$}\\{$\varnothing$}]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The topic DP occupies Spec,NegP; the predicative DP remains within
+EquP as the complement of Eq\textsuperscript{0}.
+
+This framing inverts the usual presentation of \ird{staly} as an ``exceptional''
+or ``restricted'' negation strategy. It is in fact the \emph{canonical} exponent
+of Neg\textsuperscript{0}: it surfaces in exactly the position the clause spine
+predicts for a head-final NegP head. The prefix \ird{zá-}, by contrast, is the
+PF-conditioned variant --- it arises only when a verbal complex is present and
+provides a cliticization host. When no such host exists, as in zero-copula
+clauses, Neg\textsuperscript{0} surfaces freely in its default head-final
+position as \ird{staly}. The same logic applies cross-linguistically: Turkish
+\ird{değil} and Swahili \ird{si} occupy the same structural slot in their
+respective zero-copula systems, surfacing as invariant clause-final (or
+predicate-final) negative heads in the absence of a verbal host. See
+§\,\ref{sec:clausal-negation} for the unified treatment across all predicate
+types, and §\,\ref{sec:vm-neg-exponents} of Chapter~\ref{ch:verbs} for the
+formal Distributed Morphology account.
+
+When \ird{neh-} is present --- that is, when the copular predication is
+expressed through the overt transitional verb rather than the zero copula ---
+the construction has a verbal host, and negation therefore follows the standard
+verbal pattern: \ird{zá-} procliticizes onto \ird{neh-}. \ird{Staly} does not
+arise in this context not because it is ``blocked'' by \ird{neh-} but because
+the condition for its appearance --- absence of a verbal host --- is not met.
+
+\subsection{Identificational equatives and participant nominals}%
+\label{sec:ident-equative}
 
 When the predicative complement of a zero-copula equative clause is a
 \term{participant nominal} (a nominalized verb form, §\,\ref{sec:nmlz-predicative}
@@ -187,19 +782,19 @@ in the nominal. The schematic contrast with a plain verbal assertion is:
 \a
 \begingl
 \gla Lobek Jancí piaštnikou.//
-\glb apple.\Dir{} Janek.\Ind{} eat-\textsc{trs}-\Pf{}-\textsc{nmlz}//
+\glb apple.\Dir{} Janek.\Ind{} eat-\textsc{trs}-\Pf{}-\Nmlz{}//
 \glft \trsl{The apple is what Janek ate.} \lingcontext{identificational equative: patient nominal}//
 \endgl
 \xe
 
-\noindent In (b), the apple is not merely in the event but is being identified
-as the eaten-thing. An agent-nominal equative identifies the topic as the agent of
-the nominalized event:
+\noindent In (b), the apple is not merely a participant in the event but is
+being identified as the unique entity satisfying the nominalized description. An
+agent-nominal equative identifies the topic as the agent of the nominalized event:
 
 \ex
 \begingl
 \gla Janek lubcí piaščikou.//
-\glb Janek.\Dir{} apple.\Ind{} eat-\Antip{}-\Pf{}-\textsc{nmlz}//
+\glb Janek.\Dir{} apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{}//
 \glft \trsl{Janek is the one who ate the apple.}//
 \endgl
 \xe
@@ -226,7 +821,7 @@ actual satisfier. This contrasts systematically with verbal propositional negati
 \a
 \begingl
 \gla Lobek Jancí piaštnikou staly.//
-\glb apple.\Dir{} Janek.\Ind{} eat-\textsc{trs}-\Pf{}-\textsc{nmlz} \NegCop{}//
+\glb apple.\Dir{} Janek.\Ind{} eat-\textsc{trs}-\Pf{}-\Nmlz{} \NegCop{}//
 \glft \trsl{The apple is not what Janek ate.} \lingcontext{identificational negation: event presupposed; identification denied}//
 \endgl
 \xe
@@ -235,7 +830,7 @@ actual satisfier. This contrasts systematically with verbal propositional negati
 \a
 \begingl
 \gla Janek lubcí piaščikou staly.//
-\glb Janek.\Dir{} apple.\Ind{} eat-\Antip{}-\Pf{}-\textsc{nmlz} \NegCop{}//
+\glb Janek.\Dir{} apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{} \NegCop{}//
 \glft \trsl{Janek is not the one who ate the apple.} \lingcontext{agent-identification denied: it was someone else}//
 \endgl
 \xe
@@ -253,36 +848,109 @@ predication itself rather than from any special property of \ird{staly}.
 negation. The contrastive/focus force is a semantic consequence of negating an
 identificational (exhaustive) predication, not a distinct grammatical function
 of \ird{staly}. See §\,\ref{sec:clausal-negation} for the unified structural
-account and §\,\ref{sec:vm-neg-exponents} (\texttt{verb-minim.tex}) for the
-formal analysis.
+account, §\,\ref{sec:vm-neg-exponents} of Chapter~\ref{ch:verbs} for the
+formal DM analysis, and §\,\ref{sec:vm-ident-neg} of Chapter~\ref{ch:verbs}
+for the full scope-theoretic analysis including the formal semantics of
+identificational negation and the contrast table with propositional \ird{zá-}.
 
-\subsection{The marked copular verb \ird{neh-}: becoming and inchoative
+\subsection{The overt copular verb \ird{neh-}: transition and inchoative
 predication}\label{sec:neh}
 
-The root \ird{neh-} provides the overt copular verb. Its paradigm is strongly
-suppletive and morphologically irregular; principal forms are given in
-Table~\ref{tab:neh-paradigm}.
+\subsubsection{Status and structural contrast with the zero copula}
+
+The root \ird{neh-} is the overt copular verb of Iridian. Its most basic
+function is to encode \term{transition}: the topic DP is asserted to be moving
+from one classification or condition into another, or to have crossed a threshold
+between them. This transitional meaning is not a pragmatic implication but a
+semantic contribution of the root itself.
+
+The structural difference between the zero copula and \ird{neh-} is not merely
+that one is overt and the other silent. The zero copula projects EquP, a
+non-eventive predication layer with no AspP. \ird{Neh-}, by contrast, projects a
+proper verbal predicate: it introduces a \term{transition event} --- an
+eventuality whose onset, duration, and completion can be aspectually
+individuated. This eventuality licenses Asp\textsuperscript{0}, which selects
+the VP, and the full verbal spine (VP $\subset$ AspP $\subset$ NegP) is
+projected in the usual way. The two structures contrast as follows:
+
+\begin{center}
+\begin{minipage}[t]{0.42\textwidth}
+\centering
+\textit{Zero copula:}\\[6pt]
+\begin{forest}
+  syntax tree
+  [\textsc{EquP}
+    [DP\textsubscript{topic}]
+    [\textsc{Eq$'$}
+      [DP\textsubscript{pred}]
+      [\textsc{Eq$^{0}$}\\{$\varnothing$}]
+    ]
+  ]
+\end{forest}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.52\textwidth}
+\centering
+\textit{Overt copula:}\\[6pt]
+\begin{forest}
+  syntax tree
+  [\textsc{AspP}
+    [DP\textsubscript{topic}]
+    [\textsc{Asp$'$}
+      [\textsc{Asp$^{0}$}]
+      [\textsc{VP}
+        [DP\textsubscript{pred}]
+        [\ird{neh-}]
+      ]
+    ]
+  ]
+\end{forest}
+\end{minipage}
+\end{center}
+
+\noindent The consequence for negation is immediate: since \ird{neh-} is a
+verbal root embedded under AspP, the standard verbal negation strategy applies.
+Neg\textsuperscript{0} is spelled out as the prefix \ird{zá-}, which
+procliticizes to the left edge of the inflected form. \ird{Staly} does not
+arise because the condition for its appearance --- the absence of a verbal host
+--- is not satisfied.
+
+\subsubsection{Paradigm}
+
+The paradigm of \ird{neh-} is strongly suppletive and morphologically irregular;
+principal forms are given in Table~\ref{tab:neh-paradigm}.
 
 \begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Principal forms of \ird{neh-} (marked copula).}\label{tab:neh-paradigm}
-	\medskip
-	\begin{tabularx}{0.72\textwidth}{L l}
-		\toprule
-		{\sc form} & {\sc iridian} \\
-		\midrule
-		Continuous          & \ird{neha} \\
-		Progressive         & \ird{nehime} \\
-		Contemplative       & \ird{nehach} \\
-		Perfective          & \ird{nek} \\
-		Retrospective       & \ird{neaní} \\
-		Sequential converb  & \ird{nesu} (colloquial \ird{nu}) \\
-		Simultaneous converb & \ird{nešěc} \\
-		\bottomrule
-	\end{tabularx}
+  \footnotesize\sffamily
+  \caption{Principal forms of \ird{neh-} (overt copula).}\label{tab:neh-paradigm}
+  \medskip
+  \begin{tabularx}{0.84\textwidth}{L l l}
+    \toprule
+    {\sc form} & {\sc affirmative} & {\sc negative} \\
+    \midrule
+    Continuous          & \ird{neha}   & \ird{záneha} \\
+    Progressive         & \ird{nejme}  & \ird{zánejme} \\
+    Contemplative       & \ird{nách}   & \ird{zánách} \\
+    Perfective          & \ird{nek}    & \ird{zánek} \\
+    Retrospective       & \ird{naní}   & \ird{zánaní}\\
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
-Since neutral equative predication is expressed by zero copula (§\,\ref{sec:zero-copula}), overt \ird{neh-} is semantically marked. It is not used for simple statements of identity or class membership. Instead it signals \term{becoming}, \term{entering a state}, or \term{transition}: the subject is understood as moving from one classification or condition into another.
+\noindent The negative forms are entirely regular: \ird{zá-} (reduced to
+\ird{za-} before unstressed syllables) procliticizes onto the corresponding
+affirmative form. No suppletive negative root exists for \ird{neh-}; the
+formation parallels that of all other finite verbs.
+
+\subsubsection{Aspectual semantics}
+
+\ird{Neh-} introduces a transition event, and its aspectual forms characterize
+different perspectives on that event in the usual way.
+
+The \textsc{continuous} (\ird{neha}) presents the transition as ongoing and
+unbounded: the subject is in the process of moving into the new classification.
+The inchoative flavour is inherent to \ird{neh-} itself, not to the continuous
+aspect.
 
 \pex
 \a
@@ -293,15 +961,100 @@ Since neutral equative predication is expressed by zero copula (§\,\ref{sec:zer
 \endgl
 \a
 \begingl
+\gla Marek doktor záneha.//
+\glb Marek.\Dir{} doctor.\Dir{} \Neg{}-\Cop{}-\Cont{}//
+\glft \trsl{Marek is not becoming a doctor.}//
+\endgl
+\xe
+
+The \textsc{progressive} (\ird{nejme}) adds an agentive or effortful dimension:
+the subject is actively engaged in the process of transition. Where the
+continuous reports a change in progress, the progressive foregrounds the subject's
+directed activity toward the new state.
+
+\ex
+\begingl
+\gla Marek doktor nejme.//
+\glb Marek.\Dir{} doctor.\Dir{} \Cop{}-\Prog{}//
+\glft \trsl{Marek is working toward becoming a doctor.}//
+\endgl
+\xe
+
+The \textsc{contemplative} (\ird{nách}) locates the transition in prospective
+time: the subject will enter the new classification. It is neutral between
+imminent and more remote futures.
+
+\ex
+\begingl
+\gla Marek doktor nách.//
+\glb Marek.\Dir{} doctor.\Dir{} \Cop{}-\Ctp{}//
+\glft \trsl{Marek will become a doctor.}//
+\endgl
+\xe
+
+The \textsc{perfective} (\ird{nek}) presents the transition as a completed
+event: the subject has crossed the threshold and entered the new state. The
+resulting state is typically understood as still holding unless contextually
+cancelled.
+
+\pex
+\a
+\begingl
 \gla Ša byl kapitan nek.//
 \glb \Dem{}.\Prox{} child.\Dir{} captain.\Dir{} \Cop{}-\Pf{}//
 \glft \trsl{This child became captain.}//
 \endgl
+\a
+\begingl
+\gla Ša byl kapitan zánek.//
+\glb \Dem{}.\Prox{} child.\Dir{} captain.\Dir{} \Neg{}-\Cop{}-\Pf{}//
+\glft \trsl{This child did not become captain.}//
+\endgl
 \xe
 
-In the continuous aspect, \ird{neh-} may describe a newly entered or recently changed state, with the inchoative flavour modulated by context; a purely stable state assertable without implication of transition calls for zero copula instead. The predicative complement of \ird{neh-} stands in the direct case, as with zero-copula equatives.
+\subsubsection{The retrospective and past equative predication}%
+\label{sec:neh-past}
 
-The sequential converb \ird{nesu} --- colloquially \ird{nu} --- is a suppletive form established independently of the regular aspect paradigm. Its grammaticalization as a discourse particle is described in Section~\ref{sec:seq-copula} of Chapter~\ref{ch:complex}.
+The \textsc{retrospective} (\ird{naní}) presents the transition as situated in
+a past frame and viewed from the current moment. Its semantics are
+aspectually neutral between the transitional reading (the subject entered the
+state at some point in the past) and the stative reading (the subject was in
+the state during the relevant past period).
+
+\pex
+\a
+\begingl
+\gla Marek doktor naní.//
+\glb Marek.\Dir{} doctor.\Dir{} \Cop{}-\Ret{}//
+\glft \trsl{Marek was a doctor. / Marek had been a doctor.}//
+\endgl
+\a
+\begingl
+\gla Marek doktor zananí.//
+\glb Marek.\Dir{} doctor.\Dir{} \Neg{}-\Cop{}-\Ret{}//
+\glft \trsl{Marek was not a doctor.}//
+\endgl
+\xe
+
+This dual function of the retrospective is a direct consequence of the
+temporal restriction on the zero copula. Since the zero copula is confined to
+present-time and atemporal predications, past equative contexts require an overt
+verb, and \ird{naní} is the form that fills this role. The transitional
+implication that \ird{neh-} normally carries is therefore weakened or absent
+in retrospective equatives: \ird{Marek doktor naní} does not necessarily imply
+that Marek underwent a process of becoming a doctor, only that the doctor
+classification held in the past. The implication is a pragmatic default, not a
+semantic entailment of the retrospective form, and is readily cancelled by context.
+
+Whether the past classification still holds is not encoded. \ird{Marek doktor
+naní} is compatible both with Marek's remaining a doctor and with his having
+ceased to be one; the current-state inference, if present, is a conversational
+implicature from the choice of a past-framed form over the zero-copula present.
+
+The sequential converb \ird{nesu} --- colloquially \ird{nu} --- is a suppletive
+form established independently of the regular aspect paradigm. Its
+grammaticalization as a discourse particle is described in
+Section~\ref{sec:seq-copula} of Chapter~\ref{ch:complex}.
 
 \section{Existential constructions}
 \label{sec:existential-constructions}
@@ -949,7 +1702,11 @@ projection, NegP, whose Neg\textsuperscript{0} head occupies position 4 in the
 clause spine (above AspP, below IP/MoodP; see Table~\ref{tab:th-clause-spine} in
 §\,\ref{sec:th-clause-structure}). The surface form of Neg\textsuperscript{0}
 varies by predicate type, yielding three distinct phonological reflexes that
-together cover all clause types.
+together cover all clause types. This section provides a descriptive account of
+the distribution; the formal DM analysis of Neg\textsuperscript{0} allomorphy
+(including the prefix paradox and the unified NegP argument) is developed in
+§\,\ref{sec:vm-neg} and §\,\ref{sec:vm-neg-exponents} of
+Chapter~\ref{ch:verbs}.
 
 \subsection{Verbal clauses: \ird{zá-}}
 
@@ -960,7 +1717,7 @@ has no independent prosodic weight, it procliticizes to the left edge of the
 verbal complex. The NegP head is syntactically above AspP, but PF
 cliticization places the prefix before the root --- a phonological rather
 than a syntactic inversion. See §\,\ref{sec:negation} of Chapter~\ref{ch:verbs}
-and §\,\ref{sec:vm-neg} (\texttt{verb-minim.tex}) for the full analysis.
+and §\,\ref{sec:vm-neg} of Chapter~\ref{ch:verbs} for the full analysis.
 
 \subsection{Equative clauses: \ird{staly}}
 
@@ -1017,7 +1774,10 @@ because identificational predications are exhaustive: asserting that $x$ is the
 entity satisfying the description entails that no other entity does. Negating
 an exhaustive assertion therefore entails the existence of a different satisfier.
 This implication is pragmatically cancellable in principle but is the strongly
-expected interpretation in discourse.
+expected interpretation in discourse. For the formal scope analysis --- including
+the semantic formula, the contrast with propositional \ird{zá-}, and the
+derivation of the contrastive implication from exhaustivity --- see
+§\,\ref{sec:vm-ident-neg} of Chapter~\ref{ch:verbs}.
 
 \subsection{Existential clauses: \ird{zad-}}
 
@@ -1032,11 +1792,17 @@ Neg\textsuperscript{0} head remaining to be spelled out separately. See
 
 \subsection{Mood-internal negation: prohibitive and negative hortative}
 
-The prohibitive suffix \ird{-é} and the negative hortative suffix \ird{-ku}
-encode [+\textsc{neg}] as a feature of the MoodP head itself. When MoodP bears
-inherent negative force, NegP is not projected, and \ird{zá-} accordingly does
-not appear. The negative force of these forms is therefore not a consequence of
-NegP but of a higher projection. See §\,\ref{sec:mood} of Chapter~\ref{ch:verbs}.
+The prohibitive \ird{-é}, the negative hortative \ird{-ku}, and the negative
+irrealis \ird{-ir} each carry [+\textsc{neg}] as a lexically specified feature
+of the MoodP Vocabulary Item. When a MoodP head bears this feature, NegP is
+absent from the derivation: the clause is built with the negative MoodP merging
+directly above AspP, and \ird{zá-} does not surface because there is no
+Neg\textsuperscript{0} node for it to spell out. The [+\textsc{neg}] of these
+forms is directive-scoped (qualifying a command, suggestion, or hypothetical),
+not propositional, and therefore not equivalent to the truth-conditional negation
+of NegP. For the full MoodP analysis, including the paradigm of affirmative and
+negative Vocabulary Items and the non-palatalizing behavior of \ird{-ir}, see
+§\,\ref{sec:vm-moodp} of Chapter~\ref{ch:verbs}.
 
 \subsection{Summary}
 
@@ -1044,27 +1810,30 @@ The distribution is summarized in the following table:
 
 \begin{table}[ht]
   \footnotesize\sffamily
-  \caption{NegP exponents by predicate type.}\label{tab:neg-exponents}
+  \caption{Negation strategies by predicate/mood type.}\label{tab:neg-exponents}
   \medskip
   \begin{tabularx}{\textwidth}{L L L L}
     \toprule
-    \textsc{predicate type} & \textsc{affirmative} & \textsc{negative (Neg\textsuperscript{0} exponent)} & \textsc{negation type} \\
+    \textsc{predicate/mood type} & \textsc{affirmative} & \textsc{negative} & \textsc{negation scope} \\
     \midrule
-    Verbal (indicative)         & verbal complex                & \ird{zá-} prefix on verbal complex        & propositional \\
-    Equative / zero copula      & $\emptyset$ copula            & \ird{staly} (free morpheme, clause-final) & predicational \\
-    Identificational (part. nom.) & part. nominal + $\emptyset$ & part. nominal + \ird{staly}               & identificational \\
-    Existential                 & \ird{jec-}                    & \ird{zad-} (suppletive root)              & propositional \\
-    Command (prohibitive)       & \ird{-ím} (imperative)        & \ird{-é} (NegP not projected)           & --- \\
-    Suggestion (hortative)      & \ird{-ká} (hortative)         & \ird{-ku} (NegP not projected)            & --- \\
+    Verbal (indicative)           & verbal complex                & \ird{zá-} prefix; NegP projected          & propositional \\
+    Equative / zero copula        & $\emptyset$ copula            & \ird{staly} (free morpheme, clause-final) & predicational \\
+    Identificational (part.\ nom.) & part.\ nom.\ + $\emptyset$  & part.\ nom.\ + \ird{staly}                & identificational \\
+    Existential                   & \ird{jec-}                    & \ird{zad-} (suppletive root); NegP projected & propositional \\
+    \midrule
+    \multicolumn{4}{l}{\textit{Mood-internal negation: NegP not projected; [+\textsc{neg}] on MoodP head}} \\[2pt]
+    Command (imperative)          & \ird{-ím}                     & \ird{-é} (prohibitive)                    & directive scope \\
+    Suggestion (hortative)        & \ird{-ká}                     & \ird{-ku} (neg.\ hortative)               & directive scope \\
+    Hypothetical (irrealis)       & \ird{-ěv}                     & \ird{-ir} (neg.\ irrealis)                & modal/hypothetical scope \\
     \bottomrule
   \end{tabularx}
 \end{table}
 
-\noindent The formal analysis, including the DM account of the prefix paradox
-(\ird{zá-} as a procliticized NegP head in head-final context) and the full
-argument for a unified NegP across all three predicate types, is in
-§\,\ref{sec:vm-neg} and §\,\ref{sec:vm-neg-exponents} of the verbal morphosyntax
-companion (\texttt{util/stub/verb-minim.tex}).
+\noindent The formal analysis --- including the DM account of the prefix paradox
+(\ird{zá-} as a procliticized NegP head in head-final context), the unified NegP
+argument across all predicate types, and the MoodP paradigm of affirmative and
+negative Vocabulary Items --- is in §\,\ref{sec:vm-neg} and
+§\,\ref{sec:vm-neg-exponents} and §\,\ref{sec:vm-moodp} of Chapter~\ref{ch:verbs}.
 
 \section{Comparative and superlative constructions}\label{sec:comparison}
 
