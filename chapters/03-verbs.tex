@@ -279,20 +279,20 @@ The contrast is most readily observed in nominative-alignment contexts, where th
 \endgl
 \xe
 
-\noindent In the imperative and hortative the same promotion yields benefactive readings by default:
+\noindent In the imperative and hortative the same promotion yields benefactive readings by default. Directive clauses require the beneficiary to be overtly realized; the applicative is ungrammatical without one (see §\,\ref{sec:mood-directive-valency}):
 
 \pex
 \a
 \begingl
-\gla piašt-éb-ím//
-\glb eat-\Appl{}-\Imp{}//
-\glft \trsl{Feed someone!}//
+\gla Trava bylam piaštébím.//
+\glb bread.\Dir{} child.\Ind{} eat-\Appl{}-\Imp{}//
+\glft \trsl{Feed the child bread.}//
 \endgl
 \a
 \begingl
-\gla piašt-éb-ká//
-\glb eat-\Appl{}-\Hort{}//
-\glft \trsl{Let's feed someone!}//
+\gla Trava bylam piaštébká.//
+\glb bread.\Dir{} child.\Ind{} eat-\Appl{}-\Hort{}//
+\glft \trsl{Let's feed the child bread.}//
 \endgl
 \xe
 
@@ -391,15 +391,15 @@ The causative \ird{-na-} adds an external causer argument to the event. In nomin
 \endgl
 \a
 \begingl
-\gla piašt-naj-ím//
-\glb eat-\Caus{}-\Imp{}//
-\glft \trsl{Make someone eat!}//
+\gla Trava bylam piaštnajím.//
+\glb bread.\Dir{} child.\Ind{} eat-\Caus{}-\Imp{}//
+\glft \trsl{Make the child eat the bread.} \lingcontext{directive; causee in \Ind{} required}//
 \endgl
 \a
 \begingl
-\gla piašt-na-ká//
-\glb eat-\Caus{}-\Hort{}//
-\glft \trsl{Let's make someone eat!}//
+\gla Trava bylam piašt-na-ká.//
+\glb bread.\Dir{} child.\Ind{} eat-\Caus{}-\Hort{}//
+\glft \trsl{Let's make the child eat the bread.}//
 \endgl
 \xe
 
@@ -756,12 +756,17 @@ blocking the Asp head: when MoodP is merged above AspP, the Asp
 head is defective and receives no Vocabulary Item at the AspP node.
 The morphological output is therefore Mood without Aspect.
 
-This has a consequence for case assignment. In the imperative and
-hortative, case marking follows nominative-accusative alignment
-regardless of what the aspect would have been. This is consistent
-with the MoodP analysis: when Mood is present, the case-assigning
-features of Asp are either neutralized or overridden by features of
-the Mood head, which assigns nominative-style alignment by default.
+This has a consequence for case assignment. In the directive moods,
+the case-assigning features of the Asp.Align head are absent, and
+case is instead determined by the principles of the directive domain
+described in §\,\ref{sec:mood-directive}: the direct case is assigned
+to the theme or the clause's sole participant, the transitive to an
+overt speech-act participant subject where competition would otherwise
+arise, and the indirect to applicative beneficiaries and causative
+causees. The directive case geometry is therefore not a carry-over
+of either the ergative or the nominative-accusative indicative
+alignment, but the output of its own case-assignment principles once
+the Asp.Align head is suppressed.
 
 
 
@@ -778,126 +783,172 @@ The absence of \ird{zá-} in the prohibitive (\ird{-é}), the negative hortative
 
 \subsection{Formal analysis: NegP and the prefix paradox}
 \label{sec:vm-neg}
+\label{sec:vm-neg-exponents}
 
 The negative prefix \ird{zá-} stands before the entire verbal stem.
 Within the clause spine (Table~\ref{tab:th-clause-spine}), NegP
 occupies projection 4, above AspP but below IP. If the Mirror
 Principle held perfectly, \ird{zá-} should appear \emph{after} the
-Asp.Align suffix (because NegP dominates AspP and therefore
-corresponds to a more peripheral morpheme). Instead it appears as a
-prefix, inside the verbal complex to the left of the root.
+Asp.Align suffix, since NegP dominates AspP and therefore corresponds
+to a more peripheral morpheme. Instead it appears as a prefix, inside
+the verbal complex to the left of the root.
 
-Several analyses are available:
+Three analyses are possible. Under V-to-Neg head movement, the verbal
+complex undergoes further movement to the Neg head in narrow syntax,
+making \ird{zá-} the Neg head with the raised complex to its right;
+but in a head-final language the Neg head should follow its complement,
+predicting \ird{*piaštek zá-}, so the account requires either
+surface-right adjunction or a PF reordering rule. A scope-based prefix
+convention (Bybee 1985) treats the prefix position as a cross-linguistic
+tendency for high-scope operators to surface as prefixes in verb-final
+languages (cf.\ Turkish, Mongolian, Basque \textit{ez}), making
+the Mirror Principle simply inapplicable to negation. The preferred
+account is DM morphological incorporation at PF (Embick \& Noyer 2007):
+NegP is a syntactic head above AspP, but \ird{zá-} is specified as a
+prefix and at PF phonologically cliticizes to the left edge of the
+verbal complex, leaving the syntactic hierarchy intact. The
+procliticization itself is direct evidence: \ird{zá-} does not
+form an independent prosodic word.
 
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape V-to-Neg head movement.] In narrow syntax, the
-  verbal complex (after internal head-movement that assembles the
-  vP/AspP cluster) undergoes further V-to-Neg head movement.
-  \ird{Zá-} is the Neg head, and the raised verbal complex appears
-  to its right in an underlying Neg-head-complement structure.
-  But in a head-final language, the Neg head should follow its
-  complement, predicting \ird{*piaštek zá-} rather than
-  \ird{zá-piaštek}. This analysis therefore requires either
-  a surface-right adjunction or a PF reordering rule.
-\item[\upshape Morphological incorporation at PF.] In a DM
-  account, the verbal complex forms a phonological word through
-  morphological merger (Embick \& Noyer 2007).
-  NegP is a syntactic head above AspP, but its exponent \ird{zá-}
-  is specified as a prefix; at PF, it is phonologically attached
-  to the left edge of the next word (the verbal complex). This
-  approach is consistent with the observation that \ird{zá-}
-  is phonologically procliticized onto the verb: it does not
-  form an independent prosodic word but attaches as a bound
-  morpheme.
-\item[\upshape Scope-based prefix convention.] Some languages
-  consistently realize high-scope operators as prefixes and
-  low-scope operators as suffixes, independent of the Mirror
-  Principle (Bybee 1985). Under this view,
-  the prefix position of \ird{zá-} reflects a cross-linguistic
-  tendency for negation to be expressed as a prefix in verb-final
-  languages (cf.\ Turkish, Mongolian, Japanese \textit{-nai} at
-  the suffix edge, but Basque \textit{ez} as a preverbal clitic).
-  The Iridian case is typologically unremarkable; the strict Mirror
-  Principle does not hold for negation cross-linguistically.
-\end{description}
+That the DM account is correct emerges most clearly from a unified
+treatment of Neg\textsuperscript{0} across all clause types. Treating
+\ird{zá-} as the sole reflex of NegP is incomplete: Neg\textsuperscript{0}
+has three PF exponents conditioned by predicate type. With a finite
+verbal predicate, Neg\textsuperscript{0} is realized as the procliticized
+prefix \ird{zá-} attached to the left edge of the verbal complex; because
+that complex is itself clause-final by head-finality, the prefix surfaces
+immediately before the root, yielding propositional negation of the event
+description. With a zero-copula equative or class-membership predicate,
+there is no verbal host for \ird{zá-} to cliticize onto, and
+Neg\textsuperscript{0} is instead spelled out as the free morpheme
+\ird{staly}, which surfaces in the canonical head-final position following
+its two nominal arguments --- the position expected of any clause-final
+head, requiring no additional movement rule. When the predicative
+complement is a plain DP the result is \term{predicational negation}
+(\ird{Marek doktor staly}, \trsl{Marek is not a doctor}); when it is a
+participant nominal (§\,\ref{sec:nmlz-predicative}) the result is
+\term{identificational negation} (§\,\ref{sec:vm-ident-neg} below).
+With the existential verb \ird{jec-}, Neg\textsuperscript{0} triggers a
+DM readjustment: the existential root is realized as the suppletive
+allomorph \ird{zad-} and Neg\textsuperscript{0} itself has no independent
+PF exponent, negation being absorbed into the root via Vocabulary
+Insertion --- the standard behavior of suppletive negative existentials
+cross-linguistically (cf.\ Turkish \textit{yok}/\textit{var};
+Japanese \textit{nai}/\textit{aru}).
 
-\noindent The preferred analysis for present purposes is the DM
-morphological-incorporation account: NegP is a syntactic head
-above AspP, but its PF reflex is a prefix that cliticizes to the
-verbal complex. This keeps the syntactic hierarchy intact while
-attributing the prefix position to a PF-level operation. The
-analysis is flagged as requiring further development in
-§\,\ref{sec:vm-tension-neg}.
-
-\subsubsection{The PF exponents of Neg\textsuperscript{0}: a unified account}
-\label{sec:vm-neg-exponents}
-
-The treatment of \ird{zá-} as the sole reflex of NegP is incomplete.
-A unified account of negation across all Iridian clause types reveals
-that Neg\textsuperscript{0} has three PF exponents conditioned by the
-type of predication, with a further distinction in semantic scope
-between propositional and identificational negation within the
-zero-copula domain.
-
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Verbal predicates: \ird{zá-} (prefix).]
-  When the predicate is a finite verbal complex, Neg\textsuperscript{0}
-  is phonologically realized as the procliticized prefix \ird{zá-},
-  attached to the left edge of the verbal complex. Because the verbal
-  complex is itself clause-final by head-finality, the prefix surfaces
-  immediately before the root. The result is propositional negation:
-  the entire event description is denied.
-\item[\upshape Equative / zero-copula predicates: \ird{staly} (free morpheme).]
-  When the predicate is a zero-copula equative or class-membership
-  clause, there is no verbal complex for \ird{zá-} to cliticize onto.
-  Neg\textsuperscript{0} is instead spelled out as the free morpheme
-  \ird{staly}, which surfaces in the head-final position expected of
-  any clause-final head: following its two nominal arguments (topic DP
-  and predicative DP). No additional movement rule is required; the
-  surface position of \ird{staly} is the canonical position of a
-  head-final NegP head. When the predicative complement is a plain DP,
-  the result is \term{predicational negation} (\ird{Marek doktor staly},
-  \trsl{Marek is not a doctor}). When the predicative complement is a
-  participant nominal (§\,\ref{sec:nmlz-predicative}), the result is
-  \term{identificational negation} (§\,\ref{sec:vm-ident-neg} below).
-\item[\upshape Existential predicates: \ird{zad-} (suppletive root).]
-  When the predicate is the existential verb \ird{jec-}, the presence
-  of Neg\textsuperscript{0} in the derivation triggers a
-  DM-style readjustment: the existential root is realized as the
-  suppletive allomorph \ird{zad-} rather than the default \ird{jec-},
-  and Neg\textsuperscript{0} itself has no independent PF exponent.
-  Negation is, in effect, absorbed into the verbal root via Vocabulary
-  Insertion. This is the standard behavior of suppletive negative
-  existentials cross-linguistically (cf.\ Turkish \textit{yok}/positive
-  \textit{var}; Japanese \textit{nai}/positive \textit{aru}).
-\end{description}
-
-\noindent The complete distribution, including mood-internal negation, is
+The complete distribution, including mood-internal negation, is
 summarized in Table~\ref{tab:neg-exponents} of Chapter~\ref{ch:simple}.
-The three environments above --- verbal, equative, and existential --- are
-a conditioned allomorphy of a single
+The three environments are a conditioned allomorphy of a single
 Neg\textsuperscript{0} head, not distinct lexical negation strategies.
-The NegP projection occupies the same structural position (above AspP,
-below MoodP) in all clause types; what varies is (a) the PF exponent of
-Neg\textsuperscript{0} and (b) the semantic scope of negation, which is
-determined by the semantics of the predication that NegP takes in its scope.
+NegP occupies the same structural position (above AspP, below MoodP)
+in all clause types; what varies is the PF exponent of
+Neg\textsuperscript{0} and the semantic scope of negation, which is
+determined by the semantics of the predication NegP takes in its scope.
+
+\begin{figure}[ht]
+  \footnotesize\sffamily
+  \caption{Comparative exponence of Neg\textsuperscript{0} across clause types. In all three structures NegP occupies the same position above AspP or the zero-copula predication; what varies is the PF realization of Neg\textsuperscript{0}. Only the verbal clause shows the prefix-paradox effect, with \ird{zá-} cliticized to the left edge of the verbal complex rather than surfacing in canonical head-final position.}\label{fig:neg0-comparative}
+  \medskip
+  \centering
+  \scriptsize
+  \begin{minipage}[t]{0.30\textwidth}
+    \centering
+    \textsc{Verbal clause}\par
+    \medskip
+    \begin{forest}
+      syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
+      [\textsc{NegP}
+        [\textit{topic DP}]
+        [\textsc{Neg$'$}
+          [\textsc{Neg$^{0}$}\\\ird{zá-}\\{\small(PF prefix)}]
+          [\textsc{AspP}
+            [\textsc{Asp$'$}
+              [\textsc{Asp}\\\textit{asp.align}]
+              [\textsc{VP}
+                [\textsc{V}\\\textit{root}]
+              ]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.30\textwidth}
+    \centering
+    \textsc{Equative clause}\par
+    \medskip
+    \begin{forest}
+      syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
+      [\textsc{NegP}
+        [\textit{topic DP}]
+        [\textsc{Neg$'$}
+          [\textsc{Neg$^{0}$}\\\ird{staly}]
+          [\textsc{EquP}
+            [\textit{pred.\ DP}]
+            [\textsc{Eq$'$}
+              [\textsc{Eq$^{0}$}\\{$\varnothing$}]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.30\textwidth}
+    \centering
+    \textsc{Existential clause}\par
+    \medskip
+    \begin{forest}
+      syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
+      [\textsc{NegP}
+        [\textit{pivot DP}]
+        [\textsc{Neg$'$}
+          [\textsc{Neg$^{0}$}\\{\small($\varnothing$: absorbed)}]
+          [\textsc{AspP}
+            [\textsc{Asp$'$}
+              [\textsc{Asp}\\\textit{asp}]
+              [\textsc{ExistP}
+                [\textsc{Exist$'$}
+                  [\textsc{Exist$^{0}$}\\\ird{zad-}\\{\small(suppletive)}]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  \end{minipage}
+\end{figure}
 
 An important consequence follows for the prefix paradox. The paradox
 arises specifically for verbal predicates, where \ird{zá-} must attach
-to a phonological host. In equative clauses, where no such host exists,
-\ird{staly} surfaces in the expected head-final position --- after its
-complement (the nominal predication). This means \ird{staly} provides
-the clearest direct evidence for the head-final status of NegP: when
-PF cliticization is unavailable, Neg\textsuperscript{0} appears
-exactly where the clause spine predicts. The prefixhood of \ird{zá-}
-is therefore a PF-level cliticization effect, not the canonical
-behavior of Neg\textsuperscript{0}.
+to a phonological host; Figure~\ref{fig:neg0-comparative} makes clear
+that this is the outlier among the three exponents, not the structural
+default. In equative clauses, where no such host exists, \ird{staly}
+surfaces in the expected head-final position --- after its complement
+(the nominal predication) --- and therefore gives the clearest direct
+evidence for the head-final status of NegP. In existential clauses,
+\ird{zad-} shows the same Neg\textsuperscript{0} head being discharged
+through suppletive Vocabulary Insertion at Exist\textsuperscript{0}
+rather than by an independent overt exponent. The prefixhood of
+\ird{zá-} is therefore a PF-level cliticization effect, not the
+canonical behavior of Neg\textsuperscript{0}.
 
 For equative clauses specifically, the word order reflects the
 head-final NegP structure transparently:
 
 \begin{center}
-[\textsc{NegP}\ \ [topic-DP \ \ pred-DP/pred-NP] \ \ \ird{staly}]
+\begin{forest}
+  syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
+  [\textsc{NegP}
+    [\textit{topic DP}]
+    [\textsc{Neg$'$}
+      [\textit{pred-DP/pred-NP}]
+      [\textsc{Neg$^{0}$}\\\ird{staly}]
+    ]
+  ]
+\end{forest}
 \end{center}
 
 \noindent The two nominal constituents before \ird{staly} may permute
@@ -921,6 +972,30 @@ as a VI-internal feature, NegP is absent from the derivation and
 [+\textsc{neg}] --- including the semantic distinction between
 directive-scoped and propositional negation, and the restricted
 palatalizing behavior of \ird{-ir} --- is in §\,\ref{sec:vm-moodp}.
+
+The DM morphological-incorporation account makes the following
+empirical commitments. (a)~\ird{Zá-} does not constitute an
+independent prosodic word: it is a bound clitic on the verbal
+complex and cannot receive independent stress or be separated from
+the stem by an intervening focus particle. (b)~Nothing may
+intervene between \ird{zá-} and the stem; evidence of such
+separation would require the cliticization analysis to be
+revised. (c)~In ellipsis and fragment contexts, \ird{zá-} cannot
+appear stranded without the full verbal complex, unlike a
+free-standing negative head that could survive ellipsis of its
+complement. Two further commitments bear on the three-exponent
+analysis: (d)~\ird{staly} is fully invariant, bearing no aspect,
+person, mood, or iterative marking; paradigmatic variation in
+future data would favour a defective-verbal-root analysis
+over the Neg\textsuperscript{0} account. (e)~The three exponents
+(\ird{zá-}, \ird{staly}, \ird{zad-}) are in strict complementary
+distribution, conditioned by the presence or absence of a finite
+verbal host; the equative/stative boundary is treated in
+§\,\ref{sec:vm-tension-stative}. Cross-linguistic typology is
+consistent with this picture: prefix negation is well attested in
+SOV languages (Dryer 2013), suggesting the prefix position of
+\ird{zá-} reflects a systematic PF convention rather than a
+Mirror Principle violation.
 
 \subsubsection{Identificational negation and the scope of \ird{staly}}
 \label{sec:vm-ident-neg}
@@ -994,43 +1069,218 @@ of Chapter~\ref{ch:nouns}.
 
 \section{Mood}\label{sec:mood}
 
-The mood system comprises the indicative, the imperative, the hortative, and the irrealis. Mood is expressed by a suffix occupying the position immediately following the aspect-alignment morpheme; in the indicative this suffix is null. Where a mood suffix is present, the aspect-alignment slot is suppressed, the mood suffix replacing the full aspect complex.
+The mood system comprises the indicative, the imperative, the prohibitive, the hortative, and the irrealis. Mood is expressed by a suffix occupying the position immediately following the aspect-alignment morpheme; in the indicative this suffix is null. Where a mood suffix is present, the aspect-alignment slot is suppressed, the mood suffix replacing the full aspect complex. The imperative, prohibitive, and hortative together form the directive domain, a unified subsystem with its own case properties; it is treated as a group beginning in §\,\ref{sec:mood-directive}.
 
 \subsection{Indicative}
 
 The indicative is the unmarked mood. It alone hosts the full five-way aspect system and the split-ergative alignment described in Section~\ref{sec:aspect}; it is accordingly the only mood in which the antipassive-transitive distinction is operative.
 
-\subsection{Imperative and prohibitive}
+\subsection{The directive domain}\label{sec:mood-directive}
 
-The imperative (\ird{-ím}) encodes a direct command; the prohibitive (\ird{-é}) a negative command. The regular negative prefix \ird{zá-} does not combine with the prohibitive, the suffix carrying the negative force within itself. In both the imperative and the hortative, case marking on nouns follows nominative-accusative alignment: the agent stands in the absolutive and the patient appears in the indirect. The imperative is inherently second person and requires no pronominal clitic.
+The imperative, the prohibitive, and the hortative form a unified directive domain: a compact finite subsystem used for commands, negative commands, suggestions, proposals, soft requests, permissive uses, and wishes. This subsystem operates on principles distinct from those of the indicative. Where the indicative couples mood with the full five-way aspect system and the split-ergative alignment described in Section~\ref{sec:aspect}, directive moods exclude the ordinary aspect suffixes entirely. The directive mood suffix is itself clause-defining and therefore occupies the aspect-alignment slot in the verbal template; no aspect morpheme is present alongside it.
+
+The directive domain is further governed by a case principle not operative in the indicative: directive clauses ordinarily permit only one core nominal in the direct case. The understood subject of imperative and prohibitive clauses is second person and is normally left unexpressed, being recoverable from the speech situation. Where an overt speech-act participant subject would otherwise compete with an overt direct object for the clause's single direct slot, that subject is expressed in the transitive case instead. The patient or theme of the clause is thus the clause's sole core direct nominal. Beneficiaries licensed by the applicative and causees licensed by the causative are obligatorily overt and appear in the indirect. Antipassive morphology is excluded from all directive moods.
+
+\subsection{Imperative and prohibitive}\label{sec:mood-imp}
+
+The imperative (\ird{-ím}) is the ordinary mood for direct commands, instructions, warnings, and immediate discourse-management directives addressed to the hearer. The prohibitive (\ird{-é}) is its dedicated negative counterpart, used for negative commands and preventative directives. The two are treated together because they share the same null-subject pattern and the same case geometry.
+
+The subject of both the imperative and the prohibitive is second person and is syntactically understood but ordinarily unexpressed; no pronominal clitic is required. The theme or patient of the clause occupies the direct case as the clause's single core direct nominal:
 
 \pex
 \a
 \begingl
-\gla Travě piaštím.//
-\glb bread.\Ind{} eat-\Imp{}//
-\glft \trsl{Eat the bread!}//
+\gla Trava piaštím.//
+\glb bread.\Dir{} eat-\Imp{}//
+\glft \trsl{Eat the bread.}//
 \endgl
 \a
 \begingl
-\gla Ty hrabním.//
-\glb \Dem{}.\Prox{}.\Ind{} listen-\Imp{}//
-\glft \trsl{Listen to this!}//
+\gla Tak hrabním.//
+\glb \Dem{}.\Prox{}.\Dir{} hear-\Imp{}//
+\glft \trsl{Hear this.}//
 \endgl
 \xe
 
-Valency operations are compatible with the imperative and prohibitive and occupy their regular positions in the template before the mood suffix, as: \ird{piašt-éb-ím} \textit{Feed someone!} and \ird{piašt-naj-ím} \textit{Make someone eat!}
-
-\subsection{Hortative}
-
-The hortative is used for suggestions, invitations, and polite requests, including first-person plural uses of the type \textit{let us}. It serves as the default polite register in ordinary speech, typically preferred over the imperative in everyday conversation. Like the imperative, it employs nominative-accusative alignment and requires no aspect suffix. The hortative takes two forms: the positive \ird{-ká} and the negative \ird{-ku}.
+The prohibitive carries the negative force within the suffix itself and does not co-occur with the ordinary negative prefix \ird{zá-}. This is a structural consequence of the morphology: the prohibitive suffix bears the inherent negative value of the MoodP Vocabulary Item, rendering NegP absent from the derivation; see §\,\ref{sec:vm-moodp} for the formal account. A prohibition accordingly takes the following form:
 
 \pex
-\a \ird{piašt-ká} \trsl{Let's eat / Shall we eat?}
-\a \ird{piašt-ku} \trsl{Let's not eat.}
-\a \ird{piašt-éb-ká} \trsl{Let's feed someone.}
-\a \ird{piašt-na-ká} \trsl{Let's make someone eat.}
+\a
+\begingl
+\gla Trava piašté.//
+\glb bread.\Dir{} eat-\Proh{}//
+\glft \trsl{Do not eat the bread.}//
+\endgl
 \xe
+
+Overt second-person subjects are permitted in both the imperative and the prohibitive, but they are pragmatically marked, expressing foregrounding, contrast, insistence, or rebuke toward the addressee. The second-person singular pronoun is \ird{já} in the direct and \ird{jí} in the transitive; the second-person plural is \ird{tová} in the direct and \ird{tvy} in the transitive. In a transitive imperative or prohibitive clause where an overt direct object is already present, an overt speech-act participant subject appears in the transitive case rather than the direct, so that the affected participant may remain the clause's sole direct nominal:
+
+\pex
+\a
+\begingl
+\gla Jí trava piaštím.//
+\glb 2\textsc{sg}.\Trs{} bread.\Dir{} eat-\Imp{}//
+\glft \trsl{You eat the bread.} \lingcontext{marked; overt 2\textsc{sg} subject in \Trs{}}//
+\endgl
+\a
+\begingl
+\gla Tvy trava piašté.//
+\glb 2\textsc{pl}.\Trs{} bread.\Dir{} eat-\Proh{}//
+\glft \trsl{You lot do not eat the bread.} \lingcontext{marked; overt 2\textsc{pl} subject in \Trs{}}//
+\endgl
+\xe
+
+\noindent The pressure for the transitive case arises specifically from competition: an overt subject would otherwise displace the direct object from the clause's single direct slot. In intransitive directive clauses lacking a competing direct object, no such competition arises, and the rule does not force the transitive. The rule is therefore competition-sensitive rather than absolute.
+
+\subsection{Hortative}\label{sec:mood-hort}
+
+The hortative covers a broader range of directive uses than the imperative: inclusive proposals of the type \textit{let us}, softened direct commands, permissive uses of the type \textit{let the child come}, and optative expressions of wish or hope. It serves as the default polite register in ordinary speech, typically preferred over the imperative in everyday conversation. The hortative takes two forms: the positive \ird{-ká} and the negative \ird{-ku}. Like the imperative and prohibitive, it excludes the ordinary aspect suffixes and operates within the single-direct principle of the directive domain.
+
+The hortative defaults to a null subject whose interpretation is supplied by clause type and context. In proposal uses the null subject is most readily read as first person plural, inclusive of the addressee; in softened directive uses the same null subject may receive a second-person reading. Null-subject hortatives are the unmarked form:
+
+\pex
+\a
+\begingl
+\gla Piaštká.//
+\glb eat-\Hort{}//
+\glft \trsl{Let's eat.} \lingcontext{null subject; inclusive proposal}//
+\endgl
+\a
+\begingl
+\gla Tak hrabnká.//
+\glb \Dem{}.\Prox{}.\Dir{} hear-\Hort{}//
+\glft \trsl{Please hear this.} \lingcontext{null subject; softened directive with direct object}//
+\endgl
+\xe
+
+The negative hortative \ird{-ku} is used for proposals to refrain, cautious collective restraint, and mild negative requests. Like the prohibitive, it is an inherently negative Vocabulary Item and accordingly excludes \ird{zá-}:
+
+\pex
+\a
+\begingl
+\gla Tak piaštku.//
+\glb \Dem{}.\Prox{}.\Dir{} eat-\Neg{}\Hort{}//
+\glft \trsl{Let's not eat this.} \lingcontext{negative hortative; collective restraint}//
+\endgl
+\xe
+
+Overt subjects in the hortative fall into two structurally distinct classes. The first class comprises overt speech-act participant subjects --- first person plural, second person singular, second person plural --- appearing in proposal or soft-command uses. These behave exactly like marked subjects in the imperative and prohibitive: where they would otherwise compete with an overt direct object for the clause's single direct slot, they appear in the transitive case:
+
+\pex
+\a
+\begingl
+\gla Mně trava piaštká.//
+\glb 1\textsc{pl}.\Trs{} bread.\Dir{} eat-\Hort{}//
+\glft \trsl{Let us eat the bread.} \lingcontext{overt 1\textsc{pl} subject in \Trs{}}//
+\endgl
+\a
+\begingl
+\gla Jí tak hrabnká.//
+\glb 2\textsc{sg}.\Trs{} \Dem{}.\Prox{}.\Dir{} hear-\Hort{}//
+\glft \trsl{Please, you hear this.} \lingcontext{marked; overt 2\textsc{sg} subject in \Trs{}}//
+\endgl
+\xe
+
+The second class comprises overt lexical subjects in optative or permissive hortatives, where the clause expresses a wish or permission directed toward a third participant rather than a command to the addressee. Such clauses are typically intransitive. Their lexical subject occupies the direct case as the clause's single core direct nominal --- the same position that in transitive directive clauses would be held by the theme or patient. Because there is no competing direct object, no competition for the direct slot arises and the transitive case is not required:
+
+\pex
+\a
+\begingl
+\gla Byl ščenká.//
+\glb child.\Dir{} arrive-\Hort{}//
+\glft \trsl{May the child come.} \lingcontext{intransitive optative; lexical subject in \Dir{}}//
+\endgl
+\a
+\begingl
+\gla Je ščenká.//
+\glb \Dem{}.\Dist{}.\Dir{} arrive-\Hort{}//
+\glft \trsl{May that come to pass.} \lingcontext{intransitive optative; distal demonstrative in \Dir{}}//
+\endgl
+\xe
+
+\noindent The contrast between these two subject classes captures the essential geometry of the directive domain. An overt speech-act participant subject appears in the transitive when a direct object is present because it would otherwise compete with that object for the single direct slot. A lexical subject of an intransitive optative or permissive hortative faces no such competition and therefore remains in the direct. The reason for the difference is not grammatical person but structural: in the first class a competing direct nominal is present; in the second it is not.
+
+\subsection{Case and subject expression in directive clauses}\label{sec:mood-directive-case}
+
+The case properties of the directive domain may be stated compactly as a set of rules that govern all three moods.
+
+Directive clauses ordinarily permit only one core nominal in the direct case. In transitive uses, that nominal is the theme or patient of the predicate. In intransitive uses it is the clause's sole participant. The understood second-person subject of imperative and prohibitive clauses, and the understood subject of hortative clauses, are syntactically present but normally left unexpressed.
+
+Overt speech-act participant subjects are pragmatically marked throughout the directive domain. Where their expression would otherwise compete with an overt direct object, they appear in the transitive case rather than the direct, preserving the affected participant as the clause's sole direct nominal. The following minimal pair makes the contrast plain:
+
+\pex
+\a
+\begingl
+\gla Trava piaštím.//
+\glb bread.\Dir{} eat-\Imp{}//
+\glft \trsl{Eat the bread.} \lingcontext{null subject; theme in \Dir{}}//
+\endgl
+\a
+\begingl
+\gla Jí trava piaštím.//
+\glb 2\textsc{sg}.\Trs{} bread.\Dir{} eat-\Imp{}//
+\glft \trsl{You eat the bread.} \lingcontext{overt subject in \Trs{}; theme in \Dir{}}//
+\endgl
+\xe
+
+\noindent By contrast, an overt lexical subject of an intransitive optative or permissive hortative may remain in the direct when no other direct nominal is present, since the single-direct principle is not under pressure. The competition-sensitive nature of the rule means it neither applies to intransitive clauses nor generalizes beyond the contexts in which direct-slot competition actually arises.
+
+\subsection{Valency-changing morphology in directive clauses}\label{sec:mood-directive-valency}
+
+Applicative and causative morphology are compatible with the directive moods. Both occupy their regular positions in the morphological template immediately before the directive mood suffix, which is accordingly the outermost suffix in the verbal complex within the mood domain. The directive suffix thus remains outer to all valency morphology.
+
+The applicative (\ird{-éb-}) is licensed in directive clauses only if the beneficiary is overtly realized. The beneficiary appears in the indirect case, typically with the postposition \ird{my}, while the theme retains the direct. This fits the directive case geometry without disturbance: the direct holds the theme, the indirect holds the beneficiary, and an overt addressee subject, if present, occupies the transitive:
+
+\pex
+\a
+\begingl
+\gla Trava bylam piaštébím.//
+\glb bread.\Dir{} child.\Ind{} eat-\Appl{}-\Imp{}//
+\glft \trsl{Feed the child bread.} \lingcontext{applicative; beneficiary in \Ind{}}//
+\endgl
+\a
+\begingl
+\gla Jí trava bylam piaštébím.//
+\glb 2\textsc{sg}.\Trs{} bread.\Dir{} child.\Ind{} eat-\Appl{}-\Imp{}//
+\glft \trsl{You feed the child bread.} \lingcontext{overt subject in \Trs{}}//
+\endgl
+\xe
+
+\noindent Without an overt beneficiary the applicative is ungrammatical in directive clauses:
+
+\pex
+\a \rec{trava piaštébím} \trsl{intended: `Feed someone bread.'} \lingcontext{applicative without beneficiary}
+\xe
+
+The causative (\ird{-na-}) likewise requires an overtly realized causee in directive clauses. The causee appears in the indirect case, keeping the direct available for the theme. The directive case pattern for causatives therefore parallels that for applicatives exactly: theme in the direct, causee in the indirect, overt addressee subject in the transitive if present. Before the vowel-initial mood suffixes (\ird{-ím}, \ird{-é}), the causative takes its epenthetic form \ird{-naj-}; before the consonant-initial hortative \ird{-ká} it remains \ird{-na-}:
+
+\pex
+\a
+\begingl
+\gla Trava bylam piaštnajím.//
+\glb bread.\Dir{} child.\Ind{} eat-\Caus{}-\Imp{}//
+\glft \trsl{Make the child eat the bread.} \lingcontext{causative; causee in \Ind{}}//
+\endgl
+\a
+\begingl
+\gla Jí trava bylam piaštnajím.//
+\glb 2\textsc{sg}.\Trs{} bread.\Dir{} child.\Ind{} eat-\Caus{}-\Imp{}//
+\glft \trsl{You make the child eat the bread.} \lingcontext{overt subject in \Trs{}}//
+\endgl
+\xe
+
+\noindent Without an overt causee the causative is ungrammatical in directive clauses:
+
+\pex
+\a \rec{trava piaštnajím} \trsl{intended: `Make someone eat the bread.'} \lingcontext{causative without causee}
+\xe
+
+The requirement for overt beneficiaries and causees is categorical. The directive subsystem resolves case pressure not by multiplying direct nominals but by reserving the direct for the theme and assigning added non-theme participants to the indirect. An applicative without a beneficiary or a causative without a causee would leave an indirect role structurally implied but unresolved. Since the language tolerates multiple indirect nominals, a directive clause bearing both applicative and causative morphology is structurally possible, even if stylistically heavy; the principle throughout is that added participants enter the indirect while the theme retains the direct.
+
+Antipassive morphology is excluded from all directive moods. The discourse function of the antipassive --- demoting a patient from core status in order to foreground the agent's activity --- is incompatible with the directive domain. In the directive subsystem the null-subject orientation already removes the agent-versus-patient tension that motivates antipassive use in the indicative, and the single-direct principle already resolves any structural pressure by assigning the direct to the theme and the transitive to the overt subject. The antipassive-transitive distinction is therefore operative only in the indicative.
+
+The directive subsystem as a whole is characterized by null-subject orientation, the absence of ordinary aspect morphology, a preference for only one core direct nominal, marked overt speech-act participant subjects in the transitive case where competition for the direct slot would arise, and the well-structured integration of applicative and causative morphology in which beneficiaries and causees enter the indirect. This pattern does not simply reproduce either half of the indicative split. Rather, it regularizes its own case geometry in a way that keeps the direct nominal central and prevents competition within the clause core.
+
 
 \subsection{Irrealis}
 
@@ -2548,40 +2798,13 @@ case-assigning feature bundle that triggers the ergative pattern.
 
 The formal analysis of the conjunctive linker \ird{-e} --- including its phonological characterization, morphosyntactic distribution, the competing unified CP-edge, PF boundary-marker, and two-homophone analyses, and the outstanding empirical questions --- is developed in full in the conjunctive linker section above (§\,\ref{sec:conjunctive-linker}).
 
-\subsection{The NEG prefix vs.\ NegP position}
+\subsection{The NEG prefix vs.\ NegP position: see §\,\ref{sec:vm-neg}}
 \label{sec:vm-tension-neg}
 
-As discussed in §\,\ref{sec:vm-neg}, the prefix position of
-\ird{zá-} is in tension with the expected Mirror Principle
-prediction that NegP, being above AspP, should correspond to a
-morpheme outside AspP (i.e., as a suffix). Cross-linguistic
-research on verbal negation in SOV languages (Dryer 2013) shows that prefix negation is common in
-such languages, suggesting a systematic PF convention rather than
-a Mirror Principle violation. The preferred account --- morphological
-incorporation at PF --- makes the following empirical predictions
-that can be tested directly: (a) \ird{Zá-} does not form an
-independent prosodic word; it is a bound clitic on the verbal
-complex and cannot receive independent stress or be separated by
-an intervening focus particle. (b) Nothing may intervene between
-\ird{zá-} and the stem; if focus or evidential particles can split
-the two, the cliticization analysis would need revision. (c) In
-ellipsis or fragment contexts, \ird{zá-} cannot appear stranded
-without the full verbal complex (unlike a free-standing negative
-head, which should be able to survive ellipsis of its complement).
-
-Two additional predictions bear on the three-exponent analysis
-developed in §\,\ref{sec:vm-neg-exponents}: (d) \ird{Staly} is
-fully invariant, bearing no aspect, person, mood, or iterative
-marking. If future data reveal paradigmatic variation, the
-Neg\textsuperscript{0} analysis would need revision in favour of
-a defective verbal root. (e) The conditioning environments for
-the three exponents (\ird{zá-}, \ird{staly}, \ird{zad-}) are
-strictly complementary, delineated by the presence or absence of
-a finite verbal host (see §\,\ref{sec:vm-tension-stative} for the
-equative/stative boundary, which is now explicitly resolved). Any
-attested overlap context --- a clause where the predicate is
-ambiguous between equative and stative --- would require the
-complementarity claim to be refined.
+The prefix-paradox tension and its resolution via the DM
+morphological-incorporation account are discussed in full in
+§\,\ref{sec:vm-neg}; the empirical commitments of that account
+are listed at the end of §\,\ref{sec:vm-neg-exponents}.
 
 \subsection{The person clitic and the absolutive Agr problem}
 \label{sec:vm-tension-agr}
