@@ -4,7 +4,7 @@
 
 The verb is the morphological nucleus of the Iridian clause, and upon it falls the principal burden of grammatical expression. While nouns admit of inflection for case alone and are in all other respects morphologically inert, the verb concentrates within itself all information pertaining to the nature of the event described, the relation of its participants, and the speaker's orientation toward what is asserted. Every finite verb bears the aspect-alignment suffix, which is the sole obligatory element of the verbal complex; beyond this the verb may carry markers of voice, mood, evidentiality, and person, in an order fixed by the morphological template set out in the following section. Tense, gender, and number agreement find no expression on the Iridian verb.
 
-\section{The morphological template}
+\section{The morphological template}\label{sec:morph-template}
 
 The structure of a finite verb in Iridian is given by the following template, wherein parentheses enclose optional elements and the sole obligatory position is that of the aspect-alignment suffix:
 
@@ -17,6 +17,93 @@ The structure of a finite verb in Iridian is given by the following template, wh
 The \textsc{asp.align} slot fuses aspect and alignment into a single morpheme and is the one element no finite verb may lack. The mood slot may be analysed as containing a null morpheme in the indicative. The negative prefix \ird{zá-} stands before the entire stem complex. Evidential suffixes are attested in the literature but remain insufficiently described; they are accordingly omitted from the present chapter.
 
 Pronominal clitics, which occupy the \textsc{person} slot, encode the grammatical person of the absolutive argument and are described in Section~\ref{sec:clitics}.
+
+
+\subsection{The Mirror Principle and functional projections}\label{sec:vm-overview}
+
+\noindent Baker's (1985) \term{Mirror Principle}
+predicts that morphological derivations directly reflect syntactic
+derivations: each morpheme corresponds to a syntactic head, and the
+order of morphemes on the verbal complex mirrors the order in which
+those heads are merged. Reading outward from the root, the Iridian
+template projects the following hierarchy of functional
+projections:
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Morphological template positions and corresponding
+  syntactic projections (innermost to outermost).}\label{tab:vm-projections}
+  \medskip
+  \begin{tabularx}{\textwidth}{l l L l}
+    \toprule
+    {\sc position} & {\sc morpheme} & {\sc syntactic projection} &
+    {\sc see} \\
+    \midrule
+    Root         & \Stem{}           & $\surd$P / VP (lexical predicate)
+                 & §\,\ref{sec:vm-root} \\
+    Voice        & \Antip{} / \Appl{} & VoiceP / ApplP
+                 & §\,\ref{sec:vm-antipassive} \\
+    Causative    & \Caus{}           & CausP
+                 & §\,\ref{sec:vm-caus} \\
+    Asp.Align    & \Asp{}.\textsc{align} & AspP (fused Asp + Case)
+                 & §\,\ref{sec:vm-asp} \\
+    Neg (prefix) & \Neg{}            & NegP (see §\,\ref{sec:vm-neg})
+                 & §\,\ref{sec:vm-neg} \\
+    Mood         & \textsc{mood}     & MoodP / IP
+                 & §\,\ref{sec:vm-moodp} \\
+    Evidential   & \textsc{evid}     & EvidP$_\text{inner}$
+                 & §\,\ref{sec:vm-evid} \\
+    Person       & \textsc{person}   & AgrP (clitic zone)
+                 & §\,\ref{sec:vm-agr} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent The prefix position of \Neg{} (§\,\ref{sec:vm-neg})
+presents a principled complication: the Mirror Principle predicts
+that NegP, being scopally above AspP, should correspond to a suffix
+that appears \emph{outside} the Asp.Align morpheme. The Iridian
+prefix instead appears before the root. This is a well-known
+typological type --- prevalent in verb-final languages --- and its
+theoretical resolution is discussed in §\,\ref{sec:vm-tension-neg}.
+
+
+
+\subsubsection{The root and VP}
+\label{sec:vm-root}
+
+The lexical stem is the exponent of the Root merged with the
+functional category V (or, in Distributed Morphology terms, the
+root $\surd$ inserted under a categorizing head $v_\text{intr}$ for
+intransitives, or $v^*$ for transitives). The Iridian verb allows no
+citation form; the stem is bound and always requires at least the
+Asp.Align suffix. This confirms that the root must be licensed by a
+selecting functional head: a bare root without an Asp projection is
+unlicensed in the language.
+
+The VP formed by the root + its arguments constitutes the innermost
+layer of the verbal clause. In a transitive clause the internal
+argument (patient) is merged as the complement of V:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{VP}
+    [\textit{patient DP}]
+    [\textsc{V}
+      [\textit{root}]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent Because Iridian is rigorously head-final
+(§\,\ref{sec:th-head-finality}), this complement surfaces to the
+left of the verbal head at every embedded level. The preverbal
+position of the object is therefore not derived by movement but is
+the base-generated configuration of the head-final VP.
+
+
 
 \section{The verb stem and thematic classes}
 
@@ -94,6 +181,49 @@ Equally, for a transitive verb, the bare perfective without either \ird{-n-} or 
 
 \noindent\textit{Note:} The antipassive and the applicative are in complementary distribution; a verb cannot take both simultaneously.
 
+
+\subsubsection{Minimalist analysis: the antipassive as VoiceP}
+\label{sec:vm-antipassive}
+
+The antipassive (\ird{-aš-}) suppresses the patient from the
+argument structure and promotes the agent to absolutive. Within the
+Minimalist framework this is most naturally analyzed as an active
+\term{VoiceP} projection
+(Kratzer 1996; Alexiadou et~al. 2006): the antipassive head occupies Spec/Head
+of VoiceP and bears features that prevent the internal argument
+(patient) from being merged or from receiving an interpretable case.
+
+The template order --- antipassive slot between root and Caus.Asp
+--- confirms that VoiceP immediately dominates VP:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{VoiceP}
+    [\textit{agent DP}\\\textsc{[abs]}]
+    [\textsc{Voice$'$}
+      [\textsc{Voice}\\\ird{-aš-}]
+      [\textsc{VP}
+        [\textit{root}]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The complementary distribution of the antipassive and
+applicative (\ird{-aš-} and \ird{-éb-} cannot co-occur on the same
+stem) is a direct consequence of both occupying the same VoiceP
+projection: only one Voice head can be merged at this tier.
+
+A transitive verb bearing neither \ird{-aš-} nor \ird{-éb-} in the
+ergative aspects must bear the transitive marker \ird{-n-} (see
+§\,\ref{sec:vm-n}). The absence of this marker with the bare
+perfective suffix on transitive verbs is therefore a case-licensing
+failure: without a transitivity marker in the Voice domain, the
+patient receives no structural case and the derivation crashes.
+
+
 \subsection{The applicative (\ird{-éb-})}
 
 The applicative promotes a peripheral argument --- most commonly a beneficiary or recipient, but also a goal, location, or instrument --- to core argument status, placing it in the absolutive. The suffix \ird{-éb-} derives from an older benefactive morpheme and still defaults to a beneficiary or recipient reading when such an interpretation is available. Where the lexical semantics of the verb or the wider clause exclude a benefactive reading, the applicative is interpreted instead as promoting the most discourse-salient non-core participant, typically a goal, location, or instrument. Only one applicative argument may be promoted in a single clause.
@@ -103,13 +233,13 @@ The contrast is most readily observed in nominative-alignment contexts, where th
 \pex
 \a
 \begingl
-\gla Marek děvčatě piastime.//
+\gla Marek bylam piastime.//
 \glb Marek.\Dir{} child.\Ind{} eat-\Prog{}//
 \glft \trsl{Marek is eating for the child.} \lingcontext{beneficiary remains oblique}//
 \endgl
 \a
 \begingl
-\gla Marek děvča piaštébime.//
+\gla Marek bylam piaštébime.//
 \glb Marek.\Dir{} child.\Dir{} eat-\Appl{}-\Prog{}//
 \glft \trsl{Marek is feeding the child.} \lingcontext{beneficiary promoted to core status}//
 \endgl
@@ -167,6 +297,50 @@ The contrast is most readily observed in nominative-alignment contexts, where th
 \xe
 
 \noindent The antipassive and the applicative are in complementary distribution. This is not an accidental gap: the antipassive suppresses the patient from the grammatical core, whereas the applicative creates a new core object out of a peripheral participant. The two operations therefore compete for the same argument-structural domain and cannot be combined on a single finite stem.
+
+
+\subsubsection{Minimalist analysis: the applicative as ApplP}
+\label{sec:vm-appl}
+
+The applicative (\ird{-éb-}) promotes a peripheral (non-core)
+participant to absolutive status. Following Pylkkänen
+(2008), this can be analyzed as a
+\term{high applicative} head (ApplP) that introduces the promoted
+argument into the event structure between VoiceP and CausP:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{ApplP}
+    [\textit{applied arg.}]
+    [\textsc{Appl$'$}
+      [\textsc{Appl}\\\ird{-éb-}]
+      [\textsc{VP/VoiceP}
+        [\ldots]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The beneficiary, goal, or instrument promoted by the
+applicative becomes the absolutive argument of the resulting vP,
+effectively taking the slot that would otherwise be occupied by the
+patient. The interaction with discourse is mediated at the AspP
+level: which of the available absolutive candidates (patient or
+applied argument) becomes the topic absolutive is determined by the
+Asp.Align morpheme selected (§\,\ref{sec:vm-asp}).
+
+%% STUB: The question of whether Iridian uses a high or low
+%% applicative (Pylkkänen's distinction) should be tested
+%% diagnostically. High applicatives introduce an argument that
+%% relates to the event; low applicatives introduce an argument
+%% related directly to the patient. In Iridian, beneficiary
+%% promotion appears to be high (no entailment of patient
+%% affectedness), while instrument promotion may be low.
+%% This distinction bears on whether there are two distinct ApplP
+%% projections, or a single one with type-sensitive semantics.
+
 
 \subsection{The causative (\ird{-na-})}
 
@@ -231,6 +405,60 @@ The causative \ird{-na-} adds an external causer argument to the event. In nomin
 
 \noindent Synchronically, \ird{-na-} is distinct from the ergative transitive marker \ird{-n-}. The former is a valency-changing derivation occupying the causative slot of the verbal template; the latter is an alignment marker inserted immediately before the perfective and retrospective suffixes. Earlier notes used \ird{-ne-} for the causative, but the present grammar regularises \ird{-na-} in order to keep the derivational causative distinct in form from the simple transitive marker.
 
+
+\subsubsection{Minimalist analysis: the causative as CausP}
+\label{sec:vm-caus}
+
+The causative (\ird{-na-}) introduces an external causer above the
+base event structure, corresponding to a \term{CausP} projection
+that dominates VoiceP/ApplP. The causer argument is merged in
+Spec,CausP:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{CausP}
+    [\textit{causer DP}]
+    [\textsc{Caus$'$}
+      [\textsc{Caus}\\\ird{-na-}]
+      [\textsc{VoiceP/ApplP}
+        [\ldots]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The morphological order (applicative before causative
+before Asp.Align) is predicted: CausP dominates VoiceP/ApplP, and
+the Mirror Principle assigns them to the innermost positions relative
+to AspP. The interaction with aspect is semantically significant
+(§\,\ref{sec:aspect-caus}): perfective causation presents direct
+causer control (CausP features trigger tight Agree with the event
+head), while retrospective causation presents indirect or
+permissive causation (looser Agree relation, admitting delegated or
+accidental readings).
+
+\subsubsection{The transitive marker \ird{-n-} and its status}
+\label{sec:vm-n}
+
+The morpheme \ird{-n-} appears immediately before the perfective and
+retrospective suffixes on transitive verbs and is distinct from the
+causative \ird{-na-}. It is tempting to treat \ird{-n-} as the
+Vocabulary Item for the transitive $v^*$ head in ergative contexts.
+Under this analysis, \ird{-n-} is the morphological exponent of
+transitivity/voice (the $v^*$ head) that surfaces only when the
+Asp.Align head selects ergative alignment. This implies that
+\ird{-n-} and \ird{-aš-} / \ird{-éb-} are competing exponents of
+the same VoiceP slot: in ergative-aligned clauses, VoiceP is
+realized as \ird{-n-} (transitive) or \ird{-aš-} (antipassive) or
+\ird{-éb-} (applicative), and the selection is morphologically
+conditioned by the Asp.Align head.
+
+The theoretical tension this raises is documented at
+§\,\ref{sec:vm-tension-n}.
+
+
 \subsection{Pragmatic use of valency operations}
 
 The choice among ergative, antipassive, applicative, and causative is not purely mechanical. Each construction offers the speaker a distinct way of packaging the event for discourse. The antipassive is used when the patient is generic, non-referential, semantically incorporated into the activity, recoverable from context, or intentionally backgrounded. Its effect is to keep the agent in absolutive position and to present the clause as being about what the agent did rather than about what happened to some patient.
@@ -240,6 +468,7 @@ The applicative serves the opposite discourse function: it pulls a formerly peri
 The causative likewise has a pragmatic life beyond its valency-changing effect. By choosing a causative rather than a simple predicate, the speaker frames the event in terms of inducement, delegated agency, or control. In direct contexts this may foreground authority or coercion; in weaker retrospective contexts it may soften the causer's responsibility, presenting the caused event as something merely permitted, arranged, or indirectly brought about rather than personally carried out.
 
 The applicative and causative are compatible with the imperative and hortative and occupy their regular positions in the morphological template before the mood suffix.
+
 
 \section{Aspect and alignment}\label{sec:aspect}
 
@@ -421,13 +650,346 @@ The progressive (\ird{-ime}) encodes a dynamic activity in progress, distinguish
 
 The contemplative (\ird{-ach}) encodes a mental state directed toward a potential future action: intention, consideration, or disposition toward an act not yet performed. It may be rendered in English as \textit{about to}, \textit{considering}, or \textit{intending to}, according to context.
 
+
+\subsection{Formal analysis: the Asp.Align morpheme}
+\label{sec:vm-asp}
+
+The aspect-alignment suffix is the sole obligatory morpheme in every
+finite Iridian verbal form. Its double burden --- encoding both the
+aspect of the event and the alignment pattern of case assignment ---
+makes it the central theoretical challenge of the Iridian verbal
+system.
+
+\subsubsection{Aspect-driven case assignment}
+\label{sec:vm-asp-case}
+
+In the Minimalist framework, case assignment is mediated by Agree:
+a functional head $\alpha$ probes its c-command domain for a DP
+bearing an unvalued Case feature, and values that feature (Chomsky
+2001). The Asp head in Iridian probes for \emph{two} DPs: the absolutive and the non-absolutive argument. The
+values assigned depend on the lexical content of the Asp head:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Ergative aspects (perfective, retrospective).] The
+  Asp head values the internal argument (patient) as \textsc{abs}
+  (direct case) and values the external argument (agent) as
+  \textsc{erg} (transitive case). This implements a
+  \term{dependent-case} pattern (Marantz 1991):
+  the ergative is the marked case assigned to the agent only when a
+  patient is present and has received absolutive.
+\item[\upshape Nominative aspects (continuous, progressive,
+  contemplative).] The Asp head values the external argument
+  as \textsc{abs} and the internal argument as \textsc{obl}
+  (indirect case). The patient is not a structural absolutive in
+  these aspects; it receives oblique case as a default or dependent
+  of the VP.
+\end{description}
+
+\noindent This account has the consequence that the Asp head is
+responsible for both the temporal/eventive interpretation of the
+clause and its case-marking pattern. The fusion is not an accident:
+it reflects the close coupling in Iridian between information
+structure (which argument is topic/absolutive) and the aspectual
+choice the speaker makes.
+
+\subsubsection{Split ergativity and the information-structure interface}
+\label{sec:vm-asp-info}
+
+The grammar's description of aspect selection as a
+\emph{pragmatic} decision (the speaker selects the aspect that
+places the discourse-salient argument in absolutive) requires
+formal reconciliation with the syntactic Agree mechanism described
+above.
+
+Two strategies are available within Minimalism:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Top-down feature percolation.] Topic assignment
+  operates in the left periphery (Spec,TopP), where an argument
+  already bears topic features. These features are passed down
+  (through some mechanism of syntactic binding or coindexation) to
+  the Asp head, constraining which Vocabulary Item is inserted at
+  Asp. A patient-topic clause selects an ergative Asp morpheme; an
+  agent-topic clause selects a nominative Asp morpheme. This
+  requires either late lexical insertion (consistent with
+  Distributed Morphology) or a bidirectional Agree relation between
+  TopP and AspP.
+\item[\upshape Late Vocabulary Insertion.] In a DM-style account
+  (Halle \& Marantz 1993; Embick \& Noyer 2007), the Asp node in narrow syntax is
+  underspecified for the choice of morpheme. Vocabulary Items are
+  inserted post-syntactically by matching feature bundles. The
+  speaker's information-structural decision (which argument is
+  discourse-topic) is registered as a feature [\textsc{top}] on one
+  of the DP arguments; this feature is present when Vocabulary
+  Insertion takes place and conditions which Asp morpheme is
+  inserted.
+\end{description}
+
+\noindent The DM approach has the advantage of keeping
+narrow-syntax Agree simple (the Asp head probes for DPs in its
+c-command domain without knowing in advance which DP will be the
+absolutive) while assigning information-structural conditioning to
+the PF component. This is the preferred analysis here, though
+it requires elaboration of how [\textsc{top}] features are
+represented in the DM morphological component.
+
+The key theoretical desideratum: the grammar's informal claim that
+``aspect choice is partly pragmatic'' must be formalized as a
+specific interface mechanism. Until this is done, the claim risks
+being merely redescriptive. A concrete proposal: the
+[\textsc{top}] feature on a DP argument is set at the information
+structure level (in the C-domain or in a dedicated information
+structure component co-indexed with TopP), and this feature
+determines which Asp Vocabulary Item is inserted. The split is
+then not a quirk of case morphology but a reflex of the language's
+deep commitment to topic-comment organization at every level of
+the grammar.
+
+\subsubsection{Mood as a competing head}
+\label{sec:vm-mood-asp}
+
+When a mood suffix is present (imperative \ird{-ím}, prohibitive
+\ird{-éma}, hortative \ird{-ká/-ku}, irrealis \ird{-ěv}), the
+Asp.Align slot is suppressed entirely: mood replaces aspect. In
+syntactic terms, this is most naturally analyzed as the MoodP head
+blocking the Asp head: when MoodP is merged above AspP, the Asp
+head is defective and receives no Vocabulary Item at the AspP node.
+The morphological output is therefore Mood without Aspect.
+
+This has a consequence for case assignment. In the imperative and
+hortative, case marking follows nominative-accusative alignment
+regardless of what the aspect would have been. This is consistent
+with the MoodP analysis: when Mood is present, the case-assigning
+features of Asp are either neutralized or overridden by features of
+the Mood head, which assigns nominative-style alignment by default.
+
+
+
 \section{Negation}\label{sec:negation}
 
 The negative prefix \ird{zá-} --- reduced to \ird{za-} in unstressed environments --- stands before the entire verbal complex. In the indicative it accordingly precedes the stem itself. In the imperative and hortative, negation is expressed by distinct suffixes rather than by \ird{zá-}; see Section~\ref{sec:mood}.
 
-This section describes verbal negation --- the use of \ird{zá-} with finite predicates --- exclusively. Negation in equative clauses (zero-copula constructions) and existential clauses (the \ird{jec-}/\ird{zad-} alternation) is treated in §\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}; the theoretical analysis of all three negation strategies as reflexes of a single NegP projection is developed in §\,\ref{sec:vm-neg} and §\,\ref{sec:vm-neg-exponents} of the verbal morphosyntax companion (\texttt{util/stub/verb-minim.tex}).
+This section describes verbal negation --- the use of \ird{zá-} with finite predicates --- exclusively. Negation in equative clauses (zero-copula constructions) and existential clauses (the \ird{jec-}/\ird{zad-} alternation) is treated in §\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}.
 
 The absence of \ird{zá-} in the prohibitive (\ird{-éma}) and in the negative hortative (\ird{-ku}) is not arbitrary. Both suffixes carry inherent negative force: in theoretical terms, [+\textsc{neg}] is a feature of the MoodP head itself in these forms, and NegP is therefore not projected. Compare the regular indicative negation, where the MoodP head is null (indicative) and NegP is projected with overt \ird{zá-}. The blocking of \ird{zá-} in prohibitive and negative hortative contexts thus follows from the general principle that [+\textsc{neg}] may be discharged at most once per clause; see §\,\ref{sec:vm-moodp} for the MoodP analysis.
+
+
+\subsection{Formal analysis: NegP and the prefix paradox}
+\label{sec:vm-neg}
+
+The negative prefix \ird{zá-} stands before the entire verbal stem.
+Within the clause spine (Table~\ref{tab:th-clause-spine}), NegP
+occupies projection 4, above AspP but below IP. If the Mirror
+Principle held perfectly, \ird{zá-} should appear \emph{after} the
+Asp.Align suffix (because NegP dominates AspP and therefore
+corresponds to a more peripheral morpheme). Instead it appears as a
+prefix, inside the verbal complex to the left of the root.
+
+Several analyses are available:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape V-to-Neg head movement.] In narrow syntax, the
+  verbal complex (after internal head-movement that assembles the
+  vP/AspP cluster) undergoes further V-to-Neg head movement.
+  \ird{Zá-} is the Neg head, and the raised verbal complex appears
+  to its right in an underlying Neg-head-complement structure.
+  But in a head-final language, the Neg head should follow its
+  complement, predicting \ird{*piaštek zá-} rather than
+  \ird{zá-piaštek}. This analysis therefore requires either
+  a surface-right adjunction or a PF reordering rule.
+\item[\upshape Morphological incorporation at PF.] In a DM
+  account, the verbal complex forms a phonological word through
+  morphological merger (Embick \& Noyer 2007).
+  NegP is a syntactic head above AspP, but its exponent \ird{zá-}
+  is specified as a prefix; at PF, it is phonologically attached
+  to the left edge of the next word (the verbal complex). This
+  approach is consistent with the observation that \ird{zá-}
+  is phonologically procliticized onto the verb: it does not
+  form an independent prosodic word but attaches as a bound
+  morpheme.
+\item[\upshape Scope-based prefix convention.] Some languages
+  consistently realize high-scope operators as prefixes and
+  low-scope operators as suffixes, independent of the Mirror
+  Principle (Bybee 1985). Under this view,
+  the prefix position of \ird{zá-} reflects a cross-linguistic
+  tendency for negation to be expressed as a prefix in verb-final
+  languages (cf.\ Turkish, Mongolian, Japanese \textit{-nai} at
+  the suffix edge, but Basque \textit{ez} as a preverbal clitic).
+  The Iridian case is typologically unremarkable; the strict Mirror
+  Principle does not hold for negation cross-linguistically.
+\end{description}
+
+\noindent The preferred analysis for present purposes is the DM
+morphological-incorporation account: NegP is a syntactic head
+above AspP, but its PF reflex is a prefix that cliticizes to the
+verbal complex. This keeps the syntactic hierarchy intact while
+attributing the prefix position to a PF-level operation. The
+analysis is flagged as requiring further development in
+§\,\ref{sec:vm-tension-neg}.
+
+\subsubsection{The PF exponents of Neg\textsuperscript{0}: a unified account}
+\label{sec:vm-neg-exponents}
+
+The treatment of \ird{zá-} as the sole reflex of NegP is incomplete.
+A unified account of negation across all Iridian clause types reveals
+that Neg\textsuperscript{0} has three PF exponents conditioned by the
+type of predication, with a further distinction in semantic scope
+between propositional and identificational negation within the
+zero-copula domain.
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Verbal predicates: \ird{zá-} (prefix).]
+  When the predicate is a finite verbal complex, Neg\textsuperscript{0}
+  is phonologically realized as the procliticized prefix \ird{zá-},
+  attached to the left edge of the verbal complex. Because the verbal
+  complex is itself clause-final by head-finality, the prefix surfaces
+  immediately before the root. The result is propositional negation:
+  the entire event description is denied.
+\item[\upshape Equative / zero-copula predicates: \ird{staly} (free morpheme).]
+  When the predicate is a zero-copula equative or class-membership
+  clause, there is no verbal complex for \ird{zá-} to cliticize onto.
+  Neg\textsuperscript{0} is instead spelled out as the free morpheme
+  \ird{staly}, which surfaces in the head-final position expected of
+  any clause-final head: following its two nominal arguments (topic DP
+  and predicative DP). No additional movement rule is required; the
+  surface position of \ird{staly} is the canonical position of a
+  head-final NegP head. When the predicative complement is a plain DP,
+  the result is \term{predicational negation} (\ird{Marek doktor staly},
+  \trsl{Marek is not a doctor}). When the predicative complement is a
+  participant nominal (§\,\ref{sec:nmlz-predicative}), the result is
+  \term{identificational negation} (§\,\ref{sec:vm-ident-neg} below).
+\item[\upshape Existential predicates: \ird{zad-} (suppletive root).]
+  When the predicate is the existential verb \ird{jec-}, the presence
+  of Neg\textsuperscript{0} in the derivation triggers a
+  DM-style readjustment: the existential root is realized as the
+  suppletive allomorph \ird{zad-} rather than the default \ird{jec-},
+  and Neg\textsuperscript{0} itself has no independent PF exponent.
+  Negation is, in effect, absorbed into the verbal root via Vocabulary
+  Insertion. This is the standard behavior of suppletive negative
+  existentials cross-linguistically (cf.\ Turkish \textit{yok}/positive
+  \textit{var}; Japanese \textit{nai}/positive \textit{aru}).
+\end{description}
+
+\noindent The environments and their negation types:
+
+\begin{center}
+\begin{tabular}{l l l l}
+\toprule
+\textsc{predicate type} & \textsc{affirmative} & \textsc{negative} & \textsc{negation type} \\
+\midrule
+Verbal              & verbal complex        & \ird{zá-} + verbal complex & propositional \\
+Equative (plain DP) & $\emptyset$ copula    & \ird{staly}                & predicational \\
+Equative (part.\ nom.) & part.\ nom.\ + $\emptyset$ & part.\ nom.\ + \ird{staly} & identificational \\
+Existential         & \ird{jec-}            & \ird{zad-}                 & propositional \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip
+\noindent This is a conditioned allomorphy of a single
+Neg\textsuperscript{0} head, not distinct lexical negation strategies.
+The NegP projection occupies the same structural position (above AspP,
+below MoodP) in all clause types; what varies is (a) the PF exponent of
+Neg\textsuperscript{0} and (b) the semantic scope of negation, which is
+determined by the semantics of the predication that NegP takes in its scope.
+
+An important consequence follows for the prefix paradox. The paradox
+arises specifically for verbal predicates, where \ird{zá-} must attach
+to a phonological host. In equative clauses, where no such host exists,
+\ird{staly} surfaces in the expected head-final position --- after its
+complement (the nominal predication). This means \ird{staly} provides
+the clearest direct evidence for the head-final status of NegP: when
+PF cliticization is unavailable, Neg\textsuperscript{0} appears
+exactly where the clause spine predicts. The prefixhood of \ird{zá-}
+is therefore a PF-level cliticization effect, not the canonical
+behavior of Neg\textsuperscript{0}.
+
+For equative clauses specifically, the word order reflects the
+head-final NegP structure transparently:
+
+\begin{center}
+[\textsc{NegP}\ \ [topic-DP \ \ pred-DP/pred-NP] \ \ \ird{staly}]
+\end{center}
+
+\noindent The two nominal constituents before \ird{staly} may permute
+in accordance with the topic-comment architecture (§\,\ref{sec:topic-comment}),
+while \ird{staly} is invariably clause-final.
+
+The incompatibility of \ird{zad-} with \ird{zá-} also follows without
+additional stipulation. If Neg\textsuperscript{0} triggers the
+suppletive Vocabulary Insertion of \ird{zad-} at the root node,
+then Neg\textsuperscript{0} has already been discharged structurally;
+stacking a second Neg\textsuperscript{0} on top would create an
+uninterpretable double-negation configuration. The prohibition is a
+consequence of the analysis rather than a separate blocking rule.
+
+The relationship between Neg\textsuperscript{0} and the inherently
+negative mood forms (prohibitive \ird{-éma}, negative hortative
+\ird{-ku}) parallels the \ird{zad-} case: these MoodP heads themselves
+carry [+\textsc{neg}], discharging the negative feature at MoodP level
+and blocking NegP projection entirely. See §\,\ref{sec:vm-moodp} for
+the MoodP analysis.
+
+\subsubsection{Identificational negation and the scope of \ird{staly}}
+\label{sec:vm-ident-neg}
+
+The availability of participant nominals as equative predicates
+(§\,\ref{sec:nmlz-predicative} of Chapter~\ref{ch:verbs}) introduces
+a semantically significant variation within the \ird{staly} environment.
+The contrast can be stated precisely in terms of what NegP takes in
+its scope.
+
+In a plain equative (\ird{Marek doktor}), the predication is
+\term{predicational}: it ascribes a property or class to the topic.
+The negated version (\ird{Marek doktor staly}) denies property-membership.
+NegP takes a property-ascription in its scope and yields propositional
+negation of that ascription.
+
+In an identificational equative (\ird{Lobek Jancí piaštnikou},
+\trsl{The apple is what Janek ate}), the predication is
+\term{specificational} or \term{identificational}: it asserts that the
+topic DP is the unique entity satisfying the nominalized description.
+The semantic content of the predicate (the participant nominal) is
+inherently exhaustive --- it picks out exactly one referent. NegP over
+a specificational predication yields \term{identificational negation}:
+
+\begin{center}
+$\lnot$[\textsc{topic} = \textsc{unique-satisfier}(\textit{nom.\ description})]
+\end{center}
+
+\noindent The contrastive implication --- that some other entity is the
+actual satisfier --- follows from the exhaustivity of the original
+predication, not from any special semantic feature of \ird{staly}. This is
+an automatic consequence of negating an exhaustive identification, parallel
+to the contrastive implication of cleft negation in English (\textit{It
+was not the apple that Janek ate}).
+
+Crucially, the semantic difference between propositional \ird{zá-} and
+identificational \ird{staly}+nominal is not ambiguity in the NegP head
+but a difference in what NegP scopes over. \ird{Zá-} scopes over a finite
+event description; \ird{staly} over a (zero-copula) equative predication,
+which may be either property-ascribing or identificational depending on the
+type of its predicate DP.
+
+\begin{center}
+\begin{tabular}{l l l}
+\toprule
+& \textsc{propositional neg.\ (\ird{zá-})} & \textsc{identificational neg.\ (\ird{staly}+nom.)} \\
+\midrule
+Event presupposed?      & no        & yes \\
+Contrastive implication? & no       & yes \\
+NegP scope              & event-VP  & equative predication \\
+PF of Neg\textsuperscript{0} & prefix to verbal complex & free morpheme, clause-final \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip
+\noindent The distinction between these rows is what the user should
+consult when deciding which construction to employ: if the question is
+whether an event occurred, \ird{zá-} is used; if the question is which
+entity was involved in a presupposed event, \ird{staly} with a participant
+nominal is used. Both are structurally expressions of a single NegP.
 
 \section{Mood}\label{sec:mood}
 
@@ -485,6 +1047,70 @@ In stems with the appropriate grade alternations, the front vowels /ɛ/ and /eː
 
 The irrealis is compatible with all three converb moods and serves as the main-clause mood in concessive constructions; both uses are treated in Chapter~\ref{ch:complex}.
 
+
+\subsection{Formal analysis: the IP domain}\label{sec:vm-ip}
+
+\subsubsection{MoodP}
+\label{sec:vm-moodp}
+
+The mood suffixes occupy the projection immediately above AspP. In
+the indicative, this projection is present but headed by a null
+morpheme (the mood suffix has a null exponent). In the
+non-indicative moods (imperative, hortative, irrealis), a lexical
+morpheme appears and simultaneously suppresses AspP (see
+§\,\ref{sec:vm-mood-asp}).
+
+The ordering of Mood above Asp is consistent with the cross-linguistic
+tendency for tense and mood to dominate aspect (Cinque's
+(1999) functional hierarchy places Mood$_\text{irrealis}$
+above Asp$_\text{perfective/imperfective}$). The suppletive mood
+paradigms (indicative zero, imperative \ird{-ím}, prohibitive
+\ird{-éma}, hortative \ird{-ká/-ku}, irrealis \ird{-ěv}) are
+competing Vocabulary Items inserted at the MoodP head.
+
+
+\subsubsection{Inner evidential (EvidP$_\text{inner}$)}
+\label{sec:vm-evid}
+
+An evidential suffix occupies the slot between Mood and the person
+clitic. This \term{inner evidential} (EvidP$_\text{inner}$) is
+distinct from the clausal evidential and speech-act operators in
+the left periphery (§\,\ref{sec:th-particle-framework}), which are
+Zone~I particles occupying EvidP$_\text{outer}$ and SpeechActP in the
+clause spine.
+
+The morphological evidence for the inner evidential is the position
+of the indirect evidential suffix (tentatively \ird{-ejte}) in the
+verbal template: it precedes the complement linker \ird{-e} and
+follows any person clitic. Wait --- actually the order documented in
+\S\,\ref{sec:compl-indirect-evid} is:
+
+\begin{center}
+\textsc{stem} + \textsc{asp.align} + (\textsc{mood}) +
+(\textsc{ind.evid}) + (\textsc{person}) + \ird{-e} + \ird{po}
+\end{center}
+
+\noindent This places the evidential \emph{outside} Mood but
+\emph{inside} person clitics. The corresponding syntactic
+projection is therefore above MoodP but below AgrP (person).
+The boundary with the clausal EvidP$_\text{outer}$ (a left-peripheral
+projection) must be kept clear: the inner evidential marks the
+\emph{source of knowledge} as it bears on the proposition
+expressed by the verbal complex; the outer EvidP particles (Zone~I)
+operate at the clause-level and take scope over the full
+proposition including its discourse-relational frame.
+
+%% STUB: The inner evidential suffix is insufficiently described
+%% (as noted in the main verb chapter). A full treatment must:
+%% (a) establish the form of the suffix with certainty;
+%% (b) determine whether it occupies a projection above or below
+%%     MoodP (the current template places it above, i.e. outside);
+%% (c) investigate its interaction with the outer EvidP particles
+%%     (can they co-occur? What is their combined interpretation?);
+%% (d) test whether the indirect evidential is restricted to
+%%     matrix clauses or also appears freely in embedded clauses.
+
+
 \section{Pronominal clitics}\label{sec:clitics}
 
 Grammatical person is not encoded through verb agreement in Iridian but through optional pronominal clitics that enclitize to the right edge of the verbal complex, in the final slot of the morphological template. The clitics cross-reference the absolutive argument; their use is optional, and they are most commonly omitted where the referent is recoverable from context. Where present, they serve as light disambiguators or carry mild contrastive emphasis.
@@ -514,6 +1140,40 @@ The reduced forms appear after aspect-alignment suffixes ending in a vowel; the 
 \a \ird{piaštnik-em} `I ate it.'
 \a \ird{piastime-š} `you are eating.'
 \xe
+
+
+\subsection{Formal analysis: person clitics and AgrP}
+\label{sec:vm-agr}
+
+The pronominal clitics (\ird{-em}, \ird{-eš}, \ird{-ic}, etc.)
+occupy the outermost position in the verbal complex, corresponding
+to AgrP. They cross-reference the absolutive argument of the
+predicate. Critically, they are \emph{optional}: they are omitted
+when the absolutive referent is recoverable from context and
+present only for disambiguation or mild contrastive emphasis.
+
+This optionality distinguishes Iridian person clitics from full
+agreement morphology. Several analyses present themselves:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Clitics as topic-tracking.] Because the absolutive
+  is the topic (§\,\ref{sec:th-topic-comment-theory}), the person
+  clitic tracks the topic referent across discourse. It is a
+  topic-continuity marker rather than an agreement morpheme:
+  it appears when the topic is being specified, reactivated, or
+  contrasted, and is absent in contexts of stable topic continuity.
+\item[\upshape Clitics as reduced pronouns.] The clitics are
+  phonologically reduced pronominal arguments that may optionally
+  fill the topic position when the full DP topic is dropped. This
+  would make them resumptive-like pronouns in the verbal complex.
+\end{description}
+
+\noindent The fact that third-person inanimate has no clitic form
+supports a topic-tracking analysis: inanimates are rarely
+discourse-topics in the standard sense (they tend to be foci
+rather than topics), and the language reflects this by not
+providing a clitic for that argument type. The analysis is however
+not fully resolved; see §\,\ref{sec:vm-tension-agr}.
 
 \section{Non-finite forms: converb morphology}\label{sec:converb-morphology}
 
@@ -554,6 +1214,64 @@ The converb suffixes and the stem mutations they occasion are set out in the fol
 \end{table}
 
 The simultaneous/manner converb \ird{-ěc} and the irrealis mood \ird{-ěv} belong to the palatalizing domain, while the antipassive \ird{-aš-} is the clearest instance of true sibilant replacement. The conditional \ird{-ic} does not palatalize despite its initial front vowel; the historical reasons for this exception are discussed in Section~\ref{sec:cond-nopala} of Chapter~\ref{ch:complex}. Stronger irregularity is concentrated instead in a few high-frequency linker and quotative forms, where analogical leveling has obscured the older outputs.
+
+
+\subsection{Formal analysis: the syntactic status of converbs}
+\label{sec:vm-converbs}
+
+\subsubsection{Converbs as aspect-deficient vP/VoiceP projections}
+\label{sec:vm-converb-aspless}
+
+Converbs replace the Asp.Align slot entirely. A verb bearing a
+converb suffix therefore projects a vP/VoiceP but no AspP. The
+converb suffix itself can be analyzed as the Vocabulary Item
+inserted at a \term{defective AspP} node: a position in the
+functional hierarchy that would normally host an Asp.Align morpheme
+but instead hosts a converb-class morpheme that lacks aspect and
+alignment features.
+
+Alternatively, converbs project no AspP at all: the converb suffix
+is the head of a Voice or vP projection that merges directly with
+the higher adverbial or complementizer position without passing
+through AspP. The absence of the ergative case marker \ird{-n-}
+inside converb clauses (§\,\ref{sec:converb-chains}) is predicted
+by either account: if AspP is absent, the Asp head that would have
+triggered ergative-absolutive alignment is not present to assign
+the transitive case to the agent.
+
+\subsubsection{Case alignment within converb clauses}
+\label{sec:vm-converb-case}
+
+The nominative-accusative alignment that is invariant within
+converb clauses (absolutive agent, indirect patient) is consistent
+with the absence of an Asp head: without the perfective/
+retrospective Asp head to assign ergative case to the agent, the
+agent defaults to absolutive (nominative), and the patient receives
+oblique/indirect case. This is in effect the same pattern as the
+nominative-aspect main clause, with the difference that in the main
+clause it is the Asp head (continuous/progressive/contemplative)
+that assigns this pattern, whereas in the converb clause it is the
+absence of any Asp head.
+
+\subsubsection{Converb clauses as adjuncts and embedded topics}
+\label{sec:vm-converb-adjunct}
+
+In the clause-combining hierarchy, converb clauses function as
+adverbial adjuncts to the matrix clause. They are merged as
+adjuncts to the matrix IP or vP, not as arguments in Spec or
+Complement positions. This explains their preverbal (and pre-matrix)
+position: as adjuncts to IP, they precede all material within IP
+and surface before the matrix arguments in the linear string,
+consistent with the head-final adjunction pattern.
+
+The switch-reference clitic on converb forms (a person clitic
+attached to the converb to mark different-subject chains,
+§\,\ref{sec:switch-reference}) is analyzed here as an agreement
+morpheme from AgrP of the converb's own small clause, licensing
+an overt null pronoun (PRO or pro) in subject position of the
+converb clause. The clitic marks the topic-argument of the converb
+clause as distinct from the matrix topic-argument.
+
 
 \subsection{The nominalized verb forms}\label{sec:nominalized}
 
@@ -631,6 +1349,7 @@ equatives with \ird{staly} and its semantic contrast with the verbal
 \ird{zá-} are treated in §\,\ref{sec:ident-equative} and
 §\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}.
 
+
 \section{The conjunctive / quotative linker}\label{sec:conjunctive-linker}
 
 Iridian has a verbal linking form in \ird{-e}, used in clause linking and quotative constructions. Synchronically this \ird{-e} is a front-vocalic palatalizing suffix added to the fully inflected verb. It therefore belongs with the palatalization system described in Chapter~\ref{ch:phon}, not with sibilant replacement.
@@ -640,7 +1359,296 @@ Iridian has a verbal linking form in \ird{-e}, used in clause linking and quotat
 \a \ird{piaščaní} $\rightarrow$ \ird{piaščěně}
 \xe
 
-The exact output depends on the segment immediately preceding the linker. Velars typically yield \orth{c/ce}; other endings show the regular soft reflexes of the final consonant or syllable in standard spelling, without introducing separate haček letters for soft \orth{t}, \orth{d}, or \orth{l}. Some older conjunctive formations are analogically levelled and remain morphologized, but the synchronic generalization is clear: \ird{-e} selects a palatalized form of the preceding material. The syntax of this linker is treated in Chapter~\ref{ch:complex}.
+The exact output depends on the segment immediately preceding the linker. Velars typically yield \orth{c/ce}; other endings show the regular soft reflexes of the final consonant or syllable in standard spelling, without introducing separate haček letters for soft \orth{t}, \orth{d}, or \orth{l}. Some older conjunctive formations are analogically levelled and remain morphologized, but the synchronic generalization is clear: \ird{-e} selects a palatalized form of the preceding material. The formal syntactic analysis of the linker is developed in the following subsection.
+
+
+\subsection{Formal analysis: the conjunctive linker \ird{-e}}
+\label{sec:vm-tension-linker}
+
+The linker \ird{-e} appears at the right edge of embedded finite
+clauses before \ird{po}/\ird{poby} and also in the conjunctive
+clause-chaining function described above.
+Its dual function raises the question of whether it is a single
+morpheme with a unified syntactic status or two homophonous
+morphemes. A full resolution requires integrating the phonological
+behavior of \ird{-e} with its morphosyntactic distribution and its
+position in the verbal template.
+
+\subsubsection{Phonological characterization}
+
+\paragraph{Trigger class and palatalization.}
+Synchronically, \ird{-e} is a bound suffix that belongs to the
+productive front-vocalic palatalization system described in
+§\,\ref{sec:front-palatalization}. Its trigger class is the same as
+that of \ird{-ě}, \ird{-í}, and the irrealis suffix \ird{-ěv}: all
+are front-vocalic and all soften the segment to which they attach.
+The conditional converb \ird{-ic}, though it begins with a front
+vowel, is the systematic exception: it does not trigger
+palatalization, because it was grammaticalized during a period when
+its initial vowel lacked palatalizing force
+(§\,\ref{sec:cond-nopala}). This exception is historically
+motivated and synchronically opaque; it does not disturb the
+generalization that \ird{-e} is a palatalizing trigger in the
+productive system.
+
+\paragraph{Segment-specific outputs.}
+The palatalizing effect of \ird{-e} targets the final segment of the
+inflected form to which it attaches, not the thematic consonant of
+the bare stem. The outcomes depend on the place and manner of the
+final consonant:
+
+\begin{itemize}
+  \item \textit{Velars} (/k/, /g/): the velar yields the palatalized
+    affricate series. The most common output is \orth{c} for /k/,
+    as in \ird{piašček} $\rightarrow$ \ird{piaščice} (the final
+    velar of the perfective suffix \ird{-ek/-ik} palatalizes to
+    \orth{c} before \ird{-e}).
+
+  \item \textit{Coronals} (/t/, /d/, /n/, /l/, /r/): the regular
+    soft reflexes apply. Standard spelling does not introduce haček
+    diacritics for softened \orth{t}, \orth{d}, or \orth{l} in this
+    context; the softness is indicated by the following vowel graph
+    or is left orthographically unmarked for the consonant itself.
+    Thus \ird{piaščaní} (the continuous, whose suffix ends in
+    \ird{-í} with final nasal) yields \ird{piaščěně} under \ird{-e}:
+    the nasal palatalizes and the suffix vowel is modified accordingly.
+
+  \item \textit{Labials} (/p/, /b/, /m/, /v/) and liquids (/r/):
+    secondary palatalization (a palatal off-glide) is added, giving
+    the same soft-series output as before nominal \ird{-í}
+    (§\,\ref{sec:palatalization}). These outcomes are less
+    phonologically salient than velar or coronal softening and are
+    typically not marked distinctively in orthography.
+\end{itemize}
+
+\noindent The key generalization is that \ird{-e} selects the soft
+allomorph of whichever ending it attaches to, following the same
+mechanism as other palatalizing suffixes. The output is therefore
+predictable from the palatalization system already operative in
+nominal and verbal morphology, without requiring a separate
+phonological rule.
+
+\paragraph{Interaction with vowel raising.}
+When the final syllable of the inflected form contains a short
+front vowel (\ird{e} or \ird{ě}), that vowel is subject to raising
+to \ird{i}/\ird{í} in the syllable immediately preceding the
+palatalizing trigger (§\,\ref{sec:vowel-raising}). In the derivation
+\ird{piašček} + \ird{-e}: the thematic \ird{-e-} of the perfective
+suffix raises to \ird{-i-} before the palatalized output, yielding
+\ird{piaščice} rather than *\ird{piaščece}. This raising is the same
+rule that operates in \ird{zděk-} + \ird{-ěv} $\rightarrow$
+\ird{zdíčev} (the \ird{-e-} of the root raises before the
+front-vocalic verbal suffix). The interaction of raising with
+palatalization is thus not specific to \ird{-e}: it is a general
+consequence of attaching any front-vocalic suffix to a stem whose
+final syllable contains a short front vowel.
+
+\paragraph{Analogically levelled forms.}
+Some high-frequency conjunctive forms are morphologized: they
+preserve older palatalizations or otherwise deviate from the
+synchronic rule. These are most concentrated in the finite forms
+of verbs with irregular thematic consonants or with stems that
+underwent earlier lenition or vowel contraction. The synchronic
+system tolerates these as exceptions without compromising the
+productivity of the rule. Their existence does, however,
+complicate any derivational analysis that requires strict
+compositionality: the linker form of a high-frequency verb may
+need to be stored as a listed item alongside its productive
+derivation.
+
+\paragraph{Prosodic status.}
+The linker \ird{-e} is a bound morpheme: it does not constitute an
+independent prosodic word and does not shift the stress of the
+verbal complex. Stress in Iridian is fixed to the lexical stem
+and is not influenced by suffixation in the outer inflectional
+layers. The prosodic invariance of \ird{-e} is consistent with its
+status as a suffix rather than a clitic or particle. If it were a
+prosodic word or particle, the stress pattern of \ird{piaščice}
+might be expected to differ from that of \ird{piaščik}; there is no
+evidence that it does.
+
+\subsubsection{Morphosyntactic distribution}
+
+\paragraph{Template position.}
+Within the verbal complex, \ird{-e} attaches outside all finite
+inflectional morphology. The full template is:
+
+\begin{center}
+\Stem{} + \Asp{}.\textsc{align} + (\textsc{mood}) +
+(\textsc{evid}) + (\textsc{person}) + \ird{-e}
+\end{center}
+
+\noindent The linker is therefore exterior to EvidP and AgrP, the
+outermost projections in the finite inflectional spine
+(§\,\ref{sec:vm-evid}, §\,\ref{sec:vm-agr}). This position is
+significant: if \ird{-e} were an agreement or mood morpheme, it
+would be expected inside the AgrP layer. Its consistent
+extra-clausal position supports an analysis in which it marks the
+edge of the finite complex as it interfaces with a higher
+projection --- a CP-boundary marker, not an inflectional head.
+
+\paragraph{Attested environments.}
+The linker appears in exactly three environments:
+
+\begin{enumerate}
+  \item \textit{The finite \ird{po}-complement}
+    (§\,\ref{sec:vm-po-comp}): the linker marks the right edge of
+    the embedded finite TP before the complement C head \ird{po} or
+    \ird{poby}. It is obligatory here; an embedded finite clause
+    without the linker is ungrammatical before \ird{po}/\ird{poby}.
+
+  \item \textit{The conjunctive chain} (§\,\ref{sec:conjunctive-linker}):
+    the linker marks non-final finite clauses in a clause chain
+    where the chained clauses are interpreted as coordinated or
+    sequentially related propositions. This use resembles the
+    clause-linking \textit{-ko} of Korean or the converbal
+    linker of other verb-final languages, but unlike those, the
+    Iridian form attaches to a fully finite, fully inflected verb.
+
+  \item \textit{The matrixless \ird{po}-construction}
+    (§\,\ref{sec:complementation}): even when the matrix predicate
+    is absent and \ird{po} functions as a discourse-level
+    attribution marker, the linker \ird{-e} is retained on the
+    finite verb. This shows that \ird{-e} is not licensed by
+    the presence of a lexical matrix predicate but by the presence
+    of the C-domain element \ird{po} itself.
+\end{enumerate}
+
+\paragraph{Non-environments.}
+The linker is absent in two structurally revealing contexts. First,
+independent finite clauses lack \ird{-e}: when no C head embeds the
+TP, the linker is not licensed. Second, converb forms --- the
+non-finite clause-linking morphology of simultaneous, sequential,
+conditional, and other converbs --- do not take \ird{-e}. This
+follows naturally: converbs are already non-finite (they lack
+Asp.Align and Mood morphology), so they do not participate in the
+domain of the finite-clause boundary that \ird{-e} marks.
+
+\subsubsection{Competing analyses}
+
+Three main analyses are available; they diverge principally on
+whether \ird{-e} has a unified syntactic identity across its two
+main environments (complement and conjunctive chain).
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+  \item[\upshape Unified CP-edge analysis.] Under this analysis,
+    \ird{-e} is a single morpheme throughout: the phonological
+    exponent of a \textsc{[+fin, +sub]} feature complex that is
+    valued on the embedded TP when it enters the scope of a C
+    head. In the complement construction, C is overt (\ird{po} or
+    \ird{poby}). In the conjunctive chain, C is a null clause-juncture
+    head (following the general principle that coordination in
+    head-final languages may involve a null C$^0$ that takes a
+    finite TP as its specifier or complement). The linker is the
+    spell-out of the embedded T's contact with this C head, and its
+    front-vocalic palatalizing nature is the PF signature of
+    \textsc{[+fin, +sub]} in Iridian. The absence of \ird{-e} in
+    independent clauses follows without stipulation: no C head is
+    present to value the feature on T.
+
+    The central challenge for the unified analysis is the
+    distributional asymmetry: in the complement construction,
+    \ird{-e} co-occurs with an overt C head (\ird{po}/\ird{poby});
+    in the conjunctive construction, no overt C appears. The unified
+    analysis must postulate a null conjunctive C$^0$ whose presence
+    is evidenced only by the linker itself, which risks circularity
+    unless independent evidence for this head can be adduced.
+
+  \item[\upshape PF boundary-marker analysis.] Under this analysis,
+    \ird{-e} is not a syntactic morpheme but a phonological
+    convention: a boundary signal inserted at any right edge of a
+    finite clause when that clause is followed by further clausal
+    material. Its front-vocalic palatalizing character is then a
+    phonological property of the boundary diacritic rather than a
+    reflex of any syntactic feature. This account handles the
+    conjunctive environment straightforwardly (every non-final
+    finite clause is followed by another clause) and is empirically
+    efficient.
+
+    The drawback is that a PF boundary marker need not itself be a
+    palatalizing morpheme: phonological boundary tones and
+    juncture markers in other languages do not normally trigger
+    segmental mutation. The palatalization caused by \ird{-e} is
+    identical in type to the palatalization triggered by inflectional
+    suffixes (\ird{-ě}, \ird{-í}, \ird{-ěv}), suggesting that
+    \ird{-e} is a genuine suffix, not a boundary diacritic. The PF
+    account therefore purchases distributional coverage at the cost
+    of explaining a morphologically specific segmental process by
+    appeal to an otherwise unmotivated phonological rule.
+
+  \item[\upshape Two-homophone analysis.] Under this analysis,
+    \ird{-e}$_1$ (the complement linker) and \ird{-e}$_2$ (the
+    conjunctive linker) are distinct morphemes that happen to be
+    phonologically identical and share the palatalizing trigger
+    class. \ird{-e}$_1$ is the exponent of the TP-CP boundary
+    in complement clauses; \ird{-e}$_2$ is a clause-chaining
+    morpheme lexically specified for the conjunctive domain. Their
+    coincidence in form is not synchronically active but is a
+    historical convergence (or retention from a common source).
+
+    This analysis avoids the null-C problem but is the most
+    stipulative: it requires two separate lexical entries sharing
+    phonological form and the same segmental-mutation property,
+    with their distribution jointly covering the environments
+    of both complement embedding and clause chaining. The burden
+    of proof falls on demonstrating that the two environments
+    are genuinely syntactically disjoint in a way that the
+    unified analysis cannot accommodate.
+\end{description}
+
+\subsubsection{Preferred account and outstanding questions}
+
+The unified CP-edge analysis is preferred here on parsimony grounds.
+Its core claim is that \ird{-e} spells out the feature
+\textsc{[+fin, +sub]} --- roughly, ``finite clause under
+subordination'' --- on the embedded TP's outermost layer, and that
+this feature is valued whenever a C head (overt or null) selects the
+finite TP. The palatalizing nature of \ird{-e} is then the PF
+realization of this morphosyntactic feature, fully parallel to the
+palatalizing effect of other front-vocalic suffixes in the
+productive system.
+
+The position of \ird{-e} outside EvidP and AgrP in the template
+supports this analysis directly: the linker is the last element
+added to the verbal complex before the clause exits the finite
+inflectional domain, which is exactly where a TP-edge or C-interface
+marker would be expected.
+
+Two empirical questions remain open:
+
+\begin{enumerate}
+  \item \textit{The null conjunctive C$^0$.} The postulated null C
+    head in the conjunctive construction should in principle be
+    detectable through its interaction with the argument structure of
+    the chained clauses: if the conjunctive C$^0$ takes the finite
+    TP as its specifier and itself projects a CP, then the chained
+    clause is a CP adjunct. This predicts that binding relations and
+    scope interactions across conjunctive-chain clauses should pattern
+    with embedding rather than flat coordination. Corpus investigation
+    of binding and scope in conjunctive chains would provide a
+    diagnostic.
+
+  \item \textit{Interaction with the evidential.} The indirect
+    evidential \ird{-ejte} appears inside \ird{-e} in the template
+    (\ird{-ejte-e}), confirming that the evidential is a finite
+    inflectional morpheme whereas the linker is not. But it is not
+    yet established whether the palatalizing context of \ird{-e}
+    applies to the final segment of \ird{-ejte} or directly to the
+    verb stem. If \ird{-ejte} itself ends in a front vowel, the
+    palatalizing context would overlap with it, potentially yielding
+    an opaque surface form. Documenting the attested surface outputs
+    of \ird{-ejte + -e} sequences across all five aspect forms would
+    clarify whether the palatalization is invariant (expected under
+    the unified analysis) or subject to additional sandhi conditions.
+\end{enumerate}
+
+\noindent The front-vocalic palatalizing nature of \ird{-e} is the
+strongest evidence against treating it as a mere PF convention, and
+the strongest argument for its status as a genuine morphosyntactic
+suffix --- one that happens to appear at the clause's structural
+edge, but whose phonological behavior is fully integrated with the
+inner inflectional system of Iridian.
+
 
 \section{Stative verbs}\label{sec:stative}
 
@@ -770,6 +1778,39 @@ stative verb form is required:
 the continuous stative, expressing the property directly without tense or
 aspect. Its position within the noun phrase relative to determiners and other
 modifiers is treated in Chapter~\ref{ch:nouns}.
+
+\subsubsection{Derived manner adverbs in \ird{-ě}}
+\label{sec:stative-adv}
+
+Alongside the attributive in \ird{-á}, property-root-based stative stems
+productively form a dedicated class of derived manner adverbs in \ird{-ě}.
+This formation is derivational rather than inflectional: it yields a lexical
+adverbial adjunct, not a further verbal form, and it is distinct both from the
+adnominal attributive and from the converb system discussed in
+Chapter~\ref{ch:complex}. Schematically, the pattern is as follows:
+
+\begin{center}
+\term{property root $\rightarrow$ stative stem in \ird{-n-} $\rightarrow$ attributive in \ird{-á} / manner adverb in \ird{-ě}}
+\end{center}
+
+\noindent A representative paradigm is the following:
+
+\pex
+\a \ird{skor} \trsl{quickness}
+\a \ird{skorn-} \trsl{be quick}
+\a \ird{skorná} \trsl{quick, fast} \lingcontext{attributive}
+\a \ird{skorně} \trsl{quickly}
+\xe
+
+The resulting system preserves a clear three-way distinction: the finite
+stative predicate expresses property predication, the \ird{-á} form modifies a
+noun within the DP, and the \ird{-ě} form modifies the event as a manner
+adverb. Thus \ird{skorn-} means \trsl{be quick}, \ird{skorná} means
+\trsl{quick} as a noun modifier, and \ird{skorně} means \trsl{quickly} as a
+clausal adjunct. The syntactic position of these derived manner adverbs in the
+preverbal field is discussed in Chapter~\ref{ch:simple}; compare also the
+simultaneous / manner converb in \ird{-ěc} in Chapter~\ref{ch:complex}, which
+remains a non-finite verbal form rather than a lexical adverb.
 
 \subsubsection{Superlative: \ird{-ěsk-}}
 
@@ -905,3 +1946,549 @@ Stative verbs may further function as attributive modifiers of nouns and remain
 the productive attributive strategy in Iridian. Alongside them stands the small
 closed set of paired adnominal property-root forms just mentioned; this use is
 described in Chapter~\ref{ch:nouns}.
+
+Property-root-based stative stems also feed the productive derived manner
+adverbs in \ird{-ě} (§\,\ref{sec:stative-adv}), yielding lexical adverbial
+adjuncts such as \ird{skorně} \trsl{quickly}. These belong to the clause's
+preverbal adjunct structure, not to the attributive system proper.
+
+
+\section{Verbal complements and head finality: preverbal position}
+\label{sec:vm-comp-headfinal}
+
+This section develops the formal structural analysis of verbal complements within the head-final clause: how the head-final parameter determines the preverbal position of nominal arguments and embedded clauses, and what syntactic projection each complement type occupies.
+
+\subsection{The base position of the object}
+\label{sec:vm-obj-base}
+
+In a head-final language, the complement of a head $H$ is to the
+left of $H$ in the linear string. For the lexical predicate V, its
+internal argument (patient DP) is the complement of V and therefore
+surfaces to V's left:
+
+\begin{center}
+\term{[VP [DP patient] V]}
+\end{center}
+
+\noindent This is a \emph{base-generated} preverbal position, not
+the result of A-bar movement or scrambling. In the Minimalist
+framework, head-finality is parameterized as the linearization
+convention that assigns $<$Complement, Head$>$ ordering (Kayne's
+1994 antisymmetric alternative --- deriving all
+SOV orders from movement --- is not adopted here; the parametric
+head-final approach is more consistent with the thoroughgoing
+head-finality of Iridian across all phrase types).
+
+The patient DP, while base-generated as the complement of V, may
+also undergo A-movement to a higher specifier position for topic
+purposes. In the ergative aspects, the patient is the absolutive
+(topic) argument and moves from [Spec-VP] or [Compl-VP] to
+Spec,TopP:
+
+\medskip
+\begin{center}
+[TopP [patient$_i$] [Top$'$ Top [AspP ... [VP $t_i$ V]]]]
+\end{center}
+\medskip
+
+\noindent In this derivation, the patient originates as the
+complement of V (preverbal by head-finality), then moves to
+Spec,TopP (clause-initially) to receive [absolutive] case and
+topic status. The surface position of the patient (clause-initial,
+absolutive) is therefore derived by A-movement, not base-generation
+in TopP.
+
+In the nominative aspects, the patient remains in its base position
+as the complement of V (preverbal in the SOV order), while the
+agent moves to Spec,TopP:
+
+\medskip
+\begin{center}
+[TopP [agent$_j$] [Top$'$ Top [AspP ... [vP [VP [patient] V] $t_j$]]]]
+\end{center}
+\medskip
+
+\noindent The surface word order in both cases is SOV (or more
+precisely, absolutive-oblique-V), with the absolutive topic
+first and the verb final.
+
+\subsection{The po-clause as a nominal CP complement}
+\label{sec:vm-po-comp}
+
+The finite propositional complement (\ird{po}-clause) is a CP that
+occupies the complement position of the matrix predicate. The
+structure of the complement CP is:
+
+\begin{center}
+\term{[CP [TP embedded-clause-\ird{e}] \ird{po}]}
+\end{center}
+
+\noindent \ird{Po} is the head of the complement CP (a
+complementizer), and the embedded finite clause is the TP whose
+head is marked by the linker \ird{-e}. In head-final structure,
+the C head follows its complement TP:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{CP}
+    [\textsc{TP}\\\textit{embedded clause}\\\textit{(verb + -e)}]
+    [\textsc{C}\\\ird{po}]
+  ]
+\end{forest}
+\end{center}
+
+\noindent This CP is then the complement of the matrix verb:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{matrix VP}
+    [\textsc{CP}\\{[\textit{emb-clause}-\ird{e}] [\ird{po}]}]
+    [\textsc{matrix V}]
+  ]
+\end{forest}
+\end{center}
+
+\noindent Head-finality places the CP complement to the left of the
+matrix V. The surface word order of a propositional complement
+construction is therefore:
+
+\begin{center}
+\term{[embedded-TP + \ird{-e}] [\ird{po}] [matrix arguments] [matrix V]}
+\end{center}
+
+\noindent This is precisely the attested order (§\,\ref{sec:th-po}).
+The analysis requires no movement: the complement CP is
+base-generated in [Complement, matrix-VP], and head-finality places
+it before the matrix V.
+
+A further consequence: the matrix absolutive argument (the topic)
+in a propositional complement clause is most often null (topic
+drop). This follows from the heaviness of the CP complement: in
+a head-final clause, the CP already occupies the preverbal position
+that would be available to an overt absolutive DP, and the topic
+is preferentially dropped when the complement clause is highly
+informative and heavy.
+
+\paragraph{Po as C$^0$: evidence.}
+
+The analysis of \ird{po} as a C head (and not, for example, as an
+adposition or particle) is supported by the following diagnostics:
+\begin{enumerate}
+\item The embedded clause is fully finite (retains aspect,
+  alignment, mood, and person morphology); this is what is
+  expected of a CP complement, not a reduced VP.
+\item \ird{Po} appears after the embedded clause-final verb
+  (the right edge of TP in a head-final CP), in exactly the
+  position predicted for a head-final C.
+\item \ird{Poby} (the non-assertive counterpart) parallels \ird{po}
+  structurally and has the semantics of a complementizer: it
+  types the embedded clause as a polar-interrogative content
+  (\textit{whether}) rather than a declarative. Complementizer
+  alternation is a CP-level phenomenon.
+\item The linker \ird{-e} on the embedded verb is the edge-marking
+  morpheme at the TP-CP boundary; this is consistent with its role
+  as a phonological reflex of \mbox{[Spec,CP] → C} movement or of
+  the TP entering the scope of C (§\,\ref{sec:vm-tension-linker}).
+\end{enumerate}
+
+\subsection{The purposive converb complement}
+\label{sec:vm-purp-comp}
+
+The purposive converb (\ird{-it}) serves as the complement of
+desiderative, volitional, and modal predicates. Unlike the
+\ird{po}-clause, it is non-finite: it lacks aspect, alignment, and
+mood. Structurally it is an aspectless vP or VoiceP projection ---
+a verbal phrase headed by the root + any applicable valency
+morpheme, terminated by the purposive suffix \ird{-it} rather
+than an Asp.Align morpheme.
+
+The purposive converb complement is therefore not a CP but a
+smaller projection, most plausibly a bare VoiceP or AspP$_\varnothing$
+(an AspP whose head is phonologically null, licensed only when
+embedded under a controlling predicate). This is the standard
+\term{event complement} (Stowell 1982; Wurmbrand 2001): the predicate denotes an
+event rather than a proposition, and it is controlled by the matrix
+subject in a typical control configuration.
+
+In head-final structure, the purposive converb complement precedes
+the matrix predicate:
+
+\begin{center}
+\term{[matrix agent-\textsc{abs}] [purposive-\ird{-it}] [matrix V]}
+\end{center}
+
+\noindent The shared-subject (control) reading is the default, with
+an implicit PRO subject in the converb clause coreferent with the
+matrix absolutive (topic).
+
+%% STUB: The formal structure of the purposive converb complement
+%% (VoiceP vs. AspP_null vs. TP with reduced features) should be
+%% examined through the following diagnostics:
+%% (a) Can the purposive converb take its own topic arguments
+%%     distinct from the matrix clause? (→ if yes, it has a
+%%     full TP or CP projection)
+%% (b) Can the subject of the purposive converb be overtly
+%%     expressed, or must it be PRO? (→ tests control vs. raising)
+%% (c) Does the purposive converb license aspect-sensitive
+%%     alternations in the matrix clause? (→ aspect interaction)
+%% These tests bear directly on how high a projection the
+%% purposive converb clause actually projects.
+
+\subsection{The preverbal zone: a structural hierarchy}
+\label{sec:vm-preverbal-zone}
+
+The preceding analysis allows a unified characterization of the
+preverbal zone in the Iridian clause. Reading from left to right,
+the preverbal constituents occupy the following structural positions:
+
+\begin{center}
+\footnotesize
+\begin{tabular}{l l l}
+  \toprule
+  {\sc position} & {\sc constituent type} & {\sc structural slot} \\
+  \midrule
+  1 (leftmost) & Topic DP (absolutive)     & Spec,TopP \\
+  2            & Zone I peripheral particles & Spec/Head of EvidP, SpeechActP \\
+  3            & Clause-typing particle \ird{by} & Head of PolP \\
+  4            & Wh-phrase (in questions)  & Spec,FocP \\
+  5            & Non-topic arguments       & Spec,IP or IP-adjuncts \\
+  6            & Comment-domain operators   & Spec/Head of AspP (zone II) \\
+  7            & Phasal particles           & Spec/Head of PhasP (zone III) \\
+  8            & CP complement (po-clause) & Compl,VP (innermost) \\
+  8 (alt.)     & Purposive converb         & Compl,VP or Spec,vP \\
+  9 (rightmost) & Finite verb               & Head of VP / vP \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\noindent The verbal complement (whether NP, CP, or converb) is
+structurally the innermost preverbal constituent, closest to the
+verb. This reflects its base position as the complement of V in the
+VP (positions 8 in the table). Higher functional projections
+(AspP, IP, TopP) are realized by progressively more leftward
+material in the string. The verb itself appears at the absolute
+right edge, consistent with the head-final parameter operating
+recursively at every projection.
+
+\section{Tension points and areas requiring development}
+\label{sec:vm-tensions}
+
+The following issues represent the principal theoretical challenges
+in the current analysis. Each will require targeted empirical
+investigation, corpus diagnostics, or theoretical elaboration before
+the verbal morphosyntax chapter can be considered fully settled.
+
+\subsection{The Asp.Align portmanteau and the Mirror Principle}
+\label{sec:vm-tension-asp}
+
+The most fundamental tension in the morphological template is the
+\term{portmanteau} character of the Asp.Align morpheme: a single
+morpheme does double duty, encoding both the aspectual value of the
+predicate and the case-alignment pattern of the clause. The Mirror
+Principle predicts that each morpheme corresponds to a single
+syntactic head. If Asp and Align are two distinct syntactic
+features (housed in AspP and CaseP/AgrP respectively), the Mirror
+Principle predicts separate morphemes for each.
+
+Three responses are available:
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Portmanteau morpheme by fusion (DM).] In DM,
+  morphological Fusion (Halle \& Marantz 1993)
+  allows two syntactic heads to be realized by a single Vocabulary
+  Item when they are adjacent in the morphological structure. AspP
+  and CaseP are adjacent in the Iridian verbal complex; their
+  adjacency triggers fusion, and the resulting portmanteau is the
+  Asp.Align suffix. This is the most parsimonious DM account.
+\item[\upshape Single head with bundled features.] AspP is a
+  single syntactic head whose feature bundle includes both
+  $[$\textsc{aspect}: pf/retro/cont/prog/contempl$]$ and
+  $[$\textsc{case-pattern}: erg/nom$]$. This is not a violation
+  of the Mirror Principle if the feature bundle defines a single
+  head, not two. The objection is theoretical: are aspect and
+  alignment independent features (motivated independently) or are
+  they necessarily co-specified?
+\item[\upshape Aspect drives alignment, not vice versa.] The
+  alignment pattern is not an independent feature but a
+  \emph{consequence} of the aspect value under the Agree mechanism:
+  perfective/retrospective Asp features trigger one Agree pattern
+  (ergative), nominative Asp features trigger another (nominative).
+  There is only one head (AspP); the alignment is derived by the
+  case assignment properties of that head. This is the approach
+  assumed in §\,\ref{sec:vm-asp-case} and is consistent with
+  aspect-driven ergativity in the broader typological literature
+  (Coon 2010; Legate 2008).
+\end{description}
+
+\noindent The third approach is preferred here. The desideratum
+is to formalize exactly which feature of AspP triggers which
+case-assigning behaviour, without reducing the analysis to mere
+labelling of the phenomenon.
+
+\subsection{Mood--Aspect competition: why does Mood suppress Aspect?}
+\label{sec:vm-tension-mood-asp}
+
+The complete suppression of Asp.Align when a Mood morpheme is
+present is unusual. In many languages, mood and aspect are
+independently realized (e.g., Turkish, Finnish, Georgian). The
+Iridian pattern --- non-indicative mood bleeds aspect entirely ---
+requires a formal account.
+
+The DM analysis of \term{impoverishment} (Bonet 1991;
+Embick 2010) provides a mechanism: a context-sensitive
+rule removes the Asp feature bundle from the morphological structure
+when Mood features are present. The Asp node, stripped of its
+features, is then realized by a null morpheme (or is deleted). The
+consequence is that in non-indicative contexts, the Asp.Align
+case-assigning machinery does not operate, and alignment defaults
+to nominative.
+
+This account remains to be verified: (a) Is nominative alignment
+in mood forms a default (elsewhere case), or is it actively
+specified by the Mood head? (b) Can aspect distinctions be
+recovered in non-indicative contexts through peripheral particles
+or converb structures?
+
+\subsection{The transitive marker \ird{-n-}: one morpheme or two?}
+\label{sec:vm-tension-n}
+
+The morpheme \ird{-n-} (transitive marker, appearing before ergative
+aspect suffixes) and the causative \ird{-na-} share a common
+morphological form. Two hypotheses:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Allomorphs of the same morpheme.] Both \ird{-n-}
+  and \ird{-na-} are exponents of $v^*$ (transitive/causative light
+  verb), with \ird{-na-} the full form and \ird{-n-} a reduced form
+  that appears when adjacency to the Asp suffix triggers truncation
+  (or when no additional argument is introduced, the morpheme is
+  reduced). Under this analysis, the distinction between `add a
+  causee argument' (\ird{-na-}) and `mark transitivity' (\ird{-n-})
+  is a difference in the feature content of $v^*$, not a difference
+  in the morpheme itself.
+\item[\upshape Distinct morphemes.] \ird{-na-} is the causative head
+  (CausP, as argued in §\,\ref{sec:vm-caus}), while \ird{-n-} is
+  a separate morpheme --- the Vocabulary Item of the Voice head (or
+  a transitivity-marking feature on AspP). Their phonological
+  resemblance is accidental or historically motivated but
+  synchronically misleading.
+\end{description}
+
+\noindent The description in the current grammar regularizes
+\ird{-na-} for the causative and distinguishes it formally from
+\ird{-n-}. The theoretical analysis should maintain this
+distinction but provide a principled account of why the two
+morphemes are phonologically similar and whether their
+relationship is synchronically active.
+
+\subsection{The absolutive--topic mapping: Agree or movement?}
+\label{sec:vm-tension-abs-top}
+
+The grammar's analysis treats the absolutive argument as the clause
+topic, occupying Spec,TopP. Two formal options:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape A-movement to Spec,TopP.] The absolutive DP moves
+  from its base position (complement or specifier of VP/vP) to
+  Spec,TopP in the narrow syntax. This movement is driven by a
+  [\textsc{top}] feature on the Top head, which probes for a
+  matching DP. Case is assigned in Spec,TopP (absolutive as
+  a structural case of the topic position). This parallels subject
+  raising to Spec,TP in English.
+\item[\upshape Long-distance Agree without movement.] The absolutive
+  DP remains in its base position; the Top head Agrees with it
+  long-distance and values its case as absolutive. The DP's
+  surface-initial position is then a consequence of base-ordering
+  (head-finality places the specifier of the highest projection
+  first) rather than movement.
+\end{description}
+
+\noindent The movement account is more standard and predicts
+reconstruction effects and binding asymmetries that could in
+principle be tested. The long-distance Agree account is more
+parsimonious but makes weaker predictions. Which analysis is
+correct has consequences for how topic drop is modeled: movement
+predicts that topic drop is pro-drop in Spec,TopP; long-distance
+Agree predicts that topic drop is simply the absence of a lexical
+DP in the base position of the absolutive argument.
+
+\subsection{Ergative case: dependent, structural, or inherent?}
+\label{sec:vm-tension-erg}
+
+The transitive/ergative case on the agent in ergative-aligned
+aspects can be assigned by several mechanisms:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Dependent case (Marantz 1991).] The
+  ergative is assigned to the agent because another DP (the patient)
+  has already received absolutive in the same domain. The ergative
+  is thus not assigned by any head but is computed as a dependent
+  case: marked case on the DP in the presence of another marked-for-
+  absolutive DP.
+\item[\upshape Structural case assigned by $v^*$.] The transitive
+  light verb $v^*$ assigns ergative to the external argument (agent)
+  in its specifier. This is the standard Kratzer/Legate analysis for
+  ergative languages.
+\item[\upshape Asp-driven ergative.] The Asp head, as argued here,
+  is responsible for the case pattern. In the ergative aspects, the
+  Asp head's case-assigning operation assigns absolutive to the
+  patient and ergative to the agent simultaneously. This requires
+  the Asp head to case-assign two DPs, which is unusual in standard
+  Agree but not unprecedented (cf.\ Baker 2015 two-probe model).
+\end{description}
+
+\noindent The Asp-driven account is consistent with the analysis
+developed in §\,\ref{sec:vm-asp-case} and is preferred here. Its
+key prediction is that the ergative case is aspect-sensitive: only
+in perfective and retrospective aspects does the agent receive
+ergative, and this is because only those Asp heads have the
+case-assigning feature bundle that triggers the ergative pattern.
+
+
+\subsection{The conjunctive linker \ird{-e}: see §\,\ref{sec:conjunctive-linker}}
+
+The formal analysis of the conjunctive linker \ird{-e} --- including its phonological characterization, morphosyntactic distribution, the competing unified CP-edge, PF boundary-marker, and two-homophone analyses, and the outstanding empirical questions --- is developed in full in the conjunctive linker section above (§\,\ref{sec:conjunctive-linker}).
+
+\subsection{The NEG prefix vs.\ NegP position}
+\label{sec:vm-tension-neg}
+
+As discussed in §\,\ref{sec:vm-neg}, the prefix position of
+\ird{zá-} is in tension with the expected Mirror Principle
+prediction that NegP, being above AspP, should correspond to a
+morpheme outside AspP (i.e., as a suffix). Cross-linguistic
+research on verbal negation in SOV languages (Dryer 2013) shows that prefix negation is common in
+such languages, suggesting a systematic PF convention rather than
+a Mirror Principle violation. The preferred account (morphological
+incorporation at PF) should be tested against the following: (a)
+Does \ird{zá-} form an independent prosodic word? (b) Can anything
+intervene between \ird{zá-} and the stem (e.g., focus particles)?
+(c) In ellipsis or fragment contexts, can \ird{zá-} appear without
+the full verbal complex? These tests would confirm or disconfirm
+the cliticization analysis.
+
+Two additional diagnostics bear on the three-exponent analysis
+developed in §\,\ref{sec:vm-neg-exponents}: (d) Does \ird{staly}
+exhibit any paradigmatic variation (aspect, person, mood, or
+iterative forms)? If it is fully invariant --- bearing no
+morphological marking of the sort that a finite verbal head
+would carry --- this strongly supports treating it as a
+Neg\textsuperscript{0} head rather than as a defective verbal
+root. (e) Is the conditioning environment for the three exponents
+(\ird{zá-}, \ird{staly}, \ird{zad-}) strictly complementary, or
+are there overlap contexts --- e.g., a negated \ird{neh-} clause or
+a negated stative predication --- that require further
+disambiguation? The current description treats the three domains
+as mutually exclusive, but edge cases near the equative/stative
+boundary (§\,\ref{sec:vm-tension-stative}) should be examined.
+
+\subsection{The person clitic and the absolutive Agr problem}
+\label{sec:vm-tension-agr}
+
+The person clitic cross-references only the absolutive argument.
+In a split-ergative language this is consistent with an absolutive
+agreement morpheme (the clitic Agrees with whichever DP is
+absolutive, regardless of its grammatical function --- agent or
+patient). However, the optionality of the clitic and its
+discourse-sensitive distribution (present for emphasis or
+disambiguation, absent in contexts of topic continuity) suggest
+it is not a standard agreement morpheme but a discourse-oriented
+clitic.
+
+The architecture question: if there is an AgrP in the Iridian
+clause that hosts the person clitic, is it the same AgrP that
+normally hosts subject agreement in other languages? Or is it a
+dedicated \term{topic-agreement projection} (Agr$_\text{top}$P)
+that is distinct from both Agr-S and Agr-O as traditionally
+conceived? The absolutive nature of the agreement target suggests
+the latter: Agr$_\text{top}$P agrees with whichever argument is
+in Spec,TopP (the topic), cross-referencing it person/animacy-wise
+at the right edge of the verbal complex.
+
+\subsection{The aspect system and the structure of stative verbs}
+\label{sec:vm-tension-stative}
+
+Stative verbs (§\,\ref{sec:stative}) present a specific challenge
+for the Asp.Align analysis. The continuous aspect of a stative
+verb expresses a stable state (property predication), but the
+progressive of the same verb expresses dynamic entry into the
+state (inchoative). This means the Asp heads carry aspectual
+distinctions (stative vs.\ dynamic) even for predicates whose
+lexical root does not specify transitivity. The alignment issue is
+moot for intransitive predicates (both agent and absolutive
+coincide), but the broader question is whether the full five-way
+Asp paradigm applies uniformly to stative roots or whether some
+Asp heads are blocked or semantically reinterpreted when the root
+is stative. This is a gap in the current analysis.
+
+
+
+%% ================================================================
+%%  SUMMARY TABLE
+%% ================================================================
+
+\section{Summary: the verbal complex as a syntactic structure}
+\label{sec:vm-summary}
+
+Table~\ref{tab:vm-full-structure} gives the full proposed
+hierarchical structure of the Iridian finite verbal clause, from
+the highest projection (SpeechActP) to the lowest (VP/Root), with
+the morphological exponents of each relevant layer.
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{The Iridian verbal clause: functional hierarchy and
+  morphological exponents.}\label{tab:vm-full-structure}
+  \medskip
+  \begin{tabularx}{\textwidth}{l l l L}
+    \toprule
+    {\sc level} & {\sc projection} & {\sc morphological exponent}
+    & {\sc notes} \\
+    \midrule
+    Highest  & \textsc{SpeechActP} & Zone I particles (peripheral)
+    & Post-topic; speech act framing \\
+    & \textsc{EvidP}$_\text{outer}$ & \ird{oče, hlavdy, ktady, či}
+    & Clause-level evidential/epistemic \\
+    & \textsc{TopP} & [absolutive DP]
+    & Topic = absolutive; A-movement target \\
+    & \textsc{PolP} & \ird{by}
+    & Clause typing: polar interrogative \\
+    & \textsc{FocP} & [wh-phrase]
+    & Focus/wh movement target \\
+    \midrule
+    & \textsc{AgrP} & \ird{-em, -eš, -ic}, \ldots
+    & Person clitic; optional; absolutive cross-reference \\
+    & \textsc{EvidP}$_\text{inner}$ & \ird{-ejte} (?)
+    & Indirect evidential; inside verbal complex \\
+    & \textsc{MoodP} & \ird{-ím, -éma, -ká, -ku, -ěv}, $\emptyset$
+    & Non-indicative moods; suppresses Asp when overt \\
+    & \textsc{NegP} & \ird{zá-} (prefix)
+    & Clausal negation; PF-cliticized to verbal complex \\
+    & \textsc{AspP} & \ird{-ek/-ik, -aní, -a, -ime, -ach} (fused w/ align)
+    & Sole obligatory head; aspect + case assignment \\
+    \midrule
+    & \textsc{CausP} & \ird{-na-}
+    & Adds external causer; dominates Voice/ApplP \\
+    & \textsc{VoiceP / ApplP} & \ird{-aš-} (antipassive) / \ird{-éb-} (applicative)
+    & Valency operations; complementary distribution \\
+    & \textsc{VP} & Root stem
+    & Lexical predicate; complement of V = preverbal \\
+    Lowest & \textsc{VP complement} & NP / CP (\ird{po}) / VoiceP$_{\text{-it}}$
+    & Object, po-clause, or purposive converb; all preverbal \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent The preverbal position of all verbal complements --- NP
+objects, CP complements (\ird{po}-clauses), and purposive converb
+complements --- follows uniformly from the head-final parameter
+applied at the VP level. No movement or extraposition is required:
+the complement is base-generated to the left of the verb and
+surfaces there in the linear string. Higher projections (AspP,
+MoodP, AgrP) are realized as suffixes on the verbal complex,
+which surfaces at the right edge of the clause as required by
+pervasive head-finality.
+
+%% ----------------------------------------------------------------
+%% END: verb-minim.tex
+%% ----------------------------------------------------------------
