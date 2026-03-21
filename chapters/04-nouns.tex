@@ -1,479 +1,801 @@
-\chapter{Nouns and the Noun Phrase}\label{ch:nouns}
+\chapter{Nouns and noun phrases}
+\label{ch:nouns-and-nps}
 
-\section{Introduction}
+%% ================================================================
+%%  PART I: THE EXTENDED NOMINAL PROJECTION IN MINIMALIST TERMS
+%% ================================================================
 
-Nominal morphology in Iridian is relatively straightforward. Nouns are inflected for case; there is no grammatical gender, and number marking is optional. The case system interacts closely with the verbal aspect system: the morphological role of a noun phrase in a clause depends in part on the aspect of the verb, a consequence of Iridian's split-ergative alignment (discussed in detail in Chapter~\ref{ch:verbs}).
+\section{Overview}
+\label{sec:nm-overview}
 
-\section{The case system}
+The nominal morphological template of Iridian, reading from the
+lexical root outward to the rightmost morpheme, is:
 
-Iridian has three productive cases: the \term{direct}, the \term{transitive}, and the \term{indirect}. A fourth case, the \term{vocative}, exists for a restricted set of nouns used in direct address. The direct case is the default, uninflected form from which all other cases are derived.
+\medskip
+\begin{center}
+\textsc{root} + (\textsc{case}) + (\textsc{anch})
+\end{center}
+\medskip
 
-The functions of each case are closely tied to the aspect of the verb in the clause:
+\noindent Prenominal material precedes the root in the surface
+string:
 
-\begin{itemize}
-	\item The \term{direct case} (\Dir{}) is the unmarked or citation form of a noun. It functions as the unmarked or core argument of the clause: the subject of an intransitive verb, the subject of a transitive verb in the nominative-alignment aspects (continuous, progressive, contemplative), and the object of a transitive verb in the transitive-alignment aspects (perfective and retrospective). It is also used as the predicative complement in equative constructions (zero copula) and with the overt copular verb \ird{neh-}; and as the entity whose existence is asserted in existential constructions with \ird{jec-} and \ird{zad-}.
+\medskip
+\begin{center}
+(\ird{ne}) + (\ird{si}/\ird{druh}) + (\textsc{dem}) +
+(\textsc{quant}/\textsc{num}) + (\textsc{poss}.\Ind{}) +
+(\textsc{prop.root} / \textsc{stative} / \textsc{\ird{-ovní}}) +
+\textsc{root} + (\textsc{case}) + (\textsc{anch})
+\end{center}
+\medskip
 
-	\item The \term{transitive case} (\Trs{}) is the ergative case. It marks the agent of a transitive verb in the perfective and retrospective aspects. Outside of those contexts, it does not appear as a core argument.
+This template is interpreted under the
+\term{DP Hypothesis} (Abney 1987): the nominal
+expression is not simply an NP but a full functional projection with
+an articulated D-domain. In this chapter I use
+\term{anchoring} as the theoretical label for the category expressed
+by \ird{-ot/-t}; \emph{definiteness} is retained only as the
+traditional descriptive name. The suffix \ird{-ot/-t} is therefore
+treated as the overt realization of an anchoring head, labelled
+\textsc{Anch\textsuperscript{0}}, when the feature
+[\textsc{+anch}] is present.
 
-	\item The \term{indirect case} (\Ind{}) is the oblique or non-core case. It marks the patient of a transitive verb in the nominative aspects (continuous, progressive, contemplative); it also marks instruments, beneficiaries, locations, and other peripheral arguments regardless of aspect. Its function is thus both grammatical and adverbial.
+Only the case and anchoring layers are analyzed here as ordinary
+suffixal heads. The prenominal items \ird{ne}, the demonstrative
+system, and \ird{si}/\ird{druh} are treated instead as overt
+realizations of distinct higher nominal projections whose exponents
+surface at the left edge of their domain. This avoids the present
+oscillation between calling them projections in the prose and drawing
+them as unstructured edge material in the trees. The hierarchical
+organization of functional projections, reading from innermost to
+outermost, is given in Table~\ref{tab:nm-projections}.
 
-	\item The \term{vocative} (\Voc{}) is used for direct address. It exists only for personal names and a small set of common nouns, primarily kinship terms.
-\end{itemize}
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Functional projections of the Iridian DP (innermost to
+  outermost).}\label{tab:nm-projections}
+  \medskip
+  \begin{tabularx}{\textwidth}{l L L l}
+    \toprule
+    {\sc position} & {\sc morpheme/item} & {\sc syntactic projection} &
+    {\sc see} \\
+    \midrule
+    Root          & lexical stem        & NP / $\surd$P
+                  & §\,\ref{sec:nm-root} \\
+    Property root & small closed class  & PropP (adjunct to NP)
+                  & §\,\ref{sec:nm-prop} \\
+    Possessor     & oblique noun phrase & PossP (prenominal possessor layer inside KP)
+                  & §\,\ref{sec:nm-poss} \\
+    Case          & \Trs{} / \Ind{} endings & KP (case layer)
+                  & §\,\ref{sec:nm-case} \\
+    Anchoring     & \ird{-ot/-t}        & AnchP (suffixal D-layer)
+                  & §\,\ref{sec:nm-def} \\
+    Demonstrative & proximal \ird{tak}/\ird{tam}/\ird{ten};
+                       medial \ird{tuto}/\ird{toho}/\ird{taly};
+                       distal \ird{je}/\ird{jaky}/\ird{jení}
+                  & DemP (noun-internal realization of the
+                       demonstrative system)
+                  & §\,\ref{sec:nm-dem} \\
+    Quantification & numerals, adnominal interrogatives,
+                     universal and negative quantifiers
+                   & quantificational modifier field in the upper
+                     nominal domain; exact cartographic slot left
+                     conservative
+                   & §\,\ref{sec:nm-quant} \\
+    Specificity   & \ird{si}, \ird{druh} & SpecificityP
+                       (left-peripheral specifically indefinite layer)
+                  & §\,\ref{sec:nm-spec} \\
+    Number        & \ird{ne}            & NumP
+                       (plural semantics with left-edge spellout)
+                  & §\,\ref{sec:nm-num} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+The Mirror Principle (Baker 1985) predicts
+that the morphological order reflects the syntactic order. Reading
+the template from root outward, \textsc{case} appears closer to the
+root than \textsc{anch}; this means KP is dominated by AnchP. The
+same suffixal order follows directly from head-finality. By contrast,
+the higher projections realized prenominally do not need to be
+treated as ordinary suffixal heads. The simpler analysis is that
+Iridian has an articulated nominal left periphery whose overt
+exponents realize NumP, DemP, and SpecificityP at the left edge of
+their domain, while the suffixal spine remains strictly head-final.
+
+The head-final DP thus mirrors the head-final clause: just as the
+finite verb — the head of the clause's highest functional projection
+— surfaces at the right edge of the clause, the anchoring suffix
+— the overt head of the noun phrase's suffixal D-layer — surfaces at
+the right edge of the noun phrase. A convenient master tree follows.
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{NumP}
+    [\ird{ne}]
+    [\textsc{SpecificityP}
+      [\ird{si}/\ird{druh}]
+      [\textsc{DemP}
+        [\textit{demonstrative series}]
+        [\textsc{QP}
+          [\textit{numeral / quantifier}]
+          [\textsc{AnchP}
+            [\textsc{KP}
+              [\textsc{PossP}
+                [\textit{oblique possessor}]
+                [\textsc{NP}\\\textit{root}]
+              ]
+              [\textsc{K\textsuperscript{0}}\\case]
+            ]
+            [\textsc{Anch\textsuperscript{0}}\\\ird{-ot/-t} / $\emptyset$]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The tree keeps the nominal spine uniform across the
+subsections below. Overt exponents of higher nominal projections are
+shown directly at the edge of the projection they realize, and silent
+heads are not inserted merely to force a specifier analysis. Only the
+case and anchoring heads are represented as overt heads because only
+they are consistently realized as suffixal morphology. The QP layer is
+drawn only as a conservative cover term for prenominal quantificational
+material; the sections below do not assume a finer numeral-vs-quantifier
+split unless the data require it.
+
+
+\subsection{The root and NP}
+\label{sec:nm-root}
+
+The lexical noun occupies the head position of NP. Unlike the verbal
+root, which is licensed by a selecting functional head (the Asp.Align
+morpheme is obligatory on every finite verb; cf.\
+§\,\ref{sec:vm-root}), the nominal root may surface without any overt
+functional morphology: the direct case is the unmarked form, with zero
+ending. The absence of \ird{-ot/-t} in the bare noun is therefore not
+the absence of nominal structure. Rather, it is the absence of overt
+anchoring morphology: the noun phrase is interpreted as unanchored,
+and \textsc{Anch\textsuperscript{0}} receives no overt spellout.
+
+I continue to use the DP Hypothesis as the general claim that Iridian
+nominals project beyond NP, but the trees below label the relevant
+D-layer as AnchP so that the analysis remains terminologically stable:
+the theoretical feature is anchoring, while \emph{definiteness}
+remains the traditional descriptive label for one common use of that
+layer.
+
+
+%% ================================================================
+%%  PART II: LOW NOMINAL MORPHOLOGY
+%% ================================================================
+
+\section{Case, declension class, and stem grade in the low nominal
+  domain}
+\label{sec:nm-case}
+
+\subsection{Case, KP, and the alignment-sensitive argument system}
+\label{sec:nm-case-system}
+
+The lowest overt functional layer of the noun phrase is KP, the case
+projection. Modern Iridian has three productive structural cases:
+\term{direct}, \term{transitive}, and \term{indirect}; a fourth case,
+the \term{vocative}, survives as a nonproductive form limited to
+direct address in lexically specified items. The direct case is
+morphologically unmarked and supplies the citation form. The
+transitive and indirect are suffixal realizations of
+\textsc{K\textsuperscript{0}}, while the vocative is a specialized
+speech-act-adjacent realization of the same low nominal domain.
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Case values in the Iridian nominal domain.}
+  \label{tab:nm-cases}
+  \medskip
+  \begin{tabularx}{\textwidth}{l L L}
+    \toprule
+    {\sc case} & {\sc primary function} & {\sc structural interpretation} \\
+    \midrule
+    Direct & citation form; absolutive argument; predicate nominal &
+    absence of overt K exponent \\
+    Transitive & agent of perfective/retrospective transitives &
+    ergative realization of K \\
+    Indirect & patient in nominative-alignment aspects; possessors;
+    obliques; governed complements of postpositions &
+    general non-core K realization \\
+    Vocative & direct address in lexically specified names, kin
+    terms, and a small residue of nouns &
+    speech-act linked case in the low nominal domain \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent The split alignment facts belong to the clause, but the
+nominal contribution is straightforward: KP makes available the case
+values that the clausal architecture selects. In the perfective and
+retrospective aspects the patient remains direct while the agent is
+transitive; in the nominative-alignment aspects the agent remains
+direct while the patient appears in the indirect.
 
 \pex
 \a
 \begingl
 \gla Marek zmacime.//
 \glb Marek.\Dir{} run-\Prog{}//
-\glft \trsl{Marek is running.} \lingcontext{intransitive; agent = \Dir{}}//
+\glft \trsl{Marek is running.}//
 \endgl
 \a
-\begingl
-\gla Travat Marku piaštnik.//
-\glb bread.\Dir{}.\Def{} Marek.\Trs{} eat-\Pf{}//
-\glft \trsl{Marek ate the bread.} \lingcontext{transitive perfective; P = \Dir{}, A = \Trs{}}//
-\endgl
-\a
-\begingl
-\gla Marek travě piastime.//
-\glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
-\glft \trsl{Marek is eating bread.} \lingcontext{transitive progressive; A = \Dir{}, P = \Ind{}}//
-\endgl
-\xe
-
-\section{Inflectional classes}
-
-Nouns in Iridian are best described through two intersecting systems: \term{declension class} and \term{stem grade}. The declension class determines which case endings a noun selects; the stem grade determines which shape of the stem appears before that ending. This allows the grammar to treat forms such as \ird{Marek} $\rightarrow$ \ird{Marku} / \ird{Marcí}, \ird{obel} $\rightarrow$ \ird{oblu} / \ird{oblí}, and \ird{lobek} $\rightarrow$ \ird{lubku} not as isolated curiosities, but as regular consequences of the general morphophonemic system described in Chapter~\ref{ch:phon}.
-
-The surface case inventory remains simple --- direct, transitive, indirect, and vocative --- but the stems that feed those cases may occur in several recurrent grades:
-
-\begin{itemize}
-	\item the \term{basic stem}, used in the direct/citation form;
-	\item the \term{zero-grade stem}, where weak \ird{e} is deleted before an oblique ending;
-	\item the \term{front-raised stem}, where zero-grade formation further yields \ird{e/ě/é $\rightarrow$ i/í};
-	\item the \term{back-raised stem}, where zero-grade formation yields \ird{o $\rightarrow$ u};
-	\item the \term{soft stem}, where a front-vocalic ending palatalizes the final consonant;
-	\item the \term{leveled stem}, where an inherited or high-frequency form overrides the productive pattern.
-\end{itemize}
-
-Not every noun shows all these grades, but every morphophonemically complex noun can be described by reference to them. Dictionaries should therefore identify nouns not merely by a citation form, but by a compact inflectional profile: \term{Direct form}, \term{declension class}, \term{weak-\ird{e} status}, \term{raising behavior}, and any \term{leveled indirect or vocative form}. In ordinary prose discussion this grammar cites the direct form alone unless some further principal part is needed.
-
-Native direct-case nouns may end in a consonant, in \ird{-a}, in \ird{-o}, in \ird{-e/-ě}, or in \ird{-ou}. Final \ird{-i} and \ird{-u} are avoided in inherited absolutive nouns and occur chiefly in recent loans, abbreviations, or marginal expressive vocabulary. The declension system must therefore account not only for consonant-final stems, but also for several distinct vowel-final root shapes.
-
-Modern standard Iridian has eighteen declension classes. These are lexically assigned and must be learned noun by noun, but they are not arbitrary: they fall into six broader macrofamilies, each with three internal subclasses. Within a given class the endings and stem alternations are regular; what is lexical is chiefly which class a noun belongs to, whether it tolerates deletion and raising, and whether it preserves an inherited short indirect ending or one of the longer areally remodeled endings.
-
-\begin{table}[ht]
-	\scriptsize\sffamily
-	\caption{The eighteen noun declension classes.}\label{tab:declension}
-	\medskip
-	\begin{tabularx}{\textwidth}{l L l l l L}
-		\toprule
-		{\sc class} & {\sc type} & {\sc \Trs{}} & {\sc \Ind{}} & {\sc \Voc{}} & {\sc stem behavior} \\
-		\midrule
-		1 & hard consonant plain & \ird{-u} & \ird{-í} & \ird{-o} & basic stem; no obligatory weak-\ird{e} deletion \\
-		2 & hard consonant deleting & \ird{-u} & \ird{-ení} & \ird{-o} & productive weak-\ird{e} deletion plus expanded oblique ending \\
-		3 & hard consonant front-raised & \ird{-u} & \ird{-í} & \ird{-o} & deletion plus \ird{e/ě/é $\rightarrow$ i/í} \\
-		4 & hard consonant back-raised & \ird{-u} & \ird{-ení} & \ird{-e} & deletion plus \ird{o $\rightarrow$ u}; long front-vocalic indirect \\
-		5 & hard animate arealized & \ird{-a} & \ird{-ovi} & \ird{-e} & Slavic-like animate oblique endings beside inherited stem grades \\
-		6 & hard consonant leveled & \ird{-u} & lexical \ird{-í / -ení} & zero/\ird{-o} & productive stem behavior, but ending choice partly analogical \\
-		7 & velar plain & \ird{-u} & \ird{-e} & \ird{-e} & regular velar affrication in \Ind{} and \Voc{} \\
-		8 & velar deleting & \ird{-u} & \ird{-ení} & \ird{-e} & weak-\ird{e} deletion plus velar softening under an expanded indirect ending \\
-		9 & velar arealized & \ird{-a} & \ird{-evi} & \ird{-e} & animate-like oblique remodelled under areal pressure \\
-		10 & soft consonant plain & \ird{-y} & \ird{-ě} & \ird{-e} & already soft stem; little further alternation \\
-		11 & soft consonant contracted & \ird{-y} & \ird{-i} & \ird{-e} & contracted front oblique with little further alternation \\
-		12 & sibilant / affricate expanded & \ird{-y} & \ird{-ení} & \ird{-e} & class-specific spellout after sibilants and affricates \\
-		13 & \ird{-a} stem & \ird{-y} & \ird{-ě} & --- & low alternation; default native vocalic class \\
-		14 & \ird{-o} stem (\ird{o + m > um}) & \ird{-a} & \ird{-um} & --- & final \ird{-o} replaced in \Trs{}; coalesces with nasal indirect marker \\
-		15 & front-vowel stem in \ird{-e/-ě} & \ird{-e} & \ird{-ení} & --- & levelled front-vowel stems with analogically extended indirect \\
-		16 & consonant \ird{-a/-am} & \ird{-a} & \ird{-am} & \ird{-e} & conservative oblique family with little softening \\
-		17 & weak-\ird{e} \ird{-a/-am} & \ird{-a} & \ird{-am} & \ird{-e} & productive deletion before oblique endings, often with syllabic liquids \\
-		18 & contracting \ird{-ou} & \ird{-ovy} & \ird{-ově / -ovení} & --- & inherited contraction plus occasional areal extension of the indirect \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-The classes are numerous because Iridian noun morphology is intentionally noun-heavy. The same four cases recur everywhere, but the path from citation form to oblique form is richly differentiated by class. Some classes preserve short inherited endings, others generalize longer front-vocalic endings such as \ird{-ení}, and a few animate classes have borrowed or convergently renewed endings such as \ird{-ovi} and \ird{-evi}. The language thus preserves an agglutinative syntax and transparent case inventory while allowing a much denser Slavic-looking nominal surface.
-
-\subsection{Macrofamily I: hard consonant stems}
-
-Classes~1--6 comprise the hard consonant family. Here the microfamilies show genuine ending divergence as well as stem divergence. Class~1 preserves the short inherited indirect \ird{-í}. Class~2 extends that oblique to \ird{-ení}, giving forms of the type \ird{louž} $\rightarrow$ \ird{loužení}. Classes~3 and~4 add front-vowel and back-vowel raising respectively, but differ again in whether the indirect is the short \ird{-í} or the expanded \ird{-ení}. Class~5 contains animate nouns remodeled under areal pressure, with \ird{-a} in the transitive and \ird{-ovi} in the indirect. Class~6 keeps a partly leveled oblique paradigm in high-frequency nouns and personal names.
-
-Representative outputs are:
-
-\pex
-\a \ird{Marek} $\rightarrow$ \ird{Marku} / \ird{Marcí} \lingcontext{short inherited indirect}
-\a \ird{louž} $\rightarrow$ \ird{loužu} / \ird{loužení} \lingcontext{expanded indirect in Class~2}
-\a \ird{lobek} $\rightarrow$ \ird{lubku} / \ird{lubcení} \lingcontext{back-raised stem plus long indirect}
-\a \ird{Marek} in the arealized animate class $\rightarrow$ \ird{Marka} / \ird{Markovi}
-\xe
-
-\subsection{Macrofamily II: velar stems}
-
-Classes~7--9 are a specialized subset of consonant-final nouns whose final consonant is velar. They preserve the visible velar alternations that most strongly index the language's Slavic surface profile. In this family the key analysis is velar affrication: after weak-\ird{e} deletion, /k/ surfaces as \ird{c} before front-vocalic oblique endings. Class~7 takes a short indirect in \ird{-e}; Class~8 uses the longer \ird{-ení}; Class~9 has animate-like areal endings in \ird{-evi}. The distinction among the three classes thus lies not only in deletion and raising, but also in which oblique ending the affricated velar stem selects.
-
-\pex
-\a \ird{perek} $\rightarrow$ \ird{prku} / \ird{prce}
-\a \ird{človek} $\rightarrow$ \ird{človku} / \ird{človcení}
-\a \ird{rok} $\rightarrow$ \ird{roka} / \ird{rocevi}
-\xe
-
-\subsection{Macrofamily III: soft consonant stems}
-
-Classes~10--12 contain stems that already end in a soft consonant, a sibilant, or an affricate. Class~10 preserves the inherited \ird{-ě} indirect. Class~11 contracts that ending to \ird{-i}. Class~12 generalizes an expanded \ird{-ení}, often under areal pressure and especially after sibilants. This is the chief source of contrasts such as short \ird{Marcí} beside longer \ird{loužení}.
-
-Because these nouns are already soft or sibilant-final, they usually show less dramatic alternation than hard consonant nouns. Their role in the system is not to showcase weak-\ird{e} deletion, but to preserve a dense inherited declensional texture.
-
-\subsection{Macrofamily IV: vocalic stems}
-
-Classes~13--15 are the main vowel-final families. Class~13 contains the default \ird{-a} stems such as \ird{trava}, with transitive \ird{-y} and indirect \ird{-ě}. Class~14 contains back-vowel \ird{-o} stems, whose transitive replaces the final vowel with \ird{-a} and whose indirect shows the regular coalescence \ird{o + m > um}; thus \ird{bro} $\rightarrow$ \ird{bra} / \ird{brum}. Class~15 contains front-vowel stems in \ird{-e/-ě}; these are often historically complex and are more heavily leveled than the other classes, and many of them now show an analogically extended indirect in \ird{-ení}. Together with the separate \ird{-ou} class below, these vocalic families account for the full set of native vowel-final absolutive shapes.
-
-\pex
-\a \ird{trava} $\rightarrow$ \ird{travy} / \ird{travě}
-\a \ird{bro} $\rightarrow$ \ird{bra} / \ird{brum}
-\a \ird{země} $\rightarrow$ \ird{zeme} / \ird{zemení}
-\xe
-
-\subsection{Macrofamily V: the \ird{-a/-am} oblique family}
-
-Classes~16 and~17 preserve the old consonant-final family whose transitive is \ird{-a} and indirect \ird{-am}. Class~16 is conservative and comparatively stable. Class~17, by contrast, subjects the stem to productive weak-\ird{e} deletion before those oblique endings and often resolves the resulting cluster through a syllabic liquid rather than by restoring the vowel. The especially productive subtype is the \term{CeLeC} pattern, where the direct stem contains weak \ird{e} before a liquid and a final consonant, and the oblique stem surfaces as \ird{CLC-} plus the case vowel licensed by its class.
-
-\pex
-\a \ird{byl} $\rightarrow$ \ird{byla} / \ird{bylam}
-\a \ird{jelen} $\rightarrow$ \ird{jlna} / \ird{jlnam}
-\a \ird{berel} in the \ird{CeLeC} subtype $\rightarrow$ \ird{brla} / \ird{brlam}
-\a \ird{berel} in the most reduced pronunciation $\rightarrow$ [br̩lam]
-\xe
-
-\subsection{Macrofamily VI: the contracting \ird{-ou} class}
-
-Class~18 contains inherited \ird{-ou} nouns, above all deverbal nominals. These follow a distinct but internally regular pattern: transitive \ird{-ovy}, indirect \ird{-ově}, and contraction in the direct definite form. Some members, especially literary or formal nouns, also admit an analogically extended indirect in \ird{-ovení}. This class is highly visible in nominalizations and therefore serves as the chief bridge between noun-heavy morphophonology and the rest of the grammar.
-
-\pex
-\a \ird{piaščikou} $\rightarrow$ \ird{piaščikovy} / \ird{piaščikově}
-\a \ird{hladou} $\rightarrow$ \ird{hladovy} / \ird{hladovení}
-\a \ird{piaščikou + -ot} $\rightarrow$ \ird{piaščikovat}
-\xe
-
-\subsection{Case endings and stem selection}\label{sec:noun-stem-grades}
-
-The relation between case and stem grade is summarized below.
-
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Case endings and their morphophonemic effects.}\label{tab:noun-stem-selection}
-	\medskip
-	\begin{tabularx}{0.95\textwidth}{L L L}
-		\toprule
-		{\sc case slot} & {\sc typical endings} & {\sc stem selected} \\
-		\midrule
-		Direct & zero & basic stem \\
-		Transitive & \ird{-u}, \ird{-y}, \ird{-e}, \ird{-a}, \ird{-ovy} & basic, zero-grade, raised, or vowel-replacing stem according to declension class \\
-		Indirect & \ird{-í}, \ird{-e}, \ird{-ení}, \ird{-ovi}, \ird{-evi}, \ird{-ě}, \ird{-i}, \ird{-um}, \ird{-am}, \ird{-ově}, \ird{-ovení} & soft stem for front-vocalic endings; zero-grade or raised stem where the class licenses deletion; some classes replace final root vowels or add areally expanded oblique material \\
-		Vocative & \ird{-o}, \ird{-e}, zero & basic or soft stem; often levelled in names and kin terms \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-The transitive and indirect cases are therefore not merely suffixes added to an invariant base. Rather, the ending first selects a stem grade, and only then surfaces in its overt form. The rule order is the same as in Chapter~\ref{ch:phon}: suffix class selection first, then weak-\ird{e} deletion or retention, then any raising, then soft-stem selection if the ending is front-vocalic, and only after that the cluster and voicing repairs that yield the final phonological form.
-
-Irregularity in the noun system is best understood as \emph{class assignment plus stem-grade irregularity}, not as unconstrained suppletion. Some nouns fail to raise where the general pattern would suggest it, some preserve weak \ird{e} in only one oblique, and some classes have generalized longer endings such as \ird{-ení} or animate-like endings such as \ird{-ovi} under areal pressure. Once these lexical facts are known, however, the resulting paradigms are still learnable by class rather than item by item.
-
-\pex
-\a \ird{Marek} $\rightarrow$ \ird{Marku} / \ird{Marcí}
-\a \ird{perek} $\rightarrow$ \ird{prku} / \ird{prce}
-\a \ird{bro} $\rightarrow$ \ird{bra} / \ird{brum}
-\a \ird{louž} $\rightarrow$ \ird{loužu} / \ird{loužení}
-\a \ird{obel} $\rightarrow$ \ird{oblu} / \ird{oblí}
-\a \ird{lobek} $\rightarrow$ \ird{lubku}
-\a \ird{piaščikou} $\rightarrow$ \ird{piaščikovy} / \ird{piaščikově}
-\xe
-
-\subsection{Irregular nouns}
-
-A small number of nouns have irregular inflectional patterns that do not conform neatly even to the eighteen-class system. These are best treated as explicitly levelled lexemes. Dictionaries accordingly list any exceptional indirect or vocative form when it cannot be recovered from the noun's class and grade behavior alone.
-
-\section{The vocative}
-
-The vocative is used for direct address. It is productive for personal names and for a closed set of common nouns, mostly kinship terms. Outside this set, nouns are addressed with the direct case form.
-
-Nouns with vocative forms include the following kinship terms:
-
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Kinship terms with vocative forms.}\label{tab:vocative}
-	\medskip
-	\begin{tabularx}{0.7\textwidth}{L l l}
-		\toprule
-		{\sc direct} & {\sc vocative} & {\sc meaning} \\
-		\midrule
-		\ird{papka}  & \ird{papko}  & father \\
-		\ird{mamka}  & \ird{mamko}  & mother \\
-		\ird{mlazka} & \ird{mlazko} & brother \\
-		\ird{voska}  & \ird{vosko}  & sister \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-For personal names the vocative is formed in a manner predictable from the inflectional class of the name (see Table~\ref{tab:declension} for the hard consonant plain type exemplified by \ird{Marek}, vocative \ird{Marko}). The vocative list is not exhaustive; other common nouns may have vocatives, but their use has become increasingly restricted to formal and literary registers.
-
-\section{Definiteness}\label{sec:definiteness}
-
-Iridian possesses a postposed determiner, which appears as \ird{-ot} after a consonant and as \ird{-t} after a vowel. Thus \ird{bylot} signifies \trsl{the child}, and \ird{travat} \trsl{the bread}. This suffix is not to be understood as answering in every particular to the English definite article. Its office is rather to mark a noun as referring to something already present to the mind of the speaker and hearer, whether by previous mention, by the circumstances of the utterance, or by some other sort of immediate intelligibility. It is therefore more exact to say that the suffix marks an \textit{anchored} or \textit{determinate} reference than that it merely marks definiteness in the narrower sense.
-
-In form the determiner is attached to the fully inflected noun. Since the direct case is without overt ending, the suffix there appears immediately upon the nominal stem; where, however, the noun bears some case termination, the determiner follows that termination. One may accordingly set side by side such forms as \ird{byl} \trsl{child}, \ird{bylot} \trsl{the child}, \ird{bylam} \trsl{child} in the indirect case, and \ird{bylamot} \trsl{the child} in the same case.
-
-\ex
-\begingl
-\gla byl \qquad bylot \qquad bylam \qquad bylamot//
-\glb child.\Dir{} \qquad child.\Dir{}.\Def{} \qquad child.\Ind{} \qquad child.\Ind{}.\Def{}//
-\glft \trsl{child, the child, child (oblique), the child (oblique)}//
-\endgl
-\xe
-
-The use of the determiner is optional. The bare noun is the ordinary and least marked form, and may be employed where the reference is indefinite, generic, kind-denoting, weak, or otherwise not yet fixed to the common ground of discourse. The suffixed form, on the other hand, presents the referent as one which is in some manner already recoverable. Very often it is anaphoric; not seldom it is situationally unique; at other times it is contrastively selected or resumed as a discourse-prominent participant. The opposition is therefore not simply that between \trsl{definite} and \trsl{indefinite}, but rather that between a noun which is left unanchored and one which is brought into a more determinate relation with the discourse.
-
-This may be seen from a simple contrast. In the sentence below the object is construed as a particular loaf or portion of bread already identifiable in the context:
-
-\ex
 \begingl
 \gla Travat Marku piaštnik.//
 \glb bread.\Dir{}.\Def{} Marek.\Trs{} eat-\Pf{}//
 \glft \trsl{Marek ate the bread.}//
 \endgl
-\xe
-
-If, however, the noun appears without the determiner, the reference is left less fixed and may be understood in a weaker or less individuated sense:
-
-\ex
-\begingl
-\gla Trava Marku piaštnik.//
-\glb bread.\Dir{} Marek.\Trs{} eat-\Pf{}//
-\glft \trsl{Marek ate bread; Marek ate some bread.}//
-\endgl
-\xe
-
-It must be observed that this suffix does not serve to indicate grammatical relation as such. It does not mark subjecthood, nor is it imposed by the mere fact that a noun stands as a core argument. In transitive clauses of the perfective or retrospective, it is indeed especially frequent with direct-case patient nouns; but this is because such nouns are often conceived as individuated and discourse-recoverable, not because the syntax requires the suffix. The same determiner may, where the sense calls for it, be found upon nouns in other cases also; yet outside the direct case such use is generally less neutral and more plainly expressive of topical, resumptive, contrastive, or otherwise salient reference.
-
-The vocative excludes the determiner. In forms of direct address the person addressed is already sufficiently identified by the speech-act itself, and no further anchoring is needed. Generic expressions likewise dispense with the suffix as a rule, the bare noun being in such contexts the ordinary vehicle of the class or kind as such.
-
-Beside this determiner the language possesses two preposed particles, \ird{si} and \ird{druh}, which are employed when the speaker wishes to introduce a referent as particularized, yet not as already established in the common ground. These particles thus stand, in point of meaning, between the wholly bare noun and the noun provided with the determiner. They do not make the noun definite; rather, they indicate what may be called specific indefiniteness.
-
-Of these two particles, \ird{si} is the lighter and more usual. It answers approximately to \trsl{a certain} or \trsl{some particular}, and is the common means of introducing a referent which the speaker has in view, though the hearer has not yet been led to identify it.
-
-\ex
-\begingl
-\gla si byl//
-\glb \Spec{} child.\Dir{}//
-\glft \trsl{a certain child; some particular child}//
-\endgl
-\xe
-
-The particle \ird{druh} is weightier in tone and somewhat more selective in force. It often suggests \trsl{a given} or \trsl{one particular}, and may accordingly appear where the speaker means to single out the referent with greater insistence, or where the style is more elevated or deliberate.
-
-\ex
-\begingl
-\gla druh byl//
-\glb \Spec{} child.\Dir{}//
-\glft \trsl{a certain particular child; one given child}//
-\endgl
-\xe
-
-The difference between \ird{si} and \ird{druh} is not absolute, and their spheres overlap. In many passages either may stand without serious change of denotation. Still, the general tendency is plain enough: \ird{si} is slighter, more colourless, and more readily employed in ordinary discourse, whereas \ird{druh} is stronger, more selective, and not seldom somewhat more literary in effect.
-
-These particles do not ordinarily co-occur with the determiner \ird{-ot/-t}. The reason is semantic. A noun marked by \ird{si} or \ird{druh} is presented as particularized indeed, but not yet anchored; a noun marked by \ird{-ot/-t} is presented as already anchored and recoverable. The two constructions are therefore, in the normal language, held apart.
-
-Number does not directly alter this opposition. The noun itself is not obligatorily inflected for singular and plural. Plurality, where it is to be expressly marked, is indicated by the proclitic \ird{ne}, which stands at the left edge of the noun phrase. The plural marker and the determiner are independent of one another in form and function: the former denotes plurality, the latter anchoring.
-
-\ex
-\begingl
-\gla ne byl \qquad ne bylot//
-\glb \Pl{} child.\Dir{} \qquad \Pl{} child.\Def{}//
-\glft \trsl{children \qquad the children}//
-\endgl
-\xe
-
-The particles of specific indefiniteness may likewise accompany plural expressions:
-
-\ex
-\begingl
-\gla ne si byl \qquad ne druh byl//
-\glb \Pl{} \Spec{} child.\Dir{} \qquad \Pl{} \Spec{} child.\Dir{}//
-\glft \trsl{some particular children \qquad a certain set of children}//
-\endgl
-\xe
-
-When \ird{ne} is joined with a numeral or other quantifying word, it no longer denotes mere plurality, but rather an approximate number. In such combinations the determiner, as well as the particles \ird{si} and \ird{druh}, is ordinarily avoided, since approximate quantified expressions are not commonly treated as either anchored or narrowly individualized noun phrases.
-
-A word must also be added concerning demonstratives. In the unmarked construction a demonstrative stands without the postposed determiner. Nevertheless, the language permits, in emphatic or contrastive style, the combination of demonstrative and determiner in the same noun phrase. Such double determination is not neutral, but serves to single out the referent with unusual force, whether resumptive, affective, or contrastive.
-
-\ex
-\begingl
-\gla ša byl \qquad ša bylot//
-\glb \Dem{}.\Prox{} child.\Dir{} \qquad \Dem{}.\Prox{} child.\Def{}//
-\glft \trsl{this child \qquad this very child; this particular child here}//
-\endgl
-\xe
-
-The full semantic range of the determiner, together with its relation to deixis, anaphora, topicality, contrast, and the introduction and subsequent tracking of referents, will be considered more fully in Chapter~\ref{ch:discourse}. The formal paradigm of the demonstratives themselves is given in Section~\ref{sec:demonstratives}.
-\section{Number}
-
-Iridian nouns are not formally inflected for number. A noun in the direct case form may be interpreted as singular or plural depending on context. The plural particle \ird{ne} may be used to explicitly mark plurality; it is a proclitic attaching to the leftmost element of the noun phrase.
-
-\ex
-\begingl
-\gla ne byl//
-\glb \Pl{} child//
-\glft \trsl{children}//
-\endgl
-\xe
-
-The use of \ird{ne} is optional. In contexts where number is recoverable from numerals, quantifiers, or shared knowledge, the particle is typically omitted. When used with a numeral or other quantifier, \ird{ne} signals approximation rather than plain plurality: \ird{ne hrona byl} means \trsl{about three children}, not \trsl{three children.}
-
-\ird{Ne} is a proclitic and attaches to the front of the noun phrase, including any preceding demonstratives or modifiers. It cannot appear inside a possessive noun phrase between an oblique possessor and the head noun. \ird{Ne} cannot be combined with a \ird{zad-} (negative existential) clause.
-
-\section{Uses of the indirect case}\label{sec:indirect-uses}
-
-Beyond its role as the patient case of transitive clauses in the nominative-alignment aspects, the indirect case is the general non-core case of the noun phrase. It covers the functions that in older descriptions were distributed across several narrower cases. In modern analysis these uses form a single domain: the indirect marks dependence on another noun, relation to a source or whole, and a wide range of peripheral participant roles.
-
-\subsection{Possession and nominal dependence}
-
-The most basic non-core use of the indirect is to mark a dependent noun within the noun phrase, especially a possessor. The dependent noun precedes the head noun and forms a tight constituent with it.
-
-\pex
-\irdp{Marcí dum}{Marek's house}\\
-\irdp{mámcí hašek}{my mother's bag}\\
-\irdp{ša študencí tóm}{this student's book}
-\xe
-
-Demonstratives and other phrasal modifiers precede the entire possessive phrase and do not intervene between the oblique possessor and the head noun. The plural clitic \ird{ne}, by contrast, is placed immediately before the element whose plurality it marks.
-
-\pex
-\a \irdp{ša študencí tóm}{this student's book}
-\a \irdp{ně študencí tóm}{the students' book}
-\a \irdp{študencí ně tóm}{the student's books}
-\xe
-
-The same oblique dependency is used more broadly for close nominal relations that English often renders with \trsl{of}: kinship, authorship, association, and other kinds of inherent or identifying linkage.
-
-\subsection{Material and partitive relations}
-
-The indirect also marks the substance from which something is made and the noun that supplies the whole or source domain in a partitive relation. In this use the head noun denotes an object, measure, or portion, while the indirect noun names the material or larger whole from which it is drawn.
-
-\ex
-\irdp{kuní prosc}{silver spoon}
-\xe
-
-\ex
-\begingl
-\gla Ona pive štava unarížčem.//
-\glb one beer-\Ind{} mug-\Dir{} \Refl{}-order-\mk{av-pv-1s}//
-\glft \trsl{I ordered a mug of beer.}//
-\endgl
-\xe
-
-Where the construction refers to an unbounded substance or to a portion abstracted from a whole, the indirect is the normal choice. By contrast, when the language counts discrete members of a set, Iridian prefers an overt quantificational construction rather than a bare oblique partitive dependent.
-
-\pex
 \a
 \begingl
-\gla Kroumaště na po zma jeca pivo.//
-\glb refrigerator.\Ind{} in still few \Exst{}-\Cont{} beer.\Dir{}//
-\glft \trsl{There's still some beer left in the refrigerator.}//
-\endgl
-\a
-\begingl
-\gla Študencí na hroná.//
-\glb student-\Ind{} in three//
-\glft \trsl{three of the students}//
+\gla Marek travě piastime.//
+\glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
+\glft \trsl{Marek is eating bread.}//
 \endgl
 \xe
 
-\subsection{Source and movement away}
+\subsection{Declension class as the lexical specification of KP}
+\label{sec:nm-declension}
 
-With verbs of departure, removal, and separation, the indirect marks the source from which motion proceeds. This source reading contrasts with the direct case, which in comparable verbal environments may instead foreground the affected place as a more central argument.
-
-\pex
-\a
-\begingl
-\gla Dumí palžek.//
-\glb house-\Ind{} leave-\Pf{}//
-\glft \trsl{I left the house.}//
-\endgl
-\a
-\begingl
-\gla Dum palzinek.//
-\glb house.\Dir{} leave-\Pf{}//
-\glft \trsl{I left the \emph{house}.}//
-\endgl
-\xe
-
-The same source-oriented oblique extends naturally to nouns followed by postpositions of separation, origin, exclusion, and replacement.
-
-\section{Pronouns and demonstratives}\label{sec:pronouns}
-
-Iridian distinguishes first and second person by means of a small set of personal pronouns. There are no independent personal pronouns of the third person. Reference to third persons is instead managed by the demonstrative system, together with a reduced set of anaphoric forms derived from it. The personal pronouns are inflected for the three ordinary cases, and each has beside it a possessive clitic, of which more will be said presently.
+KP is not realized by a single invariant suffix. Rather, the noun
+lexically selects a declension class whose case exponents interact
+with the phonological shape of the stem. The descriptive system
+recognized in Chapter~\ref{ch:nouns} distinguishes eighteen modern
+classes grouped into six macrofamilies. Within the present analysis,
+that lexical information is simply part of the nominal root's stored
+feature bundle: the root enters the derivation already specified for
+which K-exponents it can realize and which stem grades those exponents
+select.
 
 \begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Personal pronouns and possessive clitics.}\label{tab:personal-pronouns}
-	\medskip
-	\begin{tabularx}{0.75\textwidth}{L l l l l}
-		\toprule
-		              & {\sc direct} & {\sc transitive} & {\sc indirect} & {\sc clitic} \\
-		\midrule
-		1\textsc{sg}  & \ird{dá}   & \ird{dam}  & \ird{že}   & \ird{-(e)m}  \\
-		2\textsc{sg}  & \ird{já}   & \ird{jí}   & \ird{jena} & \ird{-(e)š}  \\
-		1\textsc{pl}  & \ird{mé}   & \ird{mně}  & \ird{mi}   & \ird{-(e)m}  \\
-		2\textsc{pl}  & \ird{tová} & \ird{tvy}  & \ird{tě}   & \ird{-(e)st} \\
-		\bottomrule
-	\end{tabularx}
+  \scriptsize\sffamily
+  \caption{The eighteen noun declension classes.}
+  \label{tab:nm-declension}
+  \medskip
+  \begin{tabularx}{\textwidth}{l L l l l L}
+    \toprule
+    {\sc class} & {\sc type} & {\sc \Trs{}} & {\sc \Ind{}} &
+    {\sc \Voc{}} & {\sc stem behavior} \\
+    \midrule
+    1 & hard consonant plain & \ird{-u} & \ird{-í} & \ird{-o} &
+    basic stem; no obligatory weak-\ird{e} deletion \\
+    2 & hard consonant deleting & \ird{-u} & \ird{-ení} & \ird{-o} &
+    productive weak-\ird{e} deletion plus expanded indirect ending \\
+    3 & hard consonant front-raised & \ird{-u} & \ird{-í} & \ird{-o} &
+    deletion plus \ird{e/ě/é $\rightarrow$ i/í} \\
+    4 & hard consonant back-raised & \ird{-u} & \ird{-ení} & \ird{-e} &
+    deletion plus \ird{o $\rightarrow$ u}; long indirect \\
+    5 & hard animate arealized & \ird{-a} & \ird{-ovi} & \ird{-e} &
+    areally remodeled animate obliques \\
+    6 & hard consonant leveled & \ird{-u} & lexical \ird{-í / -ení} &
+    zero/\ird{-o} & productive stem behavior with analogical leveling \\
+    7 & velar plain & \ird{-u} & \ird{-e} & \ird{-e} &
+    regular velar affrication in \Ind{} and \Voc{} \\
+    8 & velar deleting & \ird{-u} & \ird{-ení} & \ird{-e} &
+    deletion plus velar softening under long indirect \\
+    9 & velar arealized & \ird{-a} & \ird{-evi} & \ird{-e} &
+    animate-like remodelled oblique endings \\
+    10 & soft consonant plain & \ird{-y} & \ird{-ě} & \ird{-e} &
+    already soft stem; little further alternation \\
+    11 & soft consonant contracted & \ird{-y} & \ird{-i} & \ird{-e} &
+    contracted front oblique \\
+    12 & sibilant / affricate expanded & \ird{-y} & \ird{-ení} &
+    \ird{-e} & class-specific spellout after sibilants and affricates \\
+    13 & \ird{-a} stem & \ird{-y} & \ird{-ě} & --- &
+    low alternation; default native vocalic class \\
+    14 & \ird{-o} stem (\ird{o + m > um}) & \ird{-a} & \ird{-um} & --- &
+    final vowel replacement in oblique forms \\
+    15 & front-vowel stem in \ird{-e/-ě} & \ird{-e} & \ird{-ení} & --- &
+    levelled front-vowel stems with expanded indirect \\
+    16 & consonant \ird{-a/-am} & \ird{-a} & \ird{-am} & \ird{-e} &
+    conservative oblique family \\
+    17 & weak-\ird{e} \ird{-a/-am} & \ird{-a} & \ird{-am} & \ird{-e} &
+    productive deletion before oblique endings \\
+    18 & contracting \ird{-ou} & \ird{-ovy} & \ird{-ově / -ovení} & --- &
+    inherited contraction plus optional analogical extension \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
-The indirect case of the personal pronoun serves, among its other functions, to express the possessor, precisely as the indirect case of an ordinary noun may do elsewhere in the language (Section~\ref{sec:indirect-uses}). Thus \irdp{že dum}{my house} is formally no different in structure from the corresponding nominal possessor construction. The possessor stands before the head noun in the usual prenominal position.
+\noindent The essential Minimalist point is that declension class is
+not a rival to syntactic structure. It is the lexical instruction that
+tells PF how a given noun realizes the K head merged in the syntax.
+The syntax provides KP; the lexicon and PF provide the class-sensitive
+spellout.
 
-Alongside this analytic construction there exists a shorter and in many contexts commoner possessive expression by means of enclitic forms attached to the right edge of the noun. The first-person clitic appears as \ird{-m} after a vowel-final stem and as \ird{-em} after a consonant-final stem; the second-person singular behaves in like manner as \ird{-š} or \ird{-eš}, and the second-person plural as \ird{-st} or \ird{-est}. Hence \irdp{dumem}{my house; our house}. It will be observed that the first singular and the first plural have here fallen together in the same clitic form, \ird{-(e)m}; the distinction, where it matters, is left to the context or else restored by the use of the free pronoun.
+\subsection{Stem grades as allomorph selection under K}
+\label{sec:nm-stem-grades}
 
-The free indirect form and the clitic are not mutually exclusive. On the contrary, the language not seldom employs both at once where emphasis, contrast, or explicitness is desired, as in \irdp{že dumem}{my house}. Much the same liberty is found when the noun is at the same time accompanied by a demonstrative: \irdp{tuto že tom}{that book near you of mine}, \irdp{tuto tomem}{that book near you, mine}, and \irdp{tuto že tomem}{that book near you of mine} are all possible, though they differ in weight and emphasis.
-
-Third-person reference belongs properly to the demonstrative system. Iridian possesses three demonstrative stems, distinguished according to the familiar threefold deictic opposition of nearness to the speaker, nearness to the addressee, and distance from both. These may be termed, in the usual fashion, proximal, medial, and distal.
+Case endings do not simply attach to a single invariant stem. They
+select among recurring stem grades: the basic stem, zero-grade stem,
+front-raised stem, back-raised stem, soft stem, and lexically leveled
+stem. These are not separate lexical items. They are contextually
+conditioned allomorphs of the same root, triggered by the K head and
+by the morphophonemic processes summarized in
+Chapter~\ref{ch:phon}.
 
 \begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Demonstrative paradigm.}\label{tab:demonstratives}
-	\medskip
-	\begin{tabularx}{0.65\textwidth}{L l l l}
-		\toprule
-		           & {\sc direct} & {\sc transitive} & {\sc indirect} \\
-		\midrule
-		Proximal   & \ird{tak}  & \ird{tam}   & \ird{ten}  \\
-		Medial     & \ird{tuto} & \ird{toho}  & \ird{taly} \\
-		Distal     & \ird{je}   & \ird{jaky}  & \ird{jení} \\
-		\bottomrule
-	\end{tabularx}
+  \footnotesize\sffamily
+  \caption{Case endings and their typical stem selection.}
+  \label{tab:nm-stem-selection}
+  \medskip
+  \begin{tabularx}{0.95\textwidth}{L L L}
+    \toprule
+    {\sc case slot} & {\sc typical endings} & {\sc stem selected} \\
+    \midrule
+    Direct & zero & basic stem \\
+    Transitive & \ird{-u}, \ird{-y}, \ird{-e}, \ird{-a}, \ird{-ovy} &
+    basic, zero-grade, raised, or vowel-replacing stem by class \\
+    Indirect & \ird{-í}, \ird{-e}, \ird{-ení}, \ird{-ovi}, \ird{-evi},
+    \ird{-ě}, \ird{-i}, \ird{-um}, \ird{-am}, \ird{-ově},
+    \ird{-ovení} & soft stem for front-vocalic endings; zero-grade or
+    raised stems where licensed; lexical replacement in some classes \\
+    Vocative & \ird{-o}, \ird{-e}, zero & basic or soft stem; often levelled \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
-In their primary and local use, these forms answer to the ordinary distinctions of deixis. Thus \irdp{je tom}{that book yonder} contains the distal form, whereas \irdp{tuto pect}{that cup near you} contains the medial. The indirect case of the demonstrative may further serve as a possessor in the same manner as the indirect of a noun or personal pronoun. One may therefore say \irdp{ten dum}{his or her house}, \irdp{taly pect}{his or her cup}, or \irdp{jení vrad}{his, her, or their town}. In such expressions the deictic opposition is preserved, but it is readily extended into discourse. The choice of demonstrative may indicate not only where the possessor stands in relation to speaker and hearer, but also how the referent is situated in the flow of the discourse.
-
-This latter point is of some importance. When used pronominally, the three demonstratives do not merely point in space; they also arrange third-person referents according to accessibility and prominence. The proximal is naturally employed of the current topic or most salient participant; the medial may denote a secondary but still active referent, often one associated with the addressee’s sphere; and the distal tends toward what may conveniently be called obviative use, namely a referent less central, more displaced, backgrounded, or set over against another.
-
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Discourse function of the demonstrative series.}\label{tab:dem-discourse}
-	\medskip
-	\begin{tabularx}{0.9\textwidth}{L L L}
-		\toprule
-		{\sc form}   & {\sc spatial value}    & {\sc discourse value} \\
-		\midrule
-		Proximal & near speaker       & current topic, most accessible referent \\
-		Medial   & near addressee     & addressee-linked or secondary active referent \\
-		Distal   & away from both     & obviative, backgrounded, displaced, or contrastive referent \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-By this means Iridian is able to keep apart several third-person participants without the aid of verbal agreement. The forms are not mere substitutes for a single abstract \trsl{he} or \trsl{she}, but carry with them a definite discourse colouring.
+Representative outputs from each macrofamily make clear that the
+system is noun-dense but rule-governed rather than suppletive:
 
 \pex
+\a \ird{Marek} $\rightarrow$ \ird{Marku} / \ird{Marcí} \lingcontext{hard consonant with short indirect}
+\a \ird{louž} $\rightarrow$ \ird{loužu} / \ird{loužení} \lingcontext{hard consonant with expanded indirect}
+\a \ird{lobek} $\rightarrow$ \ird{lubku} / \ird{lubcení} \lingcontext{back-raised stem}
+\a \ird{Marek} $\rightarrow$ \ird{Marka} / \ird{Markovi} \lingcontext{arealized animate pattern}
+\a \ird{perek} $\rightarrow$ \ird{prku} / \ird{prce} \lingcontext{deletion plus softening}
+\a \ird{piaščikou} $\rightarrow$ \ird{piaščikovy} / \ird{piaščikově} \lingcontext{\ird{-ou} nominal}
+\xe
+
+\subsection{Vocative and proper-name behavior}
+\label{sec:nm-vocative}
+
+The vocative is the most restricted member of the case system. It is
+nonproductive in the modern language. A marked vocative is viable only
+for lexically specified items: inherited proper names, older
+integrated loan proper names, kinship terms, and a restricted residue
+of concrete and abstract nouns. The latter class is lexically
+determined item by item and does not follow systematically from
+membership in the inherited vocabulary. Outside those lexicalized
+items, direct address uses the unmarked direct case. In other words,
+in the absence of a marked vocative, the language defaults to the
+direct case. The simplest analysis is that the vocative realizes the
+low nominal domain in direct relation to the speech-act layer,
+bypassing the ordinary anchoring opposition. This is why the vocative
+rejects \ird{-ot/-t}: direct address identifies the referent
+deictically by the act of address itself.
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Kinship terms retaining lexicalized vocative forms.}
+  \label{tab:nm-vocative}
+  \medskip
+  \begin{tabularx}{0.7\textwidth}{L l l}
+    \toprule
+    {\sc direct} & {\sc vocative} & {\sc meaning} \\
+    \midrule
+    \ird{papka}  & \ird{papko}  & father \\
+    \ird{mamka}  & \ird{mamko}  & mother \\
+    \ird{mlazka} & \ird{mlazko} & brother \\
+    \ird{voska}  & \ird{vosko}  & sister \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Proper names otherwise behave like ordinary DPs: they may bear the
+ordinary case suffixes, may host the honorific use of \ird{ne}, and
+may participate in possessive and demonstrative constructions. What is
+special about names is not their exemption from the nominal spine, but
+their lexically strong identifiability, which makes bare-name
+reference especially natural and makes overt anchoring more marked than
+with common nouns unless a discourse-contrastive reading is intended.
+
+
+%% ================================================================
+%%  PART III: THE ANCHORING SUFFIX AS THE NOMINAL D-LAYER
+%% ================================================================
+
+\section{The anchoring suffix \ird{-ot/-t}: the D-domain in Iridian}
+\label{sec:nm-def}
+
+\subsection{The allomorphy rule and its PF conditioning}
+\label{sec:nm-def-allomorph}
+
+Surface distribution first: the suffix has two allomorphs.
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape \ird{-ot}:] inserted when the immediately preceding
+  segment is a consonant.
+\item[\upshape \ird{-t}:] inserted when the immediately preceding
+  segment is a vowel.
+\end{description}
+
+\noindent The traditional descriptive label for this suffix is
+\emph{definiteness}, but in the present discussion the theoretical
+feature is anchoring. In Distributed Morphology terms (Halle \&
+Marantz 1993; Embick \& Noyer 2007), \ird{-ot} and \ird{-t} are two
+Vocabulary Items competing for insertion at the same
+\textsc{Anch\textsuperscript{0}} node. The choice is made by
+phonological context at PF: \ird{-ot} is the elsewhere form, while
+\ird{-t} is the phonologically conditioned variant after a vowel-final
+host.
+
+The pattern follows from a general avoidance of consonant-cluster
+creation: the bare \ird{-t} is preferred when the preceding syllable
+already ends in a vowel and thus makes an epenthetic vowel
+unnecessary. The epenthetic \ird{o} in \ird{-ot} breaks up a
+consonant-final host before the final \ird{-t}.
+
+Representative paradigms are given in
+Table~\ref{tab:nm-def-allomorphy}.
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Allomorphy of the anchoring suffix across cases and
+  declension classes.}\label{tab:nm-def-allomorphy}
+  \medskip
+  \begin{tabularx}{\textwidth}{L l l l l}
+    \toprule
+    {\sc noun} & {\sc class} & {\sc case} & {\sc plain} &
+    {\sc anchored} \\
+    \midrule
+    \ird{byl} \trsl{child}   & 17 & \Dir{}  & \ird{byl}    & \ird{bylot} \\
+                              &    & \Ind{}  & \ird{bylam}  & \ird{bylamot} \\
+    \ird{trava} \trsl{bread} & 13 & \Dir{}  & \ird{trava}  & \ird{travat} \\
+                              &    & \Trs{}  & \ird{travy}  & \ird{travyt} \\
+                              &    & \Ind{}  & \ird{travě}  & \ird{travět} \\
+    \ird{louž}                & 2  & \Dir{}  & \ird{louž}   & \ird{loužot} \\
+                              &    & \Ind{}  & \ird{loužení} & \ird{louženíot} \\
+    \ird{piaščikou}           & 18 & \Dir{}  & \ird{piaščikou} & \ird{piaščikovat} \\
+                              &    & \Trs{}  & \ird{piaščikovy} & \ird{piaščikovyt} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent The PF rule can therefore be stated as:
+
+\medskip
+\begin{center}
+\textsc{Anch\textsuperscript{0}}[\textsc{+anch}] $\rightarrow$
+\ird{-ot} / $[_{\sigma}\ldots C]$ \underline{\quad},\quad
+\ird{-t} / $[_{\sigma}\ldots V]$ \underline{\quad}
+\end{center}
+\medskip
+
+\noindent The conditioning environment is the phonological shape of
+the immediately preceding morpheme — the case ending, or the bare stem
+if no case ending is present.
+
+
+\subsection{Case stacking and the ordering AnchP $>$ KP}
+\label{sec:nm-def-stacking}
+
+The surface fact is straightforward: \ird{-ot/-t} attaches to the
+\emph{already case-inflected} noun. The morphological order is
+therefore:
+
+\begin{center}
+\textsc{root} $+$ \textsc{case-ending} $+$ \textsc{anch}
+\end{center}
+
+\noindent The interpretive consequence is that case determines the
+noun's clausal role, while anchoring is added outside that case layer.
+The simplest structural analysis is therefore KP dominated by AnchP:
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{AnchP}
+    [\textsc{KP}
+      [\textsc{NP}
+        [\textit{root}]
+      ]
+      [\textsc{K\textsuperscript{0}}\\case ending]
+    ]
+    [\textsc{Anch\textsuperscript{0}}\\\ird{-ot/-t} / $\emptyset$]
+  ]
+\end{forest}
+\end{center}
+
+\noindent This tree deliberately omits the higher left-peripheral
+layers. Demonstratives, \ird{ne}, and \ird{si}/\ird{druh} are treated
+below as distinct edge material outside AnchP rather than as
+specifiers of AnchP itself. The right edge of KP is therefore the only
+place where the overt anchoring head is expected to surface.
+
+This analysis parallels the verbal domain exactly. The Asp.Align
+morpheme — the verbal analogue of the overt nominal D-layer — is also
+the sole obligatory element of the finite verb, surfaces at the right
+edge of the verbal complex, and mediates between the lexical root and
+the higher inflectional layers (§\,\ref{sec:vm-asp}). In both the
+verbal and nominal domains, the rightmost morpheme is the head of the
+highest overt suffixal projection, and the directionality of
+morphological layering is predicted by head-finality.
+
+
+\subsection{The \ird{-ou\,+\,-ot} contraction}
+\label{sec:nm-def-contraction}
+
+The sequence arising when the anchoring suffix follows a noun ending
+in \ird{-ou} (Class~18, including all deverbal nominals in the direct
+case; §\,\ref{sec:event-nominals}) undergoes a distinct PF operation:
+
+\begin{center}
+/\textsc{root}\ird{-ou}/ +
+\textsc{Anch\textsuperscript{0}}[\textsc{+anch}]
+$\longrightarrow$ \ird{-ovat}
+\end{center}
+
+\noindent Thus \ird{piaščikou} + \ird{-ot} surfaces as
+\ird{piaščikovat}, not \ird{*piaščikouot} or \ird{*piaščikout}. In
+the other cases of the same noun, where the vowel-final endings are
+\ird{-ovy} and \ird{-ově}, the regular vowel-context rule applies
+without contraction: \ird{piaščikovyt} and \ird{piaščikovět}.
+
+The simplest analysis is a PF morphological fusion: when the
+anchoring node is adjacent to the \ird{-ou} ending, the two are
+spelled out together as \ird{-ovat}. An alternative truncation
+analysis is conceivable, but the stem-extension pattern in the rest of
+the paradigm makes the fusion account the better fit at present.
+
+The contraction has a grammatical consequence. Because the direct-case
+form of deverbal nominals ends in \ird{-ou}, the anchored form
+\ird{-ovat} is visually and phonologically distinctive from both the
+plain form and the other case forms. This distinctiveness is exploited
+in one disambiguation strategy for complex gerunds
+(§\,\ref{sec:event-nominals}): when a gerund contains two
+indirect-case nominal arguments, marking the theme nominal with
+\ird{-ot/-t} identifies it unambiguously as the theme.
+
+
+\subsection{Anchored reference and the [\textsc{+anch}] feature}
+\label{sec:nm-def-semantics}
+
+The descriptive generalization is that nouns with \ird{-ot/-t}
+normally pick out a referent that the speaker presents as already
+recoverable or singled out in the discourse. This includes the
+familiar uses traditionally grouped under \emph{definiteness}, but the
+range is slightly broader: the suffix also appears where the relevant
+effect is contrastive individuation or resumptive tracking rather than
+simple article-like definiteness.
+
+The interpretive effect is therefore best described as
+\term{anchoring}. A noun phrase marked by \ird{-ot/-t} is construed as
+an anchored discourse token rather than as a merely lexical type or an
+unintroduced individual. The most common contexts are the following:
+
+\begin{enumerate}[wide]
+\item Anaphoric:The anchored noun resumes a referent
+  introduced in prior discourse.
+\item Situationally unique: The anchored noun refers to an
+  entity that is salient in the speech situation, though Iridian is
+  more selective here than languages with obligatory articles.
+\item Contrastive or resumptive: The suffix appears where
+  the noun is being re-identified, resumed, or singled out as the
+  discourse-relevant token.
+\item Generic/kind: The bare noun is the ordinary vehicle
+  for generic and kind-denoting reference. A noun with
+  [\textsc{+anch}] generally resists a generic reading.
+\end{enumerate}
+
+The theoretical inference, stated cautiously, is that the Iridian
+D-layer is best modeled as \textsc{Anch\textsuperscript{0}} carrying a
+feature [\textsc{+anch}]. That feature instructs the hearer to recover
+an individuated referent from the discourse model. In that sense,
+\emph{definiteness} is the traditional descriptive name, while
+\emph{anchoring} is the theoretical term used throughout the rules and
+trees below.
+
+
+\subsection{Distribution restrictions}
+\label{sec:nm-def-restrictions}
+
+Several contexts exclude the anchoring suffix:
+
+\paragraph{The vocative.}
+The vocative case is incompatible with \ird{-ot/-t}. It is also
+nonproductive: only lexically specified vocatives survive, especially
+with inherited and older integrated loan proper names, kinship terms,
+and a small residue of concrete and abstract nouns. Elsewhere direct
+address uses the direct case. The simplest analysis is that direct
+address already identifies its referent at the speech-act level and
+therefore does not enter the ordinary anchoring opposition.
+
+\paragraph{Generic and kind-denoting NPs.}
+As noted in §\,\ref{sec:nm-def-semantics}, [\textsc{+anch}] is
+incompatible with the generic reading. Generics are expressed by the
+bare noun because they denote a class or kind rather than a discourse
+anchored token.
+
+\paragraph{Approximate quantification with \ird{ne} and numerals.}
+When the plural clitic \ird{ne} combines with a numeral or quantifier
+to yield an approximate reading (\ird{ne hrona byl} \trsl{about three
+children}), the anchoring suffix is excluded. The distribution
+suggests that an approximately quantified expression is not being
+packaged as an anchored nominal individual, but as an imprecisely
+bounded plurality.
+
+
+\subsection{Double-marking: demonstrative + \ird{-ot/-t}}
+\label{sec:nm-def-double}
+
+The grammar (§\,\ref{sec:definiteness}) notes that a demonstrative may
+co-occur with the anchoring suffix:
+\ird{tak bylot} \trsl{this very child; this particular child here}.
+This construction is marked rather than impossible.
+
+The surface fact is therefore one of \emph{layering}, not strict
+incompatibility. The demonstrative contributes deixis, while
+\ird{-ot/-t} contributes anchoring. A plain demonstrative phrase is
+structurally unmarked. A demonstrative plus anchoring suffix is
+typically more emphatic, resumptive, contrastive, or strongly
+individuating than its plain counterpart.
+
+The theoretical analysis adopted here is that demonstratives occupy a
+DemP above AnchP (§\,\ref{sec:nm-dem}). Co-occurrence is grammatical
+because the two layers are distinct; it is marked because the noun
+phrase is being both deictically located and additionally singled out
+as the anchored discourse token.
+
+\pex
+\a
+\begingl
+\gla tak byl//
+\glb \Dem{}.\Prox{} child.\Dir{}//
+\glft \trsl{this child}//
+\endgl
+\a
+\begingl
+\gla tak bylot//
+\glb \Dem{}.\Prox{} child.\Dir{}.\Def{}//
+\glft \trsl{this very child; this particular child here}//
+\endgl
+\xe
+
+
+%% ================================================================
+%%  PART IV: THE UPPER NOMINAL LAYERS
+%% ================================================================
+
+\section{The upper nominal functional sequence: demonstratives,
+  quantification, number, and specific indefiniteness}
+\label{sec:nm-upper}
+
+\subsection{The demonstrative system and noun-internal DemP}
+\label{sec:nm-dem}
+
+Iridian demonstratives form a three-way deictic system with proximal,
+medial, and distal values. The same paradigm has three distinct
+morphosyntactic realizations: an adnominal demonstrative, a
+pronominal demonstrative, and an indirect-case possessive
+demonstrative. The noun-internal analysis developed here concerns the
+adnominal realization, namely DemP, but the wider demonstrative
+system must be acknowledged because the same case-inflecting paradigm
+is also used pronominally and possessively; see
+§\,\ref{sec:pronouns} for the fuller descriptive discussion and
+§\,\ref{sec:np-structure} for the overt noun-phrase order.
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Demonstrative paradigm relevant to noun-internal and
+  pronominal syntax.}\label{tab:nm-dem-paradigm}
+  \medskip
+  \begin{tabularx}{0.7\textwidth}{L l l l}
+    \toprule
+                 & {\sc direct} & {\sc transitive} & {\sc indirect} \\
+    \midrule
+    Proximal     & \ird{tak}  & \ird{tam}  & \ird{ten} \\
+    Medial       & \ird{tuto} & \ird{toho} & \ird{taly} \\
+    Distal       & \ird{je}   & \ird{jaky} & \ird{jení} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent Within the noun phrase, the adnominal demonstrative
+realizes DemP, the outermost noun-internal demonstrative projection
+above AnchP. The hierarchy required by the overt ordering facts is
+therefore DemP $>$ AnchP $>$ KP $>$ PossP $>$ NP, matching the
+descriptive order \textsc{demonstrative} $>$
+\textsc{poss}.\Ind{} $>$ \textsc{head} given in
+§\,\ref{sec:np-structure}. Demonstratives stand outside the
+possessive grouping, whereas possessors remain inside the KP/NP
+domain. The co-occurrence facts in §\,\ref{sec:pronouns}, including
+\ird{tuto že tom}, show directly that demonstratives and possessors
+cannot be analyzed as occupants of one and the same structural slot.
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{DemP}
+    [\textit{adnominal demonstrative}]
+    [\textsc{AnchP}
+      [\textsc{KP}
+        [\textsc{PossP}
+          [\textit{oblique possessor}.\Ind{} / $\emptyset$]
+          [\textsc{NP}\\\textit{head noun}]
+        ]
+        [\textsc{K\textsuperscript{0}}\\case]
+      ]
+      [\textsc{Anch\textsuperscript{0}}\\\ird{-ot/-t} / $\emptyset$]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+The core semantics of the demonstrative layer is deictic: proximal
+indexes a referent near the speaker, medial a referent near the
+addressee, and distal a referent away from both. The
+topic-proximal, addressee-linked medial, and obviative or
+backgrounded distal uses described in §\,\ref{sec:pronouns} are
+pragmatic extensions of those lexical deictic values, not
+replacements for them. The formal analysis therefore keeps lexical
+deixis and discourse tendency distinct.
+
+Because DemP and AnchP are distinct layers, the relation between a
+demonstrative and \ird{-ot/-t} is one of marked layering rather than
+true exclusion. A plain demonstrative phrase is structurally
+unmarked. A demonstrative plus anchoring suffix yields a marked
+emphatic, resumptive, contrastive, or strongly individuating
+interpretation.
+
+\paragraph{Indirect-case demonstratives as possessors.}
+The same demonstrative paradigm also feeds possessive syntax. The
+indirect forms \ird{ten}, \ird{taly}, and \ird{jení} may occupy the
+ordinary possessor slot before the noun, as in \ird{ten dum}. In
+such forms the demonstrative is not the outer deictic determiner of
+the noun phrase; it is an indirect-case possessor inside PossP. The
+grammar therefore allows two distinct noun-internal positions fed by
+the same demonstrative system: adnominal DemP above AnchP, and
+demonstrative possessors inside PossP.
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{DemP}
+    [\textit{adnominal demonstrative} / $\emptyset$]
+    [\textsc{AnchP}
+      [\textsc{KP}
+        [\textsc{PossP}
+          [\ird{ten}/\ird{taly}/\ird{jení}]
+          [\textsc{NP}\\\textit{head noun}]
+        ]
+        [\textsc{K\textsuperscript{0}}\\case]
+      ]
+      [\textsc{Anch\textsuperscript{0}}\\\ird{-ot/-t} / $\emptyset$]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\subsection{Pronominal demonstratives and third-person reference}
+\label{sec:nm-dem-pron}
+
+Iridian lacks independent third-person personal pronouns. The full
+demonstrative paradigm therefore serves as the ordinary third-person
+referential series (§\,\ref{sec:pronouns}). This pronominal use is
+not identical to noun-internal DemP, because no lexical head noun is
+present inside the expression, but it is derived from the same
+underlying demonstrative system and must be kept distinct from the
+noun-internal ordering facts summarized in §\,\ref{sec:np-structure}.
+
+The descriptive discourse tendencies can be compressed as follows.
+Proximal forms commonly track the current topic or most accessible
+referent, medial forms a secondary or addressee-linked referent, and
+distal forms a backgrounded, contrastive, or obviative referent. In
+formal terms, these effects are best treated as interpretive
+extensions available to pronominal demonstratives, not as separate
+lexical paradigms. The fuller descriptive account remains in
+§\,\ref{sec:pronouns}; the present chapter cites it only insofar as
+it bears on the referential force of the demonstrative system.
+
+\ex
 \begingl
 \gla Tak vrbnik, tuto spasnik, je těsnik.//
 \glb \Prox{}.\Dir{} stand.up-\Pf{}, \Med{}.\Dir{} sit.down-\Pf{}, \Dist{}.\Dir{} leave-\Pf{}//
@@ -481,45 +803,276 @@ By this means Iridian is able to keep apart several third-person participants wi
 \endgl
 \xe
 
-Alongside the full demonstratives there exists a reduced anaphoric set, phonologically derived from the distal series. These forms are used only pronominally, and only where the referent is already highly active and unmistakable in the discourse. They do not properly point; they merely resume.
+\subsection{The reduced anaphoric series}
+\label{sec:nm-dem-reduced}
+
+Alongside the full paradigm, Iridian has a reduced anaphoric series
+\ird{i}/\ird{ji}/\ird{ni}, corresponding to distal
+\ird{je}/\ird{jaky}/\ird{jení}. These forms are restricted to
+pronominal use, only when the referent is already highly accessible
+in the discourse, and they are excluded as ordinary adnominal
+demonstratives of the type described in §\,\ref{sec:np-structure}.
+
+Semantically and pragmatically, the reduced series signals weak
+anaphoric resumption rather than full deictic pointing. Formally, it
+belongs to the demonstrative system, but it is not the spellout of
+noun-internal DemP. A natural DM treatment is to analyze
+\ird{i}/\ird{ji}/\ird{ni} as specialized pronominal Vocabulary Items
+competing with the full distal series under a discourse-anaphoric
+high-accessibility condition; see again §\,\ref{sec:pronouns}.
+
+\pex
+\a \ird{je} \trsl{that one; fully deictic distal}
+\a \ird{i} \trsl{he/she; weak anaphoric resumption}
+\xe
+
+
+\subsection{The plural marker \ird{ne} and the number layer}
+\label{sec:nm-num}
+
+The surface distribution of \ird{ne} shows that it appears at the left
+edge of the constituent within its scope:
+\ird{ne byl} \trsl{children},
+\ird{ne bylot} \trsl{the children},
+\ird{ně Marcí tóm} \trsl{the students' book}, and
+\ird{Marcí ne tóm} \trsl{the student's books}.
+
+This distribution is best understood by keeping apart semantic scope
+and morphophonological placement. Semantically, \ird{ne} realizes the
+number layer. Morphophonologically, it is a left-edge plural clitic:
+it attaches to the leftmost element inside the constituent whose
+plurality it marks. Its position at the left edge of the noun phrase
+therefore does not by itself show that it is an ordinary overt head of
+a head-final projection.
+
+The same point explains its compatibility with anchoring. Plurality
+and anchoring are independent:
+\ird{ne byl} and \ird{ne bylot} differ in anchoring, not in number.
+The simplest analysis is therefore a NumP semantics with left-edge
+spellout of the plural marker.
+
+\pex
+\a
+\begingl
+\gla ne byl//
+\glb \Pl{} child.\Dir{}//
+\glft \trsl{children}//
+\endgl
+\a
+\begingl
+\gla ne bylot//
+\glb \Pl{} child.\Dir{}.\Def{}//
+\glft \trsl{the children}//
+\endgl
+\a
+\begingl
+\gla ne si byl//
+\glb \Pl{} \Spec{} child.\Dir{}//
+\glft \trsl{some particular children}//
+\endgl
+\xe
+
+When \ird{ne} combines with a numeral or other quantifier, the usual
+interpretation is approximate rather than exactly plural
+(\ird{ne hrona byl} \trsl{about three children}). It is safer to treat
+that approximation as an interpretive effect of the construction than
+to posit a separate feature at this stage. In those approximate uses,
+anchoring is excluded, and specifically indefinite marking with
+\ird{si}/\ird{druh} is also ordinarily avoided.
+
+\paragraph{Mass, count, and lexical restrictions.}
+The plural clitic is most natural with count nouns. With mass nouns it
+is ordinarily excluded unless a covert measure noun is understood, as
+in the familiar type \ird{ne nebo} \trsl{glasses of water}. A small
+set of pluralia-tantum nouns, especially names of paired body parts and
+paired objects, also resist ordinary pluralization because the bare
+form already denotes the pair.
+
+\paragraph{Existential and honorific uses.}
+In existential clauses the plural clitic appears before the existential
+predicate rather than on the noun, yielding \ird{Ne ješ bžem}
+\trsl{There are bees}. The same phonological item also has a distinct
+honorific use with personal names and kin terms
+(\ird{ne Stám Kovárž}, \ird{ne mlazka}), which does not instantiate
+NumP at all and is therefore best treated as a lexicalized discourse
+clitic homophonous with the plural marker. In addition, \ird{ne} may
+occur in \emph{wh}-questions when the speaker expects a plural answer,
+as in \ird{ne jede bych ščenžkou?} \trsl{Who are those who arrived
+yesterday?}
+
+\subsection{Quantifiers, numerals, and the prenominal quantificational
+  field}
+\label{sec:nm-quant}
+
+Iridian places numerals and quantifiers prenominally. They belong to
+the upper nominal field, but the presently available evidence does not
+force a fine-grained cartographic split among cardinals, adnominal
+interrogatives, and universal or negative quantifiers. I therefore
+treat them conservatively as occupants of a single quantificational
+modifier field between the demonstrative/specificity domain and the
+lower NP-internal material.
+
+Numerals interact with number in a characteristic way. Because nouns
+are not obligatorily marked for singular or plural, a bare numeral plus
+noun already yields an exact cardinal interpretation. Adding \ird{ne}
+to the same phrase shifts the reading from exact cardinality to
+approximation. This supports the separation of QP from NumP: the
+numeral itself provides quantification, while \ird{ne} contributes a
+separate number-related discourse effect.
+
+\pex
+\a \ird{hrona byl} \trsl{three children}
+\a \ird{ne hrona byl} \trsl{about three children}
+\a \ird{ona pive štava} \trsl{one mug of beer}
+\xe
+
+Adnominal interrogatives pattern with the same prenominal field.
+\ird{Jak} selects from a contextually restricted set, whereas the
+other interrogatives simply introduce the relevant open variable. In
+determiner use they modify the noun phrase directly rather than
+occupying the clause-level \emph{wh}-position themselves.
+
+\pex
+\a \ird{jede ruščevní svirkošc} \trsl{what Russian author}
+\a \ird{jak ruščevní svirkošc} \trsl{which Russian author}
+\xe
+
+Universal and negative quantifiers can likewise be adnominal:
+\ird{nět študent} \trsl{all students}, \ird{niže jec}
+\trsl{all dogs}, \ird{nách študent} \trsl{each student},
+\ird{žé tóm} \trsl{not one book}. Under the current grammar's
+negative-existential analysis, forms such as \ird{niho} are retained as
+nominal quantifiers only when they modify a noun phrase directly; they
+are not analyzed as the sentential negative existential head.
+
+
+\subsection{The specifically indefinite particles \ird{si} and
+  \ird{druh}}
+\label{sec:nm-spec}
+
+The surface distribution is clear: \ird{si} and \ird{druh} are
+preposed nominal particles that introduce a referent as particular,
+but not yet anchored in the common ground. They therefore mark
+\term{specific indefiniteness}.
+
+The interpretive contrast with \ird{-ot/-t} is equally clear.
+\ird{-ot/-t} presents a noun phrase as anchored; \ird{si}/\ird{druh}
+present it as specific but unanchored. This resembles the familiar
+contrast between specificity and definiteness discussed in the
+literature, including Enç (enc:1991), but the present
+analysis borrows only that descriptive distinction, not Enç's full
+feature geometry.
+
+The theoretical analysis adopted here is a SpecificityP within the
+nominal left periphery. I avoid the label \emph{SpecP}, since
+\emph{Spec} is already reserved for \emph{specifier}. Both particles
+occupy the same structural position. Their incompatibility with
+\ird{-ot/-t} is best treated as a selectional restriction:
+SpecificityP selects an unanchored complement. Put informally,
+\ird{si}/\ird{druh} require a noun phrase that has not already been
+anchored.
+
+The difference between the two particles is lexical-pragmatic rather
+than syntactic. \ird{Si} is the lighter and less marked form, common
+in ordinary discourse. \ird{Druh} is weightier, more selective, and
+often more formal or emphatic. No additional syntactic machinery is
+required to capture that contrast.
+
+\pex
+\a
+\begingl
+\gla si byl//
+\glb \Spec{} child.\Dir{}//
+\glft \trsl{a certain child; some particular child}//
+\endgl
+\a
+\begingl
+\gla druh byl//
+\glb \Spec{} child.\Dir{}//
+\glft \trsl{one given child; a certain particular child}//
+\endgl
+\xe
+
+Their left-edge position follows directly from the analysis adopted
+here. They are not ordinary head-final heads that would need a
+separate PF-placement rule. They are left-peripheral particles in
+SpecificityP, and they therefore appear where they are described as
+appearing in the prose and where they are shown in the trees.
+
+
+%% ================================================================
+%%  PART V: THE PRONOMINAL DOMAIN
+%% ================================================================
+
+\section{Pronouns, anaphors, and nominal operators}
+\label{sec:nm-pron}
+
+\subsection{Personal pronouns as full DPs}
+\label{sec:nm-pron-personal}
+
+First- and second-person pronouns are best treated as fully projected
+DPs whose nominal content is supplied by person features rather than by
+a lexical noun root. They inflect for the same three productive cases
+as lexical nouns, and their indirect forms feed both analytic
+possessors and the enclitic possessive series discussed below.
+Iridian lacks a separate third-person personal-pronoun paradigm; that
+function is taken over by the demonstrative system described in
+§§\,\ref{sec:nm-dem}--\ref{sec:nm-dem-reduced}.
 
 \begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Reduced anaphoric forms (from distal demonstrative).}\label{tab:anaphoric-pronouns}
-	\medskip
-	\begin{tabularx}{0.6\textwidth}{L l l}
-		\toprule
-		{\sc case}   & {\sc full distal} & {\sc reduced} \\
-		\midrule
-		Direct     & \ird{je}   & \ird{i}  \\
-		Transitive & \ird{jaky} & \ird{ji} \\
-		Indirect   & \ird{jení} & \ird{ni} \\
-		\bottomrule
-	\end{tabularx}
+  \footnotesize\sffamily
+  \caption{Personal pronouns and possessive clitics.}
+  \label{tab:nm-personal-pronouns}
+  \medskip
+  \begin{tabularx}{0.75\textwidth}{L l l l l}
+    \toprule
+                  & {\sc direct} & {\sc transitive} & {\sc indirect} &
+                  {\sc clitic} \\
+    \midrule
+    1\textsc{sg}  & \ird{dá}   & \ird{dam}  & \ird{že}   & \ird{-(e)m} \\
+    2\textsc{sg}  & \ird{já}   & \ird{jí}   & \ird{jena} & \ird{-(e)š} \\
+    1\textsc{pl}  & \ird{mé}   & \ird{mně}  & \ird{mi}   & \ird{-(e)m} \\
+    2\textsc{pl}  & \ird{tová} & \ird{tvy}  & \ird{tě}   & \ird{-(e)st} \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
-The distinction is chiefly one of pragmatic force. The full demonstrative retains its deictic or contrastive value, and may be chosen whenever the speaker wishes to indicate distance, opposition, or a stronger gesture of reference. The reduced form, by contrast, is lighter and more nearly a pure anaphor. In broad terms one may say that \ird{tak} points, whereas \ird{i} merely carries forward an already established referent.
+The identity of the possessive clitic with the indirect pronoun is not
+accidental. It reflects a general nominal fact of Iridian: possession
+is structurally encoded through the indirect domain. The clitic series
+therefore compresses material that can also be expressed analytically
+by an indirect DP.
 
-In ordinary connected speech, moreover, Iridian shows a marked tendency to omit pronouns wherever they are recoverable from the situation or the preceding discourse. It is, in this sense, a strongly pro-drop language. Overt personal pronouns are introduced chiefly for contrast, insistence, disambiguation, or some comparable rhetorical purpose. This tendency is especially notable in the second person. Direct pronominal reference to the addressee is relatively marked, and may suggest impatience, familiarity, or an undesirable directness. Courteous usage therefore prefers, wherever an overt expression is required, some noun of address instead: a personal name, a title, a kin term, the designation of an office, or the like. The most unmarked course is commonly silence; next in neutrality comes the respectful nominal expression; the overt second-person pronoun is the strongest and least neutral of the available choices.
+\pex
+\a \ird{že dum} \trsl{my house}
+\a \ird{dumem} \trsl{my house / our house}
+\a \ird{že dumem} \trsl{that house of mine}
+\xe
 
-There remains to be noticed the reflexive. Iridian possesses a distinct reflexive anaphor, whose forms show some remodelling under Slavic influence. This element is not a free pronoun of reference like the demonstratives, but a bound anaphor whose office is solely to mark local coreference.
+\subsection{The reflexive as local nominal anaphor}
+\label{sec:nm-pron-refl}
+
+The reflexive is not a discourse-tracking pronoun but a true anaphor.
+Its interpretation depends on a local antecedent in the clausal domain,
+and it competes with demonstrative third-person forms precisely by
+forcing coreference where demonstratives would permit disjoint
+reference.
 
 \begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Reflexive anaphor forms.}\label{tab:reflexive}
-	\medskip
-	\begin{tabularx}{0.5\textwidth}{L l}
-		\toprule
-		{\sc case}   & {\sc form} \\
-		\midrule
-		Direct     & \ird{svem} \\
-		Transitive & \ird{svě}  \\
-		Indirect   & \ird{svy}  \\
-		\bottomrule
-	\end{tabularx}
+  \footnotesize\sffamily
+  \caption{Reflexive anaphor forms.}
+  \label{tab:nm-reflexive}
+  \medskip
+  \begin{tabularx}{0.5\textwidth}{L l}
+    \toprule
+    {\sc case} & {\sc form} \\
+    \midrule
+    Direct     & \ird{svem} \\
+    Transitive & \ird{svě}  \\
+    Indirect   & \ird{svy}  \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
-
-The reflexive does not introduce a new discourse participant, nor does it rank one referent against another. It merely indicates that a given argument is coreferential with the local controller. For that reason it does not compete with the demonstratives in the ordinary tracking of discourse referents. The contrast is plain in the following examples:
 
 \pex
 \a
@@ -532,99 +1085,524 @@ The reflexive does not introduce a new discourse participant, nor does it rank o
 \begingl
 \gla I Marku vednik.//
 \glb 3.\Dist{}.\Dir{} Marek.\Trs{} see-\Pf{}//
-\glft \trsl{Marek saw him.} \lingcontext{non-reflexive; referent distinct from Marek}//
+\glft \trsl{Marek saw him.}//
 \endgl
 \xe
 
-The same opposition appears in possessive expressions. A demonstrative possessor remains non-reflexive; it refers to some other salient discourse participant, not back to the controller of the clause.
+The older reflexive-as-\trsl{own} use remains compatible with the
+current system if analyzed as emphatic spellout in the local anaphoric
+domain rather than as a separate possessive adjective. In other words,
+the intensifying reading is an interpretive extension of local
+coreference, not a distinct lexical category.
+
+\subsection{Interrogatives, indefinites, and negative nominal operators}
+\label{sec:nm-pron-operators}
+
+Interrogatives and their derived indefinite or negative counterparts
+behave as nominal operators. They can stand pronominally or modify a
+noun phrase adnominally. In the latter use they pattern with the
+quantificational field discussed in §\,\ref{sec:nm-quant}; in the
+former they project as DPs without an overt lexical noun.
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Core interrogative nominal operators.}
+  \label{tab:nm-interrogatives}
+  \medskip
+  \begin{tabularx}{0.8\textwidth}{L L L L}
+    \toprule
+    \ird{jede} & who & \ird{jak} & which \\
+    \ird{ježe} & what & \ird{zajehu} & why \\
+    \ird{jehát} & whom & \ird{jiká} & how many \\
+    \ird{jehu} & how & \ird{jišká} & how much \\
+    \ird{jemí} & when & \ird{jeně} & to where \\
+    \ird{jena} & where & \ird{jení} & from where \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Selected universal and negative nominal operators.}
+  \label{tab:nm-indefinites}
+  \medskip
+  \begin{tabularx}{0.8\textwidth}{L L L L}
+    \toprule
+    {\sc negative form} & {\sc meaning} & {\sc universal form} &
+    {\sc meaning} \\
+    \midrule
+    \ird{zide} & no one & \ird{nět} & everyone \\
+    \ird{niho} & nothing & \ird{niže} & everything \\
+    \ird{žena} & nowhere & \ird{nina} & everywhere \\
+    \ird{žemě} & never & \ird{nimě} & always \\
+    \ird{žé} & not one & \ird{nách} & each \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+In pronominal use, these items are full operators over the discourse
+model. In adnominal use, they narrow or negate the denotation of the
+following noun phrase. The older archive's existential uses of forms
+like \ird{niho} are not imported as part of the nominal system here,
+because sentential negative existence is now handled elsewhere by the
+suppletive existential predicate.
+
+\pex
+\a \ird{jede bych ščenžkou?} \trsl{who arrived yesterday?}
+\a \ird{jak na ne ruščevní svirkošta} \trsl{which of these Russian authors}
+\a \ird{nět študent} \trsl{all students}
+\a \ird{zide byl} \trsl{no child}
+\xe
+
+
+%% ================================================================
+%%  PART VI: THE POSSESSOR AND THE INDIRECT CASE IN DP
+%% ================================================================
+
+\section{Possessors, the indirect case, and the PossP layer}
+\label{sec:nm-poss}
+
+\subsection{The oblique possessor in the DP}
+\label{sec:nm-poss-struct}
+
+Iridian expresses possession by means of an oblique (indirect-case)
+noun phrase in prenominal position (§\,\ref{sec:indirect-uses}).
+The oblique possessor \ird{Marcí} in \ird{Marcí dum} \trsl{Marek's
+house} occupies a structural position immediately above the head
+NP and inside the KP domain, below AnchP and below noun-internal
+DemP. In terms of the DP hierarchy, this is the
+prenominal dependent position of PossP.
+
+The indirect case of the possessor is not a special possessive case
+but the language's general non-core case, deployed here as it is
+throughout the grammar for dependents that are not the main
+absolutive argument. There is no separate structural Case assignment
+operation for possessors: the possessor's indirect case arises from
+the same K head that assigns case to other indirect-case NPs in the
+clause. The structural uniformity of the indirect case across nominal
+and clausal environments is a design feature of the grammar, not an
+accident.
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{AnchP}
+    [\textsc{KP}
+      [\textsc{PossP}
+        [\textit{oblique possessor}.\Ind{}]
+        [\textsc{NP}\\\textit{head noun}]
+      ]
+      [\textsc{K\textsuperscript{0}}\\case ending]
+    ]
+    [\textsc{Anch\textsuperscript{0}}\\\ird{-ot/-t} / $\emptyset$]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The possessor appears before the head noun in the surface
+string, consistent with head-final base-generation of specifiers.
+The entire possessive phrase [PossP oblique-N head-N] forms a
+constituent that is then inflected as a whole for case by K and
+optionally for anchoring by \textsc{Anch\textsuperscript{0}}.
+
+\subsection{Distribution of \ird{ne} across the possessive DP}
+\label{sec:nm-poss-ne}
+
+The plural clitic \ird{ne} has two attachment sites within a
+possessive DP, yielding different scope interpretations:
+
+\pex
+\a \ird{ně Marcí tóm} --- \trsl{the students' book} (students
+plural; book possibly singular)
+\a \ird{Marcí ne tóm} --- \trsl{the student's books} (book plural;
+student possibly singular)
+\xe
+
+\noindent In the first case, \ird{ne} is proclitic to the NumP
+headed by the possessive phrase: plurality scopes over the whole
+possessive expression. In the second, \ird{ne} is proclitic to
+the head noun directly, within the PossP complement: plurality
+scopes over the head alone. The structural analysis predicts these
+readings by the standard scope-by-hierarchy principle: the NumP
+that \ird{ne} heads takes scope over whatever it dominates.
+
+\subsection{The possessive clitic and its attachment}
+\label{sec:nm-poss-clitic}
+
+Alongside the analytic oblique-possessor construction, Iridian
+permits an enclitic possessive that attaches directly to the right
+edge of the head noun (§\,\ref{sec:pronouns}). The enclitic
+forms — \ird{-(e)m}, \ird{-(e)š}, \ird{-(e)st} — are phonologically
+attached to the noun before the anchoring suffix. The morphological
+order is therefore:
+
+\begin{center}
+\textsc{root} $+$ \textsc{case} $+$ \textsc{poss.clitic} $+$ \textsc{anch}
+\end{center}
+
+The strongest current analysis is that the enclitic realizes a small
+possessive head between KP and AnchP. A pure PF-placement account would
+have to restate the rigid order by rule, whereas a PossCliticP derives
+it directly: the clitic is internal to the nominal spine, but still
+lower than anchoring. This also captures the emphatic co-occurrence of
+analytic and enclitic possession without requiring the two to compete
+for one position.
+
+\pex
+\a \ird{dumem} \trsl{my house}
+\a \ird{tuto tomem} \trsl{that book near you, mine}
+\a \ird{tuto že tomem} \trsl{that book near you of mine}
+\xe
+
+
+%% ================================================================
+%%  PART VII: NOUN PHRASE STRUCTURE IN MINIMALIST TERMS
+%% ================================================================
+
+\section{The head-final DP: word order and phrase structure}
+\label{sec:nm-np-structure}
+
+\subsection{The functional sequence and linear order}
+\label{sec:nm-funcseq}
+
+The canonical linear order of the Iridian noun phrase —
+
+\begin{center}
+\ird{ne} $>$ \ird{si}/\ird{druh} $>$ \textsc{dem} $>$ \textsc{quant/num} $>$
+\textsc{poss}.\Ind{} $>$ \textsc{prop.root / stative / -ovní} $>$
+\textsc{head} + \textsc{case} + \ird{-ot/-t}
+\end{center}
+
+— is derived from the functional hierarchy in
+Table~\ref{tab:nm-projections} by the head-final principle. Each
+overt exponent of a higher nominal projection appears before the noun
+phrase domain with which it is associated, while suffixal morphology
+continues to follow the head-final principle. The rightward drift of
+functional morphology (case suffix, then anchoring suffix)
+corresponds to the innerward drift of those same heads in the
+syntactic projection: the case head K\textsuperscript{0} is lower than
+\textsc{Anch\textsuperscript{0}}, but its suffix appears closer to the
+root because the root is the complement that K\textsuperscript{0}
+takes, and in a head-final system the complement precedes the head.
+
+Reading the noun phrase from left to right is therefore equivalent
+to reading the functional projection from outermost (NumP) to
+innermost (NP), mirroring the left-to-right = high-to-low mapping
+in the clause (§\,\ref{sec:th-head-finality}).
+
+This order should be understood conservatively. The robust general
+facts are that number, specificity, demonstratives, and
+quantificational material belong to the prenominal left field;
+possessors stand closer to the noun than demonstratives do; and
+property roots, stative modifiers, and \ird{-ovní} phrases stand
+immediately before the head. The current data are not yet rich enough
+to force a finer ordering among every member of the prenominal field,
+so the chapter does not claim more cartographic precision than the
+evidence warrants.
+
+\pex
+\a \ird{ša študencí tóm} \trsl{this student's book}
+\a \ird{jak na ne ruščevní svirkošta} \trsl{which of these Russian authors}
+\xe
+
+\subsection{Stative verbs and property roots as NP modifiers}
+\label{sec:nm-prop}
+
+Iridian's primary attributive modification strategy deploys stative
+verbs in the dedicated attributive form in \ird{-á} directly before the
+head noun. The small set of lexical property roots that feed those
+stative verbs are analyzed as heads of a PropP projection that
+immediately precedes the NP and is itself immediately preceded by the
+PossP layer.
+
+The head-final principle correctly predicts that all prenominal
+modifiers — whether stative-verb-based or property-root-based —
+appear before the head noun, never after it. Postnominal modification
+is not a productive construction in standard Iridian; the prenominal
+restriction on modifiers is a direct consequence of the head-final
+parameter.
+
+\pex
+\a \ird{mrocná nuž} \trsl{a beautiful city}
+\a \ird{hradná byl} \trsl{a good child}
+\a \ird{svorná dum} \trsl{a big house}
+\xe
+
+\subsection{The \ird{-ovní} attributive and its embedded DP}
+\label{sec:nm-ovni}
+
+The attributive suffix \ird{-ovní} derives from the same verbal stem
+as the participant nominal \ird{-ou} and functions as a prenominal
+modifier (§\,\ref{sec:event-nominals}). The \ird{-ovní} form heads a
+nominalized predication that is embedded as a modifier within the
+host DP.
+
+The key structural property of the \ird{-ovní} construction is that
+it forms a self-contained syntactic domain: non-privileged arguments
+of the embedded verbal predication appear in the indirect case
+within the \ird{-ovní} phrase, regardless of the case requirements
+of the host DP. This is the nominal correlate of the boundary
+condition that governs finite embedded clauses: just as a finite
+\ird{po}-clause is syntactically independent of its matrix, the
+\ird{-ovní} nominalized phrase is syntactically independent of the
+host DP in which it is embedded.
+
+The head noun of the host DP receives its case from the host clause;
+the \ird{-ovní} modifier preceding it is not inflected for the case
+of the host but maintains its own internal case pattern. In nested
+\ird{-ovní} constructions, the inner head noun shifts to the
+indirect case of the outer embedding domain, as described in
+§\,\ref{sec:event-nominals}. This shifting is the nominal counterpart
+of the case valuation that occurs at clausal boundaries in the verbal
+domain.
+
+The present chapter adopts the reduced-relative analysis explicitly.
+The \ird{-ovní} form heads a nominalized predication inside a RelP
+adjoined low in the nominal structure, most naturally to NP or to the
+NP-side edge of PossP. A null operator in Spec,RelP is interpreted as
+the privileged participant identified by the head noun. This ties the
+construction directly to the broader relativization system discussed in
+§\,\ref{sec:th-relativization}, while preserving the head-final fact
+that the modifying material precedes the noun it restricts.
+
+\pex
+\a \ird{vravět obrohnikovní pres} \trsl{the man who read the letter}
+\a \ird{[nazam zasdnikovní vravět] obrohnikovní pres}
+   \trsl{the man who read the letter that the woman wrote}
+\xe
+
+\subsection{Apposition and prenominal relative material}
+\label{sec:nm-appos}
+
+Iridian treats appositive and relative nominal modification like other
+modifier types: the default position is prenominal. This follows
+directly from head-finality and should be stated in the nominal chapter
+even though the full mechanics belong to the syntax chapter. Appositive
+phrases linked by \ird{ty} and relative material built through
+conjunctive or nominalized strategies both occupy the same general left
+modifier field as other NP modifiers.
+
+The practical consequence is typologically important. What many
+European languages realize postnominally as appositions or relative
+clauses, Iridian normally realizes prenominally as nominal modifiers.
+The noun phrase therefore remains uniformly head-final even when the
+modifier is phrasally heavy.
+
+\pex
+\a \ird{mlazka (ty) Karel} \trsl{my brother Karel}
+\a \ird{magazinu vednice ty maša} \trsl{the man seen at the store}
+\xe
+
+
+%% ================================================================
+%%  PART VIII: NOMINAL DEPENDENCE BEYOND POSSESSORS
+%% ================================================================
+
+\section{Indirect-case nominal dependence and postpositional phrases}
+\label{sec:nm-ext}
+
+\subsection{Material, partitive, source, and other NP-external
+  dependencies}
+\label{sec:nm-ext-indirect}
+
+The indirect case is the general dependency form of the nominal
+system. Possessors are simply its most tightly integrated DP-internal
+use. The same K-form appears with material nouns, partitives, source
+expressions, and other semantically dependent nominals that are not the
+privileged head of the phrase. In this wider domain the indirect does
+not mark a special inventory of separate morphological cases; rather, it
+is the single oblique realization of K whose interpretation is narrowed
+by the lexical relation between nouns or by the head that selects the
+dependent nominal.
+
+\pex
+\a \ird{kuní prosc} \trsl{silver spoon}
+\a \ird{ona pive štava} \trsl{one mug of beer}
+\a \ird{Študencí na hroná} \trsl{three of the students}
+\a \ird{Marcí z houba} \trsl{a gift from Marek}
+\xe
+
+Material, partitive, and source dependents therefore stand on a
+continuum with possessors. The possessor is the most tightly integrated
+prenominal use of indirect KP inside the DP. Material and partitive
+dependents are looser nominal relations. Postpositional phrases are the
+next step outward: the same indirect nominal domain serves as the
+complement of a relational head that closes the phrase from the right.
+
+\subsection{Postpositions as heads selecting an indirect nominal
+  complement}
+\label{sec:nm-postpositions}
+
+Iridian adpositions are head-final and are best analyzed as
+\term{postpositions}. The constant generalization is that the nominal
+complement bears indirect case. In the smallest representation, the
+postposition combines with an indirect KP. In fuller noun phrases, that
+KP may itself be embedded inside AnchP or higher nominal layers, but the
+selectional requirement remains the same: the nominal core is oblique,
+and the postposition closes the complement phrase at its right edge.
+
+This analysis replaces the older archive treatment that described the
+same forms as prepositions or distributed them across several narrower
+case labels. Synchronically the simpler statement is the better one: the
+nominal complement is inflected in the indirect, and the following
+postposition specifies the spatial, participant, source, privative, or
+substitutive relation.
+
+\pex
+\a \ird{dumě na} \trsl{in the house; at home}
+\a \ird{hradě de} \trsl{into the town; to the town}
+\a \ird{Jancí še} \trsl{with Janek}
+\a \ird{Marcí z} \trsl{from Marek}
+\xe
+
+\subsection{Internal structure of the postpositional phrase}
+\label{sec:nm-postp-structure}
+
+The structural asymmetry is straightforward. The nominal complement is
+assembled first: the root combines with PossP, receives indirect case in
+K, and may then be expanded by anchoring or other higher nominal
+material. Only after that nominal phrase is complete does the
+postposition merge as the head of the larger postpositional phrase.
+Head-finality then yields the surface order \textit{complement} +
+\textit{postposition}.
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\textsc{PostP}
+    [\textsc{AnchP}
+      [\textsc{KP}
+        [\textsc{PossP}
+          [\textit{oblique possessor} / $\emptyset$]
+          [\textsc{NP}\\\textit{head noun}]
+        ]
+        [\textsc{K\textsuperscript{0}}\\\Ind{}]
+      ]
+      [\textsc{Anch\textsuperscript{0}}\\\ird{-ot/-t} / $\emptyset$]
+    ]
+    [\textsc{Post\textsuperscript{0}}\\\ird{na} / \ird{de} / \ird{še} / \dots]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The tree is intentionally conservative. What matters is not
+whether every postpositional complement is always projected up to AnchP,
+but that the complement is at least an indirect KP and that any higher
+nominal material remains inside the complement phrase rather than
+intervening between the complement and the postposition.
+
+\subsection{Attachment to the right edge of the host phrase}
+\label{sec:nm-postp-attachment}
+
+The postposition attaches to the right edge of the governed phrase as a
+whole, not to the noun stem in isolation. A bare noun, an anchored noun,
+a possessed noun phrase, and a noun phrase with prenominal modifiers all
+behave alike in this respect: the nominal material comes first, and the
+postposition closes the entire phrase.
+
+\pex
+\a \ird{dumě na} \trsl{in the house; at home}
+\a \ird{bylamot my} \trsl{for the child}
+\a \ird{Marcí dumě na} \trsl{at Marek's house}
+\a \ird{svorná mostě nad} \trsl{over the big bridge}
+\xe
+
+\noindent The same logic extends to larger complements. Demonstratives,
+possessors, property-root modifiers, stative modifiers, and
+\ird{-ovní} phrases all belong to the nominal complement if they modify
+the noun phrase itself. The postposition does not split them apart or
+attach to the lexical noun before they are assembled. This is the chief
+diagnostic for analyzing the forms as postpositions over phrasal
+complements rather than as suffixes on nouns or as free adverbs loosely
+associated with them.
+
+\subsection{Semantic classes of postpositions}
+\label{sec:nm-postp-classes}
+
+The common postpositions form a compact but semantically varied system.
+Their lexical meanings differ, but their syntax is uniform.
+
+\begin{table}[ht]
+  \footnotesize\sffamily
+  \caption{Core postpositions and their main semantic classes.}
+  \label{tab:nm-postpositions}
+  \medskip
+  \begin{tabularx}{\textwidth}{l l L}
+    \toprule
+    {\sc class} & {\sc members} & {\sc core relation} \\
+    \midrule
+    Locative & \ird{na} & location, interiority, surface contact \\
+    Goal & \ird{de} & direction, endpoint \\
+    Proximity & \ird{u} & nearness \\
+    Accompaniment & \ird{še} & accompaniment, comitative association \\
+    Benefactive & \ird{my} & benefit, intended recipient, purpose-oriented relation \\
+    Source / separation & \ird{z} & source, origin, movement away, extraction \\
+    Privative & \ird{nam} & absence \\
+    Replacement & \ird{pale} & substitution, `instead' \\
+    Exception & \ird{ahte} & exclusion, `except' \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent The core spatial and participant relations are illustrated
+below:
+
+\pex
+\a \ird{dumě na} \trsl{in the house}
+\a \ird{hradě de} \trsl{to the town}
+\a \ird{hradě u} \trsl{near the town}
+\a \ird{bylam my} \trsl{for the child}
+\a \ird{Jancí še} \trsl{with Janek}
+\a \ird{Marcí z} \trsl{from Marek}
+\a \ird{záhárí nam} \trsl{without sugar}
+\a \ird{Jancí pale} \trsl{instead of Janek}
+\a \ird{Jancí ahte} \trsl{except for Janek}
+\xe
+
+\subsection{Specialized spatial and path postpositions}
+\label{sec:nm-postp-extended}
+
+Alongside the broad locative and goal markers, Iridian also admits a
+set of more specialized spatial and path postpositions. These behave
+like the core set in selecting the same indirect nominal complement and
+in appearing at the right edge of the phrase.
+
+\pex
+\a \ird{stolě pod} \trsl{under the table}
+\a \ird{mostě nad} \trsl{over the bridge}
+\a \ird{domě měz} \trsl{between the houses; among the houses}
+\a \ird{hradě do} \trsl{up to the town}
+\a \ird{lesě mně} \trsl{through the forest; via the forest}
+\xe
+
+\noindent These extended forms matter analytically because they show
+that the postpositional construction is not a tiny lexical quirk tied
+only to \ird{na}. The same head-final syntax generalizes across broad
+location, bounded path, vertical relation, interstitial relation, and
+traversal.
+
+\subsection{Postpositional phrases in clause structure}
+\label{sec:nm-postp-clausal}
+
+The postpositional phrase is not confined to nominal modification. The
+same structure appears as a clausal adjunct, as the location complement
+of existential predication, and as a dependent nominal expression inside
+larger noun phrases. The PP discussion therefore belongs in the nominal
+chapter because of its internal structure, but it interfaces directly
+with clause structure as well.
 
 \pex
 \a
 \begingl
-\gla Jení dum Marku vednik.//
-\glb \Dist{}.\Ind{} house.\Dir{} Marek.\Trs{} see-\Pf{}//
-\glft \trsl{Marek saw his house.} \lingcontext{someone else's house, not Marek's}//
+\gla Marek dumě na jeca.//
+\glb Marek.\Dir{} house.\Ind{} in \Exst{}-\Cont{}//
+\glft \trsl{Marek is at home.}//
 \endgl
-\xe
-
-This distinction proves particularly useful where more than one third-person referent is simultaneously in play. The demonstrative system can separate discourse roles and degrees of accessibility; the reflexive, for its part, cuts through ambiguity by marking local identity directly.
-
-\pex
-\a
-\begingl
-\gla Je tam vednik.//
-\glb \Dist{}.\Dir{} \Dist{}.\Trs{} see-\Pf{}//
-\glft \trsl{He\textsubscript{1} saw him\textsubscript{2}.} \lingcontext{two distinct referents}//
-\endgl
-\a
-\begingl
-\gla Svem tam vednik.//
-\glb \Refl{}.\Dir{} \Dist{}.\Trs{} see-\Pf{}//
-\glft \trsl{He saw himself.} \lingcontext{reflexive; agent and patient coreferential}//
-\endgl
-\xe
-
-\subsection{Interrogatives}
-
-% [Port from 2020 archive — jede, ježe, jehát, jehu, jemí, jena, jak, zajehu, jiká, jišká, jeně, jení]
-
-\subsection{Indefinite and negative pronouns}
-
-% [Port from 2020 archive — nět/zide, niže/niho, etc.; note niho is superseded by zad- in the current analysis]
-
-\section{Postpositions and case governance}\label{sec:prepositions}
-
-Iridian is strictly head-final in its adpositional phrases. The governed noun phrase precedes the relational marker, and the marker itself is therefore best analyzed as a \term{postposed clitic adposition}. These items are phonologically weak, lean prosodically on the preceding noun phrase, and attach to the full governed phrase rather than to the noun stem alone. Orthographically they are here written as separate words for ease of reading, but morphologically they behave like enclitics.
-
-All such clitic adpositions govern the \term{indirect case}. Older descriptions sometimes distributed these relations across several case labels or treated some of the markers as prepositions, but the synchronic generalization is simpler: the dependent noun phrase is inflected in the indirect, and the following clitic specifies the relation. The differences among the forms are therefore semantic, not differences in case government.
-
-\subsection*{Morphological behavior}
-
-The clitic attaches to the right edge of the governed noun phrase as a whole. A noun with modifiers, determiners, or possessors is therefore inflected first for the indirect case, after which the adposition follows as a phonological dependent. The syntax remains head-final throughout: the noun phrase comes first, and the clitic adposition closes the phrase.
-
-\subsection*{Inventory}
-
-The common clitic adpositions are \ird{na} \trsl{in, inside, on, at}, \ird{de} \trsl{into, to}, \ird{my} \trsl{for}, \ird{u} \trsl{near, by}, \ird{še} \trsl{with}, \ird{z} \trsl{from, out of}, \ird{nam} \trsl{without}, \ird{pale} \trsl{instead of}, and \ird{ahte} \trsl{except for}. Location, goal, proximity, benefit, accompaniment, source, exclusion, and replacement thus all belong to the same formal pattern: an indirect noun phrase followed by a phonologically weak clitic adposition.
-
-\subsection*{Spatial and goal relations}
-
-\pex
-\a \irdp{dumě na}{in the house; at home}
-\a \irdp{hradě de}{into the town; to the town}
-\a \irdp{hradě u}{near the town}
-\xe
-
-The same pattern extends naturally to more specific spatial and path relations. In addition to the broad locative and goal clitics, the language also admits more specialized forms such as \ird{pod} \trsl{under, beneath}, \ird{nad} \trsl{over, above}, \ird{měz} \trsl{between, among}, \ird{do} \trsl{up to, as far as}, and \ird{mně} \trsl{through, via}. These too follow an indirect host noun phrase and behave as phonologically weak enclitics.
-
-\pex
-\a \irdp{stolě pod}{under the table}
-\a \irdp{mostě nad}{over the bridge}
-\a \irdp{domě měz}{between the houses; among the houses}
-\a \irdp{hradě do}{up to the town}
-\a \irdp{lesě mně}{through the forest; via the forest}
-\xe
-
-\subsection*{Participant and dependency relations}
-
-\pex
-\a \irdp{bylam my}{for the child}
-\a \irdp{Jancí še}{with Janek}
-\a \irdp{Marcí z}{from Marek}
-\a \irdp{záhárí nam}{without sugar}
-\a \irdp{Jancí pale}{instead of Janek}
-\a \irdp{Jancí ahte}{except for Janek}
-\xe
-
-\subsection*{Clausal examples}
-
-In full clauses the same structure is preserved: the host noun phrase is indirect, and the following adposition is glossed by its nearest English equivalent.
-
-\pex
 \a
 \begingl
 \gla Kroumaště na po zma jeca pivo.//
 \glb refrigerator.\Ind{} in still few \Exst{}-\Cont{} beer.\Dir{}//
-\glft \trsl{There's still some beer left in the refrigerator.}//
+\glft \trsl{There is still some beer left in the refrigerator.}//
 \endgl
 \a
 \begingl
@@ -640,311 +1618,297 @@ In full clauses the same structure is preserved: the host noun phrase is indirec
 \endgl
 \xe
 
-The governing relation is thus constant across the system: the noun phrase takes the indirect, while the following clitic adposition contributes the relational meaning. This analysis captures both the head-final syntax of the phrase and the reduced phonological status of the adposition itself.
+\noindent The existential examples connect directly to
+§\,\ref{sec:jec} in Chapter~\ref{ch:simple}: the entity whose
+existence is asserted stands in the direct case, while the locative PP
+contributes the place relation. More broadly, postpositional phrases
+behave like ordinary head-final dependent phrases in the clause. They
+precede the final predicate and preserve their internal noun-first,
+head-last organization.
 
-\section{Noun phrase structure}\label{sec:np-structure}
+\subsection{Analytical status: postpositions, clitics, and orthographic
+  practice}
+\label{sec:nm-postp-status}
 
-% ============================================================
-% STATUS: STUB — to be developed
-% The NP in Iridian is head-final: modifiers precede the head noun.
-% Order within the NP:
-%   ne (plural) > demonstrative > oblique possessor > stative-verb modifier > head
-% Stative verbs as attributives: this is the primary adjectival strategy.
-% The attributive suffix -ní can nominalize/adjectivalize a stative verb
-% but the stative converb is also used.
-% ============================================================
+Phonologically, the common postpositions are weak. They lean prosodically
+on the preceding complement and show the reduced independence typical of
+clitic-like material. For that reason it is reasonable to describe them
+as \term{postposed clitic adpositions}. Orthographically, however, this
+grammar writes them as separate words for ease of reading and because
+their scope is phrasal rather than stem-bound.
 
-The canonical Iridian noun phrase is head-final. Modifiers of all kinds precede the head noun. The general ordering within the noun phrase is:
+The important analytical point is that phonological weakness does not
+force an affixal analysis. The host is not a noun stem but a fully
+formed nominal phrase with indirect case at its core. Conversely, the
+head-final position and obligatory adjacency to that nominal phrase
+argue against treating the forms as free clause-level adverbs. The
+construction is therefore most transparently analyzed as a
+postpositional phrase whose head is phonologically weak but
+syntactically regular.
 
-\medskip
-\ird{ne} (plural) $>$ demonstrative $>$ oblique possessor $>$ property-root describer / stative-verb modifier $>$ head noun
-\medskip
+Older descriptions sometimes treated some of these relations as
+prepositions or distributed them across several special cases. The
+present grammar instead unifies them under a single analysis: one
+indirect nominal domain, followed by a head-final relational marker
+whose lexical meaning specifies the precise relation.
 
-Possessors therefore occupy the same prenominal dependent slot described in Section~\ref{sec:indirect-uses}: they stand directly before the head noun and remain inside the noun phrase, while demonstratives and the plural clitic attach outside the possessive grouping.
 
-Iridian has a very small closed set of lexical property roots used as simple
-adnominal describers. These roots denote especially salient notions such as
-\trsl{good}, \trsl{beautiful}, and \trsl{bad}, and they occur directly before
-the head noun. Their use is lexically restricted and non-productive: speakers
-do not freely coin new property-root describers for ordinary descriptive
-content.
+%% ================================================================
+%%  PART IX: DERIVED NOMINALS AND NOMINALIZED PREDICATION
+%% ================================================================
 
-Outside this small residue, stative verbs (see Section~\ref{sec:stative} in
-Chapter~\ref{ch:verbs}) serve as the primary attributive modification
-strategy. Where English uses an adjective before a noun, Iridian normally uses
-either a stative verb in an attributive/converbial form or a nominalized
-stative verb. In many cases a property root and a stative verb form a lexical
-pair: the root functions as an adnominal describer, while the corresponding
-stative verb serves as the ordinary predicate.
+\section{Derived nominals, gerunds, and participant reference}
+\label{sec:nm-derived}
 
-% [Examples to be added]
+\subsection{Event nominals and the \ird{-ou} class}
+\label{sec:nm-derived-event}
 
-\section{Event and participant nominals}\label{sec:event-nominals}
-
-Iridian can form nouns directly from verbs. The resulting forms — called
-\term{event nominals} and \term{participant nominals} — behave like
-ordinary nouns in every grammatical respect, taking case endings, the
-definiteness marker, and the plural clitic on exactly the same terms as
-any other noun. What distinguishes them is their meaning: an event nominal
-names the action or event itself (roughly what English does with
-\trsl{the eating} or \trsl{the running}), while a participant nominal names
-a person or thing defined by the role they play in that event (as English
-does with \trsl{the eater} or \trsl{the food}).
-
-Both types are formed by adding the suffix \ird{-ou} to a verb stem.
-The details of which stem form to use in each case are treated in
-Chapter~\ref{ch:verbs}; here the concern is with the resulting nouns
-as noun phrases: how they inflect, how they interact with definiteness, and
-how they encode the participants of the original event.
-
-\subsection{Inflection and definiteness}
-
-Nouns ending in \ird{-ou} follow the inflectional pattern of Class~II
-nouns (see the section on inflectional classes above). In the direct case
-the form ends in \ird{-ou}; the transitive ending is \ird{-ovy}; the
-indirect is \ird{-ově}. The noun \ird{piaščikou} \trsl{the one who ate}
-illustrates the full set:
-
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Inflection and definiteness for the participant nominal
-	\ird{piaščikou}.}\label{tab:ou-inflection}
-	\medskip
-	\begin{tabularx}{0.72\textwidth}{L l l}
-		\toprule
-		{\sc case} & {\sc plain} & {\sc definite} \\
-		\midrule
-		Direct     & \ird{piaščikou}  & \ird{piaščikovat}  \\
-		Transitive & \ird{piaščikovy} & \ird{piaščikovyt}  \\
-		Indirect   & \ird{piaščikově} & \ird{piaščikovět}  \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-The definiteness marker (see Section~\ref{sec:definiteness}) attaches
-after whichever case ending the noun already bears. The only irregularity
-is in the direct case: the sequence \ird{-ou\,+\,-ot} does not surface as
-\ird{*-out} but contracts to \ird{-ovat}. In the other cases the marker is
-added without contraction: \ird{-ovy} yields \ird{-ovyt}, and \ird{-ově}
-yields \ird{-ovět}.
-
-\subsection{Two kinds of verb-derived noun}
-
-Among nouns built on \ird{-ou}, it is useful to draw a line between two
-kinds.
-
-The first kind is the \term{lexical} or \term{resultant nominal}: a
-noun tied to a specific verb that names the typical result, product, or
-correlate of that verb's action. The verb for \trsl{to eat} can produce
-\ird{piaštou} with the conventionalised meaning \trsl{food} — not any
-particular act of eating, but the thing characteristically eaten or
-produced by eating. Such forms must be learned verb by verb; many verbs
-lack them entirely, relying instead on unrelated or inherited nouns.
-
-The second kind is the \term{gerund}: the fully productive way of
-turning any verb into a noun that names the event itself. Gerunds are
-formed freely from any verb and always refer to the action as an abstract
-event rather than to a fixed result. They correspond most closely to the
-English nominalisation in \trsl{-ing} when used as a noun (\trsl{the
-eating}, \trsl{the running}, \trsl{the remembering}).
-
-Gerunds admit a further distinction based on what they contain. A
-\term{simple} gerund names the event without specifying who was involved:
-it means just \trsl{the eating}, nothing more. A \term{complex} gerund
-names the event and also expresses the participants of that event inside the
-noun phrase: \trsl{Marek's eating of the bread}, \trsl{Janek's
-remembering}. No separate morphology marks the difference; the same
-\ird{-ou} suffix produces both. What makes a given gerund simple or complex
-is simply whether case-marked nouns appear inside it.
-
-\subsection{Complex gerunds and their participants}
-
-When a gerund expresses its participants internally, both the doer
-(\textit{agent}) and the thing acted upon (\textit{theme}) appear in the
-indirect case. This is the same case used throughout the noun phrase for
-possession and dependent relations (see Section~\ref{sec:indirect-uses}).
-The pattern is consistent with the rest of the grammar: just as
-\ird{Marcí dum} means \trsl{Marek's house}, with the possessor Marek
-in the indirect case, the doer of a gerundival event also appears in the
-indirect case when expressed inside the noun phrase.
-
-One consequence is that a complex gerund containing both a doer and a
-theme will have two indirect-case nouns with no formal difference between
-them. Consider:
-
-\ex
-\ird{Jancí podohletou} --- \trsl{the act of remembering Janek}
-\textit{or} \trsl{Janek's act of remembering}
-\xe
-
-This is a genuine ambiguity. The indirect-case noun \ird{Jancí} (Janek)
-could be either the person doing the remembering or the person being
-remembered. Iridian does not resolve this ambiguity by grammatical rule.
-A reader or listener is expected to use context, and this is by design:
-complex event nominals regularly carry a degree of referential looseness
-that a full finite clause would not. The grammar treats this as a natural
-property of the construction rather than a defect.
-
-When the speaker wishes to be explicit, two strategies are available.
-The first is \term{word order}: the doer-indirect precedes the
-theme-indirect. In a construction of the form \textit{A B gerund}, A is
-the doer and B is the theme. The second is the \term{definiteness
-marker}: a theme noun bearing the \ird{-ot/-t} suffix
-(Section~\ref{sec:definiteness}) is read unambiguously as the theme and
-not as the doer. Since the \ird{-ou} direct ending contracts with \ird{-ot}
-to give \ird{-ovat}, this marker is visually distinctive when the theme
-itself is a nominalized form.
-
-\subsection{Participant nominals}
-
-Participant nominals use the same \ird{-ou} suffix, but instead of naming
-an event they name a \textit{participant} in that event, identified by the
-role they occupy. The role a given noun names is determined by which verb
-stem the suffix is attached to.
-
-Iridian inflects verbs to foreground different participants as their
-central argument (the system is described in Chapter~\ref{ch:verbs}).
-Attaching \ird{-ou} to a given stem form yields a noun naming whichever
-participant that form places at the centre. Three stem types are relevant
-here:
-
-\begin{itemize}
-
-	\item The \term{antipassive stem} is the form of a transitive verb
-	in which the doer of the action is treated as the central argument and
-	the thing acted upon is expressed as a peripheral, indirect-case
-	dependent. Adding \ird{-ou} to this stem produces an
-	\term{agent-oriented} participant nominal meaning \trsl{the one who
-	does X}. All five indicative aspect stems are available here. Two of
-	them show special surface effects already noted in Chapter~\ref{ch:verbs},
-	and two more contract regularly with \ird{-ou}:
-	the perfective antipassive \ird{-ek} yields \ird{-ikou} (so
-	\ird{piaščikou} means \trsl{the one who ate}), and the continuous
-	antipassive \ird{-a} yields \ird{-ova} (so \ird{piaščova} means
-	\trsl{the one who eats} or \trsl{the one who is eating}, whether
-	habitually or at the present moment). The retrospective \ird{-aní}
-	yields \ird{-anou}, and the progressive \ird{-ime} yields \ird{-imou};
-	hence \ird{piaščanou} \trsl{the one who has eaten},
-	\ird{piaščimou} \trsl{the one who is in the act of eating}, and
-	\ird{piaščachou} \trsl{the one who is about to eat}.
-
-	\item The \term{plain transitive stem} — the ordinary, unmarked form
-	of a transitive verb — produces a \term{patient-oriented} participant
-	nominal meaning \trsl{the thing that X is done to}. In Iridian's default
-	treatment of transitive verbs (discussed in Chapter~\ref{ch:verbs}),
-	it is the thing acted upon that occupies the central argument position
-	of the construction. Attaching \ird{-ou} to this stem therefore names
-	the recipient of the action. Here too all five aspects are available:
-	\ird{piaštnikou} means \trsl{that which was eaten}, \ird{piaštnanou}
-	\trsl{that which has been eaten}, \ird{piaštnova} \trsl{that which is
-	habitually eaten}, \ird{piaštnimou} \trsl{that which is being eaten},
-	and \ird{piaštnachou} \trsl{that which is about to be eaten}. More
-	concretely, such forms may be interpreted as \trsl{food} understood as
-	the participant affected by eating, with the chosen aspect supplying the
-	expected temporal contour.
-
-	\item The \term{applicative stem} is the form of a verb that promotes
-	an indirect participant — typically a beneficiary, recipient, or other
-	non-patient role — into the central argument position. Attaching \ird{-ou}
-	to this stem produces a noun referring to that promoted participant.
-	Thus \ird{piaštébikou}, built on the applicative stem of the verb for
-	\trsl{to eat}, means \trsl{the one who was fed} or \trsl{the one for
-	whom eating was done}.
-
-\end{itemize}
-
-The logic throughout is the same: whichever participant a given voice- and
-aspect-marked verb form treats as its central argument, attaching \ird{-ou}
-to that form yields a noun that names that participant. Antipassive-based
-nominals name the doer; plain-transitive-based nominals name the thing
-acted upon; applicative-based nominals name the participant promoted by the
-applicative. Aspect contributes the expected interpretation of the event
-profile: completed (\ird{piaščikou}), experientially or result-relevant
-past (\ird{piaščanou}), ongoing or habitual (\ird{piaščova}),
-currently in progress (\ird{piaščimou}), or intended / about to occur
-(\ird{piaščachou}).
-
-Participant nominals are particularly useful when the speaker wants to
-identify someone by what they do or what is done to them, rather than by a
-separate descriptive noun. They therefore tend to appear in constructions
-that introduce or identify discourse participants, a topic taken up in
-Chapter~\ref{ch:discourse}.
-
-\subsection{The attributive form in \ird{-ovní}}
-
-Participant nominals are Iridian's primary means of expressing what English
-conveys with the relative pronouns \trsl{who}, \trsl{which}, and
-\trsl{that}. The \ird{-ou} nominal stands alone as a freestanding noun; its
-counterpart, the \term{attributive form} in \ird{-ovní}, is built from the
-same verb stem and serves as a modifier directly preceding a head noun. The
-construction that results is Iridian's standard equivalent of a restrictive
-relative clause.
-
-The two forms share a single organising principle: a nominalized verb phrase
-denotes whichever participant is structurally \textit{privileged} within that
-clause package. The suffix \ird{-ou} or \ird{-ovní} identifies the privileged
-participant; every other core argument within the same nominalized domain
-appears in the indirect case. The nominalized clause is its own enclosed
-domain, so this rule operates within it independently of any surrounding
-structure. When the noun phrase headed or modified by \ird{-ovní} is
-embedded in a higher clause, it takes whatever case that outer clause
-requires.
-
-The paradigm below uses \ird{vrava} (Class~III, \trsl{letter}), \ird{pres}
-(Class~II, \trsl{man}), and the verb \ird{obroh-} \trsl{to read}:
+The \ird{-ou} class occupies a central place in the nominal system
+because it is where verbal structure most transparently enters the DP.
+Event nominals and participant nominals are fully nominal in their
+external syntax: they inflect for case, host anchoring, admit plural
+marking, and enter the ordinary possessive and demonstrative syntax.
+Internally, however, they preserve argument structure inherited from
+the verbal stem.
 
 \pex
-\a \ird{vravat presy obrohnik.} --- \trsl{The man read the letter.}
-\a \ird{vravět obrohnikou} --- \trsl{the one who read the letter}
-\a \ird{vravět obrohnikovní pres} --- \trsl{the man who read the letter}
+\a \ird{piaščikou} \trsl{the one who ate}
+\a \ird{piaščikovat} \trsl{the one who ate, anchored / identified}
+\a \ird{piaščikovět} \trsl{of the one who ate / to the one who ate}
 \xe
 
-In (\lastx b), the participant nominal picks out the reader as its referent.
-The letter appears in the indirect case — \ird{vravě}, with the definiteness
-suffix giving \ird{vravět} — as a non-privileged argument inside the
-nominalized domain. In (\lastx c), the same stem takes the attributive suffix
-\ird{-ovní} and immediately precedes the head noun \ird{pres}. The head noun
-takes whatever case the surrounding clause requires; the \ird{-ovní} form
-does not change.
+\subsection{Simple and complex gerunds}
+\label{sec:nm-derived-gerund}
 
-\subsubsection*{Definiteness}
-
-The attributive form \ird{-ovní} qualifies the head noun as something defined
-by a verbal notion but does not itself encode definiteness. Definiteness,
-where intended, is shown by the ordinary suffix \ird{-t}/\ird{-ot} on the
-head noun, following case-inflection in the regular way; the \ird{-ovní}
-modifier is unaffected.
-
-\subsubsection*{Nested attributives}
-
-Because each nominalized clause is its own domain, attributives may be
-stacked recursively. The inner nominalized phrase becomes an argument within
-the outer nominalized clause, appearing there in the indirect case as
-required. The example below, introducing additionally \ird{zasd-} \trsl{to
-write} and \ird{naz} \trsl{woman}, embeds one attributive inside another:
+Gerunds in \ird{-ou} may be simple, denoting an event without overt
+participants, or complex, hosting the participants of that event inside
+the noun phrase. In complex gerunds both the actor and the theme are
+typically expressed in the indirect case. This follows from the general
+Iridian strategy of encoding non-privileged nominal dependents through
+the indirect domain.
 
 \pex
-\a \ird{vravat naza zasdnik.} --- \trsl{The woman wrote the letter.}
-\a \ird{nazam zasdnikovní vrava} --- \trsl{the letter that the woman wrote}
-\a \ird{[nazam zasdnikovní vravět] obrohnikovní pres} ---
-   \trsl{the man who read the letter that the woman wrote}
+\a \ird{Jancí podohletou} \trsl{Janek's remembering / the remembering of Janek}
+\a \ird{Marcí travět piaštou} \trsl{Marek's eating of the bread}
 \xe
 
-In (\lastx b), considered in isolation, the head noun \ird{vrava} appears in
-the direct case: the letter is the privileged participant of the inner domain
-(the thing written), and the woman appears as \ird{nazam} in the indirect.
-In (\lastx c), this same inner phrase is embedded as a non-privileged
-argument of the outer nominalized clause. Accordingly the inner head noun
-shifts to the indirect: \ird{vrava} surfaces as \ird{vravět} (indirect with
-definiteness suffix). The head noun of an \ird{-ovní} phrase always takes the
-case required by the clause it is embedded in, not the case it would bear if
-freestanding.
+The resulting ambiguity is structural rather than accidental: two
+indirect KPs inside one nominalized domain are not morphologically
+distinguished. Speakers disambiguate either by ordering the actor
+before the theme or by anchoring the theme noun, especially when the
+theme itself is discourse-recoverable.
 
-\subsubsection*{Practical limits on embedding}
+\subsection{Participant nominals and privileged-participant
+  reference}
+\label{sec:nm-derived-participant}
 
-The system is formally recursive, but in practice speakers rarely go beyond
-two or three levels of embedding, and a single embedded attributive is by far
-the most common. Deeper nesting produces noun phrases that are unwieldy to
-produce and difficult to parse in speech. Speakers typically rephrase heavily
-embedded content as a sequence of simpler clauses or a converb chain rather
-than extending the nominalization further.
+Participant nominals identify whichever argument is privileged by the
+voice/aspect stem to which \ird{-ou} attaches. Antipassive-based forms
+pick out the actor, plain transitive stems the patient, and
+applicative stems the promoted non-patient participant. The nominal
+system therefore inherits the voice architecture of the verbal domain
+without ceasing to be nominal externally.
+
+\pex
+\a \ird{piaščikou} \trsl{the one who ate}
+\a \ird{piaštnikou} \trsl{that which was eaten}
+\a \ird{piaštébikou} \trsl{the one who was fed}
+\xe
+
+
+%% ================================================================
+%%  PART X: ANCHORING AND THE CLAUSE-LEVEL INTERFACE
+%% ================================================================
+
+\section{The discourse interface: anchoring, topicality, and
+  the absolutive}
+\label{sec:nm-topic-interface}
+
+\subsection{Anchoring and the topic-absolutive connection}
+\label{sec:nm-topic-abs}
+
+The grammar notes (§\,\ref{sec:definiteness}) that the anchoring
+suffix is \emph{especially frequent} on direct-case (absolutive)
+patient nouns in transitive clauses of the perfective and
+retrospective aspects. This frequency effect is not a syntactic
+requirement — the suffix is never imposed by aspect or by
+argument structure — but a pragmatic tendency with a formal
+correlate.
+
+The formal correlate is the link between the absolutive argument
+and the topic position TopP (§\,\ref{sec:th-topic-comment-theory}).
+In the perfective/retrospective, the patient occupies the direct
+case (absolutive) and surfaces in Spec,TopP as the clause topic.
+A topical argument is by definition discourse-salient and
+discourse-recoverable — precisely the condition that licenses the
+\textsc{Anch\textsuperscript{0}}[\textsc{+anch}] feature. The
+co-occurrence of anchoring and absolutive-topicality is therefore not a
+construction-specific rule but the interaction of two independent
+feature systems: [\textsc{+top}] in the clause domain and
+[\textsc{+anch}] in the nominal domain.
+
+This interaction can be formalized as a soft interface constraint
+(an optimization preference, not a hard Agree condition):
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Topicality-Anchoring Harmony:] A DP bearing the
+  feature [\textsc{+top}] in Spec,TopP is preferentially realized
+  with \textsc{Anch\textsuperscript{0}}[\textsc{+anch}] in its nominal functional
+  hierarchy. The constraint is violable (topic-drop, bare nouns as
+  topics, and pragmatically foregrounded indefinites are all
+  attested), but it captures the statistical correlation observed.
+\end{description}
+
+\noindent The constraint also predicts the opposite tendency: DPs
+in non-topic positions (agents in the ergative case, oblique
+adjuncts) are less frequently anchored, because they are not in
+Spec,TopP and therefore carry no [\textsc{+top}] feature to
+harmonize with [\textsc{+anch}].
+
+\subsection{Anchoring in non-direct cases: marked uses}
+\label{sec:nm-topic-oblique}
+
+The grammar observes (§\,\ref{sec:definiteness}) that the
+anchoring suffix may appear on nouns in the transitive and
+indirect cases, but that such use is \emph{generally less neutral
+and more plainly expressive of topical, resumptive, contrastive,
+or otherwise salient reference}.
+
+This asymmetry follows from the topic-absolutive architecture.
+Transitive-case (ergative) nouns are agents in the perfective
+aspects; they are not the absolutive argument and are not in
+Spec,TopP. A [\textsc{+anch}] agent is therefore marked: its
+anchoring is not discourse-default but serves an additional
+function — contrastive individualization, resumption, or topical
+promotion — that requires the anchoring suffix to perform
+pragmatic work beyond its baseline anaphoric use. Indirect-case
+nouns similarly bear the suffix only when the speaker wishes to
+signal that the oblique participant is specifically tracked in the
+discourse.
+
+One useful way to formalize the marked anchored agent is to say that
+[\textsc{+anch}] combines there not with ordinary topic continuity but
+with contrastive prominence. Because the ergative aspect already
+assigns topichood to the absolutive patient, an anchored agent is most
+naturally interpreted as focally individuated rather than merely
+anaphoric. This predicts the familiar contrastive or resumptive flavor
+of anchored transitive-case DPs without forcing a second topic position
+inside the clause.
+
+\subsection{The bare noun as an AnchP with null anchoring}
+\label{sec:nm-bare-noun}
+
+Within the present analysis, the bare noun in Iridian is not an NP
+that has failed to project upward. Rather, it is an AnchP whose
+anchoring head bears no [\textsc{+anch}] feature and therefore
+receives no overt Vocabulary Item at PF. This
+treatment parallels the analysis of topic-drop in the clausal
+domain: just as a null topic in Spec,TopP is a syntactically
+present but phonologically empty argument (§\,\ref{sec:th-topic}),
+the null anchoring head is a syntactically present but phonologically
+empty head.
+
+The theoretical advantage of this treatment is that it derives
+the optionality of anchoring morphology without stipulation.
+There is no constraint that forces
+\textsc{Anch\textsuperscript{0}} to receive
+an overt Vocabulary Item; the DM system simply inserts \ird{-ot/-t}
+when the feature [\textsc{+anch}] is present and inserts nothing
+when it is absent. The parallelism between optional anchoring and
+optional topic-marking reflects a broader property of the
+grammar: discourse-level features are never obligatorily expressed
+in Iridian, but they are consistently and transparently encoded
+when they are present.
+
+
+%% ================================================================
+%%  PART XI: THEORETICAL TENSIONS AND OPEN QUESTIONS
+%% ================================================================
+
+\section{Theoretical tensions and open questions}
+\label{sec:nm-tensions}
+
+\subsection{The projection of AnchP: DP or a separate anchoring layer?}
+\label{sec:nm-tension-dp}
+
+The standard DP Hypothesis (Abney 1987) places
+D\textsuperscript{0} as the single highest head of the nominal
+extended projection, unifying articles, demonstratives, and similar
+functional elements under one projection. An alternative tradition
+(Longobardi 1994; Alexiadou et~al. 2007) distinguishes a dedicated definiteness
+layer from a higher
+DP layer (which may encode referential anchoring, logophoricity,
+or other discourse properties).
+
+For Iridian, the evidence from morphological ordering supports a
+single high functional head for the anchoring suffix, but the
+interaction with demonstratives and specificity particles suggests
+that at least three distinct functional layers are involved in the
+upper nominal domain: AnchP (\ird{-ot/-t}), DemP (demonstratives),
+and SpecificityP (\ird{si}/\ird{druh}). Whether these should be unified
+under an articulated DP or organized as separate projections is
+left open pending more detailed cartographic work on the upper
+nominal domain.
+
+\subsection{The anchoring suffix and Case theory}
+\label{sec:nm-tension-case}
+
+A potential tension arises within Case theory. In the standard
+Minimalist account (Chomsky 2001), case is
+assigned to DPs by an Agree relation with a functional head (v*,
+T, or an applicative head). If the nominal extended projection is
+capped by AnchP, then the outermost head of the DP is D\textsuperscript{0},
+not K\textsuperscript{0}. Case should in principle be visible on
+the DP as a whole (from the perspective of the external clause
+structure), but the morphological encoding of case is on the K
+layer inside the DP, below D\textsuperscript{0}.
+
+This can be resolved by one of two strategies: (a) the D head
+is transparent to case, meaning the Agree probe from the clausal
+head targets K\textsuperscript{0} or the NP root directly through
+AnchP; or (b) case features percolate from K\textsuperscript{0} to
+D\textsuperscript{0} by feature inheritance within the DP, and D
+presents the valued case feature to the external probe. Strategy (b)
+has the advantage of preserving the standard Agree architecture;
+strategy (a) requires relaxing the usual opacity of DP boundaries.
+
+\subsection{The anchoring suffix and phase theory}
+\label{sec:nm-tension-phase}
+
+Within phase theory (Chomsky 2000, 2001), DP may constitute a phase alongside CP and vP. If the Iridian DP
+is a phase, then the internal structure of the DP (including the
+K and NP layers) becomes inaccessible to clausal operations once
+AnchP (= DP-phase edge) is assembled. This has consequences for
+case assignment (as noted above) and for the possessor construction:
+if the possessive indirect-case NP is inside the DP phase, it
+cannot be directly targeted by a clausal probe. The standard
+resolution is to treat possessors as phase-edge elements (moved
+or base-generated at the edge of the DP phase), which is consistent
+with their prenominal, edge-adjacent position in the surface string.
+
+\subsection{Converb-based relative clauses and their nominal
+  embedding}
+\label{sec:nm-tension-rel}
+
+The \ird{-ovní} attributive construction is Iridian's primary
+relativization strategy (§\,\ref{sec:th-relativization}). A full
+syntactic analysis of this construction — and in particular its
+interaction with the anchoring suffix on the head noun —
+requires a formal account of how a nominalized verbal phrase
+(the \ird{-ovní} clause) integrates into the DP-internal structure.
+The head noun following an \ird{-ovní} modifier receives case from
+the host clause and optionally bears the anchoring suffix,
+suggesting that it remains within the AnchP/KP layer of the host DP
+and is not incorporated into the nominalized domain. This is
+consistent with the analysis of the \ird{-ovní} construction as
+a prenominal adjunct, but the precise adjunction site (to NP,
+to PossP, or to a dedicated RelP layer) requires further
+specification.
+
+The main text has adopted the reduced-relative option, and the open
+question is therefore narrower than before: not whether \ird{-ovní}
+instantiates RelP at all, but where that RelP adjoins inside the lower
+nominal spine and how it interacts with possessive material. That is a
+real structural question, but it no longer blocks the broader analysis
+of \ird{-ovní} as Iridian's default prenominal relativizing
+construction.
