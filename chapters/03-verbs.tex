@@ -41,8 +41,8 @@ projections:
     \midrule
     Root         & \Stem{}           & $\surd$P / VP (lexical predicate)
                  & §\,\ref{sec:vm-root} \\
-    Voice        & \Antip{} / \Appl{} & VoiceP / ApplP
-                 & §\,\ref{sec:vm-antipassive} \\
+    Voice        & \textsc{trs} / \Antip{} / \Appl{} & VoiceP / ApplP
+                 & §\,\ref{sec:vm-antipassive}, §\,\ref{sec:vm-n} \\
     Causative    & \Caus{}           & CausP
                  & §\,\ref{sec:vm-caus} \\
     Asp.Align    & \Asp{}.\textsc{align} & AspP (fused Asp + Case)
@@ -137,8 +137,22 @@ Outside the closed antipassive classes, verbs use the same general morphophonemi
 Three derivational operations may be applied to the verb stem before the aspect-alignment suffix: the antipassive, the applicative, and the causative. Where more than one is present, the order is fixed: antipassive or applicative precedes the causative.
 
 \subsection{The antipassive (\ird{-aš-})}
+\label{sec:vm-antipassive-desc}
 
-The antipassive removes the patient argument from the grammatical core, promoting the agent to the absolutive. In the perfective and retrospective aspects it is the obligatory non-ergative construction for any verb capable of bearing the transitive marker \ird{-n-}: such a verb must appear in an ergative aspect with either \ird{-n-} (ergative alignment) or \ird{-aš-} (antipassive). The bare perfective suffix serves no antipassive function and is reserved exclusively for inherently intransitive verbs, as described in Section~\ref{sec:ambitransitive}.
+The antipassive is an overt Voice head that applies only where the
+patient is structurally the absolutive participant. It displaces that
+patient from absolutive status, promotes the agent to absolutive, and
+removes the patient from core argument structure. Because the
+structural target it requires --- a patient standing as the
+absolutive --- is available only in ERG-aspect clauses, the
+antipassive is exclusively an ergative-domain construction. It is
+therefore the obligatory non-ergative construction for any verb
+capable of bearing the transitive/passive Voice head \ird{-n-} in
+the perfective and retrospective aspects: such a verb must appear
+with either \ird{-n-} (ergative transitive) or \ird{-aš-}
+(antipassive). The bare perfective serves no antipassive function and
+is reserved exclusively for inherently intransitive verbs, as
+described in Section~\ref{sec:ambitransitive}.
 
 The antipassive suffix is \ird{-aš-}, though its phonological realisation depends upon the thematic consonant class of the stem, following the alternations set out in Table~\ref{tab:verbclasses}. The stem-final consonant is replaced or augmented as shown; the underlying \ird{-aš-} string surfaces as the modified stem consonant followed by the relevant sibilant. Thus \ird{piašt-} yields \ird{piašč-} as its antipassive stem:
 
@@ -157,7 +171,7 @@ The antipassive suffix is \ird{-aš-}, though its phonological realisation depen
 \endgl
 \xe
 
-The patient, being wholly suppressed by the antipassive, may not be expressed in any case form; it is accordingly inadmissible as an indirect-case argument, as may be seen from the following:
+The patient, having been removed from core argument structure by the antipassive, may not be expressed in any case form; it is accordingly inadmissible as an indirect-case argument, as may be seen from the following:
 
 \ex
 \begingl
@@ -167,7 +181,7 @@ The patient, being wholly suppressed by the antipassive, may not be expressed in
 \endgl
 \xe
 
-\noindent Where a patient is to be expressed in any form, the ergative construction is required. Instrument and adjunct arguments, which bear no patient relation to the predicate, remain fully admissible in the indirect case, as in the spoon example above. It is further to be observed that suppression of the patient in the antipassive does not constitute a denial of its existence: for an inherently transitive verb the patient is typically understood as part of the event, though the speaker has chosen to treat it as no object of discursive concern. What is asserted is the agent's activity; what is withheld is the patient's status as a discourse referent.
+\noindent Where a patient is to be expressed in any form, the ergative construction is required. Instrument and adjunct arguments, which bear no patient relation to the predicate, remain fully admissible in the indirect case, as in the spoon example above. The absence of an expressible patient is not merely a discourse choice to background a participant that is otherwise retained in syntax: under the antipassive, the patient is removed from the clause's core argument structure and therefore cannot surface in any case form. The construction does not merely withhold the patient from prominence; it eliminates the patient from the overt argument structure of the clause. For an inherently transitive verb the patient is typically still understood as part of the conceptual event, but what is asserted is the agent's activity; the patient has no realization as a syntactic argument.
 
 Equally, for a transitive verb, the bare perfective without either \ird{-n-} or \ird{-aš-} is ungrammatical:
 
@@ -185,43 +199,80 @@ Equally, for a transitive verb, the bare perfective without either \ird{-n-} or 
 \subsubsection{Minimalist analysis: the antipassive as VoiceP}
 \label{sec:vm-antipassive}
 
-The antipassive (\ird{-aš-}) suppresses the patient from the
-argument structure and promotes the agent to absolutive. Within the
-Minimalist framework this is most naturally analyzed as an active
-\term{VoiceP} projection
-(Kratzer 1996; Alexiadou et~al. 2006): the antipassive head occupies Spec/Head
-of VoiceP and bears features that prevent the internal argument
-(patient) from being merged or from receiving an interpretable case.
+The antipassive \ird{-aš-} is an overt Voice head (Kratzer 1996;
+Alexiadou et~al. 2006) subject to a structural input condition: it
+may be merged only in a clause whose input to VoiceP contains a
+patient that is eligible for absolutive realization. It then removes
+that patient from core argument structure and promotes the agent to
+the absolutive position vacated by that removal.
 
-The template order --- antipassive slot between root and Caus.Asp
---- confirms that VoiceP immediately dominates VP:
+\paragraph{Input condition.}
+The antipassive requires, as the structural context for its
+application, a clause in which the patient stands in the absolutive
+position made available by the clause's alignment architecture. In
+the ERG-aspect domain, Asp.Align's default assigns absolutive to the
+patient (§\,\ref{sec:vm-asp-case}); the input condition is therefore
+satisfied, and the antipassive is licensed. In the NOM-aspect domain,
+the absolutive is assigned by default to the agent; no patient stands
+in the absolutive position, and the structural target required by the
+antipassive is absent. The antipassive is consequently unlicensed in
+NOM-aspect clauses. This is a hard grammatical restriction, not a
+preference or economy effect.
+
+\paragraph{Argument-structure removal.}
+Under the antipassive, the patient is not demoted to an oblique slot
+within the clause. It is removed from the clausal core entirely.
+Oblique expression of the patient is therefore not merely
+dispreferred but impossible: the construction does not retain a
+suppressed patient that has been reassigned to a peripheral position.
+The patient ceases to be part of the overt argument structure of the
+clause. This is why an indirect-case patient is ungrammatical with
+the antipassive (see §\,\ref{sec:vm-antipassive-desc} for examples),
+while instrument and adjunct arguments in the indirect case remain
+fully admissible.
+
+The template order --- antipassive between root and Asp.Align ---
+confirms that VoiceP immediately dominates VP:
 
 \begin{center}
 \begin{forest}
-  syntax tree
-  [\textsc{VoiceP}
-    [\textit{agent DP}\\\textsc{[abs]}]
-    [\textsc{Voice$'$}
-      [\textsc{Voice}\\\ird{-aš-}]
-      [\textsc{VP}
-        [\textit{root}]
+for tree={align=center}
+[AspP
+  [DP\\{\footnotesize agent}\\{\footnotesize\textsc{[abs]}}]
+  [Asp$'$
+    [Asp\\{\footnotesize\textsc{[erg]}}]
+    [VoiceP
+      [DP\\{\footnotesize agent}]
+      [Voice$'$
+        [Voice\\\ird{-aš-}\\{\footnotesize\textsc{[agt-abs]}}\\{\scriptsize requires p-abs}]
+        [VP
+          [\textit{root}]
+        ]
       ]
     ]
   ]
+]
 \end{forest}
 \end{center}
 
-\noindent The complementary distribution of the antipassive and
-applicative (\ird{-aš-} and \ird{-éb-} cannot co-occur on the same
-stem) is a direct consequence of both occupying the same VoiceP
-projection: only one Voice head can be merged at this tier.
+\noindent The label \textsc{[p-abs required]} on the antipassive Voice
+head represents the input condition: the head selects for a VP whose
+internal argument would stand as the absolutive participant in the
+relevant alignment environment. In ERG aspects this condition is met;
+in NOM aspects it is not. The complementary distribution of the
+antipassive and the applicative (\ird{-aš-} and \ird{-éb-} cannot
+co-occur on the same stem) is a direct consequence of both occupying
+the same VoiceP projection: only one Voice head may be merged at this
+tier.
 
-A transitive verb bearing neither \ird{-aš-} nor \ird{-éb-} in the
-ergative aspects must bear the transitive marker \ird{-n-} (see
-§\,\ref{sec:vm-n}). The absence of this marker with the bare
-perfective suffix on transitive verbs is therefore a case-licensing
-failure: without a transitivity marker in the Voice domain, the
-patient receives no structural case and the derivation crashes.
+In ERG-aspect transitives, the patient requires overt Voice licensing
+to be realized as a core argument (§\,\ref{sec:vm-n}). A verb bearing
+neither \ird{-aš-} nor \ird{-éb-} nor \ird{-n-} in an ergative
+aspect therefore fails for a different reason: the patient lacks the
+overt patient-licensing head required for core realization. That
+exclusion is distinct from the structural input condition that blocks
+the antipassive in NOM aspects; the two empty cells in the alignment
+system are each excluded by a separate principle (§\,\ref{sec:vm-asp-case}).
 
 
 \subsection{The applicative (\ird{-éb-})}
@@ -296,7 +347,7 @@ The contrast is most readily observed in nominative-alignment contexts, where th
 \endgl
 \xe
 
-\noindent The antipassive and the applicative are in complementary distribution. This is not an accidental gap: the antipassive suppresses the patient from the grammatical core, whereas the applicative creates a new core object out of a peripheral participant. The two operations therefore compete for the same argument-structural domain and cannot be combined on a single finite stem.
+\noindent The antipassive and the applicative are in complementary distribution. This is not an accidental gap: the antipassive removes the patient from core argument structure, whereas the applicative creates a new core object out of a peripheral participant. The two operations compete for the same VoiceP slot and cannot be combined on a single finite stem.
 
 
 \subsubsection{Minimalist analysis: the applicative as ApplP}
@@ -310,16 +361,16 @@ argument into the event structure between VoiceP and CausP:
 
 \begin{center}
 \begin{forest}
-  syntax tree
-  [\textsc{ApplP}
-    [\textit{applied arg.}]
-    [\textsc{Appl$'$}
-      [\textsc{Appl}\\\ird{-éb-}]
-      [\textsc{VP/VoiceP}
-        [\ldots]
-      ]
+for tree={align=center}
+[ApplP
+  [DP\\{\footnotesize applied argument}]
+  [Appl$'$
+    [{Appl\\{\ird{-éb-}}}]
+    [VoiceP
+      [\ldots]
     ]
   ]
+]
 \end{forest}
 \end{center}
 
@@ -346,7 +397,7 @@ Asp.Align morpheme selected (§\,\ref{sec:vm-asp}).
 
 Cross-linguistically, causation may be expressed lexically, analytically, or morphologically. Some languages employ distinct lexical verbs comparable to English \textit{kill}, while others use periphrastic constructions equivalent to \textit{make} or \textit{cause} plus a second predicate. Iridian belongs to the third type: causation is expressed by a productive morphological operation, realized synchronically as the suffix \ird{-na-}.
 
-The causative \ird{-na-} adds an external causer argument to the event. In nominative-alignment contexts the causer stands in the direct case, the original agent or sole participant is demoted to the indirect, and any patient licensed by the base verb remains indirect. In ergative-alignment contexts the causer takes the transitive case. With transitive bases, the original patient remains the direct argument and the causee falls into the indirect; with intransitive bases, the causee itself occupies the direct as the sole affected participant. The causative thus increases valency by one while preserving the aspect-driven alignment pattern of the clause as a whole. Before a following vowel-initial aspect or mood suffix, \ird{-na-} inserts an epenthetic glide and surfaces as \ird{-naj-}; before consonant-initial material, including the ergative transitive marker \ird{-n-}, it remains \ird{-na-}.
+The causative \ird{-na-} adds an external causer argument to the event. In nominative-alignment contexts the causer stands in the direct case, the original agent or sole participant is demoted to the indirect, and any patient licensed by the base verb remains indirect. In ergative-alignment contexts the causer takes the transitive case. With transitive bases, the original patient remains the direct argument and the causee falls into the indirect; with intransitive bases, the causee itself occupies the direct as the sole affected participant. The causative thus increases valency by one while preserving the aspect-driven alignment pattern of the clause as a whole. Before a following vowel-initial aspect or mood suffix, \ird{-na-} inserts an epenthetic glide and surfaces as \ird{-naj-}; before consonant-initial material, including the Voice head \ird{-n-}, it remains \ird{-na-}.
 
 \pex
 \a
@@ -403,7 +454,7 @@ The causative \ird{-na-} adds an external causer argument to the event. In nomin
 \endgl
 \xe
 
-\noindent Synchronically, \ird{-na-} is distinct from the ergative transitive marker \ird{-n-}. The former is a valency-changing derivation occupying the causative slot of the verbal template; the latter is an alignment marker inserted immediately before the perfective and retrospective suffixes. Earlier notes used \ird{-ne-} for the causative, but the present grammar regularises \ird{-na-} in order to keep the derivational causative distinct in form from the simple transitive marker.
+\noindent Synchronically, \ird{-na-} is distinct from the transitive/passive Voice head \ird{-n-}. The former is a valency-changing derivation occupying the causative slot of the verbal template (CausP); the latter is the Voice head (VoiceP) that licenses the internal argument and specifies patient absolutive, inserted immediately before the aspect suffix. Earlier notes used \ird{-ne-} for the causative, but the present grammar regularises \ird{-na-} in order to keep the causative head formally distinct from \ird{-n-}.
 
 
 \subsubsection{Minimalist analysis: the causative as CausP}
@@ -416,16 +467,16 @@ Spec,CausP:
 
 \begin{center}
 \begin{forest}
-  syntax tree
-  [\textsc{CausP}
-    [\textit{causer DP}]
-    [\textsc{Caus$'$}
-      [\textsc{Caus}\\\ird{-na-}]
-      [\textsc{VoiceP/ApplP}
-        [\ldots]
-      ]
+for tree={align=center}
+[CausP
+  [{DP\\{\footnotesize causer}}]
+  [Caus$'$
+    [{Caus\\{\ird{-na-}}}]
+    [ApplP
+      [{\ldots}]
     ]
   ]
+]
 \end{forest}
 \end{center}
 
@@ -439,24 +490,178 @@ head), while retrospective causation presents indirect or
 permissive causation (looser Agree relation, admitting delegated or
 accidental readings).
 
-\subsubsection{The transitive marker \ird{-n-} and its status}
+\subsubsection{The transitive/passive Voice head \ird{-n-}}
 \label{sec:vm-n}
 
-The morpheme \ird{-n-} appears immediately before the perfective and
-retrospective suffixes on transitive verbs and is distinct from the
-causative \ird{-na-}. It is tempting to treat \ird{-n-} as the
-Vocabulary Item for the transitive $v^*$ head in ergative contexts.
-Under this analysis, \ird{-n-} is the morphological exponent of
-transitivity/voice (the $v^*$ head) that surfaces only when the
-Asp.Align head selects ergative alignment. This implies that
-\ird{-n-} and \ird{-aš-} / \ird{-éb-} are competing exponents of
-the same VoiceP slot: in ergative-aligned clauses, VoiceP is
-realized as \ird{-n-} (transitive) or \ird{-aš-} (antipassive) or
-\ird{-éb-} (applicative), and the selection is morphologically
-conditioned by the Asp.Align head.
+The morpheme \ird{-n-} is an overt Voice head occupying the same
+VoiceP slot as the antipassive \ird{-aš-} and the applicative
+\ird{-éb-}. It carries two properties simultaneously: it licenses
+the internal argument (patient) as a core participant in the clause's
+argument structure, and it specifies that the patient is to stand as
+the absolutive (\textsc{[pat-abs]}). These two properties are not
+environment-specific; they are always present. What varies across
+aspectual domains is their structural consequence within the
+Asp.Align system.
 
-The theoretical tension this raises is documented at
-§\,\ref{sec:vm-tension-n}.
+\paragraph{ERG-aspect behaviour.}
+In the perfective and retrospective aspects the default absolutive
+orientation of Asp.Align already favours the patient (§\,\ref{sec:vm-asp-case}).
+The \textsc{[pat-abs]} specification contributed by \ird{-n-} is
+therefore harmonious with the aspectual default. The indispensable
+contribution of \ird{-n-} in this environment is accordingly not to
+override the default but to license the patient as a core argument:
+without an overt Voice head in VoiceP, a transitive predicate cannot
+realize its patient as a properly licensed participant in the clause's
+core argument structure. The bare perfective or retrospective is
+consequently illicit for any transitive reading, as described in
+§\,\ref{sec:ambitransitive}. With \ird{-n-} present, the patient is
+licensed as the absolutive and the agent takes the transitive case;
+the result is the ordinary ergative transitive construction.
+
+\begin{center}
+\begin{forest}
+for tree={align=center}
+[AspP
+  [{DP\\{\footnotesize patient}\\{\footnotesize\textsc{[abs]}}}]
+  [Asp$'$
+    [{Asp\\{\footnotesize\textsc{[erg]}}}]
+    [VoiceP
+      [{DP\\{\footnotesize agent}\\{\footnotesize\textsc{[trs]}}}]
+      [Voice$'$
+        [{Voice\\{\ird{-n-}}\\{\footnotesize\textsc{[pat-abs]}}}]
+        [VP
+          [{DP\\{\footnotesize patient}}]
+          [\textit{root}]
+        ]
+      ]
+    ]
+  ]
+]
+\end{forest}
+\end{center}
+
+\paragraph{NOM-aspect behaviour.}
+In the continuous, progressive, and contemplative aspects the same
+overt Voice head overrides the default agent-absolutive orientation
+of Asp.Align. Because \ird{-n-} specifies \textsc{[pat-abs]}, the
+patient rather than the agent becomes the direct-case pivot, and the
+agent is demoted to the oblique domain. The result is a
+\term{passive} construction. Asp.Align remains in the nominative
+domain; it is the Voice head that imposes a patient-absolutive
+realization upon the clause. The full analysis and examples are in
+§\,\ref{sec:vm-passive}.
+
+\ird{-n-} is thus not a pair of context-sensitive morphemes whose
+function changes by aspect. It is a single Voice head whose constant
+properties --- patient licensing and patient absolutive --- produce
+different surface constructions depending on whether the aspectual
+domain reinforces or is overridden by its absolutive specification.
+The phonological resemblance to the causative \ird{-na-} is
+addressed in §\,\ref{sec:vm-tension-n}.
+
+
+\subsection{The passive}\label{sec:vm-passive}
+
+The passive is the construction that arises when the transitive/passive
+Voice head \ird{-n-} is merged in a NOM-aspect clause. Since
+\ird{-n-} specifies patient absolutive (\textsc{[pat-abs]}) and
+the NOM-aspect domain would by default assign absolutive to the agent,
+the Voice head overrides the aspectual default: the patient surfaces
+in the direct case as the absolutive pivot, and the agent is demoted
+to the indirect (oblique) case. Asp.Align remains in the
+nominative domain throughout; only the absolutive orientation of
+the clause is altered by the overt Voice head.
+
+The passive is thus the marked construction by which a
+nominative-domain clause is reorganized around the patient, allowing
+the patient rather than the agent to function as the discourse pivot.
+Its counterpart in the ergative domain is the ordinary ergative
+transitive, which arises from the same Voice head under ERG-aspect
+alignment. The two constructions are formally identical at the Voice
+level; their different surface alignment is a consequence of the
+aspectual domain they are embedded in.
+
+\subsubsection*{Morphological form}
+
+The passive consists of a NOM-aspect suffix on a transitive stem
+bearing \ird{-n-}. The NOM-aspect suffixes available for passive
+formation are the continuous \ird{-a}, the progressive \ird{-ime},
+and the contemplative \ird{-ach}; the patient-absolutive
+specification of \ird{-n-} is realized in each case.
+
+\subsubsection*{Case frame}
+
+The patient surfaces in the direct case (\textsc{abs}/\textsc{dir});
+the agent, displaced from the absolutive, surfaces in the indirect
+case (\textsc{obl}/\textsc{ind}). The agent may be omitted when it
+is recoverable or irrelevant.
+\begin{center}
+\begin{forest}
+for tree={align=center}
+[AspP
+  [{DP\\{\footnotesize patient}\\{\footnotesize\textsc{[abs]}}}]
+  [Asp$'$
+    [{Asp\\{\footnotesize\textsc{[nom]}}}]
+    [VoiceP
+      [{DP\\{\footnotesize agent}\\{\footnotesize\textsc{[obl]}}}]
+      [Voice$'$
+        [{Voice\\{\ird{-n-}}\\{\footnotesize\textsc{[pat-abs]}}}]
+        [VP
+          [{DP\\{\footnotesize patient}}]
+          [{\textit{root}}]
+        ]
+      ]
+    ]
+  ]
+]
+\end{forest}
+\end{center}
+
+\noindent Asp.Align remains nominative-domain (\textsc{Asp[nom]}),
+but the overt Voice head requires patient absolutive; the agent
+therefore surfaces in the oblique domain.
+
+\subsubsection*{Examples}
+
+With agent expressed in the oblique:
+
+\pex
+\a
+\begingl
+\gla Travat Marku piastnime.//
+\glb bread.\Dir{}.\Def{} Marek.\Ind{} eat-\textsc{pass}-\Prog{}//
+\glft \trsl{The bread is being eaten by Marek.} \lingcontext{passive; P = \Dir{}, A = \Ind{}}//
+\endgl
+\a
+\begingl
+\gla Vytam Marku shodnime.//
+\glb shirt.\Dir{}.\Def{} Marek.\Ind{} wear-\textsc{pass}-\Prog{}//
+\glft \trsl{The shirt is being put on by Marek.}//
+\endgl
+\xe
+
+With agent omitted:
+
+\pex
+\a
+\begingl
+\gla Travat piastnime.//
+\glb bread.\Dir{}.\Def{} eat-\textsc{pass}-\Prog{}//
+\glft \trsl{The bread is being eaten.} \lingcontext{passive; agent omitted}//
+\endgl
+\a
+\begingl
+\gla Doma piasčna.//
+\glb house.\Dir{} build-\textsc{pass}-\Cont{}//
+\glft \trsl{The house is being built / is under construction.}//
+\endgl
+\xe
+
+\noindent The discourse value of the passive is to constitute the
+patient as the clause's absolutive topic, making it the argument
+that subsequent clauses may pick up pronominally or by topic drop.
+The agent, when expressed, appears in the indirect case as a
+non-core oblique participant.
 
 
 \subsection{Pragmatic use of valency operations}
@@ -507,7 +712,7 @@ In the continuous, progressive, and contemplative aspects the main argument of t
 
 \subsection{Alignment in ergative aspects (perfective and retrospective)}
 
-In the perfective and retrospective aspects the patient of a transitive verb is placed in the direct case, and the agent takes the transitive case. This is an ergative-absolutive pattern; what Iridian grammar calls the \emph{transitive case} is, in typological terms, the ergative, and the \emph{direct case} serves as the absolutive. For a transitive verb to trigger ergative alignment, it must carry the transitive marker \ird{-n-} immediately before the aspect suffix.
+In the perfective and retrospective aspects the patient of a transitive verb is placed in the direct case, and the agent takes the transitive case. This is an ergative-absolutive pattern; what Iridian grammar calls the \emph{transitive case} is, in typological terms, the ergative, and the \emph{direct case} serves as the absolutive. For a transitive verb to trigger ergative alignment, it must carry the Voice head \ird{-n-} immediately before the aspect suffix.
 
 \begin{table}[ht]
 	\footnotesize\sffamily
@@ -526,7 +731,7 @@ In the perfective and retrospective aspects the patient of a transitive verb is 
 	\end{tabularx}
 \end{table}
 
-Three configurations are available in the ergative aspects. When the transitive marker \ird{-n-} is present, the clause takes full ergative alignment: the patient appears in the direct case and the agent takes the transitive. When \ird{-n-} is absent and the verb bears the antipassive suffix \ird{-aš-}, the agent appears in the direct case and the patient is suppressed from the clause entirely. When neither marker is present, the bare perfective suffix is used, a form grammatical only with inherently intransitive verbs, for which the question of alignment does not arise. For a transitive verb the bare perfective is inadmissible.
+Three configurations are available in the ergative aspects. When the Voice head \ird{-n-} is present, the clause takes full ergative alignment: the patient is licensed as a core argument and appears in the direct case, and the agent takes the transitive. When \ird{-n-} is absent and the verb bears the antipassive \ird{-aš-}, the agent appears in the direct case and the patient is removed from core argument structure. When neither is present, the bare perfective suffix is used, a form grammatical only with inherently intransitive verbs, for which the question of alignment does not arise. For a transitive verb the bare perfective is inadmissible, because the patient lacks the overt patient-licensing Voice head required for core realization.
 
 \pex
 \a
@@ -551,7 +756,7 @@ The antipassive construction, by contrast, foregrounds the agent's activity with
 
 The perfective encodes a completed action viewed as a whole at a specific point in time, and is the primary narrative aspect.
 
-The bare intransitive perfective suffix presents two allomorphs: \ird{-ek} is the default form, and \ird{-ik} appears where the stem's final syllable has \ird{ě} or \ird{e} as its nucleus. The raising is dissimilatory in character: adjoining \ird{-ek} directly to such a stem would produce a CěCe or CeCe sequence across a single intervening consonant, which the language avoids. The allomorphy is thus conditioned by the stem vowel and not by the thematic consonant class. Where a valency morpheme --- the antipassive \ird{-aš-}, the applicative \ird{-éb-}, or the causative \ird{-na-} --- intervenes between stem and suffix, it contributes its own vowel and breaks the sequence; raising accordingly does not apply in derived forms. The ergative perfective \ird{-nik}, which always follows the transitive marker, is a fixed form and does not derive from this rule. % Cross-reference: this dissimilation should be described in the phonology chapter alongside the other vowel alternations.
+The bare intransitive perfective suffix presents two allomorphs: \ird{-ek} is the default form, and \ird{-ik} appears where the stem's final syllable has \ird{ě} or \ird{e} as its nucleus. The raising is dissimilatory in character: adjoining \ird{-ek} directly to such a stem would produce a CěCe or CeCe sequence across a single intervening consonant, which the language avoids. The allomorphy is thus conditioned by the stem vowel and not by the thematic consonant class. Where a valency morpheme --- the antipassive \ird{-aš-}, the applicative \ird{-éb-}, or the causative \ird{-na-} --- intervenes between stem and suffix, it contributes its own vowel and breaks the sequence; raising accordingly does not apply in derived forms. The ergative perfective \ird{-nik}, which always follows the Voice head \ird{-n-}, is a fixed form and does not derive from this rule. % Cross-reference: this dissimilation should be described in the phonology chapter alongside the other vowel alternations.
 
 When negated, the perfective carries a specific implicature: the negated perfective describes something that was expected to occur but did not. For the neutral negation of a past event, free from this implication, the retrospective is preferred.
 
@@ -595,7 +800,7 @@ The ergative and antipassive constructions encode distinct kinds of continuing r
 
 A small class of verbs possesses two readings of different argument structure: an intransitive reading, in which no patient is structurally available, and a transitive reading, in which a patient is licensed. These are lexical ambitransitives; neither reading is derived from the other through the antipassive, applicative, or causative, but both are basic senses of the verb. Two examples are \ird{lov-} (\trsl{hunt, forage [intrans.]; catch, take [trans.]}) and \ird{kěl-} (\trsl{sing, perform [intrans.]; sing a song, chant a text [trans.]}).
 
-The diagnostic for membership in this class is whether the transitive marker \ird{-n-} is admissible in one reading but impossible in the other. For \ird{lov-}: \ird{lovnik} is grammatical in the transitive reading, as something was caught; no \ird{-n-} form is available in the intransitive reading, wherein the event is construed as the activity of hunting itself, with no quarry in the event frame. The bare perfective accesses only the intransitive reading; the antipassive and ergative access only the transitive.
+The diagnostic for membership in this class is whether the Voice head \ird{-n-} is admissible in one reading but impossible in the other. For \ird{lov-}: \ird{lovnik} is grammatical in the transitive reading, as something was caught; no \ird{-n-} form is available in the intransitive reading, wherein the event is construed as the activity of hunting itself, with no quarry in the event frame. The bare perfective accesses only the intransitive reading; the antipassive and ergative access only the transitive.
 
 \pex
 \a
@@ -618,7 +823,7 @@ The diagnostic for membership in this class is whether the transitive marker \ir
 \endgl
 \xe
 
-The two non-ergative forms, though they may coincide in surface expression in many contexts, are not interchangeable. \ird{Lovek} belongs to the intransitive reading: hunting is construed as a pure activity, with no quarry present even in the conceptual frame of the event. \ird{Lovžek} belongs to the transitive reading: the hunt is directed toward prey, and that prey --- though it may not be expressed in any case form, the antipassive suppressing it entirely --- is none the less understood as part of the event. The distinction corresponds, in practice, to the difference between going out to hunt and being engaged in the act of hunting something.
+The two non-ergative forms, though they may coincide in surface expression in many contexts, are not interchangeable. \ird{Lovek} belongs to the intransitive reading: hunting is construed as a pure activity, with no quarry present even in the conceptual frame of the event. \ird{Lovžek} belongs to the transitive reading: the hunt is directed toward prey, and that prey --- though it may not be expressed in any case form, the antipassive having removed it from the clause's argument structure --- is none the less understood as part of the conceptual event. The distinction corresponds, in practice, to the difference between going out to hunt and being engaged in the act of hunting something.
 
 For \ird{kěl-}, the stem vowel is \ird{ě}, so the bare intransitive perfective takes the \ird{-ik} allomorph by dissimilation: \ird{kělek} would create a CěCe sequence across the single intervening \ird{-l-}, which is avoided. The antipassive \ird{kělšek} is unaffected, the \ird{-š-} of the antipassive introducing its own vowel and breaking the sequence. The ergative \ird{kělnik} is the fixed ergative form; it and the bare \ird{kělik} are distinguished only by the presence or absence of \ird{-n-}:
 
@@ -663,34 +868,56 @@ system.
 \subsubsection{Aspect-driven case assignment}
 \label{sec:vm-asp-case}
 
-In the Minimalist framework, case assignment is mediated by Agree:
-a functional head $\alpha$ probes its c-command domain for a DP
-bearing an unvalued Case feature, and values that feature (Chomsky
-2001). The Asp head in Iridian probes for \emph{two} DPs: the absolutive and the non-absolutive argument. The
-values assigned depend on the lexical content of the Asp head:
+Iridian alignment is organized by the Asp.Align head, whose aspectual
+values determine the clause's default absolutive orientation. The
+alignment defaults are:
 
 \begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Ergative aspects (perfective, retrospective).] The
-  Asp head values the internal argument (patient) as \textsc{abs}
-  (direct case) and values the external argument (agent) as
-  \textsc{erg} (transitive case). This implements a
-  \term{dependent-case} pattern (Marantz 1991):
-  the ergative is the marked case assigned to the agent only when a
-  patient is present and has received absolutive.
-\item[\upshape Nominative aspects (continuous, progressive,
-  contemplative).] The Asp head values the external argument
-  as \textsc{abs} and the internal argument as \textsc{obl}
-  (indirect case). The patient is not a structural absolutive in
-  these aspects; it receives oblique case as a default or dependent
-  of the VP.
+\item[\upshape ERG-aspect domain (perfective, retrospective).]
+  Asp.Align assigns \textsc{abs} (direct case) to the internal
+  argument (patient) and \textsc{erg} (transitive case) to the
+  external argument (agent). The ergative is the marked, dependent
+  case: it is assigned to the agent only when a patient has already
+  received absolutive (Marantz 1991). The default absolutive is
+  therefore the \emph{patient}.
+\item[\upshape NOM-aspect domain (continuous, progressive,
+  contemplative).] Asp.Align assigns \textsc{abs} (direct case) to
+  the external argument (agent) and \textsc{obl} (indirect case) to
+  the internal argument (patient). The default absolutive is
+  therefore the \emph{agent}.
 \end{description}
 
-\noindent This account has the consequence that the Asp head is
-responsible for both the temporal/eventive interpretation of the
-clause and its case-marking pattern. The fusion is not an accident:
-it reflects the close coupling in Iridian between information
-structure (which argument is topic/absolutive) and the aspectual
-choice the speaker makes.
+\noindent These defaults constitute the unmarked shape of the
+Iridian alignment system. They may be altered by overt Voice
+morphology. When a transitive stem is merged with an overt Voice
+head carrying a specification for absolutive orientation, that
+specification takes precedence over the aspectual default and is
+respected by Asp.Align in the realization of the clause. The
+aspectual head therefore determines the default alignment pattern,
+but an overt Voice head may impose a different absolutive selection
+in marked constructions.
+
+The morpheme \ird{-n-} is such a head: it licenses the internal
+argument and specifies \textsc{[pat-abs]}, yielding ordinary
+ergative transitives in the ERG domain and passive constructions in
+the NOM domain (§\,\ref{sec:vm-n}, §\,\ref{sec:vm-passive}).
+The antipassive \ird{-aš-} likewise constitutes an overt Voice head,
+but it is subject to a structural input condition: it may apply only
+where the patient already stands as the absolutive participant, and
+it therefore surfaces exclusively in ERG-aspect clauses
+(§\,\ref{sec:vm-antipassive}).
+
+In the Minimalist framework, the Asp.Align head's default case
+assignment is mediated by Agree: the head probes its c-command domain
+for DPs bearing unvalued Case features and values them according to
+its featural content (Chomsky 2001). When an overt Voice head is
+present, its absolutive specification is satisfied before Asp.Align
+probes, and the remaining non-absolutive argument receives the case
+predicted by the aspectual domain. The fusion of aspect and alignment
+into a single suffix is not an accident: it reflects the close
+coupling in Iridian between the temporal framing of an event and the
+information-structural decision of which participant is the clause's
+absolutive pivot.
 
 \subsubsection{Split ergativity and the information-structure interface}
 \label{sec:vm-asp-info}
@@ -1800,7 +2027,7 @@ Two features of the case marking are notable. First, the agent of the base
 transitive clause, which bears the transitive case in the finite verb
 construction (\ird{Janku}, \Trs{}), shifts to the indirect case
 (\ird{Jancí}, \Ind{}) when it appears as an internal argument of the
-patient nominal. Second, the patient argument suppressed by the antipassive
+patient nominal. Second, the patient argument removed from core argument structure by the antipassive
 in a finite clause may reappear in the indirect case as an internal argument
 of the agent nominal (\ird{lubcí} in the second example above). In both
 cases all internal arguments of the nominalized event appear in the indirect
@@ -2838,37 +3065,36 @@ specified by the Mood head? (b) Can aspect distinctions be
 recovered in non-indicative contexts through peripheral particles
 or converb structures?
 
-\subsection{The transitive marker \ird{-n-}: one morpheme or two?}
+\subsection{The Voice head \ird{-n-} and the causative \ird{-na-}: shared form, distinct functions}
 \label{sec:vm-tension-n}
 
-The morpheme \ird{-n-} (transitive marker, appearing before ergative
-aspect suffixes) and the causative \ird{-na-} share a common
-morphological form. Two hypotheses:
+The morpheme \ird{-n-} (the transitive/passive Voice head, appearing
+before aspect suffixes on transitive stems) and the causative
+\ird{-na-} share a common phonological shape. The analysis adopted
+in §\,\ref{sec:vm-n} treats them as formally distinct morphemes
+occupying distinct functional positions: \ird{-n-} is the Vocabulary
+Item of the VoiceP head, while \ird{-na-} is the head of the higher
+CausP projection (§\,\ref{sec:vm-caus}). They are not allomorphs of
+a single morpheme, and their distribution is mutually reinforcing
+rather than in competition: \ird{-na-} may co-occur with \ird{-n-}
+on the same stem (the causative takes a transitive complement), while
+\ird{-n-} and \ird{-aš-} cannot (they compete for the same VoiceP
+slot).
 
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Allomorphs of the same morpheme.] Both \ird{-n-}
-  and \ird{-na-} are exponents of $v^*$ (transitive/causative light
-  verb), with \ird{-na-} the full form and \ird{-n-} a reduced form
-  that appears when adjacency to the Asp suffix triggers truncation
-  (or when no additional argument is introduced, the morpheme is
-  reduced). Under this analysis, the distinction between `add a
-  causee argument' (\ird{-na-}) and `mark transitivity' (\ird{-n-})
-  is a difference in the feature content of $v^*$, not a difference
-  in the morpheme itself.
-\item[\upshape Distinct morphemes.] \ird{-na-} is the causative head
-  (CausP, as argued in §\,\ref{sec:vm-caus}), while \ird{-n-} is
-  a separate morpheme --- the Vocabulary Item of the Voice head (or
-  a transitivity-marking feature on AspP). Their phonological
-  resemblance is accidental or historically motivated but
-  synchronically misleading.
-\end{description}
-
-\noindent The description in the current grammar regularizes
-\ird{-na-} for the causative and distinguishes it formally from
-\ird{-n-}. The theoretical analysis should maintain this
-distinction but provide a principled account of why the two
-morphemes are phonologically similar and whether their
-relationship is synchronically active.
+The outstanding question is whether the phonological resemblance
+between \ird{-n-} and \ird{-na-} is synchronically active or merely
+a residue of a historical relationship. Two positions are possible.
+On the \term{historical coincidence} view, the two morphemes derive
+from a common ancestor that bifurcated into CausP and VoiceP
+exponents in the history of Iridian, and their phonological overlap
+is no longer productive. On the \term{morphological family} view, the
+shared \ird{n} is a synchronically transparent marker of
+argument-introducing functional heads, realized in full (\ird{-na-})
+when an additional argument (the causee) is introduced and in reduced
+form (\ird{-n-}) when no new argument is added. The grammar takes no
+definitive position on this historical question, but regularizes
+\ird{-na-} for the causative and \ird{-n-} for the VoiceP head
+throughout.
 
 \subsection{The absolutive--topic mapping: Agree or movement?}
 \label{sec:vm-tension-abs-top}
