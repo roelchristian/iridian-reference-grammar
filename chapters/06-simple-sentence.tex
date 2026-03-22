@@ -163,23 +163,23 @@ of the left periphery.
 	\centering
 	\begin{forest}
 		syntax tree
-		[\textsc{SpeechActP}
-			[\textsc{SpeechAct}\\\ird{nadě} / \ird{mlada} / \ird{jse}]
-			[\textsc{EvidP}
-				[\textsc{Evid}\\\ird{oče} / \ird{hlavdy} / \ird{ktady} / \ird{či}]
-				[\textsc{TopP}
-					[\textit{topic DP}]
-					[\textsc{Top$'$}
-						[\textsc{Top}]
-						[\textsc{PolP}
-							[\textsc{Pol}\\\ird{by}]
-							[\textsc{Pol$'$}
-								[\textsc{Pol}]
-								[\textsc{FocP}
-									[\textsc{XP}\\\textit{wh-phrase}]
-									[\textsc{Foc$'$}
-										[\textsc{Foc}]
-										[\textsc{IP} [\ldots]]
+		[SpeechActP
+			[{SpeechAct\\\ird{nadě} / \ird{mlada} / \ird{jse}}]
+			[EvidP
+				[{Evid\\\ird{oče} / \ird{hlavdy} / \ird{ktady} / \ird{či}}]
+				[TopP
+					[{DP\\{\footnotesize topic}}]
+					[{Top$'$}
+						[Top]
+						[PolP
+							[{Pol\\\ird{by}}]
+							[{Pol$'$}
+								[Pol]
+								[FocP
+									[{XP\\{\footnotesize\textit{wh-phrase}}}]
+									[{Foc$'$}
+										[Foc]
+										[IP [{\ldots}]]
 									]
 								]
 							]
@@ -652,11 +652,11 @@ higher IP layer. The affirmative clause structure is:
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{EquP}
-    [\textit{Marek}\\\textsc{dir}\\{\small(topic)}]
-    [\textsc{Eq$'$}
-      [\textit{doktor}\\\textsc{dir}\\{\small(pred)}]
-      [\textsc{Eq$^{0}$}\\{$\varnothing$}]
+  [EquP
+    [{DP\\\textit{Marek}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize topic}}]
+    [{Eq$'$}
+      [{DP\\\textit{doktor}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize pred.}}]
+      [{Eq$^{0}$\\{$\varnothing$}}]
     ]
   ]
 \end{forest}
@@ -723,14 +723,14 @@ selects EquP directly, with no intervening AspP:
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{NegP}
-    [\textit{Marek}\\\textsc{dir}\\{\small(topic)}]
-    [\textsc{Neg$'$}
-      [\textsc{Neg$^{0}$}\\\ird{staly}]
-      [\textsc{EquP}
-        [\textit{doktor}\\\textsc{dir}\\{\small(pred)}]
-        [\textsc{Eq$'$}
-          [\textsc{Eq$^{0}$}\\{$\varnothing$}]
+  [NegP
+    [{DP\\\textit{Marek}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize topic}}]
+    [{Neg$'$}
+      [{Neg$^{0}$\\\ird{staly}}]
+      [EquP
+        [{DP\\\textit{doktor}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize pred.}}]
+        [{Eq$'$}
+          [{Eq$^{0}$\\{$\varnothing$}}]
         ]
       ]
     ]
@@ -879,11 +879,11 @@ projected in the usual way. The two structures contrast as follows:
 \textit{Zero copula:}\\[6pt]
 \begin{forest}
   syntax tree
-  [\textsc{EquP}
-    [DP\textsubscript{topic}]
-    [\textsc{Eq$'$}
-      [DP\textsubscript{pred}]
-      [\textsc{Eq$^{0}$}\\{$\varnothing$}]
+  [EquP
+    [{DP\\{\footnotesize topic}}]
+    [{Eq$'$}
+      [{DP\\{\footnotesize pred.}}]
+      [{Eq$^{0}$\\{$\varnothing$}}]
     ]
   ]
 \end{forest}
@@ -894,13 +894,13 @@ projected in the usual way. The two structures contrast as follows:
 \textit{Overt copula:}\\[6pt]
 \begin{forest}
   syntax tree
-  [\textsc{AspP}
-    [DP\textsubscript{topic}]
-    [\textsc{Asp$'$}
-      [\textsc{Asp$^{0}$}]
-      [\textsc{VP}
-        [DP\textsubscript{pred}]
-        [\ird{neh-}]
+  [AspP
+    [{DP\\{\footnotesize topic}}]
+    [{Asp$'$}
+      [{Asp$^{0}$}]
+      [VP
+        [{DP\\{\footnotesize pred.}}]
+        [{\ird{neh-}}]
       ]
     ]
   ]
@@ -1165,13 +1165,13 @@ negative structures of \ird{Byl jeca} and \ird{Byl zada} are shown below:
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{AspP}
-    [\textit{byl}\\child.\Dir{}\\{\small(pivot)}]
-    [\textsc{Asp$'$}
-      [\textsc{Asp}\\\textsc{[cont]}: \ird{-a}]
-      [\textsc{ExistP}
-        [\textsc{Exist$'$}
-          [\textsc{Exist}\\\ird{jec-}]
+  [AspP
+    [{DP\\\textit{byl}\\{\footnotesize child.\Dir{}}\\{\scriptsize pivot}}]
+    [{Asp$'$}
+      [{Asp\\\ird{-a}\\{\footnotesize\textsc{[cont]}}}]
+      [ExistP
+        [{Exist$'$}
+          [{Exist\\\ird{jec-}}]
         ]
       ]
     ]
@@ -1180,16 +1180,16 @@ negative structures of \ird{Byl jeca} and \ird{Byl zada} are shown below:
 \hspace{2em}
 \begin{forest}
   syntax tree
-  [\textsc{NegP}
-    [\textit{byl}\\child.\Dir{}\\{\small(pivot)}]
-    [\textsc{Neg$'$}
-      [\textsc{Neg}\\{\small($\varnothing$: absorbed by suppletive)}]
-      [\textsc{AspP}
-        [\textsc{Asp$'$}
-          [\textsc{Asp}\\\textsc{[cont]}: \ird{-a}]
-          [\textsc{ExistP}
-            [\textsc{Exist$'$}
-              [\textsc{Exist}\\\ird{zad-}\\{\small(suppletive)}]
+  [NegP
+    [{DP\\\textit{byl}\\{\footnotesize child.\Dir{}}\\{\scriptsize pivot}}]
+    [{Neg$'$}
+      [{Neg\\{\small($\varnothing$: absorbed by suppletive)}}]
+      [AspP
+        [{Asp$'$}
+          [{Asp\\\ird{-a}\\{\footnotesize\textsc{[cont]}}}]
+          [ExistP
+            [{Exist$'$}
+              [{Exist\\\ird{zad-}\\{\scriptsize suppletive}}]
             ]
           ]
         ]
@@ -1301,12 +1301,12 @@ are:
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{ExistP}
-    [\textit{PP}\\{\ird{bylam na}}\\{\small(possessor)}]
-    [\textsc{ExistP}
-      [\textit{tóm}\\book.\Dir{}\\{\small(pivot)}]
-      [\textsc{Exist$'$}
-        [\textsc{Exist}\\\ird{jec-}]
+  [ExistP
+    [{PP\\\ird{bylam na}\\{\footnotesize possessor}}]
+    [ExistP
+      [{DP\\\textit{tóm}\\{\footnotesize book.\Dir{}}\\{\scriptsize pivot}}]
+      [{Exist$'$}
+        [{Exist\\\ird{jec-}}]
       ]
     ]
   ]
@@ -1314,18 +1314,18 @@ are:
 \hspace{2em}
 \begin{forest}
   syntax tree
-  [\textsc{NegP}
-    [\textit{tóm}\\book.\Dir{}\\{\small(pivot)}]
-    [\textsc{Neg$'$}
-      [\textsc{Neg}\\{\small($\varnothing$)}]
-      [\textsc{AspP}
-        [\textsc{Asp$'$}
-          [\textsc{Asp}\\\textsc{[cont]}: \ird{-a}]
-          [\textsc{ExistP}
-            [\textit{PP}\\{\ird{bylam na}}\\{\small(possessor)}]
-            [\textsc{ExistP}
-              [\textsc{Exist$'$}
-                [\textsc{Exist}\\\ird{zad-}\\{\small(suppletive)}]
+  [NegP
+    [{DP\\\textit{tóm}\\{\footnotesize book.\Dir{}}\\{\scriptsize pivot}}]
+    [{Neg$'$}
+      [{Neg\\{\small($\varnothing$)}}]
+      [AspP
+        [{Asp$'$}
+          [{Asp\\\ird{-a}\\{\footnotesize\textsc{[cont]}}}]
+          [ExistP
+            [{PP\\\ird{bylam na}\\{\footnotesize possessor}}]
+            [ExistP
+              [{Exist$'$}
+                [{Exist\\\ird{zad-}\\{\scriptsize suppletive}}]
               ]
             ]
           ]
@@ -1436,16 +1436,16 @@ attributive.
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{AspP}
-    [\textsc{DP}\\{\small(pivot)}
-      [\textit{AttrP}\\\ird{obrohnikovní}\\{\small read-\textsc{trs}-\Pf{}-\textsc{attr}}]
-      [\textit{NP}\\\ird{senica}\\news.\Dir{}]
+  [AspP
+    [{DP\\{\footnotesize pivot}}
+      [{AttrP\\\ird{obrohnikovní}\\{\footnotesize read-\textsc{trs}-\Pf{}-\textsc{attr}}}]
+      [{NP\\\ird{senica}\\{\footnotesize news.\Dir{}}}]
     ]
-    [\textsc{Asp$'$}
-      [\textsc{Asp}\\\ird{jec-a}\\{\small(Exist+Cont)}]
-      [\textsc{ExistP}
-        [\textsc{Exist$'$}
-          [\textsc{Exist}\\\ird{jec-}]
+    [{Asp$'$}
+      [{Asp\\\ird{jec-a}\\{\scriptsize Exist+Cont}}]
+      [ExistP
+        [{Exist$'$}
+          [{Exist\\\ird{jec-}}]
         ]
       ]
     ]
@@ -1558,19 +1558,19 @@ event comes entirely from the attributive.
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{NegP}
-    [\textsc{DP}\\{\small(pivot)}
-      [\textit{AttrP}\\\ird{obrohnikovní}\\{\small read-\textsc{trs}-\Pf{}-\textsc{attr}}]
-      [\textit{NP}\\\ird{senica}\\news.\Dir{}]
+  [NegP
+    [{DP\\{\footnotesize pivot}}
+      [{AttrP\\\ird{obrohnikovní}\\{\footnotesize read-\textsc{trs}-\Pf{}-\textsc{attr}}}]
+      [{NP\\\ird{senica}\\{\footnotesize news.\Dir{}}}]
     ]
-    [\textsc{Neg$'$}
-      [\textsc{Neg}\\{\small($\varnothing$)}]
-      [\textsc{AspP}
-        [\textsc{Asp$'$}
-          [\textsc{Asp}\\\ird{zad-a}\\{\small(NegExst+Cont)}]
-          [\textsc{ExistP}
-            [\textsc{Exist$'$}
-              [\textsc{Exist}\\\ird{zad-}\\{\small(suppletive)}]
+    [{Neg$'$}
+      [{Neg\\{\small($\varnothing$)}}]
+      [AspP
+        [{Asp$'$}
+          [{Asp\\\ird{zad-a}\\{\scriptsize NegExst+Cont}}]
+          [ExistP
+            [{Exist$'$}
+              [{Exist\\\ird{zad-}\\{\scriptsize suppletive}}]
             ]
           ]
         ]
