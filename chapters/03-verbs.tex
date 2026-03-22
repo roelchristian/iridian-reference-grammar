@@ -88,10 +88,10 @@ argument (patient) is merged as the complement of V:
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{VP}
-    [\textit{patient DP}]
-    [\textsc{V}
-      [\textit{root}]
+  [VP
+    [{DP\\{\footnotesize patient}}]
+    [V
+      [{\textit{root}}]
     ]
   ]
 \end{forest}
@@ -238,15 +238,15 @@ confirms that VoiceP immediately dominates VP:
 \begin{forest}
 for tree={align=center}
 [AspP
-  [DP\\{\footnotesize agent}\\{\footnotesize\textsc{[abs]}}]
-  [Asp$'$
-    [Asp\\{\footnotesize\textsc{[erg]}}]
+  [{DP\\{\footnotesize agent}\\{\footnotesize\textsc{[abs]}}}]
+  [{Asp$'$}
+    [{Asp\\{\footnotesize\textsc{[erg]}}}]
     [VoiceP
-      [DP\\{\footnotesize agent}]
-      [Voice$'$
-        [Voice\\\ird{-aš-}\\{\footnotesize\textsc{[agt-abs]}}\\{\scriptsize requires p-abs}]
+      [{DP\\{\footnotesize agent}}]
+      [{Voice$'$}
+        [{Voice\\\ird{-aš-}\\{\footnotesize\textsc{[agt-abs]}}\\{\scriptsize requires p-abs}}]
         [VP
-          [\textit{root}]
+          [{\textit{root}}]
         ]
       ]
     ]
@@ -363,11 +363,11 @@ argument into the event structure between VoiceP and CausP:
 \begin{forest}
 for tree={align=center}
 [ApplP
-  [DP\\{\footnotesize applied argument}]
-  [Appl$'$
-    [{Appl\\{\ird{-éb-}}}]
+  [{DP\\{\footnotesize applied argument}}]
+  [{Appl$'$}
+    [{Appl\\\ird{-éb-}}]
     [VoiceP
-      [\ldots]
+      [{\ldots}]
     ]
   ]
 ]
@@ -470,8 +470,8 @@ Spec,CausP:
 for tree={align=center}
 [CausP
   [{DP\\{\footnotesize causer}}]
-  [Caus$'$
-    [{Caus\\{\ird{-na-}}}]
+  [{Caus$'$}
+    [{Caus\\\ird{-na-}}]
     [ApplP
       [{\ldots}]
     ]
@@ -523,15 +523,15 @@ the result is the ordinary ergative transitive construction.
 for tree={align=center}
 [AspP
   [{DP\\{\footnotesize patient}\\{\footnotesize\textsc{[abs]}}}]
-  [Asp$'$
+  [{Asp$'$}
     [{Asp\\{\footnotesize\textsc{[erg]}}}]
     [VoiceP
       [{DP\\{\footnotesize agent}\\{\footnotesize\textsc{[trs]}}}]
-      [Voice$'$
-        [{Voice\\{\ird{-n-}}\\{\footnotesize\textsc{[pat-abs]}}}]
+      [{Voice$'$}
+        [{Voice\\\ird{-n-}\\{\footnotesize\textsc{[pat-abs]}}}]
         [VP
           [{DP\\{\footnotesize patient}}]
-          [\textit{root}]
+          [{\textit{root}}]
         ]
       ]
     ]
@@ -600,12 +600,12 @@ is recoverable or irrelevant.
 for tree={align=center}
 [AspP
   [{DP\\{\footnotesize patient}\\{\footnotesize\textsc{[abs]}}}]
-  [Asp$'$
+  [{Asp$'$}
     [{Asp\\{\footnotesize\textsc{[nom]}}}]
     [VoiceP
       [{DP\\{\footnotesize agent}\\{\footnotesize\textsc{[obl]}}}]
-      [Voice$'$
-        [{Voice\\{\ird{-n-}}\\{\footnotesize\textsc{[pat-abs]}}}]
+      [{Voice$'$}
+        [{Voice\\\ird{-n-}\\{\footnotesize\textsc{[pat-abs]}}}]
         [VP
           [{DP\\{\footnotesize patient}}]
           [{\textit{root}}]
@@ -1084,15 +1084,15 @@ determined by the semantics of the predication NegP takes in its scope.
     \medskip
     \begin{forest}
       syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
-      [\textsc{NegP}
-        [\textit{topic DP}]
-        [\textsc{Neg$'$}
-          [\textsc{Neg$^{0}$}\\\ird{zá-}\\{\small(PF prefix)}]
-          [\textsc{AspP}
-            [\textsc{Asp$'$}
-              [\textsc{Asp}\\\textit{asp.align}]
-              [\textsc{VP}
-                [\textsc{V}\\\textit{root}]
+      [NegP
+        [{DP\\{\footnotesize topic}}]
+        [{Neg$'$}
+          [{Neg$^{0}$}\\\ird{zá-}\\{\small(PF prefix)}]
+          [AspP
+            [{Asp$'$}
+              [{Asp\\{\footnotesize\textit{asp.align}}}]
+              [VP
+                [{V\\{\footnotesize\textit{root}}}]
               ]
             ]
           ]
@@ -1107,14 +1107,14 @@ determined by the semantics of the predication NegP takes in its scope.
     \medskip
     \begin{forest}
       syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
-      [\textsc{NegP}
-        [\textit{topic DP}]
-        [\textsc{Neg$'$}
-          [\textsc{Neg$^{0}$}\\\ird{staly}]
-          [\textsc{EquP}
-            [\textit{pred.\ DP}]
-            [\textsc{Eq$'$}
-              [\textsc{Eq$^{0}$}\\{$\varnothing$}]
+      [NegP
+        [{DP\\{\footnotesize topic}}]
+        [{Neg$'$}
+          [{Neg$^{0}$\\\ird{staly}}]
+          [EquP
+            [{DP\\{\footnotesize pred.}}]
+            [{Eq$'$}
+              [{Eq$^{0}$\\{$\varnothing$}}]
             ]
           ]
         ]
@@ -1128,16 +1128,16 @@ determined by the semantics of the predication NegP takes in its scope.
     \medskip
     \begin{forest}
       syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
-      [\textsc{NegP}
-        [\textit{pivot DP}]
-        [\textsc{Neg$'$}
-          [\textsc{Neg$^{0}$}\\{\small($\varnothing$: absorbed)}]
-          [\textsc{AspP}
-            [\textsc{Asp$'$}
-              [\textsc{Asp}\\\textit{asp}]
-              [\textsc{ExistP}
-                [\textsc{Exist$'$}
-                  [\textsc{Exist$^{0}$}\\\ird{zad-}\\{\small(suppletive)}]
+      [NegP
+        [{DP\\{\footnotesize pivot}}]
+        [{Neg$'$}
+          [{Neg$^{0}$\\{\small($\varnothing$: absorbed)}}]
+          [AspP
+            [{Asp$'$}
+              [{Asp\\{\footnotesize\textit{asp}}}]
+              [ExistP
+                [{Exist$'$}
+                  [{Exist$^{0}$\\\ird{zad-}\\{\small(suppletive)}}]
                 ]
               ]
             ]
@@ -1168,11 +1168,11 @@ head-final NegP structure transparently:
 \begin{center}
 \begin{forest}
   syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
-  [\textsc{NegP}
-    [\textit{topic DP}]
-    [\textsc{Neg$'$}
-      [\textit{pred-DP/pred-NP}]
-      [\textsc{Neg$^{0}$}\\\ird{staly}]
+  [NegP
+    [{DP\\{\footnotesize topic}}]
+    [{Neg$'$}
+      [{DP\\{\footnotesize pred.}}]
+      [{Neg$^{0}$\\\ird{staly}}]
     ]
   ]
 \end{forest}
@@ -2846,9 +2846,9 @@ the C head follows its complement TP:
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{CP}
-    [\textsc{TP}\\\textit{embedded clause}\\\textit{(verb + -e)}]
-    [\textsc{C}\\\ird{po}]
+  [CP
+    [{TP\\\textit{embedded clause}\\\textit{(verb + -e)}}]
+    [{C\\\ird{po}}]
   ]
 \end{forest}
 \end{center}
@@ -2858,9 +2858,9 @@ the C head follows its complement TP:
 \begin{center}
 \begin{forest}
   syntax tree
-  [\textsc{matrix VP}
-    [\textsc{CP}\\{[\textit{emb-clause}-\ird{e}] [\ird{po}]}]
-    [\textsc{matrix V}]
+  [VP
+    [{CP\\{[\textit{emb-clause}-\ird{e}] [\ird{po}]}}]
+    [V]
   ]
 \end{forest}
 \end{center}
