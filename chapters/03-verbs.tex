@@ -128,6 +128,488 @@ Loan stems with surface \orth{g} are assigned analogically to the voiced velar/f
 
 Outside the closed antipassive classes, verbs use the same general morphophonemic engine as nouns: suffix class selection, weak-\ird{e} deletion or retention, grade formation where licensed, soft-stem selection, and finally cluster and voicing cleanup. The difference is one of density rather than mechanism. Nouns expose that engine most heavily in their case paradigms, while verbs deploy it more selectively in the irrealis, the simultaneous converb, the conjunctive linker, and certain nominalizing formations.
 
+\section{Aspect and alignment}
+\label{sec:aspect}
+
+Iridian grammaticalizes \term{aspect} rather than \term{tense} on the finite
+verb. There is no dedicated past-, present-, or future-tense suffix; temporal
+location is instead inferred from discourse context, temporal adverbials, and
+the lexical semantics of the predicate. The finite verb distinguishes five
+aspectual categories: the {perfective}, the {retrospective}, the {continuous},
+the {progressive}, and the {contemplative}. Aspect and alignment are fused in a
+single suffix, and the aspect selected on the verb determines the clause's
+alignment frame: the perfective and retrospective take ergative-absolutive
+alignment, whereas the continuous, progressive, and contemplative take
+nominative-accusative alignment.
+
+Three temporal notions must be kept distinct. Tense locates a situation in time
+relative to a reference point, most commonly the moment of speaking. Grammatical
+aspect does not locate the situation in this way, but construes its internal
+temporal contour: whether it is viewed as bounded, ongoing, prior from a later
+vantage point, or not yet realized. \term{Lexical aspect} or \term{Aktionsart},
+by contrast, belongs to the predicate itself. A predicate may denote a state,
+activity, accomplishment, or achievement independently of the inflection it
+bears. Iridian aspectual morphology therefore does not determine the inherent
+temporal type of the eventuality; rather, it imposes a viewpoint upon an
+eventuality whose lexical contour is supplied by the verb phrase.
+
+A useful descriptive frame is Reichenbach's distinction among speech time
+(\textit{S}), reference time (\textit{R}), and event time (\textit{E}):
+\textit{S} is the moment of utterance, \textit{E} the time at which the
+situation itself takes place, and \textit{R} the temporal vantage point from
+which that situation is presented. The usefulness of \textit{R} is that speakers
+do not always describe an event directly from the moment of speaking, but may
+instead locate it from some later or earlier point already established in the
+discourse; English \textit{had left}, for example, places the leaving
+(\textit{E}) before a reference point (\textit{R}) that is itself prior to the
+speech moment (\textit{S}). In a tense-prominent system, finite morphology often
+fixes the relation among all three. In Iridian, by contrast, the finite suffix
+primarily construes the relation between \textit{E} and \textit{R}, while the
+relation of \textit{R} to \textit{S} is often left to context, temporal
+adverbials, and discourse sequencing. This is why the same aspectual category
+may receive past-, present-, or future-oriented readings in different
+environments without ceasing to be aspectual rather than temporal.
+
+The five categories may be sketched in these terms. The \term{perfective}
+presents an eventuality as bounded and viewed as a whole, with \textit{R}
+aligned to the event in its entirety. The \term{retrospective} places \textit{E}
+before \textit{R}, yielding a later vantage point from which present relevance,
+result, prior experience, or other discourse effects of anteriority may be
+construed. The \term{continuous} and \term{progressive} both place \textit{R}
+within \textit{E}, but they differ in the kind of internal view imposed: the
+continuous presents the situation as durative or internally extended, whereas
+the progressive more narrowly profiles a dynamic event as actively unfolding at
+the reference point. The \term{contemplative} places \textit{E} after
+\textit{R}, presenting the event as projected, intended, expected, or otherwise
+not yet realized. English translation equivalents therefore vary by context:
+none of these categories should be reduced to simple labels such as ``past,''
+``present,'' or ``future.'' Moreover, because viewpoint aspect interacts with
+lexical aspect, the same inflection does not yield identical interpretive
+effects with every predicate class. With states and activities, the continuous
+naturally yields persistent or ongoing readings; with accomplishments it
+typically selects an internal phase rather than a completed endpoint; with
+achievements it may invite iterative, preparatory, or inceptive coercions.
+Conversely, the perfective and retrospective readily package telic predicates as
+bounded wholes or prior results, but with atelic predicates they instead delimit
+a stretch, occasion, or state viewed from an external vantage point. The exact
+semantic and distributional consequences of these interactions are discussed in
+the subsections that follow.
+
+Typologically, this pattern is an instance of aspect-conditioned split
+ergativity. Iridian does not maintain a single alignment pattern across all
+finite clauses; rather, the aspectual category selected on the verb determines
+whether the clause is built on an ergative-absolutive or a nominative-accusative
+frame. Aspect in Iridian therefore has consequences at two levels at once: it
+construes the temporal profile of the eventuality and it determines the
+morphosyntactic alignment through which the clause is organized.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  x=1.05cm,y=0.95cm,
+  evt/.style={line width=1.1pt},
+  refpt/.style={circle,fill,inner sep=1.3pt},
+  speech/.style={diamond,draw,inner sep=1.2pt},
+  rowlab/.style={anchor=east,font=\small},
+  every node/.style={font=\small}
+]
+
+% perfective
+\node[rowlab] at (0,0) {perfective};
+\draw[->] (0.5,0) -- (8.5,0);
+\draw[evt] (3.2,0) -- (5.0,0);
+\draw (3.2,0.18) -- (3.2,-0.18);
+\draw (5.0,0.18) -- (5.0,-0.18);
+\draw[decorate,decoration={brace,mirror,amplitude=4pt}] (3.2,-0.35) -- (5.0,-0.35)
+  node[midway,yshift=-0.38cm] {$R$};
+\node at (4.1,0.35) {$E$};
+\node[speech] (s1) at (4.1,-0.95) {};
+\node[below=2pt of s1] {$S$};
+\draw[dashed] (4.1,-0.78) -- (4.1,-0.08);
+
+% retrospective
+\node[rowlab] at (0,-1.6) {retrospective};
+\draw[->] (0.5,-1.6) -- (8.5,-1.6);
+\draw[evt] (2.2,-1.6) -- (3.8,-1.6);
+\draw (2.2,-1.42) -- (2.2,-1.78);
+\draw (3.8,-1.42) -- (3.8,-1.78);
+\node at (3.0,-1.25) {$E$};
+\node[refpt,label=above:$R$] (r2) at (6.1,-1.6) {};
+\node[speech] (s2) at (6.1,-2.55) {};
+\node[below=2pt of s2] {$S$};
+\draw[dashed] (6.1,-2.38) -- (6.1,-1.78);
+
+% continuous
+\node[rowlab] at (0,-3.2) {continuous};
+\draw[->] (0.5,-3.2) -- (8.5,-3.2);
+\draw[dotted] (1.8,-3.2) -- (2.4,-3.2);
+\draw[evt] (2.4,-3.2) -- (6.3,-3.2);
+\draw[dotted] (6.3,-3.2) -- (6.9,-3.2);
+\node at (4.4,-2.85) {$E$};
+\node[refpt,label=above:$R$] (r3) at (4.4,-3.2) {};
+\node[speech] (s3) at (4.4,-4.15) {};
+\node[below=2pt of s3] {$S$};
+\draw[dashed] (4.4,-3.98) -- (4.4,-3.38);
+
+% progressive
+\node[rowlab] at (0,-4.8) {progressive};
+\draw[->] (0.5,-4.8) -- (8.5,-4.8);
+\draw[evt] (2.6,-4.8) -- (6.5,-4.8);
+\draw (2.6,-4.62) -- (2.6,-4.98);
+\draw (6.5,-4.62) -- (6.5,-4.98);
+\draw[->] (3.8,-4.45) -- (5.0,-4.45);
+\node at (4.55,-4.1) {dynamic phase};
+\node[refpt,label=above:$R$] (r4) at (4.2,-4.8) {};
+\node at (5.9,-4.45) {$E$};
+\node[speech] (s4) at (4.2,-5.75) {};
+\node[below=2pt of s4] {$S$};
+\draw[dashed] (4.2,-5.58) -- (4.2,-4.98);
+
+% contemplative
+\node[rowlab] at (0,-6.4) {contemplative};
+\draw[->] (0.5,-6.4) -- (8.5,-6.4);
+\node[refpt,label=above:$R$] (r5) at (3.3,-6.4) {};
+\node[speech] (s5) at (3.3,-7.35) {};
+\node[below=2pt of s5] {$S$};
+\draw[dashed] (3.3,-7.18) -- (3.3,-6.58);
+\draw[evt] (5.0,-6.4) -- (6.7,-6.4);
+\draw (5.0,-6.22) -- (5.0,-6.58);
+\draw (6.7,-6.22) -- (6.7,-6.58);
+\node at (5.85,-6.05) {$E$};
+
+\node[anchor=west,align=left,font=\footnotesize] at (0.6,-8.15)
+  {Dashed connectors mark the unmarked deictic baseline in which $R$ coincides with $S$.\\
+   In discourse, adverbials or sequencing may shift $R$ independently of $S$.};
+
+\end{tikzpicture}
+\caption{Reichenbachian schematic for Iridian aspect. Here $E$ = event time,
+$R$ = reference time, and $S$ = speech time. In the perfective, $R$ is shown as
+coextensive with the bounded event; elsewhere it is shown as a point-like
+vantage.}
+\label{fig:iridian-aspect-reichenbach}
+\end{figure}
+
+\subsection{Alignment in nominative aspects (continuous, progressive, contemplative)}
+
+In the continuous, progressive, and contemplative aspects the main argument of
+the verb stands in the direct case regardless of transitivity, while the patient
+of a transitive verb appears in the indirect. This is a nominative-accusative
+pattern, the direct case serving as the absolutive and the indirect as the
+oblique.
+
+\pex
+\a
+\begingl
+\gla Marek zmacime.//
+\glb Marek.\Dir{} run-\Prog{}//
+\glft \trsl{Marek is running.} \lingcontext{intransitive}//
+\endgl
+\a
+\begingl
+\gla Marek travě piastime.//
+\glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
+\glft \trsl{Marek is eating bread.} \lingcontext{transitive; P = \Ind{}}//
+\endgl
+\a
+\begingl
+\gla Vytam shoda.//
+\glb shirt.\Dir{} wear-\Cont{}//
+\glft \trsl{(I) am wearing a shirt.} \lingcontext{stative continuous}//
+\endgl
+\a
+\begingl
+\gla Vytam shodime.//
+\glb shirt.\Dir{} wear-\Prog{}//
+\glft \trsl{(I) am putting on a shirt.} \lingcontext{dynamic progressive}//
+\endgl
+\xe
+
+\subsection{Alignment in ergative aspects (perfective and retrospective)}
+
+In the perfective and retrospective aspects the patient of a transitive verb is placed in the direct case, and the agent takes the transitive case. This is an ergative-absolutive pattern; what Iridian grammar calls the \emph{transitive case} is, in typological terms, the ergative, and the \emph{direct case} serves as the absolutive. For a transitive verb to trigger ergative alignment, it must carry the Voice head \ird{-n-} immediately before the aspect suffix.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Aspect-alignment suffixes.}\label{tab:aspect}
+	\medskip
+	\begin{tabularx}{0.85\textwidth}{L l L}
+		\toprule
+		{\sc aspect} & {\sc suffix} & {\sc notes} \\
+		\midrule
+		Perfective              & \ird{-ek} / \ird{-ik}  & \ird{-ik} when stem vowel is \ird{ě} or \ird{e} (dissimilation; see §\ref{sec:aspect-pf}); \ird{-nik} after transitive \ird{-n-} \\
+		Retrospective           & \ird{-ac} & \\
+		Continuous              & \ird{-a}   & \\
+		Progressive             & \ird{-ime} & \\
+		Contemplative           & \ird{-ach} & \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+Three configurations are available in the ergative aspects. When the Voice head \ird{-n-} is present, the clause takes full ergative alignment: the patient is licensed as a core argument and appears in the direct case, and the agent takes the transitive. When \ird{-n-} is absent and the verb bears the antipassive \ird{-aš-}, the agent appears in the direct case and the patient is removed from core argument structure. When neither is present, the bare perfective suffix is used, a form grammatical only with inherently intransitive verbs, for which the question of alignment does not arise. For a transitive verb the bare perfective is inadmissible, because the patient lacks the overt patient-licensing Voice head required for core realization.
+
+\pex
+\a
+\begingl
+\gla Travat Marku piaštnik.//
+\glb bread.\Dir{}.\Def{} Marek.\Trs{} eat-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek ate the bread.} \lingcontext{ergative; P = \Dir{}}//
+\endgl
+\a
+\begingl
+\gla Marek piašček.//
+\glb Marek.\Dir{} eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek ate.} \lingcontext{antipassive; A = \Dir{}}//
+\endgl
+\xe
+
+The choice between these constructions is governed primarily by the discourse status of the patient. The ergative construction foregrounds the patient: it is the construction of a specific, discourse-trackable participant who is either newly introduced or reactivated, and the event is asserted as bringing about a change of state in that participant. It is accordingly characteristic of narrative foreground, where the consequences of events for particular persons or things constitute the substance of what is related. Patient definiteness correlates strongly with the ergative, and the definite marker \ird{-t} most commonly appears on the patient noun in this construction, though it is not formally required.
+
+The antipassive construction, by contrast, foregrounds the agent's activity without reference to any outcome in a patient. It is the construction of choice when the patient is non-referential, semantically incorporated, or of no discursive moment: in habitual and generic statements, in activity-focus contexts wherein the event itself and not its effect upon some participant is what is asserted, and wherever the clause contains no patient at all. The guiding principle is that the patient, where it exists, must either be present through the ergative construction or wholly absent; the antipassive admits of no intermediate state in which a patient is demoted to an oblique position.
+
+\subsection{The perfective}\label{sec:aspect-pf}
+
+The perfective encodes a completed action viewed as a whole at a specific point in time, and is the primary narrative aspect.
+
+The bare intransitive perfective suffix presents two allomorphs: \ird{-ek} is the default form, and \ird{-ik} appears where the stem's final syllable has \ird{ě} or \ird{e} as its nucleus. The raising is dissimilatory in character: adjoining \ird{-ek} directly to such a stem would produce a CěCe or CeCe sequence across a single intervening consonant, which the language avoids. The allomorphy is thus conditioned by the stem vowel and not by the thematic consonant class. Where a valency morpheme --- the antipassive \ird{-aš-}, the applicative \ird{-éb-}, or the causative \ird{-na-} --- intervenes between stem and suffix, it contributes its own vowel and breaks the sequence; raising accordingly does not apply in derived forms. The ergative perfective \ird{-nik}, which always follows the Voice head \ird{-n-}, is a fixed form and does not derive from this rule. % Cross-reference: this dissimilation should be described in the phonology chapter alongside the other vowel alternations.
+
+When negated, the perfective carries a specific implicature: the negated perfective describes something that was expected to occur but did not. For the neutral negation of a past event, free from this implication, the retrospective is preferred.
+
+\pex
+\a
+\begingl
+\gla Marek zapiaščik.//
+\glb Marek.\Dir{} \Neg{}-eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek didn't eat (but he should have).}//
+\endgl
+\a
+\begingl
+\gla Marek zapiaščac.//
+\glb Marek.\Dir{} \Neg{}-eat-\Antip{}-\Ret{}//
+\glft \trsl{Marek didn't eat (neutral past).}//
+\endgl
+\xe
+
+\subsection{The retrospective}
+
+The retrospective (\ird{-ac}) describes a past action with continuing present relevance, or an action that was non-volitional or accidental. It corresponds in certain uses to the English perfect, in others to a non-volitional past.
+
+\pex
+\a
+\begingl
+\gla Pražě de stožac.//
+\glb Prague.\Ind{} to go-\Ret{}//
+\glft \trsl{(I) have (been to) Prague before.}//
+\endgl
+\a Compare:
+\begingl
+\gla Bych Pražě de stožek.//
+\glb yesterday Prague.\Ind{} to go-\Pf{}//
+\glft \trsl{Yesterday I went to Prague.} \lingcontext{specific past event; perfective}//
+\endgl
+\xe
+
+The ergative and antipassive constructions encode distinct kinds of continuing relevance in the retrospective. The transitive retrospective (\ird{-n-ac}) situates the relevance in the outcome state of the patient: something has been affected, and that effect persists or bears upon the present situation. The antipassive retrospective (\ird{-aš-ac}) locates the relevance in the experience of the agent: the event is part of the agent's history, not a change in some external participant. This distinction parallels the English opposition between \textit{the bread has been eaten} --- outcome-relevant, a fact about the bread --- and \textit{I have eaten} --- experiential, a fact about the speaker.
+
+\subsection{Ambitransitive verbs}\label{sec:ambitransitive}
+
+A small class of verbs possesses two readings of different argument structure: an intransitive reading, in which no patient is structurally available, and a transitive reading, in which a patient is licensed. These are lexical ambitransitives; neither reading is derived from the other through the antipassive, applicative, or causative, but both are basic senses of the verb. Two examples are \ird{lov-} (\trsl{hunt, forage [intrans.]; catch, take [trans.]}) and \ird{kěl-} (\trsl{sing, perform [intrans.]; sing a song, chant a text [trans.]}).
+
+The diagnostic for membership in this class is whether the Voice head \ird{-n-} is admissible in one reading but impossible in the other. For \ird{lov-}: \ird{lovnik} is grammatical in the transitive reading, as something was caught; no \ird{-n-} form is available in the intransitive reading, wherein the event is construed as the activity of hunting itself, with no quarry in the event frame. The bare perfective accesses only the intransitive reading; the antipassive and ergative access only the transitive.
+
+\pex
+\a
+\begingl
+\gla Marek bych lovek.//
+\glb Marek.\Dir{} yesterday hunt-\Pf{}//
+\glft \trsl{Marek went hunting yesterday.} \lingcontext{intransitive reading; bare \ird{-ek}}//
+\endgl
+\a
+\begingl
+\gla Zvěrat Marku lovnik.//
+\glb game.\Dir{}.\Def{} Marek.\Trs{} hunt-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek caught the game.} \lingcontext{transitive reading; ergative}//
+\endgl
+\a
+\begingl
+\gla Marek bych lovžek.//
+\glb Marek.\Dir{} yesterday hunt-\Antip{}-\Pf{}//
+\glft \trsl{Marek was hunting yesterday.} \lingcontext{transitive reading; antipassive}//
+\endgl
+\xe
+
+The two non-ergative forms, though they may coincide in surface expression in many contexts, are not interchangeable. \ird{Lovek} belongs to the intransitive reading: hunting is construed as a pure activity, with no quarry present even in the conceptual frame of the event. \ird{Lovžek} belongs to the transitive reading: the hunt is directed toward prey, and that prey --- though it may not be expressed in any case form, the antipassive having removed it from the clause's argument structure --- is none the less understood as part of the conceptual event. The distinction corresponds, in practice, to the difference between going out to hunt and being engaged in the act of hunting something.
+
+For \ird{kěl-}, the stem vowel is \ird{ě}, so the bare intransitive perfective takes the \ird{-ik} allomorph by dissimilation: \ird{kělek} would create a CěCe sequence across the single intervening \ird{-l-}, which is avoided. The antipassive \ird{kělšek} is unaffected, the \ird{-š-} of the antipassive introducing its own vowel and breaking the sequence. The ergative \ird{kělnik} is the fixed ergative form; it and the bare \ird{kělik} are distinguished only by the presence or absence of \ird{-n-}:
+
+\pex
+\a \ird{kělik} \trsl{sang, performed} \lingcontext{intransitive; bare \ird{-ik}: no song in event frame}
+\a \ird{kělnik} \trsl{sang it (a specific song)} \lingcontext{ergative; \ird{-n-ik}: song = \Dir{}}
+\a \ird{kělšek} \trsl{was singing} \lingcontext{antipassive; \ird{-š-ek}: Class~II-A augment}
+\xe
+
+The minimal pair \ird{kělik} / \ird{kělnik} provides the clearest illustration in the grammar of the bare perfective opposed to the ergative, the two forms differing only by the inserted \ird{-n-}.
+
+\subsection{The continuous}
+
+The continuous (\ird{-a}) encodes an ongoing state or a habitual, generic action and is stative in character.
+
+\ex
+\begingl
+\gla Praže to mulša.//
+\glb Prague.\Ind{} \textsc{loc} live-\Cont{}//
+\glft \trsl{(I) live in Prague.}//
+\endgl
+\xe
+
+\subsection{The progressive}
+
+The progressive (\ird{-ime}) encodes a dynamic activity in progress, distinguished from the continuous by its dynamic rather than stative character. Compare the stative \ird{Vytam shoda}, \textit{I am wearing a shirt} --- a state of affairs obtaining at the time of speaking --- with the progressive \ird{Vytam shodime}, \textit{I am putting on a shirt}, which describes an action actively in course.
+
+\subsection{The contemplative}
+
+The contemplative (\ird{-ach}) encodes a mental state directed toward a potential future action: intention, consideration, or disposition toward an act not yet performed. It may be rendered in English as \textit{about to}, \textit{considering}, or \textit{intending to}, according to context.
+
+
+\subsection{Formal analysis: the Asp.Align morpheme}
+\label{sec:vm-asp}
+
+The aspect-alignment suffix is the sole obligatory morpheme in every
+finite Iridian verbal form. Its double burden --- encoding both the
+aspect of the event and the alignment pattern of case assignment ---
+makes it the central theoretical challenge of the Iridian verbal
+system.
+
+\subsubsection{Aspect-driven case assignment}
+\label{sec:vm-asp-case}
+
+Iridian alignment is organized by the Asp.Align head, whose aspectual
+values determine the clause's default absolutive orientation. The
+alignment defaults are:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape ERG-aspect domain (perfective, retrospective).]
+  Asp.Align assigns \textsc{abs} (direct case) to the internal
+  argument (patient) and \textsc{erg} (transitive case) to the
+  external argument (agent). The ergative is the marked, dependent
+  case: it is assigned to the agent only when a patient has already
+  received absolutive (Marantz 1991). The default absolutive is
+  therefore the \emph{patient}.
+\item[\upshape NOM-aspect domain (continuous, progressive,
+  contemplative).] Asp.Align assigns \textsc{abs} (direct case) to
+  the external argument (agent) and \textsc{obl} (indirect case) to
+  the internal argument (patient). The default absolutive is
+  therefore the \emph{agent}.
+\end{description}
+
+\noindent These defaults constitute the unmarked shape of the
+Iridian alignment system. They may be altered by overt Voice
+morphology. When a transitive stem is merged with an overt Voice
+head carrying a specification for absolutive orientation, that
+specification takes precedence over the aspectual default and is
+respected by Asp.Align in the realization of the clause. The
+aspectual head therefore determines the default alignment pattern,
+but an overt Voice head may impose a different absolutive selection
+in marked constructions.
+
+The morpheme \ird{-n-} is such a head: it licenses the internal
+argument and specifies \textsc{[pat-abs]}, yielding ordinary
+ergative transitives in the ERG domain and passive constructions in
+the NOM domain (§\,\ref{sec:vm-n}, §\,\ref{sec:vm-passive}).
+The antipassive \ird{-aš-} likewise constitutes an overt Voice head,
+but it is subject to a structural input condition: it may apply only
+where the patient already stands as the absolutive participant, and
+it therefore surfaces exclusively in ERG-aspect clauses
+(§\,\ref{sec:vm-antipassive}).
+
+In the Minimalist framework, the Asp.Align head's default case
+assignment is mediated by Agree: the head probes its c-command domain
+for DPs bearing unvalued Case features and values them according to
+its featural content (Chomsky 2001). When an overt Voice head is
+present, its absolutive specification is satisfied before Asp.Align
+probes, and the remaining non-absolutive argument receives the case
+predicted by the aspectual domain. The fusion of aspect and alignment
+into a single suffix is not an accident: it reflects the close
+coupling in Iridian between the temporal framing of an event and the
+information-structural decision of which participant is the clause's
+absolutive pivot.
+
+\subsubsection{Split ergativity and the information-structure interface}
+\label{sec:vm-asp-info}
+
+The grammar's description of aspect selection as a
+\emph{pragmatic} decision (the speaker selects the aspect that
+places the discourse-salient argument in absolutive) requires
+formal reconciliation with the syntactic Agree mechanism described
+above.
+
+Two strategies are available within Minimalism:
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Top-down feature percolation.] Topic assignment
+  operates in the left periphery (Spec,TopP), where an argument
+  already bears topic features. These features are passed down
+  (through some mechanism of syntactic binding or coindexation) to
+  the Asp head, constraining which Vocabulary Item is inserted at
+  Asp. A patient-topic clause selects an ergative Asp morpheme; an
+  agent-topic clause selects a nominative Asp morpheme. This
+  requires either late lexical insertion (consistent with
+  Distributed Morphology) or a bidirectional Agree relation between
+  TopP and AspP.
+\item[\upshape Late Vocabulary Insertion.] In a DM-style account
+  (Halle \& Marantz 1993; Embick \& Noyer 2007), the Asp node in narrow syntax is
+  underspecified for the choice of morpheme. Vocabulary Items are
+  inserted post-syntactically by matching feature bundles. The
+  speaker's information-structural decision (which argument is
+  discourse-topic) is registered as a feature [\textsc{top}] on one
+  of the DP arguments; this feature is present when Vocabulary
+  Insertion takes place and conditions which Asp morpheme is
+  inserted.
+\end{description}
+
+\noindent The DM approach has the advantage of keeping
+narrow-syntax Agree simple (the Asp head probes for DPs in its
+c-command domain without knowing in advance which DP will be the
+absolutive) while assigning information-structural conditioning to
+the PF component. This is the preferred analysis here, though
+it requires elaboration of how [\textsc{top}] features are
+represented in the DM morphological component.
+
+The key theoretical desideratum: the grammar's informal claim that
+``aspect choice is partly pragmatic'' must be formalized as a
+specific interface mechanism. Until this is done, the claim risks
+being merely redescriptive. A concrete proposal: the
+[\textsc{top}] feature on a DP argument is set at the information
+structure level (in the C-domain or in a dedicated information
+structure component co-indexed with TopP), and this feature
+determines which Asp Vocabulary Item is inserted. The split is
+then not a quirk of case morphology but a reflex of the language's
+deep commitment to topic-comment organization at every level of
+the grammar.
+
+\subsubsection{Mood as a competing head}
+\label{sec:vm-mood-asp}
+
+When a mood suffix is present (imperative \ird{-ím}, prohibitive
+\ird{-é}, hortative \ird{-ká/-ku}, irrealis \ird{-ěv}), the
+Asp.Align slot is suppressed entirely: mood replaces aspect. In
+syntactic terms, this is most naturally analyzed as the MoodP head
+blocking the Asp head: when MoodP is merged above AspP, the Asp
+head is defective and receives no Vocabulary Item at the AspP node.
+The morphological output is therefore Mood without Aspect.
+
+This has a consequence for case assignment. In the directive moods,
+the case-assigning features of the Asp.Align head are absent, and
+case is instead determined by the principles of the directive domain
+described in §\,\ref{sec:mood-directive}: the direct case is assigned
+to the theme or the clause's sole participant, the transitive to an
+overt speech-act participant subject where competition would otherwise
+arise, and the indirect to applicative beneficiaries and causative
+causees. The directive case geometry is therefore not a carry-over
+of either the ergative or the nominative-accusative indicative
+alignment, but the output of its own case-assignment principles once
+the Asp.Align head is suppressed.
+
+
 \section{Valency operations}
 
 Three derivational operations may be applied to the verb stem before the aspect-alignment suffix: the antipassive, the applicative, and the causative. Where more than one is present, the order is fixed: antipassive or applicative precedes the causative.
@@ -662,496 +1144,32 @@ non-core oblique participant.
 
 \subsection{Pragmatic use of valency operations}
 
-The choice among ergative, antipassive, applicative, and causative is not purely mechanical. Each construction offers the speaker a distinct way of packaging the event for discourse. The antipassive is used when the patient is generic, non-referential, semantically incorporated into the activity, recoverable from context, or intentionally backgrounded. Its effect is to keep the agent in absolutive position and to present the clause as being about what the agent did rather than about what happened to some patient.
-
-The applicative serves the opposite discourse function: it pulls a formerly peripheral participant into the centre of the clause. A beneficiary, destination, location, or instrument is promoted when that participant is the one the discourse is tracking, when it will remain topical in subsequent clauses, or when the speaker wishes to construe the event from its perspective rather than from that of an unexpressed or backgrounded patient.
-
-The causative likewise has a pragmatic life beyond its valency-changing effect. By choosing a causative rather than a simple predicate, the speaker frames the event in terms of inducement, delegated agency, or control. In direct contexts this may foreground authority or coercion; in weaker retrospective contexts it may soften the causer's responsibility, presenting the caused event as something merely permitted, arranged, or indirectly brought about rather than personally carried out.
-
-The applicative and causative are compatible with the imperative and hortative and occupy their regular positions in the morphological template before the mood suffix.
-
-
-\section{Aspect and alignment}
-\label{sec:aspect}
-
-Iridian grammaticalizes \term{aspect} rather than \term{tense} on the finite
-verb. There is no dedicated past-, present-, or future-tense suffix; temporal
-location is instead inferred from discourse context, temporal adverbials, and
-the lexical semantics of the predicate. The finite verb distinguishes five
-aspectual categories: the {perfective}, the {retrospective}, the {continuous},
-the {progressive}, and the {contemplative}. Aspect and alignment are fused in a
-single suffix, and the aspect selected on the verb determines the clause's
-alignment frame: the perfective and retrospective take ergative-absolutive
-alignment, whereas the continuous, progressive, and contemplative take
-nominative-accusative alignment.
-
-Three temporal notions must be kept distinct. Tense locates a situation in time
-relative to a reference point, most commonly the moment of speaking. Grammatical
-aspect does not locate the situation in this way, but construes its internal
-temporal contour: whether it is viewed as bounded, ongoing, prior from a later
-vantage point, or not yet realized. \term{Lexical aspect} or \term{Aktionsart},
-by contrast, belongs to the predicate itself. A predicate may denote a state,
-activity, accomplishment, or achievement independently of the inflection it
-bears. Iridian aspectual morphology therefore does not determine the inherent
-temporal type of the eventuality; rather, it imposes a viewpoint upon an
-eventuality whose lexical contour is supplied by the verb phrase.
-
-A useful descriptive frame is Reichenbach's distinction among speech time
-(\textit{S}), reference time (\textit{R}), and event time (\textit{E}):
-\textit{S} is the moment of utterance, \textit{E} the time at which the
-situation itself takes place, and \textit{R} the temporal vantage point from
-which that situation is presented. The usefulness of \textit{R} is that speakers
-do not always describe an event directly from the moment of speaking, but may
-instead locate it from some later or earlier point already established in the
-discourse; English \textit{had left}, for example, places the leaving
-(\textit{E}) before a reference point (\textit{R}) that is itself prior to the
-speech moment (\textit{S}). In a tense-prominent system, finite morphology often
-fixes the relation among all three. In Iridian, by contrast, the finite suffix
-primarily construes the relation between \textit{E} and \textit{R}, while the
-relation of \textit{R} to \textit{S} is often left to context, temporal
-adverbials, and discourse sequencing. This is why the same aspectual category
-may receive past-, present-, or future-oriented readings in different
-environments without ceasing to be aspectual rather than temporal.
-
-The five categories may be sketched in these terms. The \term{perfective}
-presents an eventuality as bounded and viewed as a whole, with \textit{R}
-aligned to the event in its entirety. The \term{retrospective} places \textit{E}
-before \textit{R}, yielding a later vantage point from which present relevance,
-result, prior experience, or other discourse effects of anteriority may be
-construed. The \term{continuous} and \term{progressive} both place \textit{R}
-within \textit{E}, but they differ in the kind of internal view imposed: the
-continuous presents the situation as durative or internally extended, whereas
-the progressive more narrowly profiles a dynamic event as actively unfolding at
-the reference point. The \term{contemplative} places \textit{E} after
-\textit{R}, presenting the event as projected, intended, expected, or otherwise
-not yet realized. English translation equivalents therefore vary by context:
-none of these categories should be reduced to simple labels such as ``past,''
-``present,'' or ``future.'' Moreover, because viewpoint aspect interacts with
-lexical aspect, the same inflection does not yield identical interpretive
-effects with every predicate class. With states and activities, the continuous
-naturally yields persistent or ongoing readings; with accomplishments it
-typically selects an internal phase rather than a completed endpoint; with
-achievements it may invite iterative, preparatory, or inceptive coercions.
-Conversely, the perfective and retrospective readily package telic predicates as
-bounded wholes or prior results, but with atelic predicates they instead delimit
-a stretch, occasion, or state viewed from an external vantage point. The exact
-semantic and distributional consequences of these interactions are discussed in
-the subsections that follow.
-
-Typologically, this pattern is an instance of aspect-conditioned split
-ergativity. Iridian does not maintain a single alignment pattern across all
-finite clauses; rather, the aspectual category selected on the verb determines
-whether the clause is built on an ergative-absolutive or a nominative-accusative
-frame. Aspect in Iridian therefore has consequences at two levels at once: it
-construes the temporal profile of the eventuality and it determines the
-morphosyntactic alignment through which the clause is organized.
-
-\begin{figure}[t]
-\centering
-\begin{tikzpicture}[
-  x=1.05cm,y=0.95cm,
-  evt/.style={line width=1.1pt},
-  refpt/.style={circle,fill,inner sep=1.3pt},
-  speech/.style={diamond,draw,inner sep=1.2pt},
-  rowlab/.style={anchor=east,font=\small},
-  every node/.style={font=\small}
-]
-
-% perfective
-\node[rowlab] at (0,0) {perfective};
-\draw[->] (0.5,0) -- (8.5,0);
-\draw[evt] (3.2,0) -- (5.0,0);
-\draw (3.2,0.18) -- (3.2,-0.18);
-\draw (5.0,0.18) -- (5.0,-0.18);
-\draw[decorate,decoration={brace,mirror,amplitude=4pt}] (3.2,-0.35) -- (5.0,-0.35)
-  node[midway,yshift=-0.38cm] {$R$};
-\node at (4.1,0.35) {$E$};
-\node[speech] (s1) at (4.1,-0.95) {};
-\node[below=2pt of s1] {$S$};
-\draw[dashed] (4.1,-0.78) -- (4.1,-0.08);
-
-% retrospective
-\node[rowlab] at (0,-1.6) {retrospective};
-\draw[->] (0.5,-1.6) -- (8.5,-1.6);
-\draw[evt] (2.2,-1.6) -- (3.8,-1.6);
-\draw (2.2,-1.42) -- (2.2,-1.78);
-\draw (3.8,-1.42) -- (3.8,-1.78);
-\node at (3.0,-1.25) {$E$};
-\node[refpt,label=above:$R$] (r2) at (6.1,-1.6) {};
-\node[speech] (s2) at (6.1,-2.55) {};
-\node[below=2pt of s2] {$S$};
-\draw[dashed] (6.1,-2.38) -- (6.1,-1.78);
-
-% continuous
-\node[rowlab] at (0,-3.2) {continuous};
-\draw[->] (0.5,-3.2) -- (8.5,-3.2);
-\draw[dotted] (1.8,-3.2) -- (2.4,-3.2);
-\draw[evt] (2.4,-3.2) -- (6.3,-3.2);
-\draw[dotted] (6.3,-3.2) -- (6.9,-3.2);
-\node at (4.4,-2.85) {$E$};
-\node[refpt,label=above:$R$] (r3) at (4.4,-3.2) {};
-\node[speech] (s3) at (4.4,-4.15) {};
-\node[below=2pt of s3] {$S$};
-\draw[dashed] (4.4,-3.98) -- (4.4,-3.38);
-
-% progressive
-\node[rowlab] at (0,-4.8) {progressive};
-\draw[->] (0.5,-4.8) -- (8.5,-4.8);
-\draw[evt] (2.6,-4.8) -- (6.5,-4.8);
-\draw (2.6,-4.62) -- (2.6,-4.98);
-\draw (6.5,-4.62) -- (6.5,-4.98);
-\draw[->] (3.8,-4.45) -- (5.0,-4.45);
-\node at (4.55,-4.1) {dynamic phase};
-\node[refpt,label=above:$R$] (r4) at (4.2,-4.8) {};
-\node at (5.9,-4.45) {$E$};
-\node[speech] (s4) at (4.2,-5.75) {};
-\node[below=2pt of s4] {$S$};
-\draw[dashed] (4.2,-5.58) -- (4.2,-4.98);
-
-% contemplative
-\node[rowlab] at (0,-6.4) {contemplative};
-\draw[->] (0.5,-6.4) -- (8.5,-6.4);
-\node[refpt,label=above:$R$] (r5) at (3.3,-6.4) {};
-\node[speech] (s5) at (3.3,-7.35) {};
-\node[below=2pt of s5] {$S$};
-\draw[dashed] (3.3,-7.18) -- (3.3,-6.58);
-\draw[evt] (5.0,-6.4) -- (6.7,-6.4);
-\draw (5.0,-6.22) -- (5.0,-6.58);
-\draw (6.7,-6.22) -- (6.7,-6.58);
-\node at (5.85,-6.05) {$E$};
-
-\node[anchor=west,align=left,font=\footnotesize] at (0.6,-8.15)
-  {Dashed connectors mark the unmarked deictic baseline in which $R$ coincides with $S$.\\
-   In discourse, adverbials or sequencing may shift $R$ independently of $S$.};
-
-\end{tikzpicture}
-\caption{Reichenbachian schematic for Iridian aspect. Here $E$ = event time,
-$R$ = reference time, and $S$ = speech time. In the perfective, $R$ is shown as
-coextensive with the bounded event; elsewhere it is shown as a point-like
-vantage.}
-\label{fig:iridian-aspect-reichenbach}
-\end{figure}
-
-\subsection{Alignment in nominative aspects (continuous, progressive, contemplative)}
-
-In the continuous, progressive, and contemplative aspects the main argument of
-the verb stands in the direct case regardless of transitivity, while the patient
-of a transitive verb appears in the indirect. This is a nominative-accusative
-pattern, the direct case serving as the absolutive and the indirect as the
-oblique.
-
-\pex
-\a
-\begingl
-\gla Marek zmacime.//
-\glb Marek.\Dir{} run-\Prog{}//
-\glft \trsl{Marek is running.} \lingcontext{intransitive}//
-\endgl
-\a
-\begingl
-\gla Marek travě piastime.//
-\glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
-\glft \trsl{Marek is eating bread.} \lingcontext{transitive; P = \Ind{}}//
-\endgl
-\a
-\begingl
-\gla Vytam shoda.//
-\glb shirt.\Dir{} wear-\Cont{}//
-\glft \trsl{(I) am wearing a shirt.} \lingcontext{stative continuous}//
-\endgl
-\a
-\begingl
-\gla Vytam shodime.//
-\glb shirt.\Dir{} wear-\Prog{}//
-\glft \trsl{(I) am putting on a shirt.} \lingcontext{dynamic progressive}//
-\endgl
-\xe
-
-\subsection{Alignment in ergative aspects (perfective and retrospective)}
-
-In the perfective and retrospective aspects the patient of a transitive verb is placed in the direct case, and the agent takes the transitive case. This is an ergative-absolutive pattern; what Iridian grammar calls the \emph{transitive case} is, in typological terms, the ergative, and the \emph{direct case} serves as the absolutive. For a transitive verb to trigger ergative alignment, it must carry the Voice head \ird{-n-} immediately before the aspect suffix.
-
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Aspect-alignment suffixes.}\label{tab:aspect}
-	\medskip
-	\begin{tabularx}{0.85\textwidth}{L l L}
-		\toprule
-		{\sc aspect} & {\sc suffix} & {\sc notes} \\
-		\midrule
-		Perfective              & \ird{-ek} / \ird{-ik}  & \ird{-ik} when stem vowel is \ird{ě} or \ird{e} (dissimilation; see §\ref{sec:aspect-pf}); \ird{-nik} after transitive \ird{-n-} \\
-		Retrospective           & \ird{-ac} & \\
-		Continuous              & \ird{-a}   & \\
-		Progressive             & \ird{-ime} & \\
-		Contemplative           & \ird{-ach} & \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-Three configurations are available in the ergative aspects. When the Voice head \ird{-n-} is present, the clause takes full ergative alignment: the patient is licensed as a core argument and appears in the direct case, and the agent takes the transitive. When \ird{-n-} is absent and the verb bears the antipassive \ird{-aš-}, the agent appears in the direct case and the patient is removed from core argument structure. When neither is present, the bare perfective suffix is used, a form grammatical only with inherently intransitive verbs, for which the question of alignment does not arise. For a transitive verb the bare perfective is inadmissible, because the patient lacks the overt patient-licensing Voice head required for core realization.
-
-\pex
-\a
-\begingl
-\gla Travat Marku piaštnik.//
-\glb bread.\Dir{}.\Def{} Marek.\Trs{} eat-\textsc{trs}-\Pf{}//
-\glft \trsl{Marek ate the bread.} \lingcontext{ergative; P = \Dir{}}//
-\endgl
-\a
-\begingl
-\gla Marek piašček.//
-\glb Marek.\Dir{} eat-\Antip{}-\Pf{}//
-\glft \trsl{Marek ate.} \lingcontext{antipassive; A = \Dir{}}//
-\endgl
-\xe
-
-The choice between these constructions is governed primarily by the discourse status of the patient. The ergative construction foregrounds the patient: it is the construction of a specific, discourse-trackable participant who is either newly introduced or reactivated, and the event is asserted as bringing about a change of state in that participant. It is accordingly characteristic of narrative foreground, where the consequences of events for particular persons or things constitute the substance of what is related. Patient definiteness correlates strongly with the ergative, and the definite marker \ird{-t} most commonly appears on the patient noun in this construction, though it is not formally required.
-
-The antipassive construction, by contrast, foregrounds the agent's activity without reference to any outcome in a patient. It is the construction of choice when the patient is non-referential, semantically incorporated, or of no discursive moment: in habitual and generic statements, in activity-focus contexts wherein the event itself and not its effect upon some participant is what is asserted, and wherever the clause contains no patient at all. The guiding principle is that the patient, where it exists, must either be present through the ergative construction or wholly absent; the antipassive admits of no intermediate state in which a patient is demoted to an oblique position.
-
-\subsection{The perfective}\label{sec:aspect-pf}
-
-The perfective encodes a completed action viewed as a whole at a specific point in time, and is the primary narrative aspect.
-
-The bare intransitive perfective suffix presents two allomorphs: \ird{-ek} is the default form, and \ird{-ik} appears where the stem's final syllable has \ird{ě} or \ird{e} as its nucleus. The raising is dissimilatory in character: adjoining \ird{-ek} directly to such a stem would produce a CěCe or CeCe sequence across a single intervening consonant, which the language avoids. The allomorphy is thus conditioned by the stem vowel and not by the thematic consonant class. Where a valency morpheme --- the antipassive \ird{-aš-}, the applicative \ird{-éb-}, or the causative \ird{-na-} --- intervenes between stem and suffix, it contributes its own vowel and breaks the sequence; raising accordingly does not apply in derived forms. The ergative perfective \ird{-nik}, which always follows the Voice head \ird{-n-}, is a fixed form and does not derive from this rule. % Cross-reference: this dissimilation should be described in the phonology chapter alongside the other vowel alternations.
-
-When negated, the perfective carries a specific implicature: the negated perfective describes something that was expected to occur but did not. For the neutral negation of a past event, free from this implication, the retrospective is preferred.
-
-\pex
-\a
-\begingl
-\gla Marek zapiaščik.//
-\glb Marek.\Dir{} \Neg{}-eat-\Antip{}-\Pf{}//
-\glft \trsl{Marek didn't eat (but he should have).}//
-\endgl
-\a
-\begingl
-\gla Marek zapiaščac.//
-\glb Marek.\Dir{} \Neg{}-eat-\Antip{}-\Ret{}//
-\glft \trsl{Marek didn't eat (neutral past).}//
-\endgl
-\xe
-
-\subsection{The retrospective}
-
-The retrospective (\ird{-ac}) describes a past action with continuing present relevance, or an action that was non-volitional or accidental. It corresponds in certain uses to the English perfect, in others to a non-volitional past.
-
-\pex
-\a
-\begingl
-\gla Pražě de stožac.//
-\glb Prague.\Ind{} to go-\Ret{}//
-\glft \trsl{(I) have (been to) Prague before.}//
-\endgl
-\a Compare:
-\begingl
-\gla Bych Pražě de stožek.//
-\glb yesterday Prague.\Ind{} to go-\Pf{}//
-\glft \trsl{Yesterday I went to Prague.} \lingcontext{specific past event; perfective}//
-\endgl
-\xe
-
-The ergative and antipassive constructions encode distinct kinds of continuing relevance in the retrospective. The transitive retrospective (\ird{-n-ac}) situates the relevance in the outcome state of the patient: something has been affected, and that effect persists or bears upon the present situation. The antipassive retrospective (\ird{-aš-ac}) locates the relevance in the experience of the agent: the event is part of the agent's history, not a change in some external participant. This distinction parallels the English opposition between \textit{the bread has been eaten} --- outcome-relevant, a fact about the bread --- and \textit{I have eaten} --- experiential, a fact about the speaker.
-
-\subsection{Ambitransitive verbs}\label{sec:ambitransitive}
-
-A small class of verbs possesses two readings of different argument structure: an intransitive reading, in which no patient is structurally available, and a transitive reading, in which a patient is licensed. These are lexical ambitransitives; neither reading is derived from the other through the antipassive, applicative, or causative, but both are basic senses of the verb. Two examples are \ird{lov-} (\trsl{hunt, forage [intrans.]; catch, take [trans.]}) and \ird{kěl-} (\trsl{sing, perform [intrans.]; sing a song, chant a text [trans.]}).
-
-The diagnostic for membership in this class is whether the Voice head \ird{-n-} is admissible in one reading but impossible in the other. For \ird{lov-}: \ird{lovnik} is grammatical in the transitive reading, as something was caught; no \ird{-n-} form is available in the intransitive reading, wherein the event is construed as the activity of hunting itself, with no quarry in the event frame. The bare perfective accesses only the intransitive reading; the antipassive and ergative access only the transitive.
-
-\pex
-\a
-\begingl
-\gla Marek bych lovek.//
-\glb Marek.\Dir{} yesterday hunt-\Pf{}//
-\glft \trsl{Marek went hunting yesterday.} \lingcontext{intransitive reading; bare \ird{-ek}}//
-\endgl
-\a
-\begingl
-\gla Zvěrat Marku lovnik.//
-\glb game.\Dir{}.\Def{} Marek.\Trs{} hunt-\textsc{trs}-\Pf{}//
-\glft \trsl{Marek caught the game.} \lingcontext{transitive reading; ergative}//
-\endgl
-\a
-\begingl
-\gla Marek bych lovžek.//
-\glb Marek.\Dir{} yesterday hunt-\Antip{}-\Pf{}//
-\glft \trsl{Marek was hunting yesterday.} \lingcontext{transitive reading; antipassive}//
-\endgl
-\xe
-
-The two non-ergative forms, though they may coincide in surface expression in many contexts, are not interchangeable. \ird{Lovek} belongs to the intransitive reading: hunting is construed as a pure activity, with no quarry present even in the conceptual frame of the event. \ird{Lovžek} belongs to the transitive reading: the hunt is directed toward prey, and that prey --- though it may not be expressed in any case form, the antipassive having removed it from the clause's argument structure --- is none the less understood as part of the conceptual event. The distinction corresponds, in practice, to the difference between going out to hunt and being engaged in the act of hunting something.
-
-For \ird{kěl-}, the stem vowel is \ird{ě}, so the bare intransitive perfective takes the \ird{-ik} allomorph by dissimilation: \ird{kělek} would create a CěCe sequence across the single intervening \ird{-l-}, which is avoided. The antipassive \ird{kělšek} is unaffected, the \ird{-š-} of the antipassive introducing its own vowel and breaking the sequence. The ergative \ird{kělnik} is the fixed ergative form; it and the bare \ird{kělik} are distinguished only by the presence or absence of \ird{-n-}:
-
-\pex
-\a \ird{kělik} \trsl{sang, performed} \lingcontext{intransitive; bare \ird{-ik}: no song in event frame}
-\a \ird{kělnik} \trsl{sang it (a specific song)} \lingcontext{ergative; \ird{-n-ik}: song = \Dir{}}
-\a \ird{kělšek} \trsl{was singing} \lingcontext{antipassive; \ird{-š-ek}: Class~II-A augment}
-\xe
-
-The minimal pair \ird{kělik} / \ird{kělnik} provides the clearest illustration in the grammar of the bare perfective opposed to the ergative, the two forms differing only by the inserted \ird{-n-}.
-
-\subsection{The continuous}
-
-The continuous (\ird{-a}) encodes an ongoing state or a habitual, generic action and is stative in character.
-
-\ex
-\begingl
-\gla Praže to mulša.//
-\glb Prague.\Ind{} \textsc{loc} live-\Cont{}//
-\glft \trsl{(I) live in Prague.}//
-\endgl
-\xe
-
-\subsection{The progressive}
-
-The progressive (\ird{-ime}) encodes a dynamic activity in progress, distinguished from the continuous by its dynamic rather than stative character. Compare the stative \ird{Vytam shoda}, \textit{I am wearing a shirt} --- a state of affairs obtaining at the time of speaking --- with the progressive \ird{Vytam shodime}, \textit{I am putting on a shirt}, which describes an action actively in course.
-
-\subsection{The contemplative}
-
-The contemplative (\ird{-ach}) encodes a mental state directed toward a potential future action: intention, consideration, or disposition toward an act not yet performed. It may be rendered in English as \textit{about to}, \textit{considering}, or \textit{intending to}, according to context.
-
-
-\subsection{Formal analysis: the Asp.Align morpheme}
-\label{sec:vm-asp}
-
-The aspect-alignment suffix is the sole obligatory morpheme in every
-finite Iridian verbal form. Its double burden --- encoding both the
-aspect of the event and the alignment pattern of case assignment ---
-makes it the central theoretical challenge of the Iridian verbal
-system.
-
-\subsubsection{Aspect-driven case assignment}
-\label{sec:vm-asp-case}
-
-Iridian alignment is organized by the Asp.Align head, whose aspectual
-values determine the clause's default absolutive orientation. The
-alignment defaults are:
-
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape ERG-aspect domain (perfective, retrospective).]
-  Asp.Align assigns \textsc{abs} (direct case) to the internal
-  argument (patient) and \textsc{erg} (transitive case) to the
-  external argument (agent). The ergative is the marked, dependent
-  case: it is assigned to the agent only when a patient has already
-  received absolutive (Marantz 1991). The default absolutive is
-  therefore the \emph{patient}.
-\item[\upshape NOM-aspect domain (continuous, progressive,
-  contemplative).] Asp.Align assigns \textsc{abs} (direct case) to
-  the external argument (agent) and \textsc{obl} (indirect case) to
-  the internal argument (patient). The default absolutive is
-  therefore the \emph{agent}.
-\end{description}
-
-\noindent These defaults constitute the unmarked shape of the
-Iridian alignment system. They may be altered by overt Voice
-morphology. When a transitive stem is merged with an overt Voice
-head carrying a specification for absolutive orientation, that
-specification takes precedence over the aspectual default and is
-respected by Asp.Align in the realization of the clause. The
-aspectual head therefore determines the default alignment pattern,
-but an overt Voice head may impose a different absolutive selection
-in marked constructions.
-
-The morpheme \ird{-n-} is such a head: it licenses the internal
-argument and specifies \textsc{[pat-abs]}, yielding ordinary
-ergative transitives in the ERG domain and passive constructions in
-the NOM domain (§\,\ref{sec:vm-n}, §\,\ref{sec:vm-passive}).
-The antipassive \ird{-aš-} likewise constitutes an overt Voice head,
-but it is subject to a structural input condition: it may apply only
-where the patient already stands as the absolutive participant, and
-it therefore surfaces exclusively in ERG-aspect clauses
-(§\,\ref{sec:vm-antipassive}).
-
-In the Minimalist framework, the Asp.Align head's default case
-assignment is mediated by Agree: the head probes its c-command domain
-for DPs bearing unvalued Case features and values them according to
-its featural content (Chomsky 2001). When an overt Voice head is
-present, its absolutive specification is satisfied before Asp.Align
-probes, and the remaining non-absolutive argument receives the case
-predicted by the aspectual domain. The fusion of aspect and alignment
-into a single suffix is not an accident: it reflects the close
-coupling in Iridian between the temporal framing of an event and the
-information-structural decision of which participant is the clause's
-absolutive pivot.
-
-\subsubsection{Split ergativity and the information-structure interface}
-\label{sec:vm-asp-info}
-
-The grammar's description of aspect selection as a
-\emph{pragmatic} decision (the speaker selects the aspect that
-places the discourse-salient argument in absolutive) requires
-formal reconciliation with the syntactic Agree mechanism described
-above.
-
-Two strategies are available within Minimalism:
-
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Top-down feature percolation.] Topic assignment
-  operates in the left periphery (Spec,TopP), where an argument
-  already bears topic features. These features are passed down
-  (through some mechanism of syntactic binding or coindexation) to
-  the Asp head, constraining which Vocabulary Item is inserted at
-  Asp. A patient-topic clause selects an ergative Asp morpheme; an
-  agent-topic clause selects a nominative Asp morpheme. This
-  requires either late lexical insertion (consistent with
-  Distributed Morphology) or a bidirectional Agree relation between
-  TopP and AspP.
-\item[\upshape Late Vocabulary Insertion.] In a DM-style account
-  (Halle \& Marantz 1993; Embick \& Noyer 2007), the Asp node in narrow syntax is
-  underspecified for the choice of morpheme. Vocabulary Items are
-  inserted post-syntactically by matching feature bundles. The
-  speaker's information-structural decision (which argument is
-  discourse-topic) is registered as a feature [\textsc{top}] on one
-  of the DP arguments; this feature is present when Vocabulary
-  Insertion takes place and conditions which Asp morpheme is
-  inserted.
-\end{description}
-
-\noindent The DM approach has the advantage of keeping
-narrow-syntax Agree simple (the Asp head probes for DPs in its
-c-command domain without knowing in advance which DP will be the
-absolutive) while assigning information-structural conditioning to
-the PF component. This is the preferred analysis here, though
-it requires elaboration of how [\textsc{top}] features are
-represented in the DM morphological component.
-
-The key theoretical desideratum: the grammar's informal claim that
-``aspect choice is partly pragmatic'' must be formalized as a
-specific interface mechanism. Until this is done, the claim risks
-being merely redescriptive. A concrete proposal: the
-[\textsc{top}] feature on a DP argument is set at the information
-structure level (in the C-domain or in a dedicated information
-structure component co-indexed with TopP), and this feature
-determines which Asp Vocabulary Item is inserted. The split is
-then not a quirk of case morphology but a reflex of the language's
-deep commitment to topic-comment organization at every level of
-the grammar.
-
-\subsubsection{Mood as a competing head}
-\label{sec:vm-mood-asp}
-
-When a mood suffix is present (imperative \ird{-ím}, prohibitive
-\ird{-é}, hortative \ird{-ká/-ku}, irrealis \ird{-ěv}), the
-Asp.Align slot is suppressed entirely: mood replaces aspect. In
-syntactic terms, this is most naturally analyzed as the MoodP head
-blocking the Asp head: when MoodP is merged above AspP, the Asp
-head is defective and receives no Vocabulary Item at the AspP node.
-The morphological output is therefore Mood without Aspect.
-
-This has a consequence for case assignment. In the directive moods,
-the case-assigning features of the Asp.Align head are absent, and
-case is instead determined by the principles of the directive domain
-described in §\,\ref{sec:mood-directive}: the direct case is assigned
-to the theme or the clause's sole participant, the transitive to an
-overt speech-act participant subject where competition would otherwise
-arise, and the indirect to applicative beneficiaries and causative
-causees. The directive case geometry is therefore not a carry-over
-of either the ergative or the nominative-accusative indicative
-alignment, but the output of its own case-assignment principles once
-the Asp.Align head is suppressed.
-
+The choice among ergative, antipassive, applicative, and causative is not purely
+mechanical. Each construction offers the speaker a distinct way of packaging the
+event for discourse. The antipassive is used when the patient is generic,
+non-referential, semantically incorporated into the activity, recoverable from
+context, or intentionally backgrounded. Its effect is to keep the agent in
+absolutive position and to present the clause as being about what the agent did
+rather than about what happened to some patient.
+
+The applicative serves the opposite discourse function: it pulls a formerly
+peripheral participant into the centre of the clause. A beneficiary,
+destination, location, or instrument is promoted when that participant is the
+one the discourse is tracking, when it will remain topical in subsequent
+clauses, or when the speaker wishes to construe the event from its perspective
+rather than from that of an unexpressed or backgrounded patient.
+
+The causative likewise has a pragmatic life beyond its valency-changing effect.
+By choosing a causative rather than a simple predicate, the speaker frames the
+event in terms of inducement, delegated agency, or control. In direct contexts
+this may foreground authority or coercion; in weaker retrospective contexts it
+may soften the causer's responsibility, presenting the caused event as something
+merely permitted, arranged, or indirectly brought about rather than personally
+carried out.
+
+The applicative and causative are compatible with the imperative and hortative
+and occupy their regular positions in the morphological template before the mood
+suffix.
 
 
 \section{Negation}\label{sec:negation}
