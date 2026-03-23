@@ -671,13 +671,174 @@ The causative likewise has a pragmatic life beyond its valency-changing effect. 
 The applicative and causative are compatible with the imperative and hortative and occupy their regular positions in the morphological template before the mood suffix.
 
 
-\section{Aspect and alignment}\label{sec:aspect}
+\section{Aspect and alignment}
+\label{sec:aspect}
 
-Iridian possesses five aspects: the \term{perfective}, the \term{retrospective}, the \term{continuous}, the \term{progressive}, and the \term{contemplative}. Aspect and alignment are fused into a single suffix, and the choice of aspect governs the syntactic alignment of the clause: the perfective and retrospective trigger ergative-absolutive alignment; the continuous, progressive, and contemplative trigger nominative-accusative alignment.
+Iridian grammaticalizes \term{aspect} rather than \term{tense} on the finite
+verb. There is no dedicated past-, present-, or future-tense suffix; temporal
+location is instead inferred from discourse context, temporal adverbials, and
+the lexical semantics of the predicate. The finite verb distinguishes five
+aspectual categories: the {perfective}, the {retrospective}, the {continuous},
+the {progressive}, and the {contemplative}. Aspect and alignment are fused in a
+single suffix, and the aspect selected on the verb determines the clause's
+alignment frame: the perfective and retrospective take ergative-absolutive
+alignment, whereas the continuous, progressive, and contemplative take
+nominative-accusative alignment.
+
+Three temporal notions must be kept distinct. Tense locates a situation in time
+relative to a reference point, most commonly the moment of speaking. Grammatical
+aspect does not locate the situation in this way, but construes its internal
+temporal contour: whether it is viewed as bounded, ongoing, prior from a later
+vantage point, or not yet realized. \term{Lexical aspect} or \term{Aktionsart},
+by contrast, belongs to the predicate itself. A predicate may denote a state,
+activity, accomplishment, or achievement independently of the inflection it
+bears. Iridian aspectual morphology therefore does not determine the inherent
+temporal type of the eventuality; rather, it imposes a viewpoint upon an
+eventuality whose lexical contour is supplied by the verb phrase.
+
+A useful descriptive frame is Reichenbach's distinction among speech time
+(\textit{S}), reference time (\textit{R}), and event time (\textit{E}):
+\textit{S} is the moment of utterance, \textit{E} the time at which the
+situation itself takes place, and \textit{R} the temporal vantage point from
+which that situation is presented. The usefulness of \textit{R} is that speakers
+do not always describe an event directly from the moment of speaking, but may
+instead locate it from some later or earlier point already established in the
+discourse; English \textit{had left}, for example, places the leaving
+(\textit{E}) before a reference point (\textit{R}) that is itself prior to the
+speech moment (\textit{S}). In a tense-prominent system, finite morphology often
+fixes the relation among all three. In Iridian, by contrast, the finite suffix
+primarily construes the relation between \textit{E} and \textit{R}, while the
+relation of \textit{R} to \textit{S} is often left to context, temporal
+adverbials, and discourse sequencing. This is why the same aspectual category
+may receive past-, present-, or future-oriented readings in different
+environments without ceasing to be aspectual rather than temporal.
+
+The five categories may be sketched in these terms. The \term{perfective}
+presents an eventuality as bounded and viewed as a whole, with \textit{R}
+aligned to the event in its entirety. The \term{retrospective} places \textit{E}
+before \textit{R}, yielding a later vantage point from which present relevance,
+result, prior experience, or other discourse effects of anteriority may be
+construed. The \term{continuous} and \term{progressive} both place \textit{R}
+within \textit{E}, but they differ in the kind of internal view imposed: the
+continuous presents the situation as durative or internally extended, whereas
+the progressive more narrowly profiles a dynamic event as actively unfolding at
+the reference point. The \term{contemplative} places \textit{E} after
+\textit{R}, presenting the event as projected, intended, expected, or otherwise
+not yet realized. English translation equivalents therefore vary by context:
+none of these categories should be reduced to simple labels such as ``past,''
+``present,'' or ``future.'' Moreover, because viewpoint aspect interacts with
+lexical aspect, the same inflection does not yield identical interpretive
+effects with every predicate class. With states and activities, the continuous
+naturally yields persistent or ongoing readings; with accomplishments it
+typically selects an internal phase rather than a completed endpoint; with
+achievements it may invite iterative, preparatory, or inceptive coercions.
+Conversely, the perfective and retrospective readily package telic predicates as
+bounded wholes or prior results, but with atelic predicates they instead delimit
+a stretch, occasion, or state viewed from an external vantage point. The exact
+semantic and distributional consequences of these interactions are discussed in
+the subsections that follow.
+
+Typologically, this pattern is an instance of aspect-conditioned split
+ergativity. Iridian does not maintain a single alignment pattern across all
+finite clauses; rather, the aspectual category selected on the verb determines
+whether the clause is built on an ergative-absolutive or a nominative-accusative
+frame. Aspect in Iridian therefore has consequences at two levels at once: it
+construes the temporal profile of the eventuality and it determines the
+morphosyntactic alignment through which the clause is organized.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  x=1.05cm,y=0.95cm,
+  evt/.style={line width=1.1pt},
+  refpt/.style={circle,fill,inner sep=1.3pt},
+  speech/.style={diamond,draw,inner sep=1.2pt},
+  rowlab/.style={anchor=east,font=\small},
+  every node/.style={font=\small}
+]
+
+% perfective
+\node[rowlab] at (0,0) {perfective};
+\draw[->] (0.5,0) -- (8.5,0);
+\draw[evt] (3.2,0) -- (5.0,0);
+\draw (3.2,0.18) -- (3.2,-0.18);
+\draw (5.0,0.18) -- (5.0,-0.18);
+\draw[decorate,decoration={brace,mirror,amplitude=4pt}] (3.2,-0.35) -- (5.0,-0.35)
+  node[midway,yshift=-0.38cm] {$R$};
+\node at (4.1,0.35) {$E$};
+\node[speech] (s1) at (4.1,-0.95) {};
+\node[below=2pt of s1] {$S$};
+\draw[dashed] (4.1,-0.78) -- (4.1,-0.08);
+
+% retrospective
+\node[rowlab] at (0,-1.6) {retrospective};
+\draw[->] (0.5,-1.6) -- (8.5,-1.6);
+\draw[evt] (2.2,-1.6) -- (3.8,-1.6);
+\draw (2.2,-1.42) -- (2.2,-1.78);
+\draw (3.8,-1.42) -- (3.8,-1.78);
+\node at (3.0,-1.25) {$E$};
+\node[refpt,label=above:$R$] (r2) at (6.1,-1.6) {};
+\node[speech] (s2) at (6.1,-2.55) {};
+\node[below=2pt of s2] {$S$};
+\draw[dashed] (6.1,-2.38) -- (6.1,-1.78);
+
+% continuous
+\node[rowlab] at (0,-3.2) {continuous};
+\draw[->] (0.5,-3.2) -- (8.5,-3.2);
+\draw[dotted] (1.8,-3.2) -- (2.4,-3.2);
+\draw[evt] (2.4,-3.2) -- (6.3,-3.2);
+\draw[dotted] (6.3,-3.2) -- (6.9,-3.2);
+\node at (4.4,-2.85) {$E$};
+\node[refpt,label=above:$R$] (r3) at (4.4,-3.2) {};
+\node[speech] (s3) at (4.4,-4.15) {};
+\node[below=2pt of s3] {$S$};
+\draw[dashed] (4.4,-3.98) -- (4.4,-3.38);
+
+% progressive
+\node[rowlab] at (0,-4.8) {progressive};
+\draw[->] (0.5,-4.8) -- (8.5,-4.8);
+\draw[evt] (2.6,-4.8) -- (6.5,-4.8);
+\draw (2.6,-4.62) -- (2.6,-4.98);
+\draw (6.5,-4.62) -- (6.5,-4.98);
+\draw[->] (3.8,-4.45) -- (5.0,-4.45);
+\node at (4.55,-4.1) {dynamic phase};
+\node[refpt,label=above:$R$] (r4) at (4.2,-4.8) {};
+\node at (5.9,-4.45) {$E$};
+\node[speech] (s4) at (4.2,-5.75) {};
+\node[below=2pt of s4] {$S$};
+\draw[dashed] (4.2,-5.58) -- (4.2,-4.98);
+
+% contemplative
+\node[rowlab] at (0,-6.4) {contemplative};
+\draw[->] (0.5,-6.4) -- (8.5,-6.4);
+\node[refpt,label=above:$R$] (r5) at (3.3,-6.4) {};
+\node[speech] (s5) at (3.3,-7.35) {};
+\node[below=2pt of s5] {$S$};
+\draw[dashed] (3.3,-7.18) -- (3.3,-6.58);
+\draw[evt] (5.0,-6.4) -- (6.7,-6.4);
+\draw (5.0,-6.22) -- (5.0,-6.58);
+\draw (6.7,-6.22) -- (6.7,-6.58);
+\node at (5.85,-6.05) {$E$};
+
+\node[anchor=west,align=left,font=\footnotesize] at (0.6,-8.15)
+  {Dashed connectors mark the unmarked deictic baseline in which $R$ coincides with $S$.\\
+   In discourse, adverbials or sequencing may shift $R$ independently of $S$.};
+
+\end{tikzpicture}
+\caption{Reichenbachian schematic for Iridian aspect. Here $E$ = event time,
+$R$ = reference time, and $S$ = speech time. In the perfective, $R$ is shown as
+coextensive with the bounded event; elsewhere it is shown as a point-like
+vantage.}
+\label{fig:iridian-aspect-reichenbach}
+\end{figure}
 
 \subsection{Alignment in nominative aspects (continuous, progressive, contemplative)}
 
-In the continuous, progressive, and contemplative aspects the main argument of the verb stands in the direct case regardless of transitivity, while the patient of a transitive verb appears in the indirect. This is a nominative-accusative pattern, the direct case serving as the absolutive and the indirect as the oblique.
+In the continuous, progressive, and contemplative aspects the main argument of
+the verb stands in the direct case regardless of transitivity, while the patient
+of a transitive verb appears in the indirect. This is a nominative-accusative
+pattern, the direct case serving as the absolutive and the indirect as the
+oblique.
 
 \pex
 \a
