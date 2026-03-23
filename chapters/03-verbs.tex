@@ -2,7 +2,7 @@
 
 \section{Introduction}
 
-The verb is the morphological nucleus of the Iridian clause, and upon it falls the principal burden of grammatical expression. While nouns admit of inflection for case alone and are in all other respects morphologically inert, the verb concentrates within itself all information pertaining to the nature of the event described, the relation of its participants, and the speaker's orientation toward what is asserted. Every finite verb bears the aspect-alignment suffix, which is the sole obligatory element of the verbal complex; beyond this the verb may carry markers of voice, mood, evidentiality, and person, in an order fixed by the morphological template set out in the following section. Tense, gender, and number agreement find no expression on the Iridian verb.
+The verb is the morphological nucleus of the Iridian clause, and upon it falls the principal burden of grammatical expression. While nouns admit of inflection for case alone and are in all other respects morphologically inert, the verb concentrates within itself all information pertaining to the nature of the event described, the relation of its participants, and the speaker's orientation toward what is asserted. Every finite verb bears the aspect-alignment suffix, which is the sole obligatory element of the verbal complex; beyond this the verb may carry markers of voice, mood, and evidentiality, in an order fixed by the morphological template set out in the following section. Tense, gender, number agreement, and pronominal cross-reference find no expression on the Iridian verb.
 
 \section{The morphological template}\label{sec:morph-template}
 
@@ -10,13 +10,11 @@ The structure of a finite verb in Iridian is given by the following template, wh
 
 \medskip
 \begin{center}
-(\Neg{}) + \Stem{} + (\Antip{} / \Appl{}) + (\Caus{}) + \Asp{}.\textsc{align} + (\textsc{mood}) + (\textsc{evid}) + (\textsc{person})
+(\Neg{}) + \Stem{} + (\Antip{} / \Appl{}) + (\Caus{}) + \Asp{}.\textsc{align} + (\textsc{mood}) + (\textsc{evid})
 \end{center}
 \medskip
 
-The \textsc{asp.align} slot fuses aspect and alignment into a single morpheme and is the one element no finite verb may lack. The mood slot may be analysed as containing a null morpheme in the indicative. The negative prefix \ird{zá-} stands before the entire stem complex. Evidential suffixes are attested in the literature but remain insufficiently described; they are accordingly omitted from the present chapter.
-
-Pronominal clitics, which occupy the \textsc{person} slot, encode the grammatical person of the absolutive argument and are described in Section~\ref{sec:clitics}.
+The \textsc{asp.align} slot fuses aspect and alignment into a single morpheme and is the one element no finite verb may lack. The mood slot may be analysed as containing a null morpheme in the indicative. The negative prefix \ird{zá-} stands before the entire stem complex. Evidential suffixes are attested in the literature but remain insufficiently described; they are accordingly omitted from the present chapter. Person is not morphologically expressed on the Iridian verb: there is no pronominal clitic series and no agreement layer. Overt person reference is conveyed by full pronoun DPs, demonstratives in the third person, and zero anaphora where discourse recoverability licenses argument omission.
 
 
 \subsection{The Mirror Principle and functional projections}\label{sec:vm-overview}
@@ -53,8 +51,6 @@ projections:
                  & §\,\ref{sec:vm-moodp} \\
     Evidential   & \textsc{evid}     & EvidP$_\text{inner}$
                  & §\,\ref{sec:vm-evid} \\
-    Person       & \textsc{person}   & AgrP (clitic zone)
-                 & §\,\ref{sec:vm-agr} \\
     \bottomrule
   \end{tabularx}
 \end{table}
@@ -1339,8 +1335,8 @@ together because they share the same null-subject pattern and the same case
 geometry.
 
 The subject of both the imperative and the prohibitive is second person and is
-syntactically understood but ordinarily unexpressed; no pronominal clitic is
-required. The theme or patient of the clause occupies the direct case as the
+syntactically understood but ordinarily unexpressed; no overt pronoun is
+required in fluent discourse. The theme or patient of the clause occupies the direct case as the
 clause's single core direct nominal:
 
 \pex
@@ -1771,7 +1767,8 @@ and not \ird{*zdíčir}; stems such as \ird{piašt-} still surface simply as
 \subsubsection{Inner evidential (EvidP$_\text{inner}$)}
 \label{sec:vm-evid}
 
-An evidential suffix occupies the slot between Mood and the person clitic. This
+An evidential suffix occupies the outermost position in the finite inflectional
+spine, immediately inside the complement linker \ird{-e}. This
 \term{inner evidential} (EvidP$_\text{inner}$) is distinct from the clausal
 evidential and speech-act operators in the left periphery
 (§\,\ref{sec:th-particle-framework}), which are Zone~I particles occupying
@@ -1779,22 +1776,20 @@ EvidP$_\text{outer}$ and SpeechActP in the clause spine.
 
 The morphological evidence for the inner evidential is the position of the
 indirect evidential suffix (tentatively \ird{-ejte}) in the verbal template: it
-precedes the complement linker \ird{-e} and follows any person clitic. Wait ---
-actually the order documented in \S\,\ref{sec:compl-indirect-evid} is:
+precedes the complement linker \ird{-e} and follows MoodP, giving the order:
 
 \begin{center}
 \textsc{stem} + \textsc{asp.align} + (\textsc{mood}) +
-(\textsc{ind.evid}) + (\textsc{person}) + \ird{-e} + \ird{po}
+(\textsc{ind.evid}) + \ird{-e} + \ird{po}
 \end{center}
 
-\noindent This places the evidential \emph{outside} Mood but \emph{inside}
-person clitics. The corresponding syntactic projection is therefore above MoodP
-but below AgrP (person). The boundary with the clausal EvidP$_\text{outer}$ (a
-left-peripheral projection) must be kept clear: the inner evidential marks the
-\emph{source of knowledge} as it bears on the proposition expressed by the
-verbal complex; the outer EvidP particles (Zone~I) operate at the clause-level
-and take scope over the full proposition including its discourse-relational
-frame.
+\noindent The corresponding syntactic projection is therefore above MoodP and
+constitutes the outermost layer of the finite inflectional spine. The boundary
+with the clausal EvidP$_\text{outer}$ (a left-peripheral projection) must be
+kept clear: the inner evidential marks the \emph{source of knowledge} as it
+bears on the proposition expressed by the verbal complex; the outer EvidP
+particles (Zone~I) operate at the clause-level and take scope over the full
+proposition including its discourse-relational frame.
 
 %% STUB: The inner evidential suffix is insufficiently described
 %% (as noted in the main verb chapter). A full treatment must:
@@ -1807,69 +1802,6 @@ frame.
 %%     matrix clauses or also appears freely in embedded clauses.
 
 
-\section{Pronominal clitics}\label{sec:clitics}
-
-Grammatical person is not encoded through verb agreement in Iridian but through optional pronominal clitics that enclitize to the right edge of the verbal complex, in the final slot of the morphological template. The clitics cross-reference the absolutive argument; their use is optional, and they are most commonly omitted where the referent is recoverable from context. Where present, they serve as light disambiguators or carry mild contrastive emphasis.
-
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Pronominal clitics.}\label{tab:clitics}
-	\medskip
-	\begin{tabularx}{0.7\textwidth}{L l l}
-		\toprule
-		{\sc person} & {\sc full form} & {\sc reduced form} \\
-		\midrule
-		1\textsc{sg} & \ird{-em}  & \ird{-m}  \\
-		2\textsc{sg} & \ird{-eš}  & \ird{-š}  \\
-		3\textsc{sg} anim. & \ird{-ic}  & \ird{-c}  \\
-		1\textsc{pl} & \ird{-om}  & \ird{-m}  \\
-		2\textsc{pl} & \ird{-ot}  & \ird{-t}  \\
-		3\textsc{pl} & \ird{-ec}  & \ird{-c}  \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-The reduced forms appear after aspect-alignment suffixes ending in a vowel; the full forms after consonant-final suffixes. The third-person singular animate clitic \ird{-ic} / \ird{-c} has no corresponding inanimate form; third-person inanimate reference is left unexpressed and inferred from context.
-
-\pex
-\a \ird{piašček-em} `I ate.'
-\a \ird{piaštnik-em} `I ate it.'
-\a \ird{piastime-š} `you are eating.'
-\xe
-
-
-\subsection{Formal analysis: person clitics and AgrP}
-\label{sec:vm-agr}
-
-The pronominal clitics (\ird{-em}, \ird{-eš}, \ird{-ic}, etc.)
-occupy the outermost position in the verbal complex, corresponding
-to AgrP. They cross-reference the absolutive argument of the
-predicate. Critically, they are \emph{optional}: they are omitted
-when the absolutive referent is recoverable from context and
-present only for disambiguation or mild contrastive emphasis.
-
-This optionality distinguishes Iridian person clitics from full
-agreement morphology. Several analyses present themselves:
-
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Clitics as topic-tracking.] Because the absolutive
-  is the topic (§\,\ref{sec:th-topic-comment-theory}), the person
-  clitic tracks the topic referent across discourse. It is a
-  topic-continuity marker rather than an agreement morpheme:
-  it appears when the topic is being specified, reactivated, or
-  contrasted, and is absent in contexts of stable topic continuity.
-\item[\upshape Clitics as reduced pronouns.] The clitics are
-  phonologically reduced pronominal arguments that may optionally
-  fill the topic position when the full DP topic is dropped. This
-  would make them resumptive-like pronouns in the verbal complex.
-\end{description}
-
-\noindent The fact that third-person inanimate has no clitic form
-supports a topic-tracking analysis: inanimates are rarely
-discourse-topics in the standard sense (they tend to be foci
-rather than topics), and the language reflects this by not
-providing a clitic for that argument type. The analysis is however
-not fully resolved; see §\,\ref{sec:vm-tension-agr}.
 
 \section{Non-finite forms: converb morphology}\label{sec:converb-morphology}
 
@@ -1960,13 +1892,12 @@ position: as adjuncts to IP, they precede all material within IP
 and surface before the matrix arguments in the linear string,
 consistent with the head-final adjunction pattern.
 
-The switch-reference clitic on converb forms (a person clitic
-attached to the converb to mark different-subject chains,
-§\,\ref{sec:switch-reference}) is analyzed here as an agreement
-morpheme from AgrP of the converb's own small clause, licensing
-an overt null pronoun (PRO or pro) in subject position of the
-converb clause. The clitic marks the topic-argument of the converb
-clause as distinct from the matrix topic-argument.
+Switch-reference in converb chains (§\,\ref{sec:switch-reference}) is a
+discourse-pragmatic phenomenon: different-subject readings are licensed by
+the discursive contrast of two distinct referents in topic position, not by
+any morphological clitic on the converb. When both clauses bear full nominal
+subjects, those DPs suffice for disambiguation; when a subject is absent,
+discourse recoverability determines the reading.
 
 
 \subsection{The nominalized verb forms}\label{sec:nominalized}
@@ -2171,17 +2102,16 @@ inflectional morphology. The full template is:
 
 \begin{center}
 \Stem{} + \Asp{}.\textsc{align} + (\textsc{mood}) +
-(\textsc{evid}) + (\textsc{person}) + \ird{-e}
+(\textsc{evid}) + \ird{-e}
 \end{center}
 
-\noindent The linker is therefore exterior to EvidP and AgrP, the
-outermost projections in the finite inflectional spine
-(§\,\ref{sec:vm-evid}, §\,\ref{sec:vm-agr}). This position is
-significant: if \ird{-e} were an agreement or mood morpheme, it
-would be expected inside the AgrP layer. Its consistent
-extra-clausal position supports an analysis in which it marks the
-edge of the finite complex as it interfaces with a higher
-projection --- a CP-boundary marker, not an inflectional head.
+\noindent The linker is therefore exterior to EvidP$_\text{inner}$, the
+outermost projection in the finite inflectional spine
+(§\,\ref{sec:vm-evid}). This position is significant: if \ird{-e} were an
+agreement or mood morpheme, it would be expected inside the inflectional spine.
+Its consistent extra-clausal position supports an analysis in which it marks the
+edge of the finite complex as it interfaces with a higher projection --- a
+CP-boundary marker, not an inflectional head.
 
 \paragraph{Attested environments.}
 The linker appears in exactly three environments:
@@ -2304,7 +2234,7 @@ realization of this morphosyntactic feature, fully parallel to the
 palatalizing effect of other front-vocalic suffixes in the
 productive system.
 
-The position of \ird{-e} outside EvidP and AgrP in the template
+The position of \ird{-e} outside EvidP$_\text{inner}$ in the template
 supports this analysis directly: the linker is the last element
 added to the verbal complex before the clause exits the finite
 inflectional domain, which is exactly where a TP-edge or C-interface
@@ -3004,7 +2934,7 @@ morpheme does double duty, encoding both the aspectual value of the
 predicate and the case-alignment pattern of the clause. The Mirror
 Principle predicts that each morpheme corresponds to a single
 syntactic head. If Asp and Align are two distinct syntactic
-features (housed in AspP and CaseP/AgrP respectively), the Mirror
+features (housed in AspP and CaseP respectively), the Mirror
 Principle predicts separate morphemes for each.
 
 Three responses are available:
@@ -3172,28 +3102,6 @@ morphological-incorporation account are discussed in full in
 §\,\ref{sec:vm-neg}; the empirical commitments of that account
 are listed at the end of §\,\ref{sec:vm-neg-exponents}.
 
-\subsection{The person clitic and the absolutive Agr problem}
-\label{sec:vm-tension-agr}
-
-The person clitic cross-references only the absolutive argument.
-In a split-ergative language this is consistent with an absolutive
-agreement morpheme (the clitic Agrees with whichever DP is
-absolutive, regardless of its grammatical function --- agent or
-patient). However, the optionality of the clitic and its
-discourse-sensitive distribution (present for emphasis or
-disambiguation, absent in contexts of topic continuity) suggest
-it is not a standard agreement morpheme but a discourse-oriented
-clitic.
-
-The architecture question: if there is an AgrP in the Iridian
-clause that hosts the person clitic, is it the same AgrP that
-normally hosts subject agreement in other languages? Or is it a
-dedicated \term{topic-agreement projection} (Agr$_\text{top}$P)
-that is distinct from both Agr-S and Agr-O as traditionally
-conceived? The absolutive nature of the agreement target suggests
-the latter: Agr$_\text{top}$P agrees with whichever argument is
-in Spec,TopP (the topic), cross-referencing it person/animacy-wise
-at the right edge of the verbal complex.
 
 %% ================================================================
 %%  SUMMARY TABLE
@@ -3228,8 +3136,6 @@ the morphological exponents of each relevant layer.
     & \textsc{FocP} & [wh-phrase]
     & Focus/wh movement target \\
     \midrule
-    & \textsc{AgrP} & \ird{-em, -eš, -ic}, \ldots
-    & Person clitic; optional; absolutive cross-reference \\
     & \textsc{EvidP}$_\text{inner}$ & \ird{-ejte} (?)
     & Indirect evidential; inside verbal complex \\
     & \textsc{MoodP} & \ird{-ím, -é, -ká, -ku, -ěv, -ir}, $\emptyset$
@@ -3257,8 +3163,8 @@ complements --- follows uniformly from the head-final parameter
 applied at the VP level. No movement or extraposition is required:
 the complement is base-generated to the left of the verb and
 surfaces there in the linear string. Higher projections (AspP,
-MoodP, AgrP) are realized as suffixes on the verbal complex,
-which surfaces at the right edge of the clause as required by
+NegP, MoodP, and the inner evidential) are realized as suffixes on the verbal
+complex, which surfaces at the right edge of the clause as required by
 pervasive head-finality.
 
 %% ----------------------------------------------------------------
