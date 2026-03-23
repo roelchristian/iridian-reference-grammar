@@ -206,7 +206,7 @@ morphosyntactic alignment through which the clause is organized.
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}[
-  x=1.05cm,y=0.95cm,
+  x=1.05cm,y=1cm,
   evt/.style={line width=1.1pt},
   refpt/.style={circle,fill,inner sep=1.3pt},
   speech/.style={diamond,draw,inner sep=1.2pt},
@@ -214,78 +214,83 @@ morphosyntactic alignment through which the clause is organized.
   every node/.style={font=\small}
 ]
 
-% perfective
+% All rows hold S at x = 4.5 so the deictic baseline is visually constant.
+
+% perfective (y = 0)
 \node[rowlab] at (0,0) {perfective};
 \draw[->] (0.5,0) -- (8.5,0);
-\draw[evt] (3.2,0) -- (5.0,0);
-\draw (3.2,0.18) -- (3.2,-0.18);
-\draw (5.0,0.18) -- (5.0,-0.18);
-\draw[decorate,decoration={brace,mirror,amplitude=4pt}] (3.2,-0.35) -- (5.0,-0.35)
-  node[midway,yshift=-0.38cm] {$R$};
-\node at (4.1,0.35) {$E$};
-\node[speech] (s1) at (4.1,-0.95) {};
+\draw[evt] (3.0,0) -- (6.0,0);
+\draw (3.0,0.15) -- (3.0,-0.15);
+\draw (6.0,0.15) -- (6.0,-0.15);
+\node[refpt] at (3.0,0) {};
+\node[refpt] at (6.0,0) {};
+% R bracket above the timeline, E label between bracket and line
+\node at (4.5,0.30) {$E$};
+\draw[decorate,decoration={brace,amplitude=3pt}]
+  (3.0,0.55) -- (6.0,0.55)
+  node[midway,above=4pt] {$R$};
+% S below, matching spacing of other rows
+\draw[dashed] (4.5,-0.08) -- (4.5,-0.42);
+\node[speech] (s1) at (4.5,-0.55) {};
 \node[below=2pt of s1] {$S$};
-\draw[dashed] (4.1,-0.78) -- (4.1,-0.08);
 
-% retrospective
-\node[rowlab] at (0,-1.6) {retrospective};
-\draw[->] (0.5,-1.6) -- (8.5,-1.6);
-\draw[evt] (2.2,-1.6) -- (3.8,-1.6);
-\draw (2.2,-1.42) -- (2.2,-1.78);
-\draw (3.8,-1.42) -- (3.8,-1.78);
-\node at (3.0,-1.25) {$E$};
-\node[refpt,label=above:$R$] (r2) at (6.1,-1.6) {};
-\node[speech] (s2) at (6.1,-2.55) {};
+% retrospective (y = -2.0)
+\node[rowlab] at (0,-2.0) {retrospective};
+\draw[->] (0.5,-2.0) -- (8.5,-2.0);
+\draw[evt] (1.8,-2.0) -- (3.4,-2.0);
+\draw (1.8,-1.85) -- (1.8,-2.15);
+\draw (3.4,-1.85) -- (3.4,-2.15);
+\node at (2.6,-1.65) {$E$};
+\node[refpt,label=above:{$R$}] at (4.5,-2.0) {};
+\node[speech] (s2) at (4.5,-2.55) {};
 \node[below=2pt of s2] {$S$};
-\draw[dashed] (6.1,-2.38) -- (6.1,-1.78);
+\draw[dashed] (4.5,-2.08) -- (4.5,-2.42);
 
-% continuous
-\node[rowlab] at (0,-3.2) {continuous};
-\draw[->] (0.5,-3.2) -- (8.5,-3.2);
-\draw[dotted] (1.8,-3.2) -- (2.4,-3.2);
-\draw[evt] (2.4,-3.2) -- (6.3,-3.2);
-\draw[dotted] (6.3,-3.2) -- (6.9,-3.2);
-\node at (4.4,-2.85) {$E$};
-\node[refpt,label=above:$R$] (r3) at (4.4,-3.2) {};
-\node[speech] (s3) at (4.4,-4.15) {};
+% continuous (y = -4.0)
+\node[rowlab] at (0,-4.0) {continuous};
+\draw[->] (0.5,-4.0) -- (8.5,-4.0);
+\draw[dotted] (1.6,-4.0) -- (2.2,-4.0);
+\draw[evt] (2.2,-4.0) -- (6.8,-4.0);
+\draw[dotted] (6.8,-4.0) -- (7.4,-4.0);
+\node at (3.0,-3.65) {$E$};
+\node[refpt,label=above:{$R$}] at (4.5,-4.0) {};
+\node[speech] (s3) at (4.5,-4.55) {};
 \node[below=2pt of s3] {$S$};
-\draw[dashed] (4.4,-3.98) -- (4.4,-3.38);
+\draw[dashed] (4.5,-4.08) -- (4.5,-4.42);
 
-% progressive
-\node[rowlab] at (0,-4.8) {progressive};
-\draw[->] (0.5,-4.8) -- (8.5,-4.8);
-\draw[evt] (2.6,-4.8) -- (6.5,-4.8);
-\draw (2.6,-4.62) -- (2.6,-4.98);
-\draw (6.5,-4.62) -- (6.5,-4.98);
-\draw[->] (3.8,-4.45) -- (5.0,-4.45);
-\node at (4.55,-4.1) {dynamic phase};
-\node[refpt,label=above:$R$] (r4) at (4.2,-4.8) {};
-\node at (5.9,-4.45) {$E$};
-\node[speech] (s4) at (4.2,-5.75) {};
+% progressive (y = -6.2)
+\node[rowlab] at (0,-6.2) {progressive};
+\draw[->] (0.5,-6.2) -- (8.5,-6.2);
+\draw[evt] (2.4,-6.2) -- (7.0,-6.2);
+\draw (2.4,-6.05) -- (2.4,-6.35);
+\draw (7.0,-6.05) -- (7.0,-6.35);
+\node at (6.5,-5.85) {$E$};
+\draw[->] (2.8,-5.55) -- (4.2,-5.55)
+  node[midway,above,font=\scriptsize] {dynamic phase};
+\node[refpt,label=above:{$R$}] at (4.5,-6.2) {};
+\node[speech] (s4) at (4.5,-6.75) {};
 \node[below=2pt of s4] {$S$};
-\draw[dashed] (4.2,-5.58) -- (4.2,-4.98);
+\draw[dashed] (4.5,-6.28) -- (4.5,-6.62);
 
-% contemplative
-\node[rowlab] at (0,-6.4) {contemplative};
-\draw[->] (0.5,-6.4) -- (8.5,-6.4);
-\node[refpt,label=above:$R$] (r5) at (3.3,-6.4) {};
-\node[speech] (s5) at (3.3,-7.35) {};
+% contemplative (y = -8.2)
+\node[rowlab] at (0,-8.2) {contemplative};
+\draw[->] (0.5,-8.2) -- (8.5,-8.2);
+\node[refpt,label=above:{$R$}] at (4.5,-8.2) {};
+\draw[evt] (5.8,-8.2) -- (7.5,-8.2);
+\draw (5.8,-8.05) -- (5.8,-8.35);
+\draw (7.5,-8.05) -- (7.5,-8.35);
+\node at (6.65,-7.85) {$E$};
+\node[speech] (s5) at (4.5,-8.75) {};
 \node[below=2pt of s5] {$S$};
-\draw[dashed] (3.3,-7.18) -- (3.3,-6.58);
-\draw[evt] (5.0,-6.4) -- (6.7,-6.4);
-\draw (5.0,-6.22) -- (5.0,-6.58);
-\draw (6.7,-6.22) -- (6.7,-6.58);
-\node at (5.85,-6.05) {$E$};
-
-\node[anchor=west,align=left,font=\footnotesize] at (0.6,-8.15)
-  {Dashed connectors mark the unmarked deictic baseline in which $R$ coincides with $S$.\\
-   In discourse, adverbials or sequencing may shift $R$ independently of $S$.};
+\draw[dashed] (4.5,-8.28) -- (4.5,-8.62);
 
 \end{tikzpicture}
-\caption{Reichenbachian schematic for Iridian aspect. Here $E$ = event time,
-$R$ = reference time, and $S$ = speech time. In the perfective, $R$ is shown as
-coextensive with the bounded event; elsewhere it is shown as a point-like
-vantage.}
+\caption{Reichenbachian schematic for Iridian aspect. $E$ = event time, $R$ =
+reference time, $S$ = speech time. In the perfective, $R$ spans the bounded
+event (marked by dots at the endpoints and a bracket); elsewhere, $R$ is a
+point-like vantage. In this figure, dashed connectors mark the unmarked deictic baseline in which
+$R$ coincides with $S$. $S$~is held at a constant horizontal position across all
+rows; in discourse, adverbials or sequencing may shift $R$ independently of $S$.}
 \label{fig:iridian-aspect-reichenbach}
 \end{figure}
 
