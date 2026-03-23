@@ -82,8 +82,8 @@ implicated in the particle system are discussed in detail in
 		                     suppletive root \ird{zad-} (existential predicates, Neg\textsuperscript{0}
 		                     absorbed into root) \\
 		5 & \textsc{IP} & Inflection: finiteness, mood \\
-		6 & \textsc{FocP} & Focus position; hosts moved wh-phrases \\
-		7 & \textsc{PolP} & Interrogative clause typing: \ird{by} \\
+		6 & \textsc{FocP} & Focus position; optionally hosts one fronted wh-phrase or other focused constituent \\
+		7 & \textsc{PolP} & Interrogative clause typing: \ird{by} (overt) / $\emptyset$ (null) \\
 		8 & \textsc{TopP} & Topic: typically the absolutive argument \\
 		9 & \textsc{EvidP} & Evidential and epistemic operators:
 		                      \ird{oče}, \ird{hlavdy}, \ird{ktady}, \ird{či} \\
@@ -172,11 +172,11 @@ of the left periphery.
 					[{Top$'$}
 						[Top]
 						[PolP
-							[{Pol\\\ird{by}}]
+							[{Pol\\\ird{by} / $\emptyset$}]
 							[{Pol$'$}
 								[Pol]
 								[FocP
-									[{XP\\{\footnotesize\textit{wh-phrase}}}]
+									[{XP\\{\footnotesize\textit{wh / focus}}}]
 									[{Foc$'$}
 										[Foc]
 										[IP [{\ldots}]]
@@ -342,10 +342,12 @@ The \textsc{FocP} position immediately below \textsc{PolP} is the target for
 focus movement. In the unmarked declarative clause, focus falls in situ on the
 rightmost comment-domain constituent immediately before the verb (the
 ``comment-final'' position), consistent with the general word-order tendency
-toward late-focus. In marked constructions --- content questions and
-topicalized foci --- the focused constituent or wh-phrase moves overtly to
-\textsc{SpecFocP}, surface-initially after any peripheral particles (see
-§\,\ref{sec:th-wh-interrogation}).
+toward late-focus. A focused constituent or wh-phrase may optionally move to
+\textsc{SpecFocP}, surfacing after any peripheral particles. This movement is
+not syntactically obligatory; it is discourse-driven, signalling marked focus,
+contrast, topicalization, or discourse prominence. The absence of overt
+movement is therefore the neutral or unmarked option, especially in content
+questions, where a wh-phrase may remain in situ (see §\,\ref{sec:th-wh-interrogation}).
 
 It follows from this architecture that \textsc{SpecFocP} is not an exclusively
 interrogative position: it is the target of focus movement in general. A
@@ -355,13 +357,20 @@ question --- comes from the clause-level interrogative operator (\ird{by} or
 a phonologically null counterpart in \textsc{PolP}), not from the focus
 position itself.
 
-\subsection{The clause-typing operator \ird{by} and polar questions}
+\subsection{The clause-typing operator \ird{by} and matrix interrogatives}
 \label{sec:th-polar-questions}
 
-Polar interrogatives are formed by merging the particle \ird{by} as the head
-of \textsc{PolP}. In this configuration, \ird{by} types the full clause as a
-polar question: the speaker queries whether the proposition expressed by the
-complement IP is true of the world (§\,\ref{sec:by-operator}).
+Matrix interrogatives project \textsc{PolP}. Pol\textsuperscript{0} may be
+spelled out overtly as \ird{by} or left phonologically null. In polar
+questions, overt \ird{by} is the ordinary and unmarked explicit strategy. In
+content questions, both overt \ird{by} and null Pol\textsuperscript{0} are
+standardly available: a wh-question may appear with or without \ird{by}, and
+the choice reflects the speaker's discourse position rather than a grammatical
+asymmetry between question types. The full discussion of the overt/null
+alternation in content questions is in §\,\ref{sec:th-wh-interrogation};
+the present subsection focuses on the clause-typing function of \ird{by} itself
+and on the properties shared across all matrix interrogatives
+(§\,\ref{sec:by-pol-head}).
 
 \pex
 \a
@@ -377,12 +386,6 @@ complement IP is true of the world (§\,\ref{sec:by-operator}).
 \glft \trsl{Has Janek already arrived?}//
 \endgl
 \xe
-
-A marked alternative places \ird{by} in the preverbal AspP field, between the
-comment-domain operators and the phasal particles. Here \ird{by} takes scope
-only over the VP, yielding a \term{predicate-focus interrogative} that queries
-the predicate domain specifically rather than the full proposition (see
-Table~\ref{tab:by-scope} for contrastive examples).
 
 The interaction of \ird{by} with Zone~\textsc{i} particles (evidential and
 speech-act operators) follows directly from their relative positions in the
@@ -401,55 +404,155 @@ relayed from another source.
 \endgl
 \xe
 
+A constituent may be fronted to Spec,FocP or set as a topic in Spec,TopP
+inside a polar question, while \ird{by} in Pol\textsuperscript{0} continues to
+type the clause as interrogative. The fronting of a non-wh constituent inside a
+polar question is not a special interrogative mechanism but ordinary
+information structure operating inside an interrogative clause. A direct-case
+topic may remain in Spec,TopP; a narrow-focus non-wh constituent may move to
+Spec,FocP; either operation is independent of the interrogative clause typing
+supplied by \ird{by}. This point is important for understanding argument and
+adjunct fronting in questions and prevents conflating topic/focus movement with
+the mechanism that licenses interrogative force: interrogative force belongs to
+\textsc{PolP}, while focus and topic placement belong to \textsc{FocP} and
+\textsc{TopP} respectively.
 
-\section{Questions and \textit{wh}-interrogation}
+
+\section{Content questions and \textit{wh}-interrogation}
 \label{sec:th-wh-interrogation}
 
-\subsection{Single \textit{wh}-fronting}
+\subsection{Licensing of content questions: PolP and wh-operators}
 \label{sec:th-single-wh}
 
-Content questions require the interrogative phrase to move to
-\textsc{SpecFocP}, which surfaces before the IP but after any Zone~\textsc{i}
-peripheral particles. This movement is obligatory in standard Iridian: in-situ
-interrogatives with a single wh-phrase are not grammatical in the default
-declarative register. The wh-phrase thus surfaces immediately after any
-evidential operators and before IP-internal arguments.
+Content questions are licensed by the combination of an interrogative
+operator in \textsc{PolP} and a wh-expression inside the clause. They are
+not licensed by movement alone. \textsc{Pol}\textsuperscript{0} may be
+phonologically null in neutral content questions, but it is structurally
+present as the clause-typing head; the wh-operator within its scope domain
+is the interrogative variable that the question is resolved against.
+
+The distributional rule for wh-phrases is as follows. In neutral content
+questions, a single wh-expression may remain in situ in its base-generated
+argument or adjunct position. One wh-expression may optionally move to
+Spec,FocP when assigned marked focus; this movement signals that the
+wh-phrase is singled out against an already salient frame, or contributes
+contrast, insistence, or other discourse prominence. No clause permits more
+than one wh-phrase to front overtly to Spec,FocP.
 
 \pex
 \a
 \begingl
+\gla Marek jena mulša?//
+\glb Marek.\Dir{} where live-\Cont{}//
+\glft \trsl{Where does Marek live?} \lingcontext{neutral; wh in situ}//
+\endgl
+\a
+\begingl
 \gla Jena Marek mulša?//
 \glb where Marek.\Dir{} live-\Cont{}//
-\glft \trsl{Where does Marek live?}//
+\glft \trsl{Where does Marek live?} \lingcontext{marked; wh to SpecFocP for discourse prominence}//
+\endgl
+\a
+\begingl
+\gla Tak tóm jeda koupnik?//
+\glb this book.\Dir{} who buy-\Pf{}//
+\glft \trsl{Who bought this book?} \lingcontext{neutral; wh in situ}//
 \endgl
 \a
 \begingl
 \gla Jeda tak tóm koupnik?//
 \glb who this book.\Dir{} buy-\Pf{}//
-\glft \trsl{Who bought this book?}//
+\glft \trsl{Who bought this book?} \lingcontext{marked; wh to SpecFocP}//
 \endgl
+\xe
+
+A fronted wh-phrase does not itself license interrogative force; its
+movement signals discourse prominence, contrast, or singled-out status of the
+wh-variable. The interrogative clause type is established by the PolP layer
+independently of whether any fronting has occurred. A content question is
+therefore structurally defined by the conjunction of an interrogative
+operator in \textsc{PolP} and a wh-expression within IP, not by the
+position of the wh-phrase at the surface.
+
+Matrix content questions permit both overt and null Pol\textsuperscript{0},
+and these are \emph{both} standard options, not a default with an emphatic
+variant. The two differ in discourse profile. A content question with null
+Pol\textsuperscript{0} is the structurally lighter form, appropriately neutral
+in ordinary information-seeking contexts. A content question with overt
+\ird{by} is more explicitly typed as a direct question: it is more
+interactionally foregrounded, conversationally engaged, or oriented toward
+a specific addressee in the current exchange. The difference is a pragmatic
+tendency, not a semantic or grammatical opposition. Both forms are equally
+grammatical in standard Iridian.
+
+The same independence holds between \ird{by} and the fronting of the wh-phrase.
+\ird{By} may appear in a content question regardless of whether the wh-phrase
+has moved to the left-peripheral focus position or remains in situ. This gives
+four available combinations: null Pol with in-situ wh, null Pol with fronted
+wh, overt \ird{by} with in-situ wh, and overt \ird{by} with fronted wh. All
+four are well-formed; they differ only in the independent contributions of
+clause-typing explicitness (\ird{by}/null Pol) and discourse prominence
+(fronting/in situ).
+
+The following paradigm illustrates all four for the content question
+\trsl{where does Marek live}:
+
+\pex\label{ex:wh-four-combinations}
+\a
+\begingl
+\gla Marek jena mulša?//
+\glb Marek.\Dir{} where live-\Cont{}//
+\glft \trsl{Where does Marek live?} \lingcontext{null Pol; wh in situ: neutral}//
+\endgl
+\a
+\begingl
+\gla Marek jena by mulša?//
+\glb Marek.\Dir{} where \textsc{q} live-\Cont{}//
+\glft \trsl{Where does Marek live?} \lingcontext{overt \ird{by}; wh in situ: explicit, interactionally foregrounded}//
+\endgl
+\a
+\begingl
+\gla Jena Marek mulša?//
+\glb where Marek.\Dir{} live-\Cont{}//
+\glft \trsl{Where does Marek live?} \lingcontext{null Pol; wh fronted: wh-phrase discourse-prominent}//
+\endgl
+\a
+\begingl
+\gla Jena by Marek mulša?//
+\glb where \textsc{q} Marek.\Dir{} live-\Cont{}//
+\glft \trsl{Where does Marek live?} \lingcontext{overt \ird{by}; wh fronted: both clause and wh-phrase foregrounded}//
+\endgl
+\xe
+
+\noindent The same four-way system extends to transitive and oblique content
+questions. The wh-word type (agent, patient, location, instrument, and so on)
+does not restrict the availability of any combination; all four remain possible
+across the full inventory of wh-operators in Table~\ref{tab:nm-interrogatives}.
+
+When Zone~\textsc{i} particles are present, they surface above the
+wh-phrase (whether in situ or fronted) and above any overt \ird{by}, because
+they occupy projections higher in the spine:
+
+\pex
 \a
 \begingl
 \gla Jena hlavdy Marek mulša?//
 \glb where \textsc{infr} Marek.\Dir{} live-\Cont{}//
 \glft \trsl{Where would Marek presumably be living?}\\
-      \lingcontext{wh-phrase to SpecFocP; \ird{hlavdy} in EvidP above it}//
+      \lingcontext{\ird{hlavdy} in EvidP above PolP; wh fronted}//
 \endgl
 \xe
-
-\noindent In the plain content question, the \textsc{PolP} head is
-phonologically null: interrogative force is satisfied by the wh-phrase
-occupying \textsc{SpecFocP}, without requiring an overt \ird{by}. When
-\ird{by} is overtly present in a content question, it adds emphatic or
-explicit interrogative force (§\,\ref{sec:by-wh}).
 
 \subsection{Multiple \textit{wh} and in-situ licensing}
 \label{sec:th-multiple-wh}
 
-When the clause contains more than one wh-phrase, at most one fronts to
-\textsc{SpecFocP}. The remaining wh-phrases are interpreted as interrogative
-variables in their base positions, licensed by the clause-level interrogative
-operator (overt \ird{by} or a null \textsc{PolP} head).
+When the clause contains more than one wh-phrase, the ordinary pattern is for
+all wh-phrases to remain in situ. At most one wh-phrase may front to
+\textsc{SpecFocP}, and only when that phrase is assigned specially marked focus
+within the pair-list interpretation. The remaining wh-phrases are interpreted
+as interrogative variables in their base positions, licensed by the
+clause-level interrogative operator (overt \ird{by} or a null
+\textsc{PolP} head).
 
 \pex
 \a
@@ -466,24 +569,30 @@ operator (overt \ird{by} or a null \textsc{PolP} head).
 \endgl
 \xe
 
-\noindent In these multiple-wh clauses no phrase fronts; both remain in their
-IP-internal base positions and are bound by the null interrogative operator.
-The general licensing principle is: a wh-word within the scope domain of the
-clause-level interrogative operator is interpreted as an interrogative variable,
-regardless of its surface position. Overt movement to \textsc{SpecFocP} is
-sufficient to establish interrogative force, but it is not necessary when the
-operator is independently present.
+\noindent In these multiple-wh clauses both phrases remain in their
+IP-internal base positions and are bound by the null interrogative operator in
+\textsc{PolP}. The general licensing principle is: a wh-word within the scope
+domain of the clause-level interrogative operator in PolP is interpreted as an
+interrogative variable, regardless of its surface position. Overt movement to
+\textsc{SpecFocP} marks the fronted phrase as the salient or foregrounded
+variable in the pair-list; it does not itself establish the interrogative type
+of the clause, which is always a function of PolP.
 
 \subsection{Tag, echo, and indirect questions}
 \label{sec:th-tag-echo}
 
 Tag and echo questions, and indirect questions embedded under
 \ird{poby}, are treated in §\,\ref{sec:questions} and
-§\,\ref{sec:poby} respectively. The relevant structural observation for
-the present discussion is that embedded content questions show the same
-wh-fronting behavior inside the embedded clause as matrix content questions
-do: the wh-phrase fronts within the subordinate clause's own left periphery,
-which is embedded under the \ird{poby} complement marker.
+§\,\ref{sec:poby} respectively. For embedded content questions in
+\ird{poby}-complements, the same distributional principle applies as in
+matrix clauses: the embedded wh-phrase may remain in situ (the neutral
+option) or move to the left periphery of the embedded clause for marked
+focus. Wh-fronting within the embedded clause's own periphery is therefore
+not obligatory; it signals the same kind of discourse prominence as fronting
+in matrix questions. The \ird{poby} complementizer marks the embedded clause
+as a non-assertive complement regardless of whether the internal wh-phrase
+has fronted. The full analysis of \ird{poby} and its complement types is
+in §\,\ref{sec:poby}.
 
 \section{Topic-comment structure and information structure}\label{sec:topic-comment}
 
@@ -1690,23 +1799,45 @@ independent Neg\textsuperscript{0} heads in the same clause, violating the
 uniqueness of the NegP projection. The prohibition on \ird{zá-} in existential
 clauses and the prohibition on \ird{*zázad-} are therefore the same prohibition,
 both following from the single-NegP constraint on the clause spine.
-\section{Questions}\label{sec:questions}
+\section{Questions: descriptive recap}\label{sec:questions}
 
-\subsection{Yes-no questions}
+The syntactic analysis of Iridian interrogatives is developed in full in
+§\,\ref{sec:th-left-periphery}--§\,\ref{sec:th-wh-interrogation}. The
+present section provides a brief descriptive summary for cross-reference and
+points forward to the relevant complement-clause and discourse chapters.
 
-% [To be written: polar question formation — intonation, question particle]
+\subsection{Polar questions}
+
+Polar (yes-no) questions are formed by the overt particle \ird{by} in
+Pol\textsuperscript{0} (§\,\ref{sec:th-polar-questions}). In colloquial speech
+a rising intonation pattern may suffice without overt \ird{by}; this is a
+prosodic reduction of the same clause type, not a distinct syntactic
+construction. The Class~1 phasal particles \ird{v} and \ird{s} may co-occur
+with \ird{by} to specify the phasal profile of the question (§\,\ref{sec:class1-particles}).
 
 \subsection{Content questions}
 
-Content questions (\textit{wh}-questions) require the interrogative to occupy
-the topic (initial) position of the clause. \textit{Wh}-fronting is obligatory
-in Iridian; in-situ interrogatives are not grammatical in standard Iridian.
-
-% [Port from 2020 archive §\,sec:content-questions; update case labels]
+Content questions are formed by the combination of a wh-operator (see
+Table~\ref{tab:nm-interrogatives} in Chapter~\ref{ch:nouns}) and a
+Pol\textsuperscript{0} head, which may be phonologically null or spelled out
+as overt \ird{by}; both options are standardly available. The wh-operator may
+remain in situ or move to the left-peripheral focus position for discourse
+prominence; both orders are grammatical in standard Iridian. The in-situ and
+fronted variants differ in the discourse salience attributed to the wh-variable,
+not in interrogative well-formedness. A content question with overt \ird{by}
+is more explicitly typed as a direct question, while one with null
+Pol\textsuperscript{0} is the lighter, more neutral form; the choice is
+a matter of discourse profile, not grammatical markedness. The full structural
+analysis and four-combination paradigm are in §\,\ref{sec:th-wh-interrogation}.
 
 \subsection{Tag, echo, and indirect questions}
 
-% [To be written]
+Tag questions append a polar question fragment after a declarative clause,
+repeating the relevant predicate or using a proform. Echo questions repeat a
+clause with rising intonation, often with \ird{by} added or with fronting of a
+wh-phrase in place of the queried element. Indirect questions are embedded
+under the non-assertive complementizer \ird{poby}; they may be of the polar
+or wh-content type (§\,\ref{sec:poby}).
 
 \section{Negation in clausal context}\label{sec:clausal-negation}
 
