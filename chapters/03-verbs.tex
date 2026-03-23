@@ -182,8 +182,8 @@ the progressive more narrowly profiles a dynamic event as actively unfolding at
 the reference point. The \term{contemplative} places \textit{E} after
 \textit{R}, presenting the event as projected, intended, expected, or otherwise
 not yet realized. English translation equivalents therefore vary by context:
-none of these categories should be reduced to simple labels such as ``past,''
-``present,'' or ``future.'' Moreover, because viewpoint aspect interacts with
+none of these categories should be reduced to simple labels such as `past,'
+`present,' or `future.' Moreover, because viewpoint aspect interacts with
 lexical aspect, the same inflection does not yield identical interpretive
 effects with every predicate class. With states and activities, the continuous
 naturally yields persistent or ongoing readings; with accomplishments it
@@ -202,6 +202,17 @@ whether the clause is built on an ergative-absolutive or a nominative-accusative
 frame. Aspect in Iridian therefore has consequences at two levels at once: it
 construes the temporal profile of the eventuality and it determines the
 morphosyntactic alignment through which the clause is organized.
+
+The mapping between aspect and alignment is not arbitrary. In bounded,
+externally-viewed events (the perfective and retrospective), the clause is
+fundamentally ``about'' what happened to a participant---the locus of
+culmination---and the patient accordingly occupies the absolutive. In
+unbounded, internally-viewed events (the continuous, progressive, and
+contemplative), the clause is fundamentally ``about'' an agent's ongoing
+activity or state, and the agent accordingly occupies the absolutive. This
+alignment between aspectual viewpoint and case pivot is the semantic core of
+Iridian's split-ergative system; the formal analysis is given in
+§\,\ref{sec:vm-asp-case}.
 
 \begin{figure}[t]
 \centering
@@ -294,13 +305,97 @@ rows; in discourse, adverbials or sequencing may shift $R$ independently of $S$.
 \label{fig:iridian-aspect-reichenbach}
 \end{figure}
 
-\subsection{Alignment in nominative aspects (continuous, progressive, contemplative)}
+\subsection{Formal analysis: the Asp.Align morpheme}\label{sec:vm-asp}
 
-In the continuous, progressive, and contemplative aspects the main argument of
-the verb stands in the direct case regardless of transitivity, while the patient
-of a transitive verb appears in the indirect. This is a nominative-accusative
-pattern, the direct case serving as the absolutive and the indirect as the
-oblique.
+The aspect-alignment suffix is the sole obligatory morpheme in every finite
+Iridian verbal form. Its double burden---encoding both the aspect of the event
+and the alignment pattern of case assignment---makes it the central theoretical
+challenge of the Iridian verbal system. The five indicative aspect-alignment
+suffixes are given in Table~\ref{tab:aspect}.
+
+\begin{table}[ht]
+	\footnotesize\sffamily
+	\caption{Aspect-alignment suffixes.}\label{tab:aspect}
+	\medskip
+	\begin{tabularx}{0.85\textwidth}{L l L}
+		\toprule
+		{\sc aspect} & {\sc suffix} & {\sc notes} \\
+		\midrule
+		Perfective              & \ird{-ek} / \ird{-ik}  & \ird{-ik} when stem vowel is \ird{ě} or \ird{e} (dissimilation; see §\ref{sec:aspect-pf}); \ird{-nik} after transitive \ird{-n-} \\
+		Retrospective           & \ird{-ac} & \\
+		Continuous              & \ird{-a}   & \\
+		Progressive             & \ird{-ime} & \\
+		Contemplative           & \ird{-ach} & \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Split-ergative alignment}
+\label{sec:vm-asp-case}
+
+Asp.Align does two things at once. It encodes the viewpoint aspect of the
+event---how the speaker construes the event's temporal contour---and it
+determines which participant is the clause's \term{absolutive pivot}: the
+argument that bears the direct case and serves as the informational anchor of
+the assertion. These two functions are inseparable; the alignment of the clause
+is a consequence of its aspectual category, and both are realized in the same
+obligatory suffix.
+
+The alignment defaults are:
+
+\begin{enumerate}[wide]
+\item ERG-aspect domain (perfective, retrospective). The patient receives the
+  direct (absolutive) case and the agent the transitive (ergative) case. The
+  ergative is the marked, dependent case: it is assigned to the agent only when
+  a patient has already received absolutive. The absolutive is therefore the
+  \emph{patient}.
+\item NOM-aspect domain (continuous, progressive, contemplative). The agent
+  receives the direct (absolutive) case and the patient the indirect (oblique)
+  case. The absolutive is therefore the \emph{agent}.
+\end{enumerate}
+
+The correlation between bounded aspect and patient-absolutive, and between
+unbounded aspect and agent-absolutive, is not an arbitrary accident. It is
+semantically motivated and cross-linguistically robust (Dixon 1994; Coon 2013).
+
+In a bounded, externally-viewed event---the perfective and retrospective---the
+event is construed as a completed whole, and the primary assertion of the clause
+concerns what happened \emph{to} some participant. In transitive events the
+locus of culmination is prototypically the patient: the bread was eaten, the
+game was caught, the letter was brought. Placing the patient in the absolutive
+encodes this culmination-focus: the patient is what the bounded event is
+``about,'' and the case system reflects that primacy. The agent, while causally
+indispensable, is the secondary specification---the dependent case falls on it
+once the patient has taken the absolutive.
+
+In an unbounded, internally-viewed event---the continuous, progressive, and
+contemplative---there is no culmination foregrounded, and what is asserted is an
+ongoing activity, state, or projected action. The most discourse-prominent
+participant is the one engaged in or holding that activity: the agent. Placing
+the agent in the absolutive encodes this activity-focus; the patient, if
+present, is backgrounded as the indirect object of an activity rather than the
+culmination-point of an event.
+
+This structural asymmetry between the two aspect-domains reinforces the semantic
+one. Non-perfective categories are cross-linguistically \emph{structurally
+heavier}: progressive constructions typically involve copular or periphrastic
+material (English \textit{be + V-ing}; Slavic imperfective morphology;
+grammaticalized locative predicates), and the continuous often encodes states
+that in other languages appear as nominal or stative predicates. Perfective, by
+contrast, is the default, structurally simplest aspect---the unmarked member in
+morphological paradigms, the first to emerge in acquisition and
+grammaticalization---and it places the fewest additional demands on clause
+structure. The richer, internally organized imperfective clause therefore
+naturally yields nominative alignment, while the simpler, culmination-focused
+perfective clause yields ergative alignment. Iridian's split is typologically
+well-motivated, a surface reflex of an affinity between aspectual viewpoint and
+case assignment that recurs across unrelated languages.
+
+These patterns are directly visible in the case frames of indicative clauses.
+In the NOM-aspect domain, the main argument of the verb bears the direct case
+regardless of transitivity, while the patient of a transitive verb appears in
+the indirect. This is a nominative-accusative frame, with the direct case
+serving as the absolutive and the indirect as the oblique:
 
 \pex
 \a
@@ -329,28 +424,14 @@ oblique.
 \endgl
 \xe
 
-\subsection{Alignment in ergative aspects (perfective and retrospective)}
-
-In the perfective and retrospective aspects the patient of a transitive verb is placed in the direct case, and the agent takes the transitive case. This is an ergative-absolutive pattern; what Iridian grammar calls the \emph{transitive case} is, in typological terms, the ergative, and the \emph{direct case} serves as the absolutive. For a transitive verb to trigger ergative alignment, it must carry the Voice head \ird{-n-} immediately before the aspect suffix.
-
-\begin{table}[ht]
-	\footnotesize\sffamily
-	\caption{Aspect-alignment suffixes.}\label{tab:aspect}
-	\medskip
-	\begin{tabularx}{0.85\textwidth}{L l L}
-		\toprule
-		{\sc aspect} & {\sc suffix} & {\sc notes} \\
-		\midrule
-		Perfective              & \ird{-ek} / \ird{-ik}  & \ird{-ik} when stem vowel is \ird{ě} or \ird{e} (dissimilation; see §\ref{sec:aspect-pf}); \ird{-nik} after transitive \ird{-n-} \\
-		Retrospective           & \ird{-ac} & \\
-		Continuous              & \ird{-a}   & \\
-		Progressive             & \ird{-ime} & \\
-		Contemplative           & \ird{-ach} & \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-Three configurations are available in the ergative aspects. When the Voice head \ird{-n-} is present, the clause takes full ergative alignment: the patient is licensed as a core argument and appears in the direct case, and the agent takes the transitive. When \ird{-n-} is absent and the verb bears the antipassive \ird{-aš-}, the agent appears in the direct case and the patient is removed from core argument structure. When neither is present, the bare perfective suffix is used, a form grammatical only with inherently intransitive verbs, for which the question of alignment does not arise. For a transitive verb the bare perfective is inadmissible, because the patient lacks the overt patient-licensing Voice head required for core realization.
+In the ERG-aspect domain, by contrast, the patient of a transitive verb is
+placed in the direct case, and the agent takes the transitive case. This is an
+ergative-absolutive frame; what Iridian grammar calls the \emph{transitive case}
+is, in typological terms, the ergative, and the \emph{direct case} serves as
+the absolutive. In this domain, a transitive predicate requires the Voice head
+\ird{-n-} to license the patient as a core argument; when the Voice head
+\ird{-aš-} is present instead, the agent takes the absolutive and the patient is
+removed from core argument structure (§\,\ref{sec:vm-antipassive}):
 
 \pex
 \a
@@ -367,17 +448,169 @@ Three configurations are available in the ergative aspects. When the Voice head 
 \endgl
 \xe
 
-The choice between these constructions is governed primarily by the discourse status of the patient. The ergative construction foregrounds the patient: it is the construction of a specific, discourse-trackable participant who is either newly introduced or reactivated, and the event is asserted as bringing about a change of state in that participant. It is accordingly characteristic of narrative foreground, where the consequences of events for particular persons or things constitute the substance of what is related. Patient definiteness correlates strongly with the ergative, and the definite marker \ird{-t} most commonly appears on the patient noun in this construction, though it is not formally required.
+The choice between these constructions is governed primarily by the discourse
+status of the patient. The ergative construction foregrounds the patient: it is
+the construction of a specific, discourse-trackable participant who is either
+newly introduced or reactivated, and the event is asserted as bringing about a
+change of state in that participant. It is accordingly characteristic of
+narrative foreground, where the consequences of events for particular persons or
+things constitute the substance of what is related. Patient definiteness
+correlates strongly with the ergative, and the definite marker \ird{-t} most
+commonly appears on the patient noun in this construction, though it is not
+formally required.
 
-The antipassive construction, by contrast, foregrounds the agent's activity without reference to any outcome in a patient. It is the construction of choice when the patient is non-referential, semantically incorporated, or of no discursive moment: in habitual and generic statements, in activity-focus contexts wherein the event itself and not its effect upon some participant is what is asserted, and wherever the clause contains no patient at all. The guiding principle is that the patient, where it exists, must either be present through the ergative construction or wholly absent; the antipassive admits of no intermediate state in which a patient is demoted to an oblique position.
+The antipassive construction, by contrast, foregrounds the agent's activity
+without reference to any outcome in a patient. It is the construction of choice
+when the patient is non-referential, semantically incorporated, or of no
+discursive moment: in habitual and generic statements, in activity-focus
+contexts wherein the event itself and not its effect upon some participant is
+what is asserted, and wherever the clause contains no patient at all. The
+guiding principle is that the patient, where it exists, must either be present
+through the ergative construction or wholly absent; the antipassive admits of no
+intermediate state in which a patient is demoted to an oblique position.
 
-\subsection{The perfective}\label{sec:aspect-pf}
+Taken together, the choice between ergative and antipassive constructions in the
+perfective and retrospective is a choice about where to locate the event's
+absolutive pivot: on the patient (ergative, culmination-focus) or on the agent
+(antipassive, activity-focus). This discourse-structural opposition is the
+surface reflex of the same aspectual-semantic logic that separates the
+ERG-domain aspects from the NOM-domain aspects at the level of the whole aspect
+inventory: bounded events culminate in patients; unbounded activities centre on
+agents.
 
-The perfective encodes a completed action viewed as a whole at a specific point in time, and is the primary narrative aspect.
+Iridian's ergative case is \term{aspect-directed}: the Asp.Align suffix
+specifies which argument is the absolutive, so the alignment varies with the
+aspect rather than being fixed by structural position or thematic role alone.
+Because the absolutive varies in this way---patient in the ERG domain, agent in
+the NOM domain---the Asp.Align morpheme is the natural locus of alignment, not a
+passive reflex of deeper case rules.
 
-The bare intransitive perfective suffix presents two allomorphs: \ird{-ek} is the default form, and \ird{-ik} appears where the stem's final syllable has \ird{ě} or \ird{e} as its nucleus. The raising is dissimilatory in character: adjoining \ird{-ek} directly to such a stem would produce a CěCe or CeCe sequence across a single intervening consonant, which the language avoids. The allomorphy is thus conditioned by the stem vowel and not by the thematic consonant class. Where a valency morpheme --- the antipassive \ird{-aš-}, the applicative \ird{-éb-}, or the causative \ird{-na-} --- intervenes between stem and suffix, it contributes its own vowel and breaks the sequence; raising accordingly does not apply in derived forms. The ergative perfective \ird{-nik}, which always follows the Voice head \ird{-n-}, is a fixed form and does not derive from this rule. % Cross-reference: this dissimilation should be described in the phonology chapter alongside the other vowel alternations.
+Within the domain Asp.Align establishes, the transitive (ergative) case behaves
+as a \term{dependent case}: it falls on the agent when and only when a patient
+has already received the absolutive. These two observations are complementary
+rather than competing. Aspect-directed selection determines \emph{which
+argument} is the absolutive; dependent case determines \emph{what the agent
+receives} once the absolutive is fixed on the patient. The architecture is
+aspect-driven at the inter-domain level and dependent-case at the intra-domain
+level.
 
-When negated, the perfective carries a specific implicature: the negated perfective describes something that was expected to occur but did not. For the neutral negation of a past event, free from this implication, the retrospective is preferred.
+Selecting an aspect is simultaneously selecting which argument is the clause's
+discourse topic. In the ERG domain, the patient-absolutive is characteristically
+the discourse-prominent argument: the affected participant is the
+culmination-point the event asserts something about. In the NOM domain, the
+agent-absolutive is characteristically the discourse-prominent argument: the
+active participant is whose activity or state the clause tracks. This is what it
+means to say that aspect selection in Iridian is in part a pragmatic decision:
+speakers choosing an aspect are choosing a case frame that encodes which
+participant the clause is ``about,'' and the two decisions are one and the same
+act.
+
+The defaults above may be overridden by an overt Voice head. When a transitive
+stem bears a Voice head carrying its own absolutive specification, that
+specification supersedes the Asp.Align default. The morpheme \ird{-n-} is such a
+head: it licenses the internal argument and forces patient-absolutive, yielding
+ergative transitives in the ERG domain and passive constructions in the NOM
+domain (§\,\ref{sec:vm-n}, §\,\ref{sec:vm-passive}). The antipassive \ird{-aš-}
+likewise constitutes an overt Voice head, but is subject to a structural input
+condition: it may apply only where the patient already stands as the absolutive,
+and it therefore surfaces exclusively in ERG-aspect clauses
+(§\,\ref{sec:vm-antipassive}).
+
+When an overt Voice head is present, its absolutive specification is satisfied
+first, and the remaining non-absolutive argument receives the case predicted by
+the aspect domain. Asp.Align determines the default; Voice, when present,
+narrows or redirects that default within the same domain.
+
+The fusion of aspect and alignment into a single suffix is not an accident. It
+reflects the language's deep integration of temporal viewpoint, case assignment,
+and discourse-topic orientation---three properties that many other languages
+encode separately, but that Iridian realizes in the one morpheme that no finite
+verb may lack.
+
+\subsection{The perfective domain}\label{sec:aspect-pf}
+
+The perfective domain comprises those Asp.Align forms which construe an
+eventuality as bounded and externally viewed. Unlike the imperfective domain,
+which presents an event from within its internal course, the perfective domain
+presents it as a temporally delimited whole. Iridian distinguishes two
+categories within this domain: the \term{perfective} proper, which presents a
+bounded event as a discrete occurrence, and the \term{retrospective}, which
+presents a bounded prior event in relation to a present state, present
+relevance, or present experience. Both categories interact regularly with
+valency and alignment morphology, and both therefore belong to a single
+structural and semantic domain rather than to unrelated aspectual classes.
+
+Formally, the perfective suffix has two allomorphs. \ird{-ek} is the default
+form, and \ird{-ik} appears when the final syllable of the stem contains
+\ird{ě} or \ird{e} as its nucleus. This raising is dissimilatory in character:
+direct suffixation of \ird{-ek} to such stems would produce a CěCe or CeCe
+sequence across a single intervening consonant, which the language avoids. The
+conditioning is thus vocalic and does not depend on consonant class. Where a
+valency morpheme such as the antipassive \ird{-aš-}, the applicative \ird{-éb-},
+or the causative \ird{-na-} intervenes between stem and suffix, that intervening
+material breaks the disfavoured sequence and raising does not apply. The
+ergative perfective \ird{-nik}, which follows the Voice head \ird{-n-}, is a
+fixed form and is not derived by this alternation. The retrospective is marked
+by \ird{-ac}; its derived forms are built compositionally, as in \ird{-n-ac} and
+\ird{-aš-ac}. % Cross-reference: the \ird{-ek}/\ird{-ik} alternation may be
+treated more fully in the phonology chapter.
+
+The semantic opposition within the perfective domain is best stated as one of
+\emph{event occurrence} versus \emph{post-event relevance}. The perfective
+proper presents a bounded event as a single occurrence situated at a definite
+point in narrative or discourse time, and is therefore the primary narrative
+aspect. The retrospective likewise presupposes a bounded prior event, but does
+not profile that event merely as an occurrence; rather, it presents it through
+its present relevance, present consequences, or experiential force. In this
+respect it corresponds in some uses to the English perfect. Its non-volitional
+or accidental readings belong to the same general semantic profile: the event is
+construed from the standpoint of its aftermath or present bearing, rather than
+simply narrated as a bounded occurrence.
+
+This contrast may be seen in the following pair:
+
+\pex
+\a
+\begingl
+\gla Pražě de stožac.//
+\glb Prague.\Ind{} to go-\Ret{}//
+\glft \trsl{(I) have been to Prague before.}//
+\endgl
+\a Compare:
+\begingl
+\gla Bych Pražě de stožek.//
+\glb yesterday Prague.\Ind{} to go-\Pf{}//
+\glft \trsl{Yesterday I went to Prague.} \lingcontext{specific past event; perfective}//
+\endgl
+\xe
+
+Within the perfective domain, the ERG Asp.Align default assigns absolutive to
+the patient. For a transitive predicate, an overt Voice head is required to
+mediate between the stem and the Asp.Align suffix: the Voice head \ird{-n-}
+licenses the patient as a core argument and places it in the direct case, while
+the agent takes the transitive; the antipassive Voice head \ird{-aš-} instead
+removes the patient from core argument structure, placing the agent in the
+direct case as the clause's sole overt pivot. For an inherently intransitive
+verb, no Voice head is required: the sole argument takes the direct case
+directly, as the only available absolutive pivot.
+
+This structural distinction is especially important in the retrospective. The
+ergative retrospective (\ird{-n-ac}) locates present relevance in the outcome
+state of the patient: something has been affected, and that effect continues to
+matter in the discourse situation. The antipassive retrospective (\ird{-aš-ac})
+instead locates present relevance in the experience or history of the agent: the
+event matters as part of what the agent has done or undergone, not as a
+persisting state of some affected patient. The contrast is parallel to that
+between English \textit{the bread has been eaten}, which is outcome-relevant and
+patient-oriented, and \textit{I have eaten}, which is experiential and
+agent-oriented.
+
+Negation further confirms the semantic distinction between the two members of
+the perfective domain. When negated, the perfective normally carries the
+implicature that the event was expected, intended, or contextually projected,
+but failed to occur. The retrospective, by contrast, is the neutral form for
+simple past negation without this implication. The opposition is illustrated
+below:
 
 \pex
 \a
@@ -394,39 +627,32 @@ When negated, the perfective carries a specific implicature: the negated perfect
 \endgl
 \xe
 
-\subsection{The retrospective}
+\label{sec:ambitransitive}A small class of verbs shows particularly clearly how the perfective domain
+interacts with argument structure. These are lexical ambitransitives: verbs
+which possess both an intransitive reading, in which no patient is structurally
+available, and a transitive reading, in which a patient is licensed. Neither
+reading is derived from the other by ordinary valency operations; both are
+lexical possibilities of the same stem. Two examples are \ird{lov-} \trsl{hunt,
+forage [intr.]; catch, take [tr.]} and \ird{kěl-} \trsl{sing, perform [intr.];
+sing a song, chant a text [tr.]}.
 
-The retrospective (\ird{-ac}) describes a past action with continuing present relevance, or an action that was non-volitional or accidental. It corresponds in certain uses to the English perfect, in others to a non-volitional past.
-
-\pex
-\a
-\begingl
-\gla Pražě de stožac.//
-\glb Prague.\Ind{} to go-\Ret{}//
-\glft \trsl{(I) have (been to) Prague before.}//
-\endgl
-\a Compare:
-\begingl
-\gla Bych Pražě de stožek.//
-\glb yesterday Prague.\Ind{} to go-\Pf{}//
-\glft \trsl{Yesterday I went to Prague.} \lingcontext{specific past event; perfective}//
-\endgl
-\xe
-
-The ergative and antipassive constructions encode distinct kinds of continuing relevance in the retrospective. The transitive retrospective (\ird{-n-ac}) situates the relevance in the outcome state of the patient: something has been affected, and that effect persists or bears upon the present situation. The antipassive retrospective (\ird{-aš-ac}) locates the relevance in the experience of the agent: the event is part of the agent's history, not a change in some external participant. This distinction parallels the English opposition between \textit{the bread has been eaten} --- outcome-relevant, a fact about the bread --- and \textit{I have eaten} --- experiential, a fact about the speaker.
-
-\subsection{Ambitransitive verbs}\label{sec:ambitransitive}
-
-A small class of verbs possesses two readings of different argument structure: an intransitive reading, in which no patient is structurally available, and a transitive reading, in which a patient is licensed. These are lexical ambitransitives; neither reading is derived from the other through the antipassive, applicative, or causative, but both are basic senses of the verb. Two examples are \ird{lov-} (\trsl{hunt, forage [intrans.]; catch, take [trans.]}) and \ird{kěl-} (\trsl{sing, perform [intrans.]; sing a song, chant a text [trans.]}).
-
-The diagnostic for membership in this class is whether the Voice head \ird{-n-} is admissible in one reading but impossible in the other. For \ird{lov-}: \ird{lovnik} is grammatical in the transitive reading, as something was caught; no \ird{-n-} form is available in the intransitive reading, wherein the event is construed as the activity of hunting itself, with no quarry in the event frame. The bare perfective accesses only the intransitive reading; the antipassive and ergative access only the transitive.
+The diagnostic for membership in this class is whether the Voice head \ird{-n-}
+is available in one reading but impossible in the other. In \ird{lov-}, the
+intransitive perfective---formed without any Voice head, with the ERG Asp.Align
+suffix attached directly to the stem---accesses only the intransitive reading:
+the event is construed simply as hunting, with no patient structurally present
+and no quarry included in the event frame as an affected participant. The
+ergative and antipassive forms, by contrast, access the transitive reading. The
+ergative perfective \ird{lovnik} is possible only when something is caught or
+taken; the antipassive construes the event as directed toward prey, but
+suppresses that prey from the clause's core argument structure.
 
 \pex
 \a
 \begingl
 \gla Marek bych lovek.//
 \glb Marek.\Dir{} yesterday hunt-\Pf{}//
-\glft \trsl{Marek went hunting yesterday.} \lingcontext{intransitive reading; bare \ird{-ek}}//
+\glft \trsl{Marek went hunting yesterday.} \lingcontext{intransitive reading; no patient in event frame}//
 \endgl
 \a
 \begingl
@@ -438,21 +664,40 @@ The diagnostic for membership in this class is whether the Voice head \ird{-n-} 
 \begingl
 \gla Marek bych lovžek.//
 \glb Marek.\Dir{} yesterday hunt-\Antip{}-\Pf{}//
-\glft \trsl{Marek was hunting yesterday.} \lingcontext{transitive reading; antipassive}//
+\glft \trsl{Marek was hunting yesterday.} \lingcontext{transitive reading; antipassive; quarry conceptually present but not licensed}//
 \endgl
 \xe
 
-The two non-ergative forms, though they may coincide in surface expression in many contexts, are not interchangeable. \ird{Lovek} belongs to the intransitive reading: hunting is construed as a pure activity, with no quarry present even in the conceptual frame of the event. \ird{Lovžek} belongs to the transitive reading: the hunt is directed toward prey, and that prey --- though it may not be expressed in any case form, the antipassive having removed it from the clause's argument structure --- is none the less understood as part of the conceptual event. The distinction corresponds, in practice, to the difference between going out to hunt and being engaged in the act of hunting something.
+The two non-ergative forms are therefore not interchangeable. \ird{Lovek}
+belongs to the intransitive lexical reading: hunting is construed as an activity
+with no patient present even in the event structure. \ird{Lovžek}, however,
+belongs to the transitive lexical reading: the event is directed toward prey,
+and that prey remains part of the conceptual frame even though the antipassive
+removes it from core syntax. The distinction is thus not merely one of overt
+argument expression, but of underlying event construal.
 
-For \ird{kěl-}, the stem vowel is \ird{ě}, so the bare intransitive perfective takes the \ird{-ik} allomorph by dissimilation: \ird{kělek} would create a CěCe sequence across the single intervening \ird{-l-}, which is avoided. The antipassive \ird{kělšek} is unaffected, the \ird{-š-} of the antipassive introducing its own vowel and breaking the sequence. The ergative \ird{kělnik} is the fixed ergative form; it and the bare \ird{kělik} are distinguished only by the presence or absence of \ird{-n-}:
+The same contrast appears even more clearly with \ird{kěl-}. Since the stem
+vowel is \ird{ě}, the intransitive perfective takes the dissimilated allomorph
+\ird{-ik}: \ird{kělek} would produce the avoided CěCe sequence across the
+single intervening consonant \ird{-l-}. The antipassive \ird{kělšek} is
+unaffected, since the antipassive morphology breaks that sequence, and the
+ergative \ird{kělnik} is the fixed transitive form with inserted \ird{-n-}. The
+three forms may be compared as follows:
 
 \pex
-\a \ird{kělik} \trsl{sang, performed} \lingcontext{intransitive; bare \ird{-ik}: no song in event frame}
-\a \ird{kělnik} \trsl{sang it (a specific song)} \lingcontext{ergative; \ird{-n-ik}: song = \Dir{}}
-\a \ird{kělšek} \trsl{was singing} \lingcontext{antipassive; \ird{-š-ek}: Class~II-A augment}
+\a \ird{kělik} \trsl{sang, performed} \lingcontext{intransitive; no song in the event frame}
+\a \ird{kělnik} \trsl{sang it, sang a specific song} \lingcontext{transitive; ergative; patient licensed}
+\a \ird{kělšek} \trsl{was singing} \lingcontext{transitive reading; antipassive; patient suppressed from core syntax}
 \xe
 
-The minimal pair \ird{kělik} / \ird{kělnik} provides the clearest illustration in the grammar of the bare perfective opposed to the ergative, the two forms differing only by the inserted \ird{-n-}.
+The minimal pair \ird{kělik} / \ird{kělnik} is especially revealing. The two
+forms differ only by the presence or absence of the inserted Voice head
+\ird{-n-}, yet that difference is enough to distinguish an intransitive bounded
+performance from a transitively bounded event directed toward a licensed
+patient. Lexical ambitransitives of this kind therefore provide the clearest
+evidence that the perfective domain must be analysed not merely in temporal
+terms, but as the interaction of bounded viewpoint with the language's system of
+alignment and valency.
 
 \subsection{The continuous}
 
@@ -475,149 +720,137 @@ The progressive (\ird{-ime}) encodes a dynamic activity in progress, distinguish
 The contemplative (\ird{-ach}) encodes a mental state directed toward a potential future action: intention, consideration, or disposition toward an act not yet performed. It may be rendered in English as \textit{about to}, \textit{considering}, or \textit{intending to}, according to context.
 
 
-\subsection{Formal analysis: the Asp.Align morpheme}
-\label{sec:vm-asp}
-
-The aspect-alignment suffix is the sole obligatory morpheme in every
-finite Iridian verbal form. Its double burden --- encoding both the
-aspect of the event and the alignment pattern of case assignment ---
-makes it the central theoretical challenge of the Iridian verbal
-system.
-
-\subsubsection{Aspect-driven case assignment}
-\label{sec:vm-asp-case}
-
-Iridian alignment is organized by the Asp.Align head, whose aspectual
-values determine the clause's default absolutive orientation. The
-alignment defaults are:
-
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape ERG-aspect domain (perfective, retrospective).]
-  Asp.Align assigns \textsc{abs} (direct case) to the internal
-  argument (patient) and \textsc{erg} (transitive case) to the
-  external argument (agent). The ergative is the marked, dependent
-  case: it is assigned to the agent only when a patient has already
-  received absolutive (Marantz 1991). The default absolutive is
-  therefore the \emph{patient}.
-\item[\upshape NOM-aspect domain (continuous, progressive,
-  contemplative).] Asp.Align assigns \textsc{abs} (direct case) to
-  the external argument (agent) and \textsc{obl} (indirect case) to
-  the internal argument (patient). The default absolutive is
-  therefore the \emph{agent}.
-\end{description}
-
-\noindent These defaults constitute the unmarked shape of the
-Iridian alignment system. They may be altered by overt Voice
-morphology. When a transitive stem is merged with an overt Voice
-head carrying a specification for absolutive orientation, that
-specification takes precedence over the aspectual default and is
-respected by Asp.Align in the realization of the clause. The
-aspectual head therefore determines the default alignment pattern,
-but an overt Voice head may impose a different absolutive selection
-in marked constructions.
-
-The morpheme \ird{-n-} is such a head: it licenses the internal
-argument and specifies \textsc{[pat-abs]}, yielding ordinary
-ergative transitives in the ERG domain and passive constructions in
-the NOM domain (§\,\ref{sec:vm-n}, §\,\ref{sec:vm-passive}).
-The antipassive \ird{-aš-} likewise constitutes an overt Voice head,
-but it is subject to a structural input condition: it may apply only
-where the patient already stands as the absolutive participant, and
-it therefore surfaces exclusively in ERG-aspect clauses
-(§\,\ref{sec:vm-antipassive}).
-
-In the Minimalist framework, the Asp.Align head's default case
-assignment is mediated by Agree: the head probes its c-command domain
-for DPs bearing unvalued Case features and values them according to
-its featural content (Chomsky 2001). When an overt Voice head is
-present, its absolutive specification is satisfied before Asp.Align
-probes, and the remaining non-absolutive argument receives the case
-predicted by the aspectual domain. The fusion of aspect and alignment
-into a single suffix is not an accident: it reflects the close
-coupling in Iridian between the temporal framing of an event and the
-information-structural decision of which participant is the clause's
-absolutive pivot.
-
-\subsubsection{Split ergativity and the information-structure interface}
-\label{sec:vm-asp-info}
-
-The grammar's description of aspect selection as a
-\emph{pragmatic} decision (the speaker selects the aspect that
-places the discourse-salient argument in absolutive) requires
-formal reconciliation with the syntactic Agree mechanism described
-above.
-
-Two strategies are available within Minimalism:
-
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Top-down feature percolation.] Topic assignment
-  operates in the left periphery (Spec,TopP), where an argument
-  already bears topic features. These features are passed down
-  (through some mechanism of syntactic binding or coindexation) to
-  the Asp head, constraining which Vocabulary Item is inserted at
-  Asp. A patient-topic clause selects an ergative Asp morpheme; an
-  agent-topic clause selects a nominative Asp morpheme. This
-  requires either late lexical insertion (consistent with
-  Distributed Morphology) or a bidirectional Agree relation between
-  TopP and AspP.
-\item[\upshape Late Vocabulary Insertion.] In a DM-style account
-  (Halle \& Marantz 1993; Embick \& Noyer 2007), the Asp node in narrow syntax is
-  underspecified for the choice of morpheme. Vocabulary Items are
-  inserted post-syntactically by matching feature bundles. The
-  speaker's information-structural decision (which argument is
-  discourse-topic) is registered as a feature [\textsc{top}] on one
-  of the DP arguments; this feature is present when Vocabulary
-  Insertion takes place and conditions which Asp morpheme is
-  inserted.
-\end{description}
-
-\noindent The DM approach has the advantage of keeping
-narrow-syntax Agree simple (the Asp head probes for DPs in its
-c-command domain without knowing in advance which DP will be the
-absolutive) while assigning information-structural conditioning to
-the PF component. This is the preferred analysis here, though
-it requires elaboration of how [\textsc{top}] features are
-represented in the DM morphological component.
-
-The key theoretical desideratum: the grammar's informal claim that
-``aspect choice is partly pragmatic'' must be formalized as a
-specific interface mechanism. Until this is done, the claim risks
-being merely redescriptive. A concrete proposal: the
-[\textsc{top}] feature on a DP argument is set at the information
-structure level (in the C-domain or in a dedicated information
-structure component co-indexed with TopP), and this feature
-determines which Asp Vocabulary Item is inserted. The split is
-then not a quirk of case morphology but a reflex of the language's
-deep commitment to topic-comment organization at every level of
-the grammar.
-
-\subsubsection{Mood as a competing head}
+\subsection{Asp.Align under non-indicative Mood: impoverishment and reduced opposition}
 \label{sec:vm-mood-asp}
 
-When a mood suffix is present (imperative \ird{-ím}, prohibitive
-\ird{-é}, hortative \ird{-ká/-ku}, irrealis \ird{-ěv}), the
-Asp.Align slot is suppressed entirely: mood replaces aspect. In
-syntactic terms, this is most naturally analyzed as the MoodP head
-blocking the Asp head: when MoodP is merged above AspP, the Asp
-head is defective and receives no Vocabulary Item at the AspP node.
-The morphological output is therefore Mood without Aspect.
+No finite Iridian verb ever lacks an Asp.Align exponent. What changes under a
+non-indicative Mood is not the presence of the Asp.Align head but the
+\emph{richness} of its featural specification.
 
-This has a consequence for case assignment. In the directive moods,
-the case-assigning features of the Asp.Align head are absent, and
-case is instead determined by the principles of the directive domain
-described in §\,\ref{sec:mood-directive}: the direct case is assigned
-to the theme or the clause's sole participant, the transitive to an
-overt speech-act participant subject where competition would otherwise
-arise, and the indirect to applicative beneficiaries and causative
-causees. The directive case geometry is therefore not a carry-over
-of either the ergative or the nominative-accusative indicative
-alignment, but the output of its own case-assignment principles once
-the Asp.Align head is suppressed.
+In the indicative, Asp.Align realizes the full five-way viewpoint inventory
+(progressive, continuous, contemplative, perfective, retrospective) with the
+associated split-ergative alignment. In the non-indicative moods---imperative,
+prohibitive, hortative, and irrealis---a post-syntactic impoverishment rule
+eliminates the fine-grained viewpoint features of the Asp node, retaining only
+the coarser \term{alignment-domain} contrast that drives case assignment. The
+result is a two-way \term{reduced Asp.Align} opposition shown in
+Table~\ref{tab:reduced-asp}.
+
+\begin{table}
+  \footnotesize\sffamily
+  \caption{Reduced Asp.Align exponents in non-indicative clauses.}
+  \label{tab:reduced-asp}
+  \medskip
+  \begin{tabularx}{0.9\textwidth}{l l L}
+    \toprule
+    \textsc{domain} & \textsc{exponent} & \textsc{semantic range} \\
+    \midrule
+    Imperfective (IPFV) & $\emptyset$ & unbounded, ongoing, habitual, generic;
+                                        processual commands and optatives \\
+    Perfective (PFV)    & \ird{-ov-}  & bounded, single whole event, completive;
+                                        ingressively directive \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Crucially, the alignment consequences of these two domains are
+identical to those operative in the full indicative system. The IPFV-domain
+reduced Asp.Align triggers nominative-style alignment: the agent is the
+absolutive (direct-case) argument and the patient receives the indirect. The
+PFV-domain reduced Asp.Align (\ird{-ov-}) triggers ergative alignment: the
+patient is the absolutive (direct-case) argument and the agent receives the
+transitive case. No separate case-assigning principles are required for the
+directive or irrealis domains; alignment is the output of the same head that
+governs all finite clauses.
+
+\paragraph{Morphological composition.}
+The surface template for a non-indicative finite verb is therefore:
+
+\begin{center}
+\Stem{} + (\textsc{voice}) + (\Caus{}) + \textsc{reduced Asp.Align} + \textsc{mood}
+\end{center}
+
+\noindent where the reduced Asp.Align is silent ($\emptyset$) in the
+IPFV domain and surfaces as \ird{-ov-} in the PFV domain. Representative
+paradigms for the stem \ird{piašt-} `eat':
+
+\begin{center}
+\footnotesize\sffamily
+\begin{tabular}{l l l l}
+\toprule
+\textsc{domain} & \textsc{imperative} & \textsc{prohibitive} & \textsc{hortative} \\
+\midrule
+IPFV ($\emptyset$) & \ird{piaštím}   & \ird{piašté}    & \ird{piaštká}   \\
+PFV (\ird{-ov-})   & \ird{piaštovím} & \ird{piaštové}  & \ird{piaštovká} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The PFV exponent \ird{-ov-} is invariant and does not
+trigger the thematic consonant alternations conditioned by the mood
+suffixes themselves; because \ird{-ov-} intervenes between the stem
+and the palatalizing irrealis suffix \ird{-ěv}, stem palatalization
+does not apply in the PFV irrealis (\ird{piaštověv}, not
+\ird{*piaščověv}).
+
+The IPFV/PFV opposition in directive clauses parallels, in function,
+the well-known imperfective/perfective imperative distinction found in
+West Slavic and other aspect languages: the IPFV imperative encodes an
+ongoing, habitual, or processual directive (the event is construed as
+unbounded), while the PFV imperative encodes a bounded, completive
+directive (the event is construed as a single whole). In the irrealis,
+the IPFV domain covers generic non-actual scenarios and standing
+hypotheticals; the PFV domain covers single bounded counterfactuals.
+
+In Distributed Morphology terms, the impoverishment rule may be stated as
+follows. When MoodP bears a non-indicative value, a post-syntactic
+impoverishment rule deletes the fine-grained viewpoint features
+[$\pm$\textsc{bounded}, $\pm$\textsc{anterior}, \textsc{prospective}] of the Asp
+node, leaving only the coarser feature [$\pm$\textsc{pfv-domain}]. Late
+Vocabulary Insertion then maps this reduced bundle to $\emptyset$ (IPFV) or
+\ird{-ov-} (PFV). The rule is:
+
+\medskip
+\noindent\begin{tabular}{@{}l@{\quad}l}
+$[\textsc{Mood}: \text{non-indicative}]$ & $\Rightarrow$ suppress fine
+aspectual contrasts within Asp.Align; \\
+& \hspace*{1.5em}retain only $[\pm\textsc{pfv-domain}]$.
+\end{tabular}
+\medskip
+
+Syntactically, Mood remains the higher head (MoodP $>$ AspP), consistent with
+standard scope expectations and with Cinque's functional hierarchy.
+Morphologically, however, Mood becomes \emph{dependent} on Asp.Align: Mood never
+surfaces on a finite verb unless Asp.Align has been realized. The interaction is
+therefore one of impoverishment rather than competition.
+
+The pattern observable in directive clauses---patient or theme in the direct
+case, overt speech-act participant subject in the transitive when it would
+otherwise compete for the direct slot---follows from the interaction of reduced
+Asp.Align with null-subject orientation, and requires no additional
+case-assigning engine. In the default directive situation, the agent is null
+(the understood second-person subject of an imperative or prohibitive is
+unexpressed). Under IPFV-domain alignment, the agent is nominally the
+absolutive, but with the agent unrealized, the patient absorbs the direct case
+as the clause's sole overt core argument. Under PFV-domain alignment, the
+patient is the absolutive by definition and the null agent is simply unrealized
+in the transitive. In both domains, the patient or theme characteristically
+occupies the direct case---not by a separate directive case principle, but by
+the confluence of reduced Asp.Align and null-subject orientation. The
+competition-driven transitive marking of overt speech-act participant subjects
+(§\,\ref{sec:mood-directive-case}) is likewise a surface reflex of the
+absolutive orientation already encoded by Asp.Align: an overt agent would
+ordinarily be the absolutive under IPFV alignment, but when a competing direct
+object is present, that structural pressure forces the subject into the
+transitive to preserve the patient as the clause's single direct nominal.
 
 
 \section{Valency operations}
 
-Three derivational operations may be applied to the verb stem before the aspect-alignment suffix: the antipassive, the applicative, and the causative. Where more than one is present, the order is fixed: antipassive or applicative precedes the causative.
+Three derivational operations may be applied to the verb stem before the
+aspect-alignment suffix: the antipassive, the applicative, and the causative.
+Where more than one is present, the order is fixed: antipassive or applicative
+precedes the causative.
 
 \subsection{The antipassive (\ird{-aš-})}
 \label{sec:vm-antipassive-desc}
@@ -1469,43 +1702,58 @@ Chapter~\ref{ch:nouns}.
 
 The mood system comprises the indicative, the imperative, the prohibitive, the
 hortative, and the irrealis. Mood is expressed by a suffix occupying the
-position immediately following the aspect-alignment morpheme; in the indicative
-this suffix is null. Where a mood suffix is present, the aspect-alignment slot
-is suppressed, the mood suffix replacing the full aspect complex. The
-imperative, prohibitive, and hortative together form the directive domain, a
-unified subsystem with its own case properties; it is treated as a group
-beginning in §\,\ref{sec:mood-directive}.
+position immediately outside the aspect-alignment morpheme; in the indicative
+this suffix is null. Where a non-indicative mood suffix is present, the
+Asp.Align head remains in the clause but its full five-way viewpoint inventory
+is reduced by post-syntactic impoverishment to a two-way
+imperfective/perfective-domain contrast, as described in
+§\,\ref{sec:vm-mood-asp}. Every finite verb, indicative or not, therefore
+carries an Asp.Align exponent. The imperative, prohibitive, and hortative
+together form the directive domain, a unified subsystem whose case properties
+follow from the interaction of reduced Asp.Align with null-subject orientation;
+it is treated as a group beginning in §\,\ref{sec:mood-directive}.
 
 \subsection{Indicative}
 
 The indicative is the unmarked mood. It alone hosts the full five-way aspect
-system and the split-ergative alignment described in Section~\ref{sec:aspect};
-it is accordingly the only mood in which the antipassive-transitive distinction
-is operative.
+system and the associated split-ergative alignment described in
+Section~\ref{sec:aspect}. Non-indicative moods carry a reduced two-way
+aspect-domain contrast in Asp.Align (§\,\ref{sec:vm-mood-asp}), which
+preserves the ergative/nominative alignment split but collapses the five-way
+viewpoint inventory. The antipassive-transitive distinction, which depends on
+the full structural availability of the ERG-domain Asp.Align in its indicative
+form, is operative only in the indicative.
 
 \subsection{The directive domain}\label{sec:mood-directive}
 
 The imperative, the prohibitive, and the hortative form a unified directive
 domain: a compact finite subsystem used for commands, negative commands,
-suggestions, proposals, soft requests, permissive uses, and wishes. This
-subsystem operates on principles distinct from those of the indicative. Where
-the indicative couples mood with the full five-way aspect system and the
-split-ergative alignment described in Section~\ref{sec:aspect}, directive moods
-exclude the ordinary aspect suffixes entirely. The directive mood suffix is
-itself clause-defining and therefore occupies the aspect-alignment slot in the
-verbal template; no aspect morpheme is present alongside it.
+suggestions, proposals, soft requests, permissive uses, and wishes. Where
+the indicative provides the full five-way aspect system and the split-ergative
+alignment described in Section~\ref{sec:aspect}, directive moods carry a
+reduced two-way aspect-domain contrast in Asp.Align: the imperfective domain
+($\emptyset$ exponent, nominative-style alignment) and the perfective domain
+(\ird{-ov-} exponent, ergative alignment). The directive mood suffix follows
+Asp.Align in the verbal template, so the order is always \textsc{stem}
++ (\textsc{voice}) + \textsc{reduced Asp.Align} + \textsc{mood}. See
+§\,\ref{sec:vm-mood-asp} for the formal account.
 
-The directive domain is further governed by a case principle not operative in
-the indicative: directive clauses ordinarily permit only one core nominal in the
-direct case. The understood subject of imperative and prohibitive clauses is
-second person and is normally left unexpressed, being recoverable from the
-speech situation. Where an overt speech-act participant subject would otherwise
-compete with an overt direct object for the clause's single direct slot, that
-subject is expressed in the transitive case instead. The patient or theme of the
-clause is thus the clause's sole core direct nominal. Beneficiaries licensed by
-the applicative and causees licensed by the causative are obligatorily overt and
-appear in the indirect. Antipassive morphology is excluded from all directive
-moods.
+The observable case geometry of the directive domain follows from the
+interaction of reduced Asp.Align with the null-subject convention characteristic
+of direct commands. The understood subject of imperative and prohibitive clauses
+is second person and is normally left unexpressed, being recoverable from the
+speech situation. With the agent unrealized, the patient or theme is the clause's
+most prominent overt argument and accordingly occupies the direct (absolutive)
+case under both alignment types: under PFV-domain (ergative) alignment the
+patient is the absolutive by definition; under IPFV-domain (nominative)
+alignment the agent is nominally the absolutive, but the null agent leaves the
+direct slot available for the theme. In either case the patient or theme
+characteristically appears in the direct. Where an overt speech-act participant
+subject would compete with an overt direct object for that direct slot, it is
+expressed in the transitive case instead, preserving the affected participant as
+the clause's sole direct nominal. Beneficiaries licensed by the applicative and
+causees licensed by the causative are obligatorily overt and appear in the
+indirect. Antipassive morphology is excluded from all directive moods.
 
 \subsection{Imperative and prohibitive}\label{sec:mood-imp}
 
@@ -1688,21 +1936,28 @@ is present; in the second it is not.
 
 \subsection{Case and subject expression in directive clauses}\label{sec:mood-directive-case}
 
-The case properties of the directive domain may be stated compactly as a set of
-rules that govern all three moods.
+The case properties of the directive domain follow from the general principles
+of reduced Asp.Align alignment (§\,\ref{sec:vm-mood-asp}) operating under
+the null-subject convention characteristic of direct commands. The analysis is
+unified: no directive-specific case rule is required.
 
-Directive clauses ordinarily permit only one core nominal in the direct case. In
-transitive uses, that nominal is the theme or patient of the predicate. In
-intransitive uses it is the clause's sole participant. The understood
-second-person subject of imperative and prohibitive clauses, and the understood
-subject of hortative clauses, are syntactically present but normally left
-unexpressed.
+Directive clauses characteristically show only one overt core nominal in the
+direct case. This is not a stipulated constraint but the convergent outcome of
+alignment plus null-subject orientation. The understood second-person subject
+of imperative and prohibitive clauses, and the understood subject of hortative
+clauses, are syntactically present but normally left unexpressed. With the agent
+unrealized, the patient or theme---which is the absolutive by PFV-domain (ergative)
+alignment, and by absolutive absorption under null-agent IPFV-domain (nominative)
+alignment---surfaces as the clause's single direct nominal. In intransitive uses,
+the clause's sole argument occupies the direct in both alignment types.
 
 Overt speech-act participant subjects are pragmatically marked throughout the
 directive domain. Where their expression would otherwise compete with an overt
 direct object, they appear in the transitive case rather than the direct,
-preserving the affected participant as the clause's sole direct nominal. The
-following minimal pair makes the contrast plain:
+preserving the affected participant as the clause's sole direct nominal. This
+transitive marking is a surface reflex of the same absolutive competition that
+governs the overt-subject/overt-patient interaction in any Asp.Align-governed
+clause. The following minimal pair makes the contrast plain:
 
 \pex
 \a
@@ -1720,11 +1975,10 @@ following minimal pair makes the contrast plain:
 \xe
 
 \noindent By contrast, an overt lexical subject of an intransitive optative or
-permissive hortative may remain in the direct when no other direct nominal is
-present, since the single-direct principle is not under pressure. The
-competition-sensitive nature of the rule means it neither applies to
-intransitive clauses nor generalizes beyond the contexts in which direct-slot
-competition actually arises.
+permissive hortative may remain in the direct when no competing direct nominal
+is present. The competition-sensitive nature of the transitive-subject pattern
+means it is contingent on the presence of a competing absolutive nominal, not
+a categorical restriction on subject case across all directive clauses.
 
 \subsection{Valency-changing morphology in directive clauses}\label{sec:mood-directive-valency}
 
@@ -1803,25 +2057,33 @@ clause bearing both applicative and causative morphology is structurally
 possible, even if stylistically heavy; the principle throughout is that added
 participants enter the indirect while the theme retains the direct.
 
-Antipassive morphology is excluded from all directive moods. The discourse
-function of the antipassive --- demoting a patient from core status in order to
-foreground the agent's activity --- is incompatible with the directive domain.
-In the directive subsystem the null-subject orientation already removes the
-agent-versus-patient tension that motivates antipassive use in the indicative,
-and the single-direct principle already resolves any structural pressure by
-assigning the direct to the theme and the transitive to the overt subject. The
-antipassive-transitive distinction is therefore operative only in the
-indicative.
+Antipassive morphology is excluded from all directive moods. The antipassive
+in the indicative performs a specific discourse function: it demotes the patient
+from absolutive status in order to foreground the agent's activity in
+ERG-domain clauses where a patient would otherwise occupy the direct. This
+motivation is absent in directive clauses, where null-subject orientation has
+already removed the agent-versus-patient absolutive competition that the
+antipassive resolves in the indicative. Moreover, the reduced Asp.Align of the
+directive domain does not provide the full structural conditions under which the
+antipassive is licensed as an overt Voice head (§\,\ref{sec:vm-antipassive-desc}).
+The five-way antipassive-transitive distinction, which depends on the full
+indicative Asp.Align, is therefore operative only in the indicative; what the
+directive domain preserves is the coarser ERG/NOM alignment contrast of
+reduced Asp.Align.
 
 The directive subsystem as a whole is characterized by null-subject orientation,
-the absence of ordinary aspect morphology, a preference for only one core direct
-nominal, marked overt speech-act participant subjects in the transitive case
-where competition for the direct slot would arise, and the well-structured
-integration of applicative and causative morphology in which beneficiaries and
-causees enter the indirect. This pattern does not simply reproduce either half
-of the indicative split. Rather, it regularizes its own case geometry in a way
-that keeps the direct nominal central and prevents competition within the clause
-core.
+a reduced two-way aspect-domain contrast in place of the full five-way
+indicative inventory, the characteristic appearance of the patient or theme in
+the direct case (derived from reduced Asp.Align plus null-subject orientation),
+marked overt speech-act participant subjects in the transitive when they would
+otherwise compete for the direct slot, and the structured integration of
+applicative and causative morphology in which beneficiaries and causees enter
+the indirect. This pattern is not the output of a separate case system: it is
+the convergent surface effect of the same Asp.Align-driven alignment engine
+operating under null-subject conditions. The direct nominal remains central, and
+competition within the clause core is prevented, because Asp.Align places the
+absolutive on the patient (PFV domain) or on the agent (IPFV domain), and the
+null agent resolves the latter into the same patient-direct surface pattern.
 
 
 \subsection{Irrealis}
@@ -1867,11 +2129,15 @@ formal analysis is in §\,\ref{sec:vm-moodp}.
 \subsubsection{MoodP}
 \label{sec:vm-moodp}
 
-The mood suffixes occupy the projection immediately above AspP. In the
-indicative, this projection is present but headed by a null morpheme (the mood
-suffix has a null exponent). In the non-indicative moods (imperative, hortative,
-irrealis), a lexical morpheme appears and simultaneously suppresses AspP (see
-§\,\ref{sec:vm-mood-asp}).
+The mood suffixes occupy the projection immediately outside AspP. In the
+indicative, MoodP is present but headed by a null morpheme. In the
+non-indicative moods (imperative, hortative, irrealis), a lexical mood morpheme
+is inserted at MoodP and simultaneously triggers a post-syntactic impoverishment
+rule on the Asp node: the fine-grained viewpoint features of Asp are deleted,
+leaving only the coarser $[\pm\textsc{pfv-domain}]$ feature that drives
+reduced Asp.Align (see §\,\ref{sec:vm-mood-asp}). AspP is therefore always
+projected in finite clauses; what varies is the richness of features available
+for Vocabulary Insertion at that node.
 
 The ordering of Mood above Asp is consistent with the cross-linguistic tendency
 for tense and mood to dominate aspect (Cinque's (1999) functional hierarchy
@@ -2408,8 +2674,8 @@ main environments (complement and conjunctive chain).
 
 The unified CP-edge analysis is preferred here on parsimony grounds.
 Its core claim is that \ird{-e} spells out the feature
-\textsc{[+fin, +sub]} --- roughly, ``finite clause under
-subordination'' --- on the embedded TP's outermost layer, and that
+\textsc{[+fin, +sub]} --- roughly, `finite clause under
+subordination' --- on the embedded TP's outermost layer, and that
 this feature is valued whenever a C head (overt or null) selects the
 finite TP. The palatalizing nature of \ird{-e} is then the PF
 realization of this morphosyntactic feature, fully parallel to the
@@ -3153,29 +3419,41 @@ is to formalize exactly which feature of AspP triggers which
 case-assigning behaviour, without reducing the analysis to mere
 labelling of the phenomenon.
 
-\subsection{Mood--Aspect competition: why does Mood suppress Aspect?}
+\subsection{Mood and the reduced Asp.Align: open questions}
 \label{sec:vm-tension-mood-asp}
 
-The complete suppression of Asp.Align when a Mood morpheme is
-present is unusual. In many languages, mood and aspect are
-independently realized (e.g., Turkish, Finnish, Georgian). The
-Iridian pattern --- non-indicative mood bleeds aspect entirely ---
-requires a formal account.
+The interaction of Mood and Asp.Align is analyzed in
+§\,\ref{sec:vm-mood-asp} as \term{impoverishment}: a non-indicative
+Mood triggers the deletion of fine-grained viewpoint features from
+the Asp.Align node, reducing the full five-way inventory to a
+two-way IPFV/PFV-domain contrast. Asp.Align is always present in
+finite clauses; what varies is the richness of its featural content.
+Several questions remain empirically open.
 
-The DM analysis of \term{impoverishment} (Bonet 1991;
-Embick 2010) provides a mechanism: a context-sensitive
-rule removes the Asp feature bundle from the morphological structure
-when Mood features are present. The Asp node, stripped of its
-features, is then realized by a null morpheme (or is deleted). The
-consequence is that in non-indicative contexts, the Asp.Align
-case-assigning machinery does not operate, and alignment defaults
-to nominative.
+First, the distribution of PFV-domain (\ird{-ov-}) versus
+IPFV-domain ($\emptyset$) directive and irrealis forms requires
+fuller corpus documentation. The semantic contrast---bounded,
+completive directive versus ongoing, processual directive---is
+typologically well-motivated by analogy with the perfective/
+imperfective imperative distinction in West Slavic, but the
+frequency, pragmatic conditioning, and any lexical restrictions on
+PFV-domain non-indicatives in Iridian are not yet systematically
+described.
 
-This account remains to be verified: (a) Is nominative alignment
-in mood forms a default (elsewhere case), or is it actively
-specified by the Mood head? (b) Can aspect distinctions be
-recovered in non-indicative contexts through peripheral particles
-or converb structures?
+Second, the interaction between the reduced Asp.Align and
+information structure in directive clauses is understudied. In the
+indicative, aspect choice encodes the discourse-topic orientation of
+the clause (§\,\ref{sec:vm-asp-case}). Whether a parallel
+topic-sensitivity operates for the IPFV/PFV distinction in
+directive clauses---and whether the null agent of typical imperative
+clauses interacts with this---has not been investigated.
+
+Third, the irrealis (\ird{-ěv}) in its PFV-domain form
+(\ird{-ov-ěv}) may exhibit distributional restrictions with certain
+predicate classes. The degree to which the bounded/unbounded
+irrealis distinction tracks predicate telicity (in the way the
+indicative perfective/imperfective distinction does) remains to be
+established through elicitation and text data.
 
 \subsection{The Voice head \ird{-n-} and the causative \ird{-na-}: shared form, distinct functions}
 \label{sec:vm-tension-n}
