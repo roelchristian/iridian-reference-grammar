@@ -73,21 +73,21 @@ implicated in the particle system are discussed in detail in
 		\toprule
 		{\sc level} & {\sc projection} & {\sc content} \\
 		\midrule
-		1 (lowest) & \textsc{PhasP} & Phasal contour: attained state (\ird{v}) vs.\ ongoing interval (\ird{s}) \\
-		2 & \textsc{PredP} & Lexical predicate; root + aspect-alignment morphology \\
-		3 & \textsc{AspP} & Comment-domain operators: additive, exclusive, affirmative,
+		1 (lowest) & \synhead{PhasP} & Phasal contour: attained state (\ird{v}) vs.\ ongoing interval (\ird{s}) \\
+		2 & \synhead{PredP} & Lexical predicate; root + aspect-alignment morphology \\
+		3 & \synhead{AspP} & Comment-domain operators: additive, exclusive, affirmative,
 		                     interim-sequential \\
-		4 & \textsc{NegP} & Clausal negation: \ird{zá-} (prefix, verbal predicates);
+		4 & \synhead{NegP} & Clausal negation: \ird{zá-} (prefix, verbal predicates);
 		                     \ird{staly} (free morpheme, equative/zero-copula predicates);
 		                     suppletive root \ird{zad-} (existential predicates, Neg\textsuperscript{0}
 		                     absorbed into root) \\
-		5 & \textsc{IP} & Inflection: finiteness, mood \\
-		6 & \textsc{FocP} & Focus position; optionally hosts one fronted wh-phrase or other focused constituent \\
-		7 & \textsc{PolP} & Interrogative clause typing: \ird{by} (overt) / $\varnothing$ (null) \\
-		8 & \textsc{TopP} & Topic: typically the absolutive argument \\
-		9 & \textsc{EvidP} & Evidential and epistemic operators:
+		5 & \synhead{IP} & Inflection: finiteness, mood \\
+		6 & \synhead{FocP} & Focus position; optionally hosts one fronted wh-phrase or other focused constituent \\
+		7 & \synhead{PolP} & Interrogative clause typing: \ird{by} (overt) / $\varnothing$ (null) \\
+		8 & \synhead{TopP} & Topic: typically the absolutive argument \\
+		9 & \synhead{EvidP} & Evidential and epistemic operators:
 		                      \ird{oče}, \ird{hlavdy}, \ird{ktady}, \ird{či} \\
-		10 (highest) & \textsc{SpeechActP} & Illocutionary and discourse-relational
+		10 (highest) & \synhead{SpeechActP} & Illocutionary and discourse-relational
 		                      framing: \ird{nadě}, \ird{mlada}, \ird{jse} \\
 		\bottomrule
 	\end{tabularx}
@@ -97,12 +97,12 @@ implicated in the particle system are discussed in detail in
 complements both precede their heads. The predicate therefore surfaces last;
 projections that scope over it surface progressively earlier in the string.
 Reading the clause from left to right is thus equivalent to reading the
-functional sequence from the highest (SpeechActP) to the lowest (PhasP)
+functional sequence from the highest (\synhead{SpeechActP}) to the lowest (\synhead{PhasP})
 projection. This principle, elaborated in §\,\ref{sec:th-head-finality},
 provides the primary explanatory tool for understanding both particle ordering
 and clause-combining word order.
 
-One projection in the spine requires special comment. NegP (projection 4)
+One projection in the spine requires special comment. \synhead{NegP} (projection 4)
 has a single structural position in all Iridian clause types, but its
 phonological realization varies by predicate type. In verbal clauses,
 Neg\textsuperscript{0} is spelled out as the procliticized prefix \ird{zá-},
@@ -110,25 +110,25 @@ which attaches to the left edge of the clause-final verbal complex. In
 zero-copula equative clauses, where there is no verbal host available,
 Neg\textsuperscript{0} is spelled out as the free morpheme \ird{staly},
 which surfaces in the canonical clause-final position expected of a
-head-final NegP head. In existential clauses, Neg\textsuperscript{0}
+head-final \synhead{NegP} head. In existential clauses, Neg\textsuperscript{0}
 triggers suppletive root replacement: the existential root \ird{jec-} is
 replaced by \ird{zad-}, and Neg\textsuperscript{0} itself has no
 independent PF exponent. These are three phonological reflexes of one
 syntactic head, not three independent negation strategies; the structural
-position of NegP is the same in all three cases.
+position of \synhead{NegP} is the same in all three cases.
 
 Within the zero-copula domain, a further distinction in semantic scope
 arises from the type of the predicative complement. When the predicate is
-a plain DP, \ird{staly} produces predicational negation. When the predicate
+a plain \synhead{DP}, \ird{staly} produces predicational negation. When the predicate
 is a participant nominal (a nominalized verb form carrying its own internal
 argument structure; see §\,\ref{sec:nmlz-predicative} of
 Chapter~\ref{ch:verbs}), the zero-copula equative becomes identificational
 and \ird{staly} produces identificational negation --- the denial that the
-topic DP is the unique satisfier of the nominalized description, with the
+topic \synhead{DP} is the unique satisfier of the nominalized description, with the
 contrastive implication that the correct referent exists. This scope
 difference does not require any modification to the clause spine or to the
-analysis of NegP; it is a consequence of the semantics of the predication
-that NegP scopes over. The full analysis is developed in
+analysis of \synhead{NegP}; it is a consequence of the semantics of the predication
+that \synhead{NegP} scopes over. The full analysis is developed in
 §\,\ref{sec:vm-neg-exponents} and §\,\ref{sec:vm-ident-neg} of the verbal
 morphosyntax companion and
 §\,\ref{sec:clausal-negation} of Chapter~\ref{ch:simple}.
@@ -140,46 +140,46 @@ of the left periphery.
 \begin{figure}[ht]
 	\centering
 	\begin{tikzpicture}[font=\footnotesize]
-		\node[syn band, minimum width=18mm] (top)  {Topic\\\textsc{TopP}};
+		\node[syn band, minimum width=18mm] (top)  {Topic\\\synhead{TopP}};
 		\node[syn band, minimum width=42mm, right=0pt of top]  (op)
-			{Speech-act \& evidential field\\\textsc{SpeechActP / EvidP}};
+			{Speech-act \& evidential field\\\synhead{SpeechActP} / \synhead{EvidP}};
 		\node[syn band, minimum width=16mm, right=0pt of op]   (pol)
-			{Clause typing\\\textsc{PolP}};
+			{Clause typing\\\synhead{PolP}};
 		\node[syn band, minimum width=34mm, right=0pt of pol]  (tp)
-			{Comment domain\\\textsc{IP / FocP}};
+			{Comment domain\\\synhead{IP} / \synhead{FocP}};
 		\node[syn band, minimum width=20mm, right=0pt of tp]   (asp)
-			{Phasal\\\textsc{PhasP}};
+			{Phasal\\\synhead{PhasP}};
 		\node[syn band, minimum width=14mm, right=0pt of asp]  (pred)
-			{Pred.\\\textsc{PredP}};
+			{Pred.\\\synhead{PredP}};
 	\end{tikzpicture}
 	\caption{Clause fields of the Iridian clause.}\label{fig:th-clause-fields}
 \end{figure}
 
 \begin{figure}[ht]
 	\footnotesize\sffamily
-	\caption{Hierarchical structure of the Iridian left periphery (SpeechActP
-	to IP).}\label{fig:th-left-periphery}
+	\caption{Hierarchical structure of the Iridian left periphery (\synhead{SpeechActP}
+	to \synhead{IP}).}\label{fig:th-left-periphery}
 	\medskip
 	\centering
 	\begin{forest}
 		syntax tree
-		[SpeechActP
+		[\synhead{SpeechActP}
 			[{SpeechAct\\\ird{nadě} / \ird{mlada} / \ird{jse}}]
-			[EvidP
+			[\synhead{EvidP}
 				[{Evid\\\ird{oče} / \ird{hlavdy} / \ird{ktady} / \ird{či}}]
-				[TopP
-					[{DP\\{\footnotesize topic}}]
+				[\synhead{TopP}
+					[{\synhead{DP}\\{\footnotesize topic}}]
 					[{Top$'$}
 						[Top]
-						[PolP
+						[\synhead{PolP}
 							[{Pol\\\ird{by} / $\varnothing$}]
 							[{Pol$'$}
 								[Pol]
-								[FocP
+								[\synhead{FocP}
 									[{XP\\{\footnotesize\textit{wh / focus}}}]
 									[{Foc$'$}
 										[Foc]
-										[IP [{\ldots}]]
+										[\synhead{IP} [{\ldots}]]
 									]
 								]
 							]
@@ -198,9 +198,9 @@ dimension}
 The Iridian clause is organized around a \term{topic-comment bipartition}.
 The \term{topic} --- the constituent the clause is semantically `about' ---
 is realized in the absolutive (direct) case and occupies the specifier of
-TopP, the highest argument-hosting projection in the left periphery. The
+\synhead{TopP}, the highest argument-hosting projection in the left periphery. The
 \term{comment} --- the predication made about the topic --- corresponds
-broadly to the IP-internal material and the predicate.
+broadly to the \synhead{IP}-internal material and the predicate.
 
 Three notions must be kept distinct in this system: \term{subject},
 \term{absolutive pivot}, and \term{discourse topic}. Iridian does not require a
@@ -258,8 +258,8 @@ complements. For clause-combining, it means that subordinate clauses
 precede the matrix clause whose head they are complements of (see
 §\,\ref{sec:th-subordination} below). For the particle system, it means
 that particles in higher projections surface earlier in the linear string:
-an operator that takes scope over the full IP will surface before the topic
-and before IP-internal material, because the specifier of a high projection
+an operator that takes scope over the full \synhead{IP} will surface before the topic
+and before \synhead{IP}-internal material, because the specifier of a high projection
 must precede the head of a lower one.
 
 Head-finality also has consequences for relativization and
@@ -290,18 +290,18 @@ to three regions of the functional hierarchy:
 \item[\upshape Zone~\textsc{i} (peripheral).] Speech-act and discourse-relational
 	particles (\ird{nadě}, \ird{mlada}, \ird{jse}) and evidential/epistemic
 	particles (\ird{oče}, \ird{hlavdy}, \ird{ktady}, \ird{či}) occupy
-	\textsc{SpeechActP} and \textsc{EvidP}. The interrogative clause-typing
-	particle \ird{by} occupies \textsc{PolP} (§\,\ref{sec:th-polar-questions}).
-	All Zone~\textsc{i} particles are post-topic and scope over the full IP.
+	\synhead{SpeechActP} and \synhead{EvidP}. The interrogative clause-typing
+	particle \ird{by} occupies \synhead{PolP} (§\,\ref{sec:th-polar-questions}).
+	All Zone~\textsc{i} particles are post-topic and scope over the full \synhead{IP}.
 \item[\upshape Zone~\textsc{ii} (comment-domain).] Operators whose scope is
 	restricted to the comment domain --- \ird{och} (additive), \ird{moc}
 	(affirmative), \ird{kamo}/\ird{kam} (exclusive), \ird{dlí} (interim
-	sequential) --- occupy the \textsc{AspP} tier below IP. They are
+	sequential) --- occupy the \synhead{AspP} tier below \synhead{IP}. They are
 	focus-sensitive where applicable and scope over the predicate domain, not the
 	full proposition.
 \item[\upshape Zone~\textsc{iii} (phasal).] The phasal particles \ird{v}
 	(\trsl{already}) and \ird{s} (\trsl{still} / \trsl{not yet}) occupy
-	\textsc{PhasP} immediately above \textsc{PredP}. Their scope is strictly
+	\synhead{PhasP} immediately above \synhead{PredP}. Their scope is strictly
 	predicational.
 \end{description}
 
@@ -321,7 +321,7 @@ motivation.
 \subsection{Topic and topic drop}
 \label{sec:th-topic}
 
-The specifier of TopP hosts the clause topic. In canonical declaratives the
+The specifier of \synhead{TopP} hosts the clause topic. In canonical declaratives the
 topic is realized by the absolutive pivot of the predicate; it surfaces
 clause-initially and is invariably in the direct case. Because Iridian permits
 pro-drop, the topic position may be phonologically empty when the referent is
@@ -359,29 +359,29 @@ the particles remain in their regular post-topic positions (§\,\ref{sec:adv-par
 \subsection{Focus and focus movement}
 \label{sec:th-focus}
 
-The \textsc{FocP} position immediately below \textsc{PolP} is the target for
+The \synhead{FocP} position immediately below \synhead{PolP} is the target for
 focus movement. In the unmarked declarative clause, focus falls in situ on the
 rightmost comment-domain constituent immediately before the verb (the
 ``comment-final'' position), consistent with the general word-order tendency
 toward late-focus. A focused constituent or wh-phrase may optionally move to
-\textsc{SpecFocP}, surfacing after any peripheral particles. This movement is
+\synhead{SpecFocP}, surfacing after any peripheral particles. This movement is
 not syntactically obligatory; it is discourse-driven, signalling marked focus,
 contrast, topicalization, or discourse prominence. The absence of overt
 movement is therefore the neutral or unmarked option, especially in content
 questions, where a wh-phrase may remain in situ (see §\,\ref{sec:th-wh-interrogation}).
 
-It follows from this architecture that \textsc{SpecFocP} is not an exclusively
+It follows from this architecture that \synhead{SpecFocP} is not an exclusively
 interrogative position: it is the target of focus movement in general. A
 focalized non-wh constituent moves there in much the same way as a wh-phrase.
 The functional difference --- between a focused declarative and a content
 question --- comes from the clause-level interrogative operator (\ird{by} or
-a phonologically null counterpart in \textsc{PolP}), not from the focus
+a phonologically null counterpart in \synhead{PolP}), not from the focus
 position itself.
 
 \subsection{The clause-typing operator \ird{by} and matrix interrogatives}
 \label{sec:th-polar-questions}
 
-Matrix interrogatives project \textsc{PolP}. Pol\textsuperscript{0} may be
+Matrix interrogatives project \synhead{PolP}. Pol\textsuperscript{0} may be
 spelled out overtly as \ird{by} or left phonologically null. In polar
 questions, overt \ird{by} is the ordinary and unmarked explicit strategy. In
 content questions, both overt \ird{by} and null Pol\textsuperscript{0} are
@@ -411,7 +411,7 @@ and on the properties shared across all matrix interrogatives
 The interaction of \ird{by} with Zone~\textsc{i} particles (evidential and
 speech-act operators) follows directly from their relative positions in the
 functional hierarchy. Because those particles occupy projections above
-\textsc{PolP}, they scope over the interrogative force introduced by \ird{by}:
+\synhead{PolP}, they scope over the interrogative force introduced by \ird{by}:
 a mirative question (\ird{oče~by}) presents the polar question as
 counterexpectational; a reportative question (\ird{či~by}) presents it as
 relayed from another source.
@@ -425,28 +425,28 @@ relayed from another source.
 \endgl
 \xe
 
-A constituent may be fronted to Spec,FocP or set as a topic in Spec,TopP
+A constituent may be fronted to Spec,\synhead{FocP} or set as a topic in Spec,\synhead{TopP}
 inside a polar question, while \ird{by} in Pol\textsuperscript{0} continues to
 type the clause as interrogative. The fronting of a non-wh constituent inside a
 polar question is not a special interrogative mechanism but ordinary
 information structure operating inside an interrogative clause. A direct-case
-topic may remain in Spec,TopP; a narrow-focus non-wh constituent may move to
-Spec,FocP; either operation is independent of the interrogative clause typing
+topic may remain in Spec,\synhead{TopP}; a narrow-focus non-wh constituent may move to
+Spec,\synhead{FocP}; either operation is independent of the interrogative clause typing
 supplied by \ird{by}. This point is important for understanding argument and
 adjunct fronting in questions and prevents conflating topic/focus movement with
 the mechanism that licenses interrogative force: interrogative force belongs to
-\textsc{PolP}, while focus and topic placement belong to \textsc{FocP} and
-\textsc{TopP} respectively.
+\synhead{PolP}, while focus and topic placement belong to \synhead{FocP} and
+\synhead{TopP} respectively.
 
 
 \section{Content questions and \textit{wh}-interrogation}
 \label{sec:th-wh-interrogation}
 
-\subsection{Licensing of content questions: PolP and wh-operators}
+\subsection{Licensing of content questions: \synhead{PolP} and wh-operators}
 \label{sec:th-single-wh}
 
 Content questions are licensed by the combination of an interrogative
-operator in \textsc{PolP} and a wh-expression inside the clause. They are
+operator in \synhead{PolP} and a wh-expression inside the clause. They are
 not licensed by movement alone. \textsc{Pol}\textsuperscript{0} may be
 phonologically null in neutral content questions, but it is structurally
 present as the clause-typing head; the wh-operator within its scope domain
@@ -455,10 +455,10 @@ is the interrogative variable that the question is resolved against.
 The distributional rule for wh-phrases is as follows. In neutral content
 questions, a single wh-expression may remain in situ in its base-generated
 argument or adjunct position. One wh-expression may optionally move to
-Spec,FocP when assigned marked focus; this movement signals that the
+Spec,\synhead{FocP} when assigned marked focus; this movement signals that the
 wh-phrase is singled out against an already salient frame, or contributes
 contrast, insistence, or other discourse prominence. No clause permits more
-than one wh-phrase to front overtly to Spec,FocP.
+than one wh-phrase to front overtly to Spec,\synhead{FocP}.
 
 \pex
 \a
@@ -471,7 +471,7 @@ than one wh-phrase to front overtly to Spec,FocP.
 \begingl
 \gla Jena Marek mulša?//
 \glb where Marek.\Dir{} live-\Cont{}//
-\glft \trsl{Where does Marek live?} \lingcontext{marked; wh to SpecFocP for discourse prominence}//
+\glft \trsl{Where does Marek live?} \lingcontext{marked; wh to \synhead{SpecFocP} for discourse prominence}//
 \endgl
 \a
 \begingl
@@ -489,10 +489,10 @@ than one wh-phrase to front overtly to Spec,FocP.
 
 A fronted wh-phrase does not itself license interrogative force; its
 movement signals discourse prominence, contrast, or singled-out status of the
-wh-variable. The interrogative clause type is established by the PolP layer
+wh-variable. The interrogative clause type is established by the \synhead{PolP} layer
 independently of whether any fronting has occurred. A content question is
 therefore structurally defined by the conjunction of an interrogative
-operator in \textsc{PolP} and a wh-expression within IP, not by the
+operator in \synhead{PolP} and a wh-expression within \synhead{IP}, not by the
 position of the wh-phrase at the surface.
 
 Matrix content questions permit both overt and null Pol\textsuperscript{0},
@@ -560,7 +560,7 @@ they occupy projections higher in the spine:
 \gla Jena hlavdy Marek mulša?//
 \glb where \textsc{infr} Marek.\Dir{} live-\Cont{}//
 \glft \trsl{Where would Marek presumably be living?}\\
-      \lingcontext{\ird{hlavdy} in EvidP above PolP; wh fronted}//
+      \lingcontext{\ird{hlavdy} in \synhead{EvidP} above \synhead{PolP}; wh fronted}//
 \endgl
 \xe
 
@@ -569,11 +569,11 @@ they occupy projections higher in the spine:
 
 When the clause contains more than one wh-phrase, the ordinary pattern is for
 all wh-phrases to remain in situ. At most one wh-phrase may front to
-\textsc{SpecFocP}, and only when that phrase is assigned specially marked focus
+\synhead{SpecFocP}, and only when that phrase is assigned specially marked focus
 within the pair-list interpretation. The remaining wh-phrases are interpreted
 as interrogative variables in their base positions, licensed by the
 clause-level interrogative operator (overt \ird{by} or a null
-\textsc{PolP} head).
+\synhead{PolP} head).
 
 \pex
 \a
@@ -591,13 +591,13 @@ clause-level interrogative operator (overt \ird{by} or a null
 \xe
 
 \noindent In these multiple-wh clauses both phrases remain in their
-IP-internal base positions and are bound by the null interrogative operator in
-\textsc{PolP}. The general licensing principle is: a wh-word within the scope
-domain of the clause-level interrogative operator in PolP is interpreted as an
+\synhead{IP}-internal base positions and are bound by the null interrogative operator in
+\synhead{PolP}. The general licensing principle is: a wh-word within the scope
+domain of the clause-level interrogative operator in \synhead{PolP} is interpreted as an
 interrogative variable, regardless of its surface position. Overt movement to
-\textsc{SpecFocP} marks the fronted phrase as the salient or foregrounded
+\synhead{SpecFocP} marks the fronted phrase as the salient or foregrounded
 variable in the pair-list; it does not itself establish the interrogative type
-of the clause, which is always a function of PolP.
+of the clause, which is always a function of \synhead{PolP}.
 
 \subsection{Tag, echo, and indirect questions}
 \label{sec:th-tag-echo}
@@ -732,7 +732,7 @@ last'.
 
 Lexical adverbs belong to the comment domain of the clause rather than to the
 topic field. In the unmarked structure, derived manner adverbs in \ird{-ě} are
-best analyzed as low adjuncts adjoined to vP or to the outer VP. Because
+best analyzed as low adjuncts adjoined to \synhead{vP} or to the outer \synhead{VP}. Because
 Iridian is head-final, these adverbs surface in the preverbal field, below
 topic and focus material and outside the fixed hierarchy of preverbal particles
 described in Chapter~\ref{ch:function-words}. Their neutral placement is
@@ -740,7 +740,7 @@ therefore lower than that of clause-typing or stance particles but still to
 the left of the finite verb.
 
 \begin{center}
-\term{[TopP Topic [IP \ldots [vP MANNER-ADV [VP Object V ]]]]}
+\term{[\synhead{TopP} Topic [\synhead{IP} \ldots [\synhead{vP} MANNER-ADV [\synhead{VP} Object V ]]]]}
 \end{center}
 
 \noindent The neutral surface order in an intransitive clause is accordingly
@@ -823,7 +823,7 @@ summarized in Table~\ref{tab:copula-overview}.
 \subsubsection{The construction and its distribution}
 
 The default pattern for equative clauses --- those asserting identity, role, or
-class membership --- is zero copula. The topic DP occupies the initial position
+class membership --- is zero copula. The topic \synhead{DP} occupies the initial position
 and the predicative complement appears in the direct case in clause-final
 position; no overt verb is present. This is the stylistically neutral, unmarked
 construction.
@@ -848,13 +848,13 @@ and carry no inference beyond simple predication. The predicative complement
 always appears in the direct case regardless of which case would otherwise be
 assigned in the same structural position.
 
-\subsubsection{Structural analysis: EquP and the absence of AspP}
+\subsubsection{Structural analysis: \synhead{EquP} and the absence of AspP}
 
 The zero copula is not merely absent from the surface string; it is the
 phonologically null exponent of a dedicated functional head,
-Cop\textsuperscript{0}, which projects an \term{equative phrase} (EquP). EquP
+Cop\textsuperscript{0}, which projects an \term{equative phrase} (\synhead{EquP}). \synhead{EquP}
 is the functional layer that licenses the predication relation between the topic
-DP and the predicative DP. Crucially, EquP is \emph{not} selected by
+\synhead{DP} and the predicative \synhead{DP}. Crucially, \synhead{EquP} is \emph{not} selected by
 Asp\textsuperscript{0}: no aspectual projection is present in the
 zero-copula clause.
 
@@ -863,30 +863,30 @@ or transition --- to scope over. Equative predications of the type \trsl{Marek
 is a doctor} or \trsl{Bach is a composer} express a relation between two
 individuals, not an eventuality in any aspectual sense. There is no event of
 being-a-doctor that could be viewed as complete, ongoing, or prospective in the
-way that eating or arriving can. In the absence of an eventuality, AspP cannot
-be projected, and EquP is selected directly by NegP (when present) or by the
-higher IP layer. The affirmative clause structure is:
+way that eating or arriving can. In the absence of an eventuality, \synhead{AspP} cannot
+be projected, and \synhead{EquP} is selected directly by \synhead{NegP} (when present) or by the
+higher \synhead{IP} layer. The affirmative clause structure is:
 
 \begin{center}
 \begin{forest}
   syntax tree
-  [EquP
-    [{DP\\\textit{Marek}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize topic}}]
+  [\synhead{EquP}
+    [{\synhead{DP}\\\textit{Marek}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize topic}}]
     [{Eq$'$}
-      [{DP\\\textit{doktor}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize pred.}}]
+      [{\synhead{DP}\\\textit{doktor}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize pred.}}]
       [{Eq$^{0}$\\{$\varnothing$}}]
     ]
   ]
 \end{forest}
 \end{center}
 
-The two DPs bear the direct case as the default case assigned under EquP: both
+The two DPs bear the direct case as the default case assigned under \synhead{EquP}: both
 the topic and the predicative complement are direct-case nominals within a
 caseless, event-free predication domain.
 
 \subsubsection{Temporal restriction}
 
-The temporal corollary of the absence of AspP is that the zero-copula
+The temporal corollary of the absence of \synhead{AspP} is that the zero-copula
 construction is restricted to \term{present-time} and \term{atemporal} or
 \term{generic} predications. A sentence like \ird{Marek doktor} is interpreted
 as holding at the moment of utterance or as a classification that transcends any
@@ -901,7 +901,7 @@ contemplative of \ird{neh-} (\ird{nách}) is available. The zero copula's
 restriction to present and generic contexts thus parallels the zero-copula
 pattern found in Russian, Arabic, and Hebrew, where the copula is similarly
 absent in the present indicative but required in other tenses --- though in
-Iridian the structural basis is the absence of EquP's eventuality rather than
+Iridian the structural basis is the absence of \synhead{EquP}'s eventuality rather than
 the suppression of a tensed copula.
 
 \subsubsection{Negation: \ird{staly} as the canonical Neg\textsuperscript{0} exponent}
@@ -925,7 +925,7 @@ phonological host within the verbal complex, and no such host is present.
 \endgl
 \xe
 
-\noindent The two examples differ in which DP occupies the topic position,
+\noindent The two examples differ in which \synhead{DP} occupies the topic position,
 not in the position of \ird{staly}. The semantic contrast --- \trsl{not a
 doctor} (predicational) vs.\ \trsl{not the doctor} (identificational) --- arises
 from topicalization, not from any change in the negation structure.
@@ -934,19 +934,19 @@ Structurally, \ird{staly} is the phonological exponent of
 Neg\textsuperscript{0} in equative contexts. It bears no aspect marking, has no
 paradigmatic alternants, and cannot appear in any non-negative environment ---
 all properties consistent with its status as a functional head rather than a
-verbal root. Its clause-final position is not exceptional: as the head of NegP
-in a head-final language, it follows its complement (the EquP predication). NegP
-selects EquP directly, with no intervening AspP:
+verbal root. Its clause-final position is not exceptional: as the head of \synhead{NegP}
+in a head-final language, it follows its complement (the \synhead{EquP} predication). \synhead{NegP}
+selects \synhead{EquP} directly, with no intervening \synhead{AspP}:
 
 \begin{center}
 \begin{forest}
   syntax tree
-  [NegP
-    [{DP\\\textit{Marek}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize topic}}]
+  [\synhead{NegP}
+    [{\synhead{DP}\\\textit{Marek}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize topic}}]
     [{Neg$'$}
       [{Neg$^{0}$\\\ird{staly}}]
-      [EquP
-        [{DP\\\textit{doktor}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize pred.}}]
+      [\synhead{EquP}
+        [{\synhead{DP}\\\textit{doktor}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize pred.}}]
         [{Eq$'$}
           [{Eq$^{0}$\\{$\varnothing$}}]
         ]
@@ -956,13 +956,13 @@ selects EquP directly, with no intervening AspP:
 \end{forest}
 \end{center}
 
-\noindent The topic DP occupies Spec,NegP; the predicative DP remains within
-EquP as the complement of Eq\textsuperscript{0}.
+\noindent The topic \synhead{DP} occupies Spec,\synhead{NegP}; the predicative \synhead{DP} remains within
+\synhead{EquP} as the complement of Eq\textsuperscript{0}.
 
 This framing inverts the usual presentation of \ird{staly} as an ``exceptional''
 or ``restricted'' negation strategy. It is in fact the \emph{canonical} exponent
 of Neg\textsuperscript{0}: it surfaces in exactly the position the clause spine
-predicts for a head-final NegP head. The prefix \ird{zá-}, by contrast, is the
+predicts for a head-final \synhead{NegP} head. The prefix \ird{zá-}, by contrast, is the
 PF-conditioned variant --- it arises only when a verbal complex is present and
 provides a cliticization host. When no such host exists, as in zero-copula
 clauses, Neg\textsuperscript{0} surfaces freely in its default head-final
@@ -987,7 +987,7 @@ the condition for its appearance --- absence of a verbal host --- is not met.
 When the predicative complement of a zero-copula equative clause is a
 \term{participant nominal} (a nominalized verb form, §\,\ref{sec:nmlz-predicative}
 of Chapter~\ref{ch:verbs}), the construction is \term{identificational}: the
-topic DP is asserted to be the unique referent satisfying the description encoded
+topic \synhead{DP} is asserted to be the unique referent satisfying the description encoded
 in the nominal. The schematic contrast with a plain verbal assertion is:
 
 \pex
@@ -1025,7 +1025,7 @@ appear as \Ind{} arguments within the nominal predicate.
 
 \paragraph{Negation of identificational equatives.}
 When an identificational equative is negated with \ird{staly}, the result is
-\term{identificational negation}: the topic DP is denied as the unique satisfier
+\term{identificational negation}: the topic \synhead{DP} is denied as the unique satisfier
 of the description, with the strong implication that some other referent is the
 actual satisfier. This contrasts systematically with verbal propositional negation:
 
@@ -1077,18 +1077,18 @@ predication}\label{sec:neh}
 \subsubsection{Status and structural contrast with the zero copula}
 
 The root \ird{neh-} is the overt copular verb of Iridian. Its most basic
-function is to encode \term{transition}: the topic DP is asserted to be moving
+function is to encode \term{transition}: the topic \synhead{DP} is asserted to be moving
 from one classification or condition into another, or to have crossed a threshold
 between them. This transitional meaning is not a pragmatic implication but a
 semantic contribution of the root itself.
 
 The structural difference between the zero copula and \ird{neh-} is not merely
-that one is overt and the other silent. The zero copula projects EquP, a
-non-eventive predication layer with no AspP. \ird{Neh-}, by contrast, projects a
+that one is overt and the other silent. The zero copula projects \synhead{EquP}, a
+non-eventive predication layer with no \synhead{AspP}. \ird{Neh-}, by contrast, projects a
 proper verbal predicate: it introduces a \term{transition event} --- an
 eventuality whose onset, duration, and completion can be aspectually
 individuated. This eventuality licenses Asp\textsuperscript{0}, which selects
-the VP, and the full verbal spine (VP $\subset$ AspP $\subset$ NegP) is
+the \synhead{VP}, and the full verbal spine (\synhead{VP} $\subset$ \synhead{AspP} $\subset$ \synhead{NegP}) is
 projected in the usual way. The two structures contrast as follows:
 
 \begin{center}
@@ -1097,10 +1097,10 @@ projected in the usual way. The two structures contrast as follows:
 \textit{Zero copula:}\\[6pt]
 \begin{forest}
   syntax tree
-  [EquP
-    [{DP\\{\footnotesize topic}}]
+  [\synhead{EquP}
+    [{\synhead{DP}\\{\footnotesize topic}}]
     [{Eq$'$}
-      [{DP\\{\footnotesize pred.}}]
+      [{\synhead{DP}\\{\footnotesize pred.}}]
       [{Eq$^{0}$\\{$\varnothing$}}]
     ]
   ]
@@ -1112,12 +1112,12 @@ projected in the usual way. The two structures contrast as follows:
 \textit{Overt copula:}\\[6pt]
 \begin{forest}
   syntax tree
-  [AspP
-    [{DP\\{\footnotesize topic}}]
+  [\synhead{AspP}
+    [{\synhead{DP}\\{\footnotesize topic}}]
     [{Asp$'$}
       [{Asp$^{0}$}]
-      [VP
-        [{DP\\{\footnotesize pred.}}]
+      [\synhead{VP}
+        [{\synhead{DP}\\{\footnotesize pred.}}]
         [{\ird{neh-}}]
       ]
     ]
@@ -1127,7 +1127,7 @@ projected in the usual way. The two structures contrast as follows:
 \end{center}
 
 \noindent The consequence for negation is immediate: since \ird{neh-} is a
-verbal root embedded under AspP, the standard verbal negation strategy applies.
+verbal root embedded under \synhead{AspP}, the standard verbal negation strategy applies.
 Neg\textsuperscript{0} is spelled out as the prefix \ird{zá-}, which
 procliticizes to the left edge of the inflected form. \ird{Staly} does not
 arise because the condition for its appearance --- the absence of a verbal host
@@ -1311,8 +1311,8 @@ Table~\ref{tab:jec-zad-paradigm}.
 
 The two roots are not independent lexical items but are best understood as
 suppletive allomorphs of the same Exist\textsuperscript{0} head: \ird{jec-} is
-the default exponent, inserted when NegP is absent from the derivation;
-\ird{zad-} replaces it when NegP is present, absorbing the negative feature
+the default exponent, inserted when \synhead{NegP} is absent from the derivation;
+\ird{zad-} replaces it when \synhead{NegP} is present, absorbing the negative feature
 entirely and leaving Neg\textsuperscript{0} with no independent PF reflex. The
 structural and distributional consequences of this analysis are developed in
 §\,\ref{sec:neg-exst-alternation} and §\,\ref{sec:vm-jec-zad} below. The
@@ -1370,12 +1370,12 @@ conditions.
 Within the Minimalist framework, \ird{jec-} is the phonological exponent of a
 dedicated functional head, \term{Exist}\textsuperscript{0}, which projects
 \term{ExistP} as the innermost stratum of the clause spine --- the slot occupied
-by root VP in ordinary verbal clauses. The sole argument it licenses is the
-\term{existential pivot}: the DP asserted to exist, bearing the direct case as
+by root \synhead{VP} in ordinary verbal clauses. The sole argument it licenses is the
+\term{existential pivot}: the \synhead{DP} asserted to exist, bearing the direct case as
 the complement of Exist\textsuperscript{0}. ExistP is then selected by
 Asp\textsuperscript{0}, which contributes the aspect suffix, and feeds the
-higher functional sequence including NegP. When NegP is absent,
-Exist\textsuperscript{0} is spelled out as \ird{jec-}; when NegP is present,
+higher functional sequence including \synhead{NegP}. When \synhead{NegP} is absent,
+Exist\textsuperscript{0} is spelled out as \ird{jec-}; when \synhead{NegP} is present,
 suppletive Vocabulary Insertion replaces \ird{jec-} with \ird{zad-}, leaving
 Neg\textsuperscript{0} with no independent PF exponent. The affirmative and
 negative structures of \ird{Byl jeca} and \ird{Byl zada} are shown below:
@@ -1383,8 +1383,8 @@ negative structures of \ird{Byl jeca} and \ird{Byl zada} are shown below:
 \begin{center}
 \begin{forest}
   syntax tree
-  [AspP
-    [{DP\\\textit{byl}\\{\footnotesize child.\Dir{}}\\{\scriptsize pivot}}]
+  [\synhead{AspP}
+    [{\synhead{DP}\\\textit{byl}\\{\footnotesize child.\Dir{}}\\{\scriptsize pivot}}]
     [{Asp$'$}
       [{Asp\\\ird{-a}\\{\footnotesize\textsc{[cont]}}}]
       [ExistP
@@ -1398,11 +1398,11 @@ negative structures of \ird{Byl jeca} and \ird{Byl zada} are shown below:
 \hspace{2em}
 \begin{forest}
   syntax tree
-  [NegP
-    [{DP\\\textit{byl}\\{\footnotesize child.\Dir{}}\\{\scriptsize pivot}}]
+  [\synhead{NegP}
+    [{\synhead{DP}\\\textit{byl}\\{\footnotesize child.\Dir{}}\\{\scriptsize pivot}}]
     [{Neg$'$}
       [{Neg\\{\small($\varnothing$: absorbed by suppletive)}}]
-      [AspP
+      [\synhead{AspP}
         [{Asp$'$}
           [{Asp\\\ird{-a}\\{\footnotesize\textsc{[cont]}}}]
           [ExistP
@@ -1419,7 +1419,7 @@ negative structures of \ird{Byl jeca} and \ird{Byl zada} are shown below:
 
 \noindent The pivot surfaces to the left as the absolutive topic constituent,
 base-generated preverbal under head-finality; no movement is required. In the
-affirmative it occupies Spec,AspP; in the negative it occupies Spec,NegP. The
+affirmative it occupies Spec,\synhead{AspP}; in the negative it occupies Spec,\synhead{NegP}. The
 Neg\textsuperscript{0} feature is discharged by conditioning the suppletive
 readjustment \ird{jec-} $\rightarrow$ \ird{zad-} at Exist\textsuperscript{0},
 and has no residual PF exponent of its own.
@@ -1522,7 +1522,7 @@ are:
   [ExistP
     [{PP\\\ird{bylam na}\\{\footnotesize possessor}}]
     [ExistP
-      [{DP\\\textit{tóm}\\{\footnotesize book.\Dir{}}\\{\scriptsize pivot}}]
+      [{\synhead{DP}\\\textit{tóm}\\{\footnotesize book.\Dir{}}\\{\scriptsize pivot}}]
       [{Exist$'$}
         [{Exist\\\ird{jec-}}]
       ]
@@ -1532,11 +1532,11 @@ are:
 \hspace{2em}
 \begin{forest}
   syntax tree
-  [NegP
-    [{DP\\\textit{tóm}\\{\footnotesize book.\Dir{}}\\{\scriptsize pivot}}]
+  [\synhead{NegP}
+    [{\synhead{DP}\\\textit{tóm}\\{\footnotesize book.\Dir{}}\\{\scriptsize pivot}}]
     [{Neg$'$}
       [{Neg\\{\small($\varnothing$)}}]
-      [AspP
+      [\synhead{AspP}
         [{Asp$'$}
           [{Asp\\\ird{-a}\\{\footnotesize\textsc{[cont]}}}]
           [ExistP
@@ -1559,7 +1559,7 @@ existentials is a direct consequence of this unified analysis: both
 constructions merge a PP at the ExistP periphery, and the only grammatical
 difference is the semantic content of the oblique phrase itself. The suppletive
 readjustment applies identically in both frames; the PP adjunct is unaffected by
-the presence or absence of NegP.
+the presence or absence of \synhead{NegP}.
 
 Since possession is expressed through the existential verb, possessive clauses
 naturally inflect across the full aspectual system, and \ird{jec-} and
@@ -1586,7 +1586,7 @@ source of the construction.
 \subsection{The presentational construction}\label{sec:existential-presentatives}
 
 The continuous form \ird{jeca} licenses a \term{presentational} construction in
-which the existential pivot is a complex DP modified by a nominalized
+which the existential pivot is a complex \synhead{DP} modified by a nominalized
 participial attributive. This construction introduces a referent into discourse
 by anchoring it to an event in which that referent is the salient non-agentive
 participant, rather than reporting the event itself. Its canonical shape is:
@@ -1636,11 +1636,11 @@ signals only that the referent is being introduced into the current discourse.
 \xe
 
 The structural basis for this construction is that the pivot position of ExistP
-may be occupied by any DP of appropriate referential properties. When the pivot
-is a complex DP --- a head noun modified by a participant-oriented attributive
+may be occupied by any \synhead{DP} of appropriate referential properties. When the pivot
+is a complex \synhead{DP} --- a head noun modified by a participant-oriented attributive
 --- ExistP introduces into discourse a referent identified and anchored via an
 event in which that referent is the salient non-agentive participant. The
-attributive is an adjunct within the pivot DP; it is \emph{not} a predicate of
+attributive is an adjunct within the pivot \synhead{DP}; it is \emph{not} a predicate of
 the matrix clause and contributes no independent propositional content at the
 matrix level. The matrix Exist\textsuperscript{0} asserts only
 $\textsc{exist}(x)$ for the complex, event-anchored pivot $x$. This
@@ -1654,10 +1654,10 @@ attributive.
 \begin{center}
 \begin{forest}
   syntax tree
-  [AspP
-    [{DP\\{\footnotesize pivot}}
+  [\synhead{AspP}
+    [{\synhead{DP}\\{\footnotesize pivot}}
       [{AttrP\\\ird{obrohnikovní}\\{\footnotesize read-\textsc{trs}-\Pf{}-\textsc{attr}}}]
-      [{NP\\\ird{senica}\\{\footnotesize news.\Dir{}}}]
+      [{\synhead{NP}\\\ird{senica}\\{\footnotesize news.\Dir{}}}]
     ]
     [{Asp$'$}
       [{Asp\\\ird{jec-a}\\{\scriptsize Exist+Cont}}]
@@ -1693,7 +1693,7 @@ restriction). Agents, as the prototypical topical and volitional participants,
 are characteristically presupposed or previously introduced, making them poor
 existential pivots. Patients, themes, recipients, and other non-agentive
 participants are characteristically discourse-new and are therefore the natural
-heads of a presentational pivot DP.
+heads of a presentational pivot \synhead{DP}.
 
 The presentational construction is not simply a periphrastic variant of the
 corresponding plain eventive clause. \ird{Vednikovní ryc jeca} and the
@@ -1752,7 +1752,7 @@ introduction is both necessary and informative.
 
 The negative counterpart of the presentational construction is formed with
 \ird{zada}. The negative presentational denies the existence of the
-event-anchored discourse referent rather than negating the event itself: NegP
+event-anchored discourse referent rather than negating the event itself: \synhead{NegP}
 scopes over ExistP, and the negative asserts that no referent satisfying the
 event-anchored description exists. As with \ird{jeca}, the continuous form
 \ird{zada} is fixed in this use; the aspectual interpretation of the embedded
@@ -1776,14 +1776,14 @@ event comes entirely from the attributive.
 \begin{center}
 \begin{forest}
   syntax tree
-  [NegP
-    [{DP\\{\footnotesize pivot}}
+  [\synhead{NegP}
+    [{\synhead{DP}\\{\footnotesize pivot}}
       [{AttrP\\\ird{obrohnikovní}\\{\footnotesize read-\textsc{trs}-\Pf{}-\textsc{attr}}}]
-      [{NP\\\ird{senica}\\{\footnotesize news.\Dir{}}}]
+      [{\synhead{NP}\\\ird{senica}\\{\footnotesize news.\Dir{}}}]
     ]
     [{Neg$'$}
       [{Neg\\{\small($\varnothing$)}}]
-      [AspP
+      [\synhead{AspP}
         [{Asp$'$}
           [{Asp\\\ird{zad-a}\\{\scriptsize NegExst+Cont}}]
           [ExistP
@@ -1800,7 +1800,7 @@ event comes entirely from the attributive.
 
 \noindent The Exist\textsuperscript{0} head now asserts $\neg\textsc{exist}(x)$
 for the complex pivot: no referent satisfying the event-anchored description
-exists in the discourse. The attributive remains an adjunct within the pivot DP
+exists in the discourse. The attributive remains an adjunct within the pivot \synhead{DP}
 with no matrix-level propositional force. The disfavour of agentive pivot heads
 carries over to \ird{zada} by the same definiteness-restriction logic.
 
@@ -1808,7 +1808,7 @@ The plural particle \ird{ne} cannot be combined with a \ird{zad-} clause; see
 Section~\ref{sec:definiteness} of Chapter~\ref{ch:nouns}.
 
 
-\subsection{Suppletive exclusivity: \ird{jec-}, \ird{zad-}, and the NegP alternation}\label{sec:neg-exst-alternation}%
+\subsection{Suppletive exclusivity: \ird{jec-}, \ird{zad-}, and the \synhead{NegP} alternation}\label{sec:neg-exst-alternation}%
 \label{sec:vm-jec-zad}%
 \label{sec:vm-jec}
 
@@ -1816,29 +1816,29 @@ The account in this section is the Exist\textsuperscript{0}-local unpacking of
 the Neg\textsuperscript{0} allomorphy analysis in
 §\,\ref{sec:vm-neg-exponents} of Chapter~\ref{ch:verbs}. That analysis
 characterises \ird{zad-} as the existential exponent of Neg\textsuperscript{0}:
-NegP is projected, and its Neg\textsuperscript{0} feature is discharged by
+\synhead{NegP} is projected, and its Neg\textsuperscript{0} feature is discharged by
 conditioning suppletive Vocabulary Insertion at Exist\textsuperscript{0},
 leaving Neg\textsuperscript{0} with no independent PF reflex. The present
 section redescribes the same facts from the perspective of
 Exist\textsuperscript{0}: \ird{jec-} and \ird{zad-} are suppletive allomorphs
-of the same functional head, with NegP presence as the conditioning environment.
+of the same functional head, with \synhead{NegP} presence as the conditioning environment.
 The two descriptions are notational variants of one analysis, not competing
 accounts.
 
 \ird{Jec-} and \ird{zad-} are in strict complementary distribution conditioned
-by the presence or absence of NegP in the derivation. Wherever NegP is absent,
-Exist\textsuperscript{0} is spelled out as \ird{jec-}; wherever NegP is present,
+by the presence or absence of \synhead{NegP} in the derivation. Wherever \synhead{NegP} is absent,
+Exist\textsuperscript{0} is spelled out as \ird{jec-}; wherever \synhead{NegP} is present,
 it is spelled out as \ird{zad-} and \ird{jec-} is excluded. This is an instance
 of the same conditioned allomorphy that governs Neg\textsuperscript{0}'s
 exponence across all Iridian clause types: \ird{zá-} (prefix) in verbal clauses,
 \ird{staly} (free morpheme) in equative clauses, and suppletive root replacement
 in existential clauses. The three are not separate lexical negation strategies
-but conditioned phonological reflexes of a single NegP head.
+but conditioned phonological reflexes of a single \synhead{NegP} head.
 
 The semantic content of the alternation is straightforwardly compositional.
 \ird{Jec-} contributes $\textsc{exist}(x)$; \ird{zad-} contributes
 $\neg\textsc{exist}(x)$, where the negation is the propositional negation
-licensed by NegP. The same opposition is preserved across all construction types
+licensed by \synhead{NegP}. The same opposition is preserved across all construction types
 --- bare existential, locative, possessive, and presentational --- and there is
 no grammatical asymmetry between the two roots in terms of which construction
 types each permits.
@@ -1891,7 +1891,7 @@ The structural basis is straightforward. When Neg\textsuperscript{0} is present
 in an existential clause, it triggers suppletive Vocabulary Insertion at the
 Exist\textsuperscript{0} node, replacing \ird{jec-} with \ird{zad-}. The
 Neg\textsuperscript{0} feature is thereby discharged structurally in full; no
-NegP head remains to be spelled out as \ird{zá-}. The prefix \ird{zá-} is the PF
+\synhead{NegP} head remains to be spelled out as \ird{zá-}. The prefix \ird{zá-} is the PF
 reflex of Neg\textsuperscript{0} only when Neg\textsuperscript{0} has not
 already been discharged through suppletive readjustment. In verbal clauses,
 where no suppletive alternation is available at the predicate root, \ird{zá-} is
@@ -1905,9 +1905,9 @@ positive root. Since a single syntactic head cannot discharge twice, this
 configuration is structurally ill-formed. The same logic excludes \ird{*zázada}:
 stacking \ird{zá-} onto the already-negative \ird{zad-} would require two
 independent Neg\textsuperscript{0} heads in the same clause, violating the
-uniqueness of the NegP projection. The prohibition on \ird{zá-} in existential
+uniqueness of the \synhead{NegP} projection. The prohibition on \ird{zá-} in existential
 clauses and the prohibition on \ird{*zázad-} are therefore the same prohibition,
-both following from the single-NegP constraint on the clause spine.
+both following from the single-\synhead{NegP} constraint on the clause spine.
 \section{Questions: descriptive recap}\label{sec:questions}
 
 The syntactic analysis of Iridian interrogatives is developed in full in
@@ -1951,13 +1951,13 @@ or wh-content type (§\,\ref{sec:poby}).
 \section{Negation in clausal context}\label{sec:clausal-negation}
 
 At the clausal level, negation in Iridian is expressed by a single functional
-projection, NegP, whose Neg\textsuperscript{0} head occupies position 4 in the
-clause spine (above AspP, below IP/MoodP; see Table~\ref{tab:th-clause-spine} in
+projection, \synhead{NegP}, whose Neg\textsuperscript{0} head occupies position 4 in the
+clause spine (above \synhead{AspP}, below \synhead{IP}/\synhead{MoodP}; see Table~\ref{tab:th-clause-spine} in
 §\,\ref{sec:th-clause-structure}). The surface form of Neg\textsuperscript{0}
 varies by predicate type, yielding three distinct phonological reflexes that
 together cover all clause types. This section provides a descriptive account of
 the distribution; the formal DM analysis of Neg\textsuperscript{0} allomorphy
-(including the prefix paradox and the unified NegP argument) is developed in
+(including the prefix paradox and the unified \synhead{NegP} argument) is developed in
 §\,\ref{sec:vm-neg} and §\,\ref{sec:vm-neg-exponents} of
 Chapter~\ref{ch:verbs}; Figure~\ref{fig:neg0-comparative} there provides
 the comparative structural summary of the three exponents in a single
@@ -1969,7 +1969,7 @@ In finite verbal clauses, Neg\textsuperscript{0} is spelled out as the prefix
 \ird{zá-} (reduced to \ird{za-} in unstressed environments). Because the
 verbal complex is clause-final under head-finality, and because \ird{zá-}
 has no independent prosodic weight, it procliticizes to the left edge of the
-verbal complex. The NegP head is syntactically above AspP, but PF
+verbal complex. The \synhead{NegP} head is syntactically above \synhead{AspP}, but PF
 cliticization places the prefix before the root --- a phonological rather
 than a syntactic inversion. See §\,\ref{sec:negation} of Chapter~\ref{ch:verbs}
 and §\,\ref{sec:vm-neg} of Chapter~\ref{ch:verbs} for the full analysis.
@@ -1979,8 +1979,8 @@ and §\,\ref{sec:vm-neg} of Chapter~\ref{ch:verbs} for the full analysis.
 In zero-copula equative and class-membership clauses, no verbal complex is
 present, and \ird{zá-} therefore has no host to cliticize onto.
 Neg\textsuperscript{0} is instead spelled out as the free morpheme \ird{staly},
-which surfaces in the canonical head-final position of a NegP head:
-clause-finally, after the topic DP and the predicative complement DP. This is
+which surfaces in the canonical head-final position of a \synhead{NegP} head:
+clause-finally, after the topic \synhead{DP} and the predicative complement \synhead{DP}. This is
 the position the clause spine directly predicts. \ird{Staly} is morphologically
 invariant; it bears no aspect, mood, or person marking of any kind, consistent
 with its status as a functional head rather than a verbal root. See
@@ -2002,7 +2002,7 @@ negation that share the same morphological means but differ in semantic scope:
   form.
 \item[\upshape Identificational negation (\ird{staly} + participant nominal).]
   The combination of a participant nominal predicate and \ird{staly} negates the
-  identification: the topic DP is denied as the unique satisfier of the
+  identification: the topic \synhead{DP} is denied as the unique satisfier of the
   nominalized description. The event is presupposed to have occurred; only the
   identity of the participant is in question.
 \end{description}
@@ -2049,13 +2049,13 @@ Neg\textsuperscript{0} head remaining to be spelled out separately. See
 
 The prohibitive \ird{-é}, the negative hortative \ird{-ku}, and the negative
 irrealis \ird{-ir} each carry [+\textsc{neg}] as a lexically specified feature
-of the MoodP Vocabulary Item. When a MoodP head bears this feature, NegP is
-absent from the derivation: the clause is built with the negative MoodP merging
-directly above AspP, and \ird{zá-} does not surface because there is no
+of the \synhead{MoodP} Vocabulary Item. When a \synhead{MoodP} head bears this feature, \synhead{NegP} is
+absent from the derivation: the clause is built with the negative \synhead{MoodP} merging
+directly above \synhead{AspP}, and \ird{zá-} does not surface because there is no
 Neg\textsuperscript{0} node for it to spell out. The [+\textsc{neg}] of these
 forms is directive-scoped (qualifying a command, suggestion, or hypothetical),
 not propositional, and therefore not equivalent to the truth-conditional negation
-of NegP. For the full MoodP analysis, including the paradigm of affirmative and
+of \synhead{NegP}. For the full \synhead{MoodP} analysis, including the paradigm of affirmative and
 negative Vocabulary Items and the restricted palatalizing behavior of \ird{-ir}, see
 §\,\ref{sec:vm-moodp} of Chapter~\ref{ch:verbs}.
 
@@ -2071,20 +2071,20 @@ The distribution is summarized in the following table:
     \toprule
     \textsc{predicate/mood type} & \textsc{affirmative} & \textsc{negative} & \textsc{negation scope} \\
     \midrule
-    Verbal (indicative)           & verbal complex                & \ird{zá-} prefix; NegP projected          & propositional \\
+    Verbal (indicative)           & verbal complex                & \ird{zá-} prefix; \synhead{NegP} projected          & propositional \\
     Equative / zero copula        & $\varnothing$ copula            & \ird{staly} (free morpheme, clause-final) & predicational \\
     Identificational (part.\ nom.) & part.\ nom.\ + $\varnothing$  & part.\ nom.\ + \ird{staly}                & identificational \\
-    Existential                   & \ird{jec-}                    & \ird{zad-} (suppletive root; Neg\textsuperscript{0} absorbed, no independent PF exponent); NegP projected & propositional \\
+    Existential                   & \ird{jec-}                    & \ird{zad-} (suppletive root; Neg\textsuperscript{0} absorbed, no independent PF exponent); \synhead{NegP} projected & propositional \\
     \midrule
-    \multicolumn{4}{l}{\textit{Mood-internal negation: NegP not projected; [+\textsc{neg}] on MoodP head\rlap{\textsuperscript{†}}}} \\[2pt]
+    \multicolumn{4}{l}{\textit{Mood-internal negation: \synhead{NegP} not projected; [+\textsc{neg}] on \synhead{MoodP} head\rlap{\textsuperscript{†}}}} \\[2pt]
     Command (imperative)          & \ird{-ím}                     & \ird{-é} (prohibitive)                    & directive scope \\
     Suggestion (hortative)        & \ird{-ká}                     & \ird{-ku} (neg.\ hortative)               & directive scope \\
     Hypothetical (irrealis)       & \ird{-ěv}                     & \ird{-ir} (neg.\ irrealis)                & modal/hypothetical scope \\
     \bottomrule
     \multicolumn{4}{p{\textwidth}}{\textsuperscript{†}\footnotesize
       Directive scope (prohibitive, neg.\ hortative) and modal/hypothetical
-      scope (neg.\ irrealis) are both instances of MoodP-internal
-      [+\textsc{neg}]; neither involves NegP projection nor truth-conditional
+      scope (neg.\ irrealis) are both instances of \synhead{MoodP}-internal
+      [+\textsc{neg}]; neither involves \synhead{NegP} projection nor truth-conditional
       propositional negation. See §\,\ref{sec:vm-moodp} of
       Chapter~\ref{ch:verbs} for the unified formal account and the semantic
       distinction between the two sub-types.} \\
@@ -2092,8 +2092,8 @@ The distribution is summarized in the following table:
 \end{table}
 
 \noindent The formal analysis --- including the DM account of the prefix paradox
-(\ird{zá-} as a procliticized NegP head in head-final context), the unified NegP
-argument across all predicate types, and the MoodP paradigm of affirmative and
+(\ird{zá-} as a procliticized \synhead{NegP} head in head-final context), the unified \synhead{NegP}
+argument across all predicate types, and the \synhead{MoodP} paradigm of affirmative and
 negative Vocabulary Items --- is in §\,\ref{sec:vm-neg} and
 §\,\ref{sec:vm-neg-exponents} and §\,\ref{sec:vm-moodp} of Chapter~\ref{ch:verbs}.
 
