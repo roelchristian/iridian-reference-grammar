@@ -1,22 +1,22 @@
 %!TEX program = lualatex
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% A Reference Grammar of the Iridian Language                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% A Reference Grammar of the Iridian Language                                %%
 %% 2026 Rewrite                                                               %%
-%% Copyright (C) 2019--2026 by Roel Christian Yambao                         %%
-%% This work may be distributed and/or modified under the conditions of the  %%
+%% Copyright (C) 2019--2026 by Roel Christian Yambao                          %%
+%% This work may be distributed and/or modified under the conditions of the   %%
 %% MIT License.                                                               %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[12pt]{amsbook}
+\documentclass[12pt, a4paper]{amsbook}
 
-\usepackage[
-	paperwidth=7in,
-	paperheight=10in,
-	inner=1in,
-	outer=1in,
-	top=1in,
-	bottom=1in
-]{geometry}
+% \usepackage[
+% 	paperwidth=7in,
+% 	paperheight=10in,
+% 	inner=1in,
+% 	outer=1in,
+% 	top=1in,
+% 	bottom=1in
+% ]{geometry}
 
 
 \newcommand{\trackedscshape}{\addfontfeatures{Letters=SmallCaps,LetterSpace=8}\scshape}
@@ -29,6 +29,7 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{multicol}
+\usepackage{multirow}
 \usepackage{enumitem}
 \usepackage[font=small,labelfont={sc},labelsep=period]{caption}
 \usepackage{fancyhdr}
@@ -118,18 +119,24 @@
 
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont{EB Garamond}[
-	Numbers={OldStyle,Proportional}
+
+\setmainfont{EBGaramond12-Regular.otf}[
+  ItalicFont = EBGaramond12-Italic.otf,
+  Numbers = {OldStyle,Proportional}
 ]
-\setsansfont{EB Garamond}[
-	Numbers={OldStyle,Proportional}
+
+\setsansfont{EBGaramond12-Regular.otf}[
+  ItalicFont = EBGaramond12-Italic.otf,
+  Numbers = {OldStyle,Proportional}
 ]
+
+\newfontfamily\titlefont{EBGaramondSC12-Regular.ttf}[
+  LetterSpace = 8
+]
+
 \usepackage[italic]{mathastext}
-\newfontfamily\titlefont{EB Garamond}[
-	Letters=SmallCaps,
-	LetterSpace=8,
-	Numbers={OldStyle,Proportional}
-]
+\usepackage{microtype}
+
 
 
 
@@ -160,6 +167,7 @@
 \newleipzig{Proh}{proh}{prohibitive}
 \newleipzig{Hort}{hort}{hortative}
 \newleipzig{Irr}{irr}{irrealis}
+\newleipzig{NIrr}{n.irr}{negative irrealis}
 
 %% Non-finite / converb
 \newleipzig{Seq}{seq}{sequential converb}
@@ -167,7 +175,8 @@
 \newleipzig{Purp}{purp}{purposive converb}
 \newleipzig{Cncs}{cncs}{concessive converb}
 \newleipzig{Cntr}{cntr}{contrastive converb}
-\newleipzig{Cond}{cond}{conditional converb}
+\newleipzig{Cond}{cond}{open conditional converb}
+\newleipzig{ECond}{e.cond}{expected conditional converb}
 \newleipzig{Cv}{cv}{converb (generic)}
 
 %% Nominal / discourse
@@ -202,6 +211,7 @@
 \newcommand{\mk}[1]{\trackedsc{#1}}
 \newcommand{\sx}[1]{\textsuperscript{#1}}
 \newcommand{\lingcontext}[1]{{\footnotesize\itshape [#1]}}
+\newcommand{\synhead}[1]{\textup{#1}}
 
 %% Abbreviations used in morpheme templates
 \newcommand{\Stem}{\textsc{stem}}
@@ -290,7 +300,19 @@
 
 \frontmatter
 \booktitlepage
+
+\cleardoublepage
+
 \tableofcontents
+
+\cleardoublepage
+
+\listoftables
+
+\cleardoublepage
+
+\listoffigures
+
 \mainmatter
 
 %% Chapter 1: Overview
@@ -327,6 +349,7 @@
 \include{chapters/11-spoken-colloquial}
 
 %% TEMPORARY STUBS
+% \include{chapters/12-working-stubs}
 \include{util/lexicon}
 % \include{util/stub/theory}
 % \include{util/stub/verb-minim}
