@@ -2339,30 +2339,79 @@ custody rather than settled ownership --- a consequence of the existential
 source of the construction.
 
 
-\subsection{The presentational construction}\label{sec:existential-presentatives}
+\subsection{Event-anchored existential pivots}\label{sec:existential-presentatives}
 
-The continuous form \ird{jeca} licenses a \term{presentational} construction in
-which the existential pivot is a complex \synhead{DP} modified by a nominalised
-participial attributive. This construction introduces a referent into discourse
-by anchoring it to an event in which that referent is the salient non-agentive
-participant, rather than reporting the event itself. Its canonical shape is:
+The existential predicate in Iridian consistently selects a nominal pivot: the entity
+asserted to exist stands as the direct-case complement of Exist\textsuperscript{0}. The
+constructional family defined by this selectional requirement is broader than the
+overt-head presentational use treated in earlier descriptions. Three subtypes can be
+distinguished according to the internal structure of the pivot \synhead{DP}:
+
+\begin{enumerate}[(i)]
+\item a bare \synhead{NP} (plain existential; §\,\ref{sec:existence-and-presence}),
+\item a complex \synhead{DP} with an overt lexical head modified by a
+  participant-oriented attributive (overt-head presentational;
+  §\,\ref{sec:exst-overt-head}),
+\item a headless \synhead{DP} whose sole content is a participant nominal derived from
+  verbal structure by Iridian's participant-nominal morphology (headless
+  participant-nominal; §\,\ref{sec:exst-headless-nmlz}).
+\end{enumerate}
+
+\noindent The three subtypes share a single structural identity: all three occupy
+Spec,\synhead{ExistP} as the nominal complement of Exist\textsuperscript{0}. They differ
+not in the matrix construction but in the internal architecture of the pivot \synhead{DP}.
+
+\subsubsection{Architectural decision: participant nominals, not silent nouns}
+\label{sec:exst-pivot-arch}
+
+The third subtype requires an explicit analytical decision. When the existential
+pivot introduces an otherwise unidentified participant --- the function served by English
+\trsl{somebody}, \trsl{something}, \trsl{nobody}, \trsl{nothing} --- a possible analysis
+would posit an indefinite null lexical noun ($\varnothing$N) heading the pivot, with the
+verbal description functioning as its attributive modifier. That analysis is explicitly
+rejected for Iridian.
+
+Iridian does not ordinarily lexicalize English-style \trsl{someone}, \trsl{something},
+\trsl{no one}, and \trsl{nothing} as free pronominal items in clause structure, and it
+does not build their equivalents by projecting a semantically bleached null noun.
+Instead, the indefinite pivot is a bona fide participant nominal: an nP/DP derived
+directly from verbal structure by the language's participant-nominal morphology
+(§\,\ref{sec:nmlz-predicative} of Chapter~\ref{ch:verbs}). The nominal character of
+the pivot is the output of n\textsuperscript{0}, whose categorial feature nominalises the
+embedded verbal structure. No lexical noun is inserted or covertly present; the
+nominalization is the whole pivot.
+
+This treatment is principled within the grammar's DM architecture. Iridian already has a
+robust system of participant nominals whose orientation is determined by voice morphology
+(§\,\ref{sec:nmlz-predicative} of Chapter~\ref{ch:verbs}): antipassive stems yield
+agent-oriented nominals, unmarked transitive stems yield patient-oriented ones, and
+applicative stems yield nominals for the promoted participant. The indefinite existential
+construction draws on precisely this system. The participant orientation of the
+existential pivot is encoded by the same voice-sensitive stem morphology that governs
+participant nominals throughout the grammar; no independent mechanism is required.
+
+\subsubsection{Overt-head presentational pivots}
+\label{sec:exst-overt-head}
+
+The overt-head presentational construction is the most structurally elaborated subtype.
+The pivot \synhead{DP} consists of a lexical head noun in the direct case modified by a
+participant-oriented attributive. Its canonical shape is:
 
 \begin{center}
 [\textit{internal-arg.\Ind{}} \ \textit{participant-oriented-attributive} \ \textit{head-NP}.\Dir{}] \ \ \ird{jeca}
 \end{center}
 
-The modifier is canonically oriented toward the participant the embedded stem
-privileges: the patient or theme of a transitive predicate, the recipient or
-beneficiary of an applicative stem, or more generally the non-agentive
-participant that emerges from the event as the discourse-relevant referent. The
-construction therefore introduces \trsl{a letter that the woman wrote} or
-\trsl{a child someone fed} rather than asserting the writing or feeding for its
-own sake.
+The modifier is canonically oriented toward the participant the embedded stem privileges:
+the patient or theme of a transitive predicate, the recipient or beneficiary of an
+applicative stem, or more generally the non-agentive participant that emerges from the
+event as the discourse-relevant referent. The construction therefore introduces \trsl{a
+letter that the woman wrote} or \trsl{a child someone fed} rather than asserting the
+writing or the feeding for its own sake.
 
-\ird{Jeca} is fixed in this use. Temporal and aspectual interpretation come from
-the embedded participant-oriented modifier, which may be perfective,
-retrospective, continuous, progressive, or contemplative. The matrix \ird{jeca}
-signals only that the referent is being introduced into the current discourse.
+\ird{Jeca} is fixed in this use. Temporal and aspectual interpretation come entirely from
+the embedded attributive, which may be perfective, retrospective, continuous, progressive,
+or contemplative. The matrix \ird{jeca} signals only that the referent is being introduced
+into the current discourse.
 
 \pex
 \a
@@ -2379,9 +2428,9 @@ signals only that the referent is being introduced into the current discourse.
 \endgl
 \a
 \begingl
-\gla Vednikovní pres jeca.//
-\glb see-\textsc{trs}-\Pf{}-\textsc{attr} man.\Dir{} \Exst{}-\Cont{}//
-\glft \trsl{There is a man that (he) saw.} \lingcontext{perceived referent introduced via completed event}//
+\gla Vednikovní ryc jeca.//
+\glb see-\textsc{trs}-\Pf{}-\textsc{attr} cat.\Dir{} \Exst{}-\Cont{}//
+\glft \trsl{There is a cat that (I) saw.} \lingcontext{perceived referent introduced via completed event}//
 \endgl
 \a
 \begingl
@@ -2391,19 +2440,13 @@ signals only that the referent is being introduced into the current discourse.
 \endgl
 \xe
 
-The structural basis for this construction is that the pivot position of ExistP
-may be occupied by any \synhead{DP} of appropriate referential properties. When the pivot
-is a complex \synhead{DP} --- a head noun modified by a participant-oriented attributive
---- ExistP introduces into discourse a referent identified and anchored via an
-event in which that referent is the salient non-agentive participant. The
-attributive is an adjunct within the pivot \synhead{DP}; it is \emph{not} a predicate of
-the matrix clause and contributes no independent propositional content at the
-matrix level. The matrix Exist\textsuperscript{0} asserts only
-$\textsc{exist}(x)$ for the complex, event-anchored pivot $x$. This
-decomposition directly accounts for the fixedness of \ird{jeca}: because the
-existential head's semantic contribution is reduced to discourse introduction,
-the least-marked aspect (continuous, unbounded) is the appropriate exponent; any
-other aspect would impose a viewpoint on the existential state itself,
+The attributive is an adjunct within the pivot \synhead{DP}; it is not a predicate of
+the matrix clause and contributes no independent propositional content at the matrix
+level. The matrix Exist\textsuperscript{0} asserts only $\textsc{exist}(x)$ for the
+complex, event-anchored pivot $x$. This decomposition directly accounts for the fixedness
+of \ird{jeca}: because the existential head's semantic contribution is reduced to
+$\textsc{exist}(x)$, the least-marked aspect (continuous, unbounded) is the appropriate
+exponent; any other aspect would impose a viewpoint on the existential state itself,
 conflicting with the temporal interpretation already contributed by the embedded
 attributive.
 
@@ -2427,99 +2470,39 @@ attributive.
 \end{forest}
 \end{center}
 
-Because the function of this construction is presentational, agentive heads are
-disfavoured. An agent is ordinarily presented by a plain verbal clause or, where
-identification is intended, by an identificational equative
-(§\,\ref{sec:ident-equative}); the existential-presentational construction is
-instead the natural means of introducing a participant that has been perceived,
-affected, selected, or otherwise brought into discourse by the event.
+Because the function of this construction is to introduce a specific new referent into the
+discourse model, non-agentive pivot heads are strongly favoured. Agents are the
+prototypical topical and volitional participants; they are characteristically presupposed
+or previously introduced, making them poor existential pivots. Patients, themes,
+recipients, and other non-agentive participants are characteristically discourse-new and
+are therefore the natural heads of a presentational pivot \synhead{DP}.
 
 \ex
 \begingl
 \gla ?Senicět obroždkovní chrás jeca.//
 \glb news.\Ind{}.\Def{} read-\textsc{antip}-\Pf{}-\textsc{attr} person.\Dir{} \Exst{}-\Cont{}//
-\glft \trsl{There is a person who read the news.} \lingcontext{formally possible, but marked: agentive head disfavoured}//
+\glft \trsl{There is a person who read the news.} \lingcontext{formally possible, but
+  marked: agentive head disfavoured in overt-head presentational}//
 \endgl
 \xe
 
-This disfavour is structurally grounded: existential predicates
-cross-linguistically require their pivot to be discourse-new and referentially
-non-presupposed (the Iridian analogue of Milsark's 1974 definiteness
-restriction). Agents, as the prototypical topical and volitional participants,
-are characteristically presupposed or previously introduced, making them poor
-existential pivots. Patients, themes, recipients, and other non-agentive
-participants are characteristically discourse-new and are therefore the natural
-heads of a presentational pivot \synhead{DP}.
+This discourse preference is, however, a property of the overt-head subtype specifically.
+The headless participant-nominal construction (§\,\ref{sec:exst-headless-nmlz}) is the
+default indefinite strategy across all participant roles and does not inherit any
+preference for non-agentive pivots.
 
-The presentational construction is not simply a periphrastic variant of the
-corresponding plain eventive clause. \ird{Vednikovní ryc jeca} and the
-equivalent plain clause share the same truth conditions --- both are true when
-the speaker saw a cat --- but they differ in discourse profile. The plain clause
-reports an event of seeing; the existential-presentational performs a distinct
-discourse act, namely the \term{introduction} of the cat as a new participant in
-the discourse model, with the seeing event supplying the identifying anchor.
-
-The distinction becomes sharpest in context. Consider the existential question
-\ird{Vednikou by jeca?} `Did you see anything?' (lit.\ `Is there anything you
-saw?'). This question does not request an event report; it opens a slot for an
-as yet unidentified relevant referent, asking whether any entity in the
-addressee's perceptual field is worth introducing to the discourse. That is
-precisely the function the presentational construction is built for. An answer
-such as \ird{Vednikovní ryc jeca} `There is a cat that I saw' is highly
-felicitous in that context because the question itself has already made the cat
---- not the seeing event --- the relevant discourse target. The embedded
-attributive supplies the anchoring event; the existential matrix performs the
-act of presenting the referent.
-
-\pex
-\a
-\begingl
-\gla Vednikou by jeca?//
-\glb see-\textsc{trs}-\Pf{}-\textsc{nmlz} question \Exst{}-\Cont{}//
-\glft \trsl{Did you see anything?} \lingcontext{existential question: is there anything you saw?}//
-\endgl
-\a
-\begingl
-\gla Vednikovní ryc jeca.//
-\glb see-\textsc{trs}-\Pf{}-\textsc{attr} cat.\Dir{} \Exst{}-\Cont{}//
-\glft \trsl{There is a cat that I saw.} \lingcontext{existential-presentational answer: the cat is introduced as a new discourse referent}//
-\endgl
-\xe
-
-This question--answer pair also illuminates the asymmetries across different
-question types. After a question targeting the event --- \trsl{What happened?}
---- the plain verbal clause is the more neutral response, since the event itself
-is the discourse target. After \ird{Vednikou by jeca?}, the presentational is
-especially apt and in some contexts more natural than the plain eventive,
-precisely because the question has already privileged the referent over the
-event. After a question targeting the agent --- \trsl{Who saw the cat?} --- the
-presentational is a poor response, because the discourse participant at issue is
-the perceiver rather than the perceived entity. This is the same asymmetry
-already observed in the structural disfavour of agentive pivot heads: the
-construction is designed to bring a non-agentive participant onto the discourse
-stage, and it is most felicitous in contexts that open a slot for exactly that.
-
-The definiteness restriction on existential pivots is thus best understood not
-as a formal ban on definiteness as such, but as a reflex of this presentational
-function: a referent already present in the discourse model cannot be
-meaningfully reintroduced. What the construction demands is a hearer-new,
-non-presupposed pivot --- the very type of referent for which the act of
-introduction is both necessary and informative.
-
-The negative counterpart of the presentational construction is formed with
-\ird{zada}. The negative presentational denies the existence of the
-event-anchored discourse referent rather than negating the event itself: \synhead{NegP}
-scopes over ExistP, and the negative asserts that no referent satisfying the
-event-anchored description exists. As with \ird{jeca}, the continuous form
-\ird{zada} is fixed in this use; the aspectual interpretation of the embedded
-event comes entirely from the attributive.
+The negative counterpart of the overt-head presentational is formed with \ird{zada}.
+\synhead{NegP} scopes over ExistP, and the construction asserts that no referent satisfying
+the event-anchored description exists. As with \ird{jeca}, the continuous form \ird{zada}
+is fixed; the aspectual interpretation of the embedded event comes entirely from the
+attributive.
 
 \pex
 \a
 \begingl
 \gla Obrohnikovní senica zada.//
 \glb read-\textsc{trs}-\Pf{}-\textsc{attr} news.\Dir{} \NegExst{}-\Cont{}//
-\glft \trsl{There is no news that (I) read.} \lingcontext{negative presentational; event-anchored referent denied}//
+\glft \trsl{There is no news that (I) read.} \lingcontext{negative overt-head presentational; event-anchored referent denied}//
 \endgl
 \a
 \begingl
@@ -2554,14 +2537,330 @@ event comes entirely from the attributive.
 \end{forest}
 \end{center}
 
-\noindent The Exist\textsuperscript{0} head now asserts $\neg\textsc{exist}(x)$
-for the complex pivot: no referent satisfying the event-anchored description
-exists in the discourse. The attributive remains an adjunct within the pivot \synhead{DP}
-with no matrix-level propositional force. The disfavour of agentive pivot heads
-carries over to \ird{zada} by the same definiteness-restriction logic.
+\noindent Exist\textsuperscript{0} now asserts $\neg\textsc{exist}(x)$ for the complex
+pivot: no referent satisfying the event-anchored description exists. The attributive
+remains an adjunct within the pivot \synhead{DP} with no matrix-level propositional
+force. The disfavour of agentive pivot heads carries over to \ird{zada} for the same
+reasons as in the affirmative.
 
 The plural particle \ird{ne} cannot be combined with a \ird{zad-} clause; see
 Section~\ref{sec:definiteness} of Chapter~\ref{ch:nouns}.
+
+\subsubsection{Headless participant-nominal pivots}
+\label{sec:exst-headless-nmlz}
+
+The headless participant-nominal construction employs a pivot \synhead{DP} that contains
+no lexical head noun. The pivot's entire content is a participant nominal derived from
+verbal structure, whose voice morphology determines participant orientation. This
+construction is the default means of expressing indefinite participant reference in
+Iridian.
+
+The participant nominal is built by the same morphological process that produces the
+identificational predicates of §\,\ref{sec:nmlz-predicative} of
+Chapter~\ref{ch:verbs}: n\textsuperscript{0} (spelled out as \ird{-ou}, with regular
+stem-final contractions) applies to a verbal structure in which voice and aspect have
+already been specified. The participant orientation follows from the voice of the embedded
+stem:
+
+\begin{itemize}
+\item an antipassive-stem nominal denotes the agent of the event (\trsl{the one who Verb'd});
+\item an unmarked transitive-stem nominal denotes the patient or theme (\trsl{that which was Verb'd});
+\item an applicative-stem nominal denotes the promoted participant (\trsl{the one who was Verb'd-to}).
+\end{itemize}
+
+\noindent When such a nominal occupies the existential pivot position, Exist\textsuperscript{0}
+asserts the existence of an individual satisfying the participant description. The event
+description is internal to the nominalized pivot, not a contribution of the matrix
+predicate. The matrix \ird{jec-} contributes only $\textsc{exist}(x)$; the verbal
+material, together with its aspect and voice, supplies the property that identifies the
+individual introduced.
+
+\pex
+\a
+\begingl
+\gla Ščenikou jeca.//
+\glb arrive-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{There is someone who arrived.} \lingcontext{agentive indefinite: intransitive nominal, agent orientation}//
+\endgl
+\a
+\begingl
+\gla Lubcí piaščikou jeca.//
+\glb apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{There is someone who ate an apple.} \lingcontext{agentive indefinite: antipassive agent-nominal}//
+\endgl
+\a
+\begingl
+\gla Vednikou jeca.//
+\glb see-\textsc{trs}-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{There is something (I) saw.} \lingcontext{patient indefinite: transitive patient-nominal}//
+\endgl
+\a
+\begingl
+\gla Verce blětébovnikou jeca.//
+\glb toy.\Ind{} give-\Appl{}-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{There is someone who was given a toy.} \lingcontext{goal indefinite: applicative recipient-nominal}//
+\endgl
+\xe
+
+The formal structure of the headless participant-nominal existential differs from the
+overt-head construction only in the internal architecture of the pivot. The nP directly
+daughter-of-DP contains the Voice/Asp/Root complex; n\textsuperscript{0} introduces
+nominal category; no lexical NP head is present.
+
+\begin{center}
+\begin{forest}
+  syntax tree
+  [\synhead{AspP}
+    [{\synhead{DP}\\{\footnotesize pivot}}
+      [{\synhead{nP}}
+        [{\synhead{VoiceP}\\{Root + Voice/Asp}}]
+        [{n\textsuperscript{0}\\\ird{-ou}\\{\scriptsize\Nmlz{}}}]
+      ]
+    ]
+    [{Asp$'$}
+      [{Asp\\\ird{jec-a}\\{\scriptsize Exist+Cont}}]
+      [ExistP
+        [{Exist$'$}
+          [{Exist\\\ird{jec-}}]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\end{center}
+
+\noindent The semantics is parallel to the plain and overt-head cases. The nP denotes a
+property of individuals, event-anchored by the verbal material it encodes;
+Exist\textsuperscript{0} introduces a witness individual satisfying that property. The
+eventive content is entirely internal to the pivot; no clausal embedding of the verbal
+structure into the matrix occurs.
+
+The contrast between the two constructional subtypes is already visible in the grammar's
+existential question--answer paradigm:
+
+\pex
+\a
+\begingl
+\gla Vednikou by jeca?//
+\glb see-\textsc{trs}-\Pf{}-\Nmlz{} \textsc{q} \Exst{}-\Cont{}//
+\glft \trsl{Did you see anything?} \lingcontext{headless NMLZ pivot; referent as yet unidentified}//
+\endgl
+\a
+\begingl
+\gla Vednikovní ryc jeca.//
+\glb see-\textsc{trs}-\Pf{}-\textsc{attr} cat.\Dir{} \Exst{}-\Cont{}//
+\glft \trsl{There is a cat that I saw.} \lingcontext{overt-head pivot; specific referent introduced}//
+\endgl
+\xe
+
+\noindent In (a), the pivot is a headless nominal (\ird{vednikou}), because no referent
+has yet been identified: the question asks whether any individual satisfying the
+existential description exists. In (b), the pivot is a complex \synhead{DP} with an overt
+lexical head, because the cat is now a specific entity being introduced into the discourse
+model. These are not competing strategies but complementary options: the headless
+construction is the appropriate form when a participant is entirely unidentified; the
+overt-head construction is the appropriate form when a referent is specific enough to
+anchor to a lexical category and an event description.
+
+\subsubsection{Indefinite participant introduction}
+\label{sec:exst-indef-pos}
+
+The headless participant-nominal construction is the primary means by which Iridian
+expresses what English achieves with the free indefinite pronouns \trsl{somebody},
+\trsl{someone}, \trsl{something}, and \trsl{anything}. Free pronominal items are not the
+ordinary Iridian strategy; the existential pivot is instead a participant nominal whose
+voice morphology encodes the relevant participant role.
+
+\pex
+\a
+\begingl
+\gla Ščenikou jeca.//
+\glb arrive-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{Someone arrived.} \lingcontext{lit.\ there is one-who-arrived; agentive indefinite}//
+\endgl
+\a
+\begingl
+\gla Lubcí piaščikou jeca.//
+\glb apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{Someone ate the apple.} \lingcontext{lit.\ there is one-who-ate-it; agentive transitive indefinite}//
+\endgl
+\a
+\begingl
+\gla Vednikou jeca.//
+\glb see-\textsc{trs}-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{(I) saw something.} \lingcontext{lit.\ there is a seen-thing; patient indefinite}//
+\endgl
+\a
+\begingl
+\gla Verce blětébovnikou jeca.//
+\glb toy.\Ind{} give-\Appl{}-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{Someone was given a toy.} \lingcontext{lit.\ there is one-who-was-given-a-toy; goal indefinite}//
+\endgl
+\xe
+
+Agentive indefinites in (a) and (b) are fully natural. This is a significant difference
+from the overt-head subtype, where agent-oriented pivot heads are disfavoured. The
+discourse preference for non-agentive pivots is a property of the overt-head
+presentational construction specifically, grounded in its referent-introduction function.
+The headless construction asserts only that some participant of the relevant type exists;
+because this function is indifferent to the discourse-topic properties that make agents
+poor existential pivots in the overt-head type, agentive participant nominals are
+unproblematic here.
+
+Older descriptive treatments noted that Iridian systematically reframes English
+indefinite-pronoun clauses as existential constructions built from nominalization, rather
+than employing dedicated indefinite pronominal items. The present analysis gives that
+observation formal content: the indefinite existential is not a construction containing a
+silent lexical noun but one in which the participant nominal itself is the entire pivot,
+with participant orientation encoded by voice morphology internal to n\textsuperscript{0}'s
+complement.
+
+\subsubsection{Negative existential indefinites}
+\label{sec:exst-indef-neg}
+
+Negative indefinites --- English \trsl{nobody}, \trsl{no one}, \trsl{nothing} --- are
+expressed by the negative existential \ird{zad-} with a participant-nominal pivot. The
+derivation is structurally parallel to the positive: \synhead{NegP} is projected,
+Neg\textsuperscript{0} triggers suppletive Vocabulary Insertion at
+Exist\textsuperscript{0}, and the resulting \ird{zad-} asserts $\neg\textsc{exist}(x)$
+for the individual satisfying the nominal description.
+
+\pex
+\a
+\begingl
+\gla Ščenikou zada.//
+\glb arrive-\Pf{}-\Nmlz{} \NegExst{}-\Cont{}//
+\glft \trsl{Nobody arrived.} \lingcontext{lit.\ there is no one-who-arrived}//
+\endgl
+\a
+\begingl
+\gla Lubcí piaščikou zada.//
+\glb apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{} \NegExst{}-\Cont{}//
+\glft \trsl{Nobody ate the apple.} \lingcontext{lit.\ there is no one-who-ate-it}//
+\endgl
+\a
+\begingl
+\gla Vednikou zada.//
+\glb see-\textsc{trs}-\Pf{}-\Nmlz{} \NegExst{}-\Cont{}//
+\glft \trsl{Nothing was seen. / (I) saw nothing.} \lingcontext{lit.\ there is no seen-thing}//
+\endgl
+\xe
+
+The negation is existential: no individual satisfying the participant description exists.
+No presupposition is generated about whether the relevant event occurred. This property
+distinguishes negative existential indefinites from identificational negation, treated in
+the following subsection.
+
+\subsubsection{Relation to identificational equatives}
+\label{sec:exst-vs-ident}
+
+The same participant nominals that serve as existential pivots with \ird{jec-}/\ird{zad-}
+also serve as predicates in identificational equatives (§\,\ref{sec:ident-equative}).
+The two constructions must be carefully distinguished, because they differ both in
+structural position and in semantic scope.
+
+In an identificational equative, the participant nominal is the predicative complement of
+a zero-copula clause. The topic \synhead{DP} is identified as the unique entity satisfying
+the description; the event is presupposed. Negation of this construction with \ird{staly}
+yields identificational negation: the presupposed event remains intact, and only the
+identity of the relevant participant is denied.
+
+\pex
+\a
+\begingl
+\gla Janek lubcí piaščikou.//
+\glb Janek.\Dir{} apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{}//
+\glft \trsl{Janek is the one who ate the apple.} \lingcontext{identificational equative: event presupposed; Janek identified as agent}//
+\endgl
+\a
+\begingl
+\gla Janek lubcí piaščikou staly.//
+\glb Janek.\Dir{} apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{} \NegCop{}//
+\glft \trsl{Janek is not the one who ate the apple.} \lingcontext{identificational negation: event still presupposed; Janek misidentified as agent}//
+\endgl
+\xe
+
+\noindent The contrastive implication that someone else ate the apple arises because
+identificational predications are exhaustive: negating an exhaustive identification
+entails the existence of a different satisfier. This is the expected interpretation in
+discourse (§\,\ref{sec:ident-equative}).
+
+The existential construction with a participant-nominal pivot has a fundamentally
+different semantic profile:
+
+\pex
+\a
+\begingl
+\gla Lubcí piaščikou jeca.//
+\glb apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{} \Exst{}-\Cont{}//
+\glft \trsl{Someone ate the apple.} \lingcontext{existential: asserts existence of an agent; no event presupposition}//
+\endgl
+\a
+\begingl
+\gla Lubcí piaščikou zada.//
+\glb apple.\Ind{} eat-\Antip{}-\Pf{}-\Nmlz{} \NegExst{}-\Cont{}//
+\glft \trsl{Nobody ate the apple.} \lingcontext{negative existential: no agent exists; event not presupposed}//
+\endgl
+\xe
+
+\noindent In the existential, the participant nominal is an argument (the pivot) in
+Spec,\synhead{ExistP}; \ird{zad-} scopes over Exist\textsuperscript{0}, denying the
+existence of any individual satisfying the description. No event presupposition survives.
+The contrast in structural position --- nominal as predicate vs.\ nominal as argument ---
+drives the contrast in presuppositional profile.
+
+Ordinary negative indefinites (\trsl{nobody}, \trsl{nothing}) therefore belong to the
+existential system with \ird{zad-}, not to the identificational equative with \ird{staly}.
+The identificational construction is the appropriate choice only when the discourse
+specifically presupposes the event and contests the identity of its participant. Deploying
+\ird{staly} + participant nominal in a context where no such presupposition is intended
+would produce an unintended exhaustivity implication that the event occurred and some
+other participant was responsible.
+
+A small set of items --- including \ird{niho} and \ird{zide} --- appear to function as
+negative-polarity or quantificational operators in certain registers and may interact with
+both the existential and identificational systems. Their full characterization remains an
+open question and is not pursued here.
+
+\subsubsection{Discourse profile of the two constructional subtypes}
+\label{sec:exst-discourse}
+
+The overt-head and headless participant-nominal constructions have complementary discourse
+profiles. They are not competing strategies for the same communicative function but are
+specialized for different referential tasks.
+
+The overt-head presentational construction is the natural means of introducing a specific,
+contentfully described new referent into the discourse model. The lexical head noun
+provides a category for the referent; the attributive anchors it to an event in which it
+is the salient participant. This construction is especially apt when the speaker wishes to
+present an entity rich enough in description to support further reference --- to introduce
+a cat, a song, a piece of news, or a child given a toy. Because referent introduction
+presupposes that the referent is hearer-new and non-presupposed, non-agentive participants
+are the most natural pivot heads; their discourse-new status is the norm, while agents are
+characteristically already in play.
+
+The headless participant-nominal construction performs a different function: it asserts
+the existence of an otherwise unidentified participant without assigning that participant a
+lexical category. It is the appropriate form when the speaker wishes only to assert that
+some individual, as yet unnamed and uncharacterized, bears the relevant participant
+relation to an event. This construction is indifferent to participant role: agentive,
+patient, and goal pivots are all equally regular.
+
+The presentational construction is not simply a periphrastic variant of the corresponding
+eventive clause. \ird{Vednikovní ryc jeca} and the corresponding plain verbal clause share
+the same truth conditions --- both are true when the speaker saw a cat --- but they differ
+in discourse function. The plain clause reports an event of seeing; the overt-head
+presentational performs a distinct discourse act: the introduction of the cat as a new
+participant into the discourse model, with the seeing event supplying the identifying
+anchor. The distinction is sharpest in context. After the existential question \ird{Vednikou
+by jeca?} (\trsl{Did you see anything?}), the overt-head answer \ird{Vednikovní ryc jeca}
+is highly felicitous because the question has already made the entity --- not the event ---
+the relevant discourse target. After a question targeting the agent (\trsl{Who saw the
+cat?}), the overt-head presentational is a poor response: the construction is designed
+to bring a non-agentive participant onto the discourse stage, and the question has made the
+agent the target instead. The headless construction, by contrast, is the default form for
+asserting the existence of any participant type, agentive or otherwise, when no richer
+description is yet warranted.
 
 
 \subsection{Suppletive exclusivity: \ird{jec-}, \ird{zad-}, and the \synhead{NegP} alternation}\label{sec:neg-exst-alternation}%
