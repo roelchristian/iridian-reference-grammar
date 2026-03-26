@@ -96,6 +96,8 @@
 	singlelinecheck=false,
 	justification=raggedright
 }
+\captionsetup[table]{font=footnotesize,labelfont={sc,footnotesize},textfont=footnotesize}
+\captionsetup[figure]{font=footnotesize,labelfont={sc,footnotesize},textfont=footnotesize}
 \setlength{\abovecaptionskip}{6pt}
 \setlength{\belowcaptionskip}{2pt}
 
@@ -133,6 +135,14 @@
 \newfontfamily\titlefont{EBGaramondSC12-Regular.ttf}[
   LetterSpace = 8
 ]
+
+\newfontfamily\eightptfont{EBGaramond08-Regular.otf}[
+  ItalicFont = EBGaramond08-Italic.otf,
+  Numbers = {OldStyle,Proportional}
+]
+
+\let\origfootnotesize\footnotesize
+\renewcommand{\footnotesize}{\origfootnotesize\eightptfont}
 
 \usepackage[italic]{mathastext}
 \usepackage{microtype}
@@ -182,7 +192,8 @@
 %% Nominal / discourse
 \newleipzig{Neg}{neg}{negation}
 \newleipzig{Def}{def}{definiteness marker}
-\newleipzig{Spec}{spec}{specificity marker}
+\newleipzig{Sanch}{s.anch}{speaker-anchored (Anch\textsuperscript{0}[+anch,\,\textminus{}shr])}
+\newleipzig{Indef}{indef}{indefinite modifier}
 \newleipzig{Pl}{pl}{plural}
 \newleipzig{Dem}{dem}{demonstrative}
 \newleipzig{Prox}{prox}{proximal}
@@ -247,7 +258,7 @@
 		\vspace{0.9\baselineskip}
 		\rule{2.2em}{0.6pt}\par
 		\vspace{1.1\baselineskip}
-		{\titlefont\huge \MakeLowercase{#1}\par}
+		{\titlefont\Large \MakeLowercase{#1}\par}
 		\vspace{1.6\baselineskip}}}
 
 \def\@makeschapterhead#1{%
@@ -256,7 +267,7 @@
 	{\parindent \z@ \centering \normalfont
 		\rule{2.2em}{0.6pt}\par
 		\vspace{1.1\baselineskip}
-		{\titlefont\huge \MakeLowercase{#1}\par}
+		{\titlefont\Large \MakeLowercase{#1}\par}
 		\vspace{1.6\baselineskip}}}
 
 \renewcommand\section{\@startsection{section}{1}{\z@}%
@@ -286,8 +297,8 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE]{\small\thepage\hfill{\trackedscshape\small\leftmark}}
-\fancyhead[RO]{{\trackedscshape\small\rightmark}\hfill\small\thepage}
+\fancyhead[LE]{\footnotesize\thepage\hfill{\trackedscshape\footnotesize\leftmark}}
+\fancyhead[RO]{{\trackedscshape\footnotesize\rightmark}\hfill\footnotesize\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{1}
