@@ -87,7 +87,8 @@ The following features are especially central:
 		comparative structural summary.
 \end{enumerate}
 
-\section{Grammatical architecture}
+\section{Grammatical architecture}\label{sec:grammatical-architecture}
+\label{sec:th-clause-structure}% cross-reference compatibility
 
 At a broad level, the Iridian clause is built from the lexical predicate
 outward through a sequence of functional layers. The lowest layers belong to
@@ -120,6 +121,121 @@ design. Likewise, the alternation between ergative and nominative-style
 alignment is not treated here as a purely mechanical case pattern, but as part
 of a grammar in which the direct-case argument is normally the one made
 prominent as topic.
+
+Table~\ref{tab:th-clause-spine} sets this out formally. It serves as the
+standing reference for the formal analyses throughout the grammar; readers
+working through Chapters~\ref{ch:verbs}--\ref{ch:complex} will find it useful
+to return to.
+
+\begin{table}[ht]
+	\footnotesize
+	\caption{The Iridian clause spine (innermost to outermost).}\label{tab:th-clause-spine}
+	\medskip
+	\begin{tabularx}{\textwidth}{l l L}
+		\toprule
+		{\sc level} & {\sc projection} & {\sc content} \\
+		\midrule
+		1 (lowest) & \synhead{PhasP} & Phasal contour: attained state (\ird{v}) vs.\ ongoing interval (\ird{s}) \\
+		2 & \synhead{PredP} & Lexical predicate; root + aspect-alignment morphology \\
+		3 & \synhead{AspP} & Comment-domain operators: additive, exclusive, affirmative,
+		                     interim-sequential \\
+		4 & \synhead{NegP} & Clausal negation: \ird{zá-} (prefix, verbal predicates);
+		                     \ird{staly} (free morpheme, equative/zero-copula predicates);
+		                     suppletive root \ird{zad-} (existential predicates, Neg\textsuperscript{0}
+		                     absorbed into root) \\
+		5 & \synhead{IP} & Inflection: finiteness, mood \\
+		6 & \synhead{FocP} & Focus position; optionally hosts one fronted wh-phrase or other focused constituent \\
+		7 & \synhead{PolP} & Interrogative clause typing: \ird{by} (overt) / $\varnothing$ (null) \\
+		8 & \synhead{TopP} & Topic: typically the absolutive argument \\
+		9 & \synhead{EvidP} & Evidential and epistemic operators:
+		                      \ird{oče}, \ird{hlavdy}, \ird{ktady}, \ird{či} \\
+		10 (highest) & \synhead{SpeechActP} & Illocutionary and discourse-relational
+		                      framing: \ird{nadě}, \ird{mlada}, \ird{jse} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\noindent Because Iridian is rigorously head-final, specifiers and complements
+both precede their heads. The predicate therefore surfaces last; projections
+that scope over it surface progressively earlier in the string. Reading the
+clause from left to right is thus equivalent to reading the functional sequence
+from the highest (\synhead{SpeechActP}) to the lowest (\synhead{PhasP})
+projection. This principle provides the primary explanatory tool for
+understanding both particle ordering and clause-combining word order; it is
+developed in detail in §\,\ref{sec:th-head-finality} of
+Chapter~\ref{ch:simple}.
+
+One projection requires special comment. \synhead{NegP} (level~4) has a single
+structural position in all Iridian clause types, but its phonological
+realisation varies by predicate type. In verbal clauses,
+Neg\textsuperscript{0} is spelled out as the procliticized prefix \ird{zá-},
+attaching to the left edge of the clause-final verbal complex. In zero-copula
+equative clauses, where there is no verbal host, Neg\textsuperscript{0} is the
+free morpheme \ird{staly}, surfacing in the clause-final position expected of a
+head-final \synhead{NegP} head. In existential clauses,
+Neg\textsuperscript{0} triggers suppletive root replacement: the existential
+root \ird{jec-} is replaced by \ird{zad-}, and Neg\textsuperscript{0} itself
+has no independent PF exponent. These are three phonological reflexes of one
+syntactic head, not three independent negation strategies; the structural
+position of \synhead{NegP} is the same in all three cases.
+
+The clause fields are schematized in Figure~\ref{fig:th-clause-fields};
+Figure~\ref{fig:th-left-periphery} shows the detailed hierarchical structure of
+the left periphery.
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[font=\footnotesize]
+		\node[syn band, minimum width=18mm] (top)  {Topic\\\synhead{TopP}};
+		\node[syn band, minimum width=42mm, right=0pt of top]  (op)
+			{Speech-act \& evidential field\\\synhead{SpeechActP} / \synhead{EvidP}};
+		\node[syn band, minimum width=16mm, right=0pt of op]   (pol)
+			{Clause typing\\\synhead{PolP}};
+		\node[syn band, minimum width=34mm, right=0pt of pol]  (tp)
+			{Comment domain\\\synhead{IP} / \synhead{FocP}};
+		\node[syn band, minimum width=20mm, right=0pt of tp]   (asp)
+			{Phasal\\\synhead{PhasP}};
+		\node[syn band, minimum width=14mm, right=0pt of asp]  (pred)
+			{Pred.\\\synhead{PredP}};
+	\end{tikzpicture}
+	\caption{Clause fields of the Iridian clause.}\label{fig:th-clause-fields}
+\end{figure}
+
+\begin{figure}[ht]
+	\footnotesize
+	\caption{Hierarchical structure of the Iridian left periphery (\synhead{SpeechActP}
+	to \synhead{IP}).}\label{fig:th-left-periphery}
+	\medskip
+	\centering
+	\begin{forest}
+		syntax tree
+		[\synhead{SpeechActP}
+			[{SpeechAct\\\ird{nadě} / \ird{mlada} / \ird{jse}}]
+			[\synhead{EvidP}
+				[{Evid\\\ird{oče} / \ird{hlavdy} / \ird{ktady} / \ird{či}}]
+				[\synhead{TopP}
+					[{\synhead{DP}\\{\footnotesize topic}}]
+					[{Top$'$}
+						[Top]
+						[\synhead{PolP}
+							[{Pol\\\ird{by} / $\varnothing$}]
+							[{Pol$'$}
+								[Pol]
+								[\synhead{FocP}
+									[{XP\\{\footnotesize\textit{wh / focus}}}]
+									[{Foc$'$}
+										[Foc]
+										[\synhead{IP} [{\ldots}]]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+		]
+	\end{forest}
+\end{figure}
 
 \section{Areal context}
 
