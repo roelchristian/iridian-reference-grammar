@@ -110,11 +110,14 @@
 %% Interlinear glosses (expex)
 \usepackage{expex}
 \lingset{
-	everygla=\itshape,
+	everygla=\itshape\footnotesize,
 	everyglb=\footnotesize,
-	everyglft=\normalfont,
-	aboveexskip=0.85\baselineskip,
-	belowexskip=0.75\baselineskip,
+	everyglc=\footnotesize,
+	everyglft=\footnotesize,
+	exnoformat={\footnotesize(X)},
+	labelformat={\footnotesize A.},
+	aboveexskip=0.5\baselineskip,
+	belowexskip=0.5\baselineskip,
 	aboveglftskip=2pt,
 	extraglskip=0.15em
 }
@@ -165,7 +168,7 @@
 \newleipzig{Ret}{ret}{retrospective}
 \newleipzig{Cont}{cont}{continuous}
 \newleipzig{Prog}{prog}{progressive}
-\newleipzig{Ctp}{ctp}{contemplative}
+\newleipzig{Ctpl}{ctpl}{contemplative}
 
 %% Valency operations
 \newleipzig{Antip}{antip}{antipassive}
@@ -347,17 +350,12 @@
 %% Chapter 7: Complex Sentences and Clause Chaining
 \include{chapters/07-complex-sentences}
 
-%% Chapter 8: Discourse
+%% Chapter 8: Discourse, Register, and Spoken Iridian
+%% (consolidates former Ch. 10 Semantics/Pragmatics/Usage and Ch. 11 Spoken/Colloquial)
 \include{chapters/08-discourse}
 
 %% Chapter 9: Derivational Morphology
 \include{chapters/09-derivational}
-
-%% Chapter 10: Semantics, Pragmatics, and Usage
-\include{chapters/10-semantics}
-
-%% Chapter 11: Spoken and colloquial Iridian
-\include{chapters/11-spoken-colloquial}
 
 %% TEMPORARY STUBS
 % \include{chapters/12-working-stubs}
