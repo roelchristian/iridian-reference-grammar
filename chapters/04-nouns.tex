@@ -22,10 +22,10 @@ string:
 
 \medskip
 \begin{center}
-(\ird{ne}) + (\ird{si}) + (\textsc{dem}) +
+(\ird{si}) + (\textsc{dem}) +
 (\textsc{quant}/\textsc{num}/\ird{druh}) + (\textsc{poss}.\Ind{}) +
 (\textsc{prop.root} / \textsc{stative} / \textsc{\ird{-ový}}) +
-\textsc{root} + (\textsc{case}) + (\textsc{anch})
+\textsc{root} + (\textsc{case.num}) + (\textsc{anch})
 \end{center}
 \medskip
 
@@ -38,11 +38,13 @@ name. The suffix \ird{-to} is therefore treated as the overt realisation of an
 anchoring head, labelled \textsc{Anch\textsuperscript{0}}, when the feature
 [\textsc{+anch}] is present.
 
-Only the case and anchoring layers are analysed here as ordinary suffixal heads.
-Among the prenominal items, \ird{ne} and the demonstrative system are overt
-realisations of distinct higher nominal projections whose exponents surface at
-the left edge of their domain. The particle \ird{si} is treated differently: it
-is the proclitic Vocabulary Item for
+Only the case-number and anchoring layers are analysed here as ordinary suffixal heads.
+Case and number are fused into a single morphological slot: each declension class
+provides six distinct exponents covering three structural cases in both singular
+and plural values, and no separate number morpheme exists. Among the prenominal items,
+the demonstrative system is the overt realisation of a distinct higher nominal
+projection whose exponents surface at the left edge of their domain. The particle
+\ird{si} is treated differently: it is the proclitic Vocabulary Item for
 Anch\textsuperscript{0}[\textsc{+anch,\,-shr}], sharing its head with the
 suffixal \ird{-to}/\ird{-te} but realised as a free clitic at the left edge
 rather than as a bound suffix (§\,\ref{sec:nm-spec}). The adnominal modifier
@@ -67,8 +69,9 @@ Table~\ref{tab:nm-projections}.
                   & §\,\ref{sec:nm-prop} \\
     Possessor     & oblique noun phrase & \synhead{PossP} (prenominal possessor layer inside \synhead{KP})
                   & §\,\ref{sec:nm-poss} \\
-    Case          & \Trs{} / \Ind{} endings & \synhead{KP} (case layer)
-                  & §\,\ref{sec:nm-case} \\
+    Case $\times$ Number & six fused case-number endings & \synhead{KP} (case-number layer;
+                       Num\textsuperscript{0} merges with K\textsuperscript{0} at PF)
+                  & §\,\ref{sec:nm-case}, §\,\ref{sec:nm-num} \\
     Anchoring     & \ird{-to}/\ird{-te}
                        (Anch\textsuperscript{0}[\textsc{+anch,+shr}],
                        suffixal); \ird{si}
@@ -90,24 +93,24 @@ Table~\ref{tab:nm-projections}.
                      nominal domain; exact cartographic slot left
                      conservative
                    & §\,\ref{sec:nm-quant}, §\,\ref{sec:nm-spec} \\
-    Number        & \ird{ne}            & \synhead{NumP}
-                       (plural semantics with left-edge spellout)
-                  & §\,\ref{sec:nm-num} \\
     \bottomrule
   \end{tabularx}
 \end{table}
 
 The Mirror Principle (Baker 1985) predicts that the morphological order reflects
-the syntactic order. Reading the template from root outward, \textsc{case}
+the syntactic order. Reading the template from root outward, \textsc{case.num}
 appears closer to the root than \textsc{anch}; this means \synhead{KP} is
 dominated by \synhead{AnchP}. The same suffixal order follows directly from
-head-finality. By contrast, the higher projections realised prenominally do not
-need to be treated as ordinary suffixal heads. The simpler analysis is that
-Iridian has an articulated nominal left periphery whose overt exponents realise
-\synhead{NumP} and \synhead{DemP} at the left edge of their domain, while the
-suffixal spine remains strictly head-final. The proclitic \ird{si} also surfaces
-at the left edge, but as a free allomorph of Anch\textsuperscript{0} rather than
-as an independent projection.
+head-finality. The fused \textsc{case.num} exponent reflects the PF Merger of
+Num\textsuperscript{0} into K\textsuperscript{0}: number semantics is projected
+in the syntax but its spellout is entirely subsumed by the case-number VI,
+leaving no independent morpheme in the surface string. By contrast, the higher
+projections realised prenominally do not need to be treated as ordinary suffixal
+heads. The simpler analysis is that Iridian has an articulated nominal left
+periphery whose overt exponents realise \synhead{DemP} at the left edge of their
+domain, while the suffixal spine remains strictly head-final. The proclitic
+\ird{si} also surfaces at the left edge, but as a free allomorph of
+Anch\textsuperscript{0} rather than as an independent projection.
 
 The head-final \synhead{DP} thus mirrors the head-final clause: just as the
 finite verb — the head of the clause's highest functional projection — surfaces
@@ -118,22 +121,19 @@ A convenient master tree follows.
 \begin{center}
 \begin{forest}
   syntax tree
-  [\synhead{NumP}
-    [{\ird{ne}}]
-    [\synhead{DemP}
-      [{\textit{demonstrative series}}]
-      [\synhead{QP}
-        [{\textit{numeral / quantifier / \ird{druh}}}]
-        [\synhead{AnchP}
-          [\synhead{KP}
-            [\synhead{PossP}
-              [{\textit{oblique possessor}}]
-              [{\synhead{NP}\\\textit{root}}]
-            ]
-            [{K\textsuperscript{0}\\{\footnotesize case}}]
+  [\synhead{DemP}
+    [{\textit{demonstrative series}}]
+    [\synhead{QP}
+      [{\textit{numeral / quantifier / \ird{druh}}}]
+      [\synhead{AnchP}
+        [\synhead{KP}
+          [\synhead{PossP}
+            [{\textit{oblique possessor}}]
+            [{\synhead{NP}\\\textit{root}}]
           ]
-          [{Anch\textsuperscript{0}\\\ird{-to}/\ird{-te} / \ird{si} / $\varnothing$}]
+          [{K\textsuperscript{0}\\{\footnotesize case.num}}]
         ]
+        [{Anch\textsuperscript{0}\\\ird{-to}/\ird{-te} / \ird{si} / $\varnothing$}]
       ]
     ]
   ]
@@ -143,9 +143,9 @@ A convenient master tree follows.
 \noindent The tree keeps the nominal spine uniform across the subsections below.
 Overt exponents of higher nominal projections are shown directly at the edge of
 the projection they realise, and silent heads are not inserted merely to force a
-specifier analysis. Only the case and anchoring heads are represented as overt
-heads because only they are consistently realised as suffixal morphology. The
-\synhead{QP} layer is drawn only as a conservative cover term for prenominal
+specifier analysis. Only the case-number and anchoring heads are represented as
+overt heads because only they are consistently realised as suffixal morphology.
+The \synhead{QP} layer is drawn only as a conservative cover term for prenominal
 quantificational material; the sections below do not assume a finer
 numeral-vs-quantifier split unless the data require it.
 
@@ -267,13 +267,16 @@ Fourthly, the morphological template from root to right edge is:
 \begin{center}
 \textit{root} $\rightarrow$
 \textit{class-selected stem grade} $\rightarrow$
-K\textsuperscript{0} exponent $\rightarrow$
+[K\textsuperscript{0}$+$Num\textsuperscript{0}] exponent $\rightarrow$
 Anch\textsuperscript{0} exponent
 \end{center}
 \medskip
 
-\noindent That template is the stable backbone of the rest of this
-section.
+\noindent That template is the stable backbone of the rest of this section.
+Number and case are fused at the [K\textsuperscript{0}$+$Num\textsuperscript{0}]
+slot: the six logical combinations (direct, transitive, indirect $\times$
+singular, plural) are each realised by a distinct Vocabulary Item per
+declension class, with no separate number morpheme in the surface string.
 
 \subsection{Stem formation and morphophonemic processes}
 \label{sec:nm-stemform}
@@ -340,44 +343,51 @@ transitive, and indirect cases.
 
 \paragraph{Class I: Hard consonant stems.}
 The core class for ordinary consonant-final nouns, including personal names and
-a large body of lexical nouns. The direct is the bare citation stem. The
-transitive adds a back-vocalic exponent, typically \ird{-a} (and \ird{-u} in
-certain subclasses). The indirect adds a back or front-vocalic exponent,
-typically \ird{-am} or a related ending, and may trigger softening of the final
-consonant in subclasses with front-coded obliques.
+a large body of lexical nouns. The direct singular is the bare citation stem.
+The transitive singular adds a back-vocalic exponent, typically \ird{-a} (and
+\ird{-u} in certain subclasses). The indirect singular adds a back or
+front-vocalic exponent, typically \ird{-am} or a related ending, and may
+trigger softening of the final consonant in subclasses with front-coded
+obliques. Plural forms are built on a distinct set of exponents: \ird{-e}
+(direct), \ird{-óv} (transitive), \ird{-ac} (indirect).
 
 \pex
-\a \ird{byl} $\rightarrow$ \ird{byla} / \ird{bylam}
+\a \ird{byl} \textsc{sg}: \ird{byl} / \ird{byla} / \ird{bylam}
+\a \ird{byl} \textsc{pl}: \ird{byle} / \ird{bylóv} / \ird{bylac}
 \xe
 
 \noindent This class is semantically open and is one of the chief productive
 defaults for consonant-final nouns. Subclasses differ in the precise vocalism of
 their oblique exponents, but share the fundamental property of a bare-stem
-direct and suffixal case endings.
+singular direct and suffixal case-number endings.
 
 \paragraph{Class II: Weak-vowel consonant stems.}
 The morphophonemically rich consonant-stem class. Stems carry an unstable final
 \ird{e} or similar weak vowel that deletes productively before vowel-initial
 oblique endings. Many subclasses then undergo raising or front-vocalic mutation.
 This class should be understood as the most morphologically active productive
-consonant-stem family.
+consonant-stem family. Plural exponents are \ird{-e} (direct), \ird{-ec}
+(transitive), \ird{-em} (indirect), built on the raised oblique stem.
 
 \pex
-\a \ird{lobek} $\rightarrow$ \ird{lubku} / \ird{lubcí}
-\a \ird{perek} $\rightarrow$ \ird{prku} / \ird{prce}
+\a \ird{lobek} \textsc{sg}: \ird{lobek} / \ird{lubku} / \ird{lubcí}
+\a \ird{lobek} \textsc{pl}: \ird{lubce} / \ird{lubec} / \ird{lubcem}
+\a \ird{perek} \textsc{sg}: \ird{perek} / \ird{prku} / \ird{prce}
 \xe
 
 \noindent Back-raised subclasses show \ird{o} $\rightarrow$ \ird{u};
 front-raised subclasses show \ird{e/ě} $\rightarrow$ \ird{i}.
 
 \paragraph{Class III: \ird{-a} stems.} The chief vowel-stem class and the
-largest open class among ordinary lexical nouns. The direct ends in \ird{-a}.
-The transitive replaces the final vowel with a back or central exponent,
-typically \ird{-y}. The indirect takes a front exponent, typically \ird{-ě}.
-This class is highly productive and relatively transparent.
+largest open class among ordinary lexical nouns. The singular direct ends in
+\ird{-a}. The singular transitive replaces the final vowel with \ird{-y}; the
+singular indirect takes \ird{-ě}. In the plural, the direct is \ird{-y}
+(syncretic with the singular transitive), the transitive is the bare consonant
+stem with zero ending, and the indirect takes \ird{-ám}.
 
 \pex
-\a \ird{trava} $\rightarrow$ \ird{travy} / \ird{travě}
+\a \ird{trava} \textsc{sg}: \ird{trava} / \ird{travy} / \ird{travě}
+\a \ird{trava} \textsc{pl}: \ird{travy} / \ird{trav} / \ird{travám}
 \xe
 
 \paragraph{Class IV: Soft and sibilant stems.}
@@ -385,30 +395,40 @@ Nouns whose citation stem already ends in a historically soft, palatal, or
 sibilant segment. Their oblique formation typically involves smaller overt
 alternations because softness is already built in. These stems are defined less
 by weak-vowel deletion and more by soft-grade preservation, sibilant
-alternation, and front-vocalic compatibility.
+alternation, and front-vocalic compatibility. The singular indirect takes
+\ird{-e} after the soft or palatal final segment (triggering the spelling
+\ird{ď/d} alternation where relevant). Plural exponents are \ird{-e} (direct),
+\ird{-óv} (transitive), \ird{-ím} (indirect).
 
 \pex
-\a \ird{red} $\rightarrow$ \ird{rezy} / \ird{reže}
+\a \ird{red} \textsc{sg}: \ird{red} / \ird{rezy} / \ird{reďe}
+\a \ird{red} \textsc{pl}: \ird{reďe} / \ird{redóv} / \ird{redím}
 \xe
 
 \paragraph{Class V: Vowel-replacing stems.}
-Nouns such as \ird{ráno} whose oblique formation reshapes the final vowel rather
+Nouns such as \ird{rán} whose oblique formation reshapes the final vowel rather
 than simply concatenating a suffix. These are historically old vowel stems whose
 modern inflection shows replacement endings or inherited vowel alternation. The
-class is semi-productive, with many lexically fixed members.
+class is semi-productive, with many lexically fixed members. In the plural,
+the direct adds \ird{-a}, the transitive is syncretic with the singular direct
+(zero ending on the bare stem), and the indirect adds \ird{-om}.
 
 \pex
-\a \ird{ráno} $\rightarrow$ \ird{ránou} / \ird{ráne}
+\a \ird{rán} \textsc{sg}: \ird{rán} / \ird{ránou} / \ird{ráne}
+\a \ird{rán} \textsc{pl}: \ird{rána} / \ird{rán} / \ird{ránom}
 \xe
 
 \paragraph{Class VI: Relic front-vocalic stems.}
-A small, closed class of inherited stems whose oblique exponents — a transitive
-in \ird{-im} and an indirect in \ird{-y} — are not generalisable to the main
-productive classes. These items form a tight microclass learned as a lexical
-residue.
+A small, closed class of inherited stems whose singular oblique exponents — a
+transitive in \ird{-im} and an indirect in \ird{-y} — are not generalisable to
+the main productive classes. These items form a tight microclass learned as a
+lexical residue. Plural exponents are \ird{-ove} (direct), \ird{-óv}
+(transitive), \ird{-ovim} (indirect), all built on an extended stem in
+\ird{-ov-}.
 
 \pex
-\a \ird{pět} $\rightarrow$ \ird{pětim} / \ird{pěty}
+\a \ird{pět} \textsc{sg}: \ird{pět} / \ird{pětim} / \ird{pěty}
+\a \ird{pět} \textsc{pl}: \ird{pětove} / \ird{pětóv} / \ird{pětovim}
 \xe
 
 \noindent The essential Minimalist point is unchanged: declension class is not a
@@ -433,34 +453,50 @@ morphophonemic processes described in §\,\ref{sec:nm-stemform} above.
   \medskip
   \begin{tabularx}{0.95\textwidth}{L L L}
     \toprule
-    {\sc case slot} & {\sc typical endings by macroclass} &
+    {\sc case-number slot} & {\sc typical endings by macroclass} &
     {\sc stem selected} \\
     \midrule
-    Direct & zero (all classes) & basic stem \\
-    Transitive & I--II: \ird{-u}; III: \ird{-y}; IV: \ird{-y}/\ird{-ovy};
-    V: vowel-replacing; VI: \ird{-im} &
+    Direct.\textsc{sg} & zero (all classes) & basic stem \\
+    Transitive.\textsc{sg} & I: \ird{-a}; II: \ird{-u}; III: \ird{-y};
+    IV: \ird{-y}; V: vowel-replacing; VI: \ird{-im} &
     basic, zero-grade, raised, or vowel-replacing stem by class \\
-    Indirect & I: \ird{-í}/\ird{-ení}; II: \ird{-í}/\ird{-ení}/\ird{-e};
-    III: \ird{-ě}; IV: \ird{-ě}/\ird{-ově}; V: vowel-replacing;
+    Indirect.\textsc{sg} & I: \ird{-am}; II: \ird{-cí}/\ird{-ce};
+    III: \ird{-ě}; IV: \ird{-e} (with palatalisation); V: vowel-replacing;
     VI: \ird{-y} &
     soft or front-vocalic stem for front endings; zero-grade or raised
     stems where licensed; replacement in V and VI \\
+    Direct.\textsc{pl} & I: \ird{-e}; II: \ird{-e} (raised stem);
+    III: \ird{-y}; IV: \ird{-e} (palatalised); V: \ird{-a}; VI: \ird{-ove} &
+    basic or raised stem; extended \ird{-ov-} stem in VI \\
+    Transitive.\textsc{pl} & I: \ird{-óv}; II: \ird{-ec};
+    III: zero; IV: \ird{-óv}; V: zero; VI: \ird{-óv} &
+    raised or basic stem; zero for III and V \\
+    Indirect.\textsc{pl} & I: \ird{-ac}; II: \ird{-em};
+    III: \ird{-ám}; IV: \ird{-ím}; V: \ird{-om}; VI: \ird{-ovim} &
+    basic or extended \ird{-ov-} stem for VI; back-vocalic elsewhere \\
     Vocative & \ird{-o}, \ird{-e}, zero &
-    basic or soft stem; nonproductive \\
+    basic or soft stem; nonproductive; singular only \\
     \bottomrule
   \end{tabularx}
 \end{table}
 
 Representative outputs from the macroclass system confirm that the
-nominal system is rule-governed rather than suppletive:
+nominal system is rule-governed rather than suppletive. Each example shows the
+citation form followed by the singular \textsc{trs}/\textsc{ind} pair and then the
+full plural set:
 
 \pex
-\a \ird{byl} $\rightarrow$ \ird{byla} / \ird{bylam} \lingcontext{Class I: hard consonant}
-\a \ird{perek} $\rightarrow$ \ird{prku} / \ird{prce} \lingcontext{Class II: weak-vowel deletion plus softening}
-\a \ird{trava} $\rightarrow$ \ird{travy} / \ird{travě} \lingcontext{Class III: \ird{-a} stem}
-\a \ird{red} $\rightarrow$ \ird{rezy} / \ird{reže} \lingcontext{Class IV: soft/sibilant stem}
-\a \ird{ráno} $\rightarrow$ \ird{ránou} / \ird{ráne} \lingcontext{Class V: vowel-replacing}
-\a \ird{pět} $\rightarrow$ \ird{pětim} / \ird{pěty} \lingcontext{Class VI: relic front-vocalic stem}
+\a \ird{byl}: \ird{byla}/\ird{bylam}; \textsc{pl} \ird{byle}/\ird{bylóv}/\ird{bylac}
+   \lingcontext{Class I: hard consonant}
+\a \ird{perek}: \ird{prku}/\ird{prce} \lingcontext{Class II: weak-vowel deletion plus softening}
+\a \ird{trava}: \ird{travy}/\ird{travě}; \textsc{pl} \ird{travy}/\ird{trav}/\ird{travám}
+   \lingcontext{Class III: \ird{-a} stem}
+\a \ird{red}: \ird{rezy}/\ird{reďe}; \textsc{pl} \ird{reďe}/\ird{redóv}/\ird{redím}
+   \lingcontext{Class IV: soft/sibilant stem}
+\a \ird{rán}: \ird{ránou}/\ird{ráne}; \textsc{pl} \ird{rána}/\ird{rán}/\ird{ránom}
+   \lingcontext{Class V: vowel-replacing}
+\a \ird{pět}: \ird{pětim}/\ird{pěty}; \textsc{pl} \ird{pětove}/\ird{pětóv}/\ird{pětovim}
+   \lingcontext{Class VI: relic front-vocalic stem}
 \xe
 
 \subsection{Vocative and proper-name behaviour}
@@ -496,13 +532,12 @@ identifies the referent deictically by the act of address itself.
   \end{tabularx}
 \end{table}
 
-Proper names otherwise behave like ordinary DPs: they may bear the ordinary case
-suffixes, may host the honorific use of \ird{ne}, and may participate in
-possessive and demonstrative constructions. What is special about names is not
-their exemption from the nominal spine, but their lexically strong
-identifiability, which makes bare-name reference especially natural and makes
-overt anchoring more marked than with common nouns unless a
-discourse-contrastive reading is intended.
+Proper names otherwise behave like ordinary DPs: they bear the ordinary
+case-number suffixes and may participate in possessive and demonstrative
+constructions. What is special about names is not their exemption from the
+nominal spine, but their lexically strong identifiability, which makes
+bare-name reference especially natural and makes overt anchoring more marked
+than with common nouns unless a discourse-contrastive reading is intended.
 
 
 %% ================================================================
@@ -552,20 +587,28 @@ Table~\ref{tab:nm-def-allomorphy}.
 
 \begin{table}
     \footnotesize
-    \caption{Allomorphy of the anchoring suffix across cases and
+    \caption{Allomorphy of the anchoring suffix across singular cases and
     declension classes.}\label{tab:nm-def-allomorphy}
     \medskip
     \begin{tabularx}{\textwidth}{L l l l l l l l}
       \toprule
-      {\sc noun} & {\sc class} & {\sc dir} & {\sc trs} & {\sc ind} & {\sc dir.def} & {\sc trs.def} & {\sc ind.def} \\
+      {\sc noun} & {\sc cl.} & {\sc dir.sg} & {\sc trs.sg} & {\sc ind.sg}
+        & {\sc dir.sg.def} & {\sc trs.sg.def} & {\sc ind.sg.def} \\
       \midrule
-      \irdp{byl}{child}  & I & \ird{byl}   & \ird{byla}  & \ird{bylam} & \ird{byle}  & \ird{bylato}  & \ird{bylamo} \\
-      \irdp{lobek}{apple} & II  & \ird{lobek}  & \ird{lubku} & \ird{lubcí} & \ird{lubko}  & \ird{lubkuto}  & \ird{lubcíte} \\
-      \irdp{perek}{body} & II & \ird{perek}  & \ird{prku}  & \ird{prce}  & \ird{prko}  & \ird{prkuto}  & \ird{prcete} \\
-      \irdp{trava}{bread} & III & \ird{trava}  & \ird{travy}  & \ird{travě} & \ird{travato}  & \ird{travyte}  & \ird{travíte} \\
-      \irdp{red}{blade} & IV & \ird{red}  & \ird{rezy}  & \ird{reže}  & \ird{rede}  & \ird{rezyte}  & \ird{režete} \\
-      \irdp{ráno}{hand} & V & \ird{ráno}  & \ird{ránou}  & \ird{ráne}  & \ird{ránó}  & \ird{ránuto}  & \ird{ránete} \\
-      \irdp{pět}{sun} & VI & \ird{pět}  & \ird{pětim}  & \ird{pěty}  & \ird{pěto}  & \ird{pětimo}  & \ird{pětyte} \\
+      \irdp{byl}{child}  & I & \ird{byl}   & \ird{byla}  & \ird{bylam}
+        & \ird{bylo}  & \ird{bylato}  & \ird{bylamo} \\
+      \irdp{lobek}{apple} & II  & \ird{lobek}  & \ird{lubku} & \ird{lubcí}
+        & \ird{lubko}  & \ird{lubkuto}  & \ird{lubcíte} \\
+      \irdp{perek}{body} & II & \ird{perek}  & \ird{prku}  & \ird{prce}
+        & \ird{prko}  & \ird{prkuto}  & \ird{prcete} \\
+      \irdp{trava}{bread} & III & \ird{trava}  & \ird{travy}  & \ird{travě}
+        & \ird{travato}  & \ird{travyte}  & \ird{travíte} \\
+      \irdp{red}{blade} & IV & \ird{red}  & \ird{rezy}  & \ird{reďe}
+        & \ird{redo}  & \ird{rezyte}  & \ird{reďete} \\
+      \irdp{rán}{hand} & V & \ird{rán}  & \ird{ránou}  & \ird{ráne}
+        & \ird{ráno}  & \ird{ránuto}  & \ird{ránete} \\
+      \irdp{pět}{sun} & VI & \ird{pět}  & \ird{pětim}  & \ird{pěty}
+        & \ird{pěto}  & \ird{pětimo}  & \ird{pětyte} \\
       \bottomrule
     \end{tabularx}
 \end{table}
@@ -573,8 +616,9 @@ Table~\ref{tab:nm-def-allomorphy}.
 
 \medskip
 \begin{center}
-\textsc{Anch\textsuperscript{0}}[\textsc{+anch}] $\rightarrow$
-\ird{-e/-o} / $[_{\sigma}\ldots C]$ \underline{\quad},\quad
+\textsc{Anch\textsuperscript{0}}[\textsc{+anch,\,+shr}] $\rightarrow$
+\ird{-o} / $[_{\sigma}\ldots C]$, \ird{+sg}]  \underline{\quad} \quad
+\ird{-e} / $[_{\sigma}\ldots C]$, \ird{+pl}]  \underline{\quad} \quad
 \ird{-te/-to} / $[_{\sigma}\ldots V]$ \underline{\quad}
 \end{center}
 \medskip
@@ -583,6 +627,15 @@ Table~\ref{tab:nm-def-allomorphy}.
 back-coded. The conditioning environment is the phonological shape of the
 immediately preceding morpheme; the vocalism is governed by the declension class
 of the host, as elaborated in §\,\ref{sec:nm-def-nondirect}.
+
+One consequence of the morphological number system warrants explicit statement.
+In the old analysis, the Class I direct anchored form was \ird{byle}, using the
+C-context front-vocalic allomorph. Now that \ird{byle} serves as the bare plural
+direct form of \ird{byl}, the C-context allomorphy in the singular is
+differentiated by using the back-vocalic counterpart: \ird{bylo} (singular
+anchored direct). Class membership and the singular/plural feature bundle jointly
+determine allomorph selection at \textsc{Anch\textsuperscript{0}}. Anchored
+plural forms are discussed in §\,\ref{sec:nm-num}.
 
 
 \subsection{Case stacking and the ordering \synhead{AnchP} $>$ KP}
@@ -615,7 +668,7 @@ structural analysis is therefore \synhead{KP} dominated by \synhead{AnchP}:
 \end{center}
 
 \noindent This tree deliberately omits the higher left-peripheral layers.
-Demonstratives and \ird{ne} are distinct edge material outside \synhead{AnchP}.
+Demonstratives are distinct edge material outside \synhead{AnchP}.
 The proclitic \ird{si} is the left-edge exponent of
 Anch\textsuperscript{0}[\textsc{+anch,\,-shr}] and therefore surfaces within
 \synhead{AnchP}'s domain, not as an independent higher projection
@@ -856,12 +909,6 @@ As noted in §\,\ref{sec:nm-def-semantics}, [\textsc{+anch}] is incompatible wit
 the generic reading. Generics are expressed by the bare noun because they denote
 a class or kind rather than a discourse anchored token.
 
-\paragraph{Approximate quantification with \ird{ne} and numerals.} When the
-plural clitic \ird{ne} combines with a numeral or quantifier to yield an
-approximate reading (\ird{ne hrona byl} \trsl{about three children}), the
-anchoring suffix is excluded. The distribution suggests that an approximately
-quantified expression is not being packaged as an anchored nominal individual,
-but as an imprecisely bounded plurality.
 
 
 \subsection{Double-marking: demonstrative + \ird{-to}}
@@ -904,7 +951,7 @@ anchored discourse token.
 %% ================================================================
 
 \section{The upper nominal functional sequence: demonstratives,
-  quantification, number, and specific indefiniteness}
+  quantification, and specific indefiniteness}
 \label{sec:nm-upper}
 
 \subsection{The demonstrative system and noun-internal DemP}
@@ -1061,74 +1108,160 @@ under a discourse-anaphoric high-accessibility condition; see again
 \xe
 
 
-\subsection{The plural marker \ird{ne} and the number layer}
+\subsection{Number morphology and the plural paradigm}
 \label{sec:nm-num}
 
-The surface distribution of \ird{ne} shows that it appears at the left edge of
-the constituent within its scope: \ird{ne byl} \trsl{children}, \ird{ne byle}
-\trsl{the children}, \ird{ně Marcí tóm} \trsl{the students' book}, and
-\ird{Marcí ne tóm} \trsl{the student's books}.
+Iridian encodes number morphologically through fused case-number endings rather
+than through a dedicated number particle. Each declension class provides six
+distinct exponents, covering the three structural cases in both singular and
+plural values, with no independent morpheme reserved for plurality alone. This
+pattern is cross-linguistically common: compare Latin nominative-plural
+\textit{-ae} versus accusative-singular \textit{-am}, where number and case
+values are similarly inseparable.
 
-This distribution is best understood by keeping apart semantic scope and
-morphophonological placement. Semantically, \ird{ne} realises the number layer.
-Morphophonologically, it is a left-edge plural clitic: it attaches to the
-leftmost element inside the constituent whose plurality it marks. Its position
-at the left edge of the noun phrase therefore does not by itself show that it is
-an ordinary overt head of a head-final projection.
+In Distributed Morphology terms (Halle \& Marantz 1993; Embick \& Noyer 2001),
+Num\textsuperscript{0} is syntactically projected and carries the feature
+[\textsc{+pl}] when the noun phrase denotes a plurality. At PF, Morphological
+Merger applies obligatorily between Num\textsuperscript{0} and the adjacent
+K\textsuperscript{0}, fusing them into a single [K$+$Num] node. The fused node
+is spelled out by a single Vocabulary Item from each class's six-slot inventory.
+Number semantics is thus recoverable from the form of the case-number ending as
+a whole, not from any dedicated substring.
 
-The same point explains its compatibility with anchoring. Plurality and
-anchoring are independent: \ird{ne byl} and \ird{ne byle} differ in anchoring,
-not in number. The anchored form \ird{byle} carries the reduced front allomorph
-characteristic of the Class II direct stem. The simplest analysis is therefore a
-\synhead{NumP} semantics with left-edge spellout of the plural marker.
+The full six-slot paradigm is given in Table~\ref{tab:nm-plural-paradigm} for all
+six declension classes.
+
+\begin{table}[ht]
+  \footnotesize
+  \caption{Case-number paradigm of the six declension classes
+  (bare forms, without anchoring).}\label{tab:nm-plural-paradigm}
+  \medskip
+  \begin{tabularx}{\textwidth}{L l l l l l l l}
+    \toprule
+    {\sc noun} & {\sc cl.}
+      & {\sc dir.sg} & {\sc trs.sg} & {\sc ind.sg}
+      & {\sc dir.pl} & {\sc trs.pl} & {\sc ind.pl} \\
+    \midrule
+    \irdp{byl}{child}  & I
+      & \ird{byl}    & \ird{byla}   & \ird{bylam}
+      & \ird{byle}   & \ird{bylóv}  & \ird{bylac}  \\
+    \irdp{lobek}{apple} & II
+      & \ird{lobek}  & \ird{lubku}  & \ird{lubcí}
+      & \ird{lubce}  & \ird{lubec}  & \ird{lubcem} \\
+    \irdp{trava}{bread} & III
+      & \ird{trava}  & \ird{travy}  & \ird{travě}
+      & \ird{travy}  & \ird{trav}   & \ird{travám} \\
+    \irdp{red}{blade} & IV
+      & \ird{red}    & \ird{rezy}   & \ird{reďe}
+      & \ird{reďe}   & \ird{redóv}  & \ird{redím}  \\
+    \irdp{rán}{hand} & V
+      & \ird{rán}    & \ird{ránou}  & \ird{ráne}
+      & \ird{rána}   & \ird{rán}    & \ird{ránom}  \\
+    \irdp{pět}{sun} & VI
+      & \ird{pět}    & \ird{pětim}  & \ird{pěty}
+      & \ird{pětove} & \ird{pětóv}  & \ird{pětovim} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Several structural observations follow from the paradigm. First, syncretisms
+are systematic and class-specific. In Class III, the plural direct is
+phonologically identical to the singular transitive (\ird{travy}); the two
+slots are syntactically distinguishable by the argument structure of the clause
+and by context. In Class V, the plural transitive is identical to the singular
+direct (\ird{rán}); again, the positions are formally distinguished by their
+syntactic licensor. Such syncretisms follow straightforwardly from independent
+phonological developments and do not require any special stipulation in the
+present framework.
+
+Second, the plural indirect forms uniformly take a back-vocalic or labial
+exponent (\ird{-ac}, \ird{-em}, \ird{-ám}, \ird{-ím}, \ird{-om}, \ird{-im}).
+This convergence reflects a historical pressure toward a coherent dative-plural
+layer across the declensional system, though synchronically each class realises
+the [ind.pl] slot with its own Vocabulary Item.
+
+Third, Class VI plurals employ an extended stem in \ird{-ov-} (\ird{pětove},
+\ird{pětóv}, \ird{pětovim}), a historically attested extension restricted to
+this microclass. In DM terms, this is a Root allomorph contextually conditioned
+by the [\textsc{+pl}] feature bundle at the Merger node: the feature triggers
+selection of the extended stem before plural K exponents.
+
+\paragraph{Anchored plural forms.}
+Anchoring applies to plural forms on the same structural principles as to
+singular forms: \textsc{Anch\textsuperscript{0}}[\textsc{+anch,+shr}] is
+realised by \ird{-to}/\ird{-te} in V-final environments and by \ird{-o}/\ird{-e}
+in C-final environments. The allomorphy between front \ird{-e} and back \ird{-o}
+in C-final environments tracks the [sg] vs.\ [pl] distinction in classes where
+both slots end in a consonant: in Class I, for instance, singular
+\ird{bylo} (C$+$back) contrasts with anchored plural \ird{bylove}
+(\ird{byle} $+$ V-final \ird{-te}$\rightarrow$\ird{byle-te} $>$ \ird{bylove}
+by reduction). Full anchored plural paradigms are an object for future
+descriptive attention and are not listed here in full.
+
+\paragraph{Singulative requirement under cardinals.}
+Cardinal numerals require the noun to appear in its \emph{singular} form,
+regardless of the quantity expressed. This is the cardinal-singulative pattern,
+typologically paralleled by Hungarian, Finnish, and Turkish. The numeral phrase
+as a whole denotes a plurality, but the locus of that plurality is the cardinal
+head, not the noun: the noun's case-number slot is realised by the singular
+Vocabulary Item.
+
+\pex
+\a \ird{hroná lobek} \trsl{three apples} \hfill\textit{(cardinal $+$ \textsc{sg})}
+\a[*] \ird{hroná lubce} \hfill\textit{(cardinal $+$ \textsc{pl}, ungrammatical)}
+\xe
+
+\noindent In DM terms, the fused [K$+$Num] head inside a cardinally-quantified
+\synhead{DP} is spelled out by the singular Vocabulary Item: the Q head
+(\synhead{QP}) saturates the number semantics of the expression, so
+Num\textsuperscript{0} within \synhead{KP} receives no [+pl] feature to trigger
+a plural VI. The distribution of plural morphology across nominal contexts is
+therefore:
+
+\medskip
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+{\sc context} & {\sc number on noun} \\
+\midrule
+Unquantified count noun (free plural) & \textsc{pl} \\
+Definite group / discourse-prominent plural & \textsc{pl} \\
+Kind-denoting / generic plural & \textsc{pl} \\
+Collective or aggregate noun & \textsc{pl} \\
+Cardinal-quantified noun & \textsc{sg} \\
+\bottomrule
+\end{tabular}
+\end{center}
+\medskip
+
+\paragraph{Number and count-mass distinctions.}
+Outside the cardinal context, plural morphology is most natural with count nouns.
+With mass nouns the plural forms are ordinarily excluded unless a covert measure
+noun is understood. A small set of pluralia-tantum nouns, especially names of
+paired body parts and paired objects, resist ordinary pluralisation because
+the lexical entry already denotes the pair; such items use plural morphology
+as their citation form.
 
 \pex
 \a
 \begingl
-\gla ne byl//
-\glb \Pl{} child.\Dir{}//
+\gla byle//
+\glb child.\Dir{}.\Pl{}//
 \glft \trsl{children}//
 \endgl
 \a
 \begingl
-\gla ne byle//
-\glb \Pl{} child.\Dir{}.\Def{}//
-\glft \trsl{the children}//
+\gla bylo//
+\glb child.\Dir{}.\Sg{}.\Def{}//
+\glft \trsl{the child}//
 \endgl
 \a
 \begingl
-\gla ne si byl//
-\glb \Pl{} \Sanch{} child.\Dir{}//
+\gla si byle//
+\glb \Sanch{} child.\Dir{}.\Pl{}//
 \glft \trsl{certain particular children (that I have in mind)}//
 \endgl
 \xe
-
-When \ird{ne} combines with a numeral or other quantifier, the usual
-interpretation is approximate rather than exactly plural (\ird{ne hrona byl}
-\trsl{about three children}). It is safer to treat that approximation as an
-interpretive effect of the construction than to posit a separate feature at this
-stage. In those approximate uses, anchoring is excluded, and speaker-anchoring
-with \ird{si} is also ordinarily avoided; \ird{druh} may appear as a modifier
-but without individuation force in approximate constructions.
-
-\paragraph{Mass, count, and lexical restrictions.}
-The plural clitic is most natural with count nouns. With mass nouns it is
-ordinarily excluded unless a covert measure noun is understood, as in the
-familiar type \ird{ne nebo} \trsl{glasses of water}. A small set of
-pluralia-tantum nouns, especially names of paired body parts and paired objects,
-also resist ordinary pluralization because the bare form already denotes the
-pair.
-
-\paragraph{Existential and honorific uses.}
-In existential clauses the plural clitic appears before the existential
-predicate rather than on the noun, yielding \ird{Ne ješ bžem} \trsl{There are
-bees}. The same phonological item also has a distinct honorific use with
-personal names and kin terms (\ird{ne Stám Kovárž}, \ird{ne mlazka}), which does
-not instantiate \synhead{NumP} at all and is therefore best treated as a
-lexicalised discourse clitic homophonous with the plural marker. In addition,
-\ird{ne} may occur in \emph{wh}-questions when the speaker expects a plural
-answer, as in \ird{ne jede bych ščenžkou?} \trsl{Who are those who arrived
-yesterday?}
 
 \subsection{Quantifiers, numerals, and the prenominal quantificational
   field}
@@ -1142,19 +1275,27 @@ occupants of a single quantificational modifier field between the demonstrative
 domain and the lower \synhead{NP}-internal material. The adnominal modifier
 \ird{druh} (§\,\ref{sec:nm-spec}) occupies this same field.
 
-Numerals interact with number in a characteristic way. Because nouns are not
-obligatorily marked for singular or plural, a bare numeral plus noun already
-yields an exact cardinal interpretation. Adding \ird{ne} to the same phrase
-shifts the reading from exact cardinality to approximation. This supports the
-separation of \synhead{QP} from \synhead{NumP}: the numeral itself provides
-quantification, while \ird{ne} contributes a separate number-related discourse
-effect.
+Numerals occupy the prenominal quantificational field and exhibit a decisive
+morphological property: they require the noun to appear in the \emph{singular}
+case-number form (§\,\ref{sec:nm-num}). The cardinal head is itself the locus
+of plurality for the whole expression; the noun inside the quantified DP
+receives no [+pl] feature and is therefore spelled out with the singular
+Vocabulary Item. This singulative requirement applies to all cardinals
+regardless of value.
 
 \pex
-\a \ird{hrona byl} \trsl{three children}
-\a \ird{ne hrona byl} \trsl{about three children}
+\a \ird{hroná lobek} \trsl{three apples} \hfill (\textsc{sg} under cardinal)
 \a \ird{ona pive štava} \trsl{one mug of beer}
 \xe
+
+\noindent The exact-cardinality interpretation is thus delivered by the numeral
+alone, with no contribution from plural morphology on the noun. Approximate
+readings arise contextually through intonation and pragmatic hedging, not
+through any morphological operation. The separation of \synhead{QP} from the
+fused [K$+$Num] layer is preserved: when the \synhead{QP} head is a cardinal, it
+supplies the plurality feature; the fused [K$+$Num] slot on the noun is spelled
+out with the singular VI because Num\textsuperscript{0} within \synhead{KP}
+carries no independent [+pl] feature in that configuration.
 
 Adnominal interrogatives pattern with the same prenominal field. \ird{Jak}
 selects from a contextually restricted set, whereas the other interrogatives
