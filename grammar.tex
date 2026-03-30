@@ -146,6 +146,8 @@
 
 \let\origfootnotesize\footnotesize
 \renewcommand{\footnotesize}{\origfootnotesize\eightptfont}
+% Use the default 12pt optical master for IPA spans inside footnote-sized text.
+\newcommand{\ipagloss}[1]{{\fontfamily\rmdefault\selectfont #1}}
 
 \usepackage[italic]{mathastext}
 \usepackage{microtype}
@@ -221,7 +223,7 @@
 \newcommand{\trsl}[1]{`#1'}
 \newcommand{\irdp}[2]{\ird{#1}, \trsl{#2}}
 \newcommand{\orth}[1]{$\langle$#1$\rangle$}
-\newcommand{\phon}[3]{\ird{#1} [#2] \trsl{#3}}
+\newcommand{\phon}[3]{\ird{#1} \ipagloss{[#2]} \trsl{#3}}
 \newcommand{\mk}[1]{\trackedsc{#1}}
 \newcommand{\sx}[1]{\textsuperscript{#1}}
 \newcommand{\lingcontext}[1]{{\footnotesize\itshape [#1]}}
