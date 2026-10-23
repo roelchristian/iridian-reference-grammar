@@ -6,11 +6,10 @@ CHAPTERS := \
 	04-nouns \
 	05-function-words \
 	06-simple-sentence \
-	07-complex-sentences \
-	08-discourse \
-	09-derivational \
-	10-semantics \
-	11-spoken-colloquial
+	07-information-structure \
+	08-complex-sentences \
+	09-discourse \
+	10-derivational
 
 LATEXMK  := latexmk
 LMKFLAGS := -lualatex -interaction=nonstopmode -halt-on-error
