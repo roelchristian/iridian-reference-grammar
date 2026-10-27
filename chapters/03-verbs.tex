@@ -94,10 +94,10 @@ to post-syntactic attachment to the left edge of the verbal complex
 For a simple verb, the lexical stem is the exponent of the Root merged with the functional category
 V (or, in Distributed Morphology terms, the root $\surd$ inserted under a
 categorizing head $v_\text{intr}$ for intransitives, or $v^*$ for transitives).
-The Iridian verb allows no citation form; the stem is bound and always requires
-at least the Asp.Align suffix. This confirms that the root must be licensed by a
-selecting functional head: a bare root without an Asp projection is unlicensed
-in the language.
+A finite verb requires Asp.Align, and a bare stem cannot constitute an
+independent finite predicate. Bound stems also occur in licensed non-finite
+and nominal constructions, whose selecting heads need not include finite
+Asp.Align (§\,\ref{sec:nominalised}).
 
 A preverb--root combination is analysed here as a derived lexical predicate
 within this innermost domain. Its internal prefixal order does not introduce
@@ -456,13 +456,14 @@ suffixes are given in Table~\ref{tab:aspect}.
 \subsubsection{Split-ergative alignment}
 \label{sec:vm-asp-case}
 
-Asp.Align does two things at once. It encodes the viewpoint aspect of the
-event---how the speaker construes the event's temporal contour---and it
-determines which participant is the clause's \term{absolutive pivot}: the
+In finite indicative clauses, Asp.Align encodes viewpoint aspect---how the
+speaker construes the event's temporal contour---and determines which
+participant is the clause's \term{absolutive pivot}: the
 argument that bears the direct case and serves as the informational anchor of
-the assertion. These two functions are inseparable; the alignment of the clause
-is a consequence of its aspectual category, and both are realised in the same
-obligatory suffix.
+the assertion. Aspect and alignment are jointly realised in the obligatory
+suffix, with case valuation active in the finite domain. Participant
+nominalisation preserves the aspectual and participant-selection features
+without finite case valuation (§\,\ref{sec:nominalised}).
 
 The alignment defaults are:
 
@@ -1236,8 +1237,8 @@ yields \ird{piašč-} as its antipassive stem:
 \endgl
 \xe
 
-The patient, having been removed from core argument structure by the
-antipassive, may not be expressed in any case form; it is accordingly
+In a finite antipassive clause, the patient, having been removed from core
+argument structure, may not be expressed in any case form; it is accordingly
 inadmissible as an indirect-case argument, as may be seen from the following:
 
 \ex
@@ -1248,8 +1249,8 @@ inadmissible as an indirect-case argument, as may be seen from the following:
 \endgl
 \xe
 
-\noindent Where a patient is to be expressed in any form, the ergative
-construction is required. Instrument and adjunct arguments, which bear no
+\noindent Where a patient is to be expressed in a finite clause, the
+ergative construction is required. Instrument and adjunct arguments, which bear no
 patient relation to the predicate, remain fully admissible in the indirect case,
 as in the spoon example above. The absence of an expressible patient is not
 merely a discourse choice to background a participant that is otherwise retained
@@ -1259,7 +1260,10 @@ construction does not merely withhold the patient from prominence; it eliminates
 the patient from the overt argument structure of the clause. For an inherently
 transitive verb the patient is typically still understood as part of the
 conceptual event, but what is asserted is the agent's activity; the patient has
-no realisation as a syntactic argument.
+no realisation as a syntactic argument of the antipassive. A nominal
+dependent may separately restrict that conceptual event under participant
+nominalisation (§\,\ref{sec:nominalised}); it is licensed by a nominal
+relational head rather than by the finite verbal construction.
 
 Equally, for a transitive verb, the bare perfective without either \ird{-n-} or
 \ird{-aš-} is ungrammatical:
@@ -1298,14 +1302,20 @@ the antipassive is absent. The antipassive is consequently unlicensed in
 NOM-aspect clauses. This is a hard grammatical restriction, not a preference or
 economy effect.
 
+Under participant nominalisation, the same restriction is evaluated against
+embedded Asp's participant-selection features: only the ERG-aspect domain
+licenses antipassive Voice. Actual finite case valuation is inactive there,
+and nominal dependents receive indirect case independently
+(§\,\ref{sec:nominalised}).
+
 \paragraph{Argument-structure removal.}
 Under the antipassive, the patient is not demoted to an oblique slot within the
 clause. It is removed from the clausal core entirely. Oblique expression of the
 patient is therefore not merely dispreferred but impossible: the construction
 does not retain a suppressed patient that has been reassigned to a peripheral
 position. The patient ceases to be part of the overt argument structure of the
-clause. This is why an indirect-case patient is ungrammatical with the
-antipassive (see §\,\ref{sec:vm-antipassive-desc} for examples), while
+finite clause. This is why an indirect-case patient is ungrammatical with the
+finite antipassive (see §\,\ref{sec:vm-antipassive-desc} for examples), while
 instrument and adjunct arguments in the indirect case remain fully admissible.
 
 The template order --- antipassive between root and Asp.Align --- confirms that
@@ -2629,7 +2639,7 @@ discourse-relational frame.
 
 
 
-\section{Non-finite forms: converb morphology}\label{sec:converb-morphology}
+\section{Non-finite forms and nominalisation}\label{sec:converb-morphology}
 
 
 Converb suffixes replace the aspect-alignment slot entirely. A verb carrying a
@@ -2727,39 +2737,148 @@ discourse recoverability determines the reading.
 \subsection{The nominalised verb forms}\label{sec:nominalised}
 
 
-Iridian possesses several forms that nominalise the verb. One is the lexical or
-resultant nominal in \ird{-ou}, often semi-productive and lexeme-specific, which
-yields nouns such as \ird{piaštou} \trsl{food}. Another is the inherited
-gerundal strategy, which remains the productive event-nominal formation.
-Participant nominals likewise employ \ird{-ou}, but they are built from stems
-whose morphology already fixes which participant occupies the absolutive pivot.
+The suffix \ird{-ou} occurs in lexical nouns, event nominals, and
+aspect-bearing participant descriptions. Lexical \ird{piaštou} \trsl{food}
+denotes a substance conventionally associated with eating, whereas eventive
+\ird{piaštou} \trsl{eating} denotes an eventuality and admits event-related
+dependents, as in \ird{Marcí travěte piaštou} \trsl{Marek's eating of the
+bread}. Participant \ird{piaščikou} \trsl{the one who ate} denotes an
+individual characterised by participation in an event. The shared exponent
+therefore does not entail a single internal structure. Event, result, and
+participant readings commonly coexist in nominalisation systems
+\cite{lieber2018}; the structures distinguished below constitute the analysis
+of Iridian adopted here.
 
-Antipassive stems yield agent-oriented participant nominals, unmarked transitive
-stems patient-oriented ones, and applicative stems nominals referring to the
-promoted participant.
+Lexical nominalisation combines a root or a small verbal constituent with
+$n_{\mathrm{lex}}$, whose interpretation may be stored with the derivative.
+Event nominalisation combines an event predicate with $n_{\mathrm{evt}}$,
+without selecting an individual participant as its referent. Its established
+forms do not require the five-way indicative aspect distinction. Participant
+$n_{\mathrm{part}}$ selects \synhead{AspP}, containing
+\synhead{VoiceP} and, where licensed, an intervening \synhead{CausP}.
+Embedded Asp retains viewpoint and participant-selection features, although
+finite case valuation is inactive: the nominal domain licenses the indirect
+case on its dependents (§\,\ref{sec:nm-derived-gerund}). Lexical agent nouns
+in \ird{-(h)ár} and \ird{-ist} (Chapter~\ref{ch:derivational}) classify a
+person by a characteristic activity or occupation; aspect-bearing \ird{-ou}
+forms describe a participant in an aspectually construed situation. This
+separation accords with Baker and Vinokurova's distinction between lexical
+agent nominalisation and the richer verbal structure of reduced relatives
+\cite{bakervinokurova2009}.
 
-All five indicative aspects are used productively in these participant nominals:
-perfective, retrospective, continuous, progressive, and contemplative. The same
-voice-sensitive stem that determines the nominal's orientation also carries the
-aspectual morphology, so the nominal may refer to a completed participant, an
-experientially or result-relevant past participant, an ongoing or habitual
-participant, a participant in an event now in progress, or a participant
-associated with an intended or contemplated event. The nominaliser selects the
-bound grade of the aspect exponent: perfective \ird{-ek}/\ird{-ik-} gives
-\ird{-ikou}, while retrospective \ird{-ac} gives \ird{-acou}. The
-continuous and progressive have the construction-specific nominal exponents
-\ird{-ova} and \ird{-imou}; the contemplative takes \ird{-ou} without
-further stem-height change. These are morphological correspondences of the
-aspect endings, not a general phonological raising of the lexical root.
+\paragraph{Aspect and participant selection.}
+Participant nominalisation targets the participant privileged by the complete
+voice--aspect configuration, rather than assigning an invariant orientation to
+a lexical transitive stem. With a transitive base in the perfective or
+retrospective, antipassive Voice privileges the agent, while \ird{-n-}
+privileges the patient. In the continuous, progressive, and contemplative,
+active Voice already privileges the agent, and patient-oriented \ird{-n-}
+yields the passive configuration (§\,\ref{sec:vm-n}). Antipassive morphology
+remains excluded from these three aspects, including under nominalisation.
 
-Thus \ird{piaščikou} \trsl{the one who ate}, \ird{piaščacou} \trsl{the one
-who has eaten}, \ird{piaščova} \trsl{the one who eats / is eating},
-\ird{piaščimou} \trsl{the one who is in the act of eating},
-\ird{piaščáchou} \trsl{the one who is about to eat}, \ird{piaštnikou}
-\trsl{that which was eaten}, \ird{piaštnacou} \trsl{that which has been eaten},
-and \ird{piaštébikou} \trsl{the one who was fed} preserve the voice-sensitive
-participant orientation. Their syntax, anchoring, and argument structure are
-treated in §\,\ref{sec:nm-derived}.
+\begin{table}[htbp]
+\footnotesize
+\caption{Participant nominals of \ird{piašt-} \trsl{eat}. English glosses
+in the text give customary contextual readings.}\label{tab:participant-nominals}
+\begin{tabularx}{\textwidth}{l L L}
+\toprule
+Aspect & Agent-oriented & Patient-oriented \\
+\midrule
+Perfective & \ird{piaščikou} & \ird{piaštnikou} \\
+Retrospective & \ird{piaščacou} & \ird{piaštnacou} \\
+Continuous & \ird{piaštova} & \ird{piaštnova} \\
+Progressive & \ird{piaštimou} & \ird{piaštnimou} \\
+Contemplative & \ird{piaštáchou} & \ird{piaštnáchou} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The perfective selects bound \ird{-ik-} before nominalising \ird{-ou},
+including where the free verb has \ird{-ek}; retrospective \ird{-ac} gives
+\ird{-acou}. Continuous Asp together with $n_{\mathrm{part}}$ has the joint
+direct-singular exponent \ird{-ova}, while progressive \ird{-ime} corresponds
+to \ird{-imou}. Contemplative \ird{-ách} combines with \ird{-ou} as
+\ird{-áchou}. These Vocabulary Insertion conditions specify constructional
+allomorphy; neither \ird{-ova} nor \ird{-imou} follows from a general
+vowel-deletion or root-raising rule. Acute accents retain their ordinary value
+as quantity marks rather than stress marks (§\,\ref{sec:stress}).
+
+Perfective \ird{piaščikou} describes the agent of a bounded eating event,
+and retrospective \ird{piaščacou} an agent whose participation precedes the
+relevant reference point. Their customary translations \trsl{the one who ate}
+and \trsl{the one who has eaten} do not add grammatical tense. Continuous
+\ird{piaštova} permits habitual or ongoing interpretation, progressive
+\ird{piaštimou} profiles participation during the event's development, and
+contemplative \ird{piaštáchou} describes a prospective or intended
+participant. The latter may denote an existing individual although the eating
+has not occurred.
+
+For the perfective agent form, a schematic interpretation is
+\[
+ \lambda x\,\exists e\,[\operatorname{eat}(e)\land
+ \operatorname{Agent}(e,x)\land\operatorname{PF}(e,R)],
+\]
+where $R$ is the contextual reference frame. Eventive \ird{piaštou}, by
+comparison, supplies a property of eating events rather than a property of
+eaters. The existential closure illustrated for the perfective does not extend
+to an assertion of an actual event with the contemplative. Neither
+$n_{\mathrm{part}}$ nor \ird{-ou} encodes uniqueness or definiteness;
+anchoring and the construction in which the nominal occurs determine its
+referential interpretation.
+
+Applicative nominalisation selects the promoted participant, as in
+\ird{piaštébikou} \trsl{the one who was fed}. Where causativisation follows
+Voice or the applicative, participant selection applies to the resulting
+causative predicate: its aspect and Voice configuration determine which of its
+arguments is privileged. The structural sequence is schematically root--Voice/applicative--causative--Asp--nominalisation;
+nominalisation supplies no additional promotion operation or reordering of
+the independently specified causative morphology. The available
+examples do not establish a complete orientation paradigm for every combined
+causative--applicative configuration, so no unrestricted choice among causer,
+causee, and recipient follows from the productive simple forms.
+
+\paragraph{The nominal case domain.}
+A non-privileged participant may be expressed by an indirect-case nominal
+dependent, whose relation to the embedded event is licensed in the nominal
+domain. In the analysis adopted here, a silent nominal relational head
+$\mathrm{R}_{\theta}$ introduces the dependent and adds an event relation
+such as Agent or Theme to the participant description before event closure.
+Its projection adjoins to the event predicate within the nominaliser's
+complement, preserving the selected \synhead{AspP} category in participant
+nominals. The relational head licenses an indirect \synhead{KP}; the
+dependent's K head realises case, as in other nominal dependency relations
+(§\,\ref{sec:nm-poss-struct}). This relation neither assigns a finite verbal
+case nor projects another core argument inside \synhead{VP}. Thus a patient
+dependent of an antipassive-based nominal
+restricts the eating event by Theme$(e,y)$, although antipassive
+\synhead{VoiceP} itself contains no overt patient argument. This constructional
+relation draws on the lexical event meaning; it does not reverse
+antipassivisation. Finite \ird{*Marek travě piašček} consequently remains
+ungrammatical (§\,\ref{sec:vm-antipassive-desc}). The restriction is specific
+to Iridian finite antipassives: cross-linguistically, the availability of an
+oblique patient varies among antipassive constructions \cite{heaton2020}.
+
+A thematic dependent differs from an ordinary possessor, which relates an
+individual to the nominal referent without necessarily identifying an event
+role, and from an adjunct such as an instrumental postpositional phrase,
+whose relation is contributed by the postposition. All may contain indirect
+case, so that case alone identifies neither their interpretation nor their
+position in the nominal structure.
+
+\paragraph{Negation and the upper boundary.}
+The aspect-bearing participant nominal and the corresponding \ird{-ový}
+relative select \synhead{AspP}, below clausal \synhead{NegP}. Internal verbal
+\ird{za-} is therefore excluded from these constructions; it cannot acquire
+scope inside them merely by attaching to their surface stem. Negation with
+\ird{staly} rejects the matrix predication, while \ird{zad-} denies the
+existence of an individual satisfying the positive participant description.
+Neither expresses \trsl{the one who did not eat}. A finite negative clause
+provides the established way to assert non-participation; no internally
+negative \ird{-ou} or \ird{-ový} paradigm is licensed here. The smaller
+lexical and event nominalisations likewise supply no productive clausal
+negation domain. Strict negative concord remains a property of the appropriate
+clausal domain, rather than a mechanism for extending nominalisation above
+\synhead{NegP}.
 
 \subsubsection{Predicative use: participant nominals in identificational equatives}
 \label{sec:nmlz-predicative}
@@ -2769,7 +2888,7 @@ equative clause, with the topic \synhead{DP} identified as the entity satisfying
 the nominalised description. This construction has the schematic form:
 
 \begin{center}
-[\textit{topic-DP}] \ \ [\textit{(internal-arg.\Ind{})} \ \ \textit{participant-nominal}]
+[\textit{topic-DP}] \ \ [\textit{(nominal dependent.\Ind{})} \ \ \textit{participant-nominal}]
 \end{center}
 
 \noindent Compare the base transitive clause with its patient-nominal equative counterpart:
@@ -2799,17 +2918,14 @@ the nominalised description. This construction has the schematic form:
 \endgl
 \xe
 
-Two features of the case marking are notable. First, the agent of the base
-transitive clause, which bears the transitive case in the finite verb
-construction (\ird{Janku}, \Trs{}), shifts to the indirect case (\ird{Jancí},
-\Ind{}) when it appears as an internal argument of the patient nominal. Second,
-the patient argument removed from core argument structure by the antipassive in
-a finite clause may reappear in the indirect case as an internal argument of the
-agent nominal (\ird{lubcí} in the second example above). In both cases all
-internal arguments of the nominalised event appear in the indirect case, since
-the absolutive/direct slot of the equative clause is occupied by the external
-topic \synhead{DP} and no verbal case-assigning machinery operates within the
-nominalised predicate.
+The finite transitive agent \ird{Janku} bears the transitive case,
+whereas nominal \ird{Jancí} receives indirect case within the patient
+nominal. In the agent nominal, indirect \ird{lubcí} restricts the event
+through the nominal Theme relation just defined; it is not an internal
+argument retained by antipassive \synhead{VP}. These dependents receive
+nominal case independently of the external topic and independently of whether
+the participant nominal functions as an equative predicate or an existential
+pivot (Chapter~\ref{ch:simple}).
 
 On the identificational reading illustrated here, the participant nominal
 supplies a description against which the topic is identified, with the context
@@ -3359,11 +3475,11 @@ prefixed form without \ird{-ěsk-} is the normal choice.
 
 \subsection{Nominalisation of stative verbs}
 
-Finite stative verbs are nominalised by the same \ird{-ou} mechanism that
-applies to all verbs (§\ref{sec:nominalised}). The nominalised form yields a
-substantive or classifying reading rather than a simple description: the
-speaker is not merely ascribing a property but identifying a referent by that
-property or setting it in contrast to others.
+Stative predicates are nominalised by the same \ird{-ou} mechanism that
+applies to other verbal predicates (§\,\ref{sec:nominalised}). A continuous
+stative nominal denotes a participant characterised by the state, as in
+\ird{mrocnova} \trsl{a beautiful one}. In the following equative, the
+context supports identification with a relevant bearer of the property:
 
 \pex
 \a \ird{Nužo mrocna.} \trsl{The city is beautiful.} \lingcontext{simple property predication}
@@ -3375,13 +3491,14 @@ property or setting it in contrast to others.
 \a \ird{Bylo svornikou.} \trsl{The child is the one who grew up.} \lingcontext{nominalised perfective}
 \xe
 
-When a nominalised stative verb is used adnominally, it takes the standard
-\ird{-ový} form:
+A non-continuous stative relative selects the same aspectual predicate as
+the participant nominal, with relative \ird{-ový} in place of nominal
+\ird{-ou}:
 
 \ex
 \begingl
 \gla Svornikový bylo Marek.//
-\glb be.big-\Pf{}-\textsc{nmlz}-\textsc{attr} child.\Dir{}.\Def{} Marek.\Dir{}//
+\glb be.big-\Pf{}-\textsc{rel} child.\Dir{}.\Def{} Marek.\Dir{}//
 \glft \trsl{Marek is the child who grew up.}//
 \endgl
 \xe
@@ -3392,7 +3509,7 @@ the \ird{-á} attributive must be used instead:
 
 \pex
 \a \ird{mrocná nuž} \trsl{a beautiful city} \lingcontext{correct: \ird{-á} attributive}
-\a \ird{*mrocnavní nuž} \lingcontext{ungrammatical: \ird{-ový} built on continuous stem}
+\a \ird{*mrocnový nuž} \lingcontext{excluded continuous stative relative}
 \xe
 
 \subsection{State types and aspectual interpretation}\label{sec:stative-stability}
