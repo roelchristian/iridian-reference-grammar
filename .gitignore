@@ -41,6 +41,7 @@ iridian-grammar-tags.tex
 drafts/
 util/*
 !util/lexicon.tex
+!util/negation-references.tex
 !util/collect_lexicon.py
 !util/tests/
 !util/tests/test_collect_lexicon.py
