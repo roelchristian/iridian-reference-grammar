@@ -15,8 +15,8 @@ vocabulary and certain areas of its grammar.
 Iridian is a predominantly head-final, agglutinative language whose morphology
 is concentrated chiefly on the verb, while head-finality and topic--comment
 organisation govern the clause and its constituents. Verbal aspect determines
-alignment and thereby affects which participant occupies the neutral topic
-position. The principal typological features are as follows:
+alignment, while independent topic dependencies organise the predication
+about a selected referent. The principal typological features are as follows:
 
 \begin{enumerate}[wide]
 	\item \textit{Split-ergativity conditioned by aspect domain.} Iridian shows
@@ -24,14 +24,13 @@ position. The principal typological features are as follows:
 	The five aspectual categories of the finite verb fall into two higher-order
 	domains: the \textit{perfective domain} (perfective and retrospective) and
 	the \textit{imperfective domain} (continuous, progressive, and
-	contemplative). In the perfective domain the language follows an
-	ergative-absolutive pattern, with the patient as absolutive pivot; in the
-	imperfective domain it follows a nominative-oblique pattern, with the agent
-	as absolutive pivot. This alternation is not merely morphological: it is
-	bound up with the language's information structure, since the direct-case
-	argument is typically also the clause topic. Chapter~\ref{ch:verbs}
-	describes the morphology of the system, and Chapter~\ref{ch:simple} its
-	discourse consequences.
+	contemplative). Ordinary transitives in the perfective domain follow an
+	ergative-absolutive pattern, with the patient as absolutive pivot; active
+	clauses in the imperfective domain follow a nominative-oblique pattern,
+	with the agent as absolutive pivot. Passive and antipassive Voice alter
+	these orientations (Chapter~\ref{ch:verbs}). The referential pivot supplies
+	the default candidate for a clause topic, while independent topicalisation
+	can select another participant (Chapters~\ref{ch:simple} and~\ref{ch:infstr}).
 
 	\item \textit{Strong head-finality.} The finite predicate is clause-final in
 	the unmarked clause; nominal modifiers precede the noun; adpositions are
@@ -39,14 +38,13 @@ position. The principal typological features are as follows:
 	that selects them. This same head-final organisation is visible in the noun
 	phrase, the verbal complex, and clause combining.
 
-	\item \textit{Topic-comment organisation.} The basic clause is organised as
-	topic plus comment. The topic, normally the direct-case argument, occupies the
-	left edge of the clause; the comment contains the predicate and associated
-	operators. Much of Iridian word order is best understood through this
-	information-structural organisation rather than through configurational
-	subjecthood alone. The clause's most stable privilege belongs to the
-	absolutive pivot, not to a language-wide subject relation independent of
-	alignment.
+\item \textit{Topic-oriented clause organisation.} The direct-case pivot is
+ the default aboutness candidate, but a linked non-direct topic retains its
+ case while a direct-case patient remains in the comment. External hanging
+ topics may be resumed inside the clause, and presentational clauses need no
+ referential topic dependency. These independent constructions motivate the
+ topic-oriented characterisation (Chapter~\ref{ch:infstr}); split ergativity
+ alone does not define topic prominence.
 
 	\item \textit{A layered particle system.} A small but important class of
 	preverbal particles marks phasal contour, interrogation, polarity,
@@ -99,9 +97,9 @@ At a broad level, the Iridian clause is built from the lexical predicate
 outward through a sequence of functional layers. The lowest layers belong to
 the predicate itself and to phasal and aspectual operators; above these stand
 negation, inflection, focus, interrogation, topic, evidentiality, and
-speech-act marking. Because the language is head-final, material from the
-highest layers appears farthest to the left in the surface string, while the
-predicate closes the clause.
+speech-act marking. High specifiers precede their complements, while the predominantly
+head-final predicate domain places the finite verbal complex last. The
+interrogative head \ird{by} is locally head-initial.
 
 This architecture is especially visible in the particle system of
 Chapter~\ref{ch:function-words}. Particles nearest the predicate express
@@ -109,8 +107,8 @@ phasal meanings such as \ird{v} \trsl{already} and \ird{s} \trsl{still / not
 yet}; above these stand comment-domain particles such as \ird{och}
 \trsl{also} and \ird{moc} \trsl{indeed}; above these in turn stands
 the interrogative clause-typing particle \ird{by}, which is the overt
-exponent of the Pol\textsuperscript{0} head and thus structurally above the
-comment domain; and farther left again stand evidential and stance
+exponent of a locally head-initial Pol\textsuperscript{0} head above the
+focus and inflectional domains; and farther left again stand evidential and stance
 particles such as \ird{oče}, \ird{hlavdy}, and \ird{ktady}. The linear order
 of particles reflects the scope relations represented in the clause spine.
 Within that analysis, \ird{by} realises a dedicated interrogative
@@ -121,15 +119,10 @@ The same architecture also helps explain several otherwise disconnected facts.
 The final position of the finite verb, the preverbal placement of complements,
 the order of subordinate and matrix clauses, and the clause-final position of
 \ird{staly} in zero-copula negation all follow from the same head-final
-design. Likewise, the alternation between ergative and nominative-style
-alignment is not treated here as a purely mechanical case pattern, but as part
-of a grammar in which the direct-case argument is normally the one made
-prominent as topic.
-
-Table~\ref{tab:th-clause-spine} sets this out formally. It serves as the
-standing reference for the formal analyses throughout the grammar; readers
-working through Chapters~\ref{ch:verbs}--\ref{ch:complex} will find it useful
-to return to.
+design. Within that structure, aspect and Voice license the case frame,
+while a distinct topic dependency organises the comment about a selected
+referent. Table~\ref{tab:th-clause-spine} summarises the functional layers
+used in the analyses of Chapters~\ref{ch:verbs}--\ref{ch:complex}.
 
 \begin{table}[ht]
 	\footnotesize
@@ -148,8 +141,8 @@ to return to.
 		                     exponent of Neg\textsuperscript{0}; §\,\ref{sec:vm-neg}) \\
 		5 & \synhead{IP} & Inflection: finiteness, mood \\
 		6 & \synhead{FocP} & Focus position; optionally hosts one fronted wh-phrase or other focused constituent \\
-		7 & \synhead{PolP} & Interrogative clause typing: \ird{by} (overt) / $\varnothing$ (null) \\
-		8 & \synhead{TopP} & Topic: typically the absolutive argument \\
+		7 & \synhead{PolP} & Head-initial interrogative clause typing: \ird{by} / $\varnothing$ \\
+		8 & \synhead{TopP} & Optional aboutness topic: linked arguments retain case \\
 		9 & \synhead{EvidP} & Evidential and epistemic operators:
 		                      \ird{oče}, \ird{hlavdy}, \ird{ktady}, \ird{či} \\
 		10 (highest) & \synhead{SpeechActP} & Illocutionary and discourse-relational
@@ -158,15 +151,13 @@ to return to.
 	\end{tabularx}
 \end{table}
 
-\noindent Because Iridian is rigorously head-final, specifiers and complements
-both precede their heads. The predicate therefore surfaces last; projections
-that scope over it surface progressively earlier in the string. Reading the
-clause from left to right is thus equivalent to reading the functional sequence
-from the highest (\synhead{SpeechActP}) to the lowest (\synhead{PhasP})
-projection. This principle provides the primary explanatory tool for
-understanding both particle ordering and clause-combining word order; it is
-developed in detail in §\,\ref{sec:th-head-finality} of
-Chapter~\ref{ch:simple}.
+\noindent The table records scope and dominance; surface order additionally
+ depends on head direction and the positions in which particles are realised.
+ Upper-peripheral particles occupy specifiers, an overt high topic precedes
+ \ird{by}, and the head-initial Pol\textsuperscript{0} precedes its complement.
+ A lower direct-case pivot may consequently follow \ird{by} without occupying
+ Spec,\synhead{TopP}. The lower predicate domain remains head-final
+ (§\,\ref{sec:th-head-finality}).
 
 In indicative clauses, \synhead{NegP} (level~4) occupies a single
 structural position across predication types, but its phonological
@@ -187,9 +178,9 @@ uninterpretable negative features of Neg\textsuperscript{0} and any
 negative-concord associates. Negative non-indicative moods instead realise
 polarity at Mood\textsuperscript{0}, without a separate \synhead{NegP}
 (§\,\ref{sec:vm-moodp}). A direct-case negative indefinite may occupy
-Spec,\synhead{TopP} while receiving its existential interpretation below the
-negative operator; such a quantificational pivot does not introduce an
-ordinary referential topic (§\,\ref{sec:tc-quantificational-pivots}).
+a lower initial argument position while receiving its existential
+ interpretation below the negative operator; such a quantificational pivot
+ does not occupy Spec,\synhead{TopP} or introduce a referential topic (§\,\ref{sec:tc-quantificational-pivots}).
 
 The clause fields are schematized in Figure~\ref{fig:th-clause-fields};
 Figure~\ref{fig:th-left-periphery} shows the detailed hierarchical structure of
@@ -198,17 +189,19 @@ the left periphery.
 \begin{figure}[ht]
 	\centering
 	\begin{tikzpicture}[font=\footnotesize]
-		\node[syn band, minimum width=18mm] (top)  {Topic\\\synhead{TopP}};
-		\node[syn band, minimum width=42mm, right=0pt of top]  (op)
-			{Speech-act \& evidential field\\\synhead{SpeechActP} / \synhead{EvidP}};
-		\node[syn band, minimum width=16mm, right=0pt of op]   (pol)
-			{Clause typing\\\synhead{PolP}};
-		\node[syn band, minimum width=34mm, right=0pt of pol]  (tp)
-			{Comment domain\\\synhead{IP} / \synhead{FocP}};
-		\node[syn band, minimum width=20mm, right=0pt of tp]   (asp)
-			{Phasal\\\synhead{PhasP}};
-		\node[syn band, minimum width=14mm, right=0pt of asp]  (pred)
-			{Pred.\\\synhead{PredP}};
+\node[syn band, minimum width=42mm] (op)
+ {Speech-act \& evidential field\\\synhead{SpeechActP} / \synhead{EvidP}};
+\node[syn band, minimum width=18mm, right=0pt of op] (top)
+ {Topic\\\synhead{TopP}};
+\node[syn band, minimum width=16mm, right=0pt of top] (pol)
+ {Clause typing\\\synhead{PolP}};
+\node[syn band, minimum width=34mm, right=0pt of pol] (tp)
+ {Comment domain\\\synhead{IP} / \synhead{FocP}};
+\node[syn band, minimum width=20mm, right=0pt of tp] (asp)
+ {Phasal\\\synhead{PhasP}};
+\node[syn band, minimum width=14mm, right=0pt of asp] (pred)
+ {Pred.\\\synhead{PredP}};
+
 	\end{tikzpicture}
 	\caption{Clause fields of the Iridian clause.}\label{fig:th-clause-fields}
 \end{figure}
@@ -219,34 +212,31 @@ the left periphery.
 	to \synhead{IP}).}\label{fig:th-left-periphery}
 	\medskip
 	\centering
-	\begin{forest}
-		syntax tree
-		[\synhead{SpeechActP}
-			[{SpeechAct\\\ird{nadě} / \ird{mlada} / \ird{jse}}]
-			[\synhead{EvidP}
-				[{Evid\\\ird{oče} / \ird{hlavdy} / \ird{ktady} / \ird{či}}]
-				[\synhead{TopP}
-					[{\synhead{DP}\\{\footnotesize topic}}]
-					[{Top$'$}
-						[Top]
-						[\synhead{PolP}
-							[{Pol\\\ird{by} / $\varnothing$}]
-							[{Pol$'$}
-								[Pol]
-								[\synhead{FocP}
-									[{XP\\{\footnotesize\textit{wh / focus}}}]
-									[{Foc$'$}
-										[Foc]
-										[\synhead{IP} [{\ldots}]]
-									]
-								]
-							]
-						]
-					]
-				]
-			]
-		]
-	\end{forest}
+\begin{forest}
+ syntax tree
+ [\synhead{SpeechActP}
+  [{Speech-act particle}]
+  [\synhead{EvidP}
+   [{Evidential particle}]
+   [\synhead{TopP}
+    [{\synhead{DP}\\topic (optional)}]
+    [{Top$'$}
+     [\synhead{PolP}
+      [{Pol\\\ird{by} / $\varnothing$}]
+      [\synhead{FocP}
+       [{XP\\wh / focus (optional)}]
+       [{Foc$'$}
+        [\synhead{IP} [{lower arguments and predicate}]]
+        [{$\mathrm{Foc}^{0}$\\$\varnothing$}]
+       ]
+      ]
+     ]
+     [{$\mathrm{Top}^{0}$\\$\varnothing$}]
+    ]
+   ]
+  ]
+ ]
+\end{forest}
 \end{figure}
 
 \section{Areal context}
