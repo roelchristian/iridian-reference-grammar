@@ -35,10 +35,23 @@ class ValencyChecks(unittest.TestCase):
         failures = checker.check_valency(self.source(surface, gloss), self.fixture(surface, gloss))
         self.assertTrue(any('one direct-case' in failure for failure in failures))
 
+    def test_translation_change_is_rejected(self):
+        surface = 'Byl Marcí travě piaštébime.'
+        gloss = r'child.\Dir{} Marek.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}'
+        fixture = self.fixture(surface, gloss)
+        fixture[0]['examples'][0]['translation'] = 'Translation'
+        source = self.source(surface, gloss)
+        self.assertEqual([], checker.check_valency(source, fixture))
+        failures = checker.check_valency(source.replace('Translation', 'Feed the child'), fixture)
+        self.assertTrue(any('translation changed' in failure for failure in failures))
+
     def test_illegal_productive_combination_and_order_are_rejected(self):
         for gloss, diagnostic in [
             (r'agent.\Dir{} eat-\Antip{}-\Appl{}-\Pf{}', 'antipassive/applicative'),
             (r'theme.\Dir{} eat-\Trs{}-\Caus{}-\Pf{}', 'precedes causative'),
+            (r'beneficiary.\Dir{} run-\Caus{}-\Appl{}-\Pf{}', 'inner valency follows'),
+            (r'causee.\Dir{} eat-\Caus{}-\Antip{}-\Pf{}', 'inner valency follows'),
+            (r'beneficiary.\Dir{} eat-\Appl{}-\Appl{}-\Pf{}', 'repeated applicative'),
         ]:
             with self.subTest(gloss=gloss):
                 failures = checker.check_valency(self.source('Example.', gloss),

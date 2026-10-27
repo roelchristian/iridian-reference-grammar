@@ -98,9 +98,14 @@ to post-syntactic attachment to the left edge of the verbal complex
 \subsubsection{The root and VP}
 \label{sec:vm-root}
 
-For a simple verb, the lexical stem is the exponent of the Root merged with the functional category
-V (or, in Distributed Morphology terms, the root $\surd$ inserted under a
-categorizing head $v_\text{intr}$ for intransitives, or $v^*$ for transitives).
+For a simple verb, the lexical stem realises a root with a verbal categoriser
+$v$. Categorisation, argument introduction and case licensing are distinct
+operations in this analysis: the categoriser supplies verbal category, while
+the predicate's lexical frame and any argument-building heads determine its
+participants. An actor-introducing layer belongs to the inner predicate,
+above Appl where present and below Caus; its ordinary exponent is zero.
+The outer orientation head consequently need not introduce the actor whose
+case its configuration determines.
 A finite verb requires Asp.Align, and a bare stem cannot constitute an
 independent finite predicate. Bound stems also occur in licensed non-finite
 and nominal constructions, whose selecting heads need not include finite
@@ -1000,17 +1005,16 @@ lexically conditioned developmental and ingressive interpretations
 \subsection{Asp.Align under non-indicative Mood: impoverishment and reduced opposition}
 \label{sec:vm-mood-asp}
 
-No finite Iridian verb ever lacks an Asp.Align exponent. What changes under a
-non-indicative Mood is not the presence of the Asp.Align head but the
-\emph{richness} of its featural specification.
+Every finite Iridian verb contains Asp.Align, whose exponent can be zero.
+Non-indicative Mood selects a reduced aspectual configuration in syntax,
+retaining an IPFV/PFV opposition together with the construction's orientation
+requirements.
 
 In the indicative, Asp.Align realises the full five-way viewpoint inventory
 (progressive, continuous, contemplative, perfective, retrospective) with the
-associated split-ergative alignment. In the non-indicative moods---imperative,
-prohibitive, hortative, and irrealis---a post-syntactic impoverishment rule
-eliminates the fine-grained viewpoint features of the Asp node, retaining only
-the coarser \term{alignment-domain} contrast that drives case assignment. The
-result is a two-way \term{reduced Asp.Align} opposition shown in
+associated split-ergative alignment. The non-indicative moods---imperative,
+prohibitive, hortative, and irrealis---select the coarser
+\term{reduced Asp.Align} opposition shown in
 Table~\ref{tab:reduced-asp}.
 
 \begin{table}
@@ -1068,37 +1072,33 @@ The resulting form is \ird{piaštověv}, rather than \ird{*piaščověv};
 the absence of root mutation is compatible with palatality at the suffixal
 boundary (§\,\ref{sec:suffix-classes}).
 
-The IPFV/PFV opposition in directive clauses parallels, in function,
-the well-known imperfective/perfective imperative distinction found in
-West Slavic and other aspect languages: the IPFV imperative encodes an ongoing,
+The IPFV imperative encodes an ongoing,
 habitual, or processual directive (the event is construed as
 unbounded), while the PFV imperative encodes a bounded, completive
 directive (the event is construed as a single whole). In the irrealis,
 the IPFV domain covers generic non-actual scenarios and standing
 hypotheticals; the PFV domain covers single bounded counterfactuals.
 
-In Distributed Morphology terms, the impoverishment rule may be stated as
-follows. When \synhead{MoodP} bears a non-indicative value, a post-syntactic
-impoverishment rule deletes the fine-grained viewpoint features
-[$\pm$\textsc{bounded}, $\pm$\textsc{anterior}, \textsc{prospective}] of the Asp
-node, leaving only the coarser feature [$\pm$\textsc{pfv-domain}]. Late
-Vocabulary Insertion then maps this reduced bundle to $\varnothing$ (IPFV) or
-\ird{-ov-} (PFV). The rule is:
+In the Distributed Morphology implementation, Vocabulary Insertion maps the
+coarse IPFV/PFV distinction to $\varnothing$ or \ird{-ov-}. A PF
+impoverishment rule can exclude the finer indicative exponents in this
+environment, although it does not supply the syntactic reduction, determine
+case, or remove semantic distinctions after interpretation. The
+exponence restriction is:
 
 \medskip
 \noindent\begin{tabular}{@{}l@{\quad}l}
-$[\textsc{Mood}: \text{non-indicative}]$ & $\Rightarrow$ suppress fine
-aspectual contrasts within Asp.Align; \\
+$[\textsc{Mood}: \text{non-indicative}]$ & $\Rightarrow$ realise only the coarse
+aspectual contrast at Asp.Align; \\
 & \hspace*{1.5em}retain only $[\pm\textsc{pfv-domain}]$.
 \end{tabular}
 \medskip
 
-Syntactically, Mood remains the higher head (\synhead{MoodP} $>$
-\synhead{AspP}), consistent with standard scope expectations and with Cinque's
-functional hierarchy. Morphologically, however, Mood becomes \emph{dependent} on
-Asp.Align: Mood never surfaces on a finite verb unless Asp.Align has been
-realised. The interaction is therefore one of impoverishment rather than
-competition.
+Mood is structurally higher than Asp, with intervening Neg where present
+(Table~\ref{tab:vm-full-structure}). Its syntactic selection establishes the
+reduced configuration before case valuation, while its exponent follows the
+zero or overt Asp.Align exponent. Morphological neutralisation therefore
+presupposes the licensed configuration rather than deriving its case frame.
 
 Directive Mood imposes an orientation requirement on the reduced aspectual
 domain: a retained theme takes direct case, regardless of the IPFV/PFV value.
@@ -1281,6 +1281,56 @@ role. These restrictions distinguish Iridian's interpretations within the
 broader typological variation in applicative bases and roles
 \cite[§§2, 4]{polinsky2013appl}.
 
+The goal and instrumental extensions can be illustrated with controlled
+constructed pairs. Directed-motion \ird{stoj-} combines with a goal phrase
+in the first example below; applicativisation makes that same town the
+direct-case participant in the second. Both retain contemplative aspect:
+
+\pex\label{ex:val-appl-goal}
+\a
+\begingl
+\gla Marek hraďe de stojách.//
+\glb Marek.\Dir{} town.\Ind{} to go-\Ctpl{}//
+\glft \trsl{Marek intends to go to the town.}//
+\endgl
+\a
+\begingl
+\gla Hrad Marcí stojébách.//
+\glb town.\Dir{} Marek.\Ind{} go-\Appl{}-\Ctpl{}//
+\glft \trsl{Marek intends to go to the town.}//
+\endgl
+\xe
+
+The town is the destination of projected motion, without an implication that
+it benefits from that motion. Instrumental \ird{se}, already illustrated
+with the antipassive, instead relates an implement to an activity. In the
+following constructed pair \ird{rán}/\ird{ráne} supplies a controlled
+case alternation (§\,\ref{sec:nm-stem-grades}); the context identifies the
+hand as the means by which Marek eats:
+
+\pex\label{ex:val-appl-instrument}
+\a
+\begingl
+\gla Marek travě ráne se piaštime.//
+\glb Marek.\Dir{} bread.\Ind{} hand.\Ind{} \textsc{inst} eat-\Prog{}//
+\glft \trsl{Marek is eating bread by hand.}//
+\endgl
+\a
+\begingl
+\gla Rán Marcí travě piaštébime.//
+\glb hand.\Dir{} Marek.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}//
+\glft \trsl{Marek is eating bread by hand.}//
+\endgl
+\xe
+
+Neither extension changes the lexical event: the hand does not become an
+eater, and the town does not become a moving participant. The instrumental
+interpretation depends on an implement-compatible event, just as the goal
+interpretation depends on directed motion; unrestricted exchange of these
+roles is excluded by those selectional conditions. Recipient and locative
+extensions remain restricted to compatible predicates, whose full lexical
+distribution is unspecified.
+
 Directive Mood selects the lexical theme where one is retained, so that an
 applied beneficiary receives indirect case (§\,\ref{sec:mood-directive-valency}):
 
@@ -1367,6 +1417,11 @@ followed by an applied participant if there is no lexical theme, and otherwise
 the causee. Any remaining causee or applied participant is indirect. This
 hierarchy belongs to the causative frame, so an embedded applicative's simple
 beneficiary selection does not independently assign a second direct case.
+Here \term{retained theme} designates the separate patient of a transitive
+base. An intransitive's sole participant becomes the causee even when its
+lexical role is theme-like, as with \ird{ščen-} \trsl{arrive}; that role
+does not create an additional patient ahead of an applied participant in the
+causative hierarchy.
 
 \begin{table}[htbp]
 \footnotesize
@@ -1382,6 +1437,7 @@ Transitive, NOM & \textsc{dir} & \textsc{ind} & \textsc{ind} & --- \\
 Transitive, ERG & \textsc{trs} & \textsc{ind} & \textsc{dir} & --- \\
 Applied transitive, NOM & \textsc{dir} & \textsc{ind} & \textsc{ind} & \textsc{ind} \\
 Applied transitive, ERG & \textsc{trs} & \textsc{ind} & \textsc{dir} & \textsc{ind} \\
+Applied intransitive, NOM & \textsc{dir} & \textsc{ind} & --- & \textsc{ind} \\
 Applied intransitive, ERG & \textsc{trs} & \textsc{ind} & --- & \textsc{dir} \\
 Antipassive, ERG & \textsc{trs} & \textsc{dir} & --- & --- \\
 \bottomrule
@@ -1515,6 +1571,31 @@ outer applicative reading. Multiple indirect-case arguments need not occur in
 all uses, but an omitted causee requires the ordinary contextual licensing of
 argument omission. The morphology itself does not introduce an arbitrary
 silent \trsl{someone}.
+
+A causative of an applied intransitive lacks a separate lexical patient.
+The following constructed pair therefore selects the causer in the
+progressive and the beneficiary in the perfective, leaving the running
+children in indirect case in both:
+
+\pex\label{ex:val-caus-appl-intransitive}
+\a
+\begingl
+\gla Marek bylac bylam zmacébnajime.//
+\glb Marek.\Dir{} child.\Ind{}.\Pl{} child.\Ind{} run-\Appl{}-\Caus{}-\Prog{}//
+\glft \trsl{Marek is making the children run for the child's benefit.}//
+\endgl
+\a
+\begingl
+\gla Byl Marku bylac zmacéb-na-nik.//
+\glb child.\Dir{} Marek.\Trs{} child.\Ind{}.\Pl{} run-\Appl{}-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek made the children run for the child's benefit.}//
+\endgl
+\xe
+
+The perfective child is the beneficiary, while plural \ird{bylac}
+expresses the causee. The contrast with the preceding transitive pair
+follows from the presence or absence of a retained patient, rather than from
+a change in the benefactive relation contributed by Appl.
 
 An antipassive base retains its actor as the causee while its lexical patient
 remains unavailable. Causativisation therefore produces a new two-participant
@@ -1956,9 +2037,10 @@ The mood system comprises the indicative, the imperative, the prohibitive, the
 hortative, and the irrealis. Mood is expressed by a suffix occupying the
 position immediately outside the aspect-alignment morpheme; in the indicative
 this suffix is null. Where a non-indicative mood suffix is present, the
-Asp.Align head remains in the clause but its full five-way viewpoint inventory
-is reduced by post-syntactic impoverishment to a two-way
-imperfective/perfective-domain contrast, as described in
+Asp.Align head remains in the clause, while Mood licenses a two-way
+imperfective/perfective-domain contrast in place of the full five-way
+indicative inventory. Post-syntactic impoverishment regulates the realisation
+of this reduced configuration, as described in
 §\,\ref{sec:vm-mood-asp}. Every finite verb, indicative or not, therefore
 carries an Asp.Align exponent. The imperative, prohibitive, and hortative
 together form the directive domain, a unified subsystem whose case properties
@@ -2178,7 +2260,7 @@ subject of an imperative or prohibitive is normally silent because the speech
 situation identifies it; an overt pronoun can contrast or insist on the
 addressee without changing the theme's case:
 
-\pex
+\pex\label{ex:val-directive-simple}
 \a
 \begingl
 \gla Trava piaštím.//
@@ -2212,7 +2294,7 @@ indirect-case DP, while the theme is direct and any overt agent is transitive.
 This Mood-conditioned selection supersedes the simple indicative applicative
 frame. A \ird{my} phrase expresses the separate postpositional strategy:
 
-\pex
+\pex\label{ex:val-directive-appl}
 \a
 \begingl
 \gla Trava bylam piaštébím.//
@@ -2238,11 +2320,12 @@ The causative (\ird{-na-}) likewise requires an overtly realised causee in
 directive clauses. With a retained lexical theme, the causee takes indirect case and the theme
 remains direct; in a causative of an underived intransitive, the causee itself
 is direct. An overt causer is transitive in either frame. Before the
-vowel-initial mood suffixes (\ird{-ím}, \ird{-é}), the causative takes its
+vowel-initial mood suffixes (\ird{-ím}, \ird{-é}), the regular causative takes its
 epenthetic form \ird{-naj-}; before the consonant-initial hortative \ird{-ká} it
-remains \ird{-na-}:
+remains \ird{-na-}. Stative bases retain their conditioned causative
+\ird{-an-} (§\,\ref{sec:stative-valency}):
 
-\pex
+\pex\label{ex:val-directive-caus}
 \a
 \begingl
 \gla Trava bylam piaštnajím.//
@@ -2254,6 +2337,25 @@ remains \ird{-na-}:
 \gla Jí trava bylam piaštnajím.//
 \glb 2\textsc{sg}.\Trs{} bread.\Dir{} child.\Ind{} eat-\Caus{}-\Imp{}//
 \glft \trsl{You make the child eat the bread.} \lingcontext{overt subject in \Trs{}}//
+\endgl
+\xe
+
+With an intransitive base, the overt causee itself takes direct case. The
+following constructed pair holds that selection constant across the two
+reduced aspectual values; the PFV exponent specifies a bounded directive:
+
+\pex\label{ex:val-directive-caus-intr}
+\a
+\begingl
+\gla Byl zmacnajím.//
+\glb child.\Dir{} run-\Caus{}-\Imp{}//
+\glft \trsl{Make the child run.} \lingcontext{IPFV directive}//
+\endgl
+\a
+\begingl
+\gla Byl zmacnajovím.//
+\glb child.\Dir{} run-\Caus{}-\textsc{pfv.dom}-\Imp{}//
+\glft \trsl{Make the child run.} \lingcontext{bounded PFV directive}//
 \endgl
 \xe
 
@@ -2325,21 +2427,22 @@ in the negative irrealis, while \ird{zděk-} forms \ird{zděcir} rather than
 \subsubsection{MoodP}
 \label{sec:vm-moodp}
 
-The mood suffixes occupy the projection immediately outside \synhead{AspP}. In
-the indicative, \synhead{MoodP} is present but headed by a null morpheme. In the
-non-indicative moods (imperative, hortative, irrealis), a lexical mood morpheme
-is inserted at \synhead{MoodP} and simultaneously triggers a post-syntactic
-impoverishment rule on the Asp node: the fine-grained viewpoint features of Asp
-are deleted, leaving only the coarser $[\pm\textsc{pfv-domain}]$ feature that
-drives reduced Asp.Align (see §\,\ref{sec:vm-mood-asp}). \synhead{AspP} is
-therefore always projected in finite clauses; what varies is the richness of
-features available for Vocabulary Insertion at that node.
+The mood suffixes follow the aspect-alignment exponent in the verbal complex.
+Syntactically, Mood selects Asp directly in affirmative clauses and in negative
+non-indicative clauses, while indicative clausal negation introduces \synhead{NegP}
+between them (§\,\ref{sec:vm-neg}). In the indicative, \synhead{MoodP}
+is present but has a null exponent. Non-indicative Mood licenses the coarser
+$[\pm\textsc{pfv-domain}]$ opposition in the syntax, together with its
+constructional orientation requirements. Post-syntactic impoverishment
+restricts the features available for Vocabulary Insertion at Asp; it neither
+assigns case nor changes the interpretation already established by the
+syntactic configuration (§\,\ref{sec:vm-mood-asp}). \synhead{AspP} is thus
+present throughout the finite paradigm, although the licensed aspectual
+contrasts and their exponents vary with Mood.
 
-The ordering of Mood above Asp is consistent with the cross-linguistic tendency
-for tense and mood to dominate aspect (Cinque's (1999) functional hierarchy
-places Mood$_\text{irrealis}$ above Asp$_\text{perfective/imperfective}$). The
-mood paradigm consists of competing Vocabulary Items inserted at the
-\synhead{MoodP} head:
+Mood scopes over the aspectual predicate and conditions the reduced
+Asp.Align paradigm. Its affirmative and negative suffixes are competing
+Vocabulary Items at the \synhead{MoodP} head:
 
 \begin{center}
 \begin{tabular}{l l l}
@@ -2428,7 +2531,9 @@ discourse-relational frame.
 
 
 Converb suffixes replace the aspect-alignment slot entirely. A verb carrying a
-converb suffix accordingly bears no aspect, no mood, and no alignment. The
+converb suffix accordingly bears no finite viewpoint or mood exponent and
+no aspect-conditioned alignment contrast. Its clause nevertheless licenses
+nominal case through the converb construction (§\,\ref{sec:vm-converb-case}). The
 morphological structure of a converb is:
 
 \medskip
@@ -2472,18 +2577,14 @@ Grade membership must therefore be recorded with each construction.
 \subsubsection{Converbs as aspect-deficient \synhead{vP}/\synhead{VoiceP} projections}
 \label{sec:vm-converb-aspless}
 
-Converbs replace the Asp.Align slot entirely. A verb bearing a converb suffix
-therefore projects a \synhead{vP}/\synhead{VoiceP} but no \synhead{AspP}. The
-converb suffix itself can be analysed as the Vocabulary Item inserted at a
-\term{defective AspP} node: a position in the functional hierarchy that would
-normally host an Asp.Align morpheme but instead hosts a converb-class morpheme
-that lacks aspect and alignment features.
-
-Alternatively, converbs project no \synhead{AspP} at all: the converb suffix is
-the head of a Voice or \synhead{vP} projection that merges directly with the
-higher adverbial or complementizer position without passing through
-\synhead{AspP}. Both accounts exclude the perfective/retrospective
-Asp.Align configuration that conditions ergative alignment in finite clauses.
+Converbs lack finite Asp.Align and its viewpoint distinctions, while retaining
+the lower predicate and any licensed applicative or causative structure.
+The analysis treats the converb suffix as the exponent of a converb head,
+Conv, with a defective aspectual specification. Its features specify the
+linking relation without supplying
+the finite IPFV/ERG-domain opposition. Conv selects the lower verbal
+predicate directly, excluding the finite perfective/retrospective configuration
+that licenses ergative alignment.
 The independent absence of outer patient-selecting Voice \ird{-n-} from the
 established converb forms is described in §\,\ref{sec:converb-chains};
 its exclusion does not follow from the absence of ergative case alone, since
@@ -3352,7 +3453,7 @@ general phonological process. This
 construction-specific exponence preserves the contrast between the stativising
 \ird{-n-} inside the stem and orientation outside the causative.
 
-\pex
+\pex\label{ex:val-stative-caus}
 \a
 \begingl
 \gla Marek problemam svornanime.//
@@ -3381,14 +3482,16 @@ direct and its experiencer transitive in the perfective:
 \begingl
 \gla Senica Marku všihnébik.//
 \glb news.\Dir{} Marek.\Trs{} be.happy-\Appl{}-\Pf{}//
-\glft \trsl{Marek was happy about the news.}
+\glft \trsl{Marek became happy about the news.}
 \lingcontext{lexically restricted stimulus applicative}//
 \endgl
 \xe
 
-This construction describes a state with a stimulus; it does not assert that
-the news brought the state into existence. A causal interpretation requires
-causative morphology or an independently established lexical causative.
+The perfective presents entry into the state, while the applied stimulus
+identifies what Marek is happy about. Neither this stimulus relation nor
+perfective aspect asserts that the news caused the state to arise; a causal
+relation requires causative morphology or an independently established lexical
+causative.
 The stimulus extension supplies no general rule admitting a causer with every
 stative applicative.
 
@@ -3622,31 +3725,31 @@ adposition or particle) is supported by the following diagnostics:
 \label{sec:vm-purp-comp}
 
 The purposive converb (\ird{-it}) serves as the complement of
-desiderative, volitional, and modal predicates. Unlike the
-\ird{po}-clause, it is non-finite: it lacks aspect, alignment, and
-mood. Structurally it is an aspectless \synhead{vP} or \synhead{VoiceP} projection ---
-a verbal phrase headed by the root + any applicable valency
-morpheme, terminated by the purposive suffix \ird{-it} rather
-than an Asp.Align morpheme.
+desiderative, volitional, modal and motion predicates. Unlike the
+\ird{po}-clause, it lacks finite viewpoint and mood, although its internal
+arguments receive the NOM-domain cases licensed by the converb construction.
+Its lower predicate can contain applicative and causative morphology; the
+purposive head Conv, realised by \ird{-it}, closes this constituent without
+introducing finite Asp.Align (§\,\ref{sec:vm-converb-aspless}).
 
-The purposive converb complement is therefore not a \synhead{CP} but a
-smaller projection, most plausibly a bare \synhead{VoiceP} or \synhead{AspP}$_\varnothing$
-(an \synhead{AspP} whose head is phonologically null, licensed only when
-embedded under a controlling predicate). This is the standard
-\term{event complement} (Stowell 1982; Wurmbrand 2001): the predicate denotes an
-event rather than a proposition, and it is controlled by the matrix
-subject in a typical control configuration.
-
-In head-final structure, the purposive converb complement precedes
+The purposive complement is analysed as \synhead{ConvP}, whose head selects
+the lower \synhead{vP}/\synhead{VoiceP}, rather than as a finite
+\synhead{CP}. It denotes a prospective event description, while a
+\ird{po}-complement presents a proposition. In head-final structure, Conv
+follows its verbal complement and the entire purposive constituent precedes
 the matrix predicate:
 
 \begin{center}
-\term{[matrix agent-\textsc{abs}] [purposive-\ird{-it}] [matrix V]}
+\term{[matrix pivot] [\synhead{ConvP} [lower verbal predicate] \ird{-it}] [matrix V]}
 \end{center}
 
-\noindent The shared-subject (control) reading is the default, with
-an implicit PRO subject in the converb clause coreferent with the
-matrix absolutive pivot, independently of discourse aboutness.
+\noindent The implicit participant of the purposive complement normally
+shares the reference of the matrix absolutive pivot
+(§\,\ref{sec:switch-reference}). In the ordinary intransitive-motion
+examples, that pivot is the mover, so the dependency yields a same-subject
+reading (§\,\ref{sec:purp-motion}). This reference relation is independent
+of aboutness topichood and does not require an additional phonologically null
+finite Asp head.
 
 
 \subsection{The preverbal zone: a structural hierarchy}
@@ -3719,12 +3822,13 @@ constructional requirements.
 \subsection{Mood and the reduced Asp.Align: open questions}
 \label{sec:vm-tension-mood-asp}
 
-The interaction of Mood and Asp.Align is analysed in
-§\,\ref{sec:vm-mood-asp} as \term{impoverishment}: a non-indicative
-Mood triggers the deletion of fine-grained viewpoint features from
-the Asp.Align node, reducing the full five-way inventory to a
-two-way IPFV/PFV-domain contrast. Asp.Align is always present in
-finite clauses; what varies is the richness of its featural content.
+Non-indicative Mood licenses a two-way IPFV/PFV-domain opposition and
+conditions its morphological realisation (§\,\ref{sec:vm-mood-asp}).
+The reduced aspectual contrast and the construction's orientation requirements
+belong to the syntactic configuration; PF impoverishment restricts the
+features available for insertion of an Asp exponent. Asp.Align remains
+present in finite clauses, without requiring the full indicative viewpoint
+inventory or assigning a new case frame after spell-out.
 The description leaves three distributional questions unresolved: the lexical
 and pragmatic restrictions on \ird{-ov-} in directives and irrealis clauses,
 the contribution of information structure to the IPFV/PFV distinction in

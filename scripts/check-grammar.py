@@ -106,7 +106,7 @@ def check_palatalisation(phonology, fixtures):
 
 
 def check_valency(verbal, fixtures):
-    """Preserve reviewed form/gloss pairs in designated finite paradigms.
+    """Preserve reviewed forms, glosses and translations in finite paradigms.
 
     These checks detect transcription regressions; they neither infer case
     from spelling nor decide whether an unreviewed construction is grammatical.
@@ -118,16 +118,23 @@ def check_valency(verbal, fixtures):
         start = verbal.find(marker)
         group = '' if start < 0 else verbal[start:].split(r'\xe', 1)[0]
         examples = []
+        translations = []
         for example in re.findall(r'\\begingl\b(.*?)\\endgl\b', group, re.S):
             surface = re.search(r'\\gla\s+(.*?)//', example, re.S)
             gloss = re.search(r'\\glb\s+(.*?)//', example, re.S)
+            translation = re.search(r'\\glft\s+(.*?)//', example, re.S)
             if surface and gloss:
                 examples.append((' '.join(surface[1].split()),
                                  ' '.join(gloss[1].split())))
+                translations.append(' '.join(translation[1].split()) if translation else None)
         expected = [(row['surface'], row['gloss']) for row in fixture['examples']]
         if examples != expected:
             failures.append('valency paradigm: ' + fixture['label']
                             + ': reviewed surface/gloss pairs changed')
+        for row, translation in zip(fixture['examples'], translations):
+            if 'translation' in row and row['translation'] != translation:
+                failures.append('valency paradigm: ' + fixture['label']
+                                + ': reviewed translation changed')
         for surface, gloss in examples:
             if gloss.count(r'\Dir{}') != 1:
                 failures.append('valency paradigm: ' + fixture['label']
@@ -136,6 +143,14 @@ def check_valency(verbal, fixtures):
             if r'\Antip{}' in verbal_gloss and r'\Appl{}' in verbal_gloss:
                 failures.append('valency paradigm: ' + fixture['label']
                                 + ': antipassive/applicative combination')
+            if verbal_gloss.count(r'\Appl{}') > 1:
+                failures.append('valency paradigm: ' + fixture['label']
+                                + ': repeated applicative')
+            for inner in (r'\Antip{}', r'\Appl{}'):
+                if (inner in verbal_gloss and r'\Caus{}' in verbal_gloss
+                        and verbal_gloss.index(inner) > verbal_gloss.index(r'\Caus{}')):
+                    failures.append('valency paradigm: ' + fixture['label']
+                                    + ': inner valency follows causative')
             if (r'\Caus{}' in verbal_gloss and r'\Trs{}' in verbal_gloss
                     and verbal_gloss.index(r'\Trs{}') < verbal_gloss.index(r'\Caus{}')):
                 failures.append('valency paradigm: ' + fixture['label']

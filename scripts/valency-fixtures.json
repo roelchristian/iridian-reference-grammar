@@ -4,11 +4,13 @@
     "examples": [
       {
         "surface": "Marek travě bylam my piaštime.",
-        "gloss": "Marek.\\Dir{} bread.\\Ind{} child.\\Ind{} for eat-\\Prog{}"
+        "gloss": "Marek.\\Dir{} bread.\\Ind{} child.\\Ind{} for eat-\\Prog{}",
+        "translation": "\\trsl{Marek is eating bread for the child's benefit.}"
       },
       {
         "surface": "Byl Marcí travě piaštébime.",
-        "gloss": "child.\\Dir{} Marek.\\Ind{} bread.\\Ind{} eat-\\Appl{}-\\Prog{}"
+        "gloss": "child.\\Dir{} Marek.\\Ind{} bread.\\Ind{} eat-\\Appl{}-\\Prog{}",
+        "translation": "\\trsl{Marek is eating bread for the child's benefit.}"
       }
     ]
   },
@@ -17,11 +19,13 @@
     "examples": [
       {
         "surface": "Byl Marcí zmacébime.",
-        "gloss": "child.\\Dir{} Marek.\\Ind{} run-\\Appl{}-\\Prog{}"
+        "gloss": "child.\\Dir{} Marek.\\Ind{} run-\\Appl{}-\\Prog{}",
+        "translation": "\\trsl{Marek is running for the child's benefit.}"
       },
       {
         "surface": "Byl Marku travě piaštébik.",
-        "gloss": "child.\\Dir{} Marek.\\Trs{} bread.\\Ind{} eat-\\Appl{}-\\Pf{}"
+        "gloss": "child.\\Dir{} Marek.\\Trs{} bread.\\Ind{} eat-\\Appl{}-\\Pf{}",
+        "translation": "\\trsl{Marek ate bread for the child's benefit.}"
       }
     ]
   },
@@ -30,11 +34,13 @@
     "examples": [
       {
         "surface": "Marek bylam zmacnajime.",
-        "gloss": "Marek.\\Dir{} child.\\Ind{} run-\\Caus{}-\\Prog{}"
+        "gloss": "Marek.\\Dir{} child.\\Ind{} run-\\Caus{}-\\Prog{}",
+        "translation": "\\trsl{Marek is making the child run.}"
       },
       {
         "surface": "Byl Marku zmac-na-nik.",
-        "gloss": "child.\\Dir{} Marek.\\Trs{} run-\\Caus{}-\\textsc{trs}-\\Pf{}"
+        "gloss": "child.\\Dir{} Marek.\\Trs{} run-\\Caus{}-\\textsc{trs}-\\Pf{}",
+        "translation": "\\trsl{Marek made the child run.}"
       }
     ]
   },
@@ -43,11 +49,13 @@
     "examples": [
       {
         "surface": "Marek bylam travě piaštnajime.",
-        "gloss": "Marek.\\Dir{} child.\\Ind{} bread.\\Ind{} eat-\\Caus{}-\\Prog{}"
+        "gloss": "Marek.\\Dir{} child.\\Ind{} bread.\\Ind{} eat-\\Caus{}-\\Prog{}",
+        "translation": "\\trsl{Marek is making the child eat bread.}"
       },
       {
         "surface": "Travato Marku bylam piašt-na-nik.",
-        "gloss": "bread.\\Dir{}.\\Def{} Marek.\\Trs{} child.\\Ind{} eat-\\Caus{}-\\textsc{trs}-\\Pf{}"
+        "gloss": "bread.\\Dir{}.\\Def{} Marek.\\Trs{} child.\\Ind{} eat-\\Caus{}-\\textsc{trs}-\\Pf{}",
+        "translation": "\\trsl{Marek made the child eat the bread.}"
       }
     ]
   },
@@ -56,11 +64,13 @@
     "examples": [
       {
         "surface": "Marek bylac bylam travě piaštébnajime.",
-        "gloss": "Marek.\\Dir{} child.\\Ind{}.\\Pl{} child.\\Ind{} bread.\\Ind{} eat-\\Appl{}-\\Caus{}-\\Prog{}"
+        "gloss": "Marek.\\Dir{} child.\\Ind{}.\\Pl{} child.\\Ind{} bread.\\Ind{} eat-\\Appl{}-\\Caus{}-\\Prog{}",
+        "translation": "\\trsl{Marek is making the children eat bread for the child's benefit.}"
       },
       {
         "surface": "Trava Marku bylac bylam piaštéb-na-nik.",
-        "gloss": "bread.\\Dir{} Marek.\\Trs{} child.\\Ind{}.\\Pl{} child.\\Ind{} eat-\\Appl{}-\\Caus{}-\\textsc{trs}-\\Pf{}"
+        "gloss": "bread.\\Dir{} Marek.\\Trs{} child.\\Ind{}.\\Pl{} child.\\Ind{} eat-\\Appl{}-\\Caus{}-\\textsc{trs}-\\Pf{}",
+        "translation": "\\trsl{Marek made the children eat bread for the child's benefit.}"
       }
     ]
   },
@@ -69,7 +79,8 @@
     "examples": [
       {
         "surface": "Byl Marku piašč-na-nik.",
-        "gloss": "child.\\Dir{} Marek.\\Trs{} eat-\\Antip{}-\\Caus{}-\\textsc{trs}-\\Pf{}"
+        "gloss": "child.\\Dir{} Marek.\\Trs{} eat-\\Antip{}-\\Caus{}-\\textsc{trs}-\\Pf{}",
+        "translation": "\\trsl{Marek made the child eat.}"
       }
     ]
   },
@@ -78,15 +89,138 @@
     "examples": [
       {
         "surface": "Byl ščenek.",
-        "gloss": "child.\\Dir{} arrive-\\Pf{}"
+        "gloss": "child.\\Dir{} arrive-\\Pf{}",
+        "translation": "\\trsl{The child arrived.}"
       },
       {
         "surface": "Marek bylam ščennajime.",
-        "gloss": "Marek.\\Dir{} child.\\Ind{} arrive-\\Caus{}-\\Prog{}"
+        "gloss": "Marek.\\Dir{} child.\\Ind{} arrive-\\Caus{}-\\Prog{}",
+        "translation": "\\trsl{Marek is causing the child to arrive.}"
       },
       {
         "surface": "Byl Marku ščen-na-nik.",
-        "gloss": "child.\\Dir{} Marek.\\Trs{} arrive-\\Caus{}-\\textsc{trs}-\\Pf{}"
+        "gloss": "child.\\Dir{} Marek.\\Trs{} arrive-\\Caus{}-\\textsc{trs}-\\Pf{}",
+        "translation": "\\trsl{Marek caused the child to arrive.}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-directive-simple",
+    "examples": [
+      {
+        "surface": "Trava piaštím.",
+        "gloss": "bread.\\Dir{} eat-\\Imp{}",
+        "translation": "\\trsl{Eat the bread.} \\lingcontext{null subject; theme in \\Dir{}}"
+      },
+      {
+        "surface": "Jí trava piaštím.",
+        "gloss": "2\\textsc{sg}.\\Trs{} bread.\\Dir{} eat-\\Imp{}",
+        "translation": "\\trsl{You eat the bread.} \\lingcontext{overt subject in \\Trs{}; theme in \\Dir{}}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-directive-appl",
+    "examples": [
+      {
+        "surface": "Trava bylam piaštébím.",
+        "gloss": "bread.\\Dir{} child.\\Ind{} eat-\\Appl{}-\\Imp{}",
+        "translation": "\\trsl{Eat the bread for the child's benefit.} \\lingcontext{applicative; beneficiary in \\Ind{}}"
+      },
+      {
+        "surface": "Jí trava bylam piaštébím.",
+        "gloss": "2\\textsc{sg}.\\Trs{} bread.\\Dir{} child.\\Ind{} eat-\\Appl{}-\\Imp{}",
+        "translation": "\\trsl{You eat the bread for the child's benefit.} \\lingcontext{overt subject in \\Trs{}}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-directive-caus",
+    "examples": [
+      {
+        "surface": "Trava bylam piaštnajím.",
+        "gloss": "bread.\\Dir{} child.\\Ind{} eat-\\Caus{}-\\Imp{}",
+        "translation": "\\trsl{Make the child eat the bread.} \\lingcontext{causative; causee in \\Ind{}}"
+      },
+      {
+        "surface": "Jí trava bylam piaštnajím.",
+        "gloss": "2\\textsc{sg}.\\Trs{} bread.\\Dir{} child.\\Ind{} eat-\\Caus{}-\\Imp{}",
+        "translation": "\\trsl{You make the child eat the bread.} \\lingcontext{overt subject in \\Trs{}}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-directive-caus-intr",
+    "examples": [
+      {
+        "surface": "Byl zmacnajím.",
+        "gloss": "child.\\Dir{} run-\\Caus{}-\\Imp{}",
+        "translation": "\\trsl{Make the child run.} \\lingcontext{IPFV directive}"
+      },
+      {
+        "surface": "Byl zmacnajovím.",
+        "gloss": "child.\\Dir{} run-\\Caus{}-\\textsc{pfv.dom}-\\Imp{}",
+        "translation": "\\trsl{Make the child run.} \\lingcontext{bounded PFV directive}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-stative-caus",
+    "examples": [
+      {
+        "surface": "Marek problemam svornanime.",
+        "gloss": "Marek.\\Dir{} problem.\\Ind{} be.big-\\Caus{}-\\Prog{}",
+        "translation": "\\trsl{Marek is making the problem bigger.}"
+      },
+      {
+        "surface": "Problem Marku svornanik.",
+        "gloss": "problem.\\Dir{} Marek.\\Trs{} be.big-\\Caus{}.\\textsc{trs}-\\Pf{}",
+        "translation": "\\trsl{Marek made the problem bigger.}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-appl-goal",
+    "examples": [
+      {
+        "surface": "Marek hraďe de stojách.",
+        "gloss": "Marek.\\Dir{} town.\\Ind{} to go-\\Ctpl{}",
+        "translation": "\\trsl{Marek intends to go to the town.}"
+      },
+      {
+        "surface": "Hrad Marcí stojébách.",
+        "gloss": "town.\\Dir{} Marek.\\Ind{} go-\\Appl{}-\\Ctpl{}",
+        "translation": "\\trsl{Marek intends to go to the town.}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-appl-instrument",
+    "examples": [
+      {
+        "surface": "Marek travě ráne se piaštime.",
+        "gloss": "Marek.\\Dir{} bread.\\Ind{} hand.\\Ind{} \\textsc{inst} eat-\\Prog{}",
+        "translation": "\\trsl{Marek is eating bread by hand.}"
+      },
+      {
+        "surface": "Rán Marcí travě piaštébime.",
+        "gloss": "hand.\\Dir{} Marek.\\Ind{} bread.\\Ind{} eat-\\Appl{}-\\Prog{}",
+        "translation": "\\trsl{Marek is eating bread by hand.}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-caus-appl-intransitive",
+    "examples": [
+      {
+        "surface": "Marek bylac bylam zmacébnajime.",
+        "gloss": "Marek.\\Dir{} child.\\Ind{}.\\Pl{} child.\\Ind{} run-\\Appl{}-\\Caus{}-\\Prog{}",
+        "translation": "\\trsl{Marek is making the children run for the child's benefit.}"
+      },
+      {
+        "surface": "Byl Marku bylac zmacéb-na-nik.",
+        "gloss": "child.\\Dir{} Marek.\\Trs{} child.\\Ind{}.\\Pl{} run-\\Appl{}-\\Caus{}-\\textsc{trs}-\\Pf{}",
+        "translation": "\\trsl{Marek made the children run for the child's benefit.}"
       }
     ]
   }
