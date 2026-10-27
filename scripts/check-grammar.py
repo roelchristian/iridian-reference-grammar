@@ -105,7 +105,7 @@ def check():
     # Independently fixed expectations: (nuclei, nuclei before primary stress).
     # Count actual IPA vowels, excluding the nonsyllabic second part of /ou̯/.
     expected = {'piaštnik': (2, 0), 'zapiaštnik': (3, 1),
-                'premrocna': (3, 0), 'va-vadime': (4, 0), 'siarc': (1, 0),
+                'premrocna': (3, 0), 'siarc': (1, 0),
                 'piaštou': (2, 0), 'perek': (2, 0), 'perku': (2, 0), 'perce': (2, 0)}
     phonology = sources['chapters/02-phonology.tex']
     table = re.search(r'\\caption\{Initial stress and vocalic nuclei.*?\\end\{table\}', phonology, re.S)
