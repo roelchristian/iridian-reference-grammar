@@ -79,8 +79,11 @@ lexicon-tsv:
 	mkdir -p build
 	$(PYTHON) util/collect_lexicon.py --format tsv --output build/lexicon.tsv
 
-.PHONY: check
-check: all cover
+.PHONY: check check-source
+check-source:
+	$(PYTHON) scripts/check-grammar.py
+	$(PYTHON) -m unittest discover -s util/tests -v
+
+check: all cover check-source
 	$(PYTHON) scripts/check-log.py $(FULL_DIR)/$(MAIN).log
 	$(PYTHON) scripts/check-log.py build/cover/cover.log
-	$(PYTHON) -m unittest discover -s util/tests -v
