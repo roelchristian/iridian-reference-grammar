@@ -1,0 +1,137 @@
+{
+  "description": "Independent source regressions for established examples, not a generative phonological analysis. Inputs, outputs and pronunciations are checked together; no new lexical contrasts are asserted.",
+  "derivations": [
+    {
+      "label": "sec:front-softening",
+      "forms": [
+        "rat",
+        "-e",
+        "raťe"
+      ],
+      "process": "PAL coronal stop"
+    },
+    {
+      "label": "sec:front-softening",
+      "forms": [
+        "rad",
+        "-í",
+        "raďí"
+      ],
+      "process": "PAL voiced coronal stop"
+    },
+    {
+      "label": "sec:front-softening",
+      "forms": [
+        "ran",
+        "-ě",
+        "raňe"
+      ],
+      "process": "PAL nasal and explicit soft-letter spelling"
+    },
+    {
+      "label": "sec:front-softening",
+      "forms": [
+        "ral",
+        "-e",
+        "raľe"
+      ],
+      "process": "PAL lateral"
+    },
+    {
+      "label": "sec:morphophon-interactions",
+      "forms": [
+        "ruk",
+        "-ě",
+        "ruce"
+      ],
+      "process": "front-grade velar; no second PAL application"
+    },
+    {
+      "label": "sec:morphophon-interactions",
+      "forms": [
+        "zděk-",
+        "-ěv",
+        "zdičev"
+      ],
+      "process": "yod velar with independent short raised grade"
+    },
+    {
+      "label": "sec:morphophon-interactions",
+      "forms": [
+        "zděk-",
+        "-ir",
+        "zděcir"
+      ],
+      "process": "restricted velar-front without root raising"
+    },
+    {
+      "label": "sec:morphophon-interactions",
+      "forms": [
+        "piašček",
+        "-e",
+        "piaščice"
+      ],
+      "process": "outer linker targets aspect exponent; bound -ik-"
+    }
+  ],
+  "pronunciations": [
+    {
+      "form": "zďec",
+      "ipa": "zɟɛts",
+      "process": "lexical voiced palatal stop without suffixal PAL"
+    },
+    {
+      "form": "sebec",
+      "ipa": "sɛbɛts",
+      "process": "alveolar before ɛ"
+    },
+    {
+      "form": "šebec",
+      "ipa": "ʃɛbɛts",
+      "process": "postalveolar before ɛ"
+    },
+    {
+      "form": "sěbec",
+      "ipa": "ɕɛbɛts",
+      "process": "alveolopalatal before ɛ"
+    },
+    {
+      "form": "siarc",
+      "ipa": "ˈɕarts",
+      "process": "lexical alveolopalatal before back vowel; nonvocalic i"
+    },
+    {
+      "form": "kěda",
+      "ipa": "ˈcɛ.da",
+      "process": "lexical palatal stop in conventional k-spelling"
+    },
+    {
+      "form": "ťeda",
+      "ipa": "ˈcɛ.da",
+      "process": "homophony with lexical k-spelling"
+    },
+    {
+      "form": "piaštnik",
+      "ipa": "ˈpʲaʃt.nɪk",
+      "process": "lexical labial softness before back vowel"
+    }
+  ],
+  "classes": [
+    {
+      "grade": "Plain",
+      "suffix": "-ic"
+    },
+    {
+      "grade": "Palatal",
+      "suffix": "-e"
+    },
+    {
+      "grade": "Yod",
+      "suffix": "-ěv"
+    },
+    {
+      "grade": "Restricted velar-front",
+      "suffix": "-ir"
+    }
+  ]
+}

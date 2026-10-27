@@ -3,11 +3,13 @@
 
 This is a source check, not a TeX compiler or an Iridian phonological analyser.
 It checks the published stress table against independent nucleus/stress
-expectations and rejects superseded example spellings in active sources.
+expectations, checks selected palatalisation derivations and pronunciation
+pairs against fixed fixtures, and rejects superseded example spellings.
 Archives and working notes are deliberately outside its scope.
 """
 from collections import Counter
 from pathlib import Path
+import json
 import re
 import sys
 
@@ -47,6 +49,60 @@ def gloss_tokens(text):
     if word:
         tokens.append(''.join(word))
     return tokens
+
+
+def check_palatalisation(phonology, fixtures):
+    """Check independently specified examples together, without deriving forms.
+
+    A form occurring elsewhere cannot satisfy a derivation fixture, and an IPA
+    string paired with a different spelling cannot satisfy a pronunciation.
+    These fixtures preserve the stated synchronic correspondences; they do not
+    establish lexical attestation or prove the completeness of the analysis.
+    """
+    failures = []
+    for fixture in fixtures['derivations']:
+        marker = r'\label{' + fixture['label'] + '}'
+        start = phonology.find(marker)
+        section = '' if start < 0 else re.split(
+            r'\\(?:subsection|section|chapter)\b', phonology[start:], maxsplit=1)[0]
+        rows = re.findall(r'\\a\s+(.*?)(?=\\a\s|\\xe\b)', section, re.S)
+        found = any(re.findall(r'\\ird\{([^{}]+)\}', row) == fixture['forms']
+                    and r'\rightarrow' in row for row in rows)
+        if not found:
+            failures.append('palatalisation derivation: ' + fixture['process']
+                            + ': expected ' + ' + '.join(fixture['forms'][:-1])
+                            + ' → ' + fixture['forms'][-1]
+                            + ' in ' + fixture['label'])
+    marker = r'\label{tab:morph-trigger}'
+    start = phonology.find(marker)
+    table = '' if start < 0 else phonology[start:].split(r'\end{table}', 1)[0]
+    for fixture in fixtures['classes']:
+        rows = [row.strip() for row in table.split(r'\\')]
+        if not any(re.search(r'(?:^|\n)' + re.escape(fixture['grade']) + r'\s', row)
+                   and r'\ird{' + fixture['suffix'] + '}' in row.split('&')[1]
+                   for row in rows if '&' in row):
+            failures.append(f"palatalisation class: {fixture['suffix']}: "
+                            f"expected {fixture['grade']}")
+    pairs = {(record['form'], record['pronunciation'])
+             for record in extract(phonology, 'chapters/02-phonology.tex')
+             if record['macro'] == 'phon'}
+    pairs.update(re.findall(
+        r'\\ird\{([^{}]+)\}\s*(?:&\s*)?\\ipagloss\{\[([^{}]+)\]\}', phonology))
+    pairs.update(re.findall(
+        r'\\ird\{([^{}]+)\}\s*(?:&\s*)?\[([^\[\]{}\n]+)\]', phonology))
+    broad_marks = str.maketrans('', '', 'ˈˌ.')
+    for fixture in fixtures['pronunciations']:
+        if (fixture['form'], fixture['ipa']) not in pairs:
+            failures.append(f"palatalisation pronunciation: {fixture['form']}: "
+                            f"expected [{fixture['ipa']}] ({fixture['process']})")
+        # Repeated examples must agree even when one correct occurrence survives.
+        # Stress and syllable dots may be omitted in broad transcriptions.
+        for form, ipa in sorted(pairs):
+            if (form == fixture['form']
+                    and ipa.translate(broad_marks) != fixture['ipa'].translate(broad_marks)):
+                failures.append(f"palatalisation pronunciation: {form}: "
+                                f"conflicting [{ipa}], expected [{fixture['ipa']}]")
+    return failures
 
 
 def check():
@@ -108,6 +164,9 @@ def check():
                 'premrocna': (3, 0), 'siarc': (1, 0),
                 'piaštou': (2, 0), 'perek': (2, 0), 'perku': (2, 0), 'perce': (2, 0)}
     phonology = sources['chapters/02-phonology.tex']
+    palatalisation_fixtures = json.loads(
+        (ROOT / 'scripts/palatalisation-fixtures.json').read_text(encoding='utf-8'))
+    failures.extend(check_palatalisation(phonology, palatalisation_fixtures))
     table = re.search(r'\\caption\{Initial stress and vocalic nuclei.*?\\end\{table\}', phonology, re.S)
     rows = {} if table is None else {
         form: (ipa, int(count)) for form, ipa, count in re.findall(
@@ -158,6 +217,7 @@ def check():
     print(f'Grammar source checks passed: {len(sources)} files, {len(labels)} labels, '
           f'{len(references)} references, {len(citations)} citations; '
           f'{aligned} interlinear alignments, {len(expected)} stress fixtures, '
+          f"{sum(len(palatalisation_fixtures[key]) for key in ('derivations', 'pronunciations', 'classes'))} palatalisation fixtures, "
           f'{pronunciations} explicit pronunciation/quantity examples '
           'and obsolete-spelling checks.')
     return 0
