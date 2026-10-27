@@ -5,9 +5,8 @@
 This chapter describes the phonology of standard Iridian as spoken in Roubže and the
 surrounding region. The language shows a distinctly West Slavic profile: an
 opposition between hard and soft consonant stems, productive coronal softening,
-velar fronting, final devoicing, cluster voicing assimilation, and a dense system
-of morphophonemic stem alternations in which the behaviour of weak \ird{e} is
-central.
+velar fronting, final devoicing, cluster voicing assimilation, and a system of
+full and bound stems distinguished by vowel presence, height, or quantity.
 
 Four distinct phonological and morphophonological domains must be kept separate
 from the outset, and the rest of this chapter is organised around that separation.
@@ -583,8 +582,9 @@ therefore contributes no syllable of its own, and its presence cannot license
 a consonant sequence that would otherwise violate the cluster restrictions
 in Section~\ref{sec:sonority}.
 
-Weak-\ird{e} deletion applies wherever the remaining consonants can be syllabified
-around the surviving vowels. Thus \ird{obel} yields \ird{oblu}, with the
+In the fleeting-vowel class, short unstressed \ird{e} deletes where the
+remaining consonants can be syllabified around the surviving vowels without
+unlicensed consonant loss. Thus \ird{obel} yields \ird{oblu}, with the
 liquid in the onset of the second syllable, while \ird{perek} yields
 \ird{perku}, with \ird{r} closing the first syllable and \ird{k} beginning
 the second. The first \ird{e} of \ird{perek} is retained; deletion of both
@@ -681,169 +681,186 @@ post-lexical phonetic rule and not a morphophonemic alternation
 creates no orthographic contrast, no phonemic opposition, and no morphological
 conditioning, and therefore cannot be confused with the three categories above.
 
-In the modern language the morphophonemic processes apply in the following ordered
-sequence:
+The nominal pair \ird{perek}/\ird{perk-} differs in the presence of an
+unstressed vowel, whereas \ird{lobek}/\ird{lubk-} additionally differs in
+root-vowel height. The irrealis \ird{zdičev}, from \ird{zděk-}, has a raised
+root vowel without vowel loss. These distributions distinguish three independent
+properties: membership in the fleeting-vowel class, selection of a raised grade,
+and selection of a quantity grade. Each belongs to the lexeme and its
+morphological construction; none adds a vowel phoneme to the inventory.
+
+A practical implementation first selects the construction and the full or bound
+stem, then attaches its exponent and applies the consonant mutation assigned to
+that exponent:
 
 \begin{center}
-\textsc{suffix class selection} $\rightarrow$ \textsc{weak-e deletion or retention}
-$\rightarrow$ \textsc{grade formation} $\rightarrow$ \textsc{soft-stem selection}
-$\rightarrow$ \textsc{velar fronting / affrication} $\rightarrow$
-\textsc{cluster repair / epenthesis} $\rightarrow$ \textsc{voicing cleanup}
-$\rightarrow$ \textsc{orthographic normalisation} $\rightarrow$
-\textsc{analogical levelling} $\rightarrow$ \textsc{positional sibilant palatalisation}
+\textsc{construction and stem class} $\rightarrow$ \textsc{stem grade}
+$\rightarrow$ \textsc{suffixation and consonant mutation} $\rightarrow$
+\textsc{syllabification and licensed repair} $\rightarrow$ \textsc{voicing}
+$\rightarrow$ \textsc{phonetic and orthographic realisation}
 \end{center}
 
-Sibilant replacement belongs to a separate derivational block and does not feed the
-above chain in either direction, except that the output of replacement may
-subsequently undergo voicing cleanup and cluster repair. The ordering matters. A
-noun such as \ird{lobek} first selects the transitive ending of its declension
-class, then deletes weak \ird{e}, then raises \ird{o} to \ird{u}, and only after
-that reaches its final cluster shape. A noun of the type \ird{perek} deletes
-only the final weak \ird{e}, retaining the first vowel in the reduced stem
-\ird{perk-}, and then undergoes velar affrication before a front-vocalic indirect
-ending, yielding \ird{perce}. A verb such as \ird{zděk-} behaves the same way before a palatalizing suffix, except
-that the palatalised grade rather than a nominal oblique stem is the output.
+Thus \ird{lobek} selects \ird{lubk-} before transitive \ird{-u}, while
+\ird{perek} selects \ird{perk-}; a front-vocalic ending subsequently yields
+\ird{lubcí} or \ird{perce}. The stem \ird{zděk-} selects its raised modal
+grade before \ird{-ěv}, whose velar mutation gives \ird{zdičev}. Outer
+anchoring morphology has its own stem-selection conditions
+(§\,\ref{sec:nm-def-allomorph}).
+
+Sibilant replacement belongs to the antipassive construction and may itself
+select a lexical quantity grade. Its output can undergo subsequent suffixation
+and the ordinary phonology. Analogical levelling supplies the stored stem
+relations of modern lexemes; it is not a final operation applied after spelling.
+The relative order of two independent changes is fixed only where their
+interaction makes different predictions.
 
 \subsection{Suffix classes and their mutation triggers}\label{sec:suffix-classes}
 
-The most useful synchronic generalisation is that suffixes belong to morphophonemic
-trigger classes. A suffix does not merely add segmental material; it also selects a
-particular type of stem. Table~\ref{tab:morph-trigger} reorganises suffix classes
-by the type of stem mutation they impose. The first three classes are the primary
-productive ones. The sibilant-replacing class is kept separate because it belongs
-to a different derivational block.
+Suffixes select consonantal outputs as well as stems, but the two selections
+are independent. A nominal front-vocalic suffix can combine with a stable,
+reduced, or raised bound stem, according to the noun's class. The same surface
+vowel therefore need not impose the same stem vocalism on every lexeme.
+Table~\ref{tab:morph-trigger} distinguishes stem selection from consonant
+mutation; its rows describe properties that may occur together.
 
 \begin{table}[ht]
-	\footnotesize
-	\caption{Morphophonemic trigger classes organised by mutation type.}\label{tab:morph-trigger}
-	\begin{tabularx}{\textwidth}{L L L}
-		\toprule
-		{\sc trigger class} & {\sc typical suffixes} & {\sc mutation imposed} \\
-		\midrule
-		Plain & direct zero, continuous \ird{-a}, retrospective \ird{-ac} & no stem mutation \\
-		Zero-grade / grade-forming & noun \ird{-u}, \ird{-a}, \ird{-am} obliques; vowel-initial nominalizers; irrealis \ird{-ěv}; selected nominalizers & weak-\ird{e} deletion; optionally feeds vowel raising \\
-		Ordinary softening & noun \ird{-í}, \ird{-e}, \ird{-ě}, \ird{-ení}; converb \ird{-ěc}; linker \ird{-e} & soft-stem selection (t $\rightarrow$ ť, d $\rightarrow$ ď, n $\rightarrow$ ň, l $\rightarrow$ ľ) and k $\rightarrow$ c \\
-		Strong palatalizing & verbal \ird{-ěv}; a restricted nominal class & k $\rightarrow$ č (in addition to coronal softening) \\
-		Sibilant-replacing & antipassive \ird{-aš-} & consonant replacement per Table~\ref{tab:sibilant-mutation}; not front-vocalic softening \\
-		Leveled & high-frequency obliques, conservative lexical items & preserves an analogical output \\
-		\bottomrule
-	\end{tabularx}
+\footnotesize
+\caption{Stem-selection and mutation properties of suffixes.}\label{tab:morph-trigger}
+\begin{tabularx}{\textwidth}{L L L}
+\toprule
+{\sc property} & {\sc constructions} & {\sc effect} \\
+\midrule
+Full stem & bare direct; ordinary continuous and retrospective & preserves the full grade unless another class is specified \\
+Bound nominal stem & overt case-number endings; direct anchoring in alternating nouns & selects reduced or raised stem by lexical class \\
+Ordinary softening & front-coded nominal \ird{-í}, \ird{-e}, \ird{-ě}, \ird{-ení}; converb \ird{-ěc}; linker \ird{-e} & t/d/n/l $\rightarrow$ ť/ď/ň/ľ; k $\rightarrow$ c \\
+Strong palatalising & irrealis \ird{-ěv} & coronal softening and k $\rightarrow$ č; raised grade in licensed verbal stems \\
+Restricted velar mutation & negative irrealis \ird{-ir} & k $\rightarrow$ c; no root raising or general coronal mutation \\
+Perfective bound grade & linker \ird{-e}; participant nominaliser \ird{-ou} & selects \ird{-ik-} corresponding to free perfective \ird{-ek} \\
+Sibilant replacement & antipassive \ird{-aš-} & class-conditioned consonant replacement; lexical quantity grade where specified \\
+\bottomrule
+\end{tabularx}
 \end{table}
 
-The two front-vocalic rows---ordinary softening and strong palatalizing---together
-constitute the broad front-vocalic domain of the grammar. They share soft-stem
-selection for coronals. They differ in what they do to a velar: ordinary softening
-yields \ird{c} (/ts/), while strong palatalizing yields \ird{č} (/tʃ/). This
-difference is morphologised at the level of suffix membership, not derived from
-the phonological content of the vowel alone.
+The ordinary and strong front-vocalic classes share coronal softening but yield
+\ird{c} and \ird{č}, respectively, from \ird{k}. Their membership is
+morphologically specified. Inherited stative \ird{-n-} selects perfective
+\ird{-ik}, independently of the vowel of the root. Thematic nominal endings
+and non-palatalising verbal suffixes have their own class specifications; their
+surface front vowels do not override those specifications.
 
-The negative irrealis \ird{-ir} occupies an intermediate position: it belongs to
-the ordinary softening class for velar stems (k $\rightarrow$ c), but it lacks
-the vowel-raising and the strong-palatalizing properties of \ird{-ěv}. Any suffix
-not listed here that appears to trigger an alternation should be cross-checked
-against the relevant morphology chapter before a trigger class is assigned.
+\subsection{Thematic nominal endings}\label{sec:thematic-vowels}
 
-\subsection{Vowel-replacing nominal endings}
-
-Not all nominal alternations are driven by deletion alone. A small but productive
-set of noun classes selects endings that replace a final stem vowel rather than
-simply attaching to it. This is most visible in inherited \ird{-o} stems, where
-the transitive replaces the final vowel with \ird{-a} and the indirect adds a
-nasal element that coalesces with the preceding back vowel:
+The forms \ird{bro}, \ird{bra}, and \ird{brum} contain a constant consonantal
+root \ird{br-} and the class-specific endings \ird{-o}, \ird{-a}, and
+\ird{-um}. Their terminal vowels realise the case paradigm rather than
+root-vowel ablaut:
 
 \pex
-\a \ird{bro} + \ird{-a} $\rightarrow$ \ird{bra}
-\a \ird{bro} + \ird{-m} $\rightarrow$ \ird{brum}
+\a \ird{br-} + \ird{-o} $\rightarrow$ \ird{bro}
+\a \ird{br-} + \ird{-a} $\rightarrow$ \ird{bra}
+\a \ird{br-} + \ird{-um} $\rightarrow$ \ird{brum}
 \xe
 
-Synchronically the useful generalisation is \ird{o + m > um}. The rule belongs
-to the noun system rather than to the verbal domain and should be treated as a
-class-specific back-vocalic contraction.
+In the bare-root subtype represented by \ird{rán}, the singular endings are
+zero, \ird{-ou}, and \ird{-e}. The long root vowel remains constant in
+\ird{rán}, \ird{ránou}, and \ird{ráne}. These endings do not imply a
+general phonological change \ird{o + m > um}; nor does suffixal vowel
+replacement require a zero grade of the root.
 
-\subsection{Weak \ird{e} and zero-grade formation}\label{sec:vowel-zero}
+\subsection{Fleeting \ird{e} and reduced stems}\label{sec:vowel-zero}
 
-The central morphophonemic process of modern Iridian is the behaviour of \term{weak}
-\ird{e}. Synchronically this vowel is not confined to a few fossilised stems. It
-remains highly productive in nouns and still active, though less pervasive, in
-verbs and derived forms. Weak \ird{e} is deleted before many vowel-initial and
-front-vocalic suffixes whenever the resulting cluster is phonotactically acceptable.
-
-The core environment is a final syllable of the shape -C(\sx{j})eC, especially
-before case endings and other suffixes that begin with a vowel. In structural
-terms the process is comparable to the West Slavic type illustrated by
-\foreign{pes} $\rightarrow$ \foreign{psa}: a weak mid vowel in the final stem
-syllable is lost when a vowel-initial oblique ending follows and the resulting
-consonant sequence is acceptable.
+Alternating nouns such as \ird{Janek}, \ird{perek}, and \ird{obel} have
+bound stems \ird{Jank-}, \ird{perk-}, and \ird{obl-}. In this class one
+short unstressed \ird{e} in the final stem syllable alternates with zero.
+The stressed vowel and the consonant sequence are preserved:
 
 \pex
-\a \ird{pes} + \ird{-a} $\rightarrow$ \ird{psa}
 \a \ird{Janek} + \ird{-u} $\rightarrow$ \ird{Janku}
 \a \ird{perek} + \ird{-u} $\rightarrow$ \ird{perku}
 \a \ird{obel} + \ird{-u} $\rightarrow$ \ird{oblu}
 \a \ird{Merek} + \ird{-í} $\rightarrow$ \ird{Mercí}
 \xe
 
-Deletion applies most readily when the resulting consonants can be syllabified
-around the remaining vowels: obstruent + sonorant sequences may form onsets,
-sibilant + obstruent sequences are licensed in appropriate clusters, and
-sonorant + obstruent sequences may span a coda--onset boundary. Deletion is
-blocked in three circumstances. First, some declension classes and individual
-stems are lexically marked as non-deleting. Second, deletion is blocked when
-it would create an illicit cluster or leave a syllable without a vowel nucleus;
-this restriction applies to liquid-bearing and all-obstruent clusters alike.
-Third, a small set of high-frequency forms preserves an analogically levelled
-vowel despite the general rule.
+The term \term{fleeting} or \term{weak e} names this alternation, not an
+additional phoneme or a reduced vowel obligatorily distinct in pronunciation.
+Stable stems retain ordinary \ird{e} in the same morphological environment.
+Membership in the alternating class must therefore be acquired with the lexeme;
+within that class the relation between full and bound stems is regular. The
+analysis locates lexical exceptionality on the morpheme rather than on an
+otherwise inaudible vowel distinction, following the representational option
+developed for Russian by \cite{gouskova2012}. The distribution stipulated here
+is Iridian-specific.
 
-The productivity of weak-\ird{e} deletion is greatest in noun oblique formation.
-A particularly important subtype is the \term{CeLeC} pattern, where deletion
-of the second \ird{e} yields a stable \ird{CeLC-} oblique stem while the first
-vowel remains as a nucleus: \ird{perek} $\rightarrow$ \ird{perku}
-(transitive), \ird{perce} (front-vocalic indirect), \ird{perkam} (\ird{-am} class).
-In verbal morphology the process is most visible before the irrealis, the
-simultaneous converb, the linker \ird{-e}, and selected nominalizers:
+Bound-stem morphology selects the reduced stem before the licensed case-number
+endings and, in alternating nouns, before direct anchoring. Selected verbal and
+nominalising constructions also admit this relation. The purposive form
+\ird{raznit}, for example, selects the reduced stem \ird{razn-} of
+\ird{razeň-}; the hard nasal belongs to that lexical bound stem. Vowel loss
+alone does not predict the loss of softness.
+
+Deletion is blocked if the remaining consonants cannot be syllabified around
+vocalic nuclei without unlicensed consonant loss. Obstruent--sonorant onsets
+and sonorant--obstruent coda--onset sequences provide different syllabifications:
+\ird{oblu} has \ird{ob.lu}, while \ird{perku} has \ird{per.ku}. The first
+vowel of \ird{perek} remains stressed and cannot delete. Liquids are always
+non-syllabic (§\,\ref{sec:vocalic-nuclei}). Ordinary voicing assimilation can
+apply to the retained cluster, but consonant deletion is not a productive means
+of enabling vowel loss.
+
+New lexical roots and loans have stable vocalism unless assigned to an
+alternating class. Native nominal formations with alternating \ird{-ek} can
+productively assign the fleeting-vowel pattern to the derived noun; this nominal
+suffix is distinct from verbal perfective \ird{-ek}. In longer derivatives,
+stem selection applies in the domain of the relevant construction, so an outer
+suffix does not automatically delete a vowel inside an already formed stem.
+
+\subsection{Raised grades and vowel quantity}\label{sec:vowel-raising}
+
+The noun \ird{lobek} selects \ird{lubk-} throughout its bound paradigm,
+including \ird{lubku}, \ird{lubcí}, and \ird{lubce}. By contrast,
+\ird{perek} retains the initial mid vowel in \ird{perk-}, despite sharing
+\ird{-u} with \ird{lobek}. A raised bound grade is consequently a property of
+a lexical subclass, independent of the surface vowel of the ending.
+
+The height correspondences preserve phonemic quantity:
+
+\begin{center}
+\begin{tabular}{ll}
+short: & \ird{e/ě} $\leftrightarrow$ \ird{i}, \quad \ird{o} $\leftrightarrow$ \ird{u} \\
+long: & \ird{é} $\leftrightarrow$ \ird{í}, \quad \ird{ó} $\leftrightarrow$ \ird{ú}
+\end{tabular}
+\end{center}
+
+The short high vowels have their ordinary lax realisations /ɪ, ʊ/; the long
+vowels remain /iː, uː/. Since \ird{ě} and \ird{e} represent the same vowel
+phoneme, they do not define different height grades. Raising does not lengthen a
+short root vowel or supply a nucleus to a consonant cluster.
 
 \pex
-\a \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdíčev}
-\a \ird{perek} + \ird{-e} $\rightarrow$ \ird{perce}
-\a \ird{obel} + \ird{-ou} $\rightarrow$ \ird{oblou}
+\a \ird{lobek} + \ird{-u} $\rightarrow$ \ird{lubku} \lingcontext{reduced and back-raised bound stem}
+\a \ird{pěštel} + \ird{-í} $\rightarrow$ \ird{pištlí} \lingcontext{reduced stem; short root vowel raises to short i}
+\a \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdičev} \lingcontext{short raised modal grade; k $\rightarrow$ č; no vowel loss}
 \xe
 
-\subsection{Grade formation and vowel raising}\label{sec:vowel-raising}
+Verbal raising belongs to specified stem--construction combinations, especially
+the irrealis. It does not follow from front-vocalic suffixation as such:
+\ird{zděcir}, with negative irrealis \ird{-ir}, retains its mid root vowel.
+The linker-selected \ird{-ik-} grade of the perfective is suffixal allomorphy,
+not an instruction to raise every preceding root vowel
+(§\,\ref{sec:pf-dissim}).
 
-When weak-\ird{e} deletion creates a heavy cluster, the stem may enter a raised
-grade. This is a morphologised grade alternation, not a mere phonetic tendency. Two
-productive correspondences dominate the modern language:
-
-\begin{itemize}
-	\item front-vowel raising: \ird{e/ě/é} $\rightarrow$ \ird{i/í}
-	\item back-vowel raising: \ird{o} $\rightarrow$ \ird{u}
-\end{itemize}
-
-In the noun system the raised grade is lexically tied to particular declension
-classes. In the verb system it is much rarer but still productive before a narrow
-set of front-vocalic suffixes and in some nominalizing formations. Because several
-noun classes have undergone areal reshaping under prolonged Slavic contact, raising
-may coexist with newer analogical endings such as \ird{-ení} or \ird{-ovi}; the
-stem grade and the case ending must therefore be treated as partially independent
-layers.
-
-\pex
-\a \ird{lobek} + \ird{-u} $\rightarrow$ \ird{lubku} \lingcontext{back-vowel raising after weak-\ird{e} deletion}
-\a \ird{pěštel} + \ird{-í} $\rightarrow$ \ird{píštlí} \lingcontext{front-vowel raising in a noun oblique}
-\a \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdíčev} \lingcontext{front-vowel raising in the verbal domain}
-\xe
-
-Not every zero-grade form raises. Whether raising applies is determined first by
-declension class or stem class, and only secondarily by phonological environment.
-The important synchronic generalisation is not `delete weak \ird{e}, then
-optionally raise' but `some classes select a raised oblique stem once weak
-\ird{e} has been lost'.
+The inherited nominal raised grades are distinct from the productive assignment
+of fleeting-vowel membership in native formations. An unfamiliar noun with a
+mid vowel and ending \ird{-u} does not automatically join the raised class.
+Quantity grades, including \ird{stráz}/\ird{straz-}, are specified separately
+(§\,\ref{sec:comp-lengthening}).
 
 \subsection{Soft-stem selection}\label{sec:front-softening}
 
 Soft-stem selection is the productive process by which the coronal stops and lateral
 /t\,d\,l/ are replaced by their soft counterparts \ird{ť\,ď\,ľ}, and underlying
-/n/ surfaces as \ird{ň}, when a front-vocalic suffix is attached. Labial
+/n/ surfaces as \ird{ň}, when a suffix of the ordinary softening class is
+attached. Labial
 consonants /p\,b\,m\,v/ and /r/ show secondary palatal articulation in the same
 environments but are not replaced by distinct phonemes and are therefore not
 represented with special letters.
@@ -873,9 +890,8 @@ in Section~\ref{sec:palatal-sibilants}. Soft-stem selection applies only to the
 coronal stops and lateral; it does not interact with any of the three sibilant
 series.
 
-Soft-stem selection applies after zero-grade and grade formation. If a noun both
-deletes weak \ird{e} and takes a front-vocalic ending, the language first
-constructs the zero or raised stem and only then applies softening:
+A front-vocalic ending combines with the bound stem selected by the noun class.
+Consonant mutation applies to the final consonant of that stem:
 
 \pex
 \a \ird{lobek} + \ird{-í} $\rightarrow$ \ird{lubcí} \lingcontext{zero-grade; back-vowel raising; then velar fronting}
@@ -923,7 +939,7 @@ phonologically derivable from the vowel alone:
 	\item \term{Strong palatalizing suffixes}: these yield k $\rightarrow$ č. This
 	is a smaller, morphologically specified class. In the current grammar the principal
 	member is the verbal suffix \ird{-ěv} (irrealis / modal stem). These suffixes
-	also trigger front-vowel raising and the full range of coronal softening.
+	also select the raised grade in licensed verbal stems and trigger coronal softening.
 \end{enumerate}
 
 \begin{table}[ht]
@@ -936,18 +952,18 @@ phonologically derivable from the vowel alone:
 		Ordinary softening & k $\rightarrow$ c & \ird{-í}, \ird{-e}, \ird{-ě}, \ird{-ení}, \ird{-ir}, \ird{-ěc} & \ird{Marek} + \ird{-í} $\rightarrow$ \ird{Marcí} \\
 		& & & \ird{ruk} + \ird{-ě} $\rightarrow$ \ird{ruce} \\
 		& & & \ird{zděk-} + \ird{-ir} $\rightarrow$ \ird{zděcir} \\
-		Strong palatalizing & k $\rightarrow$ č & \ird{-ěv} & \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdíčev} \\
+		Strong palatalizing & k $\rightarrow$ č & \ird{-ěv} & \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdičev} \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
 The contrast between the two classes is most clearly seen by pairing examples with
 the same stem but different suffixes. The stem \ird{zděk-} yields \ird{zděcir}
-before ordinary \ird{-ir} but \ird{zdíčev} before strong \ird{-ěv}. This
+before ordinary \ird{-ir} but \ird{zdičev} before strong \ird{-ěv}. This
 difference is synchronically morphologised: both suffixes begin with a front vowel,
 yet they select categorically different velar outputs. The reader who encounters
-an unfamiliar suffix should assign it to one of these two classes based on the
-attested velar outcome, not on the surface phonology of the suffix vowel alone.
+an unfamiliar suffix should assign it to one of these two classes from its
+class specification and velar output rather than from the vowel alone.
 
 \subsubsection{Treatment of h}
 
@@ -1008,8 +1024,8 @@ for the productive coronal process. These terms must not be used interchangeably
 
 Derived consonant clusters are retained wherever they can be syllabified around
 vocalic nuclei. Weak-\ird{e} is retained when deletion would prevent this
-syllabification; clusters created by subsequent morphological operations undergo
-assimilation or simplification where licensed, with vowel epenthesis supplying
+syllabification without unlicensed consonant loss; clusters created by subsequent
+morphological operations undergo assimilation or class-licensed simplification, with vowel epenthesis supplying
 a nucleus when consonantal repair is insufficient. Liquids remain non-syllabic
 throughout these operations (Section~\ref{sec:vocalic-nuclei}).
 
@@ -1022,7 +1038,7 @@ throughout these operations (Section~\ref{sec:vocalic-nuclei}).
 		\midrule
 		1 & deletion or retention & delete weak \ird{e} only if the remaining vowels support a licit syllabification; otherwise retain it \\
 		2 & cluster retention & preserve derived consonant sequences that are already licit \\
-		3 & assimilation or simplification & spread voicing, soften leftward locally, or delete the weakest coronal in an illicit all-obstruent group \\
+		3 & assimilation or simplification & apply ordinary assimilation or a lexically licensed simplification; do not delete consonants to enable vowel loss \\
 		4 & vowel epenthesis & insert a short vowel if a later cluster cannot be repaired by consonantal means \\
 		\bottomrule
 	\end{tabularx}
@@ -1033,7 +1049,7 @@ regressive voicing assimilation, including across morpheme boundaries:
 
 \pex
 \a \ird{obez + -ba} $\rightarrow$ \ird{obezba}, phonetically [obezba]
-\a \ird{otk + -da} $\rightarrow$ [ogda]
+\a \ird{ot + -ba} $\rightarrow$ [odba]
 \a \ird{vrad + -ka} $\rightarrow$ [vratka]
 \xe
 
@@ -1044,15 +1060,16 @@ constructed derivations, only the second stem vowel deletes:
 
 \pex
 \a \ird{berel} + \ird{-a} $\rightarrow$ \ird{berla}
-\a \ird{perek} + \ird{-am} $\rightarrow$ \ird{perkam}
+\a \ird{perek} + \ird{-u} $\rightarrow$ \ird{perku}
 \xe
 
 Both outputs contain two syllables, each with a vowel nucleus. The sequences
 \ird{rl} and \ird{rk} span coda--onset boundaries, with \ird{r} in the coda
 of the first syllable.
 
-Fourth, when deletion yields an illicit all-obstruent cluster, the language repairs
-it by assimilation or simplification before resorting to epenthesis. Softness may
+Fourth, a cluster introduced by later consonantal morphology may require
+assimilation or class-licensed simplification before vowel epenthesis. Such
+repairs do not license an otherwise blocked fleeting-vowel deletion. Softness may
 also spread leftward one segment inside a cluster, especially when a coronal
 directly precedes a newly soft consonant. This spread is limited and not always
 reflected orthographically. If no consonantal repair succeeds, a short
@@ -1069,21 +1086,29 @@ between epenthetic vowels and non-nuclear phonetic vowel intrusion
 liquid, and neither entails a new vowel phoneme beyond the inventory in
 Table~\ref{tab:vowels}.
 
-\subsection{Compensatory lengthening}\label{sec:comp-lengthening}
+\subsection{Quantity grades}\label{sec:comp-lengthening}
 
-When a thematic consonant is replaced rather than merely augmented, the preceding
-vowel may lengthen if the replacement would otherwise reduce the moraic weight of
-the stem. In the modern language this rule remains useful chiefly in older
-Class~I and Class~III verbal stems under true sibilant replacement. It is therefore
-not a general repair strategy, but a restricted morphologised contrast between
-replacement stems and additive stems.
+The nominal pairs \ird{stráz}/\ird{straz-} and \ird{tráv}/\ird{trav-}
+illustrate a quantity relation independent of vowel height. In the alternating
+Class~III subtype, specified zero-ended case-number cells select a long grade,
+while overt case-number endings select a short grade: \ird{stráz},
+\ird{strazy}, \ird{strazám}; \ird{trava}, \ird{tráv}, \ird{travám}.
+Outer anchoring attaches to the selected case-number form and does not recompute
+its root quantity. Other roots, such as \ird{rán-}, retain a lexical long
+vowel throughout their case paradigms.
+
+Some antipassive replacement stems likewise select a long vowel, as in
+\ird{vad-}/\ird{váž-}, whereas additive stems such as \ird{dal-}/\ird{dalš-}
+retain their quantity. The long grade is lexically specified in the replacement
+class; replacing one consonant by another does not itself identify a lost mora.
 
 \pex
-\a \ird{vad-} + \ird{-aš-} $\rightarrow$ \ird{váž-} \lingcontext{replacement class; vowel lengthens}
-\a \ird{dal-} + \ird{-aš-} $\rightarrow$ \ird{dalš-} \lingcontext{additive class; no lengthening}
+\a \ird{vad-} + \ird{-aš-} $\rightarrow$ \ird{váž-} \lingcontext{lexical long replacement grade}
+\a \ird{dal-} + \ird{-aš-} $\rightarrow$ \ird{dalš-} \lingcontext{additive grade; quantity preserved}
 \xe
 
-Orthographically the lengthening is written with the regular acute accent.
+Height raising preserves length, whereas a quantity grade changes it. Neither
+relation is a general phonological response to a dense consonant cluster.
 
 \subsection{Orthography and the soft consonant letters}\label{sec:orthography}
 
@@ -1184,14 +1209,20 @@ is concentrated in high-frequency nouns, animate lexemes, clause-linking forms,
 and a few older verbal derivatives. The core noun case system nevertheless remains
 rule-driven once the declension class of the lexeme is known.
 
-\subsection{Perfective suffix dissimilation}\label{sec:pf-dissim}
+\subsection{Perfective suffix grades}\label{sec:pf-dissim}
 
-The bare intransitive perfective suffix \ird{-ek} raises to \ird{-ik} when the
-stem's final syllable has \ird{ě} or \ird{e} as its nucleus, avoiding a CěCe or
-CeCe sequence across a single intervening consonant. The raising does not apply
-when a voice morpheme intervenes between the stem and the perfective suffix. This
-alternation belongs to the same general tendency toward grade optimization in
-front-vocalic environments, but is more narrowly delimited than nounal raising.
+Ordinary free perfective \ird{-ek} corresponds to bound \ird{-ik-} before
+the linker \ird{-e} and participant nominaliser \ird{-ou}:
+\ird{piašček}, \ird{piaščice}, \ird{piaščikou}. The linker also triggers
+\ird{k $\rightarrow$ c}, while \ird{-ou} preserves the velar. These
+constructions select the suffixal grade without raising the lexical root.
+Thus ordinary \ird{kělek} and \ird{ščenek} retain \ird{-ek} even after a
+root containing \ird{e/ě}. No general dissimilation prohibits such sequences.
+
+Ergative transitive \ird{-nik} and perfective \ird{-ik} selected by the stative
+verbaliser \ird{-n-} are inherited construction-specific forms. Their vowel
+remains high when further morphology follows. These specifications do not make
+\ird{-ik} the default perfective of every stem with a front mid vowel.
 
 \subsection{Rule interactions}\label{sec:morphophon-interactions}
 
@@ -1209,14 +1240,14 @@ intended order and, where relevant, which of the three mutation domains applies.
 \lingcontext{front-vocalic ordinary suffix; velar fronting k $\rightarrow$ c; ě normalised to e after c}
 \a \ird{louž} + \ird{-ení} $\rightarrow$ \ird{loužení}
 \lingcontext{expanded front-vocalic indirect ending; stem-final ž is a postalveolar phoneme, not a softened sibilant}
-\a \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdíčev}
-\lingcontext{strong palatalizing suffix; weak-\ird{e} deletion; front-vowel raising; velar fronting k $\rightarrow$ č}
+\a \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdičev}
+\lingcontext{raised modal grade; quantity preserved; k $\rightarrow$ č; no vowel deletion}
 \a \ird{zděk-} + \ird{-ir} $\rightarrow$ \ird{zděcir}
 \lingcontext{ordinary softening suffix; velar fronting k $\rightarrow$ c; no raising or strong palatalisation}
 \a \ird{piašt-} + \ird{-aš-} + \ird{-ek} $\rightarrow$ \ird{piašček}
 \lingcontext{sibilant replacement (Class I), a separate derivational block; ordinary suffixation follows}
 \a \ird{piašček} + \ird{-e} $\rightarrow$ \ird{piaščice}
-\lingcontext{linker \ird{-e} is an ordinary softening suffix; stem-final č is a postalveolar; no mutation applies to č itself}
+\lingcontext{linker selects perfective -ik-; final k $\rightarrow$ c; the earlier č remains unchanged}
 \xe
 
 These derivations are cited throughout Chapters~\ref{ch:verbs}, \ref{ch:nouns},
@@ -1247,10 +1278,83 @@ by morphological trigger classes, not as reflexes of historical sound changes th
 happen to have survived. Where historical motivation conflicts with a synchronically
 cleaner statement of the rule, the synchronic account takes precedence.
 
+\subsection{Old Iridian stem vocalism}\label{sec:old-iridian-vocalism}
+
+The historical reconstruction adopted here derives the vocalic stem classes
+from ordinary Old Iridian short and long vowels, initial stress, and suffixal
+inflection. Starred forms in this subsection are reconstructed stages of
+Iridian, not independently attested forms. The reconstruction requires no front
+and back yers and no phonologically empty vowels in modern representations.
+
+\paragraph{Post-tonic syncope.}
+Short unstressed \ird{e} in the final stem syllable was lost before eligible
+vowel-initial endings where consonant preservation allowed a licit
+syllabification: \ird{*Janek-u} $>$ \ird{Janku} and \ird{*perek-a} $>$
+\ird{perka}. The corresponding unsuffixed forms retained the vowel in their
+closed final syllable. Long unstressed vowels resisted this syncope; their
+later shortening, together with later loans and morphological renewal, supplied
+stable vowels in environments now shared with alternating stems. Modern
+unstressed long vowels consequently include later sources. The earlier
+quantity distinction is not reconstructed by the synchronic grammar.
+
+\paragraph{Metaphony.}
+After syncope, a high vowel in the next vocalic position could raise a stressed
+mid vowel; consonants were transparent, while an intervening full vowel blocked
+the relation. Thus \ird{*lobek-u} $>$ \ird{*lobk-u} $>$ \ird{lubku}, and
+\ird{*lobek-í} $>$ \ird{*lobk-í} $>$ \ird{*lubk-í}, followed by velar
+mutation to \ird{lubcí}. Raising preserved quantity. High-suffix-triggered
+raising of stressed vowels has a typological parallel in the Veneto pattern
+analysed by \cite{walker2001}; that comparison supports the mechanism rather
+than the particular Iridian reconstruction.
+
+\paragraph{Stem levelling and ending replacement.}
+High-vowel obliques supplied the raised bound stem \ird{lubk-}, which was
+extended to other bound forms, including those with non-high endings and direct
+anchoring. Unraised reduced stems arose with older non-high endings:
+\ird{*perek-a} $>$ \ird{perka}, \ird{*obel-a} $>$ \ird{obla}, and
+\ird{*Merek-e} $>$ \ird{Merce}. Later extension of transitive \ird{-u} and,
+in the relevant indirect subclass, \ird{-í}, gave \ird{perku}, \ird{oblu},
+and \ird{Mercí} after metaphony had ceased. The modern suffix vowel therefore
+does not determine membership in the raised class. An inherited
+\ird{*Merek-í} during the metaphony period would predict a raised root and is
+not assumed in this reconstruction.
+
+\paragraph{Verbal constructions.}
+For the irrealis, a sequence of ordinary \ird{*-i} and a following formative
+\ird{*=ew} supplies a possible source: raising preceded glide formation and
+jotation, as in \ird{*zděk-i=ew} $>$ \ird{*zdik-i=ew} $>$
+\ird{*zdik-jew} $>$ \ird{zdičev}. The glide is absorbed in \ird{k+j > č},
+and the labial glide develops into modern \ird{v}. Later negative irrealis
+\ird{-ir} belongs to a different construction and does not reactivate the
+completed raising process.
+
+The perfective--linker construction was integrated after nominal syncope had
+ceased. Local suffixal assimilation gave \ird{*-ek-i > -ik-i}; the older
+word-level linker was subsequently replaced by \ird{e}, reconstructed as a
+phrase-level connective, while the bound perfective grade survived. This
+suffixal history differs from stressed-root metaphony. The synchronic
+specification \ird{-ek}/\ird{-ik-} does not depend on reconstructing an
+unpronounced high vowel in modern \ird{-e}. The participant nominaliser
+\ird{-ou} selects the same bound perfective grade.
+
+\paragraph{Quantity.}
+A separate development phonologised greater duration before final sonorants and
+voiced fricatives in a subset of stems, before general final devoicing obscured
+the contrast: reconstructed \ird{*straz} $>$ \ird{stráz}, beside short-root
+\ird{*straz-y}, and \ird{*trav} $>$ \ird{tráv}, beside \ird{trava}.
+A phonetic-duration source distinct from lost-vowel compensation is developed
+for Western Slavic by \cite[§4]{scheer2017}; its application here is a
+reconstruction of Iridian, not a claim about an attested common history.
+Modern quantity classes preserve the resulting stem relations, while independent
+lexical long vowels can remain long before suffixes.
+
 \section{Operational summary}
 
-When encountering a consonant alternation in any paradigm or derived form, the
-analyst should proceed as follows.
+Stem selection precedes the interpretation of consonant mutation. The
+construction selects the full or bound stem and any independently specified
+height or quantity grade; fleeting-vowel reduction preserves the stressed vowel
+and consonants. A modern suffix vowel alone does not establish raised-grade
+membership. Consonant alternations are then classified as follows.
 
 First, identify the trigger. If the alternation appears in an antipassive derivative
 with \ird{-aš-}, it belongs to sibilant replacement and should be analysed using
