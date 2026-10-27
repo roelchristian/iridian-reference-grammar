@@ -48,9 +48,12 @@ dimension}
 
 The Iridian clause is organised around a \term{topic-comment bipartition}. The
 \term{topic} --- the constituent the clause is semantically `about' --- is
-realised in the absolutive (direct) case and occupies the specifier of
+canonically realised by the absolutive (direct) argument in the specifier of
 \synhead{TopP}, the highest argument-hosting projection in the left periphery.
-The \term{comment} --- the predication made about the topic --- corresponds
+Quantificational pivots may occupy this position without introducing a
+referential aboutness topic; a negative indefinite is interpreted through its
+lower copy within the scope of the negative operator
+(§\,\ref{sec:tc-quantificational-pivots}). The \term{comment} --- the predication made about the topic --- corresponds
 broadly to the \synhead{IP}-internal material and the predicate.
 
 Three notions must be kept distinct in this system: \term{subject},
@@ -183,7 +186,9 @@ particles, it occupies \synhead{PolP} between \synhead{TopP} and
 \subsection{Topic and topic drop}
 \label{sec:th-topic}
 
-The specifier of \synhead{TopP} hosts the clause topic. In canonical
+The specifier of \synhead{TopP} hosts the clause topic or a quantificational
+pivot interpreted in a lower position
+(§\,\ref{sec:tc-quantificational-pivots}). In canonical
 declaratives the topic is realised by the absolutive pivot of the predicate; it
 surfaces clause-initially and is invariably in the direct case. Because Iridian
 permits pro-drop, the topic position may be phonologically empty when the
@@ -534,7 +539,10 @@ semantics are higher and more event-quantificational than those of pure manner
 adverbs. Even so, they are not members of the rigid particle series. More
 leftward placement of lexical adverbs is possible under discourse pressure, but
 such ordering belongs to marked information structure and should not be taken
-as the neutral pattern.
+as the neutral pattern. The relation of \ird{sabo} to concord-bearing
+\ird{žemě} \trsl{never} remains unspecified
+(§\,\ref{sec:lex-adv}); lexical-adverb placement alone does not determine
+negative licensing.
 
 % [Examples: SOV default, pragmatic reordering, focus movement]
 
@@ -683,30 +691,40 @@ initial \synhead{DP} supplies the topic. With \ird{Marek} as topic, the
 negative denies a property ascription; with \ird{doktor} as topic, it denies
 Marek's identification as the doctor.
 
-Invariant \ird{staly} is analysed as Neg\textsuperscript{0} selecting the
-equative predication directly, without an intervening aspectual layer:
+Invariant \ird{staly} realises Neg\textsuperscript{0}$[u\textsc{neg}]$, which selects the
+equative predication directly, without an intervening aspectual layer. The
+silent operator $\mathrm{Op}_{\neg}$$[i\textsc{neg}]$ in Spec,\synhead{NegP} contributes semantic
+negation, while the topic occupies the higher Spec,\synhead{TopP}:
 
 \begin{center}
 \begin{forest}
   syntax tree
-  [\synhead{NegP}
-    [{\synhead{DP}\\\textit{Marek}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize topic}}]
-    [{Neg$'$}
-      [\synhead{EquP}
-        [{\synhead{DP}\\\textit{doktor}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize pred.}}]
-        [{Eq$'$}
-          [{Eq$^{0}$\\{$\varnothing$}}]
+  [\synhead{TopP}
+    [{\synhead{DP}$_i$\\\textit{Marek}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize topic}}]
+    [{Top$'$}
+      [\synhead{NegP}
+        [{$\mathrm{Op}_{\neg}$\\{\footnotesize$[i\textsc{neg}]$}}]
+        [{Neg$'$}
+          [\synhead{EquP}
+            [{\synhead{DP}\\$t_i$}]
+            [{Eq$'$}
+              [{\synhead{DP}\\\textit{doktor}\\{\footnotesize\textsc{[dir]}}\\{\scriptsize pred.}}]
+              [{Eq$^{0}$\\{$\varnothing$}}]
+            ]
+          ]
+          [{Neg$^{0}$\\\ird{staly}\\{\footnotesize$[u\textsc{neg}]$}}]
         ]
       ]
-      [{Neg$^{0}$\\\ird{staly}}]
+      [{Top$^{0}$\\$\varnothing$}]
     ]
   ]
 \end{forest}
 \end{center}
 
-\noindent The topic \synhead{DP} occupies Spec,\synhead{NegP}; the predicative
-\synhead{DP} remains within \synhead{EquP} as the complement of
-Eq\textsuperscript{0}.
+\noindent The tree omits the intervening phonologically null inflectional and
+left-peripheral projections. The topic's lower copy occupies the equative
+specifier, while the predicative \synhead{DP} remains the complement of
+Eq\textsuperscript{0}; Spec,\synhead{NegP} is reserved for the operator.
 
 The distribution of \ird{staly} and \ird{za-} is conditioned by predicate
 type (§\,\ref{sec:vm-neg-exponents} of Chapter~\ref{ch:verbs}). Zero-copula
@@ -1039,7 +1057,8 @@ Table~\ref{tab:jec-zad-paradigm}.
 The affirmative and negative roots are analysed as suppletive allomorphs of
 Exist\textsuperscript{0}, with \ird{jec-} in affirmative clauses and
 \ird{zad-} in the environment of Neg. Neg\textsuperscript{0} receives a zero
-exponent while remaining present in the syntactic and semantic representation
+exponent while remaining present as Neg\textsuperscript{0}$[u\textsc{neg}]$ in the syntax;
+the silent operator in Spec,\synhead{NegP} contributes semantic negation
 (§\,\ref{sec:neg-exst-alternation}; §\,\ref{sec:vm-jec-zad}).
 
 Iridian has three main productive uses of the existential construction: to
@@ -1119,9 +1138,10 @@ PF exponent. The affirmative and negative structures of \ird{Byl jeca} and
 \begin{forest}
   syntax tree
   [\synhead{NegP}
-    [{\synhead{DP}\\\textit{byl}\\{\footnotesize child.\Dir{}}\\{\scriptsize pivot}}]
+    [{$\mathrm{Op}_{\neg}$\\{\footnotesize$[i\textsc{neg}]$}}]
     [{Neg$'$}
       [\synhead{AspP}
+        [{\synhead{DP}\\\textit{byl}\\{\footnotesize child.\Dir{}}\\{\scriptsize pivot}}]
         [{Asp$'$}
           [ExistP
             [{Exist$'$}
@@ -1131,15 +1151,16 @@ PF exponent. The affirmative and negative structures of \ird{Byl jeca} and
           [{Asp\\\ird{-a}\\{\footnotesize\textsc{[cont]}}}]
         ]
       ]
-      [{Neg\\{\small($\varnothing$: zero exponent)}}]
+      [{Neg\\$\varnothing$\\{\footnotesize$[u\textsc{neg}]$}}]
     ]
   ]
 \end{forest}
 \end{center}
 
-\noindent The direct-case pivot precedes the predicate, occupying
-Spec,\synhead{AspP} in the affirmative and Spec,\synhead{NegP} in the negative.
-This low pivot position does not itself confer aboutness topichood: in a
+\noindent The direct-case pivot precedes the predicate in
+Spec,\synhead{AspP} in both structures; in the negative, the silent operator
+occupies Spec,\synhead{NegP} above it. This low pivot position does not itself
+confer aboutness topichood: in a
 presentational context, the pivot may introduce a new discourse referent
 without occupying Spec,\synhead{TopP} (§\,\ref{sec:tc-topicless}).
 Negative clauses contain a zero exponent
@@ -1255,13 +1276,14 @@ are:
 \begin{forest}
   syntax tree
   [\synhead{NegP}
-    [{\synhead{DP}\\\textit{tóm}\\{\footnotesize book.\Dir{}}\\{\scriptsize pivot}}]
+    [{$\mathrm{Op}_{\neg}$\\{\footnotesize$[i\textsc{neg}]$}}]
     [{Neg$'$}
       [\synhead{AspP}
         [{Asp$'$}
           [ExistP
             [{PP\\\ird{bylam na}\\{\footnotesize possessor}}]
             [ExistP
+              [{\synhead{DP}\\\textit{tóm}\\{\footnotesize book.\Dir{}}\\{\scriptsize pivot}}]
               [{Exist$'$}
                 [{Exist\\\ird{zad-}\\{\scriptsize suppletive}}]
               ]
@@ -1270,7 +1292,7 @@ are:
           [{Asp\\\ird{-a}\\{\footnotesize\textsc{[cont]}}}]
         ]
       ]
-      [{Neg\\{\small($\varnothing$)}}]
+      [{Neg\\$\varnothing$\\{\footnotesize$[u\textsc{neg}]$}}]
     ]
   ]
 \end{forest}
@@ -1308,7 +1330,7 @@ source of the construction.
 \subsection{Event-anchored existential pivots}\label{sec:existential-presentatives}
 
 The existential predicate in Iridian consistently selects a nominal pivot: the
-entity asserted to exist stands as the direct-case complement of
+entity asserted to exist stands as the direct-case nominal argument of
 Exist\textsuperscript{0}. The nominal pivots admitted by this selectional requirement fall into
 three subtypes according to the internal structure of the pivot \synhead{DP}:
 
@@ -1322,10 +1344,13 @@ three subtypes according to the internal structure of the pivot \synhead{DP}:
   (headless participant-nominal; §\,\ref{sec:exst-headless-nmlz}).
 \end{enumerate}
 
-\noindent The three subtypes share a single structural identity: all three
-occupy Spec,\synhead{ExistP} as the nominal complement of
-Exist\textsuperscript{0}. They differ not in the matrix construction but in the
-internal architecture of the pivot \synhead{DP}.
+\noindent The three subtypes share a single structural identity as the nominal
+argument of Exist\textsuperscript{0}, originating in Spec,\synhead{ExistP}
+and appearing in the low Spec,\synhead{AspP} in the bare and presentational
+aspectual structures illustrated here; the PP-initial possessive retains the
+pivot in the lower existential domain. They differ in the internal architecture of the pivot
+\synhead{DP}; neither low position confers aboutness topichood, and both fall
+within the scope of $\mathrm{Op}_{\neg}$ in a negative existential.
 
 \subsubsection{Architectural decision: participant nominals, not silent nouns}
 \label{sec:exst-pivot-arch}
@@ -1337,16 +1362,18 @@ a possible analysis would posit an indefinite null lexical noun ($\varnothing$N)
 heading the pivot, with the verbal description functioning as its attributive
 modifier. That analysis is explicitly rejected for Iridian.
 
-Iridian does not ordinarily lexicalize English-style \trsl{someone},
-\trsl{something}, \trsl{no one}, and \trsl{nothing} as free pronominal items in
-clause structure, and it does not build their equivalents by projecting a
-semantically bleached null noun. Instead, the indefinite pivot is a bona fide
-participant nominal: an nP/DP derived directly from verbal structure by the
+Iridian uses participant nominals to express unidentified event participants
+without projecting a semantically bleached null noun. In this construction,
+the indefinite pivot is a bona fide participant nominal: an nP/DP derived
+directly from verbal structure by the
 language's participant-nominal morphology (§\,\ref{sec:nmlz-predicative} of
 Chapter~\ref{ch:verbs}). The nominal character of the pivot is the output of
 n\textsuperscript{0}, whose categorial feature nominalises the embedded verbal
-structure. No lexical noun is inserted or covertly present; the nominalization
-is the whole pivot.
+structure. No lexical noun is inserted or covertly present; the nominalisation
+is the whole pivot. Negative indefinites such as \ird{zide} \trsl{no one} and
+\ird{deno} \trsl{nothing} provide a distinct lexical strategy under strict
+negative concord (§\,\ref{sec:nm-pron-operators}); their availability does not
+require a silent noun within participant-nominal pivots.
 
 This treatment is principled within the grammar's DM architecture. Iridian already has a
 robust system of participant nominals whose orientation is determined by voice morphology
@@ -1487,12 +1514,13 @@ interpretation of the embedded event comes entirely from the attributive.
 \begin{forest}
   syntax tree
   [\synhead{NegP}
-    [{\synhead{DP}\\{\footnotesize pivot}}
-      [{AttrP\\\ird{obrohnikový}\\{\footnotesize read-\textsc{trs}-\Pf{}-\textsc{attr}}}]
-      [{\synhead{NP}\\\ird{senica}\\{\footnotesize news.\Dir{}}}]
-    ]
+    [{$\mathrm{Op}_{\neg}$\\{\footnotesize$[i\textsc{neg}]$}}]
     [{Neg$'$}
       [\synhead{AspP}
+        [{\synhead{DP}\\{\footnotesize pivot}}
+          [{AttrP\\\ird{obrohnikový}\\{\footnotesize read-\textsc{trs}-\Pf{}-\textsc{attr}}}]
+          [{\synhead{NP}\\\ird{senica}\\{\footnotesize news.\Dir{}}}]
+        ]
         [{Asp$'$}
           [ExistP
             [{Exist$'$}
@@ -1502,7 +1530,7 @@ interpretation of the embedded event comes entirely from the attributive.
           [{Asp\\\ird{zad-a}\\{\scriptsize NegExst+Cont}}]
         ]
       ]
-      [{Neg\\{\small($\varnothing$)}}]
+      [{Neg\\$\varnothing$\\{\footnotesize$[u\textsc{neg}]$}}]
     ]
   ]
 \end{forest}
@@ -1643,10 +1671,9 @@ anchor to a lexical category and an event description.
 
 The headless participant-nominal construction is the primary means by which
 Iridian expresses what English achieves with the free indefinite pronouns
-\trsl{somebody}, \trsl{someone}, \trsl{something}, and \trsl{anything}. Free
-pronominal items are not the ordinary Iridian strategy; the existential pivot is
-instead a participant nominal whose voice morphology encodes the relevant
-participant role.
+\trsl{somebody}, \trsl{someone}, \trsl{something}, and \trsl{anything}. The
+existential pivot is a participant nominal whose voice morphology encodes the
+relevant participant role.
 
 \pex
 \a
@@ -1691,12 +1718,17 @@ nominal specifies its participant role.
 \subsubsection{Negative existential indefinites}
 \label{sec:exst-indef-neg}
 
-Negative indefinites --- English \trsl{nobody}, \trsl{no one}, \trsl{nothing}
---- are expressed by the negative existential \ird{zad-} with a
-participant-nominal pivot. The derivation is structurally parallel to the
-positive: \synhead{NegP} is projected, Neg\textsuperscript{0} triggers
-suppletive Vocabulary Insertion at Exist\textsuperscript{0}, and the resulting
-\ird{zad-} denies that any individual satisfies the nominal description.
+Negative existential clauses with participant-nominal pivots express the
+meanings rendered in English by \trsl{nobody}, \trsl{no one}, and
+\trsl{nothing}. The derivation is structurally parallel to the affirmative,
+with \synhead{NegP} added above the aspectual predicate. Its silent operator
+$\mathrm{Op}_{\neg}$$[i\textsc{neg}]$ takes scope over the existential predication, while
+Neg\textsuperscript{0}$[u\textsc{neg}]$ conditions suppletive Vocabulary Insertion at
+Exist\textsuperscript{0}. The resulting clause denies that any individual
+satisfies the nominal description. A participant nominal formed from
+affirmative verbal material does not acquire a negative-concord feature merely
+by serving as the pivot: its negative indefinite interpretation follows from
+existential predication within the scope of negation.
 
 \pex
 \a
@@ -1789,9 +1821,14 @@ participant. In contexts where the event is already established, the latter
 naturally preserves that background and suggests a different participant,
 whereas the negative existential makes no such commitment.
 
-The distribution of negative nominals such as \ird{niho} and \ird{zide}
-with existential and equative negatives is undocumented
-(§\,\ref{sec:nm-pron-operators} of Chapter~\ref{ch:nouns}).
+Lexical negative indefinites such as \ird{deno} \trsl{nothing} and
+\ird{zide} \trsl{no one} participate in strict negative concord with both
+existential and equative negation (§\,\ref{sec:nm-pron-operators} of
+Chapter~\ref{ch:nouns}). Their $[u\textsc{neg}]$ feature requires the local negative
+operator, whose presence is expressed by \ird{zad-} or \ird{staly} according
+to predicate type; neither the indefinite nor the overt negative exponent
+introduces another semantic negation. This lexical strategy coexists with the
+participant-nominal existential, whose pivot need not contain a concord item.
 
 \subsubsection{Discourse profile of the two constructional subtypes}
 \label{sec:exst-discourse}
@@ -1846,15 +1883,17 @@ The alternation \ird{jec-}/\ird{zad-} is analysed as polarity-conditioned
 suppletion at Exist\textsuperscript{0}, with a higher Neg head conditioning
 \ird{zad-} and receiving a zero exponent
 (§\,\ref{sec:vm-neg-exponents} of Chapter~\ref{ch:verbs}). The negative
-contribution is thus represented at Neg, while its overt morphological
-expression occurs at the existential root. The locality relation between Neg
+contribution is supplied by $\mathrm{Op}_{\neg}$$[i\textsc{neg}]$ in Spec,\synhead{NegP}, while
+Neg\textsuperscript{0}$[u\textsc{neg}]$ conditions its overt morphological expression at
+the existential root. The locality relation between Neg
 and Exist across the intervening Asp head remains unspecified.
 
 Semantically, an affirmative existential asserts that an individual satisfies
 the pivot description, while the negative existential denies that any such
 individual exists. In the syntactic analysis, the existential contribution belongs
-to Exist and the negative contribution to Neg, although the latter conditions
-the overt root form \ird{zad-}. The same opposition is preserved across all
+to Exist and the negative contribution to the operator in Spec,\synhead{NegP},
+while Neg\textsuperscript{0}$[u\textsc{neg}]$ conditions the overt root form \ird{zad-}.
+The same opposition is preserved across all
 construction types --- bare existential, locative, possessive, and
 presentational --- and there is no grammatical asymmetry between the two roots
 in terms of which construction types each permits.
@@ -1915,7 +1954,13 @@ In the analysis of §\,\ref{sec:vm-neg} of Chapter~\ref{ch:verbs},
 Neg selects \synhead{AspP} in indicative verbal clauses and \synhead{EquP}
 in zero-copula clauses, with direct realisation of Neg in \ird{za-} and
 \ird{staly}, and root suppletion in existential \ird{zad-}
-(Figure~\ref{fig:neg0-comparative}).
+(Figure~\ref{fig:neg0-comparative}). In each indicative construction,
+Spec,\synhead{NegP} hosts the silent $\mathrm{Op}_{\neg}$$[i\textsc{neg}]$, while the head bears
+$[u\textsc{neg}]$. This division between semantic negation and its morphological reflexes
+also governs strict negative concord: negative indefinites require the local
+operator and the appropriate overt negative realisation, with any number of
+concord associates interpreted under one negation
+(§\,\ref{sec:nm-pron-operators}).
 
 \subsection{Verbal clauses: \ird{za-}}
 
@@ -1990,6 +2035,12 @@ They are analysed as exponents of negative Mood directly above Asp, without a
 separate Neg projection (§\,\ref{sec:vm-moodp} of Chapter~\ref{ch:verbs}).
 The prohibitive and negative hortative direct or propose restraint, while the
 negative irrealis expresses non-occurrence in a hypothetical situation.
+Negative Mood bears $[u\textsc{neg}]$ and participates in the same concord dependency as
+indicative Neg: a silent negative operator in the mood domain licenses both
+Mood and any negative indefinites in the clause. Concord therefore requires
+the appropriate negative mood suffix, without adding \ird{za-} or a separate
+Neg head. The relative scope of negation and irrealis modality remains a
+separate descriptive question (§\,\ref{sec:vm-moodp}).
 
 \subsection{Summary}
 

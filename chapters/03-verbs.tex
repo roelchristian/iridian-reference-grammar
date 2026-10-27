@@ -1862,6 +1862,21 @@ unit with the inflected verb, while in zero-copula clauses \ird{staly} follows
 the nominal predicate. With existential predicates, negative polarity is
 expressed by suppletion of the root, \ird{jec-}/\ird{zad-}.
 
+Iridian exhibits \term{strict negative concord}: negative indefinites such as
+\ird{deno} \trsl{nothing} and \ird{zide} \trsl{no one} require the
+negative realisation appropriate to their finite clause, while their
+co-occurrence expresses a single semantic negation
+(§\,\ref{sec:nm-pron-operators}). The grammar analyses this dependency through
+a silent operator $\mathrm{Op}_{\neg}$ bearing an interpretable negative
+feature $[i\textsc{neg}]$, together with an uninterpretable feature
+$[u\textsc{neg}]$ on Neg\textsuperscript{0} and on each concord associate.
+The operator occupies Spec,\synhead{NegP}; it supplies semantic negation,
+whereas the feature on Neg\textsuperscript{0} determines its participation in
+the dependency and its morphological realisation. This division of labour
+follows the syntactic approach to negative dependencies developed by
+\cite{zeijlstra2022,penka2011}; its application to Iridian is the analysis
+adopted here.
+
 The preverbal position of \ird{za-} is attributed to post-syntactic attachment
 of the exponent of Neg\textsuperscript{0} to the left edge of the verbal host,
 within the framework of Distributed Morphology \cite{embicknoyer2007}.
@@ -1890,7 +1905,9 @@ remaining distinct from it in the syntactic representation.
   \footnotesize
   \caption{Proposed structures for indicative verbal, equative, and existential
   negation. The verbal marker attaches to its host at PF, while existential
-  negation combines a null Neg head with a negative root allomorph.}\label{fig:neg0-comparative}
+  negation combines a zero exponent of Neg with a negative root allomorph.
+  Higher topic structure is omitted; Spec,\synhead{NegP} hosts the silent
+  negative operator.}\label{fig:neg0-comparative}
   \medskip
   \centering
   \scriptsize
@@ -1901,7 +1918,7 @@ remaining distinct from it in the syntactic representation.
     \begin{forest}
       syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
       [\synhead{NegP}
-        [{\synhead{DP}\\{\footnotesize topic}}]
+        [{$\mathrm{Op}_{\neg}$\\{$[i\textsc{neg}]$}}]
         [{Neg$'$}
           [\synhead{AspP}
             [{Asp$'$}
@@ -1911,7 +1928,7 @@ remaining distinct from it in the syntactic representation.
               [{Asp\\{\footnotesize\textit{asp.align}}}]
             ]
           ]
-          [{Neg$^{0}$}\\\ird{za-}\\{\small(PF prefix)}]
+          [{Neg$^{0}$\\{$[u\textsc{neg}]$}\\\ird{za-}\\{\small(PF prefix)}}]
         ]
       ]
     \end{forest}
@@ -1924,15 +1941,16 @@ remaining distinct from it in the syntactic representation.
     \begin{forest}
       syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
       [\synhead{NegP}
-        [{\synhead{DP}\\{\footnotesize topic}}]
+        [{$\mathrm{Op}_{\neg}$\\{$[i\textsc{neg}]$}}]
         [{Neg$'$}
           [\synhead{EquP}
-            [{\synhead{DP}\\{\footnotesize pred.}}]
+            [{\synhead{DP}\\{\footnotesize lower copy}}]
             [{Eq$'$}
+              [{\synhead{DP}\\{\footnotesize pred.}}]
               [{Eq$^{0}$\\{$\varnothing$}}]
             ]
           ]
-          [{Neg$^{0}$\\\ird{staly}}]
+          [{Neg$^{0}$\\{$[u\textsc{neg}]$}\\\ird{staly}}]
         ]
       ]
     \end{forest}
@@ -1945,7 +1963,7 @@ remaining distinct from it in the syntactic representation.
     \begin{forest}
       syntax tree, for tree={l sep=8pt,s sep=6pt,inner sep=0.5pt}
       [\synhead{NegP}
-        [{\synhead{DP}\\{\footnotesize pivot}}]
+        [{$\mathrm{Op}_{\neg}$\\{$[i\textsc{neg}]$}}]
         [{Neg$'$}
           [\synhead{AspP}
             [{Asp$'$}
@@ -1957,7 +1975,7 @@ remaining distinct from it in the syntactic representation.
               [{Asp\\{\footnotesize\textit{asp}}}]
             ]
           ]
-          [{Neg$^{0}$\\{\small($\varnothing$)}}]
+          [{Neg$^{0}$\\{$[u\textsc{neg}]$}\\{\small($\varnothing$)}}]
         ]
       ]
     \end{forest}
@@ -1966,8 +1984,12 @@ remaining distinct from it in the syntactic representation.
 
 In Figure~\ref{fig:neg0-comparative}, Neg follows its complement in all
 three structures, with the prefixal position of \ird{za-} determined at PF.
-The nominal constituents of an equative may permute with topic and comment
-(§\,\ref{sec:topic-comment}), while \ird{staly} remains clause-final.
+An ordinary topic or fronted quantificational pivot occupies the independently
+projected Spec,\synhead{TopP}, above the structures shown here
+(§\,\ref{sec:topic-comment}); a fronted negative indefinite is interpreted
+through its lower copy. Topicless existential pivots remain below the operator
+(§\,\ref{sec:existential-constructions}). The nominal constituents of an equative may permute with
+topic and comment, while \ird{staly} remains clause-final.
 
 In negative existential clauses, \ird{zad-} and the zero exponent of Neg form
 a single pattern of contextual exponence, excluding both \ird{*za-jec-} and
@@ -2022,11 +2044,42 @@ uses, the discourse background supplies the event against which the topic's
 participant role is evaluated (§\,\ref{sec:ident-equative} of
 Chapter~\ref{ch:simple}).
 
-The distribution of nominal negative operators such as \ird{zide}
-\trsl{no one} and \ird{niho} \trsl{nothing} with \ird{za-} and \ird{zad-}
-is undocumented, including whether combinations of nominal and clausal
-negatives express a single negation or independent negative meanings
-(§\,\ref{sec:nm-pron-operators} of Chapter~\ref{ch:nouns}).
+\subsubsection{Negative concord and semantic interpretation}
+\label{sec:vm-negative-concord}
+
+A negative indefinite introduces an existential variable whose restriction is
+supplied by its lexical content, while the silent operator supplies the single
+negation under which that variable is interpreted. Neg\textsuperscript{0}
+and the indefinites bear $[u\textsc{neg}]$ and are jointly licensed by
+$\mathrm{Op}_{\neg}[i\textsc{neg}]$ through Multiple Agree. The feature
+notation therefore distinguishes the source of semantic negation from its
+several morphological reflexes; neither an additional indefinite nor an
+overt negative exponent introduces another operator. A schematic sequence
+\ird{zide \ldots\ deno \ldots\ za-V}, for instance, contains two
+concord associates within one negative clause and receives a single-negation
+interpretation. The indefinite series and the contrasts with affirmative
+clauses are described in §\,\ref{sec:nm-pron-operators}.
+
+Vocabulary Insertion realises Neg\textsuperscript{0}$[u\textsc{neg}]$ as
+\ird{za-} $\sim$ \ird{z-} with verbal predicates, \ird{staly} with
+zero-copula equatives, and $\varnothing$ with existential predicates; in the
+last environment, Exist\textsuperscript{0} is realised as \ird{zad-}.
+The operator and the feature dependency belong to syntax and interpretation,
+whereas these exponents and the attachment of \ird{za-} belong to the
+morphological realisation of that structure. The analysis consequently retains
+both the existing verbal template and the distinction between a zero exponent
+of Neg and the absence of NegP.
+
+Concord is local to the finite clause: an operator in a matrix clause does
+not license a negative indefinite in a finite complement; conditionality alone likewise supplies no licenser
+for an antecedent (Chapter~\ref{ch:complex}). Interrogative \ird{by} and non-assertive
+complement marking do not supply $[i\textsc{neg}]$. A fronted concord associate
+is licensed in its lower position and interpreted there under the negative
+operator, even when its pronounced copy precedes the rest of the clause
+(§\,\ref{sec:topic-comment}). Genuine double negation requires two semantic
+operators, ordinarily in distinct clauses or propositions; the co-occurrence
+of an indefinite and \ird{za-}, \ird{staly}, or \ird{zad-} within a concord
+dependency cannot produce it.
 
 \section{Mood}\label{sec:mood}
 
@@ -2492,7 +2545,7 @@ Irrealis     & \ird{-ěv}        & \ird{-ir} \\
 
 \medskip
 \noindent Negative non-indicative clauses are analysed with a Mood head bearing
-both a mood specification and a negative feature, realised by \ird{-é},
+both a mood specification and $[u\textsc{neg}]$, realised by \ird{-é},
 \ird{-ku}, or \ird{-ir}. Negative Mood selects Asp directly, whereas
 indicative clausal negation contains a separate Neg head below Mood.
 Vocabulary Insertion supplies the exponents of these feature bundles after
@@ -2500,6 +2553,15 @@ the syntactic structure has been assembled \cite{embicknoyer2007}. The
 absence of a separate Neg node in negative non-indicative clauses accounts for
 the exclusion of \ird{za-}; an alternative derivation through post-syntactic
 fusion of Neg and Mood would yield the same morphological pattern.
+
+A silent $\mathrm{Op}_{\neg}[i\textsc{neg}]$ in the mood domain licenses
+the negative feature of Mood together with any negative indefinites in that
+finite clause, extending the concord dependency of
+§\,\ref{sec:vm-negative-concord} to \ird{-é}, \ird{-ku}, and \ird{-ir}.
+No additional Neg head is required: the overt negative mood suffix satisfies
+the obligatory morphological expression of negative polarity. Concord fixes
+the number of semantic negations at one within this dependency, without
+determining the relative semantic scope of negation and irrealis modality.
 
 The prohibitive \ird{Trava piašté} \trsl{Do not eat the bread} directs the
 addressee to refrain from eating, combining directive force with negative
@@ -3906,7 +3968,7 @@ exponents of each relevant layer.
     & \synhead{EvidP}$_\text{outer}$ & \ird{oče, hlavdy, ktady, či}
     & Clause-level evidential/epistemic \\
     & \synhead{TopP} & [absolutive \synhead{DP}]
-    & Topic = absolutive; A-movement target \\
+    & Direct-case pivot; ordinary topic or quantificational pivot \\
     & \synhead{PolP} & \ird{by}
     & Clause typing: polar interrogative \\
     & \synhead{FocP} & [wh-phrase]
@@ -3915,9 +3977,9 @@ exponents of each relevant layer.
     & \synhead{EvidP}$_\text{inner}$ & \ird{-ejte} (?)
     & Indirect evidential; inside verbal complex \\
     & \synhead{MoodP} & \ird{-ím, -é, -ká, -ku, -ěv, -ir}, $\varnothing$
-    & Non-indicative moods; suppresses Asp when overt \\
+    & Negative Mood bears $[u\textsc{neg}]$; reduces Asp features \\
     & \synhead{NegP} & \ird{za-} (prefix)
-    & Clausal negation; PF-cliticized to verbal complex \\
+    & Op$_{\neg}$ in specifier; Neg$^{0}[u\textsc{neg}]$; PF attachment \\
     & \synhead{AspP} & \ird{-ek/-ik, -ac, -a, -ime, -ách} (fused w/ align)
     & Sole obligatory head; aspect + case assignment \\
     \midrule
