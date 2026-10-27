@@ -574,19 +574,24 @@ sibilant replacement (Section~\ref{sec:sibilant-replacement}).
 The basic syllable structure is CV(C). The maximum is CCCCVCCC, though most syllables
 fall into one of CV, CVC, CCV, CCVC, or CVCC.
 
-\subsection{Syllabic liquids}
+\subsection{Vocalic nuclei and liquid clusters}\label{sec:vocalic-nuclei}
 
-Like its West Slavic neighbors, Iridian permits liquids to bear a syllable in
-reduced environments. The rhotic and the lateral may surface as syllabic [r̩] and
-[l̩] when weak \ird{e} is deleted and the language chooses not to restore a vowel.
-This is especially natural at morpheme boundaries and in fast speech, though
-orthography remains conservative and normally writes only the consonantal letters.
+Every syllable in Iridian has a vowel nucleus. The liquids \ird{r} and \ird{l}
+remain non-syllabic in careful and rapid speech alike, whether they occur next
+to a lexical vowel or in a cluster created by weak-\ird{e} deletion. A liquid
+therefore contributes no syllable of its own, and its presence cannot license
+a consonant sequence that would otherwise violate the cluster restrictions
+in Section~\ref{sec:sonority}.
 
-Syllabic liquids are not a free alternative to ordinary vocalism. They appear chiefly
-when three conditions are met: the deleted vowel is weak \ird{e}; the resulting
-cluster already contains a liquid; and no simpler repair such as straightforward
-cluster retention is available. In this way the language accommodates dense consonant
-groupings without abandoning its preference for preserving inherited stem shapes.
+Weak-\ird{e} deletion applies wherever the remaining consonants can be syllabified
+around the surviving vowels. Thus \ird{obel} yields \ird{oblu}, with the
+liquid in the onset of the second syllable, while \ird{perek} yields
+\ird{perku}, with \ird{r} closing the first syllable and \ird{k} beginning
+the second. The first \ird{e} of \ird{perek} is retained; deletion of both
+vowels would leave an unlicensed initial cluster. Where deletion would remove
+a necessary nucleus, the vowel is retained; an illicit cluster arising later
+in the derivation is subject to the repair rules in
+Section~\ref{sec:cluster-repair}.
 
 \subsection{Stress}\label{sec:stress}
 
@@ -603,8 +608,8 @@ restricted vowel deletion, not stress-conditioned shortening
 
 \subsection{Sonority and cluster licensing}\label{sec:sonority}
 
-Iridian cluster phonotactics are organised around a sonority hierarchy that follows
-the broad West Slavic pattern. Ranked from lowest to highest:
+Iridian cluster phonotactics are described by the following sonority hierarchy,
+ranked from lowest to highest:
 
 \begin{center}
 voiceless obstruents $<$ voiced obstruents $<$ nasals $<$ liquids (\ird{r, l}) $<$
@@ -626,15 +631,16 @@ vowel must be at least as sonorous as the one preceding it.
 
 Coda clusters show the complementary pattern. They fall in sonority away from the
 syllable peak, so that the most peripheral coda segment is typically an obstruent.
-Sequences of sonorant followed by obstruent are disfavoured in coda position and
+Sequences of obstruent followed by sonorant are disfavoured in coda position and
 are usually resolved either by resyllabification across a following vowel-initial
-suffix or by weak-\ird{e} insertion (Section~\ref{sec:vowel-zero}).
+suffix or by vowel retention and epenthesis
+(Sections~\ref{sec:vowel-zero} and~\ref{sec:cluster-repair}).
 
-Syllabic liquids arise precisely at junctures where the sonority profile would
-otherwise produce a local violation after weak-\ird{e} deletion. When the deleted
-vowel is weak \ird{e} and the resulting cluster contains a liquid, the liquid takes
-on syllabic weight rather than yielding an ill-formed contour, provided no simpler
-repair is available.
+Liquid-bearing clusters obey the same requirement for a vocalic nucleus as
+other clusters. Weak-\ird{e} deletion is blocked where the remaining consonants
+cannot be distributed among licensed onsets and codas around the surviving
+vowels. Sonority ranks the consonants within these margins; it does not confer
+syllabicity on \ird{r} or \ird{l}.
 
 
 \section{Suprasegmentals}
@@ -692,10 +698,10 @@ above chain in either direction, except that the output of replacement may
 subsequently undergo voicing cleanup and cluster repair. The ordering matters. A
 noun such as \ird{lobek} first selects the transitive ending of its declension
 class, then deletes weak \ird{e}, then raises \ird{o} to \ird{u}, and only after
-that reaches its final cluster shape. A noun of the type \ird{perek} first deletes
-weak \ird{e}, then forms the liquid cluster \ird{prk-}, and only then undergoes
-velar affrication before a front-vocalic indirect ending, yielding \ird{prce}. A
-verb such as \ird{zděk-} behaves the same way before a palatalizing suffix, except
+that reaches its final cluster shape. A noun of the type \ird{perek} deletes
+only the final weak \ird{e}, retaining the first vowel in the reduced stem
+\ird{perk-}, and then undergoes velar affrication before a front-vocalic indirect
+ending, yielding \ird{perce}. A verb such as \ird{zděk-} behaves the same way before a palatalizing suffix, except
 that the palatalised grade rather than a nominal oblique stem is the output.
 
 \subsection{Suffix classes and their mutation triggers}\label{sec:suffix-classes}
@@ -772,31 +778,33 @@ consonant sequence is acceptable.
 \pex
 \a \ird{pes} + \ird{-a} $\rightarrow$ \ird{psa}
 \a \ird{Janek} + \ird{-u} $\rightarrow$ \ird{Janku}
-\a \ird{perek} + \ird{-u} $\rightarrow$ \ird{prku}
+\a \ird{perek} + \ird{-u} $\rightarrow$ \ird{perku}
 \a \ird{obel} + \ird{-u} $\rightarrow$ \ird{oblu}
 \a \ird{Merek} + \ird{-í} $\rightarrow$ \ird{Mercí}
 \xe
 
-Deletion applies most readily when the resulting cluster belongs to one of the
-cluster shapes already tolerated by Iridian phonotactics: obstruent + sonorant,
-sibilant + obstruent, sonorant + obstruent, or a cluster that may be resolved with
-syllabic \ird{r} or \ird{l}. Deletion is blocked in exactly three circumstances.
-First, some declension classes and some individual stems are lexically marked as
-non-deleting. Second, deletion is blocked when it would create an illicit cluster,
-above all a dense all-obstruent cluster without a licensed sibilant edge or liquid
-nucleus. Third, a small set of high-frequency forms preserves an analogically
-levelled vowel despite the general rule.
+Deletion applies most readily when the resulting consonants can be syllabified
+around the remaining vowels: obstruent + sonorant sequences may form onsets,
+sibilant + obstruent sequences are licensed in appropriate clusters, and
+sonorant + obstruent sequences may span a coda--onset boundary. Deletion is
+blocked in three circumstances. First, some declension classes and individual
+stems are lexically marked as non-deleting. Second, deletion is blocked when
+it would create an illicit cluster or leave a syllable without a vowel nucleus;
+this restriction applies to liquid-bearing and all-obstruent clusters alike.
+Third, a small set of high-frequency forms preserves an analogically levelled
+vowel despite the general rule.
 
 The productivity of weak-\ird{e} deletion is greatest in noun oblique formation.
 A particularly important subtype is the \term{CeLeC} pattern, where deletion
-yields a stable \ird{CLC-} oblique stem: \ird{perek} $\rightarrow$ \ird{prku}
-(transitive), \ird{prce} (front-vocalic indirect), \ird{prkam} (\ird{-am} class).
+of the second \ird{e} yields a stable \ird{CeLC-} oblique stem while the first
+vowel remains as a nucleus: \ird{perek} $\rightarrow$ \ird{perku}
+(transitive), \ird{perce} (front-vocalic indirect), \ird{perkam} (\ird{-am} class).
 In verbal morphology the process is most visible before the irrealis, the
 simultaneous converb, the linker \ird{-e}, and selected nominalizers:
 
 \pex
 \a \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdíčev}
-\a \ird{perek} + \ird{-ěc} $\rightarrow$ \ird{prčec}
+\a \ird{perek} + \ird{-e} $\rightarrow$ \ird{perce}
 \a \ird{obel} + \ird{-ou} $\rightarrow$ \ird{oblou}
 \xe
 
@@ -872,7 +880,7 @@ constructs the zero or raised stem and only then applies softening:
 \pex
 \a \ird{lobek} + \ird{-í} $\rightarrow$ \ird{lubcí} \lingcontext{zero-grade; back-vowel raising; then velar fronting}
 \a \ird{Janek} + \ird{-í} $\rightarrow$ \ird{Jancí} \lingcontext{zero-grade; then velar fronting}
-\a \ird{perek} + \ird{-e} $\rightarrow$ \ird{prce} \lingcontext{CeLeC zero-grade; then velar fronting}
+\a \ird{perek} + \ird{-e} $\rightarrow$ \ird{perce} \lingcontext{CeLeC zero-grade; then velar fronting}
 \xe
 
 Note that these examples involve velar fronting (\ird{k} $\rightarrow$ \ird{c}),
@@ -929,7 +937,6 @@ phonologically derivable from the vowel alone:
 		& & & \ird{ruk} + \ird{-ě} $\rightarrow$ \ird{ruce} \\
 		& & & \ird{zděk-} + \ird{-ir} $\rightarrow$ \ird{zděcir} \\
 		Strong palatalizing & k $\rightarrow$ č & \ird{-ěv} & \ird{zděk-} + \ird{-ěv} $\rightarrow$ \ird{zdíčev} \\
-		& & & \ird{perek} + \ird{-ěc} $\rightarrow$ \ird{prčec} \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -999,24 +1006,24 @@ for the productive coronal process. These terms must not be used interchangeably
 
 \subsection{Cluster repair, epenthesis, and voicing cleanup}\label{sec:cluster-repair}
 
-The productivity of weak-\ird{e} deletion would produce unwieldy strings if it
-were not paired with strong surface-repair rules. Iridian is permissive about
-clustering by European standards, but it still regularises derived clusters in a
-principled way. The language prefers to keep the full consonant sequence when
-possible, then to exploit syllabic liquids, then to simplify or assimilate, and
-only last of all to restore a vowel.
+Derived consonant clusters are retained wherever they can be syllabified around
+vocalic nuclei. Weak-\ird{e} is retained when deletion would prevent this
+syllabification; clusters created by subsequent morphological operations undergo
+assimilation or simplification where licensed, with vowel epenthesis supplying
+a nucleus when consonantal repair is insufficient. Liquids remain non-syllabic
+throughout these operations (Section~\ref{sec:vocalic-nuclei}).
 
 \begin{table}[ht]
 	\footnotesize
-	\caption{Regularization hierarchy at morpheme boundaries.}\label{tab:cluster-repair}
+	\caption{Cluster retention and repair at morpheme boundaries.}\label{tab:cluster-repair}
 	\begin{tabularx}{\textwidth}{l L L}
 		\toprule
-		{\sc rank} & {\sc strategy} & {\sc effect} \\
+		{\sc stage} & {\sc strategy} & {\sc effect} \\
 		\midrule
-		1 & retain the cluster & keep the result of deletion if the cluster is otherwise licit \\
-		2 & syllabic liquid formation & realise \ird{r} or \ird{l} as \ipagloss{[r̩]} or \ipagloss{[l̩]} in liquid-bearing clusters \\
+		1 & deletion or retention & delete weak \ird{e} only if the remaining vowels support a licit syllabification; otherwise retain it \\
+		2 & cluster retention & preserve derived consonant sequences that are already licit \\
 		3 & assimilation or simplification & spread voicing, soften leftward locally, or delete the weakest coronal in an illicit all-obstruent group \\
-		4 & epenthesis / vowel retention & restore a short vowel only when no consonantal repair yields a well-formed output \\
+		4 & vowel epenthesis & insert a short vowel if a later cluster cannot be repaired by consonantal means \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -1031,22 +1038,36 @@ regressive voicing assimilation, including across morpheme boundaries:
 \xe
 
 Second, word-final obstruents are devoiced regardless of the underlying consonant
-or the derivational history of the word. Third, when deletion produces a cluster
-containing a liquid, Iridian often preserves the deletion and allows the liquid
-to become syllabic rather than restoring the vowel:
+or the derivational history of the word. Third, weak-vowel stems retain enough
+vocalism for their liquids to occupy syllable margins. In the following
+constructed derivations, only the second stem vowel deletes:
 
 \pex
-\a \ird{berel} + \ird{-a} $\rightarrow$ [br̩la] or orthographic \ird{brla}
-\a \ird{perek} + \ird{-am} $\rightarrow$ [pr̩kam] in the most reduced liquid-bearing type
+\a \ird{berel} + \ird{-a} $\rightarrow$ \ird{berla}
+\a \ird{perek} + \ird{-am} $\rightarrow$ \ird{perkam}
 \xe
+
+Both outputs contain two syllables, each with a vowel nucleus. The sequences
+\ird{rl} and \ird{rk} span coda--onset boundaries, with \ird{r} in the coda
+of the first syllable.
 
 Fourth, when deletion yields an illicit all-obstruent cluster, the language repairs
 it by assimilation or simplification before resorting to epenthesis. Softness may
 also spread leftward one segment inside a cluster, especially when a coronal
 directly precedes a newly soft consonant. This spread is limited and not always
-reflected orthographically. If no consonantal repair succeeds, a short epenthetic
-vowel is inserted or the weak vowel is retained. Epenthesis is therefore a last
-resort, not a general stem-building strategy.
+reflected orthographically. If no consonantal repair succeeds, a short
+\ird{e} /ɛ/ is inserted and written as an ordinary vowel. This vowel supplies
+a syllable nucleus and is subject to the regular stress rule. It introduces no
+morphological softening trigger, since soft-stem selection is conditioned by
+suffix class rather than by an inserted vowel.
+
+Vowel retention preserves a segment already present in the stem, whereas
+epenthesis adds a vowel to repair a derived cluster. The latter is analysed
+here as a phonological segment with nuclear status, following Hall's distinction
+between epenthetic vowels and non-nuclear phonetic vowel intrusion
+\cite[387--389]{hall2006}. Neither process licenses a syllabic
+liquid, and neither entails a new vowel phoneme beyond the inventory in
+Table~\ref{tab:vowels}.
 
 \subsection{Compensatory lengthening}\label{sec:comp-lengthening}
 
@@ -1182,8 +1203,8 @@ intended order and, where relevant, which of the three mutation domains applies.
 \lingcontext{suffix class selection; weak-\ird{e} deletion; back-vowel raising; no front-vocalic mutation}
 \a \ird{Janek} + \ird{-í} $\rightarrow$ \ird{Jancí}
 \lingcontext{weak-\ird{e} deletion; then velar fronting k $\rightarrow$ c (ordinary softening class)}
-\a \ird{perek} + \ird{-e} $\rightarrow$ \ird{prce}
-\lingcontext{CeLeC stem loses weak \ird{e}; velar fronting k $\rightarrow$ c applies only after the liquid cluster is formed}
+\a \ird{perek} + \ird{-e} $\rightarrow$ \ird{perce}
+\lingcontext{CeLeC stem retains its first vowel and loses the second; velar fronting k $\rightarrow$ c follows}
 \a \ird{ruk} + \ird{-ě} $\rightarrow$ \ird{ruce}
 \lingcontext{front-vocalic ordinary suffix; velar fronting k $\rightarrow$ c; ě normalised to e after c}
 \a \ird{louž} + \ird{-ení} $\rightarrow$ \ird{loužení}
