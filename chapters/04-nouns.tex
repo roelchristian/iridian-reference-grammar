@@ -29,6 +29,11 @@ string:
 \end{center}
 \medskip
 
+\noindent The two anchoring positions represent alternative realisations of
+the same head: \ird{si} and a suffixal anchor do not co-occur on a single
+nominal spine (§\,\ref{sec:nm-spec}). A possessor has its own anchoring head,
+independently of the containing nominal.
+
 This template is interpreted under the \term{\synhead{DP} Hypothesis} (Abney
 1987): the nominal expression is not simply an \synhead{NP} but a full
 functional projection with an articulated D-domain. In this chapter I use
@@ -42,7 +47,7 @@ Case-number and shared anchoring constitute the suffixal spine; the speaker-
 anchoring exponent has the separate proclitic placement described below.
 Case and number are fused into a single morphological slot: each declension class
 provides an exponent for each of six case-number cells, although some cells
-are syncretic, and no separate number morpheme exists. Among the prenominal items,
+are syncretic, and number has no separate particle. Among the prenominal items,
 the demonstrative system is the overt realisation of a distinct higher nominal
 projection whose exponents surface at the left edge of their domain. The particle
 \ird{si} is treated differently: it is the proclitic Vocabulary Item for
@@ -99,9 +104,9 @@ the syntactic order. Reading the template from root outward, \textsc{case.num}
 appears closer to the root than \textsc{anch}; this means \synhead{KP} is
 dominated by \synhead{AnchP}. The same suffixal order follows directly from
 head-finality. The fused \textsc{case.num} exponent reflects the PF Merger of
-Num\textsuperscript{0} into K\textsuperscript{0}: number semantics is projected
-in the syntax but its spellout is entirely subsumed by the case-number VI,
-leaving no independent morpheme in the surface string. By contrast, the higher
+Num\textsuperscript{0} into K\textsuperscript{0}: inflectional number is projected
+in the syntax and receives its exponence within the case-number VI.
+By contrast, the higher
 projections realised prenominally do not need to be treated as ordinary suffixal
 heads. The simpler analysis is that Iridian has an articulated nominal left
 periphery whose overt exponents realise \synhead{DemP} at the left edge of their
@@ -1041,17 +1046,17 @@ under a discourse-anaphoric high-accessibility condition; see again
 \subsection{Number morphology and the plural paradigm}
 \label{sec:nm-num}
 
-Iridian encodes number morphologically through fused case-number endings rather
-than through a dedicated number particle. Each declension class provides six
-distinct exponents, covering the three structural cases in both singular and
-plural values, with no independent morpheme reserved for plurality alone. This
-pattern is cross-linguistically common: compare Latin nominative-plural
-\textit{-ae} versus accusative-singular \textit{-am}, where number and case
-values are similarly inseparable.
+Iridian expresses inflectional number through fused case-number endings.
+Each declension class provides six case-number cells, covering the three
+structural cases in both singular and plural values, although individual
+forms may be syncretic. Within these endings, no independent substring
+expresses plurality alone, and no independent plurality particle supplements
+the paradigm. The number of a possessor and that of a possessed noun are
+expressed by their respective case-number forms (§\,\ref{sec:nm-poss-number}).
 
 In Distributed Morphology terms (Halle \& Marantz 1993; Embick \& Noyer 2001),
-Num\textsuperscript{0} is syntactically projected and carries the feature
-[\textsc{+pl}] when the noun phrase denotes a plurality. At PF, Morphological
+the grammar analyses inflectional Num\textsuperscript{0} as a syntactically
+projected head carrying [\textsc{+pl}] in the plural cells. At PF, Morphological
 Merger applies obligatorily between Num\textsuperscript{0} and the adjacent
 K\textsuperscript{0}, fusing them into a single [K$+$Num] node. The fused node
 is spelled out by a single Vocabulary Item from each class's six-slot inventory.
@@ -1293,9 +1298,11 @@ are represented as alternative realisations of Anch\textsuperscript{0}:
 
 \noindent In the speaker-anchored expression, the speaker has a particular
 individual or group in mind without presenting its identity as already shared
-with the addressee. The feature [\textsc{\textminus{}shr}] concerns this
-source of anchoring; it does not assert that the addressee is incapable of
-identifying the referent independently. Speaker identifiability is an
+with the addressee. The feature [\textsc{\textminus{}shr}] withholds a
+conventional requirement to retrieve that identity through the shared
+discourse; it does not assert that the addressee is incapable of identifying
+the referent independently, or that the referent is absent from the common
+ground. Speaker identifiability is an
 established dimension of indefinite interpretation: Kagan's analysis of
 Russian distinguishes it from free-choice effects and narrow scope relative
 to a sentence-level operator \cite{kagan2011}. The Iridian analysis uses that
@@ -1333,9 +1340,9 @@ speaker's knowledge, while \ird{si byl} presents the speaker as having a
 particular child in mind. Shared \ird{bylo} asks the addressee to recover the
 child through the common discourse model.
 
-The ordinary incompatibility of \ird{si} with suffixal \ird{-to}/\ird{-te}
-is represented by their alternative feature specifications on the same Anch
-head. Vocabulary Insertion selects the speaker-anchored proclitic or the
+Within a single nominal spine, the incompatibility of \ird{si} with suffixal
+\ird{-to}/\ird{-te} is represented by their alternative feature
+specifications on the same Anch head. Vocabulary Insertion selects the speaker-anchored proclitic or the
 shared-anchoring suffix according to that specification. The independent
 demonstrative layer does not itself make every combination felicitous: where
 a demonstrative identifies the same referent for the addressee, its
@@ -1344,10 +1351,10 @@ combination with speaker-specific \ird{si} has no established interpretation.
 \subsubsection{Nominal-domain linearisation and prosodic attachment}
 \label{sec:nm-si-linearisation}
 
-\ird{Si} precedes the material of its nominal expression, while a structurally
-external plural \ird{ne} remains before it. The suffixal anchor instead follows
-the case-number form. The grammar derives this asymmetry through a
-feature-conditioned linearisation instruction: the speaker-anchored terminal
+\ird{Si} precedes the material of its nominal expression, whereas the
+suffixal anchor follows the case-number form. Iridian specifies a language-specific,
+feature-conditioned PF linearisation instruction which accounts for this
+asymmetry: the speaker-anchored terminal
 receives precedence at the edge of its nominal domain before Vocabulary
 Insertion supplies \ird{si}. Its syntactic position and interpretation remain
 those of Anch\textsuperscript{0}. The distinction between a clitic's
@@ -1356,11 +1363,13 @@ independent precedent in Klavans's treatment of clitic dominance, precedence,
 and liaison \cite[§§\,1.2--1.3]{klavans1985}; the particular domain and
 instruction below constitute the analysis of Iridian.
 
-For an anchoring terminal $a$, let $D_a$ be the maximal extended projection of
-the lexical noun whose case-number layer is selected by $a$. Following that
-noun's projection upward includes its \synhead{AnchP}, quantificational field,
-and \synhead{DemP}, where present, but stops below a structurally external
-\synhead{NumP} headed by \ird{ne}. A larger nominal in which this expression is a possessor, a governing
+For an anchoring terminal $a$, let $D_a$ be the designated anchoring
+pronunciation domain of the lexical noun whose case-number layer is selected
+by $a$. Its upper boundary is the highest of the designated nominal
+projections on that noun's spine: \synhead{AnchP}, the quantificational
+field, and \synhead{DemP}, where present. This boundary designates a PF
+domain rather than identifying it with every projection which may contain
+the nominal expression. A larger nominal in which this expression is a possessor, a governing
 postpositional phrase, and a containing clause lie outside $D_a$. A possessor therefore
 has its own domain and anchoring terminal, although its ordered terminal
 sequence occurs as a dependent inside the host noun's domain. This definition uses the
@@ -1384,10 +1393,7 @@ sequences that may contain completed dependent domains. The instruction
 reorders the single occurrence of the terminal belonging to this nominal
 spine; every other precedence relation is retained. An anchoring terminal
 inside a possessor remains within that possessor's block, and $a$ receives no
-second pronunciation at its syntactic source. A structurally external
-\ird{ne} is subsequently concatenated before $\operatorname{Lin}(D_a)$;
-\ird{ne} inside a dependent or lower nominal constituent retains its internal
-position (§\,\ref{sec:nm-poss-ne}).
+second pronunciation at its syntactic source.
 
 Vocabulary Insertion follows this ordering step, realising $a$ as \ird{si}.
 The corresponding [\textsc{+anch,+shr}] terminal is subject to ordinary
@@ -1424,11 +1430,14 @@ unchanged. It also supplements the ordinary linearisation rules rather than
 applying Local Dislocation across an intervening string: in the Distributed
 Morphology account of Embick and Noyer, Local Dislocation is restricted to
 linear adjacency \cite{embicknoyer2007}. No succession of adjacent swaps or
-additional nominal head is required by the Iridian rule.
+additional nominal head is required by the Iridian rule. The domain boundary
+and the precedence instruction are explicit commitments of this analysis;
+their availability does not follow independently from the general
+architecture of Distributed Morphology.
 
-Prosodification applies to the resulting string. \ird{Si} and plural \ird{ne}
-are unstressed proclitics outside the minimal lexical prosodic word
-(§\,\ref{sec:stress}); their host is the following independently stressed
+Prosodification applies to the resulting string. \ird{Si} is an
+unstressed proclitic outside the minimal lexical prosodic word
+(§\,\ref{sec:stress}); its host is the following independently stressed
 word. In \ird{si byl} and \ird{si byle}, the noun retains its initial lexical
 stress. Where prenominal material intervenes, the first independent word in
 that material supplies the host, which may belong to a possessor even though
@@ -1436,6 +1445,66 @@ that possessor has its own anchoring domain. The dependent's order is protected
 during linearisation, but its initial word remains available for prosodic
 attachment. Structural ownership, edge precedence, and phonological attachment
 therefore contribute separately to the pronunciation of the nominal phrase.
+
+\subsubsection{Complex nominals and nested anchoring domains}
+\label{sec:nm-si-complex}
+
+An attributive modifier intervenes between the speaker anchor and the noun
+in the constructed phrase below, which combines \ird{si byl} with the
+established modifier \ird{hradná} (§\,\ref{sec:nm-prop}):
+
+\pex
+\a
+\begingl
+\gla si hradná byl//
+\glb \Sanch{} good.\textsc{attr} child.\Dir{}//
+\glft \trsl{a certain good child (that I have in mind)}//
+\endgl
+\xe
+
+\noindent The clitic precedes the modifier, whose initial lexical stress
+is preserved; the noun is consequently neither its immediate host nor the
+leftmost independent word of $D_a$.
+
+A prenominal possessor creates two potential sources for the same initial
+\ird{si}. The following constructed nominal schemata use the established
+indirect \ird{bylam} and direct \ird{tóm}; their brackets identify anchoring
+ownership rather than pauses or additional pronounced material:
+
+\pex
+\a
+\begingl
+\gla {[si bylam]} tóm//
+\glb {\Sanch{} child.\Ind{}} book.\Dir{}//
+\glft \trsl{a book belonging to a certain child I have in mind}
+\lingcontext{speaker anchoring on the possessor}//
+\endgl
+\a
+\begingl
+\gla si {[bylam] tóm}//
+\glb \Sanch{} {child.\Ind{} book.\Dir{}}//
+\glft \trsl{a certain book I have in mind, belonging to a child}
+\lingcontext{speaker anchoring on the containing nominal}//
+\endgl
+\xe
+
+\noindent Both structures yield \ird{si bylam tóm} under nominal-domain
+linearisation. In the first, the possessor's own terminal receives initial
+precedence inside its dependent block; in the second, the containing
+nominal's terminal precedes that block. The book's null anchor in the first
+structure leaves its reference to context, just as the child's null anchor
+does in the second. The resulting ambiguity is a prediction of the adopted
+PF rule, rather than an independently established ambiguity judgement.
+Although \ird{bylam} supplies the first independent prosodic host in both
+structures, the location of stress does not identify the source of anchoring.
+
+If both domains bear speaker anchoring, the same rule preserves both terminals
+and predicts \ird{si si bylam tóm}. The feature alternatives on a single Anch
+head do not exclude this structure, since the terminals belong to different
+nominal spines. Its acceptability and the prosodic integration of adjacent
+\ird{si} remain unspecified: the rule supplies no haplology, reduction, or
+special clitic-cluster repair, and the single-clitic host rule alone does not
+determine whether both clitics share one host.
 
 A speaker-anchored nominal may establish a new topic, occur as a focused or
 backgrounded argument, or introduce an individual in an existential
@@ -1695,7 +1764,7 @@ indefinite with its local predicate negative cannot produce it.
 
 \pex
 \a \ird{jede bych ščenžkou?} \trsl{who arrived yesterday?}
-\a \ird{jak na ne ruščevní svirkošta} \trsl{which of these Russian authors}
+\a \ird{jak ruščevní svirkošc} \trsl{which Russian author}
 \a \ird{nět študent} \trsl{all students}
 \a \ird{zide byl} \trsl{no child} \lingcontext{adnominal phrase; requires clausal negative licensing}
 \xe
@@ -1749,31 +1818,38 @@ phrase [\synhead{PossP} oblique-N head-N] forms a constituent that is then
 inflected as a whole for case by K and optionally for anchoring by
 \textsc{Anch\textsuperscript{0}}.
 
-\subsection{Distribution of \ird{ne} across the possessive DP}
+\subsection{Number within the possessive DP}
 \label{sec:nm-poss-ne}
+\label{sec:nm-poss-number}
 
-The plural clitic \ird{ne} has two attachment sites within a possessive
-\synhead{DP}, yielding different scope interpretations. In the following
-schematic pair, plural possessors are several people named Marek:
+A possessor and its containing nominal each bear their own fused case-number
+form. The indirect plural \ird{bylac} therefore marks several children as
+possessors without requiring the possessed object to be plural, while the
+direct plural \ird{lubce} marks several apples independently of the number
+of their possessor (§\,\ref{sec:nm-num}). The following constructed pair
+combines these established forms with indirect singular \ird{bylam} and
+direct singular \ird{lobek}:
 
 \pex
-\a \ird{ne Marcí tóm} --- \trsl{the Mareks' book} (possessors
-plural; book possibly singular)
-\a \ird{Marcí ne tóm} --- \trsl{Marek's books} (book plural;
-possessor singular)
+\a
+\begingl
+\gla bylac lobek//
+\glb child.\Ind{}.\textsc{pl} apple.\Dir{}.\textsc{sg}//
+\glft \trsl{an apple belonging to children}//
+\endgl
+\a
+\begingl
+\gla bylam lubce//
+\glb child.\Ind{}.\textsc{sg} apple.\Dir{}.\textsc{pl}//
+\glft \trsl{apples belonging to a child}//
+\endgl
 \xe
 
-\noindent In the first phrase, \ird{ne} marks the plurality of the
-possessors expressed by \ird{Marcí}; in the second it marks the plurality of
-the possessed books. These interpretations distinguish the possessor's nominal
-domain from the lower head-noun domain within the possessive construction.
-During PF linearisation, \ird{ne} belonging to a possessor remains inside that
-possessor's ordered block, while \ird{ne} in the lower head-noun position
-retains that internal position. Neither is identified as external merely
-because it precedes a noun: the external ordering \ird{ne} $>$ \ird{si}
-applies only when the \synhead{NumP} headed by \ird{ne} lies outside the
-relevant $D_a$ (§\,\ref{sec:nm-si-linearisation}).
-
+\noindent Number is local to each nominal spine, just as anchoring is:
+plurality in one does not require plurality in the other. Neither expression
+contains an overt anchor, so contextual identifiability remains independent
+of the number contrast. Speaker anchoring may likewise belong to the possessor
+or to its containing nominal (§\,\ref{sec:nm-si-complex}).
 
 
 %% ================================================================
@@ -1789,15 +1865,16 @@ relevant $D_a$ (§\,\ref{sec:nm-si-linearisation}).
 The canonical linear order of the Iridian noun phrase —
 
 \begin{center}
-\ird{ne} $>$ \ird{si} $>$ \textsc{dem} $>$ \textsc{quant/num} $>$
+\ird{si} $>$ \textsc{dem} $>$ \textsc{quant/num} $>$
 \textsc{poss}.\Ind{} $>$ \textsc{prop.root / stative / -ový} $>$
 \textsc{head} + \textsc{case} + \ird{-to}
 \end{center}
 
 — combines the functional hierarchy in Table~\ref{tab:nm-projections} with
 the placement of prenominal exponents. The sequence records relative slots,
-whose interpretation also constrains which combinations are available
-(§\,\ref{sec:nm-spec}). The suffixal morphology follows the head-final
+whose interpretation also constrains which combinations are available;
+\ird{si} and the suffixal anchor are mutually exclusive on the same nominal
+spine (§\,\ref{sec:nm-spec}). The suffixal morphology follows the head-final
 principle, while Anch[\textsc{+anch,\,\textminus{}shr}] receives precedence
 at the edge of $D_a$ before it is realised as \ird{si}
 (§\,\ref{sec:nm-si-linearisation}).
@@ -1813,16 +1890,16 @@ case: \ird{si} precedes material whose projections dominate
 \synhead{AnchP}. The linear sequence and the head-final suffixal spine must
 therefore be distinguished from the hierarchy of semantic scope.
 
-The prenominal left field contains plural \ird{ne}, speaker-anchoring
-\ird{si}, demonstratives, and quantificational material, while possessors stand
+The prenominal left field contains speaker-anchoring \ird{si},
+demonstratives, and quantificational material, while possessors stand
 closer to the noun and property roots, stative modifiers, and \ird{-ový}
 phrases immediately precede the head. The linearisation instruction fixes the position of \ird{si} relative to
-this material and to a structurally external \ird{ne}; it does not determine
+this material; it does not determine
 the finer ordering of every combination within the quantificational field.
 
 \pex
 \a \ird{tak študencí tóm} \trsl{this student's book}
-\a \ird{jak na ne ruščevní svirkošta} \trsl{which of these Russian authors}
+\a \ird{jak ruščevní svirkošc} \trsl{which Russian author}
 \xe
 
 \subsection{Stative verbs and property roots as \synhead{NP} modifiers}
