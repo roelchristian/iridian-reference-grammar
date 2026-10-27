@@ -28,9 +28,9 @@ The distinction between a change of primary articulation and secondary
 palatalisation follows the terminology of \cite{bateman2007}: the standard
 realisations [c\,ɟ\,ɲ\,ʎ] differ in primary constriction from their plain
 coronal counterparts, whereas [pʲ\,bʲ\,mʲ\,vʲ] retain a labial constriction.
-The synchronic rules are stated below; possible historical sources are considered
-separately in §\,\ref{sec:historical-note}.
-
+The synchronic description identifies the stem and suffix classes selecting
+these alternants; possible historical sources of the consonantal and vocalic
+grades are considered separately in §\,\ref{sec:historical-note}.
 
 \section{Vowels}
 
@@ -93,8 +93,8 @@ rule is given in §\,\ref{sec:stress}.
 \subsection{Minimal pairs}
 
 Table~\ref{tab:vowel-minimal} gives constructed minimal pairs illustrating the vowel
-contrasts. The lexemes are invented for expository purposes, but they follow ordinary
-native word shapes.
+contrasts. The pairs are schematic illustrations of the contrasts rather than a separate
+lexical inventory.
 
 \begin{table}[ht]
 	\footnotesize
@@ -109,7 +109,7 @@ native word shapes.
 		\ipagloss{/ɨ \textasciitilde{} ɨː/} & \phon{byt}{bɘt}{ridge} & \phon{být}{bɨːt}{hut} \\
 		\ipagloss{/ɔ \textasciitilde{} oː/} & \phon{sot}{sɔt}{crumb} & \phon{sót}{soːt}{orchard} \\
 		\ipagloss{/ʊ \textasciitilde{} uː/} & \phon{mur}{mʊr}{silt} & \phon{múr}{muːr}{wall} \\
-		\ipagloss{/ɪ \textasciitilde{} ɨ/} & \phon{bil}{bʲɪl}{hook} & \phon{byl}{bɘl}{ash} \\
+		\ipagloss{/ɪ \textasciitilde{} ɨ/} & \phon{bil}{bʲɪl}{hook} & \phon{byl}{bɘl}{child} \\
 		\ipagloss{/iː \textasciitilde{} ɨː/} & \phon{bíl}{bʲiːl}{whip} & \phon{býl}{bɨːl}{stump} \\
 		\bottomrule
 	\end{tabularx}
@@ -210,10 +210,10 @@ sibilants.
 
 \subsubsection*{Consonants outside the two devices}
 
-The explicit soft coronals
-\ird{ť\,ď\,ň\,ľ} carry palatality in the háček and therefore stand directly
-before vowels, with plain \orth{e} before /ɛ/ and no mediating marker.
-Learned \ird{ř} spells /ʒ/ and belongs with the lexical conventions of
+The soft coronals \ird{ť\,ď\,ň\,ľ} carry palatality in their own letters
+and stand directly before vowels; before /ɛ/ they take plain \orth{e},
+since \orth{ě} would repeat information supplied by the consonant letter.
+Learned \ird{ř} spells /ʒ/ and belongs to the lexical conventions of
 §\,\ref{sec:r-hook}. The postalveolars \ird{š\,ž\,č} are independent phonemes, not
 palatalised variants of any plain consonant (Section~\ref{sec:postalveolars}); they
 do not participate in either device, and inserting \orth{i} or writing \orth{ě}
@@ -256,11 +256,10 @@ its own.
 \subsection{Consonant inventory}\label{sec:consonant-inventory}
 
 The primary consonant phonemes of standard Iridian are set out in
-Table~\ref{tab:consonants}. The inventory presents a clean West Slavic profile.
-Surface [g] and [f] are not primary phonemes. The former appears in careful loan
-pronunciation and as a narrow phonetic realisation of /k/ under lenition (see
-Section~\ref{sec:lenition}); the latter arises regularly by devoicing and
-voiceless-assimilation of /v/. Native phonology accordingly lacks phonemic /g/ and
+Table~\ref{tab:consonants}. Surface [g] and [f] are not primary phonemes. The former occurs in careful
+loan pronunciation and through voicing assimilation of /k/, while [f] arises
+by devoicing or voiceless assimilation of /v/
+(§\,\ref{sec:lenition}). Native phonology accordingly lacks phonemic /g/ and
 /f/.
 
 \begin{table}[ht]
@@ -318,8 +317,9 @@ allophonic and does not create a separate phoneme.
 \subsubsection*{Velar lenition}
 
 The velar stop /k/ is frequently realised as [k͡x] after a pause and lenites to
-[x] or [ɣ] intervocalically and in certain clusters. This distribution accounts
-for most surface voiced velars in native vocabulary. Loanwords may preserve [g] in
+[x] or [ɣ] intervocalically and in certain clusters. The voiced fricative
+[ɣ] is distinct from the stop [g] supplied by regressive voicing assimilation
+of /k/ in an obstruent cluster. Loanwords may preserve [g] in
 careful pronunciation, but in ordinary speech they are commonly adapted with
 \orth{h} or with the native lenited series.
 
@@ -426,6 +426,9 @@ ordinary velar mutation to a third productive output:
 The spelling of \ird{kěda} is lexical information. It does not mean that every
 /k/ before /ɛ/ becomes [c], nor does it determine an otherwise unknown history
 for the word.
+
+Where softness is lexically fixed, the soft consonant is retained throughout
+the stem's paradigm, independently of the vowel supplied by an ending.
 
 \subsection{Postalveolars as independent phonemes}\label{sec:postalveolars}
 
@@ -721,9 +724,8 @@ properties: membership in the fleeting-vowel class, selection of a raised grade,
 and selection of a quantity grade. Each belongs to the lexeme and its
 morphological construction; none adds a vowel phoneme to the inventory.
 
-A practical implementation first selects the construction and the full or bound
-stem, then attaches its exponent and applies the consonant mutation assigned to
-that exponent:
+Within each construction, the full or bound stem is selected before its
+exponent is attached and the associated consonant mutation applies:
 
 \begin{center}
 \textsc{construction and stem class} $\rightarrow$ \textsc{stem grade}
@@ -810,9 +812,7 @@ root-vowel ablaut:
 
 In the bare-root subtype represented by \ird{rán}, the singular endings are
 zero, \ird{-ou}, and \ird{-e}. The long root vowel remains constant in
-\ird{rán}, \ird{ránou}, and \ird{ráne}. These endings do not imply a
-general phonological change \ird{o + m > um}; nor does suffixal vowel
-replacement require a zero grade of the root.
+\ird{rán}, \ird{ránou}, and \ird{ráne}. The ending alternation leaves the root vowel and its quantity unchanged.
 
 \subsection{Fleeting \ird{e} and reduced stems}\label{sec:vowel-zero}
 
@@ -835,8 +835,8 @@ Membership in the alternating class must therefore be acquired with the lexeme;
 within that class the relation between full and bound stems is regular. The
 analysis locates lexical exceptionality on the morpheme rather than on an
 otherwise inaudible vowel distinction, following the representational option
-developed for Russian by \cite{gouskova2012}. The distribution stipulated here
-is Iridian-specific.
+developed for Russian by \cite{gouskova2012}. The Iridian class has its own distribution, which is specified by the
+paradigms below.
 
 Bound-stem morphology selects the reduced stem before the licensed case-number
 endings and, in alternating nouns, before direct anchoring. Selected verbal and
@@ -993,14 +993,10 @@ Any exceptional lexical alternant must be specified independently.
 
 \subsection{Sibilant replacement}\label{sec:sibilant-replacement}
 
-Sibilant replacement is a morphologised stem mutation triggered chiefly by the
-antipassive \ird{-aš-}. It is emphatically \emph{not} ordinary front-vowel
-softening. Its trigger is not a front vowel but a specific derivational morpheme;
-its outputs include \ird{ž} and \ird{š}, which are postalveolar phonemes, not soft
-coronals; and it affects the thematic consonant of the verb stem, not any consonant
-adjacent to a front vowel. Every time a consonant alternation is encountered in an
-antipassive derivative, the reader should refer to this section rather than to the
-soft-stem selection or velar fronting sections.
+The antipassive \ird{-aš-} selects a sibilant replacement stem whose final
+consonant may be \ird{č}, \ird{š}, or \ird{ž}. Since the trigger is the
+antipassive construction, these outputs are independent of the front-vocalic
+softening classes.
 
 The mutation targets the thematic consonant only and follows the classes in
 Table~\ref{tab:sibilant-mutation}:
@@ -1028,9 +1024,9 @@ velar/fricative series and are assigned analogically to Class~III. Once replacem
 has applied, later voicing cleanup and cluster repair may still affect the output
 if the following suffix requires it.
 
-The wording `sibilant replacement' is used consistently in the rest of this
-grammar when referring to the antipassive mutation, and `softening' is reserved
-for the productive coronal process. These terms must not be used interchangeably.
+Sibilant replacement and softening thus identify different stem relations:
+the former belongs to the antipassive, whereas the latter is selected by the
+ordinary front-coded suffix classes.
 
 \subsection{Cluster repair, epenthesis, and voicing cleanup}\label{sec:cluster-repair}
 
@@ -1126,7 +1122,10 @@ relation is a general phonological response to a dense consonant cluster.
 
 Standard Iridian writes productive soft-coronal outputs with explicit
 \ird{ť\,ď\,ň\,ľ}. Restricted lexical spellings are listed separately in
-§\,\ref{sec:e-hook}. The principal conventions are:
+§\,\ref{sec:e-hook}. Conventional spellings before pronounced \ird{i, í},
+such as \ird{pištlí}, likewise retain their dictionary-specified consonantal
+readings. Such spellings do not make every high-front-vowel suffix a PAL
+trigger. The principal conventions are:
 
 \begin{itemize}
 	\item Productive soft-coronal outputs use \ird{ť}, \ird{ď}, \ird{ľ},
@@ -1218,7 +1217,7 @@ the linker \ird{-e} and participant nominaliser \ird{-ou}:
 \ird{k $\rightarrow$ c}, while \ird{-ou} preserves the velar. These
 constructions select the suffixal grade without raising the lexical root.
 Thus ordinary \ird{kělek} and \ird{ščenek} retain \ird{-ek} even after a
-root containing \ird{e/ě}. No general dissimilation prohibits such sequences.
+root containing \ird{e/ě}.
 
 Ergative transitive \ird{-nik} and perfective \ird{-ik} selected by the stative
 verbaliser \ird{-n-} are inherited construction-specific forms. Their vowel
@@ -1227,8 +1226,7 @@ remains high when further morphology follows. These specifications do not make
 
 \subsection{Rule interactions}\label{sec:morphophon-interactions}
 
-The alternations above often stack. The following derivations illustrate the
-intended order and, where relevant, which of the three mutation domains applies.
+Stem-grade selection and suffixal mutation combine in the following forms:
 
 \pex
 \a \ird{lobek} + \ird{-u} $\rightarrow$ \ird{lubku}
@@ -1287,9 +1285,9 @@ syllabification: \ird{*Janek-u} $>$ \ird{Janku} and \ird{*perek-a} $>$
 \ird{perka}. The corresponding unsuffixed forms retained the vowel in their
 closed final syllable. Long unstressed vowels resisted this syncope; their
 later shortening, together with later loans and morphological renewal, supplied
-stable vowels in environments now shared with alternating stems. Modern
-unstressed long vowels consequently include later sources. The earlier
-quantity distinction is not reconstructed by the synchronic grammar.
+stable vowels in environments now shared with alternating stems. The modern unstressed long vowels have later lexical or morphological
+sources, while the earlier quantity contrast survives indirectly in the
+distinction between stable and alternating stems.
 
 \paragraph{Metaphony.}
 After syncope, a high vowel in the next vocalic position could raise a stressed
@@ -1298,8 +1296,7 @@ the relation. Thus \ird{*lobek-u} $>$ \ird{*lobk-u} $>$ \ird{lubku}, and
 \ird{*lobek-í} $>$ \ird{*lobk-í} $>$ \ird{*lubk-í}, followed by velar
 mutation to \ird{lubcí}. Raising preserved quantity. High-suffix-triggered
 raising of stressed vowels has a typological parallel in the Veneto pattern
-analysed by \cite{walker2001}; that comparison supports the mechanism rather
-than the particular Iridian reconstruction.
+analysed by \cite{walker2001}.
 
 \paragraph{Stem levelling and ending replacement.}
 High-vowel obliques supplied the raised bound stem \ird{lubk-}, which was
@@ -1309,9 +1306,8 @@ anchoring. Unraised reduced stems arose with older non-high endings:
 \ird{*Merek-e} $>$ \ird{Merce}. Later extension of transitive \ird{-u} and,
 in the relevant indirect subclass, \ird{-í}, gave \ird{perku}, \ird{oblu},
 and \ird{Mercí} after metaphony had ceased. The modern suffix vowel therefore
-does not determine membership in the raised class. An inherited
-\ird{*Merek-í} during the metaphony period would predict a raised root and is
-not assumed in this reconstruction.
+does not determine membership in the raised class. The unraised vowel of \ird{Mercí} reflects the later date at which the
+high-vowel ending entered this paradigm.
 
 \paragraph{Verbal constructions.}
 For the irrealis, a sequence of ordinary \ird{*-i} and a following formative
@@ -1326,9 +1322,8 @@ The perfective--linker construction was integrated after nominal syncope had
 ceased. Local suffixal assimilation gave \ird{*-ek-i > -ik-i}; the older
 word-level linker was subsequently replaced by \ird{e}, reconstructed as a
 phrase-level connective, while the bound perfective grade survived. This
-suffixal history differs from stressed-root metaphony. The synchronic
-specification \ird{-ek}/\ird{-ik-} does not depend on reconstructing an
-unpronounced high vowel in modern \ird{-e}. The participant nominaliser
+suffixal history differs from stressed-root metaphony. The surviving suffixal correspondence is selected by the modern linker
+construction. The participant nominaliser
 \ird{-ou} selects the same bound perfective grade.
 
 \paragraph{Quantity.}
@@ -1337,8 +1332,8 @@ voiced fricatives in a subset of stems, before general final devoicing obscured
 the contrast: reconstructed \ird{*straz} $>$ \ird{stráz}, beside short-root
 \ird{*straz-y}, and \ird{*trav} $>$ \ird{tráv}, beside \ird{trava}.
 A phonetic-duration source distinct from lost-vowel compensation is developed
-for Western Slavic by \cite[§4]{scheer2017}; its application here is a
-reconstruction of Iridian, not a claim about an attested common history.
+for Western Slavic by \cite[§4]{scheer2017}, providing a comparative model
+for the reconstructed Iridian development.
 Modern quantity classes preserve the resulting stem relations, while independent
 lexical long vowels can remain long before suffixes.
 

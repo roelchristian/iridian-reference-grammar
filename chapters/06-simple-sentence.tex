@@ -1,36 +1,21 @@
 \chapter{The Simple Sentence}\label{ch:simple}
 
-% ============================================================
-% STATUS: SCAFFOLD — largely new content; some material available in
-% archive/2020/chapters/07-clause-structure.tex.
-% Key theoretical framing: the syntax chapters adopt a Minimalist,
-% head-final clause spine with a Cartographic left periphery and a
-% Distributed Morphology view of spellout. Topic-comment structure is
-% important, but it is implemented within that architecture rather than
-% replacing it.
-% ============================================================
-
 \section{Theoretical background and analytical conventions}
 \label{sec:th-background}
 
 The analyses in Chapters~\ref{ch:simple} and~\ref{ch:complex} adopt a Minimalist
 architecture in which clause structure is built by Merge, interpreted through
 hierarchies of lexical and functional projections, and linearized according to
-the strongly head-final character of Iridian. The goal is not to derive each
-clause type from construction-specific templates, but to show how the recurrent
-properties of the language follow from a stable structural spine: a predicate
-domain, a small set of inflectional and operator projections, and an articulated
-left periphery.
+the strongly head-final character of Iridian. Recurrent clause properties are
+analysed through a shared structural spine comprising a predicate domain,
+inflectional and operator projections, and an articulated left periphery.
 
-Within that architecture, the clause edge is treated cartographically. The high
-field of the clause is not a single undifferentiated CP, but a sequence of
-projections for topic, focus, clause typing, evidential/epistemic operators, and
-speech-act marking. This is the machinery that the later sections of
-Chapters~\ref{ch:simple} and~\ref{ch:complex} actually use to analyse topic
-placement, wh-licensing, polar questions, complementation, and the ordering of
-high particles. Information structure is therefore not an alternative organizing
-principle to syntax; it is encoded in designated syntactic positions, especially
-in \synhead{TopP} and \synhead{FocP}, within a broader head-final clause spine.
+Within that architecture, the clause edge comprises an ordered sequence of
+projections for topic, focus, clause typing, evidential and epistemic operators,
+and speech-act marking. Topic placement, wh-licensing, polar questions,
+complementation, and the order of high particles are analysed through these
+positions, with information structure encoded especially in
+\synhead{TopP} and \synhead{FocP}.
 
 The morphology discussed in these chapters is interpreted in the same way as
 elsewhere in the grammar: broadly within a Distributed Morphology model.
@@ -186,13 +171,10 @@ and §\,\ref{sec:th-polar-questions}.
 \noindent The surface ordering from leftmost to rightmost --- Zone~\textsc{i}
 particles $>$ topic $>$ \ird{by} $>$ Zone~\textsc{ii} $>$ Zone~\textsc{iii} $>$
 predicate --- is a direct consequence of the clause spine combined with
-head-finality. The important analytical point is that \ird{by}'s surface
-proximity to the Zone~\textsc{ii} particles does not indicate shared
-constituency: \ird{by} is in \synhead{PolP} between \synhead{TopP} and
-\synhead{FocP}, while Zone~\textsc{ii} items are in \synhead{AspP} below
-\synhead{IP}. Cross-references from the simple and complex sentence chapters to
-§\,\ref{sec:adv-particles} and §\,\ref{sec:by-pol-head} are intended to be
-followed for formal motivation.
+head-finality. Although \ird{by} is adjacent to the Zone~\textsc{ii}
+particles, it occupies \synhead{PolP} between \synhead{TopP} and
+\synhead{FocP}, whereas those particles occupy the \synhead{AspP} tier below
+\synhead{IP} (§\,\ref{sec:adv-particles}; §\,\ref{sec:by-pol-head}).
 
 
 \section{The left periphery: topics, operators, and clause typing}
@@ -312,11 +294,8 @@ interrogative mechanism but ordinary information structure operating inside an
 interrogative clause. A direct-case topic may remain in Spec,\synhead{TopP}; a
 narrow-focus non-wh constituent may move to Spec,\synhead{FocP}; either
 operation is independent of the interrogative clause typing supplied by
-\ird{by}. This point is important for understanding argument and adjunct
-fronting in questions and prevents conflating topic/focus movement with the
-mechanism that licenses interrogative force: interrogative force belongs to
-\synhead{PolP}, while focus and topic placement belong to \synhead{FocP} and
-\synhead{TopP} respectively.
+\ird{by}, whose operator supplies interrogative force independently of the
+position chosen for the argument or adjunct.
 
 
 \section{Content questions and \textit{wh}-interrogation}
@@ -542,7 +521,7 @@ complement domain, the neutral order is \term{Adverb $>$ Object $>$ Verb}:
 \pex
 \a
 \begingl
-\gla Skorňe bylam piaštébime.//
+\gla Skorňe byl piaštébime.//
 \glb quickly child.\Dir{} eat-\Appl{}-\Prog{}//
 \glft \trsl{I am feeding the child quickly.}//
 \endgl
@@ -566,9 +545,9 @@ constructions that differ both structurally and semantically. The default
 strategy is the \term{zero copula}: a null functional head that licenses a bare
 equative predication without event structure. The second strategy is the overt
 marked copular verb \ird{neh-}, which introduces an event of transition and
-projects a full verbal spine. The two constructions are not merely stylistic
-variants; they encode a principled semantic contrast between atemporal
-classification on the one hand and entering a classification on the other.
+projects a full verbal spine. Whereas the zero copula expresses present or
+atemporal classification, \ird{neh-} presents entry into that classification
+as an event with aspectual structure.
 
 Property predication --- the expression of adjectival meanings such as \trsl{be
 beautiful} or \trsl{be good} --- belongs to the stative verb system and is not
@@ -630,24 +609,16 @@ assigned in the same structural position.
 
 \subsubsection{Structural analysis: \synhead{EquP} and the absence of AspP}
 
-The zero copula is not merely absent from the surface string; it is the
-phonologically null exponent of a dedicated functional head,
+The zero copula is analysed as the phonologically null exponent of
 Cop\textsuperscript{0}, which projects an \term{equative phrase}
-(\synhead{EquP}). \synhead{EquP} is the functional layer that licenses the
-predication relation between the topic \synhead{DP} and the predicative
-\synhead{DP}. Crucially, \synhead{EquP} is \emph{not} selected by
-Asp\textsuperscript{0}: no aspectual projection is present in the zero-copula
-clause.
-
-The reason is structural. Aspect requires an eventuality --- a state, process,
-or transition --- to scope over. Equative predications of the type \trsl{Marek
-is a doctor} or \trsl{Bach is a composer} express a relation between two
-individuals, not an eventuality in any aspectual sense. There is no event of
-being-a-doctor that could be viewed as complete, ongoing, or prospective in the
-way that eating or arriving can. In the absence of an eventuality,
-\synhead{AspP} cannot be projected, and \synhead{EquP} is selected directly by
-\synhead{NegP} (when present) or by the higher \synhead{IP} layer. The
-affirmative clause structure is:
+(\synhead{EquP}) licensing the relation between the topic \synhead{DP} and
+the predicative \synhead{DP}. In the unmarked present or atemporal
+construction, \synhead{EquP} contains no aspectual projection and is selected
+directly by \synhead{NegP}, when negation is present, or by the higher
+\synhead{IP} layer. Transitional interpretations instead employ \ird{neh-},
+whose event structure supports the verbal aspect paradigm
+(§\,\ref{sec:neh}); property predication likewise belongs to the stative
+verbal system. The affirmative zero-copula structure is represented below:
 
 \begin{center}
 \begin{forest}
@@ -841,15 +812,11 @@ be moving from one classification or condition into another, or to have crossed
 a threshold between them. This transitional meaning is not a pragmatic
 implication but a semantic contribution of the root itself.
 
-The structural difference between the zero copula and \ird{neh-} is not merely
-that one is overt and the other silent. The zero copula projects \synhead{EquP},
-a non-eventive predication layer with no \synhead{AspP}. \ird{Neh-}, by
-contrast, projects a proper verbal predicate: it introduces a \term{transition
-event} --- an eventuality whose onset, duration, and completion can be
-aspectually individuated. This eventuality licenses Asp\textsuperscript{0},
-which selects the \synhead{VP}, and the full verbal spine (\synhead{VP}
-$\subset$ \synhead{AspP} $\subset$ \synhead{NegP}) is projected in the usual
-way. The two structures contrast as follows:
+Zero-copula \synhead{EquP} lacks \synhead{AspP}, whereas the transition
+introduced by \ird{neh-} can be viewed with respect to its onset, duration,
+or completion. Accordingly, Asp\textsuperscript{0} selects the verbal
+\synhead{VP}, and a negative clause projects \synhead{NegP} above that
+aspectual predicate. The two structures are represented below:
 
 \begin{center}
 \begin{minipage}[t]{0.42\textwidth}
@@ -1170,9 +1137,12 @@ PF exponent. The affirmative and negative structures of \ird{Byl jeca} and
 \end{forest}
 \end{center}
 
-\noindent The direct-case pivot precedes the predicate as the clause's
-topic, occupying Spec,\synhead{AspP} in the affirmative and
-Spec,\synhead{NegP} in the negative. Negative clauses contain a zero exponent
+\noindent The direct-case pivot precedes the predicate, occupying
+Spec,\synhead{AspP} in the affirmative and Spec,\synhead{NegP} in the negative.
+This low pivot position does not itself confer aboutness topichood: in a
+presentational context, the pivot may introduce a new discourse referent
+without occupying Spec,\synhead{TopP} (§\,\ref{sec:tc-topicless}).
+Negative clauses contain a zero exponent
 of Neg\textsuperscript{0}, which conditions the suppletive root \ird{zad-}
 at Exist\textsuperscript{0}.
 
@@ -1339,10 +1309,8 @@ source of the construction.
 
 The existential predicate in Iridian consistently selects a nominal pivot: the
 entity asserted to exist stands as the direct-case complement of
-Exist\textsuperscript{0}. The constructional family defined by this selectional
-requirement is broader than the overt-head presentational use treated in earlier
-descriptions. Three subtypes can be distinguished according to the internal
-structure of the pivot \synhead{DP}:
+Exist\textsuperscript{0}. The nominal pivots admitted by this selectional requirement fall into
+three subtypes according to the internal structure of the pivot \synhead{DP}:
 
 \begin{enumerate}[wide]
 \item a bare \synhead{NP} (plain existential; §\,\ref{sec:existence-and-presence}),
@@ -1482,7 +1450,7 @@ heads of a presentational pivot \synhead{DP}.
 
 \ex
 \begingl
-\gla ?Senicěte obroždkový chrás jeca.//
+\gla ?Senicete obrožikový chrás jeca.//
 \glb news.\Ind{}.\Def{} read-\textsc{antip}-\Pf{}-\textsc{attr} person.\Dir{} \Exst{}-\Cont{}//
 \glft \trsl{There is a person who read the news.} \lingcontext{formally possible, but
   marked: agentive head disfavoured in overt-head presentational}//
