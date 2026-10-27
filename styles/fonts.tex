@@ -1,0 +1,40 @@
+% Shared font contract for the interior and standalone cover.
+% Resolve via kpathsea and pass explicit directories: otherwise luaotfload may
+% silently prefer a different same-named font in the user's Library/Fonts.
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\edef\irserifpath{\directlua{
+  local p = kpse.find_file("LibertinusSerif-Regular.otf", "opentype fonts")
+  if p then tex.sprint((p:gsub("[^/]+$", "")))
+  else tex.error("TeX-distributed Libertinus Serif fonts were not found") end
+}}
+\edef\irsanspath{\directlua{
+  local p = kpse.find_file("SourceSansPro-Regular.otf", "opentype fonts")
+  if p then tex.sprint((p:gsub("[^/]+$", "")))
+  else tex.error("TeX-distributed Source Sans Pro fonts were not found") end
+}}
+\edef\iripapath{\directlua{
+  local p = kpse.find_file("GentiumPlus-Regular.ttf", "truetype fonts")
+  if p then tex.sprint((p:gsub("[^/]+$", "")))
+  else tex.error("TeX-distributed Gentium Plus fonts were not found") end
+}}
+\setmainfont{LibertinusSerif-Regular.otf}[
+  Path=\irserifpath,
+  ItalicFont=LibertinusSerif-Italic.otf,
+  BoldFont=LibertinusSerif-Bold.otf,
+  BoldItalicFont=LibertinusSerif-BoldItalic.otf,
+  Numbers={Lining,Proportional}
+]
+\setsansfont{SourceSansPro-Regular.otf}[
+  Path=\irsanspath,
+  ItalicFont=SourceSansPro-RegularIt.otf,
+  BoldFont=SourceSansPro-Semibold.otf,
+  BoldItalicFont=SourceSansPro-SemiboldIt.otf,
+  Scale=MatchLowercase,
+  Numbers={Lining,Proportional}
+]
+\newfontfamily\ipafont{GentiumPlus-Regular.ttf}[
+  Path=\iripapath,
+  Scale=MatchLowercase
+]
+\newcommand{\ipagloss}[1]{{\ipafont #1}}

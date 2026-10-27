@@ -1,0 +1,65 @@
+% Reusable vector cover. Requires TikZ, xcolor and a sans-serif font family.
+% Coordinates are in the A4 page's physical millimetres, independent of margins.
+\definecolor{ircoverink}{HTML}{102F3A}
+\definecolor{ircoverpaper}{HTML}{F3F1E8}
+\definecolor{ircoverteal}{HTML}{70B5AD}
+\definecolor{ircoverline}{HTML}{407D80}
+
+\newcommand{\bookcover}{%
+  \clearpage
+  \begingroup
+  \thispagestyle{empty}%
+  \null
+  \begin{tikzpicture}[remember picture,overlay]
+    \begin{scope}[shift={(current page.north west)},x=1mm,y=-1mm]
+      \fill[ircoverink] (0,0) rectangle (210,297);
+      \fill[ircoverteal] (25,20) rectangle (41,21.2);
+      \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
+        font=\sffamily\fontsize{14}{18}\selectfont] at (25,30)
+        {Roel Christian Yambao};
+      \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
+        text width=162mm,align=left,
+        font=\sffamily\fontsize{32}{38}\selectfont] at (25,67)
+        {A Reference Grammar};
+      \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
+        text width=166mm,align=left,
+        font=\sffamily\bfseries\fontsize{38}{44}\selectfont] at (25,87)
+        {of the Iridian Language};
+      \node[anchor=north west,inner sep=0pt,text=ircoverteal,
+        font=\rmfamily\itshape\fontsize{17}{22}\selectfont] at (25,112)
+        {Ircevni kostgramatik};
+
+      % An abstract constituent structure: branching is the ornament, with no
+      % invented linguistic labels or suggestion of a publisher's imprint.
+      \begin{scope}[line cap=round,line join=round]
+        \draw[ircoverline,line width=0.65pt]
+          (25,189) -- (65,189) -- (102,166) -- (147,166) -- (184,149) -- (214,149);
+        \draw[ircoverline,line width=0.65pt]
+          (147,166) -- (184,182) -- (214,182);
+        \draw[ircoverline,line width=0.65pt]
+          (65,189) -- (102,212) -- (147,212) -- (184,198) -- (214,198);
+        \draw[ircoverline,line width=0.65pt]
+          (147,212) -- (184,228) -- (214,228);
+        \draw[ircoverteal,line width=1.15pt]
+          (25,239) -- (65,239) -- (102,252) -- (147,252) -- (184,268) -- (214,268);
+        \draw[ircoverteal,line width=1.15pt]
+          (147,252) -- (184,244) -- (214,244);
+        \draw[ircoverline,line width=0.65pt]
+          (65,239) -- (102,226) -- (130,226);
+        \foreach \x/\y in {65/189,102/166,147/166,102/212,147/212}{%
+          \fill[ircoverink] (\x,\y) circle[radius=1.3mm];
+          \draw[ircoverline,line width=0.65pt] (\x,\y) circle[radius=1.3mm];
+        }
+        \foreach \x/\y in {65/239,102/252,147/252}{%
+          \fill[ircoverink] (\x,\y) circle[radius=1.5mm];
+          \draw[ircoverteal,line width=1.15pt] (\x,\y) circle[radius=1.5mm];
+        }
+      \end{scope}
+      \node[anchor=south west,inner sep=0pt,text=ircoverpaper,
+        font=\sffamily\fontsize{10}{13}\selectfont] at (25,280)
+        {First edition\quad 2026};
+    \end{scope}
+  \end{tikzpicture}%
+  \par\clearpage
+  \endgroup
+}

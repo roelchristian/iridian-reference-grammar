@@ -18,7 +18,8 @@ for command in (args.latexmk, 'lualatex', 'kpsewhich'):
         missing.append(command)
 
 if shutil.which('kpsewhich'):
-    source = Path('grammar.tex').read_text(encoding='utf-8')
+    sources = [Path('grammar.tex'), Path('cover.tex'), *Path('styles').glob('*.tex')]
+    source = '\n'.join(path.read_text(encoding='utf-8') for path in sources if path.is_file())
     source = re.sub(r'(?m)(?<!\\)%.*$', '', source)
     packages = {'amsbook.cls'}
     for names in re.findall(r'\\usepackage(?:\[[^\]]*\])?\{([^}]+)\}', source):

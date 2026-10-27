@@ -9,15 +9,15 @@ The current grammar is in `grammar.tex` and `chapters/`. Indicative verbal negat
 ## Build the PDF
 
 Install a full **TeX Live** distribution (MacTeX on macOS), with `latexmk`
-and LuaLaTeX on `PATH`. The sources use TeX-distributed EB Garamond,
-Libertinus Sans, and Gentium Plus fonts; no separately installed system fonts
+and LuaLaTeX on `PATH`. The sources use TeX-distributed Libertinus Serif,
+Source Sans Pro, and Gentium Plus fonts; no separately installed system fonts
 are needed. Python 3 is used for prerequisite checks and lexicon extraction.
 
 ```sh
 make doctor              # Check executables, packages, and font files
 make                     # Build build/full/grammar.pdf
-make check               # Build, check PDF diagnostics, run collector tests
-make check               # Build, check PDF diagnostics, test lexicon extraction
+make check               # Build book/cover, check diagnostics, run collector tests
+make cover               # Standalone front cover: build/cover/cover.pdf
 make watch               # Rebuild when sources change; Ctrl-C stops watching
 make ch-nouns            # Build only chapter 4
 make ch-04               # Equivalent numeric alias
@@ -26,8 +26,9 @@ make watch-nouns         # Watch only chapter 4
 make list                # List all chapter names
 ```
 
-The PDF uses an A4 monograph layout with facing-page margins and running
-heads. All new auxiliary files and PDFs live under `build/`. LuaTeX uses a
+The PDF uses an A4 monograph layout with facing-page margins, a full-colour
+vector front cover, a separate interior title page, and running heads. All new
+auxiliary files and PDFs live under `build/`. LuaTeX uses a
 writable local font cache in `build/cache/`, so it also runs in restricted
 workspaces without writing to your home directory. The first build can take
 longer while it indexes fonts; later builds reuse that cache. `latexmk` tracks
@@ -61,3 +62,19 @@ These collect tagged forms from the current chapters with their source
 locations. See [the utility documentation](util/README.md) for coverage and
 limitations. The manually curated `util/lexicon.tex` remains the book's lexicon
 appendix; extraction does not overwrite it.
+
+## Typography and cover
+
+The interior uses Libertinus Serif with slightly open leading, Source Sans Pro
+for the heading hierarchy, and Gentium Plus for explicit IPA spans. Interlinear
+examples use 11-point type; tables use tabular lining figures and booktabs rules.
+Sections, tables, and figures carry chapter-based numbers. Caption spacing and
+table spacing are set centrally rather than added by individual chapters.
+
+`styles/monograph.tex` holds the chapter, heading, contents, and running-page
+styles. Font selection is shared in `styles/fonts.tex`; fonts resolve from the
+TeX distribution rather than a user font directory. Microtype settings and
+example/caption spacing are in `grammar.tex`. `styles/cover.tex` supplies one
+vector cover shared by the book and the standalone `cover.tex` document. The front cover is A4 with no bleed or
+spine; a printer-specific wraparound cover can be prepared once the binding,
+stock, and final trim are specified.

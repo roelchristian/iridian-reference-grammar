@@ -9,12 +9,16 @@ PYTHON ?= python3
 LMKFLAGS ?= -lualatex -interaction=nonstopmode -halt-on-error -file-line-error
 FULL_DIR := build/full
 
-.PHONY: all watch doctor clean distclean list help
+.PHONY: all cover watch doctor clean distclean list help
 
 # Always ask latexmk: its recorder tracks nested inputs and config changes,
 # unlike a Makefile timestamp check against only chapters/*.tex.
 all: | $(FULL_DIR)
 	$(LATEXMK) $(LMKFLAGS) -outdir=$(FULL_DIR) $(MAIN).tex
+
+cover:
+	mkdir -p build/cover
+	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover cover.tex
 
 watch: | $(FULL_DIR)
 	$(LATEXMK) $(LMKFLAGS) -pvc -outdir=$(FULL_DIR) $(MAIN).tex
@@ -41,7 +45,7 @@ $(foreach ch,$(CHAPTERS),$(eval $(call CHAPTER_RULE,$(ch))))
 # Remove only this pipeline's products, never archived or hand-written files.
 # Retain expensive font caches for the next build.
 clean:
-	rm -rf build/full build/chapters
+	rm -rf build/full build/chapters build/cover
 
 distclean: clean
 	rm -rf build/cache
@@ -54,6 +58,7 @@ list:
 
 help:
 	@echo 'make                 Build build/full/grammar.pdf (incremental)'
+	@echo 'make cover           Build a standalone vector cover PDF'
 	@echo 'make doctor          Check the local TeX installation'
 	@echo 'make check           Build, validate PDF diagnostics, run utility tests'
 	@echo 'make lexicon         Collect tagged forms as build/lexicon.json'
@@ -75,6 +80,7 @@ lexicon-tsv:
 	$(PYTHON) util/collect_lexicon.py --format tsv --output build/lexicon.tsv
 
 .PHONY: check
-check: all
+check: all cover
 	$(PYTHON) scripts/check-log.py $(FULL_DIR)/$(MAIN).log
+	$(PYTHON) scripts/check-log.py build/cover/cover.log
 	$(PYTHON) -m unittest discover -s util/tests -v
