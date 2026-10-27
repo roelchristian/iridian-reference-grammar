@@ -51,6 +51,59 @@ def gloss_tokens(text):
     return tokens
 
 
+def lexical_velar_checks(sources):
+    """Validate specified lexical examples, without deriving sounds from ě.
+
+    These are stored pronunciations of existing words, not a rule assigning
+    palatality to arbitrary written kě. Dots may clarify syllabification; the
+    consonants, stress and quantity of each broad transcription are fixed.
+    """
+    expected = {'kěda': 'ˈkʲɛda', 'ťeda': 'ˈcɛda',
+                'kělek': 'ˈkʲɛlɛk', 'kělnik': 'ˈkʲɛwnɪk', 'kělšek': 'ˈkʲɛwʃɛk'}
+    lexical_specs = {'kěda': 'kʲ', 'kěl-': 'kʲ', 'ťeda': 'c'}
+    found, entries, failures = set(), set(), []
+    for path, text in sources.items():
+        examples = []
+        for record in extract(text, path):
+            if record['macro'] == 'phon':
+                examples.append((record['form'], record['pronunciation']))
+            elif record['macro'] == 'lexentry':
+                form, notes = record['form'], record['notes']
+                if form in lexical_specs:
+                    entries.add(form)
+                    metadata = re.findall(r'lexical(?: initial)?\s+/([^/]+)/', notes)
+                    if metadata != [lexical_specs[form]]:
+                        failures.append(f'{path}: lexical metadata for {form} must specify /{lexical_specs[form]}/')
+                if form in expected:
+                    examples.extend((form, ipa) for ipa in re.findall(
+                        r'\\ipagloss\{\[([^\]]+)\]\}', notes))
+        # Also inspect existing tables and prose using separate form/IPA macros.
+        examples.extend(re.findall(
+            r'\\ird\{([^{}]+)\}\s*(?:&\s*)?(?:\\ipagloss\{)?\[([^\]]+)\]', text))
+        for form, ipa in examples:
+            if form not in expected:
+                continue
+            found.add(form)
+            broad = re.sub(r'[.\s\[\]]', '', ipa)
+            if broad != expected[form]:
+                failures.append(f'{path}: lexical pronunciation of {form}: [{ipa}] '
+                                f'conflicts with [{expected[form]}]')
+    failures.extend(f'missing lexical pronunciation fixture: {form}' for form in sorted(expected.keys() - found))
+    failures.extend(f'missing lexical metadata entry: {form}' for form in sorted(lexical_specs.keys() - entries))
+
+    # Keep the two productive velar outputs distinct from the lexical /kʲ/.
+    phonology = sources.get('chapters/02-phonology.tex', '')
+    table = re.search(r'\\label\{tab:velar-fronting\}(.*?)\\end\{table\}', phonology, re.S)
+    if table is None:
+        failures.append('missing productive velar-grade table')
+    else:
+        for grade, output in (('Palatal/front', 'ts'), ('Restricted velar-front', 'ts'), ('Yod', 'tʃ')):
+            row = re.search(re.escape(grade) + r'\s*&\s*/k/\s*\$\\rightarrow\$\s*/([^/]+)/', table[1])
+            if row is None or row[1] != output:
+                failures.append(f'productive {grade} grade must retain /k/ → /{output}/')
+    return failures
+
+
 def check_palatalisation(phonology, fixtures):
     """Check independently specified examples together, without deriving forms.
 
@@ -107,7 +160,7 @@ def check_palatalisation(phonology, fixtures):
 
 def check():
     sources = active_sources(ROOT / 'grammar.tex')
-    failures = []
+    failures = lexical_velar_checks(sources)
     labels, bibliography = Counter(), Counter()
     references, citations = [], []
     aligned = 0
@@ -219,7 +272,7 @@ def check():
           f'{aligned} interlinear alignments, {len(expected)} stress fixtures, '
           f"{sum(len(palatalisation_fixtures[key]) for key in ('derivations', 'pronunciations', 'classes'))} palatalisation fixtures, "
           f'{pronunciations} explicit pronunciation/quantity examples '
-          'and obsolete-spelling checks.')
+          'and lexical-velar/obsolete-spelling checks.')
     return 0
 
 
