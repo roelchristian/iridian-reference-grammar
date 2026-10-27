@@ -39,7 +39,12 @@ iridian-grammar-tags.tex
 
 # Local drafts
 drafts/
-util/
+util/*
+!util/lexicon.tex
+!util/collect_lexicon.py
+!util/tests/
+!util/tests/test_collect_lexicon.py
+!util/README.md
 *.draft
 *.draft.md
 
@@ -56,3 +61,13 @@ util/
 *.html
 *.tmp
 
+
+# Current PDF pipeline (including shared LuaTeX font caches)
+/build/
+
+# Python utility bytecode
+__pycache__/
+*.pyc
+
+# PDF visual review intermediates
+/tmp/
