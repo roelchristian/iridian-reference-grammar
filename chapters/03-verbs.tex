@@ -3,11 +3,9 @@
 \section{Introduction}
 
 The verb is the morphological nucleus of the Iridian clause, and upon it falls
-the principal burden of grammatical expression. While nouns admit of inflection
-for case alone and are in all other respects morphologically inert, the verb
-concentrates within itself all information pertaining to the nature of the event
-described, the relation of its participants, and the speaker's orientation
-toward what is asserted. Every finite verb bears the aspect-alignment suffix,
+the principal burden of grammatical expression. Where nouns inflect for case and number, verbs
+express the event's aspectual contour, the configuration of its participants,
+and the speaker's modal orientation. Every finite verb bears the aspect-alignment suffix,
 which is the sole obligatory element of the verbal complex; beyond this the verb
 may carry markers of voice, mood, and evidentiality, in an order fixed by the
 morphological template set out in the following section. Tense, gender, number
@@ -22,7 +20,7 @@ is that of the aspect-alignment suffix:
 
 \medskip
 \begin{center}
-(\Neg{}) + \Stem{} + (\Antip{} / \Appl{}) + (\Caus{}) + \synhead{Asp.Align} + (\textsc{mood}) + (\textsc{evid})
+(\Neg{}) + \Stem{} + (\Antip{} / \Appl{}) + (\Caus{}) + (\textsc{orientation}) + \synhead{Asp.Align} + (\textsc{mood}) + (\textsc{evid})
 \end{center}
 \medskip
 
@@ -41,7 +39,7 @@ The lexical preverbs \ird{de-}, \ird{mně-}, \ird{pře-},
 \ird{le-}, \ird{ra-}, \ird{vra-}, \ird{ša-}, \ird{na-},
 \ird{ru-}, and marginal \ird{ne-} belong inside that stem, as in
 \ird{mněktař-} \trsl{read through} and \ird{lenočk-} \trsl{run out},
-before Voice and the remaining suffixes
+before the valency and orientation suffixes
 (§\,\ref{sec:lexical-preverbs}). They modify the lexical event description
 without supplying an Asp.Align value or changing the alignment domain;
 indicative \ird{za-} attaches outside the complete derived stem.
@@ -51,10 +49,17 @@ indicative \ird{za-} attaches outside the complete derived stem.
 \label{sec:vm-overview}
 
 \noindent Baker's (1985) \term{Mirror Principle} predicts that morphological
-derivations directly reflect syntactic derivations: each morpheme corresponds to
-a syntactic head, and the order of morphemes on the verbal complex mirrors the
-order in which those heads are merged. Reading outward from the root, the
-Iridian template projects the following hierarchy of functional projections:
+derivations reflect the order of syntactic composition. The Iridian analysis
+distinguishes argument-building heads from the higher orientation head realised
+by \ird{-n-}, so that causativisation precedes the selection of the derived
+patient in \ird{piašt-na-n-ik}. Cumulative exponence and conditioned allomorphy
+are specified with the individual constructions; the correspondence is not a
+requirement that every head have a separate segment. Reading outward from the
+root, the suffixal sequence has the following organisation. The separation
+of event introduction, external argument introduction and case follows the
+analytical distinctions surveyed by Harley \cite[§§1.3--1.4]{harley2017}; the
+particular ordering and licensing conditions stated here belong to Iridian
+and are summarised in Table~\ref{tab:vm-projections}.
 
 \begin{table}
   \footnotesize
@@ -67,10 +72,12 @@ Iridian template projects the following hierarchy of functional projections:
     \midrule
     Root         & \Stem{}           & $\surd$P / \synhead{VP} (lexical predicate)
                  & §\,\ref{sec:vm-root} \\
-    Voice        & \textsc{trs} / \Antip{} / \Appl{} & \synhead{VoiceP} / \synhead{ApplP}
+    Inner valency & \Antip{} / \Appl{} & \synhead{VoiceP}$_{\mathrm{AP}}$ / \synhead{ApplP}
                  & §\,\ref{sec:vm-antipassive}, §\,\ref{sec:vm-n} \\
     Causative    & \Caus{}           & \synhead{CausP}
                  & §\,\ref{sec:vm-caus} \\
+    Orientation & \ird{-n-}, $\varnothing$ & \synhead{VoiceP}$_{\mathrm{orient}}$
+                 & §\,\ref{sec:vm-n} \\
     Asp.Align    & \synhead{Asp.Align}.\textsc{align} & \synhead{AspP} (fused Asp + Case)
                  & §\,\ref{sec:vm-asp} \\
     Neg (prefix) & \Neg{}            & \synhead{NegP} (see §\,\ref{sec:vm-neg})
@@ -148,7 +155,8 @@ Suffixes select distinct mutation classes: antipassive \ird{-aš-} triggers
 yod grade (§\,\ref{sec:suffix-classes}). The grade is a property of the
 construction rather than an automatic effect of the following vowel.
 The five thematic classes in Table~\ref{tab:verbclasses} govern sibilant
-replacement only.
+replacement only; a listed stem shape does not independently establish that
+the lexeme permits the antipassive argument frame.
 
 \begin{table}
 	\footnotesize
@@ -190,25 +198,20 @@ location is inferred from discourse context, temporal adverbials, and the
 lexical semantics of the predicate. Aspect and alignment are fused into a single
 obligatory suffix, the \term{aspect-alignment morpheme} (Asp.Align), which every
 finite verb must bear: selecting an aspectual category simultaneously determines
-how the event is construed and which participant occupies the absolutive
-position.
+how the event is construed and the alignment domain within which
+valency and orientation determine the privileged participant.
 
-The five \synhead{Asp.Align} categories fall into two coherent higher-order
-domains. The \term{perfective domain} comprises the {perfective} and the
-{retrospective}: both present an eventuality as bounded and externally
-viewed---construed as a closed whole from an outside or posterior vantage
-point---and both yield \term{ergative-absolutive alignment}, in which the
-patient is the absolutive pivot. The \term{imperfective domain} comprises the
-{continuous}, the {progressive}, and the {contemplative}: none of these presents
-the eventuality as a bounded whole viewed from outside; instead, each either
-locates the reference point within the event's internal course or presents the
-event as projected relative to reference time, not yet realised but anticipated,
-intended, or impending. All three yield \term{nominative alignment}, in which
-the agent is the absolutive pivot. These two domains differ not merely in which
-aspects they contain but in the fundamental orientation they impose on the
-clause: the perfective domain foregrounds culmination and the affected patient,
-while the imperfective domain foregrounds the ongoing or prospective engagement
-of the agent.
+The five \synhead{Asp.Align} categories fall into two domains. The
+\term{perfective domain} comprises the perfective and retrospective, which
+present an eventuality as bounded or anterior and license the ordinary
+ergative-absolutive frame: patient direct, agent transitive. The
+\term{imperfective domain} comprises the continuous, progressive, and
+contemplative, which present an eventuality internally or prospectively and
+license the ordinary nominative-accusative frame: agent direct, patient
+indirect. Applicatives, antipassives, and patient-selecting Voice modify these
+defaults (§\,\ref{sec:vm-asp-case}). The case split belongs to Iridian's
+grammar; temporal viewpoint alone does not determine the selected participant
+or confer aboutness topichood.
 
 The subsections that follow first lay out the shared temporal-semantic machinery
 (including Reichenbachian framing and the formal Asp.Align analysis), then treat
@@ -304,16 +307,13 @@ frame. Aspect in Iridian therefore has consequences at two levels at once: it
 construes the temporal profile of the eventuality and it determines the
 morphosyntactic alignment through which the clause is organised.
 
-The mapping between aspect and alignment is not arbitrary. In bounded,
-externally-viewed events (the perfective and retrospective), the clause is
-fundamentally `about' what happened to a participant---the locus of
-culmination---and the patient accordingly occupies the absolutive. In
-unbounded, internally-viewed events (the continuous, progressive, and
-contemplative), the clause is fundamentally `about' an agent's ongoing
-activity or state, and the agent accordingly occupies the absolutive. This
-alignment between aspectual viewpoint and case pivot is the semantic core of
-Iridian's split-ergative system; the formal analysis is given in
-§\,\ref{sec:vm-asp-case}.
+The aspectual domains condition case without encoding a discourse topic.
+A perfective transitive may continue reference to its agent, although the
+patient takes direct case, while an imperfective clause may introduce an event
+without an established topic. Valency and orientation morphology determine
+which participant receives direct-case privileges within the aspectual domain;
+linked topicalisation independently determines aboutness
+(§\,\ref{sec:vm-asp-case}; Chapter~\ref{ch:infstr}).
 
 \begin{figure}[t]
 \centering
@@ -414,18 +414,15 @@ shift $R$ independently of $S$.}
 
 \subsection{Formal analysis: the Asp.Align morpheme}\label{sec:vm-asp}
 
-The aspect-alignment suffix is the sole obligatory morpheme in every finite
-Iridian verbal form. Its double burden---encoding both the aspect of the event
-and the alignment pattern of case assignment---makes it the central theoretical
-challenge of the Iridian verbal system. The five indicative aspect-alignment
-suffixes are given in Table~\ref{tab:aspect}.
+The obligatory aspect-alignment suffix encodes viewpoint and the alignment
+domain within which the verbal construction licenses case. The five indicative
+exponents are given in Table~\ref{tab:aspect}.
 
 \begin{table}[ht]
 	\footnotesize
 	\caption{Aspect-alignment suffixes, grouped by domain. The perfective domain
-	yields ergative-absolutive alignment (patient as absolutive pivot); the
-	imperfective domain yields nominative alignment (agent as absolutive
-	pivot).}\label{tab:aspect}
+	licenses ordinary ergative-absolutive alignment (patient direct); the
+	imperfective domain licenses ordinary nominative alignment (agent direct).}\label{tab:aspect}
 	\begin{tabularx}{0.95\textwidth}{l L l L}
 		\toprule
 		{\sc domain} & {\sc aspect} & {\sc suffix} & {\sc notes} \\
@@ -435,12 +432,12 @@ suffixes are given in Table~\ref{tab:aspect}.
 		    & Bound \ird{-ik-} before linker \ird{-e} and participant
 		      nominaliser \ird{-ou}; stative \ird{-n-} selects \ird{-ik}.
 		      Bare forms require an intransitive predicate or reading.
-		      Transitive clauses require overt Voice: fixed \ird{-nik}
-		      for ergative transitive, \ird{-aš-ek} for antipassive. \\
+		      Ordinary transitives take \ird{-nik}; antipassives take \ird{-aš-ek},
+		      and applicatives take \ird{-éb-ik}. \\
 		  & Retrospective (bare, intransitive only) & \ird{-ac}
 		    & Bare form licit only for inherently intransitive predicates;
-		      transitive retrospective clauses require overt Voice: \ird{-n-ac}
-		      for the ergative transitive, \ird{-aš-ac} for the antipassive. \\
+		      ordinary transitives take \ird{-n-ac}, antipassives \ird{-aš-ac},
+		      and applicatives \ird{-éb-ac}. \\
 		\midrule
 		\multirow{3}{*}{\textit{Imperfective}}
 		  & Continuous   & \ird{-a}   & Unmarked member; situation holds at $R$,
@@ -456,36 +453,34 @@ suffixes are given in Table~\ref{tab:aspect}.
 \subsubsection{Split-ergative alignment}
 \label{sec:vm-asp-case}
 
-In finite indicative clauses, Asp.Align encodes viewpoint aspect---how the
-speaker construes the event's temporal contour---and determines which
-participant is the clause's \term{absolutive pivot}: the
-argument that bears the direct case. Its frequent interpretation as an
+In finite indicative clauses, Asp.Align encodes viewpoint aspect and the
+alignment domain. Together with valency and orientation morphology, it
+determines the clause's \term{absolutive pivot}, the argument that bears
+direct case. Its frequent interpretation as an
 aboutness topic belongs to the independent information-structural system
 (Chapter~\ref{ch:infstr}). Aspect and alignment are jointly realised in the obligatory
 suffix, with case valuation active in the finite domain. Participant
 nominalisation preserves the aspectual and participant-selection features
 without finite case valuation (§\,\ref{sec:nominalised}).
 
-The alignment defaults are:
+The ordinary active frames distinguish two domains. In the ERG-aspect domain
+(perfective and retrospective), the patient takes direct case and the agent
+transitive case; ordinary transitives require \ird{-n-}, whereas an
+inherently intransitive predicate or the intransitive reading of an
+ambitransitive takes the bare aspect suffix. In the NOM-aspect domain
+(continuous, progressive and contemplative), the agent takes direct case and
+the patient indirect case. The patient remains a core argument in either frame.
 
-\begin{enumerate}[wide]
-\item ERG-aspect domain (perfective, retrospective). Asp.Align establishes
-  patient-oriented absolutive as the privileged orientation of the domain: the
-  patient is the absolutive pivot and the agent receives the transitive
-  (ergative) case as the dependent case once a patient has been licensed in the
-  absolutive. Crucially, Asp.Align determines this \emph{domain-level
-  orientation}; it does not by itself license a transitive patient as a core
-  argument. For a transitive predicate, an overt Voice head is additionally
-  required: \ird{-n-} licenses the patient as a core argument and realises the
-  ordinary ergative transitive, while \ird{-aš-} removes the patient from core
-  argument structure and realises the antipassive. A bare perfective or
-  retrospective without an overt Voice head is therefore well-formed only where
-  the predicate is inherently intransitive, or where a lexical ambitransitive is
-  used in its intransitive reading (§\,\ref{sec:ambitransitive}).
-\item NOM-aspect domain (continuous, progressive, contemplative). The agent
-  receives the direct (absolutive) case and the patient the indirect (oblique)
-  case. The absolutive is therefore the \emph{agent}.
-\end{enumerate}
+Valency morphology modifies the argument inventory before orientation and case
+are determined. A simple antipassive licenses only its actor as an independent
+core participant, and that actor takes direct case. A simple applicative
+selects the applied participant as direct; its actor takes indirect case in the
+NOM domain and transitive case in the ERG domain, while any retained theme is
+indirect. A higher causative establishes a new orientation domain, in which the
+causer is direct in NOM aspects; in ERG aspects the selected participant is the
+retained lexical theme, otherwise the applied participant, otherwise the
+causee (§\,\ref{sec:vm-caus}). These are constructional extensions of the
+ordinary split, rather than additional meanings of viewpoint aspect.
 
 The alignment split is an established property of Iridian, whose aspectual
  viewpoint and case assignment are jointly realised in Asp.Align. Perfective
@@ -502,11 +497,11 @@ Event construal and information structure consequently make distinct
  continues a discussion of its agent, just as an ongoing event may be
  introduced without establishing any participant as an aboutness topic.
 
-These patterns are directly visible in the case frames of indicative clauses.
-In the NOM-aspect domain, the main argument of the verb bears the direct case
-regardless of transitivity, while the patient of a transitive verb appears in
+The ordinary active frames illustrate this contrast.
+In the NOM-aspect domain, the agent or sole argument bears direct case,
+while the patient of an ordinary transitive appears in
 the indirect. This is a nominative-accusative frame, with the direct case
-serving as the absolutive and the indirect as the oblique:
+marking the privileged participant and the indirect marking the core patient:
 
 \pex
 \a
@@ -523,24 +518,24 @@ serving as the absolutive and the indirect as the oblique:
 \endgl
 \a
 \begingl
-\gla Vytam shoda.//
-\glb shirt.\Dir{} wear-\Cont{}//
-\glft \trsl{(I) am wearing a shirt.} \lingcontext{stative continuous}//
+\gla Nužo mrocna.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Cont{}//
+\glft \trsl{The city is beautiful.} \lingcontext{stative continuous}//
 \endgl
 \a
 \begingl
-\gla Vytam shodime.//
-\glb shirt.\Dir{} wear-\Prog{}//
-\glft \trsl{(I) am putting on a shirt.} \lingcontext{dynamic progressive}//
+\gla Nužo mrocnime.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Prog{}//
+\glft \trsl{The city is becoming beautiful.} \lingcontext{dynamic progressive}//
 \endgl
 \xe
 
-In the ERG-aspect domain, by contrast, the patient of a transitive verb is
+In an ordinary ERG-domain transitive, by contrast, the patient is
 placed in the direct case, and the agent takes the transitive case. This is an
 ergative-absolutive frame; what Iridian grammar calls the \emph{transitive case}
 is, in typological terms, the ergative, and the \emph{direct case} serves as
-the absolutive. In this domain, a transitive predicate requires the Voice head
-\ird{-n-} to license the patient as a core argument; when the Voice head
+the absolutive. An ordinary transitive in this domain requires the orientation head
+\ird{-n-} to select its patient; when antipassive
 \ird{-aš-} is present instead, the agent takes the absolutive and the patient is
 removed from core argument structure (§\,\ref{sec:vm-antipassive}):
 
@@ -569,15 +564,12 @@ Neither direct case nor transitive Voice entails that the patient undergoes
 a change of state: the construction equally accommodates predicates of buying
 and perception.
 
-The antipassive construction, by contrast, foregrounds the agent's activity
-without reference to any outcome in a patient. It is the construction of choice
-when the patient is non-referential, semantically incorporated, or of no
-discursive moment: in habitual and generic statements, in activity-oriented
-contexts where the event itself and not its effect upon some participant is
-what is asserted, and wherever the clause contains no patient at all. The
-guiding principle is that the patient, where it exists, must either be present
-through the ergative construction or wholly absent; the antipassive admits of no
-intermediate state in which a patient is demoted to an oblique position.
+The antipassive presents the agent's activity without independently licensing
+a patient, although the lexical event may still involve a conceptual theme.
+This frame suits activity-oriented contexts in which no referential patient is
+asserted or recovered. It excludes an indirect-case patient as well as a
+direct-case one (§\,\ref{sec:vm-antipassive-desc}); an ordinary transitive
+with a contextually recovered patient retains a different argument structure.
 
 The ergative transitive and antipassive differ in the realisation of the
  patient and the selection of the absolutive pivot. The former licenses a
@@ -585,21 +577,18 @@ The ergative transitive and antipassive differ in the realisation of the
  Their discourse uses follow from those valency differences, while aboutness
  remains independently available to suitable referents.
 
-Iridian's ergative case is \term{aspect-directed}: the Asp.Align suffix
-specifies which argument is the absolutive, so the alignment varies with the
-aspect rather than being fixed by structural position or thematic role alone.
-Because the absolutive varies in this way---patient in the ERG domain, agent in
-the NOM domain---the Asp.Align morpheme is the natural locus of alignment, not a
-passive reflex of deeper case rules.
+Iridian's alignment is \term{aspect-directed}: ordinary clauses distinguish
+patient-direct ERG frames from agent-direct NOM frames. Applicative and
+patient-selecting constructions establish their own orientation within those
+domains, so the aspect value is one condition on the case frame rather than a
+complete specification of its pivot.
 
-Within the domain Asp.Align establishes, the transitive (ergative) case behaves
-as a \term{dependent case}: it falls on the agent when and only when a patient
-has already received the absolutive. These two observations are complementary
-rather than competing. Aspect-directed selection determines \emph{which
-argument} is the absolutive; dependent case determines \emph{what the agent
-receives} once the absolutive is fixed on the patient. The architecture is
-aspect-driven at the inter-domain level and dependent-case at the intra-domain
-level.
+The transitive case of an ordinary ERG-domain agent is analysed here as
+dependent on a distinct participant licensed in direct case. Applicatives and
+causatives extend this relation to their constructionally selected participant,
+which need not be the lexical patient. This dependent-case analysis describes
+the Iridian mapping; the surface contrast alone does not determine a universal
+algorithm for case assignment.
 
 Aspect selection establishes a case frame and temporal viewpoint, whose
  interaction can favour different discourse continuations. The pivot is the
@@ -609,30 +598,19 @@ Aspect selection establishes a case frame and temporal viewpoint, whose
  retains the agent's transitive case and the patient's direct case
  (§\,\ref{sec:tc-marked-topics}).
 
-The domain-level orientation established by Asp.Align is not itself sufficient
-to realise a transitive clause. An overt Voice head is additionally required.
-The morpheme \ird{-n-} is such a head: it licenses the patient as a core
-argument and specifies patient absolutive (\textsc{[pat-abs]}). In the
-ERG-aspect domain this is required for any transitive predicate---without
-\ird{-n-}, the patient cannot be realised as a core argument, and the bare
-perfective or retrospective is licit only for inherently intransitive
-predicates. In the NOM-aspect domain, \ird{-n-} overrides the default
-agent-absolutive orientation, making the patient the absolutive pivot and
-yielding the passive construction (§\,\ref{sec:vm-n}, §\,\ref{sec:vm-passive}).
-The antipassive \ird{-aš-} likewise constitutes an overt Voice head, but is
-subject to a structural input condition: it may apply only where the patient
-already stands as the absolutive, and it therefore surfaces exclusively in
-ERG-aspect clauses (§\,\ref{sec:vm-antipassive}).
+The suffix \ird{-n-} realises the higher orientation head, outside causative
+morphology where present. It selects the patient of an ordinary transitive or
+the highest eligible non-causer of a derived causative. In the ERG domain it
+combines with the ordinary transitive frame; in the NOM domain its
+patient-oriented use licenses a passive, with the agent restricted to optional
+indirect expression (§\,\ref{sec:vm-passive}). Simple applicatives establish
+their own orientation through \ird{-éb-}, without a second overt \ird{-n-}.
 
-When an overt Voice head is present, its absolutive specification is satisfied
-first, and the remaining non-absolutive argument receives the case predicted by
-the aspect domain. Asp.Align determines the domain-level orientation; Voice
-determines how the transitive base is realised within that domain.
-
-Asp.Align jointly realises temporal viewpoint and alignment, while nominal
- anchoring and clausal topic features retain their independent contributions.
- Vocabulary Insertion at Asp.Align therefore does not spell out a topic
- feature merely because the selected pivot is topical in context.
+Antipassive morphology builds a reduced predicate before case is assigned.
+Its occurrence is licensed by the completed ERG-aspect configuration; it does
+not inspect a patient whose case has already been valued. A following
+causative may introduce a new causer and an outer \ird{-n-}, although the
+lexical patient remains suppressed (§\,\ref{sec:vm-antipassive}).
 
 \subsection{The perfective domain}\label{sec:aspect-pf}
 
@@ -700,26 +678,21 @@ This contrast may be seen in the following pair:
 \endgl
 \xe
 
-Within the perfective domain, the ERG Asp.Align default assigns absolutive to
-the patient. For a transitive predicate, an overt Voice head is required to
-mediate between the stem and the Asp.Align suffix: the Voice head \ird{-n-}
-licenses the patient as a core argument and places it in the direct case, while
-the agent takes the transitive; the antipassive Voice head \ird{-aš-} instead
-removes the patient from core argument structure, placing the agent in the
-direct case as the clause's sole overt pivot. For an inherently intransitive
-verb, no Voice head is required: the sole argument takes the direct case
-directly, as the only available absolutive pivot.
+Within the perfective domain, the ordinary transitive selects its patient
+through \ird{-n-}, assigning direct case to that participant and transitive
+case to the agent. An antipassive instead leaves only the actor independently
+licensed, whereas a simple applicative selects its applied participant. An
+inherently intransitive verb requires no overt orientation marker, since its
+sole argument takes direct case (§\,\ref{sec:vm-asp-case}).
 
-This structural distinction is especially important in the retrospective. The
-ergative retrospective (\ird{-n-ac}) locates present relevance in the outcome
-state of the patient: something has been affected, and that effect continues to
-matter in the discourse situation. The antipassive retrospective (\ird{-aš-ac})
-instead locates present relevance in the experience or history of the agent: the
-event matters as part of what the agent has done or undergone, not as a
-persisting state of some affected patient. The contrast is parallel to that
-between English \textit{the bread has been eaten}, which is outcome-relevant and
-patient-oriented, and \textit{I have eaten}, which is experiential and
-agent-oriented.
+The retrospective can present a patient-related outcome in an ergative
+transitive or an agent's prior experience in an antipassive. The latter has no
+independent patient argument whose resulting state could supply the discourse
+centre, although the activity's consequences may remain relevant. These are
+contextual interpretations of the respective argument frames, as illustrated
+by English \textit{the bread has been eaten} and \textit{I have eaten};
+retrospective morphology itself does not require either a result-state or an
+experiential reading.
 
 Negation further confirms the semantic distinction between the two members of
 the perfective domain. When negated, the perfective normally carries the
@@ -752,7 +725,7 @@ lexical possibilities of the same stem. Two examples are \ird{lov-} \trsl{hunt,
 forage [intr.]; catch, take [tr.]} and \ird{kěl-} \trsl{sing, perform [intr.];
 sing a song, chant a text [tr.]}.
 
-The diagnostic for membership in this class is whether the Voice head \ird{-n-}
+The diagnostic for the two readings is whether ordinary transitive orientation \ird{-n-}
 is available in one reading but impossible in the other. In \ird{lov-}, the
 intransitive perfective---formed without any Voice head, with the ERG Asp.Align
 suffix attached directly to the stem---accesses only the intransitive reading:
@@ -818,10 +791,8 @@ culmination or its anteriorly packaged result, the imperfective domain takes
 no such external vantage: it either locates the reference point within the
 ongoing event, without presenting its boundaries as salient, or presents the
 event as projected relative to reference time---not yet realised, but
-anticipated, intended, or impending. Because no culmination is foregrounded,
-the clause is organised around the participant engaged in, controlling, or
-holding the eventuality, and the alignment accordingly follows the nominative
-pattern.
+anticipated, intended, or impending. These temporal properties characterise
+the domain independently of its ordinary agent-direct case frame.
 
 Three categories constitute the domain. The \term{continuous} is the unmarked
 imperfective member; it presents a situation as simply obtaining at reference
@@ -835,18 +806,12 @@ opposition within the domain: static holding versus dynamic unfolding versus
 prospective projection.
 
 \paragraph{Alignment in the imperfective domain.}
-The three imperfective categories share a common alignment profile
-(the \textit{NOM-aspect domain} in Iridian's split-ergative system). In all
-three, the main argument of the verb receives the direct case regardless of
-transitivity, while the patient of a transitive verb appears in the indirect
-case. This nominative pattern follows directly from the shared semantics of the
-domain: because no culmination is foregrounded, no patient need occupy the
-absolutive as the culmination-point of the event, and the agent instead takes
-that structurally prominent position as the discourse anchor of the unbounded,
-internally construed, or projected situation. The three imperfective categories
-therefore form an alignment class whose members share a viewpoint profile, and their nominative alignment is the morphosyntactic
-reflex of that shared profile. The formal derivation is set out in
-§\,\ref{sec:vm-asp}.
+The three imperfective categories license the ordinary NOM-domain frame,
+with an agent or sole participant in direct case and a retained patient in
+indirect case. A simple applicative instead selects the applied participant,
+whereas overt \ird{-n-} selects the patient and licenses a passive. These
+contrasts show why the temporal profile shared by the three aspects cannot by
+itself determine which participant is privileged (§\,\ref{sec:vm-asp}).
 
 \paragraph{The continuous (\ird{-a}).}
 The continuous is the unmarked member of the imperfective domain. It presents
@@ -865,9 +830,9 @@ rather than how it is developing:
 \endgl
 \a
 \begingl
-\gla Vytam shoda.//
-\glb shirt.\Dir{} wear-\Cont{}//
-\glft \trsl{(I) am wearing a shirt.} \lingcontext{contingent present condition}//
+\gla Nužo mrocna.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Cont{}//
+\glft \trsl{The city is beautiful.} \lingcontext{property holding at the reference time}//
 \endgl
 \xe
 
@@ -912,15 +877,15 @@ this:
 \pex
 \a
 \begingl
-\gla Vytam shoda.//
-\glb shirt.\Dir{} wear-\Cont{}//
-\glft \trsl{(I) am wearing a shirt.} \lingcontext{continuous: state holds at $R$}//
+\gla Nužo mrocna.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Cont{}//
+\glft \trsl{The city is beautiful.} \lingcontext{continuous: state holds at $R$}//
 \endgl
 \a
 \begingl
-\gla Vytam shodime.//
-\glb shirt.\Dir{} wear-\Prog{}//
-\glft \trsl{(I) am putting on a shirt.} \lingcontext{progressive: dynamic unfolding at $R$}//
+\gla Nužo mrocnime.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Prog{}//
+\glft \trsl{The city is becoming beautiful.} \lingcontext{progressive: dynamic unfolding at $R$}//
 \endgl
 \xe
 
@@ -964,13 +929,11 @@ transitions, the contemplative is especially natural: instantaneous transitions
 lend themselves readily to imminence and anticipation construals, where the
 event is imminent or impending rather than in active progress.
 
-The contemplative belongs to the imperfective domain because it shares the
-defining property of that domain: it does not construe the event as a bounded
-whole viewed from outside. Reference time precedes the unrealized eventuality,
-which is prospective rather than complete. Culmination is not asserted, so the
-agent---as the participant oriented toward or controlling the prospective
-action---is the absolutive pivot, following the nominative alignment pattern of
-the domain.
+The contemplative belongs to the imperfective domain because reference time
+precedes the projected eventuality, whose completion is unasserted. An ordinary
+active contemplative selects its agent, or its sole participant with a stative
+or intransitive base; this NOM-domain orientation remains subject to the same
+valency and Voice alternations as the continuous and progressive.
 
 The three imperfective categories interact systematically with predicate class,
 showing that they are distinct viewpoint operators rather than translation
@@ -991,10 +954,9 @@ preparatory, iterative, incipient, or extended interpretations, while the
 contemplative is often especially natural because instantaneous transitions
 readily support imminence readings.
 
-Because the imperfective domain places the agent in the absolutive, imperfective
-clauses characteristically track the ongoing activity, condition, or orientation
-of a discourse-prominent agent. The three categories play distinct roles within
-this common frame. The continuous is the natural form for description and
+Imperfective clauses permit descriptions of an agent's ongoing activity,
+condition, or intentions, although their use does not require an agent topic.
+The three categories support distinct discourse functions. The continuous is the natural form for description and
 framing---durable predications, stable conditions, and ongoing situations that
 provide the setting or context for dynamic foreground events. It is the unmarked
 imperfective of persistence and background. The progressive is suited to
@@ -1030,11 +992,9 @@ are not interchangeable. With temporary bodily or experiential conditions the
 contrast is equally clear: the continuous describes the present condition as
 simply obtaining (\trsl{is tired}), while the progressive more readily yields an
 incipient or changing-state reading (\trsl{is getting tired}, \trsl{is starting
-to feel sick}). This is not a stative-specific phenomenon; it instantiates the
-general imperfective opposition described above. But the clarity with which
-stative predicates exhibit it makes §\,\ref{sec:stative-stability} important
-corroborating evidence for the distinction, and the reader is directed there for
-fuller illustration and stative-specific consequences.
+to feel sick}). The stative contrast instantiates the same imperfective opposition, with
+lexically conditioned developmental and ingressive interpretations
+(§\,\ref{sec:stative-stability}).
 
 
 \subsection{Asp.Align under non-indicative Mood: impoverishment and reduced opposition}
@@ -1069,20 +1029,19 @@ Table~\ref{tab:reduced-asp}.
   \end{tabularx}
 \end{table}
 
-Crucially, the alignment consequences of these two domains are identical to
-those operative in the full indicative system. The IPFV-domain reduced Asp.Align
-triggers nominative-style alignment: the agent is the absolutive (direct-case)
-argument and the patient receives the indirect. The PFV-domain reduced Asp.Align
-(\ird{-ov-}) triggers ergative alignment: the patient is the absolutive
-(direct-case) argument and the agent receives the transitive case. No separate
-case-assigning principles are required for the directive or irrealis domains;
-alignment is the output of the same head that governs all finite clauses.
+Reduced Asp.Align retains the two aspectual domains, while the clause's
+orientation also depends on Mood. In the irrealis, ordinary IPFV clauses retain
+agent-direct and patient-indirect case, and PFV clauses retain patient-direct
+and agent-transitive case. Directive Mood imposes theme orientation in both
+domains (§\,\ref{sec:mood-directive-case}). The reduced temporal opposition
+therefore does not require every non-indicative construction to retain the
+ordinary indicative case frame.
 
 \paragraph{Morphological composition.}
 The surface template for a non-indicative finite verb is therefore:
 
 \begin{center}
-\Stem{} + (\textsc{voice}) + (\Caus{}) + \textsc{reduced Asp.Align} + \textsc{mood}
+\Stem{} + (\Appl{}) + (\Caus{}) + (\textsc{orientation}) + \textsc{reduced Asp.Align} + \textsc{mood}
 \end{center}
 
 \noindent where the reduced Asp.Align is silent ($\varnothing$) in the IPFV
@@ -1141,26 +1100,14 @@ Asp.Align: Mood never surfaces on a finite verb unless Asp.Align has been
 realised. The interaction is therefore one of impoverishment rather than
 competition.
 
-The pattern observable in directive clauses---patient or theme in the direct
-case, overt speech-act participant subject in the transitive when it would
-otherwise compete for the direct slot---follows from the interaction of reduced
-Asp.Align with null-subject orientation, and requires no additional
-case-assigning engine. In the default directive situation, the agent is null
-(the understood second-person subject of an imperative or prohibitive is
-unexpressed). Under IPFV-domain alignment, the agent is nominally the
-absolutive, but with the agent unrealized, the patient absorbs the direct case
-as the clause's sole overt core argument. Under PFV-domain alignment, the
-patient is the absolutive by definition and the null agent is simply unrealized
-in the transitive. In both domains, the patient or theme characteristically
-occupies the direct case---not by a separate directive case principle, but by
-the confluence of reduced Asp.Align and null-subject orientation. The
-competition-driven transitive marking of overt speech-act participant subjects
-(§\,\ref{sec:mood-directive-case}) is likewise a surface reflex of the
-absolutive orientation already encoded by Asp.Align: an overt agent would
-ordinarily be the absolutive under IPFV alignment, but when a competing direct
-object is present, that structural pressure forces the subject into the
-transitive to preserve the patient as the clause's single direct nominal.
-
+Directive Mood imposes an orientation requirement on the reduced aspectual
+domain: a retained theme takes direct case, regardless of the IPFV/PFV value.
+Where no theme is retained, selection falls on an applied participant, then a
+causee, or the sole argument of an underived intransitive. The agent or causer
+of a clause with a distinct direct participant takes transitive case, whether
+expressed or contextually understood. This requirement is specific to the
+directive construction; omission of a subject does not transfer its case to
+another argument (§\,\ref{sec:mood-directive-case}).
 
 \section{Valency operations}
 
@@ -1172,25 +1119,19 @@ precedes the causative.
 \subsection{The antipassive (\ird{-aš-})}
 \label{sec:vm-antipassive-desc}
 
-The antipassive is an overt Voice head that applies only where the patient is
-structurally the absolutive participant. It displaces that patient from
-absolutive status, promotes the agent to absolutive, and removes the patient
-from core argument structure. Because the structural target it requires --- a
-patient standing as the absolutive --- is available only in ERG-aspect clauses,
-the antipassive is exclusively an ergative-domain construction. It is therefore
-the obligatory non-ergative construction for any verb capable of bearing the
-Voice head \ird{-n-} in the perfective and retrospective aspects: such a verb
-must appear with either \ird{-n-} (ergative transitive) or \ird{-aš-}
-(antipassive). The bare perfective serves no antipassive function and is
-reserved exclusively for inherently intransitive verbs, as described in
-Section~\ref{sec:ambitransitive}.
+The antipassive \ird{-aš-} forms an agent-oriented activity predicate from a
+transitive base without licensing an independent patient DP. In the perfective
+and retrospective, its agent receives direct case; the patient remains part of
+the conceptual interpretation of the activity but cannot be expressed within
+the finite clause. Iridian restricts this construction to the ERG-aspect domain.
+A transitive base in that domain consequently requires an overt derivation:
+\ird{-n-} retains the patient, \ird{-aš-} suppresses its independent
+realisation, and \ird{-éb-} selects an applied participant. Bare perfectives
+belong to independently intransitive readings (§\,\ref{sec:ambitransitive}).
 
-The antipassive suffix is \ird{-aš-}, though its phonological realisation
-depends upon the thematic consonant class of the stem, following the
-alternations set out in Table~\ref{tab:verbclasses}. The stem-final consonant is
-replaced or augmented as shown; the underlying \ird{-aš-} string surfaces as the
-modified stem consonant followed by the relevant sibilant. Thus \ird{piašt-}
-yields \ird{piašč-} as its antipassive stem:
+The suffix selects the thematic alternations in Table~\ref{tab:verbclasses}.
+Thus \ird{piašt-} has antipassive stem \ird{piašč-}, which combines with
+perfective \ird{-ek}:
 
 \pex
 \a
@@ -1203,598 +1144,527 @@ yields \ird{piašč-} as its antipassive stem:
 \begingl
 \gla Marek houlam se piašček.//
 \glb Marek.\Dir{} spoon.\Ind{} \textsc{inst} eat-\Antip{}-\Pf{}//
-\glft \trsl{Marek ate with a spoon.} \lingcontext{instrument adjunct in \Ind{}}//
+\glft \trsl{Marek ate with a spoon.}//
 \endgl
-\xe
-
-In a finite antipassive clause, the patient, having been removed from core
-argument structure, may not be expressed in any case form; it is accordingly
-inadmissible as an indirect-case argument, as may be seen from the following:
-
-\ex
+\a
 \begingl
 \gla *Marek travě piašček.//
 \glb Marek.\Dir{} bread.\Ind{} eat-\Antip{}-\Pf{}//
 \glft \trsl{(intended: Marek ate bread.)}//
 \endgl
-\xe
-
-\noindent Where a patient is to be expressed in a finite clause, the
-ergative construction is required. Instrument and adjunct arguments, which bear no
-patient relation to the predicate, remain fully admissible in the indirect case,
-as in the spoon example above. The absence of an expressible patient is not
-merely a discourse choice to background a participant that is otherwise retained
-in syntax: under the antipassive, the patient is removed from the clause's core
-argument structure and therefore cannot surface in any case form. The
-construction does not merely withhold the patient from prominence; it eliminates
-the patient from the overt argument structure of the clause. For an inherently
-transitive verb the patient is typically still understood as part of the
-conceptual event, but what is asserted is the agent's activity; the patient has
-no realisation as a syntactic argument of the antipassive. A nominal
-dependent may separately restrict that conceptual event under participant
-nominalisation (§\,\ref{sec:nominalised}); it is licensed by a nominal
-relational head rather than by the finite verbal construction.
-
-Equally, for a transitive verb, the bare perfective without either \ird{-n-} or
-\ird{-aš-} is ungrammatical:
-
-\ex
+\a
 \begingl
 \gla *Marek piaštek.//
 \glb Marek.\Dir{} eat-\Pf{}//
-\glft \trsl{(intended: Marek ate.)} \lingcontext{bare perfective illicit for transitive verb}//
+\glft \trsl{(intended: Marek ate.)}//
 \endgl
 \xe
 
-\noindent\textit{Note:} The antipassive and the applicative are in complementary
-distribution; a verb cannot take both simultaneously.
+The instrumental phrase in the second example modifies the activity without
+restoring a patient. The third example fails because indirect case cannot
+license a patient excluded by the antipassive; the fourth lacks the overt
+morphology required by the transitive base. A nominal dependent may separately
+restrict an antipassive event under participant nominalisation, where a nominal
+relational head licenses it (§\,\ref{sec:nominalised}). This nominal relation
+does not extend to finite antipassive clauses.
 
-
-\subsubsection{Minimalist analysis: the antipassive as VoiceP}
+\subsubsection{Minimalist analysis: the antipassive as inner Voice}
 \label{sec:vm-antipassive}
 
-The antipassive \ird{-aš-} is an overt Voice head (Kratzer 1996; Alexiadou
-et~al. 2006) subject to a structural input condition: it may be merged only in a
-clause whose input to \synhead{VoiceP} contains a patient that is eligible for
-absolutive realisation. It then removes that patient from core argument
-structure and promotes the agent to the absolutive position vacated by that
-removal.
+Antipassive formation combines the transitive event predicate with an inner
+Voice head that closes the patient role without projecting an independent
+patient DP. For \ird{piašt-}, its interpretation can be represented as
+\[
+ \lambda x.\lambda e\,[\operatorname{eat}(e)\land
+ \operatorname{Agent}(e,x)\land
+ \exists y\,\operatorname{Theme}(e,y)].
+\]
+The existentially bound variable supplies the conceptual participant of eating;
+it is unavailable for independent nominal realisation in the finite clause.
+The representation is an analysis of Iridian's strict patient-suppression rule.
+The availability of an oblique patient varies across antipassive constructions
+cross-linguistically, as does their association with ergativity
+\cite{heaton2020}; neither the suppression rule nor its aspectual restriction
+follows from the term \term{antipassive} alone.
 
-\paragraph{Input condition.}
-The antipassive requires, as the structural context for its application, a
-clause in which the patient stands in the absolutive position made available by
-the clause's alignment architecture. In the ERG-aspect domain, Asp.Align's
-default assigns absolutive to the patient (§\,\ref{sec:vm-asp-case}); the input
-condition is therefore satisfied, and the antipassive is licensed. In the
-NOM-aspect domain, the absolutive is assigned by default to the agent; no
-patient stands in the absolutive position, and the structural target required by
-the antipassive is absent. The antipassive is consequently unlicensed in
-NOM-aspect clauses. This is a hard grammatical restriction, not a preference or
-economy effect.
+Asp.Align licenses inner antipassive Voice only in the ERG-aspect domain.
+This dependency holds of the completed configuration, in which the higher Asp
+head selects a compatible lower predicate. It does not require the lower head
+to inspect a patient already assigned case by a not-yet-merged Asp head. The
+remaining agent receives direct case through the resulting intransitive frame.
+Embedded Asp imposes the same selectional restriction under participant
+nominalisation, although finite case valuation is inactive there.
 
-Under participant nominalisation, the same restriction is evaluated against
-embedded Asp's participant-selection features: only the ERG-aspect domain
-licenses antipassive Voice. Actual finite case valuation is inactive there,
-and nominal dependents receive indirect case independently
-(§\,\ref{sec:nominalised}).
-
-\paragraph{Argument-structure removal.}
-Under the antipassive, the patient is not demoted to an oblique slot within the
-clause. It is removed from the clausal core entirely. Oblique expression of the
-patient is therefore not merely dispreferred but impossible: the construction
-does not retain a suppressed patient that has been reassigned to a peripheral
-position. The patient ceases to be part of the overt argument structure of the
-finite clause. This is why an indirect-case patient is ungrammatical with the
-finite antipassive (see §\,\ref{sec:vm-antipassive-desc} for examples), while
-instrument and adjunct arguments in the indirect case remain fully admissible.
-
-The template order --- antipassive between root and Asp.Align --- confirms that
-\synhead{VoiceP} immediately dominates \synhead{VP}:
-
-\begin{center}
-\begin{forest}
-for tree={align=center}
-[\synhead{AspP}
-  [{\synhead{DP}\\{\footnotesize agent}\\{\footnotesize\textsc{[abs]}}}]
-  [{Asp$'$}
-    [{Asp\\{\footnotesize\textsc{[erg]}}}]
-    [\synhead{VoiceP}
-      [{\synhead{DP}\\{\footnotesize agent}}]
-      [{Voice$'$}
-        [{Voice\\\ird{-aš-}\\{\footnotesize\textsc{[agt-abs]}}\\{\scriptsize requires p-abs}}]
-        [\synhead{VP}
-          [{\textit{root}}]
-        ]
-      ]
-    ]
-  ]
-]
-\end{forest}
-\end{center}
-
-\noindent The label \textsc{[p-abs required]} on the antipassive Voice head
-represents the input condition: the head selects for a \synhead{VP} whose
-internal argument would stand as the absolutive participant in the relevant
-alignment environment. In ERG aspects this condition is met; in NOM aspects it
-is not. The complementary distribution of the antipassive and the applicative
-(\ird{-aš-} and \ird{-éb-} cannot co-occur on the same stem) is a direct
-consequence of both occupying the same \synhead{VoiceP} projection: only one
-Voice head may be merged at this tier.
-
-In ERG-aspect transitives, the patient requires overt Voice licensing to be
-realised as a core argument (§\,\ref{sec:vm-n}). A verb bearing neither
-\ird{-aš-} nor \ird{-éb-} nor \ird{-n-} in an ergative aspect therefore fails
-for a different reason: the patient lacks the overt patient-licensing head
-required for core realisation. That exclusion is distinct from the structural
-input condition that blocks the antipassive in NOM aspects; the two empty cells
-in the alignment system are each excluded by a separate principle
-(§\,\ref{sec:vm-asp-case}).
-
+Antipassive Voice and Appl are separate heads, whose co-occurrence Iridian
+excludes within one derived predicate. This is a language-specific selectional
+restriction, rather than a consequence of two exponents occupying one universal
+Voice position. Cross-linguistic combinations of antipassives and applicatives
+are discussed by Basilico \cite[ch.~5]{basilico2026}. A higher causative may nevertheless select an antipassive
+predicate (§\,\ref{sec:vm-caus}); its new causer does not restore the
+suppressed lexical patient.
 
 \subsection{The applicative (\ird{-éb-})}
 
-The applicative promotes a peripheral argument --- most commonly a beneficiary
-or recipient, but also a goal, location, or instrument --- to core argument
-status, placing it in the absolutive. The suffix \ird{-éb-} derives from an
-older benefactive morpheme and still defaults to a beneficiary or recipient
-reading when such an interpretation is available. Where the lexical semantics of
-the verb or the wider clause exclude a benefactive reading, the applicative is
-interpreted instead as promoting the most discourse-salient non-core
-participant, typically a goal, location, or instrument. Only one applicative
-argument may be promoted in a single clause.
+The applicative \ird{-éb-} licenses one additional participant in relation to
+the event and, in a simple indicative applicative, selects that participant as
+the direct-case pivot. Its productive default is benefactive: the event is
+performed for an individual's benefit, without entailing that the individual
+performs the lexical action or receives its theme. The actor receives indirect
+case in the NOM-aspect domain and transitive case in the ERG-aspect domain;
+a retained lexical theme receives indirect case in either domain.
 
-The contrast is most readily observed in nominative-alignment contexts, where
-the applied participant becomes the direct-case object that would otherwise have
-remained oblique:
+The following constructed contrast retains the same actor, theme, and
+beneficiary. In the first clause, \ird{my} heads a benefactive phrase; in the
+second, the beneficiary is a core DP selected by \ird{-éb-}:
 
-\pex
+\pex\label{ex:val-appl-transitive}
 \a
 \begingl
-\gla Marek bylam piaštime.//
-\glb Marek.\Dir{} child.\Ind{} eat-\Prog{}//
-\glft \trsl{Marek is eating for the child.} \lingcontext{beneficiary remains oblique}//
+\gla Marek travě bylam my piaštime.//
+\glb Marek.\Dir{} bread.\Ind{} child.\Ind{} for eat-\Prog{}//
+\glft \trsl{Marek is eating bread for the child's benefit.}//
 \endgl
 \a
 \begingl
-\gla Marek byl piaštébime.//
+\gla Byl Marcí travě piaštébime.//
+\glb child.\Dir{} Marek.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}//
+\glft \trsl{Marek is eating bread for the child's benefit.}//
+\endgl
+\xe
+
+The applied child alone bears direct case. Marek and the bread remain arguments
+of the eating event, although their shared indirect case does not distinguish
+actor from theme; the predicate and context supply those relations. Neither
+clause means that the child eats. Causative \ird{piaštnajime}, by contrast,
+can describe Marek's bringing about the child's eating
+(§\,\ref{sec:aspect-caus}). A conventional \trsl{feed} reading is not part of
+the productive semantics of \ird{-éb-}.
+
+Two independently direct arguments are excluded from this simple applicative
+frame:
+
+\ex
+\begingl
+\gla *Marek byl piaštébime.//
 \glb Marek.\Dir{} child.\Dir{} eat-\Appl{}-\Prog{}//
-\glft \trsl{Marek is feeding the child.} \lingcontext{beneficiary promoted to core status}//
+\glft \trsl{(intended: Marek is eating for the child's benefit.)}//
 \endgl
 \xe
 
-\noindent With verbs of motion and placement the same suffix promotes a goal or
-location rather than a beneficiary:
+An intransitive activity permits the same benefactive derivation without a
+lexical theme. The following constructed examples illustrate that difference
+and the ERG-domain frame of the transitive applicative:
 
-\pex
+\pex\label{ex:val-appl-ergative}
 \a
 \begingl
-\gla Marek nužam stachime.//
-\glb Marek.\Dir{} town.\Ind{} go-\Prog{}//
-\glft \trsl{Marek is going toward the town.}//
+\gla Byl Marcí zmacébime.//
+\glb child.\Dir{} Marek.\Ind{} run-\Appl{}-\Prog{}//
+\glft \trsl{Marek is running for the child's benefit.}//
 \endgl
 \a
 \begingl
-\gla Marek hrad stéběme.//
-\glb Marek.\Dir{} town.\Dir{} go-\Appl{}-\Prog{}//
-\glft \trsl{Marek is entering the town / making the town his destination.}//
-\endgl
-\xe
-
-\noindent Instrumental promotion is likewise possible, though it is
-pragmatically more marked, being preferred where the instrument itself is the
-discourse-relevant participant:
-
-\pex
-\a
-\begingl
-\gla Marek houlam se piašček.//
-\glb Marek.\Dir{} spoon.\Ind{} \textsc{inst} eat-\Antip{}-\Pf{}//
-\glft \trsl{Marek ate with a spoon.} \lingcontext{instrument remains adjunct}//
-\endgl
-\a
-\begingl
-\gla Marek prosc piaštébime.//
-\glb Marek.\Dir{} spoon.\Dir{} eat-\Appl{}-\Prog{}//
-\glft \trsl{Marek is using the spoon for eating / is eating with the spoon as the relevant implement.}//
+\gla Byl Marku travě piaštébik.//
+\glb child.\Dir{} Marek.\Trs{} bread.\Ind{} eat-\Appl{}-\Pf{}//
+\glft \trsl{Marek ate bread for the child's benefit.}//
 \endgl
 \xe
 
-\noindent In the imperative and hortative the same promotion yields benefactive
-readings by default. Directive clauses require the beneficiary to be overtly
-realised; the applicative is ungrammatical without one (see
-§\,\ref{sec:mood-directive-valency}):
+\ird{-éb-} also admits role interpretations constrained by the predicate:
+a recipient requires transfer or availability of a theme, a goal requires
+motion or placement, and an instrument requires an activity in which that
+participant serves as an implement. Locative uses require a lexically or
+constructionally licensed spatial relation; the location of an event and its
+destination are distinct relations. Discourse salience can motivate selection
+of such a construction but cannot supply an otherwise unlicensed semantic
+role. These restrictions distinguish Iridian's interpretations within the
+broader typological variation in applicative bases and roles
+\cite[§§2, 4]{polinsky2013appl}.
+
+Directive Mood selects the lexical theme where one is retained, so that an
+applied beneficiary receives indirect case (§\,\ref{sec:mood-directive-valency}):
 
 \pex
 \a
 \begingl
 \gla Trava bylam piaštébím.//
 \glb bread.\Dir{} child.\Ind{} eat-\Appl{}-\Imp{}//
-\glft \trsl{Feed the child bread.}//
+\glft \trsl{Eat bread for the child's benefit.}//
 \endgl
 \a
 \begingl
 \gla Trava bylam piaštébká.//
 \glb bread.\Dir{} child.\Ind{} eat-\Appl{}-\Hort{}//
-\glft \trsl{Let's feed the child bread.}//
+\glft \trsl{Let's eat bread for the child's benefit.}//
 \endgl
 \xe
 
-\noindent The antipassive and the applicative are in complementary distribution.
-This is not an accidental gap: the antipassive removes the patient from core
-argument structure, whereas the applicative creates a new core object out of a
-peripheral participant. The two operations compete for the same \synhead{VoiceP}
-slot and cannot be combined on a single finite stem.
-
+The beneficiary is required overtly in these directive constructions. Its
+indirect case reflects the higher Mood-conditioned selection rule, although
+Appl continues to introduce it as an argument.
 
 \subsubsection{Minimalist analysis: the applicative as ApplP}
 \label{sec:vm-appl}
 
-The applicative (\ird{-éb-}) promotes a peripheral (non-core) participant to
-absolutive status. Following Pylkkänen (2008), this can be analysed as a
-\term{high applicative} head (\synhead{ApplP}) that introduces the promoted
-argument into the event structure between \synhead{VoiceP} and \synhead{CausP}:
+The productive benefactive is analysed as a high applicative, whose added
+participant is related to an event. Pylkkänen distinguishes this relation from
+low applicatives, which relate individuals through transfer of possession
+\cite[ch.~2]{pylkkanen2008}. Iridian's benefactive introduces no possession
+entailment, and the grammar assigns its productive interpretation to a single
+Appl head. Recipient readings are predicate-conditioned extensions rather than
+evidence for an independently productive low-applicative position.
+
+A schematic interpretation is
+\[
+ \mathrm{Appl}_{\mathrm{BEN}}
+ =\lambda P.\lambda y.\lambda e\,
+ [P(e)\land\operatorname{Benefit}(e,y)],
+\]
+where $P$ is an event predicate and $y$ is the beneficiary. Appl combines with
+the event predicate below the layer introducing its actor; both lie below an
+optional Caus head and the outer orientation head. The constituent order is
+head-final throughout:
 
 \begin{center}
 \begin{forest}
 for tree={align=center}
 [\synhead{ApplP}
-  [{\synhead{DP}\\{\footnotesize applied argument}}]
+  [{\synhead{DP}\\{\footnotesize beneficiary}}]
   [{Appl$'$}
+    [\synhead{VP} [{\ldots}]]
     [{Appl\\\ird{-éb-}}]
-    [\synhead{VoiceP}
-      [{\ldots}]
-    ]
   ]
 ]
 \end{forest}
 \end{center}
 
-\noindent The beneficiary, goal, or instrument promoted by the applicative
-becomes the absolutive argument of the resulting \synhead{vP}, effectively
-taking the slot that would otherwise be occupied by the patient. The interaction
-with discourse is mediated at the \synhead{AspP} level: which of the available
-absolutive candidates (patient or applied argument) receives direct case
-is determined by the Asp.Align morpheme selected (§\,\ref{sec:vm-asp}).
-
-
+Appl introduces the beneficiary; the completed clause's licensing configuration
+determines case and pivot privileges. A simple indicative applicative selects
+the beneficiary in either alignment domain, whereas higher Caus or directive
+Mood can supersede that selection. The outer orientation head is zero in a simple applicative, where its
+selection follows Appl; \ird{-éb-} selects perfective \ird{-ik} and
+licenses the ERG-domain frame without an additional \ird{-n-}. A higher
+causative creates its own orientation domain and requires overt \ird{-n-}
+in the ERG frame. Iridian excludes a
+second applicative and the combination of applicative and antipassive within
+the same predicate.
 
 \subsection{The causative (\ird{-na-})}\label{sec:aspect-caus}
 
-Cross-linguistically, causation may be expressed lexically, analytically, or
-morphologically. Some languages employ distinct lexical verbs comparable to
-English \textit{kill}, while others use periphrastic constructions equivalent to
-\textit{make} or \textit{cause} plus a second predicate. Iridian belongs to the
-third type: causation is expressed by a productive morphological operation,
-realised synchronically as the suffix \ird{-na-}.
+The causative \ird{-na-} adds a causer to an event while retaining its
+independently licensed participants. The base actor or sole participant becomes
+the causee. This valency increase corresponds to the morphological causative
+type discussed by Dixon \cite{dixon2000}; the case and selection rules below
+specify its Iridian realisation. Apart from the stative allomorph
+(§\,\ref{sec:stative-valency}), \ird{-na-} surfaces as \ird{-naj-}
+before a vowel-initial aspect or mood suffix and retains \ird{-na-} before
+consonant-initial material, including outer \ird{-n-}.
 
-The causative \ird{-na-} adds an external causer argument to the event. In
-nominative-alignment contexts the causer stands in the direct case, the original
-agent or sole participant is demoted to the indirect, and any patient licensed
-by the base verb remains indirect. In ergative-alignment contexts the causer
-takes the transitive case. With transitive bases, the original patient remains
-the direct argument and the causee falls into the indirect; with intransitive
-bases, the causee itself occupies the direct as the sole affected participant.
-The causative thus increases valency by one while preserving the aspect-driven
-alignment pattern of the clause as a whole. Before a following vowel-initial
-aspect or mood suffix, \ird{-na-} inserts an epenthetic glide and surfaces as
-\ird{-naj-}; before consonant-initial material, including the Voice head
-\ird{-n-}, it remains \ird{-na-}.
+In an active NOM-domain causative, the causer is direct and all other arguments
+are indirect. In an ERG-domain causative, the causer is transitive and one
+embedded participant is direct: the retained lexical theme takes precedence,
+followed by an applied participant if there is no lexical theme, and otherwise
+the causee. Any remaining causee or applied participant is indirect. This
+hierarchy belongs to the causative frame, so an embedded applicative's simple
+beneficiary selection does not independently assign a second direct case.
 
-\pex
+\begin{table}[htbp]
+\footnotesize
+\caption{Active indicative causative frames. A dash indicates an absent role.}
+\label{tab:causative-frames}
+\begin{tabularx}{\textwidth}{L C C C C}
+\toprule
+Base and domain & Causer & Causee & Theme & Applied \\
+\midrule
+Intransitive, NOM & \textsc{dir} & \textsc{ind} & --- & --- \\
+Intransitive, ERG & \textsc{trs} & \textsc{dir} & --- & --- \\
+Transitive, NOM & \textsc{dir} & \textsc{ind} & \textsc{ind} & --- \\
+Transitive, ERG & \textsc{trs} & \textsc{ind} & \textsc{dir} & --- \\
+Applied transitive, NOM & \textsc{dir} & \textsc{ind} & \textsc{ind} & \textsc{ind} \\
+Applied transitive, ERG & \textsc{trs} & \textsc{ind} & \textsc{dir} & \textsc{ind} \\
+Applied intransitive, ERG & \textsc{trs} & \textsc{ind} & --- & \textsc{dir} \\
+Antipassive, ERG & \textsc{trs} & \textsc{dir} & --- & --- \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The base contrasts can be compared directly in the following constructed
+paradigm. \ird{Zmac-} denotes an actor's activity, whereas \ird{ščen-}
+denotes its sole participant's arrival; their ordinary case frames coincide.
+The stative \ird{svorn-} independently selects perfective \ird{-ik}.
+The transitive base alone requires \ird{-n-} in the ERG frame.
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Constructed ordinary base clauses in the two alignment domains.}
+\label{tab:valency-base-contrasts}
+\begin{tabularx}{\textwidth}{l L L}
+\toprule
+Base & NOM: progressive & ERG: perfective \\
+\midrule
+\ird{piašt-} & \ird{Marek travě piaštime.} & \ird{Trava Marku piaštnik.} \\
+\ird{zmac-} & \ird{Marek zmacime.} & \ird{Marek zmacek.} \\
+\ird{ščen-} & \ird{Byl ščenime.} & \ird{Byl ščenek.} \\
+\ird{svorn-} & \ird{Problem svornime.} & \ird{Problem svornik.} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+In the transitive row the agent is direct in NOM and transitive in ERG,
+while the theme is indirect in NOM and direct in ERG. Each intransitive row
+has one core participant, which is direct and privileged in both domains.
+The progressive stative describes a developing increase in size, while its
+perfective presents a bounded becoming-big event; stative causativisation adds
+a distinct causer (§\,\ref{sec:stative-valency}).
+
+Complex forms below retain visible morphological boundaries where these
+clarify suffix order; the hyphens are analytical notation. The following
+constructed pairs make the causee and any retained theme overt:
+
+\pex\label{ex:val-caus-intransitive}
 \a
 \begingl
 \gla Marek bylam zmacnajime.//
 \glb Marek.\Dir{} child.\Ind{} run-\Caus{}-\Prog{}//
-\glft \trsl{Marek is making the child run.} \lingcontext{causative of intransitive base; nominative alignment}//
+\glft \trsl{Marek is making the child run.}//
+\endgl
+\a
+\begingl
+\gla Byl Marku zmac-na-nik.//
+\glb child.\Dir{} Marek.\Trs{} run-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek made the child run.}//
+\endgl
+\xe
+
+The activity predicate \ird{zmac-} \trsl{run} supplies an actor causee.
+By comparison, the sole participant of \ird{ščen-} \trsl{arrive} undergoes a
+change of location. The grammar treats the former as unergative and the latter
+as unaccusative, using that distinction to characterise the base relation;
+both follow the same causative case rule. The following constructed paradigm
+includes the underived ERG-domain intransitive, which needs no transitive
+\ird{-n-}, and causatives in both alignment domains:
+
+\pex\label{ex:val-unaccusative}
+\a
+\begingl
+\gla Byl ščenek.//
+\glb child.\Dir{} arrive-\Pf{}//
+\glft \trsl{The child arrived.}//
+\endgl
+\a
+\begingl
+\gla Marek bylam ščennajime.//
+\glb Marek.\Dir{} child.\Ind{} arrive-\Caus{}-\Prog{}//
+\glft \trsl{Marek is causing the child to arrive.}//
+\endgl
+\a
+\begingl
+\gla Byl Marku ščen-na-nik.//
+\glb child.\Dir{} Marek.\Trs{} arrive-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek caused the child to arrive.}//
+\endgl
+\xe
+
+\pex\label{ex:val-caus-transitive}
+\a
+\begingl
+\gla Marek bylam travě piaštnajime.//
+\glb Marek.\Dir{} child.\Ind{} bread.\Ind{} eat-\Caus{}-\Prog{}//
+\glft \trsl{Marek is making the child eat bread.}//
 \endgl
 \a
 \begingl
 \gla Travato Marku bylam piašt-na-nik.//
 \glb bread.\Dir{}.\Def{} Marek.\Trs{} child.\Ind{} eat-\Caus{}-\textsc{trs}-\Pf{}//
-\glft \trsl{Marek made the child eat the bread.} \lingcontext{causative of transitive base; ergative alignment}//
+\glft \trsl{Marek made the child eat the bread.}//
 \endgl
 \xe
 
-\noindent The semantic character of the causation is expressed primarily through
-aspect. In the perfective the causative presents the causer as exercising
-effective control over the caused event and therefore tends toward direct,
-interventionist, or coercive readings. In the retrospective the same morphology
-presents a looser relation between causer and event, so that the clause more
-readily receives indirect, delegated, accidental, or permissive interpretations.
-For the discourse consequences of this contrast, see Chapter~\ref{ch:discourse}.
+\ird{-na-} expresses causation without specifying coercion, permission, or the
+causer's degree of intervention. The causee's agency, the lexical event, and
+context support more particular readings; viewpoint aspect does not entail
+causal directness or control. Thus the perfective transitive example can
+receive a permissive interpretation in a context where Marek enables the
+child to eat, while retrospective \ird{piašt-na-n-ac} can describe direct
+compulsion when that relation is supplied by context. Both preserve the same
+causative argument frame.
 
-\pex
-\a
-\begingl
-\gla Marek bylam piaštnajime.//
-\glb Marek.\Dir{} child.\Ind{} eat-\Caus{}-\Prog{}//
-\glft \trsl{Marek is having the child eat / is feeding the child.}//
-\endgl
-\a
-\begingl
-\gla Travato Marku bylam piašt-na-n-ac.//
-\glb bread.\Dir{}.\Def{} Marek.\Trs{} child.\Ind{} eat-\Caus{}-\textsc{trs}-\Ret{}//
-\glft \trsl{Marek has let the child eat the bread / has ended up getting the child to eat it.}//
-\endgl
-\xe
+An applicative precedes the causative. The following constructed clauses use
+plural \ird{bylac} for the causee and singular \ird{bylam} for the beneficiary,
+so that all four participants are represented:
 
-\noindent The causative is fully compatible with the applicative, provided the
-applicative is formed first in accordance with the morphological template:
-
-\pex
+\pex\label{ex:val-caus-appl}
 \a
 \begingl
-\gla Marek bylam piaštébnajime.//
-\glb Marek.\Dir{} child.\Ind{} eat-\Appl{}-\Caus{}-\Prog{}//
-\glft \trsl{Marek is making someone feed the child.}//
+\gla Marek bylac bylam travě piaštébnajime.//
+\glb Marek.\Dir{} child.\Ind{}.\Pl{} child.\Ind{} bread.\Ind{} eat-\Appl{}-\Caus{}-\Prog{}//
+\glft \trsl{Marek is making the children eat bread for the child's benefit.}//
 \endgl
 \a
 \begingl
-\gla Trava bylam piaštnajím.//
-\glb bread.\Dir{} child.\Ind{} eat-\Caus{}-\Imp{}//
-\glft \trsl{Make the child eat the bread.} \lingcontext{directive; causee in \Ind{} required}//
-\endgl
-\a
-\begingl
-\gla Trava bylam piašt-na-ká.//
-\glb bread.\Dir{} child.\Ind{} eat-\Caus{}-\Hort{}//
-\glft \trsl{Let's make the child eat the bread.}//
+\gla Trava Marku bylac bylam piaštéb-na-nik.//
+\glb bread.\Dir{} Marek.\Trs{} child.\Ind{}.\Pl{} child.\Ind{} eat-\Appl{}-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek made the children eat bread for the child's benefit.}//
 \endgl
 \xe
 
-\noindent Synchronically, \ird{-na-} is distinct from the Voice head \ird{-n-}.
-The former is a valency-changing derivation occupying the causative slot of the
-verbal template (\synhead{CausP}); the latter is the Voice head
-(\synhead{VoiceP}) that licenses the internal argument and specifies patient
-absolutive, inserted immediately before the aspect suffix. Their different vowels and
-positions distinguish \ird{-na-} from \ird{-n-}, although both can occur
-in the same verbal complex.
+Their scope is $\mathrm{CAUS}[\mathrm{APPL}[\mathrm{EAT}]]$: the child benefits
+from the embedded eating event. A beneficiary of the causing event itself can
+be expressed separately with \ird{my}; the suffix order does not license an
+outer applicative reading. Multiple indirect-case arguments need not occur in
+all uses, but an omitted causee requires the ordinary contextual licensing of
+argument omission. The morphology itself does not introduce an arbitrary
+silent \trsl{someone}.
 
+An antipassive base retains its actor as the causee while its lexical patient
+remains unavailable. Causativisation therefore produces a new two-participant
+predicate without reversing the lower reduction:
+
+\ex\label{ex:val-caus-antipassive}
+\begingl
+\gla Byl Marku piašč-na-nik.//
+\glb child.\Dir{} Marek.\Trs{} eat-\Antip{}-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek made the child eat.}//
+\endgl
+\xe
+
+The ERG-domain licensing restriction on antipassive remains operative in this
+configuration; a NOM-domain counterpart containing \ird{-aš-} is excluded.
+The direct-case child is the causee, never a restored lexical patient.
 
 \subsubsection{Minimalist analysis: the causative as CausP}
 \label{sec:vm-caus}
 
-The causative (\ird{-na-}) introduces an external causer above the
-base event structure, corresponding to a \synhead{CausP} projection
-that dominates \synhead{VoiceP}/\synhead{ApplP}. The causer argument is merged in
-Spec,\synhead{CausP}:
+Caus combines with an already formed event predicate, introducing its causer
+above the base actor and any applied argument. The outer orientation head
+subsequently selects the derived predicate's privileged participant, while
+Asp.Align supplies the alignment domain. The head-final hierarchy yields
+root--inner derivation--causative--orientation--aspect:
 
 \begin{center}
 \begin{forest}
 for tree={align=center}
-[\synhead{CausP}
-  [{\synhead{DP}\\{\footnotesize causer}}]
-  [{Caus$'$}
-    [{Caus\\\ird{-na-}}]
-    [\synhead{ApplP}
-      [{\ldots}]
+[\synhead{VoiceP}
+  [\synhead{CausP}
+    [{\synhead{DP}\\{\footnotesize causer}}]
+    [{Caus$'$}
+      [{event predicate\\{\footnotesize including causee}}]
+      [{Caus\\\ird{-na-}}]
     ]
   ]
+  [{Voice\\\ird{-n-} / $\varnothing$}]
 ]
 \end{forest}
 \end{center}
 
-\noindent The morphological order (applicative before causative before
-Asp.Align) is predicted: \synhead{CausP} dominates
-\synhead{VoiceP}/\synhead{ApplP}, and the Mirror Principle assigns them to the
-innermost positions relative to \synhead{AspP}. The interaction with aspect is
-semantically significant (§\,\ref{sec:aspect-caus}): perfective causation
-presents direct causer control (\synhead{CausP} features trigger tight Agree
-with the event head), while retrospective causation presents indirect or
-permissive causation (looser Agree relation, admitting delegated or accidental
-readings).
+The overt outer \ird{-n-} licenses the selected embedded participant in an
+ERG causative. In the NOM domain, zero outer orientation gives the active
+causer-oriented frame; overt \ird{-n-} selects the embedded theme, then an
+applied participant if no theme is retained, and otherwise the causee. It
+licenses the causer as an optional indirect agentive dependent. This is the passive of the
+derived causative. An embedded causee remains an argument of its own predicate;
+passivisation of the higher causing event does not suppress that relation.
 
 \subsubsection{The Voice head \ird{-n-}}
 \label{sec:vm-n}
 
-One doctrinal point should be made plain at the outset. \ird{-n-} is not
-inherently a `passive suffix,' nor does it change its meaning between aspectual
-domains. It is a single Voice head with constant structural content: it licenses
-the internal argument (patient) as a core participant in the clause's argument
-structure and specifies that the patient is to stand as the absolutive
-(\textsc{[pat-abs]}). In the ERG-aspect domain, where Asp.Align already
-establishes a patient-oriented absolutive orientation, this produces the
-ordinary ergative transitive: the patient is licensed as the absolutive pivot
-and the agent receives the dependent transitive case. In the NOM-aspect domain,
-where Asp.Align otherwise privileges the agent, the same patient-absolutive
-Voice head overrides that default and yields the construction described here as
-the passive. The passive reading is therefore an effect of the interaction of
-\ird{-n-} with the nominative domain, not the lexical meaning of \ird{-n-}
-itself. This preserves the unity of the morphology and removes any appearance
-that \ird{-n-} mysteriously changes meaning from one aspectual domain to
-another.
+\ird{-n-} realises outer patient-selecting Voice, following causative
+\ird{-na-} wherever both occur. With a simple transitive base it selects the
+lexical patient; with a causative it selects according to the hierarchy in
+Table~\ref{tab:causative-frames}. Its interpretation as patient selection thus
+extends to a causee that is the affected participant of an intransitive-base
+causative. This higher orientation head is distinct from inner antipassive
+Voice and from argument-introducing Appl and Caus.
 
-The morpheme \ird{-n-} thus occupies the same \synhead{VoiceP} slot as the
-antipassive \ird{-aš-} and the applicative \ird{-éb-}. Its two defining
-properties are not environment-specific; they are always present. What varies
-across aspectual domains is their structural consequence within the Asp.Align
-system.
+In the ERG-aspect domain, \ird{-n-} licenses the ordinary two-participant
+transitive frame: the selected participant is direct and the highest actor is
+transitive. Simple applicatives have their own overt licensing through
+\ird{-éb-}; simple antipassives instead retain only an actor, which receives
+direct case. The contrast between overt \ird{-n-} and a bare perfective on a
+transitive base is therefore a restriction on the completed licensing frame,
+not evidence that patient argumenthood universally requires an overt suffix.
 
-\paragraph{ERG-aspect behaviour.}
-In the perfective and retrospective aspects the default absolutive orientation
-of Asp.Align already selects the patient (§\,\ref{sec:vm-asp-case}). The
-\textsc{[pat-abs]} specification contributed by \ird{-n-} is therefore
-harmonious with the aspectual default. The indispensable contribution of
-\ird{-n-} in this environment is accordingly not to override the default but to
-license the patient as a core argument: without an overt Voice head in
-\synhead{VoiceP}, a transitive predicate cannot realise its patient as a
-properly licensed participant in the clause's core argument structure. The bare
-perfective or retrospective is consequently illicit for any transitive reading,
-as described in §\,\ref{sec:ambitransitive}. With \ird{-n-} present, the patient
-is licensed as the absolutive and the agent takes the transitive case; the
-result is the ordinary ergative transitive construction.
-
-\begin{center}
-\begin{forest}
-for tree={align=center}
-[\synhead{AspP}
-  [{\synhead{DP}\\{\footnotesize patient}\\{\footnotesize\textsc{[abs]}}}]
-  [{Asp$'$}
-    [\synhead{VoiceP}
-      [{\synhead{DP}\\{\footnotesize agent}\\{\footnotesize\textsc{[trs]}}}]
-      [{Voice$'$}
-        [\synhead{VP}
-          [{\synhead{DP}\\{\footnotesize patient}}]
-          [{\textit{root}}]
-        ]
-        [{Voice\\\ird{-n-}\\{\footnotesize\textsc{[pat-abs]}}}]
-      ]
-    ]
-    [{Asp\\{\footnotesize\textsc{[erg]}}}]
-  ]
-]
-\end{forest}
-\end{center}
-
-\paragraph{NOM-aspect behaviour.} In the continuous, progressive, and
-contemplative aspects the same overt Voice head overrides the default
-agent-absolutive orientation of Asp.Align. Because \ird{-n-} specifies
-\textsc{[pat-abs]}, the patient rather than the agent becomes the direct-case
-pivot, and the agent is demoted to the oblique domain. The result is a
-\term{passive} construction. Asp.Align remains in the nominative domain; it is
-the Voice head that imposes a patient-absolutive realisation upon the clause.
-The full analysis and examples are in §\,\ref{sec:vm-passive}.
-
-\ird{-n-} is thus not a pair of context-sensitive morphemes whose function
-changes by aspect. It is a single Voice head whose constant properties ---
-patient licensing and patient absolutive --- produce different surface
-constructions depending on whether the aspectual domain reinforces or is
-overridden by its absolutive specification. The phonological resemblance to the
-causative \ird{-na-} is addressed in §\,\ref{sec:vm-tension-n}.
-
+In the NOM-aspect domain, \ird{-n-} overrides active actor selection and
+licenses a different external-argument configuration: the patient is direct,
+while the highest actor can occur as an optional indirect agentive dependent.
+The grammar calls this configuration \term{passive}. Patient selection and
+external-argument licensing are separate parts of its specification; assigning
+direct case to a patient alone would not establish the latter property.
+The relative height of \ird{-n-} accounts for \ird{piašt-na-nik} without
+metathesis of Voice and Caus (§\,\ref{sec:vm-tension-n}).
 
 \subsection{The passive}\label{sec:vm-passive}
 
-The passive is the construction that arises when the Voice head \ird{-n-} is
-merged in a NOM-aspect clause. Since \ird{-n-} specifies patient absolutive
-(\textsc{[pat-abs]}) and the NOM-aspect domain would by default assign
-absolutive to the agent, the Voice head overrides the aspectual default: the
-patient surfaces in the direct case as the absolutive pivot, and the agent is
-demoted to the indirect (oblique) case. Asp.Align remains in the nominative
-domain throughout; only the absolutive orientation of the clause is altered by
-the overt Voice head.
+The NOM-domain passive combines patient-selecting \ird{-n-} with continuous
+\ird{-a}, progressive \ird{-ime}, or contemplative \ird{-ách}. Its patient
+receives direct case, while an expressed actor receives indirect case as an
+agentive dependent licensed by the passive construction. An unexpressed actor
+can be contextually recovered or left unspecified. The aspectual domain remains
+NOM, although active actor selection is overridden.
 
-The passive is thus the marked construction by which a nominative-domain clause
-is reorganised around the patient, allowing the patient rather than the agent to
-function as the discourse pivot. Its counterpart in the ergative domain is the
-ordinary ergative transitive, which arises from the same Voice head under
-ERG-aspect alignment. The two constructions are formally identical at the Voice
-level; their different surface alignment is a consequence of the aspectual
-domain they are embedded in.
-
-\subsubsection*{Morphological form}
-
-The passive consists of a NOM-aspect suffix on a transitive stem bearing
-\ird{-n-}. The NOM-aspect suffixes available for passive formation are the
-continuous \ird{-a}, the progressive \ird{-ime}, and the contemplative
-\ird{-ách}; the patient-absolutive specification of \ird{-n-} is realised in
-each case.
-
-\subsubsection*{Case frame}
-
-The patient surfaces in the direct case (\textsc{abs}/\textsc{dir}); the agent,
-displaced from the absolutive, surfaces in the indirect case
-(\textsc{obl}/\textsc{ind}). The agent may be omitted when it is recoverable or
-irrelevant.
-
-\begin{center}
-\begin{forest}
-for tree={align=center}
-[\synhead{AspP}
-  [{\synhead{DP}\\{\footnotesize patient}\\{\footnotesize\textsc{[abs]}}}]
-  [{Asp$'$}
-    [\synhead{VoiceP}
-      [{\synhead{DP}\\{\footnotesize agent}\\{\footnotesize\textsc{[obl]}}}]
-      [{Voice$'$}
-        [\synhead{VP}
-          [{\synhead{DP}\\{\footnotesize patient}}]
-          [{\textit{root}}]
-        ]
-        [{Voice\\\ird{-n-}\\{\footnotesize\textsc{[pat-abs]}}}]
-      ]
-    ]
-    [{Asp\\{\footnotesize\textsc{[nom]}}}]
-  ]
-]
-\end{forest}
-\end{center}
-
-\noindent Asp.Align remains nominative-domain (\textsc{Asp[nom]}), but the overt
-Voice head requires patient absolutive; the agent therefore surfaces in the
-oblique domain.
-
-\subsubsection*{Examples}
-
-With agent expressed in the oblique:
+The indirect agent differs in licensing from the ordinary indirect patient of
+an active NOM-domain transitive: the latter is an internal argument of the
+lexical predicate, whereas the former is an optional external dependent of the
+passive configuration. Their shared case ending does not establish identical
+argument status. Further diagnostics of the passive agent's binding and control
+properties are not established by the case alternation alone.
 
 \pex
 \a
 \begingl
-\gla Travato Marku piaštnime.//
+\gla Travato Marcí piaštnime.//
 \glb bread.\Dir{}.\Def{} Marek.\Ind{} eat-\textsc{pass}-\Prog{}//
-\glft \trsl{The bread is being eaten by Marek.} \lingcontext{passive; P = \Dir{}, A = \Ind{}}//
+\glft \trsl{The bread is being eaten by Marek.}//
 \endgl
-\a
-\begingl
-\gla Vytam Marku shodnime.//
-\glb shirt.\Dir{}.\Def{} Marek.\Ind{} wear-\textsc{pass}-\Prog{}//
-\glft \trsl{The shirt is being put on by Marek.}//
-\endgl
-\xe
-
-With agent omitted:
-
-\pex
 \a
 \begingl
 \gla Travato piaštnime.//
 \glb bread.\Dir{}.\Def{} eat-\textsc{pass}-\Prog{}//
-\glft \trsl{The bread is being eaten.} \lingcontext{passive; agent omitted}//
-\endgl
-\a
-\begingl
-\gla Doma piasčna.//
-\glb house.\Dir{} build-\textsc{pass}-\Cont{}//
-\glft \trsl{The house is being built / is under construction.}//
+\glft \trsl{The bread is being eaten.}//
 \endgl
 \xe
 
-\noindent The discourse value of the passive is to constitute the patient as the
-clause's absolutive pivot, favouring it as a topic candidate that later clauses may
-pick up pronominally or by topic drop. The agent, when expressed, appears in the
-indirect case as a non-core oblique participant.
+\ird{Marcí} is the indirect form of \ird{Marek}; transitive \ird{Marku}
+belongs to the ERG-domain active frame. The same outer head follows the
+causative in the constructed passive below, where Marek is the optional causer
+dependent and the child remains the embedded actor:
+
+\ex
+\begingl
+\gla Trava Marcí bylam piašt-na-n-ime.//
+\glb bread.\Dir{} Marek.\Ind{} child.\Ind{} eat-\Caus{}-\textsc{pass}-\Prog{}//
+\glft \trsl{Bread is being caused by Marek to be eaten by the child.}//
+\endgl
+\xe
+
+The passive privileges the bread for
+participant nominalisation and direct-gap relativisation. It can thereby
+support continued reference to that participant, although aboutness topicality
+requires its independent discourse conditions.
 
 
 \subsection{Pragmatic use of valency operations}
 
-The choice among ergative, antipassive, applicative, and causative is not purely
-mechanical. Each construction offers the speaker a distinct way of packaging the
-event for discourse. The antipassive is used when the patient is generic,
-non-referential, semantically incorporated into the activity, recoverable from
-context, or intentionally backgrounded. Its effect is to keep the agent in
-absolutive position and to present an event without a core patient; an
-agent-centred discourse interpretation is compatible with that case frame
-without being encoded as a topic feature on the antipassive.
+The antipassive presents an activity without an independently licensed patient,
+which can support discourse centred on the actor or on the activity itself.
+An ordinary transitive with an omitted patient differs because its patient
+remains a referential argument recoverable from context. Choosing between these
+constructions therefore concerns argument structure as well as discourse.
 
-The applicative serves the opposite discourse function: it pulls a formerly
-peripheral participant into the centre of the clause. A beneficiary,
-destination, location, or instrument is promoted when that participant is the
-one the discourse is tracking, when it will remain topical in subsequent
-clauses, or when the speaker wishes to construe the event from its perspective
-rather than from that of an unexpressed or backgrounded patient.
+An applicative makes an event-related participant available for pivot-restricted
+constructions, including participant nominalisation and relative formation.
+Continued reference to a beneficiary may favour this choice, although a topic
+relation is neither required nor supplied by the suffix. The beneficiary
+interpretation comes from the applicative construction; discourse salience
+does not by itself license an instrumental, goal or stimulus reading.
 
-The causative likewise has a pragmatic life beyond its valency-changing effect.
-By choosing a causative rather than a simple predicate, the speaker frames the
-event in terms of inducement, delegated agency, or control. In direct contexts
-this may foreground authority or coercion; in weaker retrospective contexts it
-may soften the causer's responsibility, presenting the caused event as something
-merely permitted, arranged, or indirectly brought about rather than personally
-carried out.
-
-The applicative and causative are compatible with the imperative and hortative
-and occupy their regular positions in the morphological template before the mood
-suffix.
-
+A causative introduces a causing event and a causer, while the lexical predicate
+and context determine whether the causal relation involves inducement,
+permission, delegated agency or physical intervention. Perfective and
+retrospective viewpoints can present the same relation from different temporal
+perspectives without encoding different degrees of force. Directive Mood
+likewise changes the construction's orientation without changing the causal
+relation (§\,\ref{sec:mood-directive-valency}).
 
 \section{Negation}\label{sec:negation}
 
@@ -2092,7 +1962,7 @@ imperfective/perfective-domain contrast, as described in
 §\,\ref{sec:vm-mood-asp}. Every finite verb, indicative or not, therefore
 carries an Asp.Align exponent. The imperative, prohibitive, and hortative
 together form the directive domain, a unified subsystem whose case properties
-follow from the interaction of reduced Asp.Align with null-subject orientation;
+follow from directive orientation within the reduced Asp.Align domain;
 it is treated as a group beginning in §\,\ref{sec:mood-directive}.
 
 \subsection{Indicative}
@@ -2100,11 +1970,11 @@ it is treated as a group beginning in §\,\ref{sec:mood-directive}.
 The indicative is the unmarked mood. It alone hosts the full five-way aspect
 system and the associated split-ergative alignment described in
 Section~\ref{sec:aspect}. Non-indicative moods carry a reduced two-way
-aspect-domain contrast in Asp.Align (§\,\ref{sec:vm-mood-asp}), which preserves
-the ergative/nominative alignment split but collapses the five-way viewpoint
-inventory. The antipassive-transitive distinction, which depends on the full
-structural availability of the ERG-domain Asp.Align in its indicative form, is
-operative only in the indicative.
+aspect-domain contrast in Asp.Align (§\,\ref{sec:vm-mood-asp}), which collapses
+the five-way viewpoint inventory; directive Mood additionally fixes the
+orientation described below. Overt antipassive morphology is licensed only
+with indicative ERG-aspect features, including when that configuration is
+embedded under participant nominalisation.
 
 \subsection{The directive domain}\label{sec:mood-directive}
 
@@ -2114,29 +1984,20 @@ suggestions, proposals, soft requests, permissive uses, and wishes. Where the
 indicative provides the full five-way aspect system and the split-ergative
 alignment described in Section~\ref{sec:aspect}, directive moods carry a reduced
 two-way aspect-domain contrast in Asp.Align: the imperfective domain
-($\varnothing$ exponent, nominative-style alignment) and the perfective domain
-(\ird{-ov-} exponent, ergative alignment). The directive mood suffix follows
-Asp.Align in the verbal template, so the order is always \textsc{stem} +
-(\textsc{voice}) + \textsc{reduced Asp.Align} + \textsc{mood}. See
-§\,\ref{sec:vm-mood-asp} for the formal account.
+($\varnothing$ exponent) and the perfective domain
+(\ird{-ov-} exponent), both subject to directive orientation. The directive mood suffix follows
+reduced Asp.Align, outside any applicative or causative morphology
+(§\,\ref{sec:vm-mood-asp}).
 
-The observable case geometry of the directive domain follows from the
-interaction of reduced Asp.Align with the null-subject convention characteristic
-of direct commands. The understood subject of imperative and prohibitive clauses
-is second person and is normally left unexpressed, being recoverable from the
-speech situation. With the agent unrealized, the patient or theme is the
-clause's most prominent overt argument and accordingly occupies the direct
-(absolutive) case under both alignment types: under PFV-domain (ergative)
-alignment the patient is the absolutive by definition; under IPFV-domain
-(nominative) alignment the agent is nominally the absolutive, but the null agent
-leaves the direct slot available for the theme. In either case the patient or
-theme characteristically appears in the direct. Where an overt speech-act
-participant subject would compete with an overt direct object for that direct
-slot, it is expressed in the transitive case instead, preserving the affected
-participant as the clause's sole direct nominal. Beneficiaries licensed by the
-applicative and causees licensed by the causative are obligatorily overt and
-appear in the indirect. Antipassive morphology is excluded from all directive
-moods.
+Directive Mood selects the theme as the direct-case participant in both
+aspectual domains, while an agent or causer with a distinct direct participant
+takes transitive case. With no theme, an applied participant or causee can be
+selected; an underived intransitive retains its sole argument in direct case.
+The understood subject of a command is normally recoverable from the speech
+situation, although its omission does not alter this case frame. Applied
+participants and causees must be overt in directives; when a theme is retained,
+they take indirect case. Antipassive morphology is excluded by a Mood--Voice
+licensing restriction (§\,\ref{sec:mood-directive-valency}).
 
 \subsection{Imperative and prohibitive}\label{sec:mood-imp}
 
@@ -2205,12 +2066,10 @@ participant may remain the clause's sole direct nominal:
 \endgl
 \xe
 
-\noindent The pressure for the transitive case arises specifically from
-competition: an overt subject would otherwise displace the direct object from
-the clause's single direct slot. In intransitive directive clauses lacking a
-competing direct object, no such competition arises, and the rule does not force
-the transitive. The rule is therefore competition-sensitive rather than
-absolute.
+\noindent The agent's transitive case belongs to the directive frame with a
+separately selected theme; it is retained when the agent is silent. An
+underived intransitive has no distinct theme, so its sole participant takes
+direct case.
 
 \subsection{Hortative}\label{sec:mood-hort}
 
@@ -2259,12 +2118,10 @@ negative hortative Mood and excluding the indicative marker \ird{za-}:
 \xe
 
 Overt subjects in the hortative fall into two structurally distinct classes. The
-first class comprises overt speech-act participant subjects --- first person
-plural, second person singular, second person plural --- appearing in proposal
-or soft-command uses. These behave exactly like marked subjects in the
-imperative and prohibitive: where they would otherwise compete with an overt
-direct object for the clause's single direct slot, they appear in the transitive
-case:
+first class comprises first-person plural and second-person subjects in
+proposal or softened-command uses. As in the imperative and prohibitive,
+these subjects take transitive case when the clause licenses a distinct
+participant as direct:
 
 \pex
 \a
@@ -2286,9 +2143,8 @@ hortatives, where the clause expresses a wish or permission directed toward a
 third participant rather than a command to the addressee. Such clauses are
 typically intransitive. Their lexical subject occupies the direct case as the
 clause's single core direct nominal --- the same position that in transitive
-directive clauses would be held by the theme or patient. Because there is no
-competing direct object, no competition for the direct slot arises and the
-transitive case is not required:
+directive clauses would be held by the theme or patient. As the sole argument, it takes
+direct case:
 
 \pex
 \a
@@ -2305,40 +2161,22 @@ transitive case is not required:
 \endgl
 \xe
 
-\noindent The contrast between these two subject classes captures the essential
-geometry of the directive domain. An overt speech-act participant subject
-appears in the transitive when a direct object is present because it would
-otherwise compete with that object for the single direct slot. A lexical subject
-of an intransitive optative or permissive hortative faces no such competition
-and therefore remains in the direct. The reason for the difference is not
-grammatical person but structural: in the first class a competing direct nominal
-is present; in the second it is not.
+\noindent A hortative subject thus receives the case licensed by its argument
+frame: transitive with a distinct direct-case theme, direct as the sole
+participant of an intransitive. The contrast between commands addressed to
+speech-act participants and wishes concerning a third participant does not
+itself determine case.
 
 \subsection{Case and subject expression in directive clauses}\label{sec:mood-directive-case}
 
-The case properties of the directive domain follow from the general principles
-of reduced Asp.Align alignment (§\,\ref{sec:vm-mood-asp}) operating under the
-null-subject convention characteristic of direct commands. The analysis is
-unified: no directive-specific case rule is required.
-
-Directive clauses characteristically show only one overt core nominal in the
-direct case. This is not a stipulated constraint but the convergent outcome of
-alignment plus null-subject orientation. The understood second-person subject of
-imperative and prohibitive clauses, and the understood subject of hortative
-clauses, are syntactically present but normally left unexpressed. With the agent
-unrealized, the patient or theme---which is the absolutive by PFV-domain
-(ergative) alignment, and by absolutive absorption under null-agent IPFV-domain
-(nominative) alignment---surfaces as the clause's single direct nominal. In
-intransitive uses, the clause's sole argument occupies the direct in both
-alignment types.
-
-Overt speech-act participant subjects are pragmatically marked throughout the
-directive domain. Where their expression would otherwise compete with an overt
-direct object, they appear in the transitive case rather than the direct,
-preserving the affected participant as the clause's sole direct nominal. This
-transitive marking is a surface reflex of the same absolutive competition that
-governs the overt-subject/overt-patient interaction in any Asp.Align-governed
-clause. The following minimal pair makes the contrast plain:
+Directive clauses assign direct case to the theme in both aspectual domains.
+An agent or causer takes transitive case when a distinct participant is selected
+as direct, whereas the sole argument of an underived intransitive remains
+direct. The orientation is imposed by directive Mood and therefore persists
+whether the subject is pronounced or omitted. The understood second-person
+subject of an imperative or prohibitive is normally silent because the speech
+situation identifies it; an overt pronoun can contrast or insist on the
+addressee without changing the theme's case:
 
 \pex
 \a
@@ -2355,39 +2193,37 @@ clause. The following minimal pair makes the contrast plain:
 \endgl
 \xe
 
-\noindent By contrast, an overt lexical subject of an intransitive optative or
-permissive hortative may remain in the direct when no competing direct nominal
-is present. The competition-sensitive nature of the transitive-subject pattern
-means it is contingent on the presence of a competing absolutive nominal, not a
-categorical restriction on subject case across all directive clauses.
+\noindent An overt lexical subject of an intransitive optative or permissive
+hortative takes direct case as the clause's sole argument. The transitive
+marking of the agent in the second example thus belongs to a clause with a
+distinct selected theme; it is independent of grammatical person and of the
+choice to pronounce the agent.
 
 \subsection{Valency-changing morphology in directive clauses}\label{sec:mood-directive-valency}
 
 Applicative and causative morphology are compatible with the directive moods.
-Both occupy their regular positions in the morphological template immediately
-before the directive mood suffix, which is accordingly the outermost suffix in
-the verbal complex within the mood domain. The directive suffix thus remains
-outer to all valency morphology.
+They precede reduced Asp.Align and the directive mood suffix, so that the
+IPFV forms place Mood directly after the derivational suffix, whereas PFV
+\ird{-ov-} intervenes before Mood (§\,\ref{sec:vm-mood-asp}).
 
 The applicative (\ird{-éb-}) is licensed in directive clauses only if the
-beneficiary is overtly realised. The beneficiary appears in the indirect case,
-typically with the postposition \ird{my}, while the theme retains the direct.
-This fits the directive case geometry without disturbance: the direct holds the
-theme, the indirect holds the beneficiary, and an overt addressee subject, if
-present, occupies the transitive:
+beneficiary is overtly realised. With a retained theme, the beneficiary is an
+indirect-case DP, while the theme is direct and any overt agent is transitive.
+This Mood-conditioned selection supersedes the simple indicative applicative
+frame. A \ird{my} phrase expresses the separate postpositional strategy:
 
 \pex
 \a
 \begingl
 \gla Trava bylam piaštébím.//
 \glb bread.\Dir{} child.\Ind{} eat-\Appl{}-\Imp{}//
-\glft \trsl{Feed the child bread.} \lingcontext{applicative; beneficiary in \Ind{}}//
+\glft \trsl{Eat the bread for the child's benefit.} \lingcontext{applicative; beneficiary in \Ind{}}//
 \endgl
 \a
 \begingl
 \gla Jí trava bylam piaštébím.//
 \glb 2\textsc{sg}.\Trs{} bread.\Dir{} child.\Ind{} eat-\Appl{}-\Imp{}//
-\glft \trsl{You feed the child bread.} \lingcontext{overt subject in \Trs{}}//
+\glft \trsl{You eat the bread for the child's benefit.} \lingcontext{overt subject in \Trs{}}//
 \endgl
 \xe
 
@@ -2395,14 +2231,13 @@ present, occupies the transitive:
 directive clauses:
 
 \pex
-\rec{trava piaštébím} \trsl{intended: `Feed someone bread.'} \lingcontext{applicative without beneficiary}
+\rec{trava piaštébím} \trsl{intended: `Eat bread for someone's benefit.'} \lingcontext{applicative without beneficiary}
 \xe
 
 The causative (\ird{-na-}) likewise requires an overtly realised causee in
-directive clauses. The causee appears in the indirect case, keeping the direct
-available for the theme. The directive case pattern for causatives therefore
-parallels that for applicatives exactly: theme in the direct, causee in the
-indirect, overt addressee subject in the transitive if present. Before the
+directive clauses. With a retained lexical theme, the causee takes indirect case and the theme
+remains direct; in a causative of an underived intransitive, the causee itself
+is direct. An overt causer is transitive in either frame. Before the
 vowel-initial mood suffixes (\ird{-ím}, \ird{-é}), the causative takes its
 epenthetic form \ird{-naj-}; before the consonant-initial hortative \ird{-ká} it
 remains \ird{-na-}:
@@ -2428,43 +2263,20 @@ remains \ird{-na-}:
 \rec{trava piaštnajím} \trsl{intended: `Make someone eat the bread.'} \lingcontext{causative without causee}
 \xe
 
-The requirement for overt beneficiaries and causees is categorical. The
-directive subsystem resolves case pressure not by multiplying direct nominals
-but by reserving the direct for the theme and assigning added non-theme
-participants to the indirect. An applicative without a beneficiary or a
-causative without a causee would leave an indirect role structurally implied but
-unresolved. Since the language tolerates multiple indirect nominals, a directive
-clause bearing both applicative and causative morphology is structurally
-possible, even if stylistically heavy; the principle throughout is that added
-participants enter the indirect while the theme retains the direct.
+The requirement for overt applied participants and causees is a constructional
+restriction of directives. Since several indirect-case DPs may occur together,
+a directive causative of an applicative can express the theme in direct case
+and both beneficiary and causee in indirect case. When the base has no theme,
+the highest eligible participant is direct: the applied participant takes
+precedence over a causee. Morphological argument introduction consequently
+remains distinct from the selection imposed by higher Mood.
 
-Antipassive morphology is excluded from all directive moods. The antipassive in
-the indicative performs a specific discourse function: it demotes the patient
-from absolutive status in order to foreground the agent's activity in ERG-domain
-clauses where a patient would otherwise occupy the direct. This motivation is
-absent in directive clauses, where null-subject orientation has already removed
-the agent-versus-patient absolutive competition that the antipassive resolves in
-the indicative. Moreover, the reduced Asp.Align of the directive domain does not
-provide the full structural conditions under which the antipassive is licensed
-as an overt Voice head (§\,\ref{sec:vm-antipassive-desc}). The five-way
-antipassive-transitive distinction, which depends on the full indicative
-Asp.Align, is therefore operative only in the indicative; what the directive
-domain preserves is the coarser ERG/NOM alignment contrast of reduced Asp.Align.
-
-The directive subsystem as a whole is characterised by null-subject orientation,
-a reduced two-way aspect-domain contrast in place of the full five-way
-indicative inventory, the characteristic appearance of the patient or theme in
-the direct case (derived from reduced Asp.Align plus null-subject orientation),
-marked overt speech-act participant subjects in the transitive when they would
-otherwise compete for the direct slot, and the structured integration of
-applicative and causative morphology in which beneficiaries and causees enter
-the indirect. This pattern is not the output of a separate case system: it is
-the convergent surface effect of the same Asp.Align-driven alignment engine
-operating under null-subject conditions. The direct nominal remains central, and
-competition within the clause core is prevented, because Asp.Align places the
-absolutive on the patient (PFV domain) or on the agent (IPFV domain), and the
-null agent resolves the latter into the same patient-direct surface pattern.
-
+Antipassive morphology is excluded from all directive moods by a
+language-specific licensing restriction. Its availability in the indicative
+ERG domain does not extend to directive PFV \ird{-ov-}; neither a silent
+subject nor a reduced aspect inventory would independently explain this ban.
+Commands with an unexpressed patient use the ordinary directive construction,
+without overt antipassive morphology.
 
 \subsection{Irrealis}
 
@@ -2672,7 +2484,7 @@ the head of a Voice or \synhead{vP} projection that merges directly with the
 higher adverbial or complementizer position without passing through
 \synhead{AspP}. Both accounts exclude the perfective/retrospective
 Asp.Align configuration that conditions ergative alignment in finite clauses.
-The independent absence of patient-licensing Voice \ird{-n-} from the
+The independent absence of outer patient-selecting Voice \ird{-n-} from the
 established converb forms is described in §\,\ref{sec:converb-chains};
 its exclusion does not follow from the absence of ergative case alone, since
 the same Voice head also occurs in finite nominative-domain passives.
@@ -2680,14 +2492,14 @@ the same Voice head also occurs in finite nominative-domain passives.
 \subsubsection{Case alignment within converb clauses}
 \label{sec:vm-converb-case}
 
-The nominative-accusative alignment that is invariant within converb clauses
-(absolutive agent, indirect patient) is consistent with the absence of an Asp
-head: without the perfective/ retrospective Asp head to assign ergative case to
-the agent, the agent defaults to absolutive (nominative), and the patient
-receives oblique/indirect case. This is in effect the same pattern as the
-nominative-aspect main clause, with the difference that in the main clause it is
-the Asp head (continuous/progressive/contemplative) that assigns this pattern,
-whereas in the converb clause it is the absence of any Asp head.
+Converb clauses license the NOM-domain case frames without finite viewpoint
+aspect. An ordinary active selects its agent or sole participant as direct and
+assigns a retained patient indirect case; a simple applicative selects the
+applied participant, with actor and retained theme indirect, while a higher
+causative selects its causer. No converb licenses transitive-case agents.
+These are constructional licensing conditions: absence of perfective or
+retrospective Asp excludes the ERG frame, but does not by itself determine
+which participant is privileged.
 
 \subsubsection{Converb clauses as adjuncts and embedded topics}
 \label{sec:vm-converb-adjunct}
@@ -2729,7 +2541,8 @@ Event nominalisation combines an event predicate with $n_{\mathrm{evt}}$,
 without selecting an individual participant as its referent. Its established
 forms do not require the five-way indicative aspect distinction. Participant
 $n_{\mathrm{part}}$ selects \synhead{AspP}, containing
-\synhead{VoiceP} and, where licensed, an intervening \synhead{CausP}.
+the inner valency domain, optional \synhead{CausP}, and the outer
+orientation head.
 Embedded Asp retains viewpoint and participant-selection features, although
 finite case valuation is inactive: the nominal domain licenses the indirect
 case on its dependents (§\,\ref{sec:nm-derived-gerund}). Lexical agent nouns
@@ -2800,16 +2613,16 @@ $n_{\mathrm{part}}$ nor \ird{-ou} encodes uniqueness or definiteness;
 anchoring and the construction in which the nominal occurs determine its
 referential interpretation.
 
-Applicative nominalisation selects the promoted participant, as in
-\ird{piaštébikou} \trsl{the one who was fed}. Where causativisation follows
-Voice or the applicative, participant selection applies to the resulting
-causative predicate: its aspect and Voice configuration determine which of its
-arguments is privileged. The structural sequence is schematically root--Voice/applicative--causative--Asp--nominalisation;
-nominalisation supplies no additional promotion operation or reordering of
-the independently specified causative morphology. The available
-examples do not establish a complete orientation paradigm for every combined
-causative--applicative configuration, so no unrestricted choice among causer,
-causee, and recipient follows from the productive simple forms.
+Applicative nominalisation selects the applied participant, as in
+\ird{piaštébikou} \trsl{the one for whose benefit eating took place}.
+Causativisation establishes a higher orientation domain, so that participant
+nominalisation of an active causative selects the causer in NOM aspects and
+the retained theme, otherwise the applied participant, otherwise the causee in
+ERG aspects. A NOM-domain causative bearing passive \ird{-n-} selects the
+same embedded participant hierarchy instead of the causer
+(§\,\ref{sec:vm-n}). The suffixal sequence is root--inner valency--causative--orientation--Asp--nominalisation;
+the nominaliser adds no further promotion operation. Thus an inner applicative
+need not supply the referent of a causative participant nominal.
 
 \paragraph{The nominal case domain.}
 A non-privileged participant may be expressed by an indirect-case nominal
@@ -3524,48 +3337,65 @@ than stable properties do.
 
 \subsection{Valency operations with stative verbs}\label{sec:stative-valency}
 
-Stative verbs admit the causative \ird{-na-}, following the same alignment
-conditions as other verbs (§\ref{sec:aspect}): nominative alignment in the
-progressive and contemplative, ergative alignment in the perfective and
-retrospective. Because stative stems end in \ird{-n-}, the causative suffix
-surfaces as \ird{-an-} rather than \ird{-na-}, the order being reversed to
-avoid a geminate cluster at the morpheme boundary:
+Stative causatives describe the bringing about of a state or a change along
+the scale expressed by the base. The progressive presents that change as
+unfolding, whereas the perfective presents a bounded causing event; neither
+viewpoint specifies whether the causer acts directly or through an intermediary.
+After a stative stem in \ird{-n-}, the causative has the conditioned allomorph
+\ird{-an-}. The sequence is therefore \ird{svorn-an-}, without a productive
+phonological rule reversing adjacent segments. In the ERG domain,
+causative and outer transitive orientation have a joint exponent \ird{-an-},
+giving perfective \ird{svorn-an-ik} and retrospective
+\ird{svorn-an-ac}. This cumulative exponence is the morphological analysis
+of the single post-stem nasal; it does not posit deletion or metathesis as a
+general phonological process. This
+construction-specific exponence preserves the contrast between the stativising
+\ird{-n-} inside the stem and orientation outside the causative.
 
 \pex
 \a
 \begingl
 \gla Marek problemam svornanime.//
 \glb Marek.\Dir{} problem.\Ind{} be.big-\Caus{}-\Prog{}//
-\glft \trsl{Marek is making the problem bigger.} \lingcontext{causative progressive; nominative alignment}//
+\glft \trsl{Marek is making the problem bigger.}//
 \endgl
 \a
 \begingl
 \gla Problem Marku svornanik.//
-\glb problem.\Dir{} Marek.\Trs{} be.big-\Caus{}-\textsc{trs}-\Pf{}//
-\glft \trsl{Marek made the problem bigger.} \lingcontext{causative perfective; ergative alignment}//
+\glb problem.\Dir{} Marek.\Trs{} be.big-\Caus{}.\textsc{trs}-\Pf{}//
+\glft \trsl{Marek made the problem bigger.}//
 \endgl
 \xe
 
-The applicative \ird{-éb-} is admitted with stative verbs but is semantically
-more restricted than with active verbs. It yields a circumstantial reading in
-which a causally implicated participant --- typically the entity or situation
-responsible for bringing about the state --- is introduced. This use is close
-to an experiencer-causative in English (\trsl{gladden}, \trsl{please}). The
-causing entity stands in the direct case; the affected participant appears in
-the indirect:
+Constructed continuous \ird{svornana} \trsl{makes bigger} and
+retrospective \ird{svornanac} \trsl{has made bigger} follow the same
+NOM/ERG case contrast. Their forms illustrate the conditioned exponence
+specified here.
+
+Stative applicatives require a lexically licensed relation to the state.
+The stimulus construction with \ird{všihn-} \trsl{be happy} relates an
+experiencer to the news about which the state holds. Its applied stimulus is
+direct and its experiencer transitive in the perfective:
 
 \ex
 \begingl
-\gla Senica Marcí všihnébik.//
-\glb news.\Dir{} Marek.\Ind{} be.happy-\Appl{}-\Pf{}//
-\glft \trsl{The news gladdened Marek.} \lingcontext{\ird{všihn-}: be happy, be glad}//
+\gla Senica Marku všihnébik.//
+\glb news.\Dir{} Marek.\Trs{} be.happy-\Appl{}-\Pf{}//
+\glft \trsl{Marek was happy about the news.}
+\lingcontext{lexically restricted stimulus applicative}//
 \endgl
 \xe
 
-Stative verbs do not possess a transitive form and accordingly do not admit the
-antipassive. The antipassive is licensed only where an ergative transitive
-reading would otherwise be available; since stative verbs are inherently
-intransitive, no such reading exists.
+This construction describes a state with a stimulus; it does not assert that
+the news brought the state into existence. A causal interpretation requires
+causative morphology or an independently established lexical causative.
+The stimulus extension supplies no general rule admitting a causer with every
+stative applicative.
+
+Underived stative verbs are intransitive and lack the lexical patient required
+by the antipassive. Their derived causatives and applicatives license additional
+participants through their respective argument-building heads; those
+derivations do not establish a patient-bearing reading of the stative base.
 
 Stative verbs may further function as attributive modifiers of nouns and remain
 the productive attributive strategy in Iridian. Alongside them stands the small
@@ -3866,46 +3696,25 @@ morphological contrasts.
 \subsection{The Asp.Align portmanteau and the Mirror Principle}
 \label{sec:vm-tension-asp}
 
-The most fundamental tension in the morphological template is the
-\term{portmanteau} character of the Asp.Align morpheme: a single
-morpheme does double duty, encoding both the aspectual value of the
-predicate and the case-alignment pattern of the clause. The Mirror
-Principle predicts that each morpheme corresponds to a single
-syntactic head. If Asp and Align are two distinct syntactic
-features (housed in \synhead{AspP} and CaseP respectively), the Mirror
-Principle predicts separate morphemes for each.
+Asp.Align jointly realises viewpoint and an alignment-domain value. The
+analysis treats this as one aspectual head whose case-licensing properties
+interact with the completed valency and orientation configuration
+(§\,\ref{sec:vm-asp-case}). A separate Align head is consequently unnecessary
+for the described paradigm, although a morphological fusion account could
+represent the same exponence with more structure.
 
-Three responses are available:
-\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Portmanteau morpheme by fusion (DM).] In DM,
-  morphological Fusion (Halle \& Marantz 1993)
-  allows two syntactic heads to be realised by a single Vocabulary
-  Item when they are adjacent in the morphological structure. \synhead{AspP}
-  and CaseP are adjacent in the Iridian verbal complex; their
-  adjacency triggers fusion, and the resulting portmanteau is the
-  Asp.Align suffix. This is the most parsimonious DM account.
-\item[\upshape Single head with bundled features.] \synhead{AspP} is a
-  single syntactic head whose feature bundle includes both
-  $[$\textsc{aspect}: pf/retro/cont/prog/contempl$]$ and
-  $[$\textsc{case-pattern}: erg/nom$]$. This is not a violation
-  of the Mirror Principle if the feature bundle defines a single
-  head, not two. The objection is theoretical: are aspect and
-  alignment independent features (motivated independently) or are
-  they necessarily co-specified?
-\item[\upshape Aspect drives alignment, not vice versa.] The
-  alignment pattern is not an independent feature but a
-  \emph{consequence} of the aspect value under the Agree mechanism:
-  perfective/retrospective Asp features trigger one Agree pattern
-  (ergative), nominative Asp features trigger another (nominative).
-  There is only one head (\synhead{AspP}); the alignment is derived by the
-  case assignment properties of that head. This is the approach
-  assumed in §\,\ref{sec:vm-asp-case} and is consistent with
-  aspect-driven ergativity in the broader typological literature
-  (Coon 2010; Legate 2008).
-\end{description}
-
-\noindent The third approach is adopted here, although the precise
-feature-to-case mapping within \synhead{AspP} remains unspecified.
+The Mirror Principle concerns the relation between morphological order and
+syntactic composition; it does not independently require a distinct segment
+for every syntactic feature. Affix-specific linearisation and post-syntactic
+attachment must also be distinguished from syntactic head movement
+\cite[§2.4]{harley2011}. In Iridian, the order of causative and outer
+\ird{-n-} supports their relative height, while the stative joint exponent
+\ird{-an-} illustrates cumulative realisation. The forms do not decide
+between every possible implementation of these mappings. Argument building
+precedes higher selection in the analysis: Asp supplies the ordinary alignment
+domain, while applicative orientation,
+patient-selecting \ird{-n-}, and directive Mood impose their specified
+constructional requirements.
 
 \subsection{Mood and the reduced Asp.Align: open questions}
 \label{sec:vm-tension-mood-asp}
@@ -3926,26 +3735,19 @@ does not by itself settle these distributions.
 \subsection{The Voice head \ird{-n-} and the causative \ird{-na-}: shared form, distinct functions}
 \label{sec:vm-tension-n}
 
-The morpheme \ird{-n-} (the Voice head that licenses the patient as a
-core argument and specifies patient absolutive, appearing before
-aspect suffixes on transitive stems) and the causative
-\ird{-na-} share a common phonological shape. The analysis adopted
-in §\,\ref{sec:vm-n} treats them as formally distinct morphemes
-occupying distinct functional positions: \ird{-n-} is the Vocabulary
-Item of the \synhead{VoiceP} head, while \ird{-na-} is the head of the higher
-\synhead{CausP} projection (§\,\ref{sec:vm-caus}). They are not allomorphs of
-a single morpheme, and their distribution is mutually reinforcing
-rather than in competition: \ird{-na-} may co-occur with \ird{-n-}
-on the same stem (the causative takes a transitive complement), while
-\ird{-n-} and \ird{-aš-} cannot (they compete for the same \synhead{VoiceP}
-slot).
+The patient-selecting \ird{-n-} and causative \ird{-na-} occupy distinct
+positions. Causative \synhead{CausP} introduces a causer above the inner
+predicate, while the outer orientation head selects a participant of the
+resulting predicate. Their order in \ird{piašt-na-n-ik} follows their
+composition: the caused event is built before its higher orientation is
+specified. The shared consonant does not establish allomorphy between them.
 
-The shared consonant does not establish a productive relation between the two
-exponents. Although a morphological-family analysis could associate their
-\ird{n} with argument-introducing heads, the co-occurrence of the causative
-and transitive Voice requires distinct positions and lexical specifications.
-The description therefore retains \ird{-na-} at \synhead{CausP} and
-\ird{-n-} at \synhead{VoiceP}, without deriving either from the other.
+A causative of an antipassive can contain both inner \ird{-aš-} and outer
+\ird{-n-}, since the former suppresses the lexical patient and the latter
+selects the causee in a newly transitive predicate. Without an intervening
+causative, \ird{-n-} cannot restore a patient to an antipassive. Applicative
+\ird{-éb-} likewise introduces an inner participant, whose pivot privileges
+can be superseded by a higher causative or directive configuration.
 
 \subsection{The absolutive--topic mapping: Agree or movement?}
 \label{sec:vm-tension-abs-top}
@@ -3968,18 +3770,19 @@ The examples establish this dissociation, but do not identify every lower
 \label{sec:vm-tension-erg}
 
 The transitive case of an ergative-domain agent is analysed here as
- dependent on a patient licensed in the direct case
+ dependent on a distinct participant licensed in the direct case
  (§\,\ref{sec:vm-asp-case}). Asp.Align conditions the alignment domain and
- Voice determines the realisation of the core patient; the dependent-case
- relation determines the agent's transitive case within that domain. These
+ orientation selects the privileged participant of the completed predicate;
+ the dependent-case relation determines the highest actor's transitive case
+ within that domain. These
  operations do not require Asp to assign two cases simultaneously, or Top
  to assign either case.
 
 The case pattern alone does not decide every implementation detail of
- dependent-case computation or the exact configuration in which the patient
- is licensed. It does, however, require the analysis to preserve the
- aspect-conditioned domain and the distinction between patient-licensing
- Voice and independent topicalisation.
+ dependent-case computation or the exact configuration in which a selected
+ participant is licensed. It does, however, require the analysis to preserve the
+ aspect-conditioned domain and the distinction between participant-selecting
+ orientation and independent topicalisation.
 
 \subsection{The conjunctive linker \ird{-e}: see §\,\ref{sec:conjunctive-linker}}
 
@@ -4010,7 +3813,7 @@ undocumented.
 \section{Summary: the verbal complex as a syntactic structure}
 \label{sec:vm-summary}
 
-Table~\ref{tab:vm-full-structure} gives the full proposed hierarchical structure
+Table~\ref{tab:vm-full-structure} gives the hierarchical structure
 of the Iridian finite verbal clause, from the highest projection
 (\synhead{SpeechActP}) to the lowest (\synhead{VP}/Root), with the morphological
 exponents of each relevant layer.
@@ -4044,10 +3847,12 @@ exponents of each relevant layer.
     & \synhead{AspP} & \ird{-ek/-ik, -ac, -a, -ime, -ách} (fused w/ align)
     & Sole obligatory head; aspect + case assignment \\
     \midrule
+    & \synhead{VoiceP}$_{\mathrm{orient}}$ & \ird{-n-}, $\varnothing$
+    & Selects participant of the complete derived predicate \\
     & \synhead{CausP} & \ird{-na-}
-    & Adds external causer; dominates Voice/\synhead{ApplP} \\
+    & Adds causer above the inner valency domain \\
     & \synhead{VoiceP} / \synhead{ApplP} & \ird{-aš-} (antipassive) / \ird{-éb-} (applicative)
-    & Valency operations; complementary distribution \\
+    & Distinct heads; language-specific co-occurrence ban \\
     & \synhead{VP} & Root stem
     & Lexical predicate; complement of V = preverbal \\
     Lowest & \synhead{VP} complement & \synhead{NP} / \synhead{CP} (\ird{po}) / \synhead{VoiceP}$_{\text{-it}}$
@@ -4061,9 +3866,10 @@ objects, \synhead{CP} complements (\ird{po}-clauses), and purposive converb
 complements --- follows uniformly from the head-final parameter applied at the
 \synhead{VP} level. No movement or extraposition is required: the complement is
 base-generated to the left of the verb and surfaces there in the linear string.
-Higher projections (\synhead{AspP}, \synhead{NegP}, \synhead{MoodP}, and the
-inner evidential) are realised as suffixes on the verbal complex, which surfaces
-at the right edge of the clause under the head-final organisation of the lower clause.
+Asp, Mood and the inner evidential have suffixal exponents on the verbal
+complex, which occupies the right edge of the lower clause. Neg is structurally
+higher than Asp but attaches at the left edge of the verbal host, as specified
+in §\,\ref{sec:vm-neg}.
 
 %% ----------------------------------------------------------------
 %% END: verb-minim.tex

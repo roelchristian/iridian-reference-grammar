@@ -105,6 +105,44 @@ def check_palatalisation(phonology, fixtures):
     return failures
 
 
+def check_valency(verbal, fixtures):
+    """Preserve reviewed form/gloss pairs in designated finite paradigms.
+
+    These checks detect transcription regressions; they neither infer case
+    from spelling nor decide whether an unreviewed construction is grammatical.
+    Negative examples and schematic suffix strings are outside this inventory.
+    """
+    failures = []
+    for fixture in fixtures:
+        marker = r'\label{' + fixture['label'] + '}'
+        start = verbal.find(marker)
+        group = '' if start < 0 else verbal[start:].split(r'\xe', 1)[0]
+        examples = []
+        for example in re.findall(r'\\begingl\b(.*?)\\endgl\b', group, re.S):
+            surface = re.search(r'\\gla\s+(.*?)//', example, re.S)
+            gloss = re.search(r'\\glb\s+(.*?)//', example, re.S)
+            if surface and gloss:
+                examples.append((' '.join(surface[1].split()),
+                                 ' '.join(gloss[1].split())))
+        expected = [(row['surface'], row['gloss']) for row in fixture['examples']]
+        if examples != expected:
+            failures.append('valency paradigm: ' + fixture['label']
+                            + ': reviewed surface/gloss pairs changed')
+        for surface, gloss in examples:
+            if gloss.count(r'\Dir{}') != 1:
+                failures.append('valency paradigm: ' + fixture['label']
+                                + ': expected one direct-case participant in ' + surface)
+            verbal_gloss = gloss_tokens(gloss)[-1].replace(r'\textsc{trs}', r'\Trs{}')
+            if r'\Antip{}' in verbal_gloss and r'\Appl{}' in verbal_gloss:
+                failures.append('valency paradigm: ' + fixture['label']
+                                + ': antipassive/applicative combination')
+            if (r'\Caus{}' in verbal_gloss and r'\Trs{}' in verbal_gloss
+                    and verbal_gloss.index(r'\Trs{}') < verbal_gloss.index(r'\Caus{}')):
+                failures.append('valency paradigm: ' + fixture['label']
+                                + ': patient-selecting Voice precedes causative')
+    return failures
+
+
 def check():
     sources = active_sources(ROOT / 'grammar.tex')
     failures = []
@@ -163,6 +201,9 @@ def check():
     expected = {'piaštnik': (2, 0), 'zapiaštnik': (3, 1),
                 'premrocna': (3, 0), 'siarc': (1, 0),
                 'piaštou': (2, 0), 'perek': (2, 0), 'perku': (2, 0), 'perce': (2, 0)}
+    valency_fixtures = json.loads(
+        (ROOT / 'scripts/valency-fixtures.json').read_text(encoding='utf-8'))
+    failures.extend(check_valency(sources['chapters/03-verbs.tex'], valency_fixtures))
     phonology = sources['chapters/02-phonology.tex']
     palatalisation_fixtures = json.loads(
         (ROOT / 'scripts/palatalisation-fixtures.json').read_text(encoding='utf-8'))
@@ -216,7 +257,8 @@ def check():
         return 1
     print(f'Grammar source checks passed: {len(sources)} files, {len(labels)} labels, '
           f'{len(references)} references, {len(citations)} citations; '
-          f'{aligned} interlinear alignments, {len(expected)} stress fixtures, '
+          f'{aligned} interlinear alignments, {len(valency_fixtures)} valency paradigms, '
+          f'{len(expected)} stress fixtures, '
           f"{sum(len(palatalisation_fixtures[key]) for key in ('derivations', 'pronunciations', 'classes'))} palatalisation fixtures, "
           f'{pronunciations} explicit pronunciation/quantity examples '
           'and obsolete-spelling checks.')

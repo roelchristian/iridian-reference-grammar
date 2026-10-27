@@ -1,0 +1,93 @@
+[
+  {
+    "label": "ex:val-appl-transitive",
+    "examples": [
+      {
+        "surface": "Marek travě bylam my piaštime.",
+        "gloss": "Marek.\\Dir{} bread.\\Ind{} child.\\Ind{} for eat-\\Prog{}"
+      },
+      {
+        "surface": "Byl Marcí travě piaštébime.",
+        "gloss": "child.\\Dir{} Marek.\\Ind{} bread.\\Ind{} eat-\\Appl{}-\\Prog{}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-appl-ergative",
+    "examples": [
+      {
+        "surface": "Byl Marcí zmacébime.",
+        "gloss": "child.\\Dir{} Marek.\\Ind{} run-\\Appl{}-\\Prog{}"
+      },
+      {
+        "surface": "Byl Marku travě piaštébik.",
+        "gloss": "child.\\Dir{} Marek.\\Trs{} bread.\\Ind{} eat-\\Appl{}-\\Pf{}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-caus-intransitive",
+    "examples": [
+      {
+        "surface": "Marek bylam zmacnajime.",
+        "gloss": "Marek.\\Dir{} child.\\Ind{} run-\\Caus{}-\\Prog{}"
+      },
+      {
+        "surface": "Byl Marku zmac-na-nik.",
+        "gloss": "child.\\Dir{} Marek.\\Trs{} run-\\Caus{}-\\textsc{trs}-\\Pf{}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-caus-transitive",
+    "examples": [
+      {
+        "surface": "Marek bylam travě piaštnajime.",
+        "gloss": "Marek.\\Dir{} child.\\Ind{} bread.\\Ind{} eat-\\Caus{}-\\Prog{}"
+      },
+      {
+        "surface": "Travato Marku bylam piašt-na-nik.",
+        "gloss": "bread.\\Dir{}.\\Def{} Marek.\\Trs{} child.\\Ind{} eat-\\Caus{}-\\textsc{trs}-\\Pf{}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-caus-appl",
+    "examples": [
+      {
+        "surface": "Marek bylac bylam travě piaštébnajime.",
+        "gloss": "Marek.\\Dir{} child.\\Ind{}.\\Pl{} child.\\Ind{} bread.\\Ind{} eat-\\Appl{}-\\Caus{}-\\Prog{}"
+      },
+      {
+        "surface": "Trava Marku bylac bylam piaštéb-na-nik.",
+        "gloss": "bread.\\Dir{} Marek.\\Trs{} child.\\Ind{}.\\Pl{} child.\\Ind{} eat-\\Appl{}-\\Caus{}-\\textsc{trs}-\\Pf{}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-caus-antipassive",
+    "examples": [
+      {
+        "surface": "Byl Marku piašč-na-nik.",
+        "gloss": "child.\\Dir{} Marek.\\Trs{} eat-\\Antip{}-\\Caus{}-\\textsc{trs}-\\Pf{}"
+      }
+    ]
+  },
+  {
+    "label": "ex:val-unaccusative",
+    "examples": [
+      {
+        "surface": "Byl ščenek.",
+        "gloss": "child.\\Dir{} arrive-\\Pf{}"
+      },
+      {
+        "surface": "Marek bylam ščennajime.",
+        "gloss": "Marek.\\Dir{} child.\\Ind{} arrive-\\Caus{}-\\Prog{}"
+      },
+      {
+        "surface": "Byl Marku ščen-na-nik.",
+        "gloss": "child.\\Dir{} Marek.\\Trs{} arrive-\\Caus{}-\\textsc{trs}-\\Pf{}"
+      }
+    ]
+  }
+]
