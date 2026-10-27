@@ -17,6 +17,7 @@ are needed. Python 3 is used for prerequisite checks and lexicon extraction.
 make doctor              # Check executables, packages, and font files
 make                     # Build build/full/grammar.pdf
 make check               # Build book/cover, check diagnostics, run collector tests
+make check-source        # Check source links, linguistic regressions and collector tests
 make cover               # Standalone front cover: build/cover/cover.pdf
 make watch               # Rebuild when sources change; Ctrl-C stops watching
 make ch-nouns            # Build only chapter 4
