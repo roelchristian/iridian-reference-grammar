@@ -1,5 +1,6 @@
 """Regressions for lexical /kʲ/ versus /c/ and productive velar grades."""
 import importlib.util
+import json
 from pathlib import Path
 import unittest
 
@@ -31,6 +32,18 @@ Yod & /k/ $\rightarrow$ /tʃ/ & yod grade \\
 
 
 class LexicalVelarTests(unittest.TestCase):
+    def test_shared_pronunciation_fixtures_align_with_option_a(self):
+        fixtures = json.loads((checker.ROOT / 'scripts/palatalisation-fixtures.json').read_text(encoding='utf-8'))
+        selected = [item for item in fixtures['pronunciations'] if item['form'] in {'kěda', 'ťeda'}]
+        self.assertEqual({item['form'] for item in selected}, {'kěda', 'ťeda'})
+        focused = {'derivations': [], 'classes': [], 'pronunciations': selected}
+        phonology = sources()['chapters/02-phonology.tex']
+        self.assertEqual(checker.check_palatalisation(phonology, focused), [])
+        for item in selected:
+            if item['form'] == 'kěda':
+                item['ipa'] = 'ˈcɛ.da'
+        self.assertTrue(any('kěda' in error for error in checker.check_palatalisation(phonology, focused)))
+
     def test_distinct_lexical_and_productive_outputs(self):
         self.assertEqual(checker.lexical_velar_checks(sources()), [])
 

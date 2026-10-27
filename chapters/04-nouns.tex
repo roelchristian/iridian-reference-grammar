@@ -23,7 +23,7 @@ string:
 \medskip
 \begin{center}
 (\ird{si}) + (\textsc{dem}) +
-(\textsc{quant}/\textsc{num}/\ird{druh}) + (\textsc{poss}.\Ind{}) +
+(\textsc{quant}/\textsc{num}) + (\textsc{poss}.\Ind{}) +
 (\textsc{prop.root} / \textsc{stative} / \textsc{\ird{-ový}}) +
 \textsc{root} + (\textsc{case.num}) + (\textsc{anch})
 \end{center}
@@ -35,10 +35,11 @@ functional projection with an articulated D-domain. In this chapter I use
 \term{anchoring} as the theoretical label for the category expressed by
 \ird{-to}; \emph{definiteness} is retained only as the traditional descriptive
 name. The suffix \ird{-to} is therefore treated as the overt realisation of an
-anchoring head, labelled \textsc{Anch\textsuperscript{0}}, when the feature
-[\textsc{+anch}] is present.
+anchoring head, labelled \textsc{Anch\textsuperscript{0}}, with the features
+[\textsc{+anch,+shr}].
 
-Only the case-number and anchoring layers are analysed here as ordinary suffixal heads.
+Case-number and shared anchoring constitute the suffixal spine; the speaker-
+anchoring exponent has the separate proclitic placement described below.
 Case and number are fused into a single morphological slot: each declension class
 provides an exponent for each of six case-number cells, although some cells
 are syncretic, and no separate number morpheme exists. Among the prenominal items,
@@ -46,11 +47,9 @@ the demonstrative system is the overt realisation of a distinct higher nominal
 projection whose exponents surface at the left edge of their domain. The particle
 \ird{si} is treated differently: it is the proclitic Vocabulary Item for
 Anch\textsuperscript{0}[\textsc{+anch,\,-shr}], sharing its head with the
-suffixal \ird{-to}/\ird{-te} but realised as a free clitic at the left edge
-rather than as a bound suffix (§\,\ref{sec:nm-spec}). The adnominal modifier
-\ird{druh} occupies the quantificational field of the nominal periphery and is
-not a functional head (§\,\ref{sec:nm-spec}). The hierarchical organisation of
-functional projections, reading from innermost to outermost, is given in
+suffixal \ird{-to}/\ird{-te} but given left-edge precedence by nominal-domain linearisation
+(§\,\ref{sec:nm-si-linearisation}). The hierarchical
+organisation of functional projections, reading from innermost to outermost, is given in
 Table~\ref{tab:nm-projections}.
 
 \begin{table}[ht]
@@ -79,19 +78,18 @@ Table~\ref{tab:nm-projections}.
                   & \synhead{AnchP} (D-layer; \ird{-to}/\ird{-te} suffixal,
                        \ird{si} left-edge proclitic)
                   & §\,\ref{sec:nm-def}, §\,\ref{sec:nm-spec} \\
+    Quantification & numerals, adnominal interrogatives,
+                     universal quantifiers and negative indefinites
+                   & quantificational modifier field in the upper
+                     nominal domain; exact cartographic slot left
+                     conservative
+                   & §\,\ref{sec:nm-quant}, §\,\ref{sec:nm-spec} \\
     Demonstrative & proximal \ird{tak}/\ird{tam}/\ird{ten};
                        medial \ird{tuto}/\ird{toho}/\ird{taly};
                        distal \ird{je}/\ird{jaky}/\ird{jení}
                   & \synhead{DemP} (noun-internal realisation of the
                        demonstrative system)
                   & §\,\ref{sec:nm-dem} \\
-    Quantification & numerals, adnominal interrogatives,
-                     universal quantifiers and negative indefinites;
-                     \ird{druh} (indefinite modifier, adnominal)
-                   & quantificational modifier field in the upper
-                     nominal domain; exact cartographic slot left
-                     conservative
-                   & §\,\ref{sec:nm-quant}, §\,\ref{sec:nm-spec} \\
     \bottomrule
   \end{tabularx}
 \end{table}
@@ -108,12 +106,13 @@ projections realised prenominally do not need to be treated as ordinary suffixal
 heads. The simpler analysis is that Iridian has an articulated nominal left
 periphery whose overt exponents realise \synhead{DemP} at the left edge of their
 domain, while the suffixal spine remains strictly head-final. The proclitic
-\ird{si} also surfaces at the left edge, but as a free allomorph of
-Anch\textsuperscript{0} rather than as an independent projection.
+\ird{si} receives left-edge precedence within its nominal domain, although
+its source remains Anch\textsuperscript{0}; the linearisation rule in
+§\,\ref{sec:nm-si-linearisation} supplements the head-final default.
 
 The suffixal nominal spine parallels the verbal complex: case-number precedes
 anchoring within the noun phrase, just as the lower verbal morphology precedes
-the outer finite suffixes. The following tree represents this nominal hierarchy.
+the outer finite suffixes. The following tree represents this nominal hierarchy before PF linearisation.
 
 \begin{center}
 \begin{forest}
@@ -121,7 +120,7 @@ the outer finite suffixes. The following tree represents this nominal hierarchy.
   [\synhead{DemP}
     [{\textit{demonstrative series}}]
     [\synhead{QP}
-      [{\textit{numeral / quantifier / \ird{druh}}}]
+      [{\textit{numeral / quantifier}}]
       [\synhead{AnchP}
         [\synhead{KP}
           [\synhead{PossP}
@@ -141,7 +140,9 @@ the outer finite suffixes. The following tree represents this nominal hierarchy.
 Overt exponents of higher nominal projections are shown directly at the edge of
 the projection they realise, and silent heads are not inserted merely to force a
 specifier analysis. Only the case-number and anchoring heads are represented as
-overt heads because only they are consistently realised as suffixal morphology.
+overt heads to display the suffixal spine; the proclitic exponent of Anch
+receives its precedence at linearisation rather than at the head-final
+position shown here (§\,\ref{sec:nm-si-linearisation}).
 The \synhead{QP} layer is drawn only as a conservative cover term for prenominal
 quantificational material; the sections below do not assume a finer
 numeral-vs-quantifier split unless the data require it.
@@ -154,10 +155,11 @@ The lexical noun occupies the head position of \synhead{NP}. Unlike the verbal
 root, which is licensed by a selecting functional head (the Asp.Align morpheme
 is obligatory on every finite verb; cf.\ §\,\ref{sec:vm-root}), the nominal root
 may surface without an overt case-number ending in consonant-stem and bare-root
-classes, whereas thematic classes retain an overt direct ending. The absence of \ird{-to} in the bare noun is
-therefore not the absence of nominal structure. Rather, it is the absence of
-overt anchoring morphology: the noun phrase is interpreted as unanchored, and
-\textsc{Anch\textsuperscript{0}} receives no overt spellout.
+classes, whereas thematic classes retain an overt direct ending. A nominal
+without either \ird{si} or a suffixal anchor retains the extended structure
+although \textsc{Anch\textsuperscript{0}} receives no overt spellout; its
+referent may nevertheless be identifiable in context
+(§\,\ref{sec:nm-bare-noun}).
 
 Iridian nominals project beyond \synhead{NP}; within this extended projection,
 \synhead{AnchP} names the layer whose overt exponents express anchoring.
@@ -700,13 +702,13 @@ structural analysis is therefore \synhead{KP} dominated by \synhead{AnchP}:
 
 \noindent This tree deliberately omits the higher left-peripheral layers.
 Demonstratives are distinct edge material outside \synhead{AnchP}.
-The proclitic \ird{si} is the left-edge exponent of
-Anch\textsuperscript{0}[\textsc{+anch,\,-shr}] and therefore surfaces within
-\synhead{AnchP}'s domain, not as an independent higher projection
-(§\,\ref{sec:nm-spec}). The right edge of \synhead{KP} is the only place where
-the suffixal exponents \ird{-to}/\ird{-te} surface.
+Anch\textsuperscript{0}[\textsc{+anch,\,-shr}] receives left-edge
+precedence within the extended nominal domain and is then realised as
+\ird{si}; its position in the syntactic spine is unchanged
+(§\,\ref{sec:nm-si-linearisation}). The right edge of \synhead{KP}
+is the only place where the suffixal exponents \ird{-to}/\ird{-te} surface.
 
-This analysis parallels the verbal domain exactly. The Asp.Align morpheme — the
+The suffixal order parallels the verbal domain. The Asp.Align morpheme — the
 verbal analogue of the overt nominal D-layer — is also the sole obligatory
 element of the finite verb, surfaces at the right edge of the verbal complex,
 and mediates between the lexical root and the higher inflectional layers
@@ -718,23 +720,12 @@ directionality of morphological layering is predicted by head-finality.
 \subsection{Anchoring in non-direct case forms}
 \label{sec:nm-def-nondirect}
 
-The morphological template predicts that anchoring, being outside \synhead{KP},
-may attach to any case form: direct, transitive, or indirect alike.
-This prediction is borne out. Anchored transitive and indirect forms
-exist, though they are more marked pragmatically than anchored direct
-forms, in keeping with the observation in the discourse chapter
-(§\,\ref{sec:disc-def}) that anchoring in non-direct cases signals a
-higher degree of contrastive individuation or resumptive tracking
-rather than simple anaphoric definiteness.
-
-This asymmetry matters for the clause-level analysis as well. If the agent of a
-perfective transitive were the language's neutral discourse center simply by
-virtue of agenthood, one would expect anchored transitive agents to be the least
-marked pattern. The facts point in the opposite direction: anchoring on the
-direct-case absolutive is the neutral way to maintain a discourse referent,
-whereas anchoring on transitive or indirect DPs signals extra contrastive or
-resumptive work. The anchoring system therefore supports an absolutive-pivot
-analysis of discourse prominence rather than a uniform subject-prominence model.
+The morphological template places anchoring outside \synhead{KP}, so that
+ direct, transitive, and indirect case forms all admit an anchor. Its meaning
+ remains shared-discourse accessibility across the paradigm. An anchored
+ transitive agent or indirect participant may continue a backgrounded referent
+ without becoming the aboutness topic; contrast and topical promotion depend
+ on the clause and its context (§\,\ref{sec:disc-def}).
 
 The alternation between full and reduced anchoring follows the final segment of
 the case-number form. Class~I \ird{byl} `child' has the following singular
@@ -782,54 +773,39 @@ case endings. Consonant-final \ird{pět} and \ird{pětim} take reduced
 \ird{pěty} takes full front-coded \ird{-te}, yielding \ird{pětyte}. None of
 these operations changes the root vowel.
 
-\subsection{The \ird{-ou\,+\,-to} contraction}
+\subsection{Anchoring and the deverbal \ird{-ov-} stem}
 \label{sec:nm-def-contraction}
 
-The sequence arising when the anchoring suffix follows a noun ending
-in nominalising \ird{-ou} (§\,\ref{sec:nm-derived}) undergoes a distinct
-PF operation:
+Deverbal nouns with a direct singular in \ird{-ou} select the anchored
+allomorph \ird{-ovat}, as in \ird{piaščikou}/\ird{piaščikovat}. The
+oblique singular forms contain \ird{-ov-}, giving transitive
+\ird{piaščikovy} and indirect \ird{piaščikově}; their anchored counterparts
+follow the ordinary vowel-context rule: \ird{piaščikovyte} and
+\ird{piaščikověte}. The direct anchored form is a construction-conditioned
+exponent of the nominal stem, case, and anchoring features. It is not the
+output of a general phonological contraction of \ird{-ou} with \ird{-to}.
+Class~V transitive \ird{ránou} therefore retains ordinary \ird{ránouto}.
 
-\begin{center}
-/\textsc{root}\ird{-ou}/ +
-\textsc{Anch\textsuperscript{0}}[\textsc{+anch}]
-$\longrightarrow$ \ird{-ovat}
-\end{center}
-
-\noindent Thus \ird{piaščikou} combined with the anchoring head surfaces as
-\ird{piaščikovat}, not \ird{*piaščikoute} or \ird{*piaščikouto}. In the other
-cases of the same noun, where the vowel-final endings are \ird{-ovy} and
-\ird{-ově}, the regular vowel-context rule applies without contraction:
-\ird{piaščikovyte} and \ird{piaščikověte}.
-
-Nominalising \ird{-ou} and the adjacent anchoring head are analysed as a
-fused PF exponent \ird{-ovat}, whose stem extension corresponds to the
-\ird{-ov-} found elsewhere in the nominal paradigm. This fusion is restricted
-to the nominalising construction and does not affect the Class~V transitive
-ending \ird{-ou} in \ird{ránou}/\ird{ránouto}.
-
-The contraction has a grammatical consequence. Because the direct-case form of
-deverbal nominals ends in \ird{-ou}, the anchored form \ird{-ovat} is visually
-and phonologically distinctive from both the plain form and the other case
-forms. This distinctiveness is exploited in one disambiguation strategy for
-complex gerunds (§\,\ref{sec:nm-derived}): when a gerund contains two
-indirect-case nominal arguments, marking the theme nominal with \ird{-to}
-identifies it unambiguously as the theme.
-
+Anchoring a dependent such as \ird{travěte} in
+\ird{Marcí travěte piaštou} marks that dependent as discourse-anchored.
+It may help establish the intended interpretation when the context identifies
+the bread as the theme, but it does not assign thematic role. The \ird{-ovat}
+allomorph of the containing deverbal noun is a separate morphological
+operation (§\,\ref{sec:nm-derived-gerund}).
 
 \subsection{Anchored reference and the [\textsc{+anch}] feature}
 \label{sec:nm-def-semantics}
 
 The descriptive generalisation is that nouns with \ird{-to} normally pick out a
 referent that the speaker presents as already recoverable or singled out in the
-discourse. This includes the familiar uses traditionally grouped under
-\emph{definiteness}, but the range is slightly broader: the suffix also appears
-where the relevant effect is contrastive individuation or resumptive tracking
-rather than simple article-like definiteness.
+shared discourse. Its uses include anaphoric continuation, situational
+identification, and the reintroduction of a referent, whether that referent
+functions as topic or remains within the comment.
 
 The interpretive effect is therefore best described as \term{anchoring}. A noun
-phrase marked by \ird{-to} is construed as an anchored discourse token rather
-than as a merely lexical type or an unintroduced individual. The most common
-contexts are the following:
+phrase marked by \ird{-to} is construed as an anchored discourse token
+whose identity is presented as shared. The following contexts illustrate this
+contribution:
 
 \begin{enumerate}[wide]
 \item Anaphoric:The anchored noun resumes a referent introduced in prior
@@ -844,12 +820,12 @@ contexts are the following:
   [\textsc{+anch}] generally resists a generic reading.
 \end{enumerate}
 
-The theoretical inference, stated cautiously, is that the Iridian D-layer is
-best modelled as \textsc{Anch\textsuperscript{0}} carrying a feature
-[\textsc{+anch}]. That feature instructs the hearer to recover an individuated
-referent from the discourse model. In that sense, \emph{definiteness} is the
-traditional descriptive name, while \emph{anchoring} is the theoretical term
-used throughout the rules and trees below.
+The suffix realises \textsc{Anch\textsuperscript{0}}[\textsc{+anch,+shr}]:
+the shared feature instructs the addressee to recover the referent from the
+common discourse model. Speaker-anchoring \ird{si}, which shares
+[\textsc{+anch}] but lacks [\textsc{+shr}], instead presents the speaker's
+selection of a particular referent (§\,\ref{sec:nm-spec}). The feature
+[\textsc{+anch}] alone therefore does not require shared identifiability.
 
 
 \subsection{Distribution restrictions}
@@ -1246,8 +1222,7 @@ nominal field, but the presently available evidence does not force a
 fine-grained cartographic split among cardinals, adnominal interrogatives, and
 universal quantifiers or negative indefinites. I therefore treat them conservatively as
 occupants of a single quantificational modifier field between the demonstrative
-domain and the lower \synhead{NP}-internal material. The adnominal modifier
-\ird{druh} (§\,\ref{sec:nm-spec}) occupies this same field.
+domain and the lower \synhead{NP}-internal material.
 
 Numerals occupy the prenominal quantificational field and exhibit a decisive
 morphological property: they require the noun to appear in the \emph{singular}
@@ -1293,12 +1268,14 @@ existence is expressed by the existential predicate
 polarity dependency.
 
 
-\subsection{Speaker-anchoring: the proclitic \ird{si} and the
-  adnominal modifier \ird{druh}}
+\subsection{Speaker-anchoring: the proclitic \ird{si}}
 \label{sec:nm-spec}
 
-Anch\textsuperscript{0} has three competing Vocabulary Items, determined
-by its feature bundle:
+A bare nominal leaves its referential interpretation to the construction and
+context, whereas \ird{si} explicitly presents a particular referent selected
+by the speaker. The suffixal anchor \ird{-to}/\ird{-te} instead marks that
+referent as accessible within the shared discourse. These three possibilities
+are represented as alternative realisations of Anch\textsuperscript{0}:
 
 \medskip
 \begin{center}
@@ -1306,93 +1283,168 @@ by its feature bundle:
   \toprule
   \textsc{feature bundle} & \textsc{exponent} & \textsc{description} \\
   \midrule
-  {[+anch, +shr]} & \ird{-to} / \ird{-te} & suffixal; referent hearer-accessible \\
-  {[+anch, \textminus{}shr]} & \ird{si}   & proclitic; referent speaker-accessible only \\
-  {[\textminus{}anch]}        & $\varnothing$ & no overt spellout; referent unanchored \\
+  {[+anch, +shr]} & \ird{-to} / \ird{-te} & suffixal; shared-discourse anchoring \\
+  {[+anch, \textminus{}shr]} & \ird{si} & proclitic; speaker-selected, speaker-identifiable referent \\
+  {[\textminus{}anch]} & $\varnothing$ & no overt anchoring; contextual reference \\
   \bottomrule
 \end{tabularx}
 \end{center}
 \medskip
 
-\noindent The suffixal forms \ird{-to}/\ird{-te}
-(Anch\textsuperscript{0}[\textsc{+anch,+shr}]) are described in
-§\,\ref{sec:nm-def}. This subsection addresses the proclitic \ird{si}
-(Anch\textsuperscript{0}[\textsc{+anch,\,-shr}]) and the adnominal modifier
-\ird{druh}.
-
-\paragraph{The proclitic \ird{si}.} \ird{Si} encodes \term{speaker-anchoring}:
-the speaker has identified a particular referent and relates the predication to
-it, but that referent has not been established in the shared common ground and
-is therefore not hearer-accessible by anaphoric means. The referent is
-individuated from the speaker's perspective; it simply cannot be recovered by
-the hearer without further contextual support.
+\noindent In the speaker-anchored expression, the speaker has a particular
+individual or group in mind without presenting its identity as already shared
+with the addressee. The feature [\textsc{\textminus{}shr}] concerns this
+source of anchoring; it does not assert that the addressee is incapable of
+identifying the referent independently. Speaker identifiability is an
+established dimension of indefinite interpretation: Kagan's analysis of
+Russian distinguishes it from free-choice effects and narrow scope relative
+to a sentence-level operator \cite{kagan2011}. The Iridian analysis uses that
+distinction without assigning \ird{si} a fixed quantifier scope.
 
 \pex
+\a
+\begingl
+\gla byl//
+\glb child.\Dir{}//
+\glft \trsl{a child; the child; child} \lingcontext{interpretation supplied by context}//
+\endgl
 \a
 \begingl
 \gla si byl//
 \glb \Sanch{} child.\Dir{}//
 \glft \trsl{a certain child (that I have in mind)}//
 \endgl
-\xe
-
-\noindent The contrast with the bare unanchored noun phrase is interpretive
-rather than categorical: \ird{byl} is indefinite and leaves the referent wholly
-unindividuated; \ird{si byl} additionally commits the speaker to a particular
-individual already fixed in their own mental model.
-
-The incompatibility of \ird{si} with the suffixal forms \ird{-to}/\ird{-te} is
-not a selectional restriction imposed by a higher projection. It follows
-directly from the Vocabulary Insertion mechanism: both \ird{si} and
-\ird{-to}/\ird{-te} are competing Vocabulary Items for the same head,
-Anch\textsuperscript{0}. A single head admits at most one exponent; the feature
-bundle on Anch\textsuperscript{0} uniquely determines which VI wins, and no two
-VIs are simultaneously eligible for the same node.
-
-\ird{Si} surfaces at the left edge of the noun phrase, in the same prenominal
-field as demonstratives and \ird{ne}, because it is a free clitic rather than a
-bound suffix. Its prenominal position is a PF property of the clitic form; it
-does not indicate that \ird{si} occupies a projection distinct from
-Anch\textsuperscript{0}. The general pattern of left-edge exponents in the
-Iridian nominal domain is discussed in §\,\ref{sec:nm-funcseq}; \ird{si}
-conforms to that pattern by virtue of its clitic status alone.
-
-Prosodically, \ird{si} and plural \ird{ne} are unstressed proclitics outside
-the minimal lexical prosodic word (§\,\ref{sec:stress}). Their host is the
-following independent word in the realised phrase, even when a demonstrative
-or possessor intervenes before the noun. Thus, in the schematic sequence
-\ird{si tak tóm}, \ird{si} leans on \ird{tak}; both \ird{tak} and
-\ird{tóm} retain their own initial lexical stress. Neither semantic scope
-over the noun phrase nor separate spelling determines the phonological host.
-
-\paragraph{The adnominal modifier \ird{druh}.} \ird{Druh} is not a Vocabulary
-Item for Anch\textsuperscript{0}. It is an adnominal modifier occupying the
-quantificational field of the nominal left periphery, in the same structural
-region as weak quantifiers and bare numerals. Its contribution is
-lexical-semantic: \ird{druh} marks a referent as individuated but wholly
-unanchored — it signals that the entity in question is a particular one (as
-opposed to a mass or kind reading), without implying that the speaker has fixed
-on a specific individual. Translations oscillate among \trsl{some}, \trsl{a
-given}, and \trsl{a certain (unspecified)}, reflecting a pure individuation
-function rather than discourse anchoring.
-
-\pex
 \a
 \begingl
-\gla druh byl//
-\glb \Indef{} child.\Dir{}//
-\glft \trsl{some child; a given child}//
+\gla bylo//
+\glb child.\Dir{}.\Def{}//
+\glft \trsl{the child} \lingcontext{explicit shared anchoring}//
 \endgl
 \xe
 
-\noindent Because \ird{druh} is an adnominal modifier rather than a functional
-head, it is not subject to the VI competition that excludes \ird{si} from
-anchored DPs. It can in principle modify an anchored noun phrase, though the
-resulting reading — a uniquely identified referent with individuation
-additionally marked — is contextually restricted.
+\noindent The bare noun can refer to a particular child known to the speaker,
+to a child whose identity is unspecified, or to the kind in an appropriate
+generic construction. Neither speaker knowledge nor ignorance is encoded by
+the absence of an anchor. In \ird{si byl}, speaker selection is overt, but
+\ird{si} remains optional even when the speaker can identify the child.
+First-mention introductions therefore permit a useful distinction: a bare
+nominal introduces a child without a conventional commitment about the
+speaker's knowledge, while \ird{si byl} presents the speaker as having a
+particular child in mind. Shared \ird{bylo} asks the addressee to recover the
+child through the common discourse model.
 
-The interaction between \ird{si}-marked DPs and the absolutive topic system is
-discussed in §\,\ref{sec:nm-topic-interface}.
+The ordinary incompatibility of \ird{si} with suffixal \ird{-to}/\ird{-te}
+is represented by their alternative feature specifications on the same Anch
+head. Vocabulary Insertion selects the speaker-anchored proclitic or the
+shared-anchoring suffix according to that specification. The independent
+demonstrative layer does not itself make every combination felicitous: where
+a demonstrative identifies the same referent for the addressee, its
+combination with speaker-specific \ird{si} has no established interpretation.
+
+\subsubsection{Nominal-domain linearisation and prosodic attachment}
+\label{sec:nm-si-linearisation}
+
+\ird{Si} precedes the material of its nominal expression, while a structurally
+external plural \ird{ne} remains before it. The suffixal anchor instead follows
+the case-number form. The grammar derives this asymmetry through a
+feature-conditioned linearisation instruction: the speaker-anchored terminal
+receives precedence at the edge of its nominal domain before Vocabulary
+Insertion supplies \ird{si}. Its syntactic position and interpretation remain
+those of Anch\textsuperscript{0}. The distinction between a clitic's
+structurally defined positioning domain and its phonological host has an
+independent precedent in Klavans's treatment of clitic dominance, precedence,
+and liaison \cite[§§\,1.2--1.3]{klavans1985}; the particular domain and
+instruction below constitute the analysis of Iridian.
+
+For an anchoring terminal $a$, let $D_a$ be the maximal extended projection of
+the lexical noun whose case-number layer is selected by $a$. Following that
+noun's projection upward includes its \synhead{AnchP}, quantificational field,
+and \synhead{DemP}, where present, but stops below a structurally external
+\synhead{NumP} headed by \ird{ne}. A larger nominal in which this expression is a possessor, a governing
+postpositional phrase, and a containing clause lie outside $D_a$. A possessor therefore
+has its own domain and anchoring terminal, although its ordered terminal
+sequence occurs as a dependent inside the host noun's domain. This definition uses the
+nominal spine to identify ownership; it does not identify a domain by whichever
+noun or clitic happens to occur first in the string.
+
+The PF Merger of number with K precedes linearisation. PF then orders
+embedded nominal domains before the domain containing them, retaining each
+completed dependent as an ordered block. Within $D_a$, the
+default order preserves the established precedence of demonstratives,
+quantificational material, possessors, and the head noun, with K and Anch
+following their complements. If this default sequence is
+$\alpha\mathbin{\frown}\langle a\rangle\mathbin{\frown}\beta$, and $a$
+bears [\textsc{+anch,\,\textminus{}shr}], nominal-domain linearisation assigns:
+\[
+  \operatorname{Lin}(D_a)
+    = \langle a\rangle\mathbin{\frown}\alpha\mathbin{\frown}\beta.
+\]
+Here $\frown$ is concatenation, while $\alpha$ and $\beta$ are ordered
+sequences that may contain completed dependent domains. The instruction
+reorders the single occurrence of the terminal belonging to this nominal
+spine; every other precedence relation is retained. An anchoring terminal
+inside a possessor remains within that possessor's block, and $a$ receives no
+second pronunciation at its syntactic source. A structurally external
+\ird{ne} is subsequently concatenated before $\operatorname{Lin}(D_a)$;
+\ird{ne} inside a dependent or lower nominal constituent retains its internal
+position (§\,\ref{sec:nm-poss-ne}).
+
+Vocabulary Insertion follows this ordering step, realising $a$ as \ird{si}.
+The corresponding [\textsc{+anch,+shr}] terminal is subject to ordinary
+head-final linearisation and is realised by the suffix selected adjacent to
+the case-number form (§\,\ref{sec:nm-def-nondirect}); null anchoring receives
+no overt exponent. Thus the feature-conditioned instruction changes neither
+case-number exponence nor the local conditioning of suffixal allomorphy.
+In the following schemata, $N$--K stands for the root and fused case-number
+terminal before Vocabulary Insertion, while $M$ contains the ordered
+prenominal material, including any completed possessor. The final strings
+abbreviate the phonological realisation of that material:
+\[
+\begin{aligned}
+  [_{D_a}\;M\;N\text{--K}\;a_{[+\mathrm{anch},-\mathrm{shr}]}]
+    &\longmapsto a\;M\;N\text{--K}
+      \longmapsto \textit{si}\;M\;N\text{--K},\\
+  [_{D_a}\;M\;N\text{--K}\;a_{[+\mathrm{anch},+\mathrm{shr}]}]
+    &\longmapsto M\;N\text{--K}\;a
+      \longmapsto M\;N\text{--K--}\textit{anch}.
+\end{aligned}
+\]
+The first arrow represents linearisation and the second Vocabulary Insertion;
+\textit{anch} abbreviates the appropriate suffixal allomorph. The minimal
+speaker-anchored derivations yield the established \ird{si byl} and
+\ird{si byle}, while their shared-anchoring counterparts yield \ird{bylo}
+and \ird{bylete}. The variable $M$ specifies the placement instruction for
+otherwise licensed nominal material, without establishing new combinations
+of \ird{si} with demonstratives or quantifiers.
+
+The instruction belongs to the mapping from nominal structure to PF
+precedence, rather than to syntactic head movement. It therefore leaves the
+hierarchy interpreted at LF, including the source of speaker anchoring,
+unchanged. It also supplements the ordinary linearisation rules rather than
+applying Local Dislocation across an intervening string: in the Distributed
+Morphology account of Embick and Noyer, Local Dislocation is restricted to
+linear adjacency \cite{embicknoyer2007}. No succession of adjacent swaps or
+additional nominal head is required by the Iridian rule.
+
+Prosodification applies to the resulting string. \ird{Si} and plural \ird{ne}
+are unstressed proclitics outside the minimal lexical prosodic word
+(§\,\ref{sec:stress}); their host is the following independently stressed
+word. In \ird{si byl} and \ird{si byle}, the noun retains its initial lexical
+stress. Where prenominal material intervenes, the first independent word in
+that material supplies the host, which may belong to a possessor even though
+that possessor has its own anchoring domain. The dependent's order is protected
+during linearisation, but its initial word remains available for prosodic
+attachment. Structural ownership, edge precedence, and phonological attachment
+therefore contribute separately to the pronunciation of the nominal phrase.
+
+A speaker-anchored nominal may establish a new topic, occur as a focused or
+backgrounded argument, or introduce an individual in an existential
+presentation. Its subsequent omission depends on recoverability in the
+continuing discourse, rather than on the presence of \ird{si} at first
+mention (§§\,\ref{sec:tc-ordinary-topics}, \ref{sec:tc-topicless},
+\ref{sec:tc-topic-drop}). The contrast between speaker selection and
+aboutness is thus preserved when the same nominal expression receives
+different clausal interpretations.
 
 
 %% ================================================================
@@ -1557,7 +1609,7 @@ direct-question operators.
 clausal negation in an ordinary finite clause, irrespective of their surface
 position. Their co-occurrence expresses a single semantic negation, giving
 Iridian \term{strict negative concord} in the distributional sense described
-by \cite[§\,3.1]{giannakidou2006}. Indicative verbal predicates require
+by Giannakidou \cite{giannakidou2006}. Indicative verbal predicates require
 \ird{za-}, equatives require \ird{staly}, and existential predicates require
 \ird{zad-}; a negative non-indicative clause instead uses its dedicated Mood
 exponent (§\,\ref{sec:vm-neg-exponents}; §\,\ref{sec:vm-moodp}). A
@@ -1581,7 +1633,7 @@ the rendering \trsl{I shall not want} is available in a context that supports
 a prospective interpretation. Abstracting away from aspect, the clause has
 the interpretation $\neg\exists x\,[\operatorname{thing}(x)\land
 \operatorname{lack}(x,\mathrm{me})]$. Initial \ird{deno} remains within the
-scope of negation at interpretation through its lower copy
+scope of negation at interpretation in the lower argument domain
 (§\,\ref{sec:tc-quantificational-pivots}).
 
 The same licensing requirement holds with the other predicate types and
@@ -1611,17 +1663,17 @@ with negative Mood:
 The grammar analyses these expressions as existential indefinites bearing
 an uninterpretable feature $[u\textsc{neg}]$, licensed by the $[i\textsc{neg}]$ feature of a
 clause-local covert negative operator. This adopts the syntactic agreement
-approach developed by \cite{penka2011,zeijlstra2022}, while preserving the
+approach developed by Penka and Zeijlstra \cite{penka2011,zeijlstra2022}, while preserving the
 distinction between licensing and Vocabulary Insertion: the indefinite and
 the negative predicate morphology participate in the same dependency, whose
 semantic negation is supplied once by the operator. Multiple Agree permits
-several $[u\textsc{neg}]$ expressions to share that licenser \cite[§\,2.2]{penka2012}. Thus the schematic sequence
+several $[u\textsc{neg}]$ expressions to share that licenser \cite{penka2012}. Thus the schematic sequence
 \ird{zide \ldots{} deno \ldots{} za-V}, with each argument assigned its
 appropriate case, expresses one negation over two existential variables;
 additional concord items do not introduce further negative operators. The
 existential treatment is an analysis of Iridian, rather than a definition of
-all cross-linguistic n-words: \cite[§§\,2.2--2.3]{giannakidou2006} contrasts
-existential and universal treatments.
+all cross-linguistic n-words: Giannakidou contrasts
+existential and universal treatments \cite{giannakidou2006}.
 
 The licensing domain is the local finite clause. A negative operator in a
 matrix clause does not license a negative indefinite inside a finite
@@ -1711,12 +1763,16 @@ plural; book possibly singular)
 possessor singular)
 \xe
 
-\noindent In the first case, \ird{ne} is proclitic to the \synhead{NumP} headed
-by the possessive phrase: plurality scopes over the whole possessive expression.
-In the second, \ird{ne} is proclitic to the head noun directly, within the
-\synhead{PossP} complement: plurality scopes over the head alone. The structural
-analysis predicts these readings by the standard scope-by-hierarchy principle:
-the \synhead{NumP} that \ird{ne} heads takes scope over whatever it dominates.
+\noindent In the first phrase, \ird{ne} marks the plurality of the
+possessors expressed by \ird{Marcí}; in the second it marks the plurality of
+the possessed books. These interpretations distinguish the possessor's nominal
+domain from the lower head-noun domain within the possessive construction.
+During PF linearisation, \ird{ne} belonging to a possessor remains inside that
+possessor's ordered block, while \ird{ne} in the lower head-noun position
+retains that internal position. Neither is identified as external merely
+because it precedes a noun: the external ordering \ird{ne} $>$ \ird{si}
+applies only when the \synhead{NumP} headed by \ird{ne} lies outside the
+relevant $D_a$ (§\,\ref{sec:nm-si-linearisation}).
 
 
 
@@ -1733,33 +1789,36 @@ the \synhead{NumP} that \ird{ne} heads takes scope over whatever it dominates.
 The canonical linear order of the Iridian noun phrase —
 
 \begin{center}
-\ird{ne} $>$ \ird{si} $>$ \textsc{dem} $>$ \textsc{quant/num} / \ird{druh} $>$
+\ird{ne} $>$ \ird{si} $>$ \textsc{dem} $>$ \textsc{quant/num} $>$
 \textsc{poss}.\Ind{} $>$ \textsc{prop.root / stative / -ový} $>$
 \textsc{head} + \textsc{case} + \ird{-to}
 \end{center}
 
-— is derived from the functional hierarchy in Table~\ref{tab:nm-projections} by
-the head-final principle. Each overt exponent of a higher nominal projection
-appears before the noun phrase domain with which it is associated, while
-suffixal morphology continues to follow the head-final principle. The rightward
-drift of functional morphology (case suffix, then anchoring suffix) corresponds
+— combines the functional hierarchy in Table~\ref{tab:nm-projections} with
+the placement of prenominal exponents. The sequence records relative slots,
+whose interpretation also constrains which combinations are available
+(§\,\ref{sec:nm-spec}). The suffixal morphology follows the head-final
+principle, while Anch[\textsc{+anch,\,\textminus{}shr}] receives precedence
+at the edge of $D_a$ before it is realised as \ird{si}
+(§\,\ref{sec:nm-si-linearisation}).
+The rightward drift of functional morphology (case suffix, then anchoring suffix) corresponds
 to the innerward drift of those same heads in the syntactic projection: the case
 head K\textsuperscript{0} is lower than \textsc{Anch\textsuperscript{0}}, but
 its suffix appears closer to the root because the root is the complement that
 K\textsuperscript{0} takes, and in a head-final system the complement precedes
 the head.
 
-Reading the noun phrase from left to right is therefore equivalent to reading
-the functional projection from outermost (\synhead{NumP}) to innermost
-(\synhead{NP}), mirroring the left-to-right = high-to-low mapping in the clause
-(§\,\ref{sec:th-head-finality}).
+Prenominal position consequently does not identify syntactic height in every
+case: \ird{si} precedes material whose projections dominate
+\synhead{AnchP}. The linear sequence and the head-final suffixal spine must
+therefore be distinguished from the hierarchy of semantic scope.
 
 The prenominal left field contains plural \ird{ne}, speaker-anchoring
 \ird{si}, demonstratives, and quantificational material, while possessors stand
 closer to the noun and property roots, stative modifiers, and \ird{-ový}
-phrases immediately precede the head. The relative ordering of every member of
-the upper field is not specified; the hierarchy represents the broader
-constituent relations.
+phrases immediately precede the head. The linearisation instruction fixes the position of \ird{si} relative to
+this material and to a structurally external \ird{ne}; it does not determine
+the finer ordering of every combination within the quantificational field.
 
 \pex
 \a \ird{tak študencí tóm} \trsl{this student's book}
@@ -1796,42 +1855,38 @@ adverbial use.
 \subsection{The \ird{-ový} attributive and its embedded DP}
 \label{sec:nm-ovni}
 
-The attributive suffix \ird{-ový} derives from the same verbal stem as the
-participant nominal \ird{-ou} and functions as a prenominal modifier
-(§\,\ref{sec:nm-derived}). The \ird{-ový} form heads a nominalised
-predication that is embedded as a modifier within the host \synhead{DP}.
+The relative head \ird{-ový} selects the same voice--aspect
+configuration as a participant nominal in \ird{-ou}, but forms a prenominal
+modifier of an overt noun (§\,\ref{sec:th-relativization}). Its
+\synhead{RelP} contains a silent operator linked to the privileged participant
+gap in the embedded predicate; abstraction over that position supplies the
+property intersected with the head noun's denotation. The modifier precedes the
+noun, and its suffix does not agree with the noun in case.
 
-The key structural property of the \ird{-ový} construction is that it forms a
-self-contained syntactic domain: non-privileged arguments of the embedded verbal
-predication appear in the indirect case within the \ird{-ový} phrase,
-regardless of the case requirements of the host \synhead{DP}. This is the
-nominal correlate of the boundary condition that governs finite embedded
-clauses: just as a finite \ird{po}-clause is syntactically independent of its
-matrix, the \ird{-ový} nominalised phrase is syntactically independent of the
-host \synhead{DP} in which it is embedded.
-
-The head noun of the host \synhead{DP} receives its case from the host clause;
-the \ird{-ový} modifier preceding it is not inflected for the case of the host
-but maintains its own internal case pattern. In nested \ird{-ový}
-constructions, the inner head noun shifts to the indirect case of the outer
-embedding domain, as described in §\,\ref{sec:nm-derived}. This shifting is
-the nominal counterpart of the case valuation that occurs at clausal boundaries
-in the verbal domain.
-
-Under the reduced-relative analysis, the
-\ird{-ový} form heads a nominalised predication inside a \synhead{RelP}
-adjoined low in the nominal structure, most naturally to \synhead{NP} or to the
-\synhead{NP}-side edge of \synhead{PossP}. A null operator in
-Spec,\synhead{RelP} is interpreted as the privileged participant identified by
-the head noun. This ties the construction directly to the broader relativization
-system discussed in §\,\ref{sec:th-relativization}, while preserving the
-head-final fact that the modifying material precedes the noun it restricts.
+The embedded configuration retains viewpoint and participant orientation,
+while nominal relational heads license indirect-case thematic dependents
+independently of matrix case. Thus perfective \ird{piaščikový} describes an
+agent and \ird{vednikový} a patient. The head noun receives case from its
+matrix clause or, when it is itself a dependent within another relative,
+from that containing nominal domain. It does not receive the case that its
+silent counterpart would bear in a finite clause.
 
 \pex
-\a \ird{vravět obrožikový pres} \trsl{the man who read the letter}
-\a \ird{[nazam zasdnikový vravět] obrožikový pres}
-   \trsl{the man who read the letter that the woman wrote}
+\a \ird{lubcí piaščikový pres} \trsl{the man who ate the apple}
+\a \ird{[Jancí vednikový lubcí] piaščikový pres}
+   \trsl{the man who ate the apple that Janek saw}
 \xe
+
+The operator in each relative corresponds to the participant privileged by its
+own voice--aspect configuration. In the nested example, \ird{Jancí} is an
+agent dependent of patient-oriented \ird{vednikový}, whereas \ird{lubcí},
+modified by that relative, is the theme dependent of agent-oriented
+\ird{piaščikový}. Neither relative assigns matrix case to \ird{pres}.
+The exact attachment of \synhead{RelP} relative to possessive material remains
+undetermined; its prenominal position and independent case domain do not depend
+on that choice. Continuous statives instead use the dedicated \ird{-á}
+attributive (§\,\ref{sec:stative-attr}); relatives selecting \synhead{AspP}
+exclude internal clausal \ird{za-}.
 
 \subsection{The \ird{ty}-supplement}
 \label{sec:nm-appos}
@@ -2179,55 +2234,154 @@ this construction from a free clause adverb.
 \subsection{Event nominals and the \ird{-ou} class}
 \label{sec:nm-derived-event}
 
-The \ird{-ou} class occupies a central place in the nominal system because it is
-where verbal structure most transparently enters the \synhead{DP}. Event
-nominals and participant nominals are fully nominal in their external syntax:
-they inflect for case, host anchoring, admit plural marking, and enter the
-ordinary possessive and demonstrative syntax. Internally, however, they preserve
-argument structure inherited from the verbal stem.
+Event and participant nominals enter the ordinary nominal distribution,
+although their internal interpretation and their inflectional specification
+must be distinguished. Lexical \ird{piaštou} \trsl{food} has a stored
+substance reading; eventive \ird{piaštou} \trsl{eating} permits thematic
+dependents; \ird{piaščikou} \trsl{the one who ate} describes a participant
+selected by embedded voice and aspect (§\,\ref{sec:nominalised}). Possessive
+or demonstrative modification and anchoring apply outside these differences:
+none of those operations creates an event argument structure in a lexical noun.
 
-\pex
-\a \ird{piaščikou} \trsl{the one who ate}
-\a \ird{piaščikovat} \trsl{the one who ate, anchored / identified}
-\a \ird{piaščikově} \trsl{of the one who ate / to the one who ate}
-\xe
-
-\subsection{Simple and complex gerunds}
+\subsection{Unexpanded and expanded event nominals}
 \label{sec:nm-derived-gerund}
 
-Gerunds in \ird{-ou} may be simple, denoting an event without overt
-participants, or complex, hosting the participants of that event inside the noun
-phrase. In complex gerunds both the actor and the theme are typically expressed
-in the indirect case. This follows from the general Iridian strategy of encoding
-non-privileged nominal dependents through the indirect domain.
+An event nominal may occur without overt participants or may be expanded by
+indirect-case dependents specifying the actor and theme. These are unexpanded
+and expanded uses of the event construction; omission of a dependent does not
+turn it into a lexical result noun. The terms do not presuppose that the number
+of pronounced dependents diagnoses the theoretical distinction between simple
+and complex event nominals.
 
 \pex
-\a \ird{Jancí podohletou} \trsl{Janek's remembering / the remembering of Janek}
+\a \ird{piaštou} \trsl{food} \lingcontext{lexical substance noun}
+\a \ird{piaštou} \trsl{eating} \lingcontext{unexpanded event nominal}
 \a \ird{Marcí travěte piaštou} \trsl{Marek's eating of the bread}
+   \lingcontext{expanded event nominal}
+\a \ird{Jancí podohletou} \trsl{Janek's remembering / the remembering of Janek}
 \xe
 
-The resulting ambiguity is structural rather than accidental: two indirect KPs
-inside one nominalised domain are not morphologically distinguished. Speakers
-disambiguate either by ordering the actor before the theme or by anchoring the
-theme noun, especially when the theme itself is discourse-recoverable.
+The indirect case neutralises the distinction between actor and theme within
+the nominal domain. Actor-before-theme order favours the corresponding
+interpretation of \ird{Marcí travěte piaštou}; anchoring the theme may support
+that reading when its discourse referent is already recoverable. Neither the
+case ending nor \ird{-to} uniquely assigns a thematic role, and a single
+dependent such as \ird{Jancí} may accordingly have more than one
+interpretation. A possessor shares the indirect case but need not be an actor
+or theme, while a postpositional adjunct supplies its own relation. Nominal
+case neutralisation has a close comparison in Basque derived event nominals,
+whose external and internal arguments may both be genitive, although larger
+nominalised clauses retain a different case pattern \cite{artiagoitia2023}.
+The comparison supports treating nominal case as a separate domain; it does
+not determine which verbal layers Iridian event nominals contain.
 
-\subsection{Participant nominals and privileged-participant
-  reference}
+\subsection{Participant nominals and privileged-participant reference}
 \label{sec:nm-derived-participant}
 
-Participant nominals identify whichever argument is privileged by the
-voice/aspect stem to which \ird{-ou} attaches. Antipassive-based forms pick out
-the actor, plain transitive stems the patient, and applicative stems the
-promoted non-patient participant. The nominal system therefore inherits the
-voice architecture of the verbal domain without ceasing to be nominal
-externally.
+Participant \ird{-ou} preserves the participant-selection features of
+embedded aspect and Voice while nominal heads license its overt dependents.
+With transitive bases, perfective and retrospective agents require antipassive
+Voice, while continuous, progressive, and contemplative agents use the active
+stem. An intransitive base describes its sole participant without antipassive
+morphology. Patient-oriented
+\ird{-n-} occurs throughout the paradigm, and applicative morphology selects
+the promoted participant (Table~\ref{tab:participant-nominals}).
 
 \pex
 \a \ird{piaščikou} \trsl{the one who ate}
+\a \ird{piaštova} \trsl{the one who eats}
 \a \ird{piaštnikou} \trsl{that which was eaten}
 \a \ird{piaštébikou} \trsl{the one who was fed}
 \xe
 
+The nominal relational head licensing an indirect theme in
+\ird{lubcí piaščikou} adds a restriction to the event associated with the
+participant. It does not restore an overt patient within antipassive
+\synhead{VP}. The same participant description occurs in an identificational
+predicate, as in \ird{Janek lubcí piaščikou}, and in an existential pivot,
+as in \ird{Lubcí piaščikou jeca}; the difference concerns external
+predication rather than nominal derivation (§\,\ref{sec:exst-vs-ident}).
+
+\subsection{Inflection, number, and anchoring}
+\label{sec:nm-derived-inflection}
+
+The singular \ird{-ou}/\ird{-ov-} alternation is specified for perfective
+participant and event nominals. The following case--number inventories include
+anchored forms after a slash. A dash records an unspecified cell, rather than
+a zero exponent or an ungrammatical form.
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Specified inflection of perfective participant and event nominals;
+plain / anchored forms.}\label{tab:ou-inflection}
+\begin{tabularx}{\textwidth}{l L L}
+\toprule
+Case--number & Participant \trsl{one who ate} & Event \trsl{eating} \\
+\midrule
+Direct singular & \ird{piaščikou / piaščikovat} & \ird{piaštou / piaštovat} \\
+Transitive singular & \ird{piaščikovy / piaščikovyte} & \ird{piaštovy / piaštovyte} \\
+Indirect singular & \ird{piaščikově / piaščikověte} & \ird{piaštově / piaštověte} \\
+Direct plural & --- & --- \\
+Transitive plural & --- & --- \\
+Indirect plural & --- & --- \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Specified inflection of continuous \ird{piaštova}
+\trsl{one who eats}.}\label{tab:ova-inflection}
+\begin{tabularx}{.85\textwidth}{l L L}
+\toprule
+Case--number & Plain & Anchored \\
+\midrule
+Direct singular & \ird{piaštova} & --- \\
+Transitive singular & --- & --- \\
+Indirect singular & --- & --- \\
+Direct plural & --- & --- \\
+Transitive plural & --- & --- \\
+Indirect plural & --- & --- \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The continuous direct \ird{-ova} is a joint exponent of Asp and nominal
+features, rather than evidence that this construction belongs to ordinary
+Class~III \ird{-a} stems. Its obliques and anchored direct form are
+unspecified, as are plural exponents for the deverbal class generally. The
+\ird{-ou}/\ird{-ov-} singular scheme extends to the other
+\ird{-ou}-final aspectual participant forms, without establishing a complete
+number paradigm. Consequently, nominal external distribution alone does not
+license unrestricted claims about their plural formation.
+
+An event plural, if available, would require countable event units, whereas
+lexical \trsl{food} has the mass interpretation described for substance nouns
+(§\,\ref{sec:nm-derived-event}). The morphology presently specified does not
+determine a distinction among event tokens, repeated occurrences, and event
+kinds. Anchoring identifies a discourse-relevant event, participant, or
+substance according to the noun's interpretation; it neither changes lexical
+\trsl{food} into an argument-taking event nominal nor imposes uniqueness on
+every participant description.
+
+\subsection{A possible development of the nominalising family}
+\label{sec:nm-derived-history}
+
+A reconstructed deverbal \ird{*-ov-} formation could provide a common source
+for event and lexical nouns, with later extension to participant descriptions
+in voice-marked structures and thence to adnominal relatives. Positional /v/
+vocalisation offers a possible phonetic basis for direct \ird{-ou} beside
+prevocalic \ird{-ov-}: modern /v/ has a coda [w] realisation
+(Chapter~\ref{ch:phon}). Modern spelling nevertheless preserves \ird{v}
+in such contexts, so this reconstruction would also require conventionalisation
+of the specialised \ird{-ou} spelling. Anchored \ird{-ovat} would then
+involve morphological remodelling on \ird{-ov-}, rather than automatic
+synchronic contraction. This sequence is a possible history of the family,
+not established Iridian historical evidence; the contemporary structures and
+allomorphs do not depend on it. A comparative model for the connection between
+role-oriented nominalisation and relatives is the nominalisation-based
+Austronesian pattern discussed by Kaufman \cite[§3.4]{kaufman2026}; that
+comparison does not establish the proposed Iridian chronology.
 
 %% ================================================================
 %%  PART X: ANCHORING AND THE CLAUSE-LEVEL INTERFACE
@@ -2240,90 +2394,60 @@ externally.
 \subsection{Anchoring and the topic-absolutive connection}
 \label{sec:nm-topic-abs}
 
-The anchoring suffix occurs especially readily on direct-case (absolutive) patient nouns in
-transitive clauses of the perfective and retrospective aspects. This frequency
-effect is not a syntactic requirement — the suffix is never imposed by aspect or
-by argument structure — but a pragmatic tendency with a formal correlate.
-
-The formal correlate is the link between the absolutive argument and the topic
-position \synhead{TopP} (§\,\ref{sec:th-topic-comment-theory}). In the
-perfective/retrospective, the patient occupies the direct case (absolutive) and
-normally surfaces in Spec,\synhead{TopP} as an aboutness topic. Such a
-referential topic is discourse-salient and discourse-recoverable, the condition
-that licenses the \textsc{Anch\textsuperscript{0}}[\textsc{+anch}] feature. The
-co-occurrence of anchoring and absolutive-topicality is therefore not a
-construction-specific rule but the interaction of two independent feature
-systems: [\textsc{+top}] in the clause domain and [\textsc{+anch}] in the
-nominal domain. Quantificational pivots such as \ird{deno}, however, may
-occupy Spec,\synhead{TopP} without an aboutness interpretation, a
-[\textsc{+top}] discourse feature, or an anchored referent
-(§\,\ref{sec:tc-quantificational-pivots}). Their structural position alone
-therefore does not favour [\textsc{+anch}].
-
-This interaction can be formalised as a soft interface constraint (an
-optimisation preference, not a hard Agree condition):
+A direct-case patient in a perfective transitive may be both anchored and
+ topical, as in \ird{Travato Marku piaštnik}. The suffix identifies the bread
+ within the shared discourse, while the clause can predicate what happened to
+ it. The two contributions belong to independent domains: nominal
+ [\textsc{+anch}] concerns accessibility, whereas clausal [\textsc{+top}]
+ establishes aboutness (§\,\ref{sec:tc-anchoring-interface}). A direct-case
+ argument in a topicless existential need not carry either feature, and the
+ initial negative pivot \ird{deno} remains below \synhead{TopP}
+ (§\,\ref{sec:tc-quantificational-pivots}).
 
 \begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Topicality-Anchoring Harmony:] A \synhead{DP} bearing the feature
-  [\textsc{+top}] in Spec,\synhead{TopP} is preferentially realised with
-  \textsc{Anch\textsuperscript{0}}[\textsc{+anch}] in its nominal functional
-  hierarchy. The constraint is violable (topic-drop, bare nouns as topics, and
-  pragmatically foregrounded indefinites are also permitted), so the preference
-  expresses an association between discourse features rather than a categorical
-  distribution.
+\item[\upshape Topicality--Anchoring Harmony:] An ordinary topic whose
+ referent is shared and accessible is compatible with suffixal anchoring.
+ This discourse preference imposes no Agree requirement between Top and Anch,
+ and does not exclude bare, speaker-anchored, or newly introduced topics.
 \end{description}
 
-\noindent The constraint also predicts the opposite tendency: DPs in non-topic
-positions (agents in the ergative case, oblique adjuncts) are less frequently
-anchored, because they are not in Spec,\synhead{TopP} and therefore carry no
-[\textsc{+top}] feature to harmonise with [\textsc{+anch}].
+\noindent The preference provides no converse inference that a non-topic must
+ be unanchored, and no quantitative claim about the frequency of anchoring by
+ case. Shared reference can be maintained anywhere in the argument structure.
 
-\subsection{Anchoring in non-direct cases: marked uses}
+\subsection{Anchoring in non-direct cases}
 \label{sec:nm-topic-oblique}
 
-The anchoring suffix may appear on nouns in the transitive and indirect
-cases, where its interpretation is
-\emph{generally less neutral and more plainly expressive of topical, resumptive,
-contrastive, or otherwise salient reference}.
-
-This asymmetry follows from the topic-absolutive architecture. Transitive-case
-(ergative) nouns are agents in the perfective aspects; they are not the
-absolutive argument and are not in Spec,\synhead{TopP}. A [\textsc{+anch}] agent
-is therefore marked: its anchoring is not discourse-default but serves an
-additional function — contrastive individualisation, resumption, or topical
-promotion — that requires the anchoring suffix to perform pragmatic work beyond
-its baseline anaphoric use. Indirect-case nouns similarly bear the suffix only
-when the speaker wishes to signal that the oblique participant is specifically
-tracked in the discourse.
-
-One useful way to formalise the marked anchored agent is to say that
-[\textsc{+anch}] combines there not with ordinary topic continuity but with
-contrastive prominence. Because the ergative aspect normally maps the absolutive patient to the
-initial pivot position, an anchored agent is most naturally interpreted as
-focally individuated rather than merely anaphoric. This predicts the familiar
-contrastive or resumptive flavour of anchored transitive-case DPs without forcing
-a second topic position inside the clause.
+Transitive and indirect nominals retain the same anchoring contrasts as
+ direct-case nominals. The anchored agent \ird{Markuto}, for instance,
+ identifies Marek as accessible while preserving his transitive case. In
+ \ird{Markuto tak tóm koupnik}, his initial position supports a linked-topic
+ interpretation, but the anchor itself does not encode that dependency.
+ Anchored indirect recipients, locatives, and other participants likewise
+ need not receive contrastive prominence merely because they are identifiable.
+ Their topical interpretation depends on the surrounding construction and
+ discourse rather than on case-conditioned meanings of \ird{-to}/\ird{-te}.
 
 \subsection{The bare noun as an \synhead{AnchP} with null anchoring}
 \label{sec:nm-bare-noun}
 
-Within the present analysis, the bare noun in Iridian is not an \synhead{NP}
-that has failed to project upward. Rather, it is an \synhead{AnchP} whose
-anchoring head bears no [\textsc{+anch}] feature and therefore receives no overt
-Vocabulary Item at PF. This treatment parallels the analysis of topic-drop in
-the clausal domain: just as a null topic in Spec,\synhead{TopP} is a
-syntactically present but phonologically empty argument (§\,\ref{sec:th-topic}),
-the null anchoring head is a syntactically present but phonologically empty
-head.
+A nominal without either \ird{si} or a suffixal anchor projects an
+\synhead{AnchP} whose head lacks [\textsc{+anch}] and receives no overt
+Vocabulary Item at PF. Its reference may be indefinite, contextually definite,
+or generic; absence of overt anchoring leaves speaker identifiability
+unmarked rather than requiring an unidentified or unindividuated referent.
+The absence of overt anchoring thus corresponds to a feature distinction within the same
+nominal structure, rather than to a smaller phrase. Where
+[\textsc{+anch,+shr}] is present, Vocabulary Insertion supplies the suffix
+in the form required by
+the case-number ending (§\,\ref{sec:nm-def-nondirect}).
 
-The theoretical advantage of this treatment is that it derives the optionality
-of anchoring morphology without stipulation. There is no constraint that forces
-\textsc{Anch\textsuperscript{0}} to receive an overt Vocabulary Item; the DM
-system simply inserts \ird{-to} when the feature [\textsc{+anch}] is present and
-inserts nothing when it is absent. The parallelism between optional anchoring
-and optional topic-marking reflects a broader property of the grammar:
-discourse-level features are never obligatorily expressed in Iridian, but they
-are consistently and transparently encoded when they are present.
+Null anchoring and topic drop both distinguish syntactic structure from its
+phonological expression, although their interpretations differ. A silent
+continuing topic retains a discourse dependency on a recoverable referent
+(§\,\ref{sec:th-topic}); a null Anch head carries no anchoring
+feature. Neither silence nor overt exponence in one domain determines the
+feature content of the other.
 
 
 %% ================================================================
@@ -2343,8 +2467,8 @@ alternative tradition (Longobardi 1994; Alexiadou et~al. 2007) distinguishes a
 dedicated definiteness layer from a higher \synhead{DP} layer (which may encode
 referential anchoring, logophoricity, or other discourse properties).
 
-For Iridian, the evidence from morphological ordering supports a single high
-functional head for the anchoring layer: Anch\textsuperscript{0}, with suffixal
+The grammar represents the two overt anchoring strategies within a single
+functional layer, Anch\textsuperscript{0}, with suffixal
 exponents \ird{-to}/\ird{-te} and proclitic exponent \ird{si}
 (§\,\ref{sec:nm-spec}). The demonstrative system occupies its own projection,
 \synhead{DemP}, above \synhead{AnchP}. Whether \synhead{AnchP} and
@@ -2378,36 +2502,29 @@ Agree architecture; strategy (a) requires relaxing the usual opacity of
 \subsection{The anchoring suffix and phase theory}
 \label{sec:nm-tension-phase}
 
-Within phase theory (Chomsky 2000, 2001), \synhead{DP} may constitute a phase
-alongside \synhead{CP} and \synhead{vP}. If the Iridian \synhead{DP} is a phase,
-then the internal structure of the \synhead{DP} (including the K and
-\synhead{NP} layers) becomes inaccessible to clausal operations once
-\synhead{AnchP} (= \synhead{DP}-phase edge) is assembled. This has consequences
-for case assignment (as noted above) and for the possessor construction: if the
-possessive indirect-case \synhead{NP} is inside the \synhead{DP} phase, it
-cannot be directly targeted by a clausal probe. The standard resolution is to
-treat possessors as phase-edge elements (moved or base-generated at the edge of
-the \synhead{DP} phase), which is consistent with their prenominal,
-edge-adjacent position in the surface string.
+Nominal-domain linearisation applies when $D_a$ is complete, including the
+higher quantificational and demonstrative material associated with its noun
+(§\,\ref{sec:nm-si-linearisation}). The PF derivation therefore retains the
+anchoring terminal until that domain has been assembled; \synhead{AnchP}
+alone does not close a separate pronunciation cycle. Embedded possessors
+receive their own ordering before they are incorporated as dependents in the
+containing nominal string.
 
-\subsection{Converb-based relative clauses and their nominal
-  embedding}
+This PF commitment does not identify \synhead{AnchP} with the edge of a
+syntactic DP phase. Whether the completed outer nominal domain is also a phase,
+and how its internal case features remain accessible to clausal probes,
+concern syntactic locality (§\,\ref{sec:nm-tension-case}). The precedence of
+\ird{si} follows from its source-conditioned linearisation within $D_a$,
+without requiring the possessor to move to a phase edge merely to supply a
+phonological host.
+
+\subsection{Participant-oriented relatives and their nominal embedding}
 \label{sec:nm-tension-rel}
 
-The \ird{-ový} attributive construction is Iridian's primary relativization
-strategy (§\,\ref{sec:th-relativization}). A full syntactic analysis of this
-construction — and in particular its interaction with the anchoring suffix on
-the head noun — requires a formal account of how a nominalised verbal phrase
-(the \ird{-ový} clause) integrates into the \synhead{DP}-internal structure.
-The head noun following an \ird{-ový} modifier receives case from the host
-clause and optionally bears the anchoring suffix, suggesting that it remains
-within the \synhead{AnchP}/\synhead{KP} layer of the host \synhead{DP} and is
-not incorporated into the nominalised domain. This is consistent with the
-analysis of the \ird{-ový} construction as a prenominal adjunct, but the
-precise adjunction site (to \synhead{NP}, to \synhead{PossP}, or to a dedicated
-\synhead{RelP} layer) requires further specification.
-
-Under the reduced-relative analysis adopted here, \ird{-ový} instantiates
-\synhead{RelP}; what remains unspecified is its adjunction site within the
-lower nominal spine and the structural relation between that site and
-possessive material.
+The \ird{-ový} relative forms an independent case domain within the host
+\synhead{DP}, while the head noun remains in the matrix nominal spine
+(§\,\ref{sec:nm-ovni}). Its matrix case and optional anchoring are therefore
+independent of the participant gap inside \synhead{RelP}. The exact attachment
+of \synhead{RelP} relative to \synhead{PossP} is unresolved; the common
+analysis in Chapter~\ref{ch:complex} requires only a prenominal modifier with
+its own participant-selection and case relations.

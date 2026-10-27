@@ -1,57 +1,31 @@
 \chapter{Information Structure}\label{ch:infstr}
-\label{sec:topic-comment}% cross-reference compatibility: retained for \ref{sec:topic-comment}
+\label{sec:topic-comment}% cross-reference compatibility
 
-The analysis of Iridian information structure developed in this chapter
-presupposes the clause spine and theoretical framework introduced in
-§\,\ref{sec:grammatical-architecture} of Chapter~\ref{ch:overview} and the
-background discussion in §\,\ref{sec:th-background} of
-Chapter~\ref{ch:simple}. The orientation given there --- that the absolutive
-pivot is strongly privileged as the default discourse centre, and that
-topic-comment organisation is the primary mode of the Iridian clause --- is
-taken as the point of departure. The present chapter provides the full
-analytical account.
-
+Iridian distinguishes the participant selected by its alignment system from
+ the referent about whom an utterance makes a predication. Although the
+ direct-case argument commonly serves both functions, a transitive-case agent
+ may be topicalised while the patient retains direct case, and an existential
+ pivot need not be an aboutness topic at all. These distributions motivate a
+ topic-oriented analysis in which case, nominal anchoring, and information
+ structure contribute independently to the organisation of the clause.
 
 \section{The topic: conceptual and formal foundations}\label{sec:tc-foundations}
-
-\subsection{The topic as the logical subject of predication}
+\subsection{Aboutness and the logical subject of predication}
 \label{sec:tc-logical-subject}
 
-Ordinary referential predication in Iridian is organised around a
-\term{topic-comment bipartition},
-within which topichood is defined by the semantic relation between a
-constituent and the predication made about it. This discourse relation is
-distinct from grammatical subjecthood, which is identified by morphosyntactic
-properties such as case, agreement, and pivot behaviour. In the framework adopted here, following Kiss
-(1995), the \term{topic} is the \term{logical subject of predication}: the
-constituent with respect to which the rest of the clause --- the \term{comment}
---- constitutes a semantic predicate, expressing a property that is claimed to
-hold of that individual. This is a discourse-semantic role, not a
-morphosyntactic one, and it is independent of grammatical subjecthood in the
-standard sense.
+The \term{aboutness topic} identifies the individual, kind, or subject matter
+ under which the following assertion is organised. The \term{comment} supplies
+ the predication made about that topic. This discourse relation differs from
+ both the grammatical privilege of the \term{absolutive pivot}, which bears
+ direct case, and the semantic relation between a logical subject and a
+ predicate. A proposition may be represented as $P(a)$ without establishing
+ $a$ as the current topic of the conversation. Gécseg's discussion of Hungarian
+ makes this distinction explicit: logical predication and pragmatic aboutness
+ are separate levels of analysis \cite{gecseg2006}.
 
-The independence of topichood from subjecthood is a theoretical necessity in
-Iridian because the grammar does not recognise a language-wide grammatical
-subject as its organising primitive. The stable privilege belongs instead to the
-\term{absolutive pivot}: the direct-case core argument licensed by the alignment
-system. In nominative-domain clauses --- the imperfective aspects --- the
-absolutive pivot is typically the agent or sole participant. In ergative-domain
-clauses --- the perfective and retrospective --- it is the patient. The same
-argument position, determined by alignment, is the discourse centre in both
-domains; but the semantic role of that centre changes with aspect domain.
-
-This matters for topichood in the following way. If `topic' were simply a
-synonym for `grammatical subject', the Iridian facts would require two different
-subjects: an agentive subject in nominative-domain clauses and a patient subject
-in ergative-domain clauses. That is not a coherent analysis. Instead, the
-grammar treats \term{topic} as a discourse role assigned to a structurally
-identified position, Spec,\synhead{TopP}, and the absolutive pivot as the
-default occupant of that position across aspect domains. The topic-comment
-articulation is therefore prior to the agent--patient asymmetry, not derived
-from it.
-
-The distinction can be illustrated immediately with a minimal aspectual pair,
-using the verb \ird{kup-} \trsl{buy}:
+In an imperfective active clause, the direct-case pivot is normally the agent
+ or sole participant; in a perfective transitive with \ird{-n-}, it is the
+ patient. The following pair illustrates this aspect-conditioned alternation:
 
 \pex\label{ex:tc-topic-subj}
 \a
@@ -59,81 +33,50 @@ using the verb \ird{kup-} \trsl{buy}:
 \gla Marek tak tóme kupujime.//
 \glb Marek.\Dir{} \Dem{}.\Prox{}.\Dir{} book.\Ind{} buy-\Prog{}//
 \glft \trsl{Marek is buying this book.}
-      \lingcontext{nominative domain; agent = absolutive pivot = topic}//
+      \lingcontext{nominative domain; agent = absolutive pivot; Marek-topic context}//
 \endgl
 \a
 \begingl
 \gla Tak tóm Marku koupnik.//
 \glb \Dem{}.\Prox{}.\Dir{} book.\Dir{} Marek.\Trs{} buy-\Trs{}.\Pf{}//
 \glft \trsl{This book, Marek bought.}
-      \lingcontext{ergative domain; patient = absolutive pivot = topic}//
+      \lingcontext{ergative domain; patient = absolutive pivot; book-topic context}//
 \endgl
 \xe
 
-\noindent The event participants are constant: Marek is the buyer and the book
-is the thing bought. What changes is not the lexical event structure but the
-alignment: the nominative-domain continuous places the agent in the direct case
-and therefore makes the agent the absolutive pivot and clause topic; the
-ergative-domain perfective places the patient in the direct case and makes the
-patient the absolutive pivot and clause topic. A notion of `topic' that reduced
-to `subject' could not handle this alternation without positing two
-grammatically unrelated subject positions. The present analysis handles it as a
-single topic mechanism --- the discourse prominence of the absolutive pivot ---
-interacting with the aspectual determination of which participant receives the
-direct case.
+\noindent Marek remains the buyer in both clauses, while the book changes
+ from indirect to direct case. In a conversation about Marek, the first clause
+ may describe his current activity; in a conversation about the book, the
+ second may explain what happened to it. Those contexts support the indicated
+ topic interpretations, but the aspectual contrast by itself establishes only
+ the case alternation. A completed event can equally form part of a continuing
+ discussion of Marek (§\,\ref{sec:tc-marked-topics}).
 
-The claim that topic is the logical subject of predication also entails that the
-\term{comment} is a semantic predicate. In (\ref{ex:tc-topic-subj}a), the topic
-is Marek and the comment is the property of being engaged in the act of buying
-this book. In (\ref{ex:tc-topic-subj}b), the topic is the book and the comment
-is the property of having been bought by Marek. The predication relation in both
-cases is the same type, even though the discourse-prominent participant differs.
-For ordinary referential topics, this is the sense in which topic-comment
-structure is the primary
-information-structural dimension of the Iridian clause: it organises the clause
-into an individual and a property attributed to it, prior to any further
-packaging by focus or modal operators.
-
+For a referential topic $a$ and a comment denoting a property $P$, the assertion
+ ordinarily contributes $P(a)$. Establishing $a$ as the subject matter concerns
+ the organisation of that contribution in discourse. This distinction follows
+ Krifka's separation of common-ground content from common-ground management
+ \cite[§\,2.2]{krifka2008}; it does not entail that every information-structural
+ contrast is truth-conditionally inert.
 
 \subsection{Absolutive pivot, alignment, and default topicality}
 \label{sec:tc-abs-align}
 
-The preceding subsection argued that topic and grammatical subject are
-independent notions and that the absolutive pivot, not agenthood per se, is the
-default discourse centre. This section formalises the connection between the
-absolutive and topichood as a named mapping principle and explains its
-interaction with aspect domain.
-
-In neutral finite clauses, there is a systematic alignment between morphological
-case marking and discourse structure. The direct-case (absolutive) argument
-surfaces clause-initially in Spec,\synhead{TopP} and is interpreted as the
-clause topic. This is not a semantic entailment --- the direct-case argument is
-not logically required to be discourse-prominent --- but the neutral or unmarked
-mapping between clause structure and discourse packaging. The generalisation can
-be stated as follows:
+The direct-case pivot precedes the remaining arguments in the neutral orders
+ illustrated below. When the discourse supplies no competing topic, a
+ referential pivot is also the default candidate for aboutness:
 
 \begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
-\item[\upshape Absolutive--Topic Alignment:] In unmarked finite clauses, the
-  \synhead{DP} bearing the direct case is the default discourse topic and is
-  merged or interpreted in Spec,\synhead{TopP}.
+\item[\upshape Absolutive--Topic Alignment:] A referential direct-case pivot
+ is preferentially interpreted as the aboutness topic in an unmarked finite
+ clause, provided that the discourse supports a topic--comment articulation.
 \end{description}
 
-\noindent This principle is not a semantic law and not an inviolable syntactic
-constraint. It is the neutral mapping: deviations from it are possible but
-marked when an alternative discourse centre is selected, triggering the
-resumptive, contrastive, and focus-related
-interpretations discussed in
-§§\,\ref{sec:tc-marked-topics}--\ref{sec:tc-contrastive-topic}. The principle is
-compatible with a non-referential quantificational pivot in the same initial
-position (§\,\ref{sec:tc-quantificational-pivots}). It is otherwise
-best understood as the Iridian instantiation of a more general interface
-tendency: participants that are structurally prominent (absolutive arguments,
-clause-initial position) tend also to be discourse-prominent.
-
-Aspect choice partly determines which participant is construed as the discourse
-centre, since the selected domain assigns the direct case to the argument that
-normally serves as topic. The same lexical predicate can accordingly construe
-an event around different participants:
+\noindent This preference concerns interpretation rather than case licensing.
+ Asp.Align and Voice determine the case frame within the lower clause;
+ \synhead{TopP} represents an independently established aboutness relation.
+ A pivot can remain below that projection, whether it is discourse-given,
+ quantificational, or part of a topicless presentation.
 
 \pex\label{ex:tc-aspect-topic}
 \a
@@ -141,76 +84,32 @@ an event around different participants:
 \gla Marek travě piaštime.//
 \glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
 \glft \trsl{Marek is eating bread.}
-      \lingcontext{nominative domain; agent = direct = topic}//
+      \lingcontext{nominative domain; agent = direct; Marek-topic context}//
 \endgl
 \a
 \begingl
 \gla Travato Marku piaštnik.//
 \glb bread.\Dir{}.\Def{} Marek.\Trs{} eat-\Trs{}.\Pf{}//
 \glft \trsl{Marek ate the bread.}
-      \lingcontext{ergative domain; patient = direct = topic}//
+      \lingcontext{ergative domain; patient = direct; bread-topic context}//
 \endgl
 \xe
 
-\noindent The alternation is not mere word-order variation. In
-(\ref{ex:tc-aspect-topic}a), the aspectual morphology selects the nominative
-domain and the agent surfaces in the direct case. The clause is organised around
-Marek as its discourse centre: it is a clause about Marek's ongoing activity. In
-(\ref{ex:tc-aspect-topic}b), the aspectual morphology selects the ergative
-domain and the patient surfaces in the direct case. The clause is now about the
-bread: specifically, about what happened to it. The ergative agent is present as
-a core participant but is secondary from a discourse perspective --- it occupies
-the transitive case and remains within the comment domain unless specially
-promoted (§\,\ref{sec:tc-marked-topics}).
-
-In the imperfective aspects (progressive, continuous, contemplative), agent and
-topic therefore typically coincide; in the perfective and retrospective, patient
-and topic typically coincide. Aspect determines which participant receives the
-direct case, while the neutral discourse mapping places that argument in topic
-position, linking the topic--comment organisation to the alignment split
-(§§\,\ref{sec:th-topic-comment-theory}, \ref{sec:th-wh-interrogation};
-Chapter~\ref{ch:discourse}).
-
+\noindent The progressive presents eating in progress, whereas the perfective
+ presents a bounded event. Marek and the bread are suitable topics in the
+ respective contexts, but neither the progressive nor the perfective requires
+ that topic choice. The topic readings therefore depend on how each clause
+ contributes to the current discussion, within the preference for a
+ referential pivot established above.
 
 \subsection{The formal properties of ordinary topics}
 \label{sec:tc-ordinary-topics}
 
-Not every DP that might conceivably appear clause-initially is a topic, and not
-every type of DP is equally available as a topic. Topics in the unmarked case
-have specific formal properties, and distinguishing these properties from those
-of other clause-initial material is essential for the analysis of the left
-periphery as a whole.
-
-An \term{ordinary topic} in Iridian is a \synhead{DP} that is
-discourse-identifiable, referential or kind-denoting, and at least weakly
-specific or recoverable in context. These properties are not independently
-stipulated features; they follow from the semantic role of the topic as the
-logical subject of predication. A predication requires an individual or kind
-about which something is being said: predicating a property of an entity that
-has not been introduced into, or cannot be recovered from, the discourse would
-fail to connect the clause to its context of utterance. The ordinary topic is
-therefore inherently discourse-anchored, though the nature and degree of that
-anchoring may vary by topic type.
-
-Four principal topic types can be distinguished within the class of ordinary
-topics. \emph{Anchored referential \synhead{DP}s} are the paradigm case: DPs
-bearing the anchoring suffix \ird{-to}, which signals that the referent is
-tracked as a specific individual within the discourse. Anchored referential
-topics may be discourse-anaphoric, situationally unique, or associated with a
-contextually salient set. The anchoring suffix is by no means required on every
-topic (§\,\ref{sec:tc-anchoring-interface}), but anchored topics are the most
-prototypically discourse-linked type. \emph{Discourse-recoverable null topics}
-arise when the topic referent is established by the prior discourse and
-Spec,\synhead{TopP} is phonologically empty; these are treated in
-§\,\ref{sec:tc-topic-drop}. \emph{Generic and kind-denoting \synhead{DP}s} may
-appear as topics when interpreted as kinds or as generic individuals: the
-predication is then a characterising statement about the kind, and the topic is
-discourse-stable once introduced. \emph{Discourse-linked specific indefinites}
-may appear as topics when the referent is being introduced as particular and
-contextually distinguishable; in Iridian, the specifically indefinite particles
-\ird{si} and \ird{druh} support this function (§\,\ref{sec:nm-spec}).
-
-The following examples illustrate each type:
+Ordinary topics supply a discourse address for the comment. They include
+ hearer-accessible individuals, recoverable null arguments, kinds, and
+ individuated referents being introduced for discussion. Prior mention and
+ suffixal anchoring can help establish a topic in context, without being
+ obligatory conditions on every topic.
 
 \pex\label{ex:tc-topic-types}
 \a\label{ex:tc-anch-topic}%
@@ -233,133 +132,89 @@ The following examples illustrate each type:
 \endgl
 \a\label{ex:tc-spec-indef-topic}%
 \begingl
-\gla Druh byl zdravime.//
-\glb \Indef{} child.\Dir{} sleep-\Prog{}//
+\gla Si byl zdravime.//
+\glb \Sanch{} child.\Dir{} sleep-\Prog{}//
 \glft \trsl{A certain child is sleeping.}
-      \lingcontext{individuated indefinite topic; \ird{druh} marks individuation without anchoring}//
+      \lingcontext{new speaker-anchored topic; speaker has a particular child in mind}//
 \endgl
 \xe
 
-\noindent In (\ref{ex:tc-spec-indef-topic}), the modifier \ird{druh} does not
-make the referent discourse-recoverable in the anaphoric sense, but it
-individuates the referent as a particular entity with contextual grounds for
-its existence. This partial individuation is sufficient to support the
-predication relation (§\,\ref{sec:nm-spec}). An unindividuated existential
-predication --- the assertion that there is merely some entity, without any
-individualising implication --- does not have a topic in this sense; that
-construction is treated in §\,\ref{sec:tc-topicless}.
-
+\noindent The suffix in \ird{Marko} explicitly anchors Marek within the shared
+ discourse, whereas the null expression in (\ref{ex:tc-null-topic}) continues
+ an already recoverable referent. The generic wolf names a kind. In
+ (\ref{ex:tc-spec-indef-topic}), \ird{si} presents a particular child selected
+ by the speaker, whom the utterance introduces as its subject matter under
+ an introduction such as `Let me tell you about a child I know'. New
+ indefinites can establish topics without being discourse-given
+ \cite[§\,5.1]{krifka2008}; in Iridian, the aboutness relation belongs to
+ the clause rather than to the speaker-anchoring proclitic
+ (§\,\ref{sec:nm-spec}). The same \ird{si byl} can therefore occur within
+ a presentational answer to `What is there in the house?', where the child's
+ presence is asserted without making that child the subject matter of a
+ separate comment
+ (§\,\ref{sec:tc-topicless}).
 
 \subsection{Quantificational pivots and negative concord}
 \label{sec:tc-quantificational-pivots}
 
-A direct-case negative indefinite may occupy the regular initial pivot
-position without identifying an individual about whom the comment predicates
-a property. In \ird{Deno že zastráda} \trsl{Nothing is lacking to me}
-(\ref{ex:nm-negative-concord}), \ird{deno} is the direct-case theme of
-\ird{strád-} \trsl{be lacking}, while \ird{že} is its indirect-case
-experiencer. The initial indefinite remains existentially interpreted under
-negation, so that the clause denies that any relevant thing is lacking to the
-speaker; it neither introduces an anchored individual nor places an
-existential quantifier outside the scope of negation.
+\ird{Deno že zastráda} \trsl{Nothing is lacking to me}
+ (\ref{ex:nm-negative-concord}) begins with the direct-case theme of
+ \ird{strád-} \trsl{be lacking}; \ird{že} is the indirect-case experiencer.
+ The initial negative indefinite is existentially interpreted within the scope
+ of negation, so that the clause denies the existence of a relevant thing
+ lacking to the speaker. Its position does not establish a referential
+ aboutness topic.
 
-The grammar analyses this order as movement of the pivot to
-Spec,\synhead{TopP}, with interpretation of its lower copy in the predicate
-domain. The negative operator in Spec,\synhead{NegP} licenses the
-indefinite's $[u\textsc{neg}]$ feature in that lower position before movement,
-and the lower copy supplies the existential variable at LF. Schematically,
-with the intervening projections and null heads omitted, the dependency is:
-\[
-  [_{\mathrm{TopP}}\ \textit{deno}_{i}\
-    [_{\mathrm{NegP}}\ \mathrm{Op}_{\neg}[i\textsc{neg}]\
-      [_{\mathrm{AspP}}\ t_i\ \textit{že}\ \textit{strád-a}]\
-      \mathrm{Neg}^{0}[u\textsc{neg}]]\ \mathrm{Top}^{0}].
-\]
-The schematic head-final position of Neg is distinct from its PF attachment
-to the left edge of the verbal host, which yields \ird{za-strád-a}
-(§\,\ref{sec:vm-neg}). Reconstruction and Agree belong to the grammar's
-syntactic analysis; Vocabulary Insertion determines the pronunciation of the
-negative head and the indefinite.
-
-The Absolutive--Topic Alignment principle therefore describes a default
-mapping to aboutness rather than an obligatory referential interpretation of
-every occupant of Spec,\synhead{TopP}. A quantificational pivot in that
-position bears no ordinary discourse-anchoring requirement merely by virtue
-of its surface position. This qualification leaves the properties of ordinary
-topics (§\,\ref{sec:tc-ordinary-topics}) intact, while allowing the
-negative-indefinite paradigm (§\,\ref{sec:nm-negative-concord}) to retain
-both its initial position and its obligatory narrow scope under negation.
-
+The grammar places this initial pivot in the lower argument domain, below
+ \synhead{TopP}, with its existential interpretation in the scope of the
+ negative operator. If the surface position requires displacement within that
+ domain, the lower copy supplies the variable at LF. Negative concord is
+ licensed by the negative operator and its Agree relation with the indefinite;
+ neither licensing nor narrow scope requires a topical feature
+ (§§\,\ref{sec:vm-neg}, \ref{sec:nm-negative-concord}). The example leaves the exact landing site within the lower
+ domain unresolved.
 
 \subsection{Topic position in the clause spine}
 \label{sec:tc-clause-spine}
 
-The preceding subsections have presupposed that the topic occupies a designated
-structural position. An ordinary topic is the \synhead{DP} in Spec,\synhead{TopP},
-where \synhead{TopP} is the highest argument-hosting projection in the
-articulated left periphery of the Iridian clause. The clause spine, set out in
-Table~\ref{tab:th-clause-spine} and Figure~\ref{fig:th-left-periphery}, runs:
+A clause-internal aboutness topic occupies Spec,\synhead{TopP} in the
+ analysis adopted here. The principal left-peripheral hierarchy is:
 
 \begin{center}
 \synhead{SpeechActP} $>$ \synhead{EvidP} $>$ \synhead{TopP} $>$
-\synhead{PolP} $>$ \synhead{FocP} $>$ \synhead{IP} $>$
-\synhead{PhasP} $>$ \synhead{PredP}
+\synhead{PolP} $>$ \synhead{FocP} $>$ \synhead{IP}
 \end{center}
 
-\noindent The topic is in Spec,\synhead{TopP} (projection 8). The comment
-corresponds to the domain that \synhead{TopP} scopes over: everything from
-\synhead{PolP} downward, including the focus position, the inflectional domain,
-and the predicate field. \synhead{TopP} is dominated only by the evidential and
-speech-act projections, which are not argumental and do not belong to the
-comment.
+\noindent \synhead{TopP} is optional: lower arguments retain their case and
+ remain interpretable when no aboutness dependency is projected. The comment
+ of a topicalised clause comprises the domain below \synhead{TopP}, including
+ clause typing and focus. Evidential and speech-act material occupies higher
+ positions, while external frames attach outside the clause-internal topic
+ dependency (§\,\ref{sec:tc-multiple-topics}).
 
-This architecture has several immediate consequences. Evidential particles such
-as \ird{oče} occupy \synhead{EvidP} outside and above the topic, not inside the
-comment. The clause-typing particle \ird{by} is in Pol\textsuperscript{0},
-below the topic and above the focus position; in polar questions, the topic
-may remain in Spec,\synhead{TopP} while \ird{by} takes scope over the
-predication within its domain. Focused constituents appear in
-Spec,\synhead{FocP}, below the topic and within the comment domain, which
-explains why a focused constituent and a topic may co-occur without structural
-conflict (§\,\ref{sec:tc-focus-contrast}).
+The interrogative particle \ird{by} realises a locally head-initial
+ Pol\textsuperscript{0}, preceding its \synhead{FocP} complement despite the
+ predominantly head-final organisation of the lower clause. An overt high
+ topic consequently precedes \ird{by}; an argument following \ird{by} remains
+ in the lower domain and may still be pragmatically topical. Scope hierarchy
+ alone does not determine this linearisation.
 
-Whether the topic in Spec,\synhead{TopP} arrives there by movement from a
-base-generated position within \synhead{IP}, or whether it is base-generated in
-that position with its predication role established by a long-distance Agree
-relation, is a question deliberately left open here. Both derivational routes
-are architecturally consistent with the clause spine
-(§\,\ref{sec:th-topic-comment-theory}); the present description is committal
-about the surface position of the topic and about the topic-comment
-interpretive division, while leaving the derivation of ordinary referential
-topics unresolved.
-Quantificational negative pivots are specifically analysed through movement
-and reconstruction (§\,\ref{sec:tc-quantificational-pivots}); that analysis
-does not settle the derivation of every ordinary topic.
-
+Linked topicalisation is analysed as an A$'$-dependency between the high
+ topic and a lower argument position. Case is licensed independently in the
+ verbal and aspectual domain, so movement to the topic field preserves the
+ argument's case. The case-preserving dependency distinguishes linked topics from resumptive
+ hanging topics (§\,\ref{sec:tc-multiple-topics}).
 
 \section{Topic and the information-structural field}\label{sec:tc-isf}
+\subsection{Topic versus focus}\label{sec:tc-focus-contrast}
 
-\subsection{Topic versus focus}
-\label{sec:tc-focus-contrast}
-
-Topic and focus are distinct operations in the Iridian left periphery and must
-not be conflated. The distinction is architectural: \synhead{TopP} is the topic
-projection, and \synhead{FocP} --- the position immediately above \synhead{IP}
-and below \synhead{PolP} --- is the focus projection. The two positions are not
-interchangeable, and the constituents that occupy them have different discourse
-functions.
-
-A topic is discourse-given or at least discourse-linkable: it establishes the
-individual about which the comment is a predication, and it typically introduces
-no new information in itself. A focus, by contrast, is the informationally or
-contrastively prominent element within the comment domain: it identifies the
-relevant variable in an answer to a question under discussion, or marks the
-constituent where the scalar or exhaustive interpretation is concentrated. The
-focus is an operator whose scope is internal to the comment; the topic is the
-frame within which that comment is interpreted.
-
-The two may co-occur, since topichood and focus are properties of different
-projections:
+A topic identifies what the utterance is about, whereas focus relates its
+ contribution to relevant alternatives, including the alternatives supplied by
+ a question under discussion \cite[§§\,3.1, 3.3.1]{krifka2008}. In an answer to
+ `What is Marek reading?', the book expression may carry narrow information
+ focus while Marek remains the topic. In an answer to `What is Marek doing?',
+ the larger reading predication may be focused. Ordinary information focus
+ does not itself entail exhaustive identification.
 
 \pex\label{ex:tc-top-foc}
 \a\label{ex:tc-top-only}%
@@ -367,55 +222,43 @@ projections:
 \gla Marek tak tóme obrojime.//
 \glb Marek.\Dir{} \Dem{}.\Prox{}.\Dir{} book.\Ind{} read-\Prog{}//
 \glft \trsl{Marek is reading this book.}
-      \lingcontext{topic only; focus in situ at comment-final position}//
+      \lingcontext{Marek-topic context; comment interpreted in situ}//
 \endgl
 \a\label{ex:tc-top-plus-foc}%
 \begingl
 \gla Marko tak tóme obrojime.//
 \glb Marek.\Dir{}.\Def{} \Dem{}.\Prox{}.\Dir{} book.\Ind{} read-\Prog{}//
-\glft \trsl{As for Marek, it is this book he is reading.}
-      \lingcontext{topic \ird{Marko}; \ird{tak tóme} fronted to Spec,\synhead{FocP}}//
+\glft \trsl{Marek is reading this book.}
+      \lingcontext{anchored Marek; compatible with narrow focus on the book}//
 \endgl
 \xe
 
-\noindent In (\ref{ex:tc-top-only}), Marek is the topic and the comment
-identifies his ongoing activity; the focus is in situ at the comment-final
-position (§\,\ref{sec:th-focus}). In (\ref{ex:tc-top-plus-foc}), Marek remains
-the topic --- the clause is still \emph{about} Marek --- but \ird{tak tóme} has
-been fronted to Spec,\synhead{FocP}, marking it as the focus: specifically this
-book is what Marek is reading. The topic is the discourse anchor; the focus is
-the marked operator within the comment.
+\noindent These strings differ in the anchoring of Marek, while the book
+ expression occupies the same position relative to the other overt words.
+ They therefore illustrate the compatibility of anchoring with different
+ contextual focus assignments, rather than an observable movement contrast.
+ \synhead{FocP} represents marked displacement in the clause-spine analysis,
+ although the position of overt \ird{by} in the wh-fronting paradigm remains
+ unresolved (§\,\ref{sec:th-wh-interrogation}). Neither that paradigm nor
+ the narrow-focus reading of these nominals independently identifies the
+ landing site.
 
-Several further contrasts follow from this architecture. A topic must be
-discourse-linkable; a focus need not be. A topic cannot by itself be the locus
-of new, unpredicted information; a focus can. A topic takes scope over the
-entire comment domain; a focus takes scope over the predicate field within that
-domain. These distinctions are maintained throughout the grammar, and material
-at the left periphery should always be identified as topic, focus, adverbial, or
-clause-typing particle before any structural claim is made about it.
-
+Low manner adverbs normally precede objects (§\,\ref{sec:word-order}).
+ Displacement of an object across such an adverb would provide a positional
+ diagnostic if it correlated with a stable focus interpretation. Its
+ grammaticality and interpretation remain unspecified.
+ The Turkish analysis of Özkan Grigoraş distinguishes higher discourse
+ positions from lower given material and in-situ information focus
+ \cite[§\,4.4.2]{ozkangrigoras2020}; it offers a comparative model for this separation,
+ without supplying the missing Iridian judgements.
 
 \subsection{Topic versus sentence adverbials and peripheral particles}
 \label{sec:tc-adverbials}
 
-A topic stands in an argumental predication relation with the comment, which
-predicates a property of the individual denoted by that topic. Sentence
-adverbials, evidential particles, and clause-typing operators may also precede
-the predicate, but their contributions frame the proposition or determine its
-interpretation rather than supply the individual about whom it is asserted.
-
-A \term{sentence adverbial} --- a temporal, locative, or modal adjunct that
-scopes over the proposition --- is not a constituent of the argument structure
-and is not the individual about which the comment predicates something.
-\ird{Bych} \trsl{yesterday}, for instance, provides a temporal frame for the
-event; the clause does not predicate a property \emph{of yesterday}. Similarly,
-\term{evidential particles} such as \ird{oče} occupy \synhead{EvidP}, which is
-above \synhead{TopP}: they contribute an epistemic or evidential stance on the
-proposition as a whole. These material types are licensed by their own
-projections in the left periphery and must be kept analytically separate from
-topical material.
-
-The following examples illustrate three distinct clause-initial configurations:
+Temporal and locative frames restrict the situation in which the proposition
+ is evaluated, while an aboutness topic identifies its subject matter.
+ Evidential and clause-typing particles contribute further operators. Their
+ initial position does not make them arguments or aboutness topics:
 
 \pex\label{ex:tc-adv-contrast}
 \a\label{ex:tc-adv-true-top}%
@@ -430,7 +273,7 @@ The following examples illustrate three distinct clause-initial configurations:
 \gla Bych by Marek v zdravime?//
 \glb yesterday \textsc{q} Marek.\Dir{} already sleep-\Prog{}//
 \glft \trsl{Was Marek already asleep yesterday?}
-      \lingcontext{temporal adverbial \ird{bych} above \synhead{PolP}; \ird{Marek} is still the topic}//
+      \lingcontext{temporal frame; \ird{Marek} is a lower direct-case argument}//
 \endgl
 \a\label{ex:tc-adv-evid}%
 \begingl
@@ -441,42 +284,23 @@ The following examples illustrate three distinct clause-initial configurations:
 \endgl
 \xe
 
-\noindent In (\ref{ex:tc-adv-true-top}), \ird{Marek} is the topic: the clause
-predicates a state of him. In (\ref{ex:tc-adv-adv}), \ird{bych} is a temporal
-adverbial adjoined above \synhead{PolP}; it provides the temporal frame. The
-clause still has a topic --- \ird{Marek} --- which follows the adverbial in the
-linear string. In (\ref{ex:tc-adv-evid}), \ird{oče} is the evidential particle
-in Spec,\synhead{EvidP}, scoping over the whole proposition including the topic.
-The topic is still \ird{Marko}.
-
-The practical consequence is significant: the left edge of an Iridian clause may
-contain a stack of material from distinct projections --- a speech-act particle,
-then an evidential, then a topic, then a clause-typing particle. An ordinary topic in Spec,\synhead{TopP} is the logical subject of predication;
-a quantificational pivot in that position is interpreted as described in
-§\,\ref{sec:tc-quantificational-pivots}. The
-remainder should be analysed in their own designated positions.
-
+\noindent In (\ref{ex:tc-adv-true-top}), Marek precedes \ird{by} in the high
+ topic position. In (\ref{ex:tc-adv-adv}), the temporal frame precedes the
+ question particle, while Marek follows it inside the lower clause. The latter
+ order is compatible with a conversation about Marek, but that pragmatic
+ relation does not place the overt nominal in Spec,\synhead{TopP}. In
+ (\ref{ex:tc-adv-evid}), mirative \ird{oče} occupies the upper evidential
+ field, preceding the anchored topic. These orders distinguish structural
+ topicalisation from both framing and contextual aboutness.
 
 \section{Topic in discourse: drop, absence, and multiplicity}\label{sec:tc-discourse}
-
-\subsection{Multiple topics and the hierarchy of the left periphery}
+\subsection{Linked topics, hanging topics, and frames}
 \label{sec:tc-multiple-topics}
 
-The architecture of \synhead{TopP} allows for the possibility that more than one
-topic-level projection is active in a clause. Ordinary Iridian clauses have a
-single topic in Spec,\synhead{TopP}, and iterated topic structure is not the
-default. But the grammar appears to permit a second topic projection in specific
-discourse environments, particularly where a \term{frame-setting topic}
-establishes a domain of quantification or a contrastive partition, and a lower
-\term{clause topic} identifies the individual about whom the comment predicates
-something within that frame.
-
-A frame-setting topic is a constituent that restricts the discourse domain in
-which the comment is interpreted. It does not name the individual that the
-comment is directly about; rather, it sets up a restricted context within which
-the clause topic is identified and the comment evaluated. Frame-setting topics
-are often formally marked by prosodic independence and, in some contexts, by a
-resumptive element within the lower clause that co-refers with the frame:
+A linked argument topic retains the case associated with its lower position.
+ A hanging topic instead establishes a discourse referent outside the argument
+ dependency, whose relation to the comment may be expressed by a resumptive
+ form. The following constructions illustrate the latter organisation:
 
 \pex\label{ex:tc-frame-top}
 \a\label{ex:tc-frame-town}%
@@ -484,58 +308,42 @@ resumptive element within the lower clause that co-refers with the frame:
 \gla Tak dvor Marko ten na bydlime.//
 \glb \Dem{}.\Prox{}.\Dir{} town.\Dir{} Marek.\Dir{}.\Def{} \Dem{}.\Prox{}.\Ind{} in live-\Prog{}//
 \glft \trsl{As for this town, Marek is living in it.}
-      \lingcontext{frame topic + clause topic; resumptive \ird{ten} co-refers with frame topic}//
+      \lingcontext{hanging frame + clause topic; resumptive \ird{ten} co-refers with frame topic}//
 \endgl
 \a\label{ex:tc-frame-marek}%
 \begingl
 \gla Marko tak tóm bych ktařnik.//
 \glb Marek.\Dir{}.\Def{} \Dem{}.\Prox{}.\Dir{} book.\Dir{} yesterday read-\Trs{}.\Pf{}//
 \glft \trsl{As for Marek, this book he read yesterday.}
-      \lingcontext{frame topic + ergative-domain absolutive topic}//
+      \lingcontext{hanging topic + direct-case patient}//
 \endgl
 \xe
 
-\noindent In (\ref{ex:tc-frame-town}), \ird{tak dvor} \trsl{this town} is the
-frame topic and \ird{Marko} is the clause topic; the resumptive pronoun
-\ird{ten} inside the comment co-refers with the frame topic. In
-(\ref{ex:tc-frame-marek}), \ird{Marko} is the frame topic and \ird{tak tóm}
-is the patient-absolutive topic of the ergative clause, within the frame of
-what Marek has done.
+\noindent In (\ref{ex:tc-frame-town}), direct-case \ird{tak dvor} establishes
+ the town as a frame, while indirect-case \ird{ten} supplies the complement of
+ \ird{na} within the clause. The external nominal therefore does not bear the
+ case of the resumed locative. In (\ref{ex:tc-frame-marek}), direct-case
+ \ird{Marko} is a hanging topic; a linked perfective agent would instead bear
+ transitive \ird{Markuto} (§\,\ref{sec:tc-marked-topics}). The patient
+ \ird{tak tóm} remains the direct-case pivot, and the unexpressed reader is
+ recovered as Marek through the hanging-topic relation.
 
-The distributional limits of iterated \synhead{TopP} await more detailed
-investigation. The structural possibility is licensed by the cartographic
-architecture: since \synhead{TopP} is a full projection with a specifier and a
-complement, it may in principle be embedded within a higher \synhead{TopP} whose
-specifier hosts the frame-setting topic. This analysis is consistent with
-evidence from topic continuity and topic shift in extended discourse
-(Chapter~\ref{ch:discourse}).
+External frames may combine with a clause-internal topic, yielding distinct
+ outer and inner relations to the comment. This distinction has an independent
+ comparative precedent in Aissen's analysis of Mayan \cite{aissen1992}.
+ In Iridian, the availability of embedded hanging topics and their locality
+ and intonational properties remain unspecified; the examples establish the
+ coexistence of the two constructions without requiring unrestricted
+ recursion of identical topic projections.
 
+\subsection{Topic drop and null topics}\label{sec:tc-topic-drop}
 
-\subsection{Topic drop and null topics}
-\label{sec:tc-topic-drop}
-
-Topic drop --- the absence of an overt topic \synhead{DP} when the referent is
-established by the prior discourse --- is the default strategy for topic
-continuation in Iridian. It is not a separate construction or the result of a
-dedicated deletion rule; it is the ordinary null spellout of Spec,\synhead{TopP}
-under discourse-conditioned recoverability. Spec,\synhead{TopP} remains
-syntactically present and semantically interpreted, although its referential
-value is supplied by the discourse rather than by an overt expression.
-
-The licensing condition is discourse recoverability. When the most recently
-topicalised referent has not shifted and remains available as the intended
-individual, Spec,\synhead{TopP} may be null. When the topic shifts, an overt
-\synhead{DP} is typically required to signal the new discourse centre, though a
-fronted pronoun with contrastive or resumptive force is also available. The
-interrogative particle \ird{by} retains its position below
-\synhead{TopP} when the topic is null and may consequently begin the overt
-clause. Lower comment particles retain their own order relative to the
-predicate and other comment material (§\,\ref{sec:th-topic}). Zone~\textsc{i}
-particles, which occupy pre-topic positions, likewise retain their place at
-the clause edge whether the topic is overt or unexpressed
-(§\,\ref{sec:th-particle-framework}).
-
-The following discourse sequence illustrates the pattern:
+A continuing topic may remain unexpressed when its referent is recoverable.
+ The grammar represents this configuration with a silent topic dependency,
+ while allowing other recoverable arguments to be null within the comment.
+ Consequently, absence of a nominal does not by itself identify its syntactic
+ position. An overt nominal or demonstrative can reintroduce a referent when
+ a change of topic or competing antecedents would otherwise obscure reference.
 
 \pex\label{ex:tc-topdrop}
 \a\label{ex:tc-topdrop-overt}%
@@ -560,54 +368,28 @@ The following discourse sequence illustrates the pattern:
 \endgl
 \xe
 
-\noindent The null topic in
-(\ref{ex:tc-topdrop-null1}--\ref{ex:tc-topdrop-null2}) is semantically
-interpreted as co-referential with \ird{Marko} from (\ref{ex:tc-topdrop-overt}).
-No referential shift has occurred, and no overt \synhead{DP} is needed. The
-question particle \ird{by} begins the overt question, whereas phasal
-\ird{v} remains within the comment, following the locative phrase and
-preceding \ird{jeca}. Neither particle has moved to replace the absent topic.
+\noindent Marek remains the intended referent throughout this exchange.
+ The question particle begins the overt question, and phasal \ird{v} remains
+ inside its comment. The answer continues the journey rather than placing
+ Marek at home. This sequence illustrates recoverable topic continuity, with
+ no competition between an established topic and a distinct grammatical pivot.
 
-Topic drop should be distinguished from radical pro-drop in languages that lack
-agreement morphology altogether. In Iridian, there is no verbal person
-agreement; the recoverability of null topics therefore depends entirely on
-discourse tracking and the prior absolutive pivot. The topic most naturally
-continued by zero anaphora is the most recent absolutive argument, not simply
-the most salient animate participant (§\,\ref{sec:th-topic};
-Chapter~\ref{ch:discourse}). This makes the absolutive status of the referent
---- not its agentive or grammatical-subject status --- the crucial factor in
-licensing null continuation.
-
+Iridian has no verbal person agreement to identify a null argument. Its
+ interpretation depends on discourse accessibility, the established topic,
+ the current predicate, and the case frame. The preceding direct-case pivot
+ supplies the neutral antecedent preference where no stronger topic has been
+ established; its case does not impose an exceptionless coreference rule.
+ Connected examples and the limits of this preference are discussed in
+ §\,\ref{sec:topic-continuity}.
 
 \subsection{Apparent and genuinely topicless clauses}
 \label{sec:tc-topicless}
 
-Not every clause without an overt topic \synhead{DP} is structurally topicless.
-The preceding section showed that null topics are the ordinary form of topic
-continuation under discourse recoverability. A clause that lacks an overt topic
-may therefore be either (a) a clause whose topic is syntactically present but
-phonologically null, or (b) a clause that genuinely lacks a topic --- one in
-which Spec,\synhead{TopP} is not projected, or is projected without an argument.
-Their discourse behaviour follows from the presence or absence of a
-referentially interpreted topic position.
-
-\term{Apparent topicless clauses} are clauses in which Spec,\synhead{TopP} is
-phonologically null but semantically filled. The null topic has a referential
-value recoverable from the discourse; it supports further topic continuation by
-zero anaphora; and it behaves structurally like any overt topic with respect to
-aspect selection and the ordering of comment-internal material.
-Examples~(\ref{ex:tc-topdrop-null1}--\ref{ex:tc-topdrop-null2}) above are
-apparent topicless clauses of this type.
-
-\term{Genuinely topicless clauses} lack an argumentally filled
-Spec,\synhead{TopP}. In a presentational use of the existential construction,
-the clause asserts the presence of an entity or situation without selecting it
-as the individual about whom a further property is predicated. Whether the
-pivot is a topic thus depends on the construction and its discourse use;
-novelty alone does not distinguish these clauses from an individuated
-indefinite topic such as (\ref{ex:tc-spec-indef-topic}). The existential
-construction with \ird{jec-} illustrates the presentational use
-(§\,\ref{sec:existential-constructions}):
+A clause with an unexpressed continuing topic differs from a genuinely
+ topicless presentation, which asserts a situation without selecting an
+ individual as the subject matter of a further comment. The latter is
+ analysed without an aboutness dependency in \synhead{TopP}; a direct-case
+ argument may remain inside the predicate domain.
 
 \pex\label{ex:tc-topicless}
 \a\label{ex:tc-apparent-topicless}%
@@ -615,14 +397,14 @@ construction with \ird{jec-} illustrates the presentational use
 \gla by koupnik?//
 \glb \textsc{q} buy-\Trs{}.\Pf{}//
 \glft \trsl{Did he buy it?}
-      \lingcontext{apparent topicless; null topic and null object, both recoverable}//
+      \lingcontext{apparent topicless; null patient and buyer, both recoverable}//
 \endgl
 \a\label{ex:tc-pres-topicless}%
 \begingl
-\gla Druh byl dumě na jeca.//
-\glb \Indef{} child.\Dir{} house.\Ind{} in \Exst{}-\Cont{}//
+\gla Si byl dumě na jeca.//
+\glb \Sanch{} child.\Dir{} house.\Ind{} in \Exst{}-\Cont{}//
 \glft \trsl{There is a certain child in the house.}
-      \lingcontext{genuinely topicless presentational; \ird{druh} individuates; entity introduced into discourse}//
+      \lingcontext{topicless presentation; speaker selects the child whose presence is asserted}//
 \endgl
 \a\label{ex:tc-exist-topicless}%
 \begingl
@@ -633,59 +415,32 @@ construction with \ird{jec-} illustrates the presentational use
 \endgl
 \xe
 
-\noindent In (\ref{ex:tc-apparent-topicless}), both the topic \synhead{DP} and
-the object are null but both are recoverable: the buyer and the thing bought
-have already been established in the discourse. Spec,\synhead{TopP} is present
-but phonologically empty. In
-(\ref{ex:tc-pres-topicless}--\ref{ex:tc-exist-topicless}), by contrast, the
-\ird{jec-} clauses introduce new referents into the discourse. There is no prior
-individual about whom the clause predicates a property: the child's presence
-and the remaining beer are presented as the content of the assertion. These clauses do not project an
-argumentally filled Spec,\synhead{TopP}.
+\noindent In (\ref{ex:tc-apparent-topicless}), perfective \ird{koupnik}
+ retains its patient-direct, agent-transitive case frame despite omission of
+ both arguments. The discourse must identify which referent, if either,
+ continues as the aboutness topic. The existential clauses in
+ (\ref{ex:tc-pres-topicless}--\ref{ex:tc-exist-topicless}) have presentational
+ readings: the child's presence and the remaining beer constitute the
+ assertion. The same nominal can become a topic in subsequent discourse.
+ Speaker selection by \ird{si} consequently does not force a categorical
+ topic--comment reading, just as direct case does not force one. A bare
+ \ird{byl} in the same existential frame would leave the speaker's ability
+ to identify the child unmarked. After either introduction, a following
+ \ird{Zdravime} \trsl{[He or she] is sleeping} can predicate sleep of that
+ child if the discourse now selects it as topic; the omission depends on
+ this recoverability, not on whether the first mention carried \ird{si}.
 
-A negative quantificational pivot in Spec,\synhead{TopP} constitutes a
-third configuration: the position is overtly occupied, although its occupant
-is not an ordinary referential topic
-(§\,\ref{sec:tc-quantificational-pivots}).
-
-Genuinely topicless clauses are not defective or marginal; they are a
-grammatically well-defined type in Iridian, closely associated with the
-\ird{jec-}/\ird{zad-} existential paradigm, with certain environmental
-predicates, and with presentational discourse moves that introduce entities for
-the first time. The distinction between an existential pivot and an aboutness topic therefore
-also applies to the locative and negative constructions described in
-§\,\ref{sec:existential-constructions}.
-
+A negative quantificational pivot likewise occupies the lower clause without
+ acquiring referential aboutness (§\,\ref{sec:tc-quantificational-pivots}).
+ Its negative-concord licensing differs from existential presentation, even
+ though neither construction requires a high referential topic.
 
 \section{Non-default topics: marked, promoted, and contrastive}\label{sec:tc-nondefault}
+\subsection{Linked topics in non-direct case}\label{sec:tc-marked-topics}
 
-\subsection{Marked topics: non-direct, resumptive, and promoted arguments}
-\label{sec:tc-marked-topics}
-
-The Absolutive--Topic Alignment principle (§\,\ref{sec:tc-abs-align}) identifies
-the direct-case pivot as the default topic. All departures from this default are
-marked: they signal that the speaker has a specific discourse motivation for
-presenting a non-absolutive participant as the clause's discourse centre, rather
-than accepting the mapping that aspect domain provides. Marked topics are
-therefore not free variants of ordinary topics; they carry additional
-interpretive weight and are associated with specific discourse functions.
-
-The nominal chapter establishes
-(§§\,\ref{sec:nm-topic-interface}--\ref{sec:nm-topic-oblique}) that anchoring on
-transitive-case and indirect-case \synhead{DP}s is always more plainly
-expressive of contrastive, resumptive, or topic-shift function than anchoring on
-direct-case \synhead{DP}s. The reason is structural: a transitive-case agent is
-not the absolutive pivot and is not in Spec,\synhead{TopP} under the neutral
-mapping; if such an agent bears the anchoring suffix, the anchoring performs an
-additional function --- signalling the agent's individuation or promotion ---
-beyond the baseline discourse-tracking role that anchoring has on direct-case
-\synhead{DP}s.
-
-In the ergative domain, the neutral clause has the patient as absolutive topic.
-A speaker who wishes instead to make the agent the discourse centre may either
-select a nominative-domain aspect (which makes the agent the absolutive pivot by
-aspect choice), or produce a marked clause in which the agent is specially
-fronted or anchored. The latter creates a marked agent topic. Compare:
+A perfective transitive may topicalise its agent while preserving the
+ patient-direct, agent-transitive case frame. The following clauses differ
+ in which participant the discourse selects for predication:
 
 \pex\label{ex:tc-marked-top}
 \a\label{ex:tc-neutral-top}%
@@ -693,53 +448,44 @@ fronted or anchored. The latter creates a marked agent topic. Compare:
 \gla Tak tóm Marku koupnik.//
 \glb \Dem{}.\Prox{}.\Dir{} book.\Dir{} Marek.\Trs{} buy-\Trs{}.\Pf{}//
 \glft \trsl{This book, Marek bought.}
-      \lingcontext{neutral ergative clause; patient = absolutive = topic}//
+      \lingcontext{book-topic context; patient = direct-case pivot}//
 \endgl
 \a\label{ex:tc-marked-agent-top}%
 \begingl
 \gla Markuto tak tóm koupnik.//
-\glb Marek-\Def{}.\Trs{} \Dem{}.\Prox{}.\Dir{} book.\Dir{} buy-\Trs{}.\Pf{}//
-\glft \trsl{As for Marek (himself), he bought this book.}
-      \lingcontext{marked: anchored agent in transitive case promoted to topic field}//
+\glb Marek.\Trs{}.\Def{} \Dem{}.\Prox{}.\Dir{} book.\Dir{} buy-\Trs{}.\Pf{}//
+\glft \trsl{As for Marek, he bought this book.}
+      \lingcontext{Marek-topic context; transitive agent in the high topic field}//
 \endgl
 \xe
 
-\noindent In (\ref{ex:tc-neutral-top}), the book is the absolutive pivot and the
-clause topic; Marek occupies the transitive case in the comment domain. In
-(\ref{ex:tc-marked-agent-top}), the anchored agent \ird{Markuto} has been
-promoted to or interpreted in the topic field, while the book retains the direct
-case. This is not the ordinary ergative mapping: the clause signals agent
-resumption, contrast, or local topic shift. The interpretive effect is typically
-one of emphasis or correction --- it was Marek, not someone else, who bought
-this book --- or a switch of discourse tracking onto Marek as the continuing
-topic.
+\noindent The first clause can answer a question about what happened to the
+ book, whereas the second can continue a discussion of what Marek did.
+ \ird{Markuto} retains transitive case and the book retains direct case;
+ neither aspect nor case assignment changes with the aboutness relation.
+ Since Marek's anchoring also differs, this pair is not a controlled
+ demonstration of word order alone. It nevertheless establishes that a
+ non-direct argument can serve as topic without becoming the absolutive.
 
-A directly comparable construction involving an indirect-case argument is also
-available when a recipient or beneficiary is being individuated as the most
-discourse-prominent participant. Such clauses are marked by the same criteria
-and are developed further in the discourse chapter (Chapter~\ref{ch:discourse}).
+Agent topicalisation may express continuation, reintroduction, or shift,
+ depending on context. Correction and contrast require their own discourse
+ support; they are not entailed by transitive case, by the anchoring suffix,
+ or by a topic interpretation. Under the linked-topic analysis, the agent
+ occupies Spec,\synhead{TopP} in an A$'$-dependency with its lower position,
+ while the direct-case book remains in the comment. The corresponding
+ hanging-topic construction has unmarked \ird{Marko} instead
+ (\ref{ex:tc-frame-marek}).
 
+\subsection{Contrastive topic}\label{sec:tc-contrastive-topic}
 
-\subsection{Contrastive topic}
-\label{sec:tc-contrastive-topic}
-
-Contrastive topic is a distinct phenomenon that should not be reduced to
-ordinary topic plus incidental emphasis, nor to focus. A \term{contrastive
-topic} is a topic bearing a contrastive feature: it establishes the clause as
-being about an individual X while simultaneously invoking a salient set of
-alternatives to X, implying that the comment may not hold of all members of that
-set. The structure is one of partial predications: the clause provides
-information about X, and the contrastive framing signals that the corresponding
-predication about the alternatives to X remains open or is differently answered.
-
-This differs from focus in a fundamental respect. In a focused clause, the focus
-constituent exhaustively identifies the relevant value within the comment (it is
-\emph{this book} that Marek is reading, not some other): the identification is
-within the predicate domain. In a contrastive topic construction, the
-contrastive element is the subject of the predication, not the identified value
-within the predicate: it is \emph{Marek} (among others) about whom this comment
-holds. The alternatives are not alternatives to the complement of the predicate
-but alternatives to the topic individual.
+A contrastive topic selects one member of a set about which parallel questions
+ are under discussion. Under `What are Marek and Janek reading?', a clause
+ about Marek can answer the subordinate question concerning him while leaving
+ the question concerning Janek open. Under `Who is reading this book?', the
+ name instead supplies a focus alternative. The contrastive topic contains a focus that evokes alternative
+ topics and organises the exchange into subquestions, whereas the focus
+ within the comment supplies alternatives relevant to the selected subquestion
+ \cite[§§\,5.2, 6.2]{krifka2008}.
 
 \pex\label{ex:tc-ctop}
 \a\label{ex:tc-ctop-ordinary}%
@@ -758,57 +504,37 @@ but alternatives to the topic individual.
 \endgl
 \a\label{ex:tc-ctop-obj}%
 \begingl
-\gla Tak tóm Marku koupnik, ale si tuto list ne.//
-\glb \Dem{}.\Prox{}.\Dir{} book.\Dir{} Marek.\Trs{} buy-\Trs{}.\Pf{} but \Sanch{} \Dem{}.\Med{}.\Dir{} letter.\Dir{} \Neg{}//
-\glft \trsl{This book, Marek bought; a certain particular letter, he did not.}
+\gla Tak tóm Marku koupnik, ale si list ne.//
+\glb \Dem{}.\Prox{}.\Dir{} book.\Dir{} Marek.\Trs{} buy-\Trs{}.\Pf{} but \Sanch{} letter.\Dir{} \Neg{}//
+\glft \trsl{This book, Marek bought; a certain letter, he did not.}
       \lingcontext{contrastive topic in ergative-domain clause; \ird{si} speaker-anchors the letter}//
 \endgl
 \xe
 
-\noindent In (\ref{ex:tc-ctop-ordinary}), Marek is an ordinary topic: the clause
-predicates reading of him, but no alternatives are invoked. In
-(\ref{ex:tc-ctop-contr}), the contrastive feature on \ird{Marko} signals that
-the addressee should consider the contrast with Janek: it is Marek (as opposed
-to Janek) about whom this reading predication holds. In (\ref{ex:tc-ctop-obj}),
-the contrastive topic is \ird{tak tóm} in an ergative-domain clause: this book
-(as opposed to a particular letter) is the thing Marek bought. The contrastive
-topic here is the patient-absolutive, the ordinary topic of an ergative clause,
-bearing an additional contrastive feature.
+\noindent The conjunction \ird{ale} makes the contrast between Marek and
+ Janek, or between the book and the letter, overt. In a context organised into
+ parallel questions about those referents, the initial nominals may function
+ as contrastive topics. The conjunction alone does not diagnose that
+ organisation: it also occurs in ordinary propositional contrasts.
 
-In the phonological component of the grammar, contrastive topics typically
-receive a distinct prosodic contour. This phrasal prominence leaves the
-position of lexical stress unchanged (§\,\ref{sec:stress}). What the present section establishes is that contrastive topics
-are syntactically and discourse-structurally distinct from both ordinary topics
-and from focus, and that Spec,\synhead{TopP} is the structural locus of both
-ordinary and contrastive topics, with the contrastive feature as the
-distinguishing property.
+Contrastive topics are described as having distinct phrasal prominence,
+ without relocation of lexical stress (§\,\ref{sec:stress}). The pitch
+ contour, boundary placement, and its distinction from narrow focus have no
+ specified tonal analysis. A rising contour or an obligatory pause therefore
+ cannot be inferred from the examples. The contrastive feature in
+ \synhead{TopP} represents their discourse interpretation rather than a newly
+ introduced particle or anchoring allomorph.
 
+\section{The topic--anchoring interface}\label{sec:tc-anchoring-interface}
 
-\section{The topic--anchoring interface}
-\label{sec:tc-anchoring-interface}
-
-The interaction between clause-level topichood and the nominal anchoring system
-is treated in detail in Chapter~\ref{ch:nouns}
-(§\,\ref{sec:nm-topic-interface}), where the \term{Topicality--Anchoring
-Harmony} preference is stated: a \synhead{DP} bearing the feature
-[\textsc{+top}] in Spec,\synhead{TopP} is preferentially realised with the
-anchoring suffix \ird{-to} in its nominal functional hierarchy. The present
-section draws out the descriptive consequence for the exposition of
-topic-comment structure.
-
-The preference rests on a straightforward functional logic. Topics are
-discourse-salient, discourse-trackable, and identified individuals. These are
-precisely the conditions that the anchoring suffix encodes: \ird{-to} signals
-that the referent is an anchored discourse token, tracked within the common
-ground (§\,\ref{sec:nm-def-semantics}). The strongest co-occurrence of topic and
-anchoring is therefore expected with ordinary referential topics. The preference
-is weaker with generic and bare nominal topics, where the relevant entity is a
-kind rather than a particular, and absent with null topics, which are by
-definition recoverable without overt morphology. Quantificational negative
-pivots do not acquire an anchoring requirement through their occupation of
-Spec,\synhead{TopP} (§\,\ref{sec:tc-quantificational-pivots}).
-
-A minimal contrast makes the distinction visible:
+The suffixal anchor \ird{-to}/\ird{-te} marks accessibility within the shared
+ discourse, whereas \ird{si} supports speaker-anchored individuation
+ (§\,\ref{sec:nm-spec}). Topicality concerns what is predicated about such
+ a referent. An anchored argument can remain backgrounded inside the comment,
+ and a new topic can be introduced without a hearer-shared anchor. The
+ \term{Topicality--Anchoring Harmony} preference
+ (§\,\ref{sec:nm-topic-interface}) describes their functional
+ compatibility rather than a requirement that Top value nominal anchoring.
 
 \pex\label{ex:tc-anch-contrast}
 \a\label{ex:tc-anch-overt}%
@@ -827,76 +553,36 @@ A minimal contrast makes the distinction visible:
 \endgl
 \xe
 
-\noindent The two clauses are truth-conditionally equivalent. The difference is
-discourse-structural: (\ref{ex:tc-anch-overt}) presents Marek as a trackable
-individual whose identity is being flagged in the common ground, whereas
-(\ref{ex:tc-anch-bare}) presents him as the clause topic without that additional
-marking. The anchoring suffix does not change the propositional content; it
-adjusts the degree to which the topic is explicitly registered as a discourse
-token. The Topicality--Anchoring Harmony preference is violable: bare nominal
-topics, generic topics, and contrastive topics may all appear without overt
-anchoring. The preference captures a statistical correlation with a structural
-explanation, not a categorical requirement.
+\noindent Both clauses can assert that Marek is already sleeping while
+ differing in explicit shared anchoring. Neither form alone determines
+ whether Marek continues an old topic or introduces a new one. The same
+ anchoring distinction is available in non-direct cases: an anchored
+ transitive agent or indirect recipient need not be contrastively topical.
+ In Distributed Morphology, Vocabulary Insertion realises the nominal features
+ already present in the nominal domain, while the topic dependency is
+ established independently in the clause. No additional topic exponent is
+ required on the finite verb.
 
+\section{Descriptive generalisations and their limits}\label{sec:tc-summary}
 
-\section{Summary}
-\label{sec:tc-summary}
+Iridian's topic-oriented organisation rests on the coexistence of case-retaining
+ linked topics, externally framed resumptive constructions, recoverable
+ continuation, and topicless presentation. The direct-case pivot supplies a
+ neutral aboutness candidate, whose selection remains sensitive to context.
+ These interacting properties provide a more precise characterisation than
+ an inference of topic prominence from alignment alone. Paul and Whitman's
+ comparative survey shows that such commonly invoked diagnostics as null
+ topics, multiple topics, overt marking, and wh-in-situ do not individually
+ delimit a unique topic-prominent type \cite{paulwhitman2017}.
 
-The analysis of topic-comment structure developed in this section can be
-summarised in the following claims:
-
-\begin{enumerate}[wide]
-\item The Iridian clause is organised primarily by a \term{topic-comment
-  bipartition}. The topic is the logical subject of predication; the comment is
-  the semantic predicate attributed to the topic. This articulation is
-  independent of grammatical subjecthood.
-
-\item The default topic of a neutral finite clause is the direct-case absolutive
-  pivot occupying Spec,\synhead{TopP}: the \term{Absolutive--Topic Alignment}.
-  In the imperfective aspects the absolutive is the agent; in the perfective and
-  retrospective it is the patient. The topic-comment system is therefore
-  inextricably tied to split-ergative alignment.
-
-\item Ordinary topics are discourse-identifiable, referential or kind-denoting,
-  and at least weakly specific or recoverable. The four principal types are
-  anchored referential \synhead{DP}s, null continuing topics, generics, and
-  discourse-linked specific indefinites. Quantificational pivots may occupy
-  Spec,\synhead{TopP} without becoming ordinary aboutness topics; negative
-  indefinites reconstruct below the negative operator.
-
-\item \synhead{TopP} is the highest argument-hosting projection in the clause
-  spine. The comment corresponds to the domain below \synhead{TopP}. Evidential
-  and speech-act projections are above \synhead{TopP} and do not belong to the
-  comment.
-
-\item Topic and focus are distinct left-peripheral operations: the topic is the
-  discourse anchor; the focus is the informationally or contrastively prominent
-  element within the comment. The two may co-occur in their respective
-  projections.
-
-\item Sentence adverbials, evidential particles, and clause-typing particles are
-  not topics; they occupy their own designated projections.
-
-\item \synhead{TopP} may be iterated in frame-setting and resumptive contexts,
-  yielding a frame-setting topic and a lower clause topic.
-
-\item Topic drop is the ordinary null spellout of Spec,\synhead{TopP} under
-  discourse recoverability, not the absence of topic structure.
-
-\item A clause without an overt topic may be an apparent topicless clause (null
-  topic present, recoverable from discourse) or a genuinely topicless clause (no
-  topic projected). Genuinely topicless clauses are associated primarily with
-  existential and presentational predicates.
-
-\item Marked topics --- anchored non-direct \synhead{DP}s, promoted agents,
-  individuated recipients --- are departures from the Absolutive--Topic
-  Alignment signalling resumption, contrast, or switch-tracking.
-
-\item Contrastive topics bear a contrastive feature, invoking alternatives to
-  the topic individual; they differ from both ordinary topics and from focus.
-
-\item Topics are preferentially anchored because anchoring and topicality are
-  functionally correlated; this preference is strongest with referential topics
-  and absent with null topics.
-\end{enumerate}
+The examples distinguish high topics from lower pivots by their case
+ relations, resumption, and position relative to \ird{by}. The pre-\ird{by} position of wh-phrases remains unresolved within the
+ stated clause spine (§\,\ref{sec:th-single-wh}). The examples also leave open
+ controlled contrasts for focus displacement,
+ competition between animate antecedents, extraction locality, or distinct
+ topic contours. Contextually controlled comparisons are central to the
+ documentation of topic, focus, and their contrastive counterparts
+ \cite{aissen2026}. Since the Iridian examples are constructed illustrations
+ of the grammar, their contextual interpretations are analytical assignments,
+ rather than reports of elicited judgements or corpus frequencies.
 
