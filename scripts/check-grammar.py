@@ -248,7 +248,7 @@ def check():
 
     # These are concrete obsolete outputs, not a general ban on lexical ě.
     obsolete = ('zdíčev', 'prku', 'prce', 'piaštiře', 'piaštoviře',
-                'piaščace', 'piaštnace', 'piaštimně', 'piaště',
+                'piaščace', 'piaštnace', 'piaščave', 'piaštnave', 'piaštimně', 'piaště',
                 'hradě', 'mostě', 'stolě', 'sobotě', 'skorně', 'mrocně',
                 'piastime', 'piastnime', 'tvírzně', 'ščehezně', 'mněrazně',
                 'kaměnzně', 'sylozně', 'barocezně', 'zmocezně', 'svícezně', 'kmětezně')
@@ -260,7 +260,7 @@ def check():
     combined = '\n'.join(sources.values())
     for form in ('raťe', 'raďe', 'raňe', 'raľe', 'ruce', 'lubcí', 'Marcí',
                  'zděcir', 'zdičev', 'piaščev', 'piaščice', 'piaščikou',
-                 'piaščacě', 'piaštnacě', 'piaštire', 'piaštovire'):
+                 'piaščavě', 'piaštnavě', 'piaštire', 'piaštovire'):
         if not re.search(r'(?<!\w)' + re.escape(form) + r'(?!\w)', combined):
             failures.append(f'missing grade regression example: {form}')
 
