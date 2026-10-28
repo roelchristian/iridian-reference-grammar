@@ -53,7 +53,7 @@
         "translation": "\\trsl{Marek is making the child eat bread.}"
       },
       {
-        "surface": "Travato Marku bylam piašt-na-nik.",
+        "surface": "Travó Marku bylam piašt-na-nik.",
         "gloss": "bread.\\Dir{}.\\Def{} Marek.\\Trs{} child.\\Ind{} eat-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek made the child eat the bread.}"
       }
