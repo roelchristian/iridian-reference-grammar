@@ -45,6 +45,7 @@ class SibilantMergerChecks(unittest.TestCase):
         for text in (r'\phon{šarc}{ˈɕarts}{door}',
                      r'\ird{či} \ipagloss{[tɕɪ]}',
                      r'\ird{ža} [ʑa]',
+                     r'\ird{ža} & [ʑa] & bell',
                      r'\phon{ci}{tsɪ}{sequence} \phon{ci}{tɕɪ}{sequence}'):
             with self.subTest(text=text):
                 self.assertTrue(any('alveolopalatal' in error
@@ -74,6 +75,23 @@ class SibilantMergerChecks(unittest.TestCase):
             with self.subTest(revised=revised):
                 self.assertTrue(checker.check_palatalisation(source.replace(original, revised), focused))
 
+    def test_fricative_derivations_preserve_mutation_and_quantity_together(self):
+        fixtures = json.loads((checker.ROOT / 'scripts/palatalisation-fixtures.json')
+                              .read_text(encoding='utf-8'))
+        derivations = [item for item in fixtures['derivations']
+                       if item['forms'][0] in {'les', 'stráz'}]
+        self.assertEqual(len(derivations), 2)
+        focused = {'derivations': derivations, 'classes': [], 'pronunciations': []}
+        source = (r'\subsection{PAL}\label{sec:front-softening}\pex '
+                  r'\a \ird{les} + \ird{-ě} $\rightarrow$ \ird{leše} '
+                  r'\a \ird{stráz} + \ird{-ě} $\rightarrow$ \ird{straže}\xe')
+        self.assertEqual(checker.check_palatalisation(source, focused), [])
+        for original, revised in (('leše', 'lese'), ('straže', 'straze'),
+                                  ('straže', 'stráže')):
+            with self.subTest(revised=revised):
+                self.assertTrue(checker.check_palatalisation(
+                    source.replace(original, revised), focused))
+
     def test_derivation_fixtures_reject_feeding_and_wrong_underlying_c_output(self):
         fixtures = json.loads((checker.ROOT / 'scripts/palatalisation-fixtures.json')
                               .read_text(encoding='utf-8'))
@@ -92,6 +110,9 @@ class SibilantMergerChecks(unittest.TestCase):
         # A correct output elsewhere cannot rescue the wrong derivation row.
         mutated = source.replace('ruce', 'ruče') + r'\ird{ruce}'
         self.assertTrue(checker.check_palatalisation(mutated, focused))
+        duplicate = source.replace(r'\xe',
+                                   r'\a \ird{ruk} + \ird{-ě} $\rightarrow$ \ird{ruče}\xe')
+        self.assertTrue(checker.check_palatalisation(duplicate, focused))
 
 
 if __name__ == '__main__':

@@ -119,8 +119,16 @@ def check_palatalisation(phonology, fixtures):
         section = '' if start < 0 else re.split(
             r'\\(?:subsection|section|chapter)\b', phonology[start:], maxsplit=1)[0]
         rows = re.findall(r'\\a\s+(.*?)(?=\\a\s|\\xe\b)', section, re.S)
-        found = any(re.findall(r'\\ird\{([^{}]+)\}', row) == fixture['forms']
-                    and r'\rightarrow' in row for row in rows)
+        derivations = [re.findall(r'\\ird\{([^{}]+)\}', row)
+                       for row in rows if r'\rightarrow' in row]
+        found = fixture['forms'] in derivations
+        # A surviving correct row must not conceal a contradictory duplicate
+        # with the same inputs in the section being checked.
+        for forms in derivations:
+            if forms[:-1] == fixture['forms'][:-1] and forms[-1:] != fixture['forms'][-1:]:
+                failures.append('palatalisation derivation: ' + fixture['process']
+                                + ': conflicting output ' + forms[-1]
+                                + ', expected ' + fixture['forms'][-1])
         if not found:
             failures.append('palatalisation derivation: ' + fixture['process']
                             + ': expected ' + ' + '.join(fixture['forms'][:-1])
@@ -203,7 +211,7 @@ def sibilant_spelling_checks(sources):
         ipa_examples.extend((m[1], text.count('\n', 0, m.start()) + 1)
                             for m in re.finditer(r'\\ipagloss\{\[([^{}]+)\]\}', text))
         ipa_examples.extend((m[1], text.count('\n', 0, m.start()) + 1)
-                            for m in re.finditer(r'\\ird\{[^{}]+\}\s*\[([^\[\]{}\n]+)\]', text))
+                            for m in re.finditer(r'\\ird\{[^{}]+\}\s*(?:&\s*)?\[([^\[\]{}\n]+)\]', text))
         for ipa, line in ipa_examples:
             if re.search('[ɕʑ]', ipa):
                 failures.append(f'{path}:{line}: superseded alveolopalatal pronunciation [{ipa}]')

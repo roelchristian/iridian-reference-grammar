@@ -81,6 +81,24 @@
         "rače"
       ],
       "process": "PAL underlying alveolar affricate; distinct from one-pass k to c"
+    },
+    {
+      "label": "sec:front-softening",
+      "forms": [
+        "les",
+        "-ě",
+        "leše"
+      ],
+      "process": "PAL alveolar fricative with plain e after postalveolar"
+    },
+    {
+      "label": "sec:front-softening",
+      "forms": [
+        "stráz",
+        "-ě",
+        "straže"
+      ],
+      "process": "PAL voiced fricative with independently selected short root grade"
     }
   ],
   "pronunciations": [
