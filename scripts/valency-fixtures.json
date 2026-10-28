@@ -33,12 +33,12 @@
     "label": "ex:val-caus-intransitive",
     "examples": [
       {
-        "surface": "Marek bylam zmacnajime.",
+        "surface": "Marek bylam zmacrime.",
         "gloss": "Marek.\\Dir{} child.\\Ind{} run-\\Caus{}-\\Prog{}",
         "translation": "\\trsl{Marek is making the child run.}"
       },
       {
-        "surface": "Byl Marku zmac-na-nik.",
+        "surface": "Byl Marku zmac-r-an-ik.",
         "gloss": "child.\\Dir{} Marek.\\Trs{} run-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek made the child run.}"
       }
@@ -48,12 +48,12 @@
     "label": "ex:val-caus-transitive",
     "examples": [
       {
-        "surface": "Marek bylam travě piaštnajime.",
+        "surface": "Marek bylam travě piaštrime.",
         "gloss": "Marek.\\Dir{} child.\\Ind{} bread.\\Ind{} eat-\\Caus{}-\\Prog{}",
         "translation": "\\trsl{Marek is making the child eat bread.}"
       },
       {
-        "surface": "Travó Marku bylam piašt-na-nik.",
+        "surface": "Travó Marku bylam piašt-r-an-ik.",
         "gloss": "bread.\\Dir{}.\\Def{} Marek.\\Trs{} child.\\Ind{} eat-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek made the child eat the bread.}"
       }
@@ -63,12 +63,12 @@
     "label": "ex:val-caus-appl",
     "examples": [
       {
-        "surface": "Marek bylac bylam travě piaštébnajime.",
+        "surface": "Marek bylac bylam travě piaštébrime.",
         "gloss": "Marek.\\Dir{} child.\\Ind{}.\\Pl{} child.\\Ind{} bread.\\Ind{} eat-\\Appl{}-\\Caus{}-\\Prog{}",
         "translation": "\\trsl{Marek is making the children eat bread for the child's benefit.}"
       },
       {
-        "surface": "Trava Marku bylac bylam piaštéb-na-nik.",
+        "surface": "Trava Marku bylac bylam piaštéb-r-an-ik.",
         "gloss": "bread.\\Dir{} Marek.\\Trs{} child.\\Ind{}.\\Pl{} child.\\Ind{} eat-\\Appl{}-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek made the children eat bread for the child's benefit.}"
       }
@@ -78,7 +78,7 @@
     "label": "ex:val-caus-antipassive",
     "examples": [
       {
-        "surface": "Byl Marku piašč-na-nik.",
+        "surface": "Byl Marku piaščeranik.",
         "gloss": "child.\\Dir{} Marek.\\Trs{} eat-\\Antip{}-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek made the child eat.}"
       }
@@ -93,12 +93,12 @@
         "translation": "\\trsl{The child arrived.}"
       },
       {
-        "surface": "Marek bylam ščennajime.",
+        "surface": "Marek bylam ščenerime.",
         "gloss": "Marek.\\Dir{} child.\\Ind{} arrive-\\Caus{}-\\Prog{}",
         "translation": "\\trsl{Marek is causing the child to arrive.}"
       },
       {
-        "surface": "Byl Marku ščen-na-nik.",
+        "surface": "Byl Marku ščen-er-an-ik.",
         "gloss": "child.\\Dir{} Marek.\\Trs{} arrive-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek caused the child to arrive.}"
       }
@@ -138,12 +138,12 @@
     "label": "ex:val-directive-caus",
     "examples": [
       {
-        "surface": "Trava bylam piaštnajím.",
+        "surface": "Trava bylam piaštrím.",
         "gloss": "bread.\\Dir{} child.\\Ind{} eat-\\Caus{}-\\Imp{}",
         "translation": "\\trsl{Make the child eat the bread.} \\lingcontext{causative; causee in \\Ind{}}"
       },
       {
-        "surface": "Jí trava bylam piaštnajím.",
+        "surface": "Jí trava bylam piaštrím.",
         "gloss": "2\\textsc{sg}.\\Trs{} bread.\\Dir{} child.\\Ind{} eat-\\Caus{}-\\Imp{}",
         "translation": "\\trsl{You make the child eat the bread.} \\lingcontext{overt subject in \\Trs{}}"
       }
@@ -153,12 +153,12 @@
     "label": "ex:val-directive-caus-intr",
     "examples": [
       {
-        "surface": "Byl zmacnajím.",
+        "surface": "Byl zmacrím.",
         "gloss": "child.\\Dir{} run-\\Caus{}-\\Imp{}",
         "translation": "\\trsl{Make the child run.} \\lingcontext{IPFV directive}"
       },
       {
-        "surface": "Byl zmacnajovím.",
+        "surface": "Byl zmacrovím.",
         "gloss": "child.\\Dir{} run-\\Caus{}-\\textsc{pfv.dom}-\\Imp{}",
         "translation": "\\trsl{Make the child run.} \\lingcontext{bounded PFV directive}"
       }
@@ -168,13 +168,13 @@
     "label": "ex:val-stative-caus",
     "examples": [
       {
-        "surface": "Marek problemam svornanime.",
+        "surface": "Marek problemam svornerime.",
         "gloss": "Marek.\\Dir{} problem.\\Ind{} be.big-\\Caus{}-\\Prog{}",
         "translation": "\\trsl{Marek is making the problem bigger.}"
       },
       {
-        "surface": "Problem Marku svornanik.",
-        "gloss": "problem.\\Dir{} Marek.\\Trs{} be.big-\\Caus{}.\\textsc{trs}-\\Pf{}",
+        "surface": "Problem Marku svorneranik.",
+        "gloss": "problem.\\Dir{} Marek.\\Trs{} be.big-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek made the problem bigger.}"
       }
     ]
@@ -213,12 +213,12 @@
     "label": "ex:val-caus-appl-intransitive",
     "examples": [
       {
-        "surface": "Marek bylac bylam zmacébnajime.",
+        "surface": "Marek bylac bylam zmacébrime.",
         "gloss": "Marek.\\Dir{} child.\\Ind{}.\\Pl{} child.\\Ind{} run-\\Appl{}-\\Caus{}-\\Prog{}",
         "translation": "\\trsl{Marek is making the children run for the child's benefit.}"
       },
       {
-        "surface": "Byl Marku bylac zmacéb-na-nik.",
+        "surface": "Byl Marku bylac zmacéb-r-an-ik.",
         "gloss": "child.\\Dir{} Marek.\\Trs{} child.\\Ind{}.\\Pl{} run-\\Appl{}-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek made the children run for the child's benefit.}"
       }
