@@ -1,5 +1,23 @@
 # Lexicon tools
 
+## Morphophonological source checks
+
+`make check-source` checks the active book's references, examples and prescribed
+forms, then runs the utility tests. The boundary reference implementation in
+`scripts/boundary_transducer.py` reads the four named grade bundles and IPA-token
+correspondences from `scripts/boundary-mapping.json`. Its expected outputs and
+negative cases are written separately in `scripts/boundary-fixtures.json`;
+they are not generated from the mapping table.
+
+The caller must supply the selected stem, its participating velar class, and a
+licensed, exposed morphological boundary. The transducer maps that input edge
+once before attaching the supplied exponent and records the boundary as consumed.
+It does not infer licences from spelling or suffix vowels, choose lexical or
+vocalic allomorphs, or perform antipassive exponence, coda phonetics or spelling.
+Constructed multi-boundary tests establish conditional locality properties;
+they do not add constructions to the language. Existing source-prescription
+fixtures remain separate from this limited executable model.
+
 ## Collect forms marked in the grammar
 
 From the repository root, run:

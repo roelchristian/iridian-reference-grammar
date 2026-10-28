@@ -16,7 +16,7 @@ def sources():
 \ird{kěda} & \ipagloss{[ˈkʲɛ.da]} & jail
 \phon{ťeda}{ˈcɛ.da}{cork}
 \label{tab:velar-fronting}
-Palatal/front & /k/ $\rightarrow$ /ts/ & front grade \\
+Front & /k/ $\rightarrow$ /ts/ & front grade \\
 Restricted velar-front & /k/ $\rightarrow$ /ts/ & restricted grade \\
 Yod & /k/ $\rightarrow$ /tʃ/ & yod grade \\
 \end{table}
@@ -89,7 +89,7 @@ class LexicalVelarTests(unittest.TestCase):
                             for error in checker.lexical_velar_checks(data)))
 
     def test_rejects_productive_output_changes(self):
-        for grade, before, after in (('Palatal/front', 'ts', 'kʲ'),
+        for grade, before, after in (('Front', 'ts', 'kʲ'),
                                      ('Restricted velar-front', 'ts', 'c'), ('Yod', 'tʃ', 'c')):
             with self.subTest(grade=grade):
                 data = sources()

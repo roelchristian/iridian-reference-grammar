@@ -1,0 +1,911 @@
+{
+  "description": "Independent literal expected outputs and negative cases. These data do not read or derive their expectations from boundary-mapping.json. Inputs have already undergone lexical and vocalic allomorph selection. Constructed chains test conditional operator properties only.",
+  "cases": [
+    {
+      "id": "plain-same-vowel",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "t"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "plain",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "t", "ɛ"]
+    },
+    {
+      "id": "front-coronal-stop",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "t"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "c", "ɛ"]
+    },
+    {
+      "id": "yod-coronal-stop",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "t"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "yod",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "c", "ɛ"]
+    },
+    {
+      "id": "restricted-no-coronal-pal",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "t"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "restricted",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "t", "ɛ"]
+    },
+    {
+      "id": "front-voiced-stop",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "d"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "ɟ", "ɛ"]
+    },
+    {
+      "id": "front-nasal",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "n"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "ɲ", "ɛ"]
+    },
+    {
+      "id": "front-lateral",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "l"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "ʎ", "ɛ"]
+    },
+    {
+      "id": "front-fricative",
+      "status": "Consonantal mapping in the established les/leše example; no stem vowel selection is performed.",
+      "input": ["l", "ɛ", "s"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["l", "ɛ", "ʃ", "ɛ"]
+    },
+    {
+      "id": "front-voiced-fricative",
+      "status": "Already selected short bound stem of stráz; short-vowel selection is outside the transducer.",
+      "input": ["s", "t", "r", "a", "z"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["s", "t", "r", "a", "ʒ", "ɛ"]
+    },
+    {
+      "id": "front-input-ts",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "ts"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "tʃ", "ɛ"]
+    },
+    {
+      "id": "yod-input-ts",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "ts"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "yod",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "tʃ", "ɛ"]
+    },
+    {
+      "id": "restricted-input-ts",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "ts"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "restricted",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "ts", "ɛ"]
+    },
+    {
+      "id": "conditional-input-ts",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "ts"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "plain",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɪ", "ts"]
+        }
+      ],
+      "expected": ["r", "a", "ts", "ɪ", "ts"]
+    },
+    {
+      "id": "front-participating-k",
+      "status": "Consonantal boundary of established ruk/ruce illustration.",
+      "input": ["r", "ʊ", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "ʊ", "ts", "ɛ"]
+    },
+    {
+      "id": "yod-participating-k",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "yod",
+          "licensed": true,
+          "velar_member": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "tʃ", "ɛ"]
+    },
+    {
+      "id": "restricted-participating-k",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "restricted",
+          "licensed": true,
+          "velar_member": true,
+          "suffix": ["ɪ", "r"]
+        }
+      ],
+      "expected": ["r", "a", "ts", "ɪ", "r"]
+    },
+    {
+      "id": "plain-participating-k",
+      "status": "Selected bound perk- with plain plural -óv; later coda/voicing realisation is outside this module.",
+      "input": ["p", "ɛ", "r", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "plain",
+          "licensed": true,
+          "velar_member": true,
+          "suffix": ["oː", "v"]
+        }
+      ],
+      "expected": ["p", "ɛ", "r", "k", "oː", "v"]
+    },
+    {
+      "id": "unassigned-k-remains-plain",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "k", "ɛ"]
+    },
+    {
+      "id": "palatalised-velar-not-plain-k",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["kʲ", "ɛ", "kʲ"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["kʲ", "ɛ", "kʲ", "ɛ"]
+    },
+    {
+      "id": "pal-labial-p",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "p"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "pʲ", "ɛ"]
+    },
+    {
+      "id": "pal-labial-b",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "b"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "bʲ", "ɛ"]
+    },
+    {
+      "id": "pal-labial-m",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "m"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "mʲ", "ɛ"]
+    },
+    {
+      "id": "pal-labial-v-before-phonetics",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "v"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "vʲ", "ɛ"]
+    },
+    {
+      "id": "restricted-labial-unchanged",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "v"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "restricted",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "v", "ɛ"]
+    },
+    {
+      "id": "plain-labial-before-i",
+      "status": "PAL does not apply; independently conditioned high-front phonetics follows outside this mapping.",
+      "input": ["a", "p"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "plain",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɪ"]
+        }
+      ],
+      "expected": ["a", "p", "ɪ"]
+    },
+    {
+      "id": "postalveolar-sh-stable",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "ʃ"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "ʃ", "ɛ"]
+    },
+    {
+      "id": "postalveolar-zh-stable",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "ʒ"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "yod",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "ʒ", "ɛ"]
+    },
+    {
+      "id": "postalveolar-ch-stable",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "tʃ"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "tʃ", "ɛ"]
+    },
+    {
+      "id": "lexical-palatal-stop-stable",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "c"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "c", "ɛ"]
+    },
+    {
+      "id": "rhotic-stable",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "r"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "r", "ɛ"]
+    },
+    {
+      "id": "velar-fricative-no-categorical-mutation",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "x"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "x", "ɛ"]
+    },
+    {
+      "id": "quantity-preserved",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "aː", "d"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "aː", "ɟ", "ɛ"]
+    },
+    {
+      "id": "edge-only-cluster",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["a", "s", "t"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "s", "c", "ɛ"]
+    },
+    {
+      "id": "selected-yod-cluster-allomorph",
+      "status": "Existing piašč- cluster allomorph supplied BEFORE boundary mapping; no antipassive or vowel grade is inferred.",
+      "input": ["pʲ", "a", "ʃ", "tʃ"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "yod",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ", "v"]
+        }
+      ],
+      "expected": ["pʲ", "a", "ʃ", "tʃ", "ɛ", "v"]
+    },
+    {
+      "id": "vowel-edge-plain",
+      "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
+      "input": ["r", "a"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "plain",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɪ", "ts"]
+        }
+      ],
+      "expected": ["r", "a", "ɪ", "ts"]
+    },
+    {
+      "id": "independent-outer-edge",
+      "status": "Constructed boundary-locality demonstration, not a claimed suffix sequence.",
+      "input": ["r", "ʊ", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": true,
+          "suffix": ["a", "t"]
+        },
+        {
+          "identifier": "outer",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "ʊ", "ts", "a", "c", "ɛ"]
+    },
+    {
+      "id": "independent-second-exposed-edge",
+      "status": "Constructed zero-exponent edge schema with TWO supplied licences, not an attested zero-suffix paradigm.",
+      "input": ["r", "ʊ", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": true
+        },
+        {
+          "identifier": "outer",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "ʊ", "tʃ", "ɛ"]
+    },
+    {
+      "id": "reject-same-boundary-replay",
+      "input": ["r", "ʊ", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": true
+        },
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true
+        }
+      ],
+      "error_contains": "already been interpreted"
+    },
+    {
+      "id": "reject-root-reaching-through-vowel",
+      "input": ["r", "ʊ", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": true,
+          "suffix": ["a"]
+        },
+        {
+          "identifier": "outer",
+          "grade": "front",
+          "licensed": true
+        }
+      ],
+      "error_contains": "vowel-final mutation"
+    },
+    {
+      "id": "reject-unlicensed-outer-boundary",
+      "input": ["r", "ʊ", "k"],
+      "boundaries": [
+        {
+          "identifier": "inner",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": true
+        },
+        {
+          "identifier": "outer",
+          "grade": "front",
+          "licensed": false
+        }
+      ],
+      "error_contains": "not licensed"
+    },
+    {
+      "id": "reject-unexposed-edge",
+      "input": ["r", "ʊ", "k"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "exposed_edge": false
+        }
+      ],
+      "error_contains": "not structurally exposed"
+    },
+    {
+      "id": "reject-free-feature-combination",
+      "input": ["r", "ʊ", "k"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "no-pal-yod",
+          "licensed": true
+        }
+      ],
+      "error_contains": "unlicensed grade"
+    },
+    {
+      "id": "reject-third-sibilant-series",
+      "input": ["a", "ɕ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true
+        }
+      ],
+      "error_contains": "unsupported phonological segment"
+    },
+    {
+      "id": "reject-orthographic-e-hook-input",
+      "input": ["r", "a", "t", "ě"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true
+        }
+      ],
+      "error_contains": "unsupported phonological segment"
+    },
+    {
+      "id": "reject-phonetic-approximant-as-underlying-v",
+      "input": ["a", "ʋ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true
+        }
+      ],
+      "error_contains": "unsupported phonological segment"
+    },
+    {
+      "id": "nonmember-yod",
+      "input": ["r", "a", "k"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "yod",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "k", "ɛ"]
+    },
+    {
+      "id": "nonmember-restricted",
+      "input": ["r", "a", "k"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "restricted",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["r", "a", "k", "ɛ"]
+    },
+    {
+      "id": "no-search-through-r",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "t", "r"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "t", "r", "ɛ"]
+    },
+    {
+      "id": "no-search-through-x",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "s", "x"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "s", "x", "ɛ"]
+    },
+    {
+      "id": "glide-stable",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "j"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "j", "ɛ"]
+    },
+    {
+      "id": "voiced-palatal-stop-stable",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "ɟ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "ɟ", "ɛ"]
+    },
+    {
+      "id": "palatal-nasal-stable",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "ɲ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "ɲ", "ɛ"]
+    },
+    {
+      "id": "palatal-lateral-stable",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "ʎ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "ʎ", "ɛ"]
+    },
+    {
+      "id": "soft-labial-p-stable",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "pʲ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "pʲ", "ɛ"]
+    },
+    {
+      "id": "soft-labial-b-stable",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "bʲ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "bʲ", "ɛ"]
+    },
+    {
+      "id": "soft-labial-m-stable",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "mʲ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "mʲ", "ɛ"]
+    },
+    {
+      "id": "soft-labial-v-stable",
+      "status": "Constructed input testing right-edge locality or stability of an already specified consonant, without claiming a lexical paradigm.",
+      "input": ["a", "vʲ"],
+      "boundaries": [
+        {
+          "identifier": "case",
+          "grade": "front",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["a", "vʲ", "ɛ"]
+    },
+    {
+      "id": "stored-preš-plural-edge",
+      "status": "Only the final edge of the already selected lexical plural allomorph is supplied. The mapping neither chooses that stem nor derives the whole paradigm. See Chapter 4 lexical irregular nouns.",
+      "input": ["ʃ"],
+      "boundaries": [
+        {
+          "identifier": "direct-plural",
+          "grade": "plain",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["ʃ", "ɛ"]
+    },
+    {
+      "id": "stored-naž-plural-edge",
+      "status": "Only the final edge of the already selected lexical plural allomorph is supplied. The mapping neither chooses that stem nor derives the whole paradigm. See Chapter 4 lexical irregular nouns.",
+      "input": ["ʒ"],
+      "boundaries": [
+        {
+          "identifier": "direct-plural",
+          "grade": "plain",
+          "licensed": true,
+          "suffix": ["ɛ"]
+        }
+      ],
+      "expected": ["ʒ", "ɛ"]
+    },
+    {
+      "id": "stored-študenc-plain-plural-edge",
+      "status": "Only the final edge of the already selected lexical plural allomorph is supplied. The mapping neither chooses that stem nor derives the whole paradigm. See Chapter 4 lexical irregular nouns.",
+      "input": ["ts"],
+      "boundaries": [
+        {
+          "identifier": "direct-plural",
+          "grade": "plain",
+          "licensed": true,
+          "suffix": ["iː"]
+        }
+      ],
+      "expected": ["ts", "iː"]
+    },
+    {
+      "id": "stored-študent-plain-plural-edge",
+      "status": "Only the final edge of the already selected lexical plural allomorph is supplied. The mapping neither chooses that stem nor derives the whole paradigm. See Chapter 4 lexical irregular nouns.",
+      "input": ["t"],
+      "boundaries": [
+        {
+          "identifier": "direct-plural",
+          "grade": "plain",
+          "licensed": true,
+          "suffix": ["iː"]
+        }
+      ],
+      "expected": ["t", "iː"]
+    }
+  ]
+}
