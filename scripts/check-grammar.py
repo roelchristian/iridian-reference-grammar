@@ -158,6 +158,58 @@ def check_palatalisation(phonology, fixtures):
     return failures
 
 
+def spelling_nuclei(form):
+    """Count written nuclei, allowing silent i only in labial CiV spellings.
+
+    Lexical kě retains its written vowel nucleus. Neither lexical velar softness
+    nor the spelling of a sibilant licenses suppressing an arbitrary i before
+    a back vowel. Loan hiatus requires an explicit lexical pronunciation and is
+    outside this deliberately narrow native-spelling check.
+    """
+    spelling = re.sub(r'(?<=[pbmv])i(?=[aáoóuú])', '', form.lower())
+    return len(re.findall(r'[aeiouyáéíóúýě]', spelling.replace('ou', 'o')))
+
+
+def sibilant_spelling_checks(sources):
+    """Reject superseded outputs in active examples, preserving other lexical ě.
+
+    Explicitly starred forms may illustrate rejected spellings. Prose discussing
+    an older transcription is not an active example; phon macros, paired IPA,
+    lexicon headwords and interlinear surface lines are checked as data.
+    """
+    failures = []
+    old_spellings = re.compile(r'[szc]ě', re.IGNORECASE)
+    redundant = re.compile(r'[ťďňľčšž]ě', re.IGNORECASE)
+    old_words = re.compile(r'(?<!\w)(?:siarc|zia|ziou|ciu)(?!\w)', re.IGNORECASE)
+    for path, raw in sources.items():
+        text = strip_comments(raw)
+        examples = [(m[1], text.count('\n', 0, m.start()) + 1)
+                    for m in re.finditer(r'\\(?:irdp?|phon|lexentry)\{([^{}]+)\}', text)]
+        examples.extend((m[1], text.count('\n', 0, m.start()) + 1)
+                        for m in re.finditer(r'\\gla\s+(.+?)//', text, re.S))
+        for form, line in examples:
+            if form.lstrip().startswith('*'):
+                continue
+            if old_spellings.search(form):
+                failures.append(f'{path}:{line}: superseded sibilant spelling {form}')
+            if redundant.search(form):
+                failures.append(f'{path}:{line}: redundant palatal spelling {form}')
+            if old_words.search(form):
+                failures.append(f'{path}:{line}: superseded silent-i sibilant spelling {form}')
+        # Retired alveolopalatals must not survive in published pronunciation
+        # data even when a correct duplicate occurs elsewhere in the chapter.
+        ipa_examples = [(record['pronunciation'], record['line'])
+                        for record in extract(text, path) if record['macro'] == 'phon']
+        ipa_examples.extend((m[1], text.count('\n', 0, m.start()) + 1)
+                            for m in re.finditer(r'\\ipagloss\{\[([^{}]+)\]\}', text))
+        ipa_examples.extend((m[1], text.count('\n', 0, m.start()) + 1)
+                            for m in re.finditer(r'\\ird\{[^{}]+\}\s*\[([^\[\]{}\n]+)\]', text))
+        for ipa, line in ipa_examples:
+            if re.search('[ɕʑ]', ipa):
+                failures.append(f'{path}:{line}: superseded alveolopalatal pronunciation [{ipa}]')
+    return failures
+
+
 def check_valency(verbal, fixtures):
     """Preserve reviewed forms, glosses and translations in finite paradigms.
 
@@ -214,6 +266,7 @@ def check_valency(verbal, fixtures):
 def check():
     sources = active_sources(ROOT / 'grammar.tex')
     failures = lexical_velar_checks(sources)
+    failures.extend(sibilant_spelling_checks(sources))
     labels, bibliography = Counter(), Counter()
     references, citations = [], []
     aligned = 0
@@ -267,7 +320,7 @@ def check():
     # Independently fixed expectations: (nuclei, nuclei before primary stress).
     # Count actual IPA vowels, excluding the nonsyllabic second part of /ou̯/.
     expected = {'piaštnik': (2, 0), 'zapiaštnik': (3, 1),
-                'premrocna': (3, 0), 'siarc': (1, 0),
+                'premrocna': (3, 0), 'šarc': (1, 0),
                 'piaštou': (2, 0), 'perek': (2, 0), 'perku': (2, 0), 'perce': (2, 0)}
     valency_fixtures = json.loads(
         (ROOT / 'scripts/valency-fixtures.json').read_text(encoding='utf-8'))
@@ -295,24 +348,15 @@ def check():
             failures.append(f'stress table: {form}: unexpected syllabic liquid or quantity change')
     pronunciations = 0
     for path, text in sources.items():
-        for word in re.findall(r'\\ird\{([^{}]+)\}', text):
-            if re.search(r'[ťďňľčšž]ě', word) and not word.startswith('*'):
-                failures.append(f'{path}: redundant palatal spelling {word}')
-        for match in re.finditer(r'\\gla\s+(.+?)//', text, re.S):
-            if re.search(r'[ťďňľčšž]ě', match[1]):
-                line = text.count('\n', 0, match.start()) + 1
-                failures.append(f'{path}:{line}: redundant palatal spelling in example')
         for record in extract(text, path):
             if record['macro'] != 'phon':
                 continue
             form, ipa = record['form'], record['pronunciation']
             pronunciations += 1
             # Only explicit examples are checked, not inferred dictionary IPA.
-            # Nonvocalic i is permitted before the six specified back vowels;
-            # ou is one nucleus. No syllabic-liquid repair is licensed.
-            spelling = re.sub(r'(?<=[^aeiouyáéíóúýě])i(?=[aáoóuú])', '', form.lower())
-            spelling = spelling.replace('ou', 'o')
-            count = len(re.findall(r'[aeiouyáéíóúýě]', spelling))
+            # Labial silent i and diphthong ou do not add a nucleus.
+            # Sibilants and lexical kě retain their stated segmental values.
+            count = spelling_nuclei(form)
             ipa_nuclei = len(re.findall(vowels, re.sub(r'.[\u032f\u0311]', '', ipa)))
             if count != ipa_nuclei:
                 failures.append(f"{path}:{record['line']}: {form}: spelling/IPA nucleus mismatch ({count}/{ipa_nuclei})")

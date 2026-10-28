@@ -1,5 +1,5 @@
 {
-  "description": "Independent source regressions for established examples, not a generative phonological analysis. Inputs, outputs and pronunciations are checked together; no new lexical contrasts are asserted.",
+  "description": "Independent source regressions for canonical two-series sibilants, one-pass morphological grades, and retained lexical palatals. Inputs, outputs and pronunciations are checked together; schematic derivations do not assert lexical attestation.",
   "derivations": [
     {
       "label": "sec:front-softening",
@@ -72,6 +72,15 @@
         "piaščice"
       ],
       "process": "outer linker targets aspect exponent; bound -ik-"
+    },
+    {
+      "label": "sec:front-softening",
+      "forms": [
+        "rac",
+        "-e",
+        "rače"
+      ],
+      "process": "PAL underlying alveolar affricate; distinct from one-pass k to c"
     }
   ],
   "pronunciations": [
@@ -91,14 +100,9 @@
       "process": "postalveolar before ɛ"
     },
     {
-      "form": "sěbec",
-      "ipa": "ɕɛbɛts",
-      "process": "alveolopalatal before ɛ"
-    },
-    {
-      "form": "siarc",
-      "ipa": "ˈɕarts",
-      "process": "lexical alveolopalatal before back vowel; nonvocalic i"
+      "form": "šarc",
+      "ipa": "ˈʃarts",
+      "process": "merged postalveolar before back vowel; no silent i"
     },
     {
       "form": "kěda",
@@ -114,6 +118,46 @@
       "form": "piaštnik",
       "ipa": "ˈpʲaʃt.nɪk",
       "process": "lexical labial softness before back vowel"
+    },
+    {
+      "form": "ce",
+      "ipa": "tsɛ",
+      "process": "alveolar affricate before ɛ"
+    },
+    {
+      "form": "če",
+      "ipa": "tʃɛ",
+      "process": "postalveolar affricate before ɛ"
+    },
+    {
+      "form": "si",
+      "ipa": "sɪ",
+      "process": "plain sibilant before pronounced high front vowel"
+    },
+    {
+      "form": "ši",
+      "ipa": "ʃɪ",
+      "process": "postalveolar before pronounced high front vowel"
+    },
+    {
+      "form": "ci",
+      "ipa": "tsɪ",
+      "process": "plain affricate before pronounced high front vowel"
+    },
+    {
+      "form": "či",
+      "ipa": "tʃɪ",
+      "process": "postalveolar affricate before pronounced high front vowel"
+    },
+    {
+      "form": "Marcí",
+      "ipa": "ˈmar.tsiː",
+      "process": "one-pass k to ts remains alveolar before long high front vowel"
+    },
+    {
+      "form": "lubcí",
+      "ipa": "ˈlup.tsiː",
+      "process": "one-pass k to ts with regressive devoicing; no categorical softening"
     }
   ],
   "classes": [
