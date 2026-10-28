@@ -906,6 +906,114 @@
         }
       ],
       "expected": ["t", "iː"]
+    },
+    {
+      "id": "causative-listed-mutating-edge",
+      "status": "Established vad-/vaďer- causative; selected stem edge and overt exponent only, before inflection.",
+      "input": [
+        "v",
+        "a",
+        "d"
+      ],
+      "boundaries": [
+        {
+          "identifier": "causative",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": [
+            "ɛ",
+            "r"
+          ]
+        }
+      ],
+      "expected": [
+        "v",
+        "a",
+        "ɟ",
+        "ɛ",
+        "r"
+      ]
+    },
+    {
+      "id": "causative-outer-yod-preserves-rhotic-edge",
+      "status": "Established piašt-r- plus irrealis -ěv gives piaštrev; causative intervenes between root and outer grade.",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t"
+      ],
+      "boundaries": [
+        {
+          "identifier": "causative",
+          "grade": "plain",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": [
+            "r"
+          ]
+        },
+        {
+          "identifier": "irrealis",
+          "grade": "yod",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": [
+            "ɛ",
+            "v"
+          ]
+        }
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "r",
+        "ɛ",
+        "v"
+      ]
+    },
+    {
+      "id": "causative-outer-front-preserves-rhotic-edge",
+      "status": "Established piašt-r- plus simultaneous -ěc gives piaštrec; no root mutation through the causative.",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t"
+      ],
+      "boundaries": [
+        {
+          "identifier": "causative",
+          "grade": "plain",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": [
+            "r"
+          ]
+        },
+        {
+          "identifier": "simultaneous",
+          "grade": "front",
+          "licensed": true,
+          "velar_member": false,
+          "suffix": [
+            "ɛ",
+            "ts"
+          ]
+        }
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "r",
+        "ɛ",
+        "ts"
+      ]
     }
   ]
 }
