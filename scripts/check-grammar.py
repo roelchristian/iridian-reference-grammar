@@ -15,7 +15,9 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'util'))
+sys.path.insert(0, str(ROOT / 'scripts'))
 from collect_lexicon import extract, strip_comments  # noqa: E402
+from boundary_transducer import BoundaryTransducer, check_boundary_fixtures  # noqa: E402
 
 
 def active_sources(path, seen=None):
@@ -97,7 +99,7 @@ def lexical_velar_checks(sources):
     if table is None:
         failures.append('missing productive velar-grade table')
     else:
-        for grade, output in (('Palatal/front', 'ts'), ('Restricted velar-front', 'ts'), ('Yod', 'tʃ')):
+        for grade, output in (('Front', 'ts'), ('Restricted velar-front', 'ts'), ('Yod', 'tʃ')):
             row = re.search(re.escape(grade) + r'\s*&\s*/k/\s*\$\\rightarrow\$\s*/([^/]+)/', table[1])
             if row is None or row[1] != output:
                 failures.append(f'productive {grade} grade must retain /k/ → /{output}/')
@@ -274,6 +276,23 @@ def check_valency(verbal, fixtures):
 def check():
     sources = active_sources(ROOT / 'grammar.tex')
     failures = lexical_velar_checks(sources)
+    boundary_mapper = BoundaryTransducer.from_file()
+    boundary_fixtures = json.loads((ROOT / 'scripts/boundary-fixtures.json').read_text(encoding='utf-8'))
+    failures.extend(check_boundary_fixtures(boundary_mapper, boundary_fixtures))
+    # The independently written prose table must describe the implemented bundles.
+    phonology = sources['chapters/02-phonology.tex']
+    registry = re.search(r'\\label\{tab:licensed-grades\}(.*?)\\end\{table\}', phonology, re.S)
+    if registry is None:
+        failures.append('missing licensed-grade specification table')
+    else:
+        for name, display in (('plain', 'Plain'), ('front', 'Front'), ('yod', 'Yod'),
+                              ('restricted', 'Restricted velar-front')):
+            spec = boundary_mapper.rules['grades'][name]
+            pal = 'yes' if spec['coronal_labial_pal'] else 'no'
+            velar = 'unchanged /k/' if spec['velar_output'] == 'identity' else '/' + spec['velar_output'] + '/'
+            pattern = re.escape(display) + r'\s*&\s*' + pal + r'\s*&\s*' + re.escape(velar) + r'\s*&'
+            if not re.search(pattern, registry[1]):
+                failures.append('boundary grade specification differs between prose and mapping: ' + name)
     failures.extend(sibilant_spelling_checks(sources))
     labels, bibliography = Counter(), Counter()
     references, citations = [], []
@@ -379,6 +398,7 @@ def check():
           f'{len(references)} references, {len(citations)} citations; '
           f'{aligned} interlinear alignments, {len(valency_fixtures)} valency paradigms, '
           f'{len(expected)} stress fixtures, '
+          f"{len(boundary_fixtures['cases'])} independent boundary fixtures, "
           f"{sum(len(palatalisation_fixtures[key]) for key in ('derivations', 'pronunciations', 'classes'))} palatalisation fixtures, "
           f'{pronunciations} explicit pronunciation/quantity examples '
           'and lexical-velar/obsolete-spelling checks.')
