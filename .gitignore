@@ -42,6 +42,7 @@ drafts/
 util/*
 !util/lexicon.tex
 !util/negation-references.tex
+!util/phasal-polarity-diagram.tex
 !util/collect_lexicon.py
 !util/tests/
 !util/tests/test_collect_lexicon.py

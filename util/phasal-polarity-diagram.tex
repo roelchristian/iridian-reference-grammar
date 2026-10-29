@@ -1,0 +1,34 @@
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  x=1cm,y=1cm,
+  every node/.style={font=\small},
+  phaslabel/.style={anchor=east},
+  truth/.style={draw,rounded corners,minimum width=1.3cm,minimum height=.55cm}
+]
+% Arguments: row y, particle, scope, preceding P-value, reference P-value, reading.
+% P is the positive base proposition in every row, including the negative rows.
+\newcommand{\PhasalRow}[6]{%
+  \node[phaslabel] at (0,#1) {\ird{#2} $#3$};
+  \node[truth] (before#2#1) at (1.4,#1) {$#4$};
+  \node[truth] (now#2#1) at (4.0,#1) {$#5$};
+  \draw[->] (before#2#1) -- (now#2#1);
+  \node[anchor=west] at (5.0,#1) {#6};
+}
+\node at (1.4,.7) {preceding stage};
+\node at (4.0,.7) {reference stage};
+\PhasalRow{0}{vy}{P}{\neg P}{P}{already}
+\PhasalRow{-1}{so}{P}{P}{P}{still}
+\PhasalRow{-2}{vy}{(\neg P)}{P}{\neg P}{no longer}
+\PhasalRow{-3}{so}{(\neg P)}{\neg P}{\neg P}{not yet}
+\end{tikzpicture}
+\caption{Ordinary phasal polarity. The boxes give the truth value of the
+positive base proposition $P$, while the left-hand labels show the proposition
+within the particle's scope. The preceding stage is the contextually relevant
+predecessor, not an arbitrarily remote occasion. The reference-stage proposition
+is asserted; the preceding-stage contrast or persistence supplies its phasal
+background. These time-based schemata do not by themselves derive scalar,
+additive, or projected interpretations. In particular, \trsl{not yet} does not
+assert a later transition to $P$.}
+\label{fig:phasal-polarity}
+\end{figure}

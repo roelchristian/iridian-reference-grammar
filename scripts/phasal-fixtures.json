@@ -1,0 +1,243 @@
+{
+  "diagram_rows": [
+    {
+      "y": "0",
+      "particle": "vy",
+      "scope": "P",
+      "before": "\\neg P",
+      "now": "P",
+      "reading": "already"
+    },
+    {
+      "y": "-1",
+      "particle": "so",
+      "scope": "P",
+      "before": "P",
+      "now": "P",
+      "reading": "still"
+    },
+    {
+      "y": "-2",
+      "particle": "vy",
+      "scope": "(\\neg P)",
+      "before": "P",
+      "now": "\\neg P",
+      "reading": "no longer"
+    },
+    {
+      "y": "-3",
+      "particle": "so",
+      "scope": "(\\neg P)",
+      "before": "\\neg P",
+      "now": "\\neg P",
+      "reading": "not yet"
+    }
+  ],
+  "phases": [
+    {
+      "particle": "vy",
+      "negative": false,
+      "before_p": false,
+      "now_p": true,
+      "licensed": true
+    },
+    {
+      "particle": "so",
+      "negative": false,
+      "before_p": true,
+      "now_p": true,
+      "licensed": true
+    },
+    {
+      "particle": "vy",
+      "negative": true,
+      "before_p": true,
+      "now_p": false,
+      "licensed": true
+    },
+    {
+      "particle": "so",
+      "negative": true,
+      "before_p": false,
+      "now_p": false,
+      "licensed": true
+    },
+    {
+      "particle": "vy",
+      "negative": false,
+      "before_p": true,
+      "now_p": true,
+      "licensed": false
+    },
+    {
+      "particle": "so",
+      "negative": false,
+      "before_p": false,
+      "now_p": true,
+      "licensed": false
+    },
+    {
+      "particle": "vy",
+      "negative": true,
+      "before_p": false,
+      "now_p": false,
+      "licensed": false
+    },
+    {
+      "particle": "so",
+      "negative": true,
+      "before_p": true,
+      "now_p": false,
+      "licensed": false
+    },
+    {
+      "particle": "vy",
+      "negative": false,
+      "before_p": false,
+      "now_p": false,
+      "licensed": false
+    },
+    {
+      "particle": "so",
+      "negative": false,
+      "before_p": true,
+      "now_p": false,
+      "licensed": false
+    }
+  ],
+  "exclusive_diagnostics": [
+    {
+      "particle": "so",
+      "before": [
+        true,
+        true
+      ],
+      "now": [
+        true,
+        false
+      ],
+      "high_exclusive": true,
+      "low_exclusive": false
+    },
+    {
+      "particle": "vy",
+      "before": [
+        true,
+        true
+      ],
+      "now": [
+        true,
+        false
+      ],
+      "high_exclusive": false,
+      "low_exclusive": true
+    },
+    {
+      "particle": "so",
+      "before": [
+        true,
+        false
+      ],
+      "now": [
+        true,
+        false
+      ],
+      "high_exclusive": true,
+      "low_exclusive": true
+    }
+  ],
+  "source_examples": [
+    {
+      "form": "Janek soboťe so ščének.",
+      "context": [
+        "Janek visited on Friday",
+        "another arrival"
+      ],
+      "gloss": "additional arrive-\\Pf{}",
+      "translation": "Janek arrived on Saturday too."
+    },
+    {
+      "form": "Magazinam de bych so stójek!",
+      "context": [
+        "least likely"
+      ],
+      "gloss": "additional go-\\Pf{}",
+      "translation": "I even went to the store yesterday!"
+    },
+    {
+      "form": "Moc vy piaštím!",
+      "context": [],
+      "gloss": "affirm already eat-\\Imp{}",
+      "translation": "Go on, eat already!"
+    },
+    {
+      "form": "Ježe Marku so piaštník?",
+      "context": [
+        "Marek has eaten bread",
+        "another item"
+      ],
+      "gloss": "what Marek.\\Trs{} additional eat-\\Trs{}-\\Pf{}",
+      "translation": "What else did Marek eat?"
+    },
+    {
+      "form": "Mlada Janek so ščének.",
+      "context": [
+        "His coming was already a desired possibility and remains one",
+        "Janek has not arrived"
+      ],
+      "gloss": "desiderative Janek.\\Dir{} still arrive-\\Pf{}",
+      "translation": "I hope Janek still comes."
+    }
+  ],
+  "source_paragraphs": [
+    {
+      "anchor": "Contemplative predicates contribute",
+      "end": "\\begin{table}",
+      "required": [
+        "the particle alone does not assert that Janek will have completed his arrival by Saturday",
+        "not a presupposed actual occurrence"
+      ]
+    },
+    {
+      "anchor": "Scalar \\trsl{even} requires",
+      "end": "\\pex",
+      "required": [
+        "the context must order alternatives",
+        "without that ordering, \\ird{so} supplies addition, not surprise"
+      ]
+    },
+    {
+      "anchor": "\\paragraph{Jas}",
+      "end": "\\subsection{Class 3",
+      "required": [
+        "an earlier occurrence",
+        "relevant discontinuity",
+        "renewed-occurrence reading"
+      ]
+    }
+  ],
+  "exclusive_source_examples": [
+    {
+      "scope": "\\mathrm{EXCL}_{A}(\\mathrm{SO}(P))",
+      "context": [
+        "Janek and Marek were doctors",
+        "Matuš has just qualified"
+      ],
+      "translation": "Only Janek is still a doctor.",
+      "diagnostic": "Matuš's newly acquired qualification does not contradict the claim"
+    },
+    {
+      "scope": "\\mathrm{SO}(\\mathrm{EXCL}_{A}(P))",
+      "context": [
+        "Janek was the only doctor among the same three people",
+        "neither of the others has qualified"
+      ],
+      "translation": "It is still only Janek who is a doctor.",
+      "diagnostic": "another current doctor in that set would contradict the claim"
+    }
+  ],
+  "diagram_bindings": [
+    "(before#2#1) at (1.4,#1) {$#4$}",
+    "(now#2#1) at (4.0,#1) {$#5$}"
+  ]
+}
