@@ -93,6 +93,31 @@ it does not distinguish a false assertion from a failed presupposition or model
 presupposition projection under Mood. Locality is supplied explicitly: rejection
 of a declared boundary does not establish automatic boundary detection.
 
+## Stative design diagnostics
+
+`scripts/stative_diagnostics.py` supplies bounded State/Become, scalar,
+perspective and selection checks. Independent literal fixtures cover eight
+stems, 80 finite aspect cells, their negative/phasal and bound derivatives,
+16 conditional causative paradigms and three reduced-Mood examples. See
+`util/stative-paradigms.md` for the morphological and PF audit,
+`util/stative-source-audit.md` for primary-source access limits, and
+`util/stative-integration-review.md` for adoption decisions and independent
+review. The model takes explicit licences and semantic standards; it does not
+infer attestation, phonetic output or arbitrary lexical selection from spelling.
+
+## Ordinary ATTR and experiential extension
+
+`scripts/stative-lexicon.json` and `scripts/stative_lexicon.py` add explicit
+lexical licences for the second pass. The latest ordinary attributive and
+Manifest specifications are recorded in `util/stative-extension-paradigms.md`.
+The earlier `util/stative-paradigms.md` and its fixture matrix remain the
+reviewed historical baseline at `5a29478`; their unassigned happy-attributive
+and unadopted-third-class status is superseded by the new ordinary ATTR
+metadata. Their existing relative examples and construction rules remain
+unchanged. `scripts/stative_scope_guard.py` checks the preserved source spans
+and earlier files against baseline hashes, including negative mutation tests.
+See `util/stative-extension-source-audit.md` for primary-source access limits.
+
 ## Collect forms marked in the grammar
 
 From the repository root, run:

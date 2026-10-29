@@ -1,0 +1,695 @@
+{
+  "description": "Constructed lexical specifications, with semantic and PF licences explicitly supplied. Missing principal parts are withheld, not repaired. Existing relative constructions are outside this matrix.",
+  "entries": [
+    {
+      "stem": "mužn",
+      "subclass": "quality",
+      "morphological_class": "property-n",
+      "finite_class": "A",
+      "segments": [
+        "m",
+        "ʊ",
+        "ʒ",
+        "n"
+      ],
+      "quantity_target": 1,
+      "argument_frame": "holder",
+      "gradability": "context-sensitive",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-S",
+      "manifest_class": null,
+      "attributive_class": "I",
+      "stimulus": "none",
+      "perspective": "none",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "mužna",
+          "múžnime",
+          "múžnik",
+          "mužnáv",
+          "mužnáž"
+        ],
+        "become": [
+          "mužnéla",
+          "mužnélime",
+          "mužnélek",
+          "mužnélav",
+          "mužnélaž"
+        ],
+        "attribute": "múžna",
+        "manner": "mužňe",
+        "operations": [
+          "mužnal",
+          "mužnova",
+          "mužnérime",
+          "mužnélal",
+          "mužnélova",
+          "mužnélrime"
+        ]
+      },
+      "protected_quantity": false,
+      "nominalisation": "selected-participant"
+    },
+    {
+      "stem": "hradn",
+      "subclass": "quality",
+      "morphological_class": "property-n",
+      "finite_class": "A",
+      "segments": [
+        "x",
+        "r",
+        "a",
+        "d",
+        "n"
+      ],
+      "quantity_target": 2,
+      "argument_frame": "holder",
+      "gradability": "context-sensitive",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-S",
+      "manifest_class": null,
+      "attributive_class": "II",
+      "stimulus": "none",
+      "perspective": "none",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "hradna",
+          "hrádnime",
+          "hrádnik",
+          "hradnáv",
+          "hradnáž"
+        ],
+        "become": [
+          "hradnéla",
+          "hradnélime",
+          "hradnélek",
+          "hradnélav",
+          "hradnélaž"
+        ],
+        "attribute": "hradná",
+        "manner": "hradňe",
+        "operations": [
+          "hradnal",
+          "hradnova",
+          "hradnérime",
+          "hradnélal",
+          "hradnélova",
+          "hradnélrime"
+        ]
+      },
+      "protected_quantity": false,
+      "nominalisation": "selected-participant"
+    },
+    {
+      "stem": "svorn",
+      "subclass": "dimensional",
+      "morphological_class": "property-n",
+      "finite_class": "A",
+      "segments": [
+        "s",
+        "v",
+        "ɔ",
+        "r",
+        "n"
+      ],
+      "quantity_target": 2,
+      "argument_frame": "holder",
+      "gradability": "scalar",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-S",
+      "manifest_class": null,
+      "attributive_class": "II",
+      "stimulus": "none",
+      "perspective": "none",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "svorna",
+          "svórnime",
+          "svórnik",
+          "svornáv",
+          "svornáž"
+        ],
+        "become": [
+          "svornéla",
+          "svornélime",
+          "svornélek",
+          "svornélav",
+          "svornélaž"
+        ],
+        "attribute": "svorná",
+        "manner": "svorňe",
+        "operations": [
+          "svornal",
+          "svornova",
+          "svornérime",
+          "svornélal",
+          "svornélova",
+          "svornélrime"
+        ]
+      },
+      "protected_quantity": false,
+      "nominalisation": "selected-participant"
+    },
+    {
+      "stem": "četn",
+      "subclass": "dimensional",
+      "morphological_class": "property-n",
+      "finite_class": "A",
+      "segments": [
+        "tʃ",
+        "ɛ",
+        "t",
+        "n"
+      ],
+      "quantity_target": 1,
+      "argument_frame": "holder",
+      "gradability": "scalar",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-S",
+      "manifest_class": null,
+      "attributive_class": "II",
+      "stimulus": "none",
+      "perspective": "none",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "četna",
+          "čétnime",
+          "čétnik",
+          "četnáv",
+          "četnáž"
+        ],
+        "become": [
+          "četnéla",
+          "četnélime",
+          "četnélek",
+          "četnélav",
+          "četnélaž"
+        ],
+        "attribute": "četná",
+        "manner": "četňe",
+        "operations": [
+          "četnal",
+          "četnova",
+          "četnérime",
+          "četnélal",
+          "četnélova",
+          "četnélrime"
+        ]
+      },
+      "protected_quantity": false,
+      "nominalisation": "selected-participant"
+    },
+    {
+      "stem": "ptakn",
+      "subclass": "experiential-condition",
+      "morphological_class": "property-n",
+      "finite_class": "A",
+      "segments": [
+        "p",
+        "t",
+        "a",
+        "k",
+        "n"
+      ],
+      "quantity_target": 2,
+      "argument_frame": "affected-holder",
+      "gradability": "intensity-or-condition-scale",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-S",
+      "manifest_class": null,
+      "attributive_class": null,
+      "stimulus": "none",
+      "perspective": "internal-anchored",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "ptakna",
+          "ptáknime",
+          "ptáknik",
+          "ptaknáv",
+          "ptaknáž"
+        ],
+        "become": [
+          "ptaknéla",
+          "ptaknélime",
+          "ptaknélek",
+          "ptaknélav",
+          "ptaknélaž"
+        ],
+        "attribute": null,
+        "manner": "ptakňe",
+        "operations": [
+          "ptaknal",
+          "ptaknova",
+          "ptaknérime",
+          "ptaknélal",
+          "ptaknélova",
+          "ptaknélrime"
+        ]
+      },
+      "protected_quantity": false,
+      "nominalisation": "selected-participant"
+    },
+    {
+      "stem": "smrn",
+      "subclass": "experiential-condition",
+      "morphological_class": "opaque-unresolved",
+      "finite_class": null,
+      "segments": [
+        "s",
+        "m",
+        "r",
+        "n"
+      ],
+      "quantity_target": null,
+      "argument_frame": "affected-holder",
+      "gradability": "intensity-or-condition-scale",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": null,
+      "manifest_class": null,
+      "attributive_class": null,
+      "stimulus": "none",
+      "perspective": "internal-anchored",
+      "causative": "unresolved",
+      "manner": "unresolved",
+      "principal_part_status": "unresolved",
+      "expected": {
+        "state": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "become": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "attribute": null,
+        "manner": null
+      },
+      "protected_quantity": false,
+      "nominalisation": "unresolved-principal-parts"
+    },
+    {
+      "stem": "všihn",
+      "subclass": "experiential-condition",
+      "morphological_class": "property-n",
+      "finite_class": "A",
+      "segments": [
+        "v",
+        "ʃ",
+        "ɪ",
+        "x",
+        "n"
+      ],
+      "quantity_target": 2,
+      "argument_frame": "experiencer-only",
+      "gradability": "intensity-or-condition-scale",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-S",
+      "manifest_class": "ESH-A",
+      "attributive_class": "III",
+      "stimulus": "applicative-eb",
+      "perspective": "psych-anchored",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "všihna",
+          "všíhnime",
+          "všíhnik",
+          "všihnáv",
+          "všihnáž"
+        ],
+        "become": [
+          "všihnéla",
+          "všihnélime",
+          "všihnélek",
+          "všihnélav",
+          "všihnélaž"
+        ],
+        "attribute": "všihňa",
+        "manner": "všihňe",
+        "operations": [
+          "všihnal",
+          "všihnova",
+          "všihnérime",
+          "všihnélal",
+          "všihnélova",
+          "všihnélrime"
+        ]
+      },
+      "protected_quantity": false,
+      "nominalisation": "selected-participant"
+    },
+    {
+      "stem": "žbirn",
+      "subclass": "experiential-condition",
+      "morphological_class": "property-n",
+      "finite_class": "A",
+      "segments": [
+        "ʒ",
+        "b",
+        "ɪ",
+        "r",
+        "n"
+      ],
+      "quantity_target": 2,
+      "argument_frame": "affected-holder",
+      "gradability": "intensity-or-condition-scale",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-S",
+      "manifest_class": null,
+      "attributive_class": "III",
+      "stimulus": "none",
+      "perspective": "none",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "žbirna",
+          "žbírnime",
+          "žbírnik",
+          "žbirnáv",
+          "žbirnáž"
+        ],
+        "become": [
+          "žbirnéla",
+          "žbirnélime",
+          "žbirnélek",
+          "žbirnélav",
+          "žbirnélaž"
+        ],
+        "attribute": "žbirňa",
+        "manner": "žbirňe",
+        "operations": [
+          "žbirnal",
+          "žbirnova",
+          "žbirnérime",
+          "žbirnélal",
+          "žbirnélova",
+          "žbirnélrime"
+        ]
+      },
+      "protected_quantity": false,
+      "nominalisation": "selected-participant"
+    },
+    {
+      "stem": "hvodn",
+      "subclass": "experiential-condition",
+      "morphological_class": "property-n",
+      "finite_class": "A",
+      "segments": [
+        "x",
+        "v",
+        "ɔ",
+        "d",
+        "n"
+      ],
+      "quantity_target": 2,
+      "argument_frame": "holder",
+      "gradability": "intensity-or-condition-scale",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-S",
+      "manifest_class": null,
+      "attributive_class": null,
+      "stimulus": "none",
+      "perspective": "none",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "hvodna",
+          "hvódnime",
+          "hvódnik",
+          "hvodnáv",
+          "hvodnáž"
+        ],
+        "become": [
+          "hvodnéla",
+          "hvodnélime",
+          "hvodnélek",
+          "hvodnélav",
+          "hvodnélaž"
+        ],
+        "attribute": null,
+        "manner": "hvodňe",
+        "operations": [
+          "hvodnal",
+          "hvodnova",
+          "hvodnérime",
+          "hvodnélal",
+          "hvodnélova",
+          "hvodnélrime"
+        ]
+      },
+      "protected_quantity": false,
+      "nominalisation": "selected-participant"
+    },
+    {
+      "stem": "trpan",
+      "subclass": "quality",
+      "morphological_class": "property-n",
+      "finite_class": null,
+      "segments": [
+        "t",
+        "r",
+        "p",
+        "a",
+        "n"
+      ],
+      "quantity_target": 3,
+      "argument_frame": "holder",
+      "gradability": "context-sensitive",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": null,
+      "manifest_class": null,
+      "attributive_class": null,
+      "stimulus": "none",
+      "perspective": "none",
+      "causative": "unresolved",
+      "manner": "unresolved",
+      "principal_part_status": "cluster-unresolved",
+      "expected": {
+        "state": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "become": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "attribute": null,
+        "manner": null
+      },
+      "protected_quantity": false,
+      "nominalisation": "unresolved-principal-parts"
+    },
+    {
+      "stem": "tvírzn",
+      "subclass": "relational",
+      "morphological_class": "relational-zn",
+      "finite_class": "C",
+      "segments": [
+        "t",
+        "v",
+        "iː",
+        "r",
+        "z",
+        "n"
+      ],
+      "quantity_target": 2,
+      "argument_frame": "holder",
+      "gradability": "contextual-relational",
+      "aspect_licences": {
+        "continuous": "obtaining-state",
+        "progressive": "stage-level-or-expressive",
+        "perfective": "bounded-state",
+        "retrospective": "anterior-no-cessation-entailment",
+        "contemplative": "projection-not-noninitiation"
+      },
+      "become_class": "EL-P",
+      "manifest_class": null,
+      "attributive_class": "II",
+      "stimulus": "none",
+      "perspective": "none",
+      "causative": "conditional",
+      "manner": "licensed",
+      "principal_part_status": "listed",
+      "expected": {
+        "state": [
+          "tvírzna",
+          "tvírznime",
+          "tvírznik",
+          "tvírznav",
+          "tvírznaž"
+        ],
+        "become": [
+          "tvírznela",
+          "tvírznelime",
+          "tvírznelek",
+          "tvírznelav",
+          "tvírznelaž"
+        ],
+        "attribute": "tvírzná",
+        "manner": "tvírzňe",
+        "operations": [
+          "tvírznal",
+          "tvírznova",
+          "tvírznerime",
+          "tvírznelal",
+          "tvírznelova",
+          "tvírznelrime"
+        ]
+      },
+      "protected_quantity": true,
+      "nominalisation": "selected-participant"
+    }
+  ],
+  "manifest": {
+    "stem": "všihn",
+    "kind": "manifest",
+    "quantity_class": "ESH-A",
+    "forms": [
+      "všihneša",
+      "všihnéšime",
+      "všihnéšek",
+      "všihnešáv",
+      "všihnešáž"
+    ],
+    "participant": [
+      "všihnešova",
+      "všihnéšimou",
+      "všihnéšikou",
+      "všihnešávou",
+      "všihnešážou"
+    ],
+    "evidential": [
+      "všihnešal",
+      "všihnéšimel",
+      "všihnéšekal",
+      "všihnešával",
+      "všihnešážal"
+    ],
+    "causative": [
+      "všihnéšra",
+      "všihnéšrime",
+      "všihnéšranik",
+      "všihnéšranav",
+      "všihnéšraž"
+    ]
+  },
+  "excluded_candidates": [
+    "trpá",
+    "smerňa"
+  ],
+  "unlisted_doublets": true,
+  "conditional_predictions": {
+    "trpan": {
+      "status": "unvalidated segmental-only hypotheses, NOT licensed principal parts",
+      "hypothetical_finite_class": "A",
+      "state": [
+        "trpana",
+        "trpánime",
+        "trpánik",
+        "trpanáv",
+        "trpanáž"
+      ],
+      "become": [
+        "trpanéla",
+        "trpanélime",
+        "trpanélek",
+        "trpanélav",
+        "trpanélaž"
+      ],
+      "manner": "trpaňe"
+    }
+  }
+}

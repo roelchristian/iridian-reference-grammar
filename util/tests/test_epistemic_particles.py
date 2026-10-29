@@ -34,7 +34,7 @@ class EpistemicParticleTests(unittest.TestCase):
                 changed = dict(self.sources, **{'chapters/03-verbs.tex': form})
                 self.assertTrue(checker.renamed_particle_checks(changed))
         changed = dict(self.sources, **{'chapters/03-verbs.tex':
-                       'xktady xkday kdayx -eškady hlavdyx mrocna mocx'})
+                       'xktady xkday kdayx -eškady hlavdyx mužna mocx'})
         self.assertEqual(checker.renamed_particle_checks(changed), [])
 
     def test_kady_pronunciation_is_paired_in_current_description(self):

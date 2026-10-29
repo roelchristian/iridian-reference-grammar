@@ -1,0 +1,92 @@
+{
+  "base": "5a29478c793f0f15234a2c062cb5c3cc6e74cd9b",
+  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined.",
+  "paragraphs": {
+    "chapters/01-overview.tex": [],
+    "chapters/02-phonology.tex": [
+      "5d55ed216fbf1a1bcb26336ad3a6fc339c48fb1cf409259dd886805f393058de"
+    ],
+    "chapters/03-verbs.tex": [
+      "4a6f7372f114673f3a6690f0904a0ed1a1acc736836d6ed7199575c31c0debc0",
+      "c54da2db70433f779f155a6f2b3a9fd3975d856064f155d84257343c8214c5fd",
+      "ec4bce7aabf1dffcdb52b4629054d71809c27a3d7cf2935748f61dddf135c639",
+      "0b894bd2ca633b77fad2dc6f1815647f28e8f336006121f844c8222d92922ca1",
+      "0e0104f0a1d2f651ff64f927c628210030690473b5e5692a11b5f8baca62b229",
+      "059cf6a6c24fa78ff8c6516b9c7856ed7f061542a1ce7cb9e44a37cd06b16762"
+    ],
+    "chapters/04-nouns.tex": [
+      "c0247541cafc78d498ba749c3f0f8cee22ceb6e583113c2322c56e4945ec9b97",
+      "84b2af78d08cf5b6c7e3740588b9fe2bc75a845d1a6da30261a46bb6da486dcb",
+      "a48e8ebe68c1476cb2772a502df01219fe39f802a460bd4c7e1cf8572e0c0ccc",
+      "aeacfaf2ddb0d6e536be535ce6a5f32299cc2f48b4b68c1e5ce2e2672b74b106",
+      "35bb4ad39599eb34e9d938b99c8a15576e506fbdfb0bb71b986f0845454147e6",
+      "f26c7a7dba0885b890d8d0e21f1b3083249f23697b5ee7c6344751fe0603389c",
+      "b5b20353ba5ecd012f615f8e39e5a0479d62ed3dc2fcf112ce9f07dad2352573",
+      "4f4be17a9a451fcb02c3cdc77017c9e8ceb760a5f2b2c7a65f8ae059f454680b",
+      "71cdebc041091fa0d5cee63c9c878903c05e0461c0370efb8803ccd7dca35a6f",
+      "000a54d98eb425d6792d3e9f30d7dcc8bceed5fd7ba4e5f09c34d1fd02693e31",
+      "fd1f864941caf85341f87ea76e2fec49d168df3d815bd54568f3284e376aeacd",
+      "5a9e4989c9cd89eb8b88f5736083dc02f3ecf55ec0a0a5868b1633ea74e472b6"
+    ],
+    "chapters/05-function-words.tex": [],
+    "chapters/06-simple-sentence.tex": [
+      "e5a9ab6b1d7251e74e278f83c8b8b14e3adb271281db9143579778e72f684a02",
+      "99ccdccc2792af4bf5bb6a63f12a8ecbb97b2c4b3f4b30e2a283e81558dd2454",
+      "fb4cf2d21ce615c9310334d5c1d3509ab8ae40f8083dec8c2541e05a34a019c3",
+      "a9a35619f5a57660f98b0e5c8f1c14e93963a98d5c18d5722b6a56c2d275cb39",
+      "58e8fd4328651503fcf3165f0a4744e8be82bb238b2b6e6ef9577ac9ba3c11f4",
+      "29680d26a38c7ed1ef1d139c428f1b53af72bd9fea5a28053edd40f371c5b744",
+      "5e0247492144dcc3e68429fccd0c85187f796368fd7e7b8e81dcb5701aca51e3",
+      "e6e854fea343cf3ea99ac843b09d67a540ee39e174b5f06ccf30b33197b1c262",
+      "142ce1ec6e2c41d0a4b51c9d6cce6041a14e0e0c63ff83391e264d57ad34fa4c"
+    ],
+    "chapters/07-information-structure.tex": [],
+    "chapters/08-complex-sentences.tex": [
+      "d4accd6a26e6d39b613caba17f0614d1a195aa5cf21237070cb7e4e412cf949b",
+      "7b2b0902158439efb1be2a3b103cb4276b68ad27e47f95523552088473302de3",
+      "5b21b2d5d0297ef25a60f86762f1a5ad5a36bc8cddf3ee001db2d62523855d34",
+      "69a735bd3f7d7a665eb7c1929aae004ba81f16a087c5a386bb3776b17cafd3bb",
+      "4295aae6ef744f6aa94d934073f7d2af83186b1800b7b62a4258175a7ea66677",
+      "23868fcf4b272cb0225889bbb713d612fb616b5fac0aa9c9fdb84018528d23e6",
+      "33a0b4882fee2e116b60df868393ef30cebb97442e6113363b58f727021e4fb0"
+    ],
+    "chapters/09-discourse.tex": [
+      "e6afe11c29280b810f2227d36ba2c7e2687911c9c4daa5582aaaff70ae7e7466"
+    ],
+    "chapters/10-derivational.tex": [],
+    "util/lexicon.tex": [
+      "4c119cb4bf9faacc004d913b97652b905f8563be1f596813d99a18b7200ce0dc"
+    ]
+  },
+  "spans": [
+    {
+      "source": "chapters/03-verbs.tex",
+      "start": "\\section{Verbal nominalisation}",
+      "end": "\\section{The conjunctive / quotative linker}",
+      "sha256": "87eee86766b53cfb0d06838a0b6a42fd410787236645ca10f125fc9aae4dcb7d"
+    },
+    {
+      "source": "chapters/03-verbs.tex",
+      "start": "\\subsection{Nominalisation and aspectual attribution of statives}",
+      "end": "Individuals, states, changes and results remain distinct denotations.",
+      "sha256": "e5dd1332dd532707f9c161f1d4a5a43c3ff3e64986d405f58449f01d04067c4d"
+    },
+    {
+      "source": "chapters/04-nouns.tex",
+      "start": "\\subsection{The \\ird{-ový} attributive and its embedded DP}",
+      "end": "\\subsection{The \\ird{ty}-supplement}",
+      "sha256": "f26e5e11a766a7041289de05bd12eb93f5629144c51e204dc759de0532ef0ea4"
+    },
+    {
+      "source": "chapters/08-complex-sentences.tex",
+      "start": "\\section{Relativisation}",
+      "end": "\\section{State-frame adverbial clauses}",
+      "sha256": "67e25c0b3e25bcc443adc9dfd4091e14376bdef3436b0347fa714d67780ec519"
+    }
+  ],
+  "files": {
+    "scripts/stative-fixtures.json": "0be349b416016a15d31ba44c88067480aed5d2d185c078fc19f6a5d01491e911",
+    "util/stative-paradigms.md": "bf1b60d7cfbd8c497c58a5598201b631af45e77d246dac124f0a41dd42a95378",
+    "scripts/clausal_diagnostics.py": "84837eaafcbe925bbeec541126026b02cb442129570c52f31e6f33e0747f0dab"
+  }
+}
