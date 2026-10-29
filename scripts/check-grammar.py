@@ -415,9 +415,20 @@ def check_evidential_sources(sources, fixtures):
     return failures
 
 
+def verbs_heading_checks(sources):
+    """Enforce the scoped editorial hierarchy without policing other chapters."""
+    path = 'chapters/03-verbs.tex'
+    text = strip_comments(sources.get(path, ''))
+    return [f'{path}:{text.count(chr(10), 0, match.start()) + 1}: '
+            'Verbs headings must stop at subsection'
+            for match in re.finditer(
+                r'\\(?:subsubsection|paragraph|subparagraph)\*?\s*(?=\{|\[)', text)]
+
+
 def check():
     sources = active_sources(ROOT / 'grammar.tex')
     failures = lexical_velar_checks(sources)
+    failures.extend(verbs_heading_checks(sources))
     phasal_fixtures = json.loads((ROOT / 'scripts/phasal-fixtures.json').read_text(encoding='utf-8'))
     failures.extend(check_phasal_diagram(
         sources.get('util/phasal-polarity-diagram.tex', ''), phasal_fixtures))
