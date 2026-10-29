@@ -18,6 +18,53 @@ Constructed multi-boundary tests establish conditional locality properties;
 they do not add constructions to the language. Existing source-prescription
 fixtures remain separate from this limited executable model.
 
+`scripts/evidential_realisation.py` separately selects the indirect-evidential
+exponent on an already licensed phonological host: `/al/` after a consonant,
+`/l/` after a vowel. It preserves the host and delegates plain attachment to
+the existing boundary transducer. A subsequent front-grade linker acts on the
+new final `/l/`, so it neither reaches an inner aspect ending nor selects the
+linker-specific `-ice` or `-imňe` allomorph through the evidential. The
+consonantal mapping's rejection of vowel-final PAL inputs is unchanged.
+
+Literal expectations in `scripts/evidential-fixtures.json` cover isolated and
+linked forms, current retrospective `-áv/-av`, antipassive `-ek` retention,
+causative hosts and vowel quantity. Conditional mood-host tests check segmental
+attachment only; callers still supply evidential licensing. Source checks pair
+the forms within their canonical Chapter 3 table rows, including the modal
+and long-vowel examples, and retain the prefixed negative host/output/linker
+triple in its prose derivation. They also distinguish the
+separate broad pronunciations of final coda `[w]` and prevocalic `[ʎ]`. Neither
+the helper nor the consonantal transducer computes coda phonetics, stress or
+standard spelling.
+
+The separate `scripts/contemplative-fixtures.json` checks long `-áž` and the
+reviewed copular/existential forms. Its explicit pronunciation pairs distinguish
+standalone final `[aːʃ]` from linked `[aːʒɛ]` and evidential `-ážal/-ážaľe`,
+while preserving quantity and initial stress. Boundary tests retain underlying
+`/ʒ/` throughout suffixation; contextual devoicing is not an input allomorph or
+an added `x → ʒ` PAL correspondence. Source checks also preserve the unrelated
+quantifier `nách` ‘each’ and proper name `Bách`.
+
+`scripts/quantity_grades.py` selects G0/G1/G2/G3 independently of consonantal
+mapping. Its input is an already selected tuple of IPA tokens plus an explicit
+licensed local domain, eligible nucleus indices and chosen target. Domain bounds
+are token offsets, not written vowels: lexical labial palatality and the new
+run stem `zemac-` therefore do not invite a spelling-based syllable heuristic.
+`scripts/quantity-grades.json` specifies short/long pairs and the separately
+licensed mid-vowel raising pairs. G0 preserves lexical length, G2 preserves
+quantity while raising, and repeated strength does not create a third length.
+
+Independent literal outputs in `scripts/quantity-fixtures.json` cover retained
+bound nuclei, the second-nucleus target of `zemac-`, root-strong and suffix-strong
+domains, valency morphology, irrealis locality, derivation, protected anchoring
+and evidential/linker attachment. The same file independently fixes the paired
+nominal I--III and verbal A--C cells in the grammar's tables. These are bounded
+regressions, not a general morphological analyser: the caller still selects
+fleeting-vowel stems, lexically overridden targets, consonantal classes and
+construction-specific short ending allomorphs. In particular, conditioned `-až`
+after a locally strong stem is checked beside default `-áž`; there is no global
+ban on multiple long vowels or on short contemplative spellings.
+
 ## Collect forms marked in the grammar
 
 From the repository root, run:

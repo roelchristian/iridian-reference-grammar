@@ -1,0 +1,645 @@
+{
+  "description": "Literal expected inner-evidential outputs and canonical source rows. These expectations are independent of exponent selection and the boundary mapping table. Phonetic coda vocalisation, stress and spelling are not performed by the helper.",
+  "cases": [
+    {
+      "id": "perfective",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piaštník",
+        "piaštníkal",
+        "piaštníkaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "k"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "k",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "k",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "retrospective",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piaštnáv",
+        "piaštnával",
+        "piaštnávaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "aː",
+        "v"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "aː",
+        "v",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "aː",
+        "v",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "continuous",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piašta",
+        "piaštal",
+        "piaštaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "a"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "progressive",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piaštíme",
+        "piaštímel",
+        "piaštímeľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "m",
+        "ɛ"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "m",
+        "ɛ",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "m",
+        "ɛ",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "contemplative",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piaštáž",
+        "piaštážal",
+        "piaštážaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "aː",
+        "ʒ"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "aː",
+        "ʒ",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "aː",
+        "ʒ",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "antipassive-perfective",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piášček",
+        "piáščekal",
+        "piáščekaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "k"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "k",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "k",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "antipassive-retrospective",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piáščav",
+        "piáščaval",
+        "piáščavaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "a",
+        "v"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "a",
+        "v",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "a",
+        "v",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "passive-progressive",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piaštníme",
+        "piaštnímel",
+        "piaštnímeľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "m",
+        "ɛ"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "m",
+        "ɛ",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "m",
+        "ɛ",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "causative-progressive",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piáštrime",
+        "piáštrimel",
+        "piáštrimeľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "t",
+        "r",
+        "ɪ",
+        "m",
+        "ɛ"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "t",
+        "r",
+        "ɪ",
+        "m",
+        "ɛ",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "t",
+        "r",
+        "ɪ",
+        "m",
+        "ɛ",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "causative-perfective",
+      "status": "Selected indicative host, before contextual coda realisation and spelling.",
+      "forms": [
+        "piáštranik",
+        "piáštranikal",
+        "piáštranikaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "t",
+        "r",
+        "a",
+        "n",
+        "ɪ",
+        "k"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "t",
+        "r",
+        "a",
+        "n",
+        "ɪ",
+        "k",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "t",
+        "r",
+        "a",
+        "n",
+        "ɪ",
+        "k",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "long-vowel-consonantal-host",
+      "status": "Conditional segmental test on an independently licensed mood host; does not establish evidential scope over directives.",
+      "forms": [
+        "piaštím",
+        "piaštímal",
+        "piaštímaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "m"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "m",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "m",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "long-vowel-vocalic-host",
+      "status": "Conditional segmental test on an independently licensed mood host; does not establish evidential scope over directives.",
+      "forms": [
+        "piašté",
+        "piaštél",
+        "piaštéľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "eː"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "eː",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "eː",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "irrealis",
+      "status": "Selected finite host; evidential attachment preserves its already licensed morphology and negative marker.",
+      "forms": [
+        "piáščev",
+        "piáščeval",
+        "piáščevaľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "v"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "v",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "v",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "negative-irrealis",
+      "status": "Selected finite host; evidential attachment preserves its already licensed morphology and negative marker.",
+      "forms": [
+        "piaštir",
+        "piaštiral",
+        "piaštiraľe"
+      ],
+      "host_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "ɪ",
+        "r"
+      ],
+      "evidential_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "ɪ",
+        "r",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "ɪ",
+        "r",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "indicative-negative",
+      "status": "Selected finite host; evidential attachment preserves its already licensed morphology and negative marker.",
+      "forms": [
+        "zapiaštník",
+        "zapiaštníkal",
+        "zapiaštníkaľe"
+      ],
+      "host_segments": [
+        "z",
+        "a",
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "ɪ",
+        "k"
+      ],
+      "evidential_segments": [
+        "z",
+        "a",
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "ɪ",
+        "k",
+        "a",
+        "l"
+      ],
+      "linked_segments": [
+        "z",
+        "a",
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "ɪ",
+        "k",
+        "a",
+        "ʎ",
+        "ɛ"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "path": "chapters/03-verbs.tex",
+      "label": "tab:inner-evidential-paradigm",
+      "case_ids": [
+        "perfective",
+        "retrospective",
+        "continuous",
+        "progressive",
+        "contemplative"
+      ]
+    },
+    {
+      "path": "chapters/03-verbs.tex",
+      "label": "tab:evidential-combinations",
+      "case_ids": [
+        "antipassive-perfective",
+        "antipassive-retrospective",
+        "passive-progressive",
+        "causative-progressive",
+        "causative-perfective",
+        "irrealis",
+        "negative-irrealis",
+        "long-vowel-consonantal-host",
+        "long-vowel-vocalic-host"
+      ]
+    }
+  ],
+  "pronunciations": [
+    {
+      "form": "piaštal",
+      "ipa": "ˈpʲaʃ.taw"
+    },
+    {
+      "form": "piaštaľe",
+      "ipa": "ˈpʲaʃ.ta.ʎɛ"
+    }
+  ],
+  "prose_derivations": [
+    {
+      "path": "chapters/03-verbs.tex",
+      "label": "sec:vm-evid",
+      "case_ids": [
+        "indicative-negative"
+      ]
+    }
+  ]
+}

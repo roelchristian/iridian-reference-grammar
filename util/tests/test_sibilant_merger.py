@@ -56,7 +56,7 @@ class SibilantMergerChecks(unittest.TestCase):
                                ('mia', 1), ('via', 1), ('šarc', 1),
                                ('siarc', 2), ('zia', 2), ('ciu', 2),
                                ('kia', 2), ('gia', 2), ('hia', 2), ('fia', 2),
-                               ('kěda', 2), ('Marcí', 2), ('lubcí', 2)):
+                               ('kěda', 2), ('Marcí', 2), ('lúbcí', 2)):
             with self.subTest(form=form):
                 self.assertEqual(checker.spelling_nuclei(form), expected)
 
@@ -64,14 +64,14 @@ class SibilantMergerChecks(unittest.TestCase):
         fixtures = json.loads((checker.ROOT / 'scripts/palatalisation-fixtures.json')
                               .read_text(encoding='utf-8'))
         selected = [item for item in fixtures['pronunciations']
-                    if item['form'] in {'ce', 'če', 'si', 'ši', 'ci', 'či', 'Marcí', 'lubcí'}]
+                    if item['form'] in {'ce', 'če', 'si', 'ši', 'ci', 'či', 'Marcí', 'lúbcí'}]
         self.assertEqual(len(selected), 8)
         focused = {'derivations': [], 'classes': [], 'pronunciations': selected}
         source = '\n'.join(r'\phon{' + item['form'] + '}{' + item['ipa'] + '}{sequence}'
                            for item in selected)
         self.assertEqual(checker.check_palatalisation(source, focused), [])
         for original, revised in (('tsɛ', 'tʃɛ'), ('sɪ', 'ʃɪ'),
-                                  ('mar.tsiː', 'mar.tʃiː'), ('lup.tsiː', 'lup.tʃiː')):
+                                  ('mar.tsiː', 'mar.tʃiː'), ('luːp.tsiː', 'luːp.tʃiː')):
             with self.subTest(revised=revised):
                 self.assertTrue(checker.check_palatalisation(source.replace(original, revised), focused))
 

@@ -1,0 +1,926 @@
+{
+  "description": "Independent literal expectations for local vowel selection. Labels identify the reviewed design; strings already reflect independently selected bound/consonantal stems. The helper does not select exponents or derive attested words from these labels.",
+  "cases": [
+    {
+      "id": "nominal-I-plural",
+      "grade": "G1",
+      "input": [
+        "b",
+        "ɨ",
+        "l"
+      ],
+      "expected": [
+        "b",
+        "ɨː",
+        "l"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "nominal-II-perek-bound",
+      "grade": "G1",
+      "input": [
+        "p",
+        "ɛ",
+        "r",
+        "k"
+      ],
+      "expected": [
+        "p",
+        "eː",
+        "r",
+        "k"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "nominal-II-lobek-bound",
+      "grade": "G3",
+      "input": [
+        "l",
+        "ɔ",
+        "b",
+        "k"
+      ],
+      "expected": [
+        "l",
+        "uː",
+        "b",
+        "k"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": true
+    },
+    {
+      "id": "nominal-III-plural",
+      "grade": "G1",
+      "input": [
+        "t",
+        "r",
+        "a",
+        "v",
+        "a"
+      ],
+      "expected": [
+        "t",
+        "r",
+        "aː",
+        "v",
+        "a"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        2
+      ],
+      "target": 2,
+      "raising_licensed": false
+    },
+    {
+      "id": "run-target-second-root-nucleus",
+      "grade": "G1",
+      "input": [
+        "z",
+        "ɛ",
+        "m",
+        "a",
+        "ts"
+      ],
+      "expected": [
+        "z",
+        "ɛ",
+        "m",
+        "aː",
+        "ts"
+      ],
+      "domain": [
+        0,
+        5
+      ],
+      "eligible": [
+        1,
+        3
+      ],
+      "target": 3,
+      "raising_licensed": false
+    },
+    {
+      "id": "run-plain-continuous",
+      "grade": "G0",
+      "input": [
+        "z",
+        "ɛ",
+        "m",
+        "a",
+        "ts",
+        "a"
+      ],
+      "expected": [
+        "z",
+        "ɛ",
+        "m",
+        "a",
+        "ts",
+        "a"
+      ],
+      "domain": [
+        0,
+        5
+      ],
+      "eligible": [
+        1,
+        3
+      ],
+      "target": 3,
+      "raising_licensed": false
+    },
+    {
+      "id": "class-B-suffix-strong-perfective",
+      "grade": "G1",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "ɪ",
+        "k"
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "k"
+      ],
+      "domain": [
+        4,
+        7
+      ],
+      "eligible": [
+        5
+      ],
+      "target": 5,
+      "raising_licensed": false
+    },
+    {
+      "id": "class-B-suffix-strong-progressive",
+      "grade": "G1",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "ɪ",
+        "m",
+        "ɛ"
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "iː",
+        "m",
+        "ɛ"
+      ],
+      "domain": [
+        4,
+        7
+      ],
+      "eligible": [
+        4
+      ],
+      "target": 4,
+      "raising_licensed": false
+    },
+    {
+      "id": "class-C-preserve-lexical-long",
+      "grade": "G0",
+      "input": [
+        "k",
+        "n",
+        "aː",
+        "r",
+        "a"
+      ],
+      "expected": [
+        "k",
+        "n",
+        "aː",
+        "r",
+        "a"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        2
+      ],
+      "target": 2,
+      "raising_licensed": false
+    },
+    {
+      "id": "antipassive-replacement-piast",
+      "grade": "G1",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "tʃ"
+      ],
+      "expected": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "antipassive-replacement-vad",
+      "grade": "G1",
+      "input": [
+        "v",
+        "a",
+        "ʒ"
+      ],
+      "expected": [
+        "v",
+        "aː",
+        "ʒ"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "antipassive-additive-no-root-grade",
+      "grade": "G0",
+      "input": [
+        "d",
+        "a",
+        "l",
+        "ʃ"
+      ],
+      "expected": [
+        "d",
+        "a",
+        "l",
+        "ʃ"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "compact-causative-local-root",
+      "grade": "G1",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "r"
+      ],
+      "expected": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "t",
+        "r"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "expanded-causative-local-exponent",
+      "grade": "G1",
+      "input": [
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "n",
+        "ɛ",
+        "r"
+      ],
+      "expected": [
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "n",
+        "eː",
+        "r"
+      ],
+      "domain": [
+        4,
+        6
+      ],
+      "eligible": [
+        4
+      ],
+      "target": 4,
+      "raising_licensed": false
+    },
+    {
+      "id": "expanded-causative-after-strong-AP",
+      "grade": "G0",
+      "input": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "r"
+      ],
+      "expected": [
+        "pʲ",
+        "aː",
+        "ʃ",
+        "tʃ",
+        "ɛ",
+        "r"
+      ],
+      "domain": [
+        4,
+        6
+      ],
+      "eligible": [
+        4
+      ],
+      "target": 4,
+      "raising_licensed": false
+    },
+    {
+      "id": "protected-applicative-blocks-root-grade",
+      "grade": "G0",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "eː",
+        "b",
+        "r"
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "eː",
+        "b",
+        "r"
+      ],
+      "domain": [
+        4,
+        7
+      ],
+      "eligible": [
+        4
+      ],
+      "target": 4,
+      "raising_licensed": false
+    },
+    {
+      "id": "affirmative-irrealis-exposed-root",
+      "grade": "G3",
+      "input": [
+        "z",
+        "d",
+        "ɛ",
+        "k"
+      ],
+      "expected": [
+        "z",
+        "d",
+        "iː",
+        "k"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        2
+      ],
+      "target": 2,
+      "raising_licensed": true
+    },
+    {
+      "id": "negative-irrealis-no-root-grade",
+      "grade": "G0",
+      "input": [
+        "z",
+        "d",
+        "ɛ",
+        "k"
+      ],
+      "expected": [
+        "z",
+        "d",
+        "ɛ",
+        "k"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        2
+      ],
+      "target": 2,
+      "raising_licensed": false
+    },
+    {
+      "id": "irrealis-local-passive-exponent",
+      "grade": "G1",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "ɔ",
+        "v"
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "oː",
+        "v"
+      ],
+      "domain": [
+        4,
+        6
+      ],
+      "eligible": [
+        4
+      ],
+      "target": 4,
+      "raising_licensed": false
+    },
+    {
+      "id": "diminutive-stem",
+      "grade": "G1",
+      "input": [
+        "s",
+        "t",
+        "ɔ",
+        "l"
+      ],
+      "expected": [
+        "s",
+        "t",
+        "oː",
+        "l"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        2
+      ],
+      "target": 2,
+      "raising_licensed": false
+    },
+    {
+      "id": "iterative-schematic",
+      "grade": "G1",
+      "input": [
+        "m",
+        "ɛ",
+        "l"
+      ],
+      "expected": [
+        "m",
+        "eː",
+        "l"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "intensive-mroc",
+      "grade": "G1",
+      "input": [
+        "m",
+        "r",
+        "ɔ",
+        "ts"
+      ],
+      "expected": [
+        "m",
+        "r",
+        "oː",
+        "ts"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        2
+      ],
+      "target": 2,
+      "raising_licensed": false
+    },
+    {
+      "id": "anchor-two-protected-long-nuclei",
+      "grade": "G0",
+      "input": [
+        "p",
+        "eː",
+        "r",
+        "ts",
+        "eː"
+      ],
+      "expected": [
+        "p",
+        "eː",
+        "r",
+        "ts",
+        "eː"
+      ],
+      "domain": [
+        0,
+        5
+      ],
+      "eligible": [
+        1,
+        4
+      ],
+      "target": 4,
+      "raising_licensed": false
+    },
+    {
+      "id": "evidential-linker-preserves-inner-quantity",
+      "grade": "G0",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "k",
+        "a",
+        "ʎ",
+        "ɛ"
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "n",
+        "iː",
+        "k",
+        "a",
+        "ʎ",
+        "ɛ"
+      ],
+      "domain": [
+        0,
+        7
+      ],
+      "eligible": [
+        1,
+        5
+      ],
+      "target": 5,
+      "raising_licensed": false
+    },
+    {
+      "id": "G2-short-preserves-quantity",
+      "grade": "G2",
+      "input": [
+        "l",
+        "ɔ",
+        "b",
+        "k"
+      ],
+      "expected": [
+        "l",
+        "ʊ",
+        "b",
+        "k"
+      ],
+      "domain": [
+        0,
+        4
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": true
+    },
+    {
+      "id": "G2-long-preserves-quantity",
+      "grade": "G2",
+      "input": [
+        "m",
+        "eː",
+        "l"
+      ],
+      "expected": [
+        "m",
+        "iː",
+        "l"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": true
+    },
+    {
+      "id": "G3-long-no-third-length",
+      "grade": "G3",
+      "input": [
+        "m",
+        "eː",
+        "l"
+      ],
+      "expected": [
+        "m",
+        "iː",
+        "l"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": true
+    },
+    {
+      "id": "lexical-palatal-velar-preserved",
+      "grade": "G1",
+      "input": [
+        "kʲ",
+        "ɛ",
+        "l"
+      ],
+      "expected": [
+        "kʲ",
+        "eː",
+        "l"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    }
+  ],
+  "source_tables": [
+    {
+      "path": "chapters/02-phonology.tex",
+      "label": "tab:vocalic-grades",
+      "width": 5,
+      "rows": [
+        [
+          "e/ě",
+          "e/ě",
+          "é",
+          "i",
+          "í"
+        ],
+        [
+          "o",
+          "o",
+          "ó",
+          "u",
+          "ú"
+        ]
+      ]
+    },
+    {
+      "path": "chapters/04-nouns.tex",
+      "label": "tab:nm-plural-paradigm",
+      "width": 4,
+      "rows": [
+        [
+          "byl",
+          "býle",
+          "bylo",
+          "býlete"
+        ],
+        [
+          "byla",
+          "býlov",
+          "bylato",
+          "býlove"
+        ],
+        [
+          "bylam",
+          "býlac",
+          "bylamo",
+          "býlace"
+        ],
+        [
+          "lobek",
+          "lúbce",
+          "lúbko",
+          "lúbcé"
+        ],
+        [
+          "lúbku",
+          "lúbkov",
+          "lúbkuto",
+          "lúbkove"
+        ],
+        [
+          "lúbcí",
+          "lúbcem",
+          "lúbcíte",
+          "lúbceme"
+        ],
+        [
+          "perek",
+          "pérce",
+          "pérko",
+          "pércé"
+        ],
+        [
+          "pérku",
+          "pérkov",
+          "pérkuto",
+          "pérkove"
+        ],
+        [
+          "pérce",
+          "pércem",
+          "pércé",
+          "pérceme"
+        ],
+        [
+          "trava",
+          "trávy",
+          "travó",
+          "trávyte"
+        ],
+        [
+          "travy",
+          "tráv",
+          "travyte",
+          "tráve"
+        ],
+        [
+          "travě",
+          "trávam",
+          "travěte",
+          "trávame"
+        ],
+        [
+          "stráz",
+          "strazy",
+          "stráze",
+          "strazyte"
+        ],
+        [
+          "strazy",
+          "stráz",
+          "strazyte",
+          "stráze"
+        ],
+        [
+          "straže",
+          "strazám",
+          "stražete",
+          "strazáme"
+        ]
+      ]
+    },
+    {
+      "path": "chapters/03-verbs.tex",
+      "label": "tab:verbal-quantity-classes",
+      "width": 5,
+      "rows": [
+        [
+          "zemaca",
+          "zemácime",
+          "zemacáž",
+          "zemácek",
+          "zemacáv"
+        ],
+        [
+          "piašta",
+          "piaštíme",
+          "piaštáž",
+          "piaštník",
+          "piaštnáv"
+        ],
+        [
+          "knářa",
+          "knářime",
+          "knářaž",
+          "knářek",
+          "knářav"
+        ]
+      ]
+    }
+  ],
+  "pronunciations": [
+    {
+      "form": "zemácime",
+      "ipa": "ˈzɛ.maː.tsɪ.mɛ"
+    },
+    {
+      "form": "zemácek",
+      "ipa": "ˈzɛ.maː.tsɛk"
+    }
+  ],
+  "source_paragraphs": [
+    {
+      "path": "chapters/09-discourse.tex",
+      "marker": "\\subsubsection{Plurality}",
+      "forms": [
+        "žema",
+        "žémy",
+        "žemy",
+        "žém",
+        "žémam",
+        "žema"
+      ],
+      "surface": "Žémy Marku koupnik."
+    }
+  ]
+}

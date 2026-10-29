@@ -1,0 +1,54 @@
+{
+  "description": "Independent contemplative long-vowel source prescriptions. These pair spelling with later phonetic realisation, without modelling final devoicing in the consonantal boundary transducer.",
+  "pronunciations": [
+    {
+      "form": "piaštáž",
+      "ipa": "ˈpʲaʃ.taːʃ"
+    },
+    {
+      "form": "piaštáže",
+      "ipa": "ˈpʲaʃ.taː.ʒɛ"
+    },
+    {
+      "form": "piaštážal",
+      "ipa": "ˈpʲaʃ.taː.ʒaw"
+    },
+    {
+      "form": "piaštážaľe",
+      "ipa": "ˈpʲaʃ.taː.ʒa.ʎɛ"
+    }
+  ],
+  "table_rows": [
+    {
+      "path": "chapters/06-simple-sentence.tex",
+      "label": "tab:neh-paradigm",
+      "row": "Contemplative",
+      "forms": [
+        "náž",
+        "zanáž"
+      ]
+    },
+    {
+      "path": "chapters/06-simple-sentence.tex",
+      "label": "tab:jec-zad-paradigm",
+      "row": "Contemplative",
+      "forms": [
+        "jecáž",
+        "zadáž"
+      ]
+    }
+  ],
+  "protected_lexemes": [
+    {
+      "path": "util/lexicon.tex",
+      "form": "nách",
+      "gloss": "each"
+    }
+  ],
+  "protected_surfaces": [
+    {
+      "path": "chapters/06-simple-sentence.tex",
+      "surface": "Bách němscvení kompozitor."
+    }
+  ]
+}

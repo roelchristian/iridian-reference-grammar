@@ -21,8 +21,8 @@ Restricted velar-front & /k/ $\rightarrow$ /ts/ & restricted grade \\
 Yod & /k/ $\rightarrow$ /tʃ/ & yod grade \\
 \end{table}
 ''', 'chapters/03-verbs.tex': r'''
-\phon{kělek}{ˈkʲɛ.lɛk}{sang}
-\phon{kělnik}{ˈkʲɛw.nɪk}{sang it}
+\phon{kélek}{ˈkʲeː.lɛk}{sang}
+\phon{kélnik}{ˈkʲeːw.nɪk}{sang it}
 \phon{kělšek}{ˈkʲɛw.ʃɛk}{was singing}
 ''', 'util/lexicon.tex': r'''
 \lexentry{kěda}{lexical /kʲ/; \ipagloss{[ˈkʲɛ.da]}}{jail}
@@ -76,10 +76,10 @@ class LexicalVelarTests(unittest.TestCase):
         for replacement in ('ˈcɛ.lɛk', 'kʲɛˈlɛk', 'ˈkʲɛː.lɛk'):
             with self.subTest(replacement=replacement):
                 data = sources()
-                data['chapters/03-verbs.tex'] = data['chapters/03-verbs.tex'].replace('ˈkʲɛ.lɛk', replacement)
+                data['chapters/03-verbs.tex'] = data['chapters/03-verbs.tex'].replace('ˈkʲeː.lɛk', replacement)
                 self.assertTrue(checker.lexical_velar_checks(data))
         data = sources()
-        data['chapters/03-verbs.tex'] = data['chapters/03-verbs.tex'].replace('ˈkʲɛw.nɪk', 'ˈkʲɛl.nɪk')
+        data['chapters/03-verbs.tex'] = data['chapters/03-verbs.tex'].replace('ˈkʲeːw.nɪk', 'ˈkʲɛl.nɪk')
         self.assertTrue(checker.lexical_velar_checks(data))
 
     def test_missing_fixture_is_not_a_pass(self):

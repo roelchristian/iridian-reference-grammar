@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT / 'util'))
 sys.path.insert(0, str(ROOT / 'scripts'))
 from collect_lexicon import extract, strip_comments  # noqa: E402
 from boundary_transducer import BoundaryTransducer, check_boundary_fixtures  # noqa: E402
+from quantity_grades import QuantityGrades, QuantityLicence  # noqa: E402
 
 
 def active_sources(path, seen=None):
@@ -61,7 +62,7 @@ def lexical_velar_checks(sources):
     consonants, stress and quantity of each broad transcription are fixed.
     """
     expected = {'kěda': 'ˈkʲɛda', 'ťeda': 'ˈcɛda',
-                'kělek': 'ˈkʲɛlɛk', 'kělnik': 'ˈkʲɛwnɪk', 'kělšek': 'ˈkʲɛwʃɛk'}
+                'kélek': 'ˈkʲeːlɛk', 'kélnik': 'ˈkʲeːwnɪk', 'kělšek': 'ˈkʲɛwʃɛk'}
     lexical_specs = {'kěda': 'kʲ', 'kěl-': 'kʲ', 'ťeda': 'c'}
     found, entries, failures = set(), set(), []
     for path, text in sources.items():
@@ -273,12 +274,166 @@ def check_valency(verbal, fixtures):
     return failures
 
 
+def check_prescribed_pronunciations(sources, fixtures, context):
+    """Require each reviewed IPA pair and reject contradictory duplicates."""
+    expected = {case['form'].casefold(): case['ipa'].replace('.', '') for case in fixtures}
+    seen, failures = set(), []
+    for path, text in sources.items():
+        for record in extract(strip_comments(text), path):
+            form = record['form'].casefold()
+            if record['macro'] != 'phon' or form not in expected:
+                continue
+            seen.add(form)
+            if record['pronunciation'].replace('.', '') != expected[form]:
+                failures.append(f"{path}: {context} pronunciation: {record['form']}: "
+                                f"unexpected [{record['pronunciation']}]")
+    failures.extend(f'missing {context} pronunciation fixture: ' + form
+                    for form in sorted(expected.keys() - seen))
+    return failures
+
+
+def check_quantity_sources(sources, fixtures):
+    """Keep independent grade/declension/aspect cells paired in source tables."""
+    failures = []
+    for table in fixtures['source_tables']:
+        text = strip_comments(sources.get(table['path'], ''))
+        marker = r'\label{' + table['label'] + '}'
+        bodies = re.findall(re.escape(marker) + r'(.*?)\\end\{table\}', text, re.S)
+        width = table['width']
+        rows = [forms[-width:] for body in bodies for row in body.split(r'\\')
+                for forms in [re.findall(r'\\ird\{([^{}]+)\}', row)] if len(forms) >= width]
+        if rows != table['rows']:
+            failures.append('quantity paradigm: ' + table['label'] + ': reviewed cells changed')
+    for passage in fixtures.get('source_paragraphs', []):
+        text = strip_comments(sources.get(passage['path'], ''))
+        start = text.find(passage['marker'])
+        body = '' if start < 0 else re.split(
+            r'\\subsubsection\b', text[start + len(passage['marker']):], maxsplit=1)[0]
+        paragraphs = [re.findall(r'\\ird\{([^{}]+)\}', paragraph)
+                      for paragraph in re.split(r'\n\s*\n', body)]
+        matching = [forms[forms.index(passage['forms'][0]):] for forms in paragraphs
+                    if passage['forms'][0] in forms]
+        if not matching or any(forms != passage['forms'] for forms in matching):
+            failures.append('quantity passage: ' + passage['marker'] + ': reviewed forms changed')
+        surfaces = [' '.join(surface.split())
+                    for surface in re.findall(r'\\gla\s+(.*?)//', body, re.S)]
+        if passage['surface'] not in surfaces:
+            failures.append('quantity passage: ' + passage['marker'] + ': reviewed example changed')
+    return failures
+
+
+def check_contemplative_sources(sources, fixtures):
+    """Preserve long /aːʒ/, its contextual phonetics and reviewed suppletion.
+
+    The quantifier nách and name Bách are distinct lexemes, explicitly protected
+    rather than swept into a spelling replacement. Starred rejected examples
+    and comments do not count as prescribed contemplative forms.
+    """
+    failures = check_prescribed_pronunciations(sources, fixtures['pronunciations'], 'contemplative')
+    for table in fixtures['table_rows']:
+        text = strip_comments(sources.get(table['path'], ''))
+        marker = r'\label{' + table['label'] + '}'
+        bodies = re.findall(re.escape(marker) + r'(.*?)\\end\{table\}', text, re.S)
+        rows = [re.findall(r'\\ird\{([^{}]+)\}', row)
+                for body in bodies for row in body.split(r'\\')
+                if re.search(r'(?:^|\n)\s*' + re.escape(table['row']) + r'\s*&', row)]
+        if not rows or any(row != table['forms'] for row in rows):
+            failures.append('contemplative paradigm: ' + table['label'] + ': reviewed row changed')
+    for fixture in fixtures['protected_lexemes']:
+        records = extract(strip_comments(sources.get(fixture['path'], '')), fixture['path'])
+        if not any(record['macro'] == 'lexentry' and record['form'] == fixture['form']
+                   and record['gloss'] == fixture['gloss'] for record in records):
+            failures.append('missing protected lexical pair: ' + fixture['form'] + ' / ' + fixture['gloss'])
+    for fixture in fixtures['protected_surfaces']:
+        surfaces = re.findall(r'\\gla\s+(.*?)//', strip_comments(sources.get(fixture['path'], '')), re.S)
+        if fixture['surface'] not in [' '.join(surface.split()) for surface in surfaces]:
+            failures.append('missing protected surface: ' + fixture['surface'])
+    for path, raw in sources.items():
+        text = strip_comments(raw)
+        examples = [record['form'] for record in extract(text, path)]
+        examples.extend(re.findall(r'\\gla\s+(.*?)//', text, re.S))
+        for form in examples:
+            if form.lstrip().startswith('*'):
+                continue
+            words = re.findall(r'[-\w]+', form)
+            obsolete = [word for word in words if
+                        ('ách' in word.casefold() and word.casefold() not in {'nách', 'bách'})
+                        or word.casefold() in {'jecach', 'zadach'}]
+            if obsolete:
+                failures.append(f'{path}: obsolete contemplative output: ' + ', '.join(obsolete))
+    return failures
+
+
+def check_evidential_sources(sources, fixtures):
+    """Check reviewed host/Evid/linker rows and independent broad IPA pairs.
+
+    These are source prescriptions, not a parser deriving morphology from
+    written words. Each triple must occur together in its named table; a
+    contradictory duplicate cannot be concealed by a surviving correct row.
+    """
+    failures = []
+    cases = {case['id']: case for case in fixtures['cases']}
+    for table in fixtures['tables']:
+        text = strip_comments(sources.get(table['path'], ''))
+        marker = r'\label{' + table['label'] + '}'
+        bodies = re.findall(re.escape(marker) + r'(.*?)\\end\{table\}', text, re.S)
+        rows = [re.findall(r'\\ird\{([^{}]+)\}', row)
+                for body in bodies for row in body.split(r'\\')]
+        for case_id in table['case_ids']:
+            expected = cases[case_id]['forms']
+            matching = [row[row.index(expected[0]):row.index(expected[0]) + 3]
+                        for row in rows if expected[0] in row]
+            if not matching or any(row != expected for row in matching):
+                failures.append(f"evidential paradigm: {table['label']}: "
+                                f"expected paired forms {' / '.join(expected)}")
+    for section in fixtures.get('prose_derivations', []):
+        text = strip_comments(sources.get(section['path'], ''))
+        marker = r'\label{' + section['label'] + '}'
+        start = text.find(marker)
+        body = '' if start < 0 else re.split(
+            r'\\(?:section|subsection|subsubsection)\b', text[start:], maxsplit=1)[0]
+        paragraphs = [re.findall(r'\\ird\{([^{}]+)\}', paragraph)
+                      for paragraph in re.split(r'\n\s*\n', body)]
+        for case_id in section['case_ids']:
+            expected = cases[case_id]['forms']
+            matching = [forms[forms.index(expected[0]):forms.index(expected[0]) + 3]
+                        for forms in paragraphs if expected[0] in forms]
+            if not matching or any(forms != expected for forms in matching):
+                failures.append(f"evidential derivation: {section['label']}: "
+                                f"expected paired forms {' / '.join(expected)}")
+    failures.extend(check_prescribed_pronunciations(sources, fixtures['pronunciations'], 'evidential'))
+    for path, raw in sources.items():
+        text = strip_comments(raw)
+        for record in extract(text, path):
+            if (not record['form'].lstrip().startswith('*')
+                    and re.search(r'ej[ťt]e', record['form'], re.IGNORECASE)):
+                failures.append(f"{path}: obsolete evidential exponent: {record['form']}")
+        for match in re.finditer(r'\\gla\s+(.*?)//', text, re.S):
+            if re.search(r'ej[ťt]e', match[1], re.IGNORECASE):
+                failures.append(f'{path}: obsolete evidential in interlinear example')
+    return failures
+
+
 def check():
     sources = active_sources(ROOT / 'grammar.tex')
     failures = lexical_velar_checks(sources)
+    quantity_fixtures = json.loads((ROOT / 'scripts/quantity-fixtures.json').read_text(encoding='utf-8'))
+    quantity_grades = QuantityGrades.from_file()
+    for case in quantity_fixtures['cases']:
+        licence = QuantityLicence(case['id'], case['grade'], True, tuple(case['domain']),
+                                  tuple(case['eligible']), case['target'], case['raising_licensed'])
+        if quantity_grades.apply(tuple(case['input']), licence) != tuple(case['expected']):
+            failures.append('quantity grade fixture: ' + case['id'] + ': independent output changed')
+    failures.extend(check_quantity_sources(sources, quantity_fixtures))
+    failures.extend(check_prescribed_pronunciations(
+        sources, quantity_fixtures['pronunciations'], 'quantity'))
     boundary_mapper = BoundaryTransducer.from_file()
     boundary_fixtures = json.loads((ROOT / 'scripts/boundary-fixtures.json').read_text(encoding='utf-8'))
     failures.extend(check_boundary_fixtures(boundary_mapper, boundary_fixtures))
+    evidential_fixtures = json.loads((ROOT / 'scripts/evidential-fixtures.json').read_text(encoding='utf-8'))
+    failures.extend(check_evidential_sources(sources, evidential_fixtures))
+    contemplative_fixtures = json.loads((ROOT / 'scripts/contemplative-fixtures.json').read_text(encoding='utf-8'))
+    failures.extend(check_contemplative_sources(sources, contemplative_fixtures))
     # The independently written prose table must describe the implemented bundles.
     phonology = sources['chapters/02-phonology.tex']
     registry = re.search(r'\\label\{tab:licensed-grades\}(.*?)\\end\{table\}', phonology, re.S)
@@ -327,7 +482,7 @@ def check():
     failures.extend(f'duplicate bibliography key {key}' for key, count in bibliography.items() if count > 1)
 
     # These are concrete obsolete outputs, not a general ban on lexical ě.
-    obsolete = ('zdíčev', 'prku', 'prce', 'piaštiře', 'piaštoviře',
+    obsolete = ('zdičev', 'prku', 'prce', 'piaštiře', 'piaštoviře',
                 'piaščace', 'piaštnace', 'piaščave', 'piaštnave', 'piaštimně', 'piaště',
                 'hradě', 'mostě', 'stolě', 'sobotě', 'skorně', 'mrocně',
                 'piastime', 'piastnime', 'tvírzně', 'ščehezně', 'mněrazně',
@@ -338,17 +493,18 @@ def check():
             line = text.count('\n', 0, match.start()) + 1
             failures.append(f'{path}:{line}: obsolete output {match[0]}')
     combined = '\n'.join(sources.values())
-    for form in ('raťe', 'raďe', 'raňe', 'raľe', 'ruce', 'lubcí', 'Marcí',
-                 'zděcir', 'zdičev', 'piaščev', 'piaščice', 'piaščikou',
-                 'piaščavě', 'piaštnavě', 'piaštire', 'piaštovire'):
+    for form in ('raťe', 'raďe', 'raňe', 'raľe', 'ruce', 'lúbcí', 'Marcí',
+                 'zděcir', 'zdíčev', 'piáščev', 'piáščice', 'piáščikou',
+                 'piáščavě', 'piaštnávě', 'piaštire', 'piaštovire'):
         if not re.search(r'(?<!\w)' + re.escape(form) + r'(?!\w)', combined):
             failures.append(f'missing grade regression example: {form}')
 
     # Independently fixed expectations: (nuclei, nuclei before primary stress).
     # Count actual IPA vowels, excluding the nonsyllabic second part of /ou̯/.
-    expected = {'piaštnik': (2, 0), 'zapiaštnik': (3, 1),
-                'premrocna': (3, 0), 'šarc': (1, 0),
-                'piaštou': (2, 0), 'perek': (2, 0), 'perku': (2, 0), 'perce': (2, 0)}
+    expected = {'piaštník': (2, 0, 1), 'zapiaštník': (3, 1, 1),
+                'premrocna': (3, 0, 0), 'šarc': (1, 0, 0),
+                'piaštou': (2, 0, 0), 'perek': (2, 0, 0),
+                'pérku': (2, 0, 1), 'pérce': (2, 0, 1)}
     valency_fixtures = json.loads(
         (ROOT / 'scripts/valency-fixtures.json').read_text(encoding='utf-8'))
     failures.extend(check_valency(sources['chapters/03-verbs.tex'], valency_fixtures))
@@ -360,7 +516,7 @@ def check():
     rows = {} if table is None else {
         form: (ipa, int(count)) for form, ipa, count in re.findall(
             r'\\phon\{([^{}]+)\}\{([^{}]+)\}\{[^{}]+\}\s*&\s*(\d+)', table[0])}
-    for form, (nuclei, before_stress) in expected.items():
+    for form, (nuclei, before_stress, long_nuclei) in expected.items():
         if form not in rows:
             failures.append(f'stress table: missing {form}')
             continue
@@ -371,7 +527,7 @@ def check():
         preceding = len(re.findall(vowels, syllabic.split('ˈ')[0]))
         if stated != nuclei or actual != nuclei or preceding != before_stress or ipa.count('ˈ') != 1:
             failures.append(f'stress table: {form}: unexpected nuclei or stress in [{ipa}], stated {stated}')
-        if re.search(r'[rl]\u0329', ipa) or 'ː' in ipa:
+        if re.search(r'[rl]\u0329', ipa) or ipa.count('ː') != long_nuclei:
             failures.append(f'stress table: {form}: unexpected syllabic liquid or quantity change')
     pronunciations = 0
     for path, text in sources.items():
@@ -399,6 +555,10 @@ def check():
           f'{aligned} interlinear alignments, {len(valency_fixtures)} valency paradigms, '
           f'{len(expected)} stress fixtures, '
           f"{len(boundary_fixtures['cases'])} independent boundary fixtures, "
+          f"{len(evidential_fixtures['cases'])} evidential fixtures, "
+          f"{len(quantity_fixtures['cases'])} independent quantity fixtures, "
+          f"{len(quantity_fixtures['pronunciations'])} quantity pronunciation fixtures, "
+          f"{len(contemplative_fixtures['pronunciations'])} contemplative pronunciation fixtures, "
           f"{sum(len(palatalisation_fixtures[key]) for key in ('derivations', 'pronunciations', 'classes'))} palatalisation fixtures, "
           f'{pronunciations} explicit pronunciation/quantity examples '
           'and lexical-velar/obsolete-spelling checks.')

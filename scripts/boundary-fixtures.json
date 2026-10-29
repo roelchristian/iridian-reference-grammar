@@ -243,18 +243,18 @@
     },
     {
       "id": "plain-participating-k",
-      "status": "Selected bound perk- with plain plural -óv; later coda/voicing realisation is outside this module.",
-      "input": ["p", "ɛ", "r", "k"],
+      "status": "Selected strong bound pérk- with plain plural -ov; later coda/voicing realisation is outside this module.",
+      "input": ["p", "eː", "r", "k"],
       "boundaries": [
         {
           "identifier": "inner",
           "grade": "plain",
           "licensed": true,
           "velar_member": true,
-          "suffix": ["oː", "v"]
+          "suffix": ["ɔ", "v"]
         }
       ],
-      "expected": ["p", "ɛ", "r", "k", "oː", "v"]
+      "expected": ["p", "eː", "r", "k", "ɔ", "v"]
     },
     {
       "id": "unassigned-k-remains-plain",
@@ -909,7 +909,7 @@
     },
     {
       "id": "causative-listed-mutating-edge",
-      "status": "Established vad-/vaďer- causative; selected stem edge and overt exponent only, before inflection.",
+      "status": "Established vad-/vaďér- causative; selected stem edge and overt exponent only, before inflection.",
       "input": [
         "v",
         "a",
@@ -922,7 +922,7 @@
           "licensed": true,
           "velar_member": false,
           "suffix": [
-            "ɛ",
+            "eː",
             "r"
           ]
         }
@@ -931,16 +931,16 @@
         "v",
         "a",
         "ɟ",
-        "ɛ",
+        "eː",
         "r"
       ]
     },
     {
       "id": "causative-outer-yod-preserves-rhotic-edge",
-      "status": "Established piašt-r- plus irrealis -ěv gives piaštrev; causative intervenes between root and outer grade.",
+      "status": "Established piášt-r- plus irrealis -ěv gives piáštrev; causative intervenes between root and outer grade.",
       "input": [
         "pʲ",
-        "a",
+        "aː",
         "ʃ",
         "t"
       ],
@@ -967,7 +967,7 @@
       ],
       "expected": [
         "pʲ",
-        "a",
+        "aː",
         "ʃ",
         "t",
         "r",
@@ -977,10 +977,10 @@
     },
     {
       "id": "causative-outer-front-preserves-rhotic-edge",
-      "status": "Established piašt-r- plus simultaneous -ěc gives piaštrec; no root mutation through the causative.",
+      "status": "Established piášt-r- plus simultaneous -ěc gives piáštrec; no root mutation through the causative.",
       "input": [
         "pʲ",
-        "a",
+        "aː",
         "ʃ",
         "t"
       ],
@@ -1007,12 +1007,85 @@
       ],
       "expected": [
         "pʲ",
-        "a",
+        "aː",
         "ʃ",
         "t",
         "r",
         "ɛ",
         "ts"
+      ]
+    },
+    {
+      "id": "contemplative-linked-postalveolar-identity",
+      "status": "Selected contemplative /aːʒ/ has underlying voiced /ʒ/; final free-form devoicing is outside this mapper. The front linker preserves that postalveolar.",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "aː",
+        "ʒ"
+      ],
+      "boundaries": [
+        {
+          "identifier": "linker",
+          "grade": "front",
+          "licensed": true,
+          "suffix": [
+            "ɛ"
+          ]
+        }
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "aː",
+        "ʒ",
+        "ɛ"
+      ]
+    },
+    {
+      "id": "contemplative-evidential-linker-locality",
+      "status": "Consonantal contemplative host takes plain /al/, then outer front linker targets only evidential /l/; no new postalveolar mutation or root allomorph.",
+      "input": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "aː",
+        "ʒ"
+      ],
+      "boundaries": [
+        {
+          "identifier": "evidential",
+          "grade": "plain",
+          "licensed": true,
+          "suffix": [
+            "a",
+            "l"
+          ]
+        },
+        {
+          "identifier": "linker",
+          "grade": "front",
+          "licensed": true,
+          "suffix": [
+            "ɛ"
+          ]
+        }
+      ],
+      "expected": [
+        "pʲ",
+        "a",
+        "ʃ",
+        "t",
+        "aː",
+        "ʒ",
+        "a",
+        "ʎ",
+        "ɛ"
       ]
     }
   ]
