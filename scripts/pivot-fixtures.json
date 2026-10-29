@@ -1,0 +1,543 @@
+{
+  "status": "Independently authored expectations from the canonical frames; exclusions and selection are supplied hypotheses, not results.",
+  "frames": [
+    {
+      "name": "active NOM transitive",
+      "order": [
+        "A",
+        "T"
+      ],
+      "selected": "A",
+      "external": "A",
+      "excluded": [
+        "T"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "A": "DIR",
+        "T": "IND"
+      }
+    },
+    {
+      "name": "active ERG transitive",
+      "order": [
+        "A",
+        "T"
+      ],
+      "selected": "T",
+      "external": "A",
+      "excluded": [],
+      "domain": "ERG",
+      "expected": {
+        "A": "TRS",
+        "T": "DIR"
+      }
+    },
+    {
+      "name": "intransitive",
+      "order": [
+        "A"
+      ],
+      "selected": "A",
+      "external": "A",
+      "excluded": [],
+      "domain": "ERG",
+      "expected": {
+        "A": "DIR"
+      }
+    },
+    {
+      "name": "antipassive",
+      "order": [
+        "A"
+      ],
+      "selected": "A",
+      "external": "A",
+      "excluded": [],
+      "domain": "ERG",
+      "expected": {
+        "A": "DIR"
+      }
+    },
+    {
+      "name": "NOM applied transitive",
+      "order": [
+        "A",
+        "B",
+        "T"
+      ],
+      "selected": "B",
+      "external": "A",
+      "excluded": [
+        "A",
+        "T"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "A": "IND",
+        "B": "DIR",
+        "T": "IND"
+      }
+    },
+    {
+      "name": "ERG applied transitive",
+      "order": [
+        "A",
+        "B",
+        "T"
+      ],
+      "selected": "B",
+      "external": "A",
+      "excluded": [
+        "T"
+      ],
+      "domain": "ERG",
+      "expected": {
+        "A": "TRS",
+        "B": "DIR",
+        "T": "IND"
+      }
+    },
+    {
+      "name": "NOM applied intransitive",
+      "order": [
+        "A",
+        "B"
+      ],
+      "selected": "B",
+      "external": "A",
+      "excluded": [
+        "A"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "A": "IND",
+        "B": "DIR"
+      }
+    },
+    {
+      "name": "ERG applied intransitive",
+      "order": [
+        "A",
+        "B"
+      ],
+      "selected": "B",
+      "external": "A",
+      "excluded": [],
+      "domain": "ERG",
+      "expected": {
+        "A": "TRS",
+        "B": "DIR"
+      }
+    },
+    {
+      "name": "NOM causative intransitive",
+      "order": [
+        "C",
+        "X"
+      ],
+      "selected": "C",
+      "external": "C",
+      "excluded": [
+        "X"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "C": "DIR",
+        "X": "IND"
+      }
+    },
+    {
+      "name": "ERG causative intransitive",
+      "order": [
+        "C",
+        "X"
+      ],
+      "selected": "X",
+      "external": "C",
+      "excluded": [],
+      "domain": "ERG",
+      "expected": {
+        "C": "TRS",
+        "X": "DIR"
+      }
+    },
+    {
+      "name": "NOM causative transitive",
+      "order": [
+        "C",
+        "X",
+        "T"
+      ],
+      "selected": "C",
+      "external": "C",
+      "excluded": [
+        "X",
+        "T"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "C": "DIR",
+        "X": "IND",
+        "T": "IND"
+      }
+    },
+    {
+      "name": "ERG causative transitive",
+      "order": [
+        "C",
+        "X",
+        "T"
+      ],
+      "selected": "T",
+      "external": "C",
+      "excluded": [
+        "X"
+      ],
+      "domain": "ERG",
+      "expected": {
+        "C": "TRS",
+        "X": "IND",
+        "T": "DIR"
+      }
+    },
+    {
+      "name": "NOM causative applied transitive",
+      "order": [
+        "C",
+        "X",
+        "B",
+        "T"
+      ],
+      "selected": "C",
+      "external": "C",
+      "excluded": [
+        "X",
+        "B",
+        "T"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "C": "DIR",
+        "X": "IND",
+        "B": "IND",
+        "T": "IND"
+      }
+    },
+    {
+      "name": "ERG causative applied transitive",
+      "order": [
+        "C",
+        "X",
+        "B",
+        "T"
+      ],
+      "selected": "T",
+      "external": "C",
+      "excluded": [
+        "X",
+        "B"
+      ],
+      "domain": "ERG",
+      "expected": {
+        "C": "TRS",
+        "X": "IND",
+        "B": "IND",
+        "T": "DIR"
+      }
+    },
+    {
+      "name": "NOM causative applied intransitive",
+      "order": [
+        "C",
+        "X",
+        "B"
+      ],
+      "selected": "C",
+      "external": "C",
+      "excluded": [
+        "X",
+        "B"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "C": "DIR",
+        "X": "IND",
+        "B": "IND"
+      }
+    },
+    {
+      "name": "ERG causative applied intransitive",
+      "order": [
+        "C",
+        "X",
+        "B"
+      ],
+      "selected": "B",
+      "external": "C",
+      "excluded": [
+        "X"
+      ],
+      "domain": "ERG",
+      "expected": {
+        "C": "TRS",
+        "X": "IND",
+        "B": "DIR"
+      }
+    },
+    {
+      "name": "ERG causative antipassive",
+      "order": [
+        "C",
+        "X"
+      ],
+      "selected": "X",
+      "external": "C",
+      "excluded": [],
+      "domain": "ERG",
+      "expected": {
+        "C": "TRS",
+        "X": "DIR"
+      }
+    },
+    {
+      "name": "NOM passive",
+      "order": [
+        "A",
+        "T"
+      ],
+      "selected": "T",
+      "external": "A",
+      "excluded": [
+        "A"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "A": "IND",
+        "T": "DIR"
+      }
+    },
+    {
+      "name": "NOM causative passive",
+      "order": [
+        "C",
+        "X",
+        "T"
+      ],
+      "selected": "T",
+      "external": "C",
+      "excluded": [
+        "C",
+        "X"
+      ],
+      "domain": "NOM",
+      "expected": {
+        "C": "IND",
+        "X": "IND",
+        "T": "DIR"
+      }
+    },
+    {
+      "name": "directive applied transitive",
+      "order": [
+        "B",
+        "T"
+      ],
+      "selected": "T",
+      "external": null,
+      "excluded": [
+        "B"
+      ],
+      "domain": "DIRECTIVE",
+      "expected": {
+        "B": "IND",
+        "T": "DIR"
+      },
+      "external_licence": null
+    },
+    {
+      "name": "directive overt simple actor",
+      "order": [
+        "A",
+        "T"
+      ],
+      "selected": "T",
+      "external": "A",
+      "excluded": [
+        "A"
+      ],
+      "domain": "DIRECTIVE",
+      "external_licence": "TRS",
+      "expected": {
+        "A": "TRS",
+        "T": "DIR"
+      }
+    },
+    {
+      "name": "directive overt causative causer",
+      "order": [
+        "C",
+        "X",
+        "T"
+      ],
+      "selected": "T",
+      "external": "C",
+      "excluded": [
+        "C",
+        "X"
+      ],
+      "domain": "DIRECTIVE",
+      "external_licence": "TRS",
+      "expected": {
+        "C": "TRS",
+        "X": "IND",
+        "T": "DIR"
+      }
+    },
+    {
+      "name": "directive sole participant",
+      "order": [
+        "A"
+      ],
+      "selected": "A",
+      "external": "A",
+      "excluded": [],
+      "domain": "DIRECTIVE",
+      "external_licence": "DIR",
+      "expected": {
+        "A": "DIR"
+      }
+    }
+  ],
+  "locality": [
+    {
+      "name": "nonphasal domain",
+      "boundaries": [
+        [
+          false,
+          false
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "name": "opaque no edge",
+      "boundaries": [
+        [
+          true,
+          false
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "name": "exported edge",
+      "boundaries": [
+        [
+          true,
+          true
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "name": "one unexported boundary",
+      "boundaries": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "expected": false
+    }
+  ],
+  "scope": [
+    {
+      "name": "different witnesses per actor",
+      "relation": [
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          true
+        ]
+      ],
+      "expected": {
+        "exists_every": false,
+        "every_exists": true
+      }
+    },
+    {
+      "name": "shared witness",
+      "relation": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "expected": {
+        "exists_every": true,
+        "every_exists": true
+      }
+    },
+    {
+      "name": "no witness for one actor",
+      "relation": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "expected": {
+        "exists_every": false,
+        "every_exists": false
+      }
+    }
+  ],
+  "negation": [
+    {
+      "values": [
+        true,
+        false
+      ],
+      "expected": {
+        "not_exists": false,
+        "exists_not": true
+      }
+    },
+    {
+      "values": [
+        false,
+        false
+      ],
+      "expected": {
+        "not_exists": true,
+        "exists_not": true
+      }
+    },
+    {
+      "values": [
+        true,
+        true
+      ],
+      "expected": {
+        "not_exists": false,
+        "exists_not": false
+      }
+    }
+  ]
+}

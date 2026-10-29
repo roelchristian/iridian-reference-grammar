@@ -47,6 +47,8 @@ util/*
 !util/tests/
 !util/tests/test_collect_lexicon.py
 !util/README.md
+!util/pivot-*.md
+!util/tests/test_pivot_diagnostics.py
 *.draft
 *.draft.md
 
