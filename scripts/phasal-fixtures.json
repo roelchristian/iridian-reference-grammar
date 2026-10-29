@@ -180,12 +180,12 @@
       "translation": "What else did Marek eat?"
     },
     {
-      "form": "Mlada Janek so ščének.",
+      "form": "Janek mlada so ščének.",
       "context": [
         "His coming was already a desired possibility and remains one",
         "Janek has not arrived"
       ],
-      "gloss": "desiderative Janek.\\Dir{} still arrive-\\Pf{}",
+      "gloss": "Janek.\\Dir{} desiderative still arrive-\\Pf{}",
       "translation": "I hope Janek still comes."
     }
   ],

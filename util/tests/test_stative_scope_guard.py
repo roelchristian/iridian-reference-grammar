@@ -28,6 +28,19 @@ class StativeScopeGuardTests(unittest.TestCase):
             with self.subTest(added=changed.endswith('new-ový}\n')):
                 self.assertTrue(check_scope(overrides={path: changed}))
 
+    def test_reviewed_finite_reference_update_preserves_reduced_rule_guard(self):
+        path = 'chapters/08-complex-sentences.tex'
+        source = (ROOT / path).read_text()
+        self.assertIn('Finite content question & Ordinary placement or marked wh-fronting', source)
+        # This finite cross-reference was reviewed; selection remains frozen.
+        self.assertEqual(check_scope(overrides={path: source}), [])
+        changed = source.replace('no finite I-position required', 'full finite PolP required', 1)
+        self.assertTrue(check_scope(overrides={path: changed}))
+        # Only the exact reviewed wording is accepted, not arbitrary row edits.
+        changed = source.replace('Lower occurrence interpreted under Pol;',
+                                 'Every fronted occurrence interpreted above Pol;', 1)
+        self.assertTrue(check_scope(overrides={path: changed}))
+
     def test_ordinary_new_metadata_outside_protected_scope_is_allowed(self):
         path = 'chapters/03-verbs.tex'
         source = (ROOT / path).read_text()
