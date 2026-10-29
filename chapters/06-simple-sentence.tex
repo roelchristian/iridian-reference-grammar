@@ -210,15 +210,41 @@ and alternative set must remain constant across the relevant stages.
 Precisely, let $p_x(t)$ be the proposition with the focused associate replaced
 by $x$, with actual associate $a\in A$ and all other material fixed.
 For argument focus, $x$ ranges over individuals; for VP focus it ranges over
-contextually comparable actions, with their participants held fixed. Write
+contextually comparable actions, with their participants held fixed. For
+truth-valued alternatives $q_x$, write
 $E_A(q)=q_a\wedge\bigwedge_{b\in A\setminus\{a\}}\neg q_b$.
-The ordinary rule yields $E_A(x\mapsto\mathrm{PHAS}(p_x))$. The bounded
-lower rule instead constructs the stagewise proposition
+The bounded lower rule constructs the stagewise proposition
 $q(t)=E_A(x\mapsto p_x(t))$ and supplies that proposition to PHAS.
 If the prejacent is negative, $p_x(t)$ already contains the one licensed
 negation; the rule neither duplicates it nor moves it over PHAS.
-Only the \ird{kamo}/\ird{kam}--\ird{vy}/\ird{so} construction licenses this
-second composition, within one finite domain and without intervening Mood or
+
+In the ordinary high reading, exclusivity instead compares complete phasal
+profiles. With the same reference stage $r$ and preceding stage $r^{-}$ for
+all alternatives, define the truth-valued profile predicates
+\[
+\begin{aligned}
+h_{\mathrm{VY}}(x)&=\neg p_x(r^{-})\wedge p_x(r),\\
+h_{\mathrm{SO}}(x)&=p_x(r^{-})\wedge p_x(r).
+\end{aligned}
+\]
+The high construction requires $h_{\mathrm{PHAS}}(a)$ and excludes
+$h_{\mathrm{PHAS}}(b)$ for every distinct $b\in A$. The actual associate
+retains its presupposed preceding-stage background, while each excluded
+alternative is tested for satisfaction of the complete two-stage profile.
+An alternative that lacks the relevant preceding state therefore fails that
+profile without making the high exclusive construction undefined. Thus a
+newly qualified doctor does not satisfy the profile of continuing
+qualification, while an earlier doctor whose qualification continues does
+not satisfy the attainment profile. The scope notation
+$\mathrm{EXCL}_{A}(\mathrm{PHAS}(P))$ abbreviates this construction-specific
+comparison; it does not negate a partial phasal denotation whose
+presupposition has failed. These profile predicates formalise the ordinary
+two-stage approximation, without replacing the phasal presupposition of the
+actual associate or extending the rule to scalar constructions. For a negative
+prejacent, $p_x$ remains the already polarised proposition in both profiles.
+
+Only the \ird{kamo}/\ird{kam}--\ird{vy}/\ird{so} construction licenses the
+lower exclusive composition, within one finite domain and without intervening Mood or
 clausal evidentiality. It does not license lowering \ird{och}, \ird{mó},
 \ird{dlí}, or an arbitrary sequence of comment operators.
 
@@ -259,13 +285,19 @@ in that set would contradict the claim}//
 \endgl
 \xe
 
-The second reading requires prior exclusivity, whereas the first requires
-Janek to be the sole continuing member of the earlier doctor cohort;
-newly qualified alternatives need not have held the qualification before. These diagnostics distinguish the readings
-without treating the shared linear order as evidence for unrestricted scope
-permutation. Other scalar uses of \ird{vy}/\ird{so} require the separately
-specified domains and contextual alternatives of
-§\,\ref{sec:class1-particles}.
+The lower reading requires prior exclusivity, whereas the high reading
+requires Janek to be the sole continuing member of the earlier doctor cohort;
+newly qualified alternatives need not have held the qualification before.
+With the same person alternatives at both stages,
+$\mathrm{SO}(\mathrm{EXCL}_{A}(P))$ entails
+$\mathrm{EXCL}_{A}(\mathrm{SO}(P))$, although the converse fails. The
+first context therefore excludes the lower reading, while the second supports
+it without independently ruling out the high reading. The contrast concerns
+the stronger requirement of continuing exclusivity, rather than two
+mutually exclusive contextual distributions. Neither interpretation licenses
+unrestricted scope permutation merely because the surface order is shared.
+Other scalar uses of \ird{vy}/\ird{so} require the separately specified
+domains and contextual alternatives of §\,\ref{sec:class1-particles}.
 
 
 \subsection{A bounded polarity--phase--focus diagnostic paradigm}
@@ -279,7 +311,10 @@ $A=\mathrm{ADD}_A$ for additive \ird{och}, and $E=\mathrm{EXCL}_A$ for
 $A(q)$ asserts $q_a$ and presupposes some distinct $q_b$, whereas $E(q)$
 asserts $q_a$ and excludes every distinct $q_b$ in that set. Additivity here
 associates with the whole phasal proposition, not an independently lowered
-operator. The associate is \ird{Marek} in Table~\ref{tab:th-indicative-diagnostics}:
+operator. Its additional alternative must satisfy both the preceding-stage
+background and the reference-stage condition of that phasal profile; an
+alternative whose background fails cannot supply the additive presupposition.
+The associate is \ird{Marek} in Table~\ref{tab:th-indicative-diagnostics}:
 $p_x(t)$ means that $x$ is sleeping at stage $t$. The topic binds its lower
 argument variable as in §\,\ref{sec:th-exclusive-phasal}.
 
