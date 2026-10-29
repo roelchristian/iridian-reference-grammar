@@ -22,6 +22,8 @@ from quantity_grades import QuantityGrades, QuantityLicence  # noqa: E402
 from phasal_diagnostics import check_phasal_diagram, check_phasal_sources  # noqa: E402
 from clausal_diagnostics import check_clausal_sources  # noqa: E402
 from stative_diagnostics import check_stative_sources  # noqa: E402
+from stative_scope_guard import check_scope  # noqa: E402
+from stative_lexicon import load_lexicon, check_lexical_extension_sources  # noqa: E402
 
 
 def active_sources(path, seen=None):
@@ -471,6 +473,9 @@ def check():
     failures.extend(check_quantity_sources(sources, quantity_fixtures))
     stative_fixtures = json.loads((ROOT / 'scripts/stative-fixtures.json').read_text(encoding='utf-8'))
     failures.extend(check_stative_sources(sources, stative_fixtures))
+    failures.extend(check_scope())
+    lexical_statives = load_lexicon()
+    failures.extend(check_lexical_extension_sources(sources, lexical_statives))
     failures.extend(check_prescribed_pronunciations(
         sources, quantity_fixtures['pronunciations'], 'quantity'))
     boundary_mapper = BoundaryTransducer.from_file()
@@ -605,6 +610,9 @@ def check():
           f"{len(quantity_fixtures['cases'])} independent quantity fixtures, "
           f"{sum(len(row['forms']) for row in stative_fixtures['paradigms'])} stative aspect cells, "
           f"{len(stative_fixtures['causatives'])} conditional stative causative paradigms, "
+          f"{len(lexical_statives['entries'])} lexical stative records, "
+          f"{len(lexical_statives['manifest']['forms'])} Manifest aspect cells, "
+          "frozen relative-scope guard, "
           f"{len(quantity_fixtures['pronunciations'])} quantity pronunciation fixtures, "
           f"{len(contemplative_fixtures['pronunciations'])} contemplative pronunciation fixtures, "
           f"{sum(len(palatalisation_fixtures[key]) for key in ('derivations', 'pronunciations', 'classes'))} palatalisation fixtures, "

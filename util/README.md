@@ -105,6 +105,19 @@ stems, 80 finite aspect cells, their negative/phasal and bound derivatives,
 review. The model takes explicit licences and semantic standards; it does not
 infer attestation, phonetic output or arbitrary lexical selection from spelling.
 
+## Ordinary ATTR and experiential extension
+
+`scripts/stative-lexicon.json` and `scripts/stative_lexicon.py` add explicit
+lexical licences for the second pass. The latest ordinary attributive and
+Manifest specifications are recorded in `util/stative-extension-paradigms.md`.
+The earlier `util/stative-paradigms.md` and its fixture matrix remain the
+reviewed historical baseline at `5a29478`; their unassigned happy-attributive
+and unadopted-third-class status is superseded by the new ordinary ATTR
+metadata. Their existing relative examples and construction rules remain
+unchanged. `scripts/stative_scope_guard.py` checks the preserved source spans
+and earlier files against baseline hashes, including negative mutation tests.
+See `util/stative-extension-source-audit.md` for primary-source access limits.
+
 ## Collect forms marked in the grammar
 
 From the repository root, run:
