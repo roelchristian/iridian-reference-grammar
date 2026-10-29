@@ -1,0 +1,222 @@
+{
+  "scope": "Third multiagent theoretical audit of the finite placement revision; research record outside grammatical prose.",
+  "baseline_commit": "9b4dda9",
+  "language_facts_preserved": [
+    "All published interlinear surfaces, glosses, contexts and translations unchanged in this pass.",
+    "Ordinary arguments/modifiers precede the particle field; by > och > jas > vy/so remains a partial order.",
+    "Three-stage recurrence and lower Case/concord/binding contrasts retained.",
+    "Reduced construction selection restrictions and frozen relative sources retained."
+  ],
+  "sources": [
+    {
+      "key": "chomsky2008",
+      "status": "added",
+      "url": "https://www.its.caltech.edu/~matilde/ChomskyOnPhases.pdf",
+      "passages": [
+        "pp. 138–141: Merge, No-Tampering and tucking-in",
+        "pp. 150–151: completed-chain inactivity"
+      ],
+      "supports": "Tucking-in requires an explicit qualification to strict root extension; completed Case/Agree inactivity is a substantive restriction.",
+      "limit": "Does not establish OrdP, the Iridian placement feature or its Case-independent activity."
+    },
+    {
+      "key": "richards2002",
+      "status": "added",
+      "url": "https://web.mit.edu/norvin/www/24.956/Richards.pdf",
+      "passages": [
+        "§2, author PDF pp. 5–6: Shortest and tucking-in"
+      ],
+      "supports": "A formal precedent for ordered multiple movement to one projection while it remains open.",
+      "limit": "Bulgarian wh-movement does not establish universal argument/modifier placement or the Iridian pivot-first priority. Published pagination omitted because not verified."
+    },
+    {
+      "key": "paille2021",
+      "status": "added",
+      "url": "https://ojs.lib.uwo.ca/index.php/afla/article/download/23495/17996/63164",
+      "passages": [
+        "§§2.1–2.2, pp. 84–87: competing multiple-specifier assumptions",
+        "§5.1, p. 94: pivot tucking below an external actor"
+      ],
+      "supports": "An explicit formal alternative in which an internally merged constituent can tuck below an externally merged actor.",
+      "limit": "The cited analysis uses equidistance for binding; that binding account is not adopted for the Iridian ordered edge. Year checked against author publication record: 2021."
+    },
+    {
+      "key": "mueller2000",
+      "status": "added",
+      "url": "https://roa.rutgers.edu/files/365-1299/roa-365-mueller-2.pdf",
+      "passages": [
+        "§1, manuscript p. 1: remnant movement, proper binding and derivational locality",
+        "§2, manuscript pp. 2–4: differing properties of remnant constructions"
+      ],
+      "supports": "Distinguishes derivational locality from requiring proper binding in every intermediate representation.",
+      "limit": "Does not independently license Iridian negative-equative movement or a general extraction-from-moved-phrase exception."
+    },
+    {
+      "key": "rizzibocci2017",
+      "status": "added",
+      "url": "https://www.unige.ch/lettres/linguistique/application/files/1115/3736/0647/Rizzi_Bocci_2017_Left_Periphery.pdf",
+      "passages": [
+        "§§2.2–3.1, pp. 2–5: Force, Fin, focus and Italian Int",
+        "§5, pp. 11–12: matching-feature criterial heads"
+      ],
+      "supports": "An articulated left periphery distinguishes clause-edge functions, with Italian Int above Foc.",
+      "limit": "Does not establish the Iridian position of Pol below Foc/Ord or the order by > jas."
+    },
+    {
+      "key": "fox1999",
+      "status": "existing; attribution qualified",
+      "url": "https://semantics.uchicago.edu/kennedy/classes/nu/460/S04/fox99.pdf",
+      "passages": [
+        "pp. 157–159: pronunciation and interpretation",
+        "§7, pp. 192–193: distinct A and A-bar reconstruction treatments"
+      ],
+      "supports": "Pronunciation need not identify the interpreted occurrence, while reconstruction mechanisms vary across dependencies.",
+      "limit": "Does not establish uniform reconstruction or the absence of new binding/scope possibilities for Iridian Ord movement."
+    },
+    {
+      "key": "bakervinokurova2010",
+      "status": "existing; citation added at chain competition claim",
+      "url": "https://sites.rutgers.edu/mark-baker/wp-content/uploads/sites/199/2019/07/sakha_case_postreview.pdf",
+      "passages": [
+        "§1, author manuscript pp. 3–5: different-chain condition and case competitors",
+        "§3.1, author manuscript pp. 12–14: object shift and case"
+      ],
+      "supports": "Dependent-case competitors exclude occurrences of the same chain.",
+      "limit": "Case timing is not universally invariant under displacement; the Iridian frame must retain its separately specified licensing cycle/occurrences."
+    },
+    {
+      "key": "cinque1999",
+      "status": "existing; locator added",
+      "url": "https://api.pageplace.de/preview/DT0400.9780195354058_A23603443/preview-9780195354058_A23603443.pdf",
+      "passages": [
+        "pp. v–vi: independent adverb/head hierarchies and their comparison"
+      ],
+      "supports": "Comparing adverb distribution with independently motivated functional-head order.",
+      "limit": "Unique specifiers and a full universal hierarchy are stronger commitments than the Iridian articulated partial order; ordinary placement is not derived from this comparison."
+    },
+    {
+      "key": "krifka2008",
+      "status": "existing; erroneous locator repaired",
+      "url": "https://real.mtak.hu/55105/1/aling.55.2008.3-4.2.pdf",
+      "passages": [
+        "§§3.1, 3.4: focus alternatives and question/answer congruence",
+        "§§2.2, 5.1, 5.2, 6.2: existing information-structure comparisons checked"
+      ],
+      "supports": "Focus and question/answer alternatives; aboutness and related information-structure distinctions.",
+      "limit": "No §3.3.1 exists in the cited article; no claim about the syntactic position or licensing power of Pol follows from its alternative semantics."
+    },
+    {
+      "key": "erlewine2016copies",
+      "status": "existing; no repair needed",
+      "url": "https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/download/26.855/3686/5352",
+      "passages": [
+        "pp. 859–863, especially p. 863 fn. 9"
+      ],
+      "supports": "A lower-copy focus-association mechanism for the studied English even construction.",
+      "limit": "Explicitly does not establish the same analysis for English only. The existing Iridian exclusive composition remains independently stipulated."
+    },
+    {
+      "key": "clemdeal2026",
+      "status": "existing; no repair needed",
+      "url": "https://escholarship.org/content/qt6r1029sf/qt6r1029sf.pdf",
+      "passages": [
+        "§3.1, manuscript pp. 9–10: interaction, satisfaction and expansion",
+        "§3.3, manuscript pp. 19–21: first-goal/second-goal feature relations"
+      ],
+      "supports": "A comparative successive-Agree case model separating interaction from satisfaction.",
+      "limit": "Does not determine the Iridian participant-selection priority, phase inventory or Case timing."
+    }
+  ],
+  "repairs": [
+    {
+      "topic": "Ord activity and completed Case",
+      "finding": "Case valuation previously had no explicit relationship to subsequent placement activity.",
+      "repair": "Define a chain-level placement feature independent of Case/phi features, discharged only by final ordinary placement; explicitly mark departure from stronger completed-chain inactivity.",
+      "files": [
+        "chapters/06-simple-sentence.tex"
+      ]
+    },
+    {
+      "topic": "Ordered edges and tucking-in",
+      "finding": "The earlier account did not state its qualification to strict root extension or treatment of multiple-edge distances.",
+      "repair": "Restrict tucking-in to repeated placement requirements while the head projection remains open; use ordered specifiers rather than blanket equidistance.",
+      "files": [
+        "chapters/06-simple-sentence.tex",
+        "chapters/03-verbs.tex"
+      ]
+    },
+    {
+      "topic": "Phase preparation and chain occurrences",
+      "finding": "Searching multiple copies could obscure locality and repeated registration.",
+      "repair": "Search the highest accessible occurrence and register each chain once at a particular edge; phasehood remains an analytical choice rather than an inference from order.",
+      "files": [
+        "chapters/06-simple-sentence.tex",
+        "chapters/03-verbs.tex"
+      ]
+    },
+    {
+      "topic": "Selected finite CP outer edge",
+      "finding": "The outer CP position needed to be distinguished from the ordinary tucking requirement.",
+      "repair": "Give selected finite CP status a separate outer-edge requirement applied while OrdP is open after ordinary registration; do not extract its internal arguments.",
+      "files": [
+        "chapters/06-simple-sentence.tex",
+        "chapters/03-verbs.tex"
+      ]
+    },
+    {
+      "topic": "Negative-equative remnant",
+      "finding": "Later participant movement could be misread as extracting from a displaced remnant, or as requiring proper binding at every intermediate step.",
+      "repair": "Ord targets the participant at the accessible negative edge; distinguish escape, remnant and ordinary requirements and state the derivational locality interpretation.",
+      "files": [
+        "chapters/06-simple-sentence.tex"
+      ]
+    },
+    {
+      "topic": "Case and reconstruction",
+      "finding": "References did not by themselves derive uniform chain interpretation or invariant Case timing.",
+      "repair": "Add the same-chain competitor citation and identify scope/binding restrictions as Iridian interpretation conditions; cite both Fox introduction and A/A-bar discussion.",
+      "files": [
+        "chapters/06-simple-sentence.tex"
+      ]
+    },
+    {
+      "topic": "Interrogative operator and wh variable",
+      "finding": "One passage conflated the clause operator with the variable; the licensing principle was overly general in wording.",
+      "repair": "Distinguish Pol from the wh variable at a locally licensed lower occurrence; preserve finite/nominal domain restrictions.",
+      "files": [
+        "chapters/06-simple-sentence.tex"
+      ]
+    },
+    {
+      "topic": "Pol and cartographic functions",
+      "finding": "The shared labels could suggest an imported universal hierarchy.",
+      "repair": "Explicitly distinguish the adopted Iridian Pol position from Force, Fin and Italian Int; no new particle combination is licensed.",
+      "files": [
+        "chapters/06-simple-sentence.tex"
+      ]
+    },
+    {
+      "topic": "Head direction",
+      "finding": "An uncited parenthetical presented head-final base order as theoretically preferable because of the same surface order.",
+      "repair": "State direct complement-head linearisation as an architectural assumption, without treating surface head-finality as selecting between formal theories.",
+      "files": [
+        "chapters/03-verbs.tex"
+      ]
+    },
+    {
+      "topic": "Citation locators",
+      "finding": "The Krifka focus comparison used a nonexistent subsubsection.",
+      "repair": "Correct §§3.1,3.3.1 to §§3.1,3.4; add verified Cinque preface locator.",
+      "files": [
+        "chapters/07-information-structure.tex",
+        "chapters/01-overview.tex"
+      ]
+    }
+  ],
+  "limits": [
+    "No reviewed source independently derives the whole Iridian OrdP system or establishes its phase inventory.",
+    "The selected participant priority, placement feature, edge requirements and interpretation conditions are explicitly adopted Iridian assumptions.",
+    "Richards 1997 and McGinnis 1998 original thesis downloads were inaccessible; no unverified thesis page citations were added.",
+    "Additional Poole and Keine 2024 and Rizzi/Shlonsky criterial-freezing research was considered; no further machinery was needed for this revision."
+  ]
+}

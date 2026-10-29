@@ -4,7 +4,8 @@
 \label{sec:th-background}
 
 The analyses in Chapters~\ref{ch:simple} and~\ref{ch:complex} adopt a Minimalist
-architecture in which clause structure is built by Merge, interpreted through
+architecture in which clause structure is built by Merge, with the restricted
+ordered-edge insertion defined in §\,\ref{sec:pivot-placement}, and interpreted through
 hierarchies of lexical and functional projections, and linearized according to
 the strongly head-final character of Iridian. Recurrent clause properties are
 analysed through a shared structural spine comprising a predicate domain,
@@ -131,7 +132,12 @@ Three adverbial-particle zones and a separate clause-typing position are
  \ird{by} realises locally head-initial Pol\textsuperscript{0}, below outer
  evidential and speech-act projections but above the comment operators.
  Its complement follows it, while arguments pronounced at the finite
- placement edge precede it (§\,\ref{sec:by-pol-head}).
+ placement edge precede it (§\,\ref{sec:by-pol-head}). Pol names the
+ interrogative operator of this analysis; its position below marked focus and
+ ordinary placement is specific to the Iridian structure. Cartographic Force,
+ Fin and Int distinguish other clause-edge functions and positions, including
+ an Italian Int above Foc \cite[§§2.2--3.1]{rizzibocci2017}. Those labels do
+ not independently establish the position or interpretation of Iridian \ird{by}.
 \item[\upshape Zone~\textsc{i} (outer evidential and speech-act).]
  Speech-act particles such as \ird{nadě} and \ird{mlada}, and evidential
  and epistemic particles such as \ird{oče}, \ird{hladě}, \ird{kady} and
@@ -600,12 +606,12 @@ position chosen for the argument or adjunct.
 \subsection{Licensing of content questions: \synhead{PolP} and wh-operators}
 \label{sec:th-single-wh}
 
-Content questions are licensed by the combination of an interrogative operator
-in \synhead{PolP} and a wh-expression inside the clause. They are not licensed
-by movement alone. \textsc{Pol}\textsuperscript{0} may be phonologically null in
-neutral content questions, but it is structurally present as the clause-typing
-head; the wh-operator within its scope domain is the interrogative variable that
-the question is resolved against.
+Content questions combine interrogative clause typing with a wh-expression
+whose lower occurrence supplies a variable in the same finite domain. In this
+analysis, interrogative Pol binds that variable; neither ordinary placement
+nor dedicated wh-fronting supplies interrogative force by itself.
+\textsc{Pol}\textsuperscript{0} may be phonologically null in neutral content
+questions, while remaining the clause-typing head.
 
 In neutral content questions, wh-expressions undergo ordinary placement
  with the other arguments and modifiers, without dedicated wh-fronting.
@@ -751,9 +757,10 @@ interrogative operator (overt \ird{by} or a null \synhead{PolP} head).
 \noindent In these multiple-wh clauses neither phrase undergoes marked
 wh-fronting; their order does not by itself establish their exact positions
 within the lower clause. Their lower occurrences are bound by the null interrogative
-operator in \synhead{PolP}. The general licensing principle is: a wh-word within
-the scope domain of the clause-level interrogative operator in \synhead{PolP} is
-interpreted as an interrogative variable, regardless of its surface position.
+operator in \synhead{PolP}. The licensing principle relates a wh-expression's eligible lower occurrence
+within its own finite domain to interrogative Pol; ordinary or marked
+pronunciation above Pol does not sever that relation. It supplies no
+independent licence for a dependency across a finite or nominal boundary.
 Overt fronting marks the phrase as the salient or
 foregrounded variable in the pair-list; its landing site is Spec,\synhead{FocP}, above \synhead{OrdP}, as
 illustrated in \ref{ex:wh-four-combinations}. Fronting does not itself establish the
@@ -806,9 +813,14 @@ Ordinary finite arguments and modifiers are pronounced at a clause-local
  projections. Its silent head bears an ordered set of placement requirements:
  first the participant selected by the completed Voice--Asp.Align--Mood
  configuration, then the remaining eligible constituents in their lower
- structural order. The first requirement searches only for the selected
- participant; another argument cannot intervene merely by being closer,
- since it does not satisfy that selection description. Subsequent searches
+ structural order. Each eligible chain bears a placement feature distinct
+ from its Case and agreement features, so Case licensing does not discharge
+ its placement requirement. The initial search restricts that feature to the
+ chain identified by participant selection; the residual searches target
+ the remaining chains. Ord discharges the feature at the final ordinary
+ edge, while intermediate phase edges only register the chain's accessibility.
+ A closer non-selected argument cannot intervene in the first search because
+ it does not satisfy that search's selection description. Subsequent searches
  target the closest eligible argument or ordinary modifier that has not yet
  been placed. Operator particles, predicate heads and material internal to
  a nominal or selected clause are ineligible goals. Each later goal tucks
@@ -818,6 +830,21 @@ Ordinary finite arguments and modifiers are pronounced at a clause-local
  focus, case-valuing or independently scope-taking feature; its movement is
  not uniformly classified as A-movement.
 
+The ordinary edge contains hierarchically ordered specifiers, rather than
+ treating all its occupants as equidistant. While the projection of a placement
+ head remains open, successive movements satisfying its placement requirement
+ insert below earlier edge occupants; a higher head cannot subsequently reopen
+ that completed projection. This restricted tucking-in has a formal precedent
+ in Richards's treatment of multiple movement \cite[§2]{richards2002}.
+ It relaxes root-only structure extension: Chomsky explicitly recognises
+ tucking-in as a potential principled departure from the No-Tampering
+ Condition \cite[p.~141]{chomsky2008}. The Iridian ordered-edge rule is
+ adopted with that qualification, rather than derived from Merge alone.
+ Case-independent placement activity is an assumption of the Iridian
+ analysis: the stronger inactivity condition on completed Case/Agree chains
+ discussed by Chomsky \cite[pp.~150--151]{chomsky2008} is not imposed on
+ this placement dependency.
+
 The lower thematic structure is preserved: the lexical patient merges with
  V, the actor in its Voice domain, and applied participants and causees in
  their independently licensed positions. The analysis assigns an ordinary
@@ -825,8 +852,10 @@ The lower thematic structure is preserved: the lexical patient merges with
  as a phase within one finite clause. Before transfer, eligible ordinary
  constituents must be registered at its accessible edge: existing eligible
  specifiers remain accessible, and lower goals move there nearest first,
- tucking beneath the earlier edge occupants. This non-pivot-selective
- preparation preserves the original residual order; it precedes the completed
+ tucking beneath the earlier edge occupants. Each search targets the highest
+ accessible occurrence of a chain, and a chain already registered at that
+ particular edge is not selected again through one of its lower copies.
+ This non-pivot-selective preparation preserves the original residual order; it precedes the completed
  orientation--Asp.Align--Mood configuration on which Ord's first search
  depends. Only Ord gives the selected participant priority over that residual
  order. A non-phasal head adds no escape step, and the analysis does not infer
@@ -836,9 +865,11 @@ The lower thematic structure is preserved: the lexical patient merges with
  placement of a selected clause as a whole does not extract its arguments.
  A selected finite \ird{po}/\ird{poby} CP moves as a whole to a
  construction-specific external edge of \synhead{OrdP}, preceding its
- pivot and residual occupants. Selected finite CP status licenses that
- additional edge position after the complement has completed its own local
- structure; its internal arguments are not matrix placement goals. Reduced
+ pivot and residual occupants. A separate requirement for selected finite complements
+ applies after ordinary placement while OrdP remains open;
+ it licenses an outer edge rather than another tucked-in ordinary occupant.
+ The complement completes its own local structure independently, and its
+ internal arguments are not matrix placement goals. Reduced
  purposive complements retain their position relative to the pivot (§\,\ref{sec:vm-po-comp}). Ordinary
  placement orders their whole constituents within those licensed positions.
 
@@ -909,13 +940,22 @@ A high pronounced argument retains the case and interpretation licensed
  (§\,\ref{sec:nm-pron-refl}). A chain counts as one argument for case:
  neither an additional silent occurrence nor a higher pronounced occurrence
  adds a case competitor, and case is not recalculated from surface order.
+ The exclusion of same-chain occurrences from dependent-case competition has
+ a precedent in the framework discussed by Baker and Vinokurova
+ \cite[§1]{bakervinokurova2010}; it does not make the timing of Case assignment
+ invariant across languages or constructions.
  Wh-variables are interpreted at their lower occurrences under Pol, while
  additive and exclusive association accesses the lower argument variable.
  Quantified interpretations retain their independently specified readings;
  ordinary placement alone grants no scope reversal or new binding relation.
- Fox's distinction between chain pronunciation and selective interpretation
- provides a reconstruction model \cite[pp.~157--159]{fox1999}, without
- requiring every Iridian argument to reconstruct in every respect.
+ These are interpretation conditions on Iridian ordinary-placement chains,
+ rather than consequences of displacement in general. Fox's distinction
+ between chain pronunciation and selective interpretation supplies a
+ reconstruction model, while his separate treatments of A- and A$'$-chains
+ preclude inferring a uniform reconstruction mechanism from high pronunciation
+ alone \cite[pp.~157--159, 192--193]{fox1999}. Lower interpretation is retained
+ where the particular Iridian dependency requires it, without obligatory
+ reconstruction in every respect.
 
 The use of modifier distribution to constrain functional height has a
 comparative model in Cinque \cite{cinque1999}, without requiring a dedicated
@@ -1177,8 +1217,13 @@ Affirmative \ird{Marek vy doktor} retains \ird{doktor} as the nominal
  PhasP. First the equative participant moves to an outer specifier of NegP,
  above the silent negative operator; the EquP remnant then raises to the outer
  Spec,\synhead{PhasP}, preceding the phasal particle in its inner specifier.
- Finally the participant continues to OrdP and, if independently licensed,
- TopP. This sequence evacuates the participant before remnant movement and
+ Finally Ord targets the participant's accessible occurrence at the negative
+ edge, from which it continues to OrdP and, if independently licensed, TopP.
+ The participant-escape, remnant and ordinary-placement requirements are
+ distinct: the remnant occupies an outer phasal specifier, whereas tucking-in
+ governs repeated satisfaction of the ordinary-placement requirement.
+ Ord does not extract the participant's lower copy from the displaced EquP.
+ This sequence evacuates the participant before remnant movement and
  completes each lower step before building the higher placement edge:
 \[
  \begin{aligned}
@@ -1194,7 +1239,14 @@ The outer phasal edge requirement is restricted to this negative equative
  and Phas, retaining $\mathrm{PHAS}(\neg\mathrm{Equ})$, while the participant
  is pronounced only at its highest licensed occurrence. Without Phas,
  participant escape and ordinary placement suffice for \ird{Marek doktor staly};
- no remnant displacement above Phas is required. Thus nominal predicates
+ no remnant displacement above Phas is required. The remnant step temporarily
+ places a participant copy above its antecedent; the later Ord step restores
+ the participant's higher pronounced position. Locality is checked at each
+ movement step, without imposing proper binding on every intermediate
+ representation. The distinction between derivational locality and such a
+ representational requirement is discussed by Müller \cite[§1]{mueller2000};
+ it supplies no general permission to extract from a moved phrase.
+ Thus nominal predicates
  neither move indiscriminately with arguments nor invariably follow every
  particle. Existential \ird{Pivo vy zada}, by contrast, places the nominal
  pivot before Phas while retaining the existential predicate and its negative

@@ -1972,8 +1972,17 @@ Nominal intervention and phase access remain distinct conditions. The first
  complement is transferred, this requirement registers the eligible ordinary
  constituents at an ordered accessible edge: an eligible constituent already
  at the edge remains accessible, while lower goals move there nearest first,
- tucking beneath the earlier edge occupants. These preliminary steps preserve
- the original residual order and do not select the pivot, whose identity can
+ tucking beneath the earlier edge occupants. Searches access the highest
+ accessible occurrence of each chain and ignore its already registered lower
+ copies. The ordering of internally and externally merged specifiers is a
+ substantive choice: Paillé's analysis of pivot-third order argues for the
+ possibility of tucking below an externally merged actor
+ \cite[§5.1]{paille2021}. The Iridian rule preserves that actor's
+ precedence at the intermediate edge; final pivot priority is established
+ separately by Ord. This comparison concerns specifier order; the
+ equidistance-based binding analysis in that account is not adopted for the
+ Iridian ordinary edge. The preliminary steps preserve the original residual
+ order and do not select the pivot, whose identity can
  still be affected by higher orientation or Mood. Ord subsequently attracts
  the participant selected by the completed configuration before placing the
  residual constituents. A non-phasal head introduces no additional escape
@@ -4366,12 +4375,11 @@ precedes V in the lower structure:
 \noindent This is the \emph{base-generated} complement position. Its
 preverbal orientation follows from head-finality; its ordinary pronunciation
 before particles additionally involves finite ordinary placement. In the Minimalist
-framework, head-finality is parameterised as the linearization
-convention that assigns $<$Complement, Head$>$ ordering (Kayne's
-1994 antisymmetric alternative --- deriving all
-SOV orders from movement --- is not adopted here; the parametric
-head-final approach is more consistent with the thoroughgoing
-head-final organisation of Iridian lexical phrases).
+framework used here, head-finality is the linearisation convention assigning
+$<$Complement, Head$>$ order in the lower predicate. This directly represented
+complement order is an architectural assumption; the further position before
+particles follows from ordinary placement, rather than from head-finality
+alone.
 
 The patient \synhead{DP} is base-generated as the complement of V, before
  the verb. Its direct or indirect case is licensed within the aspectual and
@@ -4448,8 +4456,9 @@ The complement \synhead{CP} originates in [Complement, matrix-\synhead{VP}],
 where head-finality places it before V. The selected finite CP moves as a whole to the construction-specific
 external edge of \synhead{OrdP}, before the pivot and residual ordinary
 constituents but below marked information structure. This placement is licensed
-by its status as a selected finite complement, after its internal finite
-structure has been completed; its internal arguments never become goals of
+by a separate requirement for selected finite complements on Ord, applied
+after ordinary placement while OrdP remains open. Its internal finite structure
+is completed independently, and its internal arguments never become goals of
 the matrix placement search. The lower CP occurrence preserves selection by V.
 
 When the embedded predicate is a zero-copula predication, however, no overt
