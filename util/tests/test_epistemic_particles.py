@@ -17,7 +17,8 @@ class EpistemicParticleTests(unittest.TestCase):
     def test_current_sources_and_literal_lexical_pronunciations(self):
         self.assertEqual(checker.renamed_particle_checks(self.sources), [])
         path = 'util/lexicon.tex'
-        for old, new in [('ˈgda.ɨ', 'ˈkda.ɨ'), ('ˈgda.ɨ', 'ˈgdaj'),
+        for old, new in [('ˈka.dɨ̞', 'ˈgda.ɨ'), ('ˈka.dɨ̞', 'ˈga.dɨ'),
+                         ('ˈka.dɨ̞', 'ˈka.dj'), ('ˈka.dɨ̞', 'ka.ˈdɨ'),
                          ('ˈxla.ɟɛ', 'ˈxla.dɛ'), ('ˈxla.ɟɛ', 'ˈhla.ɟɛ'),
                          ('ˈxla.ɟɛ', 'ˈxla.ɟeː'), ('ˈmoː', 'ˈmɔ'),
                          ('ˈmoː', 'ˈmoːts')]:
@@ -27,25 +28,38 @@ class EpistemicParticleTests(unittest.TestCase):
                 self.assertTrue(checker.renamed_particle_checks(changed))
 
     def test_obsolete_forms_rejected_case_insensitively_without_matching_substrings(self):
-        for form in ('ktady', 'Ktady', 'HLAVDY', 'hlavdy', 'moc', 'Moc', 'MOC'):
+        for form in ('ktady', 'Ktady', 'kday', 'Kday', 'KDAY',
+                     'HLAVDY', 'hlavdy', 'moc', 'Moc', 'MOC'):
             with self.subTest(form=form):
                 changed = dict(self.sources, **{'chapters/03-verbs.tex': form})
                 self.assertTrue(checker.renamed_particle_checks(changed))
-        changed = dict(self.sources, **{'chapters/03-verbs.tex': 'xktady hlavdyx mrocna mocx'})
+        changed = dict(self.sources, **{'chapters/03-verbs.tex':
+                       'xktady xkday kdayx -eškady hlavdyx mrocna mocx'})
         self.assertEqual(checker.renamed_particle_checks(changed), [])
+
+    def test_kady_pronunciation_is_paired_in_current_description(self):
+        path = 'chapters/05-function-words.tex'
+        for pronunciation in ('ˈgda.ɨ', 'ˈga.dɨ̞', 'ˈka.dɨ', 'ka.ˈdɨ̞', 'ˈka.ɟɨ̞'):
+            with self.subTest(ipa=pronunciation):
+                changed = dict(self.sources)
+                changed[path] = changed[path].replace('ˈka.dɨ̞', pronunciation)
+                self.assertTrue(checker.renamed_particle_checks(changed))
+        # The unrelated temporal suffix retains its original spelling.
+        for path in ('chapters/03-verbs.tex', 'chapters/08-complex-sentences.tex'):
+            self.assertIn(r'\ird{-eškady}', self.sources[path])
 
     def test_existing_particle_combinations_and_glosses_remain_paired(self):
         source = self.sources['chapters/05-function-words.tex']
         for phrase, gloss in [('Hladě Janek vy ščének.', 'infer'),
                               (r'\ljudge{\#}Hladě Janek vy ščének.', 'infer'),
-                              ('Kday Marek doktor?', 'speculative'),
+                              ('Kady Marek doktor?', 'speculative'),
                               ('Janek mó vy ščének.', None),
                               ('Mó vy piaštím!', 'affirm')]:
             match = re.search(r'\\gla\s+' + re.escape(phrase) + r'//\s*\\glb\s+(.*?)//', source, re.S)
             self.assertIsNotNone(match)
             self.assertEqual(match[1].split()[1] if gloss is None else match[1].split()[0],
                              'affirm' if gloss is None else gloss)
-        self.assertIn(r'\ird{Kday Marek so doktor?}', source)
+        self.assertIn(r'\ird{Kady Marek so doktor?}', source)
 
 
 if __name__ == '__main__':

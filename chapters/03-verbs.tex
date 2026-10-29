@@ -2690,26 +2690,42 @@ separate Neg head below those operators and Mood.
 Vocabulary Insertion supplies the exponents of these feature bundles after
 the syntactic structure has been assembled \cite{embicknoyer2007}. The
 absence of a separate Neg node in negative non-indicative clauses accounts for
-the exclusion of \ird{za-}; an alternative derivation through post-syntactic
-fusion of Neg and Mood would yield the same morphological pattern.
+the exclusion of \ird{za-}.
 
-A silent $\mathrm{Op}_{\neg}[i\textsc{neg}]$ in the mood domain licenses
-the negative feature of Mood together with any negative indefinites in that
-finite clause, extending the concord dependency of
-§\,\ref{sec:vm-negative-concord} to \ird{-é}, \ird{-ku}, and \ird{-ir}.
-No additional Neg head is required: the overt negative mood suffix satisfies
-the obligatory morphological expression of negative polarity. Concord fixes
-the number of semantic negations at one within this dependency, without
-determining the relative semantic scope of negation and irrealis modality.
+The interpretable contribution belongs to a silent
+$\mathrm{Op}_{\neg}[i\textsc{neg}]$ adjoined to the selected AspP, at the
+lower edge of the finite Mood domain. This is a polarity operator, not an
+additional functional Neg head or a second Asp head. Its denotation is
+$\lambda p.\neg p$; it applies to the proposition abstracted from AspP
+before any phasal operator applies. Negative Mood licenses exactly one such
+operator in its own finite complement; the dependency cannot cross another
+finite Mood or enter an AspP-selecting reduced nominal. Intervening licensed
+Phas and comment operators do not interrupt this dependency. Mood's
+$[u\textsc{neg}]$ and negative indefinites are concord associates of this
+single interpretable operator (§\,\ref{sec:vm-negative-concord}). Thus the
+negative suffix is pronounced high, while negation is interpreted low:
+\[
+ [\mathrm{Mood}_{M,u\mathrm{neg}}\ [C\ [\mathrm{PHAS}\
+   [\mathrm{Op}_{\neg}\ [\mathrm{AspP}\ P]]]]]
+ \quad\leadsto\quad M(C(\mathrm{PHAS}(\neg P))).
+\]
+Here $C$ is an independently licensed comment contribution and is omitted
+when absent; the specifically licensed lower exclusive composition is defined
+in §\,\ref{sec:th-exclusive-phasal}. Without Phas or $C$, the same rule gives
+$M(\neg P)$. This is the explicit Iridian analysis of the dependency, rather
+than an inference from suffix order. It preserves Mood's selection of an
+Asp-bearing domain without requiring adjacency to AspP, and excludes an
+additional indicative \ird{za-} in this construction.
 
 The prohibitive \ird{Trava piašté} \trsl{Do not eat the bread} directs the
 addressee to refrain from eating, combining directive force with negative
 propositional content \cite{han2001}. The negative hortative similarly
-proposes or requests restraint, while \ird{piaštir} \trsl{would/might not eat}
-expresses the non-occurrence of eating in a hypothetical situation. The
-location of the negative feature at Mood is a syntactic analysis of the
-suffixal paradigm; the relative semantic scope of negation and irrealis
-modality is undocumented.
+proposes restraint. For negative irrealis, this grammar fixes the local
+composition as $\mathrm{IRR}(\neg P)$: non-eating in the relevant hypothetical
+situations, rather than denial that eating is possible. This convention does
+not settle interactions with independently expressed modal predicates.
+Matched phasal and focus diagnostics appear in
+§\,\ref{sec:th-polarity-diagnostics}.
 
 The negative irrealis \ird{-ir} triggers \ird{k $\rightarrow$ c} in
 \ird{k}-final stems, without the \ird{č}-output or vowel raising associated
@@ -3080,18 +3096,41 @@ position in the nominal structure.
 
 \subsection{Negation and the upper boundary}
 The aspect-bearing participant nominal and the corresponding \ird{-ový}
-relative select \synhead{AspP}, below clausal \synhead{NegP}. Internal verbal
-\ird{za-} is therefore excluded from these constructions; it cannot acquire
-scope inside them merely by attaching to their surface stem. Negation with
+relative select actual \synhead{AspP}: viewpoint/Asp.Align together with
+orientation \synhead{VoiceP}, optional \synhead{CausP}, and inner
+Voice/Appl and lexical structure. The selection boundary is below indicative
+\synhead{NegP}, \synhead{PhasP}, the Comm-field, \synhead{MoodP}, and both
+clausal evidential layers. None of those higher operators belongs inside the
+reduced participant description. Internal verbal \ird{za-} is therefore
+excluded; it cannot acquire scope inside the description merely by attaching
+to its surface stem. A negative non-indicative suffix likewise cannot enlarge
+the nominaliser's complement into a Mood domain.
+
+The structural contrast is
+$[n_{\mathrm{part}}\ [\mathrm{AspP}\ \ldots]]$ or
+$[\mathrm{RelP}\ {-ový}\ [\mathrm{AspP}\ \ldots]]$, versus excluded
+$*[n_{\mathrm{part}}/\mathrm{Rel}\ [\mathrm{PhasP}/\mathrm{Comm}/
+\mathrm{MoodP}/\mathrm{EvidP}/\mathrm{NegP}\ \ldots]]$.
+Thus \ird{lúbcí piáščikou} describes an eater of the apple, and
+\ird{lúbcí piáščikový pres} a man satisfying that same positive description;
+neither contains an internal reading \trsl{still/already/only/not eating the
+apple}. A matrix phasal or comment operator may instead take scope over a
+predication containing the complete nominal or a DP containing the relative.
+That external scope does not insert the operator under the reduced head and
+does not by itself license a new DP-internal modifier construction. Negation with
 \ird{staly} rejects the matrix predication, while \ird{zad-} denies the
 existence of an individual satisfying the positive participant description.
 Neither expresses \trsl{the one who did not eat}. A finite negative clause
 provides the established way to assert non-participation; no internally
-negative \ird{-ou} or \ird{-ový} paradigm is licensed here. The smaller
-lexical and event nominalisations likewise supply no productive clausal
-negation domain. Strict negative concord remains a property of the appropriate
-clausal domain, rather than a mechanism for extending nominalisation above
-\synhead{NegP}.
+negative \ird{-ou} or \ird{-ový} paradigm is licensed here. This restriction
+concerns these reduced constructions: it does not prohibit negation in a
+finite relative, whose independently licensed finite structure can contain
+clausal negation. It supplies no new finite-relative formation rule. Nor is
+exclusion of negation a universal property of nominalisation; the smaller
+lexical and event nominalisations described here simply supply no productive
+clausal negation domain. Strict negative concord remains a property of the
+appropriate clausal domain, rather than a mechanism for extending participant
+nominalisation above \synhead{AspP}.
 
 \subsection{Participant nominals in identificational equatives}
 \label{sec:nmlz-predicative}
@@ -4036,7 +4075,7 @@ construction-specific positions, described separately below the table.
   3            & Clause-typing particle \ird{by} & Head of \synhead{PolP} \\
   4            & Wh-phrase (in questions)  & Spec,\synhead{FocP} \\
   5            & Non-topic arguments       & Spec,\synhead{IP} or \synhead{IP}-adjuncts \\
-  6            & Comment-domain operators   & Spec/Head of \synhead{AspP} (zone II) \\
+  6            & Comment-domain operators   & Comm-field (zone II) \\
   7            & Phasal particles           & Spec/Head of \synhead{PhasP} (zone III) \\
   8 (rightmost) & Finite verb               & Head of \synhead{VP} / \synhead{vP} \\
   \bottomrule
@@ -4064,7 +4103,12 @@ precedes that particle.
 Table~\ref{tab:vm-full-structure} gives the hierarchical structure
 of the Iridian finite verbal clause, from the highest projection
 (\synhead{SpeechActP}) to the lowest (\synhead{VP}/Root), with the morphological
-exponents of each relevant layer.
+exponents of each relevant layer. This working architecture includes optional
+domains; it does not posit every projection in every clause. The descriptive
+Comm-field groups semantically heterogeneous particles without committing to
+a single head. \synhead{IP} elsewhere abbreviates the inflectional domain
+(Mood and, when present, the inner evidential); the predicate domain comprises
+\synhead{AspP} and its inner structure, without an extra PredP projection.
 
 \begin{table}[ht]
   \footnotesize
@@ -4077,7 +4121,7 @@ exponents of each relevant layer.
     \midrule
     Highest  & \synhead{SpeechActP} & Zone I particles (peripheral)
     & Upper-peripheral speech-act framing \\
-    & \synhead{EvidP}$_\text{outer}$ & \ird{oče, hladě, kday, či}
+    & \synhead{EvidP}$_\text{outer}$ & \ird{oče, hladě, kady, či}
     & Clause-level evidential/epistemic \\
     & \synhead{TopP} & [topic \synhead{DP}]
     & Aboutness topic; case retained from lower domain \\
@@ -4090,8 +4134,12 @@ exponents of each relevant layer.
     & Indirect evidential; inside verbal complex \\
     & \synhead{MoodP} & \ird{-ím, -é, -ká, -ku, -ěv, -ir}, $\varnothing$
     & Negative Mood bears $[u\textsc{neg}]$; reduces Asp features \\
+    & Comm-field & \ird{och, kamo/kam, mó, dlí}
+    & Descriptive region for additive, exclusive, affirmative and sequential operators \\
+    & \synhead{PhasP} & \ird{vy, so}
+    & Selects positive or negative predication \\
     & \synhead{NegP} & \ird{za-} (prefix)
-    & Op$_{\neg}$ in specifier; Neg$^{0}[u\textsc{neg}]$; PF attachment \\
+    & Indicative only; Op$_{\neg}$ in specifier; Neg$^{0}[u\textsc{neg}]$; PF attachment \\
     & \synhead{AspP} & \ird{-ek/-ik, -av, -a, -ime, -áž} (fused w/ align)
     & Sole obligatory head; aspect + case assignment \\
     \midrule
@@ -4101,7 +4149,7 @@ exponents of each relevant layer.
     & Adds causer above the inner valency domain \\
     & \synhead{VoiceP} / \synhead{ApplP} & \ird{-aš-} (antipassive) / \ird{-éb-} (applicative)
     & Distinct heads; language-specific co-occurrence ban \\
-    & \synhead{VP} & Root stem
+    & \synhead{vP}/\synhead{VP} & Root stem
     & Lexical predicate; complement of V = preverbal \\
     Lowest & \synhead{VP} complement & \synhead{NP} / \synhead{CP} (\ird{po}) / \synhead{VoiceP}$_{\text{-it}}$
     & Object, po-clause, or purposive converb; all preverbal \\
