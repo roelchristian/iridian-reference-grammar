@@ -585,3 +585,22 @@ fusion of Neg and Mood would yield the same morphological pattern.
 ```
 
 Whether a fusion analysis can independently derive the same phasal scope remains a research question, not a second licensed derivation in the normative grammar.
+
+## 2026-10-29: Pivot placement, case and connectivity revision
+
+The comprehensive pivot investigation is recorded in `pivot-analysis-status.md`,
+`pivot-case-analysis.md`, `pivot-derivations.md`, `pivot-binding-scope.md`,
+`pivot-extraction-analysis.md` and the controlled corpus
+`pivot-syntax-diagnostics.md`. SpecIP is the leading finite A-movement hypothesis;
+a lower independently motivated aspect/orientation position and a restructuring
+control remain competitors. Direct-case selection, case computation, overt
+placement and high aboutness topichood are separate claims. No universal PivotP,
+obligatory reconstruction or general agent-extraction prohibition is adopted.
+
+The pivot work began on master 16329d4 and is now integrated onto PR16 merge
+87c23bbcb8ea59f62e415cb315a45f79613e1dc6. The actual-AspP/comment-field
+architecture, lower negative-Mood composition, bounded focus rules, reduced
+selection and canonical `kady` spelling are preserved from that reviewed merge. The source
+audit corrects the brief's bibliographic dates rather than accepting 2026
+website migration dates as publication dates. Proposed test judgements are
+explicitly distinguished from canonical prescriptions.

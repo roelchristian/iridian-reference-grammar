@@ -79,7 +79,7 @@ and are summarised in Table~\ref{tab:vm-projections}.
                  & §\,\ref{sec:vm-caus} \\
     Orientation & \ird{-n-}/\ird{-an-}, $\varnothing$ & \synhead{VoiceP}$_{\mathrm{orient}}$
                  & §\,\ref{sec:vm-n} \\
-    Asp.Align    & \synhead{Asp.Align}.\textsc{align} & \synhead{AspP} (fused Asp + Case)
+    Asp.Align    & \synhead{Asp.Align}.\textsc{align} & \synhead{AspP} (viewpoint and alignment domain)
                  & §\,\ref{sec:vm-asp} \\
     Neg (prefix) & \Neg{}            & \synhead{NegP} (see §\,\ref{sec:vm-neg})
                  & §\,\ref{sec:vm-neg} \\
@@ -141,8 +141,11 @@ layer of the verbal clause. In a transitive clause the internal argument
 \noindent Because \synhead{VP} is head-final
 (§\,\ref{sec:th-head-finality}), this complement surfaces to the left of the
 verbal head at every embedded level. The preverbal position of the object is
-therefore not derived by movement but is the base-generated configuration of the
-head-final \synhead{VP}.
+therefore available in the base-generated configuration of the
+head-final \synhead{VP}. This derives patient-before-verb order, not
+patient-before-actor order. A patient may originate in this complement position
+and participate in a separate clause-internal dependency without acquiring an
+aboutness-topic interpretation.
 
 
 \section{The verb stem and thematic classes}
@@ -694,7 +697,9 @@ Aspect selection establishes a case frame and temporal viewpoint, whose
 The suffix \ird{-n-} realises the higher orientation head, outside causative
 morphology where present and taking \ird{-an-} after a rhotic causative.
 It selects the patient of an ordinary transitive or
-the highest eligible non-causer of a derived causative. In the ERG domain it
+the retained theme of a derived causative, otherwise its applied participant,
+and otherwise its causee. This priority is not equivalent to selecting the
+structurally closest non-causer (§\,\ref{sec:vm-caus}). In the ERG domain it
 combines with the ordinary transitive frame; in the NOM domain its
 patient-oriented use licenses a passive, with the agent restricted to optional
 indirect expression (§\,\ref{sec:vm-passive}). Simple applicatives establish
@@ -705,6 +710,101 @@ Its occurrence is licensed by the completed ERG-aspect configuration; it does
 not inspect a patient whose case has already been valued. A following
 causative may introduce a new causer and an outer \ird{-an-}, although the
 lexical patient remains suppressed (§\,\ref{sec:vm-antipassive}).
+
+\subsection{Argument inventory, selection and case domains}
+\label{sec:vm-selection-domains}
+
+The direct-case participant, the dependency licensing the external argument's
+case, and the position in which an argument is pronounced are distinct parts
+of the analysis. The following notation makes the first two explicit without
+presupposing a particular landing site. $A$ is the lexical actor, $T$ a
+retained transitive theme, $B$ an applied participant, $C$ a causer, and $E$
+the causee. In a causative, the base actor or sole participant becomes $E$;
+a theme-like sole argument of an intransitive is not a separate $T$.
+
+Argument structure is built before the completed construction determines its
+orientation. V takes $T$ as its complement where the lexical frame licenses
+one. Appl introduces $B$ in relation to the lexical event, below the layer
+introducing $A$; Caus then introduces $C$ above that event predicate.
+Antipassive instead removes the independently licensed lexical theme from the
+base inventory. The ordering of argument-building and orientation heads is
+\[
+ \mathrm{VP}\ \subset\ \mathrm{ApplP}/\mathrm{VoiceP}_{\mathrm{AP}}
+ \ \subset\ \mathrm{CausP}\ \subset\
+ \mathrm{VoiceP}_{\mathrm{orient}}\ \subset\ \mathrm{AspP},
+\]
+with absent derivational layers omitted. Appl and antipassive are alternatives
+under the existing co-occurrence restriction, not two freely stackable heads.
+The inner actor-introducing layer lies above Appl and below Caus when those
+heads are present. Outer orientation is thus above Caus, although the selected
+participant can originate deep inside Caus's complement.
+
+The case domain is the completed predicate licensed by finite aspect,
+orientation and Mood. In a causative this includes the outer causer and the
+licensed embedded participants; the base does not independently assign a
+second finite direct case. A simple indicative applicative selects $B$;
+active NOM causatives select $C$; patient-oriented and ERG causatives apply
+$T>B>E$. Directive Mood selects a retained theme in either reduced aspectual
+domain, overriding simple indicative applicative selection
+(§\,\ref{sec:mood-directive-valency}). These are role-sensitive restrictions
+on the completed configuration, not consequences of reading its suffixes.
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Participant inventories and case obligations. Parentheses mark an
+optional passive dependent, not an omitted core argument.}
+\label{tab:pivot-case-obligations}
+\begin{tabularx}{\textwidth}{L L L}
+\toprule
+Construction & Licensed inventory & Finite case obligations \\
+\midrule
+Ordinary ERG transitive & $A,T$ & $T$: direct; $A$: transitive \\
+Active NOM transitive & $A,T$ & $A$: direct; $T$: indirect \\
+Simple indicative applicative & $A,B$; $T$ if retained & $B$: direct; $A$: indirect in NOM, transitive in ERG; retained $T$: indirect \\
+ERG causative of intransitive & $C,E$ & $E$: direct; $C$: transitive \\
+ERG causative of transitive & $C,E,T$ & $T$: direct; $C$: transitive; $E$: indirect \\
+ERG causative of applied transitive & $C,E,B,T$ & $T$: direct; $C$: transitive; $E,B$: indirect \\
+ERG causative of applied intransitive & $C,E,B$ & $B$: direct; $C$: transitive; $E$: indirect \\
+ERG causative of antipassive & $C,E$ & $E$: direct; $C$: transitive; no licensed $T$ \\
+NOM patient-oriented passive & $T,(A)$ & $T$: direct; expressed $A$: optional indirect dependent \\
+Directive with retained theme & $A,T$; optionally $B$, or $C,E$ in a causative & $T$: direct; overt actor or causer: transitive; $B,E$: indirect where present \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The ERG dependency relates the highest external actor or causer to the
+construction's distinct selected participant. Residual indirect arguments are
+licensed in their own roles; they are not automatically additional competitors
+for transitive case. Otherwise a causee above a retained theme would wrongly
+receive the same transitive marking as the causer. NOM passive agent licensing
+and active NOM patient licensing remain distinct despite their shared indirect
+exponent. An unpronounced but contextually licensed core argument remains in
+the inventory; antipassive suppression does not.
+
+This specifies the required mapping rather than settling its computational
+implementation. A configurational implementation must delimit the competing
+nominals and specify the licensing occurrence and evaluation cycle. Case may
+be evaluated before displacement or with reference to a lower chain occurrence;
+pronounced order alone cannot determine it; compare Baker's dependent-case framework and Baker and
+Vinokurova's distinction between dependent case and functional-head licensing
+\cite{baker2015,bakervinokurova2010}. A successive-Agree implementation must
+independently define the probe's interaction and stopping conditions over the
+same inventory; Clem and Deal's Shawi analysis provides a comparative model
+\cite{clemdeal2026}. Neither
+is supplied by the statement that Asp.Align conditions alignment, and neither
+follows merely from the presence or absence of overt person agreement.
+The comparison must also establish when the embedded predicate remains
+accessible to the outer computation; a completed finite case domain is not
+by definition a single transparent phase.
+
+Neutral ordinary finite order places the selected participant before the
+remaining arguments and the verb last. This is an output requirement for a
+derivation, not an additional case-assignment step or a universal order for
+every directive and reduced construction. In particular, the existing overt
+contrastive directive subject can precede its direct-case theme
+(§\,\ref{sec:mood-directive-case}). Allomorphy and Vocabulary Insertion
+realise a configuration already licensed in syntax; no case ending or
+Asp.Align exponent can retroactively choose the participant to be displaced.
 
 \subsection{Perfective and retrospective aspect}\label{sec:aspect-pf}
 
@@ -1801,6 +1901,88 @@ licenses the causer as an optional indirect agentive dependent. This is the pass
 derived causative. An embedded causee remains an argument of its own predicate;
 passivisation of the higher causing event does not suppress that relation.
 
+\subsection{Participant dependencies and causative locality}
+\label{sec:vm-pivot-derivations}
+
+The structures below separate thematic origin from the selection and case
+requirements in Table~\ref{tab:pivot-case-obligations}. They are schematic
+argument structures, not surface-order trees. $\operatorname{Act}(A,Q)$
+abbreviates the inner actor-introducing configuration over predicate $Q$;
+$\operatorname{Caus}(C,Q)$ abbreviates Caus with its causer. These are
+expository abbreviations for the argument layers already described, not new
+functional projections. In all five structures the theme originates as V's
+complement; selecting it does not alter that origin.
+
+\begin{gather*}
+\text{ERG transitive:}\quad
+ \operatorname{Orient}_{T}[\operatorname{Act}(A,[_{\mathrm{VP}}T\ V])]
+ \\ \Rightarrow T_{\mathrm{DIR}}\ A_{\mathrm{TRS}}\ V_{\mathrm{PFV}};\\[3pt]
+\text{active NOM:}\quad
+ \operatorname{Orient}_{A}[\operatorname{Act}(A,[_{\mathrm{VP}}T\ V])]
+ \\ \Rightarrow A_{\mathrm{DIR}}\ T_{\mathrm{IND}}\ V_{\mathrm{IPFV}};\\[3pt]
+\text{simple applicative:}\quad
+ \operatorname{Orient}_{B}[\operatorname{Act}(A,[_{\mathrm{ApplP}}B\ [_{\mathrm{VP}}T\ V]\ \mathrm{Appl}])]
+ \\ \Rightarrow B_{\mathrm{DIR}}\ A_{\mathrm{IND/TRS}}\ T_{\mathrm{IND}}\ V;\\[3pt]
+\text{ERG causative:}\quad
+ \operatorname{Orient}_{T}[\operatorname{Caus}(C,\operatorname{Act}(E,[_{\mathrm{VP}}T\ V]))]
+ \\ \Rightarrow T_{\mathrm{DIR}}\ C_{\mathrm{TRS}}\ E_{\mathrm{IND}}\ V;\\[3pt]
+\text{ERG applied causative:}\\
+ \operatorname{Orient}_{T}[\operatorname{Caus}(C,\operatorname{Act}(E,[_{\mathrm{ApplP}}B\ [_{\mathrm{VP}}T\ V]\ \mathrm{Appl}]))]
+ \\ \Rightarrow T_{\mathrm{DIR}}\ C_{\mathrm{TRS}}\ E_{\mathrm{IND}}\ B_{\mathrm{IND}}\ V.
+\end{gather*}
+
+Here the right-hand sequences record the ordinary patterns illustrated in the
+existing paradigms, rather than deriving their order by fiat. The third row
+uses indirect actor case in NOM and transitive actor case in ERG. Higher Caus
+changes selection in the fifth row: $T$ retains priority over $B$, although
+$B$ lies higher inside the embedded predicate. With no retained $T$, the
+applied causative selects $B$; with neither $T$ nor $B$, including an
+antipassive base, it selects $E$. In a NOM passive of the causative, the
+selected embedded participant is direct, the causer is an optional indirect
+dependent, and the causee retains its embedded argument relation. Directive
+Mood preserves a retained theme as direct in both reduced aspectual domains.
+These extensions preserve the argument inventory while changing the completed
+construction's licensing configuration.
+
+A clause-internal movement account must add a derivation of the first,
+third, fourth and fifth rows' selected-first order. Moving the selected DP to
+Spec,\synhead{IP} is one candidate; a lower specifier of the independently
+projected aspectual or orientation domain is another. Neither follows from
+the suffix order. In active NOM clauses the highest actor or causer may already
+occupy a suitable configuration, so the case alternation alone does not
+establish an equally long displacement in both domains. The base-structure or
+restructuring alternative must preserve the theme's low origin and the
+independently required binding relations while deriving the same overt order.
+
+Two locality requirements must be distinguished. First, a closer DP need not
+be an eligible goal, but its ineligibility must follow from independently
+specified argument and licensing features. A probe seeking the nearest DP
+without restriction would select $A$ or $C$, contrary to the ERG rows; a
+probe stopping at the first non-causer would select $E$, contrary to the
+transitive causative. Renaming the desired goal with an unexplained
+$[\textsc{pivot}]$ feature would restate the selection table rather than
+explain it. Establishing a feature dependency through Agree must in turn be
+distinguished from Internal Merge, which changes the pronounced DP's position.
+
+Secondly, a phase boundary restricts access even when every intervening DP
+is featurally irrelevant. If the embedded actor-introducing predicate is a
+phase, a retained theme must reach an accessible edge before its complement
+is transferred. A conditional path is
+\[
+ T\ \longrightarrow\ \mathrm{edge}(\text{embedded predicate})
+ \ \longrightarrow\ \mathrm{edge}(\text{outer predicate})
+ \ \longrightarrow\ \text{finite landing site}.
+\]
+Only edges required by the particular phase analysis occur in this schema.
+It is not an established derivation: the grammar does not yet independently
+license each edge step or determine that every argument-building layer is a
+phase. A restructuring analysis can instead keep the relevant complement
+accessible, but must motivate that transparency independently of the desired
+case and order. Thus crossing the causee and crossing a transferred domain
+are separate tests; solving nominal intervention does not solve phase access.
+The surface paradigms establish the required outputs while leaving these
+computational choices underdetermined.
+
 \subsection{Outer Voice and patient orientation}
 \label{sec:vm-n}
 
@@ -2116,9 +2298,11 @@ of Neg and the absence of NegP.
 Concord is local to the finite clause: an operator in a matrix clause does
 not license a negative indefinite in a finite complement; conditionality alone likewise supplies no licenser
 for an antecedent (Chapter~\ref{ch:complex}). Interrogative \ird{by} and non-assertive
-complement marking do not supply $[i\textsc{neg}]$. A fronted concord associate
-is licensed in its lower position and interpreted there under the negative
-operator, even when its pronounced copy precedes the rest of the clause
+complement marking do not supply $[i\textsc{neg}]$. A concord associate
+receives its existential interpretation within the scope of the negative
+operator. Where an independent fronting dependency is established, its lower
+occurrence supplies that interpretation even if the pronounced occurrence
+precedes the rest of the clause
 (§\,\ref{sec:topic-comment}). Genuine double negation requires two semantic
 operators, ordinarily in distinct clauses or propositions; the co-occurrence
 of an indefinite and \ird{za-}, \ird{staly}, or \ird{zad-} within a concord
@@ -3916,8 +4100,10 @@ head-final organisation of Iridian lexical phrases).
 The patient \synhead{DP} is base-generated as the complement of V, before
  the verb. Its direct or indirect case is licensed within the aspectual and
  verbal domain; case assignment does not require movement to
- Spec,\synhead{TopP}. A lower initial pivot can consequently lack an
- aboutness interpretation (§\,\ref{sec:tc-quantificational-pivots}).
+ Spec,\synhead{TopP}. The patient's origin below the actor does not by itself
+ derive its neutral position before that actor. Clause-internal A-movement,
+ if independently required, is distinct from the linked-topic dependency.
+ A lower initial pivot can consequently lack an aboutness interpretation (§\,\ref{sec:tc-quantificational-pivots}).
 
 When an argument is independently selected as a linked topic, an
  A$'$-dependency connects Spec,\synhead{TopP} with that lower position.
@@ -4073,8 +4259,8 @@ construction-specific positions, described separately below the table.
   1 (leftmost) & Zone I peripheral particles & Spec of \synhead{EvidP}, \synhead{SpeechActP} \\
   2            & Topic \synhead{DP} (case retained)     & Spec,\synhead{TopP} \\
   3            & Clause-typing particle \ird{by} & Head of \synhead{PolP} \\
-  4            & Wh-phrase (in questions)  & Spec,\synhead{FocP} \\
-  5            & Non-topic arguments       & Spec,\synhead{IP} or \synhead{IP}-adjuncts \\
+  4            & Wh-phrase (in questions)  & Finite wh field; pre-\ird{by} site unresolved \\
+  5            & Non-topic arguments       & Lower clause; exact A-position construction-dependent \\
   6            & Comment-domain operators   & Comm-field (zone II) \\
   7            & Phasal particles           & Spec/Head of \synhead{PhasP} (zone III) \\
   8 (rightmost) & Finite verb               & Head of \synhead{VP} / \synhead{vP} \\
@@ -4128,7 +4314,7 @@ a single head. \synhead{IP} elsewhere abbreviates the inflectional domain
     & \synhead{PolP} & \ird{by}
     & Head-initial clause typing: interrogative \\
     & \synhead{FocP} & [wh-phrase]
-    & Focus/wh movement target \\
+    & Focus field; pre-\ird{by} wh site not determined by this row \\
     \midrule
     & \synhead{EvidP}$_\text{inner}$ & \ird{-al}, postvocalic \ird{-l}
     & Indirect evidential; inside verbal complex \\
@@ -4141,7 +4327,7 @@ a single head. \synhead{IP} elsewhere abbreviates the inflectional domain
     & \synhead{NegP} & \ird{za-} (prefix)
     & Indicative only; Op$_{\neg}$ in specifier; Neg$^{0}[u\textsc{neg}]$; PF attachment \\
     & \synhead{AspP} & \ird{-ek/-ik, -av, -a, -ime, -áž} (fused w/ align)
-    & Sole obligatory head; aspect + case assignment \\
+    & Obligatory finite head; viewpoint and alignment domain \\
     \midrule
     & \synhead{VoiceP}$_{\mathrm{orient}}$ & \ird{-n-}/\ird{-an-}, $\varnothing$
     & Selects participant of the complete derived predicate \\
@@ -4160,8 +4346,9 @@ a single head. \synhead{IP} elsewhere abbreviates the inflectional domain
 \noindent The preverbal position of all verbal complements --- \synhead{NP}
 objects, \synhead{CP} complements (\ird{po}-clauses), and purposive converb
 complements --- follows uniformly from the head-final parameter applied at the
-\synhead{VP} level. No movement or extraposition is required: the complement is
-base-generated to the left of the verb and surfaces there in the linear string.
+\synhead{VP} level. No movement is required to obtain complement-before-verb order: the complement
+is base-generated to the left of the verb. This does not exclude independently
+licensed displacement or explain its position relative to other arguments.
 Asp, Mood and the inner evidential have suffixal exponents on the verbal
 complex, which occupies the right edge of the lower clause. Neg is structurally
 higher than Asp but attaches at the left edge of the verbal host, as specified

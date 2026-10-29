@@ -149,3 +149,18 @@ it or the separate working JSON datasets.
 `lexgen/` is a separate local Node.js word-generator UI, rather than a collector.
 See [its README](lexgen/README.md) for phoneme inventories, presets, and startup
 instructions. It is not required for the PDF build or collection targets.
+
+## Pivot candidate diagnostics
+
+`scripts/pivot_diagnostics.py` compares bounded configurational and successive-Agree
+case computations on caller-supplied inventories, selection and residual licensing
+exclusions. `scripts/pivot-fixtures.json` supplies independent literal case frames,
+locality controls and finite scope countermodels. Tests reject all-DP case marking,
+PF-order case computation, inherited applicative priority, restored antipassive
+patients and access through an unexported opaque phase. The models do not derive
+the still-open selection features or establish new grammatical judgments.
+
+The 72 controlled records in `pivot-syntax-diagnostics.md` distinguish canonical
+examples from proposed specifications and hypothetical predictions. Research,
+source access limits, acceptance criteria and pending architecture integration are
+recorded in `pivot-analysis-status.md` and its linked analysis files.
