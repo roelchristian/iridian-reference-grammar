@@ -51,9 +51,9 @@
       "forms": [
         "zděk-",
         "-ěv",
-        "zdičev"
+        "zdíčev"
       ],
-      "process": "yod velar with independent short raised grade"
+      "process": "yod velar with independently licensed raised-strong G3 root"
     },
     {
       "label": "sec:morphophon-interactions",
@@ -67,9 +67,9 @@
     {
       "label": "sec:morphophon-interactions",
       "forms": [
-        "piašček",
+        "piášček",
         "-e",
-        "piaščice"
+        "piáščice"
       ],
       "process": "outer linker targets aspect exponent; bound -ik-"
     },
@@ -133,8 +133,8 @@
       "process": "lexical palatal stop, distinct from palatalised velar"
     },
     {
-      "form": "piaštnik",
-      "ipa": "ˈpʲaʃt.nɪk",
+      "form": "piaštník",
+      "ipa": "ˈpʲaʃt.niːk",
       "process": "lexical labial softness before back vowel"
     },
     {
@@ -173,8 +173,8 @@
       "process": "one-pass k to ts remains alveolar before long high front vowel"
     },
     {
-      "form": "lubcí",
-      "ipa": "ˈlup.tsiː",
+      "form": "lúbcí",
+      "ipa": "ˈluːp.tsiː",
       "process": "one-pass k to ts with regressive devoicing; no categorical softening"
     }
   ],
