@@ -77,6 +77,22 @@ Neither the helper nor the time diagram derives scalar ordering, modal worlds,
 reference-stage selection or pragmatic inferences from a sentence. Such inputs
 remain explicit conditions on the grammatical examples.
 
+`scripts/clausal_diagnostics.py` adds bounded checks for the specified lower
+polarity input under negative Mood, high additive/exclusive scope, the exclusive
+construction's low option, and reduced AspP selection. Its tests use contexts
+that distinguish PHAS(¬P) from ¬PHAS(P), reject crossed licensing boundaries and
+indicative Neg under negative Mood, and reject internal higher operators even
+when hidden under an AspP label. Matrix operators leave the selected subtree
+unchanged. The source checker separately binds the 20 diagnostic surface strings
+to their prescribed scope and status rows. These tests evaluate supplied
+prejacent stages, not modal force, actual-world truth, scalar meanings or
+natural-language judgments; a reduced-domain tuple is a selection diagnostic,
+not a general syntactic parser.
+The Boolean result combines assertion satisfaction with the required background;
+it does not distinguish a false assertion from a failed presupposition or model
+presupposition projection under Mood. Locality is supplied explicitly: rejection
+of a declared boundary does not establish automatic boundary detection.
+
 ## Collect forms marked in the grammar
 
 From the repository root, run:

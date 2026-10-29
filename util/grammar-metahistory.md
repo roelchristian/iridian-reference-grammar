@@ -561,3 +561,27 @@ nominal or clausal realisation of its content remains unspecified.
 ## Editorial policy
 
 Keep established forms, illustrative paradigms, formal commitments that are actually part of the grammatical account, and necessary bounds on attested/specified morphology in the main book. Record historical alternatives, unresolved tests, old questions, and speculative derivational repairs here. Corrections to the canonical grammar require separate substantive changes and validation; a status-table update alone is not such a correction.
+
+
+## Clausal architecture review: source audit (29 October 2026)
+
+This is a new research record; the historical quotations above remain verbatim.
+
+- Hsieh and Erlewine (2023), *On the scope and position of Tagalog clitic adverbs*, JSLS handbook pp. 109–112: read the complete author-hosted contribution at https://mitcho.com/research/clitics-jsls.pdf. It distinguishes fixed interpretive positions from postsyntactic clitic order; its §3 also considers covert operators paired with pronounced particles. Its restricted Tagalog scope results do not establish Iridian ambiguity.
+- Hsieh and Erlewine (January 2024), *Determining the scope of Tagalog clitic adverbs*: read the 12-page author-hosted LSA handout at https://mitcho.com/research/handout-lsa2024.pdf, especially §§3–6. It places na/pa above negation and lang, and accounts for lang/negation variation using Foc and two negation positions. This is a revised conference analysis, not an interchangeable citation for the 2023 contribution.
+- Persohn (2024), *German schon and noch as scalar additives with a marginality twist*: consulted the publisher's complete article/PDF, especially §§2–4 and 6, at https://doi.org/10.1017/S1470542724000084. The phasal, time-scalar, marginality and scalar-sufficiency distinctions support careful comparative separation of uses, not a universal clausal spine or Iridian judgments.
+- Cinque (1999), *Adverbs and Functional Heads*: verified the publisher's record, abstract and contents at https://academic.oup.com/book/48079. Chapters 1, 3 and 4 respectively concern adverb order, head order and their comparison. Full chapter text was unavailable through the accessible publisher interface. No page-specific claim from the inaccessible full text has been added. The bounded Iridian hierarchy does not inherit Cinque's stronger universal claim.
+- Erlewine (2016), *Focus association into copies and the scope of even*: the initial published-article link returned 404, but independent review located the complete 19-page proceedings article at https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/download/26.855/3686/5352 and checked its account in §§3–4 and the conclusion, alongside the two-page author-hosted conference handout at https://mitcho.com/research/handout-even-salt.pdf. The paper explicitly distinguishes English *only* from *even*: p. 863, fn. 9 explains why its lower-copy mechanism does not license the same backwards association for *only*. This is therefore a comparative illustration of how pronounced and interpreted focus positions can differ, not a derivation of Iridian kamo's exclusive-topic association or a claim that all topics have movement copies. The latter remains the separately specified Iridian convention.
+
+The grammar's lower polarity licensing and bounded exclusive composition are explicit Iridian design conventions. Comparative works motivate distinctions and possible mechanisms; they supply neither natural-language attestation for these Iridian examples nor a derivation of every optional layer in every clause. Further splits within the heterogeneous comment field require separate distributional and scope diagnostics rather than an automatic projection per particle.
+
+### 03-verbs: Superseded negative-Mood derivational alternative
+
+The main grammar now adopts lower polarity-operator licensing rather than leaving this alternative open. Original text retained verbatim:
+
+```tex
+the exclusion of \ird{za-}; an alternative derivation through post-syntactic
+fusion of Neg and Mood would yield the same morphological pattern.
+```
+
+Whether a fusion analysis can independently derive the same phasal scope remains a research question, not a second licensed derivation in the normative grammar.

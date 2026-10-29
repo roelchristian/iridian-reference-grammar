@@ -127,7 +127,7 @@ and §\,\ref{sec:th-polar-questions}.
 \item[\upshape Clause-typing operator (\synhead{PolP}).] The interrogative
 	particle \ird{by} is the overt exponent of \synhead{Pol\textsuperscript{0}},
 	the head of \synhead{PolP} (§\,\ref{sec:by-pol-head}). \synhead{PolP} occupies
-	level~7 in the clause spine, above \synhead{FocP} and below \synhead{TopP}. It
+	level~12 in the clause spine, above \synhead{FocP} and below \synhead{TopP}. It
 	is structurally and functionally distinct from the adverbial particle classes:
 	it is a clause-typing projection, not a comment-domain or stance operator.
 	With a head-initial Pol\textsuperscript{0} below \synhead{TopP},
@@ -138,16 +138,18 @@ and §\,\ref{sec:th-polar-questions}.
 \item[\upshape Zone~\textsc{i} (upper peripheral: evidential and speech-act).]
 	Speech-act and discourse-relational particles (\ird{nadě}, \ird{mlada},
 	\ird{jas}) occupy \synhead{SpeechActP}. Evidential and epistemic particles
-	(\ird{oče}, \ird{hladě}, \ird{kday}, \ird{či}) occupy \synhead{EvidP}.
-	Both sets are structurally above \synhead{TopP} (levels~9--10 in the
+	(\ird{oče}, \ird{hladě}, \ird{kady}, \ird{či}) occupy \synhead{EvidP}.
+	Both sets are structurally above \synhead{TopP} (levels~14--15 in the
 	spine) and scope over the full proposition, including the topic and any
 	interrogative operator in \synhead{PolP}.
 \item[\upshape Zone~\textsc{ii} (comment-domain).] Operators whose scope is
 	restricted to the comment domain --- \ird{och} (additive), \ird{mó}
 	(affirmative), \ird{kamo}/\ird{kam} (exclusive), \ird{dlí} (interim
-	sequential) --- occupy the \synhead{CommP} tier below \synhead{IP}. They
-	are focus-sensitive where applicable and scope over the predicate domain,
-	not the full proposition.
+	sequential) --- occupy the Comm-field below \synhead{IP}. The Comm-field names their common linear region, not a demonstrated single
+	head or uniform semantic type. Additive \ird{och} introduces alternatives
+	and an additive presupposition; \ird{kamo} depends on focus alternatives;
+	\ird{mó} affirms, and \ird{dlí} relates a course of action to an interim
+	sequence. Their individual compositions require independent licensing.
 \item[\upshape Zone~\textsc{iii} (phasal).] The phasal particles \ird{vy}
 	(\trsl{already}) and \ird{so} (\trsl{still} / \trsl{not yet}) occupy
 	\synhead{PhasP} above the polarity-bearing predication: indicative
@@ -163,7 +165,7 @@ predicate --- follows from the clause spine, the specifier positions of the
 higher particles, and locally head-initial Pol\textsuperscript{0}. Lower
 arguments can follow \ird{by} without occupying the high topic position. Although \ird{by} is adjacent to the Zone~\textsc{ii}
 particles, it occupies \synhead{PolP} between \synhead{TopP} and
-\synhead{FocP}, whereas those particles occupy the \synhead{CommP} tier below
+\synhead{FocP}, whereas those particles occupy the Comm-field below
 \synhead{IP} (§\,\ref{sec:adv-particles}; §\,\ref{sec:by-pol-head}).
 
 
@@ -171,7 +173,7 @@ particles, it occupies \synhead{PolP} between \synhead{TopP} and
 \label{sec:th-exclusive-phasal}
 
 The lower interpretive order is comment-domain operators $>$ phasal operator
-$>$ polarised predication $>$ lexical viewpoint and predicate. Thus the
+$>$ polarised predication $>$ viewpoint aspect and the inner lexical predicate. Thus the
 ordinary negative combinations are $\mathrm{VY}(\neg P)$ and
 $\mathrm{SO}(\neg P)$, rather than negation of an already/still proposition.
 The distinction is independent of whether negation is pronounced as a prefix,
@@ -179,14 +181,15 @@ as existential suppletion, or as clause-final \ird{staly}. The relation between
 phasal interpretation and the realisation of finite heads is compositional,
 not a requirement to reorder the verbal suffixes.
 
-In a negative directive, the urged content is the negative proposition, and
-phasal selection applies to that content inside the directive interpretation.
-A prohibitive with \ird{so}, for instance, calls for continued restraint;
-it does not assert that a positive event is continuing. Negative Mood retains
-its specified exponence without an additional indicative NegP
-(§\,\ref{sec:vm-moodp}). This composition rule fixes the input of a phasal
-particle, without assigning a new general scope relation between irrealis
-modality and negation.
+In negative non-indicatives, a silent interpretable $\mathrm{Op}_{\neg}$
+applies to the AspP proposition below Phas, while the higher Mood head bears
+its concord feature and selects the negative suffix. The clause-local
+licensing and composition are specified in §\,\ref{sec:vm-moodp}:
+$M(C(\mathrm{PHAS}(\neg P)))$. Thus a prohibitive with \ird{so} calls for
+continued restraint; it does not compose as $\neg\mathrm{SO}(P)$ and does
+not introduce indicative NegP or \ird{za-}. The suffix's pronounced position
+is not its semantic scope. The same lower polarity input is used under
+hortative and irrealis Mood.
 
 Focus-associated \ird{kamo}/\ird{kam} has two specifically licensed
 compositions with \ird{vy}/\ird{so}. Its ordinary comment-domain interpretation
@@ -194,11 +197,35 @@ is $\mathrm{EXCL}_{A}(\mathrm{PHAS}(P))$, where $A$ is the contextually fixed
 set of focus alternatives. A lower interpretation
 $\mathrm{PHAS}(\mathrm{EXCL}_{A}(P))$ is available when that entire exclusive
 proposition supplies the attained or continuing state. The focus associate
-and alternative set must remain constant across the relevant stages. The
-particle remains pronounced in CommP above the phasal particle in both cases;
-its lower interpretation is a construction-specific association with the
-phasal prejacent, not an overt change of position or a rule permitting arbitrary
-operators to exchange scope.
+and alternative set must remain constant across the relevant stages.
+Precisely, let $p_x(t)$ be the proposition with the focused associate replaced
+by $x$, with actual associate $a\in A$ and all other material fixed.
+For argument focus, $x$ ranges over individuals; for VP focus it ranges over
+contextually comparable actions, with their participants held fixed. Write
+$E_A(q)=q_a\wedge\bigwedge_{b\in A\setminus\{a\}}\neg q_b$.
+The ordinary rule yields $E_A(x\mapsto\mathrm{PHAS}(p_x))$. The bounded
+lower rule instead constructs the stagewise proposition
+$q(t)=E_A(x\mapsto p_x(t))$ and supplies that proposition to PHAS.
+If the prejacent is negative, $p_x(t)$ already contains the one licensed
+negation; the rule neither duplicates it nor moves it over PHAS.
+Only the \ird{kamo}/\ird{kam}--\ird{vy}/\ird{so} construction licenses this
+second composition, within one finite domain and without intervening Mood or
+clausal evidentiality. It does not license lowering \ird{och}, \ird{mó},
+\ird{dlí}, or an arbitrary sequence of comment operators.
+
+The particle remains pronounced in the Comm-field above the phasal particle.
+A topicalized associate such as \ird{Janek} below binds its lower argument
+variable $x$ (equivalently, its interpreted lower copy supplies that slot);
+the pronounced topic itself is not moved into the phasal complement at LF.
+Focus association requires a contrastive set containing that referent, even
+when the same nominal is the aboutness topic. The lower rule reconstructs the
+exclusive proposition, not all high material. These two rules are specified
+Iridian conventions. Erlewine's lower-copy mechanism concerns English
+\textit{even}; his discussion explicitly does not extend that mechanism to
+English \textit{only} \cite[p.~863, fn.~9]{erlewine2016copies}. It therefore
+neither derives Iridian exclusivity nor establishes backward association to a
+topic. Here topic association is explicitly variable binding, and the lower
+alternative-proposition rule is stipulated for the Iridian construction.
 
 \pex
 \a
@@ -231,6 +258,115 @@ permutation. Other scalar uses of \ird{vy}/\ird{so} require the separately
 specified domains and contextual alternatives of
 §\,\ref{sec:class1-particles}.
 
+
+\subsection{A bounded polarity--phase--focus diagnostic paradigm}
+\label{sec:th-polarity-diagnostics}
+
+The following constructed paradigms specify Iridian design judgements, not
+attested speaker responses. They hold the ordinary two-stage interpretation
+fixed. Write $V=\mathrm{VY}$, $S=\mathrm{SO}$,
+$A=\mathrm{ADD}_A$ for additive \ird{och}, and $E=\mathrm{EXCL}_A$ for
+\ird{kamo}; $A$ in the subscript denotes a fixed alternative set.
+$A(q)$ asserts $q_a$ and presupposes some distinct $q_b$, whereas $E(q)$
+asserts $q_a$ and excludes every distinct $q_b$ in that set. Additivity here
+associates with the whole phasal proposition, not an independently lowered
+operator. The associate is \ird{Marek} in Table~\ref{tab:th-indicative-diagnostics}:
+$p_x(t)$ means that $x$ is sleeping at stage $t$. The topic binds its lower
+argument variable as in §\,\ref{sec:th-exclusive-phasal}.
+
+\begin{table}[ht]
+\footnotesize
+\caption{Indicative diagnostics: fixed person alternatives.}
+\label{tab:th-indicative-diagnostics}
+\begin{tabularx}{\textwidth}{L l l}
+\toprule
+\textsc{surface string} & \textsc{ordinary scope} & \textsc{status} \\
+\midrule
+\ird{Marek och vy zdrávime.} & $A(V(P))$ & L \\
+\ird{Marek och so zdrávime.} & $A(S(P))$ & L \\
+\ird{Marek kamo vy zdrávime.} & $E(V(P))$ & L \\
+\ird{Marek kamo so zdrávime.} & $E(S(P))$ & L \\
+\ird{Marek och vy zazdrávime.} & $A(V(\neg P))$ & L \\
+\ird{Marek och so zazdrávime.} & $A(S(\neg P))$ & L \\
+\ird{Marek kamo vy zazdrávime.} & $E(V(\neg P))$ & L \\
+\ird{Marek kamo so zazdrávime.} & $E(S(\neg P))$ & L \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Here L means licensed with its stated background, not felicitous in every
+context. For each asserted alternative, $V(P)$ requires non-sleeping before
+and sleeping now; $S(P)$ requires sleeping at both stages; $V(\neg P)$
+requires sleeping before and non-sleeping now; $S(\neg P)$ requires
+non-sleeping at both stages. In an \ird{och} row at least one other person
+must satisfy the same complete phasal description; in a high \ird{kamo} row
+none may do so. A mismatching background makes the intended ordinary reading
+unavailable. For the \ird{kamo} rows only, the alternative lower reading is
+$V(E(P))$, $S(E(P))$, $V(E(\neg P))$, or $S(E(\neg P))$, respectively,
+with the entire exclusive proposition evaluated at both stages. This is
+licensed only by the bounded rule above. In particular, only Marek being
+\emph{still not asleep} need not imply that everyone else is asleep now;
+\emph{still only Marek not asleep} does imply that, and also prior exclusivity.
+
+For the matched negative non-indicatives below, $P$ is eating with agent and
+food fixed by context. Focus is the VP \trsl{eat}, with a fixed set of
+alternative actions such as eating and drinking; it is not a free change of
+subject or food between stages. These bare clauses permit contextually
+understood participants. The morphology is \ird{piašt-é} (eat-\Proh{}),
+\ird{piašt-ku} (eat-\Neg{}\Hort{}), and
+\ird{piašt-ir} (eat-\Neg{}\Irr{}). Let $D$, $H$, and $R$ stand for
+imperative, hortative, and irrealis force respectively. The evaluation stages
+belong to the course of action under direction/proposal, or to the relevant
+hypothetical situations under irrealis; these clauses do not assert an actual
+prior episode of eating.
+
+\begin{table}[ht]
+\footnotesize
+\caption{Negative Mood diagnostics: fixed action alternatives.}
+\label{tab:th-negative-mood-diagnostics}
+\begin{tabularx}{\textwidth}{L l l}
+\toprule
+\textsc{surface string} & \textsc{ordinary scope} & \textsc{status} \\
+\midrule
+\ird{Och vy piašté.} & $D(A(V(\neg P)))$ & M \\
+\ird{Och so piašté.} & $D(A(S(\neg P)))$ & L \\
+\ird{Kamo vy piašté.} & $D(E(V(\neg P)))$ & M \\
+\ird{Kamo so piašté.} & $D(E(S(\neg P)))$ & L \\
+\ird{Och vy piaštku.} & $H(A(V(\neg P)))$ & M \\
+\ird{Och so piaštku.} & $H(A(S(\neg P)))$ & L \\
+\ird{Kamo vy piaštku.} & $H(E(V(\neg P)))$ & M \\
+\ird{Kamo so piaštku.} & $H(E(S(\neg P)))$ & L \\
+\ird{Och vy piaštir.} & $R(A(V(\neg P)))$ & L \\
+\ird{Och so piaštir.} & $R(A(S(\neg P)))$ & L \\
+\ird{Kamo vy piaštir.} & $R(E(V(\neg P)))$ & L \\
+\ird{Kamo so piaštir.} & $R(E(S(\neg P)))$ & L \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The \ird{vy} rows urge, propose, or hypothetically describe cessation of
+eating; the \ird{so} rows continued non-eating. M means licensed but
+pragmatically marked: a cessation directive or proposal needs an established
+course to stop, rather than a neutral preventative setting. It becomes
+appropriate with an instruction such as \trsl{From now on, stop eating too}
+for additive \ird{vy}, or \trsl{Only stop eating now; continue the other
+activities} for high exclusive \ird{vy}. For \ird{so}, corresponding contexts
+are \trsl{Continue refraining from eating too} and \trsl{Only continue
+refraining from eating}; the additive or exclusive comparison is with the same
+other actions. All twelve rows inherit the stage and alternative requirements
+above, interpreted inside $D/H/R$. The lower exclusive option, when its
+stagewise background is satisfied, is $M(V(E(\neg P)))$ or
+$M(S(E(\neg P)))$ for $M\in\{D,H,R\}$.
+
+Excluded analyses are $\neg M(C(\mathrm{PHAS}(P)))$ and
+$M(C(\neg\mathrm{PHAS}(P)))$ as readings of these negative Mood patterns:
+they place the single negation outside its licensed input position.
+\ird{*Och so zapiašté}, \ird{*Och so zapiaštku}, and
+\ird{*Och so zapiaštir} are excluded attempts to add indicative negation to
+negative Mood. Lowering additive \ird{och} to derive
+$M(\mathrm{PHAS}(A(\neg P)))$ is likewise excluded by the present rules.
+No change to the established surface order, aspect quantity, or negative
+suffix paradigms follows from these diagnostics.
 
 \section{The left periphery: topics, operators, and clause typing}
 \label{sec:th-left-periphery}
@@ -1801,8 +1937,15 @@ contextually given event (§\,\ref{sec:exst-vs-ident}).
 
 Neither negative existential \ird{zada} nor identificational \ird{staly}
 negates the embedded verbal description. Participant nominalisation selects
-\synhead{AspP} below \synhead{NegP}, and hence excludes internal verbal
-\ird{za-} (§\,\ref{sec:nominalised}). A negative existential with
+actual \synhead{AspP}, including inner valency, causative and orientation
+structure, and hence excludes internal verbal \ird{za-} as well as higher
+Phas, Comm, Mood and clausal Evid structure (§\,\ref{sec:nominalised}).
+The matrix structure $[\mathrm{NegP}\ [\mathrm{AspP}_{\mathrm{matrix}}\ [\mathrm{ExistP}\
+[n_{\mathrm{part}}\ [\mathrm{AspP}\ \ldots]]]]]$ thus differs from excluded
+$*[n_{\mathrm{part}}\ [\mathrm{NegP}\ \ldots]]$. The same distinction
+separates a matrix phasal/comment operator over an existential or equative
+predication from an operator inside its participant description. A negative
+existential with
 \ird{piáščikou} denies the existence of an eater satisfying the description;
 it does not introduce someone characterised as not having eaten.
 
@@ -2058,11 +2201,12 @@ separate Neg projection (§\,\ref{sec:vm-moodp} of Chapter~\ref{ch:verbs}).
 The prohibitive and negative hortative direct or propose restraint, while the
 negative irrealis expresses non-occurrence in a hypothetical situation.
 Negative Mood bears $[u\textsc{neg}]$ and participates in the same concord dependency as
-indicative Neg: a silent negative operator in the mood domain licenses both
+indicative Neg: a silent negative operator at the AspP edge, below Phas when present, licenses both
 Mood and any negative indefinites in the clause. Concord therefore requires
 the appropriate negative mood suffix, without adding \ird{za-} or a separate
-Neg head. The relative scope of negation and irrealis modality remains a
-separate descriptive question (§\,\ref{sec:vm-moodp}).
+Neg head. The local interpretation is $M(C(\mathrm{PHAS}(\neg P)))$, including
+$\mathrm{IRR}(\neg P)$ without higher operators
+(§\,\ref{sec:vm-moodp}).
 
 \subsection{Summary}
 
@@ -2088,7 +2232,7 @@ The distribution is summarised in the following table:
     \multicolumn{4}{p{\dimexpr\linewidth-2\tabcolsep\relax}}{\textsuperscript{†}\footnotesize
       Negative mood suffixes are analysed as exponents of negative Mood, with
       the prohibitive retaining directive force over a negated proposition.
-      The semantic scope of negation relative to irrealis modality is undocumented. See
+      Negative irrealis composes locally as $\mathrm{IRR}(\neg P)$. See
       §\,\ref{sec:vm-moodp} of Chapter~\ref{ch:verbs}.} \\
 
   \end{tabularx}

@@ -20,6 +20,7 @@ from collect_lexicon import extract, strip_comments  # noqa: E402
 from boundary_transducer import BoundaryTransducer, check_boundary_fixtures  # noqa: E402
 from quantity_grades import QuantityGrades, QuantityLicence  # noqa: E402
 from phasal_diagnostics import check_phasal_diagram, check_phasal_sources  # noqa: E402
+from clausal_diagnostics import check_clausal_sources  # noqa: E402
 
 
 def active_sources(path, seen=None):
@@ -429,17 +430,23 @@ def renamed_particle_checks(sources):
     """Keep the renamed particles and their independent lexical readings paired."""
     failures = []
     for path, text in sources.items():
-        if re.search(r'\b(?:ktady|hlavdy|moc)\b', text, re.IGNORECASE):
+        if re.search(r'\b(?:ktady|kday|hlavdy|moc)\b', text, re.IGNORECASE):
             failures.append(f'{path}: obsolete renamed particle')
     lexicon = sources.get('util/lexicon.tex', '')
     for form, ipa, gloss in [('hladě', 'ˈxla.ɟɛ', 'inferential particle, must'),
-                             ('kday', 'ˈgda.ɨ', 'speculative particle, perhaps'),
+                             ('kady', 'ˈka.dɨ̞', 'speculative particle, perhaps'),
                              ('mó', 'ˈmoː', 'affirmative, confirmatory particle')]:
         entries = [record for record in extract(lexicon, 'util/lexicon.tex')
                    if record['macro'] == 'lexentry' and record['form'] == form]
         if (len(entries) != 1 or entries[0]['gloss'] != gloss
                 or r'\ipagloss{[' + ipa + ']}' not in entries[0]['notes']):
             failures.append(f'lexicon: missing or changed particle entry for {form}')
+    particles = sources.get('chapters/05-function-words.tex', '')
+    section = re.search(r'\\paragraph\{Kady\}(.*?)(?=\\paragraph|\Z)', particles, re.S)
+    pronunciations = [] if section is None else re.findall(
+        r'\\ipagloss\{\[([^\]]+)\]\}', section[1])
+    if pronunciations != ['ˈka.dɨ̞']:
+        failures.append('particles: missing or conflicting canonical kady pronunciation')
     return failures
 
 
@@ -452,6 +459,7 @@ def check():
     failures.extend(check_phasal_diagram(
         sources.get('util/phasal-polarity-diagram.tex', ''), phasal_fixtures))
     failures.extend(check_phasal_sources(sources, phasal_fixtures))
+    failures.extend(check_clausal_sources(sources))
     quantity_fixtures = json.loads((ROOT / 'scripts/quantity-fixtures.json').read_text(encoding='utf-8'))
     quantity_grades = QuantityGrades.from_file()
     for case in quantity_fixtures['cases']:
