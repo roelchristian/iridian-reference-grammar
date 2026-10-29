@@ -425,10 +425,28 @@ def verbs_heading_checks(sources):
                 r'\\(?:subsubsection|paragraph|subparagraph)\*?\s*(?=\{|\[)', text)]
 
 
+def epistemic_particle_checks(sources):
+    """Keep the renamed particles and their independent lexical readings paired."""
+    failures = []
+    for path, text in sources.items():
+        if re.search(r'\b(?:ktady|hlavdy)\b', text, re.IGNORECASE):
+            failures.append(f'{path}: obsolete epistemic particle')
+    lexicon = sources.get('util/lexicon.tex', '')
+    for form, ipa, gloss in [('hladě', 'ˈxla.ɟɛ', 'inferential particle, must'),
+                             ('kday', 'ˈgda.ɨ', 'speculative particle, perhaps')]:
+        entries = [record for record in extract(lexicon, 'util/lexicon.tex')
+                   if record['macro'] == 'lexentry' and record['form'] == form]
+        if (len(entries) != 1 or entries[0]['gloss'] != gloss
+                or r'\ipagloss{[' + ipa + ']}' not in entries[0]['notes']):
+            failures.append(f'lexicon: missing or changed epistemic entry for {form}')
+    return failures
+
+
 def check():
     sources = active_sources(ROOT / 'grammar.tex')
     failures = lexical_velar_checks(sources)
     failures.extend(verbs_heading_checks(sources))
+    failures.extend(epistemic_particle_checks(sources))
     phasal_fixtures = json.loads((ROOT / 'scripts/phasal-fixtures.json').read_text(encoding='utf-8'))
     failures.extend(check_phasal_diagram(
         sources.get('util/phasal-polarity-diagram.tex', ''), phasal_fixtures))
