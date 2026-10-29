@@ -565,28 +565,26 @@
       "raising_licensed": false
     },
     {
-      "id": "intensive-mroc",
+      "id": "intensive-muž",
       "grade": "G1",
       "input": [
         "m",
-        "r",
-        "ɔ",
-        "ts"
+        "ʊ",
+        "ʒ"
       ],
       "expected": [
         "m",
-        "r",
-        "oː",
-        "ts"
+        "uː",
+        "ʒ"
       ],
       "domain": [
         0,
-        4
+        3
       ],
       "eligible": [
-        2
+        1
       ],
-      "target": 2,
+      "target": 1,
       "raising_licensed": false
     },
     {

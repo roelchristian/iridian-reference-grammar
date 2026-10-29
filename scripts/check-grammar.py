@@ -21,6 +21,7 @@ from boundary_transducer import BoundaryTransducer, check_boundary_fixtures  # n
 from quantity_grades import QuantityGrades, QuantityLicence  # noqa: E402
 from phasal_diagnostics import check_phasal_diagram, check_phasal_sources  # noqa: E402
 from clausal_diagnostics import check_clausal_sources  # noqa: E402
+from stative_diagnostics import check_stative_sources  # noqa: E402
 
 
 def active_sources(path, seen=None):
@@ -468,6 +469,8 @@ def check():
         if quantity_grades.apply(tuple(case['input']), licence) != tuple(case['expected']):
             failures.append('quantity grade fixture: ' + case['id'] + ': independent output changed')
     failures.extend(check_quantity_sources(sources, quantity_fixtures))
+    stative_fixtures = json.loads((ROOT / 'scripts/stative-fixtures.json').read_text(encoding='utf-8'))
+    failures.extend(check_stative_sources(sources, stative_fixtures))
     failures.extend(check_prescribed_pronunciations(
         sources, quantity_fixtures['pronunciations'], 'quantity'))
     boundary_mapper = BoundaryTransducer.from_file()
@@ -527,7 +530,7 @@ def check():
     # These are concrete obsolete outputs, not a general ban on lexical ě.
     obsolete = ('zdičev', 'prku', 'prce', 'piaštiře', 'piaštoviře',
                 'piaščace', 'piaštnace', 'piaščave', 'piaštnave', 'piaštimně', 'piaště',
-                'hradě', 'mostě', 'stolě', 'sobotě', 'skorně', 'mrocně',
+                'hradě', 'mostě', 'stolě', 'sobotě', 'skorně', 'mrocně', 'mužně',
                 'piastime', 'piastnime', 'tvírzně', 'ščehezně', 'mněrazně',
                 'kaměnzně', 'sylozně', 'barocezně', 'zmocezně', 'svícezně', 'kmětezně')
     pattern = re.compile(r'(?<!\w)(?:' + '|'.join(map(re.escape, obsolete)) + r')(?!\w)', re.IGNORECASE)
@@ -545,7 +548,7 @@ def check():
     # Independently fixed expectations: (nuclei, nuclei before primary stress).
     # Count actual IPA vowels, excluding the nonsyllabic second part of /ou̯/.
     expected = {'piaštník': (2, 0, 1), 'zapiaštník': (3, 1, 1),
-                'premrocna': (3, 0, 0), 'šarc': (1, 0, 0),
+                'premužna': (3, 0, 0), 'šarc': (1, 0, 0),
                 'piaštou': (2, 0, 0), 'perek': (2, 0, 0),
                 'pérku': (2, 0, 1), 'pérce': (2, 0, 1)}
     valency_fixtures = json.loads(
@@ -600,6 +603,8 @@ def check():
           f"{len(boundary_fixtures['cases'])} independent boundary fixtures, "
           f"{len(evidential_fixtures['cases'])} evidential fixtures, "
           f"{len(quantity_fixtures['cases'])} independent quantity fixtures, "
+          f"{sum(len(row['forms']) for row in stative_fixtures['paradigms'])} stative aspect cells, "
+          f"{len(stative_fixtures['causatives'])} conditional stative causative paradigms, "
           f"{len(quantity_fixtures['pronunciations'])} quantity pronunciation fixtures, "
           f"{len(contemplative_fixtures['pronunciations'])} contemplative pronunciation fixtures, "
           f"{sum(len(palatalisation_fixtures[key]) for key in ('derivations', 'pronunciations', 'classes'))} palatalisation fixtures, "

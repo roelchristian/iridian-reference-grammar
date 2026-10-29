@@ -93,6 +93,18 @@ it does not distinguish a false assertion from a failed presupposition or model
 presupposition projection under Mood. Locality is supplied explicitly: rejection
 of a declared boundary does not establish automatic boundary detection.
 
+## Stative design diagnostics
+
+`scripts/stative_diagnostics.py` supplies bounded State/Become, scalar,
+perspective and selection checks. Independent literal fixtures cover eight
+stems, 80 finite aspect cells, their negative/phasal and bound derivatives,
+16 conditional causative paradigms and three reduced-Mood examples. See
+`util/stative-paradigms.md` for the morphological and PF audit,
+`util/stative-source-audit.md` for primary-source access limits, and
+`util/stative-integration-review.md` for adoption decisions and independent
+review. The model takes explicit licences and semantic standards; it does not
+infer attestation, phonetic output or arbitrary lexical selection from spelling.
+
 ## Collect forms marked in the grammar
 
 From the repository root, run:

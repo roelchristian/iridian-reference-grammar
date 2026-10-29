@@ -13,7 +13,7 @@ from phasal_diagnostics import ordinary_phase, exclusive
 
 NEGATIVE_MOODS = frozenset(('imperative', 'hortative', 'irrealis'))
 INNER_DOMAINS = frozenset(('AspP', 'VoiceOrient', 'CausP', 'VoiceP', 'ApplP',
-                           'vP', 'VP'))
+                           'vP', 'VP', 'StateP', 'BecomeP', 'ResP'))
 
 
 def comment_phase(particle, before, now, *, negative=False, comment=None,

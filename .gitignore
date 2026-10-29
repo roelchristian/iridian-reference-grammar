@@ -48,6 +48,8 @@ util/*
 !util/tests/test_collect_lexicon.py
 !util/README.md
 !util/pivot-*.md
+!util/stative-*.md
+!util/stative-references.tex
 !util/tests/test_pivot_diagnostics.py
 *.draft
 *.draft.md
