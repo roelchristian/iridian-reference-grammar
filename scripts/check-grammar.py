@@ -19,6 +19,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from collect_lexicon import extract, strip_comments  # noqa: E402
 from boundary_transducer import BoundaryTransducer, check_boundary_fixtures  # noqa: E402
 from quantity_grades import QuantityGrades, QuantityLicence  # noqa: E402
+from phasal_diagnostics import check_phasal_diagram, check_phasal_sources  # noqa: E402
 
 
 def active_sources(path, seen=None):
@@ -417,6 +418,10 @@ def check_evidential_sources(sources, fixtures):
 def check():
     sources = active_sources(ROOT / 'grammar.tex')
     failures = lexical_velar_checks(sources)
+    phasal_fixtures = json.loads((ROOT / 'scripts/phasal-fixtures.json').read_text(encoding='utf-8'))
+    failures.extend(check_phasal_diagram(
+        sources.get('util/phasal-polarity-diagram.tex', ''), phasal_fixtures))
+    failures.extend(check_phasal_sources(sources, phasal_fixtures))
     quantity_fixtures = json.loads((ROOT / 'scripts/quantity-fixtures.json').read_text(encoding='utf-8'))
     quantity_grades = QuantityGrades.from_file()
     for case in quantity_fixtures['cases']:
@@ -560,6 +565,7 @@ def check():
           f"{len(quantity_fixtures['pronunciations'])} quantity pronunciation fixtures, "
           f"{len(contemplative_fixtures['pronunciations'])} contemplative pronunciation fixtures, "
           f"{sum(len(palatalisation_fixtures[key]) for key in ('derivations', 'pronunciations', 'classes'))} palatalisation fixtures, "
+          f"{len(phasal_fixtures['diagram_rows'])} phasal diagram transitions, "
           f'{pronunciations} explicit pronunciation/quantity examples '
           'and lexical-velar/obsolete-spelling checks.')
     return 0

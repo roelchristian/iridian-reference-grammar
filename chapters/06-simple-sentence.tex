@@ -113,8 +113,9 @@ of Chapter~\ref{ch:function-words}, establishes the main empirical evidence for
 the left-peripheral structure summarised in Figures~\ref{fig:th-clause-fields}
 and \ref{fig:th-left-periphery}. The particles serve here as syntactic
 diagnostics: their obligatory ordering relative to one another, their scope
-properties, and their ability or inability to license fragment answers are all
-direct reflex of the projections they occupy.
+properties, and their ability or inability to license fragment answers jointly constrain the structural analysis. Surface position alone does not
+determine every scope relation, particularly the restricted lower exclusive
+interpretation described in §\,\ref{sec:th-exclusive-phasal}.
 
 Four structural positions are distinguished in the particle system. The first
 three correspond to the three adverbial particle classes of
@@ -144,13 +145,16 @@ and §\,\ref{sec:th-polar-questions}.
 \item[\upshape Zone~\textsc{ii} (comment-domain).] Operators whose scope is
 	restricted to the comment domain --- \ird{och} (additive), \ird{moc}
 	(affirmative), \ird{kamo}/\ird{kam} (exclusive), \ird{dlí} (interim
-	sequential) --- occupy the \synhead{AspP} tier below \synhead{IP}. They
+	sequential) --- occupy the \synhead{CommP} tier below \synhead{IP}. They
 	are focus-sensitive where applicable and scope over the predicate domain,
 	not the full proposition.
 \item[\upshape Zone~\textsc{iii} (phasal).] The phasal particles \ird{vy}
 	(\trsl{already}) and \ird{so} (\trsl{still} / \trsl{not yet}) occupy
-	\synhead{PhasP} immediately above \synhead{PredP}. Their scope is strictly
-	predicational.
+	\synhead{PhasP} above the polarity-bearing predication: indicative
+	\synhead{NegP}, when present, otherwise the viewpoint/lexical predicate
+	domain. Their input is a positive or negative proposition or a contextually
+	ordered alternative licensed by the constructions in
+	§\,\ref{sec:class1-particles}; they do not replace Asp.Align.
 \end{description}
 
 \noindent The surface ordering from leftmost to rightmost --- Zone~\textsc{i}
@@ -159,8 +163,73 @@ predicate --- follows from the clause spine, the specifier positions of the
 higher particles, and locally head-initial Pol\textsuperscript{0}. Lower
 arguments can follow \ird{by} without occupying the high topic position. Although \ird{by} is adjacent to the Zone~\textsc{ii}
 particles, it occupies \synhead{PolP} between \synhead{TopP} and
-\synhead{FocP}, whereas those particles occupy the \synhead{AspP} tier below
+\synhead{FocP}, whereas those particles occupy the \synhead{CommP} tier below
 \synhead{IP} (§\,\ref{sec:adv-particles}; §\,\ref{sec:by-pol-head}).
+
+
+\subsection{Phasal scope and focus-associated exclusivity}
+\label{sec:th-exclusive-phasal}
+
+The lower interpretive order is comment-domain operators $>$ phasal operator
+$>$ polarised predication $>$ lexical viewpoint and predicate. Thus the
+ordinary negative combinations are $\mathrm{VY}(\neg P)$ and
+$\mathrm{SO}(\neg P)$, rather than negation of an already/still proposition.
+The distinction is independent of whether negation is pronounced as a prefix,
+as existential suppletion, or as clause-final \ird{staly}. The relation between
+phasal interpretation and the realisation of finite heads is compositional,
+not a requirement to reorder the verbal suffixes.
+
+In a negative directive, the urged content is the negative proposition, and
+phasal selection applies to that content inside the directive interpretation.
+A prohibitive with \ird{so}, for instance, calls for continued restraint;
+it does not assert that a positive event is continuing. Negative Mood retains
+its specified exponence without an additional indicative NegP
+(§\,\ref{sec:vm-moodp}). This composition rule fixes the input of a phasal
+particle, without assigning a new general scope relation between irrealis
+modality and negation.
+
+Focus-associated \ird{kamo}/\ird{kam} has two specifically licensed
+compositions with \ird{vy}/\ird{so}. Its ordinary comment-domain interpretation
+is $\mathrm{EXCL}_{A}(\mathrm{PHAS}(P))$, where $A$ is the contextually fixed
+set of focus alternatives. A lower interpretation
+$\mathrm{PHAS}(\mathrm{EXCL}_{A}(P))$ is available when that entire exclusive
+proposition supplies the attained or continuing state. The focus associate
+and alternative set must remain constant across the relevant stages. The
+particle remains pronounced in CommP above the phasal particle in both cases;
+its lower interpretation is a construction-specific association with the
+phasal prejacent, not an overt change of position or a rule permitting arbitrary
+operators to exchange scope.
+
+\pex
+\a
+\begingl
+\glpreamble \lingcontext{Janek and Marek were doctors. Marek has retired;
+Matuš has just qualified. Janek alone continues from the earlier cohort.}//
+\gla Janek kamo so doktor.//
+\glb Janek.\Dir{} only still doctor.\Dir{}//
+\glft \trsl{Only Janek is still a doctor.}
+\lingcontext{$\mathrm{EXCL}_{A}(\mathrm{SO}(P))$; Matuš's newly acquired
+qualification does not contradict the claim}//
+\endgl
+\a
+\begingl
+\glpreamble \lingcontext{Janek was the only doctor among the same three
+people, and neither of the others has qualified.}//
+\gla Janek kamo so doktor.//
+\glb Janek.\Dir{} only still doctor.\Dir{}//
+\glft \trsl{It is still only Janek who is a doctor.}
+\lingcontext{$\mathrm{SO}(\mathrm{EXCL}_{A}(P))$; another current doctor
+in that set would contradict the claim}//
+\endgl
+\xe
+
+The second reading requires prior exclusivity, whereas the first requires
+Janek to be the sole continuing member of the earlier doctor cohort;
+newly qualified alternatives need not have held the qualification before. These diagnostics distinguish the readings
+without treating the shared linear order as evidence for unrestricted scope
+permutation. Other scalar uses of \ird{vy}/\ird{so} require the separately
+specified domains and contextual alternatives of
+§\,\ref{sec:class1-particles}.
 
 
 \section{The left periphery: topics, operators, and clause typing}
@@ -597,8 +666,9 @@ Cop\textsuperscript{0}, which projects an \term{equative phrase}
 (\synhead{EquP}) licensing the relation between the topic \synhead{DP} and
 the predicative \synhead{DP}. In the unmarked present or atemporal
 construction, \synhead{EquP} contains no aspectual projection and is selected
-directly by \synhead{NegP}, when negation is present, or by the higher
-\synhead{IP} layer. Transitional interpretations instead employ \ird{neh-},
+by \synhead{NegP}, when negation is present, and then by any selected
+phasal or comment-domain layers before the higher \synhead{IP} layer. With
+no such operators, \synhead{IP} selects the equative predication directly. Transitional interpretations instead employ \ird{neh-},
 whose event structure supports the verbal aspect paradigm
 (§\,\ref{sec:neh}); property predication likewise belongs to the stative
 verbal system. The affirmative zero-copula structure is represented below:
@@ -1982,7 +2052,8 @@ excludes the prefix \ird{za-} (§\,\ref{sec:neg-exst-alternation}).
 
 The prohibitive \ird{-é}, negative hortative \ird{-ku}, and negative irrealis
 \ird{-ir} replace their affirmative mood suffixes and exclude \ird{za-}.
-They are analysed as exponents of negative Mood directly above Asp, without a
+They are analysed as exponents of negative Mood selecting the Asp-bearing
+predicate domain through any licensed phasal and comment layers, without a
 separate Neg projection (§\,\ref{sec:vm-moodp} of Chapter~\ref{ch:verbs}).
 The prohibitive and negative hortative direct or propose restraint, while the
 negative irrealis expresses non-occurrence in a hypothetical situation.

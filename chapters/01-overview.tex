@@ -98,9 +98,10 @@ selected referent. The principal typological features are as follows:
 
 At a broad level, the Iridian clause is built from the lexical predicate
 outward through a sequence of functional layers. The lowest layers belong to
-the predicate itself and to phasal and aspectual operators; above these stand
-negation, inflection, focus, interrogation, topic, evidentiality, and
-speech-act marking. High specifiers precede their complements, while the predominantly
+the predicate itself and to lexical viewpoint aspect; polarity is composed
+within the predication selected by phasal operators. Above that domain stand
+comment-domain operators, inflection, focus, interrogation, topic,
+evidentiality, and speech-act marking. High specifiers precede their complements, while the predominantly
 head-final predicate domain places the finite verbal complex last. The
 interrogative head \ird{by} is locally head-initial.
 
@@ -113,7 +114,10 @@ the interrogative clause-typing particle \ird{by}, which is the overt
 exponent of a locally head-initial Pol\textsuperscript{0} head above the
 focus and inflectional domains; and farther left again stand evidential and stance
 particles such as \ird{oče}, \ird{hlavdy}, and \ird{ktady}. The linear order
-of particles reflects the scope relations represented in the clause spine.
+of particles reflects their positions in the clause spine, while the narrowly
+licensed lower interpretation of focus-associated \ird{kamo}/\ird{kam}
+requires the additional composition rule specified in
+§\,\ref{sec:th-exclusive-phasal}.
 Within that analysis, \ird{by} realises a dedicated interrogative
 clause-typing head in \synhead{PolP}, above \synhead{FocP} and below
 \synhead{TopP}, whereas the comment-domain particles occupy lower positions.
@@ -134,14 +138,13 @@ used in the analyses of Chapters~\ref{ch:verbs}--\ref{ch:complex}.
 		\toprule
 		{\sc level} & {\sc projection} & {\sc content} \\
 		\midrule
-		1 (lowest) & \synhead{PhasP} & Phasal contour: attained state (\ird{vy}) vs.\ ongoing interval (\ird{so}) \\
-		2 & \synhead{PredP} & Lexical predicate; root + aspect-alignment morphology \\
-		3 & \synhead{AspP} & Comment-domain operators: additive, exclusive, affirmative,
-		                     interim-sequential \\
-		4 & \synhead{NegP} & Clausal negation: \ird{za-} (prefix, verbal predicates);
+		1 (lowest) & \synhead{PredP} & Lexical predication and its viewpoint/Asp.Align domain \\
+		2 & \synhead{NegP} & Clausal negation: \ird{za-} (prefix, verbal predicates);
 		                     \ird{staly} (free morpheme, equative/zero-copula predicates);
 		                     suppletive root \ird{zad-} (existential predicates, with a zero
 		                     exponent of Neg\textsuperscript{0}; §\,\ref{sec:vm-neg}) \\
+		3 & \synhead{PhasP} & Phasal selection of positive or negative predication: \ird{vy} versus \ird{so} \\
+		4 & \synhead{CommP} & Comment-domain additive, exclusive, affirmative and interim-sequential operators \\
 		5 & \synhead{IP} & Inflection: finiteness, mood \\
 		6 & \synhead{FocP} & Focus position; optionally hosts one fronted wh-phrase or other focused constituent \\
 		7 & \synhead{PolP} & Head-initial interrogative clause typing: \ird{by} / $\varnothing$ \\
@@ -162,7 +165,7 @@ used in the analyses of Chapters~\ref{ch:verbs}--\ref{ch:complex}.
  Spec,\synhead{TopP}. The lower predicate domain remains head-final
  (§\,\ref{sec:th-head-finality}).
 
-In indicative clauses, \synhead{NegP} (level~4) occupies a single
+In indicative clauses, \synhead{NegP} (level~2) occupies a single
 structural position across predication types, but its phonological
 realisation varies by predicate type. In verbal clauses,
 Neg\textsuperscript{0} is spelled out as the procliticized prefix \ird{za-},
@@ -178,9 +181,18 @@ position of \synhead{NegP} is the same in all three cases. The grammar
 analyses the semantic contribution as belonging to a silent negative operator
 in Spec,\synhead{NegP}, whose interpretable negative feature licenses the
 uninterpretable negative features of Neg\textsuperscript{0} and any
-negative-concord associates. Negative non-indicative moods instead realise
+negative-concord associates. Phasal \ird{vy}/\ird{so} selects this already
+polarised predication: \ird{vy} with a negative prejacent describes cessation,
+whereas \ird{so} with a negative prejacent describes continued non-attainment.
+The position of \ird{za-}, \ird{staly}, or \ird{zad-} at pronunciation
+does not invert that scope. Negative non-indicative moods instead realise
 polarity at Mood\textsuperscript{0}, without a separate \synhead{NegP}
-(§\,\ref{sec:vm-moodp}). A direct-case negative indefinite may occupy
+(§\,\ref{sec:vm-moodp}). In those constructions the polarity-bearing
+propositional content is likewise the argument of the phasal operator, while
+the directive or other clause-type contribution remains outside it; the
+location of the negative exponent at Mood does not require an indicative
+Neg projection or change the order of finite suffixes
+(§\,\ref{sec:th-exclusive-phasal}). A direct-case negative indefinite may occupy
 a lower initial argument position while receiving its existential
  interpretation below the negative operator; such a quantificational pivot
  does not occupy Spec,\synhead{TopP} or introduce a referential topic (§\,\ref{sec:tc-quantificational-pivots}).
@@ -199,11 +211,11 @@ the left periphery.
 \node[syn band, minimum width=16mm, right=0pt of top] (pol)
  {Clause typing\\\synhead{PolP}};
 \node[syn band, minimum width=34mm, right=0pt of pol] (tp)
- {Comment domain\\\synhead{IP} / \synhead{FocP}};
+ {Comment domain\\\synhead{IP} / \synhead{FocP} / \synhead{CommP}};
 \node[syn band, minimum width=20mm, right=0pt of tp] (asp)
  {Phasal\\\synhead{PhasP}};
-\node[syn band, minimum width=14mm, right=0pt of asp] (pred)
- {Pred.\\\synhead{PredP}};
+\node[syn band, minimum width=24mm, right=0pt of asp] (pred)
+ {Polarised pred.\\\synhead{NegP} / \synhead{PredP}};
 
 	\end{tikzpicture}
 	\caption{Clause fields of the Iridian clause.}\label{fig:th-clause-fields}

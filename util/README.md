@@ -65,6 +65,18 @@ construction-specific short ending allomorphs. In particular, conditioned `-až`
 after a locally strong stem is checked beside default `-áž`; there is no global
 ban on multiple long vowels or on short contemplative spellings.
 
+`scripts/phasal_diagnostics.py` checks the ordinary two-stage phasal
+approximation on explicitly supplied truth values. Its exclusive diagnostic
+compares `EXCL(Phas(P))` with the specifically licensed `Phas(EXCL(P))`
+interpretation; it does not assign scope to arbitrary particle strings. Literal
+positive and negative expectations in `scripts/phasal-fixtures.json` include
+contexts in which the two exclusive readings diverge. The same fixture file
+independently prescribes all four rows of the native TikZ illustration in
+`util/phasal-polarity-diagram.tex`, which the active-source checker validates.
+Neither the helper nor the time diagram derives scalar ordering, modal worlds,
+reference-stage selection or pragmatic inferences from a sentence. Such inputs
+remain explicit conditions on the grammatical examples.
+
 ## Collect forms marked in the grammar
 
 From the repository root, run:
