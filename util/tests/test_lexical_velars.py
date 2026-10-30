@@ -21,12 +21,12 @@ Restricted velar-front & /k/ $\rightarrow$ /ts/ & restricted grade \\
 Yod & /k/ $\rightarrow$ /tʃ/ & yod grade \\
 \end{table}
 ''', 'chapters/03-verbs.tex': r'''
-\phon{kélek}{ˈkʲeː.lɛk}{sang}
-\phon{kélnik}{ˈkʲeːw.nɪk}{sang it}
-\phon{kělšek}{ˈkʲɛw.ʃɛk}{was singing}
+\phon{kánek}{ˈkaː.nɛk}{sang}
+\phon{kánnik}{ˈkaːn.nɪk}{sang it}
+\phon{kanžek}{ˈkan.ʒɛk}{was singing}
 ''', 'util/lexicon.tex': r'''
 \lexentry{kěda}{lexical /kʲ/; \ipagloss{[ˈkʲɛ.da]}}{jail}
-\lexentry{kěl-}{lexical initial /kʲ/}{sing, perform}
+\lexentry{kan-}{lexical initial /k/}{sing, perform}
 \lexentry{ťeda}{lexical /c/; \ipagloss{[ˈcɛ.da]}}{cork}
 '''}
 
@@ -65,7 +65,7 @@ class LexicalVelarTests(unittest.TestCase):
 
     def test_rejects_incorrect_phonemic_metadata_even_with_correct_ipa(self):
         for before, after in ((r'\lexentry{kěda}{lexical /kʲ/', r'\lexentry{kěda}{lexical /c/'),
-                              (r'\lexentry{kěl-}{lexical initial /kʲ/', r'\lexentry{kěl-}{lexical initial /c/'),
+                              (r'\lexentry{kan-}{lexical initial /k/', r'\lexentry{kan-}{lexical initial /c/'),
                               (r'\lexentry{ťeda}{lexical /c/', r'\lexentry{ťeda}{lexical /kʲ/')):
             with self.subTest(entry=before):
                 data = sources()
@@ -73,13 +73,13 @@ class LexicalVelarTests(unittest.TestCase):
                 self.assertTrue(any('lexical metadata' in error for error in checker.lexical_velar_checks(data)))
 
     def test_rejects_wrong_stem_pronunciation_stress_quantity_or_coda(self):
-        for replacement in ('ˈcɛ.lɛk', 'kʲɛˈlɛk', 'ˈkʲɛː.lɛk'):
+        for replacement in ('ˈcaː.nɛk', 'kaːˈnɛk', 'ˈka.nɛk'):
             with self.subTest(replacement=replacement):
                 data = sources()
-                data['chapters/03-verbs.tex'] = data['chapters/03-verbs.tex'].replace('ˈkʲeː.lɛk', replacement)
+                data['chapters/03-verbs.tex'] = data['chapters/03-verbs.tex'].replace('ˈkaː.nɛk', replacement)
                 self.assertTrue(checker.lexical_velar_checks(data))
         data = sources()
-        data['chapters/03-verbs.tex'] = data['chapters/03-verbs.tex'].replace('ˈkʲeːw.nɪk', 'ˈkʲɛl.nɪk')
+        data['chapters/03-verbs.tex'] = data['chapters/03-verbs.tex'].replace('ˈkaːn.nɪk', 'ˈkaː.nɪk')
         self.assertTrue(checker.lexical_velar_checks(data))
 
     def test_missing_fixture_is_not_a_pass(self):

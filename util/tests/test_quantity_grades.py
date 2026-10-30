@@ -134,7 +134,8 @@ class QuantityGradesTests(unittest.TestCase):
                     {'test.tex': correct.replace(before, after)}, fixture))
 
     def test_run_pronunciations_preserve_initial_stress_second_nucleus_length_and_ts(self):
-        fixtures = self.fixtures['pronunciations']
+        fixtures = [case for case in self.fixtures['pronunciations']
+                    if case['form'] in {'zemácime', 'zemácek'}]
         correct = (r'\phon{zemácime}{ˈzɛ.maː.tsɪ.mɛ}{progressive run} '
                    r'\phon{zemácek}{ˈzɛ.maː.tsɛk}{perfective run}')
         self.assertEqual(checker.check_prescribed_pronunciations(

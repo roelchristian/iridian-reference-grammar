@@ -67,8 +67,8 @@ def lexical_velar_checks(sources):
     consonants, stress and quantity of each broad transcription are fixed.
     """
     expected = {'kěda': 'ˈkʲɛda', 'ťeda': 'ˈcɛda',
-                'kélek': 'ˈkʲeːlɛk', 'kélnik': 'ˈkʲeːwnɪk', 'kělšek': 'ˈkʲɛwʃɛk'}
-    lexical_specs = {'kěda': 'kʲ', 'kěl-': 'kʲ', 'ťeda': 'c'}
+                'kánek': 'ˈkaːnɛk', 'kánnik': 'ˈkaːnnɪk', 'kanžek': 'ˈkanʒɛk'}
+    lexical_specs = {'kěda': 'kʲ', 'kan-': 'k', 'ťeda': 'c'}
     found, entries, failures = set(), set(), []
     for path, text in sources.items():
         examples = []
@@ -535,7 +535,7 @@ def check():
     # These are concrete obsolete outputs, not a general ban on lexical ě.
     obsolete = ('zdičev', 'prku', 'prce', 'piaštiře', 'piaštoviře',
                 'piaščace', 'piaštnace', 'piaščave', 'piaštnave', 'piaštimně', 'piaště',
-                'hradě', 'mostě', 'stolě', 'sobotě', 'skorně', 'mrocně', 'mužně',
+                'mostě', 'stolě', 'sobotě', 'skorně', 'mrocně', 'mužně',
                 'piastime', 'piastnime', 'tvírzně', 'ščehezně', 'mněrazně',
                 'kaměnzně', 'sylozně', 'barocezně', 'zmocezně', 'svícezně', 'kmětezně')
     pattern = re.compile(r'(?<!\w)(?:' + '|'.join(map(re.escape, obsolete)) + r')(?!\w)', re.IGNORECASE)

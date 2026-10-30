@@ -183,12 +183,12 @@
     "label": "ex:val-appl-goal",
     "examples": [
       {
-        "surface": "Marek hraďe de stojáž.",
+        "surface": "Marek vruham de stojáž.",
         "gloss": "Marek.\\Dir{} town.\\Ind{} to go-\\Ctpl{}",
         "translation": "\\trsl{Marek intends to go to the town.}"
       },
       {
-        "surface": "Hrad Marcí stojébaž.",
+        "surface": "Vruh Marcí stojébaž.",
         "gloss": "town.\\Dir{} Marek.\\Ind{} go-\\Appl{}-\\Ctpl{}",
         "translation": "\\trsl{Marek intends to go to the town.}"
       }

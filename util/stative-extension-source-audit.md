@@ -25,7 +25,7 @@ by the research agent.
   truth conditions. `song2018lexical` supports distinguishing lexical sources of
   evidence from a universal third-person suffix requirement.
 - Historical sources are comparison material only. A hypothetical Iridian
-  palatalising *-ja*, `trpá`, `smerňa`, and class doublets require internal
+  palatalising *-ja*, `smerňa`, and class doublets require internal
   evidence; no citation in this audit supplies it. ClassIII may be adopted as a
   synchronically tested, explicitly listed local-front-grade class without
   asserting that a historical reconstruction has been established.

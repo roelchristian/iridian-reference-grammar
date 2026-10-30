@@ -63,11 +63,12 @@ Grammar implementation, primary research and lexical diagnostics had separate
 owners. Four fresh reviewers independently checked PF, syntax, academic evidence
 and lexical/corpus consistency. Supported findings fixed and rechecked were:
 
-1. Both smrn- and trpan- lack complete current PF principal parts. smrn- has
-   no recorded eligible vowel; initial trp in trpan- falls in sonority without
-   a documented exception. No new repair or syllabic liquid was invented.
-2. Formal trpan predictions were separated from licensed expected outputs;
-   both unresolved records are rejected by the lexical selector.
+1. smrn- lacks a recorded eligible vowel. Its PF forms remain withheld;
+   no new repair or syllabic liquid is supplied.
+2. torban- has the phonologically licit stem /tɔr.ban/ and final-root a
+   as quantity target. Its finite, Become and ordinary ATTR classes remain
+   unassigned. Conditional Class A / EL-S outputs are separate from licensed
+   expected outputs; both unresolved records are rejected by the selector.
 3. Observable conditions were brought under the shared experiential-condition
    broad subclass, preserving distinct argument/perspective flags.
 4. Manifest does not assert an actual internal state or inherit its perspective
@@ -100,8 +101,8 @@ Eoneohag rather than the international Linguistics, Kim's full title and author
 romanisation, and Wandl's actual title/DOI/final pagination. Comparative research
 does not establish any Iridian form or history.
 
-Unadopted: trpá, smerňa, attributive doublets, an asserted -ja history,
-new smrn-/trpan- principal parts or repairs, broader Manifest productivity,
+Unadopted: smerňa, attributive doublets, an asserted -ja history,
+new smrn- repairs, unassigned torban- principal parts, broader Manifest productivity,
 unlisted ordinary ATTR classes and expanded analytic neh- selection. The
 remaining PF gaps need independent lexical evidence rather than decorative
 irregularity. The separate result-state/threshold exponent remains unintroduced.
