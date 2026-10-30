@@ -6,6 +6,10 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0, str(ROOT / 'scripts'))
 from quantity_grades import QuantityGrades, QuantityLicence
 from boundary_transducer import BoundaryLicence, BoundaryState, BoundaryTransducer
@@ -34,12 +38,12 @@ class AbundanceAtTests(unittest.TestCase):
         self.assertIn('declension and quantity class unassigned', records['kolen']['notes'])
         self.assertIn('finite quantity and ordinary ATTR classes unassigned',
                       records['kolnat-']['notes'])
-        source = (ROOT / 'chapters/10-derivational.tex').read_text()
+        source = read_domain('chapters/10-derivational.tex')
         self.assertIn(r'\ird{koln-} + \ird{-at-} $\rightarrow$ \ird{kolnat-}', source)
         self.assertIn(r'\label{sec:abundance-at}', source)
 
     def test_stem_pronunciation_preserves_short_root_and_coda_vocalisation(self):
-        source = (ROOT / 'chapters/10-derivational.tex').read_text()
+        source = read_domain('chapters/10-derivational.tex')
         fixtures = json.loads((ROOT / 'scripts/quantity-fixtures.json').read_text())
         selected = [item for item in fixtures['pronunciations'] if item['form'] == 'kolnat-']
         self.assertEqual(len(selected), 1)

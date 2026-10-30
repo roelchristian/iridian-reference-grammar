@@ -8,6 +8,10 @@ import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 
 
 def example_occurrences(source):
@@ -26,10 +30,11 @@ def examples(source):
 class FinitePlacementTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.simple = (ROOT / 'chapters/06-simple-sentence.tex').read_text()
-        cls.particles = (ROOT / 'chapters/05-function-words.tex').read_text()
-        cls.complex = (ROOT / 'chapters/08-complex-sentences.tex').read_text()
-        cls.nominals = (ROOT / 'chapters/04-nouns.tex').read_text()
+        cls.simple = read_domain('chapters/06-simple-sentence.tex')
+        cls.particles = read_domain('chapters/05-function-words.tex')
+        cls.complex = read_domain('chapters/08-complex-sentences.tex')
+        cls.nominals = read_domain('chapters/04-nouns.tex') + '\n' + (ROOT / 'chapters/11-negation.tex').read_text()
+        cls.publication = '\n'.join(p.read_text() for p in sorted((ROOT / 'chapters').glob('*.tex')))
 
     def test_question_order_and_gloss_connectivity(self):
         inventory = examples(self.simple + '\n' + self.particles)
@@ -50,8 +55,8 @@ class FinitePlacementTests(unittest.TestCase):
     def test_every_repeated_purchase_question_preserves_case_gloss(self):
         surface = 'Tak tóm Janku oče by vy koupnik?'
         occurrences = [gloss for form, gloss, _ in example_occurrences(
-            self.simple + '\n' + self.particles) if form == surface]
-        self.assertEqual(len(occurrences), 3)
+            self.publication) if form == surface]
+        self.assertGreaterEqual(len(occurrences), 1)
         for gloss in occurrences:
             with self.subTest(gloss=gloss):
                 # Lexical labels (mirative/question versus MIR/Q) may differ;

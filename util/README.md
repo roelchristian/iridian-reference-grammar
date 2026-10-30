@@ -142,7 +142,7 @@ run from any working directory:
 
 ```sh
 python3 /path/to/repository/util/collect_lexicon.py --format json --output collected.json
-python3 util/collect_lexicon.py chapters/04-nouns.tex --format tsv
+python3 util/collect_lexicon.py chapters/05-nominal-syntax.tex --format tsv
 python3 util/collect_lexicon.py util/lexicon.tex --output curated-entries.json
 python3 -m unittest discover -s util/tests -v
 ```
@@ -199,3 +199,11 @@ The 72 controlled records in `pivot-syntax-diagnostics.md` distinguish canonical
 examples from proposed specifications and hypothetical predictions. Research,
 source access limits, acceptance criteria and pending architecture integration are
 recorded in `pivot-analysis-status.md` and its linked analysis files.
+
+## Chapter reorganisation
+
+The publication follows seventeen chapters in four parts. Reviewed linguistic
+fixtures retain historical grammatical-domain identifiers through
+`scripts/source_domains.py`; these are diagnostic views assembled from active
+chapters, not files included in the book. Chapter heading checks apply to all
+substantive chapters, while label and citation checks inspect actual inputs.

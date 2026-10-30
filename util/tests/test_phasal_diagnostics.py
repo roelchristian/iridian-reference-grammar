@@ -5,6 +5,10 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0, str(ROOT / 'scripts'))
 from phasal_diagnostics import ordinary_phase, exclusive_phase, check_phasal_diagram, check_phasal_sources
 
@@ -41,9 +45,9 @@ class PhasalDiagnosticsTests(unittest.TestCase):
 
     def test_source_readings_require_their_own_context_and_local_qualifications(self):
         path = 'chapters/05-function-words.tex'
-        source = (ROOT / path).read_text()
+        source = read_domain(path)
         syntax_path = 'chapters/06-simple-sentence.tex'
-        sources = {path: source, syntax_path: (ROOT / syntax_path).read_text()}
+        sources = {path: source, syntax_path: read_domain(syntax_path)}
         self.assertEqual(check_phasal_sources(sources, self.fixtures), [])
         for old, new in [('Ježe Marku so pjaštník?', 'Mám Marku so pjaštník?'),
                          ('Janek visited on Friday', 'Janek had never visited'),
@@ -57,7 +61,7 @@ class PhasalDiagnosticsTests(unittest.TestCase):
                 self.assertTrue(check_phasal_sources(dict(sources, **{path: source.replace(old, new)}), self.fixtures))
 
     def test_exclusive_source_pair_cannot_swap_scope_or_current_exclusion(self):
-        sources = {path: (ROOT / path).read_text() for path in
+        sources = {path: read_domain(path) for path in
                    ('chapters/05-function-words.tex', 'chapters/06-simple-sentence.tex')}
         path = 'chapters/06-simple-sentence.tex'
         self.assertEqual(check_phasal_sources(sources, self.fixtures), [])

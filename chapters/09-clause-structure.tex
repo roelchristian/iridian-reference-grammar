@@ -1,0 +1,652 @@
+\chapter{Clause Structure and Word Order}\label{ch:clause-structure}\label{ch:simple}
+
+\section{Theoretical background and analytical conventions}
+\label{sec:th-background}
+
+The syntactic analyses in this grammar adopt a Minimalist
+architecture in which clause structure is built by Merge, with the restricted
+ordered-edge insertion defined in §\,\ref{sec:pivot-placement}, and interpreted through
+hierarchies of lexical and functional projections, and linearised according to
+the strongly head-final character of Iridian. Recurrent clause properties are
+analysed through a shared structural spine comprising a predicate domain,
+inflectional and operator projections, and an articulated left periphery.
+
+Within that architecture, the clause edge comprises an ordered sequence of
+projections for topic, focus, ordinary placement, clause typing, evidential
+and epistemic operators, and speech-act marking. Topic placement, wh-licensing, polar questions,
+complementation, and the order of high particles are analysed through these
+positions, with information structure encoded especially in
+\synhead{TopP} and \synhead{FocP}.
+
+The morphology discussed in this grammar is interpreted in the same way as
+elsewhere in the grammar: broadly within a Distributed Morphology model.
+Syntactic structure is built first, and the exponence of heads and feature
+bundles is determined at spellout. This matters directly for Iridian because
+many contrasts that look at first glance like separate `constructions' are
+better treated as alternative realisations of the same structural heads:
+Neg\textsuperscript{0} surfaces as \ird{za-}, \ird{staly}, or zero-plus-root
+suppletion depending on the host available at PF; converb suffixes realise
+feature bundles on non-finite heads; and case morphology spells out configurations established in the syntax.
+
+The central descriptive claim of the syntactic analysis is therefore more
+specific than a general appeal to `topic-comment structure'. Iridian clause
+structure is organised by a head-final functional sequence in which the
+absolutive pivot is strongly privileged for topical interpretation, but topic,
+focus, polarity, evidentiality, and clause combining are all represented by
+independent structural positions. The split-ergative alignment, the ordering of
+particles, the placement of subordinate clauses, the distribution of wh-phrases,
+and the complement system are analysed as consequences of that shared
+architecture. This section sets out the main information-structural
+assumptions and terminological conventions used throughout the grammar; the
+clause spine itself is given in Table~\ref{tab:th-clause-spine} in this chapter, and the particle framework is analysed in detail in
+§\,\ref{sec:th-particle-framework} in Chapter~\ref{ch:function-words}.
+
+
+\section{Grammatical architecture}\label{sec:grammatical-architecture}
+\label{sec:th-clause-structure}% cross-reference compatibility
+
+At a broad level, the Iridian clause is built from the lexical predicate
+outward through a sequence of functional layers. The lowest layers belong to
+the lexical predicate and its inner valency structure, followed by viewpoint
+aspect (Asp.Align); polarity is composed
+within the predication selected by phasal operators. Above that domain stand
+comment-domain operators, inflection, interrogation, evidentiality, and
+speech-act marking; ordinary placement, marked focus and linked topics occupy
+distinct positions above the pronounced particle field. High specifiers precede their complements, while the predominantly
+head-final predicate domain places the finite verbal complex last. The
+interrogative head \ird{by} is locally head-initial. Lexical aspect concerns
+the event description in the inner predicate; viewpoint Asp.Align presents that
+event, Phas evaluates its polarised proposition across stages, and Mood,
+comment operators and evidentiality contribute separate higher meanings.
+
+This architecture is especially visible in the particle system of
+Chapter~\ref{ch:function-words}. Particles nearest the predicate express
+phasal meanings such as \ird{vy} \trsl{already} and \ird{so} \trsl{still / not
+yet}; above these stand comment-domain particles such as \ird{och}
+\trsl{also} and \ird{mó} \trsl{indeed}; above these in turn stands
+the interrogative clause-typing particle \ird{by}, which is the overt
+exponent of a locally head-initial Pol\textsuperscript{0} head above the
+inflectional domain; and farther left within the particle field stand evidential and stance
+particles such as \ird{oče}, \ird{hladě}, and \ird{kady}. The specified descriptive order
+constrains this working clause spine together with morphology and scope; order
+alone does not establish a projection for each particle or license multiple
+particles within one zone (§\,\ref{sec:particle-combinations}). The narrowly
+licensed lower interpretation of focus-associated \ird{kamo}
+requires the additional composition rule specified in
+§\,\ref{sec:th-exclusive-phasal}.
+Within that analysis, \ird{by} realises a dedicated interrogative
+clause-typing head in \synhead{PolP}, below the ordinary placement field
+\synhead{OrdP}, whereas comment-domain particles occupy lower positions.
+The specified partial order is outer speech-act/evidential material $>$
+\ird{by} $>$ \ird{och} $>$ \ird{jas} $>$ \ird{vy}/\ird{so};
+it does not license every combination of these particles.
+
+The same architecture also helps explain several otherwise disconnected facts.
+The final position of the finite verb, the preverbal placement of complements,
+the order of subordinate and matrix clauses, and the clause-final position of
+\ird{staly} in zero-copula negation all follow from the same head-final
+design. Within that structure, aspect and Voice license the case frame,
+while a distinct topic dependency organises the comment about a selected
+referent. Table~\ref{tab:th-clause-spine} summarises the functional layers
+used throughout the grammatical analysis.
+
+The inventory separates thematic argument positions from high discourse
+positions. The direct-case pivot is a constructionally selected participant,
+whereas Spec,\synhead{TopP} is an independently licensed A$'$-position.
+\synhead{IP} abbreviates the finite inflectional domain defined below; the
+label does not assert a person-agreement projection or a tense category absent
+from the morphology. Neutral pivot-first order in ordinary finite verbal
+clauses is derived by the ordinary placement dependency in \synhead{OrdP};
+its ordered edge positions do not identify every displaced constituent as
+either a topic or an A-moved subject (§\,\ref{sec:pivot-placement}). Reduced predicates and existential constituents
+retain the construction-specific structures described in the syntax chapters.
+
+\begin{table}[ht]
+	\footnotesize
+	\caption{The Iridian clause spine (innermost to outermost).}\label{tab:th-clause-spine}
+	\begin{tabularx}{\textwidth}{l l L}
+		\toprule
+		{\sc level} & {\sc projection} & {\sc content} \\
+		\midrule
+        1 (lowest) & \synhead{vP}/\synhead{VP} & Lexical predicate and arguments \\
+        2 & \synhead{VoiceP}/\synhead{ApplP} & Inner valency and silent actor introduction \\
+        3 & \synhead{CausP} & Causation over the inner predicate \\
+        4 & \synhead{VoiceP}$_{\mathrm{orient}}$ & Orientation over the derived predicate \\
+        5 & \synhead{AspP} & Viewpoint and alignment (Asp.Align) \\
+        6 & \synhead{NegP} & Indicative clausal negation: verbal \ird{za-}, equative
+          \ird{staly}, or existential \ird{zad-} with zero Neg exponence
+          (§\,\ref{sec:vm-neg}) \\
+        7 & \synhead{PhasP} & \ird{vy}/\ird{so} over polarised predication \\
+        8 & Comm-field & Additive, exclusive, affirmative, contrastive \ird{jas} and interim-sequential operators \\
+        9 & \synhead{MoodP} & Mood and finiteness \\
+        10 & \synhead{EvidP}$_{\mathrm{inner}}$ & Verbal indirect evidential \ird{-al}/\ird{-l} \\
+        11 & \synhead{PolP} & Head-initial interrogative clause typing: \ird{by}/$\varnothing$ \\
+        12 & \synhead{EvidP}$_{\mathrm{outer}}$ & Evidential and epistemic operators:
+          \ird{oče}, \ird{hladě}, \ird{kady}, \ird{či} \\
+        13 & \synhead{SpeechActP} & Illocutionary and discourse framing:
+          \ird{nadě}, \ird{mlada} \\
+        14 & \synhead{OrdP} & Ordered ordinary placement of arguments and modifiers \\
+        15 & \synhead{FocP} & Marked focus or a single marked wh-fronting dependency \\
+        16 (highest) & \synhead{TopP} & Optional linked aboutness topic; case retained \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\noindent This is a working hierarchy with optional domains, not a claim that
+every layer is present in every clause. In a verbal clause, \term{predicate
+domain} descriptively includes \synhead{AspP} and its inner orientation,
+causative, valency and lexical structure; it does not add a separate
+\synhead{PredP}. The inner actor-introducing head, where licensed, lies above
+Appl and below Caus; its zero exponent does not make it identical to the
+verbal categoriser or the outer orientation head
+(§\,\ref{sec:vm-overview}). Zero-copula \synhead{EquP} lacks verbal Asp.Align
+(§\,\ref{sec:copula}). \synhead{IP} abbreviates the inflectional domain,
+including Mood and the inner evidential when present. The Comm-field is a
+common descriptive region for heterogeneous operators, not an independently
+established single head or a uniform semantic type. The comparison of adverb
+order with independently motivated functional-head order follows the kind of
+methodological comparison developed by Cinque~\cite[pp.~v--vi]{cinque1999}; Iridian's bounded
+working architecture does not adopt his stronger universal hierarchy as an
+empirical conclusion about this language.
+
+The table records dominance and operator positions; surface order additionally
+ depends on head direction and the positions in which particles are realised.
+ Upper-peripheral particles occupy specifiers, while head-initial
+ Pol\textsuperscript{0} precedes its complement. Ordinary arguments and
+ modifiers are pronounced at the ordered edge of \synhead{OrdP}, above those
+ particle positions; linked topics and marked focus have separate higher
+ positions. Lower chain occurrences preserve argument structure, case and
+ the independently licensed interpretations, including negative concord.
+ The lower predicate domain remains head-final
+ (§\,\ref{sec:th-head-finality}).
+
+Indicative negation occupies the lower polarity domain, whereas negative
+non-indicatives realise polarity through Mood and interpret their negative
+operator at the AspP edge. The distribution of exponents and the concord
+dependency receive their principal treatment in Chapter~\ref{ch:negation};
+phasal and alternative-sensitive composition is developed in
+Chapter~\ref{ch:particles}.
+
+The clause fields are schematised in Figure~\ref{fig:th-clause-fields};
+Figure~\ref{fig:th-left-periphery} shows the detailed hierarchical structure of
+the left periphery.
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[font=\footnotesize]
+\node[syn band, minimum width=27mm] (top)
+ {Topic / focus\\\synhead{TopP} / \synhead{FocP}};
+\node[syn band, minimum width=29mm, right=0pt of top] (ord)
+ {Ordinary placement\\\synhead{OrdP}};
+\node[syn band, minimum width=42mm, right=0pt of ord] (part)
+ {Articulated particle field\\Speech-act / evidential / \ird{by}\\Comm-field / Phas};
+\node[syn band, minimum width=39mm, right=0pt of part] (pred)
+ {Predicate / predicator\\Lower argument occurrences\\Inflected verbal complex};
+
+	\end{tikzpicture}
+	\caption{Ordinary finite surface fields; nominal predication has construction-specific orders.}\label{fig:th-clause-fields}
+\end{figure}
+
+\begin{figure}[ht]
+	\footnotesize
+	\caption{Hierarchical structure of the Iridian left periphery (\synhead{TopP}
+	to \synhead{IP}).}\label{fig:th-left-periphery}
+	\medskip
+	\centering
+\begin{forest}
+ syntax tree
+ [\synhead{TopP}
+  [{DP\\linked topic (optional)}]
+  [{Top$'$}
+   [\synhead{FocP}
+    [{XP\\marked focus (optional)}]
+    [{Foc$'$}
+     [\synhead{OrdP}
+      [{XP$_1$\ldots XP$_n$\\ordinary ordered edge}]
+      [{Ord$'$}
+       [\synhead{SpeechActP}
+        [{Speech-act particle}]
+        [{\synhead{EvidP}$_{\mathrm{outer}}$}
+         [{Evidential particle}]
+         [\synhead{PolP}
+          [{Pol\\\ird{by} / $\varnothing$}]
+          [\synhead{IP} [{Comm / Phas / lower copies / predicate}]]
+         ]
+        ]
+       ]
+       [{Ord$^0$\\$\varnothing$}]
+      ]
+     ]
+     [{Foc$^0$\\$\varnothing$}]
+    ]
+   ]
+   [{Top$^0$\\$\varnothing$}]
+  ]
+ ]
+\end{forest}
+\end{figure}
+
+
+\section{Head-finality}
+\label{sec:th-head-finality}
+
+Iridian is predominantly head-final. Its lexical phrases and lower clauses are
+internally verb-final or head-final: arguments precede their predicates,
+modifiers precede their heads, adpositions follow their nominal complements (as
+postpositions, cf.\ §\,\ref{sec:nm-postpositions}), and subordinate clauses precede
+the matrix predicate. This property, which is statable as a general principle of
+phrase structure, has several major
+consequences that recur throughout the syntactic analysis.
+
+For the clause in isolation, head-finality means that the finite verb is always
+clause-final in standard Iridian: it is the head of the highest verbal
+projection and accordingly surfaces after all its specifiers and complements.
+For clause-combining, it means that subordinate clauses precede the matrix
+clause whose head they are complements of (see §\,\ref{sec:th-subord-types}
+of Chapter~\ref{ch:complex}). For the particle system, specifier realisation places each particle before
+its lower complement, whereas ordinary placement raises arguments and
+modifiers across the articulated particle projections
+(§\,\ref{sec:pivot-placement}). Their resulting adjacency does not make
+the particles one phonological word.
+
+Head-finality also has consequences for relativisation and complementation.
+Relative clauses precede the head noun they modify; finite complement clauses
+precede the matrix predicate that embeds them; and purpose-clause converbs
+precede the verb they are oriented toward. These properties are not stipulated
+separately but follow from the single head-final phrase structure combined with
+the clause-spine in Table~\ref{tab:th-clause-spine}. The interrogative head
+\ird{by} is a local exception: Pol\textsuperscript{0} precedes its
+complement. Ordinary placement puts overt arguments and modifiers before
+this head, yielding ordinary constituents $>$ \ird{by} $>$ lower
+predication. The other particles retain their independently specified
+specifier realisations and silent final heads.
+
+\section{Word order}\label{sec:word-order}
+
+The traditional descriptive shorthand for Iridian word order is \term{SOV}, but
+that label should not be mistaken for the structural primitive of the clause. A
+more faithful characterisation is \term{pivot-initial, verb-final}, or more
+specifically \term{absolutive-first, verb-final}. The finite verb itself is
+rigidly clause-final; the ordering of preverbal nominals is governed by
+information structure and alignment rather than by a fixed subject-object
+template.
+
+In ordinary active nominative-domain clauses, the agent is the absolutive
+pivot, so this pattern resembles SOV. In ordinary ergative transitives,
+the same template yields a patient-initial order of the type
+\term{absolutive $>$ ergative $>$ verb}. Without a distinct high topic, the neutral order is therefore
+`pivot before the remaining arguments, with the finite verb last'.
+
+\subsection{Participant selection and finite placement}
+\label{sec:pivot-placement}
+
+The direct-case pivot is identified by its case and the construction's
+participant-selection rules, independently of its pronounced position.
+Orientation, aspect and valency determine which participant is selected;
+directive Mood can override ordinary indicative selection
+(§§\,\ref{sec:vm-asp}, \ref{sec:aspect-caus}). Selection, case licensing and
+placement are distinct dependencies. A relation established by Agree need not
+involve displacement, and an exponent inserted at PF cannot retrospectively
+choose a nominal for movement in the syntax.
+
+Ordinary finite arguments and modifiers are pronounced at a clause-local
+ placement edge, represented here as \synhead{OrdP}, above the particle
+ projections. Its silent head bears an ordered set of placement requirements:
+ first the participant selected by the completed Voice--Asp.Align--Mood
+ configuration, then the remaining eligible constituents in their lower
+ structural order. Each eligible chain bears a placement feature distinct
+ from its Case and agreement features, so Case licensing does not discharge
+ its placement requirement. The initial search restricts that feature to the
+ chain identified by participant selection; the residual searches target
+ the remaining chains. Ord discharges the feature at the final ordinary
+ edge, while intermediate phase edges only register the chain's accessibility.
+ A closer non-selected argument cannot intervene in the first search because
+ it does not satisfy that search's selection description. Subsequent searches
+ target the closest eligible argument or ordinary modifier that has not yet
+ been placed. Operator particles, predicate heads and material internal to
+ a nominal or selected clause are ineligible goals. Each later goal tucks
+ in below the already established edge occupants. Thus the sequence of
+ movements preserves the residual order rather than reversing it through
+ repeated outermost adjunction. Ord is a placement head, without a topic,
+ focus, case-valuing or independently scope-taking feature; its movement is
+ not uniformly classified as A-movement.
+
+The ordinary edge contains hierarchically ordered specifiers, rather than
+ treating all its occupants as equidistant. While the projection of a placement
+ head remains open, successive movements satisfying its placement requirement
+ insert below earlier edge occupants; a higher head cannot subsequently reopen
+ that completed projection. This restricted tucking-in has a formal precedent
+ in Richards's treatment of multiple movement \cite[§2]{richards2002}.
+ It relaxes root-only structure extension: Chomsky explicitly recognises
+ tucking-in as a potential principled departure from the No-Tampering
+ Condition \cite[p.~141]{chomsky2008}. The Iridian ordered-edge rule is
+ adopted with that qualification, rather than derived from Merge alone.
+ Case-independent placement activity is an assumption of the Iridian
+ analysis: the stronger inactivity condition on completed Case/Agree chains
+ discussed by Chomsky \cite[pp.~150--151]{chomsky2008} is not imposed on
+ this placement dependency.
+
+The lower thematic structure is preserved: the lexical patient merges with
+ V, the actor in its Voice domain, and applied participants and causees in
+ their independently licensed positions. The analysis assigns an ordinary
+ placement edge requirement to each actor- or causer-introducing head treated
+ as a phase within one finite clause. Before transfer, eligible ordinary
+ constituents must be registered at its accessible edge: existing eligible
+ specifiers remain accessible, and lower goals move there nearest first,
+ tucking beneath the earlier edge occupants. Each search targets the highest
+ accessible occurrence of a chain, and a chain already registered at that
+ particular edge is not selected again through one of its lower copies.
+ This non-pivot-selective preparation preserves the original residual order; it precedes the completed
+ orientation--Asp.Align--Mood configuration on which Ord's first search
+ depends. Only Ord gives the selected participant priority over that residual
+ order. A non-phasal head adds no escape step, and the analysis does not infer
+ the phasehood of every argument-building layer from surface order
+ (§\,\ref{sec:vm-pivot-derivations}). Neither an intermediate edge occurrence
+ nor final placement removes the lower actor occurrence required for binding. Finite CP and nominal boundaries delimit separate searches:
+ placement of a selected clause as a whole does not extract its arguments.
+ A selected finite \ird{po}/\ird{poby} CP moves as a whole to a
+ construction-specific external edge of \synhead{OrdP}, preceding its
+ pivot and residual occupants. A separate requirement for selected finite complements
+ applies after ordinary placement while OrdP remains open;
+ it licenses an outer edge rather than another tucked-in ordinary occupant.
+ The complement completes its own local structure independently, and its
+ internal arguments are not matrix placement goals. Reduced
+ purposive complements retain their position relative to the pivot (§\,\ref{sec:vm-po-comp}). Ordinary
+ placement orders their whole constituents within those licensed positions.
+
+The following derivations make the ordering requirements explicit. Bracketed
+ role letters designate whole constituents, and $\Pi$ designates the licensed
+ particle sequence; they are structural schemata, not additional lexical
+ examples. The arrows show successive pronounced edge occupants, with lower
+ copies left in the thematic configuration throughout.
+
+\begin{description}[leftmargin=2em]
+\item[\upshape Nominative-domain transitive.]
+ From $[A\ [T\ V]]$, the selected actor moves first; the residual search
+ then places $T$ beneath it: $A \longrightarrow A,T\longrightarrow
+ A\ T\ \Pi\ V$. For \ird{Marek travě pjaštíme}, this preserves actor-direct
+ and patient-indirect case, with neither participant assigned a topic feature.
+\item[\upshape Ergative-domain transitive.]
+ From the same thematic configuration, the selected patient $T$ moves
+ across the non-selected actor, followed by residual $A$:
+ $T\longrightarrow T,A\longrightarrow T\ A\ \Pi\ V$.
+ Thus \ird{Tak tóm Markuto koupnik} retains patient-direct and
+ actor-transitive case. The crossing belongs to the selective first search;
+ the residual search cannot independently reverse $T$ and $A$.
+\item[\upshape Linked actor topic.]
+ After ordinary $T,A$ placement in an ergative transitive, the actor's
+ independently licensed aboutness dependency moves it to Spec,\synhead{TopP}:
+ $T,A\longrightarrow A_i\ [T\ t_i\ \Pi\ V]$.
+ This derives \ird{Markuto tak tóm koupnik} without changing the lower
+ actor--patient relation or either case (§\,\ref{sec:tc-marked-topics}).
+\item[\upshape Additional participant.]
+ A simple applicative selects $B$ from the lower $A>B>T$ configuration:
+ $B\longrightarrow B,A\longrightarrow B,A,T\longrightarrow
+ B\ A\ T\ \Pi\ V$. The existing \ird{Byl Marcí travě pjaštébime}
+ has beneficiary-direct, actor-indirect and theme-indirect case. An ergative
+ transitive causative instead selects $T$ from $C>E>T$:
+ $T\longrightarrow T,C\longrightarrow T,C,E\longrightarrow
+ T\ C\ E\ \Pi\ V$, as in \ird{Travó Marku bylam pjášt-r-an-ik}
+ (§\,\ref{sec:aspect-caus}). Causee $E$ remains indirect, and the movement
+ must pass through the accessible edges of its non-finite Voice domain.
+\item[\upshape Manner modification.]
+ With lower $[A\ [M\ [T\ V]]]$ and actor selection, the sequence is
+ $A\longrightarrow A,M\longrightarrow A,M,T\longrightarrow
+ A\ M\ T\ \Pi\ V$. An omitted actor leaves $M\ T\ \Pi\ V$,
+ preserving \ird{Skorně travě pjaštíme}. In an ergative clause, selected
+ $T$ moves first, after which residual $A$ and $M$ retain their order;
+ pivot priority is distinct from the manner--object relation in the
+ nominative-domain example.
+\end{description}
+
+Only the highest ordinary occurrence is pronounced unless the constituent
+ continues to a separately licensed topic or focus position, in which case
+ that higher occurrence is pronounced. Lower occurrences remain available
+ for the interpretation and licensing specified below. Null arguments supply
+ no overt edge occupant. Neither topicless presentation nor quantificational
+ reference suppresses ordinary placement. Participant nominals, reduced
+ relatives and converbs retain their own selection and placement systems;
+ an AspP-selecting construction does not acquire finite Ord, Mood, Pol or
+ stance structure through sharing the same participant-selection rules.
+
+\subsection{Scope connectivity}
+\label{sec:pivot-scope-connectivity}
+
+A high pronounced argument retains the case and interpretation licensed
+ through its lower chain. In \ird{Deno že zastráda}, the lower occurrence of
+ the negative indefinite remains in the domain of the single clausal negation
+ (§\,\ref{sec:nm-negative-concord}); ordinary placement does not turn it into
+ a referential topic. The actor's lower occurrence likewise remains available
+ for the established reflexive dependency involving \ird{svem}
+ (§\,\ref{sec:nm-pron-refl}). A chain counts as one argument for case:
+ neither an additional silent occurrence nor a higher pronounced occurrence
+ adds a case competitor, and case is not recalculated from surface order.
+ The exclusion of same-chain occurrences from dependent-case competition has
+ a precedent in the framework discussed by Baker and Vinokurova
+ \cite[§1]{bakervinokurova2010}; it does not make the timing of Case assignment
+ invariant across languages or constructions.
+ Wh-variables are interpreted at their lower occurrences under Pol, while
+ additive and exclusive association accesses the lower argument variable.
+ Quantified interpretations retain their independently specified readings;
+ ordinary placement alone grants no scope reversal or new binding relation.
+ These are interpretation conditions on Iridian ordinary-placement chains,
+ rather than consequences of displacement in general. Fox's distinction
+ between chain pronunciation and selective interpretation supplies a
+ reconstruction model, while his separate treatments of A- and A$'$-chains
+ preclude inferring a uniform reconstruction mechanism from high pronunciation
+ alone \cite[pp.~157--159, 192--193]{fox1999}. Lower interpretation is retained
+ where the particular Iridian dependency requires it, without obligatory
+ reconstruction in every respect.
+
+The use of modifier distribution to constrain functional height has a
+comparative model in Cinque \cite{cinque1999}, without requiring a dedicated
+projection for every Iridian lexical adverb. The position of a pivot relative
+to low manner modification, frequency
+quantification, phasal particles and comment-domain particles supplies separate
+constraints on its structural height. The two bounded exclusive/phasal readings
+in §\,\ref{sec:th-exclusive-phasal} already show why overt precedence cannot
+serve as a general rule for semantic scope. Those readings and negative-concord licensing constrain chain interpretation
+independently of the finite placement edge.
+
+\subsection{Lexical manner and frequency adverbs in the preverbal field}
+\label{sec:lexical-adverb-position}\label{sec:lex-adv}
+
+Lexical manner adverbs originate as low adjuncts to \synhead{vP} or the
+ outer \synhead{VP}, while frequency modifiers may attach higher within the
+ event description. Their ordinary pronounced occurrences occupy the finite
+ placement edge with the arguments, preceding the entire particle field.
+ Lower copies preserve their event-modifying interpretations; they acquire
+ neither topic status nor stance-operator status through displacement.
+ In an active nominative-domain transitive, the successive placement steps in
+ §\,\ref{sec:pivot-placement} preserve pivot $>$ manner adverb $>$ object,
+ with particles following all three.
+
+\noindent With its pivot unexpressed and no overt particles, an intransitive
+clause accordingly has the neutral surface order \term{Adverb $>$ Verb}:
+
+\pex
+\a
+\begingl
+\gla Skorně zemácime.//
+\glb quickly run-\Prog{}//
+\glft \trsl{I am running quickly.}//
+\endgl
+\xe
+
+\noindent In an active nominative-domain transitive with an unexpressed
+actor and no overt particles, the non-pivot object follows the manner adverb:
+\term{Adverb $>$ Object $>$ Verb}. The object retains its lower complement
+occurrence for interpretation:
+
+\pex
+\a
+\begingl
+\gla Skorně travě pjaštíme.//
+\glb quickly bread.\Ind{} eat-\Prog{}//
+\glft \trsl{I am eating bread quickly.}//
+\endgl
+\xe
+
+\noindent Frequency adverbs such as \ird{ohly} \trsl{sometimes},
+\ird{roca} \trsl{often}, \ird{člíně} \trsl{infrequently}, and \ird{sabo}
+\trsl{never} belong to the broad preverbal lexical-adverb field. Their event-quantificational
+interpretation differs from low manner modification; membership of that field
+does not require attachment at the same structural height. Temporal frames
+such as \ird{bych} \trsl{yesterday} locate the event in a time interval and
+provide a third, distinct comparison. Even so, they are not members of the rigid particle series. More
+leftward placement of lexical adverbs is possible under discourse pressure, but
+such ordering belongs to marked information structure and should not be taken
+as the neutral pattern. Lexical-adverb placement alone does not determine negative licensing
+(§\,\ref{sec:nm-negative-concord}).
+
+Manner adverbs in \ird{-ě} form an open derived class
+(§\,\ref{sec:stative-adv}), whereas the frequency items constitute a lexical
+subclass independent of that derivation. Neither belongs to the closed
+particle series. Negative-concord temporal \ird{žemě} \trsl{never}
+requires local negation (§\,\ref{sec:nm-negative-concord}); the distribution
+of a lexical frequency modifier must be distinguished from that licensing
+dependency.
+
+
+\section{Verbal complements and head finality: preverbal position}
+\label{sec:vm-comp-headfinal}
+
+Internal nominal arguments and selected clauses originate in the complement domain
+of the head-final predicate. Their lower positions determine selection and
+interpretation, while the ordinary finite placement dependency determines
+pronunciation before the articulated particle field
+(§\,\ref{sec:pivot-placement}).
+
+\subsection{The base position of the object}
+\label{sec:vm-obj-base}
+
+In a head-final language, the complement of a head $H$ is to the
+left of $H$ in the linear string. For the lexical predicate V, its
+internal argument (patient \synhead{DP}) is the complement of V and therefore
+precedes V in the lower structure:
+
+\begin{center}
+\term{[\synhead{VP} [\synhead{DP} patient] V]}
+\end{center}
+
+\noindent This is the \emph{base-generated} complement position. Its
+preverbal orientation follows from head-finality; its ordinary pronunciation
+before particles additionally involves finite ordinary placement. In the Minimalist
+framework used here, head-finality is the linearisation convention assigning
+$<$Complement, Head$>$ order in the lower predicate. This directly represented
+complement order is an architectural assumption; the further position before
+particles follows from ordinary placement, rather than from head-finality
+alone.
+
+The patient \synhead{DP} is base-generated as the complement of V, before
+ the verb. Its direct or indirect case is licensed within the aspectual and
+ verbal domain; case assignment does not require movement to
+ Spec,\synhead{TopP}. The patient's origin below the actor does not by itself
+ derive its neutral position before that actor. Ordinary placement first
+ attracts the direct-case pivot and then the eligible residual constituents
+ to ordered positions below it in \synhead{OrdP}; its lower occurrence
+ preserves the licensed case and thematic relation. This dependency is
+ distinct from linked topicalisation, so a pre-particle pivot can lack an
+ aboutness interpretation (§\,\ref{sec:tc-quantificational-pivots}).
+
+When an argument is independently selected as a linked topic, an
+ A$'$-dependency connects Spec,\synhead{TopP} with that lower position.
+ Schematically, with intervening projections suppressed:
+\[
+ [_{\mathrm{TopP}}\ \mathrm{DP}_{i}\
+   [\mathrm{lower\ clause}\ \ldots t_i\ldots V]\ \mathrm{Top}^{0}].
+\]
+The \synhead{DP} retains its case, so a perfective transitive can have either
+ a direct-case patient topic or a transitive-case agent topic. Head-finality
+ places complements before V; the topic dependency, when present, places its
+ referent above the lower clause. These are distinct sources of preverbal
+ order.
+
+\section{The preverbal zone: a structural hierarchy}
+\label{sec:vm-preverbal-zone}
+
+The ordinary surface fields are represented in Figure~\ref{fig:th-clause-fields}.
+Selected finite complements and reduced purposive complements retain their
+construction-specific positions (§§\,\ref{sec:vm-po-comp},
+\ref{sec:vm-purp-comp}), while their internal arguments belong to their
+own selection and interpretation domains.
+
+\section{Verbal exponents within the clause spine}
+\label{sec:vm-summary}
+
+Table~\ref{tab:vm-full-structure} gives the hierarchical structure
+of the Iridian finite verbal clause, from the highest projection
+(\synhead{TopP}) to the lowest (\synhead{VP}/Root), with the morphological
+exponents of each relevant layer. This working architecture includes optional
+domains; it does not posit every projection in every clause. The descriptive
+Comm-field groups semantically heterogeneous particles without committing to
+a single head. \synhead{IP} elsewhere abbreviates the inflectional domain
+(Mood and, when present, the inner evidential); the predicate domain comprises
+\synhead{AspP} and its inner structure, without an extra PredP projection.
+
+\begin{table}[ht]
+  \footnotesize
+  \caption{The Iridian verbal clause: functional hierarchy and
+  morphological exponents.}\label{tab:vm-full-structure}
+  \begin{tabularx}{\textwidth}{l l l L}
+    \toprule
+    {\sc level} & {\sc projection} & {\sc morphological exponent}
+    & {\sc notes} \\
+    \midrule
+    Highest & \synhead{TopP} & [topic \synhead{DP}]
+    & Linked aboutness topic; lower case retained \\
+    & \synhead{FocP} & [marked focus / wh-phrase]
+    & At most one marked wh-fronting dependency \\
+    & \synhead{OrdP} & $\varnothing$; ordered edge constituents
+    & Ordinary arguments and modifiers before particles \\
+    & \synhead{SpeechActP} & Outer framing particles
+    & Speech-act contribution within the articulated field \\
+    & \synhead{EvidP}$_\text{outer}$ & \ird{oče, hladě, kady, či}
+    & Clause-level evidential/epistemic operators \\
+    & \synhead{PolP} & \ird{by}/$\varnothing$
+    & Locally head-initial interrogative clause typing \\
+    \midrule
+    & \synhead{EvidP}$_\text{inner}$ & \ird{-al}, postvocalic \ird{-l}
+    & Indirect evidential; inside verbal complex \\
+    & \synhead{MoodP} & \ird{-ím, -é, -ká, -ku, -ěv, -ir}, $\varnothing$
+    & Negative Mood bears $[u\textsc{neg}]$; reduces Asp features \\
+    & Comm-field & \ird{och, jas, kamo, mó, dlí}
+    & Heterogeneous operators; specified order \ird{och} $>$ \ird{jas} $>$ Phas \\
+    & \synhead{PhasP} & \ird{vy, so}
+    & Selects positive or negative predication \\
+    & \synhead{NegP} & \ird{za-} (prefix)
+    & Indicative only; Op$_{\neg}$ in specifier; Neg$^{0}[u\textsc{neg}]$; left-edge realisation \\
+    & \synhead{AspP} & \ird{-ek/-ik, -av, -a, -ime, -áž} (aspect + alignment)
+    & Obligatory finite head; viewpoint and alignment domain \\
+    \midrule
+    & \synhead{VoiceP}$_{\mathrm{orient}}$ & \ird{-n-}/\ird{-an-}, $\varnothing$
+    & Selects participant of the complete derived predicate \\
+    & \synhead{CausP} & \ird{-r-}, \ird{-er-}, \ird{-ěr-}
+    & Adds causer above the inner valency domain \\
+    & Inner actor layer & $\varnothing$
+    & Introduces the lexical actor above inner valency \\
+    & \synhead{VoiceP} / \synhead{ApplP} & \ird{-aš-} (antipassive) / \ird{-éb-} (applicative)
+    & Distinct heads; language-specific co-occurrence ban \\
+    & \synhead{vP}/\synhead{VP} & Root stem
+    & Lexical predicate; complement of V = preverbal \\
+    Lowest & \synhead{VP} complement & \synhead{NP} / \synhead{CP} (\ird{po}) / \synhead{VoiceP}$_{\text{-it}}$
+    & Object, po-clause, or purposive converb; all preverbal \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent The preverbal position of all verbal complements --- \synhead{NP}
+objects, \synhead{CP} complements (\ird{po}-clauses), and purposive converb
+complements --- follows uniformly from the head-final parameter applied at the
+\synhead{VP} level. The complement originates to the left of V; ordinary finite pronunciation
+before the particle field additionally requires the placement dependency,
+whose lower chain occurrences preserve selection and case. Selected clauses
+retain their construction-specific positions as whole constituents.
+Asp, Mood and the inner evidential have suffixal exponents on the verbal
+complex, which occupies the right edge of the lower clause. Neg is structurally
+higher than Asp but attaches at the left edge of the verbal host, as specified
+in §\,\ref{sec:vm-neg}.
+
+%% ----------------------------------------------------------------
+%% END: verb-minim.tex
+%% ----------------------------------------------------------------

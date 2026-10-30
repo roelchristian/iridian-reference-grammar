@@ -7,6 +7,10 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0, str(ROOT / 'scripts'))
 from boundary_transducer import BoundaryError, BoundaryLicence, BoundaryState, BoundaryTransducer
 from evidential_realisation import attach_indirect_evidential
@@ -148,7 +152,7 @@ class EvidentialRealisationTests(unittest.TestCase):
             {'example.tex': r'\ird{*pjaštnikejte} % \ird{-ejte}'}, fixtures), [])
 
     def test_reviewed_table_and_negative_prose_mutations_are_detected(self):
-        sources = checker.active_sources(ROOT / 'grammar.tex')
+        sources = domain_sources(checker.active_sources(ROOT / 'grammar.tex'))
         self.assertEqual(checker.check_evidential_sources(sources, self.fixtures), [])
         for before, after in (
                 (r'\ird{pjaštímal}', r'\ird{pjaštimal}'),

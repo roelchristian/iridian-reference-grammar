@@ -7,6 +7,10 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0, str(ROOT / 'scripts'))
 from boundary_transducer import BoundaryLicence, BoundaryState, BoundaryTransducer
 from evidential_realisation import attach_indirect_evidential
@@ -85,7 +89,7 @@ class ContemplativeTests(unittest.TestCase):
             self.assertTrue(checker.check_contemplative_sources({'test.tex': source}, fixtures))
 
     def test_reviewed_copular_and_existential_rows_preserve_suppletion(self):
-        sources = checker.active_sources(ROOT / 'grammar.tex')
+        sources = domain_sources(checker.active_sources(ROOT / 'grammar.tex'))
         self.assertEqual(checker.check_contemplative_sources(sources, self.fixtures), [])
         for path, before, after in [
                 ('chapters/06-simple-sentence.tex', r'\ird{náž}', r'\ird{neháž}'),

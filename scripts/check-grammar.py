@@ -16,6 +16,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'util'))
 sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import domain_sources  # noqa: E402
 from collect_lexicon import extract, strip_comments  # noqa: E402
 from boundary_transducer import BoundaryTransducer, check_boundary_fixtures  # noqa: E402
 from quantity_grades import QuantityGrades, QuantityLicence  # noqa: E402
@@ -315,7 +316,7 @@ def check_quantity_sources(sources, fixtures):
         text = strip_comments(sources.get(passage['path'], ''))
         start = text.find(passage['marker'])
         body = '' if start < 0 else re.split(
-            r'\\subsubsection\b', text[start + len(passage['marker']):], maxsplit=1)[0]
+            r'\\(?:subsection|section)\b', text[start + len(passage['marker']):], maxsplit=1)[0]
         paragraphs = [re.findall(r'\\ird\{([^{}]+)\}', paragraph)
                       for paragraph in re.split(r'\n\s*\n', body)]
         matching = [forms[forms.index(passage['forms'][0]):] for forms in paragraphs
@@ -422,13 +423,18 @@ def check_evidential_sources(sources, fixtures):
 
 
 def verbs_heading_checks(sources):
-    """Enforce the scoped editorial hierarchy without policing other chapters."""
-    path = 'chapters/03-verbs.tex'
-    text = strip_comments(sources.get(path, ''))
-    return [f'{path}:{text.count(chr(10), 0, match.start()) + 1}: '
-            'Verbs headings must stop at subsection'
+    """Enforce chapter → section → subsection throughout the grammar."""
+    failures = []
+    for path, raw in sources.items():
+        if not path.startswith('chapters/'):
+            continue
+        text = strip_comments(raw)
+        failures.extend(
+            f'{path}:{text.count(chr(10), 0, match.start()) + 1}: '
+            'Chapter headings must stop at subsection'
             for match in re.finditer(
-                r'\\(?:subsubsection|paragraph|subparagraph)\*?\s*(?=\{|\[)', text)]
+                r'\\(?:subsubsection|paragraph|subparagraph)\*?\s*(?=\{|\[)', text))
+    return failures
 
 
 def renamed_particle_checks(sources):
@@ -447,7 +453,7 @@ def renamed_particle_checks(sources):
                 or r'\ipagloss{[' + ipa + ']}' not in entries[0]['notes']):
             failures.append(f'lexicon: missing or changed particle entry for {form}')
     particles = sources.get('chapters/05-function-words.tex', '')
-    section = re.search(r'\\paragraph\{Kady\}(.*?)(?=\\paragraph|\Z)', particles, re.S)
+    section = re.search(r'\\subsection\{(?:\\ird\{)?Kady(?:\})?\}(.*?)(?=\\(?:subsection|section)|\Z)', particles, re.S)
     pronunciations = [] if section is None else re.findall(
         r'\\ipagloss\{\[([^\]]+)\]\}', section[1])
     if pronunciations != ['ˈka.dɨ̞']:
@@ -456,9 +462,10 @@ def renamed_particle_checks(sources):
 
 
 def check():
-    sources = active_sources(ROOT / 'grammar.tex')
+    publication_sources = active_sources(ROOT / 'grammar.tex')
+    sources = domain_sources(publication_sources)
     failures = lexical_velar_checks(sources)
-    failures.extend(verbs_heading_checks(sources))
+    failures.extend(verbs_heading_checks(publication_sources))
     failures.extend(renamed_particle_checks(sources))
     phasal_fixtures = json.loads((ROOT / 'scripts/phasal-fixtures.json').read_text(encoding='utf-8'))
     failures.extend(check_phasal_diagram(
@@ -505,7 +512,7 @@ def check():
     labels, bibliography = Counter(), Counter()
     references, citations = [], []
     aligned = 0
-    for path, text in sources.items():
+    for path, text in publication_sources.items():
         labels.update(re.findall(r'\\label\{([^}]+)\}', text))
         bibliography.update(re.findall(r'\\bibitem(?:\[[^\]]*\])?\{([^}]+)\}', text))
         references.extend((path, key) for key in re.findall(r'\\(?:ref|pageref|eqref)\{([^}]+)\}', text))
@@ -601,7 +608,7 @@ def check():
     if failures:
         print('\n'.join(failures), file=sys.stderr)
         return 1
-    print(f'Grammar source checks passed: {len(sources)} files, {len(labels)} labels, '
+    print(f'Grammar source checks passed: {len(publication_sources)} files, {len(labels)} labels, '
           f'{len(references)} references, {len(citations)} citations; '
           f'{aligned} interlinear alignments, {len(valency_fixtures)} valency paradigms, '
           f'{len(expected)} stress fixtures, '

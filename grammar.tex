@@ -29,6 +29,7 @@
 \usepackage[final,protrusion=true,expansion=true,tracking=true]{microtype}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{longtable}
 \usepackage{ragged2e}
 \usepackage{multicol}
 \usepackage{multirow}
@@ -214,6 +215,7 @@
 \newcommand{\Stem}{\textsc{stem}}
 \newcommand{\Asp}{\textsc{asp.align}}
 
+\newif\ifparadigmappendix
 \input{styles/monograph}
 \input{styles/cover}
 
@@ -262,43 +264,38 @@
 
 \mainmatter
 
-%% Chapter 1: Overview
+\part{Foundations}
 \include{chapters/01-overview}
-
-%% Chapter 2: Phonology
 \include{chapters/02-phonology}
+\include{chapters/03-morphophonology}
 
-%% Chapter 3: The Verb
-\include{chapters/03-verbs}
+\part{Words and Phrases}
+\include{chapters/04-nominal-morphology}
+\include{chapters/05-nominal-syntax}
+\include{chapters/06-verbal-morphology}
+\include{chapters/07-argument-structure}
+\include{chapters/08-derivation-nominalisation}
 
-%% Chapter 4: The Noun Phrase
-\include{chapters/04-nouns}
+\part{The Clause}
+\include{chapters/09-clause-structure}
+\include{chapters/10-predicate-constructions}
+\include{chapters/11-negation}
+\include{chapters/12-particles-scope}
+\include{chapters/13-clause-types}
+\include{chapters/14-information-structure}
 
-%% Chapter 5: Function Words and Particles
-\include{chapters/05-function-words}
+\part{Complex Syntax and Discourse}
+\include{chapters/15-embedding}
+\include{chapters/16-clause-linking}
+\include{chapters/17-discourse}
 
-%% Chapter 6: The Simple Sentence
-\include{chapters/06-simple-sentence}
-
-%% Chapter 7: Information Structure
-\include{chapters/07-information-structure}
-
-%% Chapter 8: Complex Sentences and Clause Chaining
-\include{chapters/08-complex-sentences}
-
-%% Chapter 9: Discourse, Register, and Spoken Iridian
-\include{chapters/09-discourse}
-
-%% Chapter 10: Derivational Morphology
-\include{chapters/10-derivational}
-
-%% TEMPORARY STUBS
-% \include{chapters/12-working-stubs}
+\appendix
+\include{util/abbreviations}
+\include{util/paradigms}
 \include{util/lexicon}
-% \include{util/stub/theory}
-% \include{util/stub/verb-minim}
+\include{util/historical-notes}
 
 \backmatter
-\input{util/negation-references}
+\input{util/references}
 
 \end{document}

@@ -1,0 +1,1173 @@
+\chapter{Verbal Morphology and Inflection}\label{ch:verbs}\label{ch:verbal-morphology}
+
+\section{The finite verbal system}
+
+The verb is the morphological nucleus of the Iridian clause, and upon it falls
+the principal burden of grammatical expression. Where nouns inflect for case and number, verbs
+express the event's aspectual contour, the configuration of its participants,
+and the speaker's modal orientation. Every finite verb bears the aspect-alignment suffix,
+which is the sole obligatory element of the verbal complex; beyond this the verb
+may carry markers of voice, mood, and evidentiality, in an order fixed by the
+morphological template set out in the following section. Tense, gender, number
+agreement, and pronominal cross-reference find no expression on the Iridian
+verb.
+
+\section{The morphological template}\label{sec:morph-template}
+
+The structure of a finite verb in Iridian is given by the following template,
+wherein parentheses enclose optional elements and the sole obligatory position
+is that of the aspect-alignment suffix:
+
+\medskip
+\begin{center}
+(\Neg{}) + \Stem{} + (\Antip{} / \Appl{}) + (\Caus{}) + (\textsc{orientation}) + \synhead{Asp.Align} + (\textsc{mood}) + (\textsc{evid})
+\end{center}
+\medskip
+
+The \synhead{Asp.Align} slot cumulatively realises the aspect and alignment
+features of a single head and is the one element no finite verb may lack.
+The mood slot may be analysed as containing a null morpheme in the indicative. The negative prefix \ird{za-}
+stands before the entire stem complex. The indirect evidential has default
+\ird{-al} after a consonant and contextual \ird{-l} after a vowel;
+it follows finite aspect and mood and precedes the linker
+(§\,\ref{sec:vm-evid}). Person is not morphologically expressed on the Iridian
+verb: there is no pronominal clitic series and no agreement layer. Overt person
+reference is conveyed by full pronoun DPs, demonstratives in the third person,
+and zero anaphora where discourse recoverability licenses argument omission.
+
+The \Stem{} position admits a derived lexical stem as well as a simple root.
+The productive stative derivation and its inchoative extension belong inside
+this position: ROOT--STATE--BECOME precedes inner valency, Caus and orientation
+(§\,\ref{sec:stative-inchoative}). They do not reorder those outer heads.
+The lexical preverbs \ird{de-}, \ird{mně-}, \ird{pře-},
+\ird{le-}, \ird{ra-}, \ird{vra-}, \ird{ša-}, \ird{na-},
+\ird{ru-}, \ird{po-}, and marginal \ird{ne-} belong inside that stem, as in
+\ird{mněkař-} \trsl{read through} and \ird{lenočk-} \trsl{run out},
+before the valency and orientation suffixes
+(§\,\ref{sec:lexical-preverbs}). They modify the lexical event description
+without supplying an Asp.Align value or changing the alignment domain;
+indicative \ird{za-} attaches outside the complete derived stem.
+
+
+\subsection{The Mirror Principle and functional projections}
+\label{sec:vm-overview}
+\label{sec:vm-mirror}
+
+\noindent Iridian's causative suffix precedes outer patient orientation,
+which in turn precedes finite aspect, as in \ird{pjášt-r-an-ik}
+\trsl{cause to eat}, with perfective viewpoint and patient selection.
+The corresponding analysis places Caus below orienting Voice and Asp.Align;
+their distinct contributions to argument structure, participant selection and
+viewpoint motivate this hierarchy alongside the suffix order
+(§§\,\ref{sec:vm-selection-domains}, \ref{sec:vm-caus}).
+
+Baker formulates the \term{Mirror Principle} as the requirement that
+``Morphological derivations must directly reflect syntactic derivations
+(and vice versa)'' \cite[p.~375]{baker1985}. The correspondence concerns ordered
+operations and their grammatical consequences, rather than an identity between
+an affix's position in a string and a head's position in a tree. Baker's
+argument compares morphological and syntactic derivations with independently
+specified content; his discussion of clitics and nonconcatenative morphology
+also limits a direct inference from visible segments to derivational structure
+\cite[§§2, 5]{baker1985}.
+
+The Iridian analysis adopts a more limited working expectation: where
+successive suffixal attachment realises successive syntactic combination,
+inner morphological constituents correspond to lower syntactic domains.
+Surface order constrains this analysis without uniquely determining it,
+since head movement, affix-specific directionality and morphological merger
+can mediate the correspondence \cite{harley2011,harley2013b}.
+Table~\ref{tab:vm-projections} therefore distinguishes syntactic height from
+the placement of an exponent within the verbal word. Verbal categorisation,
+actor introduction and outer orientation occupy distinct positions; the
+separation of verbalising $v$ and argument-introducing Voice has independent
+motivation in Harley's analysis, while their particular ordering and licensing
+conditions here belong to Iridian \cite{harley2013a,harley2017}.
+
+\begin{table}
+  \footnotesize
+  \caption{Verbal projections in ascending syntactic order and their
+  morphological realisation. Optional layers occur only where licensed.}
+  \label{tab:vm-projections}
+  \begin{tabularx}{\textwidth}{L l L l}
+    \toprule
+    {\sc syntactic projection} & {\sc exponent} & {\sc realisation} &
+    {\sc see} \\
+    \midrule
+    $\surd$P / \synhead{VP} & \Stem{} & Lexical stem, including licensed preverbs
+                 & §\,\ref{sec:vm-root} \\
+    \synhead{vP} & $\varnothing$ & Categorisation of a simple lexical root
+                 & §\,\ref{sec:vm-root} \\
+    \synhead{VoiceP}$_{\mathrm{AP}}$ / \synhead{ApplP}
+                 & \Antip{} / \Appl{} & Inner valency suffix; alternative heads
+                 & §\,\ref{sec:vm-antipassive}, §\,\ref{sec:vm-appl} \\
+    Inner actor layer & $\varnothing$ & Introduces the lexical actor where licensed
+                 & §\,\ref{sec:vm-root} \\
+    \synhead{CausP} & \Caus{} & Suffix outside inner valency
+                 & §\,\ref{sec:vm-caus} \\
+    \synhead{VoiceP}$_{\mathrm{orient}}$
+                 & \ird{-n-}/\ird{-an-}, $\varnothing$ & Orientation outside Caus
+                 & §\,\ref{sec:vm-n} \\
+    \synhead{AspP} & \synhead{Asp.Align} & Aspect--alignment suffix outside orientation
+                 & §\,\ref{sec:vm-asp} \\
+    \synhead{NegP} & \Neg{} & Left-edge verbal proclitic in the indicative
+                 & §\,\ref{sec:vm-neg} \\
+    \synhead{MoodP} & \textsc{mood} & Suffix outside Asp.Align, or zero
+                 & §\,\ref{sec:vm-moodp} \\
+    \synhead{EvidP}$_\text{inner}$ & \ird{-al}/\ird{-l} & Suffix outside finite aspect and mood
+                 & §\,\ref{sec:vm-evid} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent Zero exponence leaves a syntactic position unpronounced;
+cumulative exponence realises several features together; conditioned allomorphy
+selects a form within an established morphological environment. None of these
+operations by itself reverses morphological constituency. Prefixal \Neg{}
+has a separate left-edge realisation instruction (§\,\ref{sec:vm-neg}), while
+lexical preverbs belong inside the stem (§\,\ref{sec:lexical-preverbs}).
+Asp.Align is one feature-bearing head throughout this analysis, without a
+separate Align projection.
+
+\section{The verb stem and thematic classes}
+
+Iridian verbs admit no citation form. Lexicographers record the bare stem with a
+following hyphen to indicate its character as a bound form requiring at least
+one suffix; the verb rendered in English as \textit{to eat} is thus entered as
+\ird{pjašt-}, where \ird{t} constitutes the \term{thematic consonant}.
+
+The thematic consonant, being the final consonant of the stem, is phonologically
+active: it undergoes regular alternations when certain suffixes are adjoined.
+Suffixes select distinct mutation classes: antipassive \ird{-aš-} triggers
+\term{sibilant replacement}, whereas simultaneous \ird{-ěc} and conjunctive
+\ird{-e} select the front grade; irrealis \ird{-ěv} selects the
+mixed grade (§\,\ref{sec:suffix-classes}). The grade is a property of the
+construction rather than an automatic effect of the following vowel.
+The five thematic classes in Table~\ref{tab:verbclasses} govern sibilant
+replacement only; a listed stem shape does not independently establish that
+the lexeme permits the antipassive argument frame.
+
+\begin{table}
+	\footnotesize
+	\caption{Thematic consonant classes.}\label{tab:verbclasses}
+	\begin{tabularx}{\textwidth}{l L L L}
+		\toprule
+		{\sc class} & {\sc thematic consonants} & {\sc change before \Antip{}} & {\sc example} \\
+		\midrule
+		I    & -t, -k, -c, -č  & → -č                    & \ird{pjašt-} → \ird{pjášč-} \\
+		II   & -s, -š          & → -š                    & \ird{tras-} → \ird{tráš-} \\
+		II-A & -l, -p          & add -š                  & \ird{dal-} → \ird{dalš-} \\
+		III  & -d, -h, -j, -z, -ž & → -ž               & \ird{vad-} → \ird{váž-} \\
+		III-A & all remaining  & add -ž                  & \ird{ščen-} → \ird{ščenž-} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+Loan stems with surface \orth{g} are assigned analogically to the voiced
+velar/fricative series and do not require a native phoneme /g/. Palatalising
+suffixes do \emph{not} follow Table~\ref{tab:verbclasses}; they invoke the
+consonantal-grade system described in
+Section~\ref{sec:suffix-classes}.
+
+Verbal stem grades are selected by the morphological construction and the lexical
+class of the stem. Fleeting-vowel stems have a reduced grade, as in
+\ird{razeň-}/\ird{razn-}; some modal constructions select a raised grade,
+as in raised-strong \ird{zděk-}/\ird{zďíč-}; the perfective suffix has its own
+\ird{-ek}/\ird{-ik-} relation. These changes preserve quantity unless an
+independent quantity grade is specified. Consonant mutation applies to the stem
+or aspect suffix selected in that domain, followed by syllabification and the
+ordinary voicing rules (§\,\ref{sec:morphophon}).
+
+\subsection{Quantitative classes and local grades}\label{sec:verbal-quantity}
+
+Verbal quantitative class determines where an aspectual contrast receives
+its quantity. The grades of §\,\ref{sec:morphophon} distinguish lexical
+G0, strong G1, raised G2, and raised-strong G3. A grade selects one
+licensed nucleus in the local stem, rather than lengthening every vowel
+in a written word. The target ordinarily is the rightmost eligible
+root nucleus, excluding fleeting vowels and material belonging to a
+prefix or suffix; a lexical target specification takes precedence.
+In \ird{zemac-} \trsl{run}, the target is its second vowel, /a/:
+G1 gives \ird{zemác-}, preserving the initial /ɛ/ and final /ts/.
+The digraph \orth{pj} in \ird{pjašt-} represents /pʲ/ and contains no
+vowel nucleus; its strong grade is \ird{pjášt-}.
+
+Class~A expresses the strong progressive and perfective in its root
+grade, while the continuous, contemplative, and retrospective select
+G0. Class~B instead uses strong aspectual exponents with an otherwise
+short root. Class~C preserves an independently long lexical root
+and selects short aspectual endings. The principal parts in
+Table~\ref{tab:verbal-quantity-classes} illustrate these specifications;
+the perfectives of \ird{zemac-} and \ird{knář-} are intransitive,
+whereas ordinary transitive \ird{pjašt-} includes patient orientation
+\ird{-n-}.
+
+\input{util/paradigm-tables/verbal-quantity-classes}
+
+Class~C \ird{strád-} likewise retains its lexical long vowel in
+\ird{stráda}, \ird{strádime}, and \ird{strádaž}.
+
+Copular, existential, and other functional predicates retain their listed
+principal parts; surface shortness alone does not assign them to Class~A
+(Chapter~\ref{ch:predicates}).
+
+The Class~B perfective has long \ird{-ék}, with bound \ird{-ík-},
+where a bare perfective is independently licensed, and long \ird{-ník}
+with ordinary patient orientation. Its progressive has \ird{-íme}
+and its retrospective \ird{-áv}, or \ird{-náv} after orientation.
+Class~A instead combines root G1 with short perfective
+\ird{-ek}/\ird{-nik} and short progressive \ird{-ime}; its
+retrospective has short-root G0 and long \ird{-áv}/\ird{-náv}.
+The stative verbaliser's perfective \ird{-ik} likewise follows the
+stem's quantitative class: \ird{múžnik} has root G1 and short /ɪ/.
+
+Valency derivation establishes a new local quantity domain before
+Asp.Align attaches. Replacement antipassive Voice selects a strong
+stem such as \ird{pjášč-}; compact causative \ird{-r-} selects G1
+on an eligible local stem, as in \ird{pjáštr-}; and applicative
+\ird{-éb-} retains its own long vowel. Such stems select short
+adjacent aspectual exponents: \ird{pjášček}, \ird{pjáščav},
+\ird{pjáštrime}, \ird{pjaštébaž}. A weak aspect does not undo
+strength already supplied by the inner head. Additive antipassives,
+including \ird{dalš-}, \ird{kanž-}, and \ird{lovž-}, preserve their
+listed short root and short \ird{-ek}/\ird{-av}; Aspect does not
+reach through that Voice head to create a root-strong grade.
+
+The short \ird{-až} is a conditioned contemplative allomorph after
+Class~C or a locally quantity-bearing valency stem. Short
+\ird{-av}, \ird{-ime}, and \ird{-ek}/\ird{-ik} likewise belong
+to their licensed local combinations. These choices do not impose
+one long vowel per morphological word. Directive Mood, participant
+nominalisers, relatives, and outer anchoring preserve their independently
+specified quantities unless their construction explicitly selects
+another allomorph. Thus \ird{pjáštrím} may contain both the
+causative-selected root quantity and the long imperative vowel.
+
+Height alternation remains independent of quantity. Raising under G2
+preserves the selected vowel's quantity, while an affirmative irrealis
+with an exposed, eligible root can select raised-strong G3. Mid
+\ird{e/ě} then gives \ird{í}, and \ird{o} gives \ird{ú}, where
+that raised relation is licensed; low-vowel \ird{pjašt-} selects
+strong \ird{pjášč-} without an invented raising of /a/.
+The consonantal grade is interpreted separately at its own boundary.
+Ordinary indicative Aspect may preselect its class-assigned root grade
+before assembly with plain patient orientation \ird{-n-}, as in
+Class~A \ird{vádnik}. This construction-specific selection does not
+make orientation transparent to every later head. Mood instead acts on
+the assembled local domain: intervening valency or orientation prevents
+it from reaching back to assign a new root grade
+(§\,\ref{sec:vm-moodp}).
+
+
+\section{Aspect and alignment}
+\label{sec:aspect}
+
+Iridian grammaticalises \term{aspect} rather than \term{tense} on the finite
+verb. There is no dedicated past-, present-, or future-tense suffix; temporal
+location is inferred from discourse context, temporal adverbials, and the
+lexical semantics of the predicate. Aspect and alignment are fused into a single
+obligatory suffix, the \term{aspect-alignment morpheme} (Asp.Align), which every
+finite verb must bear: selecting an aspectual category simultaneously determines
+how the event is construed and the alignment domain within which
+valency and orientation determine the privileged participant.
+
+The five \synhead{Asp.Align} categories fall into two domains. The
+\term{perfective domain} comprises the perfective and retrospective, which
+present an eventuality as bounded or anterior and license the ordinary
+ergative-absolutive frame: patient direct, agent transitive. The
+\term{imperfective domain} comprises the continuous, progressive, and
+contemplative, which present an eventuality internally or prospectively and
+license the ordinary nominative-accusative frame: agent direct, patient
+indirect. Applicatives, antipassives, and patient-selecting Voice modify these
+defaults (§\,\ref{sec:vm-asp-case}). The case split belongs to Iridian's
+grammar; temporal viewpoint alone does not determine the selected participant
+or confer aboutness topichood.
+
+The account below first lays out the shared temporal-semantic machinery
+(including Reichenbachian framing and the formal Asp.Align analysis), then treats
+the perfective domain (§\,\ref{sec:aspect-pf}) before turning to the imperfective domain
+in §\,\ref{sec:aspect-ipf}.
+
+\subsection{Viewpoint and temporal interpretation}
+
+Three temporal notions must be kept distinct. Tense locates a situation in time
+relative to a reference point, most commonly the moment of speaking. Grammatical
+aspect does not locate the situation in this way, but construes its internal
+temporal contour: whether it is viewed as bounded, ongoing, prior from a later
+vantage point, or not yet realised. \term{Lexical aspect} or \term{Aktionsart},
+by contrast, belongs to the predicate itself. A predicate may denote a state,
+activity, accomplishment, or achievement independently of the inflection it
+bears. Iridian aspectual morphology therefore does not determine the inherent
+temporal type of the eventuality; rather, it imposes a viewpoint upon an
+eventuality whose lexical contour is supplied by the verb phrase.
+
+Lexical preverbs make this distinction overt: \ird{mněkař-} \trsl{read
+through} specifies traversal of a text, while its continuous and progressive
+forms describe that traversal without asserting arrival at its endpoint.
+The same stem admits all five Asp.Align categories, with the ordinary case
+frames and Voice requirements (§\,\ref{sec:preverb-aspect}). Likewise,
+\ird{ranóčkime} \trsl{is running into an enclosure} describes an ingress
+in progress without asserting that entry has been completed, while
+\ird{rustójime} \trsl{is retracing a route} locates the returning motion
+within its unfolding course. Direction, configuration, and restitution belong
+to the lexical description; continuous, progressive, contemplative, perfective,
+and retrospective morphology remain available wherever the resulting meaning
+licenses them.
+
+A useful descriptive frame is Reichenbach's distinction among speech time
+(\textit{S}), reference time (\textit{R}), and event time (\textit{E}):
+\textit{S} is the moment of utterance, \textit{E} the time at which the
+situation itself takes place, and \textit{R} the temporal vantage point from
+which that situation is presented. The usefulness of \textit{R} is that speakers
+do not always describe an event directly from the moment of speaking, but may
+instead locate it from some later or earlier point already established in the
+discourse; English \textit{had left}, for example, places the leaving
+(\textit{E}) before a reference point (\textit{R}) that is itself prior to the
+speech moment (\textit{S}). In a tense-prominent system, finite morphology often
+fixes the relation among all three. In Iridian, by contrast, the finite suffix
+primarily construes the relation between \textit{E} and \textit{R}, while the
+relation of \textit{R} to \textit{S} is often left to context, temporal
+adverbials, and discourse sequencing. This is why the same aspectual category
+may receive past-, present-, or future-oriented readings in different
+environments without ceasing to be aspectual rather than temporal.
+
+The five categories may be sketched in these terms. The \term{perfective}
+presents an eventuality as bounded and viewed as a whole, with \textit{R}
+aligned to the event in its entirety. The \term{retrospective} places \textit{E}
+before \textit{R}, yielding a later vantage point from which present relevance,
+result, prior experience, or other discourse effects of anteriority may be
+construed. The \term{continuous} and \term{progressive} both place \textit{R}
+within \textit{E}, but they differ in the kind of internal view imposed: the
+continuous presents the situation as simply obtaining at reference time, without
+foregrounding change, onset, or unfolding contour, whereas the progressive more
+narrowly profiles a dynamic event as actively unfolding at the reference point.
+The \term{contemplative} places \textit{E} after \textit{R}, presenting the
+event as projected, intended, expected, or impending rather than as obtaining or
+complete.
+
+These five categories divide naturally into two families. The
+\term{perfective domain}---the perfective and retrospective---consists of those
+categories that locate the event from an external or posterior vantage and
+present it as bounded or anteriorly packaged: in Reichenbachian terms, the
+event time is enclosed within the reference span, or precedes it. The
+\term{imperfective domain}---the continuous, progressive, and
+contemplative---consists of those categories that do not present the event as a
+bounded whole, but instead either locate reference time within the ongoing event
+or situate reference time prior to an unrealized projection of the event. The
+Reichenbachian figure (Figure~\ref{fig:iridian-aspect-reichenbach}) makes this
+grouping visually explicit: the upper two rows belong to the perfective domain,
+in which the event is viewed as bounded or anterior from outside; the lower
+three rows belong to the imperfective domain, in which R lies within E or
+precedes an unrealized E.
+
+Because viewpoint aspect interacts with lexical aspect, the same inflection does
+not yield identical interpretive effects with every predicate class. With states
+and activities, the continuous naturally yields persistent or ongoing readings;
+with accomplishments it typically selects an internal phase rather than a
+completed endpoint; with achievements it may invite iterative, preparatory, or
+inceptive coercions. Conversely, the perfective and retrospective readily
+package telic predicates as bounded wholes or prior results, but with atelic
+predicates they instead delimit a stretch, occasion, or state viewed from an
+external vantage. The exact semantic and distributional consequences of these
+interactions are discussed in the domain subsections below.
+
+Typologically, this pattern is an instance of aspect-conditioned split
+ergativity. Iridian does not maintain a single alignment pattern across all
+finite clauses; rather, the aspectual category selected on the verb determines
+whether the clause is built on an ergative-absolutive or a nominative-accusative
+frame. Aspect in Iridian therefore has consequences at two levels at once: it
+construes the temporal profile of the eventuality and it determines the
+morphosyntactic alignment through which the clause is organised.
+
+The aspectual domains condition case without encoding a discourse topic.
+A perfective transitive may continue reference to its agent, although the
+patient takes direct case, while an imperfective clause may introduce an event
+without an established topic. Valency and orientation morphology determine
+which participant receives direct-case privileges within the aspectual domain;
+linked topicalisation independently determines aboutness
+(§\,\ref{sec:vm-asp-case}; Chapter~\ref{ch:infstr}).
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  x=1.05cm,y=1cm,
+  evt/.style={line width=1.1pt},
+  refpt/.style={circle,fill,inner sep=1.3pt},
+  speech/.style={diamond,draw,inner sep=1.2pt},
+  rowlab/.style={anchor=east,font=\small},
+  every node/.style={font=\small}
+]
+
+% All rows hold S at x = 4.5 so the deictic baseline is visually constant.
+
+% perfective (y = 0)
+\node[rowlab] at (0,0) {perfective};
+\draw[->] (0.5,0) -- (8.5,0);
+\draw[evt] (3.0,0) -- (6.0,0);
+\draw (3.0,0.15) -- (3.0,-0.15);
+\draw (6.0,0.15) -- (6.0,-0.15);
+\node[refpt] at (3.0,0) {};
+\node[refpt] at (6.0,0) {};
+% R bracket above the timeline, E label between bracket and line
+\node at (4.5,0.30) {$E$};
+\draw[decorate,decoration={brace,amplitude=3pt}]
+  (3.0,0.55) -- (6.0,0.55)
+  node[midway,above=4pt] {$R$};
+% S below, matching spacing of other rows
+\draw[dashed] (4.5,-0.08) -- (4.5,-0.42);
+\node[speech] (s1) at (4.5,-0.55) {};
+\node[below=2pt of s1] {$S$};
+
+% retrospective (y = -2.0)
+\node[rowlab] at (0,-2.0) {retrospective};
+\draw[->] (0.5,-2.0) -- (8.5,-2.0);
+\draw[evt] (1.8,-2.0) -- (3.4,-2.0);
+\draw (1.8,-1.85) -- (1.8,-2.15);
+\draw (3.4,-1.85) -- (3.4,-2.15);
+\node at (2.6,-1.65) {$E$};
+\node[refpt,label=above:{$R$}] at (4.5,-2.0) {};
+\node[speech] (s2) at (4.5,-2.55) {};
+\node[below=2pt of s2] {$S$};
+\draw[dashed] (4.5,-2.08) -- (4.5,-2.42);
+
+% continuous (y = -4.0)
+\node[rowlab] at (0,-4.0) {continuous};
+\draw[->] (0.5,-4.0) -- (8.5,-4.0);
+\draw[dotted] (1.6,-4.0) -- (2.2,-4.0);
+\draw[evt] (2.2,-4.0) -- (6.8,-4.0);
+\draw[dotted] (6.8,-4.0) -- (7.4,-4.0);
+\node at (3.0,-3.65) {$E$};
+\node[refpt,label=above:{$R$}] at (4.5,-4.0) {};
+\node[speech] (s3) at (4.5,-4.55) {};
+\node[below=2pt of s3] {$S$};
+\draw[dashed] (4.5,-4.08) -- (4.5,-4.42);
+
+% progressive (y = -6.2)
+\node[rowlab] at (0,-6.2) {progressive};
+\draw[->] (0.5,-6.2) -- (8.5,-6.2);
+\draw[evt] (2.4,-6.2) -- (7.0,-6.2);
+\draw (2.4,-6.05) -- (2.4,-6.35);
+\draw (7.0,-6.05) -- (7.0,-6.35);
+\node at (6.5,-5.85) {$E$};
+\draw[->] (2.8,-5.55) -- (4.2,-5.55)
+  node[midway,above,font=\scriptsize] {dynamic phase};
+\node[refpt,label=above:{$R$}] at (4.5,-6.2) {};
+\node[speech] (s4) at (4.5,-6.75) {};
+\node[below=2pt of s4] {$S$};
+\draw[dashed] (4.5,-6.28) -- (4.5,-6.62);
+
+% contemplative (y = -8.2)
+\node[rowlab] at (0,-8.2) {contemplative};
+\draw[->] (0.5,-8.2) -- (8.5,-8.2);
+\node[refpt,label=above:{$R$}] at (4.5,-8.2) {};
+\draw[evt] (5.8,-8.2) -- (7.5,-8.2);
+\draw (5.8,-8.05) -- (5.8,-8.35);
+\draw (7.5,-8.05) -- (7.5,-8.35);
+\node at (6.65,-7.85) {$E$};
+\node[speech] (s5) at (4.5,-8.75) {};
+\node[below=2pt of s5] {$S$};
+\draw[dashed] (4.5,-8.28) -- (4.5,-8.62);
+
+\end{tikzpicture}
+\caption{Reichenbachian schematic for Iridian aspect. $E$ = event time, $R$ =
+reference time, $S$ = speech time. In the perfective, $R$ spans the bounded
+event (marked by dots at the endpoints and a bracket); elsewhere, $R$ is a
+point-like vantage. The upper two rows (perfective, retrospective) belong to the
+\term{perfective domain}: in both, the event is construed as bounded or
+anterior, viewed from outside or from a posterior vantage. The lower three rows
+(continuous, progressive, contemplative) belong to the \term{imperfective
+domain}: in all three, $R$ either lies within $E$ or precedes an unrealized $E$,
+and no external terminus is foregrounded. Dashed connectors mark the unmarked
+deictic baseline in which $R$ coincides with $S$. $S$~is held at a constant
+horizontal position across all rows; in discourse, adverbials or sequencing may
+shift $R$ independently of $S$.}
+\label{fig:iridian-aspect-reichenbach}
+\end{figure}
+
+\subsection{The Asp.Align system}\label{sec:vm-asp}
+
+The obligatory aspect-alignment suffix encodes viewpoint and the alignment
+domain within which the verbal construction licenses case. The five indicative
+exponents are given in Table~\ref{tab:aspect}.
+
+\input{util/paradigm-tables/aspect}
+
+Antipassive and applicative forms preserve the orientation and quantity
+selected by their own constructions. Replacement antipassives such as
+\ird{pjášč-} combine with short \ird{-ek}/\ird{-av}, while the
+applicative \ird{-éb-} selects short perfective \ird{-ik}.
+The distribution in Table~\ref{tab:verbal-quantity-classes} supplies the
+quantity distinctions without changing the five viewpoint categories.
+
+\subsection{Perfective and retrospective aspect}\label{sec:aspect-pf}
+
+The perfective domain comprises those Asp.Align forms which construe an
+eventuality as bounded and externally viewed. Unlike the imperfective domain,
+which presents an event from within its internal course, the perfective domain
+presents it as a temporally delimited whole. Iridian distinguishes two
+categories within this domain: the \term{perfective} proper, which presents a
+bounded eventuality as a discrete occurrence, and the \term{retrospective},
+which presents a prior eventuality in relation to a present state, present
+relevance, or present experience. Eventive bases supply events; simple
+stative bases supply states under their independently licensed viewpoint
+construals. Both categories interact regularly with
+valency and alignment morphology, and both therefore belong to a single
+structural and semantic domain rather than to unrelated aspectual classes.
+
+Free perfective quantity follows the selected quantitative class.
+Class~A \ird{kánek} \trsl{sang} and \ird{ščének} \trsl{arrived}
+have root G1 and short \ird{-ek}; Class~B has long \ird{-ék} where
+a bare perfective is licensed. Adjacent linker \ird{-e} and participant
+nominaliser \ird{-ou} select the corresponding bound height grade,
+short \ird{-ik-} or long \ird{-ík-}. A replacement antipassive
+already supplies root strength: \ird{pjášček}, linked
+\ird{pjáščice}, and participant \ird{pjáščikou} therefore
+retain short suffix vowels (§\,\ref{sec:pf-dissim}).
+
+Ordinary patient orientation combines \ird{-n-} with the class-selected
+high-vowel perfective: short \ird{-nik} in root-strong Class~A and
+long \ird{-ník} in suffix-strong Class~B. The stative verbaliser
+\ird{-n-} of the root-strong property class independently selects short
+\ird{-ik}, with root quantity assigned by that class; its surface
+\ird{-nik} does not insert transitive Voice into the stative predicate.
+Relational \ird{-(e)zn-} retains its separately specified quantitative
+class: a suffix-strong short relational stem has long perfective
+\ird{-ík}, whereas protected Class~C takes short \ird{-ik}
+(Chapter~\ref{ch:derivational}). The selected quantities
+persist before further morphology. Retrospective likewise distinguishes
+ordinary A/B \ird{-áv}/\ird{-náv} from C and strong-valency
+\ird{-av}/\ird{-nav}; antipassive \ird{pjáščav} has a strong
+replacement stem and short ending.
+
+The semantic opposition within the perfective domain is best stated as one of
+\emph{event occurrence} versus \emph{post-event relevance}. The perfective
+proper presents a bounded eventuality as a single occurrence situated at a definite
+point in narrative or discourse time, and is therefore the primary narrative
+aspect. With an eventive base, the retrospective presents a bounded prior event, but does
+not profile that event merely as an occurrence; rather, it presents it through
+its present relevance, present consequences, or experiential force. With a simple state, its anterior eventuality remains a state and no transition
+is entailed. In this respect it corresponds in some uses to the English perfect. Its non-volitional
+or accidental readings belong to the same general semantic profile: the event is
+construed from the standpoint of its aftermath or present bearing, rather than
+simply narrated as a bounded occurrence.
+
+For this reason, speakers often choose the retrospective where reduced
+volitionality is pragmatically inferable or interactionally relevant. By
+presenting the event through its resulting situation rather than as a discrete
+occurrence in the narrative line, the retrospective readily backgrounds agency
+and favours readings such as `it happened', `it turned out that way', or `I find
+myself in the state resulting from it'. This preference is pragmatic rather
+than semantic: the retrospective does not itself encode non-volitionality, but
+it is frequently selected in contexts where non-control, accident, or
+unintended outcome is to be understood.
+
+This contrast may be seen in the following pair:
+
+\pex
+\a
+\begingl
+\gla Praže de stožáv.//
+\glb Prague.\Ind{} to go-\Ret{}//
+\glft \trsl{(I) have been to Prague before.}//
+\endgl
+\a Compare:\par
+\begingl
+\gla Bych Praže de stóžek.//
+\glb yesterday Prague.\Ind{} to go-\Pf{}//
+\glft \trsl{Yesterday I went to Prague.} \lingcontext{specific past event; perfective}//
+\endgl
+\xe
+
+Within the perfective domain, the ordinary transitive selects its patient
+through \ird{-n-}, assigning direct case to that participant and transitive
+case to the agent. An antipassive instead leaves only the actor independently
+licensed, whereas a simple applicative selects its applied participant. An
+inherently intransitive verb requires no overt orientation marker, since its
+sole argument takes direct case (§\,\ref{sec:vm-asp-case}).
+
+The retrospective can present a patient-related outcome in an ergative
+transitive or an agent's prior experience in an antipassive. The latter has no
+independent patient argument whose resulting state could supply the discourse
+centre, although the activity's consequences may remain relevant. These are
+contextual interpretations of the respective argument frames, as illustrated
+by English \textit{the bread has been eaten} and \textit{I have eaten};
+retrospective morphology itself does not require either a result-state or an
+experiential reading.
+
+Negation further confirms the semantic distinction between the two members of
+the perfective domain. When negated, the perfective normally carries the
+implicature that the event was expected, intended, or contextually projected,
+but failed to occur. The retrospective, by contrast, is the neutral form for
+simple past negation without this implication. The opposition is illustrated
+below:
+
+\pex
+\a
+\begingl
+\gla Marek zapjášček.//
+\glb Marek.\Dir{} \Neg{}-eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek didn't eat (but he should have).}//
+\endgl
+\a
+\begingl
+\gla Marek zapjáščav.//
+\glb Marek.\Dir{} \Neg{}-eat-\Antip{}-\Ret{}//
+\glft \trsl{Marek didn't eat (neutral past).}//
+\endgl
+\xe
+
+\label{sec:ambitransitive}A small class of verbs shows particularly clearly how the perfective domain
+interacts with argument structure. These are lexical ambitransitives: verbs
+which possess both an intransitive reading, in which no patient is structurally
+available, and a transitive reading, in which a patient is licensed. Neither
+reading is derived from the other by ordinary valency operations; both are
+lexical possibilities of the same stem. Two examples are \ird{lov-} \trsl{hunt,
+forage [intr.]; catch, take [tr.]} and \ird{kan-} \trsl{sing, perform [intr.];
+sing a song, chant a text [tr.]}.
+
+The diagnostic for the two readings is whether ordinary transitive orientation \ird{-n-}
+is available in one reading but impossible in the other. In \ird{lov-}, the
+intransitive perfective---formed without any Voice head, with the ERG Asp.Align
+suffix attached directly to the stem---accesses only the intransitive reading:
+the event is construed simply as hunting, with no patient structurally present
+and no quarry included in the event frame as an affected participant. The
+ergative and antipassive forms, by contrast, access the transitive reading. The
+ergative perfective \ird{lóvnik} is possible only when something is caught or
+taken; the antipassive construes the event as directed toward prey, but
+suppresses that prey from the clause's core argument structure.
+
+\pex
+\a
+\begingl
+\gla Marek bych lóvek.//
+\glb Marek.\Dir{} yesterday hunt-\Pf{}//
+\glft \trsl{Marek went hunting yesterday.} \lingcontext{intransitive reading; no patient in event frame}//
+\endgl
+\a
+\begingl
+\gla Zvěrato Marku lóvnik.//
+\glb game.\Dir{}.\Def{} Marek.\Trs{} hunt-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek caught the game.} \lingcontext{transitive reading; ergative}//
+\endgl
+\a
+\begingl
+\gla Marek bych lovžek.//
+\glb Marek.\Dir{} yesterday hunt-\Antip{}-\Pf{}//
+\glft \trsl{Marek was hunting yesterday.} \lingcontext{transitive reading; antipassive; quarry conceptually present but not licensed}//
+\endgl
+\xe
+
+The two non-ergative forms are therefore not interchangeable. \ird{Lóvek}
+belongs to the intransitive lexical reading: hunting is construed as an activity
+with no patient present even in the event structure. \ird{Lovžek}, however,
+belongs to the transitive lexical reading: the event is directed toward prey,
+and that prey remains part of the conceptual frame even though the antipassive
+removes it from core syntax. The distinction is thus not merely one of overt
+argument expression, but of underlying event construal.
+
+The stem \ird{kan-} likewise distinguishes an ordinary intransitive perfective,
+a transitive perfective, and an antipassive:
+
+\pex
+\a \phon{kánek}{ˈkaː.nɛk}{sang, performed} \lingcontext{intransitive; no song in the event frame}
+\a \phon{kánnik}{ˈkaːn.nɪk}{sang it, sang a specific song} \lingcontext{transitive; ergative; patient licensed}
+\a \phon{kanžek}{ˈkan.ʒɛk}{was singing} \lingcontext{transitive reading; antipassive; patient suppressed from core syntax}
+\xe
+
+In \ird{kánek}, ordinary \ird{-ek} follows the full stem: G1 lengthens
+/a/ to /aː/. Transitive \ird{kánnik} contains patient orientation
+\ird{-n-} after the root-final \ird{n} and the construction-specific
+high-vowel perfective. Both nasal consonants are retained across the
+syllable boundary. The difference between \ird{e} and \ird{i} belongs to
+perfective exponent selection. Antipassive \ird{kanžek} takes a short
+free perfective after the Class~III-A augmented stem \ird{kanž-}.
+Class~A root G1 supplies long \ird{á} in \ird{kánek} and \ird{kánnik},
+whereas additive Voice in \ird{kanžek} retains short \ird{a}.
+The forms distinguish valency and event construal together with their
+licensed quantity patterns.
+
+The transitive stem \ird{kař-} \trsl{read} also belongs to quantity
+Class~A. Its lexical \ird{ř} represents /ʒ/; ordinary patient orientation
+retains that consonant, as in \phon{kářnik}{ˈkaːʒ.nɪk}{read it}.
+Antipassive replacement selects Class~III /ʒ/ with root G1, giving
+\phon{kážek}{ˈkaː.ʒɛk}{was reading}. Its bound perfective is
+\ird{kážik-}, as in participant-oriented \ird{kážikový}.
+The replacement spelling \ird{ž} records the antipassive exponent;
+it is independent of PAL (§\,\ref{sec:suffix-classes}).
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Class~A principal parts of \ird{kař-} and \ird{kan-}.}
+\label{tab:read-sing-principal-parts}
+\begin{tabularx}{\textwidth}{L L L L L L}
+\toprule
+{\sc stem} & {\sc continuous} & {\sc progressive} & {\sc contemplative} & {\sc perfective} & {\sc retrospective} \\
+\midrule
+\ird{kař-} & \ird{kařa} & \ird{kářime} & \ird{kařáž} & \ird{kářnik} & \ird{kařnáv} \\
+\ird{kan-} (intr.) & \ird{kana} & \ird{kánime} & \ird{kanáž} & \ird{kánek} & \ird{kanáv} \\
+\ird{kan-} (tr.) & \ird{kana} & \ird{kánime} & \ird{kanáž} & \ird{kánnik} & \ird{kannáv} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Direct linker suffixation selects bound perfective \ird{-ik-} and then
+the front grade at its final /k/. The isolated and linked pairs are
+\phon{kánek}{ˈkaː.nɛk}{sang} / \phon{kánice}{ˈkaː.nɪ.tsɛ}{sang, linked},
+\phon{kánnik}{ˈkaːn.nɪk}{sang it} / \phon{kánnice}{ˈkaːn.nɪ.tsɛ}{sang it, linked},
+and \phon{kanžek}{ˈkan.ʒɛk}{was singing} / \phon{kanžice}{ˈkan.ʒɪ.tsɛ}{was singing, linked}.
+Likewise \ird{kař-} has
+\phon{kářnice}{ˈkaːʒ.nɪ.tsɛ}{read it, linked} and
+\phon{kážice}{ˈkaː.ʒɪ.tsɛ}{was reading, linked}.
+The linker preserves the root and Voice grades
+(§\,\ref{sec:conjunctive-linker}).
+
+\section{Imperfective aspect}
+\label{sec:aspect-ipf}
+
+The imperfective domain comprises those Asp.Align categories that do not
+construe the eventuality as a bounded whole viewed from outside. Where the
+perfective domain packages an event as a closed unit and foregrounds its
+culmination or its anteriorly packaged result, the imperfective domain takes
+no such external vantage: it either locates the reference point within the
+ongoing event, without presenting its boundaries as salient, or presents the
+event as projected relative to reference time---not yet realised, but
+anticipated, intended, or impending. These temporal properties characterise
+the domain independently of its ordinary agent-direct case frame.
+
+Three categories constitute the domain. The \term{continuous} is the unmarked
+imperfective member; it presents a situation as simply obtaining at reference
+time, without emphasis on change, onset, dynamic unfolding, or endpoint. The
+\term{progressive} is the marked dynamic member; it profiles an event
+specifically in its active unfolding phase. The \term{contemplative} is the
+projective member; it presents the event as not yet realised at reference time
+but projected from that point---intended, expected, impending, planned, or
+otherwise prospectively construed. Together the three define an internal
+opposition within the domain: static holding versus dynamic unfolding versus
+prospective projection.
+
+The three imperfective categories license the ordinary NOM-domain frame,
+with an agent or sole participant in direct case and a retained patient in
+indirect case. A simple applicative instead selects the applied participant,
+whereas overt \ird{-n-} selects the patient and licenses a passive. These
+contrasts show why the temporal profile shared by the three aspects cannot by
+itself determine which participant is privileged (§\,\ref{sec:vm-asp}).
+
+\subsection{The continuous (\ird{-a})}
+The continuous is the unmarked member of the imperfective domain. It presents
+a situation as obtaining at reference time without foregrounding change, onset,
+active unfolding, or prospective projection. It is therefore the natural form
+for stable states, contingent present conditions, broad durative situations, and
+habitual or generic activity where what matters is that the situation holds
+rather than how it is developing:
+
+\pex
+\a
+\begingl
+\gla Praže to mulša.//
+\glb Prague.\Ind{} \textsc{loc} live-\Cont{}//
+\glft \trsl{(I) live in Prague.} \lingcontext{stable durative state}//
+\endgl
+\a
+\begingl
+\gla Nužo mužna.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Cont{}//
+\glft \trsl{The city is beautiful.} \lingcontext{property holding at the reference time}//
+\endgl
+\xe
+
+Because the continuous does not foreground development or change, it is
+compatible with predicates across the entire stative-dynamic spectrum, from
+permanent properties to ongoing activities. Where the speaker wishes simply to
+assert that a situation holds---without committing to whether it is in active
+motion or stable---the continuous is the default choice. Its unmarked status
+within the imperfective domain is reflected in the morphology: \ird{-a} is the
+shortest and phonologically least specified of the three imperfective suffixes.
+
+\subsection{The progressive (\ird{-ime})}
+The progressive is the marked dynamic member of the imperfective domain.
+Where the continuous merely asserts that a situation holds, the progressive
+profiles an event specifically in its active unfolding phase---the period during
+which it is dynamically occurring, not yet complete, and currently in motion.
+It is accordingly most natural with activities and developing processes, where
+the sense of an event in progress is pragmatically salient:
+
+\pex
+\a
+\begingl
+\gla Marek zemácime.//
+\glb Marek.\Dir{} run-\Prog{}//
+\glft \trsl{Marek is running.} \lingcontext{dynamic activity in progress}//
+\endgl
+\a
+\begingl
+\gla Marek travě pjaštíme.//
+\glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
+\glft \trsl{Marek is eating bread.} \lingcontext{ongoing activity; patient in indirect}//
+\endgl
+\xe
+
+The progressive of a simple state is licensed only under a marked
+stage-level or expressive interpretation, such as looking particularly beautiful
+on a particular occasion. It does not itself introduce becoming. Ordinary
+change of state requires the overt inchoative stem in \ird{-el-}/\ird{-él-}.
+The following pair contrasts a holding state with a developing transition:
+
+\pex
+\a
+\begingl
+\gla Nužo mužna.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Cont{}//
+\glft \trsl{The city is beautiful.} \lingcontext{continuous: state holds at $R$}//
+\endgl
+\a
+\begingl
+\gla Nužo mužnélime.//
+\glb city.\Dir{}.\Def{} be.beautiful-\textsc{inch}-\Prog{}//
+\glft \trsl{The city is becoming beautiful.} \lingcontext{progressive: dynamic unfolding at $R$}//
+\endgl
+\xe
+
+The continuous describes a holding situation; the progressive profiles an
+unfolding eventuality whose internal structure must be independently licensed.
+Thus \ird{Nužo mužna} and \ird{Nužo mužnélime} differ both in their
+lower predicate and in viewpoint. Temporary bodily conditions remain states:
+\ird{ptakna} means \trsl{is tired}, while an overt inchoative supplies
+\trsl{become tired}. Neither bodily temporariness nor progressive aspect
+alone introduces a transition (§\,\ref{sec:stative-stability}).
+
+
+\subsection{The contemplative (\ird{-áž})}
+Default \ird{-áž} represents /aːʒ/ in ordinary short-root
+Classes~A and~B. Class~C and locally quantity-bearing valency stems
+select short \ird{-až}, as in \ird{knářaž} and \ird{pjáštraž}.
+Within each selected allomorph its quantity is retained before further
+suffixes, while its final consonant has [ʃ] in an isolated
+word by regular final devoicing. Before a following vowel, /ʒ/ retains
+voicing: linked \ird{mužnáže}, evidential \ird{pjaštážal}, and
+participant nominal \ird{pjaštážou} all contain [ʒ]. The linker
+preserves this postalveolar consonant rather than selecting a different
+stem grade.
+
+The contemplative is the projective member of the imperfective domain. It
+presents the eventuality as not yet realised at reference time but projected
+from that point: the event is construed as intended, expected, impending,
+planned, or otherwise prospectively oriented. The contemplative therefore does
+not encode future tense---like all Iridian Asp.Align categories it is
+indifferent to the relation between reference time and speech time---but rather
+a prospective viewpoint in which reference time is interior to the projection
+and the event lies ahead of it:
+
+\pex
+\a
+\begingl
+\gla Praže de stojáž.//
+\glb Prah-ě de stoj-áž.//
+\glc Prague.\Ind{} to go-\Ctpl{}//
+\glft \trsl{(I) am about to go to Prague. / (I) intend to go to Prague.}//
+\endgl
+\a
+\begingl
+\gla Nužo mužnáž.//
+\glb city.\Dir{}.\Def{} be.beautiful-\Ctpl{}//
+\glft \trsl{The city will be beautiful. / The city is expected to be beautiful.}//
+\endgl
+\xe
+
+The projective semantics account for the range of English translations the
+contemplative receives---\textit{about to}, \textit{intending to},
+\textit{planning to}, or a simple future---depending on predicate type and
+discourse context. With achievement predicates, which denote instantaneous
+transitions, the contemplative is especially natural: instantaneous transitions
+lend themselves readily to imminence and anticipation construals, where the
+event is imminent or impending rather than in active progress.
+
+The contemplative belongs to the imperfective domain because reference time
+precedes the projected eventuality, whose completion is unasserted. An ordinary
+active contemplative selects its agent, or its sole participant with a stative
+or intransitive base; this NOM-domain orientation remains subject to the same
+valency and Voice alternations as the continuous and progressive.
+
+The three imperfective categories interact systematically with predicate class,
+showing that they are distinct viewpoint operators rather than translation
+variants of a single value. With {states}, the continuous gives ordinary
+present-state predication; the progressive requires a marked stage-level or expressive construal;
+a transition requires the overt inchoative; the contemplative gives an anticipated or expected-state reading
+(\trsl{will be \ldots}, \trsl{is expected to be \ldots}). With {activities}, the
+continuous gives broad ongoing or habitual interpretation; the progressive gives
+a vivid, scene-internal reading in which the activity is actively in course; the
+contemplative gives an intended or pending-activity reading. With
+{accomplishments}, the continuous selects the internal phase without projecting
+completion; the progressive highlights active advancement toward culmination;
+the contemplative presents the event as pending or aimed at, with the endpoint
+anticipated but not asserted. With {achievements}, which denote instantaneous
+transitions, the continuous and progressive typically require coercion into
+preparatory, iterative, incipient, or extended interpretations, while the
+contemplative is often especially natural because instantaneous transitions
+readily support imminence readings.
+
+Imperfective clauses permit descriptions of an agent's ongoing activity,
+condition, or intentions, although their use does not require an agent topic.
+The three categories support distinct discourse functions. The continuous is the natural form for description and
+framing---durable predications, stable conditions, and ongoing situations that
+provide the setting or context for dynamic foreground events. It is the unmarked
+imperfective of persistence and background. The progressive is suited to
+scene-internal narration, vivid observation, and dynamic immediacy---contexts
+where an event is presented as actively unfolding before the narrator's or
+speaker's attention. It is characteristically a foregrounded imperfective: not
+the background frame but the observed process. The contemplative serves
+planning, expectation, prefiguration, and other forward-looking discourse
+functions---expressing what an agent intends, what is expected to follow, or
+what is imminent in the developing narrative.
+
+Continuous and progressive predicates supply ongoing situations for phasal
+comparison: \ird{so} presents their persistence, while \ird{vy} can mark
+attainment of the ongoing state. Perfective predicates also permit phasal
+modification under the comparison domains specified in
+§\,\ref{sec:class1-particles}; viewpoint aspect supplies the predication
+to which Phas applies, rather than licensing it solely through
+non-boundedness.
+
+With contemplative predicates, \ird{so} presents a projected or intended
+situation as continuing, whereas \ird{vy} can mark that projection as
+settled or imminent in the relevant plan. Neither combination asserts actual
+completion. The \trsl{not yet} interpretation requires a negative polarised
+input to \ird{so}; prospective viewpoint alone does not supply that negation
+(§\,\ref{sec:class1-particles}).
+
+\section{Mood}\label{sec:mood}
+
+The mood system comprises the indicative, the imperative, the prohibitive, the
+hortative, and the irrealis. Mood is expressed by a suffix occupying the
+position immediately outside the aspect-alignment morpheme; in the indicative
+this suffix is null. Where a non-indicative mood suffix is present, the
+Asp.Align head remains in the clause, while Mood licenses a two-way
+imperfective/perfective-domain contrast in place of the full five-way
+indicative inventory. Post-syntactic impoverishment regulates the realisation
+of this reduced configuration, as described in
+§\,\ref{sec:vm-mood-asp}. Every finite verb, indicative or not, therefore
+carries an Asp.Align exponent. The imperative, prohibitive, and hortative
+together form the directive domain, a unified subsystem whose case properties
+follow from directive orientation within the reduced Asp.Align domain;
+it is treated as a group beginning in §\,\ref{sec:mood-directive}.
+
+The indicative is the unmarked mood. It alone hosts the full five-way aspect
+system and the associated split-ergative alignment described in
+Section~\ref{sec:aspect}. Non-indicative moods carry a reduced two-way
+aspect-domain contrast in Asp.Align (§\,\ref{sec:vm-mood-asp}), which collapses
+the five-way viewpoint inventory; directive Mood additionally fixes the
+orientation described in §\,\ref{sec:mood-directive-case}. Overt antipassive morphology is licensed only
+with indicative ERG-aspect features, including when that configuration is
+embedded under participant nominalisation.
+
+\subsection{Asp.Align under non-indicative Mood: impoverishment and reduced opposition}
+\label{sec:vm-mood-asp}
+
+Every finite Iridian verb contains Asp.Align, whose exponent can be zero.
+Non-indicative Mood selects a reduced aspectual configuration in syntax,
+retaining an IPFV/PFV opposition together with the construction's orientation
+requirements.
+
+In the indicative, Asp.Align realises the full five-way viewpoint inventory
+(progressive, continuous, contemplative, perfective, retrospective) with the
+associated split-ergative alignment. The non-indicative moods---imperative,
+prohibitive, hortative, and irrealis---select the coarser
+\term{reduced Asp.Align} opposition shown in
+Table~\ref{tab:reduced-asp}.
+
+\input{util/paradigm-tables/reduced-asp}
+
+Reduced Asp.Align retains the two aspectual domains, while the clause's
+orientation also depends on Mood. In the irrealis, ordinary IPFV clauses retain
+agent-direct and patient-indirect case, and PFV clauses retain patient-direct
+and agent-transitive case. Directive Mood imposes theme orientation in both
+domains (§\,\ref{sec:mood-directive-case}). The reduced temporal opposition
+therefore does not require every non-indicative construction to retain the
+ordinary indicative case frame.
+
+The surface template for a non-indicative finite verb is therefore:
+
+\begin{center}
+\Stem{} + (\Appl{}) + (\Caus{}) + (\textsc{orientation}) + \textsc{reduced Asp.Align} + \textsc{mood}
+\end{center}
+
+\noindent where the reduced Asp.Align is silent ($\varnothing$) in the IPFV
+domain and has \ird{-ov-} in the PFV domain, with locally strong
+\ird{-óv-} selected before affirmative irrealis. Directive Mood retains
+\ird{-ov-}. Representative paradigms
+for the stem \ird{pjašt-} `eat':
+
+\begin{center}
+\footnotesize
+\begin{tabular}{l l l l}
+\toprule
+\textsc{domain} & \textsc{imperative} & \textsc{prohibitive} & \textsc{hortative} \\
+\midrule
+IPFV ($\varnothing$) & \ird{pjaštím}   & \ird{pjašté}    & \ird{pjaštká}   \\
+PFV (\ird{-ov-})   & \ird{pjaštovím} & \ird{pjaštové}  & \ird{pjaštovká} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The PFV exponent \ird{-ov-} preserves the thematic consonant of the lexical
+root. When irrealis \ird{-ěv} follows, its mixed-grade instruction targets
+the final /v/ of the aspect exponent, whose palatal realisation is [ʋʲ],
+while the intervening exponent prevents mutation of the root-final cluster.
+The resulting form is \ird{pjaštóvěv}, rather than \ird{*pjáščóvěv};
+the absence of root mutation is compatible with palatality at the suffixal
+boundary (§\,\ref{sec:suffix-classes}).
+
+The IPFV imperative encodes an ongoing,
+habitual, or processual directive (the event is construed as
+unbounded), while the PFV imperative encodes a bounded, completive
+directive (the event is construed as a single whole). In the irrealis,
+the IPFV domain covers generic non-actual scenarios and standing
+hypotheticals; the PFV domain covers single bounded counterfactuals.
+
+In the Distributed Morphology implementation, Vocabulary Insertion maps the
+coarse IPFV/PFV distinction to $\varnothing$ or \ird{-ov-}. A PF
+impoverishment rule can exclude the finer indicative exponents in this
+environment, although it does not supply the syntactic reduction, determine
+case, or remove semantic distinctions after interpretation. The
+exponence restriction is:
+
+\medskip
+\noindent\begin{tabular}{@{}l@{\quad}l}
+$[\textsc{Mood}: \text{non-indicative}]$ & $\Rightarrow$ realise only the coarse
+aspectual contrast at Asp.Align; \\
+& \hspace*{1.5em}retain only $[\pm\textsc{pfv-domain}]$.
+\end{tabular}
+\medskip
+
+Mood is structurally higher than Asp, with intervening Neg and licensed
+phasal or comment layers where present
+(Table~\ref{tab:vm-full-structure}). Its syntactic selection establishes the
+reduced configuration before case valuation, while its exponent follows the
+zero or overt Asp.Align exponent. Morphological neutralisation therefore
+presupposes the licensed configuration rather than deriving its case frame.
+
+Directive Mood imposes an orientation requirement on the reduced aspectual
+domain: a retained theme takes direct case, regardless of the IPFV/PFV value.
+Where no theme is retained, selection falls on an applied participant, then a
+causee, or the sole argument of an underived intransitive. The agent or causer
+of a clause with a distinct direct participant takes transitive case, whether
+expressed or contextually understood. This requirement is specific to the
+directive construction; omission of a subject does not transfer its case to
+another argument (§\,\ref{sec:mood-directive-case}).
+
+
+\noindent Directive constructions and irrealis are treated in
+Chapter~\ref{ch:clause-types}, while the polarity contrasts of Mood are
+analysed in §\,\ref{sec:vm-moodp}.
+
+\section{Inner evidential morphology}\label{sec:vm-ip}
+\label{sec:vm-evid}
+
+An evidential suffix occupies the outermost position in the finite inflectional
+spine, immediately inside the complement linker \ird{-e}. This \term{inner
+evidential} (\synhead{EvidP}$_\text{inner}$) is distinct from the clausal
+evidential and speech-act operators in the left periphery
+(§\,\ref{sec:th-particle-framework}), which are Zone~I particles occupying
+\synhead{EvidP}$_\text{outer}$ and \synhead{SpeechActP} in the clause spine.
+
+The indirect evidential marks the source of knowledge for the proposition
+expressed by the finite verb. Its default exponent is \ird{-al}, with
+\ird{-l} selected after a phonologically vowel-final host. The conditioning
+depends on the final segment of the fully formed finite host, including any
+mood exponent: consonant-final \ird{pjaštník} takes \ird{-al}, whereas
+vowel-final \ird{pjašta} and \ird{pjaštíme} take \ird{-l}. A long vowel
+or a final diphthongal nucleus also selects \ird{-l}. Selection precedes
+coda vocalisation: the /v/ of retrospective \ird{-av} is a consonant
+and therefore selects \ird{-al}, even though its free word-final
+realisation is [w]. The host retains its vowel quantity; this attachment
+requires neither contraction nor an inserted \ird{v}.
+
+The evidential selects the plain grade at its attachment boundary. It adds
+no root mutation, vocalic stem grade, or change of orientation and leaves
+the finite host's aspect and mood exponents intact. It supplies neither
+tense nor person, gender, or number agreement. Both allomorphs belong to
+the host's lexical prosodic word and preserve its initial stress.
+The order of the outer suffixes is:
+
+\begin{center}
+\textsc{stem} + \synhead{Asp.Align} + (\textsc{mood}) +
+(\textsc{ind.evid}) + \ird{-e} + \ird{po}
+\end{center}
+
+\noindent The corresponding syntactic projection is above
+\synhead{MoodP} and constitutes the outermost layer of the finite inflectional
+spine. The boundary with the clausal \synhead{EvidP}$_\text{outer}$ (a
+left-peripheral projection) must be kept clear: the inner evidential marks the
+\emph{source of knowledge} as it bears on the proposition expressed by the
+verbal complex; the outer \synhead{EvidP} particles (Zone~I) operate at the
+clause level. Their relation to interrogative force depends on the licensed
+combination; ordinary pre-particle pronunciation of an argument supplies no
+independent claim that it takes scope over the evidential. The discourse-relational and speech-act framing in
+\synhead{SpeechActP} occupies the higher layer of the clause spine
+(Table~\ref{tab:th-clause-spine}).
+
+\input{util/paradigm-tables/inner-evidential-paradigm}
+
+The forms in Table~\ref{tab:inner-evidential-paradigm} retain the ordinary
+transitive orientation appropriate to each aspect. The retrospective
+contains long \ird{-náv}, so that its evidential ending is
+\ird{-nával}. Strong antipassive \ird{pjáščav} instead preserves
+short \ird{-av} in \ird{pjáščaval}. The \ird{a} of continuous \ird{pjašta} belongs to
+Asp.Align: \ird{pjašta-l} yields \ird{pjaštal}, without deleting an
+aspect vowel or adding a second one.
+
+When \ird{-e} follows the evidential, its front-grade mapping targets
+evidential-final /l/, which selects [ʎ], written \ird{lě} before /ɛ/. Thus
+\ird{-al-e} gives \ird{-alě}, and postvocalic \ird{-l-e} gives
+\ird{-lě}. The preceding finite host remains intact in both:
+\ird{pjaštíme-l-e} yields \ird{pjaštímelě}. The \ird{e} before
+\ird{lě} in the sequence \ird{-elě} is the progressive's own final vowel.
+Syllabification follows the complete suffixal sequence, so a free
+evidential's final hard /l/ vocalises to [w], whereas the linked soft
+lateral remains [ʎ] (§\,\ref{sec:l-vocalisation}).
+
+This outer boundary does not reach through the evidential to select
+inner linker allomorphs. Perfective \ird{pjášček} accordingly forms
+\ird{pjáščekal} and linked \ird{pjáščekalě}, preserving \ird{-ek};
+its directly linked counterpart \ird{pjáščice} belongs to the distinct
+construction without intervening Evid. Likewise, \ird{pjaštímelě}
+retains Class~B \ird{-íme}, whereas direct linking without Evid selects
+\ird{pjaštímně}. The contrast follows the local boundary of each
+selecting exponent (§\,\ref{sec:boundary-mapping}).
+
+The suffix attaches outside the independently licensed finite construction.
+Table~\ref{tab:evidential-combinations} gives constructed combinations;
+the causative forms preserve both the rhotic exponent and outer
+orientation \ird{-an-} where required. Mood supplies the input to
+evidential allomorphy, so prohibitive \ird{pjašté} selects \ird{-l}
+while imperative \ird{pjaštím} selects \ird{-al}. Their long vowels
+remain long. The directive rows illustrate exponence where a combination
+of Evid and directive Mood is independently licensed; they do not establish
+its semantic or pragmatic distribution. The choice of \ird{-al} or
+\ird{-l} alone does not settle whether such a combination is available.
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Constructed combinations of the evidential with finite morphology.}
+\label{tab:evidential-combinations}
+\begin{tabularx}{\textwidth}{L L L L}
+\toprule
+{\sc construction} & {\sc finite host} & {\sc indirect evidential} & {\sc linked evidential} \\
+\midrule
+Antipassive perfective & \ird{pjášček} & \ird{pjáščekal} & \ird{pjáščekalě} \\
+Antipassive retrospective & \ird{pjáščav} & \ird{pjáščaval} & \ird{pjáščavalě} \\
+Passive progressive & \ird{pjaštníme} & \ird{pjaštnímel} & \ird{pjaštnímelě} \\
+Causative progressive & \ird{pjáštrime} & \ird{pjáštrimel} & \ird{pjáštrimelě} \\
+Causative perfective & \ird{pjáštranik} & \ird{pjáštranikal} & \ird{pjáštranikalě} \\
+Irrealis & \ird{pjáščev} & \ird{pjáščeval} & \ird{pjáščevalě} \\
+Negative irrealis & \ird{pjaštir} & \ird{pjaštiral} & \ird{pjaštiralě} \\
+Imperative & \ird{pjaštím} & \ird{pjaštímal} & \ird{pjaštímalě} \\
+Prohibitive & \ird{pjašté} & \ird{pjaštél} & \ird{pjaštélě} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Indicative negation likewise preserves its ordinary form outside the lexical
+stem: \ird{zapjaštník} gives \ird{zapjaštníkal} and linked
+\ird{zapjaštníkalě}. Evidential suffixation neither replaces negative
+Mood \ird{-ir} with \ird{za-} nor changes the argument frame licensed
+by the inner verb.

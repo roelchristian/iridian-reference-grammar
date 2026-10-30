@@ -1,4 +1,4 @@
-"""The verbs-only editorial boundary includes starred and run-in headings."""
+"""The chapter hierarchy includes starred and run-in headings."""
 import importlib.util
 from pathlib import Path
 import unittest
@@ -18,11 +18,18 @@ class VerbsHeadingTests(unittest.TestCase):
                         'chapters/03-verbs.tex': '\\' + command + suffix})
                     self.assertEqual(len(failures), 1)
 
-    def test_accepts_ordinary_hierarchy_and_ignores_comments_and_other_chapters(self):
+    def test_rejects_deep_headings_in_every_substantive_chapter(self):
+        for path in ('chapters/02-phonology.tex', 'chapters/12-particles-scope.tex',
+                     'chapters/17-discourse.tex'):
+            with self.subTest(path=path):
+                self.assertEqual(len(checker.verbs_heading_checks({
+                    path: r'\paragraph{Too deep}'})), 1)
+
+    def test_accepts_ordinary_hierarchy_and_ignores_comments(self):
         self.assertEqual(checker.verbs_heading_checks({
             'chapters/03-verbs.tex': r'\chapter{Verbs}\section{Aspect}\subsection{Continuous}'
             '\n% \\paragraph{Editorial note}\n',
-            'chapters/02-phonology.tex': r'\subsubsection{Outside this pass}',
+            'chapters/02-phonology.tex': r'\subsection{Phonology}',
         }), [])
 
 

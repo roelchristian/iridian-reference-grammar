@@ -41,7 +41,12 @@ iridian-grammar-tags.tex
 drafts/
 util/*
 !util/lexicon.tex
-!util/negation-references.tex
+!util/references.tex
+!util/abbreviations.tex
+!util/paradigms.tex
+!util/paradigm-tables/
+!util/historical-notes.tex
+!util/structural-development-register.md
 !util/phasal-polarity-diagram.tex
 !util/collect_lexicon.py
 !util/tests/

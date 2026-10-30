@@ -5,6 +5,10 @@ import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 spec = importlib.util.spec_from_file_location('epistemic_checker', ROOT / 'scripts/check-grammar.py')
 checker = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(checker)
@@ -12,7 +16,7 @@ spec.loader.exec_module(checker)
 
 class EpistemicParticleTests(unittest.TestCase):
     def setUp(self):
-        self.sources = checker.active_sources(ROOT / 'grammar.tex')
+        self.sources = domain_sources(checker.active_sources(ROOT / 'grammar.tex'))
 
     def test_current_sources_and_literal_lexical_pronunciations(self):
         self.assertEqual(checker.renamed_particle_checks(self.sources), [])
@@ -59,7 +63,7 @@ class EpistemicParticleTests(unittest.TestCase):
             self.assertEqual(match[1].split()[1] if phrase != 'Mó vy pjaštím!' else match[1].split()[0],
                              'affirm' if gloss is None else gloss)
         # The speculative example is now an English schema pending lexemes.
-        speculative = source.split(r'\paragraph{Kady}', 1)[1].split(r'\paragraph{Mlada}', 1)[0]
+        speculative = source.split(r'\subsection{Kady}', 1)[1].split(r'\subsection{Mlada}', 1)[0]
         self.assertIn(r'\trsl{Might the oldest candle still be burning?}', speculative)
         self.assertIn('a tentative assessment', speculative)
         self.assertIn('English schema', speculative)

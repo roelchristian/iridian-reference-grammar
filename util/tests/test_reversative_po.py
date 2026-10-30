@@ -7,6 +7,10 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0, str(ROOT / 'scripts'))
 from quantity_grades import QuantityGrades, QuantityLicence
 
@@ -26,9 +30,9 @@ class ReversativePoTests(unittest.TestCase):
                          {'reverse a resultant condition; remove; dismantle', 'slightly; somewhat'})
         self.assertIn('declarative complementizer',
                       next(entry['gloss'] for entry in entries if entry['form'] == 'po'))
-        verbs = (ROOT / 'chapters/03-verbs.tex').read_text()
+        verbs = read_domain('chapters/03-verbs.tex')
         self.assertIn(r'\ird{pomužna}  & \ird{pomúžna}', verbs)
-        source = (ROOT / 'chapters/10-derivational.tex').read_text()
+        source = read_domain('chapters/10-derivational.tex')
         table = source.split(r'\label{tab:lexical-preverbs}', 1)[1].split(r'\end{table}', 1)[0]
         inventory = re.findall(r'^\s*\\ird\{([^}]+)\} &', table, re.M)
         self.assertEqual(len(inventory), 11)
@@ -42,7 +46,7 @@ class ReversativePoTests(unittest.TestCase):
         self.assertEqual(selected, ('p', 'ɔ', 's', 'x', 'oː', 'd', 'ɪ', 'm', 'ɛ'))
 
     def test_external_negation_preserves_initial_lexical_prefix_stress(self):
-        source = (ROOT / 'chapters/10-derivational.tex').read_text()
+        source = read_domain('chapters/10-derivational.tex')
         fixtures = json.loads((ROOT / 'scripts/quantity-fixtures.json').read_text())
         selected = [case for case in fixtures['pronunciations']
                     if case['form'] in {'poshódime', 'zaposhódime'}]

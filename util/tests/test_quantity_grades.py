@@ -7,6 +7,10 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0, str(ROOT / 'scripts'))
 from quantity_grades import QuantityError, QuantityGrades, QuantityLicence
 from boundary_transducer import BoundaryLicence, BoundaryState, BoundaryTransducer
@@ -171,7 +175,7 @@ class QuantityGradesTests(unittest.TestCase):
             self.assertTrue(checker.check_quantity_sources({'test.tex': changed}, fixture))
 
     def test_noncanonical_class_iii_plural_is_distinct_from_singular_transitive(self):
-        sources = checker.active_sources(ROOT / 'grammar.tex')
+        sources = domain_sources(checker.active_sources(ROOT / 'grammar.tex'))
         self.assertEqual(checker.check_quantity_sources(sources, self.fixtures), [])
         path = 'chapters/09-discourse.tex'
         for before, after in [(r'\ird{žémy}', r'\ird{žemy}'),
@@ -185,7 +189,7 @@ class QuantityGradesTests(unittest.TestCase):
                 self.assertTrue(checker.check_quantity_sources(changed, self.fixtures))
         # The reviewed paragraph cannot conceal a contradictory second paradigm.
         changed = dict(sources)
-        marker = r'\subsubsection{Clause-peripheral hedge use}'
+        marker = r'\subsection{Clause-peripheral hedge use}'
         contradiction = (r'\ird{žema} \ird{žemy} \ird{žemy} '
                          r'\ird{žem} \ird{žemám} \ird{žema}')
         self.assertIn(marker, sources[path])

@@ -2,13 +2,17 @@
 
 Hashes record the reviewed baseline, rather than regenerated current text.
 Whole source spans cover rules whose paragraphs do not repeat the exponent.
-All exponent-bearing paragraphs are also compared in order, rejecting additions
-as well as edits. This scope guard supplements independent linguistic review.
+All exponent-bearing paragraphs are compared as a multiset after migration,
+rejecting additions, losses and edits while allowing chapter relocation.
+This scope guard supplements independent linguistic review.
 """
+from collections import Counter
 import hashlib
 import json
 from pathlib import Path
 import re
+
+from source_domains import DOMAIN_CHAPTERS
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,35 +45,106 @@ def frozen_reference_text(path, text):
     return text
 
 
+def structural_text(text):
+    """Ignore headings/labels/spacing, plus two exact migrated cross-references.
+
+    Every linguistic form, gloss, example, rule and citation remains significant.
+    The cross-reference replacements are deliberately phrase-specific.
+    """
+    text = re.sub(r'\\(?:section|subsection|subsubsection|paragraph)\*?\{((?:[^{}]|\{[^{}]*\})*)\}', '', text)
+    text = re.sub(r'\\label\{[^}]+\}(?:%[^\n]*)?', '', text)
+    text = text.replace(r'\noindent', '')
+    text = text.replace(
+        r'in \ird{-(h)ár} and \ird{-ist} (§\,\ref{sec:lexical-agent-nouns}) classify a',
+        r'in \ird{-(h)ár} and \ird{-ist} (Chapter~\ref{ch:derivational}) classify a')
+    text = text.replace(
+        r'is the ordinary property modifier (§\,\ref{sec:stative-attr}).',
+        r'is the ordinary property modifier (Chapter~\ref{ch:verbs}).')
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def publication_sources(root, overrides):
+    """Read actual included chapters, supporting legacy logical-domain mutations."""
+    paths = re.findall(r'^\\include\{(chapters/[^}]+)\}',
+                       (root / 'grammar.tex').read_text(), re.MULTILINE)
+    sources = {path + '.tex': (root / (path + '.tex')).read_text()
+               for path in paths}
+    for path, text in overrides.items():
+        key = Path(path).stem
+        if path.startswith('chapters/') and key in DOMAIN_CHAPTERS:
+            for chapter in DOMAIN_CHAPTERS[key]:
+                sources.pop(f'chapters/{chapter}.tex', None)
+            sources[path] = text
+        elif path.startswith('chapters/'):
+            sources[path] = text
+    return sources
+
+
 def check_scope(root=ROOT, fixtures=None, overrides=None):
-    """Return discrepancies without requiring the baseline commit at runtime."""
+    """Check migrated content against units verified from the reviewed baseline.
+
+    The original raw span/paragraph digests remain in the fixture as provenance.
+    Migration hashes derive from those verified originals, with one explicitly
+    documented consolidation into the canonical equative treatment.
+    """
     if fixtures is None:
         fixtures = json.loads((root / 'scripts/stative-scope-freeze.json').read_text())
     overrides = {} if overrides is None else overrides
-
-    def read(path):
-        text = overrides[path] if path in overrides else (root / path).read_text()
-        return frozen_reference_text(path, text)
-
+    migration = fixtures['migration']
     failures = []
-    current_paths = {p.relative_to(root).as_posix() for p in (root / 'chapters').glob('*.tex')}
-    current_paths.add('util/lexicon.tex')
-    for path in current_paths | set(fixtures['paragraphs']):
-        expected = fixtures['paragraphs'].get(path, [])
-        blocks = read(path).splitlines() if path == 'util/lexicon.tex' else re.split(r'\n\s*\n', read(path))
-        observed = [digest(block) for block in blocks if 'ový' in block]
-        if observed != expected:
-            failures.append(f'{path}: frozen exponent-bearing paragraphs changed or added')
-    for span in fixtures['spans']:
-        source = read(span['source'])
-        start, end = span['start'], span['end']
-        if source.count(start) != 1 or source.count(end) != 1:
-            failures.append(f"{span['source']}: frozen source span markers changed")
+    paragraphs = []
+    units = []
+    sources = publication_sources(root, overrides)
+    for path, text in sources.items():
+        # This exact finite-reference revision already predates the migration.
+        text = frozen_reference_text('chapters/08-complex-sentences.tex', text)
+        for block in re.split(r'\n\s*\n', text):
+            normal = structural_text(block)
+            if normal:
+                units.append(digest(normal))
+                if 'ový' in block:
+                    paragraphs.append(digest(normal))
+    lexicon = overrides.get('util/lexicon.tex')
+    if lexicon is None:
+        lexicon = (root / 'util/lexicon.tex').read_text()
+    paragraphs.extend(digest(structural_text(line)) for line in lexicon.splitlines()
+                      if 'ový' in line and structural_text(line))
+    if Counter(paragraphs) != Counter(migration['paragraphs']):
+        failures.append('publication: frozen exponent-bearing paragraphs changed, lost or added')
+    observed = Counter(units)
+    replacements = {item['original_span']: item
+                    for item in migration['editorial_consolidations']}
+    for span in migration['spans']:
+        expected = Counter(span['units'])
+        replacement = replacements.get(span['original_sha256'])
+        if replacement:
+            expected.subtract(replacement['original_units'])
+            expected.update(replacement['replacement_units'])
+        if expected - observed:
+            failures.append('publication: protected relative source units changed or lost '
+                            + span['original_sha256'][:12])
+    # These current bounded regions retain the old whole-span protection
+    # against adding an unreviewed rule even when it does not repeat -ový.
+    # Region units were verified against the original chapters individually.
+    for region in migration['regions']:
+        candidates = [text for text in sources.values()
+                      if region['start'] in text and region['end'] in text]
+        if len(candidates) != 1:
+            failures.append(region['source'] + ': protected region markers changed')
             continue
-        block = source[source.index(start):source.index(end)]
-        if digest(block) != span['sha256']:
-            failures.append(f"{span['source']}: protected relative source span changed")
+        text = frozen_reference_text('chapters/08-complex-sentences.tex', candidates[0])
+        start, end = region['start'], region['end']
+        if text.count(start) != 1 or text.count(end) != 1:
+            failures.append(region['source'] + ': protected region markers are not unique')
+            continue
+        block = text[text.index(start):text.index(end)]
+        current = Counter(digest(structural_text(unit))
+                          for unit in re.split(r'\n\s*\n', block)
+                          if structural_text(unit))
+        if current != Counter(region['units']):
+            failures.append(region['source'] + ': protected relative region changed or added')
     for path, expected in fixtures['files'].items():
-        if digest(read(path)) != expected:
+        text = overrides[path] if path in overrides else (root / path).read_text()
+        if digest(text) != expected:
             failures.append(f'{path}: earlier protected fixture or selection file changed')
     return failures

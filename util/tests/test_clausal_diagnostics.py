@@ -4,6 +4,10 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0, str(ROOT / 'scripts'))
 from clausal_diagnostics import (comment_phase, negative_mood_prejacent,
                                  reduced_description, check_clausal_sources)
@@ -13,7 +17,7 @@ from phasal_diagnostics import ordinary_phase
 class ClausalDiagnosticsTests(unittest.TestCase):
     def test_published_rows_cannot_reverse_scope_or_change_surface(self):
         path = 'chapters/06-simple-sentence.tex'
-        source = (ROOT / path).read_text()
+        source = read_domain(path)
         self.assertEqual(check_clausal_sources({path: source}), [])
         for old, new in ((r'$D(A(S(\neg P)))$', r'$D(A(\neg S(P)))$'),
                          ('Marek och so zazdrávime.', 'Marek so och zazdrávime.'),

@@ -6,6 +6,10 @@ import sys
 import unittest
 
 ROOT=Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0,str(ROOT/'scripts'))
 from stative_lexicon import (LexicalLicenceError,load_lexicon,derive,finite,
     ordinary_attributive,manner,participant,evidential,causative,
@@ -255,7 +259,7 @@ class StativeLexiconTests(unittest.TestCase):
             ordinary_attributive(entry)
 
     def test_new_source_prescriptions_are_bound_and_mutations_rejected(self):
-        source=(ROOT/'chapters/03-verbs.tex').read_text()
+        source=read_domain('chapters/03-verbs.tex')
         sources={'chapters/03-verbs.tex':source}
         self.assertEqual(check_lexical_extension_sources(sources,self.data),[])
         marker=r'\label{tab:stative-manifest}'

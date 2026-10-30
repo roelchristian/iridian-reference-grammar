@@ -5,6 +5,10 @@ import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 spec = importlib.util.spec_from_file_location('particle_checker', ROOT / 'scripts/check-grammar.py')
 checker = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(checker)
@@ -13,12 +17,12 @@ spec.loader.exec_module(checker)
 class ContrastParticleTests(unittest.TestCase):
     def test_active_sources_use_current_particle(self):
         # Archives are deliberately not input to the published grammar.
-        for name, source in checker.active_sources(ROOT / 'grammar.tex').items():
+        for name, source in domain_sources(checker.active_sources(ROOT / 'grammar.tex')).items():
             with self.subTest(path=name):
                 self.assertIsNone(re.search(r'\bjse\b', source, re.IGNORECASE))
 
     def test_isolated_and_combined_examples_keep_gloss_and_order(self):
-        source = (ROOT / 'chapters/05-function-words.tex').read_text()
+        source = read_domain('chapters/05-function-words.tex')
         for phrase in ('Janek zdrava. Marek jas znóhtime.',
                        'Dá graže jas pjašta.',
                        'Marek zdrávime. Janek och jas zdrávime.',
@@ -34,7 +38,7 @@ class ContrastParticleTests(unittest.TestCase):
     def test_lexical_pronunciation_has_short_plain_vowel_and_sibilant(self):
         lexicon = (ROOT / 'util/lexicon.tex').read_text()
         self.assertIn(r'\lexentry{jas}{}{contrast particle, as for, meanwhile}', lexicon)
-        source = (ROOT / 'chapters/05-function-words.tex').read_text()
+        source = read_domain('chapters/05-function-words.tex')
         self.assertIn(r'\ird{Jas} /jas/', source)
 
 

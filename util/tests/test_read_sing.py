@@ -5,6 +5,10 @@ from pathlib import Path
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 SPEC = importlib.util.spec_from_file_location('check_grammar', ROOT / 'scripts/check-grammar.py')
 checker = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(checker)
@@ -14,7 +18,7 @@ class ReadSingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.path = 'chapters/03-verbs.tex'
-        cls.source = (ROOT / cls.path).read_text()
+        cls.source = read_domain(cls.path)
         fixtures = json.loads((ROOT / 'scripts/quantity-fixtures.json').read_text())
         cls.table = {'source_tables': [table for table in fixtures['source_tables']
                      if table['label'] == 'tab:read-sing-principal-parts']}

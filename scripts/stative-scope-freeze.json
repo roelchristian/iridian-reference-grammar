@@ -89,5 +89,226 @@
     "scripts/stative-fixtures.json": "357d1d42e020739b8184c396d02424d669b65e452f0c6d97ab33fe41000b6fb0",
     "util/stative-paradigms.md": "6aca294ba7c16ed513dff2417f1cb76a07503c7ef81b12f44c9636ba0fa491dc",
     "scripts/clausal_diagnostics.py": "5f45559afca421deb04f3e65f8cb1e901899245a10fbd61b75079ac5a7da0139"
+  },
+  "migration": {
+    "normalisation": "shallow-headings-whitespace-v1",
+    "paragraphs": [
+      "01c5caf8bd50813f17ae1b0a9954f17669690946e40bb7f01dd92dd64fe41e35",
+      "0b33a3b056c615c163d866467009f332e1b04c33b41bb72a683018e0df2bebc8",
+      "12deb1af1a53cdc9369f07475db7f2ae8c32170100d7c816d9d2011df4a22e64",
+      "14d2e6b0b9c3ed17eea83875afbef5f89351c3b121c9b32bddebde0c46caacf6",
+      "19f53ba72f0bcc018d39bc0cfb1024c8b42529f0c1e8734347d5adc77e452fd4",
+      "2158cdbd67f2bf697e1f29cd86c102d5299d6ab967b91d6a64ef0ab751664903",
+      "28a6c775a10c8c8b906f772a6ae342a60dc69606f5c2f12e5b5d5479e9b73d61",
+      "303de4008e00589263ceb90ed51698ff40678a9e4b3e811d518465c324455f09",
+      "3d3cfe9279129877a2a3569c0614b32aa3cdb1e98aa2ff331dfcbb868c852e74",
+      "3f4f8fef1734317f50a73fc5532f3813092e414e4a944a1fcc4fb18a250c557d",
+      "4f5207b839b68928344afe5c9c347ad06224f1294877c1cf7b2205d8032b4b5c",
+      "5068c4d901da9427f4bd5d96e8efcb4581757513816ecb75e0d79b22eaac5780",
+      "53e105852437ed5bef4dcd4cea28e6a5693c53baf28517e2590352a0dfe222de",
+      "5636fec444561c98d51c1bad873846472f471ea0874feb21eb2cae7eb9a21971",
+      "62423477fde60e2a45dbdc5dd4963dda4137d6a84224804518795b383d543b17",
+      "6531cce0680959bcf8589ec4a736ff42e8d4d0fb581548ba6937e11bb50ec040",
+      "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039",
+      "72c48ba5920d5603e3ab436db534846a3d457fcf5bb0051987e8ee0e3a0cd952",
+      "73614e50f19f8a30bea922cc0e6dc68f030a0eb5844f92ce344a77e30e55b38b",
+      "73ada39d2680f953097cdd45b4c53aaafaf4840caca3270c22d4a46a217594cd",
+      "73d24094ea10d7f701a54fd7b05b4fcc13973653d5bb784cbba1fa612a357c12",
+      "7474e0c9e47aa8fe9b0226cee1c8ae3d073802bf6b9655bdaa47f58b7fd3093a",
+      "84baa760aab7fce93688466281240e24784a4acc15dd91768d9c5ea58c8d4ce3",
+      "9c48cf089c2f63cff496a7fc2b7f58650b1e089f16ffc3dfb3c4a6087277a4e3",
+      "a42fd30a738b61c714553faab0e4bf8d14626b72585c66137cd0dcdcc5a4f0af",
+      "a5f3464af5f07cc33d86d674b960671c80d06113ce169a46566a92918190d8b4",
+      "ac0e56870b326cafddfea77de06e168175db1ca46453aca3795c51bc143c99fe",
+      "aed2d6c851401dc4f4e7be40fdf9f116f80e871404d22997ca04656e92cd0e6f",
+      "bc0044270ed728723aa6d07d6658007c4402ba68dbc672d698ff5e2c84b9a120",
+      "c1df74dc8e86c81be1de9e6fd8d1994c6246197507b9cd1bea40af035352840c",
+      "c8dd1b4590513d2040fb9192e8c973f57a3f7e01058dd2c1d5074b1fc96f8385",
+      "cd179443c4c46c4c2c577250a4d3f1b7bc3d3e6679a7e0ed7b55e500a2ac9f06",
+      "d0a389ae821f72c356ce506d7a0b7edc3cca73472ac4a068f1cb683a1eb8d4f4",
+      "d14e3152520f6585deb52abd5ffd5a9205887500d159194cdb55a0e1de87d0c1",
+      "e0e5fea344a258f7fda2061c1e4e24535d19726754f5f63d9c76b747e422a85b",
+      "ec700ddfe7fa573bdc9f71a86a3d6deedbc410015e726951825e4047c012b303",
+      "fdf22da8086c3337d8716387021b73b9440282bf4f65bac9d25ac44908eb6c12"
+    ],
+    "spans": [
+      {
+        "original_sha256": "132e34b9bca71bc93634e33495e5787fcd6970ceb3fe7e0ed7609dddcdc3ee35",
+        "units": [
+          "3c7bfea94664e70df183685f5d5ffe0bed1ac3336721db170ff0827b51ebe22e",
+          "ae7ef5787c235411501339f14a0b9095255580c83eb94443a455d344c6f957b7",
+          "47349d6623c472909a50b42d6b4910607546c30f49628f9593b0de299d5d8d2d",
+          "2b7a759778e934b4b444a8c3a8da122842a6c1a3a99d4a05d8495cff66a0b0e5",
+          "92ace8994aa0ddb34e71a85c50b01b51d1c3cd3a3012dd5c33bfb2d2ba6d632f",
+          "1b8cffce6e3a469bdbcd163fda21df7e8446b3223336b73484187a6ff6ad5e7b",
+          "f0afa016b31cedf1d392a65f9db2634493e054f85a3232579e900b13c7dc58ab",
+          "7b01351f48fcd5aa16dc3c808c6cf3bb8b3eb4589752c1cda765aee8e4afb8a4",
+          "2eae3584f6e293e847a6bab531435227517f8b282cfdf8e6639829e3de5b59ac",
+          "ac03ea851f075b6fc30415b0215af52b943f5b62e393c0521d5ab31e29f455c0",
+          "73ada39d2680f953097cdd45b4c53aaafaf4840caca3270c22d4a46a217594cd",
+          "14d2e6b0b9c3ed17eea83875afbef5f89351c3b121c9b32bddebde0c46caacf6",
+          "a37a10863b2418de3b7c8da7d403d7a080b99b5bccd51a7ac34903ac4d0d651f",
+          "81e91459a900f58a29797186b8699bba72c5f2191381d9e759790c003d7a3c18",
+          "0a0cc838b9a2019c05b97103060118d9088c346071fddc62969f23a88c4e3a26",
+          "06e9ad35e38eef69127e9355b1e9850de20560791dd17c9992be4cbd0c042a82",
+          "a9b48c1a307453bda9ace632a684f5de9589971e3aa46cd491cd170faeaf2c0c",
+          "9c6113be1f01830e240417a5905eb4540af2c3d4db29d05a0e069b151e9f5ac9",
+          "47cffeba4f071c74763abec76321c9b3e6c576f5d1c37a249a6e9c5683e621be",
+          "f0cf7a726986389ca728e5d2baaada6f7ecb32e318cd2d3ab059cf361fbf354f"
+        ]
+      },
+      {
+        "original_sha256": "e5dd1332dd532707f9c161f1d4a5a43c3ff3e64986d405f58449f01d04067c4d",
+        "units": [
+          "d952da5364ef59d49c87a228a1a8de3207a98dd346f72bf1f086b4fb54d2594e",
+          "e3c6af3597d4a6c9df3306335db1805e4657b33a0db8eee5cbc62a778908dee1",
+          "5068c4d901da9427f4bd5d96e8efcb4581757513816ecb75e0d79b22eaac5780",
+          "0b33a3b056c615c163d866467009f332e1b04c33b41bb72a683018e0df2bebc8",
+          "e0e5fea344a258f7fda2061c1e4e24535d19726754f5f63d9c76b747e422a85b"
+        ]
+      },
+      {
+        "original_sha256": "c60ae212218903908f28976b03c30595f38b2740fc5bf39b66809f084096b6f2",
+        "units": [
+          "9c48cf089c2f63cff496a7fc2b7f58650b1e089f16ffc3dfb3c4a6087277a4e3",
+          "aed2d6c851401dc4f4e7be40fdf9f116f80e871404d22997ca04656e92cd0e6f",
+          "2158cdbd67f2bf697e1f29cd86c102d5299d6ab967b91d6a64ef0ab751664903",
+          "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039"
+        ]
+      },
+      {
+        "original_sha256": "0cfefd2897d518252a59f0718df29e64e16fc6dee4b4fb794213074c099a98ab",
+        "units": [
+          "cd179443c4c46c4c2c577250a4d3f1b7bc3d3e6679a7e0ed7b55e500a2ac9f06",
+          "e8321e25515c45ec05e4f12d9ea9231ff3af7848c2daeb566abe5736d76ff8cd",
+          "c8dd1b4590513d2040fb9192e8c973f57a3f7e01058dd2c1d5074b1fc96f8385",
+          "46f8e465a7c8958743d4fddf1fb6f0bc0885132716aec6ba0d6899b6b9efb9a7",
+          "85c626c0928a00b3d8b75b93739b17b676e2f72967efc0a966123f8403251efc",
+          "3ebbf1cabc028e48acc8d441aa9e47a0a701085dbe01630412fde0590a59e44c",
+          "303de4008e00589263ceb90ed51698ff40678a9e4b3e811d518465c324455f09",
+          "64583777f9e6ffc7dc41a25c88b971444cadaa7581cc73187a9e5c8a8d1c4f1c",
+          "ac0e56870b326cafddfea77de06e168175db1ca46453aca3795c51bc143c99fe",
+          "01c5caf8bd50813f17ae1b0a9954f17669690946e40bb7f01dd92dd64fe41e35"
+        ]
+      }
+    ],
+    "editorial_consolidations": [
+      {
+        "original_span": "132e34b9bca71bc93634e33495e5787fcd6970ceb3fe7e0ed7609dddcdc3ee35",
+        "original_units": [
+          "06e9ad35e38eef69127e9355b1e9850de20560791dd17c9992be4cbd0c042a82",
+          "0a0cc838b9a2019c05b97103060118d9088c346071fddc62969f23a88c4e3a26",
+          "47cffeba4f071c74763abec76321c9b3e6c576f5d1c37a249a6e9c5683e621be",
+          "81e91459a900f58a29797186b8699bba72c5f2191381d9e759790c003d7a3c18",
+          "9c6113be1f01830e240417a5905eb4540af2c3d4db29d05a0e069b151e9f5ac9",
+          "a37a10863b2418de3b7c8da7d403d7a080b99b5bccd51a7ac34903ac4d0d651f",
+          "a9b48c1a307453bda9ace632a684f5de9589971e3aa46cd491cd170faeaf2c0c",
+          "f0cf7a726986389ca728e5d2baaada6f7ecb32e318cd2d3ab059cf361fbf354f"
+        ],
+        "replacement_units": [
+          "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec",
+          "725b76cd470088dca08a40c064aefd3b71fe20486182a687820197887f7d208a",
+          "4d54f28c003b3769843798fb00a1568e13ece67e54b2508d05c85bfde9b6bdb5",
+          "6d8da3ee2fc749475d113fb10a56d5ebaed6255d6f292045e57e334ba06aa594",
+          "e669fad2cb77fb22dff1276544f81ecf5f685fe0ff8a4c87bbc4cb3816cfea1f",
+          "f03618244fe8c9b39bb09f438e2fdd72e390663c926200152bbe5e8b10a05688",
+          "f6cf53a4fffa6ff75d4c2adc8355d8b3b25de74af3926f45724f3680db6c50e0"
+        ],
+        "reason": "The old verbal-nominal equative subsection is consolidated into the existing identificational-equative exposition. The three clause examples retain their forms, segmentation and translations; the canonical treatment preserves nominal case independence, the Theme relation outside antipassive VP, context-dependent definiteness and the contrast with finite verbal assertion. Gloss macros and example-context descriptions follow the existing canonical equative examples."
+      }
+    ],
+    "regions": [
+      {
+        "source": "chapters/08-derivation-nominalisation.tex",
+        "start": "\\section{Verbal nominalisation}",
+        "end": "\\section{Compounding}",
+        "units": [
+          "3c7bfea94664e70df183685f5d5ffe0bed1ac3336721db170ff0827b51ebe22e",
+          "ae7ef5787c235411501339f14a0b9095255580c83eb94443a455d344c6f957b7",
+          "55d84e3d07b888e59f6084dfcd9912753a96858f7037853b0c1732f8fb56c4e9",
+          "c1d648c4d92ff4b9721d63526b0cc313b08fb725912c5ab8401ca11f996ecdd8",
+          "efe7160ef828f853942092fd4059f85498c467ce662a13e90a9aabb75925eb7d",
+          "47349d6623c472909a50b42d6b4910607546c30f49628f9593b0de299d5d8d2d",
+          "2b7a759778e934b4b444a8c3a8da122842a6c1a3a99d4a05d8495cff66a0b0e5",
+          "92ace8994aa0ddb34e71a85c50b01b51d1c3cd3a3012dd5c33bfb2d2ba6d632f",
+          "1b8cffce6e3a469bdbcd163fda21df7e8446b3223336b73484187a6ff6ad5e7b",
+          "f0afa016b31cedf1d392a65f9db2634493e054f85a3232579e900b13c7dc58ab",
+          "7b01351f48fcd5aa16dc3c808c6cf3bb8b3eb4589752c1cda765aee8e4afb8a4",
+          "f80d96a95fa3527a1f6d5bad1e97cb2dd504186112286763d5521e516ff01871",
+          "e99669f906429978629f2863d5b6b87d4b56b47031707eaf10d2afc93cdf8f4a",
+          "2eae3584f6e293e847a6bab531435227517f8b282cfdf8e6639829e3de5b59ac",
+          "ac03ea851f075b6fc30415b0215af52b943f5b62e393c0521d5ab31e29f455c0",
+          "2d171c241f70ebf004f533df8b58b4505aaea272cdde6d66645f6f3d02bd27b7",
+          "598cd77cb30d6eee59e8892a07a8c04a2b0455b613443ff76ea86966a7a1e5b0",
+          "6f9d771b5e17c057c4a93bc5bcac2b5309da3bbd1598a97a24db6b2cbd5cb7d6",
+          "a81a104fdaaf8adf3d78270059f749c93f248624d35d477fc0420bc6ecf88386",
+          "5b2c8ca7db77e633864955d89c2fd5fc33ed6b30e3d0649fde748ddb43bef974",
+          "27d57dbf036eea78c89a34225cb53e2ff2f56dc0430dbcb4bb4e8907ba38a2da",
+          "73ada39d2680f953097cdd45b4c53aaafaf4840caca3270c22d4a46a217594cd",
+          "14d2e6b0b9c3ed17eea83875afbef5f89351c3b121c9b32bddebde0c46caacf6",
+          "b786da95c7e434e23beeef95a3c99966ff5e9cea902f692d40f25b92f56e7aa4",
+          "9bba072b92bb3075aa54432298a6af9e3aa4ccd74e543d029f47d3f31f13f8ae"
+        ],
+        "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
+      },
+      {
+        "source": "chapters/10-predicate-constructions.tex",
+        "start": "\\section{Identificational equatives and participant nominals}",
+        "end": "\\section{The overt copular verb",
+        "units": [
+          "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec",
+          "725b76cd470088dca08a40c064aefd3b71fe20486182a687820197887f7d208a",
+          "4d54f28c003b3769843798fb00a1568e13ece67e54b2508d05c85bfde9b6bdb5",
+          "6d8da3ee2fc749475d113fb10a56d5ebaed6255d6f292045e57e334ba06aa594",
+          "e669fad2cb77fb22dff1276544f81ecf5f685fe0ff8a4c87bbc4cb3816cfea1f",
+          "f03618244fe8c9b39bb09f438e2fdd72e390663c926200152bbe5e8b10a05688",
+          "f6cf53a4fffa6ff75d4c2adc8355d8b3b25de74af3926f45724f3680db6c50e0"
+        ],
+        "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
+      },
+      {
+        "source": "chapters/08-derivation-nominalisation.tex",
+        "start": "\\subsection{Nominalisation and aspectual attribution of statives}",
+        "end": "Individuals, states, changes and results remain distinct denotations.",
+        "units": [
+          "d952da5364ef59d49c87a228a1a8de3207a98dd346f72bf1f086b4fb54d2594e",
+          "e3c6af3597d4a6c9df3306335db1805e4657b33a0db8eee5cbc62a778908dee1",
+          "5068c4d901da9427f4bd5d96e8efcb4581757513816ecb75e0d79b22eaac5780",
+          "0b33a3b056c615c163d866467009f332e1b04c33b41bb72a683018e0df2bebc8",
+          "e0e5fea344a258f7fda2061c1e4e24535d19726754f5f63d9c76b747e422a85b"
+        ],
+        "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
+      },
+      {
+        "source": "chapters/05-nominal-syntax.tex",
+        "start": "\\subsection{The \\ird{-ový} attributive and its embedded DP}",
+        "end": "\\subsection{The \\ird{ty}-supplement}",
+        "units": [
+          "9c48cf089c2f63cff496a7fc2b7f58650b1e089f16ffc3dfb3c4a6087277a4e3",
+          "aed2d6c851401dc4f4e7be40fdf9f116f80e871404d22997ca04656e92cd0e6f",
+          "2158cdbd67f2bf697e1f29cd86c102d5299d6ab967b91d6a64ef0ab751664903",
+          "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039"
+        ],
+        "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
+      },
+      {
+        "source": "chapters/15-embedding.tex",
+        "start": "\\section{Relativisation}",
+        "end": "\\section{Adverbial particles and the clause periphery}",
+        "units": [
+          "cd179443c4c46c4c2c577250a4d3f1b7bc3d3e6679a7e0ed7b55e500a2ac9f06",
+          "e8321e25515c45ec05e4f12d9ea9231ff3af7848c2daeb566abe5736d76ff8cd",
+          "c8dd1b4590513d2040fb9192e8c973f57a3f7e01058dd2c1d5074b1fc96f8385",
+          "46f8e465a7c8958743d4fddf1fb6f0bc0885132716aec6ba0d6899b6b9efb9a7",
+          "85c626c0928a00b3d8b75b93739b17b676e2f72967efc0a966123f8403251efc",
+          "3ebbf1cabc028e48acc8d441aa9e47a0a701085dbe01630412fde0590a59e44c",
+          "303de4008e00589263ceb90ed51698ff40678a9e4b3e811d518465c324455f09",
+          "64583777f9e6ffc7dc41a25c88b971444cadaa7581cc73187a9e5c8a8d1c4f1c",
+          "ac0e56870b326cafddfea77de06e168175db1ca46453aca3795c51bc143c99fe",
+          "01c5caf8bd50813f17ae1b0a9954f17669690946e40bb7f01dd92dd64fe41e35"
+        ],
+        "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
+      }
+    ]
   }
 }

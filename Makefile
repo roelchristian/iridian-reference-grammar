@@ -1,9 +1,11 @@
 .DEFAULT_GOAL := all
 
 MAIN := grammar
-CHAPTERS := 01-overview 02-phonology 03-verbs 04-nouns 05-function-words \
-            06-simple-sentence 07-information-structure 08-complex-sentences \
-            09-discourse 10-derivational
+CHAPTERS := 01-overview 02-phonology 03-morphophonology 04-nominal-morphology \
+            05-nominal-syntax 06-verbal-morphology 07-argument-structure 08-derivation-nominalisation \
+            09-clause-structure 10-predicate-constructions 11-negation 12-particles-scope \
+            13-clause-types 14-information-structure 15-embedding 16-clause-linking \
+            17-discourse
 LATEXMK ?= latexmk
 PYTHON ?= python3
 LMKFLAGS ?= -lualatex -interaction=nonstopmode -halt-on-error -file-line-error
@@ -65,8 +67,8 @@ help:
 	@echo 'make lexicon         Collect tagged forms as build/lexicon.json'
 	@echo 'make lexicon-tsv     Collect tagged forms as build/lexicon.tsv'
 	@echo 'make watch           Rebuild on changes; Ctrl-C stops watching'
-	@echo 'make ch-nouns        Build a chapter in build/chapters/04-nouns/'
-	@echo 'make watch-nouns     Watch a chapter (also accepts 04 or 04-nouns)'
+	@echo 'make ch-nominal-syntax Build Chapter 5 in its own output directory'
+	@echo 'make watch-nominal-syntax Watch Chapter 5 (also accepts 05)'
 	@echo 'make clean           Remove full and chapter build products'
 	@echo 'make distclean       Also remove the shared LuaTeX font caches'
 	@echo 'make list            List chapter names'

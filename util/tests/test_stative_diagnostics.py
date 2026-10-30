@@ -6,6 +6,10 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 sys.path.insert(0, str(ROOT / 'scripts'))
 from stative_diagnostics import (ASPECTS, StativeStem, check_stative_sources,
     event_derived_state, experiential_source, inflect, phased_state, relative_context, scalar_reading)
@@ -218,8 +222,8 @@ class StativeDiagnosticsTests(unittest.TestCase):
         self.assertEqual(configurational_case(frame),{'causer':'TRS','holder':'DIR'})
 
     def test_source_bindings_and_detected_paradigm_mutation(self):
-        source=(ROOT/'chapters/03-verbs.tex').read_text()
-        sources={'chapters/03-verbs.tex':source, 'chapters/06-simple-sentence.tex':(ROOT/'chapters/06-simple-sentence.tex').read_text()}
+        source=read_domain('chapters/03-verbs.tex')
+        sources={'chapters/03-verbs.tex':source, 'chapters/06-simple-sentence.tex':read_domain('chapters/06-simple-sentence.tex')}
         self.assertEqual(check_stative_sources(sources,self.fixtures),[])
         broken=copy.deepcopy(sources)
         # Alter one cell ONLY within the independently bounded canonical table.
@@ -232,9 +236,9 @@ class StativeDiagnosticsTests(unittest.TestCase):
         self.assertTrue(check_stative_sources(comparative,self.fixtures))
 
     def test_source_binding_detects_lost_locality_constraint(self):
-        source=(ROOT/'chapters/03-verbs.tex').read_text().replace('Asp cannot reach through Become',
+        source=read_domain('chapters/03-verbs.tex').replace('Asp cannot reach through Become',
                                                                'Asp may regrade roots through Become')
-        self.assertTrue(any('locality' in error or 'Asp cannot' in error for error in check_stative_sources({'chapters/03-verbs.tex':source,'chapters/06-simple-sentence.tex':(ROOT/'chapters/06-simple-sentence.tex').read_text()},self.fixtures)))
+        self.assertTrue(any('locality' in error or 'Asp cannot' in error for error in check_stative_sources({'chapters/03-verbs.tex':source,'chapters/06-simple-sentence.tex':read_domain('chapters/06-simple-sentence.tex')},self.fixtures)))
 
 if __name__ == '__main__':
     unittest.main()

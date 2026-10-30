@@ -9,7 +9,11 @@ Iridian distinguishes the participant selected by its alignment system from
  topic-oriented analysis in which case, nominal anchoring, and information
  structure contribute independently to the organisation of the clause.
 
-\section{The topic: conceptual and formal foundations}\label{sec:tc-foundations}
+\section{The topic: conceptual and formal foundations}\label{sec:tc-foundations}\label{sec:th-topic-comment-theory}
+The grammar uses pivot status for alignment and the relevant clause-linking
+relations, without taking a language-wide subject relation as its primitive;
+this analytical choice does not establish topic prominence by itself.
+
 \subsection{Aboutness and the logical subject of predication}
 \label{sec:tc-logical-subject}
 
@@ -185,16 +189,12 @@ The negative indefinite undergoes ordinary placement in \synhead{OrdP},
  nominal chain to reconstruct for every interpretive purpose.
 
 \subsection{Topic position in the clause spine}
-\label{sec:tc-clause-spine}
+\label{sec:tc-clause-spine}\label{sec:th-left-periphery}
 
 A clause-internal aboutness topic occupies Spec,\synhead{TopP} in the
- analysis adopted here. The principal left-peripheral hierarchy is:
-
-\begin{center}
-\synhead{TopP} $>$ \synhead{FocP} $>$ \synhead{OrdP} $>$
-\synhead{SpeechActP} $>$ \synhead{EvidP}$_{\mathrm{outer}}$ $>$
-\synhead{PolP} $>$ \synhead{IP}
-\end{center}
+ analysis adopted here. The full hierarchy and its surface fields are given in
+Table~\ref{tab:th-clause-spine} and Figure~\ref{fig:th-left-periphery};
+the topic projection stands above marked focus and ordinary placement.
 
 \noindent \synhead{TopP} is optional: lower arguments retain their case and
  remain interpretable when no aboutness dependency is projected. The comment
@@ -243,6 +243,24 @@ The same separation applies to interrogative dependencies. Ordinary
  summarised in Table~\ref{tab:construction-accessibility}.
 
 \section{Topic and the information-structural field}\label{sec:tc-isf}
+\subsection{Focus and focus movement}
+\label{sec:th-focus}
+
+Information focus may receive ordinary placement within the comment. The question under
+ discussion determines whether a nominal, the verb, or a larger predicate
+ supplies the relevant alternatives; the rightmost ordinary nominal is
+ therefore not invariably the sole focus. Marked displacement is analysed as
+ movement to Spec,\synhead{FocP}, above \synhead{OrdP} and the particle field, and is
+ optional in wh-questions (§\,\ref{sec:th-wh-interrogation}).
+
+A prominent nominal need not have undergone marked focus movement.
+ Identically ordered strings distinguished only by anchoring do not diagnose
+ focus movement (§\,\ref{sec:tc-focus-contrast}). Neither ordinary focus nor
+ its association with \synhead{FocP} establishes an exhaustive reading without
+ an independent semantic or contextual diagnostic. Clause typing comes from
+ Pol\textsuperscript{0}, overt \ird{by} or its null counterpart, rather than
+ from movement to the focus position.
+
 \subsection{Topic versus focus}\label{sec:tc-focus-contrast}
 
 A topic identifies what the utterance is about, whereas focus relates its
@@ -420,6 +438,45 @@ Iridian has no verbal person agreement to identify a null argument. Its
  established; its case does not impose an exceptionless coreference rule.
  Connected examples and the limits of this preference are discussed in
  §\,\ref{sec:topic-continuity}.
+
+\subsection{Particle-initial clauses and recoverable topics}
+\label{sec:th-topic}
+
+The specifier of \synhead{TopP} hosts a clause-internal aboutness topic,
+ whose case is retained from its lower argument position. The direct-case
+ pivot supplies the neutral topic candidate; a non-direct topic is also
+ possible, while initial quantificational pivots retain lower interpretation
+ through their ordinary placement chains
+ (§\,\ref{sec:tc-quantificational-pivots}). A continuing topic may be
+ unexpressed when its referent is recoverable. Overt pronouns support
+ disambiguation, reintroduction, or contrast according to context.
+
+When the topic and other ordinary constituents are unexpressed,
+Zone~\textsc{i} particles can begin the overt string. Any remaining overt
+arguments or modifiers precede them through ordinary placement; omission
+does not relocate the particles
+(§\,\ref{sec:adv-particles}).
+
+\pex
+\a
+\begingl
+\gla Janek zdrávime.//
+\glb Janek.\Dir{} sleep-\Prog{}//
+\glft \trsl{Janek is sleeping.} \lingcontext{canonical topic-initial}//
+\endgl
+\a
+\begingl
+\gla Zdrávime.//
+\glb sleep-\Prog{}//
+\glft \trsl{[He] is sleeping.} \lingcontext{topic drop; referent established}//
+\endgl
+\a
+\begingl
+\gla Oče zdrávime.//
+\glb \textsc{mir} sleep-\Prog{}//
+\glft \trsl{Oh, [he] is sleeping!} \lingcontext{topic drop with upper-peripheral mirative; no overt topic}//
+\endgl
+\xe
 
 \subsection{Apparent and genuinely topicless clauses}
 \label{sec:tc-topicless}
@@ -613,6 +670,51 @@ Shared anchoring, expressed by a suffixal allomorph or a class-specific
  aboutness interpretation is illustrated in
  §\,\ref{sec:disc-anchoring-controlled}.
 
+\subsection{Anchoring and the topic-absolutive connection}
+\label{sec:nm-topic-abs}\label{sec:nm-topic-interface}
+
+A direct-case patient in a perfective transitive may be both anchored and
+ topical, as in \ird{Travó Marku pjaštník}. Shared anchoring identifies the bread
+ within the shared discourse, while the clause can predicate what happened to
+ it. The two contributions belong to independent domains: nominal
+ [\textsc{+anch}] concerns accessibility, whereas clausal [\textsc{+top}]
+ establishes aboutness (§\,\ref{sec:tc-anchoring-interface}). A direct-case
+ argument in a topicless existential need not carry either feature, and the
+ initial negative pivot \ird{deno} remains below \synhead{TopP}
+ (§\,\ref{sec:tc-quantificational-pivots}).
+
+\begin{description}[leftmargin=2em, labelwidth=!, labelindent=0em]
+\item[\upshape Topicality--Anchoring Harmony:] An ordinary topic whose
+ referent is shared and accessible is compatible with shared anchoring.
+ This discourse preference imposes no Agree requirement between Top and Anch,
+ and does not exclude bare, speaker-anchored, or newly introduced topics.
+\end{description}
+
+\noindent The preference provides no converse inference that a non-topic must
+ be unanchored, and no quantitative claim about the frequency of anchoring by
+ case. Shared reference can be maintained anywhere in the argument structure.
+
+\subsection{Anchoring in non-direct cases}
+\label{sec:nm-topic-oblique}
+
+Transitive and indirect nominals retain the same anchoring contrasts as
+ direct-case nominals. The anchored agent \ird{Markuto}, for instance,
+ identifies Marek as accessible while preserving his transitive case. In
+ \ird{Markuto tak tóm koupnik}, his initial position supports a linked-topic
+ interpretation, but the anchor itself does not encode that dependency.
+ Anchored indirect recipients, locatives, and other participants likewise
+ need not receive contrastive prominence merely because they are identifiable.
+ Their topical interpretation depends on the surrounding construction and
+ discourse rather than on case-conditioned meanings of the shared anchor.
+
+Null anchoring and topic drop both distinguish syntactic structure from its
+phonological expression, although their interpretations differ. A silent
+continuing topic retains a discourse dependency on a recoverable referent
+(§\,\ref{sec:th-topic}); a null Anch head carries no anchoring
+feature. Neither silence nor overt exponence in one domain determines the
+feature content of the other.
+
+\FloatBarrier
 \section{Descriptive generalisations and their limits}\label{sec:tc-summary}
 
 Iridian's topic-oriented organisation rests on the coexistence of case-retaining
@@ -634,4 +736,3 @@ The examples distinguish high topics from lower pivots by their case
  \cite{aissen2026}. Since the Iridian examples are constructed illustrations
  of the grammar, their contextual interpretations are analytical assignments,
  rather than reports of elicited judgements or corpus frequencies.
-

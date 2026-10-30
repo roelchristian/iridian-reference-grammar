@@ -5,6 +5,10 @@ import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 SPEC = importlib.util.spec_from_file_location('check_grammar', ROOT / 'scripts/check-grammar.py')
 checker = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(checker)
@@ -12,7 +16,7 @@ SPEC.loader.exec_module(checker)
 
 class ImplicitPossessionTests(unittest.TestCase):
     def test_overt_and_implicit_possessors_keep_the_same_head_and_predicate(self):
-        source = (ROOT / 'chapters/04-nouns.tex').read_text()
+        source = read_domain('chapters/04-nouns.tex')
         block = source.split(r'\pex\label{ex:nm-implicit-poss}', 1)[1].split(r'\xe', 1)[0]
         pairs = [(surface.strip(), gloss.strip()) for surface, gloss in re.findall(
             r'\\gla\s+(.*?)//\s*\\glb\s+(.*?)//', block, re.S)]
@@ -34,7 +38,7 @@ class ImplicitPossessionTests(unittest.TestCase):
         self.assertIn('quantity class unspecified', records['konc-']['notes'])
         self.assertIn(r'listed continuous \ird{konca}', records['konc-']['notes'])
         self.assertIn('Class IX', records['mamka']['notes'])
-        nouns = (ROOT / 'chapters/04-nouns.tex').read_text()
+        nouns = read_domain('chapters/04-nouns.tex')
         row = re.search(r'1\\textsc\{sg\}\s*&\s*\\ird\{dá\}.*?\\\\', nouns, re.S)
         self.assertIsNotNone(row)
         self.assertIn(r'\ird{že}', row[0])

@@ -5,6 +5,10 @@ from pathlib import Path
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(ROOT / 'scripts'))
+from source_domains import read_domain, domain_sources
+
 SPEC = importlib.util.spec_from_file_location('check_grammar', ROOT / 'scripts/check-grammar.py')
 checker = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(checker)
@@ -14,7 +18,7 @@ class CityTownTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.path = 'chapters/04-nouns.tex'
-        cls.source = (ROOT / cls.path).read_text()
+        cls.source = read_domain(cls.path)
         fixtures = json.loads((ROOT / 'scripts/quantity-fixtures.json').read_text())
         cls.table = {'source_tables': [table for table in fixtures['source_tables']
                      if table['label'] == 'tab:city-town-paradigms']}
@@ -50,7 +54,7 @@ class CityTownTests(unittest.TestCase):
             self.assertIn('Class I', selected[0]['notes'])
         self.assertEqual([entry['gloss'] for entry in entries if entry['form'] == 'hrad'],
                          ['goodness; be good'])
-        self.assertIn(r'\ird{barocezná dvorba}', (ROOT / 'chapters/10-derivational.tex').read_text())
+        self.assertIn(r'\ird{barocezná dvorba}', read_domain('chapters/10-derivational.tex'))
 
 
 if __name__ == '__main__':
