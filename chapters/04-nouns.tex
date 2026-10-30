@@ -56,13 +56,15 @@ that layer.
 \subsection{Case, \synhead{KP}, and the alignment-sensitive argument system}
 \label{sec:nm-case-system}
 
-The lowest overt functional layer of the noun phrase is \synhead{KP}, the case
-projection. Modern Iridian has three productive structural cases: \term{direct},
+The case-number endings realise the low inflectional domain of the noun
+phrase, whose outer projection is \synhead{KP}. Modern Iridian has three productive
+structural cases: \term{direct},
 \term{transitive}, and \term{indirect}; a fourth case, the \term{vocative},
 survives as a nonproductive form limited to direct address in lexically
 specified items. The direct case supplies the citation form, with zero or a thematic ending
-according to class. Case-number endings realise \textsc{K\textsuperscript{0}},
-while the vocative is a specialised
+according to class. Case-number endings jointly realise
+K\textsuperscript{0} and Num\textsuperscript{0}
+(§\,\ref{sec:nm-num}), while the vocative is a specialised
 speech-act-adjacent realisation of the same low nominal domain.
 
 \begin{table}
@@ -162,8 +164,11 @@ the paradigm. The number of a possessor and that of a possessed noun are
 expressed by their respective case-number forms (§\,\ref{sec:nm-poss-number}).
 
 The grammar analyses inflectional Num\textsuperscript{0} as a syntactically
-projected head carrying [\textsc{+pl}] in the plural cells. At PF, the adjacent
-Num\textsuperscript{0} and K\textsuperscript{0} terminals are fused into a
+projected head carrying [\textsc{+pl}] in the plural cells. NumP lies
+between the lexical/possessive domain and KP, giving the hierarchy
+\synhead{KP} $>$ \synhead{NumP} $>$ \synhead{PossP}/\synhead{NP}.
+Num\textsuperscript{0} and K\textsuperscript{0} are adjacent heads on
+this spine; at PF they are fused into a
 single [K$+$Num] node. This fusion is an analytical assumption about Iridian;
 Vocabulary Insertion supplies its phonological realisation within the
 Distributed Morphology framework \cite[§\,2.3]{embicknoyer2007}. In unanchored
@@ -878,9 +883,15 @@ exponents, their morphological order is:
 \textsc{root} $+$ \textsc{case.num} $+$ \textsc{anch}
 \end{center}
 
-\noindent Case determines the noun's clausal role, while anchoring is
-interpreted outside that case layer. The grammar therefore retains
-\synhead{KP} dominated by \synhead{AnchP}, including in cells whose
+\noindent The order in \ird{byl-a-to} places the case-number exponent
+inside shared anchoring. Under the compositional analysis developed in
+§\,\ref{sec:nm-funcseq}, this supports \synhead{AnchP} above \synhead{KP}.
+Anchoring is available across the structural cases and preserves the noun's
+case-dependent clausal role (§\,\ref{sec:nm-case-system}), while its
+referential contribution concerns the nominal as a whole. This distribution
+motivates treating anchoring separately from case licensing, although it
+does not uniquely establish the relative height of the two heads. The
+grammar retains the following hierarchy, including in cells whose
 case-number and shared-anchoring features receive cumulative exponence:
 
 \begin{center}
@@ -888,10 +899,13 @@ case-number and shared-anchoring features receive cumulative exponence:
   syntax tree
   [\synhead{AnchP}
     [\synhead{KP}
-      [\synhead{NP}
-        [{\textit{root}}]
+      [\synhead{NumP}
+        [\synhead{NP}
+          [{\textit{root}}]
+        ]
+        [{Num\textsuperscript{0}\\{\footnotesize number}}]
       ]
-      [{K\textsuperscript{0}\\{\footnotesize case.num}}]
+      [{K\textsuperscript{0}\\{\footnotesize case}}]
     ]
     [{Anch\textsuperscript{0}\\{\footnotesize anchoring}}]
   ]
@@ -997,7 +1011,8 @@ sequence occurs as a dependent inside the host noun's domain. This definition us
 nominal spine to identify ownership; it does not identify a domain by whichever
 noun or clitic happens to occur first in the string.
 
-The PF fusion of number with K precedes linearisation. PF then orders
+The PF fusion of number with K precedes linearisation; suffixal attachment
+to the nominal host is specified separately in §\,\ref{sec:nm-funcseq}. PF then orders
 embedded nominal domains before the domain containing them, retaining each
 completed dependent as an ordered block. Within $D_a$, the
 default order preserves the established precedence of demonstratives,
@@ -1168,8 +1183,8 @@ in §\,\ref{sec:nm-np-structure}.
 
 \noindent Within the noun phrase, the adnominal demonstrative realises
 \synhead{DemP}, the outermost noun-internal demonstrative projection above
-\synhead{AnchP}. The hierarchy required by the overt ordering facts is therefore
-\synhead{DemP} $>$ \synhead{AnchP} $>$ \synhead{KP} $>$ \synhead{PossP} $>$
+\synhead{AnchP}. The hierarchy adopted for these distributions is
+\synhead{DemP} $>$ \synhead{AnchP} $>$ \synhead{KP} $>$ \synhead{NumP} $>$ \synhead{PossP} $>$
 \synhead{NP}, matching the descriptive order \textsc{demonstrative} $>$
 \textsc{poss}.\Ind{} $>$ \textsc{head} given in §\,\ref{sec:nm-np-structure}.
 Demonstratives stand outside the possessive grouping, whereas possessors remain
@@ -1184,9 +1199,12 @@ same structural slot.
     [{\textit{adnominal demonstrative}}]
     [\synhead{AnchP}
       [\synhead{KP}
-        [\synhead{PossP}
-          [{\textit{oblique possessor}.\Ind{} / $\varnothing$}]
-          [{\synhead{NP}\\\textit{head noun}}]
+        [\synhead{NumP}
+          [\synhead{PossP}
+            [{\textit{oblique possessor}.\Ind{} / $\varnothing$}]
+            [{\synhead{NP}\\\textit{head noun}}]
+          ]
+          [{Num\textsuperscript{0}\\{\footnotesize number}}]
         ]
         [{K\textsuperscript{0}\\{\footnotesize case}}]
       ]
@@ -1684,8 +1702,8 @@ root to the demonstrative domain.
                   & §\,\ref{sec:nm-prop} \\
     Possessor     & oblique noun phrase & \synhead{PossP} (prenominal possessor layer inside \synhead{KP})
                   & §\,\ref{sec:nm-poss} \\
-    Case $\times$ Number & six fused case-number endings & \synhead{KP} (case-number layer;
-                       Num\textsuperscript{0} fuses with K\textsuperscript{0} at PF)
+    Case $\times$ Number & six fused case-number endings & \synhead{KP} $>$ \synhead{NumP};
+                       K\textsuperscript{0} and Num\textsuperscript{0} fuse at PF
                   & §\,\ref{sec:nm-case}, §\,\ref{sec:nm-num} \\
     Anchoring     & suffixal or cumulative
                        (Anch\textsuperscript{0}[\textsc{+anch,+shr}]); \ird{si}
@@ -1710,22 +1728,41 @@ root to the demonstrative domain.
   \end{tabularx}
 \end{table}
 
-The Mirror Principle (Baker 1985) predicts that the morphological order reflects
-the syntactic order. Reading the template from root outward, \textsc{case.num}
-appears closer to the root than \textsc{anch}; this means \synhead{KP} is
-dominated by \synhead{AnchP}. The same suffixal order follows directly from
-head-finality. The fused \textsc{case.num} exponent realises the features of
-Num\textsuperscript{0} and K\textsuperscript{0} in a single PF terminal:
-inflectional number is projected
-in the syntax and receives its exponence within the case-number VI.
-By contrast, the higher
-projections realised prenominally do not need to be treated as ordinary suffixal
-heads. The simpler analysis is that Iridian has an articulated nominal left
-periphery whose overt exponents realise \synhead{DemP} at the left edge of their
-domain, while the suffixal spine remains strictly head-final. The proclitic
-\ird{si} receives left-edge precedence within its nominal domain, although
-its source remains Anch\textsuperscript{0}; the linearisation rule in
-§\,\ref{sec:nm-si-linearisation} supplements the head-final default.
+The sequence \textsc{root--case.num--anch} places case-number inside
+shared anchoring, consistently with the hierarchy \synhead{AnchP} $>$
+\synhead{KP} $>$ \synhead{NumP}. The working interpretation of the
+Mirror Principle in §\,\ref{sec:vm-overview} relates morphological
+constituency to syntactic composition, subject to independently specified
+realisation mechanisms \cite{baker1985,harley2011}. The suffixal sequence
+therefore supports this hierarchy under the assumed compositional mapping;
+it cannot uniquely determine the hierarchy independently of that mapping.
+The referential distribution discussed in §\,\ref{sec:nm-def-stacking}
+provides a separate reason for distinguishing anchoring from case licensing.
+
+Head-final linearisation orders the complement of each inflectional head
+before that head, whereas formation of a morphological word requires an
+additional attachment relation; affixation and head movement are themselves
+distinct properties \cite{harley2013b}. For Iridian, PF realisation combines
+the lexical nominal host with the immediately following [K$+$Num] exponent
+and, where present, the separate shared-anchoring exponent into one word.
+This attachment applies only to the contiguous nominal inflectional sequence;
+it neither incorporates prenominal dependents nor crosses into a possessor's
+nominal domain. The schematic morphological constituency is
+$[[N\text{--}\mathrm{K.Num}]\text{--}\mathrm{Anch}]$, although class-selected
+cumulative exponents may realise more than one of these structural positions
+(§\,\ref{sec:nm-def-allomorph}). Suffixal attachment is thus an explicit
+realisation assumption, rather than a consequence of head-finality alone.
+
+Num\textsuperscript{0} and K\textsuperscript{0} are distinct heads in the
+syntax and fuse at PF before Vocabulary Insertion (§\,\ref{sec:nm-num});
+zero exponence and conditioned stem grades do not remove either projection.
+The higher prenominal material has its own distribution, with
+\synhead{DemP} realised at the left edge of its domain. Speaker anchoring
+likewise retains its source in Anch\textsuperscript{0}, while the rule in
+§\,\ref{sec:nm-si-linearisation} assigns \ird{si} left-edge precedence and
+proclitic attachment. Since this rule specifies a different mapping from
+structure to pronunciation, the position of \ird{si} cannot be used as an
+ordinary suffix-order diagnostic.
 
 The suffixal nominal spine parallels the verbal complex: case-number precedes
 anchoring within the noun phrase, just as the lower verbal morphology precedes
@@ -1740,11 +1777,14 @@ the outer finite suffixes. The following tree represents this nominal hierarchy 
       [{\textit{numeral / quantifier}}]
       [\synhead{AnchP}
         [\synhead{KP}
-          [\synhead{PossP}
-            [{\textit{oblique possessor}}]
-            [{\synhead{NP}\\\textit{root}}]
+          [\synhead{NumP}
+            [\synhead{PossP}
+              [{\textit{oblique possessor}}]
+              [{\synhead{NP}\\\textit{root}}]
+            ]
+            [{Num\textsuperscript{0}\\{\footnotesize number}}]
           ]
-          [{K\textsuperscript{0}\\{\footnotesize case.num}}]
+          [{K\textsuperscript{0}\\{\footnotesize case}}]
         ]
         [{Anch\textsuperscript{0}\\{\footnotesize anchoring features}}]
       ]
@@ -1756,8 +1796,8 @@ the outer finite suffixes. The following tree represents this nominal hierarchy 
 \noindent The tree represents the common nominal hierarchy.
 Overt exponents of higher nominal projections are shown directly at the edge of
 the projection they realise, and silent heads are not inserted merely to force a
-specifier analysis. The case-number and anchoring layers are shown as separate
-syntactic heads to display their hierarchy before PF realisation; the proclitic exponent of Anch
+specifier analysis. Num, K, and Anch are shown as separate syntactic heads
+before PF realisation; the proclitic exponent of Anch
 receives its precedence at linearisation rather than at the head-final
 position shown here (§\,\ref{sec:nm-si-linearisation}).
 The \synhead{QP} layer is drawn only as a conservative cover term for prenominal
@@ -1788,9 +1828,12 @@ are distinct dependencies which receive the same K realisation.
   syntax tree
   [\synhead{AnchP}
     [\synhead{KP}
-      [\synhead{PossP}
-        [{\textit{oblique possessor}.\Ind{}}]
-        [{\synhead{NP}\\\textit{head noun}}]
+      [\synhead{NumP}
+        [\synhead{PossP}
+          [{\textit{oblique possessor}.\Ind{}}]
+          [{\synhead{NP}\\\textit{head noun}}]
+        ]
+        [{Num\textsuperscript{0}\\{\footnotesize number}}]
       ]
       [{K\textsuperscript{0}\\{\footnotesize case ending}}]
     ]
@@ -1802,7 +1845,7 @@ are distinct dependencies which receive the same K realisation.
 \noindent The possessor appears before the head noun in the surface string,
 consistent with head-final base-generation of specifiers. The entire possessive
 phrase [\synhead{PossP} oblique-N head-N] forms a constituent that is then
-inflected as a whole for case by K and optionally for anchoring by
+inflected for number and case by Num and K and optionally for anchoring by
 \textsc{Anch\textsuperscript{0}}.
 
 \subsection{Implicit possessors and relational nominal interpretation}
@@ -2127,8 +2170,8 @@ lexical meaning specifies a spatial, participant, source, privative, or
 substitutive relation.
 
 The structural asymmetry is straightforward. The nominal complement is
-assembled first: the root combines with \synhead{PossP}, receives indirect case in
-K, and may then be expanded by anchoring or other higher nominal
+assembled first: the lexical/possessive domain combines with Num and
+receives indirect case in K, and may then be expanded by anchoring or other higher nominal
 material. Only after that nominal phrase is complete does the
 postposition merge as the head of the larger postpositional phrase.
 Head-finality then yields the surface order \textit{complement} +
@@ -2140,9 +2183,12 @@ Head-finality then yields the surface order \textit{complement} +
   [PostP
     [\synhead{AnchP}
       [\synhead{KP}
-        [\synhead{PossP}
-          [{\textit{oblique possessor} / $\varnothing$}]
-          [{\synhead{NP}\\\textit{head noun}}]
+        [\synhead{NumP}
+          [\synhead{PossP}
+            [{\textit{oblique possessor} / $\varnothing$}]
+            [{\synhead{NP}\\\textit{head noun}}]
+          ]
+          [{Num\textsuperscript{0}\\{\footnotesize number}}]
         ]
         [{K\textsuperscript{0}\\\Ind{}}]
       ]

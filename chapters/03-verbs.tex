@@ -24,9 +24,9 @@ is that of the aspect-alignment suffix:
 \end{center}
 \medskip
 
-The \synhead{Asp.Align} slot fuses aspect and alignment into a single morpheme
-and is the one element no finite verb may lack. The mood slot may be analysed as
-containing a null morpheme in the indicative. The negative prefix \ird{za-}
+The \synhead{Asp.Align} slot cumulatively realises the aspect and alignment
+features of a single head and is the one element no finite verb may lack.
+The mood slot may be analysed as containing a null morpheme in the indicative. The negative prefix \ird{za-}
 stands before the entire stem complex. The indirect evidential has default
 \ird{-al} after a consonant and contextual \ird{-l} after a vowel;
 it follows finite aspect and mood and precedes the linker
@@ -51,53 +51,83 @@ indicative \ird{za-} attaches outside the complete derived stem.
 
 \subsection{The Mirror Principle and functional projections}
 \label{sec:vm-overview}
+\label{sec:vm-mirror}
 
-\noindent Baker's (1985) \term{Mirror Principle} predicts that morphological
-derivations reflect the order of syntactic composition. The Iridian analysis
-distinguishes argument-building heads from the higher orientation head realised
-by \ird{-n-} (\ird{-an-} after a rhotic causative), so that
-causativisation precedes the selection of the derived patient in \ird{pjášt-r-an-ik}. Cumulative exponence and conditioned allomorphy
-are specified with the individual constructions; the correspondence is not a
-requirement that every head have a separate segment. Reading outward from the
-root, the suffixal sequence has the following organisation. The separation
-of event introduction, external argument introduction and case follows the
-analytical distinctions surveyed by Harley \cite[§§1.3--1.4]{harley2017}; the
-particular ordering and licensing conditions stated here belong to Iridian
-and are summarised in Table~\ref{tab:vm-projections}.
+\noindent Iridian's causative suffix precedes outer patient orientation,
+which in turn precedes finite aspect, as in \ird{pjášt-r-an-ik}
+\trsl{cause to eat}, with perfective viewpoint and patient selection.
+The corresponding analysis places Caus below orienting Voice and Asp.Align;
+their distinct contributions to argument structure, participant selection and
+viewpoint motivate this hierarchy alongside the suffix order
+(§§\,\ref{sec:vm-selection-domains}, \ref{sec:vm-caus}).
+
+Baker formulates the \term{Mirror Principle} as the requirement that
+``Morphological derivations must directly reflect syntactic derivations
+(and vice versa)'' \cite[p.~375]{baker1985}. The correspondence concerns ordered
+operations and their grammatical consequences, rather than an identity between
+an affix's position in a string and a head's position in a tree. Baker's
+argument compares morphological and syntactic derivations with independently
+specified content; his discussion of clitics and nonconcatenative morphology
+also limits a direct inference from visible segments to derivational structure
+\cite[§§2, 5]{baker1985}.
+
+The Iridian analysis adopts a more limited working expectation: where
+successive suffixal attachment realises successive syntactic combination,
+inner morphological constituents correspond to lower syntactic domains.
+Surface order constrains this analysis without uniquely determining it,
+since head movement, affix-specific directionality and morphological merger
+can mediate the correspondence \cite{harley2011,harley2013b}.
+Table~\ref{tab:vm-projections} therefore distinguishes syntactic height from
+the placement of an exponent within the verbal word. Verbal categorisation,
+actor introduction and outer orientation occupy distinct positions; the
+separation of verbalising $v$ and argument-introducing Voice has independent
+motivation in Harley's analysis, while their particular ordering and licensing
+conditions here belong to Iridian \cite{harley2013a,harley2017}.
 
 \begin{table}
   \footnotesize
-  \caption{Morphological template positions and corresponding
-  syntactic projections (innermost to outermost).}\label{tab:vm-projections}
-  \begin{tabularx}{\textwidth}{l l L l}
+  \caption{Verbal projections in ascending syntactic order and their
+  morphological realisation. Optional layers occur only where licensed.}
+  \label{tab:vm-projections}
+  \begin{tabularx}{\textwidth}{L l L l}
     \toprule
-    {\sc position} & {\sc morpheme} & {\sc syntactic projection} &
+    {\sc syntactic projection} & {\sc exponent} & {\sc realisation} &
     {\sc see} \\
     \midrule
-    Root         & \Stem{}           & $\surd$P / \synhead{VP} (lexical predicate)
+    $\surd$P / \synhead{VP} & \Stem{} & Lexical stem, including licensed preverbs
                  & §\,\ref{sec:vm-root} \\
-    Inner valency & \Antip{} / \Appl{} & \synhead{VoiceP}$_{\mathrm{AP}}$ / \synhead{ApplP}
-                 & §\,\ref{sec:vm-antipassive}, §\,\ref{sec:vm-n} \\
-    Causative    & \Caus{}           & \synhead{CausP}
+    \synhead{vP} & $\varnothing$ & Categorisation of a simple lexical root
+                 & §\,\ref{sec:vm-root} \\
+    \synhead{VoiceP}$_{\mathrm{AP}}$ / \synhead{ApplP}
+                 & \Antip{} / \Appl{} & Inner valency suffix; alternative heads
+                 & §\,\ref{sec:vm-antipassive}, §\,\ref{sec:vm-appl} \\
+    Inner actor layer & $\varnothing$ & Introduces the lexical actor where licensed
+                 & §\,\ref{sec:vm-root} \\
+    \synhead{CausP} & \Caus{} & Suffix outside inner valency
                  & §\,\ref{sec:vm-caus} \\
-    Orientation & \ird{-n-}/\ird{-an-}, $\varnothing$ & \synhead{VoiceP}$_{\mathrm{orient}}$
+    \synhead{VoiceP}$_{\mathrm{orient}}$
+                 & \ird{-n-}/\ird{-an-}, $\varnothing$ & Orientation outside Caus
                  & §\,\ref{sec:vm-n} \\
-    Asp.Align    & \synhead{Asp.Align}.\textsc{align} & \synhead{AspP} (viewpoint and alignment domain)
+    \synhead{AspP} & \synhead{Asp.Align} & Aspect--alignment suffix outside orientation
                  & §\,\ref{sec:vm-asp} \\
-    Neg (prefix) & \Neg{}            & \synhead{NegP} (see §\,\ref{sec:vm-neg})
+    \synhead{NegP} & \Neg{} & Left-edge verbal proclitic in the indicative
                  & §\,\ref{sec:vm-neg} \\
-    Mood         & \textsc{mood}     & \synhead{MoodP} / \synhead{IP}
+    \synhead{MoodP} & \textsc{mood} & Suffix outside Asp.Align, or zero
                  & §\,\ref{sec:vm-moodp} \\
-    Evidential   & \ird{-al}/\ird{-l} & \synhead{EvidP}$_\text{inner}$
+    \synhead{EvidP}$_\text{inner}$ & \ird{-al}/\ird{-l} & Suffix outside finite aspect and mood
                  & §\,\ref{sec:vm-evid} \\
     \bottomrule
   \end{tabularx}
 \end{table}
 
-\noindent The negative marker \Neg{} precedes the root, although Neg is
-analysed as structurally higher than Asp. Its preverbal position is attributed
-to post-syntactic attachment to the left edge of the verbal complex
-(§\,\ref{sec:vm-neg}).
+\noindent Zero exponence leaves a syntactic position unpronounced;
+cumulative exponence realises several features together; conditioned allomorphy
+selects a form within an established morphological environment. None of these
+operations by itself reverses morphological constituency. Prefixal \Neg{}
+has a separate left-edge realisation instruction (§\,\ref{sec:vm-neg}), while
+lexical preverbs belong inside the stem (§\,\ref{sec:lexical-preverbs}).
+Asp.Align is one feature-bearing head throughout this analysis, without a
+separate Align projection.
 
 \subsection{The root and VP}
 \label{sec:vm-root}
@@ -733,7 +763,7 @@ Antipassive instead removes the independently licensed lexical theme from the
 base inventory. The ordering of argument-building and orientation heads is
 \[
  \mathrm{VP}\ \subset\ \mathrm{ApplP}/\mathrm{VoiceP}_{\mathrm{AP}}
- \ \subset\ \mathrm{CausP}\ \subset\
+ \ \subset\ \text{inner actor layer}\ \subset\ \mathrm{CausP}\ \subset\
  \mathrm{VoiceP}_{\mathrm{orient}}\ \subset\ \mathrm{AspP},
 \]
 with absent derivational layers omitted. Appl and antipassive are alternatives
@@ -1908,24 +1938,59 @@ Asp.Align supplies the alignment domain. The distinction between productive
 causative structure and other verbal heads follows the analytical issues
 surveyed by Harley \cite[§1.4]{harley2017}; assigning causer introduction
 to Caus and patient selection to higher Voice is the Iridian analysis.
-The head-final hierarchy yields
-root--inner derivation--causative--orientation--aspect:
+In the transitive causative \ird{pjáštranik}, the lexical patient originates
+inside VP, the lower actor layer introduces the causee, and Caus introduces
+the causer above that event predicate. The following head-final tree displays
+those thematic origins; ordinary finite placement subsequently determines
+where the arguments are pronounced (§\,\ref{sec:vm-pivot-derivations}). The
+verbal categoriser and higher inflectional layers are omitted.
 
 \begin{center}
 \begin{forest}
 for tree={align=center}
-[\synhead{VoiceP}
-  [\synhead{CausP}
-    [{\synhead{DP}\\{\footnotesize causer}}]
-    [{Caus$'$}
-      [{event predicate\\{\footnotesize including causee}}]
-      [{Caus\\\ird{-r-} / \ird{-er-} / \ird{-ěr-}}]
+[\synhead{AspP}
+  [\synhead{VoiceP}$_{\mathrm{orient}}$
+    [\synhead{CausP}
+      [{\synhead{DP}\\{\footnotesize causer}}]
+      [{Caus$'$}
+        [{inner actor layer}
+          [{\synhead{DP}\\{\footnotesize actor/causee}}]
+          [{actor$'$}
+            [\synhead{VP}
+              [{\synhead{DP}\\{\footnotesize patient}}]
+              [{V\\\ird{pjášt-}}]
+            ]
+            [{actor\\$\varnothing$}]
+          ]
+        ]
+        [{Caus\\\ird{-r-}}]
+      ]
     ]
+    [{Voice\\\ird{-an-}}]
   ]
-  [{Voice\\\ird{-an-} / $\varnothing$}]
+  [{Asp.Align\\\ird{-ik}}]
 ]
 \end{forest}
 \end{center}
+
+The corresponding morphological constituency is
+\[
+ \bigl[\bigl[\bigl[\ird{pjášt}-\textsc{caus}\bigr]
+ -\textsc{orient}\bigr]-\textsc{pfv}\bigr]
+ \quad\longmapsto\quad \ird{pjášt-r-an-ik}.
+\]
+This mapping assumes successive suffixal attachment within one verbal word;
+head-final complement order alone would not supply that attachment operation.
+The silent categoriser and actor head have no segment in the displayed form.
+Compact Caus selects the strong root grade \ird{pjášt-}, its rhotic exponent
+conditions orientation \ird{-an-}, and the derived stem selects short
+perfective \ird{-ik} (§\,\ref{sec:causative-grades}). In the completed
+ERG frame, orientation selects the retained patient as direct, the completed
+aspect--orientation configuration licenses the causer as transitive, and the
+causee is indirect, as illustrated
+by \ird{Travó Marku bylam pjášt-r-an-ik}
+(\ref{ex:val-caus-transitive}). These case relations follow the construction's
+licensing rules rather than the spelling of its suffixes.
 
 The overt outer \ird{-an-} licenses the selected embedded participant in an
 ERG causative. In the NOM domain, zero outer orientation gives the active
@@ -1934,6 +1999,44 @@ applied participant if no theme is retained, and otherwise the causee. It
 licenses the causer as an optional indirect agentive dependent. This is the passive of the
 derived causative. An embedded causee remains an argument of its own predicate;
 passivisation of the higher causing event does not suppress that relation.
+
+The established contrasts support a set of separable checks on this mapping.
+Table~\ref{tab:vm-mirror-diagnostics} compares forms already specified above;
+the rightmost column records the structural or local morphological relation
+which an alternative derivation must preserve.
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Diagnostics of verbal composition, using established constructed forms.}
+\label{tab:vm-mirror-diagnostics}
+\begin{tabularx}{\textwidth}{L l L}
+\toprule
+Construction & Form & Relation to preserve \\
+\midrule
+Simple ERG transitive & \ird{pjaštník}
+ & Patient direct, actor transitive; Class B quantity on aspect \\
+Active NOM causative & \ird{pjáštrime}
+ & Causer direct; causee and retained patient indirect; Caus selects root G1 \\
+ERG causative & \ird{pjáštranik}
+ & Retained patient direct; causer transitive; causee indirect; rhotic Caus conditions \ird{-an-} \\
+ERG applied causative & \ird{pjaštébranik}
+ & Retained patient direct, causer transitive; causee and beneficiary indirect; Appl below Caus protects the root from outer G1 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\noindent The applicative--causative contrast additionally fixes the
+benefactive relation inside the caused event: \ird{pjaštébranik} has
+$\mathrm{CAUS}[\mathrm{APPL}[\mathrm{EAT}]]$ scope, without an outer
+benefactive interpretation (\ref{ex:val-caus-appl}). Applying indicative
+negation to each row predicts immediate left-edge \ird{za-}, with the listed
+participant inventory, suffix order and local grades preserved under negation.
+These negative complex counterparts are predictions of the composition and
+realisation rules, rather than additional independently established paradigms;
+the simple \ird{zapjaštník} already illustrates the prefixal mapping
+(§\,\ref{sec:neg-allomorphy}). Their interpretation negates the complete
+aspectual causative or applicative proposition, without giving \ird{za-} a
+position between the inner derivational heads.
 
 \subsection{Participant dependencies and causative locality}
 \label{sec:vm-pivot-derivations}
@@ -2149,13 +2252,33 @@ follows the syntactic approach to negative dependencies developed by
 Zeijlstra and Penka \cite{zeijlstra2022,penka2011}; its application to Iridian is the analysis
 adopted here.
 
-The preverbal position of \ird{za-} is attributed to post-syntactic attachment
-of the exponent of Neg\textsuperscript{0} to the left edge of the verbal host,
-within the framework of Distributed Morphology \cite{embicknoyer2007}.
-Although Neg is structurally higher than Asp, prefixal realisation is
-compatible with the Mirror Principle \cite{baker1985}, which constrains the
-relative order of affixes without requiring a higher head to be suffixal
-\cite{harley2011}.
+The exponent of verbal Neg\textsuperscript{0} has a stipulated left-edge
+instruction in the Iridian mapping to PF. Let $H$ be the independently formed
+inflected verbal host, including any lexical preverb and licensed valency,
+orientation, aspect, mood and evidential exponents. Vocabulary realisation
+places \ird{za-} immediately before $H$, after which its regular onset-conditioned
+allomorphy and prosodic attachment apply (§\,\ref{sec:neg-allomorphy}):
+\[
+ \mathrm{Neg}^{0}_{\text{verbal}}+H
+ \quad\longmapsto\quad \ird{za-}H.
+\]
+The plus sign represents the realisation dependency, not surface precedence.
+The instruction targets this verbal host, excluding arguments and free
+particles; it preserves the host's internal constituency and suffix order.
+Neg remains above Asp in the interpreted structure, although its exponent
+precedes the complete verbal word.
+
+Affix-specific directionality is among the interface mechanisms discussed by
+Harley \cite{harley2011}; the choice of a verbal host and its left edge is an
+Iridian-specific realisation rule. No syntactic head movement or sequence of
+post-syntactic swaps derives this position. In particular, the rule does not
+apply Local Dislocation across intervening material: that operation is
+restricted by linear adjacency in Embick and Noyer's account
+\cite{embicknoyer2007}. The same distinction between hierarchical position and
+an explicit PF precedence instruction governs speaker-anchoring \ird{si}
+(§\,\ref{sec:nm-si-linearisation}). Prefixal negation therefore does not
+independently establish either Neg's height or an unrestricted exception to
+the Mirror Principle.
 
 In zero-copula clauses such as \ird{Marek doktor staly} \trsl{Marek is not a
 doctor}, invariant \ird{staly} realises a head-final Neg selecting the nominal
@@ -4680,14 +4803,16 @@ a single head. \synhead{IP} elsewhere abbreviates the inflectional domain
     & \synhead{PhasP} & \ird{vy, so}
     & Selects positive or negative predication \\
     & \synhead{NegP} & \ird{za-} (prefix)
-    & Indicative only; Op$_{\neg}$ in specifier; Neg$^{0}[u\textsc{neg}]$; PF attachment \\
-    & \synhead{AspP} & \ird{-ek/-ik, -av, -a, -ime, -áž} (fused w/ align)
+    & Indicative only; Op$_{\neg}$ in specifier; Neg$^{0}[u\textsc{neg}]$; left-edge realisation \\
+    & \synhead{AspP} & \ird{-ek/-ik, -av, -a, -ime, -áž} (aspect + alignment)
     & Obligatory finite head; viewpoint and alignment domain \\
     \midrule
     & \synhead{VoiceP}$_{\mathrm{orient}}$ & \ird{-n-}/\ird{-an-}, $\varnothing$
     & Selects participant of the complete derived predicate \\
     & \synhead{CausP} & \ird{-r-}, \ird{-er-}, \ird{-ěr-}
     & Adds causer above the inner valency domain \\
+    & Inner actor layer & $\varnothing$
+    & Introduces the lexical actor above inner valency \\
     & \synhead{VoiceP} / \synhead{ApplP} & \ird{-aš-} (antipassive) / \ird{-éb-} (applicative)
     & Distinct heads; language-specific co-occurrence ban \\
     & \synhead{vP}/\synhead{VP} & Root stem
