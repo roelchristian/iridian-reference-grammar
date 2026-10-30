@@ -1,0 +1,38 @@
+% A comparison sheet followed by all three full-size concept proofs.
+\documentclass[11pt,a4paper,landscape]{article}
+\usepackage[a4paper,landscape,margin=16mm]{geometry}
+\input{styles/fonts}
+\usepackage{graphicx,xcolor,pdfpages}
+\usepackage[hidelinks]{hyperref}
+\definecolor{reviewink}{HTML}{102F3A}
+\hypersetup{pdftitle={Iridian - three cover directions},pdfauthor={Roel Christian Yambao}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\begin{document}
+{\color{reviewink}\sffamily\fontsize{23}{28}\selectfont Iridian / Three cover directions}\par
+\vspace{2mm}
+{\sffamily\small All three preserve the original sideways branching. Full-size proofs follow.}\par
+\vspace{6mm}
+\begin{minipage}[t]{0.31\textwidth}
+  \centering\includegraphics[page=1,height=105mm]{build/cover/concepts.pdf}\par
+  \vspace{4mm}\raggedright
+  {\sffamily\bfseries 01\quad Constituent structure}\par
+  \vspace{1.5mm}
+  {\small\textbf{Recommended.} Deep teal, warm ivory and an open serif title. The branching silhouette presents grammar as an organised system while retaining the original cover's identity.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\textwidth}
+  \centering\includegraphics[page=2,height=105mm]{build/cover/concepts.pdf}\par
+  \vspace{4mm}\raggedright
+  {\sffamily\bfseries 02\quad The analytical margin}\par
+  \vspace{1.5mm}
+  {\small An ivory field meets a dark outer margin; the tree changes contrast as it crosses the boundary. The composition evokes the relation between a text and its analytical apparatus.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\textwidth}
+  \centering\includegraphics[page=3,height=105mm]{build/cover/concepts.pdf}\par
+  \vspace{4mm}\raggedright
+  {\sffamily\bfseries 03\quad Descriptive strata}\par
+  \vspace{1.5mm}
+  {\small Warm paper above an oxblood field separates the bibliographic identity from the structural artwork. Its horizontal division gives the reference volume a quieter, more classical character.}
+\end{minipage}
+\includepdf[pages=-,fitpaper=true]{build/cover/concepts.pdf}
+\end{document}

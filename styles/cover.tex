@@ -1,63 +1,142 @@
-% Reusable vector cover. Requires TikZ, xcolor and a sans-serif font family.
-% Coordinates are in the A4 page's physical millimetres, independent of margins.
+% Shared, fully vector A4 cover system; the default is the recommended concept.
+% The optional bookcover argument selects concepts 1--3 for the design proofs.
+% ircoveroffset is 3 only in the 216 x 303 mm bleed export.
+\providecommand{\ircoveroffset}{0}
 \definecolor{ircoverink}{HTML}{102F3A}
 \definecolor{ircoverpaper}{HTML}{F3F1E8}
-\definecolor{ircoverteal}{HTML}{70B5AD}
-\definecolor{ircoverline}{HTML}{407D80}
+\definecolor{ircoverteal}{HTML}{83B8B0}
+\definecolor{ircoverline}{HTML}{52858A}
+\definecolor{ircoveroxblood}{HTML}{482E37}
+\definecolor{ircoverwarm}{HTML}{EDE6DB}
+\definecolor{ircoverrose}{HTML}{BE9C98}
 
-\newcommand{\bookcover}{%
+% Abstract branching, not a labelled analysis of any particular construction.
+% Preserve the original left-to-right orientation and right-edge bleed.
+\newcommand{\ircoverart}[3]{%
+  \begin{scope}[line cap=round,line join=round]
+    \draw[#1,line width=0.8pt]
+      (25,189) -- (65,189) -- (102,166) -- (147,166) -- (184,149) -- (216,149);
+    \draw[#1,line width=0.8pt]
+      (147,166) -- (184,182) -- (216,182);
+    \draw[#1,line width=0.8pt]
+      (65,189) -- (102,212) -- (147,212) -- (184,198) -- (216,198);
+    \draw[#1,line width=0.8pt]
+      (147,212) -- (184,228) -- (216,228);
+    \draw[#2,line width=1pt]
+      (25,239) -- (65,239) -- (102,252) -- (147,252) -- (184,268) -- (216,268);
+    \draw[#2,line width=1pt]
+      (147,252) -- (184,244) -- (216,244);
+    \draw[#2,line width=1pt]
+      (65,239) -- (102,226) -- (130,226);
+    \foreach \x/\y in {65/189,147/166,147/212}{%
+      \filldraw[fill=#3,draw=#1,line width=0.8pt]
+        (\x,\y) circle[radius=1.15mm];
+    }
+    \foreach \x/\y in {65/239,147/252}{%
+      \filldraw[fill=#3,draw=#2,line width=1pt]
+        (\x,\y) circle[radius=1.3mm];
+    }
+  \end{scope}%
+}
+
+\newcommand{\ircoverprimary}{%
+  \fill[ircoverink] (-3,-3) rectangle (213,300);
+  \fill[ircoverteal] (25,22) rectangle (37,23);
+  \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
+    font=\sffamily\fontsize{13}{17}\selectfont] at (25,32)
+    {Roel Christian Yambao};
+  \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
+    font=\sffamily\fontsize{25}{30}\selectfont] at (25,65)
+    {A Reference Grammar};
+  \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
+    font=\rmfamily\itshape\fontsize{17}{21}\selectfont] at (25,81)
+    {of the};
+  \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
+    font=\rmfamily\fontsize{46}{52}\selectfont] at (24,92)
+    {Iridian Language};
+  \node[anchor=north west,inner sep=0pt,text=ircoverteal,
+    font=\rmfamily\itshape\fontsize{16}{21}\selectfont] at (25,116)
+    {Ircevni kostgramatik};
+  \ircoverart{ircoverline}{ircoverteal}{ircoverink}
+  \node[anchor=south west,inner sep=0pt,text=ircoverpaper,
+    font=\sffamily\fontsize{10}{13}\selectfont] at (25,280)
+    {First edition\quad 2026};
+}
+
+\newcommand{\ircovermargin}{%
+  \fill[ircoverpaper] (-3,-3) rectangle (213,300);
+  \fill[ircoverink] (155,-3) rectangle (213,300);
+  \node[anchor=north west,inner sep=0pt,text=ircoverink,
+    font=\sffamily\fontsize{18}{23}\selectfont] at (24,30)
+    {A Reference Grammar};
+  \node[anchor=north west,inner sep=0pt,text=ircoverink,
+    font=\rmfamily\itshape\fontsize{16}{21}\selectfont] at (24,43)
+    {of the};
+  \node[anchor=north west,inner sep=0pt,text=ircoverink,
+    font=\rmfamily\fontsize{68}{72}\selectfont] at (22,57)
+    {Iridian};
+  \node[anchor=north west,inner sep=0pt,text=ircoverink,
+    font=\rmfamily\fontsize{40}{45}\selectfont] at (24,85)
+    {Language};
+  \node[anchor=north west,inner sep=0pt,text=ircoverline,
+    font=\rmfamily\itshape\fontsize{15}{20}\selectfont] at (24,111)
+    {Ircevni kostgramatik};
+  \begin{scope}
+    \clip (-3,140) rectangle (155,273);
+    \ircoverart{ircoverline}{ircoverink}{ircoverpaper}
+  \end{scope}
+  \begin{scope}
+    \clip (155,140) rectangle (213,273);
+    \ircoverart{ircoverteal}{ircoverpaper}{ircoverink}
+  \end{scope}
+  \node[anchor=south west,inner sep=0pt,text=ircoverink,
+    font=\sffamily\fontsize{13}{17}\selectfont] at (24,276)
+    {Roel Christian Yambao};
+  \node[anchor=south west,inner sep=0pt,text=ircoverink,
+    font=\sffamily\fontsize{10}{13}\selectfont] at (24,284)
+    {First edition\quad 2026};
+}
+
+\newcommand{\ircoverstrata}{%
+  \fill[ircoverwarm] (-3,-3) rectangle (213,300);
+  \fill[ircoveroxblood] (-3,143) rectangle (213,300);
+  \node[anchor=north west,inner sep=0pt,text=ircoveroxblood,
+    font=\sffamily\fontsize{21}{26}\selectfont] at (25,27)
+    {A Reference Grammar};
+  \node[anchor=north west,inner sep=0pt,text=ircoveroxblood,
+    font=\rmfamily\itshape\fontsize{16}{21}\selectfont] at (25,42)
+    {of the};
+  \node[anchor=north west,inner sep=0pt,text=ircoveroxblood,
+    font=\rmfamily\fontsize{46}{52}\selectfont] at (24,55)
+    {Iridian Language};
+  \node[anchor=north west,inner sep=0pt,text=ircoveroxblood,
+    font=\rmfamily\itshape\fontsize{15}{20}\selectfont] at (25,81)
+    {Ircevni kostgramatik};
+  \node[anchor=north west,inner sep=0pt,text=ircoveroxblood,
+    font=\sffamily\fontsize{13}{17}\selectfont] at (25,111)
+    {Roel Christian Yambao};
+  \ircoverart{ircoverrose}{ircoverwarm}{ircoveroxblood}
+  \node[anchor=south west,inner sep=0pt,text=ircoverwarm,
+    font=\sffamily\fontsize{10}{13}\selectfont] at (25,280)
+    {First edition\quad 2026};
+}
+
+\newcommand{\bookcover}[1][1]{%
   \clearpage
   \begingroup
+  \normalfont\normalsize
   \thispagestyle{empty}%
   \null
   \begin{tikzpicture}[remember picture,overlay]
     \begin{scope}[shift={(current page.north west)},x=1mm,y=-1mm]
-      \fill[ircoverink] (0,0) rectangle (210,297);
-      \fill[ircoverteal] (25,20) rectangle (41,21.2);
-      \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
-        font=\sffamily\fontsize{14}{18}\selectfont] at (25,30)
-        {Roel Christian Yambao};
-      \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
-        text width=162mm,align=left,
-        font=\sffamily\fontsize{32}{38}\selectfont] at (25,67)
-        {A Reference Grammar};
-      \node[anchor=north west,inner sep=0pt,text=ircoverpaper,
-        text width=166mm,align=left,
-        font=\sffamily\bfseries\fontsize{38}{44}\selectfont] at (25,87)
-        {of the Iridian Language};
-      \node[anchor=north west,inner sep=0pt,text=ircoverteal,
-        font=\rmfamily\itshape\fontsize{17}{22}\selectfont] at (25,112)
-        {Ircevni kostgramatik};
-
-      % An abstract constituent structure: branching is the ornament, with no
-      % invented linguistic labels or suggestion of a publisher's imprint.
-      \begin{scope}[line cap=round,line join=round]
-        \draw[ircoverline,line width=0.65pt]
-          (25,189) -- (65,189) -- (102,166) -- (147,166) -- (184,149) -- (214,149);
-        \draw[ircoverline,line width=0.65pt]
-          (147,166) -- (184,182) -- (214,182);
-        \draw[ircoverline,line width=0.65pt]
-          (65,189) -- (102,212) -- (147,212) -- (184,198) -- (214,198);
-        \draw[ircoverline,line width=0.65pt]
-          (147,212) -- (184,228) -- (214,228);
-        \draw[ircoverteal,line width=1.15pt]
-          (25,239) -- (65,239) -- (102,252) -- (147,252) -- (184,268) -- (214,268);
-        \draw[ircoverteal,line width=1.15pt]
-          (147,252) -- (184,244) -- (214,244);
-        \draw[ircoverline,line width=0.65pt]
-          (65,239) -- (102,226) -- (130,226);
-        \foreach \x/\y in {65/189,102/166,147/166,102/212,147/212}{%
-          \fill[ircoverink] (\x,\y) circle[radius=1.3mm];
-          \draw[ircoverline,line width=0.65pt] (\x,\y) circle[radius=1.3mm];
-        }
-        \foreach \x/\y in {65/239,102/252,147/252}{%
-          \fill[ircoverink] (\x,\y) circle[radius=1.5mm];
-          \draw[ircoverteal,line width=1.15pt] (\x,\y) circle[radius=1.5mm];
-        }
+      \begin{scope}[shift={(\ircoveroffset,\ircoveroffset)}]
+        \ifcase#1\relax
+        \or\ircoverprimary
+        \or\ircovermargin
+        \or\ircoverstrata
+        \else\ircoverprimary
+        \fi
       \end{scope}
-      \node[anchor=south west,inner sep=0pt,text=ircoverpaper,
-        font=\sffamily\fontsize{10}{13}\selectfont] at (25,280)
-        {First edition\quad 2026};
     \end{scope}
   \end{tikzpicture}%
   \par\clearpage

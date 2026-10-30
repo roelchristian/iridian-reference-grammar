@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=23mm,headheight=15pt,footskip=12mm]{geometry}
+\input{styles/fonts}
+\usepackage{graphicx,xcolor,booktabs,tabularx,array,fancyhdr,tikz,ragged2e}
+\usepackage[hidelinks]{hyperref}
+\definecolor{specink}{HTML}{102F3A}
+\definecolor{specteal}{HTML}{52858A}
+\hypersetup{pdftitle={Iridian - cover design and production specification},pdfauthor={Roel Christian Yambao}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{specteal}IRIDIAN / COVER DESIGN}
+\fancyfoot[R]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{7pt}
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.24}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\specsection}[1]{\par\vspace{5pt}{\sffamily\bfseries\large\color{specink}#1}\par\vspace{2pt}}
+\newcommand{\spectitle}[2]{{\sffamily\small\color{specteal}#1}\par\vspace{4pt}{\rmfamily\fontsize{31}{35}\selectfont\color{specink}#2}\par\vspace{7pt}}
+\begin{document}
+\spectitle{DESIGN RECOMMENDATION}{Constituent structure}
+\begin{minipage}[t]{0.53\textwidth}
+\setlength{\parskip}{6pt}\RaggedRight\vspace{0pt}
+The recommended direction retains the original deep teal field and sideways, right-bleeding syntax motif. Its distinction comes from an editorial hierarchy: a restrained sans-serif description gives way to the larger serif language title, while the Iridian subtitle occupies its own, quieter register.
+
+The tree is an abstract constituent structure. It refers to the grammar's concern with hierarchical organisation without presenting an invented sentence, asserting a particular derivation, or implying that every construction has the same shape. Only actual branching junctions carry node markers; intermediate bends remain unmarked.
+
+The composition is intended to feel like a scholarly reference work: generous space above the artwork, a consistent left alignment, and no photographic or heraldic claims. The two trees retain the asymmetry and movement of the original design.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.42\textwidth}
+\vspace{0pt}\includegraphics[width=\linewidth]{build/cover/cover.pdf}
+\end{minipage}
+\specsection{The three directions}
+\par\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{36mm}LL@{}}
+\toprule
+\sffamily Concept & \sffamily Visual rationale & \sffamily Editorial assessment\\
+\midrule
+01 / Constituent structure & Continuous teal ground; ivory serif title; two lateral structures. & Best continuity with the original, strong contrast and a distinctive silhouette. Recommended.\\
+02 / The analytical margin & Ivory field; dark outer margin; branching changes contrast at the boundary. & More architectural and visibly contemporary. The large language name leads at thumbnail scale.\\
+03 / Descriptive strata & Warm paper title field above oxblood structural artwork. & Most classical in tone. The broad division gives the cover a calm, recognisable block structure.\\
+\bottomrule
+\end{tabularx}\par
+
+\newpage
+\spectitle{FRONT-COVER DESIGN SYSTEM}{Typography, colour and grid}
+\specsection{Typography / recommended direction}
+Use the repository's TeX-distributed Libertinus Serif and Source Sans Pro files. Libertinus supplies the language title and italic subtitle; Source Sans Pro supplies the author, descriptive title and edition. Preserve the natural letterforms and optical alignment; do not simulate bold, apply horizontal scaling, or add loose tracking to the mixed-case title.
+\par\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{45mm}>{\raggedright\arraybackslash}p{62mm}L@{}}
+\toprule
+\sffamily Element & \sffamily Face / size / leading & \sffamily Position (mm)\\
+\midrule
+Roel Christian Yambao & Source Sans Pro Regular / 13 / 17 pt & x 25, y 32\\
+A Reference Grammar & Source Sans Pro Regular / 25 / 30 pt & x 25, y 65\\
+of the & Libertinus Serif Italic / 17 / 21 pt & x 25, y 81\\
+Iridian Language & Libertinus Serif Regular / 46 / 52 pt & x 24, y 92\\
+Ircevni kostgramatik & Libertinus Serif Italic / 16 / 21 pt & x 25, y 116\\
+First edition\quad 2026 & Source Sans Pro Regular / 10 / 13 pt & x 25, y 280; bottom anchor\\
+\bottomrule
+\end{tabularx}\par
+All other text positions use the upper-left node anchor. Coordinates are measured from the upper-left trim corner; the language title's 1 mm optical offset aligns its visible serif with the text above.
+\specsection{Palette / source colour values}
+\par\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{30mm}>{\raggedright\arraybackslash}p{29mm}L@{}}
+\toprule
+\sffamily Colour & \sffamily sRGB / hex & \sffamily Function\\
+\midrule
+Deep teal & \texttt{\#102F3A} & Continuous background; the dominant visual identity.\\
+Warm ivory & \texttt{\#F3F1E8} & Title, author and edition; avoids a stark white-on-black effect.\\
+Muted teal & \texttt{\#52858A} & Upper tree; intentionally secondary to the title.\\
+Pale teal & \texttt{\#83B8B0} & Subtitle, short top rule and lower tree.\\
+\bottomrule
+\end{tabularx}\par
+Concept 02 uses the same palette. Concept 03 uses warm paper \texttt{\#EDE6DB}, oxblood \texttt{\#482E37} and muted rose \texttt{\#BE9C98}. These are source colours, not press-specific CMYK recipes.
+\specsection{Artwork and spacing}
+Keep the sideways silhouette and crop the branches deliberately at the right trim. Upper-tree strokes are 0.8 pt; lower-tree strokes are 1 pt. Open node radii are 1.15 mm and 1.3 mm respectively. Preserve the clear interval between subtitle and artwork; no labels, ornaments or additional symbols should occupy it. The short accent rule is 12 mm wide at x 25, y 22; its height is 1 mm.
+
+\newpage
+\spectitle{PRODUCTION AND EXTENSIONS}{Front, spine and back}
+\specsection{Front-cover specification}
+\par\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{42mm}L@{}}
+\toprule
+\sffamily Item & \sffamily Delivery specification\\
+\midrule
+Trim / digital proof & 210 $\times$ 297 mm, matching the existing A4 grammar. This is a project assumption, not a selected printer's approved trim.\\
+Bleed master & 216 $\times$ 303 mm; 3 mm beyond each trim edge. Explicit PDF TrimBox and BleedBox; no crop marks. Use the printer's template if its allowance differs.\\
+Safe area & All essential type at least 20 mm inside trim. Only background and intended branch ends enter the bleed.\\
+Artwork & Editable TikZ vectors, with live embedded font subsets. No raster imagery, gradients, transparency effects or decorative finishes.\\
+Colour handoff & RGB vector master. Obtain the printer's ICC profile, convert to the requested colour space and PDF standard, then inspect a physical proof. Do not treat generic CMYK numbers as a colour match.\\
+Proof status & Design and bleed masters; not certified PDF/X or a finished binding template. The digital cover is suitable for the integrated PDF; press conversion remains specific to the chosen production process.\\
+\bottomrule
+\end{tabularx}\par
+\specsection{Production handoff}
+The supplied bleed PDF establishes the front-cover geometry. Before a print run, confirm the actual trim and binding, obtain the template and output profile, assemble the complete wrap, and preflight the converted export. Check type embedding, page boxes, ink limits and fine-line reproduction in the selected workflow. Approve the dark field and pale tree on a physical proof before manufacture.
+
+Adobe describes print-ready conversion through a PDF/X-4 profile. IngramSpark distinguishes front-cover bleed from the larger wrap required by case-laminate hardcover production. These are useful workflow references, not a substitute for the specification of the printer selected for this book.
+
+{\footnotesize Production references: \href{https://helpx.adobe.com/acrobat/desktop/print-documents/set-up-and-print-pdfs/print-ready.html}{Adobe: print-ready PDF conversion}; \href{https://www.ingramspark.com/master-your-book-cover-design}{IngramSpark: cover production and bleed}.}
+
+\newpage
+\spectitle{COORDINATED BINDING}{A continuous cover system}
+\specsection{Spine}
+Continue the deep teal ground. Set \textit{Iridian Language} in Libertinus Serif, with the author's name in Source Sans Pro and a short pale-teal rule echoing the front. Centre the typographic axis on the actual spine. Choose size after the final page count, stock and binding determine the width; omit secondary wording when the spine is narrow. Keep branch junctions off folds and hinges, and do not add an invented imprint.
+\specsection{Coordinated back cover}
+Continue the teal field with an ivory text block aligned to a 25 mm outer margin. Reserve a roughly 150 mm-wide upper block for approved descriptive copy in Libertinus Serif, provisionally 12/16 pt, with a short sans-serif heading. Place any approved author note below with generous separation. A single low-contrast horizontal branch may enter from the outer edge in the lower third; it should not pass behind running text. Reserve a clear lower-right area for the supplied ISBN/barcode; its final dimensions come from the printer. No placeholder endorsement or affiliation should appear in the production art.
+\specsection{Paperback, hardcover and digital}
+For paperback, assemble back, spine and front on the printer's supplied template. For hardcover, retain the front composition but rebuild the wrap and hinge allowances for the selected case or jacket. Do not derive hardcover dimensions by stretching this front. For digital catalogues, use the trimmed front and check the main language title at 160 px width; small metadata is secondary at that scale.
+\vspace{6mm}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm]
+  \fill[specink] (0,0) rectangle (63,77.79);
+  \node[anchor=south west,inner sep=0pt] at (63,0)
+    {\includegraphics[width=55mm]{build/cover/cover.pdf}};
+  \draw[white!40,line width=0.3pt] (55,0) -- (55,77.79) (63,0) -- (63,77.79);
+  \node[anchor=south,font=\sffamily\small,text=specink] at (27.5,80) {Back};
+  \node[anchor=south,font=\sffamily\small,text=specink] at (59,80) {S};
+  \node[anchor=south,font=\sffamily\small,text=specink] at (90.5,80) {Front};
+  \node[anchor=north west,text=white,align=left,font=\rmfamily\small] at (7,68)
+    {Approved descriptive copy};
+  \foreach \y in {58,54,50,46,42,38}{
+    \draw[white!45,line width=0.35pt] (7,\y) -- (47,\y);
+  }
+  \draw[white!60,line width=0.35pt] (33,6) rectangle (48,15);
+  \node[text=white,font=\sffamily\tiny] at (40.5,10.5) {ISBN area};
+  \node[rotate=-90,text=white,font=\rmfamily\small] at (59,42) {Iridian Language};
+\end{tikzpicture}
+\par\vspace{2mm}{\footnotesize Schematic only. S is the spine width supplied for the final stock, page count and binding.}
+\end{center}
+\end{document}

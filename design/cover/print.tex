@@ -1,0 +1,16 @@
+% Recommended front cover, A4 trim with 3 mm bleed on every side.
+% PDF page boxes are expressed in PostScript points (72 points/inch).
+\documentclass[12pt]{article}
+\usepackage[paperwidth=216mm,paperheight=303mm,margin=0pt]{geometry}
+\input{styles/fonts}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Iridian front cover - 3 mm bleed},pdfauthor={Roel Christian Yambao}}
+\newcommand{\ircoveroffset}{3}
+\input{styles/cover}
+\pdfvariable pageattr{/TrimBox [8.50394 8.50394 603.77953 850.39370]
+  /BleedBox [0 0 612.28346 858.89764]}
+\pagestyle{empty}
+\begin{document}
+\bookcover
+\end{document}

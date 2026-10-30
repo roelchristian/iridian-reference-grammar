@@ -59,6 +59,7 @@ list:
 help:
 	@echo 'make                 Build build/full/grammar.pdf (incremental)'
 	@echo 'make cover           Build a standalone vector cover PDF'
+	@echo 'make cover-design    Build three concepts, review, specification and bleed master'
 	@echo 'make doctor          Check the local TeX installation'
 	@echo 'make check           Build, validate PDF diagnostics, run utility tests'
 	@echo 'make lexicon         Collect tagged forms as build/lexicon.json'
@@ -87,3 +88,16 @@ check-source:
 check: all cover check-source
 	$(PYTHON) scripts/check-log.py $(FULL_DIR)/$(MAIN).log
 	$(PYTHON) scripts/check-log.py build/cover/cover.log
+
+# Review proofs and a bleed export of the recommended cover. Run sequentially:
+# all variants share the same vector artwork and typography as the full book.
+.PHONY: cover-design
+cover-design: cover
+	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover design/cover/concepts.tex
+	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover design/cover/review.tex
+	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover design/cover/specification.tex
+	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover design/cover/print.tex
+	$(PYTHON) scripts/check-log.py build/cover/concepts.log
+	$(PYTHON) scripts/check-log.py build/cover/review.log
+	$(PYTHON) scripts/check-log.py build/cover/specification.log
+	$(PYTHON) scripts/check-log.py build/cover/print.log
