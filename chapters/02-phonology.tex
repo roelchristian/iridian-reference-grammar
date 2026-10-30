@@ -116,10 +116,12 @@ duration: substantial phonetic shortening in rapid speech does not by
 itself change a vowel's lexical quantity category. The contrast therefore
 requires neither a fixed duration nor an invariant long-to-short ratio.
 
-Stress is conveyed by a combination of prominence, pitch alignment, and
-articulatory strength, rather than simply by increasing vowel duration. The
-acute accent in vowel spellings marks length, not lexical stress. The stress
-rule is given in §\,\ref{sec:stress}.
+Stress can be expressed through pitch alignment and articulatory strength,
+without assigning a fixed increase in vowel duration. Boundary-related
+lengthening likewise leaves lexical quantity unchanged
+(§\,\ref{sec:boundary-phenomena}). The acute accent in vowel spellings
+marks length, not lexical stress; primary stress and subsidiary footing
+are described in §§\,\ref{sec:stress} and~\ref{sec:secondary-stress}.
 
 \subsection{Quantity contrasts and the front--central distinction}
 
@@ -779,7 +781,63 @@ a necessary nucleus, the vowel is retained; an illicit cluster arising later
 in the derivation is subject to the repair rules in
 Section~\ref{sec:cluster-repair}.
 
-\subsection{Stress}\label{sec:stress}
+\subsection{Sonority and cluster licensing}\label{sec:sonority}
+
+Iridian cluster phonotactics are described by the following sonority hierarchy,
+ranked from lowest to highest:
+
+\begin{center}
+voiceless obstruents $<$ voiced obstruents $<$ nasals $<$ liquids (\ird{r, l}) $<$
+glides (\ird{j}) $<$ vowels
+\end{center}
+
+This hierarchy describes the segment classes at syllabification, before
+coda vocalisation. Derived [w] has glide articulation but occupies the
+coda already assigned to /l/ or /v/; it introduces no additional onset
+type. Postvocalic /v/ before a consonant belongs to the coda, as in
+schematic /av.ra/ [aw.ra]. Onset /v/ is licensed as an obstruent, with [ʋ]
+arising before the nuclear vowel after voicing assimilation. A preconsonantal
+onset retains fricative [v] or assimilated [f], preserving the existing
+onset patterns (§§\,\ref{sec:l-vocalisation} and~\ref{sec:v-realisation}).
+
+The general requirement for syllable-initial clusters is non-decreasing sonority
+from the cluster edge to the nuclear vowel. This licences the most common Iridian
+onset types: obstruent plus liquid (\ird{tr-, dr-, kl-}), obstruent plus nasal, and
+obstruent plus glide. Sequences of two obstruents in onset position are also
+permitted. For syllabification, adjacent onset obstruents count as a plateau
+irrespective of their underlying voicing; subsequent assimilation makes their
+voicing uniform (Section~\ref{sec:lenition}). Such plateaux are tolerated
+at the left syllable edge, while falling sonority between other consonant
+classes remains disfavoured.
+
+Three- and four-consonant onsets arise primarily where a prefix adjoins a complex
+stem onset. They conform to the same principle: the segment immediately before the
+vowel must be at least as sonorous as the one preceding it.
+
+Coda clusters show the complementary pattern. They fall in sonority away from the
+syllable peak, so that the most peripheral coda segment is typically an obstruent.
+Sequences of obstruent followed by sonorant are disfavoured in coda position and
+are usually resolved either by resyllabification across a following vowel-initial
+suffix or by vowel retention and epenthesis
+(Sections~\ref{sec:vowel-zero} and~\ref{sec:cluster-repair}).
+
+The productive stative \ird{mužn-} retains both /ʒ/ and /n/. In
+\phon{mužna}{ˈmʊʒ.na}{is beautiful}, the sequence has a licensed
+syllable boundary; an obstruent--nasal onset is also admitted by the general
+onset condition. Neither an epenthetic vowel nor consonant deletion is
+required. The root-strong \phon{múžna}{ˈmuːʒ.na}{beautiful, attributive}
+selects /ʊ/ $\rightarrow$ /uː/ without changing the cluster.
+
+Liquid-bearing clusters obey the same requirement for a vocalic nucleus as
+other clusters. Weak-\ird{e} deletion is blocked where the remaining consonants
+cannot be distributed among licensed onsets and codas around the surviving
+vowels. Sonority ranks the consonants within these margins; it does not confer
+syllabicity on \ird{r} or \ird{l}.
+
+
+\section{Stress and suprasegmental phonology}\label{sec:suprasegmentals}
+
+\subsection{Primary stress}\label{sec:stress}
 
 Primary lexical stress falls on the first syllable of the minimal lexical
 prosodic word. This domain comprises the lexical stem, integrated derivational
@@ -861,71 +919,236 @@ syllable. The distinction is particularly useful where fixed stress has weak
 acoustic correlates, as in Czech \cite{skarnitzleriksson2017}; it does not
 prescribe an identical phonetic realisation for Iridian.
 
-\subsection{Sonority and cluster licensing}\label{sec:sonority}
+\subsection{Subsidiary footing}\label{sec:secondary-stress}
 
-Iridian cluster phonotactics are described by the following sonority hierarchy,
-ranked from lowest to highest:
+Words of four or more syllables have subsidiary metrical heads on their
+third and subsequent odd-numbered syllables, provided that the syllable is
+nonfinal. The count begins at the left edge of the minimal lexical
+prosodic word and excludes dependent clitics. Neither syllable weight nor
+vowel quantity changes the placement of these heads: a short vowel can bear
+secondary prominence while a neighbouring long vowel remains metrically
+weak. The adopted rule is
+\[
+  \operatorname{Stress}_{2}(\sigma_i)
+  \quad\Longleftrightarrow\quad
+  i\in\{3,5,7,\ldots\}\ \text{and}\ i<n,
+\]
+where $n$ is the number of syllables in the lexical domain and $i$ counts
+from its first syllable. Primary stress remains initial in words of every
+length.
 
+Left-to-right parsing into disyllabic, left-headed feet gives the patterns
+in Table~\ref{tab:subsidiary-feet}. The first foot bears primary stress;
+subsequent feet bear subsidiary heads. An odd final syllable remains
+unfooted, while a monosyllable constitutes a degenerate primary foot. In
+particular, a three-syllable word has no secondary stress. Morphological
+construction, vowel deletion or retention, and cluster repair precede this
+parse, so suffixation can introduce a subsidiary head or bring a formerly
+final odd syllable into a foot without moving primary stress.
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Default lexical footing. Accents on $\sigma$ distinguish primary
+and subsidiary heads; they are metrical notation, not Iridian spelling.}
+\label{tab:subsidiary-feet}
+\begin{tabularx}{\textwidth}{r L}
+\toprule
+{\sc syllables} & {\sc metrical parse} \\
+\midrule
+1 & $(\acute{\sigma})$ \\
+2 & $(\acute{\sigma}\sigma)$ \\
+3 & $(\acute{\sigma}\sigma)\sigma$ \\
+4 & $(\acute{\sigma}\sigma)(\grave{\sigma}\sigma)$ \\
+5 & $(\acute{\sigma}\sigma)(\grave{\sigma}\sigma)\sigma$ \\
+6 & $(\acute{\sigma}\sigma)(\grave{\sigma}\sigma)(\grave{\sigma}\sigma)$ \\
+7 & $(\acute{\sigma}\sigma)(\grave{\sigma}\sigma)(\grave{\sigma}\sigma)\sigma$ \\
+8 & $(\acute{\sigma}\sigma)(\grave{\sigma}\sigma)(\grave{\sigma}\sigma)(\grave{\sigma}\sigma)$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The established forms in Table~\ref{tab:secondary-domains} illustrate the
+application of the rule. Slashes delimit phonological representations,
+with \ipagloss{ˈ} for primary stress and \ipagloss{ˌ} for a subsidiary
+head; the equals sign identifies an external clitic boundary. Segmental
+allophones are omitted here. In \ird{mněkářime}, \orth{ně} supplies
+/ɲɛ/ and learned \orth{ř} supplies /ʒ/, while each written vowel
+supplies its own nucleus. In linked \ird{pjaštážalě}, the long vowel of
+\ird{-áž} occupies the second syllable, whereas the short third syllable
+bears the subsidiary head (§\,\ref{sec:vm-evid}).
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Lexical rhythm and external negative proclisis.}
+\label{tab:secondary-domains}
+\begin{tabularx}{\textwidth}{L L r}
+\toprule
+{\sc form} & {\sc rhythmic representation} & {\sc lexical syllables} \\
+\midrule
+\ird{premužna} & \ipagloss{/ˈprɛ.mʊʒ.na/} & 3 \\
+\ird{zapremužna} & \ipagloss{/za=ˈprɛ.mʊʒ.na/} & 3 \\
+\ird{mněkářime} & \ipagloss{/ˈmɲɛ.kaː.ˌʒɪ.mɛ/} & 4 \\
+\ird{zamněkářime} & \ipagloss{/za=ˈmɲɛ.kaː.ˌʒɪ.mɛ/} & 4 \\
+\ird{lenóčkime} & \ipagloss{/ˈlɛ.noːtʃ.ˌkɪ.mɛ/} & 4 \\
+\ird{torbanélime} & \ipagloss{/ˈtɔr.ba.ˌneː.lɪ.mɛ/} & 5 \\
+\ird{pjaštážalě} & \ipagloss{/ˈpʲaʃ.taː.ˌʒa.ʎɛ/} & 4 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Although \ird{zapremužna} has four pronounced vowel nuclei, only three
+belong to its lexical stress domain, so negative proclisis supplies no
+subsidiary head. In \ird{zamněkářime}, the four-syllable lexical domain
+already licenses a head on \ird{ři}; adding \ird{za-} preserves that
+parse. Integrated compounds follow the same calculation across the whole
+lexical word, whereas two independently prosodic components retain separate
+parses (§\,\ref{sec:compound-prosody}). Root boundaries introduce no
+additional accent within a single domain.
+
+Subsidiary heads specify rhythmic organisation without requiring a separate
+pitch or intensity peak at each position. Modest articulatory reinforcement
+or clearer vowel targets are possible realisations in careful speech;
+ordinary or rapid speech may leave the subsidiary rhythm scarcely audible.
+Declamatory speech permits stronger reinforcement, while emphasis on a
+constituent preserves its lexical parse. These are permitted phonetic
+realisations rather than measured acoustic properties of Iridian. Neither
+primary nor secondary stress assigns phonological length or triggers the
+morphological quantity grades G1 or G3. Broad transcriptions elsewhere may
+mark primary stress alone; transcriptions concerned with metrical rhythm
+show subsidiary heads explicitly. Ordinary spelling continues to reserve
+the acute for vowel length.
+
+\subsection{Prosodic domains and clitic attachment}\label{sec:prosodic-domains}
+
+The minimal lexical prosodic word ($\omega$) determines primary stress and
+subsidiary footing, while larger constituents organise phrasal prominence
+and melody. The descriptive hierarchy used here is
 \begin{center}
-voiceless obstruents $<$ voiced obstruents $<$ nasals $<$ liquids (\ird{r, l}) $<$
-glides (\ird{j}) $<$ vowels
+intonational phrase ($\iota$) $>$ phonological phrase ($\varphi$)\\
+$>$ prosodic word ($\omega$) $>$ foot ($\mathrm{Ft}$)
 \end{center}
+An intonational phrase carries a coherent contour and a final boundary;
+its phonological phrases group words for relative prominence and permit
+weaker internal boundaries. This hierarchy is an analysis of Iridian
+prosody, without a claim that every language must instantiate the same
+constituents: the cross-linguistic status of the prosodic word is itself
+contested \cite{schieringetal2010}.
 
-This hierarchy describes the segment classes at syllabification, before
-coda vocalisation. Derived [w] has glide articulation but occupies the
-coda already assigned to /l/ or /v/; it introduces no additional onset
-type. Postvocalic /v/ before a consonant belongs to the coda, as in
-schematic /av.ra/ [aw.ra]. Onset /v/ is licensed as an obstruent, with [ʋ]
-arising before the nuclear vowel after voicing assimilation. A preconsonantal
-onset retains fricative [v] or assimilated [f], preserving the existing
-onset patterns (§§\,\ref{sec:l-vocalisation} and~\ref{sec:v-realisation}).
+Integrated derivational prefixes, lexical preverbs, roots, and suffixes
+belong to $\omega$. Negative \ird{za-}, phasal \ird{vy} and \ird{so},
+nominal anchoring \ird{si}, and weak dependent postpositions attach outside
+that lexical domain, contributing no syllables to its footing
+(§§\,\ref{sec:class1-particles}, \ref{sec:nm-spec}, and~\ref{sec:stress}).
+A host and its clitics can consequently belong to the same larger phrase
+without constituting a single minimal lexical word. Independent particles,
+including emphatic \ird{by}, can retain their own lexical stress; phrasal
+deaccentuation alone establishes no clitic boundary. No additional universal
+clitic-group level is assumed.
 
-The general requirement for syllable-initial clusters is non-decreasing sonority
-from the cluster edge to the nuclear vowel. This licences the most common Iridian
-onset types: obstruent plus liquid (\ird{tr-, dr-, kl-}), obstruent plus nasal, and
-obstruent plus glide. Sequences of two obstruents in onset position are also
-permitted. For syllabification, adjacent onset obstruents count as a plateau
-irrespective of their underlying voicing; subsequent assimilation makes their
-voicing uniform (Section~\ref{sec:lenition}). Such plateaux are tolerated
-at the left syllable edge, while falling sonority between other consonant
-classes remains disfavoured.
+\subsection{Phrasal prominence}\label{sec:phrasal-prominence}
 
-Three- and four-consonant onsets arise primarily where a prefix adjoins a complex
-stem onset. They conform to the same principle: the segment immediately before the
-vowel must be at least as sonorous as the one preceding it.
+A neutral clause ordinarily places its principal phrasal prominence on the
+final predicate, provided that the predicate belongs to the comment and no
+narrower focus overrides that distribution. Focus on an earlier argument
+can instead select that argument's word as the main prominence within its
+phrase. Enhanced pitch prominence associates with the selected word's
+primary stressed syllable; its root, suffixes, and subsidiary feet retain
+their lexical positions. Material following a narrow focus can have a
+compressed pitch range without losing lexical stress or vowel contrasts.
 
-Coda clusters show the complementary pattern. They fall in sonority away from the
-syllable peak, so that the most peripheral coda segment is typically an obstruent.
-Sequences of obstruent followed by sonorant are disfavoured in coda position and
-are usually resolved either by resyllabification across a following vowel-initial
-suffix or by vowel retention and epenthesis
-(Sections~\ref{sec:vowel-zero} and~\ref{sec:cluster-repair}).
+Contrastive topics and narrow focus have different discourse functions
+(Chapter~\ref{ch:infstr}); the tonal conventions below do not assign each
+topic type an obligatory contour. Relative prominence and phrasing depend
+on information structure and speech rate, so a syntactic constituent need
+not coincide with a phonological phrase, and a clause boundary need not
+close an intonational phrase.
 
-The productive stative \ird{mužn-} retains both /ʒ/ and /n/. In
-\phon{mužna}{ˈmʊʒ.na}{is beautiful}, the sequence has a licensed
-syllable boundary; an obstruent--nasal onset is also admitted by the general
-onset condition. Neither an epenthetic vowel nor consonant deletion is
-required. The root-strong \phon{múžna}{ˈmuːʒ.na}{beautiful, attributive}
-selects /ʊ/ $\rightarrow$ /uː/ without changing the cluster.
+\subsection{Intonation}\label{sec:intonation}
 
-Liquid-bearing clusters obey the same requirement for a vocalic nucleus as
-other clusters. Weak-\ird{e} deletion is blocked where the remaining consonants
-cannot be distributed among licensed onsets and codas around the surviving
-vowels. Sonority ranks the consonants within these margins; it does not confer
-syllabicity on \ird{r} or \ird{l}.
+Neutral declaratives have a final fall, whereas ordinary polar questions
+have a final rise. Contrastive focus permits an expanded pitch excursion
+on the focused word's primary stressed syllable. These distributions are
+represented with the autosegmental--metrical distinction between tonal
+events associated with prominence and those associated with boundaries
+\cite{ladd2008}. Table~\ref{tab:intonation-defaults} states the adopted
+Iridian conventions: H and L denote relative tonal targets, an asterisk
+marks association with a prominent syllable, a hyphen marks a
+phonological-phrase boundary, and a percent sign marks an intonational-phrase
+boundary. The symbols prescribe neither absolute pitch values nor a
+borrowed language's complete tonal inventory.
 
+\begin{table}[htbp]
+\footnotesize
+\caption{Default tonal conventions and permitted pitch-range adjustments.}
+\label{tab:intonation-defaults}
+\begin{tabularx}{\textwidth}{L L L}
+\toprule
+{\sc context} & {\sc representation} & {\sc distribution} \\
+\midrule
+Neutral declarative & L\% & Final low boundary \\
+Ordinary polar question & H\% & Final high boundary \\
+Nonfinal continuation & H- & High boundary within a continuing intonational phrase \\
+Contrastive focus & Expanded H* & High prominence on the focused word's primary syllable \\
+Post-focal material & Compressed range & Reduced pitch span after narrow focus \\
+Strong discourse boundary & Register reset & New register at the next intonational phrase \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
-\section{Suprasegmentals}
+The final fall or rise describes the approach to the boundary target from
+the preceding contour; L\% and H\% specify low and high endpoints,
+rather than complete pitch trajectories.
 
-\subsection{Intonation}
+The contour is a default associated with the utterance's use, rather than
+an obligatory exponent of its syntax. Interrogative \ird{by} independently
+marks clause type (§\,\ref{sec:by-pol-head}), so a contextually
+marked falling polar question remains possible; a rise is not required to
+supply interrogation a second time. H* specifies a high target associated
+with the primary stressed syllable without fixing its peak to a measured
+point within the vowel. Precise alignment, scaling, and the inventory of
+additional pitch accents are unspecified. In particular, an expanded H*
+for contrastive focus supplies no separate tonal analysis for continuing,
+shifted, or contrastive topics.
 
-Declaratives are characterised by a falling contour, yes-no questions by a final
-rise, and focused contrastive phrases by an expanded pitch excursion on the focused
-constituent. The information-structural uses are discussed in
- Chapter~\ref{ch:infstr}. A tonal inventory distinguishing continuing,
- shifted, and contrastive topics from narrow focus is not specified;
- neither a particular pitch rise nor an obligatory boundary follows from
- the lexical stress rule.
+A tightly integrated converb chain can occupy one intonational phrase
+containing several phonological phrases. Its internal boundaries may mark
+continuation with H- without requiring a pause or a full register reset;
+semantically more independent clauses can form separate intonational
+phrases. The independent contour of an insubordinate conditional belongs
+to its own intonational phrase, although the suspended interpretation does
+not by itself select a falling boundary (§\,\ref{sec:cond-insub}).
+
+\subsection{Quantity, timing, and boundary phenomena}\label{sec:boundary-phenomena}
+
+Lexical quantity remains contrastive under the durational adjustments of
+connected speech (§\,\ref{sec:vowel-quantity}). A short vowel may undergo
+phonetic lengthening near an intonational boundary without acquiring the
+long-vowel category or a morphological quantity grade. The allowed
+boundary cues include modest lengthening or local pitch movement at weaker
+phrase edges and stronger lengthening, register reset, or a pause at
+intonational boundaries. Silence is therefore optional at a phrase edge,
+and its absence does not establish that two words form one stress domain.
+These are descriptive possibilities for Iridian, with no fixed duration
+ratio or obligatory acoustic cue assigned to either boundary level.
+
+The lexical forms establish coda /l, v/ vocalisation, final devoicing, and
+regressive voicing assimilation within inflected words
+(§§\,\ref{sec:l-vocalisation}, \ref{sec:v-realisation}, and~\ref{sec:lenition}).
+Suffixation can resyllabify a stem-final consonant before a vowel, as in
+\ird{byl}/\ird{byla}. Their extension across an external clitic boundary
+or between independent words, including whether such resyllabification
+precedes vocalisation and final devoicing, is not specified. Prosodic
+attachment alone consequently licenses no additional cross-word segmental
+rule; the metrical exclusion of a clitic is independent of those unresolved
+segmental domains.
+
+Consonant clusters, vowel deletion, lexical quantity, and phrase-edge
+adjustments all affect the duration of successive syllables. The regular
+alternation of metrical heads requires neither equal intervals between
+stresses nor equal syllable durations, and no categorical stress-timed or
+syllable-timed classification is assigned. Speech-rate variation can weaken
+the phonetic expression of subsidiary heads while leaving the lexical
+quantity contrasts and the domain of primary stress intact.
 
 
 \section{Morphophonemic processes}\label{sec:morphophon}
