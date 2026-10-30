@@ -232,6 +232,110 @@ acceptability judgement or evidence that shared anchoring licenses such
 covariation. Nominal shared retrieval also remains independent of the
 clause's aboutness relation (§\,\ref{sec:tc-anchoring-interface}).
 
+\subsection{Semantic types and nominal composition}
+\label{sec:nm-anchor-types}
+
+The contrast between bare \ird{byl}, speaker-anchored \ird{si byl}, and
+shared-anchored \ird{bylo} can be represented without requiring Anch to
+saturate its nominal complement. In the analysis adopted here, each bundle
+takes a property of type \(\langle e,t\rangle\) and returns a property of
+the same type, giving Anch the type
+\(\langle\langle e,t\rangle,\langle e,t\rangle\rangle\);
+\(e\) includes plural individuals as well as atoms. At a
+fixed evaluation situation \(s\), the three entries are:
+\[
+\begin{aligned}
+ \mathrm{Anch}_{-\mathrm{anch}}(P_s)
+   &= P_s,\\
+ \mathrm{Anch}_{+\mathrm{shr},i}^{c,g}(P_s)
+   &= \lambda x[P_s(x)\land x=g(i)],\\
+ \mathrm{Anch}_{-\mathrm{shr},v}^{c}(P_s)
+   &= \lambda x[P_s(x)\land x=v_{c,s}].
+\end{aligned}
+\]
+The first entry is the identity function on properties. The second has the
+shared-accessibility condition stated in §\,\ref{sec:nm-anchor-indices}.
+The third is defined where \(v_{c,s}\) represents a witness selected by the
+speaker relative to the relevant information state; it imposes no
+shared-retrieval requirement. Its witness can be a group, as in established
+plural \ird{si býle}. The parameter records speaker selection without
+introducing existential quantification over choice functions. Neither it
+nor the shared index guarantees that its value satisfies \(P_s\); a
+mismatching value leaves an empty restricted property. The situation
+subscript on \(v\) permits evaluation within an intensional dependency
+without requiring selection to vary there. Whether the witness remains
+constant or varies with that dependency is a scope and interpretation
+question, which the entry and the PF position of \ird{si} do not settle.
+
+A property supplied to an ordinary universal quantifier can therefore remain
+unsaturated through Anch. Writing \(A\) for that property and \(R\) for
+the predicate in its scope, the schematic quantifier has type
+\(\langle\langle e,t\rangle,\langle\langle e,t\rangle,t\rangle\rangle\):
+\[
+ \mathrm{EVERY}(A)(R)=\forall x[A(x)\mathbin{\rightarrow}R(x)].
+\]
+This representation illustrates the composition of the established bare
+quantified nominals in §\,\ref{sec:nm-quant}; it does not assign identical
+distributivity or number semantics to \ird{nět}, \ird{niže}, and
+\ird{nách}. Converting \(A\) to an individual before applying this
+quantifier would create a type mismatch. Conversely, these Anch entries
+cannot take an already generalised-quantifier-denoting \synhead{QP} of type
+\(\langle\langle e,t\rangle,t\rangle\): the quantifier must compose with
+the property returned by Anch, while the reverse composition would require
+an independently justified type lift. Where the construction instead
+requires individual reference, a subsequent definite shift can yield
+\(\iota x A(x)\), defined when exactly one relevant individual satisfies
+\(A\); existential composition with a scope predicate can yield
+\(\exists x[A(x)\land R(x)]\). These operations occur after the anchoring
+restriction, rather than being lexical contributions of the suffix or
+\ird{si}; separating them follows the distinction between nominal
+predication and argumental type shifts in Coppock and Beaver's account
+\cite[§\,1]{coppockbeaver2015}.
+
+Type compatibility alone does not license an overt anchor with every
+quantifier. Restriction by \(x=g(i)\) or \(x=v_{c,s}\) admits at most one
+individual, even when that individual is plural, so a universal applied
+directly to this property would quantify over at most that one value.
+It would not thereby range over all members of an independently salient set
+of children. A set-based domain restriction, schematically
+\(\lambda x[P_s(x)\land C(x)]\), has different truth conditions from
+identity with an indexed individual. Etxeberria and Giannakidou analyse
+such non-saturating restrictions in quantifier constructions
+\cite[§§\,2.1, 3]{etxeberriagiannakidou2019}; their account supplies a
+comparative alternative, rather than evidence for a second Iridian Anch
+entry. The distribution and interpretation of overt anchoring with universal
+quantifiers remain unestablished.
+
+Numerals likewise differ from generalised quantifiers in the semantic
+operation they supply. In \ird{hroná lobek} \trsl{three apples}, singular
+noun morphology does not prevent the phrase from denoting a plurality.
+A schematic cardinal modifier can form the property
+\(\lambda X[{}^{*}P_s(X)\land |\operatorname{Atoms}(X)|=3]\), where
+\({}^{*}P_s\) contains the nonempty sums of atomic apples and
+\(\operatorname{Atoms}(X)\) is the set of atomic members of \(X\)
+\cite[pp.\,15, 24--25]{marti2020}.
+The numeral supplies the cardinality condition independently of the singular
+Vocabulary Item (§\,\ref{sec:nm-quant}). In a putative speaker-anchored
+cardinal phrase, selection of a three-apple plurality must consequently be
+distinguished from selection of one apple before cardinal modification.
+The current hierarchy and the lower singleton-restricting entry do not by
+themselves derive selection of a particular three-apple group; no
+acceptability or scope claim about \ird{si} with cardinals follows from the
+linearisation template.
+
+An intersective modifier combines with an unsaturated nominal property by
+intersection, whereas a possessor first supplies the relevant relational
+argument (§\,\ref{sec:nm-implicit-poss}). These operations leave a property
+available for anchoring without requiring an individual to be selected
+prematurely. The higher adnominal demonstrative can identify a deictically
+located value satisfying the property returned by Anch; with shared anchoring,
+that value must also coincide with the recoverable indexed referent.
+This compatibility requirement preserves the independent contributions of
+\ird{tak byl} and \ird{tak bylo} (§\,\ref{sec:nm-def-double}) without
+deriving a general emphatic meaning from type composition. It supplies no
+licensing condition for the unestablished combination of a demonstrative
+with \ird{si}.
+
 \subsection{Case and the ordering \synhead{AnchP} $>$ KP}
 \label{sec:nm-def-stacking}
 
@@ -708,7 +812,9 @@ is realised by the singular Vocabulary Item.
 \synhead{DP} is spelled out by the singular Vocabulary Item: the Q head
 (\synhead{QP}) saturates the number semantics of the expression, so
 Num\textsuperscript{0} within \synhead{KP} receives no [+pl] feature to trigger
-a plural VI.
+a plural VI. This morphological specification leaves the cardinal phrase's
+plural interpretation intact; semantic number composition is distinguished
+from argumental saturation in §\,\ref{sec:nm-anchor-types}.
 
 The exact-cardinality interpretation is supplied by the numeral, while
 approximate readings depend on intonation and contextual hedging. The
@@ -1080,6 +1186,10 @@ position shown here (§\,\ref{sec:nm-si-linearisation}).
 The \synhead{QP} layer is drawn only as a conservative cover term for prenominal
 quantificational material; the analysis does not assume a finer
 numeral-vs-quantifier split unless the data require it.
+Its placement above \synhead{AnchP} is compatible with property-taking
+composition, but establishes neither the felicity of every quantifier--anchor
+combination nor a set-based domain-restricting meaning for overt anchoring
+(§\,\ref{sec:nm-anchor-types}).
 
 \subsection{The oblique possessor in the DP}
 \label{sec:nm-poss}
