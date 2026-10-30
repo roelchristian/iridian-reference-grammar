@@ -13,12 +13,12 @@
 | Reduced Mood-conditioned Asp.Align | Partially settled | The IPFV/PFV opposition is canonical; lexical/pragmatic restrictions on -ov-, effects of information structure, and the interaction with predicate telicity need systematic paradigms. |
 | Absolutive pivot versus topicalisation | Distinction adopted; diagnostics incomplete | Case licensing and high A′ topicalisation are distinct; lower positions, island and binding diagnostics are underdetermined. |
 | Conjunctive and complement linker -e | Unified clause-edge analysis adopted; syntactic tests open | Alternative homophone and pure boundary-marker accounts archived; null-C, binding and scope predictions unverified. |
-| Indirect evidential and linker | Resolved by newer grammar pass | The old -ejte + -e adjacency question is superseded: -al after consonants and -l after vowels precede linker -e; local PAL of evidential /l/ yields -aľe and -ľe. See the current section sec:vm-evid. Do not reintroduce -ejte or infer an unresolved vowel clash. |
+| Indirect evidential and linker | Resolved by newer grammar pass | The old -ejte + -e adjacency question is superseded: -al after consonants and -l after vowels precede linker -e; local PAL of evidential /l/ yields -alě and -lě. See the current section sec:vm-evid. Do not reintroduce -ejte or infer an unresolved vowel clash. |
 | AnchP, DemP and nominal DP | Order adopted; higher projection theory open | Anchoring and demonstrative positions are separate in the nominal description; DP articulation, phasehood and K/Case accessibility need further formalisation. |
 | Participant-oriented -ový RelP and PossP | Attachment height open | Relative case licensing is described; the exact relative/possessor ordering within the extended nominal projection remains undecided. |
 | Pre-by wh phrase and PolP > FocP | Open formal derivation inconsistency | Four surface strings remain described, but the stated hierarchy with head-initial Pol alone does not derive all pre-by orders. |
 | Adjacent nested si terminals | Untested prosodic behaviour | The current domain-linearisation rule predicts si si; no additional coalescence or clitic-host-sharing rule is licensed. |
-| Continuous -ou participant nominals | Paradigm incomplete | Only the unanchored direct singular piaštova is specified. Do not invent other cells. |
+| Continuous -ou participant nominals | Paradigm incomplete | Only the unanchored direct singular pjaštova is specified. Do not invent other cells. |
 | Focus displacement / embedded hanging topics | Distributional tests open | Object–adverb movement, embedded topic locality, recursion and intonational diagnostics need controlled contexts. |
 | Lexical sabo versus negative-concord žemě | Licensing question open | The latter requires local negation; the former's concord behaviour is not inferred from its lexical-adverb classification. |
 | Particle dlí | Distributional question open | Propositional-layer status is adopted; interactions with directives, future reference and chaining remain uncharacterised. |
@@ -92,7 +92,7 @@ does not by itself settle these distributions.
 Patient-selecting Voice and the rhotic causative occupy distinct positions.
 Causative \synhead{CausP} introduces a causer above the inner predicate,
 while the outer orientation head selects a participant of the resulting
-predicate. Their order in \ird{piášt-r-an-ik} follows their composition:
+predicate. Their order in \ird{pjášt-r-an-ik} follows their composition:
 the caused event is built before its higher orientation is specified.
 Voice takes \ird{-an-} immediately after a rhotic causative and ordinary
 \ird{-n-} elsewhere, while zero orientation supplies the active NOM frame.
@@ -287,7 +287,7 @@ and conjunctive chain).
     A PF boundary-marker account must independently specify the segmental
     effects associated with this clause edge. The palatalisation caused by
     \ird{-e} shares its PAL mappings with front-coded nominal endings
-    \ird{-ě} and \ird{-í}, whereas yod-grade \ird{-ěv} has a different
+    \ird{-ě} and \ird{-í}, whereas mixed-grade \ird{-ěv} has a different
     velar output; the linker also selects the construction-specific ending
     allomorphs in Table~\ref{tab:linker-paradigm}. A boundary diacritic would
     therefore need these same grade and allomorph specifications. The

@@ -76,8 +76,8 @@
     {
       "chapter": "chapters/05-function-words.tex",
       "example_index": 26,
-      "old_order": "Jas dá graže piašta.",
-      "new_order": "Dá graže jas piašta.",
+      "old_order": "Jas dá graže pjašta.",
+      "new_order": "Dá graže jas pjašta.",
       "old_gloss": "contrast I.\\Dir{} vegetable.\\Ind{} eat-\\Cont{}",
       "new_gloss": "I.\\Dir{} vegetable.\\Ind{} contrast eat-\\Cont{}",
       "interpretation": "\\trsl{But I do eat vegetables.}",

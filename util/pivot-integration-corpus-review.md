@@ -38,7 +38,7 @@ Integration with the newly merging architecture patch remains to be checked.
   control is not presented as inherited empirical evidence. The corpus does
   not invent speakers or treat constructed judgments as independent proof.
 - Canonical lexical spot checks against the chapter sources include O01–O05,
-  B01–B02, V07–V13 and I10/E04. The current quantities `védnik`, `piaštník`,
+  B01–B02, V07–V13 and I10/E04. The current quantities `védnik`, `pjaštník`,
   `zemácime`, `zemácek`, `ščénime`, `ščének`, `svórnime`, `svórnik`,
   `zemacébrime` and the participant nominal forms are preserved. The phrase
   `Svem Marku védnik` is not the stale brief form `vednik`.

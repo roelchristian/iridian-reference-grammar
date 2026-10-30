@@ -61,27 +61,27 @@ class ContemplativeTests(unittest.TestCase):
                     {'test.tex': source.replace(before, after)}, fixtures))
         # A correct occurrence cannot conceal a contradictory duplicate.
         self.assertTrue(checker.check_contemplative_sources(
-            {'test.tex': source + r'\phon{piaštáž}{ˈpʲaʃ.taʃ}{wrong quantity}'}, fixtures))
+            {'test.tex': source + r'\phon{pjaštáž}{ˈpʲaʃ.taʃ}{wrong quantity}'}, fixtures))
 
     def test_old_outputs_are_rejected_but_each_and_name_are_preserved(self):
         fixtures = {'pronunciations': [], 'table_rows': [],
                     'protected_lexemes': [], 'protected_surfaces': []}
-        for form in ('-ách', 'piaštách', 'piaštáchal', 'piaštáchaľe', 'zanách',
+        for form in ('-ách', 'pjaštách', 'pjaštáchal', 'pjaštáchalě', 'zanách',
                      'jecach', 'Jecach', 'zadach', 'Zadach'):
             with self.subTest(form=form):
                 self.assertTrue(checker.check_contemplative_sources(
                     {'test.tex': r'\ird{' + form + '}'}, fixtures))
-        accepted = r'\ird{nách študent} \ird{Nách študent} \ird{Bách} \ird{*piaštách} \ird{knářaž} \ird{-až} % \ird{-ách}'
+        accepted = r'\ird{nách študent} \ird{Nách študent} \ird{Bách} \ird{*pjaštách} \ird{knářaž} \ird{-až} % \ird{-ách}'
         self.assertEqual(checker.check_contemplative_sources({'test.tex': accepted}, fixtures), [])
 
     def test_capitalised_contemplative_ipa_cannot_hide_pronunciation_changes(self):
         fixtures = dict(self.fixtures, pronunciations=[self.fixtures['pronunciations'][0]],
                         table_rows=[], protected_lexemes=[], protected_surfaces=[])
-        correct = r'\phon{Piaštáž}{ˈpʲaʃ.taːʃ}{projected eating}'
+        correct = r'\phon{Pjaštáž}{ˈpʲaʃ.taːʃ}{projected eating}'
         self.assertEqual(checker.check_contemplative_sources({'test.tex': correct}, fixtures), [])
         for source in (correct.replace('taːʃ', 'taʃ'),
                        correct.replace('ˈpʲaʃ.taːʃ', 'pʲaʃ.ˈtaːʒ'),
-                       correct + r'\phon{piaštáž}{ˈpʲaʃ.taʃ}{contradiction}'):
+                       correct + r'\phon{pjaštáž}{ˈpʲaʃ.taʃ}{contradiction}'):
             self.assertTrue(checker.check_contemplative_sources({'test.tex': source}, fixtures))
 
     def test_reviewed_copular_and_existential_rows_preserve_suppletion(self):

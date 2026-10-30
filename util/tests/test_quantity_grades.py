@@ -52,6 +52,19 @@ class QuantityGradesTests(unittest.TestCase):
                                           BoundaryLicence('case', 'front', True, True), suffix)
                 self.assertEqual(result.segments, expected)
 
+    def test_raising_preserves_lexical_palatality_before_independent_mixed_grade(self):
+        grades = QuantityGrades.from_file()
+        source = ('z', 'ɟ', 'ɛ', 'k')
+        raised = grades.apply(source, QuantityLicence('believe-root', 'G3', True,
+                                                    (0, 4), (2,), 2, True))
+        self.assertEqual(raised, ('z', 'ɟ', 'iː', 'k'))
+        result = BoundaryTransducer.from_file().apply(
+            BoundaryState(raised), BoundaryLicence('irrealis', 'mixed', True, True), ('ɛ', 'v'))
+        self.assertEqual(result.segments, ('z', 'ɟ', 'iː', 'tʃ', 'ɛ', 'v'))
+        labial = grades.apply(('pʲ', 'ɛ', 'ʃ', 't'), QuantityLicence(
+            'eat-root', 'G2', True, (0, 4), (1,), 1, True))
+        self.assertEqual(labial, ('pʲ', 'ɪ', 'ʃ', 't'))
+
     def test_prefix_and_suffix_nuclei_are_outside_root_domain(self):
         grades = QuantityGrades.from_file()
         source = ('p', 'r', 'ɛ', 'z', 'ɛ', 'm', 'a', 'ts', 'ɪ', 'm', 'ɛ')
@@ -150,11 +163,11 @@ class QuantityGradesTests(unittest.TestCase):
 
     def test_conditioned_short_contemplative_is_class_specific(self):
         fixture = {'source_tables': [{'path': 'test.tex', 'label': 'tab:classes', 'width': 2,
-                                     'rows': [['piašta', 'piaštáž'], ['knářa', 'knářaž']]}]}
-        correct = (r'\label{tab:classes}\ird{piašta} & \ird{piaštáž} \\ '
+                                     'rows': [['pjašta', 'pjaštáž'], ['knářa', 'knářaž']]}]}
+        correct = (r'\label{tab:classes}\ird{pjašta} & \ird{pjaštáž} \\ '
                    r'\ird{knářa} & \ird{knářaž} \\ \end{table}')
         self.assertEqual(checker.check_quantity_sources({'test.tex': correct}, fixture), [])
-        for changed in (correct.replace('piaštáž', 'piaštaž'), correct.replace('knářaž', 'knářáž')):
+        for changed in (correct.replace('pjaštáž', 'pjaštaž'), correct.replace('knářaž', 'knářáž')):
             self.assertTrue(checker.check_quantity_sources({'test.tex': changed}, fixture))
 
     def test_noncanonical_class_iii_plural_is_distinct_from_singular_transitive(self):

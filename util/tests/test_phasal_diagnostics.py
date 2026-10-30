@@ -45,7 +45,7 @@ class PhasalDiagnosticsTests(unittest.TestCase):
         syntax_path = 'chapters/06-simple-sentence.tex'
         sources = {path: source, syntax_path: (ROOT / syntax_path).read_text()}
         self.assertEqual(check_phasal_sources(sources, self.fixtures), [])
-        for old, new in [('Ježe Marku so piaštník?', 'Mám Marku so piaštník?'),
+        for old, new in [('Ježe Marku so pjaštník?', 'Mám Marku so pjaštník?'),
                          ('Janek visited on Friday', 'Janek had never visited'),
                          ('another arrival', 'the only arrival'),
                          ('least likely', 'equally likely'),

@@ -5,9 +5,9 @@
       "id": "perfective",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piaštník",
-        "piaštníkal",
-        "piaštníkaľe"
+        "pjaštník",
+        "pjaštníkal",
+        "pjaštníkalě"
       ],
       "host_segments": [
         "pʲ",
@@ -46,9 +46,9 @@
       "id": "retrospective",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piaštnáv",
-        "piaštnával",
-        "piaštnávaľe"
+        "pjaštnáv",
+        "pjaštnával",
+        "pjaštnávalě"
       ],
       "host_segments": [
         "pʲ",
@@ -87,9 +87,9 @@
       "id": "continuous",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piašta",
-        "piaštal",
-        "piaštaľe"
+        "pjašta",
+        "pjaštal",
+        "pjaštalě"
       ],
       "host_segments": [
         "pʲ",
@@ -120,9 +120,9 @@
       "id": "progressive",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piaštíme",
-        "piaštímel",
-        "piaštímeľe"
+        "pjaštíme",
+        "pjaštímel",
+        "pjaštímelě"
       ],
       "host_segments": [
         "pʲ",
@@ -159,9 +159,9 @@
       "id": "contemplative",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piaštáž",
-        "piaštážal",
-        "piaštážaľe"
+        "pjaštáž",
+        "pjaštážal",
+        "pjaštážalě"
       ],
       "host_segments": [
         "pʲ",
@@ -197,9 +197,9 @@
       "id": "antipassive-perfective",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piášček",
-        "piáščekal",
-        "piáščekaľe"
+        "pjášček",
+        "pjáščekal",
+        "pjáščekalě"
       ],
       "host_segments": [
         "pʲ",
@@ -235,9 +235,9 @@
       "id": "antipassive-retrospective",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piáščav",
-        "piáščaval",
-        "piáščavaľe"
+        "pjáščav",
+        "pjáščaval",
+        "pjáščavalě"
       ],
       "host_segments": [
         "pʲ",
@@ -273,9 +273,9 @@
       "id": "passive-progressive",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piaštníme",
-        "piaštnímel",
-        "piaštnímeľe"
+        "pjaštníme",
+        "pjaštnímel",
+        "pjaštnímelě"
       ],
       "host_segments": [
         "pʲ",
@@ -315,9 +315,9 @@
       "id": "causative-progressive",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piáštrime",
-        "piáštrimel",
-        "piáštrimeľe"
+        "pjáštrime",
+        "pjáštrimel",
+        "pjáštrimelě"
       ],
       "host_segments": [
         "pʲ",
@@ -357,9 +357,9 @@
       "id": "causative-perfective",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "piáštranik",
-        "piáštranikal",
-        "piáštranikaľe"
+        "pjáštranik",
+        "pjáštranikal",
+        "pjáštranikalě"
       ],
       "host_segments": [
         "pʲ",
@@ -404,9 +404,9 @@
       "id": "long-vowel-consonantal-host",
       "status": "Conditional segmental test on an independently licensed mood host; does not establish evidential scope over directives.",
       "forms": [
-        "piaštím",
-        "piaštímal",
-        "piaštímaľe"
+        "pjaštím",
+        "pjaštímal",
+        "pjaštímalě"
       ],
       "host_segments": [
         "pʲ",
@@ -442,9 +442,9 @@
       "id": "long-vowel-vocalic-host",
       "status": "Conditional segmental test on an independently licensed mood host; does not establish evidential scope over directives.",
       "forms": [
-        "piašté",
-        "piaštél",
-        "piaštéľe"
+        "pjašté",
+        "pjaštél",
+        "pjaštélě"
       ],
       "host_segments": [
         "pʲ",
@@ -475,9 +475,9 @@
       "id": "irrealis",
       "status": "Selected finite host; evidential attachment preserves its already licensed morphology and negative marker.",
       "forms": [
-        "piáščev",
-        "piáščeval",
-        "piáščevaľe"
+        "pjáščev",
+        "pjáščeval",
+        "pjáščevalě"
       ],
       "host_segments": [
         "pʲ",
@@ -513,9 +513,9 @@
       "id": "negative-irrealis",
       "status": "Selected finite host; evidential attachment preserves its already licensed morphology and negative marker.",
       "forms": [
-        "piaštir",
-        "piaštiral",
-        "piaštiraľe"
+        "pjaštir",
+        "pjaštiral",
+        "pjaštiralě"
       ],
       "host_segments": [
         "pʲ",
@@ -551,9 +551,9 @@
       "id": "indicative-negative",
       "status": "Selected finite host; evidential attachment preserves its already licensed morphology and negative marker.",
       "forms": [
-        "zapiaštník",
-        "zapiaštníkal",
-        "zapiaštníkaľe"
+        "zapjaštník",
+        "zapjaštníkal",
+        "zapjaštníkalě"
       ],
       "host_segments": [
         "z",
@@ -625,11 +625,11 @@
   ],
   "pronunciations": [
     {
-      "form": "piaštal",
+      "form": "pjaštal",
       "ipa": "ˈpʲaʃ.taw"
     },
     {
-      "form": "piaštaľe",
+      "form": "pjaštalě",
       "ipa": "ˈpʲaʃ.ta.ʎɛ"
     }
   ],

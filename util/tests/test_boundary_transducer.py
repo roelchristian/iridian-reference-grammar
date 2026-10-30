@@ -31,7 +31,7 @@ class BoundaryTransducerTests(unittest.TestCase):
                 self.assertTrue(check_boundary_fixtures(BoundaryTransducer(rules), self.fixtures))
         for grade, field, replacement in (('front', 'velar_output', 'tʃ'),
                                            ('restricted', 'coronal_labial_pal', True),
-                                           ('yod', 'coronal_labial_pal', False)):
+                                           ('mixed', 'coronal_labial_pal', False)):
             with self.subTest(grade=grade, field=field):
                 rules = copy.deepcopy(self.rules)
                 rules['grades'][grade][field] = replacement
@@ -39,7 +39,7 @@ class BoundaryTransducerTests(unittest.TestCase):
 
     def test_rejects_extra_grade_instead_of_free_feature_product(self):
         rules = copy.deepcopy(self.rules)
-        rules['grades']['no-pal-yod'] = {'coronal_labial_pal': False, 'velar_output': 'tʃ'}
+        rules['grades']['no-pal-mixed'] = {'coronal_labial_pal': False, 'velar_output': 'tʃ'}
         with self.assertRaises(BoundaryError):
             BoundaryTransducer(rules)
 

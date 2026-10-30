@@ -18,25 +18,25 @@ class ValencyChecks(unittest.TestCase):
         return [{'label': 'ex:test', 'examples': [{'surface': surface, 'gloss': gloss}]}]
 
     def test_reviewed_pair_passes(self):
-        surface = 'Byl Marcí travě piaštébime.'
+        surface = 'Byl Marcí travě pjaštébime.'
         gloss = r'child.\Dir{} Marek.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}'
         self.assertEqual([], checker.check_valency(self.source(surface, gloss),
                                                   self.fixture(surface, gloss)))
 
     def test_form_and_gloss_must_remain_paired(self):
-        expected = self.fixture('Byl piaštébime.', r'child.\Dir{} eat-\Appl{}-\Prog{}')
-        failures = checker.check_valency(self.source('Byl piaštime.',
+        expected = self.fixture('Byl pjaštébime.', r'child.\Dir{} eat-\Appl{}-\Prog{}')
+        failures = checker.check_valency(self.source('Byl pjaštime.',
                                r'child.\Dir{} eat-\Appl{}-\Prog{}'), expected)
         self.assertTrue(any('pairs changed' in failure for failure in failures))
 
     def test_two_direct_arguments_are_rejected(self):
-        surface = 'Marek byl piaštébime.'
+        surface = 'Marek byl pjaštébime.'
         gloss = r'Marek.\Dir{} child.\Dir{} eat-\Appl{}-\Prog{}'
         failures = checker.check_valency(self.source(surface, gloss), self.fixture(surface, gloss))
         self.assertTrue(any('one direct-case' in failure for failure in failures))
 
     def test_translation_change_is_rejected(self):
-        surface = 'Byl Marcí travě piaštébime.'
+        surface = 'Byl Marcí travě pjaštébime.'
         gloss = r'child.\Dir{} Marek.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}'
         fixture = self.fixture(surface, gloss)
         fixture[0]['examples'][0]['translation'] = 'Translation'

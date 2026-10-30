@@ -223,7 +223,7 @@ def check_lexical_extension_sources(sources, data):
     for form in data['manifest']['forms']:
         if r'\ird{'+form+'}' not in table:
             failures.append('lexical extension: missing Manifest table form '+form)
-    for form in ('všihňa','všihňe','žbirňa','žbirňe'):
+    for form in ('všihňa','všihně','žbirňa','žbirně'):
         if r'\phon{'+form+'}' not in source:
             failures.append('lexical extension: missing local ATTR/manner contrast '+form)
     return failures

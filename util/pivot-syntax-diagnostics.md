@@ -17,7 +17,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### O01 — C
 
 - **Source:** `chapters/03-verbs.tex, sec:vm-asp-case`.
-- **String/schema:** Marek travě piaštíme.
+- **String/schema:** Marek travě pjaštíme.
 - **Context and target reading:** All-new eating report; Marek is eating bread.
 - **Controlled contrast:** Compare O02, holding the same unanchored bread referent and actor; source PF counterpart is in tab:valency-base-contrasts.
 - **Competing predictions:** A: actor may satisfy I locally; B: actor may satisfy lower selection; C₀: ordinary actor-high base order suffices. This row alone does not discriminate.
@@ -25,7 +25,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### O02 — C
 
 - **Source:** `chapters/03-verbs.tex, tab:valency-base-contrasts`.
-- **String/schema:** Trava Marku piaštník.
+- **String/schema:** Trava Marku pjaštník.
 - **Context and target reading:** All-new completed eating report, with the same participants as O01.
 - **Controlled contrast:** IPFV A.DIR P.IND V versus PF P.DIR A.TRS V; do not substitute anchored Travó without controlling definiteness.
 - **Competing predictions:** A: P must cross A; B: selected P must precede A if the lower landing is high enough; C₀: requires a stated reordering/restructuring operation. VP head-finality explains only P<V.
@@ -81,15 +81,15 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### O09 — C
 
 - **Source:** `chapters/03-verbs.tex, sec:vm-antipassive`.
-- **String/schema:** Marek piášček.
+- **String/schema:** Marek pjášček.
 - **Context and target reading:** An eating activity is reported without an independently licensed patient.
-- **Controlled contrast:** Compare ordinary Trava Marku piaštník with referential patient.
+- **Controlled contrast:** Compare ordinary Trava Marku pjaštník with referential patient.
 - **Competing predictions:** A/B: select sole actor, not a silent restored patient; C₀: cannot obtain the transitive order by treating the absent patient as an overt core DP.
 
 ### O10 — C
 
 - **Source:** `chapters/03-verbs.tex, sec:vm-passive`.
-- **String/schema:** Travó Marcí piaštníme. / Travó piaštníme.
+- **String/schema:** Travó Marcí pjaštníme. / Travó pjaštníme.
 - **Context and target reading:** Same ongoing eating event; agent overt versus contextually omitted.
 - **Controlled contrast:** Patient remains anchored DIR in both variants.
 - **Competing predictions:** A/B: passive patient selection survives agent omission; C₀: requires construction-specific passive configuration. IND agent is not an ordinary active IND patient.
@@ -99,7 +99,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 - **Source:** `chapters/03-verbs.tex, sec:vm-asp-case; sec:mood-directive-case`.
 - **String/schema:** A.DIR P.IND V.IPFV / A.TRS P.DIR V.DIR-MOOD
 - **Context and target reading:** Compare an assertion with a directive concerning the same participants.
-- **Controlled contrast:** Mood-conditioned theme selection versus active IPFV actor selection. The directive control follows the canonical contrastive overt-agent order in Jí trava piaštím; it does not assert neutral directive pivot-first order. Overt A is supplied only where independently licensed. Do not use this as an aspect-only pair.
+- **Controlled contrast:** Mood-conditioned theme selection versus active IPFV actor selection. The directive control follows the canonical contrastive overt-agent order in Jí trava pjaštím; it does not assert neutral directive pivot-first order. Overt A is supplied only where independently licensed. Do not use this as an aspect-only pair.
 - **Competing predictions:** A/B: attracting eligibility must incorporate Mood without a [pivot] label; C₀: restructuring must reflect Mood rather than a PF suffix selecting retroactively.
 
 ### O12 — H
@@ -213,7 +213,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### S01 — C
 
 - **Source:** `chapters/06-simple-sentence.tex, sec:lexical-adverb-position`.
-- **String/schema:** Skorňe zemácime.
+- **String/schema:** Skorně zemácime.
 - **Context and target reading:** Speaker runs quickly; actor is omitted and contextually first person.
 - **Controlled contrast:** Compare an overt actor test in S02; do not infer pivot height from this actorless string.
 - **Competing predictions:** A/B/C₀: compatible with low manner attachment; no overt pivot means no pivot-versus-manner precedence result.
@@ -221,7 +221,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### S02 — P
 
 - **Source:** `chapters/06-simple-sentence.tex, sec:lexical-adverb-position`.
-- **String/schema:** Marek skorňe zemácime. / Skorňe Marek zemácime.
+- **String/schema:** Marek skorně zemácime. / Skorně Marek zemácime.
 - **Context and target reading:** All-new report with no adverb focus or frame-setting context.
 - **Controlled contrast:** Only the placement of overt actor relative to manner varies.
 - **Competing predictions:** A: predicts actor above low manner under I raising; B: prediction depends on lower-site height; C₀: must fix overt actor origin and linearisation. Acceptance of either new order remains unestablished.
@@ -229,15 +229,15 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### S03 — C
 
 - **Source:** `chapters/06-simple-sentence.tex, sec:lexical-adverb-position`.
-- **String/schema:** Skorňe travě piaštíme.
+- **String/schema:** Skorně travě pjaštíme.
 - **Context and target reading:** Speaker eats bread quickly; no overt actor.
-- **Controlled contrast:** Compare hypothetical P.DIR skorňe A.TRS V.PF and skorňe P.DIR A.TRS V.PF.
+- **Controlled contrast:** Compare hypothetical P.DIR skorně A.TRS V.PF and skorně P.DIR A.TRS V.PF.
 - **Competing predictions:** A: PF selected P should precede genuinely low manner; B: depends on landing height; C₀: preserves the canonical low complement but must derive neutral P>A separately.
 
 ### S04 — H
 
 - **Source:** `chapters/06-simple-sentence.tex, sec:lexical-adverb-position`.
-- **String/schema:** P.DIR A.TRS skorňe V.PF / P.DIR skorňe A.TRS V.PF
+- **String/schema:** P.DIR A.TRS skorně V.PF / P.DIR skorně A.TRS V.PF
 - **Context and target reading:** All-new completed event with manner fixed and neither actor nor adverb focused.
 - **Controlled contrast:** Actor-versus-manner placement after a constant initial P.
 - **Competing predictions:** A/B: constrain the actor remainder independently of P landing; C₀: same requirement under restructuring. A successful P-first derivation alone is insufficient.
@@ -311,7 +311,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V01 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-appl-transitive`.
-- **String/schema:** Marek travě bylam my piaštíme. / Byl Marcí travě piaštébime.
+- **String/schema:** Marek travě bylam my pjaštíme. / Byl Marcí travě pjaštébime.
 - **Context and target reading:** Same actor, bread and child; child benefits but does not eat.
 - **Controlled contrast:** Benefactive PP versus core applied DP; preserve event and role identities.
 - **Competing predictions:** A/B: different selected argument but same low theme; C₀: event-related Appl structure must distinguish PP from core B. Affixhood does not establish low Appl.
@@ -327,7 +327,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V03 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-appl-ergative`.
-- **String/schema:** Byl Marku travě piaštébik.
+- **String/schema:** Byl Marku travě pjaštébik.
 - **Context and target reading:** Completed eating for child, distinct actor and theme.
 - **Controlled contrast:** Compare V01 IPFV applicative; B stays DIR, A switches IND/TRS, P stays IND.
 - **Competing predictions:** A/B: selected B may cross actor but P is not selected; C₀: same case frame must arise from event-related Appl. A two-DIR output is already excluded by source.
@@ -343,7 +343,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V05 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-appl-instrument`.
-- **String/schema:** Marek travě ráne se piaštíme. / Rán Marcí travě piaštébime.
+- **String/schema:** Marek travě ráne se pjaštíme. / Rán Marcí travě pjaštébime.
 - **Context and target reading:** Hand is an implement for eating.
 - **Controlled contrast:** Instrumental PP versus core instrument; fixed actor/theme.
 - **Competing predictions:** A/B/C₀: preserve Rán.DIR with actor/theme IND in Appl; hand never becomes actor. A model assigning only beneficiary semantics overgenerates the wrong entailment.
@@ -351,7 +351,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V06 — C
 
 - **Source:** `chapters/03-verbs.tex, sec:mood-directive-valency; sec:vm-appl`.
-- **String/schema:** Trava bylam piaštébím. / Trava bylam piaštébká.
+- **String/schema:** Trava bylam pjaštébím. / Trava bylam pjaštébká.
 - **Context and target reading:** Command versus inclusive exhortation to eat for child.
 - **Controlled contrast:** Hold theme and applied beneficiary constant across directive Mood types.
 - **Competing predictions:** A/B: Mood prioritises retained P and leaves B.IND; C₀: same output under a Mood-sensitive structure. Simple indicative B selection must not survive as a second DIR.
@@ -375,7 +375,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V09 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-caus-transitive`.
-- **String/schema:** Marek bylam travě piáštrime.
+- **String/schema:** Marek bylam travě pjáštrime.
 - **Context and target reading:** Causer causes child to eat bread, ongoing.
 - **Controlled contrast:** Compare V10 with identical roles; control definiteness separately from aspect.
 - **Competing predictions:** A: outer C may satisfy I locally; B: outer C selected under NOM; C₀: ordinary causer-high base order possible. E and P remain IND.
@@ -383,7 +383,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V10 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-caus-transitive`.
-- **String/schema:** Travó Marku bylam piášt-r-an-ik.
+- **String/schema:** Travó Marku bylam pjášt-r-an-ik.
 - **Context and target reading:** Same caused eating event completed, anchored bread.
 - **Controlled contrast:** For strict aspect-only comparison use a role-indexed anchored P in V09 too.
 - **Competing predictions:** A/B: P crosses E and C; a phase edge or justified nonphasal Caus is necessary if the lower domain closes; C₀: requires explicit restructuring. Neither bare matching nor suffix order removes locality.
@@ -391,7 +391,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V11 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-caus-appl`.
-- **String/schema:** Marek býlac bylam travě piaštébrime.
+- **String/schema:** Marek býlac bylam travě pjaštébrime.
 - **Context and target reading:** Children eat bread for a distinct child beneficiary under Marek causation.
 - **Controlled contrast:** Compare V12, preserving four participant indices and anchoring.
 - **Competing predictions:** A/B/C₀: C.DIR E.IND B.IND P.IND in NOM; embedded Appl cannot assign independent DIR.
@@ -399,7 +399,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V12 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-caus-appl`.
-- **String/schema:** Trava Marku býlac bylam piaštéb-r-an-ik.
+- **String/schema:** Trava Marku býlac bylam pjaštéb-r-an-ik.
 - **Context and target reading:** Completed four-participant event, benefit of the caused eating.
 - **Controlled contrast:** Identical inventory to V11; PF theme outranks beneficiary and causee.
 - **Competing predictions:** A/B: selected P access must cross E and C without treating every intervening DP as phase; C₀: retains low P origin and separately derives pronunciation. Correct output P.DIR C.TRS E.IND B.IND.
@@ -415,7 +415,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V14 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-caus-antipassive`.
-- **String/schema:** Byl Marku piáščeranik.
+- **String/schema:** Byl Marku pjáščeranik.
 - **Context and target reading:** Child eats under Marek causation; no independently licensed lexical patient.
 - **Controlled contrast:** Compare V07 two-participant frame, but preserve lower AP restriction to ERG.
 - **Competing predictions:** A/B/C₀: E.DIR C.TRS; patient cannot be restored to outrank E. A hypothetical NOM -aš- counterpart is excluded by source, not newly rejected here.
@@ -423,7 +423,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V15 — C
 
 - **Source:** `chapters/03-verbs.tex, sec:vm-passive`.
-- **String/schema:** Trava Marcí bylam piášt-r-an-ime.
+- **String/schema:** Trava Marcí bylam pjášt-r-an-ime.
 - **Context and target reading:** Bread is caused by Marek to be eaten by child; optional passive causer.
 - **Controlled contrast:** Compare active V09 and omit only the optional causer in a second test.
 - **Competing predictions:** A/B: outer passive selects P in NOM without assigning TRS to C; C₀: needs an explicit passive licensing difference. Shared IND on C/E does not prove identical status.
@@ -513,7 +513,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### I10 — C
 
 - **Source:** `chapters/04-nouns.tex, sec:nm-derived-participant`.
-- **String/schema:** piaštníkou / piáščikou / piaštébikou
+- **String/schema:** pjaštníkou / pjáščikou / pjaštébikou
 - **Context and target reading:** Identify eaten entity, eater, or beneficiary of eating.
 - **Controlled contrast:** Keep participant nominal -ou distinct from prenominal relative -ový.
 - **Competing predictions:** A/B/C₀: shared embedded selection, independent nominal dependent licensing. No shared finite landing position follows from participant identity.
@@ -563,7 +563,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### E04 — C
 
 - **Source:** `chapters/06-simple-sentence.tex, sec:exst-vs-ident`.
-- **String/schema:** Lúbcí piáščikou jeca. / Janek lúbcí piáščikou.
+- **String/schema:** Lúbcí pjáščikou jeca. / Janek lúbcí pjáščikou.
 - **Context and target reading:** Introduce a participant satisfying an eating description versus identify Janek as that participant.
 - **Controlled contrast:** Same nominal description, existential versus zero-copula identification.
 - **Competing predictions:** A/B/C₀: distinguish matrix predication from internal nominal selection. Shared -ou does not impose one matrix movement derivation.

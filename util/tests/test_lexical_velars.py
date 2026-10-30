@@ -14,11 +14,11 @@ def sources():
     return {'chapters/02-phonology.tex': r'''
 \phon{kěda}{ˈkʲɛ.da}{jail}
 \ird{kěda} & \ipagloss{[ˈkʲɛ.da]} & jail
-\phon{ťeda}{ˈcɛ.da}{cork}
+\phon{těda}{ˈcɛ.da}{cork}
 \label{tab:velar-fronting}
 Front & /k/ $\rightarrow$ /ts/ & front grade \\
 Restricted velar-front & /k/ $\rightarrow$ /ts/ & restricted grade \\
-Yod & /k/ $\rightarrow$ /tʃ/ & yod grade \\
+Mixed & /k/ $\rightarrow$ /tʃ/ & mixed grade \\
 \end{table}
 ''', 'chapters/03-verbs.tex': r'''
 \phon{kánek}{ˈkaː.nɛk}{sang}
@@ -27,15 +27,15 @@ Yod & /k/ $\rightarrow$ /tʃ/ & yod grade \\
 ''', 'util/lexicon.tex': r'''
 \lexentry{kěda}{lexical /kʲ/; \ipagloss{[ˈkʲɛ.da]}}{jail}
 \lexentry{kan-}{lexical initial /k/}{sing, perform}
-\lexentry{ťeda}{lexical /c/; \ipagloss{[ˈcɛ.da]}}{cork}
+\lexentry{těda}{lexical /c/; \ipagloss{[ˈcɛ.da]}}{cork}
 '''}
 
 
 class LexicalVelarTests(unittest.TestCase):
     def test_shared_pronunciation_fixtures_align_with_option_a(self):
         fixtures = json.loads((checker.ROOT / 'scripts/palatalisation-fixtures.json').read_text(encoding='utf-8'))
-        selected = [item for item in fixtures['pronunciations'] if item['form'] in {'kěda', 'ťeda'}]
-        self.assertEqual({item['form'] for item in selected}, {'kěda', 'ťeda'})
+        selected = [item for item in fixtures['pronunciations'] if item['form'] in {'kěda', 'těda'}]
+        self.assertEqual({item['form'] for item in selected}, {'kěda', 'těda'})
         focused = {'derivations': [], 'classes': [], 'pronunciations': selected}
         phonology = sources()['chapters/02-phonology.tex']
         self.assertEqual(checker.check_palatalisation(phonology, focused), [])
@@ -56,7 +56,7 @@ class LexicalVelarTests(unittest.TestCase):
     def test_keeps_lexical_palatal_stop(self):
         data = sources()
         data['chapters/02-phonology.tex'] = data['chapters/02-phonology.tex'].replace('ˈcɛ.da', 'ˈkʲɛ.da')
-        self.assertTrue(any('ťeda' in error for error in checker.lexical_velar_checks(data)))
+        self.assertTrue(any('těda' in error for error in checker.lexical_velar_checks(data)))
 
     def test_rejects_merger_in_lexicon_metadata(self):
         data = sources()
@@ -66,7 +66,7 @@ class LexicalVelarTests(unittest.TestCase):
     def test_rejects_incorrect_phonemic_metadata_even_with_correct_ipa(self):
         for before, after in ((r'\lexentry{kěda}{lexical /kʲ/', r'\lexentry{kěda}{lexical /c/'),
                               (r'\lexentry{kan-}{lexical initial /k/', r'\lexentry{kan-}{lexical initial /c/'),
-                              (r'\lexentry{ťeda}{lexical /c/', r'\lexentry{ťeda}{lexical /kʲ/')):
+                              (r'\lexentry{těda}{lexical /c/', r'\lexentry{těda}{lexical /kʲ/')):
             with self.subTest(entry=before):
                 data = sources()
                 data['util/lexicon.tex'] = data['util/lexicon.tex'].replace(before, after)
@@ -90,7 +90,7 @@ class LexicalVelarTests(unittest.TestCase):
 
     def test_rejects_productive_output_changes(self):
         for grade, before, after in (('Front', 'ts', 'kʲ'),
-                                     ('Restricted velar-front', 'ts', 'c'), ('Yod', 'tʃ', 'c')):
+                                     ('Restricted velar-front', 'ts', 'c'), ('Mixed', 'tʃ', 'c')):
             with self.subTest(grade=grade):
                 data = sources()
                 old = grade + r' & /k/ $\rightarrow$ /' + before + '/'

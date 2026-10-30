@@ -46,7 +46,7 @@
           "mužnélaž"
         ],
         "attribute": "múžna",
-        "manner": "mužňe",
+        "manner": "mužně",
         "operations": [
           "mužnal",
           "mužnova",
@@ -105,7 +105,7 @@
           "hradnélaž"
         ],
         "attribute": "hradná",
-        "manner": "hradňe",
+        "manner": "hradně",
         "operations": [
           "hradnal",
           "hradnova",
@@ -164,7 +164,7 @@
           "svornélaž"
         ],
         "attribute": "svorná",
-        "manner": "svorňe",
+        "manner": "svorně",
         "operations": [
           "svornal",
           "svornova",
@@ -222,7 +222,7 @@
           "četnélaž"
         ],
         "attribute": "četná",
-        "manner": "četňe",
+        "manner": "četně",
         "operations": [
           "četnal",
           "četnova",
@@ -281,7 +281,7 @@
           "ptaknélaž"
         ],
         "attribute": null,
-        "manner": "ptakňe",
+        "manner": "ptakně",
         "operations": [
           "ptaknal",
           "ptaknova",
@@ -390,7 +390,7 @@
           "všihnélaž"
         ],
         "attribute": "všihňa",
-        "manner": "všihňe",
+        "manner": "všihně",
         "operations": [
           "všihnal",
           "všihnova",
@@ -449,7 +449,7 @@
           "žbirnélaž"
         ],
         "attribute": "žbirňa",
-        "manner": "žbirňe",
+        "manner": "žbirně",
         "operations": [
           "žbirnal",
           "žbirnova",
@@ -508,7 +508,7 @@
           "hvodnélaž"
         ],
         "attribute": null,
-        "manner": "hvodňe",
+        "manner": "hvodně",
         "operations": [
           "hvodnal",
           "hvodnova",
@@ -620,7 +620,7 @@
           "tvírznelaž"
         ],
         "attribute": "tvírzná",
-        "manner": "tvírzňe",
+        "manner": "tvírzně",
         "operations": [
           "tvírznal",
           "tvírznova",
@@ -689,18 +689,18 @@
         "torbanélav",
         "torbanélaž"
       ],
-      "manner": "torbaňe",
+      "manner": "torbaně",
       "hypothetical_become_class": "EL-S",
       "linked_state": [
         "torbane",
-        "torbánimňe",
+        "torbánimně",
         "torbánice",
         "torbanávě",
         "torbanáže"
       ],
       "linked_become": [
         "torbanéle",
-        "torbanélimňe",
+        "torbanélimně",
         "torbanélice",
         "torbanélavě",
         "torbanélaže"

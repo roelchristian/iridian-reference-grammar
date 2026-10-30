@@ -36,7 +36,7 @@ class BoundaryTransducer:
     def __init__(self, rules):
         self.rules = rules
         grades = rules['grades']
-        if set(grades) != {'plain', 'front', 'yod', 'restricted'}:
+        if set(grades) != {'plain', 'front', 'mixed', 'restricted'}:
             raise BoundaryError('only the four named grade bundles are supported')
         for grade in grades.values():
             if (set(grade) != {'coronal_labial_pal', 'velar_output'}

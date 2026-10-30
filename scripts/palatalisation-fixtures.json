@@ -6,7 +6,7 @@
       "forms": [
         "rat",
         "-e",
-        "raťe"
+        "ratě"
       ],
       "process": "PAL coronal stop"
     },
@@ -24,7 +24,7 @@
       "forms": [
         "ran",
         "-ě",
-        "raňe"
+        "raně"
       ],
       "process": "PAL nasal and explicit soft-letter spelling"
     },
@@ -33,7 +33,7 @@
       "forms": [
         "ral",
         "-e",
-        "raľe"
+        "ralě"
       ],
       "process": "PAL lateral"
     },
@@ -51,9 +51,9 @@
       "forms": [
         "zděk-",
         "-ěv",
-        "zdíčev"
+        "zďíčev"
       ],
-      "process": "yod velar with independently licensed raised-strong G3 root"
+      "process": "mixed velar with independently licensed raised-strong G3 root"
     },
     {
       "label": "sec:morphophon-interactions",
@@ -67,9 +67,9 @@
     {
       "label": "sec:morphophon-interactions",
       "forms": [
-        "piášček",
+        "pjášček",
         "-e",
-        "piáščice"
+        "pjáščice"
       ],
       "process": "outer linker targets aspect exponent; bound -ik-"
     },
@@ -103,7 +103,7 @@
   ],
   "pronunciations": [
     {
-      "form": "zďec",
+      "form": "zděc",
       "ipa": "zɟɛts",
       "process": "lexical voiced palatal stop without suffixal PAL"
     },
@@ -128,12 +128,12 @@
       "process": "lexically palatalised velar, distinct from palatal stop"
     },
     {
-      "form": "ťeda",
+      "form": "těda",
       "ipa": "ˈcɛ.da",
       "process": "lexical palatal stop, distinct from palatalised velar"
     },
     {
-      "form": "piaštník",
+      "form": "pjaštník",
       "ipa": "ˈpʲaʃt.niːk",
       "process": "lexical labial softness before back vowel"
     },
@@ -188,7 +188,7 @@
       "suffix": "-e"
     },
     {
-      "grade": "Yod",
+      "grade": "Mixed",
       "suffix": "-ěv"
     },
     {

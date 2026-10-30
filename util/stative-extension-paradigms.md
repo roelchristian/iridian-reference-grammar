@@ -62,15 +62,15 @@ These are selected-participant nominals, not automatic state or event abstractio
 
 | Stem | State continuous + Evid | State participant | Conditional state Caus progressive | Manner | Ordinary ATTR |
 | --- | --- | --- | --- | --- | --- |
-| mužn- | `mužnal` | `mužnova` | `mužnérime` | `mužňe` | `múžna` |
-| hradn- | `hradnal` | `hradnova` | `hradnérime` | `hradňe` | `hradná` |
-| svorn- | `svornal` | `svornova` | `svornérime` | `svorňe` | `svorná` |
-| četn- | `četnal` | `četnova` | `četnérime` | `četňe` | `četná` |
-| ptakn- | `ptaknal` | `ptaknova` | `ptaknérime` | `ptakňe` | unlisted |
-| všihn- | `všihnal` | `všihnova` | `všihnérime` | `všihňe` | `všihňa` |
-| žbirn- | `žbirnal` | `žbirnova` | `žbirnérime` | `žbirňe` | `žbirňa` |
-| hvodn- | `hvodnal` | `hvodnova` | `hvodnérime` | `hvodňe` | unlisted |
-| tvírzn- | `tvírznal` | `tvírznova` | `tvírznerime` | `tvírzňe` | `tvírzná` |
+| mužn- | `mužnal` | `mužnova` | `mužnérime` | `mužně` | `múžna` |
+| hradn- | `hradnal` | `hradnova` | `hradnérime` | `hradně` | `hradná` |
+| svorn- | `svornal` | `svornova` | `svornérime` | `svorně` | `svorná` |
+| četn- | `četnal` | `četnova` | `četnérime` | `četně` | `četná` |
+| ptakn- | `ptaknal` | `ptaknova` | `ptaknérime` | `ptakně` | unlisted |
+| všihn- | `všihnal` | `všihnova` | `všihnérime` | `všihně` | `všihňa` |
+| žbirn- | `žbirnal` | `žbirnova` | `žbirnérime` | `žbirně` | `žbirňa` |
+| hvodn- | `hvodnal` | `hvodnova` | `hvodnérime` | `hvodně` | unlisted |
+| tvírzn- | `tvírznal` | `tvírznova` | `tvírznerime` | `tvírzně` | `tvírzná` |
 
 | Stem | Become continuous + Evid | Become participant | Conditional Become Caus progressive | Stimulus Appl |
 | --- | --- | --- | --- | --- |
@@ -88,7 +88,7 @@ Evidential `-al/-l` is unchanged and marks propositional source. The existing `v
 
 ## Ordinary ATTR and manner
 
-Class I selects root G1 plus short `-a`; Class II selects its base grade plus long `-á`. Class III is enumerated for `všihn-` and `žbirn-` and selects the existing front grade at the final stative boundary plus short `-a`: `všihňa`, `žbirňa`. The distinct manner boundary gives `všihňe`, `žbirňe`. No earlier consonant is mutated and no root lengthening accompanies the soft class. No definiteness, agreement or temporal anchor is assigned by class.
+Class I selects root G1 plus short `-a`; Class II selects its base grade plus long `-á`. Class III is enumerated for `všihn-` and `žbirn-` and selects the existing front grade at the final stative boundary plus short `-a`: `všihňa`, `žbirňa`. The distinct manner boundary gives `všihně`, `žbirně`. No earlier consonant is mutated and no root lengthening accompanies the soft class. No definiteness, agreement or temporal anchor is assigned by class.
 
 The shared experiential/condition label does not give `ptakn-` or `hvodn-` an automatic Class III form. Their ordinary attributives remain unlisted. Soft-class membership does not enlarge the separately restricted emphatic `-ěsk-` derivation. No new doublet or universal dispositional/episodic contrast is specified. A historical `-ja` source is an unconfirmed comparative reconstruction, not an asserted Iridian history.
 
@@ -106,7 +106,7 @@ The sole listed input is `všihn-`. `ESH-A` is its own derived quantitative clas
 
 A display can be genuine or feigned: display truth does not require genuine happiness. Conversely genuine happiness without observable display does not satisfy Manifest. This derivation is neither an Evid exponent nor causer introduction. Conditional higher Caus can cause a display without causing an emotion; it selects G1 on the accessible Manifest `e`. No Become–Manifest stack or inherited stimulus Appl is licensed. Other experiential, bodily, dimensional and relational records do not acquire Manifest by semantic analogy.
 
-Free eventive PF `všihnéšek` has bound participant `všihnéšikou` and direct linked `všihnéšice`. Evid instead attaches to the free finite host, giving `všihnéšekal`; linking then targets the new final lateral in `všihnéšekaľe`, without inner PF allomorphy. The head retains the stative nasal: `-eš-` is not a change of n into š. Its occurrence must not be inferred from unrelated whole exponents `-eškady`, `-ešhoume` or emphatic `-ěsk-`.
+Free eventive PF `všihnéšek` has bound participant `všihnéšikou` and direct linked `všihnéšice`. Evid instead attaches to the free finite host, giving `všihnéšekal`; linking then targets the new final lateral in `všihnéšekalě`, without inner PF allomorphy. The head retains the stative nasal: `-eš-` is not a change of n into š. Its occurrence must not be inferred from unrelated whole exponents `-eškady`, `-ešhoume` or emphatic `-ěsk-`.
 
 ## Perspective and source
 
@@ -140,7 +140,7 @@ Negative indicative `za-` remains outside the lexical stress domain; integrated 
 
 `smrn-` has no eligible vowel target. Its principal parts, ordinary ATTR, manner and derived nominalisations are withheld: no unrecorded *smer-* stem or syllabic liquid is introduced.
 
-`torba` ‘badness’ supplies stative `torban-` ‘be bad’, syllabified /tɔr.ban/. Its quantity target is the final root a (segment index 4), giving conditional G1 `torbán-` while initial o remains short. Finite class, Become class, ordinary ATTR and manner are unassigned. The machine file isolates its Class A / EL-S paradigms under `conditional_predictions`, outside licensed `expected` forms. The isolated and linked conditional outputs are listed in the grammar's `tab:torban-conditional`; they are unreachable through the lexical selector. The manner candidate `torbaňe` likewise needs an independent licence. No ordinary attributive principal part is selected.
+`torba` ‘badness’ supplies stative `torban-` ‘be bad’, syllabified /tɔr.ban/. Its quantity target is the final root a (segment index 4), giving conditional G1 `torbán-` while initial o remains short. Finite class, Become class, ordinary ATTR and manner are unassigned. The machine file isolates its Class A / EL-S paradigms under `conditional_predictions`, outside licensed `expected` forms. The isolated and linked conditional outputs are listed in the grammar's `tab:torban-conditional`; they are unreachable through the lexical selector. The manner candidate `torbaně` likewise needs an independent licence. No ordinary attributive principal part is selected.
 
 The nine resolved records supply 90 State/Become cells; Manifest supplies five more finite cells. Both unresolved records have explicit rejection tests. `smerňa`, novel attributive doublets and fabricated irregular histories remain unadopted. There is no productive stativiser deletion, unsupported vowel-preservation allomorph or global palatalisation rule.
 

@@ -2,19 +2,19 @@
   "description": "Independent contemplative long-vowel source prescriptions. These pair spelling with later phonetic realisation, without modelling final devoicing in the consonantal boundary transducer.",
   "pronunciations": [
     {
-      "form": "piaštáž",
+      "form": "pjaštáž",
       "ipa": "ˈpʲaʃ.taːʃ"
     },
     {
-      "form": "piaštáže",
+      "form": "pjaštáže",
       "ipa": "ˈpʲaʃ.taː.ʒɛ"
     },
     {
-      "form": "piaštážal",
+      "form": "pjaštážal",
       "ipa": "ˈpʲaʃ.taː.ʒaw"
     },
     {
-      "form": "piaštážaľe",
+      "form": "pjaštážalě",
       "ipa": "ˈpʲaʃ.taː.ʒa.ʎɛ"
     }
   ],

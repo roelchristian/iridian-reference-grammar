@@ -249,7 +249,7 @@
       "raising_licensed": false
     },
     {
-      "id": "antipassive-replacement-piast",
+      "id": "antipassive-replacement-pjast",
       "grade": "G1",
       "input": [
         "pʲ",
@@ -442,13 +442,13 @@
       "grade": "G3",
       "input": [
         "z",
-        "d",
+        "ɟ",
         "ɛ",
         "k"
       ],
       "expected": [
         "z",
-        "d",
+        "ɟ",
         "iː",
         "k"
       ],
@@ -467,13 +467,13 @@
       "grade": "G0",
       "input": [
         "z",
-        "d",
+        "ɟ",
         "ɛ",
         "k"
       ],
       "expected": [
         "z",
-        "d",
+        "ɟ",
         "ɛ",
         "k"
       ],
@@ -880,11 +880,11 @@
           "zemacáv"
         ],
         [
-          "piašta",
-          "piaštíme",
-          "piaštáž",
-          "piaštník",
-          "piaštnáv"
+          "pjašta",
+          "pjaštíme",
+          "pjaštáž",
+          "pjaštník",
+          "pjaštnáv"
         ],
         [
           "knářa",
@@ -979,9 +979,9 @@
         ],
         [
           "torbánime",
-          "torbánimňe",
+          "torbánimně",
           "torbanélime",
-          "torbanélimňe"
+          "torbanélimně"
         ],
         [
           "torbánik",

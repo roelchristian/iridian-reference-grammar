@@ -26,7 +26,7 @@ with no merge or PDF build.
 - Ordinary ATTR selects a property/reduced state, rather than a finite verb
   with Asp removed. Class I múžna and Class II hradná/svorná remain;
   Class III is listed only for všihňa/žbirňa, selecting existing local
-  n→ň plus short -a. Manner všihňe/žbirňe remains a separate boundary.
+  n→ň plus short -a. Manner všihně/žbirně remains a separate boundary.
   No agreement, definiteness, temporal anchoring or universal episodic contrast
   is assigned by class. Emphatic productivity is not enlarged.
 - Genuine internal experience has a perspective dependency, defaulting to the

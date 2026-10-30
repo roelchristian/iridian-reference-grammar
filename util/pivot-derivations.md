@@ -30,7 +30,7 @@ not c-command or linear order. `X < Y` means precedes, with no adjacency claim.
 | PF causative of applied intransitive | `Orient(Caus(C,Act(E,Appl(B,VP(V)))))` | B DIR, C TRS, E IND | B C E V; no retained T exists |
 | PF causative of antipassive | `Orient(Caus(C,Act(E,AP(V))))` | E DIR, C TRS; no core T | E C V; no patient restored by Caus |
 | NOM patient-oriented passive | `Orient_PASS(Act_optional(A,VP(T,V)))` | T DIR; optional A IND agentive dependent | T (A) V in ordinary examples; not ordinary active NOM A DIR |
-| Directive with retained T | `Mood_DIR(Orient(Act(A,VP(T,V))))`; Appl and/or Caus may occur inside Orient | T DIR; overt highest A/C TRS; B/E IND where licensed | T<V; overt contrastive subject may precede T (`Jí trava piaštím`), so do not impose universal pivot-first order |
+| Directive with retained T | `Mood_DIR(Orient(Act(A,VP(T,V))))`; Appl and/or Caus may occur inside Orient | T DIR; overt highest A/C TRS; B/E IND where licensed | T<V; overt contrastive subject may precede T (`Jí trava pjaštím`), so do not impose universal pivot-first order |
 
 The passive row's `Act_optional` abbreviates the passive external configuration,
 not a conclusion that its agent is structurally identical to an active actor.

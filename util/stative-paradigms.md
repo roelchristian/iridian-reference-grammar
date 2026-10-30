@@ -32,16 +32,16 @@ Simple attributive: `múžna`.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `mužna` | `mužne` | `mužnova` | `mužnový` | `mužnal` | `mužnaľe` |
-| `múžnime` | `múžnimňe` | `múžnimou` | `múžnimový` | `múžnimel` | `múžnimeľe` |
-| `múžnik` | `múžnice` | `múžnikou` | `múžnikový` | `múžnikal` | `múžnikaľe` |
-| `mužnáv` | `mužnávě` | `mužnávou` | `mužnávový` | `mužnával` | `mužnávaľe` |
-| `mužnáž` | `mužnáže` | `mužnážou` | `mužnážový` | `mužnážal` | `mužnážaľe` |
-| `mužnéla` | `mužnéle` | `mužnélova` | `mužnélový` | `mužnélal` | `mužnélaľe` |
-| `mužnélime` | `mužnélimňe` | `mužnélimou` | `mužnélimový` | `mužnélimel` | `mužnélimeľe` |
-| `mužnélek` | `mužnélice` | `mužnélikou` | `mužnélikový` | `mužnélekal` | `mužnélekaľe` |
-| `mužnélav` | `mužnélavě` | `mužnélavou` | `mužnélavový` | `mužnélaval` | `mužnélavaľe` |
-| `mužnélaž` | `mužnélaže` | `mužnélažou` | `mužnélažový` | `mužnélažal` | `mužnélažaľe` |
+| `mužna` | `mužne` | `mužnova` | `mužnový` | `mužnal` | `mužnalě` |
+| `múžnime` | `múžnimně` | `múžnimou` | `múžnimový` | `múžnimel` | `múžnimelě` |
+| `múžnik` | `múžnice` | `múžnikou` | `múžnikový` | `múžnikal` | `múžnikalě` |
+| `mužnáv` | `mužnávě` | `mužnávou` | `mužnávový` | `mužnával` | `mužnávalě` |
+| `mužnáž` | `mužnáže` | `mužnážou` | `mužnážový` | `mužnážal` | `mužnážalě` |
+| `mužnéla` | `mužnéle` | `mužnélova` | `mužnélový` | `mužnélal` | `mužnélalě` |
+| `mužnélime` | `mužnélimně` | `mužnélimou` | `mužnélimový` | `mužnélimel` | `mužnélimelě` |
+| `mužnélek` | `mužnélice` | `mužnélikou` | `mužnélikový` | `mužnélekal` | `mužnélekalě` |
+| `mužnélav` | `mužnélavě` | `mužnélavou` | `mužnélavový` | `mužnélaval` | `mužnélavalě` |
+| `mužnélaž` | `mužnélaže` | `mužnélažou` | `mužnélažový` | `mužnélažal` | `mužnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zamužna`, `vy mužna`, `so mužna`, with the same operations on all ten aspectual cells.
 
@@ -59,16 +59,16 @@ Simple attributive: `hradná`.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `hradna` | `hradne` | `hradnova` | `hradnový` | `hradnal` | `hradnaľe` |
-| `hrádnime` | `hrádnimňe` | `hrádnimou` | `hrádnimový` | `hrádnimel` | `hrádnimeľe` |
-| `hrádnik` | `hrádnice` | `hrádnikou` | `hrádnikový` | `hrádnikal` | `hrádnikaľe` |
-| `hradnáv` | `hradnávě` | `hradnávou` | `hradnávový` | `hradnával` | `hradnávaľe` |
-| `hradnáž` | `hradnáže` | `hradnážou` | `hradnážový` | `hradnážal` | `hradnážaľe` |
-| `hradnéla` | `hradnéle` | `hradnélova` | `hradnélový` | `hradnélal` | `hradnélaľe` |
-| `hradnélime` | `hradnélimňe` | `hradnélimou` | `hradnélimový` | `hradnélimel` | `hradnélimeľe` |
-| `hradnélek` | `hradnélice` | `hradnélikou` | `hradnélikový` | `hradnélekal` | `hradnélekaľe` |
-| `hradnélav` | `hradnélavě` | `hradnélavou` | `hradnélavový` | `hradnélaval` | `hradnélavaľe` |
-| `hradnélaž` | `hradnélaže` | `hradnélažou` | `hradnélažový` | `hradnélažal` | `hradnélažaľe` |
+| `hradna` | `hradne` | `hradnova` | `hradnový` | `hradnal` | `hradnalě` |
+| `hrádnime` | `hrádnimně` | `hrádnimou` | `hrádnimový` | `hrádnimel` | `hrádnimelě` |
+| `hrádnik` | `hrádnice` | `hrádnikou` | `hrádnikový` | `hrádnikal` | `hrádnikalě` |
+| `hradnáv` | `hradnávě` | `hradnávou` | `hradnávový` | `hradnával` | `hradnávalě` |
+| `hradnáž` | `hradnáže` | `hradnážou` | `hradnážový` | `hradnážal` | `hradnážalě` |
+| `hradnéla` | `hradnéle` | `hradnélova` | `hradnélový` | `hradnélal` | `hradnélalě` |
+| `hradnélime` | `hradnélimně` | `hradnélimou` | `hradnélimový` | `hradnélimel` | `hradnélimelě` |
+| `hradnélek` | `hradnélice` | `hradnélikou` | `hradnélikový` | `hradnélekal` | `hradnélekalě` |
+| `hradnélav` | `hradnélavě` | `hradnélavou` | `hradnélavový` | `hradnélaval` | `hradnélavalě` |
+| `hradnélaž` | `hradnélaže` | `hradnélažou` | `hradnélažový` | `hradnélažal` | `hradnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zahradna`, `vy hradna`, `so hradna`, with the same operations on all ten aspectual cells.
 
@@ -86,16 +86,16 @@ Simple attributive: `svorná`.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `svorna` | `svorne` | `svornova` | `svornový` | `svornal` | `svornaľe` |
-| `svórnime` | `svórnimňe` | `svórnimou` | `svórnimový` | `svórnimel` | `svórnimeľe` |
-| `svórnik` | `svórnice` | `svórnikou` | `svórnikový` | `svórnikal` | `svórnikaľe` |
-| `svornáv` | `svornávě` | `svornávou` | `svornávový` | `svornával` | `svornávaľe` |
-| `svornáž` | `svornáže` | `svornážou` | `svornážový` | `svornážal` | `svornážaľe` |
-| `svornéla` | `svornéle` | `svornélova` | `svornélový` | `svornélal` | `svornélaľe` |
-| `svornélime` | `svornélimňe` | `svornélimou` | `svornélimový` | `svornélimel` | `svornélimeľe` |
-| `svornélek` | `svornélice` | `svornélikou` | `svornélikový` | `svornélekal` | `svornélekaľe` |
-| `svornélav` | `svornélavě` | `svornélavou` | `svornélavový` | `svornélaval` | `svornélavaľe` |
-| `svornélaž` | `svornélaže` | `svornélažou` | `svornélažový` | `svornélažal` | `svornélažaľe` |
+| `svorna` | `svorne` | `svornova` | `svornový` | `svornal` | `svornalě` |
+| `svórnime` | `svórnimně` | `svórnimou` | `svórnimový` | `svórnimel` | `svórnimelě` |
+| `svórnik` | `svórnice` | `svórnikou` | `svórnikový` | `svórnikal` | `svórnikalě` |
+| `svornáv` | `svornávě` | `svornávou` | `svornávový` | `svornával` | `svornávalě` |
+| `svornáž` | `svornáže` | `svornážou` | `svornážový` | `svornážal` | `svornážalě` |
+| `svornéla` | `svornéle` | `svornélova` | `svornélový` | `svornélal` | `svornélalě` |
+| `svornélime` | `svornélimně` | `svornélimou` | `svornélimový` | `svornélimel` | `svornélimelě` |
+| `svornélek` | `svornélice` | `svornélikou` | `svornélikový` | `svornélekal` | `svornélekalě` |
+| `svornélav` | `svornélavě` | `svornélavou` | `svornélavový` | `svornélaval` | `svornélavalě` |
+| `svornélaž` | `svornélaže` | `svornélažou` | `svornélažový` | `svornélažal` | `svornélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zasvorna`, `vy svorna`, `so svorna`, with the same operations on all ten aspectual cells.
 
@@ -113,16 +113,16 @@ Simple attributive: `četná`.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `četna` | `četne` | `četnova` | `četnový` | `četnal` | `četnaľe` |
-| `čétnime` | `čétnimňe` | `čétnimou` | `čétnimový` | `čétnimel` | `čétnimeľe` |
-| `čétnik` | `čétnice` | `čétnikou` | `čétnikový` | `čétnikal` | `čétnikaľe` |
-| `četnáv` | `četnávě` | `četnávou` | `četnávový` | `četnával` | `četnávaľe` |
-| `četnáž` | `četnáže` | `četnážou` | `četnážový` | `četnážal` | `četnážaľe` |
-| `četnéla` | `četnéle` | `četnélova` | `četnélový` | `četnélal` | `četnélaľe` |
-| `četnélime` | `četnélimňe` | `četnélimou` | `četnélimový` | `četnélimel` | `četnélimeľe` |
-| `četnélek` | `četnélice` | `četnélikou` | `četnélikový` | `četnélekal` | `četnélekaľe` |
-| `četnélav` | `četnélavě` | `četnélavou` | `četnélavový` | `četnélaval` | `četnélavaľe` |
-| `četnélaž` | `četnélaže` | `četnélažou` | `četnélažový` | `četnélažal` | `četnélažaľe` |
+| `četna` | `četne` | `četnova` | `četnový` | `četnal` | `četnalě` |
+| `čétnime` | `čétnimně` | `čétnimou` | `čétnimový` | `čétnimel` | `čétnimelě` |
+| `čétnik` | `čétnice` | `čétnikou` | `čétnikový` | `čétnikal` | `čétnikalě` |
+| `četnáv` | `četnávě` | `četnávou` | `četnávový` | `četnával` | `četnávalě` |
+| `četnáž` | `četnáže` | `četnážou` | `četnážový` | `četnážal` | `četnážalě` |
+| `četnéla` | `četnéle` | `četnélova` | `četnélový` | `četnélal` | `četnélalě` |
+| `četnélime` | `četnélimně` | `četnélimou` | `četnélimový` | `četnélimel` | `četnélimelě` |
+| `četnélek` | `četnélice` | `četnélikou` | `četnélikový` | `četnélekal` | `četnélekalě` |
+| `četnélav` | `četnélavě` | `četnélavou` | `četnélavový` | `četnélaval` | `četnélavalě` |
+| `četnélaž` | `četnélaže` | `četnélažou` | `četnélažový` | `četnélažal` | `četnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `začetna`, `vy četna`, `so četna`, with the same operations on all ten aspectual cells.
 
@@ -140,16 +140,16 @@ Simple attributive: unassigned: no new attributive grade is invented.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `ptakna` | `ptakne` | `ptaknova` | `ptaknový` | `ptaknal` | `ptaknaľe` |
-| `ptáknime` | `ptáknimňe` | `ptáknimou` | `ptáknimový` | `ptáknimel` | `ptáknimeľe` |
-| `ptáknik` | `ptáknice` | `ptáknikou` | `ptáknikový` | `ptáknikal` | `ptáknikaľe` |
-| `ptaknáv` | `ptaknávě` | `ptaknávou` | `ptaknávový` | `ptaknával` | `ptaknávaľe` |
-| `ptaknáž` | `ptaknáže` | `ptaknážou` | `ptaknážový` | `ptaknážal` | `ptaknážaľe` |
-| `ptaknéla` | `ptaknéle` | `ptaknélova` | `ptaknélový` | `ptaknélal` | `ptaknélaľe` |
-| `ptaknélime` | `ptaknélimňe` | `ptaknélimou` | `ptaknélimový` | `ptaknélimel` | `ptaknélimeľe` |
-| `ptaknélek` | `ptaknélice` | `ptaknélikou` | `ptaknélikový` | `ptaknélekal` | `ptaknélekaľe` |
-| `ptaknélav` | `ptaknélavě` | `ptaknélavou` | `ptaknélavový` | `ptaknélaval` | `ptaknélavaľe` |
-| `ptaknélaž` | `ptaknélaže` | `ptaknélažou` | `ptaknélažový` | `ptaknélažal` | `ptaknélažaľe` |
+| `ptakna` | `ptakne` | `ptaknova` | `ptaknový` | `ptaknal` | `ptaknalě` |
+| `ptáknime` | `ptáknimně` | `ptáknimou` | `ptáknimový` | `ptáknimel` | `ptáknimelě` |
+| `ptáknik` | `ptáknice` | `ptáknikou` | `ptáknikový` | `ptáknikal` | `ptáknikalě` |
+| `ptaknáv` | `ptaknávě` | `ptaknávou` | `ptaknávový` | `ptaknával` | `ptaknávalě` |
+| `ptaknáž` | `ptaknáže` | `ptaknážou` | `ptaknážový` | `ptaknážal` | `ptaknážalě` |
+| `ptaknéla` | `ptaknéle` | `ptaknélova` | `ptaknélový` | `ptaknélal` | `ptaknélalě` |
+| `ptaknélime` | `ptaknélimně` | `ptaknélimou` | `ptaknélimový` | `ptaknélimel` | `ptaknélimelě` |
+| `ptaknélek` | `ptaknélice` | `ptaknélikou` | `ptaknélikový` | `ptaknélekal` | `ptaknélekalě` |
+| `ptaknélav` | `ptaknélavě` | `ptaknélavou` | `ptaknélavový` | `ptaknélaval` | `ptaknélavalě` |
+| `ptaknélaž` | `ptaknélaže` | `ptaknélažou` | `ptaknélažový` | `ptaknélažal` | `ptaknélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zaptakna`, `vy ptakna`, `so ptakna`, with the same operations on all ten aspectual cells.
 
@@ -167,16 +167,16 @@ Simple attributive: unassigned: no new attributive grade is invented.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `všihna` | `všihne` | `všihnova` | `všihnový` | `všihnal` | `všihnaľe` |
-| `všíhnime` | `všíhnimňe` | `všíhnimou` | `všíhnimový` | `všíhnimel` | `všíhnimeľe` |
-| `všíhnik` | `všíhnice` | `všíhnikou` | `všíhnikový` | `všíhnikal` | `všíhnikaľe` |
-| `všihnáv` | `všihnávě` | `všihnávou` | `všihnávový` | `všihnával` | `všihnávaľe` |
-| `všihnáž` | `všihnáže` | `všihnážou` | `všihnážový` | `všihnážal` | `všihnážaľe` |
-| `všihnéla` | `všihnéle` | `všihnélova` | `všihnélový` | `všihnélal` | `všihnélaľe` |
-| `všihnélime` | `všihnélimňe` | `všihnélimou` | `všihnélimový` | `všihnélimel` | `všihnélimeľe` |
-| `všihnélek` | `všihnélice` | `všihnélikou` | `všihnélikový` | `všihnélekal` | `všihnélekaľe` |
-| `všihnélav` | `všihnélavě` | `všihnélavou` | `všihnélavový` | `všihnélaval` | `všihnélavaľe` |
-| `všihnélaž` | `všihnélaže` | `všihnélažou` | `všihnélažový` | `všihnélažal` | `všihnélažaľe` |
+| `všihna` | `všihne` | `všihnova` | `všihnový` | `všihnal` | `všihnalě` |
+| `všíhnime` | `všíhnimně` | `všíhnimou` | `všíhnimový` | `všíhnimel` | `všíhnimelě` |
+| `všíhnik` | `všíhnice` | `všíhnikou` | `všíhnikový` | `všíhnikal` | `všíhnikalě` |
+| `všihnáv` | `všihnávě` | `všihnávou` | `všihnávový` | `všihnával` | `všihnávalě` |
+| `všihnáž` | `všihnáže` | `všihnážou` | `všihnážový` | `všihnážal` | `všihnážalě` |
+| `všihnéla` | `všihnéle` | `všihnélova` | `všihnélový` | `všihnélal` | `všihnélalě` |
+| `všihnélime` | `všihnélimně` | `všihnélimou` | `všihnélimový` | `všihnélimel` | `všihnélimelě` |
+| `všihnélek` | `všihnélice` | `všihnélikou` | `všihnélikový` | `všihnélekal` | `všihnélekalě` |
+| `všihnélav` | `všihnélavě` | `všihnélavou` | `všihnélavový` | `všihnélaval` | `všihnélavalě` |
+| `všihnélaž` | `všihnélaže` | `všihnélažou` | `všihnélažový` | `všihnélažal` | `všihnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zavšihna`, `vy všihna`, `so všihna`, with the same operations on all ten aspectual cells.
 
@@ -194,16 +194,16 @@ Simple attributive: unassigned: no new attributive grade is invented.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `hvodna` | `hvodne` | `hvodnova` | `hvodnový` | `hvodnal` | `hvodnaľe` |
-| `hvódnime` | `hvódnimňe` | `hvódnimou` | `hvódnimový` | `hvódnimel` | `hvódnimeľe` |
-| `hvódnik` | `hvódnice` | `hvódnikou` | `hvódnikový` | `hvódnikal` | `hvódnikaľe` |
-| `hvodnáv` | `hvodnávě` | `hvodnávou` | `hvodnávový` | `hvodnával` | `hvodnávaľe` |
-| `hvodnáž` | `hvodnáže` | `hvodnážou` | `hvodnážový` | `hvodnážal` | `hvodnážaľe` |
-| `hvodnéla` | `hvodnéle` | `hvodnélova` | `hvodnélový` | `hvodnélal` | `hvodnélaľe` |
-| `hvodnélime` | `hvodnélimňe` | `hvodnélimou` | `hvodnélimový` | `hvodnélimel` | `hvodnélimeľe` |
-| `hvodnélek` | `hvodnélice` | `hvodnélikou` | `hvodnélikový` | `hvodnélekal` | `hvodnélekaľe` |
-| `hvodnélav` | `hvodnélavě` | `hvodnélavou` | `hvodnélavový` | `hvodnélaval` | `hvodnélavaľe` |
-| `hvodnélaž` | `hvodnélaže` | `hvodnélažou` | `hvodnélažový` | `hvodnélažal` | `hvodnélažaľe` |
+| `hvodna` | `hvodne` | `hvodnova` | `hvodnový` | `hvodnal` | `hvodnalě` |
+| `hvódnime` | `hvódnimně` | `hvódnimou` | `hvódnimový` | `hvódnimel` | `hvódnimelě` |
+| `hvódnik` | `hvódnice` | `hvódnikou` | `hvódnikový` | `hvódnikal` | `hvódnikalě` |
+| `hvodnáv` | `hvodnávě` | `hvodnávou` | `hvodnávový` | `hvodnával` | `hvodnávalě` |
+| `hvodnáž` | `hvodnáže` | `hvodnážou` | `hvodnážový` | `hvodnážal` | `hvodnážalě` |
+| `hvodnéla` | `hvodnéle` | `hvodnélova` | `hvodnélový` | `hvodnélal` | `hvodnélalě` |
+| `hvodnélime` | `hvodnélimně` | `hvodnélimou` | `hvodnélimový` | `hvodnélimel` | `hvodnélimelě` |
+| `hvodnélek` | `hvodnélice` | `hvodnélikou` | `hvodnélikový` | `hvodnélekal` | `hvodnélekalě` |
+| `hvodnélav` | `hvodnélavě` | `hvodnélavou` | `hvodnélavový` | `hvodnélaval` | `hvodnélavalě` |
+| `hvodnélaž` | `hvodnélaže` | `hvodnélažou` | `hvodnélažový` | `hvodnélažal` | `hvodnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zahvodna`, `vy hvodna`, `so hvodna`, with the same operations on all ten aspectual cells.
 
@@ -221,16 +221,16 @@ Simple attributive: `tvírzná`.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `tvírzna` | `tvírzne` | `tvírznova` | `tvírznový` | `tvírznal` | `tvírznaľe` |
-| `tvírznime` | `tvírznimňe` | `tvírznimou` | `tvírznimový` | `tvírznimel` | `tvírznimeľe` |
-| `tvírznik` | `tvírznice` | `tvírznikou` | `tvírznikový` | `tvírznikal` | `tvírznikaľe` |
-| `tvírznav` | `tvírznavě` | `tvírznavou` | `tvírznavový` | `tvírznaval` | `tvírznavaľe` |
-| `tvírznaž` | `tvírznaže` | `tvírznažou` | `tvírznažový` | `tvírznažal` | `tvírznažaľe` |
-| `tvírznela` | `tvírznele` | `tvírznelova` | `tvírznelový` | `tvírznelal` | `tvírznelaľe` |
-| `tvírznelime` | `tvírznelimňe` | `tvírznelimou` | `tvírznelimový` | `tvírznelimel` | `tvírznelimeľe` |
-| `tvírznelek` | `tvírznelice` | `tvírznelikou` | `tvírznelikový` | `tvírznelekal` | `tvírznelekaľe` |
-| `tvírznelav` | `tvírznelavě` | `tvírznelavou` | `tvírznelavový` | `tvírznelaval` | `tvírznelavaľe` |
-| `tvírznelaž` | `tvírznelaže` | `tvírznelažou` | `tvírznelažový` | `tvírznelažal` | `tvírznelažaľe` |
+| `tvírzna` | `tvírzne` | `tvírznova` | `tvírznový` | `tvírznal` | `tvírznalě` |
+| `tvírznime` | `tvírznimně` | `tvírznimou` | `tvírznimový` | `tvírznimel` | `tvírznimelě` |
+| `tvírznik` | `tvírznice` | `tvírznikou` | `tvírznikový` | `tvírznikal` | `tvírznikalě` |
+| `tvírznav` | `tvírznavě` | `tvírznavou` | `tvírznavový` | `tvírznaval` | `tvírznavalě` |
+| `tvírznaž` | `tvírznaže` | `tvírznažou` | `tvírznažový` | `tvírznažal` | `tvírznažalě` |
+| `tvírznela` | `tvírznele` | `tvírznelova` | `tvírznelový` | `tvírznelal` | `tvírznelalě` |
+| `tvírznelime` | `tvírznelimně` | `tvírznelimou` | `tvírznelimový` | `tvírznelimel` | `tvírznelimelě` |
+| `tvírznelek` | `tvírznelice` | `tvírznelikou` | `tvírznelikový` | `tvírznelekal` | `tvírznelekalě` |
+| `tvírznelav` | `tvírznelavě` | `tvírznelavou` | `tvírznelavový` | `tvírznelaval` | `tvírznelavalě` |
+| `tvírznelaž` | `tvírznelaže` | `tvírznelažou` | `tvírznelažový` | `tvírznelažal` | `tvírznelažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zatvírzna`, `vy tvírzna`, `so tvírzna`, with the same operations on all ten aspectual cells.
 
@@ -279,7 +279,7 @@ These five readings occupy three forms: the current grammar supplies the positiv
 
 `za-` leaves lexical initial stress on the following stem; an integrated degree prefix takes the initial stress of the expanded lexical word. Thus `zamužna` retains stress on `mu-`, while `zapremužna` retains stress on `pre-`. The tests use underlying selected segment tokens; syllabification and stress judgments in this paragraph are explicit manual applications of the existing phonology, not output from the token helper.
 
-Plain Become attachment preserves the final nasal. Manner `-ě` independently selects n→ň: `mužňe`. Direct PF linking first selects bound `-ik-`, then front-grade k→c once: `mužnélice`, excluding `*mužnéliče`. With Evid intervening, `mužnélekal` instead gives `mužnélekaľe`: PAL targets the new final l and cannot select inner `-ik-`. Progressive `mužnélime` gives direct `mužnélimňe`, but evidential `mužnélimeľe` retains the full inner ending. The same explicit distinction is included for every finite cell in the literal matrix.
+Plain Become attachment preserves the final nasal. Manner `-ě` independently selects n→ň: `mužně`. Direct PF linking first selects bound `-ik-`, then front-grade k→c once: `mužnélice`, excluding `*mužnéliče`. With Evid intervening, `mužnélekal` instead gives `mužnélekalě`: PAL targets the new final l and cannot select inner `-ik-`. Progressive `mužnélime` gives direct `mužnélimně`, but evidential `mužnélimelě` retains the full inner ending. The same explicit distinction is included for every finite cell in the literal matrix.
 
 ### Syllabification of the eight representatives
 

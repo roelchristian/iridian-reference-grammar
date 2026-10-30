@@ -23,7 +23,7 @@ exponent on an already licensed phonological host: `/al/` after a consonant,
 `/l/` after a vowel. It preserves the host and delegates plain attachment to
 the existing boundary transducer. A subsequent front-grade linker acts on the
 new final `/l/`, so it neither reaches an inner aspect ending nor selects the
-linker-specific `-ice` or `-imňe` allomorph through the evidential. The
+linker-specific `-ice` or `-imně` allomorph through the evidential. The
 consonantal mapping's rejection of vowel-final PAL inputs is unchanged.
 
 Literal expectations in `scripts/evidential-fixtures.json` cover isolated and
@@ -39,7 +39,7 @@ standard spelling.
 
 The separate `scripts/contemplative-fixtures.json` checks long `-áž` and the
 reviewed copular/existential forms. Its explicit pronunciation pairs distinguish
-standalone final `[aːʃ]` from linked `[aːʒɛ]` and evidential `-ážal/-ážaľe`,
+standalone final `[aːʃ]` from linked `[aːʒɛ]` and evidential `-ážal/-ážalě`,
 while preserving quantity and initial stress. Boundary tests retain underlying
 `/ʒ/` throughout suffixation; contextual devoicing is not an input allomorph or
 an added `x → ʒ` PAL correspondence. Source checks also preserve the unrelated

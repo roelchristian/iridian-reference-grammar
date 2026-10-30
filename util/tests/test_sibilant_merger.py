@@ -51,14 +51,23 @@ class SibilantMergerChecks(unittest.TestCase):
                 self.assertTrue(any('alveolopalatal' in error
                                     for error in self.check_spelling(text)))
 
-    def test_silent_i_is_limited_to_documented_labials(self):
-        for form, expected in (('piaštnik', 2), ('piaštou', 2), ('bia', 1),
-                               ('mia', 1), ('via', 1), ('šarc', 1),
+    def test_i_is_vocalic_and_j_does_not_add_a_nucleus(self):
+        for form, expected in (('pjaštnik', 2), ('pjaštou', 2), ('bja', 1),
+                               ('mja', 1), ('vja', 1), ('šarc', 1),
+                               ('pia', 2), ('bia', 2), ('mia', 2), ('via', 2),
                                ('siarc', 2), ('zia', 2), ('ciu', 2),
                                ('kia', 2), ('gia', 2), ('hia', 2), ('fia', 2),
                                ('kěda', 2), ('Marcí', 2), ('lúbcí', 2)):
             with self.subTest(form=form):
                 self.assertEqual(checker.spelling_nuclei(form), expected)
+
+    def test_soft_coronal_and_labial_spelling_constraints(self):
+        for form in ('raťe', 'raďe', 'raňe', 'raľe', 'piaštou', 'piášček'):
+            with self.subTest(form=form):
+                self.assertTrue(self.check_spelling(r'\ird{' + form + '}'))
+        self.assertEqual(self.check_spelling(
+            r'\ird{ratě} \ird{radě} \ird{raně} \ird{ralě} '
+            r'\ird{pjaštou} \ird{pjášček} \ird{ťi} \ird{ti} \ird{pia}'), [])
 
     def test_independent_fixtures_preserve_ce_che_and_high_front_contrast(self):
         fixtures = json.loads((checker.ROOT / 'scripts/palatalisation-fixtures.json')

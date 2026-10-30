@@ -20,7 +20,17 @@ SPELL=dict(zip('abdehiklmnoprstuvyz',
 SPELL.update({'á':'aː','é':'eː','í':'iː','ó':'oː','ú':'uː','ý':'ɨː',
  'š':'ʃ','ž':'ʒ','č':'tʃ','c':'ts','ň':'ɲ','ľ':'ʎ'})
 def tokens(form):
-    return tuple(SPELL[c] for c in form)
+    # A narrow expected-form decoder; morphology is asserted independently.
+    segments = []
+    soft = {'t': 'c', 'd': 'ɟ', 'n': 'ɲ', 'l': 'ʎ'}
+    for index, char in enumerate(form):
+        if char == 'ě':
+            segments.append('ɛ')
+        elif char in soft and form[index + 1:index + 2] == 'ě':
+            segments.append(soft[char])
+        else:
+            segments.append(SPELL[char])
+    return tuple(segments)
 
 
 class StativeLexiconTests(unittest.TestCase):
@@ -87,8 +97,8 @@ class StativeLexiconTests(unittest.TestCase):
                          'projection-not-noninitiation')
 
     def test_soft_attribute_uses_only_its_own_front_boundary(self):
-        for stem,attribute,adverb in [('všihn','všihňa','všihňe'),
-                                      ('žbirn','žbirňa','žbirňe')]:
+        for stem,attribute,adverb in [('všihn','všihňa','všihně'),
+                                      ('žbirn','žbirňa','žbirně')]:
             with self.subTest(stem=stem):
                 entry=self.entries[stem]
                 self.assertEqual(ordinary_attributive(entry),tokens(attribute))

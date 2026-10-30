@@ -72,7 +72,7 @@ identity from the anaphoric dependency.
 
 ## Modifier and scope controls
 
-Keep **skorňe** ‘quickly’ (event manner), **roca** ‘often’ (event frequency)
+Keep **skorně** ‘quickly’ (event manner), **roca** ‘often’ (event frequency)
 and **bych** ‘yesterday’ (temporal frame) separate. None belongs to the closed
 particle series merely because it is preverbal. A low manner adjunct and a
 temporal frame need not mark the same attachment boundary. Their semantics

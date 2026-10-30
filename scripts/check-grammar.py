@@ -66,9 +66,9 @@ def lexical_velar_checks(sources):
     palatality to arbitrary written kě. Dots may clarify syllabification; the
     consonants, stress and quantity of each broad transcription are fixed.
     """
-    expected = {'kěda': 'ˈkʲɛda', 'ťeda': 'ˈcɛda',
+    expected = {'kěda': 'ˈkʲɛda', 'těda': 'ˈcɛda',
                 'kánek': 'ˈkaːnɛk', 'kánnik': 'ˈkaːnnɪk', 'kanžek': 'ˈkanʒɛk'}
-    lexical_specs = {'kěda': 'kʲ', 'kan-': 'k', 'ťeda': 'c'}
+    lexical_specs = {'kěda': 'kʲ', 'kan-': 'k', 'těda': 'c'}
     found, entries, failures = set(), set(), []
     for path, text in sources.items():
         examples = []
@@ -105,7 +105,7 @@ def lexical_velar_checks(sources):
     if table is None:
         failures.append('missing productive velar-grade table')
     else:
-        for grade, output in (('Front', 'ts'), ('Restricted velar-front', 'ts'), ('Yod', 'tʃ')):
+        for grade, output in (('Front', 'ts'), ('Restricted velar-front', 'ts'), ('Mixed', 'tʃ')):
             row = re.search(re.escape(grade) + r'\s*&\s*/k/\s*\$\\rightarrow\$\s*/([^/]+)/', table[1])
             if row is None or row[1] != output:
                 failures.append(f'productive {grade} grade must retain /k/ → /{output}/')
@@ -175,15 +175,11 @@ def check_palatalisation(phonology, fixtures):
 
 
 def spelling_nuclei(form):
-    """Count written nuclei, allowing silent i only in labial CiV spellings.
+    """Count native written nuclei: i is vocalic and j never adds a nucleus.
 
-    Lexical kě retains its written vowel nucleus. Neither lexical velar softness
-    nor the spelling of a sibilant licenses suppressing an arbitrary i before
-    a back vowel. Loan hiatus requires an explicit lexical pronunciation and is
-    outside this deliberately narrow native-spelling check.
+    The diphthong ou has one nucleus; lexical softness does not alter counting.
     """
-    spelling = re.sub(r'(?<=[pbmv])i(?=[aáoóuú])', '', form.lower())
-    return len(re.findall(r'[aeiouyáéíóúýě]', spelling.replace('ou', 'o')))
+    return len(re.findall(r'[aeiouyáéíóúýě]', form.lower().replace('ou', 'o')))
 
 
 def sibilant_spelling_checks(sources):
@@ -195,6 +191,8 @@ def sibilant_spelling_checks(sources):
     """
     failures = []
     old_spellings = re.compile(r'[szc]ě', re.IGNORECASE)
+    explicit_soft_e = re.compile(r'[ťďňľ]e', re.IGNORECASE)
+    silent_labial_i = re.compile(r'pi[aá](?:št|šč|sn)', re.IGNORECASE)
     redundant = re.compile(r'[ťďňľčšž]ě', re.IGNORECASE)
     old_words = re.compile(r'(?<!\w)(?:siarc|zia|ziou|ciu)(?!\w)', re.IGNORECASE)
     for path, raw in sources.items():
@@ -206,6 +204,10 @@ def sibilant_spelling_checks(sources):
         for form, line in examples:
             if form.lstrip().startswith('*'):
                 continue
+            if explicit_soft_e.search(form):
+                failures.append(f'{path}:{line}: soft coronals before ɛ require tě/dě/ně/lě: {form}')
+            if silent_labial_i.search(form):
+                failures.append(f'{path}:{line}: labial softness before back vowels requires j: {form}')
             if old_spellings.search(form):
                 failures.append(f'{path}:{line}: superseded sibilant spelling {form}')
             if redundant.search(form):
@@ -411,10 +413,10 @@ def check_evidential_sources(sources, fixtures):
         text = strip_comments(raw)
         for record in extract(text, path):
             if (not record['form'].lstrip().startswith('*')
-                    and re.search(r'ej[ťt]e', record['form'], re.IGNORECASE)):
+                    and re.search(r'ej(?:[ťt]e|tě)', record['form'], re.IGNORECASE)):
                 failures.append(f"{path}: obsolete evidential exponent: {record['form']}")
         for match in re.finditer(r'\\gla\s+(.*?)//', text, re.S):
-            if re.search(r'ej[ťt]e', match[1], re.IGNORECASE):
+            if re.search(r'ej(?:[ťt]e|tě)', match[1], re.IGNORECASE):
                 failures.append(f'{path}: obsolete evidential in interlinear example')
     return failures
 
@@ -491,7 +493,7 @@ def check():
     if registry is None:
         failures.append('missing licensed-grade specification table')
     else:
-        for name, display in (('plain', 'Plain'), ('front', 'Front'), ('yod', 'Yod'),
+        for name, display in (('plain', 'Plain'), ('front', 'Front'), ('mixed', 'Mixed'),
                               ('restricted', 'Restricted velar-front')):
             spec = boundary_mapper.rules['grades'][name]
             pal = 'yes' if spec['coronal_labial_pal'] else 'no'
@@ -533,28 +535,26 @@ def check():
     failures.extend(f'duplicate bibliography key {key}' for key, count in bibliography.items() if count > 1)
 
     # These are concrete obsolete outputs, not a general ban on lexical ě.
-    obsolete = ('zdičev', 'prku', 'prce', 'piaštiře', 'piaštoviře',
-                'piaščace', 'piaštnace', 'piaščave', 'piaštnave', 'piaštimně', 'piaště',
-                'mostě', 'stolě', 'sobotě', 'skorně', 'mrocně', 'mužně',
-                'piastime', 'piastnime', 'tvírzně', 'ščehezně', 'mněrazně',
-                'kaměnzně', 'sylozně', 'barocezně', 'zmocezně', 'svícezně', 'kmětezně')
+    obsolete = ('zdičev', 'zdíčev', 'prku', 'prce', 'pjaštiře', 'pjaštoviře',
+                'pjaščace', 'pjaštnace', 'pjaščave', 'pjaštnave', 'pjaštimně',
+                'pjastime', 'pjastnime')
     pattern = re.compile(r'(?<!\w)(?:' + '|'.join(map(re.escape, obsolete)) + r')(?!\w)', re.IGNORECASE)
     for path, text in sources.items():
         for match in pattern.finditer(text):
             line = text.count('\n', 0, match.start()) + 1
             failures.append(f'{path}:{line}: obsolete output {match[0]}')
     combined = '\n'.join(sources.values())
-    for form in ('raťe', 'raďe', 'raňe', 'raľe', 'ruce', 'lúbcí', 'Marcí',
-                 'zděcir', 'zdíčev', 'piáščev', 'piáščice', 'piáščikou',
-                 'piáščavě', 'piaštnávě', 'piaštire', 'piaštovire'):
+    for form in ('ratě', 'radě', 'raně', 'ralě', 'ruce', 'lúbcí', 'Marcí',
+                 'zděcir', 'zďíčev', 'pjáščev', 'pjáščice', 'pjáščikou',
+                 'pjáščavě', 'pjaštnávě', 'pjaštire', 'pjaštovire'):
         if not re.search(r'(?<!\w)' + re.escape(form) + r'(?!\w)', combined):
             failures.append(f'missing grade regression example: {form}')
 
     # Independently fixed expectations: (nuclei, nuclei before primary stress).
     # Count actual IPA vowels, excluding the nonsyllabic second part of /ou̯/.
-    expected = {'piaštník': (2, 0, 1), 'zapiaštník': (3, 1, 1),
+    expected = {'pjaštník': (2, 0, 1), 'zapjaštník': (3, 1, 1),
                 'premužna': (3, 0, 0), 'šarc': (1, 0, 0),
-                'piaštou': (2, 0, 0), 'perek': (2, 0, 0),
+                'pjaštou': (2, 0, 0), 'perek': (2, 0, 0),
                 'pérku': (2, 0, 1), 'pérce': (2, 0, 1)}
     valency_fixtures = json.loads(
         (ROOT / 'scripts/valency-fixtures.json').read_text(encoding='utf-8'))
@@ -588,7 +588,7 @@ def check():
             form, ipa = record['form'], record['pronunciation']
             pronunciations += 1
             # Only explicit examples are checked, not inferred dictionary IPA.
-            # Labial silent i and diphthong ou do not add a nucleus.
+            # The glide letter j and diphthong ou do not add a nucleus.
             # Sibilants and lexical kě retain their stated segmental values.
             count = spelling_nuclei(form)
             ipa_nuclei = len(re.findall(vowels, re.sub(r'.[\u032f\u0311]', '', ipa)))

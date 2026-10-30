@@ -73,7 +73,7 @@ class EvidentialRealisationTests(unittest.TestCase):
         for value in (False, None, 1, 'yes'):
             with self.subTest(value=value), self.assertRaises(BoundaryError):
                 attach_indirect_evidential(host, 'evid', value)
-        for host in (BoundaryState(()), BoundaryState('piašta'), BoundaryState(('t', 'ě'))):
+        for host in (BoundaryState(()), BoundaryState('pjašta'), BoundaryState(('t', 'ě'))):
             with self.subTest(host=host), self.assertRaises(BoundaryError):
                 attach_indirect_evidential(host, 'evid', True)
         result = attach_indirect_evidential(BoundaryState(('t', 'a')), 'evid', True)
@@ -95,35 +95,35 @@ class EvidentialRealisationTests(unittest.TestCase):
         self.assertNotEqual(joined.segments, ('t', 'a', 'ʎ', 'ɛ'))
 
     def test_source_checks_require_same_row_not_scattered_forms(self):
-        fixtures = {'cases': [{'id': 'one', 'forms': ['piaštíme', 'piaštímel', 'piaštímeľe']}],
+        fixtures = {'cases': [{'id': 'one', 'forms': ['pjaštíme', 'pjaštímel', 'pjaštímelě']}],
                     'tables': [{'path': 'example.tex', 'label': 'tab:evid', 'case_ids': ['one']}],
                     'pronunciations': []}
-        correct = (r'\label{tab:evid}\ird{piaštíme} & \ird{piaštímel} & '
-                   r'\ird{piaštímeľe} \\ \end{table}')
+        correct = (r'\label{tab:evid}\ird{pjaštíme} & \ird{pjaštímel} & '
+                   r'\ird{pjaštímelě} \\ \end{table}')
         self.assertEqual(checker.check_evidential_sources({'example.tex': correct}, fixtures), [])
-        for changed in (correct.replace('piaštímel', 'piaštímeal'),
+        for changed in (correct.replace('pjaštímel', 'pjaštímeal'),
                         correct.replace('&', r'\\', 1),
-                        correct + r'\label{tab:evid}\ird{piaštíme} & \ird{piaštímeal} & \ird{piaštímeľe} \\ \end{table}'):
+                        correct + r'\label{tab:evid}\ird{pjaštíme} & \ird{pjaštímeal} & \ird{pjaštímelě} \\ \end{table}'):
             with self.subTest(changed=changed):
                 self.assertTrue(checker.check_evidential_sources({'example.tex': changed}, fixtures))
 
     def test_source_pronunciations_distinguish_coda_w_and_onset_lateral(self):
         fixtures = {'cases': [], 'tables': [], 'pronunciations': [
-            {'form': 'piaštal', 'ipa': 'ˈpʲaʃ.taw'},
-            {'form': 'piaštaľe', 'ipa': 'ˈpʲaʃ.ta.ʎɛ'}]}
-        correct = r'\phon{piaštal}{ˈpʲaʃ.taw}{report} \phon{piaštaľe}{ˈpʲaʃ.ta.ʎɛ}{joined report}'
+            {'form': 'pjaštal', 'ipa': 'ˈpʲaʃ.taw'},
+            {'form': 'pjaštalě', 'ipa': 'ˈpʲaʃ.ta.ʎɛ'}]}
+        correct = r'\phon{pjaštal}{ˈpʲaʃ.taw}{report} \phon{pjaštalě}{ˈpʲaʃ.ta.ʎɛ}{joined report}'
         self.assertEqual(checker.check_evidential_sources({'example.tex': correct}, fixtures), [])
         for changed in (correct.replace('taw', 'tal'), correct.replace('ʎɛ', 'lɛ'),
                         correct.replace('ˈpʲaʃ.taw', 'pʲaˈʃ.taw'),
-                        correct + r'\phon{piaštal}{ˈpʲaʃ.taːw}{wrong length}'):
+                        correct + r'\phon{pjaštal}{ˈpʲaʃ.taːw}{wrong length}'):
             with self.subTest(changed=changed):
                 self.assertTrue(checker.check_evidential_sources({'example.tex': changed}, fixtures))
 
     def test_commented_rows_cannot_supply_evidential_paradigm_coverage(self):
-        fixtures = {'cases': [{'id': 'one', 'forms': ['piaštíme', 'piaštímel', 'piaštímeľe']}],
+        fixtures = {'cases': [{'id': 'one', 'forms': ['pjaštíme', 'pjaštímel', 'pjaštímelě']}],
                     'tables': [{'path': 'example.tex', 'label': 'tab:evid', 'case_ids': ['one']}],
                     'pronunciations': []}
-        row = r'\ird{piaštíme} & \ird{piaštímel} & \ird{piaštímeľe} \\'
+        row = r'\ird{pjaštíme} & \ird{pjaštímel} & \ird{pjaštímelě} \\'
         source = '\\label{tab:evid}\n' + row + '\n\\end{table}'
         self.assertEqual(checker.check_evidential_sources({'example.tex': source}, fixtures), [])
         self.assertTrue(checker.check_evidential_sources(
@@ -131,32 +131,32 @@ class EvidentialRealisationTests(unittest.TestCase):
 
     def test_capitalised_evidential_ipa_cannot_hide_a_contradiction(self):
         fixtures = {'cases': [], 'tables': [], 'pronunciations': [
-            {'form': 'piaštal', 'ipa': 'ˈpʲaʃ.taw'}]}
-        correct = r'\phon{Piaštal}{ˈpʲaʃ.taw}{report}'
+            {'form': 'pjaštal', 'ipa': 'ˈpʲaʃ.taw'}]}
+        correct = r'\phon{Pjaštal}{ˈpʲaʃ.taw}{report}'
         self.assertEqual(checker.check_evidential_sources({'example.tex': correct}, fixtures), [])
         for source in (correct.replace('taw', 'tal'),
-                       correct + r'\phon{piaštal}{ˈpʲaʃ.tal}{contradiction}'):
+                       correct + r'\phon{pjaštal}{ˈpʲaʃ.tal}{contradiction}'):
             self.assertTrue(checker.check_evidential_sources({'example.tex': source}, fixtures))
 
     def test_source_checks_reject_old_evidential_but_allow_explicit_rejection(self):
         fixtures = {'cases': [], 'tables': [], 'pronunciations': []}
-        for source in (r'\ird{-ejte}', r'\ird{piaštnikejťe}',
-                       r'\begingl\gla Piaštnikejte.//\endgl'):
+        for source in (r'\ird{-ejte}', r'\ird{pjaštnikejtě}',
+                       r'\begingl\gla Pjaštnikejte.//\endgl'):
             with self.subTest(source=source):
                 self.assertTrue(checker.check_evidential_sources({'example.tex': source}, fixtures))
         self.assertEqual(checker.check_evidential_sources(
-            {'example.tex': r'\ird{*piaštnikejte} % \ird{-ejte}'}, fixtures), [])
+            {'example.tex': r'\ird{*pjaštnikejte} % \ird{-ejte}'}, fixtures), [])
 
     def test_reviewed_table_and_negative_prose_mutations_are_detected(self):
         sources = checker.active_sources(ROOT / 'grammar.tex')
         self.assertEqual(checker.check_evidential_sources(sources, self.fixtures), [])
         for before, after in (
-                (r'\ird{piaštímal}', r'\ird{piaštimal}'),
-                (r'\ird{piaštél}', r'\ird{piaštéwal}'),
-                (r'\ird{piaštiral}', r'\ird{piašticeal}'),
-                (r'\ird{piáščeval}', r'\ird{piaščival}'),
-                (r'\ird{zapiaštníkal}', r'\ird{piaštníkal}'),
-                (r'\ird{piaštéľe}', r'\ird{piašteľe}')):
+                (r'\ird{pjaštímal}', r'\ird{pjaštimal}'),
+                (r'\ird{pjaštél}', r'\ird{pjaštéwal}'),
+                (r'\ird{pjaštiral}', r'\ird{pjašticeal}'),
+                (r'\ird{pjáščeval}', r'\ird{pjaščival}'),
+                (r'\ird{zapjaštníkal}', r'\ird{pjaštníkal}'),
+                (r'\ird{pjaštélě}', r'\ird{pjaštelě}')):
             with self.subTest(before=before, after=after):
                 original = sources['chapters/03-verbs.tex']
                 self.assertIn(before, original)

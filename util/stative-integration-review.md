@@ -17,7 +17,7 @@ build was performed for this reform.
 - Beauty root is `muž-`, stative `mužn-`, strong `múžn-`: state `mužna`,
   stage-level progressive `múžnime`, bounded state `múžnik`, inchoative
   `mužnéla / mužnélime / mužnélek`, bound `mužnélikou / mužnélikový`,
-  linked `mužnélice`, manner `mužňe`, emphatic `mužňeská` and intensive
+  linked `mužnélice`, manner `mužně`, emphatic `mužněská` and intensive
   `múž-`. Existing phonotactics licenses ž+n; no novel repair was introduced.
 - Finite Class A principal parts are explicitly assigned to the seven short
   representative stems, separately from attributive class. Protected `tvírzn-`

@@ -19,7 +19,7 @@
           "participant": "mužnova",
           "relative": "mužnový",
           "evidential": "mužnal",
-          "evidential_linked": "mužnaľe",
+          "evidential_linked": "mužnalě",
           "licence": "marked-stage-relative"
         },
         {
@@ -29,11 +29,11 @@
           "negative": "zamúžnime",
           "vy": "vy múžnime",
           "so": "so múžnime",
-          "linked": "múžnimňe",
+          "linked": "múžnimně",
           "participant": "múžnimou",
           "relative": "múžnimový",
           "evidential": "múžnimel",
-          "evidential_linked": "múžnimeľe",
+          "evidential_linked": "múžnimelě",
           "licence": "stage-level-or-expressive"
         },
         {
@@ -47,7 +47,7 @@
           "participant": "múžnikou",
           "relative": "múžnikový",
           "evidential": "múžnikal",
-          "evidential_linked": "múžnikaľe",
+          "evidential_linked": "múžnikalě",
           "licence": "bounded-state"
         },
         {
@@ -61,7 +61,7 @@
           "participant": "mužnávou",
           "relative": "mužnávový",
           "evidential": "mužnával",
-          "evidential_linked": "mužnávaľe",
+          "evidential_linked": "mužnávalě",
           "licence": "ordinary"
         },
         {
@@ -75,7 +75,7 @@
           "participant": "mužnážou",
           "relative": "mužnážový",
           "evidential": "mužnážal",
-          "evidential_linked": "mužnážaľe",
+          "evidential_linked": "mužnážalě",
           "licence": "ordinary"
         },
         {
@@ -89,7 +89,7 @@
           "participant": "mužnélova",
           "relative": "mužnélový",
           "evidential": "mužnélal",
-          "evidential_linked": "mužnélaľe",
+          "evidential_linked": "mužnélalě",
           "licence": "ordinary"
         },
         {
@@ -99,11 +99,11 @@
           "negative": "zamužnélime",
           "vy": "vy mužnélime",
           "so": "so mužnélime",
-          "linked": "mužnélimňe",
+          "linked": "mužnélimně",
           "participant": "mužnélimou",
           "relative": "mužnélimový",
           "evidential": "mužnélimel",
-          "evidential_linked": "mužnélimeľe",
+          "evidential_linked": "mužnélimelě",
           "licence": "ordinary"
         },
         {
@@ -117,7 +117,7 @@
           "participant": "mužnélikou",
           "relative": "mužnélikový",
           "evidential": "mužnélekal",
-          "evidential_linked": "mužnélekaľe",
+          "evidential_linked": "mužnélekalě",
           "licence": "ordinary"
         },
         {
@@ -131,7 +131,7 @@
           "participant": "mužnélavou",
           "relative": "mužnélavový",
           "evidential": "mužnélaval",
-          "evidential_linked": "mužnélavaľe",
+          "evidential_linked": "mužnélavalě",
           "licence": "ordinary"
         },
         {
@@ -145,7 +145,7 @@
           "participant": "mužnélažou",
           "relative": "mužnélažový",
           "evidential": "mužnélažal",
-          "evidential_linked": "mužnélažaľe",
+          "evidential_linked": "mužnélažalě",
           "licence": "ordinary"
         }
       ]
@@ -168,7 +168,7 @@
           "participant": "hradnova",
           "relative": "hradnový",
           "evidential": "hradnal",
-          "evidential_linked": "hradnaľe",
+          "evidential_linked": "hradnalě",
           "licence": "marked-stage-relative"
         },
         {
@@ -178,11 +178,11 @@
           "negative": "zahrádnime",
           "vy": "vy hrádnime",
           "so": "so hrádnime",
-          "linked": "hrádnimňe",
+          "linked": "hrádnimně",
           "participant": "hrádnimou",
           "relative": "hrádnimový",
           "evidential": "hrádnimel",
-          "evidential_linked": "hrádnimeľe",
+          "evidential_linked": "hrádnimelě",
           "licence": "stage-level-or-expressive"
         },
         {
@@ -196,7 +196,7 @@
           "participant": "hrádnikou",
           "relative": "hrádnikový",
           "evidential": "hrádnikal",
-          "evidential_linked": "hrádnikaľe",
+          "evidential_linked": "hrádnikalě",
           "licence": "bounded-state"
         },
         {
@@ -210,7 +210,7 @@
           "participant": "hradnávou",
           "relative": "hradnávový",
           "evidential": "hradnával",
-          "evidential_linked": "hradnávaľe",
+          "evidential_linked": "hradnávalě",
           "licence": "ordinary"
         },
         {
@@ -224,7 +224,7 @@
           "participant": "hradnážou",
           "relative": "hradnážový",
           "evidential": "hradnážal",
-          "evidential_linked": "hradnážaľe",
+          "evidential_linked": "hradnážalě",
           "licence": "ordinary"
         },
         {
@@ -238,7 +238,7 @@
           "participant": "hradnélova",
           "relative": "hradnélový",
           "evidential": "hradnélal",
-          "evidential_linked": "hradnélaľe",
+          "evidential_linked": "hradnélalě",
           "licence": "ordinary"
         },
         {
@@ -248,11 +248,11 @@
           "negative": "zahradnélime",
           "vy": "vy hradnélime",
           "so": "so hradnélime",
-          "linked": "hradnélimňe",
+          "linked": "hradnélimně",
           "participant": "hradnélimou",
           "relative": "hradnélimový",
           "evidential": "hradnélimel",
-          "evidential_linked": "hradnélimeľe",
+          "evidential_linked": "hradnélimelě",
           "licence": "ordinary"
         },
         {
@@ -266,7 +266,7 @@
           "participant": "hradnélikou",
           "relative": "hradnélikový",
           "evidential": "hradnélekal",
-          "evidential_linked": "hradnélekaľe",
+          "evidential_linked": "hradnélekalě",
           "licence": "ordinary"
         },
         {
@@ -280,7 +280,7 @@
           "participant": "hradnélavou",
           "relative": "hradnélavový",
           "evidential": "hradnélaval",
-          "evidential_linked": "hradnélavaľe",
+          "evidential_linked": "hradnélavalě",
           "licence": "ordinary"
         },
         {
@@ -294,7 +294,7 @@
           "participant": "hradnélažou",
           "relative": "hradnélažový",
           "evidential": "hradnélažal",
-          "evidential_linked": "hradnélažaľe",
+          "evidential_linked": "hradnélažalě",
           "licence": "ordinary"
         }
       ]
@@ -317,7 +317,7 @@
           "participant": "svornova",
           "relative": "svornový",
           "evidential": "svornal",
-          "evidential_linked": "svornaľe",
+          "evidential_linked": "svornalě",
           "licence": "marked-stage-relative"
         },
         {
@@ -327,11 +327,11 @@
           "negative": "zasvórnime",
           "vy": "vy svórnime",
           "so": "so svórnime",
-          "linked": "svórnimňe",
+          "linked": "svórnimně",
           "participant": "svórnimou",
           "relative": "svórnimový",
           "evidential": "svórnimel",
-          "evidential_linked": "svórnimeľe",
+          "evidential_linked": "svórnimelě",
           "licence": "stage-level-or-expressive"
         },
         {
@@ -345,7 +345,7 @@
           "participant": "svórnikou",
           "relative": "svórnikový",
           "evidential": "svórnikal",
-          "evidential_linked": "svórnikaľe",
+          "evidential_linked": "svórnikalě",
           "licence": "bounded-state"
         },
         {
@@ -359,7 +359,7 @@
           "participant": "svornávou",
           "relative": "svornávový",
           "evidential": "svornával",
-          "evidential_linked": "svornávaľe",
+          "evidential_linked": "svornávalě",
           "licence": "ordinary"
         },
         {
@@ -373,7 +373,7 @@
           "participant": "svornážou",
           "relative": "svornážový",
           "evidential": "svornážal",
-          "evidential_linked": "svornážaľe",
+          "evidential_linked": "svornážalě",
           "licence": "ordinary"
         },
         {
@@ -387,7 +387,7 @@
           "participant": "svornélova",
           "relative": "svornélový",
           "evidential": "svornélal",
-          "evidential_linked": "svornélaľe",
+          "evidential_linked": "svornélalě",
           "licence": "ordinary"
         },
         {
@@ -397,11 +397,11 @@
           "negative": "zasvornélime",
           "vy": "vy svornélime",
           "so": "so svornélime",
-          "linked": "svornélimňe",
+          "linked": "svornélimně",
           "participant": "svornélimou",
           "relative": "svornélimový",
           "evidential": "svornélimel",
-          "evidential_linked": "svornélimeľe",
+          "evidential_linked": "svornélimelě",
           "licence": "ordinary"
         },
         {
@@ -415,7 +415,7 @@
           "participant": "svornélikou",
           "relative": "svornélikový",
           "evidential": "svornélekal",
-          "evidential_linked": "svornélekaľe",
+          "evidential_linked": "svornélekalě",
           "licence": "ordinary"
         },
         {
@@ -429,7 +429,7 @@
           "participant": "svornélavou",
           "relative": "svornélavový",
           "evidential": "svornélaval",
-          "evidential_linked": "svornélavaľe",
+          "evidential_linked": "svornélavalě",
           "licence": "ordinary"
         },
         {
@@ -443,7 +443,7 @@
           "participant": "svornélažou",
           "relative": "svornélažový",
           "evidential": "svornélažal",
-          "evidential_linked": "svornélažaľe",
+          "evidential_linked": "svornélažalě",
           "licence": "ordinary"
         }
       ]
@@ -466,7 +466,7 @@
           "participant": "četnova",
           "relative": "četnový",
           "evidential": "četnal",
-          "evidential_linked": "četnaľe",
+          "evidential_linked": "četnalě",
           "licence": "marked-stage-relative"
         },
         {
@@ -476,11 +476,11 @@
           "negative": "začétnime",
           "vy": "vy čétnime",
           "so": "so čétnime",
-          "linked": "čétnimňe",
+          "linked": "čétnimně",
           "participant": "čétnimou",
           "relative": "čétnimový",
           "evidential": "čétnimel",
-          "evidential_linked": "čétnimeľe",
+          "evidential_linked": "čétnimelě",
           "licence": "stage-level-or-expressive"
         },
         {
@@ -494,7 +494,7 @@
           "participant": "čétnikou",
           "relative": "čétnikový",
           "evidential": "čétnikal",
-          "evidential_linked": "čétnikaľe",
+          "evidential_linked": "čétnikalě",
           "licence": "bounded-state"
         },
         {
@@ -508,7 +508,7 @@
           "participant": "četnávou",
           "relative": "četnávový",
           "evidential": "četnával",
-          "evidential_linked": "četnávaľe",
+          "evidential_linked": "četnávalě",
           "licence": "ordinary"
         },
         {
@@ -522,7 +522,7 @@
           "participant": "četnážou",
           "relative": "četnážový",
           "evidential": "četnážal",
-          "evidential_linked": "četnážaľe",
+          "evidential_linked": "četnážalě",
           "licence": "ordinary"
         },
         {
@@ -536,7 +536,7 @@
           "participant": "četnélova",
           "relative": "četnélový",
           "evidential": "četnélal",
-          "evidential_linked": "četnélaľe",
+          "evidential_linked": "četnélalě",
           "licence": "ordinary"
         },
         {
@@ -546,11 +546,11 @@
           "negative": "začetnélime",
           "vy": "vy četnélime",
           "so": "so četnélime",
-          "linked": "četnélimňe",
+          "linked": "četnélimně",
           "participant": "četnélimou",
           "relative": "četnélimový",
           "evidential": "četnélimel",
-          "evidential_linked": "četnélimeľe",
+          "evidential_linked": "četnélimelě",
           "licence": "ordinary"
         },
         {
@@ -564,7 +564,7 @@
           "participant": "četnélikou",
           "relative": "četnélikový",
           "evidential": "četnélekal",
-          "evidential_linked": "četnélekaľe",
+          "evidential_linked": "četnélekalě",
           "licence": "ordinary"
         },
         {
@@ -578,7 +578,7 @@
           "participant": "četnélavou",
           "relative": "četnélavový",
           "evidential": "četnélaval",
-          "evidential_linked": "četnélavaľe",
+          "evidential_linked": "četnélavalě",
           "licence": "ordinary"
         },
         {
@@ -592,7 +592,7 @@
           "participant": "četnélažou",
           "relative": "četnélažový",
           "evidential": "četnélažal",
-          "evidential_linked": "četnélažaľe",
+          "evidential_linked": "četnélažalě",
           "licence": "ordinary"
         }
       ]
@@ -615,7 +615,7 @@
           "participant": "ptaknova",
           "relative": "ptaknový",
           "evidential": "ptaknal",
-          "evidential_linked": "ptaknaľe",
+          "evidential_linked": "ptaknalě",
           "licence": "marked-stage-relative"
         },
         {
@@ -625,11 +625,11 @@
           "negative": "zaptáknime",
           "vy": "vy ptáknime",
           "so": "so ptáknime",
-          "linked": "ptáknimňe",
+          "linked": "ptáknimně",
           "participant": "ptáknimou",
           "relative": "ptáknimový",
           "evidential": "ptáknimel",
-          "evidential_linked": "ptáknimeľe",
+          "evidential_linked": "ptáknimelě",
           "licence": "stage-level-or-expressive"
         },
         {
@@ -643,7 +643,7 @@
           "participant": "ptáknikou",
           "relative": "ptáknikový",
           "evidential": "ptáknikal",
-          "evidential_linked": "ptáknikaľe",
+          "evidential_linked": "ptáknikalě",
           "licence": "bounded-state"
         },
         {
@@ -657,7 +657,7 @@
           "participant": "ptaknávou",
           "relative": "ptaknávový",
           "evidential": "ptaknával",
-          "evidential_linked": "ptaknávaľe",
+          "evidential_linked": "ptaknávalě",
           "licence": "ordinary"
         },
         {
@@ -671,7 +671,7 @@
           "participant": "ptaknážou",
           "relative": "ptaknážový",
           "evidential": "ptaknážal",
-          "evidential_linked": "ptaknážaľe",
+          "evidential_linked": "ptaknážalě",
           "licence": "ordinary"
         },
         {
@@ -685,7 +685,7 @@
           "participant": "ptaknélova",
           "relative": "ptaknélový",
           "evidential": "ptaknélal",
-          "evidential_linked": "ptaknélaľe",
+          "evidential_linked": "ptaknélalě",
           "licence": "ordinary"
         },
         {
@@ -695,11 +695,11 @@
           "negative": "zaptaknélime",
           "vy": "vy ptaknélime",
           "so": "so ptaknélime",
-          "linked": "ptaknélimňe",
+          "linked": "ptaknélimně",
           "participant": "ptaknélimou",
           "relative": "ptaknélimový",
           "evidential": "ptaknélimel",
-          "evidential_linked": "ptaknélimeľe",
+          "evidential_linked": "ptaknélimelě",
           "licence": "ordinary"
         },
         {
@@ -713,7 +713,7 @@
           "participant": "ptaknélikou",
           "relative": "ptaknélikový",
           "evidential": "ptaknélekal",
-          "evidential_linked": "ptaknélekaľe",
+          "evidential_linked": "ptaknélekalě",
           "licence": "ordinary"
         },
         {
@@ -727,7 +727,7 @@
           "participant": "ptaknélavou",
           "relative": "ptaknélavový",
           "evidential": "ptaknélaval",
-          "evidential_linked": "ptaknélavaľe",
+          "evidential_linked": "ptaknélavalě",
           "licence": "ordinary"
         },
         {
@@ -741,7 +741,7 @@
           "participant": "ptaknélažou",
           "relative": "ptaknélažový",
           "evidential": "ptaknélažal",
-          "evidential_linked": "ptaknélažaľe",
+          "evidential_linked": "ptaknélažalě",
           "licence": "ordinary"
         }
       ]
@@ -764,7 +764,7 @@
           "participant": "všihnova",
           "relative": "všihnový",
           "evidential": "všihnal",
-          "evidential_linked": "všihnaľe",
+          "evidential_linked": "všihnalě",
           "licence": "marked-stage-relative"
         },
         {
@@ -774,11 +774,11 @@
           "negative": "zavšíhnime",
           "vy": "vy všíhnime",
           "so": "so všíhnime",
-          "linked": "všíhnimňe",
+          "linked": "všíhnimně",
           "participant": "všíhnimou",
           "relative": "všíhnimový",
           "evidential": "všíhnimel",
-          "evidential_linked": "všíhnimeľe",
+          "evidential_linked": "všíhnimelě",
           "licence": "stage-level-or-expressive"
         },
         {
@@ -792,7 +792,7 @@
           "participant": "všíhnikou",
           "relative": "všíhnikový",
           "evidential": "všíhnikal",
-          "evidential_linked": "všíhnikaľe",
+          "evidential_linked": "všíhnikalě",
           "licence": "bounded-state"
         },
         {
@@ -806,7 +806,7 @@
           "participant": "všihnávou",
           "relative": "všihnávový",
           "evidential": "všihnával",
-          "evidential_linked": "všihnávaľe",
+          "evidential_linked": "všihnávalě",
           "licence": "ordinary"
         },
         {
@@ -820,7 +820,7 @@
           "participant": "všihnážou",
           "relative": "všihnážový",
           "evidential": "všihnážal",
-          "evidential_linked": "všihnážaľe",
+          "evidential_linked": "všihnážalě",
           "licence": "ordinary"
         },
         {
@@ -834,7 +834,7 @@
           "participant": "všihnélova",
           "relative": "všihnélový",
           "evidential": "všihnélal",
-          "evidential_linked": "všihnélaľe",
+          "evidential_linked": "všihnélalě",
           "licence": "ordinary"
         },
         {
@@ -844,11 +844,11 @@
           "negative": "zavšihnélime",
           "vy": "vy všihnélime",
           "so": "so všihnélime",
-          "linked": "všihnélimňe",
+          "linked": "všihnélimně",
           "participant": "všihnélimou",
           "relative": "všihnélimový",
           "evidential": "všihnélimel",
-          "evidential_linked": "všihnélimeľe",
+          "evidential_linked": "všihnélimelě",
           "licence": "ordinary"
         },
         {
@@ -862,7 +862,7 @@
           "participant": "všihnélikou",
           "relative": "všihnélikový",
           "evidential": "všihnélekal",
-          "evidential_linked": "všihnélekaľe",
+          "evidential_linked": "všihnélekalě",
           "licence": "ordinary"
         },
         {
@@ -876,7 +876,7 @@
           "participant": "všihnélavou",
           "relative": "všihnélavový",
           "evidential": "všihnélaval",
-          "evidential_linked": "všihnélavaľe",
+          "evidential_linked": "všihnélavalě",
           "licence": "ordinary"
         },
         {
@@ -890,7 +890,7 @@
           "participant": "všihnélažou",
           "relative": "všihnélažový",
           "evidential": "všihnélažal",
-          "evidential_linked": "všihnélažaľe",
+          "evidential_linked": "všihnélažalě",
           "licence": "ordinary"
         }
       ]
@@ -913,7 +913,7 @@
           "participant": "hvodnova",
           "relative": "hvodnový",
           "evidential": "hvodnal",
-          "evidential_linked": "hvodnaľe",
+          "evidential_linked": "hvodnalě",
           "licence": "marked-stage-relative"
         },
         {
@@ -923,11 +923,11 @@
           "negative": "zahvódnime",
           "vy": "vy hvódnime",
           "so": "so hvódnime",
-          "linked": "hvódnimňe",
+          "linked": "hvódnimně",
           "participant": "hvódnimou",
           "relative": "hvódnimový",
           "evidential": "hvódnimel",
-          "evidential_linked": "hvódnimeľe",
+          "evidential_linked": "hvódnimelě",
           "licence": "stage-level-or-expressive"
         },
         {
@@ -941,7 +941,7 @@
           "participant": "hvódnikou",
           "relative": "hvódnikový",
           "evidential": "hvódnikal",
-          "evidential_linked": "hvódnikaľe",
+          "evidential_linked": "hvódnikalě",
           "licence": "bounded-state"
         },
         {
@@ -955,7 +955,7 @@
           "participant": "hvodnávou",
           "relative": "hvodnávový",
           "evidential": "hvodnával",
-          "evidential_linked": "hvodnávaľe",
+          "evidential_linked": "hvodnávalě",
           "licence": "ordinary"
         },
         {
@@ -969,7 +969,7 @@
           "participant": "hvodnážou",
           "relative": "hvodnážový",
           "evidential": "hvodnážal",
-          "evidential_linked": "hvodnážaľe",
+          "evidential_linked": "hvodnážalě",
           "licence": "ordinary"
         },
         {
@@ -983,7 +983,7 @@
           "participant": "hvodnélova",
           "relative": "hvodnélový",
           "evidential": "hvodnélal",
-          "evidential_linked": "hvodnélaľe",
+          "evidential_linked": "hvodnélalě",
           "licence": "ordinary"
         },
         {
@@ -993,11 +993,11 @@
           "negative": "zahvodnélime",
           "vy": "vy hvodnélime",
           "so": "so hvodnélime",
-          "linked": "hvodnélimňe",
+          "linked": "hvodnélimně",
           "participant": "hvodnélimou",
           "relative": "hvodnélimový",
           "evidential": "hvodnélimel",
-          "evidential_linked": "hvodnélimeľe",
+          "evidential_linked": "hvodnélimelě",
           "licence": "ordinary"
         },
         {
@@ -1011,7 +1011,7 @@
           "participant": "hvodnélikou",
           "relative": "hvodnélikový",
           "evidential": "hvodnélekal",
-          "evidential_linked": "hvodnélekaľe",
+          "evidential_linked": "hvodnélekalě",
           "licence": "ordinary"
         },
         {
@@ -1025,7 +1025,7 @@
           "participant": "hvodnélavou",
           "relative": "hvodnélavový",
           "evidential": "hvodnélaval",
-          "evidential_linked": "hvodnélavaľe",
+          "evidential_linked": "hvodnélavalě",
           "licence": "ordinary"
         },
         {
@@ -1039,7 +1039,7 @@
           "participant": "hvodnélažou",
           "relative": "hvodnélažový",
           "evidential": "hvodnélažal",
-          "evidential_linked": "hvodnélažaľe",
+          "evidential_linked": "hvodnélažalě",
           "licence": "ordinary"
         }
       ]
@@ -1062,7 +1062,7 @@
           "participant": "tvírznova",
           "relative": "tvírznový",
           "evidential": "tvírznal",
-          "evidential_linked": "tvírznaľe",
+          "evidential_linked": "tvírznalě",
           "licence": "marked-stage-relative"
         },
         {
@@ -1072,11 +1072,11 @@
           "negative": "zatvírznime",
           "vy": "vy tvírznime",
           "so": "so tvírznime",
-          "linked": "tvírznimňe",
+          "linked": "tvírznimně",
           "participant": "tvírznimou",
           "relative": "tvírznimový",
           "evidential": "tvírznimel",
-          "evidential_linked": "tvírznimeľe",
+          "evidential_linked": "tvírznimelě",
           "licence": "stage-level-or-expressive"
         },
         {
@@ -1090,7 +1090,7 @@
           "participant": "tvírznikou",
           "relative": "tvírznikový",
           "evidential": "tvírznikal",
-          "evidential_linked": "tvírznikaľe",
+          "evidential_linked": "tvírznikalě",
           "licence": "bounded-state"
         },
         {
@@ -1104,7 +1104,7 @@
           "participant": "tvírznavou",
           "relative": "tvírznavový",
           "evidential": "tvírznaval",
-          "evidential_linked": "tvírznavaľe",
+          "evidential_linked": "tvírznavalě",
           "licence": "ordinary"
         },
         {
@@ -1118,7 +1118,7 @@
           "participant": "tvírznažou",
           "relative": "tvírznažový",
           "evidential": "tvírznažal",
-          "evidential_linked": "tvírznažaľe",
+          "evidential_linked": "tvírznažalě",
           "licence": "ordinary"
         },
         {
@@ -1132,7 +1132,7 @@
           "participant": "tvírznelova",
           "relative": "tvírznelový",
           "evidential": "tvírznelal",
-          "evidential_linked": "tvírznelaľe",
+          "evidential_linked": "tvírznelalě",
           "licence": "ordinary"
         },
         {
@@ -1142,11 +1142,11 @@
           "negative": "zatvírznelime",
           "vy": "vy tvírznelime",
           "so": "so tvírznelime",
-          "linked": "tvírznelimňe",
+          "linked": "tvírznelimně",
           "participant": "tvírznelimou",
           "relative": "tvírznelimový",
           "evidential": "tvírznelimel",
-          "evidential_linked": "tvírznelimeľe",
+          "evidential_linked": "tvírznelimelě",
           "licence": "ordinary"
         },
         {
@@ -1160,7 +1160,7 @@
           "participant": "tvírznelikou",
           "relative": "tvírznelikový",
           "evidential": "tvírznelekal",
-          "evidential_linked": "tvírznelekaľe",
+          "evidential_linked": "tvírznelekalě",
           "licence": "ordinary"
         },
         {
@@ -1174,7 +1174,7 @@
           "participant": "tvírznelavou",
           "relative": "tvírznelavový",
           "evidential": "tvírznelaval",
-          "evidential_linked": "tvírznelavaľe",
+          "evidential_linked": "tvírznelavalě",
           "licence": "ordinary"
         },
         {
@@ -1188,7 +1188,7 @@
           "participant": "tvírznelažou",
           "relative": "tvírznelažový",
           "evidential": "tvírznelažal",
-          "evidential_linked": "tvírznelažaľe",
+          "evidential_linked": "tvírznelažalě",
           "licence": "ordinary"
         }
       ]

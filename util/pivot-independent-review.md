@@ -35,7 +35,7 @@ this review's scope.
    coindexed lower referent. Align the string and context. Status: resolved in the reviewed revision.
 4. **P2 — Directive order cannot be imported from indicative pivot-first.**
    Corpus O11 initially wrote `P.DIR A.TRS V.DIR-MOOD` as its directive control,
-   whereas canonical overt contrastive subject `Jí trava piaštím` is A before
+   whereas canonical overt contrastive subject `Jí trava pjaštím` is A before
    T. Its H status prevents a false claim of attestation, but the control should
    use the canonical order or explicitly identify the inversion as a separate
    unestablished test. Status: resolved in the reviewed revision.

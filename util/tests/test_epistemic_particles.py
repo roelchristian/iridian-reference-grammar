@@ -53,10 +53,10 @@ class EpistemicParticleTests(unittest.TestCase):
         for phrase, gloss in [('Janek hladě vy ščének.', 'infer'),
                               (r'\ljudge{\#}Janek hladě vy ščének.', 'infer'),
                               ('Janek mó vy ščének.', None),
-                              ('Mó vy piaštím!', 'affirm')]:
+                              ('Mó vy pjaštím!', 'affirm')]:
             match = re.search(r'\\gla\s+' + re.escape(phrase) + r'//\s*\\glb\s+(.*?)//', source, re.S)
             self.assertIsNotNone(match)
-            self.assertEqual(match[1].split()[1] if phrase != 'Mó vy piaštím!' else match[1].split()[0],
+            self.assertEqual(match[1].split()[1] if phrase != 'Mó vy pjaštím!' else match[1].split()[0],
                              'affirm' if gloss is None else gloss)
         # The speculative example is now an English schema pending lexemes.
         speculative = source.split(r'\paragraph{Kady}', 1)[1].split(r'\paragraph{Mlada}', 1)[0]

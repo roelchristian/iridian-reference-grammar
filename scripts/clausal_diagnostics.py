@@ -89,7 +89,7 @@ def check_clausal_sources(sources):
             for phase, symbol in (('vy', 'V'), ('so', 'S')):
                 expected.append((f'Marek {comment} {phase} {host}.',
                                  f'{operator}({symbol}({p}))', 'L'))
-    for host, force in (('piašté', 'D'), ('piaštku', 'H'), ('piaštir', 'R')):
+    for host, force in (('pjašté', 'D'), ('pjaštku', 'H'), ('pjaštir', 'R')):
         for comment, operator in (('Och', 'A'), ('Kamo', 'E')):
             for phase, symbol in (('vy', 'V'), ('so', 'S')):
                 status = 'M' if phase == 'vy' and force != 'R' else 'L'

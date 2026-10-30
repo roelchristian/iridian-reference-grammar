@@ -148,7 +148,7 @@
   ],
   "source_examples": [
     {
-      "form": "Janek soboťe so ščének.",
+      "form": "Janek sobotě so ščének.",
       "context": [
         "Janek visited on Friday",
         "another arrival"
@@ -165,13 +165,13 @@
       "translation": "I even went to the store yesterday!"
     },
     {
-      "form": "Mó vy piaštím!",
+      "form": "Mó vy pjaštím!",
       "context": [],
       "gloss": "affirm already eat-\\Imp{}",
       "translation": "Go on, eat already!"
     },
     {
-      "form": "Ježe Marku so piaštník?",
+      "form": "Ježe Marku so pjaštník?",
       "context": [
         "Marek has eaten bread",
         "another item"

@@ -1,15 +1,15 @@
 {
   "base": "5a29478c793f0f15234a2c062cb5c3cc6e74cd9b",
-  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined. Exponent-bearing lexical examples incorporate the kař- and kan- entries; protected rule spans and earlier fixture files retain their reviewed baseline.",
+  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined. Exponent-bearing lexical examples incorporate the kař- and kan- entries; protected rule spans and earlier fixture files retain their reviewed baseline. Orthographic spellings reflect the unified soft-coronal and labial conventions; protected linguistic content is unchanged.",
   "paragraphs": {
     "chapters/01-overview.tex": [],
     "chapters/02-phonology.tex": [
-      "5d55ed216fbf1a1bcb26336ad3a6fc339c48fb1cf409259dd886805f393058de"
+      "c4e928b734e82310acf71eb5f27bf8fdd2bb90b9d0e60c0c78d9fa55483706f9"
     ],
     "chapters/03-verbs.tex": [
       "823e0fd49554aabf991976c81a1027e960830d7cf1fbd9f1baf843ca81511b1e",
       "4a6f7372f114673f3a6690f0904a0ed1a1acc736836d6ed7199575c31c0debc0",
-      "c54da2db70433f779f155a6f2b3a9fd3975d856064f155d84257343c8214c5fd",
+      "0d5e64bc4aa9a831baae1269c2d274dde008b1cafead06784fd471fc7980c4b8",
       "ec4bce7aabf1dffcdb52b4629054d71809c27a3d7cf2935748f61dddf135c639",
       "0b894bd2ca633b77fad2dc6f1815647f28e8f336006121f844c8222d92922ca1",
       "0e0104f0a1d2f651ff64f927c628210030690473b5e5692a11b5f8baca62b229",
@@ -20,9 +20,9 @@
       "84b2af78d08cf5b6c7e3740588b9fe2bc75a845d1a6da30261a46bb6da486dcb",
       "a48e8ebe68c1476cb2772a502df01219fe39f802a460bd4c7e1cf8572e0c0ccc",
       "aeacfaf2ddb0d6e536be535ce6a5f32299cc2f48b4b68c1e5ce2e2672b74b106",
-      "35bb4ad39599eb34e9d938b99c8a15576e506fbdfb0bb71b986f0845454147e6",
-      "f26c7a7dba0885b890d8d0e21f1b3083249f23697b5ee7c6344751fe0603389c",
-      "b5b20353ba5ecd012f615f8e39e5a0479d62ed3dc2fcf112ce9f07dad2352573",
+      "313e13e7296655075a026c267294d70aa11d016f7bf1ba717922bff49cf9433e",
+      "7b08c4fca083626535829c2662c44d35e0561de72cbb6f943f5dc80f406275bb",
+      "ec582aa4e6c9e020ce77537ef202fb8470e4d863f669f7e9668790c55dbb4dfa",
       "4f4be17a9a451fcb02c3cdc77017c9e8ceb760a5f2b2c7a65f8ae059f454680b",
       "71cdebc041091fa0d5cee63c9c878903c05e0461c0370efb8803ccd7dca35a6f",
       "000a54d98eb425d6792d3e9f30d7dcc8bceed5fd7ba4e5f09c34d1fd02693e31",
@@ -31,10 +31,10 @@
     ],
     "chapters/05-function-words.tex": [],
     "chapters/06-simple-sentence.tex": [
-      "b3377939fa4512fb2bea53952a5957a03c86f65b1867fabda4b665ff970b6e6f",
+      "886e16174440b61bc783f5d42901198805b67e5bcd21b3ed09203ce4795c10e9",
       "70a009f2a4744416bfd1a3a84dddc762097dd7010ffe8b895e6a866df7a7e0a2",
       "8a8716ab689d5b677b24874d7b9686bc13ed86764aa3b481073250c34284a5b8",
-      "c3b69c89ec5af6c5892e7e29124be2e126573687bcc928c5224658c50a264792",
+      "34d359b8e322a2ede3bc02706520b0a62e057a7ebdfdf5a6fc0b67dd1f6ffbba",
       "2acdc559f4a4cdee3d217cc0b20566e682ba002b76c6cc03bf07316f0e0a2b80",
       "29680d26a38c7ed1ef1d139c428f1b53af72bd9fea5a28053edd40f371c5b744",
       "5e0247492144dcc3e68429fccd0c85187f796368fd7e7b8e81dcb5701aca51e3",
@@ -46,7 +46,7 @@
       "d4accd6a26e6d39b613caba17f0614d1a195aa5cf21237070cb7e4e412cf949b",
       "7b2b0902158439efb1be2a3b103cb4276b68ad27e47f95523552088473302de3",
       "5b21b2d5d0297ef25a60f86762f1a5ad5a36bc8cddf3ee001db2d62523855d34",
-      "69a735bd3f7d7a665eb7c1929aae004ba81f16a087c5a386bb3776b17cafd3bb",
+      "8df126ca024a5ae3088516d3ff74e12089e17bb1555a17e9ecc8fed17b621575",
       "4295aae6ef744f6aa94d934073f7d2af83186b1800b7b62a4258175a7ea66677",
       "23868fcf4b272cb0225889bbb713d612fb616b5fac0aa9c9fdb84018528d23e6",
       "33a0b4882fee2e116b60df868393ef30cebb97442e6113363b58f727021e4fb0"
@@ -64,7 +64,7 @@
       "source": "chapters/03-verbs.tex",
       "start": "\\section{Verbal nominalisation}",
       "end": "\\section{The conjunctive / quotative linker}",
-      "sha256": "87eee86766b53cfb0d06838a0b6a42fd410787236645ca10f125fc9aae4dcb7d"
+      "sha256": "132e34b9bca71bc93634e33495e5787fcd6970ceb3fe7e0ed7609dddcdc3ee35"
     },
     {
       "source": "chapters/03-verbs.tex",
@@ -76,18 +76,18 @@
       "source": "chapters/04-nouns.tex",
       "start": "\\subsection{The \\ird{-ový} attributive and its embedded DP}",
       "end": "\\subsection{The \\ird{ty}-supplement}",
-      "sha256": "f26e5e11a766a7041289de05bd12eb93f5629144c51e204dc759de0532ef0ea4"
+      "sha256": "c60ae212218903908f28976b03c30595f38b2740fc5bf39b66809f084096b6f2"
     },
     {
       "source": "chapters/08-complex-sentences.tex",
       "start": "\\section{Relativisation}",
       "end": "\\section{State-frame adverbial clauses}",
-      "sha256": "67e25c0b3e25bcc443adc9dfd4091e14376bdef3436b0347fa714d67780ec519"
+      "sha256": "0cfefd2897d518252a59f0718df29e64e16fc6dee4b4fb794213074c099a98ab"
     }
   ],
   "files": {
-    "scripts/stative-fixtures.json": "0be349b416016a15d31ba44c88067480aed5d2d185c078fc19f6a5d01491e911",
-    "util/stative-paradigms.md": "bf1b60d7cfbd8c497c58a5598201b631af45e77d246dac124f0a41dd42a95378",
-    "scripts/clausal_diagnostics.py": "84837eaafcbe925bbeec541126026b02cb442129570c52f31e6f33e0747f0dab"
+    "scripts/stative-fixtures.json": "357d1d42e020739b8184c396d02424d669b65e452f0c6d97ab33fe41000b6fb0",
+    "util/stative-paradigms.md": "6aca294ba7c16ed513dff2417f1cb76a07503c7ef81b12f44c9636ba0fa491dc",
+    "scripts/clausal_diagnostics.py": "5f45559afca421deb04f3e65f8cb1e901899245a10fbd61b75079ac5a7da0139"
   }
 }

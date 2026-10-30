@@ -3,7 +3,7 @@
   "grades": {
     "plain": {"coronal_labial_pal": false, "velar_output": "identity"},
     "front": {"coronal_labial_pal": true, "velar_output": "ts"},
-    "yod": {"coronal_labial_pal": true, "velar_output": "tʃ"},
+    "mixed": {"coronal_labial_pal": true, "velar_output": "tʃ"},
     "restricted": {"coronal_labial_pal": false, "velar_output": "ts"}
   },
   "pal_correspondences": {
@@ -11,6 +11,6 @@
     "s": "ʃ", "z": "ʒ", "ts": "tʃ",
     "p": "pʲ", "b": "bʲ", "m": "mʲ", "v": "vʲ"
   },
-  "consonants": ["p", "b", "m", "v", "t", "d", "n", "l", "r", "s", "z", "ts", "ʃ", "ʒ", "tʃ", "k", "x", "j", "c", "ɟ", "ɲ", "ʎ", "kʲ", "pʲ", "bʲ", "mʲ", "vʲ"],
+  "consonants": ["p", "b", "m", "v", "t", "d", "n", "l", "r", "s", "z", "ts", "ʃ", "ʒ", "tʃ", "k", "x", "j", "c", "ɟ", "ɲ", "ʎ", "kʲ", "xʲ", "pʲ", "bʲ", "mʲ", "vʲ"],
   "vowels": ["a", "aː", "ɛ", "eː", "ɪ", "iː", "ɨ", "ɨː", "ɔ", "oː", "ʊ", "uː", "ou̯"]
 }

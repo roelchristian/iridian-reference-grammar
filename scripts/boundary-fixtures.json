@@ -32,13 +32,13 @@
       "expected": ["r", "a", "c", "ɛ"]
     },
     {
-      "id": "yod-coronal-stop",
+      "id": "mixed-coronal-stop",
       "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
       "input": ["r", "a", "t"],
       "boundaries": [
         {
           "identifier": "inner",
-          "grade": "yod",
+          "grade": "mixed",
           "licensed": true,
           "velar_member": false,
           "suffix": ["ɛ"]
@@ -152,13 +152,13 @@
       "expected": ["r", "a", "tʃ", "ɛ"]
     },
     {
-      "id": "yod-input-ts",
+      "id": "mixed-input-ts",
       "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
       "input": ["r", "a", "ts"],
       "boundaries": [
         {
           "identifier": "inner",
-          "grade": "yod",
+          "grade": "mixed",
           "licensed": true,
           "velar_member": false,
           "suffix": ["ɛ"]
@@ -212,13 +212,13 @@
       "expected": ["r", "ʊ", "ts", "ɛ"]
     },
     {
-      "id": "yod-participating-k",
+      "id": "mixed-participating-k",
       "status": "Constructed segmental illustration; no lexical class or word attestation is asserted.",
       "input": ["r", "a", "k"],
       "boundaries": [
         {
           "identifier": "inner",
-          "grade": "yod",
+          "grade": "mixed",
           "licensed": true,
           "velar_member": true,
           "suffix": ["ɛ"]
@@ -398,7 +398,7 @@
       "boundaries": [
         {
           "identifier": "inner",
-          "grade": "yod",
+          "grade": "mixed",
           "licensed": true,
           "velar_member": false,
           "suffix": ["ɛ"]
@@ -497,13 +497,13 @@
       "expected": ["a", "s", "c", "ɛ"]
     },
     {
-      "id": "selected-yod-cluster-allomorph",
-      "status": "Existing piašč- cluster allomorph supplied BEFORE boundary mapping; no antipassive or vowel grade is inferred.",
+      "id": "selected-mixed-cluster-allomorph",
+      "status": "Existing pjašč- cluster allomorph supplied BEFORE boundary mapping; no antipassive or vowel grade is inferred.",
       "input": ["pʲ", "a", "ʃ", "tʃ"],
       "boundaries": [
         {
           "identifier": "inner",
-          "grade": "yod",
+          "grade": "mixed",
           "licensed": true,
           "velar_member": false,
           "suffix": ["ɛ", "v"]
@@ -641,7 +641,7 @@
       "boundaries": [
         {
           "identifier": "case",
-          "grade": "no-pal-yod",
+          "grade": "no-pal-mixed",
           "licensed": true
         }
       ],
@@ -684,12 +684,12 @@
       "error_contains": "unsupported phonological segment"
     },
     {
-      "id": "nonmember-yod",
+      "id": "nonmember-mixed",
       "input": ["r", "a", "k"],
       "boundaries": [
         {
           "identifier": "case",
-          "grade": "yod",
+          "grade": "mixed",
           "licensed": true,
           "velar_member": false,
           "suffix": ["ɛ"]
@@ -936,8 +936,8 @@
       ]
     },
     {
-      "id": "causative-outer-yod-preserves-rhotic-edge",
-      "status": "Established piášt-r- plus irrealis -ěv gives piáštrev; causative intervenes between root and outer grade.",
+      "id": "causative-outer-mixed-preserves-rhotic-edge",
+      "status": "Established pjášt-r- plus irrealis -ěv gives pjáštrev; causative intervenes between root and outer grade.",
       "input": [
         "pʲ",
         "aː",
@@ -956,7 +956,7 @@
         },
         {
           "identifier": "irrealis",
-          "grade": "yod",
+          "grade": "mixed",
           "licensed": true,
           "velar_member": false,
           "suffix": [
@@ -977,7 +977,7 @@
     },
     {
       "id": "causative-outer-front-preserves-rhotic-edge",
-      "status": "Established piášt-r- plus simultaneous -ěc gives piáštrec; no root mutation through the causative.",
+      "status": "Established pjášt-r- plus simultaneous -ěc gives pjáštrec; no root mutation through the causative.",
       "input": [
         "pʲ",
         "aː",
