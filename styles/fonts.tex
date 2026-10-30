@@ -13,11 +13,6 @@
   if p then tex.sprint((p:gsub("[^/]+$", "")))
   else tex.error("TeX-distributed Source Sans Pro fonts were not found") end
 }}
-\edef\iripapath{\directlua{
-  local p = kpse.find_file("GentiumPlus-Regular.ttf", "truetype fonts")
-  if p then tex.sprint((p:gsub("[^/]+$", "")))
-  else tex.error("TeX-distributed Gentium Plus fonts were not found") end
-}}
 \setmainfont{LibertinusSerif-Regular.otf}[
   Path=\irserifpath,
   ItalicFont=LibertinusSerif-Italic.otf,
@@ -33,8 +28,5 @@
   Scale=MatchLowercase,
   Numbers={Lining,Proportional}
 ]
-\newfontfamily\ipafont{GentiumPlus-Regular.ttf}[
-  Path=\iripapath,
-  Scale=MatchLowercase
-]
-\newcommand{\ipagloss}[1]{{\ipafont #1}}
+% Semantic IPA tag: inherit the surrounding body font, size, and shape.
+\newcommand{\ipagloss}[1]{{#1}}

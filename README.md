@@ -9,8 +9,8 @@ The current grammar is in `grammar.tex` and `chapters/`. Indicative verbal negat
 ## Build the PDF
 
 Install a full **TeX Live** distribution (MacTeX on macOS), with `latexmk`
-and LuaLaTeX on `PATH`. The sources use TeX-distributed Libertinus Serif,
-Source Sans Pro, and Gentium Plus fonts; no separately installed system fonts
+and LuaLaTeX on `PATH`. The sources use TeX-distributed Libertinus Serif
+and Source Sans Pro fonts; no separately installed system fonts
 are needed. Python 3 is used for prerequisite checks and lexicon extraction.
 
 ```sh
@@ -67,8 +67,9 @@ appendix; extraction does not overwrite it.
 ## Typography and cover
 
 The interior uses Libertinus Serif with slightly open leading, Source Sans Pro
-for the heading hierarchy, and Gentium Plus for explicit IPA spans. Interlinear
-examples use 11-point type; tables use tabular lining figures and booktabs rules.
+for the heading hierarchy. IPA spans retain the surrounding font through the
+semantic `\ipagloss` macro. Interlinear examples use 11-point type; tables use
+tabular lining figures and booktabs rules.
 Sections, tables, and figures carry chapter-based numbers. Caption spacing and
 table spacing are set centrally rather than added by individual chapters.
 
