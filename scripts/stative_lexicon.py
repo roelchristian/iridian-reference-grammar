@@ -29,7 +29,7 @@ def load_lexicon(path=None):
                     'protected_quantity','nominalisation'}
         if set(entry) != required:
             raise LexicalLicenceError('lexical record has missing or unknown fields')
-        if entry['principal_part_status'] not in ('listed','unresolved','cluster-unresolved'):
+        if entry['principal_part_status'] not in ('listed','unresolved','class-unresolved'):
             raise LexicalLicenceError('unknown principal-part status')
         if type(entry['protected_quantity']) is not bool:
             raise LexicalLicenceError('protected quantity must be explicit')
@@ -56,6 +56,8 @@ def load_lexicon(path=None):
 
 
 def _available(entry):
+    if entry['principal_part_status'] == 'class-unresolved':
+        raise LexicalLicenceError('finite and derivational lexical classes unassigned')
     if entry['principal_part_status'] != 'listed':
         raise LexicalLicenceError('principal parts unresolved; no vowel repair is licensed')
     return tuple(entry['segments'])

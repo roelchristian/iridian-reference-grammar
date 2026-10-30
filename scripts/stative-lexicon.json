@@ -522,18 +522,19 @@
       "nominalisation": "selected-participant"
     },
     {
-      "stem": "trpan",
+      "stem": "torban",
       "subclass": "quality",
       "morphological_class": "property-n",
       "finite_class": null,
       "segments": [
         "t",
+        "ɔ",
         "r",
-        "p",
+        "b",
         "a",
         "n"
       ],
-      "quantity_target": 3,
+      "quantity_target": 4,
       "argument_frame": "holder",
       "gradability": "context-sensitive",
       "aspect_licences": {
@@ -550,7 +551,7 @@
       "perspective": "none",
       "causative": "unresolved",
       "manner": "unresolved",
-      "principal_part_status": "cluster-unresolved",
+      "principal_part_status": "class-unresolved",
       "expected": {
         "state": [
           null,
@@ -667,29 +668,44 @@
     ]
   },
   "excluded_candidates": [
-    "trpá",
     "smerňa"
   ],
   "unlisted_doublets": true,
   "conditional_predictions": {
-    "trpan": {
-      "status": "unvalidated segmental-only hypotheses, NOT licensed principal parts",
+    "torban": {
+      "status": "Conditional on explicit finite Class A and Become EL-S assignments; NOT licensed principal parts",
       "hypothetical_finite_class": "A",
       "state": [
-        "trpana",
-        "trpánime",
-        "trpánik",
-        "trpanáv",
-        "trpanáž"
+        "torbana",
+        "torbánime",
+        "torbánik",
+        "torbanáv",
+        "torbanáž"
       ],
       "become": [
-        "trpanéla",
-        "trpanélime",
-        "trpanélek",
-        "trpanélav",
-        "trpanélaž"
+        "torbanéla",
+        "torbanélime",
+        "torbanélek",
+        "torbanélav",
+        "torbanélaž"
       ],
-      "manner": "trpaňe"
+      "manner": "torbaňe",
+      "hypothetical_become_class": "EL-S",
+      "linked_state": [
+        "torbane",
+        "torbánimňe",
+        "torbánice",
+        "torbanávě",
+        "torbanáže"
+      ],
+      "linked_become": [
+        "torbanéle",
+        "torbanélimňe",
+        "torbanélice",
+        "torbanélavě",
+        "torbanélaže"
+      ],
+      "manner_status": "conditional on an independent manner licence"
     }
   }
 }

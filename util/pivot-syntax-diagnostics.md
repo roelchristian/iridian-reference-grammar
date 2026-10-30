@@ -335,7 +335,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### V04 — C
 
 - **Source:** `chapters/03-verbs.tex, ex:val-appl-goal`.
-- **String/schema:** Marek hraďe de stojáž. / Hrad Marcí stojébaž.
+- **String/schema:** Marek vruham de stojáž. / Vruh Marcí stojébaž.
 - **Context and target reading:** Projected directed motion to the town, without benefit entailment.
 - **Controlled contrast:** Goal PP versus applied goal; retain contemplative quantity and its conditioned short -až.
 - **Competing predictions:** A/B/C₀: select applied town rather than mover in simple Appl. Do not equate all applied roles semantically or lengthen stojébaž mechanically.
@@ -449,7 +449,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### I02 — C
 
 - **Source:** `chapters/07-information-structure.tex, sec:tc-multiple-topics`.
-- **String/schema:** Marko tak tóm bych ktářnik.
+- **String/schema:** Marko tak tóm bych kářnik.
 - **Context and target reading:** External Marek-topic, with ordinary contextual recovery of the lower agent.
 - **Controlled contrast:** Contrast linked Markuto, not a case-changing operation on the same dependency.
 - **Competing predictions:** A/B/C₀: HT is external with resumption/recovery; it does not establish an A′ chain crossing P. DIR-like topic form does not reassign argument case.
@@ -457,8 +457,8 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### I03 — C
 
 - **Source:** `chapters/07-information-structure.tex, sec:tc-multiple-topics`.
-- **String/schema:** Tak dvor Marko ten na býdlime.
-- **Context and target reading:** Yard as external location frame; ten resumes it inside clause.
+- **String/schema:** Tak vruh Marko ten na býdlime.
+- **Context and target reading:** Town as external location frame; ten resumes it inside clause.
 - **Controlled contrast:** Compare I01 linked argument topic, controlling discourse aboutness separately.
 - **Competing predictions:** A/B/C₀: external/resumptive structure must be distinguished from argument extraction. No surface first-position diagnostic alone separates them.
 

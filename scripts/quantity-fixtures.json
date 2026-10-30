@@ -894,6 +894,114 @@
           "knářav"
         ]
       ]
+    },
+    {
+      "path": "chapters/03-verbs.tex",
+      "label": "tab:read-sing-principal-parts",
+      "width": 5,
+      "rows": [
+        [
+          "kařa",
+          "kářime",
+          "kařáž",
+          "kářnik",
+          "kařnáv"
+        ],
+        [
+          "kana",
+          "kánime",
+          "kanáž",
+          "kánek",
+          "kanáv"
+        ],
+        [
+          "kana",
+          "kánime",
+          "kanáž",
+          "kánnik",
+          "kannáv"
+        ]
+      ]
+    },
+    {
+      "path": "chapters/04-nouns.tex",
+      "label": "tab:city-town-paradigms",
+      "width": 4,
+      "rows": [
+        [
+          "nuž",
+          "núže",
+          "nužo",
+          "núžete"
+        ],
+        [
+          "nuža",
+          "núžov",
+          "nužato",
+          "núžove"
+        ],
+        [
+          "nužam",
+          "núžac",
+          "nužamo",
+          "núžace"
+        ],
+        [
+          "vruh",
+          "vrúhe",
+          "vruho",
+          "vrúhete"
+        ],
+        [
+          "vruha",
+          "vrúhov",
+          "vruhato",
+          "vrúhove"
+        ],
+        [
+          "vruham",
+          "vrúhac",
+          "vruhamo",
+          "vrúhace"
+        ]
+      ]
+    },
+    {
+      "path": "chapters/03-verbs.tex",
+      "label": "tab:torban-conditional",
+      "width": 4,
+      "rows": [
+        [
+          "torbana",
+          "torbane",
+          "torbanéla",
+          "torbanéle"
+        ],
+        [
+          "torbánime",
+          "torbánimňe",
+          "torbanélime",
+          "torbanélimňe"
+        ],
+        [
+          "torbánik",
+          "torbánice",
+          "torbanélek",
+          "torbanélice"
+        ],
+        [
+          "torbanáv",
+          "torbanávě",
+          "torbanélav",
+          "torbanélavě"
+        ],
+        [
+          "torbanáž",
+          "torbanáže",
+          "torbanélaž",
+          "torbanélaže"
+        ]
+      ]
     }
   ],
   "pronunciations": [
@@ -904,6 +1012,74 @@
     {
       "form": "zemácek",
       "ipa": "ˈzɛ.maː.tsɛk"
+    },
+    {
+      "form": "kánek",
+      "ipa": "ˈkaː.nɛk"
+    },
+    {
+      "form": "kánnik",
+      "ipa": "ˈkaːn.nɪk"
+    },
+    {
+      "form": "kanžek",
+      "ipa": "ˈkan.ʒɛk"
+    },
+    {
+      "form": "kářnik",
+      "ipa": "ˈkaːʒ.nɪk"
+    },
+    {
+      "form": "kážek",
+      "ipa": "ˈkaː.ʒɛk"
+    },
+    {
+      "form": "kánice",
+      "ipa": "ˈkaː.nɪ.tsɛ"
+    },
+    {
+      "form": "kánnice",
+      "ipa": "ˈkaːn.nɪ.tsɛ"
+    },
+    {
+      "form": "kanžice",
+      "ipa": "ˈkan.ʒɪ.tsɛ"
+    },
+    {
+      "form": "kářnice",
+      "ipa": "ˈkaːʒ.nɪ.tsɛ"
+    },
+    {
+      "form": "kážice",
+      "ipa": "ˈkaː.ʒɪ.tsɛ"
+    },
+    {
+      "form": "nuž",
+      "ipa": "nʊʃ"
+    },
+    {
+      "form": "nužo",
+      "ipa": "ˈnʊ.ʒɔ"
+    },
+    {
+      "form": "vruh",
+      "ipa": "vrʊx"
+    },
+    {
+      "form": "vrúhe",
+      "ipa": "ˈvruː.xɛ"
+    },
+    {
+      "form": "kolnat-",
+      "ipa": "ˈkɔw.nat"
+    },
+    {
+      "form": "poshódime",
+      "ipa": "ˈpɔ.sxoː.dɪ.mɛ"
+    },
+    {
+      "form": "zaposhódime",
+      "ipa": "zaˈpɔ.sxoː.dɪ.mɛ"
     }
   ],
   "source_paragraphs": [

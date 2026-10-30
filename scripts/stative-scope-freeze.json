@@ -1,12 +1,13 @@
 {
   "base": "5a29478c793f0f15234a2c062cb5c3cc6e74cd9b",
-  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined.",
+  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined. Exponent-bearing lexical examples incorporate the kař- and kan- entries; protected rule spans and earlier fixture files retain their reviewed baseline.",
   "paragraphs": {
     "chapters/01-overview.tex": [],
     "chapters/02-phonology.tex": [
       "5d55ed216fbf1a1bcb26336ad3a6fc339c48fb1cf409259dd886805f393058de"
     ],
     "chapters/03-verbs.tex": [
+      "823e0fd49554aabf991976c81a1027e960830d7cf1fbd9f1baf843ca81511b1e",
       "4a6f7372f114673f3a6690f0904a0ed1a1acc736836d6ed7199575c31c0debc0",
       "c54da2db70433f779f155a6f2b3a9fd3975d856064f155d84257343c8214c5fd",
       "ec4bce7aabf1dffcdb52b4629054d71809c27a3d7cf2935748f61dddf135c639",
@@ -30,15 +31,15 @@
     ],
     "chapters/05-function-words.tex": [],
     "chapters/06-simple-sentence.tex": [
-      "e5a9ab6b1d7251e74e278f83c8b8b14e3adb271281db9143579778e72f684a02",
-      "99ccdccc2792af4bf5bb6a63f12a8ecbb97b2c4b3f4b30e2a283e81558dd2454",
-      "fb4cf2d21ce615c9310334d5c1d3509ab8ae40f8083dec8c2541e05a34a019c3",
-      "a9a35619f5a57660f98b0e5c8f1c14e93963a98d5c18d5722b6a56c2d275cb39",
-      "58e8fd4328651503fcf3165f0a4744e8be82bb238b2b6e6ef9577ac9ba3c11f4",
+      "b3377939fa4512fb2bea53952a5957a03c86f65b1867fabda4b665ff970b6e6f",
+      "70a009f2a4744416bfd1a3a84dddc762097dd7010ffe8b895e6a866df7a7e0a2",
+      "8a8716ab689d5b677b24874d7b9686bc13ed86764aa3b481073250c34284a5b8",
+      "c3b69c89ec5af6c5892e7e29124be2e126573687bcc928c5224658c50a264792",
+      "2acdc559f4a4cdee3d217cc0b20566e682ba002b76c6cc03bf07316f0e0a2b80",
       "29680d26a38c7ed1ef1d139c428f1b53af72bd9fea5a28053edd40f371c5b744",
       "5e0247492144dcc3e68429fccd0c85187f796368fd7e7b8e81dcb5701aca51e3",
       "e6e854fea343cf3ea99ac843b09d67a540ee39e174b5f06ccf30b33197b1c262",
-      "142ce1ec6e2c41d0a4b51c9d6cce6041a14e0e0c63ff83391e264d57ad34fa4c"
+      "d592a5587bfa00277670e483869bc6e00607c5cdb89d6d976bb70559511949a2"
     ],
     "chapters/07-information-structure.tex": [],
     "chapters/08-complex-sentences.tex": [
@@ -55,7 +56,7 @@
     ],
     "chapters/10-derivational.tex": [],
     "util/lexicon.tex": [
-      "4c119cb4bf9faacc004d913b97652b905f8563be1f596813d99a18b7200ce0dc"
+      "19f53ba72f0bcc018d39bc0cfb1024c8b42529f0c1e8734347d5adc77e452fd4"
     ]
   },
   "spans": [

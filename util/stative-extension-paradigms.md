@@ -19,7 +19,7 @@ Finite class, argument structure, semantic subclass and ordinary ATTR class are 
 | všihn- | experiential-condition | A / property-n | experiencer-only | EL-S | ESH-A | III | psych-anchored | listed |
 | žbirn- | experiential-condition | A / property-n | affected-holder | EL-S | unlisted | III | none | listed |
 | hvodn- | experiential-condition | A / property-n | holder | EL-S | unlisted | unlisted | none | listed |
-| trpan- | quality | unassigned / property-n | holder | withheld | unlisted | unlisted | none | cluster-unresolved |
+| torban- | quality | unassigned / property-n | holder | withheld | unlisted | unlisted | none | class-unresolved |
 | tvírzn- | relational | C / relational-zn | holder | EL-P | unlisted | II | none | listed |
 
 `EL-S` is a listed Become strength class selecting `-él-`; `EL-P` selects protected short `-el-`. A short root does not itself establish membership. A test with the same short segment string and its Become class removed must fail. A deliberately hypothetical EL-P assignment to that string illustrates the selector's dependence on an explicit class; it is not a new lexical entry.
@@ -129,7 +129,7 @@ The following IPA strings show selected segments and possible syllable margins b
 | všihn- | /ˈvʃɪx.na/ | /ˈvʃɪx.neː.la/ | initial v assimilates before voiceless obstruents; no extra vowel |
 | žbirn- | /ˈʒbɪr.na/ | /ˈʒbɪr.neː.la/ | initial voiced-obstruent plateau; soft ATTR targets only final n |
 | hvodn- | /ˈxvɔd.na/ | /ˈxvɔd.neː.la/ | onset obstruents obey ordinary voicing; d+n retained |
-| trpan- | withheld as a validated PF form | withheld | root a is recorded but initial trp falls from liquid to obstruent; no licensed repair specified |
+| torban- | conditional /ˈtɔr.ba.na/ | conditional /ˈtɔr.ba.neː.la/ | phonological stem /tɔr.ban/; final root a is the quantity target; finite/Become classes unassigned |
 | tvírzn- | /ˈtviːr.zna/ | /ˈtviːr.znɛ.la/ | protected lexical í with short Become e; r/z/n are margins |
 
 Broad Manifest pronunciations include `[ˈfʃɪx.nɛ.ʃa]` (three short nuclei) and `[ˈfʃɪx.neː.ʃɪ.mɛ]` (local é, initial stress). Class III contrasts are `[ˈfʃɪx.ɲa]` / `[ˈfʃɪx.ɲɛ]` and `[ˈʒbɪr.ɲa]` / `[ˈʒbɪr.ɲɛ]`. Compact Manifest Caus permits an obstruent–liquid onset in `/vʃɪx.neː.ʃrɪ.mɛ/`; no epenthesis is required. Become lateral before compact r may instead occupy a coda, undergoing ordinary [w] realisation. Final retrospective v is coda [w]; evidential l is likewise coda [w] before further linking makes it prevocalic [ʎ]. These positional realisations do not alter underlying quantity or the licensed boundary operations.
@@ -138,11 +138,11 @@ Negative indicative `za-` remains outside the lexical stress domain; integrated 
 
 ## Withheld principal parts and irregular candidates
 
-`smrn-` is already listed with no eligible vowel target. Its principal parts, ordinary ATTR, manner and derived nominalisations are withheld: no unrecorded *smer-* stem or syllabic liquid is introduced. `trpan-` has a known a nucleus, so a conditional algebraic `a→á` quantity calculation is possible, but its initial /trp/ cluster still lacks a licensed full PF distribution. The existing `trpa/trpan-` source examples are preserved. New finite and Become principal parts are not made canonical from that spelling alone.
+`smrn-` has no eligible vowel target. Its principal parts, ordinary ATTR, manner and derived nominalisations are withheld: no unrecorded *smer-* stem or syllabic liquid is introduced.
 
-The machine file isolates formal-only trpan predictions under `conditional_predictions`, outside the entry's licensed `expected` forms. They are unreachable through the lexical selector and are not a tenth validated finite paradigm. The nine resolved records supply 90 State/Become cells; Manifest supplies five more finite cells. Both unresolved records have explicit rejection tests.
+`torba` ‘badness’ supplies stative `torban-` ‘be bad’, syllabified /tɔr.ban/. Its quantity target is the final root a (segment index 4), giving conditional G1 `torbán-` while initial o remains short. Finite class, Become class, ordinary ATTR and manner are unassigned. The machine file isolates its Class A / EL-S paradigms under `conditional_predictions`, outside licensed `expected` forms. The isolated and linked conditional outputs are listed in the grammar's `tab:torban-conditional`; they are unreachable through the lexical selector. The manner candidate `torbaňe` likewise needs an independent licence. No ordinary attributive principal part is selected.
 
-`trpá`, `smerňa`, novel attributive doublets and fabricated irregular histories remain unadopted. There is no productive stativiser deletion, unsupported vowel-preservation allomorph or global palatalisation rule. Their status is an evidence gap rather than approval to repair the lexicon.
+The nine resolved records supply 90 State/Become cells; Manifest supplies five more finite cells. Both unresolved records have explicit rejection tests. `smerňa`, novel attributive doublets and fabricated irregular histories remain unadopted. There is no productive stativiser deletion, unsupported vowel-preservation allomorph or global palatalisation rule.
 
 ## Verification limits
 
