@@ -47,3 +47,22 @@ Chapter 5 now separates kind reference from generic predication, retains the ord
 Sources checked: Williams (2019), §§1–2,4.1, pp.320–323,332, with terminology warning in note1; Despić and Borik/Espinal on kind analyses; Schwarz §5.2,pp.28–31,table3 on relational/functional nouns; Etxeberria/Giannakidou §§4.1–4.2,pp.438–443 on repeated marking with distinct functions. The survey's experimental Chapter11, §§4.6–5,pp.367–369, reports task differences between weak definites and generics but explicitly does not exclude all kind-based analyses; no unnecessary experimental claim or extra bibliography entry was added. Independent review approved after correcting the repeated-definiteness locator.
 
 Phase 5 validation: `make check` passed all 179 tests and both log checks; only the two baseline overfull boxes remain. Visually inspected PDF pp.74,82,91,334: kind/mass discussion, double marking, implicit-possession continuation and references have no clipping or overlap. All diagnostic forms, glosses, direct-case syncretism and judgement status were independently reviewed. `git diff --check` passed.
+
+## Phase 6 — Morphology and final consistency audit
+
+Added `anchoring-morphology-audit.md`, with reproducible baseline comparisons and paradigm/domain controls. Chapters 4 and8 remain byte-identical to `c0b0410`; all existing Chapter5 gloss blocks and trees are identical. The si linearisation rules, scope of their pronunciation domains, clitic hosting, nested-possession predictions and cumulative cells are preserved. A short analytical cross-reference states that discourse indices and subsequent semantic type shifts add no pronounced exponent or Anch terminal. The final incoming-reference audit corrected Chapter14's null-head wording from “no anchoring feature” to “lacks [+anch]”, consistently preserving the explicit [−anch] bundle.
+
+Existing Klavans (1985), §§1.2–1.3,pp.97–100, was checked in full for the distinction between clitic positioning and liaison. Booij (1996),p.220, supplies a compatible distinction but was not added redundantly. Embick and Noyer's author-hosted draft, §2.1 and §4.3, supports the limited PF/LF and adjacency distinctions; no published pagination was inferred from that draft. Harley's author publication page confirms the narrow affixation/head-movement distinction, while the full hosted PDF timed out; no broader new claim depends on it. Schwarz §2.5 treats alternative lexical/structural implementations rather than prescribing a universal morphological mapping. No new bibliography entry was needed. The literature agent also rechecked all new cross-phase citations and their locators.
+
+Independent final review found the connected treatment consistent across Chapters5,10,14 and17, with no outstanding linguistic findings. Existence, type, accessibility, accommodation, scope, covariation, possession and topicality remain distinct. Unresolved distributional judgements remain diagnostic questions, rather than new Iridian facts.
+
+## Ordered implementation commits
+
+1. `7bfdb9f` — semantic contributions of nominal anchoring.
+2. `4579fd7` — discourse indices and resource situations.
+3. `7d13975` — property-preserving Anch and quantifier composition.
+4. `e55a22a` — nominal category terminology and existential pivots.
+5. `2426652` — controlled contrasts and interpretation diagnostics.
+6. Final preservation audit — committed after the validation recorded below.
+
+Phase 6 and final validation: `make check` passed all 179 tests and both PDF log checks; no undefined references, missing glyphs or fatal errors. The only overfull boxes are the two baseline 2pt boxes outside the edited treatment. Visually inspected final PDF pp.74–75,79,260, including semantic formulae, PF rule and topic-interface continuation. Earlier phase inspections covered the modified tables, pivot list, double marking, implicit possession and bibliography. `git diff --check` passed. All six phases completed with implementation, literature and independent-review work; each preceding phase was committed before the next began. The unrelated untracked nominalisation proposal was preserved, and no local instruction file was staged.
