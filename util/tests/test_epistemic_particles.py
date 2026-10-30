@@ -52,14 +52,17 @@ class EpistemicParticleTests(unittest.TestCase):
         source = self.sources['chapters/05-function-words.tex']
         for phrase, gloss in [('Janek hladě vy ščének.', 'infer'),
                               (r'\ljudge{\#}Janek hladě vy ščének.', 'infer'),
-                              ('Marek kady doktor?', 'speculative'),
                               ('Janek mó vy ščének.', None),
                               ('Mó vy piaštím!', 'affirm')]:
             match = re.search(r'\\gla\s+' + re.escape(phrase) + r'//\s*\\glb\s+(.*?)//', source, re.S)
             self.assertIsNotNone(match)
             self.assertEqual(match[1].split()[1] if phrase != 'Mó vy piaštím!' else match[1].split()[0],
                              'affirm' if gloss is None else gloss)
-        self.assertIn(r'\ird{Marek kady so doktor?}', source)
+        # The speculative example is now an English schema pending lexemes.
+        speculative = source.split(r'\paragraph{Kady}', 1)[1].split(r'\paragraph{Mlada}', 1)[0]
+        self.assertIn(r'\trsl{Might the oldest candle still be burning?}', speculative)
+        self.assertIn('a tentative assessment', speculative)
+        self.assertIn('English schema', speculative)
 
 
 if __name__ == '__main__':

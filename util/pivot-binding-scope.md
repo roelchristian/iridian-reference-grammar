@@ -99,7 +99,7 @@ Test quantified pivots with universal actors in contexts distinguishing
 `∃ > ∀` from `∀ > ∃`; test a causative theme against both the causing and
 caused events. Do not infer these readings from English translations or
 introduce unrestricted quantifier raising to obtain every desired result.
-Retain the independently bounded **kamo/kam** scope specifications and the
+Retain the independently bounded **kamo** scope specifications and the
 difference between LF composition and PF placement. Movement of a nominal
 does not license arbitrary reversal of phasal/exclusive operators.
 

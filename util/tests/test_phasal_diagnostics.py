@@ -63,8 +63,8 @@ class PhasalDiagnosticsTests(unittest.TestCase):
         self.assertEqual(check_phasal_sources(sources, self.fixtures), [])
         cases = self.fixtures['exclusive_source_examples']
         for old, new in [(cases[0]['scope'], cases[1]['scope']),
-                         ('would contradict the claim', 'would not contradict the claim'),
-                         ('Matuš has just qualified', 'Matuš was already a doctor')]:
+                         ('remains the sole open gate today', 'another gate is open today'),
+                         ('a third gate\n has just opened', 'a third gate\n has remained open')]:
             with self.subTest(change=new):
                 self.assertIn(old, sources[path])
                 changed = dict(sources, **{path: sources[path].replace(old, new)})

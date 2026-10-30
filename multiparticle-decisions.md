@@ -15,7 +15,7 @@ an option in this dossier would be a separate language-specification decision.
 - `vy` and `so` exclude one another in the single phasal position.
 - Established combinations include `och vy/so`, `mó vy`, `dlí so`,
   `jas … och`, `jas … vy/so`, and `jas … by … vy/so`.
-- `kamo/kam` with `vy/so` has two specifically bounded compositions, with
+- `kamo` with `vy/so` has two specifically bounded compositions, with
   fixed focus alternatives. This does not establish general scope permutation.
 - Repetition, same-field stacking, cross-field productivity and a general
   maximum number of particles remain unspecified.
@@ -29,20 +29,20 @@ Principal anchors are `sec:particle-combinations` in Chapter 5,
 
 ## Complete inventory of distinct within-field pairs
 
-`kamo/kam` counts as one lexical family. All pairs below remain unspecified
+`kamo` is the sole exclusive–scalar form. All pairs below remain unspecified
 for co-occurrence and relative order; neither their listing nor their semantic
 compatibility is a positive judgement. For each pair, record both candidate
 orders separately before assigning interpretations.
 
 | Field | Pair families |
 |---|---|
-| Comm-field: six | `och–mó`; `och–kamo/kam`; `och–dlí`; `mó–kamo/kam`; `mó–dlí`; `kamo/kam–dlí` |
+| Comm-field: six | `och–mó`; `och–kamo`; `och–dlí`; `mó–kamo`; `mó–dlí`; `kamo–dlí` |
 | Outer EvidP: six | `oče–hladě`; `oče–kady`; `oče–či`; `hladě–kady`; `hladě–či`; `kady–či` |
 | SpeechActP: three | `jas–nadě`; `jas–mlada`; `nadě–mlada` |
 
 The phasal pair `vy–so` is already excluded. Repeated occurrences of an
-individual particle and mixed `kamo kam` require separate decisions; the
-distinct-pair inventory says nothing about repetition or doubling of variants.
+individual particle require separate decisions; the distinct-pair inventory
+says nothing about repetition.
 
 ## Rule options and a conservative route
 
@@ -91,9 +91,9 @@ and undefinedness explicitly; do not manufacture two-way contextual contrasts.
 
 ## Priority diagnostic records
 
-### 1. Addition and exclusivity: `och` with `kamo/kam`
+### 1. Addition and exclusivity: `och` with `kamo`
 
-Candidate orders, both unjudged: `och kamo/kam`; `kamo/kam och`.
+Candidate orders, both unjudged: `och kamo`; `kamo och`.
 Compare ADD(EXCL(P)) and EXCL(ADD(P)), specifying both alternative sets first.
 Begin with people {Janek, Marek, Matuš} and activities {sleeping, studying},
 evaluated at one time; choose Janek/studying as the actual associate.
@@ -113,9 +113,9 @@ Decision: same versus distinct associates; background projection; scope options;
 and whether any pronunciation order expresses the contrast. English “also only”
 does not settle any of these Iridian properties.
 
-### 2. Interim priority and exclusivity: `dlí` with `kamo/kam`
+### 2. Interim priority and exclusivity: `dlí` with `kamo`
 
-Candidate orders, both unjudged: `dlí kamo/kam`; `kamo/kam dlí`.
+Candidate orders, both unjudged: `dlí kamo`; `kamo dlí`.
 Compare a provisional exclusive arrangement with exclusivity over provisional
 courses of action. Fix people {Janek, Marek, Matuš}, sleeping as the action,
 and a plan with an immediate stage and a later decision stage.

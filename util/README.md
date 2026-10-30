@@ -77,6 +77,16 @@ Neither the helper nor the time diagram derives scalar ordering, modal worlds,
 reference-stage selection or pragmatic inferences from a sentence. Such inputs
 remain explicit conditions on the grammatical examples.
 
+`scripts/exclusive_diagnostics.py` supplements those satisfaction checks with
+separate MIN and MAX contributions over caller-supplied alternative propositions
+and a reflexive, transitive strength relation. Its tests cover ordinary
+exclusivity, scalar bounds, incomparable alternatives, and low progress with
+current MIN and preceding/current MAX. Advancement and the higher expected goal
+are checked separately from those contributions. Projection probes require an
+explicit hypothesis for each embedding environment; they do not prescribe
+Iridian question, negative-Mood or epistemic projection rules. The gate schemata
+are checked as English interpretation examples without Iridian surface forms.
+
 `scripts/clausal_diagnostics.py` adds bounded checks for the specified lower
 polarity input under negative Mood, high additive/exclusive scope, the exclusive
 construction's low option, and reduced AspP selection. Its tests use contexts

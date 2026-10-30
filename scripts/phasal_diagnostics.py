@@ -75,7 +75,11 @@ def check_phasal_sources(sources, fixtures):
                 if normalise(value) not in section:
                     failures.append('phasal source: lost qualification ' + value)
     syntax = sources.get('chapters/06-simple-sentence.tex', '')
+    # English interpretation schemata deliberately have no invented Iridian
+    # surface/gloss lines. Keep each subexample's scope and context together.
     exclusive_blocks = re.findall(r'\\begingl(.*?)\\endgl', syntax, re.S)
+    exclusive_blocks += re.findall(
+        r'\\a\s+\\trsl\{.*?(?=\\a\s+\\trsl|\\xe)', syntax, re.S)
     for case in fixtures.get('exclusive_source_examples', []):
         matches = [block for block in exclusive_blocks if
                    normalise(case['translation']) in normalise(block)]

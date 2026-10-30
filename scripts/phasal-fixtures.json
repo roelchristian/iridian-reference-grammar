@@ -220,20 +220,19 @@
     {
       "scope": "\\mathrm{EXCL}_{A}(\\mathrm{SO}(P))",
       "context": [
-        "Janek and Marek were doctors",
-        "Matuš has just qualified"
+        "The western and eastern gates were open yesterday",
+        "a third gate has just opened"
       ],
-      "translation": "Only Janek is still a doctor.",
-      "diagnostic": "Matuš's newly acquired qualification does not contradict the claim"
+      "translation": "Only the western gate is still open.",
+      "diagnostic": "Only the western gate satisfies the continuing profile"
     },
     {
       "scope": "\\mathrm{SO}(\\mathrm{EXCL}_{A}(P))",
       "context": [
-        "Janek was the only doctor among the same three people",
-        "neither of the others has qualified"
+        "The western gate was the sole open gate yesterday"
       ],
-      "translation": "It is still only Janek who is a doctor.",
-      "diagnostic": "another current doctor in that set would contradict the claim"
+      "translation": "It is still only the western gate that is open.",
+      "diagnostic": "remains the sole open gate today"
     }
   ],
   "diagram_bindings": [

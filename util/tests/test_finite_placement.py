@@ -93,8 +93,12 @@ class FinitePlacementTests(unittest.TestCase):
 
     def test_predicate_types_keep_their_distinct_orders(self):
         inventory = examples(self.particles)
-        for surface in ('Marek vy doktor.', 'Marek doktor vy staly.', 'Pivo vy zada.'):
-            self.assertIn(surface, inventory)
+        self.assertIn('Pivo vy zada.', inventory)
+        # Equative order remains explicit; replacement state examples are
+        # English schemata until their Iridian lexemes are supplied.
+        self.assertIn(r'\ird{Marek doktor vy staly}', self.particles)
+        self.assertIn(r'\ird{Marek doktor so staly}', self.particles)
+        self.assertIn(r'\trsl{The western gate is already open.}', self.particles)
         placement = self.simple.split(r'\label{sec:pivot-placement}', 1)[1]
         self.assertRegex(placement, r'Operator particles, predicate heads and material internal to\s+a nominal or selected clause are ineligible goals')
 
