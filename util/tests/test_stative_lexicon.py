@@ -32,7 +32,7 @@ class StativeLexiconTests(unittest.TestCase):
 
     def test_eleven_records_separate_meaning_from_morphological_class(self):
         self.assertEqual(set(self.entries),{'mužn','hradn','svorn','četn','ptakn',
-            'smrn','všihn','žbirn','hvodn','trpan','tvírzn'})
+            'smrn','všihn','žbirn','hvodn','torban','tvírzn'})
         self.assertEqual(self.entries['tvírzn']['finite_class'],'C')
         self.assertEqual(self.entries['všihn']['manifest_class'],'ESH-A')
         self.assertIsNone(self.entries['ptakn']['manifest_class'])
@@ -201,22 +201,48 @@ class StativeLexiconTests(unittest.TestCase):
         with self.assertRaises(LexicalLicenceError):
             perspective_licensed(self.entries['ptakn'],experiencer='Marek',kind='manifest')
 
-    def test_missing_vocalism_and_cluster_licence_do_not_generate_repairs(self):
+    def test_missing_vocalism_and_lexical_classes_do_not_generate_forms(self):
         self.assertIsNone(self.entries['smrn']['quantity_target'])
-        for stem in ('smrn','trpan'):
+        for stem in ('smrn','torban'):
             entry=self.entries[stem]
             for kind in ('state','become','manifest'):
                 with self.subTest(stem=stem,kind=kind),self.assertRaises(LexicalLicenceError):
                     finite(entry,kind,'continuous')
             with self.assertRaises(LexicalLicenceError):
                 manner(entry)
-        self.assertEqual(self.entries['trpan']['quantity_target'],3)
-        self.assertEqual(self.data['excluded_candidates'],['trpá','smerňa'])
-        # The recorded a target permits a conditional grade calculation only;
-        # it does not establish a legal /trp/ onset or a new finite principal part.
-        selected=QuantityGrades.from_file().apply(tokens('trpan'),
-            QuantityLicence('conditional-trpan','G1',True,(0,5),(3,),3))
-        self.assertEqual(selected,tokens('trpán'))
+        self.assertEqual(self.entries['torban']['quantity_target'],4)
+        self.assertEqual(self.data['excluded_candidates'],['smerňa'])
+        self.assertEqual(self.entries['torban']['principal_part_status'],'class-unresolved')
+        # A known target supports a conditional grade calculation without
+        # supplying finite, Become, attributive or manner class membership.
+        selected=QuantityGrades.from_file().apply(tokens('torban'),
+            QuantityLicence('conditional-torban','G1',True,(0,6),(4,),4))
+        self.assertEqual(selected,tokens('torbán'))
+        with self.assertRaises(LexicalLicenceError):
+            ordinary_attributive(self.entries['torban'])
+
+    def test_torban_predictions_require_explicit_hypothetical_classes(self):
+        entry=copy.deepcopy(self.entries['torban'])
+        predictions=self.data['conditional_predictions']['torban']
+        self.assertIsNone(entry['finite_class'])
+        self.assertIsNone(entry['become_class'])
+        self.assertIsNone(entry['attributive_class'])
+        self.assertEqual(entry['expected']['state'],[None]*5)
+        self.assertEqual(entry['expected']['become'],[None]*5)
+        entry['principal_part_status']='listed'
+        entry['finite_class']=predictions['hypothetical_finite_class']
+        entry['become_class']=predictions['hypothetical_become_class']
+        for kind in ('state','become'):
+            for aspect,expected in zip(self.aspects,predictions[kind]):
+                with self.subTest(kind=kind,aspect=aspect):
+                    self.assertEqual(finite(entry,kind,aspect,stage_level=True,bounded=True),
+                                     tokens(expected))
+        with self.assertRaises(LexicalLicenceError):
+            manner(entry)
+        entry['manner']='licensed'
+        self.assertEqual(manner(entry),tokens(predictions['manner']))
+        with self.assertRaises(LexicalLicenceError):
+            ordinary_attributive(entry)
 
     def test_new_source_prescriptions_are_bound_and_mutations_rejected(self):
         source=(ROOT/'chapters/03-verbs.tex').read_text()
