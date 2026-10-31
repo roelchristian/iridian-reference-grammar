@@ -39,7 +39,7 @@ Record felicity, obligatory meaning, and optional emphatic/resumptive/contrastiv
 
 ## Kind, generic, and mass controls
 
-Chapter 14, `ex:tc-generic-topic`, establishes `Vlak drže na hlučna` (‘The wolf howls at night’) as a generic kind-topic construction. This verifies a bare kind-denoting nominal in that construction. It does not independently show how overt anchors behave with discourse-anaphoric kinds.
+Chapter 14, `ex:tc-generic-topic`, establishes `Vlak staže na hlučna` (‘The wolf howls at night’) as a generic kind-topic construction. This verifies a bare kind-denoting nominal in that construction. It does not independently show how overt anchors behave with discourse-anaphoric kinds.
 
 | Interpretation held distinct | Controlled enquiry |
 | --- | --- |
