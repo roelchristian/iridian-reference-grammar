@@ -20,7 +20,7 @@ class ClausalDiagnosticsTests(unittest.TestCase):
         source = read_domain(path)
         self.assertEqual(check_clausal_sources({path: source}), [])
         for old, new in ((r'$D(A(S(\neg P)))$', r'$D(A(\neg S(P)))$'),
-                         ('Marek och so zazdrávime.', 'Marek so och zazdrávime.'),
+                         ('Marek oh so zazdrávime.', 'Marek so oh zazdrávime.'),
                          ('Kamo so pjaštir.', 'Kamo so zapjaštir.'),
                          ('$R(E(V(\\neg P)))$ & L', '$R(E(V(\\neg P)))$ & M')):
             with self.subTest(change=new):
@@ -55,7 +55,7 @@ class ClausalDiagnosticsTests(unittest.TestCase):
             for particle in ('vy', 'so'):
                 old = particle == 'so'
                 encode = lambda xs: [not x for x in xs] if negative else xs
-                for comment, other in (('och', True), ('kamo', False)):
+                for comment, other in (('oh', True), ('kamo', False)):
                     before = encode([old, old if other else False])
                     now = encode([True, other])
                     with self.subTest(negative=negative, particle=particle, comment=comment):
@@ -76,7 +76,7 @@ class ClausalDiagnosticsTests(unittest.TestCase):
             for scope, expected in (('high', high), ('low', low)):
                 self.assertEqual(comment_phase(particle, before, now, negative=True,
                                                comment='kamo', scope=scope), expected)
-        for comment in (None, 'och'):
+        for comment in (None, 'oh'):
             with self.assertRaises(ValueError):
                 comment_phase('so', before, now, comment=comment, scope='low')
 

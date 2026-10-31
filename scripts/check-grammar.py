@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'util'))
 sys.path.insert(0, str(ROOT / 'scripts'))
 from source_domains import domain_sources  # noqa: E402
-from collect_lexicon import extract, strip_comments  # noqa: E402
+from collect_lexicon import extract, group, strip_comments  # noqa: E402
 from boundary_transducer import BoundaryTransducer, check_boundary_fixtures  # noqa: E402
 from quantity_grades import QuantityGrades, QuantityLicence  # noqa: E402
 from phasal_diagnostics import check_phasal_diagram, check_phasal_sources  # noqa: E402
@@ -335,10 +335,53 @@ def check_quantity_sources(sources, fixtures):
     return failures
 
 
+def dorsal_spelling_checks(sources):
+    """Reject ch inside explicitly tagged Iridian orthographic forms.
+
+    This checks spelling only: IPA /x/, English prose, citations, source
+    labels and other-language data outside the Iridian form macros are not
+    candidates. Unlabelled interlinear surface lines and letter-name orth
+    macros are Iridian orthography, including capitalised and internal
+    spellings; explicitly labelled Japanese and Korean glosses are excluded.
+    """
+    failures = []
+    for path, raw in sources.items():
+        text = strip_comments(raw)
+        forms = [(record['form'], record['line']) for record in extract(text, path)]
+        # extract treats lexentry notes as one field; inspect nested simple
+        # Iridian-form macros there as well, without examining English notes.
+        forms.extend((match[1], text.count('\n', 0, match.start()) + 1)
+                     for match in re.finditer(r'\\(?:irdp?|orth)\{([^{}]+)\}', text))
+        for match in re.finditer(r'\\gla\s+(.*?)//', text, re.S):
+            start = text.rfind(r'\begingl', 0, match.start())
+            end = text.rfind(r'\endgl', 0, match.start())
+            preamble = text[start:match.start()] if start > end else ''
+            # Comparative-language romanisation is not Iridian orthography.
+            if re.search(r'\\glpreamble\s+\\textit\{(?:Japanese|Korean)\}', preamble):
+                continue
+            forms.append((match[1], text.count('\n', 0, match.start()) + 1))
+        for form, line in forms:
+            # Feature-cell subscripts annotate schematic forms; they are not
+            # pronounced text (e.g. STATE.INCH.PROG contains no Iridian ch).
+            spelling = form
+            while annotation := re.search(r'\\textsubscript\s*\{', spelling):
+                parsed = group(spelling, annotation.end() - 1)
+                if parsed is None:
+                    break
+                spelling = spelling[:annotation.start()] + spelling[parsed[1]:]
+            # Remove macro control words, while retaining their arguments.
+            spelling = re.sub(r'\\[A-Za-z@]+', '', spelling)
+            # Double-bracketed English labels explicitly mark lexicon gaps.
+            spelling = re.sub(r'\[\[.*?\]\]', '', spelling)
+            if re.search('ch', spelling, re.IGNORECASE):
+                failures.append(f'{path}:{line}: obsolete Iridian ch spelling: {form}')
+    return failures
+
+
 def check_contemplative_sources(sources, fixtures):
     """Preserve long /aːʒ/, its contextual phonetics and reviewed suppletion.
 
-    The quantifier nách and name Bách are distinct lexemes, explicitly protected
+    The quantifier náh and name Báh are distinct lexemes, explicitly protected
     rather than swept into a spelling replacement. Starred rejected examples
     and comments do not count as prescribed contemplative forms.
     """
@@ -370,8 +413,10 @@ def check_contemplative_sources(sources, fixtures):
                 continue
             words = re.findall(r'[-\w]+', form)
             obsolete = [word for word in words if
-                        ('ách' in word.casefold() and word.casefold() not in {'nách', 'bách'})
-                        or word.casefold() in {'jecach', 'zadach'}]
+                        (('ách' in word.casefold()
+                          or re.search(r'áh(?:al(?:ě)?)?$', word.casefold()))
+                         and word.casefold() not in {'náh', 'báh'})
+                        or word.casefold() in {'jecach', 'zadach', 'jecah', 'zadah'}]
             if obsolete:
                 failures.append(f'{path}: obsolete contemplative output: ' + ', '.join(obsolete))
     return failures
@@ -470,6 +515,7 @@ def check():
     publication_sources = active_sources(ROOT / 'grammar.tex')
     sources = domain_sources(publication_sources)
     failures = lexical_velar_checks(sources)
+    failures.extend(dorsal_spelling_checks(publication_sources))
     failures.extend(verbs_heading_checks(publication_sources))
     failures.extend(renamed_particle_checks(sources))
     phasal_fixtures = json.loads((ROOT / 'scripts/phasal-fixtures.json').read_text(encoding='utf-8'))

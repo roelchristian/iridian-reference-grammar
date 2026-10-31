@@ -9,7 +9,7 @@ Integration with the newly merging architecture patch remains to be checked.
 ## Findings for the integrator
 
 1. **P2 — S06 confounds discourse and position.** Its string pair contrasts
-   `bych P A V` and `P bych A V`, while its context contrasts a neutral temporal
+   `byh P A V` and `P byh A V`, while its context contrasts a neutral temporal
    frame with contrastively discussed yesterday. A positional diagnostic for
    landing-site height should hold discourse status fixed. Use the same neutral
    temporal-frame context in both orders; test contrastive fronting separately,

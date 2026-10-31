@@ -41,14 +41,14 @@
   "protected_lexemes": [
     {
       "path": "util/lexicon.tex",
-      "form": "nách",
+      "form": "náh",
       "gloss": "each"
     }
   ],
   "protected_surfaces": [
     {
       "path": "chapters/06-simple-sentence.tex",
-      "surface": "Bách němscvení kompozitor."
+      "surface": "Báh němscvení kompozitor."
     }
   ]
 }

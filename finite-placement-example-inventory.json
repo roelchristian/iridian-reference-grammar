@@ -71,7 +71,7 @@
       "interpretation": "\\trsl{Janek is sleeping. Marek, for his part, is studying.}",
       "old_context": "",
       "new_context": "",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -83,19 +83,19 @@
       "interpretation": "\\trsl{But I do eat vegetables.}",
       "old_context": "\\lingcontext{The speaker's doctor tells them that they should start eating more vegetables. They respond defensively.}",
       "new_context": "\\lingcontext{The speaker's doctor tells them that they should start eating more vegetables. They respond defensively.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
       "example_index": 27,
-      "old_order": "Marek zdrávime. Jas Janek och zdrávime.",
-      "new_order": "Marek zdrávime. Janek och jas zdrávime.",
+      "old_order": "Marek zdrávime. Jas Janek oh zdrávime.",
+      "new_order": "Marek zdrávime. Janek oh jas zdrávime.",
       "old_gloss": "Marek.\\Dir{} sleep-\\Prog{} contrast Janek.\\Dir{} also sleep-\\Prog{}",
       "new_gloss": "Marek.\\Dir{} sleep-\\Prog{} Janek.\\Dir{} also contrast sleep-\\Prog{}",
       "interpretation": "\\trsl{Marek is sleeping. Janek, meanwhile, is sleeping too.}",
       "old_context": "",
       "new_context": "",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -107,7 +107,7 @@
       "interpretation": "\\trsl{Janek has left again.}",
       "old_context": "\\lingcontext{Janek was expected to stay for a while, but he has departed before, returned, and now left once more.}",
       "new_context": "\\lingcontext{Janek was expected to stay for a while, but he has departed before, returned, and now left once more.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -119,7 +119,7 @@
       "interpretation": "\\trsl{Janek has once again not arrived.}",
       "old_context": "\\lingcontext{Janek failed to arrive on an earlier occasion, came successfully on an intervening visit, and has now failed to arrive again.}",
       "new_context": "\\lingcontext{Janek failed to arrive on an earlier occasion, came successfully on an intervening visit, and has now failed to arrive again.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -131,7 +131,7 @@
       "interpretation": "\\trsl{Marek is a doctor again.}",
       "old_context": "\\lingcontext{Marek was a doctor, ceased to hold that qualification, and has now regained it.}",
       "new_context": "\\lingcontext{Marek was a doctor, ceased to hold that qualification, and has now regained it.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -143,7 +143,7 @@
       "interpretation": "\\trsl{Janek is sleeping again.}",
       "old_context": "\\lingcontext{Janek was sleeping, woke for a while, and is now sleeping once more.}",
       "new_context": "\\lingcontext{Janek was sleeping, woke for a while, and is now sleeping once more.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -155,7 +155,7 @@
       "interpretation": "\\trsl{Janek is still sleeping, though.}",
       "old_context": "\\lingcontext{Janek has been sleeping without interruption; the speaker corrects an assumption that he has woken.}",
       "new_context": "\\lingcontext{Janek has been sleeping without interruption; the speaker corrects an assumption that he has woken.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -167,7 +167,7 @@
       "interpretation": "\\trsl{There is still time, though.}",
       "old_context": "\\lingcontext{Someone worries that there is no time left. The speaker reassures them.}",
       "new_context": "\\lingcontext{Someone worries that there is no time left. The speaker reassures them.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -179,7 +179,7 @@
       "interpretation": "\\trsl{This is not the case yet, though.}",
       "old_context": "\\lingcontext{The speaker softens a negative update.}",
       "new_context": "\\lingcontext{The speaker softens a negative update.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -263,7 +263,7 @@
       "interpretation": "\\trsl{Has Janek already arrived, after all?}",
       "old_context": "\\lingcontext{Janek's first arrival explains why his coat is here; the addressee continues to wonder about the coat.}",
       "new_context": "\\lingcontext{Janek's first arrival explains why his coat is here; the addressee continues to wonder about the coat.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -275,7 +275,7 @@
       "interpretation": "\\trsl{Is there still time, though?}",
       "old_context": "\\lingcontext{Time remains for the task, although the addressee fears that it is too late.}",
       "new_context": "\\lingcontext{Time remains for the task, although the addressee fears that it is too late.}",
-      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and och and above Phas."
+      "analytical_purpose": "Contrastive/recurrent content preserved with jas below by and oh and above Phas."
     },
     {
       "chapter": "chapters/05-function-words.tex",
@@ -388,8 +388,8 @@
     {
       "chapter": "chapters/07-information-structure.tex",
       "example_index": 12,
-      "old_order": "Bych by Marek vy zdrávime?",
-      "new_order": "Bych Marek by vy zdrávime?",
+      "old_order": "Byh by Marek vy zdrávime?",
+      "new_order": "Byh Marek by vy zdrávime?",
       "old_gloss": "yesterday \\textsc{q} Marek.\\Dir{} already sleep-\\Prog{}",
       "new_gloss": "yesterday Marek.\\Dir{} \\textsc{q} already sleep-\\Prog{}",
       "interpretation": "\\trsl{Was Marek already asleep yesterday?} \\lingcontext{temporal frame; \\ird{Marek} undergoes ordinary placement}",

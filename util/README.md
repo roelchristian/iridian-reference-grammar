@@ -43,7 +43,7 @@ standalone final `[aːʃ]` from linked `[aːʒɛ]` and evidential `-ážal/-áž
 while preserving quantity and initial stress. Boundary tests retain underlying
 `/ʒ/` throughout suffixation; contextual devoicing is not an input allomorph or
 an added `x → ʒ` PAL correspondence. Source checks also preserve the unrelated
-quantifier `nách` ‘each’ and proper name `Bách`.
+quantifier `náh` ‘each’ and proper name `Báh`.
 
 `scripts/quantity_grades.py` selects G0/G1/G2/G3 independently of consonantal
 mapping. Its input is an already selected tuple of IPA tokens plus an explicit
