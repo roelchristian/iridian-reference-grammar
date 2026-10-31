@@ -8,7 +8,7 @@ The productive core now contains exactly `-u`, `-ení`, `-ěc`, `-ic`, `-ezmy`, 
 
 The five specialised temporal endings remain separately documented during this intermediate phase. Their removal depends on Phase IV coverage of temporal event nominals, especially endpoint `do`; exclusion from the productive core does not yet constitute complete withdrawal from the description. No diachronic or register status is inferred for withdrawn design elements. The erroneous claim that temporal suffixes all contain finite linker `-e` has been removed without replacing it with an unverified segmentation.
 
-## Ordered dependencies
+## Implementation order (completed in sequence)
 
 1. Phase II: distinguish bounded sequence, circumstantial relevance, and integrated overlap; preserve different-pivot circumstantial linkage.
 2. Phase III: constrain conditional, purposive, concessive, and prospective-anterior meanings, including actuality and scope.
@@ -16,14 +16,15 @@ The five specialised temporal endings remain separately documented during this i
 4. Phase V: integrate finite dependent linkage and independent discourse continuation; distinguish existing nominal anaphora from proposed propositional anaphora.
 5. Phase VI: audit examples, morphology, scope, references, and publication output across affected chapters.
 
-## Questions requiring explicit limits
+## Decisions and remaining limits
 
-- Whether result persistence is encoded by `-ení` or inferred from the lexical event and context.
-- How an event nominal supplies a reference boundary, and how temporal `do` behaves under negation and nonactualised endpoints.
-- The assertion, evidential-scope, and prosodic properties of dependent finite `-e`.
-- The licensing of propositional reference and any subsequent anaphoric discourse expressions; no canonical exponent is stipulated by this brief.
-- The interaction of expectation, irrealis, and actuality in `-ezmy` and `-esny`.
-- Whether a dedicated causal construction is needed; no causal suffix is supplied.
+- Circumstantial relevance is conventional in `-ení`; result persistence and event causation are contextual inferences.
+- Temporal `z` defaults to completion and `do` to onset, with an explicitly identified alternative boundary permitted. Event nominals preserve nominal case and have no independent finite tense or clausal negation domain.
+- Expected `-ezmy` does not assert antecedent occurrence; prospective `-esny` does not entail actualisation of its reference event.
+- Finite `-e` retains the null-C dependency analysis and local finite inflection. Autonomous assertion, outer evidential perspective, and independently scoped directive/interrogative force remain unspecified.
+- Propositional anaphora and its proposed connective family lack a licensed lexical exponent; no automatic extension of nominal `i/ji/ni` is adopted.
+- Independent internal negation and concord in converbs remain unspecified. The diagnostics do not add an unverified paradigm.
+- No dedicated causal suffix, new phonological alternation, historical intermediate stage or measured frequency distribution is introduced.
 
 ## Evidence and validation
 
@@ -35,7 +36,7 @@ Phase I validation: full `make` succeeded; `check-log.py` reported no missing gl
 
 `-u` encodes bounded local anteriority; `-ení` conventionally requires circumstantial relevance, with result persistence and event causation left to context; `-ěc` requires overlap and episode integration. New constant-predicate examples are explicitly constructed and checked for case, quantity, mutation and pivot recovery. The existing different-pivot sleep/study example remains. The separate diagnostic bank covers all fourteen requested sets, distinguishing specified consequences from unresolved judgements and English-only stimuli. The new CIRC gloss separates circumstance from SEQ without deleting existing macros. Selected `-it` complements are exempted from the general adverbial-adjunction statement.
 
-Research and independent consistency/style reviews passed. Full `make`, source checks and `git diff --check` passed; the PDF log has no missing glyphs, undefined references or fatal errors. The three-way examples, semantic table and formula pages were visually inspected (printed pp. 269, 271–272); one 2pt formula-box warning produces no clipping or collision. No unsupported converb-internal negation paradigm is supplied.
+Research and independent consistency/style reviews passed. Full `make`, source checks and `git diff --check` passed; the PDF log has no missing glyphs, undefined references or fatal errors. The three-way examples, semantic table and formula pages were visually inspected (printed pp. 269, 271–272); one 2pt labelled-example warning produces no clipping or collision. No unsupported converb-internal negation paradigm is supplied.
 
 ## Phase III — Specialised meanings and scope
 
@@ -58,3 +59,11 @@ The overview distinguishes converb chains, finite dependent `-e`, temporal nomin
 Chapter 17 consolidates colloquial `nu` as weak continuation/transition; its copular source does not impose a silent copula synchronically. Existing consequential `nadě` and inferential `hladě` retain their preverbal distributions. Propositional anaphora is a clearly delimited proposal: nominal `i/ji/ni` are not automatically proposition-valued, and the three English connective schemas receive no invented canonical exponents. Sohn's mechanisms and Akkadian main-clause linkage motivate comparisons without becoming Iridian finiteness categories or dependency rules.
 
 Research and independent consistency/style reviews passed. Full `make`, source checks and `git diff --check` passed. Finite examples, the expanded overview table, independent `nu` sequence and proposed-connective table were visually inspected (printed pp. 255–256, 269–270, 300–302); no clipping or collisions. Two exact reviewed overview hashes preserve the relative row and participant-relative description while correcting broader finite-linkage framing. The five previously identified 2pt labelled-example warnings remain for Phase VI.
+
+## Phase VI — Consistency and publication review
+
+The final multi-agent review covered all 38 active publication inputs and the affected incoming/outgoing references. The eight withdrawn exponents are absent from published grammar sources; the canonical table contains the eight retained endings, with `-ní` only as the conditioned allomorph of `-ení`. Incoming morphophonology and causative labels now distinguish circumstance from sequence. Copular `nesu` and discourse `nu` have consistent separate treatments. The inherited `byl nesu` translation is corrected to completed anteriority, while state-frame `-eň` retains the background state. Finite viewpoint morphology is distinguished from bounded/prospective linking semantics, and finite-final statements are restricted to the appropriate converb construction.
+
+The obsolete contrastive-converb glossary entry is removed without deleting the existing macro; CIRC and DISC notation is supplied. Five labelled examples now suppress unwanted leading whitespace, eliminating all five 2pt box warnings. The diagnostic bank records the final adopted analyses and precise unresolved licences; research notes distinguish primary verification, limited publisher extracts, inaccessible full text, and unmeasured distribution hypotheses.
+
+Final validation: sequential `make check` succeeded, including the full grammar, cover, publication source checks and all **179 utility tests**. Both PDF logs report **zero overfull boxes**, missing glyphs, undefined references or fatal errors. `git diff --check` passed. Final rendered pages were inspected for the causative table, canonical inventory, semantic formulas and glosses, temporal table and examples, state-frame contrast, abbreviations and new bibliography entries; the finite/discourse tables and examples also passed the Phase V visual review. No local instruction file is tracked, and the pre-existing untracked `nominalisation-gap-proposals.md` is unchanged. No push was performed.

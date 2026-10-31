@@ -172,3 +172,43 @@ examples, page locators or stronger lexical-semantic conclusions.
 
 No new source above licences categorical Iridian grammaticality judgements,
 phonological exponents, historical intermediates or obligatory participant identity.
+
+## Phase VI: final scholarly audit
+
+The final audit checked all thirteen new citation sites in Chapters 15–17
+against the passages recorded above and their live bibliography entries.
+Author names, publication years, titles, venues, chapter extents and DOI links
+match the checked primary publication records. Sohn's mechanism classes and
+temporal/conditional comparisons, Deutscher's constrained finite-main-clause
+linkage, Choi's participant-continuity preferences, Sweetser's analytical
+domains, the contemporary *before* distinction, temporal polyfunctionality and
+polarity findings, and demonstrative discourse reference remain within the
+verified scope of their citations. No citation supplies an Iridian surface
+form or establishes an Iridian grammaticality judgement.
+
+Two access qualifications remain explicit: Sweetser's relevant publisher
+extracts support the chapter-level distinctions cited, although the complete
+chapters were unavailable; Pak's metadata and abstract were verified, but the
+full article was unavailable and its detailed result-continuity analysis was
+not adopted as bibliographic authority. The readable primary Sohn treatment
+provides the narrower Korean circumstantial/preconditional comparison.
+
+The reform specifies circumstantial relevance for *-ení*, with persistent
+results inferred in context, and supplies temporal boundary defaults and
+polarity behaviour as adopted Iridian constructional rules. Propositional
+anaphora, independent internal converb negation, the full scope of linked
+evidentials, and a dedicated causal exponent retain their stated unresolved
+status. No historical intermediates or sound changes were inferred from
+homophony or from the removal of earlier design elements.
+
+Unequal functional distributions remain hypotheses rather than measured
+Iridian findings: event-linking converbs may predominate in authored narrative,
+finite and anaphoric expressions may be useful in argumentation, and reduced
+forms may be associated with conversation. Choi's Korean acquisition and
+frequency results do not quantify any of these Iridian tendencies. Their
+evaluation requires a future authored-text sample whose annotation separates
+connective form, semantic function, participant reference and register. No
+unmeasured corpus distribution is asserted by this revision.
+
+Scholarly signoff: no unsupported comparative generalisation or misleading
+source attribution was found in the final revised clause-linking treatments.
