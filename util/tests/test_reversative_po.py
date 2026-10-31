@@ -53,8 +53,8 @@ class ReversativePoTests(unittest.TestCase):
         self.assertEqual(len(selected), 2)
         self.assertEqual(checker.check_prescribed_pronunciations(
             {'derivation': source}, selected, 'reversative'), [])
-        for before, after in [('ˈpɔ.sxoː', 'pɔ.ˈsxoː'), ('zaˈpɔ', 'ˈza.pɔ'),
-                              ('ˈpɔ.sxoː', 'ˈpoː.sxɔ')]:
+        for before, after in [('ˈpɔ.sxuː', 'pɔ.ˈsxuː'), ('zaˈpɔ', 'ˈza.pɔ'),
+                              ('ˈpɔ.sxuː', 'ˈpuː.sxɔ')]:
             with self.subTest(change=after):
                 self.assertTrue(checker.check_prescribed_pronunciations(
                     {'derivation': source.replace(before, after)}, selected, 'reversative'))

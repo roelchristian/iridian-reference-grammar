@@ -1,5 +1,5 @@
 {
-  "description": "Independent literal expectations for local vowel selection. Labels identify the reviewed design; strings already reflect independently selected bound/consonantal stems. The helper does not select exponents or derive attested words from these labels.",
+  "description": "Independent literal expectations for local vowel selection. Labels identify the reviewed design; strings already reflect independently selected bound/consonantal stems and retain traditional conservative vowel classes before variety realisation. The helper does not select exponents or derive attested words from these labels.",
   "cases": [
     {
       "id": "nominal-I-plural",
@@ -1075,11 +1075,23 @@
     },
     {
       "form": "poshódime",
-      "ipa": "ˈpɔ.sxoː.dɪ.mɛ"
+      "ipa": "ˈpɔ.sxuː.dɪ.mɛ"
     },
     {
       "form": "zaposhódime",
-      "ipa": "zaˈpɔ.sxoː.dɪ.mɛ"
+      "ipa": "zaˈpɔ.sxuː.dɪ.mɛ"
+    },
+    {
+      "form": "pérku",
+      "ipa": "ˈpʲiːr.kʊ"
+    },
+    {
+      "form": "pérce",
+      "ipa": "ˈpʲiːr.tsɛ"
+    },
+    {
+      "form": "všihnéšime",
+      "ipa": "ˈfʃɪx.niː.ʃɪ.mɛ"
     }
   ],
   "source_paragraphs": [

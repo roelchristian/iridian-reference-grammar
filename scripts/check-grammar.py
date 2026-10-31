@@ -451,7 +451,7 @@ def renamed_particle_checks(sources):
     lexicon = sources.get('util/lexicon.tex', '')
     for form, ipa, gloss in [('hladě', 'ˈxla.ɟɛ', 'inferential particle, must'),
                              ('kady', 'ˈka.dɨ̞', 'speculative particle, perhaps'),
-                             ('mó', 'ˈmoː', 'affirmative, confirmatory particle')]:
+                             ('mó', 'ˈmuː', 'affirmative, confirmatory particle')]:
         entries = [record for record in extract(lexicon, 'util/lexicon.tex')
                    if record['macro'] == 'lexentry' and record['form'] == form]
         if (len(entries) != 1 or entries[0]['gloss'] != gloss

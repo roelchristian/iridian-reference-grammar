@@ -24,8 +24,8 @@ class EpistemicParticleTests(unittest.TestCase):
         for old, new in [('ˈka.dɨ̞', 'ˈgda.ɨ'), ('ˈka.dɨ̞', 'ˈga.dɨ'),
                          ('ˈka.dɨ̞', 'ˈka.dj'), ('ˈka.dɨ̞', 'ka.ˈdɨ'),
                          ('ˈxla.ɟɛ', 'ˈxla.dɛ'), ('ˈxla.ɟɛ', 'ˈhla.ɟɛ'),
-                         ('ˈxla.ɟɛ', 'ˈxla.ɟeː'), ('ˈmoː', 'ˈmɔ'),
-                         ('ˈmoː', 'ˈmoːts')]:
+                         ('ˈxla.ɟɛ', 'ˈxla.ɟeː'), ('ˈmuː', 'ˈmɔ'),
+                         ('ˈmuː', 'ˈmuːts')]:
             with self.subTest(ipa=new):
                 changed = dict(self.sources)
                 changed[path] = changed[path].replace(old, new)
