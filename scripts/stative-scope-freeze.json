@@ -247,7 +247,10 @@
           "73ada39d2680f953097cdd45b4c53aaafaf4840caca3270c22d4a46a217594cd",
           "14d2e6b0b9c3ed17eea83875afbef5f89351c3b121c9b32bddebde0c46caacf6",
           "b786da95c7e434e23beeef95a3c99966ff5e9cea902f692d40f25b92f56e7aa4",
-          "9bba072b92bb3075aa54432298a6af9e3aa4ccd74e543d029f47d3f31f13f8ae"
+          "9bba072b92bb3075aa54432298a6af9e3aa4ccd74e543d029f47d3f31f13f8ae",
+          "7ccc37dca4d2c7454f876aefc88cecb0d0e2e5863a62239f760c29f3059c2aab",
+          "ec57a8b9a524e49429fb367a636c4eb4247deb977094fc699d8717946deed54b",
+          "547774fb2f26ff3ddb51ef2dd77ba532f1f6d0e0cd491f2e93c0bca2c7754808"
         ],
         "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
       },
@@ -316,6 +319,19 @@
         "original_sha256": "3d3cfe9279129877a2a3569c0614b32aa3cdb1e98aa2ff331dfcbb868c852e74",
         "replacement_sha256": "dc389c787cd403c4aaccbfb959a327e23a369cb309b1f18e5eae72ed57481650",
         "reason": "The main clause-combining overview replaces its superseded converb list with the eight-form productive inventory and removes contrastive converb classification. Its exponent-bearing relativisation row, including -ový, its function and cross-reference, is unchanged. This exact reviewed hash replacement does not relax protection of relative rules or examples."
+      }
+    ],
+    "reviewed_event_nominal_additions": [
+      {
+        "phase": "clause-linking reform IV",
+        "source": "chapters/08-derivation-nominalisation.tex",
+        "label": "sec:nm-derived-temporal",
+        "added_units": [
+          "7ccc37dca4d2c7454f876aefc88cecb0d0e2e5863a62239f760c29f3059c2aab",
+          "ec57a8b9a524e49429fb367a636c4eb4247deb977094fc699d8717946deed54b",
+          "547774fb2f26ff3ddb51ef2dd77ba532f1f6d0e0cd491f2e93c0bca2c7754808"
+        ],
+        "reason": "Three new paragraphs license existing event-nominal case forms as temporal postposition complements, preserve nominal argument case and role ambiguity, and retain the reduced nonfinite domain. Every earlier protected region unit and exponent-bearing paragraph remains unchanged; no relative rule or example is revised."
       }
     ]
   }

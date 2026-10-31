@@ -97,6 +97,37 @@ retain the Iridian requirement of a defeated expectation and distinguish an
 asserted obstacle from an entertained condition. Korean conditional and purpose
 distributions do not decide which Iridian matrix predicates select *-it*.
 
+## Phase IV: temporal event nominals and polarity
+
+Henriëtte de Swart, Jos Tellings and Bernhard Wälchli. 2022.
+‘Not…Until across European languages: A parallel corpus study’.
+*Languages* 7(1), article 56:1–33.
+[DOI](https://doi.org/10.3390/languages7010056);
+[institutional final PDF](https://research-portal.uu.nl/ws/files/150878073/languages_07_00056_v2.pdf).
+Read §§1–2, pp. 1–6, especially §2.1 pp. 3–4. Durative *until*, punctual
+predicates under negation, and asserted versus inferred positive post-phases
+require separate analyses. The 21-language comparison shows that polarity and
+connective selection interact; English *not until* is not a universal template.
+
+The adopted Iridian design defaults temporal *z* to event completion and *do*
+to onset, with an explicit contextual override; *na* requires overlap and *u*
+contextual proximity. These are specifications of the reform, not findings
+about Iridian inferred from scholarship. Endpoint *do* relates an extended
+matrix interval to an identified actual or projected boundary; nominalisation
+alone does not assert that a projected event actualises. Matrix negation over
+the pre-boundary interval does not independently assert a subsequent positive
+event. Negation of the whole interval claim remains a separate scope.
+
+Olguín Martínez (2023), §4.1 pp. 60–61, supports the limited comparison of
+monofunctional *after/before/until* with polyfunctional *when*. Neither that
+distribution nor de Swart et al.'s findings fix the Iridian boundary defaults,
+case selection, participant retention or suffix allomorphy.
+
+Research assessment: the specified endpoint construction supplies the semantic
+coverage needed to replace *-ezak* within this constructed-language revision.
+Its constructed examples and English polarity stimuli demonstrate the design;
+they are not elicited judgements or evidence of existing usage.
+
 ## Restricted access / unresolved research
 
 Pak Dong Ho. 2013. ‘A study of the Korean clausal connectives ‘-ŏsŏ’ and ‘-ko’

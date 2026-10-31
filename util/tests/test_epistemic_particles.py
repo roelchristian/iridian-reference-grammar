@@ -48,9 +48,11 @@ class EpistemicParticleTests(unittest.TestCase):
                 changed = dict(self.sources)
                 changed[path] = changed[path].replace('ˈka.dɨ̞', pronunciation)
                 self.assertTrue(checker.renamed_particle_checks(changed))
-        # The unrelated temporal suffix retains its original spelling.
-        for path in ('chapters/03-verbs.tex', 'chapters/08-complex-sentences.tex'):
-            self.assertIn(r'\ird{-eškady}', self.sources[path])
+        # A superseded suffix string is not a renamed particle. Its absence
+        # from the productive grammar must not weaken substring protection.
+        changed = dict(self.sources)
+        changed['chapters/03-verbs.tex'] += '\n' + r'\ird{-eškady}'
+        self.assertEqual(checker.renamed_particle_checks(changed), [])
 
     def test_existing_particle_combinations_and_glosses_remain_paired(self):
         source = self.sources['chapters/05-function-words.tex']
