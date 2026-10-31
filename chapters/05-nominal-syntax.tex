@@ -29,6 +29,12 @@ it also leaves the finer ordering of quantificational material unspecified.
 The structural analysis of these positions is developed in
 §\,\ref{sec:nm-funcseq}.
 
+Schematic clauses use double-bracketed lexical slots with subscripts for
+complete inflectional cells (§\,\ref{sec:lexical-slot-schemata}). Nominal
+cells specify case and number, with \textsc{def} added for overt shared
+anchoring; other cells leave anchoring unmarked. A finite transitive
+perfective cell includes ordinary patient orientation.
+
 \subsection{The root and NP}
 \label{sec:nm-root}
 
@@ -524,6 +530,35 @@ demonstrative layer does not itself make every combination felicitous: where
 a demonstrative identifies the same referent for the addressee, its
 combination with speaker-specific \ird{si} has no established interpretation.
 
+A report about a waiting courier can preserve the same event while varying
+how the courier is presented:
+
+\pex\label{ex:nm-slot-reference-choice}
+\a
+\begingl
+\gla \textnormal{[[courier]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[wait]]}\textsubscript{\Prog{}}.//
+\glb courier.\Dir{}.\Sg{} wait-\Prog{}//
+\glft \trsl{A courier is waiting.} \lingcontext{first mention; speaker identifiability is left unmarked}//
+\endgl
+\a
+\begingl
+\gla Si \textnormal{[[courier]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[wait]]}\textsubscript{\Prog{}}.//
+\glb \Sanch{} courier.\Dir{}.\Sg{} wait-\Prog{}//
+\glft \trsl{A certain courier is waiting.} \lingcontext{the speaker has selected a particular courier}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[courier]]}\textsubscript{\Dir{}.\Sg{}.\Def{}} \textnormal{[[wait]]}\textsubscript{\Prog{}}.//
+\glb courier.\Dir{}.\Sg{}.\Def{} wait-\Prog{}//
+\glft \trsl{The courier is waiting.} \lingcontext{the participants have already discussed the courier assigned to this delivery}//
+\endgl
+\xe
+
+The first two clauses can introduce the same individual in the same
+situation; only the second conventionally marks speaker selection. The
+third presents the referent for shared retrieval, without requiring that
+only one courier exist in the wider setting.
+
 \subsection{Nominal-domain linearisation and prosodic attachment}
 \label{sec:nm-si-linearisation}
 
@@ -778,6 +813,29 @@ inside \synhead{PossP}. The grammar therefore allows two distinct noun-internal
 positions fed by the same demonstrative system: adnominal \synhead{DemP} above
 \synhead{AnchP}, and demonstrative possessors inside \synhead{PossP}.
 
+The difference between an outer demonstrative and a demonstrative
+possessor is visible with a single head noun:
+
+\pex\label{ex:nm-slot-demonstrative-ownership}
+\a
+\begingl
+\gla Tak \textnormal{[[boat]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[leak]]}\textsubscript{\Prog{}}.//
+\glb \Dem{}.\Prox{}.\Dir{} boat.\Dir{}.\Sg{} leak-\Prog{}//
+\glft \trsl{This boat is leaking.} \lingcontext{the boat itself is deictically selected}//
+\endgl
+\a
+\begingl
+\gla Ten \textnormal{[[boat]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[leak]]}\textsubscript{\Prog{}}.//
+\glb \Dem{}.\Prox{}.\Ind{} boat.\Dir{}.\Sg{} leak-\Prog{}//
+\glft \trsl{This one's boat is leaking.} \lingcontext{the proximal referent supplies the possessor; the boat remains direct}//
+\endgl
+\xe
+
+In the first clause, \ird{tak} identifies the boat; in the second,
+\ird{ten} identifies its possessor. The indirect demonstrative remains
+inside the possessive nominal even though the containing phrase bears
+direct case as the sole clausal participant.
+
 \subsection{Double-marking: demonstrative and shared anchoring}
 \label{sec:nm-def-double}
 
@@ -901,6 +959,34 @@ it does not extend into an independent partitive complement
 (§\,\ref{sec:nm-ext-indirect}). In \ird{ona pivum štava}
 \trsl{one mug of beer}, the numeral quantifies the mug, while indirect
 \ird{pivum} specifies its contents.
+
+Cardinal singular morphology persists when the quantified phrase changes
+its clausal role:
+
+\pex\label{ex:nm-slot-cardinal-case}
+\a
+\begingl
+\gla Hroná \textnormal{[[lantern]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[swing]]}\textsubscript{\Prog{}}.//
+\glb three lantern.\Dir{}.\Sg{} swing-\Prog{}//
+\glft \trsl{Three lanterns are swinging.} \lingcontext{the cardinal phrase is the sole participant}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[worker]]}\textsubscript{\Dir{}.\Sg{}} hroná \textnormal{[[lantern]]}\textsubscript{\Ind{}.\Sg{}} \textnormal{[[carry]]}\textsubscript{\Prog{}}.//
+\glb worker.\Dir{}.\Sg{} three lantern.\Ind{}.\Sg{} carry-\Prog{}//
+\glft \trsl{A worker is carrying three lanterns.} \lingcontext{the cardinal phrase is an imperfective patient}//
+\endgl
+\a
+\begingl
+\gla Hroná \textnormal{[[lantern]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[worker]]}\textsubscript{\Trs{}.\Sg{}} \textnormal{[[carry]]}\textsubscript{\Trs{}.\Pf{}}.//
+\glb three lantern.\Dir{}.\Sg{} worker.\Trs{}.\Sg{} carry-\Trs{}-\Pf{}//
+\glft \trsl{A worker carried three lanterns.} \lingcontext{the cardinal phrase is the direct patient of an ordinary active perfective}//
+\endgl
+\xe
+
+All three phrases denote three lanterns, while the noun uses the
+singular cell appropriate to its case. The numeral's quantity remains
+constant across the indirect--direct alternation of the patient.
 
 Adnominal interrogatives pattern with the same prenominal field. \ird{Jak}
 selects from a contextually restricted set, whereas the other interrogatives
@@ -1030,6 +1116,29 @@ occurrence at which its local anaphoric dependency is interpreted
 antecedent relation. The distribution
 across causative, passive and nominal domains requires construction-specific
 antecedent conditions; discourse prominence alone does not supply them.
+
+The same referential contrast appears with an imperfective indirect
+patient, whose case differs from the direct reflexive above:
+
+\pex\label{ex:nm-slot-reflexive-patient}
+\a
+\begingl
+\gla \textnormal{[[performer]]}\textsubscript{\Dir{}.\Sg{}} svy \textnormal{[[paint]]}\textsubscript{\Prog{}}.//
+\glb performer.\Dir{}.\Sg{} \Refl{}.\Ind{} paint-\Prog{}//
+\glft \trsl{A performer is painting themself.} \lingcontext{the performer is both painter and painted participant}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[performer]]}\textsubscript{\Dir{}.\Sg{}} jení \textnormal{[[paint]]}\textsubscript{\Prog{}}.//
+\glb performer.\Dir{}.\Sg{} \Dem{}.\Dist{}.\Ind{} paint-\Prog{}//
+\glft \trsl{A performer is painting that person.} \lingcontext{the distal referent is another participant in this context}//
+\endgl
+\xe
+
+Indirect \ird{svy} enforces the local reflexive relation; indirect
+\ird{jení} instead supplies deictic reference, with distinct reference
+specified by the second context. Patient case is constant, so the contrast
+concerns anaphoric dependence rather than alignment.
 
 The intensifying \trsl{own} reading of a reflexive is analysed as an extension
 of local coreference within the anaphoric domain, without a separate possessive
@@ -1426,6 +1535,42 @@ contains an overt anchor, so contextual identifiability remains independent
 of the number contrast. Speaker anchoring may likewise belong to the possessor
 or to its containing nominal (§\,\ref{sec:nm-si-complex}).
 
+Possession remains internal to the nominal when its head changes number
+or receives a different clausal case:
+
+\pex\label{ex:nm-slot-possessive-independence}
+\a
+\begingl
+\gla \textnormal{[[sailor]]}\textsubscript{\Ind{}.\Sg{}} \textnormal{[[net]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[sway]]}\textsubscript{\Prog{}}.//
+\glb sailor.\Ind{}.\Sg{} net.\Dir{}.\Sg{} sway-\Prog{}//
+\glft \trsl{A sailor's net is swaying.} \lingcontext{one sailor and one net}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[sailor]]}\textsubscript{\Ind{}.\Pl{}} \textnormal{[[net]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[sway]]}\textsubscript{\Prog{}}.//
+\glb sailor.\Ind{}.\Pl{} net.\Dir{}.\Sg{} sway-\Prog{}//
+\glft \trsl{A net belonging to several sailors is swaying.} \lingcontext{several sailors jointly possess one net}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[sailor]]}\textsubscript{\Ind{}.\Sg{}} \textnormal{[[net]]}\textsubscript{\Dir{}.\Pl{}} \textnormal{[[sway]]}\textsubscript{\Prog{}}.//
+\glb sailor.\Ind{}.\Sg{} net.\Dir{}.\Pl{} sway-\Prog{}//
+\glft \trsl{A sailor's nets are swaying.} \lingcontext{one sailor possesses several nets}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[inspector]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[sailor]]}\textsubscript{\Ind{}.\Sg{}} \textnormal{[[net]]}\textsubscript{\Ind{}.\Sg{}} \textnormal{[[check]]}\textsubscript{\Prog{}}.//
+\glb inspector.\Dir{}.\Sg{} sailor.\Ind{}.\Sg{} net.\Ind{}.\Sg{} check-\Prog{}//
+\glft \trsl{An inspector is checking a sailor's net.} \lingcontext{the net is now a patient; the sailor remains its nominal possessor}//
+\endgl
+\xe
+
+The first three clauses vary the possessor's number independently of
+the head's. In the fourth, the sailor and the net both bear indirect case,
+but their dependencies differ: possession licenses the sailor's case, while
+the imperfective verb licenses the patient's. The containing phrase's case
+does not add a second case ending to its possessor.
+
 \subsection{Stative verbs and property roots as \synhead{NP} modifiers}
 \label{sec:nm-prop}
 
@@ -1698,6 +1843,35 @@ postposition does not split them apart or attach to the lexical noun before they
 are assembled. This is the chief diagnostic for analysing the forms as
 postpositions over phrasal complements rather than as suffixes on nouns or as
 free adverbs loosely associated with them.
+
+A possessed complement remains intact when the postposition changes its
+relation to the clause:
+
+\pex\label{ex:nm-slot-pp-complement}
+\a
+\begingl
+\gla \textnormal{[[scout]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[fisher]]}\textsubscript{\Ind{}.\Sg{}} \textnormal{[[shelter]]}\textsubscript{\Ind{}.\Sg{}} na \textnormal{[[wait]]}\textsubscript{\Prog{}}.//
+\glb scout.\Dir{}.\Sg{} fisher.\Ind{}.\Sg{} shelter.\Ind{}.\Sg{} in wait-\Prog{}//
+\glft \trsl{A scout is waiting in a fisher's shelter.} \lingcontext{na follows the complete possessed location expression}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[scout]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[fisher]]}\textsubscript{\Ind{}.\Sg{}} \textnormal{[[shelter]]}\textsubscript{\Ind{}.\Sg{}} u \textnormal{[[wait]]}\textsubscript{\Prog{}}.//
+\glb scout.\Dir{}.\Sg{} fisher.\Ind{}.\Sg{} shelter.\Ind{}.\Sg{} near wait-\Prog{}//
+\glft \trsl{A scout is waiting near a fisher's shelter.} \lingcontext{only the postposition changes; the nominal remains indirect}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[scout]]}\textsubscript{\Dir{}.\Sg{}} \textnormal{[[fisher]]}\textsubscript{\Ind{}.\Sg{}} \textnormal{[[shelter]]}\textsubscript{\Ind{}.\Sg{}} de ócňime.//
+\glb scout.\Dir{}.\Sg{} fisher.\Ind{}.\Sg{} shelter.\Ind{}.\Sg{} to walk-\Prog{}//
+\glft \trsl{A scout is walking towards a fisher's shelter.} \lingcontext{the goal postposition follows the same possessed complement}//
+\endgl
+\xe
+
+The shelter bears indirect case under each postposition, while the
+fisher's indirect case is licensed within the possessive nominal. Location,
+proximity and goal are supplied by the final relational head, which takes
+the whole possessed expression as its complement.
 
 \subsection{Spatial and participant relations}
 \label{sec:nm-postp-classes}

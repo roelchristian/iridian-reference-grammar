@@ -166,6 +166,35 @@ Neither direct case nor transitive Voice entails that the patient undergoes
 a change of state: the construction equally accommodates predicates of buying
 and perception.
 
+Double brackets in the following schemata mark lexical meanings, while
+subscripts specify complete inflectional cells rather than suffix strings
+(§\,\ref{sec:lexical-slot-schemata}). Each verbal slot represents the
+argument frame and licensed derivation shown; its lexical allomorphy remains
+unspecified. The transitive perception frame illustrates the alignment
+alternation without requiring its patient to undergo a change of state:
+
+\pex\label{ex:val-slot-perception}
+\a
+\begingl
+\gla \textnormal{[[guard]]}\textsubscript{\Dir{}} \textnormal{[[gate]]}\textsubscript{\Ind{}} \textnormal{[[watch]]}\textsubscript{\Prog{}}.//
+\glb guard.\Dir{} gate.\Ind{} watch-\Prog{}//
+\glft \trsl{A guard is watching a gate.}
+\lingcontext{observation in progress; the gate is the perceived participant}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[gate]]}\textsubscript{\Dir{}} \textnormal{[[guard]]}\textsubscript{\Trs{}} \textnormal{[[watch]]}\textsubscript{\Trs{}.\Pf{}}.//
+\glb gate.\Dir{} guard.\Trs{} watch-\textsc{trs}-\Pf{}//
+\glft \trsl{A guard watched a gate.}
+\lingcontext{bounded watching event; the gate remains a perceived participant}//
+\endgl
+\xe
+
+The guard and gate change their case realisations when the viewpoint
+changes, although their semantic roles remain constant. Direct case in the
+second clause therefore identifies the selected patient without asserting
+that watching creates, opens, or otherwise changes the gate.
+
 The antipassive presents the agent's activity without independently licensing
 a patient, although the lexical event may still involve a conceptual theme.
 This frame suits activity-oriented contexts in which no referential patient is
@@ -379,6 +408,40 @@ relational head licenses it (§\,\ref{sec:nominalised}). This nominal relation
 does not extend to finite antipassive clauses.
 
 
+Patient omission and suppression produce distinct readings even when only
+the actor is pronounced. With a transitive carving frame, the ordinary
+perfective can retain a panel already identified in the conversation,
+whereas the antipassive presents carving as an activity:
+
+\pex\label{ex:val-slot-antipassive}
+\a
+\begingl
+\gla \textnormal{[[carver]]}\textsubscript{\Trs{}} \textnormal{[[carve]]}\textsubscript{\Trs{}.\Pf{}}.//
+\glb carver.\Trs{} carve-\textsc{trs}-\Pf{}//
+\glft \trsl{A carver carved it.}
+\lingcontext{a previously mentioned panel supplies the unexpressed direct-case patient}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[carver]]}\textsubscript{\Dir{}} \textnormal{[[chisel]]}\textsubscript{\Ind{}} se \textnormal{[[carve]]}\textsubscript{\Antip{}.\Pf{}}.//
+\glb carver.\Dir{} chisel.\Ind{} \textsc{inst} carve-\Antip{}-\Pf{}//
+\glft \trsl{A carver did some carving with a chisel.}
+\lingcontext{activity reading; no particular panel is asserted or recovered}//
+\endgl
+\a
+\begingl
+\gla *\textnormal{[[carver]]}\textsubscript{\Dir{}} \textnormal{[[panel]]}\textsubscript{\Ind{}} \textnormal{[[carve]]}\textsubscript{\Antip{}.\Pf{}}.//
+\glb carver.\Dir{} panel.\Ind{} carve-\Antip{}-\Pf{}//
+\glft \trsl{(intended: A carver carved a panel.)}
+\lingcontext{the panel is intended as the lexical patient, which the antipassive excludes}//
+\endgl
+\xe
+
+The transitive actor in (a) retains transitive case despite the patient's
+silence. In (b), the chisel is an instrumental adjunct, whose presence does
+not enlarge the core argument inventory; replacing that adjunct with a bare
+indirect patient in (c) consequently violates patient suppression.
+
 In the syntactic analysis, antipassive formation combines the transitive event predicate with an inner
 Voice head that closes the patient role without projecting an independent
 patient DP. For \ird{pjašt-}, its interpretation can be represented as
@@ -453,6 +516,40 @@ clause means that the child eats. Causative \ird{pjáštrime}, by contrast,
 can describe Marek's bringing about the child's eating
 (§\,\ref{sec:aspect-caus}). A conventional \trsl{feed} reading is not part of
 the productive semantics of \ird{-éb-}.
+
+A repair event makes the separation of beneficiary and theme particularly
+clear: repairing a roof for a tenant need not transfer ownership of the roof
+to that tenant. The following benefactive schemata keep those roles fixed
+while varying their grammatical realisation:
+
+\pex\label{ex:val-slot-benefactive}
+\a
+\begingl
+\gla \textnormal{[[roofer]]}\textsubscript{\Dir{}} \textnormal{[[roof]]}\textsubscript{\Ind{}} \textnormal{[[tenant]]}\textsubscript{\Ind{}} my \textnormal{[[repair]]}\textsubscript{\Prog{}}.//
+\glb roofer.\Dir{} roof.\Ind{} tenant.\Ind{} for repair-\Prog{}//
+\glft \trsl{A roofer is repairing a roof for a tenant.}
+\lingcontext{beneficiary expressed in a postpositional phrase}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[tenant]]}\textsubscript{\Dir{}} \textnormal{[[roofer]]}\textsubscript{\Ind{}} \textnormal{[[roof]]}\textsubscript{\Ind{}} \textnormal{[[repair]]}\textsubscript{\Appl{}.\Prog{}}.//
+\glb tenant.\Dir{} roofer.\Ind{} roof.\Ind{} repair-\Appl{}-\Prog{}//
+\glft \trsl{A roofer is repairing a roof for a tenant.}
+\lingcontext{applied beneficiary direct; actor and theme indirect}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[tenant]]}\textsubscript{\Dir{}} \textnormal{[[roofer]]}\textsubscript{\Trs{}} \textnormal{[[roof]]}\textsubscript{\Ind{}} \textnormal{[[repair]]}\textsubscript{\Appl{}.\Pf{}}.//
+\glb tenant.\Dir{} roofer.\Trs{} roof.\Ind{} repair-\Appl{}-\Pf{}//
+\glft \trsl{A roofer repaired a roof for a tenant.}
+\lingcontext{applied beneficiary remains direct in the ERG domain}//
+\endgl
+\xe
+
+The aspectual change between (b) and (c) affects the actor's case but leaves
+the beneficiary direct and the retained roof indirect. The tenant neither
+performs the repair nor becomes its lexical patient; the completed
+applicative selects an added participant in the same repair event.
 
 Two independently direct arguments are excluded from this simple applicative
 frame:
@@ -669,6 +766,39 @@ participant nominalisation and direct-gap relativisation. It can thereby
 support continued reference to that participant, although aboutness topicality
 requires its independent discourse conditions.
 
+
+An inspection frame distinguishes patient orientation from a change in the
+event's participant roles. The bridge remains the object of inspection in
+all three schemata:
+
+\pex\label{ex:val-slot-passive}
+\a
+\begingl
+\gla \textnormal{[[engineer]]}\textsubscript{\Dir{}} \textnormal{[[bridge]]}\textsubscript{\Ind{}} \textnormal{[[inspect]]}\textsubscript{\Prog{}}.//
+\glb engineer.\Dir{} bridge.\Ind{} inspect-\Prog{}//
+\glft \trsl{An engineer is inspecting a bridge.}
+\lingcontext{active progressive; actor direct}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[bridge]]}\textsubscript{\Dir{}} \textnormal{[[engineer]]}\textsubscript{\Ind{}} \textnormal{[[inspect]]}\textsubscript{\textsc{pass}.\Prog{}}.//
+\glb bridge.\Dir{} engineer.\Ind{} inspect-\textsc{pass}-\Prog{}//
+\glft \trsl{A bridge is being inspected by an engineer.}
+\lingcontext{passive progressive; patient direct and actor an optional indirect dependent}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[bridge]]}\textsubscript{\Dir{}} \textnormal{[[inspect]]}\textsubscript{\textsc{pass}.\Prog{}}.//
+\glb bridge.\Dir{} inspect-\textsc{pass}-\Prog{}//
+\glft \trsl{A bridge is being inspected.}
+\lingcontext{the actor is left unspecified}//
+\endgl
+\xe
+
+The passive preserves progressive viewpoint while changing selection and
+external-argument licensing. Its agentless form leaves the inspector
+unspecified, whereas an ordinary active with an omitted actor requires the
+contextual licensing of that core argument.
 
 \section{Causatives and outer Voice}\label{sec:aspect-caus}
 
@@ -898,6 +1028,32 @@ child to eat, while retrospective \ird{pjášt-r-an-av} can describe direct
 compulsion when that relation is supplied by context. Both preserve the same
 causative argument frame.
 
+In a transitive causative, the causee's participation survives the shift
+between alignment domains. An inspection arranged by a supervisor can
+therefore be represented with all three participants overt:
+
+\pex\label{ex:val-slot-causative}
+\a
+\begingl
+\gla \textnormal{[[supervisor]]}\textsubscript{\Dir{}} \textnormal{[[mechanic]]}\textsubscript{\Ind{}} \textnormal{[[brakes]]}\textsubscript{\Ind{}} \textnormal{[[inspect]]}\textsubscript{\Caus{}.\Prog{}}.//
+\glb supervisor.\Dir{} mechanic.\Ind{} brakes.\Ind{} inspect-\Caus{}-\Prog{}//
+\glft \trsl{A supervisor is having a mechanic inspect some brakes.}
+\lingcontext{ongoing caused inspection; supervisor direct}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[brakes]]}\textsubscript{\Dir{}} \textnormal{[[supervisor]]}\textsubscript{\Trs{}} \textnormal{[[mechanic]]}\textsubscript{\Ind{}} \textnormal{[[inspect]]}\textsubscript{\Caus{}.\Trs{}.\Pf{}}.//
+\glb brakes.\Dir{} supervisor.\Trs{} mechanic.\Ind{} inspect-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{A supervisor had a mechanic inspect some brakes.}
+\lingcontext{bounded caused inspection; retained patient direct}//
+\endgl
+\xe
+
+The mechanic remains the inspector and the supervisor the causer in both
+clauses. Their English rendering with \trsl{have} permits a delegated-agency
+context; neither progressive nor perfective morphology specifies whether
+the mechanic acts reluctantly or willingly.
+
 An applicative precedes the causative. The following constructed clauses use
 plural \ird{býlac} for the causee and singular \ird{bylam} for the beneficiary,
 so that all four participants are represented:
@@ -950,6 +1106,36 @@ expresses the causee. The contrast with the preceding transitive pair
 follows from the presence or absence of a retained patient, rather than from
 a change in the benefactive relation contributed by Appl.
 
+The same hierarchy distinguishes a retained theme from an applied
+beneficiary when the causing and benefiting relations involve different
+people. The following pair holds the beneficiary relation inside the caused
+event, while the base frame determines whether a separate lexical theme is
+available:
+
+\pex\label{ex:val-slot-causative-priority}
+\a
+\begingl
+\gla \textnormal{[[roof]]}\textsubscript{\Dir{}} \textnormal{[[manager]]}\textsubscript{\Trs{}} \textnormal{[[roofer]]}\textsubscript{\Ind{}} \textnormal{[[tenant]]}\textsubscript{\Ind{}} \textnormal{[[repair]]}\textsubscript{\Appl{}.\Caus{}.\Trs{}.\Pf{}}.//
+\glb roof.\Dir{} manager.\Trs{} roofer.\Ind{} tenant.\Ind{} repair-\Appl{}-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{A manager had a roofer repair a roof for a tenant.}
+\lingcontext{retained roof outranks applied tenant for direct case}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[audience]]}\textsubscript{\Dir{}} \textnormal{[[conductor]]}\textsubscript{\Trs{}} \textnormal{[[choir]]}\textsubscript{\Ind{}} \textnormal{[[sing]]}\textsubscript{\Appl{}.\Caus{}.\Trs{}.\Pf{}}.//
+\glb audience.\Dir{} conductor.\Trs{} choir.\Ind{} sing-\Appl{}-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{A conductor made a choir sing for an audience.}
+\lingcontext{intransitive singing frame; applied audience outranks causee}//
+\endgl
+\xe
+
+The roofer and choir are both causees, although neither receives direct
+case. In (a), selection reaches the retained roof across the beneficiary;
+in (b), the absence of a separate lexical theme makes the beneficiary the
+highest-priority eligible participant. The tenant benefits from repairing
+and the audience from singing, rather than from an independently applied
+causing event.
+
 An antipassive base retains its actor as the causee while its lexical patient
 remains unavailable. Causativisation therefore produces a new two-participant
 predicate without reversing the lower reduction:
@@ -965,6 +1151,33 @@ predicate without reversing the lower reduction:
 The ERG-domain licensing restriction on antipassive remains operative in this
 configuration; a NOM-domain counterpart containing \ird{-aš-} is excluded.
 The direct-case child is the causee, never a restored lexical patient.
+
+Causativisation of an antipassive adds a causer without reopening the
+closed patient role. In a carving-activity frame, the causee consequently
+becomes the direct participant of the completed ERG causative:
+
+\pex\label{ex:val-slot-causative-antipassive}
+\a
+\begingl
+\gla \textnormal{[[carver]]}\textsubscript{\Dir{}} \textnormal{[[director]]}\textsubscript{\Trs{}} \textnormal{[[carve]]}\textsubscript{\Antip{}.\Caus{}.\Trs{}.\Pf{}}.//
+\glb carver.\Dir{} director.\Trs{} carve-\Antip{}-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{A director made a carver do some carving.}
+\lingcontext{causee selected; lower antipassive retains no independent patient}//
+\endgl
+\a
+\begingl
+\gla *\textnormal{[[panel]]}\textsubscript{\Dir{}} \textnormal{[[director]]}\textsubscript{\Trs{}} \textnormal{[[carver]]}\textsubscript{\Ind{}} \textnormal{[[carve]]}\textsubscript{\Antip{}.\Caus{}.\Trs{}.\Pf{}}.//
+\glb panel.\Dir{} director.\Trs{} carver.\Ind{} carve-\Antip{}-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{(intended: A director made a carver carve a panel.)}
+\lingcontext{a lexical patient cannot be restored above antipassive Voice}//
+\endgl
+\xe
+
+The excluded panel in (b) is intended as the lexical patient of carving,
+not as a beneficiary or an adjunct. Expressing that three-participant
+causative requires a transitive base retaining its theme, rather than an
+antipassive base whose higher causative merely adds the director.
+
 
 \subsection{Causative structure and participant selection}
 \label{sec:vm-caus}
