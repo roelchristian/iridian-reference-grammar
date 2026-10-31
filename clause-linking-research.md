@@ -46,10 +46,37 @@ samples; they establish no Iridian corpus distribution or developmental history.
 Jesús Olguín Martínez. 2023. ‘Temporal adverbial clauses: A cross-linguistic
 perspective’. *Lingua Posnaniensis* 65(2):47–76.
 [Publisher article](https://doi.org/10.14746/linpo.2023.65.2.2).
-Publisher abstract and metadata checked; full PDF verification remains pending.
+Read the [publisher PDF](https://pressto.amu.edu.pl/index.php/linpo/article/download/40960/34303),
+especially §4.1, pp. 60–61 (Tables 4–6), §4.2.4, pp. 69–70, and §4.2.5,
+pp. 71–72.
 The reported 218-language sample associates *after/before/until* particularly
 with monofunctional markers, whereas *when* is especially polyfunctional.
 Consequently, inventory reduction cannot be justified as a typological necessity.
+The before/lest overlap provides an avertive comparison; until marks an endpoint,
+from which purpose and result may be inferred. These patterns do not settle the
+actuality or polarity profile of an Iridian endpoint construction.
+
+## Phase II: semantic and causal distinctions
+
+Sohn's §4.1.1, pp. 300–301 directly supplies the contrast between temporally
+unspecified *-ko* and preconditional/causal *-ese/ase*. The Iridian reform preserves
+completed anteriority for *-u* and adopts circumstantial relevance for *-ení*;
+neither description is a translation of a Korean lexical entry. Choi's
+participant-continuity findings support testing functional preferences separately
+from categorical switch-reference requirements.
+
+Eve Sweetser. 1990. *From Etymology to Pragmatics: Metaphorical and Cultural
+Aspects of Semantic Structure*. Cambridge Studies in Linguistics 54. Cambridge
+University Press. DOI: [10.1017/CBO9780511620904](https://doi.org/10.1017/CBO9780511620904).
+Read the [publisher chapter extracts](https://www.cambridge.org/core/books/from-etymology-to-pragmatics/F1454419128B2D24A372DD0808B51198/listing),
+chapter 4, pp. 76–112, and chapter 5, pp. 113–144. Chapter 4 explicitly
+distinguishes content, epistemic and conversational domains and pragmatic
+application from lexical polysemy. Chapter 5 rejects treating natural-language
+conditionals as merely truth-functional implication. Full chapters were not
+accessible; cite chapter-level distinctions only, without unverified internal
+page locators or examples. The grammar's separation of event causation,
+inference and speech-act justification uses this distinction as an analytical
+tool, not as evidence for additional Iridian suffixes.
 
 ## Restricted access / unresolved research
 
