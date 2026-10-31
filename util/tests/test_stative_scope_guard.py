@@ -51,6 +51,35 @@ class StativeScopeGuardTests(unittest.TestCase):
         changed = source + '\n\nA lexical metadata record specifies ordinary ATTR class.\n'
         self.assertEqual(check_scope(overrides={path: changed}), [])
 
+    def test_source_lexeme_revision_preserves_nominal_case_rule_guard(self):
+        path = 'chapters/08-derivation-nominalisation.tex'
+        source = (ROOT / path).read_text()
+        revised = (r'\ird{Marcí travěte pjaštově cy} '
+                   r"\trsl{since/after Marek's eating of the" + '\n'
+                   r'bread}, the event head bears the case required by \ird{cy}, while')
+        self.assertIn(revised, source)
+        self.assertIn('retain their nominal indirect forms', source)
+        self.assertEqual(check_scope(overrides={path: source}), [])
+        # Renaming the postposition does not authorise a new case frame or
+        # another lexical substitution inside the same protected treatment.
+        changes = {
+            'case rule': source.replace('retain their nominal indirect forms',
+                                        'retain their nominal direct forms', 1),
+            'postposition': source.replace(revised, revised.replace(r'\ird{cy}', r'\ird{do}'), 1),
+        }
+        for name, changed in changes.items():
+            with self.subTest(change=name):
+                self.assertTrue(check_scope(overrides={path: changed}))
+
+    def test_overview_lexeme_revisions_preserve_relative_row_guard(self):
+        path = 'chapters/16-clause-linking.tex'
+        source = (ROOT / path).read_text()
+        self.assertEqual(check_scope(overrides={path: source}), [])
+        original = r'Prenominal participant-oriented relative in \ird{-ový}'
+        self.assertIn(original, source)
+        changed = source.replace(original, r'Unrestricted relative in \ird{-ový}', 1)
+        self.assertTrue(check_scope(overrides={path: changed}))
+
     def test_consolidated_equative_case_rule_remains_protected(self):
         path = 'chapters/10-predicate-constructions.tex'
         source = (ROOT / path).read_text()

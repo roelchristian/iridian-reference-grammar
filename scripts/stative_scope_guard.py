@@ -38,10 +38,29 @@ FINITE_REFERENCE_REVISIONS = (
 )
 
 
+# The source postposition and open conditional were explicitly renamed.
+# Normalise only their exact phrases in the protected example and overview;
+# the surrounding case rules and relative constructions remain significant.
+LEXICAL_FORM_REVISIONS = (
+    (r"\ird{Marcí travěte pjaštově z} \trsl{since/after Marek's eating of the" "\n"
+     r"bread}, the event head bears the case required by \ird{z}, while",
+     r"\ird{Marcí travěte pjaštově cy} \trsl{since/after Marek's eating of the" "\n"
+     r"bread}, the event head bears the case required by \ird{cy}, while"),
+    (r"Non-finite converb suffixes (\ird{-u}, \ird{-ení}, \ird{-ěc}," "\n"
+     "\t\t" r"\ird{-ic}, \ird{-ezmy}, \ird{-it}, \ird{-ouc}, \ird{-esny})",
+     r"Non-finite converb suffixes (\ird{-u}, \ird{-ení}, \ird{-ěc}," "\n"
+     "\t\t" r"\ird{-ej}, \ird{-ezmy}, \ird{-it}, \ird{-ouc}, \ird{-esny})"),
+    (r"Event nominal in indirect case + \ird{z}, \ird{do}, \ird{na}, or \ird{u}",
+     r"Event nominal in indirect case + \ird{cy}, \ird{do}, \ird{na}, or \ird{u}"),
+)
+
+
 def frozen_reference_text(path, text):
     if path == 'chapters/08-complex-sentences.tex':
         for original, revised in FINITE_REFERENCE_REVISIONS:
             text = text.replace(revised, original)
+    for original, revised in LEXICAL_FORM_REVISIONS:
+        text = text.replace(revised, original)
     return text
 
 
@@ -96,7 +115,7 @@ def check_scope(root=ROOT, fixtures=None, overrides=None):
     units = []
     sources = publication_sources(root, overrides)
     for path, text in sources.items():
-        # This exact finite-reference revision already predates the migration.
+        # Exact reviewed revisions retain the original migration hashes.
         text = frozen_reference_text('chapters/08-complex-sentences.tex', text)
         for block in re.split(r'\n\s*\n', text):
             normal = structural_text(block)

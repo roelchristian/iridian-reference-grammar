@@ -25,7 +25,7 @@ class DorsalOrthographyTests(unittest.TestCase):
     def test_h_forms_retain_x_and_fronted_ipa(self):
         self.assertEqual(self.check_spelling(
             r'\phon{náh}{naːx}{each} \phon{hěř}{çɛʃ}{brow} '
-            r'\ird{Hrás} \ird{byh} \ird{domah} \orth{h}'), [])
+            r'\ird{Hrás} \ird{býh} \ird{domah} \orth{h}'), [])
 
     def test_english_tex_references_ipa_and_foreign_data_are_outside_scope(self):
         self.assertEqual(self.check_spelling(

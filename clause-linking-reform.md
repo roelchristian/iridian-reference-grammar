@@ -2,9 +2,9 @@
 
 ## Phase I — Inventory audit
 
-The canonical morphology table in Chapter 16 contained sixteen distinct endings: `-u`, `-ení`, `-ěc`, `-ezak`, `-eškady`, `-eeby`, `-ešhoume`, `-eebymy`, `-esny`, `-ouc`, `-ic`, `-emy`, `-ezmy`, `-ena`, and `-it`, together with contrastive `-ema`. Its four-member conditional row contradicted the two-member paradigm developed later in the same chapter.
+The canonical morphology table in Chapter 16 contained sixteen distinct endings: `-u`, `-ení`, `-ěc`, `-ezak`, `-eškady`, `-eeby`, `-ešhoume`, `-eebymy`, `-esny`, `-ouc`, `-ej`, `-emy`, `-ezmy`, `-ena`, and `-it`, together with contrastive `-ema`. Its four-member conditional row contradicted the two-member paradigm developed later in the same chapter.
 
-The productive core now contains exactly `-u`, `-ení`, `-ěc`, `-ic`, `-ezmy`, `-it`, `-ouc`, and `-esny`. The unsupported conditional entries `-emy` and `-ena` have been withdrawn; contrast is expressed by existing adversative coordination or concession instead of `-ema`. Searches of current chapters found no examples or incoming references requiring these three endings. The existing contrast-section label is preserved. State-frame `-eň`, finite `-e`, and discourse `nu` are explicitly outside the productive paradigm.
+The productive core now contains exactly `-u`, `-ení`, `-ěc`, `-ej`, `-ezmy`, `-it`, `-ouc`, and `-esny`. The unsupported conditional entries `-emy` and `-ena` have been withdrawn; contrast is expressed by existing adversative coordination or concession instead of `-ema`. Searches of current chapters found no examples or incoming references requiring these three endings. The existing contrast-section label is preserved. State-frame `-eň`, finite `-e`, and discourse `nu` are explicitly outside the productive paradigm.
 
 The five specialised temporal endings remain separately documented during this intermediate phase. Their removal depends on Phase IV coverage of temporal event nominals, especially endpoint `do`; exclusion from the productive core does not yet constitute complete withdrawal from the description. No diachronic or register status is inferred for withdrawn design elements. The erroneous claim that temporal suffixes all contain finite linker `-e` has been removed without replacing it with an unverified segmentation.
 
