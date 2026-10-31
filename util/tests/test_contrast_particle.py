@@ -25,7 +25,7 @@ class ContrastParticleTests(unittest.TestCase):
         source = read_domain('chapters/05-function-words.tex')
         for phrase in ('Janek zdrava. Marek jas znóhtime.',
                        'Dá graže jas pjašta.',
-                       'Marek zdrávime. Janek och jas zdrávime.',
+                       'Marek zdrávime. Janek oh jas zdrávime.',
                        'Janek jas vy váržek.', 'Janek jas vy zaščének.',
                        'Čas jas so jeca.', 'Tak jas so staly.', 'Jas okouzé!'):
             with self.subTest(phrase=phrase):

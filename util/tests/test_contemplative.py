@@ -71,11 +71,12 @@ class ContemplativeTests(unittest.TestCase):
         fixtures = {'pronunciations': [], 'table_rows': [],
                     'protected_lexemes': [], 'protected_surfaces': []}
         for form in ('-ách', 'pjaštách', 'pjaštáchal', 'pjaštáchalě', 'zanách',
-                     'jecach', 'Jecach', 'zadach', 'Zadach'):
+                     '-áh', 'pjaštáh', 'pjaštáhal', 'pjaštáhalě', 'zanáh',
+                     'jecach', 'Jecach', 'zadach', 'Zadach', 'jecah', 'zadah'):
             with self.subTest(form=form):
                 self.assertTrue(checker.check_contemplative_sources(
                     {'test.tex': r'\ird{' + form + '}'}, fixtures))
-        accepted = r'\ird{nách študent} \ird{Nách študent} \ird{Bách} \ird{*pjaštách} \ird{knářaž} \ird{-až} % \ird{-ách}'
+        accepted = r'\ird{náh študent} \ird{Náh študent} \ird{Báh} \ird{záhár} \ird{záhárí} \ird{*pjaštách} \ird{knářaž} \ird{-až} % \ird{-ách}'
         self.assertEqual(checker.check_contemplative_sources({'test.tex': accepted}, fixtures), [])
 
     def test_capitalised_contemplative_ipa_cannot_hide_pronunciation_changes(self):
@@ -96,8 +97,8 @@ class ContemplativeTests(unittest.TestCase):
                 ('chapters/06-simple-sentence.tex', r'\ird{zanáž}', r'\ird{zanách}'),
                 ('chapters/06-simple-sentence.tex', r'\ird{jecáž}', r'\ird{jecach}'),
                 ('chapters/06-simple-sentence.tex', r'\ird{zadáž}', r'\ird{zadážal}'),
-                ('util/lexicon.tex', r'\lexentry{nách}', r'\lexentry{náž}'),
-                ('chapters/06-simple-sentence.tex', 'Bách němscvení kompozitor.', 'Báž němscvení kompozitor.')]:
+                ('util/lexicon.tex', r'\lexentry{náh}', r'\lexentry{náž}'),
+                ('chapters/06-simple-sentence.tex', 'Báh němscvení kompozitor.', 'Báž němscvení kompozitor.')]:
             with self.subTest(before=before, after=after):
                 self.assertIn(before, sources[path])
                 changed = dict(sources)

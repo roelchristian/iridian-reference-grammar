@@ -34,7 +34,7 @@ class PhasalDiagnosticsTests(unittest.TestCase):
                     self.assertEqual(exclusive_phase(case['particle'], case['before'], case['now'], scope), expected)
 
     def test_rejects_unlicensed_operators_and_underspecified_context(self):
-        for args in [('och', True, True), ('vy', None, True), ('so', True, 1)]:
+        for args in [('oh', True, True), ('vy', None, True), ('so', True, 1)]:
             with self.assertRaises(ValueError):
                 ordinary_phase(*args)
         for before, now, scope in [([True], [True], 'high-exclusive'),

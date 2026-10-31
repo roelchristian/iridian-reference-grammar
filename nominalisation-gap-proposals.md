@@ -44,7 +44,7 @@ The non-continuous direct singular retains its specialised *-ou* grade. All rema
 
 At Vocabulary Insertion, the case–number node selects *-y* for transitive singular or direct plural, *-ě* for indirect singular, zero for transitive plural, and *-ám* for indirect plural. Direct-singular exponence is construction-specific. There is no independent plural morpheme and no rule deleting an already inserted singular *-ou* before a plural suffix.
 
-Keep X invariant across the nominal paradigm. Do not import the lexical length alternation of *trava/tráv*, raise a root vowel, or mutate a root consonant again. The inherited quantity in contemplative *-ách-* and applicative *-éb-* remains. Front-grade indirect *-ě* has the existing palatal effect on the adjacent labial *v*, without reaching back across *-ov-* to the lexical root.
+Keep X invariant across the nominal paradigm. Do not import the lexical length alternation of *trava/tráv*, raise a root vowel, or mutate a root consonant again. The inherited quantity in contemplative *-áh-* and applicative *-éb-* remains. Front-grade indirect *-ě* has the existing palatal effect on the adjacent labial *v*, without reaching back across *-ov-* to the lexical root.
 
 ### 3.2. Complete proposed paradigms
 
@@ -77,7 +77,7 @@ An asterisk is not used for proposed forms, since it would misleadingly mark the
 | Transitive plural | *piaštov / piaštove* | Proposed |
 | Indirect plural | *piaštovám / piaštováme* | Proposed |
 
-The same rule gives perfective patient plural *piaštnikovy/piaštnikov/piaštnikovám*, retrospective agent plural *piaščavovy/piaščavov/piaščavovám*, progressive agent plural *piaštimovy/piaštimov/piaštimovám*, and contemplative agent plural *piaštáchovy/piaštáchov/piaštáchovám*. Anchoring follows the same cell-specific rules throughout.
+The same rule gives perfective patient plural *piaštnikovy/piaštnikov/piaštnikovám*, retrospective agent plural *piaščavovy/piaščavov/piaščavovám*, progressive agent plural *piaštimovy/piaštimov/piaštimovám*, and contemplative agent plural *piaštáhovy/piaštáhov/piaštáhovám*. Anchoring follows the same cell-specific rules throughout.
 
 ### 3.3. Anchoring
 
@@ -125,7 +125,7 @@ For causative patient forms, preserve underlying Voice below Caus but specify a 
 
 `root–Voice[n]–Caus[na]–Asp → root–Caus[na]–Voice[n]–Asp`
 
-The rule applies only to adjacent *n* and *na* in this construction. It yields established *piašt-na-n-ik* and *piašt-na-n-av*, without reversing semantic scope. Applicative *-éb-* and antipassive stem formation retain their existing positions before Caus. Glide insertion applies after this ordering: *-na-n-* contains no vowel hiatus, whereas *-na-* immediately before vowel-initial *-ik-*, *-av-*, *-ova*, *-imou*, or *-áchou* takes *-naj-*.
+The rule applies only to adjacent *n* and *na* in this construction. It yields established *piašt-na-n-ik* and *piašt-na-n-av*, without reversing semantic scope. Applicative *-éb-* and antipassive stem formation retain their existing positions before Caus. Glide insertion applies after this ordering: *-na-n-* contains no vowel hiatus, whereas *-na-* immediately before vowel-initial *-ik-*, *-av-*, *-ova*, *-imou*, or *-áhou* takes *-naj-*.
 
 This is an added morphotactic stipulation. Hyman’s study of Bantu suffix ordering documents a relevant distinction between surface suffix order and semantic scope (§2, especially example 3 in the author manuscript); it does not establish this particular Iridian reordering rule. If that PF exception is adopted, the grammar’s categorical formulation that every suffix order transparently mirrors head order must be qualified at the corresponding overview passages.
 
@@ -162,17 +162,17 @@ The following direct singulars are new extrapolations, checked against the curre
 | *piaštnanavou* | *piašt-na-n-av-ou* | Lexical patient in a retrospective caused-eating event |
 | *piaštnanova* | *piašt-na-n-ova* | Lexical patient of continuous causative passive |
 | *piaštnanimou* | *piašt-na-n-im-ou* | Lexical patient of progressive causative passive |
-| *piaštnanáchou* | *piašt-na-n-ách-ou* | Prospective lexical patient of caused eating |
+| *piaštnanáhou* | *piašt-na-n-áh-ou* | Prospective lexical patient of caused eating |
 | *piaštnajova* | *piašt-naj-ova* | Causer: ‘one who causes someone to eat’, continuous |
 | *piaštnajimou* | *piašt-naj-im-ou* | Causer of an eating event in progress |
-| *piaštnajáchou* | *piašt-naj-ách-ou* | Prospective causer of eating |
+| *piaštnajáhou* | *piašt-naj-áh-ou* | Prospective causer of eating |
 | *zmacnajikou* | *zmac-naj-ik-ou* | Causee: ‘one whom someone caused to run’, perfective |
 | *piaščnajikou* | *piašč-naj-ik-ou* | Causee/lower eater after antipassive: ‘one whom someone caused to eat’, perfective |
 | *piaštébnajikou* | *piašt-éb-naj-ik-ou* | Applied beneficiary or recipient of a caused eating/feeding event, perfective |
 | *piaštébnajavou* | *piašt-éb-naj-av-ou* | Applied participant in a retrospective caused applicative event |
 | *piaštébnajova* | *piašt-éb-naj-ova* | Causer of the applicative event, continuous |
 | *piaštébnajimou* | *piašt-éb-naj-im-ou* | Causer: ‘one who is making someone feed someone’, progressive |
-| *piaštébnajáchou* | *piašt-éb-naj-ách-ou* | Prospective causer of the applicative event |
+| *piaštébnajáhou* | *piašt-éb-naj-áh-ou* | Prospective causer of the applicative event |
 
 English past-oriented perfective translations presuppose a suitable temporal context; the forms introduce no tense. The beneficiary reading of *-éb-* is the default. Goal, location, and instrument readings remain available where the existing lexical and contextual conditions license them. English ‘feed’ is an idiomatic rendering of the established eating-applicative construction, not evidence for an extra causative morpheme inside *-éb-*.
 

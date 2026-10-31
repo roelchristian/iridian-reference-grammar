@@ -335,10 +335,38 @@ def check_quantity_sources(sources, fixtures):
     return failures
 
 
+def dorsal_spelling_checks(sources):
+    """Reject ch inside explicitly tagged Iridian orthographic forms.
+
+    This checks spelling only: IPA /x/, English prose, citations, source
+    labels and other-language data outside the Iridian form macros are not
+    candidates. Interlinear surface lines and letter-name orth macros are
+    also Iridian orthography, including capitalised and internal spellings.
+    """
+    failures = []
+    for path, raw in sources.items():
+        text = strip_comments(raw)
+        forms = [(record['form'], record['line']) for record in extract(text, path)]
+        # extract treats lexentry notes as one field; inspect nested simple
+        # Iridian-form macros there as well, without examining English notes.
+        forms.extend((match[1], text.count('\n', 0, match.start()) + 1)
+                     for match in re.finditer(r'\\(?:irdp?|orth)\{([^{}]+)\}', text))
+        forms.extend((match[1], text.count('\n', 0, match.start()) + 1)
+                     for match in re.finditer(r'\\gla\s+(.*?)//', text, re.S))
+        for form, line in forms:
+            # Remove macro control words, while retaining their arguments.
+            spelling = re.sub(r'\\[A-Za-z@]+', '', form)
+            # Double-bracketed English labels explicitly mark lexicon gaps.
+            spelling = re.sub(r'\[\[.*?\]\]', '', spelling)
+            if re.search('ch', spelling, re.IGNORECASE):
+                failures.append(f'{path}:{line}: obsolete Iridian ch spelling: {form}')
+    return failures
+
+
 def check_contemplative_sources(sources, fixtures):
     """Preserve long /aːʒ/, its contextual phonetics and reviewed suppletion.
 
-    The quantifier nách and name Bách are distinct lexemes, explicitly protected
+    The quantifier náh and name Báh are distinct lexemes, explicitly protected
     rather than swept into a spelling replacement. Starred rejected examples
     and comments do not count as prescribed contemplative forms.
     """
@@ -370,8 +398,10 @@ def check_contemplative_sources(sources, fixtures):
                 continue
             words = re.findall(r'[-\w]+', form)
             obsolete = [word for word in words if
-                        ('ách' in word.casefold() and word.casefold() not in {'nách', 'bách'})
-                        or word.casefold() in {'jecach', 'zadach'}]
+                        (('ách' in word.casefold()
+                          or re.search(r'áh(?:al(?:ě)?)?$', word.casefold()))
+                         and word.casefold() not in {'náh', 'báh'})
+                        or word.casefold() in {'jecach', 'zadach', 'jecah', 'zadah'}]
             if obsolete:
                 failures.append(f'{path}: obsolete contemplative output: ' + ', '.join(obsolete))
     return failures
@@ -470,6 +500,7 @@ def check():
     publication_sources = active_sources(ROOT / 'grammar.tex')
     sources = domain_sources(publication_sources)
     failures = lexical_velar_checks(sources)
+    failures.extend(dorsal_spelling_checks(publication_sources))
     failures.extend(verbs_heading_checks(publication_sources))
     failures.extend(renamed_particle_checks(sources))
     phasal_fixtures = json.loads((ROOT / 'scripts/phasal-fixtures.json').read_text(encoding='utf-8'))

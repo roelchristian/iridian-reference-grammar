@@ -28,8 +28,8 @@ def comment_phase(particle, before, now, *, negative=False, comment=None,
             or any(type(x) is not bool for x in (*before, *now))
             or type(negative) is not bool):
         raise ValueError('supply matching explicit Boolean stage alternatives')
-    if comment not in (None, 'och', 'kamo'):
-        raise ValueError('diagnostic covers only och and kamo')
+    if comment not in (None, 'oh', 'kamo'):
+        raise ValueError('diagnostic covers only oh and kamo')
     if scope not in ('high', 'low') or (scope == 'low' and comment != 'kamo'):
         raise ValueError('only kamo licenses the bounded low interpretation')
     if comment and len(before) < 2:
@@ -41,7 +41,7 @@ def comment_phase(particle, before, now, *, negative=False, comment=None,
     phased = [ordinary_phase(particle, x, y) for x, y in zip(previous, current)]
     if comment == 'kamo':
         return exclusive(phased)
-    if comment == 'och':
+    if comment == 'oh':
         return phased[0] and any(phased[1:])
     return phased[0]
 
@@ -85,12 +85,12 @@ def check_clausal_sources(sources):
     expected = []
     for negative, host in ((False, 'zdrávime'), (True, 'zazdrávime')):
         p = r'\neg P' if negative else 'P'
-        for comment, operator in (('och', 'A'), ('kamo', 'E')):
+        for comment, operator in (('oh', 'A'), ('kamo', 'E')):
             for phase, symbol in (('vy', 'V'), ('so', 'S')):
                 expected.append((f'Marek {comment} {phase} {host}.',
                                  f'{operator}({symbol}({p}))', 'L'))
     for host, force in (('pjašté', 'D'), ('pjaštku', 'H'), ('pjaštir', 'R')):
-        for comment, operator in (('Och', 'A'), ('Kamo', 'E')):
+        for comment, operator in (('Oh', 'A'), ('Kamo', 'E')):
             for phase, symbol in (('vy', 'V'), ('so', 'S')):
                 status = 'M' if phase == 'vy' and force != 'R' else 'L'
                 expected.append((f'{comment} {phase} {host}.',
