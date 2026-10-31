@@ -287,7 +287,10 @@ on the completed configuration, not consequences of reading its suffixes.
 \begin{table}[htbp]
 \footnotesize
 \caption{Participant inventories and case obligations. Parentheses mark an
-optional passive dependent, not an omitted core argument.}
+optional passive dependent, not an omitted core argument. Causative rows
+describe ordinary frames with an independently licensed causee; the restricted
+indicative service construction closes its performer role internally
+(§\,\ref{sec:causative-service}).}
 \label{tab:pivot-case-obligations}
 \begin{tabularx}{\textwidth}{L L L}
 \toprule
@@ -314,7 +317,8 @@ for transitive case. Otherwise a causee above a retained theme would wrongly
 receive the same transitive marking as the causer. NOM passive agent licensing
 and active NOM patient licensing remain distinct despite their shared indirect
 exponent. An unpronounced but contextually licensed core argument remains in
-the inventory; antipassive suppression does not.
+the inventory; antipassive suppression and a listed patientless activity
+frame (§\,\ref{sec:nom-activity}) introduce no independent patient DP.
 
 This specifies the required mapping rather than settling its computational
 implementation. A configurational implementation must delimit the competing
@@ -343,10 +347,12 @@ Asp.Align exponent can retroactively choose the participant to be displaced.
 
 \section{Valency operations}
 
-Three derivational operations may be applied to the verb stem before the
+Three derivational operations occur between the verb stem and the
 aspect-alignment suffix: the antipassive, the applicative, and the causative.
-Where more than one is present, the order is fixed: antipassive or applicative
-precedes the causative.
+Their distribution depends on the lexical frame and the interpretation of the
+derived predicate, so a permissible suffix sequence does not by itself license
+a construction. Where more than one is present, the order is fixed:
+antipassive or applicative precedes the causative.
 
 \subsection{The antipassive (\ird{-aš-})}
 \label{sec:vm-antipassive-desc}\label{sec:vm-antipassive}
@@ -476,11 +482,70 @@ are discussed by Basilico \cite[ch.~5]{basilico2026}. A higher causative may nev
 predicate (§\,\ref{sec:vm-caus}); its new causer does not restore the
 suppressed lexical patient.
 
-The antipassive presents an activity without an independently licensed patient,
-which can support discourse centred on the actor or on the activity itself.
-An ordinary transitive with an omitted patient differs because its patient
-remains a referential argument recoverable from context. Choosing between these
-constructions therefore concerns argument structure as well as discourse.
+Perfective \ird{pjášček} bounds an episode of eating without asserting that
+an independently identified quantity of food was consumed in its entirety.
+The event can be completed even though no particular patient's change of state
+is measured. The same distinction holds for the drawing activity above:
+completion of an episode does not entail completion of a particular picture.
+Neither patient suppression nor perfective viewpoint entails habituality,
+reduced affectedness or partial accomplishment.
+
+\subsection{Patient omission and lexical activity frames}
+\label{sec:nom-activity}
+
+In indicative NOM-domain aspects, \ird{pjašt-} \trsl{eat} and \ird{kař-}
+\trsl{read} license a lexical activity frame without an independently
+referential patient.
+This restricted frame describes eating or reading as an activity, although food
+or readable material remains conceptually involved. It carries no overt inner
+Voice exponent and does not extend the antipassive into NOM aspects or
+license a patientless directive. With an ordinary transitive frame, an
+unpronounced patient remains a core
+argument whose referent must be recoverable from context.
+
+The following contrast holds the actor and lexical activity constant while
+varying patient realisation and aspect:
+
+\pex\label{ex:nom-activity-eat}
+\a
+\begingl
+\gla Marek travě pjaštíme.//
+\glb Marek.\Dir{} bread.\Ind{} eat-\Prog{}//
+\glft \trsl{Marek is eating bread.}
+\lingcontext{transitive frame; overt patient}//
+\endgl
+\a
+\begingl
+\gla Marek pjaštíme.//
+\glb Marek.\Dir{} eat-\Prog{}//
+\glft \trsl{Marek is eating.}
+\lingcontext{lexical activity frame; no particular food is identified}//
+\endgl
+\a
+\begingl
+\gla Marek pjášček.//
+\glb Marek.\Dir{} eat-\Antip{}-\Pf{}//
+\glft \trsl{Marek ate.}
+\lingcontext{ERG-domain antipassive; bounded episode, patient suppressed}//
+\endgl
+\xe
+
+The string in (b) also permits an ordinary transitive interpretation when a
+particular patient has already been established. Its activity interpretation
+is lexical, whereas the referential interpretation depends on the independently
+licensed null argument. The distinction survives when aspect changes:
+\ird{pjašt-} and \ird{kař-} require antipassive morphology for the
+patientless ERG-domain activity, so bare \ird{*pjašték} remains excluded.
+Unrestricted patient suppression by zero derivation is unavailable with other
+transitive verbs.
+
+The lexical ambitransitives \ird{kan-} and \ird{lov-} differ because their
+independent intransitive readings also license bare ERG-domain forms
+(§\,\ref{sec:ambitransitive}). A listed NOM activity frame therefore does
+not predict the perfective pattern of a lexical ambitransitive. In all three
+constructions, aboutness remains a separate discourse relation: an activity
+frame can support continued reference to its actor without making that actor
+an obligatory topic.
 
 \subsection{The applicative (\ird{-éb-})}\label{sec:vm-appl}
 
@@ -583,16 +648,26 @@ and the ERG-domain frame of the transitive applicative:
 \endgl
 \xe
 
-\ird{-éb-} also admits role interpretations constrained by the predicate:
-a recipient requires transfer or availability of a theme, a goal requires
-motion or placement, and an instrument requires an activity in which that
-participant serves as an implement. Locative uses require a lexically or
-constructionally licensed spatial relation; the location of an event and its
-destination are distinct relations. Discourse salience can motivate selection
-of such a construction but cannot supply an otherwise unlicensed semantic
-role. These restrictions distinguish Iridian's interpretations within the
-broader typological variation in applicative bases and roles
-\cite[§§2, 4]{polinsky2013appl}.
+The benefactive centre of \ird{-éb-} is productive with intentional
+activities for which a beneficiary relation is coherent; the remaining roles
+have narrower lexical or constructional distributions. Recipient readings
+require a transfer predicate and its specified transfer or intended-transfer
+relation, while goal readings require directed motion or placement. A
+beneficiary's advantage alone entails neither receipt nor intended receipt of
+the lexical theme. A lexical recipient is not automatically an applied
+argument, and a verb's ordinary transfer frame does not require an additional
+\ird{-éb-} merely because a recipient is expressed.
+
+Instrumental applicatives require an implement-compatible activity and a
+context in which identifying, contrasting or selecting the implement matters.
+A neutral mention of means can instead use the ordinary \ird{se} phrase.
+Locative readings require an independently licensed spatial relation; event
+location and destination remain distinct. Psychological stimulus readings are
+listed for particular stems, including \ird{všihn-}
+(§\,\ref{sec:stative-valency}), and cannot be extended to every state or
+every semantically associated participant. This hierarchy specifies Iridian's
+lexical and constructional selection; broader variation in applicative bases
+and roles is surveyed by Polinsky \cite[§§2, 4]{polinsky2013appl}.
 
 The goal and instrumental extensions can be illustrated with controlled
 constructed pairs. Directed-motion \ird{stoj-} combines with a goal phrase
@@ -619,7 +694,8 @@ it benefits from that motion. Instrumental \ird{se}, already illustrated
 with the antipassive, instead relates an implement to an activity. In the
 following constructed pair \ird{rán}/\ird{ráne} supplies a controlled
 case alternation (§\,\ref{sec:nm-stem-grades}); the context identifies the
-hand as the means by which Marek eats:
+hand as the means by which Marek eats, and in the applicative clause
+the choice of means is under contrast or identification:
 
 \pex\label{ex:val-appl-instrument}
 \a
@@ -641,8 +717,28 @@ eater, and the town does not become a moving participant. The instrumental
 interpretation depends on an implement-compatible event, just as the goal
 interpretation depends on directed motion; unrestricted exchange of these
 roles is excluded by those selectional conditions. Recipient and locative
-extensions remain restricted to compatible predicates, whose full lexical
-distribution is unspecified.
+extensions require a listed frame; semantic compatibility alone does not
+license either extension with an otherwise unspecified verb.
+
+The current lexical inventory supplies no independently licensed
+adverse affected-possessor frame. A possessor's interest in an event, or the
+fact that an event changes a possession or bodily condition, therefore does
+not by itself license an additional applicative reading. In particular,
+\ird{pjaštébime} and \ird{zemacébime} have no default adverse or
+affected-party interpretation. Whether particular possession- or bodily-change
+predicates admit such a reading remains unspecified; an adverse relation
+cannot be inferred from the productive benefactive alone.
+
+An autobenefactive interpretation identifies an applied beneficiary with the
+actor of the activity, without identifying that actor with its patient. The
+actor locally binds the applied reflexive in thematic structure even when the
+reflexive precedes it after ordinary placement. Such coreference follows the
+local anaphoric dependency (§\,\ref{sec:nm-pron-refl}), with the additional
+restrictions on causative domains stated in §\,\ref{sec:valency-reflexives};
+direct-case selection alone cannot make an applied argument the antecedent of
+a reflexive. The benefactive relation
+continues to hold of the lexical event, and no general middle, spontaneous-change
+or involuntary-state construction follows from it.
 
 Directive Mood selects the lexical theme where one is retained, so that an
 applied beneficiary receives indirect case (§\,\ref{sec:mood-directive-valency}):
@@ -811,6 +907,63 @@ expanded class also selects front-grade PAL. These valency increases have a
 comparison in Dixon's morphological causative type \cite{dixon2000};
 the allomorphs, quantities, and case rules below specify Iridian.
 
+\subsection{Lexical productivity and causal interpretation}
+\label{sec:causative-productivity}
+
+The causatives of \ird{ščen-} \trsl{arrive}, \ird{zemac-} \trsl{run},
+and \ird{pjašt-} \trsl{eat} preserve their distinct lower events: arrival,
+running, and eating by a causee. Causativisation is productive with
+intransitive changes and with activities whose actor can participate in a
+caused event; a stative base additionally requires a property whose
+instantiation or degree can be causally affected. Ordinary transitives
+require a lexical causative licence, while psychological predicates require
+an individually specified causal interpretation. A phonologically possible
+rhotic derivative therefore need not be licensed by the verb's valency
+profile (§\,\ref{sec:lexical-valency-profiles}).
+
+An ordinary trivalent base has no productive morphological causative.
+The applied causatives of eating, running, cooking and singing illustrated
+below are explicitly licensed combinations, including the four-participant
+frames of \ird{pjaštébr-} and \ird{marébr-}; their existence does not
+extend causativisation to every applied or lexical trivalent predicate.
+The case tables specify the mapping for a licensed construction, without
+supplying a missing lexical licence. Fully overt four-participant clauses
+require a context which distinguishes the causee from the beneficiary,
+since indirect case alone does not separate their roles. A separate
+benefactive phrase with \ird{my} reduces that competition without changing
+the causal relation. Complex causal chains can instead be expressed across
+clauses; a matrix predicate's choice of a finite \ird{po}-complement or a
+reduced event complement remains subject to its own selection requirements
+(§\,\ref{sec:complementation}). Neither complement type is an unrestricted
+analytic causative merely by virtue of subordinating an event.
+
+Compact and expanded causative allomorphs retain their phonological and
+lexical conditioning (§\,\ref{sec:causative-grades}). Affix length encodes
+neither productivity nor directness: compact \ird{zemácrime} can describe
+arranging for running, while expanded \ird{svornérime} can describe direct
+physical enlargement. An arrival causee need not act intentionally, whereas
+an actor causee can contribute willing participation, resistance or
+independent initiative. An inanimate causer is possible where its causal
+contribution is compatible with the lexical event; causer status alone
+does not entail volition.
+
+The causal contribution is represented here schematically as
+\[
+ \mathrm{CAUS}
+ =\lambda P.\lambda c.\lambda e.\exists e'
+ [\operatorname{Cause}(e,e')\land\operatorname{Initiator}(c,e)
+ \land P(e')].
+\]
+Here $P$ is an event predicate with its lower participant relations,
+$c$ the causer, $e$ the causing event and $e'$ the caused eventuality;
+\emph{Initiator} identifies the source of causation without requiring
+intentional action. This representation states the grammar's analysis of
+Iridian before the contribution of viewpoint and modality. It permits a
+single integrated causal episode without requiring temporally separate
+acts. Coercive, permissive, supervisory and assistive interpretations require
+appropriate lower agency and contextual support, rather than separate
+rhotic exponents.
+
 \subsection{Rhotic causative morphology}
 \label{sec:causative-grades}
 
@@ -955,8 +1108,15 @@ In the transitive row the agent is direct in NOM and transitive in ERG,
 while the theme is indirect in NOM and direct in ERG. Each intransitive row
 has one core participant, which is direct and privileged in both domains.
 The progressive inchoative describes developing scalar change, while its
-perfective bounds that change without independently fixing a threshold; stative causativisation adds
-a distinct causer (§\,\ref{sec:stative-valency}).
+perfective bounds that change without independently fixing a threshold.
+Stative \ird{svornér-} introduces causal influence on the property or its
+degree, whereas \ird{svornél-r-} embeds the independently change-denoting
+\ird{svornél-}: its lower event necessarily involves a transition. In the
+established \trsl{make bigger} reading both can describe an increase, although
+only the latter explicitly contains Become. Neither construction supplies an
+absolute size threshold or entails that a progressive change culminates.
+A maintenance reading of the simple state causative is not licensed merely
+by the absence of Become (§\,\ref{sec:stative-valency}).
 
 Complex forms below retain visible morphological boundaries where these
 clarify suffix order; the hyphens are analytical notation. The following
@@ -1079,9 +1239,11 @@ Their scope is $\mathrm{CAUS}[\mathrm{APPL}[\mathrm{EAT}]]$: the child benefits
 from the embedded eating event. A beneficiary of the causing event itself can
 be expressed separately with \ird{my}; the suffix order does not license an
 outer applicative reading. Multiple indirect-case arguments need not occur in
-all uses, but an omitted causee requires the ordinary contextual licensing of
-argument omission. The morphology itself does not introduce an arbitrary
-silent \trsl{someone}.
+all uses, but an omitted causee in the ordinary causative requires the
+contextual licensing of argument omission. The morphology itself does not
+introduce an arbitrary silent \trsl{someone}; existential performer closure
+belongs to the restricted service construction below
+(§\,\ref{sec:service-causative}).
 
 A causative of an applied intransitive lacks a separate lexical patient.
 The following constructed pair therefore selects the causer in the
@@ -1180,6 +1342,108 @@ not as a beneficiary or an adjunct. Expressing that three-participant
 causative requires a transitive base retaining its theme, rather than an
 antipassive base whose higher causative merely adds the mother.
 
+
+\subsection{Service causatives and performer interpretation}
+\label{sec:causative-service}\label{sec:service-causative}
+
+A restricted indicative service construction describes arranging for cooking
+or cleaning with an unspecified performer. Its lexical licences are \ird{mar-}
+\trsl{cook} and the cleaning frame used in
+(\ref{ex:val-slot-causative}); another repair or manufacturing predicate does
+not acquire this reading solely because its meaning is compatible with
+professional work. The causer and retained theme are independently licensed,
+while the performer receives existential interpretation within the caused
+event. No individually recoverable causee is required:
+\[
+ \mathrm{CAUS}\bigl(\lambda e'.\exists x
+ [\operatorname{Performer}(x,e')\land\operatorname{COOK}(e',t)]\bigr)(c)(e).
+\]
+The variable $x$ denotes the cook, $e'$ the cooking event, $t$ its theme
+and $e$ the causing event; \textsc{caus} has the interpretation given in
+§\,\ref{sec:causative-productivity}.
+This is a semantic schema for the restricted construction, not an additional
+causative allomorph or a claim about a historical source.
+
+\pex\label{ex:val-service-causative}
+\a
+\begingl
+\gla Marek \textnormal{[[dinner]]}\textsubscript{\Ind{}} márime.//
+\glb Marek.\Dir{} dinner.\Ind{} cook-\Prog{}//
+\glft \trsl{Marek is cooking dinner.}//
+\endgl
+\a
+\begingl
+\gla Marek \textnormal{[[dinner]]}\textsubscript{\Ind{}} \textnormal{[[cook]]}\textsubscript{\Caus{}.\Prog{}}.//
+\glb Marek.\Dir{} dinner.\Ind{} cook-\Caus{}-\Prog{}//
+\glft \trsl{Marek is having dinner cooked.}
+\lingcontext{service reading; no particular cook is identified}//
+\endgl
+\xe
+
+The causative slot leaves the local allomorph of the cooking stem
+unspecified; its lexical licence does not establish a new rhotic cluster.
+The service construction retains the ordinary causer--theme case mapping:
+the theme is indirect in active NOM and direct in ERG, with the corresponding
+causer case and outer orientation. Its performer has no separately licensed
+DP eligible for case selection, pivot operations or anaphoric recovery.
+Expressing a particular performer instead selects the ordinary causative
+frame and its causee relation. Existential closure is unavailable with
+\ird{pjašt-} merely because a feeding context makes an unspecified eater
+imaginable, and it does not extend to causatives of intransitives, which
+would otherwise lack their independently licensed affected participant.
+Directive causatives retain the independently licensed overt causee required
+by Mood (§\,\ref{sec:mood-directive-valency}); the service construction
+supplies no exception to that requirement.
+
+\subsection{Reflexive causees and embedded anaphors}
+\label{sec:causative-reflexives}\label{sec:valency-reflexives}
+
+A reflexive causee identifies the causer with the participant of the lower
+event. Its case follows that causee role, so a self-directed running
+causative takes indirect \ird{svy} in active NOM and direct \ird{svem}
+in ERG:
+
+\pex\label{ex:val-reflexive-causee}
+\a
+\begingl
+\gla Marek svy zemácrime.//
+\glb Marek.\Dir{} \Refl{}.\Ind{} run-\Caus{}-\Prog{}//
+\glft \trsl{Marek is making himself run.}//
+\endgl
+\a
+\begingl
+\gla Svem Marku zemác-r-an-ik.//
+\glb \Refl{}.\Dir{} Marek.\Trs{} run-\Caus{}-\textsc{trs}-\Pf{}//
+\glft \trsl{Marek made himself run.}//
+\endgl
+\xe
+
+The two argument positions remain distinct although their referents coincide.
+Self-compulsion or deliberate effort is a contextual interpretation; the
+construction continues to assert causation. Direct case in the second
+example does not turn the reflexive into its own antecedent.
+
+In active indicative causatives, the local antecedent is the closest actor
+or causer in the thematic structure, before ordinary placement. The causer can bind
+the causee, while an independently licensed lower actor, whether overt or
+contextually unexpressed, intervenes between the causer and a lower patient
+or beneficiary. A lower patient reflexive
+therefore identifies that patient with the causee; an applied reflexive
+identifies the beneficiary with that lower actor. The latter is an
+autobenefactive relation, distinct from acting upon oneself. A reading in
+which the causer is the lower patient or beneficiary, with a distinct lower
+actor, is excluded by this local reflexive construction. It requires an
+independently licensed referential expression or another construction;
+\ird{svy} cannot acquire that reading merely because the causer is the pivot.
+The service construction's existential performer has no DP occurrence
+that can bind a nominal anaphor. Its absence does not establish a
+causer-bound reflexive theme: no such service reflexive frame is licensed
+here.
+These restrictions specify the active causative extension of the local
+nominal anaphor (§\,\ref{sec:nm-pron-refl}). They do not establish
+binding by the optional causer dependent of a NOM passive, whose structural
+status differs from that of an active causer. No general middle or
+decausative use follows from the reflexive paradigm.
 
 \subsection{Causative structure and participant selection}
 \label{sec:vm-caus}

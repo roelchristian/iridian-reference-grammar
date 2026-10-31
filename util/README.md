@@ -207,3 +207,33 @@ fixtures retain historical grammatical-domain identifiers through
 `scripts/source_domains.py`; these are diagnostic views assembled from active
 chapters, not files included in the book. Chapter heading checks apply to all
 substantive chapters, while label and citation checks inspect actual inputs.
+
+## Lexical valency selection
+
+`scripts/valency-profiles.json` separates explicit lexical and constructional
+licences from allomorph metadata. `scripts/valency_profiles.py` checks supplied
+readings without generating forms or assigning case. Its bounded profiles cover
+canonical causatives, restricted applied causatives, the `mar-` service reading,
+NOM indicative activity uses of `pjašt-` and `kař-`, existing ambitransitives,
+and selected applicative roles. A conditional causative requires an explicit
+causability or individual lexical decision; psychological causation requires
+the latter. An unresolved entry withholds a licence without
+asserting ungrammaticality. Implement context remains a separate input, so the
+presence of `-éb-` cannot establish an instrumental reading by itself. The
+antipassive requires indicative ERG licensing. Service causation is indicative
+and closes the performer role: an overt or anaphorically recovered causee selects
+the ordinary construction instead. Applied service causatives have no separately
+listed licence and are withheld, even where ordinary applied causation is listed.
+The explicit `directive=True` input overrides the default indicative flag and
+requires an overt causee and any retained applied participant; a nonindicative
+input alone does not assert directive Mood.
+
+The data are constructed grammatical specifications, not measured preferences,
+usage frequencies or attestations. Listed causal/noncausal families use existing
+principal parts; the named unresolved semantic families have no invented stems.
+In particular, no inventory of twenty to thirty new verb pairs or die/kill
+suppletion is implied. Finite form generation, passive/decausative licensing,
+affected-possessor lexical entries and cross-clausal reflexive binding remain
+outside this bounded interface. Tests hold lexical identity constant while
+varying alignment domain, patient presence, causee recovery, service licensing
+or applied role; the ordinary source-pair fixtures remain independent.

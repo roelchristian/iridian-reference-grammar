@@ -1,0 +1,327 @@
+{
+  "description": "Explicit constructed lexical specifications, not corpus frequencies or automatically inferred grammaticality. Unresolved values withhold a licence without asserting ungrammaticality. Allomorph metadata never grants a semantic licence.",
+  "entries": [
+    {
+      "stem": "pjašt",
+      "meaning": "eat",
+      "basic_frame": [
+        "actor",
+        "patient"
+      ],
+      "intransitive_analysis": null,
+      "causative": {
+        "licence": "listed",
+        "allomorph": "compact",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": true
+      },
+      "applicative_roles": [
+        "benefactive",
+        "instrument"
+      ],
+      "activity_domains": [
+        "NOM"
+      ],
+      "antipassive": true,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "zemac",
+      "meaning": "run",
+      "basic_frame": [
+        "actor"
+      ],
+      "intransitive_analysis": "unergative",
+      "causative": {
+        "licence": "listed",
+        "allomorph": "compact",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": true
+      },
+      "applicative_roles": [
+        "benefactive"
+      ],
+      "activity_domains": [
+        "NOM",
+        "ERG"
+      ],
+      "antipassive": false,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "ščen",
+      "meaning": "arrive",
+      "basic_frame": [
+        "undergoer"
+      ],
+      "intransitive_analysis": "unaccusative",
+      "causative": {
+        "licence": "listed",
+        "allomorph": "expanded-plain-with-listed-compact-alternative",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": false
+      },
+      "applicative_roles": [],
+      "activity_domains": [],
+      "antipassive": false,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "stoj",
+      "meaning": "go",
+      "basic_frame": [
+        "mover"
+      ],
+      "intransitive_analysis": "unresolved",
+      "causative": {
+        "licence": "listed",
+        "allomorph": "expanded-plain",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": false
+      },
+      "applicative_roles": [
+        "benefactive",
+        "goal"
+      ],
+      "activity_domains": [
+        "NOM",
+        "ERG"
+      ],
+      "antipassive": false,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "kan",
+      "meaning": "sing",
+      "basic_frame": [
+        "actor",
+        "optional-patient"
+      ],
+      "intransitive_analysis": "unergative-in-activity-frame",
+      "causative": {
+        "licence": "listed",
+        "allomorph": "unresolved",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": true
+      },
+      "applicative_roles": [
+        "benefactive"
+      ],
+      "activity_domains": [
+        "NOM",
+        "ERG"
+      ],
+      "antipassive": true,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "kař",
+      "meaning": "read",
+      "basic_frame": [
+        "actor",
+        "patient"
+      ],
+      "intransitive_analysis": null,
+      "causative": {
+        "licence": "lexically-conditional",
+        "allomorph": "unresolved",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": false
+      },
+      "applicative_roles": [
+        "benefactive"
+      ],
+      "activity_domains": [
+        "NOM"
+      ],
+      "antipassive": true,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "lov",
+      "meaning": "hunt, forage; catch, take",
+      "basic_frame": [
+        "actor",
+        "optional-patient"
+      ],
+      "intransitive_analysis": "unresolved",
+      "causative": {
+        "licence": "unresolved",
+        "allomorph": "unresolved",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": false
+      },
+      "applicative_roles": [
+        "benefactive"
+      ],
+      "activity_domains": [
+        "NOM",
+        "ERG"
+      ],
+      "antipassive": true,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "mar",
+      "meaning": "cook",
+      "basic_frame": [
+        "actor",
+        "patient"
+      ],
+      "intransitive_analysis": null,
+      "causative": {
+        "licence": "listed",
+        "allomorph": "unresolved",
+        "causee": "contextually-licensed",
+        "service": true,
+        "applied": true
+      },
+      "applicative_roles": [
+        "benefactive"
+      ],
+      "activity_domains": [],
+      "antipassive": true,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "vad",
+      "meaning": "think",
+      "basic_frame": [
+        "actor",
+        "patient"
+      ],
+      "intransitive_analysis": null,
+      "causative": {
+        "licence": "listed",
+        "allomorph": "compact-or-expanded-front",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": false
+      },
+      "applicative_roles": [],
+      "activity_domains": [],
+      "antipassive": true,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "nočk",
+      "meaning": "run (undirected motion)",
+      "basic_frame": [
+        "actor"
+      ],
+      "intransitive_analysis": "unergative",
+      "causative": {
+        "licence": "listed",
+        "allomorph": "expanded-plain",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": false
+      },
+      "applicative_roles": [],
+      "activity_domains": [
+        "NOM",
+        "ERG"
+      ],
+      "antipassive": false,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "svorn",
+      "meaning": "be big",
+      "basic_frame": [
+        "holder"
+      ],
+      "intransitive_analysis": "stative",
+      "causative": {
+        "licence": "causability-conditional",
+        "allomorph": "expanded-plain",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": false
+      },
+      "applicative_roles": [],
+      "activity_domains": [],
+      "antipassive": false,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    },
+    {
+      "stem": "všihn",
+      "meaning": "be happy",
+      "basic_frame": [
+        "experiencer"
+      ],
+      "intransitive_analysis": "stative",
+      "causative": {
+        "licence": "lexically-conditional",
+        "allomorph": "expanded-plain",
+        "causee": "contextually-licensed",
+        "service": false,
+        "applied": false
+      },
+      "applicative_roles": [
+        "stimulus"
+      ],
+      "activity_domains": [],
+      "antipassive": false,
+      "analytic_competitor": "independent matrix predicate with licensed complement",
+      "source": "chapters/07-argument-structure.tex; chapters/06-verbal-morphology.tex; util/lexicon.tex"
+    }
+  ],
+  "causal_noncausal_families": [
+    {
+      "noncausal": "ščen",
+      "causal": "ščenér",
+      "relation": "derived-causative",
+      "status": "listed"
+    },
+    {
+      "noncausal": "zemac",
+      "causal": "zemácr",
+      "relation": "derived-causative",
+      "status": "listed"
+    },
+    {
+      "noncausal": "svorn",
+      "causal": "svornér",
+      "relation": "state-causative",
+      "status": "listed"
+    },
+    {
+      "noncausal": "svornél",
+      "causal": "svornélr",
+      "relation": "inchoative-causative",
+      "status": "causability-conditional"
+    }
+  ],
+  "unresolved_families": [
+    "freeze/make freeze",
+    "melt/make melt",
+    "break/break spontaneously",
+    "open/open spontaneously",
+    "die/kill",
+    "give/make give",
+    "send/make send",
+    "repair/have repaired",
+    "sleep/make sleep",
+    "wake/wake someone",
+    "fear/frighten"
+  ]
+}
