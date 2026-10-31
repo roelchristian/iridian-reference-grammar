@@ -67,15 +67,19 @@ Phase IV phrase: `Marcí travěte pjaštově z` ‘since/after Marek's eating of
 
 ## 9. Prospective anteriority and nonactualisation
 
+Phase III constructed example now published: `Marek zomenesny, Janek pjášček` ‘Janek ate before Marek left’. `zomen-esny` preserves the plain stem exposed by existing `zomen-ic` and `zomen-ezmy`; no finite aspect or mood is inserted in the dependent predicate. `Janek` is the direct agent of matrix antipassive perfective `pjášč-ek`, whose independently established strong antipassive stem supplies the agent-oriented perfective frame. `Marek` is the overt direct actor of the active converb. Departure may occur subsequently or remain unrealised. Constructed `Marek zomenu, Janek pjášček` would instead require a completed prior departure and reverse the temporal orientation; its plain converb stem does not acquire the matrix antipassive.
+
 English pair: ‘She left before help arrived’ versus ‘She died before help could arrive’. `-esny` must allow a projected reference event without entailing its occurrence; its conventional temporal relation is prospective anteriority. Add ‘and help never arrived’ to test that distinction. Compare an affirmative episodic ‘after help arrived’ construction, whose event reference is established in that context. These stimuli do not establish a new irrealis suffix inside the converb.
 
 ## 10. Open and expected conditions
 
 Existing example: `Marek zomenezmy, Janek pjaštáž` ‘When/once Marek leaves, Janek will eat’. Controlled constructed alternative: `Marek zomenic, Janek pjaštáž` ‘If Marek leaves, Janek will eat’. Only the connective differs. Expected `-ezmy` presents the departure as anticipated; open `-ic` leaves that stance uncommitted. Both antecedents remain unasserted.
 
-Hold the matrix irrealis constant in a second constructed pair: `Marek zomenic, Janek pjáščev` versus `Marek zomenezmy, Janek pjáščev`. The first is existing; the second tests the grammar's described marked combination of expectation and consequent possibility. Test cancellation of the expected departure, generic rules, procedural triggers, and independent conditional utterances separately. Do not equate expectation with certainty, imminence, or a factive presupposition.
+Hold the matrix irrealis constant in a second constructed pair: `Marek zomenic, Janek pjáščev` versus `Marek zomenezmy, Janek pjáščev`. The first is existing; the second tests the grammar's described marked combination of expectation and consequent possibility. Phase III preserves expectation of the antecedent even with an uncertain consequent; no retreat from that expectation is entailed by matrix irrealis. Test cancellation of the expected departure, generic rules, procedural triggers, and independent conditional utterances separately. Do not equate expectation with certainty, imminence, or a factive presupposition.
 
 ## 11. Concession and incidental counter-expectation
+
+Phase III publishes constructed `Marek zomenouc, Janek pjaštáž` with two contextually differentiated readings: ‘Although Marek is leaving, Janek will eat’, where departure is accepted, and ‘Even if Marek leaves, Janek will eat’, where departure is entertained. Plain `zomen-ouc` adds no finite viewpoint or mood, while matrix `pjašt-áž` retains contemplative aspect. Each overt actor is direct in its own nominative-domain clause. The counter-expectation is conventional; actuality varies with the factual versus entertained context, and temporal overlap is not required. These constructed contexts specify the analysis rather than report collected usage.
 
 English pair: ‘Although he was tired, he ran’ versus ‘He ran whilst eating, unexpectedly’. `-ouc` conventionally marks an expectation defeated by the consequent; `-ěc` can combine integrated overlap with a contextual surprise, but surprise alone does not identify a concessive relation. Compare factual ‘although P’ with entertained ‘even if P’: concessive conditionality must not assert P. Whether the relevant stative predicate licenses the general verbal converb or a restricted state-frame construction requires independent lexical checking.
 
@@ -85,7 +89,7 @@ English pair: ‘She opened the door. Nu, he entered’ versus ‘The road is we
 
 ## 13. Purposive motion and fulfilment
 
-Existing positive example: `Mé autobusam zrolit nóčkek` ‘We ran to catch up with the bus’. Here `autobusam` is the indirect patient of `zrolit`; `mé` is the direct actor/mover, and `nóčkek` supplies finite perfective aspect. Compare the English continuation ‘but we never caught it’ with ‘and we caught it’. Purpose remains compatible with either outcome.
+Existing positive example: `Mé autobusam zrolit nóčkek` ‘We ran to catch up with the bus’. Here `autobusam` is the indirect patient of `zrolit`; `mé` is the direct actor/mover, and `nóčkek` supplies finite perfective aspect. Compare the English continuation ‘but we never caught it’ with ‘and we caught it’. Purpose remains compatible with either outcome. Phase III distinguishes selected-complement control from adverbial continuity and separates wanting/trying (no necessary realisation) from beginning (inception, without necessary completion).
 
 Existing alternative: `Tězně knářit stójek` ‘(They) went swimming in the lake’. A controlled English temporal paraphrase, ‘Having swum, they went’, reverses the relation between the intended event and motion; replacing the purposive with bounded sequence changes the construction and cannot preserve its selected prospective-complement analysis automatically.
 
@@ -99,7 +103,7 @@ Contrast the existing different-pivot `Marek zdravení Janek znóvime` with cons
 
 For each set, record separately: the suffix's conventional requirement; temporal/aspectual construal; contextual inference; incompatible interpretation; and any untested distribution. Change one factor at a time: participant identity, clause order, matrix aspect, matrix polarity, question/imperative force, modal embedding, or the availability of an overt coherence cue. Reversing clause order must respect dependent-before-matrix syntax; a failed reversal may diagnose order rather than connective meaning.
 
-No productive internal negation, independent finite viewpoint, mood suffix, or inner evidential is added to a converb merely for testing. Finite linked clauses preserve their independently licensed categories, while event nominal dependents retain nominal case. A predicted semantic incompatibility is not a claim about elicited ungrammaticality, frequency, register, or historical development.
+Phase III `sec:converb-inflection-scope` explicitly excludes independent finite viewpoint, mood, aspect-conditioned alignment and inner evidential suffixes from all eight converb predicates; independently licensed lower lexical/applicative/causative structure is retained. No productive internal negation is added merely for testing, since its attachment and concord domain remain unspecified. Finite linked clauses preserve their independently licensed categories, while event nominal dependents retain nominal case. A predicted semantic incompatibility is not a claim about elicited ungrammaticality, frequency, register, or historical development.
 
 ## Source pointers
 

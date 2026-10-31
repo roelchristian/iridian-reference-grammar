@@ -78,6 +78,25 @@ page locators or examples. The grammar's separation of event causation,
 inference and speech-act justification uses this distinction as an analytical
 tool, not as evidence for additional Iridian suffixes.
 
+## Phase III: actuality, prospective reference and concession
+
+Toshiyuki Ogihara and Shane Steinert-Threlkeld. 2024. ‘Limitations of a modal
+analysis of before and after’. *Semantics and Pragmatics* 17, article 1:1–21.
+[Official final article](https://doi.org/10.3765/sp.17.1).
+Read §1, especially pp. 1:2–1:3, and the statement of the analytical dispute.
+Before-clauses include noncommittal readings (the reference event may or may
+not occur) and anti-veridical readings (its occurrence is excluded by the
+described circumstances). This supports treating actuality separately from
+temporal order; it does not require adopting one contested formal analysis.
+The Iridian nonactualising interpretation of *-esny* is a design specification,
+whose compatibility with this comparison does not constitute attestation.
+
+Sohn §4.1.3 p. 306 lists concessive conditionals; §4.4 p. 312 and §4.7 p. 315
+show overlap between concession and contrast. The grammar should nevertheless
+retain the Iridian requirement of a defeated expectation and distinguish an
+asserted obstacle from an entertained condition. Korean conditional and purpose
+distributions do not decide which Iridian matrix predicates select *-it*.
+
 ## Restricted access / unresolved research
 
 Pak Dong Ho. 2013. ‘A study of the Korean clausal connectives ‘-ŏsŏ’ and ‘-ko’
