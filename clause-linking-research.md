@@ -128,6 +128,38 @@ coverage needed to replace *-ezak* within this constructed-language revision.
 Its constructed examples and English polarity stimuli demonstrate the design;
 they are not elicited judgements or evidence of existing usage.
 
+## Phase V: finite dependency and discourse anaphora
+
+Holger Diessel and Merlijn Breunesse. 2020. ‘A typology of demonstrative
+clause linkers’. In Åshild Næss, Anna Margetts and Yvonne Treis (eds.),
+*Demonstratives in Discourse*, 305–340. Topics at the Grammar-Discourse
+Interface 6. Berlin: Language Science Press.
+[DOI](https://doi.org/10.5281/zenodo.4055834);
+[final institutional text](https://pure.uva.nl/ws/files/54343931/Diessel_and_Breunesse_2020_A_typology_of_demonstrative_clause_linkers.pdf).
+Read §1, p. 306, distinguishing participant tracking from discourse-deictic
+reference to clauses/propositions, and §6, pp. 321–325, on conjunctive adverbs.
+The latter includes demonstrative–adposition combinations and constructions
+with demonstratives and pro-verbs; Korean examples occur on p. 324. The source
+motivates investigating constructional licensing before treating an individual
+anaphor as a propositional connective. It supplies no Iridian exponent.
+The institutional cover and actual chapter extent give 305–340; the chapter's
+first-page self-citation gives 305–341 in error.
+
+Sohn §3, pp. 291–292, classifies conjunctive endings, conjunctive adverbials
+and unmarked apposition as Types 1–3. This is a classification of mechanisms,
+not an Iridian finiteness or dependency taxonomy. Adverbials can also co-occur
+with conjunctive endings inside one intonation unit (p. 290); Type 2 therefore
+does not universally imply two independent utterances. Choi (2020), the
+introduction's excluded-constructions discussion, does separately illustrate
+independent sentences with a conjunctive adverb.
+
+Deutscher §3, pp. 58–60, describes *-ma* attaching to a finite main clause,
+with contextual interpretation constrained by temporal direction in ordinary
+linkage. This comparison supports distinguishing contextual polysemy from
+unrestricted addition. It does not turn dependent Iridian *-e* into independent
+coordination, impose Akkadian temporal restrictions on every Iridian finite
+chain, or infer independent assertion from overt finite morphology.
+
 ## Restricted access / unresolved research
 
 Pak Dong Ho. 2013. ‘A study of the Korean clausal connectives ‘-ŏsŏ’ and ‘-ko’

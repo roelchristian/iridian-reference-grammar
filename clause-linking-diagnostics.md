@@ -1,6 +1,6 @@
 # Clause-linking diagnostics
 
-This bank separates examples already present in the current grammar from newly constructed combinations and English-only semantic stimuli. It records consequences of the adopted analysis rather than elicited judgements. An asterisk is reserved for a structural violation licensed by an explicit rule; a context incompatible with the proposed meaning is described in words. Phase IV specifies the temporal nominal constructions; discourse-anaphoric schemas remain dependent on Phase V.
+This bank separates examples already present in the current grammar from newly constructed combinations and English-only semantic stimuli. It records consequences of the adopted analysis rather than elicited judgements. An asterisk is reserved for a structural violation licensed by an explicit rule; a context incompatible with the proposed meaning is described in words. Phase IV specifies the temporal nominal constructions. Phase V consolidates finite and discourse linkage, whilst propositional-anaphoric schemas remain explicitly proposed without canonical exponents.
 
 ## Morphological and referential controls
 
@@ -53,7 +53,7 @@ English stimulus: ‘Rain fell; the road became slippery’ versus ‘Rain fell;
 
 ## 6. Speech-act justification
 
-English pair: ‘Because it rained, the road became slippery’ versus ‘Since it is raining, take an umbrella’. The first relates represented events; the second justifies an instruction. Further compare ‘The road is wet, so it probably rained’, which makes an epistemic inference in the reverse causal direction. Finite `-e` and independent discourse linkage provide separate candidate environments; an event-oriented converb must not acquire scope over an imperative merely from its English translation. A canonical specialised inferential anaphor remains uncoined.
+English pair: ‘Because it rained, the road became slippery’ versus ‘Since it is raining, take an umbrella’. The first relates represented events; the second justifies an instruction. Further compare ‘The road is wet, so it probably rained’, which makes an epistemic inference in the reverse causal direction. Phase V distinguishes finite `-e` and independent discourse linkage as separate environments; independent speech-act force inside a finite conjunctive complex remains unspecified, so neither strategy is automatically assigned every justification reading; an event-oriented converb must not acquire scope over an imperative merely from its English translation. A canonical specialised inferential anaphor remains uncoined.
 
 ## 7. Temporal endpoint and negation
 
@@ -89,7 +89,9 @@ English pair: ‘Although he was tired, he ran’ versus ‘He ran whilst eating
 
 ## 12. Discourse continuation and inference
 
-English pair: ‘She opened the door. Nu, he entered’ versus ‘The road is wet. Therefore it probably rained’. Established `nu` supplies weak continuation or transition; consequent and inferential readings need contextual support. A full utterance boundary is compatible with discourse linkage. Anaphoric schemas ‘that being so’, ‘if that is so’, and ‘even so’ remain English schemas until a propositional anaphor and source construction are specified. Nominal-anaphoric `i/ji/ni` are not thereby licensed as propositional pronouns.
+Phase V constructed sequence: `Marek pjášček. Nu, Janek znóvime` ‘Marek ate. And Janek is studying’. Each utterance has an overt direct actor and a complete independent finite predicate; `pjášček` retains its independently licensed antipassive agent orientation. Neither verb bears dependent linker `-e`. Chronological succession and causation are not entailed by `nu`. Existing preverbal `nadě` contributes consequential stance, while `hladě` marks evidence-grounded inference; their distinction from discourse-edge `nu` does not license every possible combination.
+
+English pair: ‘She opened the door. Nu, he entered’ versus ‘The road is wet. Therefore it probably rained’. Established `nu` supplies weak continuation or transition; consequent and inferential readings need contextual support. A full utterance boundary is compatible with discourse linkage. Phase V specifies anaphoric schemas ‘that being so’, ‘if that is so’, and ‘even so’ as an explicit constructional proposal. Their accepted, entertained, and counter-expectational premise relations remain English schemas until a propositional anaphor and source construction are licensed. Nominal-anaphoric `i/ji/ni` are not thereby licensed as propositional pronouns.
 
 ## 13. Purposive motion and fulfilment
 
@@ -102,6 +104,17 @@ Existing alternative: `Tězně knářit stójek` ‘(They) went swimming in the 
 Existing pair of constructions: `Tězně knářit stójek` and `Mé autobusam zrolit nóčkek`. For a controlled constructed pair, add overt `Marek` to the first: `Marek tězně knářit stójek` ‘Marek went swimming in the lake’. The overt actor and recoverable null actor use the same morphosyntax; neither changes the purpose relation. The selected purposive complement's control relation must remain distinct from the defeasible same-pivot preference of adverbial chains.
 
 Contrast the existing different-pivot `Marek zdravení Janek znóvime` with constructed `Marek zdravení znóvime`, in a context where Marek is the only salient actor. Same-pivot recovery is the default in the latter, while a sufficiently clear discourse antecedent may favour a different actor. No switch-reference suffix is introduced. A continuing discourse topic need not be either grammatical pivot.
+
+## Finite linkage and local alignment (Phase V)
+
+The constructed published pair holds the lexical predicates, participants and following progressive constant:
+
+- `Marek lúbcí pjaštímně Janek znóvime` ‘Marek is eating the apple, and Janek is studying’: direct actor `Marek`, indirect patient `lúbcí`, Class B progressive `pjaštíme` with listed linked allomorph `pjaštímně`.
+- `Lobek Marku pjaštníce Janek znóvime` ‘Marek ate the apple, and Janek is studying’: direct patient `Lobek`, transitive agent `Marku`, patient-oriented transitive perfective `pjaštník` with linked `pjaštníce`.
+
+`lúbcí` is the lexicon's specified Class II indirect of `lobek`; `Marku` is Marek's specified transitive form. Linked forms are the existing Chapter 15 paradigm outputs, so no new linker allomorph is created. The second constituent reproduces a linked clause already used before `po` in existing examples, now placed in the separately licensed conjunctive construction. In both rows the following clause retains direct actor `Janek` and progressive `znóvime`; it does not impose its aspect or case frame on the preceding predicate. The perfective meal's precedence is supplied by the stated context rather than a bounded-anterior entailment of `-e`.
+
+Existing `pjáščekalě` supplies the evidential control: intervening Evid preserves `-ek`, and linker PAL targets final evidential `l`. The direct linked perfective `pjáščice` is a distinct form without intervening Evid. Local inner evidential specification does not automatically extend to the following clause or determine its perspective holder. Independently scoped questions, directives and speech-act force remain separate licensing questions. Morphological finiteness does not make the linked clause an independent assertion or require a separate complete intonational contour.
 
 ## Cross-cutting falsification protocol
 

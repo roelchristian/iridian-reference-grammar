@@ -14,7 +14,7 @@ their formal properties.
 \begin{table}[ht]
 	\footnotesize
 	\caption{Main clause-combining strategies in Iridian.}\label{tab:th-combining-strategies}
-	\begin{tabularx}{\textwidth}{l L L l}
+	\begin{tabularx}{\textwidth}{L L L l}
 		\toprule
 		{\sc strategy} & {\sc formal means} & {\sc function} & {\sc ref.} \\
 		\midrule
@@ -24,6 +24,14 @@ their formal properties.
 		Adverbial subordination: temporal, causal, conditional,
 		concessive, purposive &
 		§\,\ref{sec:converb-chains} \\[4pt]
+        Finite conjunctive linkage &
+        Finite clause + clause-edge \ird{-e} &
+        Dependent finite linkage; contextually coordinated or sequential propositions &
+        §\,\ref{sec:finite-conjunctive-linkage} \\[4pt]
+        Temporal nominal adjunct &
+        Event nominal in indirect case + \ird{z}, \ird{do}, \ird{na}, or \ird{u} &
+        Temporal source, endpoint, overlap, proximity &
+        §\,\ref{sec:temporal-event-nominals} \\[4pt]
 		Finite \ird{po}-complementation &
 		Finite embedded clause + linker \ird{-e} + \ird{po} (or
 		support \ird{ce} + \ird{po} with zero-copula predicates) &
@@ -45,6 +53,10 @@ their formal properties.
 		\ird{a}, \ird{še}, \ird{má}/\ird{ozná}, disjunctives &
 		Symmetric clause-level coordination &
 		§\,\ref{sec:coordination} \\[4pt]
+        Discourse continuation &
+        Independent utterance introduced by \ird{nu} &
+        Continuation or transition across discourse segments &
+        §\,\ref{sec:spoken-nu} \\[4pt]
 		Relativisation &
 		Prenominal participant-oriented relative in \ird{-ový} &
 		Nominal modification by a clausal relative &
@@ -100,25 +112,29 @@ information marking that is discussed in §\,\ref{sec:converb-chains}.
 \subsection{Subordination types: a typological note}
 \label{sec:th-subord-types}
 
-Following standard typological distinctions (Haspelmath 1995; Nikolaeva 2007),
-Iridian clause-combining strategies may be classified along two parameters: the
-\emph{morphological type of the dependent verb} (finite or non-finite) and the
-\emph{semantic relationship} between dependent and matrix clause.
+Iridian distinguishes the morphological finiteness of a dependent predicate
+from the syntactic and semantic relation between clauses. Converbs supply
+non-finite event linkage, while conjunctive \ird{-e} preserves a finite
+predicate under a clause-edge dependency. Finite \ird{po}/\ird{poby}
+clauses are selected as arguments; prenominal \ird{-ový} relatives instead
+select an aspect-bearing participant description without an overt relative
+pronoun or complementiser (§\,\ref{sec:th-relativization}). Their embedded
+aspect distinguishes them from ordinary adverbial converbs. Temporal event
+nominals furnish reference expressions rather than finite dependent clauses.
 
-Non-finite (converb) subordination is the dominant strategy for adverbial
-clauses. Finite subordination by means of \ird{po}/\ird{poby} is restricted to
-argument clauses (complement clauses). Prenominal relatives employ the dedicated head \ird{-ový}, which selects
-an aspect-bearing participant description without an overt relative pronoun
-or complementiser (§\,\ref{sec:th-relativization}). Their embedded aspect
-distinguishes them from the aspectually neutral adverbial converbs.
+Independent discourse continuation belongs to a different domain: \ird{nu}
+introduces a discourse contribution without attaching to a dependent verb.
+This distinction is comparable in function to the separation of conjunctive
+endings, conjunctive adverbials, and juxtaposition in Sohn's Korean
+classification, although those three mechanisms do not classify Iridian
+constructions by finiteness or dependency \cite[291--292]{sohn2009}.
 
-The dominance of converb-based strategies means that what in a European language
-would be expressed as two (or more) finite clauses typically appears in Iridian
-as a converb chain followed by a single finite verb. The aspectual and alignment
-information that would be distributed across multiple finite verbs in a Slavic
-language is therefore concentrated at the right edge of the chain. This property
-has implications for switch-reference tracking (§\,\ref{sec:switch-reference})
-and for discourse structure (Chapter~\ref{ch:discourse}).
+Converb chains concentrate overt finite aspect and alignment at their right
+edge; finite conjunctive chains retain the specifications of each finite
+predicate. This difference does not identify a discourse topic with a
+grammatical pivot. Participant recovery and the default continuity relation in
+adverbial chains are described in §\,\ref{sec:switch-reference}, while
+independent discourse reference is treated in Chapter~\ref{ch:discourse}.
 
 \section{Converbs}\label{sec:converb-morphology}
 
@@ -249,11 +265,15 @@ Reference across converb chains follows a default same-pivot relation
 
 \subsection{The finite-verb-final rule}
 
-In a converb chain, all verbs except the last are non-finite (converbs). Only
-the final verb is finite and carries aspect, mood, and alignment. This rule is
-absolute in standard written Iridian; in colloquial and dialectal speech, finite
-verbs may occasionally appear in non-final positions in certain coordinated
-structures.
+In an ordinary dependent converb chain, all verbs except the last are
+non-finite; the final predicate supplies finite aspect, mood, and alignment.
+A finite conjunctive chain in \ird{-e} is a separate construction in which
+non-final predicates retain finite inflection
+(§\,\ref{sec:finite-conjunctive-linkage}). It therefore does not constitute
+an exception to the internal form of a converb chain. Discourse-licensed
+conditional and intentional uses without a following finite predicate retain
+their construction-specific distributions
+(§§\,\ref{sec:cond-insub}, \ref{sec:purp-intentional}).
 
 \subsection{Prosodic integration of the chain}\label{sec:converb-phrasing}
 
@@ -377,14 +397,13 @@ connective \cite[300--301]{sohn2009}.
 
 \subsection{The copula converb and the discourse particle \ird{nu}}\label{sec:seq-copula}
 
-The marked copular verb \ird{neh-} (see §\,\ref{sec:neh} of
-Chapter~\ref{ch:predicates}) has the sequential converb form \ird{nesu}, a
-suppletive form established independently of the regular aspect paradigm. In
-colloquial speech, \ird{nesu} is contracted to \ird{nu}. The form \ird{nu} has
-been grammaticalised in some dialects as a discourse particle inserted between
-clauses in the manner of English `and then', without strong sequential
-implication and without retaining the inchoative/copular force of the underlying
-verb.
+The marked copular verb \ird{neh-} (§\,\ref{sec:neh}) has the suppletive
+sequential converb \ird{nesu}, established independently of its aspectual
+paradigm. Its colloquial reduced continuation \ird{nu} has a discourse function
+extending beyond event sequence (§\,\ref{sec:spoken-nu}). The source in
+\ird{nesu} does not require a silent copular event in every use of \ird{nu},
+which introduces a discourse segment rather than realising a productive
+converb ending.
 
 \subsection{Interaction with applicative and causative}
 

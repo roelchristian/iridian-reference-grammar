@@ -101,7 +101,7 @@
       "2158cdbd67f2bf697e1f29cd86c102d5299d6ab967b91d6a64ef0ab751664903",
       "28a6c775a10c8c8b906f772a6ae342a60dc69606f5c2f12e5b5d5479e9b73d61",
       "303de4008e00589263ceb90ed51698ff40678a9e4b3e811d518465c324455f09",
-      "dc389c787cd403c4aaccbfb959a327e23a369cb309b1f18e5eae72ed57481650",
+      "8705a5a7916cd2fd438efe4777f830e4d7f18720b19a7f5f8151dd49d5a9b41f",
       "3f4f8fef1734317f50a73fc5532f3813092e414e4a944a1fcc4fb18a250c557d",
       "4f5207b839b68928344afe5c9c347ad06224f1294877c1cf7b2205d8032b4b5c",
       "5068c4d901da9427f4bd5d96e8efcb4581757513816ecb75e0d79b22eaac5780",
@@ -111,7 +111,7 @@
       "6531cce0680959bcf8589ec4a736ff42e8d4d0fb581548ba6937e11bb50ec040",
       "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039",
       "72c48ba5920d5603e3ab436db534846a3d457fcf5bb0051987e8ee0e3a0cd952",
-      "73614e50f19f8a30bea922cc0e6dc68f030a0eb5844f92ce344a77e30e55b38b",
+      "284b3f3f6ddc08bacb7f602b3f0fd3fa8b2cd77435de454e512e7ed785a29550",
       "73ada39d2680f953097cdd45b4c53aaafaf4840caca3270c22d4a46a217594cd",
       "73d24094ea10d7f701a54fd7b05b4fcc13973653d5bb784cbba1fa612a357c12",
       "7474e0c9e47aa8fe9b0226cee1c8ae3d073802bf6b9655bdaa47f58b7fd3093a",
@@ -319,6 +319,18 @@
         "original_sha256": "3d3cfe9279129877a2a3569c0614b32aa3cdb1e98aa2ff331dfcbb868c852e74",
         "replacement_sha256": "dc389c787cd403c4aaccbfb959a327e23a369cb309b1f18e5eae72ed57481650",
         "reason": "The main clause-combining overview replaces its superseded converb list with the eight-form productive inventory and removes contrastive converb classification. Its exponent-bearing relativisation row, including -ový, its function and cross-reference, is unchanged. This exact reviewed hash replacement does not relax protection of relative rules or examples."
+      },
+      {
+        "phase": "clause-linking reform V",
+        "original_sha256": "dc389c787cd403c4aaccbfb959a327e23a369cb309b1f18e5eae72ed57481650",
+        "replacement_sha256": "8705a5a7916cd2fd438efe4777f830e4d7f18720b19a7f5f8151dd49d5a9b41f",
+        "reason": "Add finite conjunctive, temporal nominal and independent discourse strategies; wrap first column. The relative row, function and cross-reference remain unchanged."
+      },
+      {
+        "phase": "clause-linking reform V",
+        "original_sha256": "73614e50f19f8a30bea922cc0e6dc68f030a0eb5844f92ce344a77e30e55b38b",
+        "replacement_sha256": "284b3f3f6ddc08bacb7f602b3f0fd3fa8b2cd77435de454e512e7ed785a29550",
+        "reason": "Correct finite subordination to include dependent finite -e rather than restricting finite dependence to argument clauses. The participant-relative morphology, selection and cross-reference are preserved."
       }
     ],
     "reviewed_event_nominal_additions": [
