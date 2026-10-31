@@ -118,7 +118,16 @@
 
 %% Interlinear glosses (expex)
 \usepackage{expex}
+% Reset ExPex's own count register; it is not a LaTeX counter.
+\AddToHook{cmd/chapter/before}{\global\excnt=1\relax}
+% Keep LaTeX labels in step with ExPex's chapter-qualified display numbers.
+\makeatletter
+\def\latex@tagex{\edef\@currentlabel{\ep@rawexnoprint}}
+\def\latex@tagexlabel{\def\@currentlabel
+  {\ep@fullrefformat{{\ep@rawexnoprint}}{\ep@label}}}
+\makeatother
 \lingset{
+	exnotype=chapter.arabic,
 	everygla=\itshape\small,
 	everyglb=\small,
 	everyglc=\small,
