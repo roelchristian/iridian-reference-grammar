@@ -336,6 +336,22 @@ is omitted, recoverability from discourse context determines the SS/DS reading.
 
 \section{Sequence and circumstance}\label{sec:sequential}
 
+\label{sec:lexical-slot-schemata}
+Double brackets mark lexical slots in the schematic examples below:
+\ird{[[wash]]} names a meaning without supplying an Iridian stem.
+A displayed ending, as in \ird{[[wash]]-ěc}, identifies the converb
+construction, while the stem's quantity, consonant grade, and resulting
+orthography remain unspecified. A subscript on a bracketed nominal or finite
+predicate denotes its complete inflectional cell, rather than an additional
+suffix: \ird{[[hands]]}\textsubscript{\Ind{}} is an indirect nominal,
+and \ird{[[depart]]}\textsubscript{\Pf{}} is a finite intransitive
+perfective with a direct-case mover. The subscript \textsc{evt.ind}
+denotes the complete indirect form of an event nominal, including the
+nominalisation and case alternation; \textsc{neg.prog} denotes a complete
+finite negative progressive. These schemata illustrate the specified semantic
+relations without assigning unlisted lexical forms or new inflectional rules.
+
+
 \subsection{Bounded sequence: \ird{-u}}
 
 The sequential converb \ird{-u} presents a completed, bounded eventuality
@@ -496,6 +512,93 @@ than continue throughout its entire interval. Front-grade \ird{pjaštěc}
 retains the stem's postalveolar and selects soft final \ird{t}; it does not
 import the antipassive stem \ird{pjášč-}.
 
+Completion, maintained results, and means can be separated more directly
+when the predicates describe different kinds of event. Washing supplies a
+bounded preliminary activity in (\ref{ex:slot-preliminary}a), whereas the
+completed report in (b) merely precedes another participant's departure.
+The latter sequence remains compatible with `but the departure had nothing
+to do with the report'.
+
+\pex\label{ex:slot-preliminary}
+\a
+\begingl
+\gla Marek \textnormal{[[hands]]}\textsubscript{\Ind{}} [[wash]]-u \textnormal{[[get-dressed]]}\textsubscript{\Pf{}}.//
+\glb Marek.\Dir{} hands.\Ind{} wash-\Seq{} get.dressed-\Pf{}//
+\glft \trsl{Having washed his hands, Marek got dressed.}
+\lingcontext{the context identifies the hands as Marek's; washing is completed first}//
+\endgl
+\a
+\begingl
+\gla Marek \textnormal{[[report]]}\textsubscript{\Ind{}} [[complete]]-u Janek \textnormal{[[depart]]}\textsubscript{\Pf{}}.//
+\glb Marek.\Dir{} report.\Ind{} complete-\Seq{} Janek.\Dir{} depart-\Pf{}//
+\glft \trsl{Marek completed the report, and then Janek departed.}
+\lingcontext{ordered events; no causal connection is required}//
+\endgl
+\xe
+
+Opening a door can instead be relevant through the passage it leaves
+accessible. The two schemata in (\ref{ex:slot-door-result}) share their
+predicates, although only \ird{-u} conventionally requires a completed opening
+before entry; \ird{-ení} permits the context to supply that interpretation.
+
+\pex\label{ex:slot-door-result}
+\a
+\begingl
+\gla Marek \textnormal{[[door]]}\textsubscript{\Ind{}} [[open]]-u \textnormal{[[enter]]}\textsubscript{\Pf{}}.//
+\glb Marek.\Dir{} door.\Ind{} open-\Seq{} enter-\Pf{}//
+\glft \trsl{Having opened the door, Marek entered.}
+\lingcontext{opening is completed before entry}//
+\endgl
+\a
+\begingl
+\gla Marek \textnormal{[[door]]}\textsubscript{\Ind{}} [[open]]-ení \textnormal{[[enter]]}\textsubscript{\Pf{}}.//
+\glb Marek.\Dir{} door.\Ind{} open-\Circ{} enter-\Pf{}//
+\glft \trsl{With the door opened, Marek entered.}
+\lingcontext{the accessible passage supplies the relevant continuing result}//
+\endgl
+\xe
+
+In (b), the completed-opening interpretation and its persisting result
+come from the stated context. If the door closes before entry, that particular
+enabling relation is lost, although another circumstantial relation could
+still support \ird{-ení}. In (a), the door may close and be reopened before
+the later entry without contradicting the suffix's completion and precedence
+requirements. Neither form itself asserts uninterrupted accessibility.
+
+Integrated overlap also permits a means interpretation, which differs from
+mere accompaniment. Singing can accompany walking, whereas paddling can be
+the means by which forward motion is achieved:
+
+\pex\label{ex:slot-integrated-activities}
+\a
+\begingl
+\gla Marek kaněc \textnormal{[[walk]]}\textsubscript{\Prog{}}.//
+\glb Marek.\Dir{} sing-\Sim{} walk-\Prog{}//
+\glft \trsl{Marek is walking whilst singing.}
+\lingcontext{overlapping activities within one episode}//
+\endgl
+\a
+\begingl
+\gla Marek [[paddle]]-ěc \textnormal{[[advance]]}\textsubscript{\Pf{}}.//
+\glb Marek.\Dir{} paddle-\Sim{} advance-\Pf{}//
+\glft \trsl{Marek advanced by paddling.}
+\lingcontext{paddling is construed as an intransitive activity supplying the means of advance}//
+\endgl
+\a
+\begingl
+\gla Marek \textnormal{[[hands]]}\textsubscript{\Ind{}} [[wash]]-ení Janek \textnormal{[[practise]]}\textsubscript{\Prog{}}.//
+\glb Marek.\Dir{} hands.\Ind{} wash-\Circ{} Janek.\Dir{} practise-\Prog{}//
+\glft \trsl{While Marek washes his hands, Janek is practising.}
+\lingcontext{two independent activities share a temporal frame}//
+\endgl
+\xe
+
+Replacing \ird{-ěc} with \ird{-u} in (a) would require the singing
+to finish before the walking, while replacing \ird{-ení} with \ird{-ěc}
+in (c) would require an integrated episode beyond coincidence in time. A
+shared participant favours integration in (a--b), but the different pivots in
+(c) are independently compatible with circumstantial framing.
+
 \begin{table}[ht]
 \footnotesize
 \caption{Encoded relations and contextual inferences in the principal converbs.}
@@ -516,8 +619,8 @@ A continuation equivalent to `but the first event did not cause the second'
 can cancel a causal inference with \ird{-u} or \ird{-ení}; with \ird{-ení},
 some other circumstantial relation must remain available. By contrast,
 `the eating continued throughout the journey and was never completed before it'
-excludes the bounded-anterior interpretation in (a), while `the two activities
-did not overlap at all' excludes the simultaneous interpretation in (c).
+excludes the bounded-anterior interpretation in (\ref{ex:core-converb-contrast}a), while `the two activities
+did not overlap at all' excludes the simultaneous interpretation in (\ref{ex:core-converb-contrast}c).
 These are semantic exclusions under the stated event identifications, rather
 than claims that every surface sentence containing those words is
 morphosyntactically ill formed.
@@ -565,6 +668,31 @@ left' consequently does not contradict the connective. Replacing \ird{-esny}
 with \ird{-u} would reverse the temporal relation and require a completed
 anterior departure in the local interpretation. Anteriority to an anticipated
 event is therefore distinct from completion before another event.
+
+An anticipated arrival provides a reference point even when assistance
+never materialises:
+
+\pex\label{ex:slot-before-help}
+\a
+\begingl
+\gla \textnormal{[[help]]}\textsubscript{\Dir{}} ščenesny Marek \textnormal{[[depart]]}\textsubscript{\Pf{}}.//
+\glb help.\Dir{} arrive-\Cv{} Marek.\Dir{} depart-\Pf{}//
+\glft \trsl{Marek departed before help arrived.}
+\lingcontext{compatible with either later arrival or the continuation `but help never arrived'}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[help]]}\textsubscript{\Dir{}} ščenu Marek \textnormal{[[depart]]}\textsubscript{\Pf{}}.//
+\glb help.\Dir{} arrive-\Seq{} Marek.\Dir{} depart-\Pf{}//
+\glft \trsl{After help arrived, Marek departed.}
+\lingcontext{the arrival is completed before departure in this affirmative episodic reading}//
+\endgl
+\xe
+
+The continuation denying arrival is compatible with the prospective
+reference in (a), whereas it contradicts the completed arrival described in
+(b) when the same help and occasion are intended. Neither contrast requires
+an irrealis suffix inside the dependent predicate.
 
 \subsection{Event nominals as temporal reference expressions}
 \label{sec:temporal-event-nominals}
@@ -631,6 +759,31 @@ identifies its reference event within a nominal expression, whereas \ird{-u}
 links two predicates and requires a completed anterior eventuality. Neither
 construction asserts causation.
 
+The same event nominal supports `since' and `after' when the matrix
+predicates supply different temporal extents:
+
+\pex\label{ex:slot-source-extent}
+\a
+\begingl
+\gla \textnormal{[[wash]]}\textsubscript{\textsc{evt.ind}} z Marek \textnormal{[[wait]]}\textsubscript{\Prog{}}.//
+\glb washing.\textsc{evt}.\Ind{} from Marek.\Dir{} wait-\Prog{}//
+\glft \trsl{Marek has been waiting since washing.}
+\lingcontext{the washing is complete; waiting extends from that boundary to the reference time}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[wash]]}\textsubscript{\textsc{evt.ind}} z Marek \textnormal{[[depart]]}\textsubscript{\Pf{}}.//
+\glb washing.\textsc{evt}.\Ind{} from Marek.\Dir{} depart-\Pf{}//
+\glft \trsl{Marek departed after washing.}
+\lingcontext{departure is a subsequent event; no claim of an interval extending to speech time}//
+\endgl
+\xe
+
+The washer is identified as Marek in these contexts, although the
+postposition does not impose that identity. Both readings retain completion
+as the source boundary; changing the matrix predicate changes the interval
+profile without covertly moving the boundary to the beginning of washing.
+
 \subsection{Temporal endpoint: \ird{do}}
 
 Temporal \ird{do} supplies the right boundary of a relevant extended matrix
@@ -668,6 +821,42 @@ nominal. Cross-linguistic `not until' constructions vary in their aspectual and
 polarity behaviour; those profiles must be established construction by
 construction \cite[§§1--2]{deswarttellingswalchli2022}.
 
+Washing also separates an event's onset from its completion. In the
+following schemata, the first endpoint is the beginning of the wash, while
+the second context explicitly selects its end:
+
+\pex\label{ex:slot-endpoint-boundaries}
+\a
+\begingl
+\gla \textnormal{[[wash]]}\textsubscript{\textsc{evt.ind}} do Janek \textnormal{[[wait]]}\textsubscript{\Prog{}}.//
+\glb washing.\textsc{evt}.\Ind{} until Janek.\Dir{} wait-\Prog{}//
+\glft \trsl{Janek is waiting until the washing begins.}
+\lingcontext{default onset boundary}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[wash]]}\textsubscript{\textsc{evt.ind}} do Janek \textnormal{[[wait]]}\textsubscript{\Prog{}}.//
+\glb washing.\textsc{evt}.\Ind{} until Janek.\Dir{} wait-\Prog{}//
+\glft \trsl{Janek is waiting until the washing is finished.}
+\lingcontext{context explicitly identifies completion as the endpoint}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[wash]]}\textsubscript{\textsc{evt.ind}} do Janek \textnormal{[[work]]}\textsubscript{\textsc{neg.prog}}.//
+\glb washing.\textsc{evt}.\Ind{} until Janek.\Dir{} \Neg{}-work-\Prog{}//
+\glft \trsl{Janek is not working until the washing begins.}
+\lingcontext{matrix non-working throughout the relevant pre-onset interval}//
+\endgl
+\xe
+
+A continuation `and he does not work afterwards either' remains
+compatible with (c), since a positive onset of work is not asserted. A single
+instantaneous jump cannot replace waiting in (a--b) with its punctual reading
+unchanged; a repeated series of jumps could instead furnish the extended
+interval. The negative cell in (c) belongs to the finite matrix predicate,
+while the washing nominal remains positive and contains no internal verbal
+negation.
+
 \subsection{Temporal location and proximity: \ird{na} and \ird{u}}
 
 Temporal \ird{na} requires overlap with the interval described by the event
@@ -689,6 +878,31 @@ without obligatory identity with Janek. Postpositional \ird{u} is written
 separately and retains the postpositions' established prosodic attachment;
 its homophony with suffixal \ird{-u} supplies no shared origin or temporal
 identity (§\,\ref{sec:nm-postp-status}).
+
+The same reference event permits contrasting location and proximity
+relations:
+
+\pex\label{ex:slot-location-proximity}
+\a
+\begingl
+\gla \textnormal{[[rehearse]]}\textsubscript{\textsc{evt.ind}} na Marek ščének.//
+\glb rehearsing.\textsc{evt}.\Ind{} during Marek.\Dir{} arrive-\Pf{}//
+\glft \trsl{Marek arrived during the rehearsal.}
+\lingcontext{arrival overlaps the rehearsal interval}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[rehearse]]}\textsubscript{\textsc{evt.ind}} u Marek ščének.//
+\glb rehearsing.\textsc{evt}.\Ind{} near Marek.\Dir{} arrive-\Pf{}//
+\glft \trsl{Marek arrived around the time of the rehearsal.}
+\lingcontext{arrival may be shortly before, during, or shortly after the rehearsal}//
+\endgl
+\xe
+
+An arrival five minutes before the rehearsal can satisfy (b) when
+that distance counts as near, but it cannot satisfy (a) under the same
+identification of the rehearsal interval. Neither expression entails that
+Marek participates in the rehearsal.
 
 \subsection{Synthetic and analytic temporal relations}
 
@@ -735,6 +949,31 @@ event-oriented converb does not acquire scope over a question or command
 merely because an English translation contains `because'. No dedicated causal
 converb exponent is specified.
 
+An event-level consequence can arise from circumstantial relevance
+without making causation part of the ending:
+
+\pex\label{ex:slot-event-cause}
+\a
+\begingl
+\gla pozebževení \textnormal{[[road]]}\textsubscript{\Dir{}} \textnormal{[[become-slippery]]}\textsubscript{\Pf{}}.//
+\glb rain-\Circ{} road.\Dir{} become.slippery-\Pf{}//
+\glft \trsl{With rain falling, the road became slippery.}
+\lingcontext{rain is understood as the cause in the stated situation}//
+\endgl
+\a
+\begingl
+\gla pozebževení \textnormal{[[road]]}\textsubscript{\Dir{}} \textnormal{[[remain-dry]]}\textsubscript{\Cont{}}.//
+\glb rain-\Circ{} road.\Dir{} remain.dry-\Cont{}//
+\glft \trsl{While it is raining, the road remains dry.}
+\lingcontext{the road is covered; rainfall supplies a contrasting circumstance}//
+\endgl
+\xe
+
+The second context blocks the inference from rainfall to a slippery
+road while preserving a relevant circumstance. A reason for issuing an
+instruction instead relates discourse acts, as illustrated in
+§\,\ref{sec:spoken-justification-examples}.
+
 \subsection{Concessive constructions}\label{sec:concessive}
 
 Concessive \ird{-ouc} presents an actual or entertained circumstance against
@@ -764,6 +1003,36 @@ The irrealis is available in a concessive main clause, but concession neither
 requires that mood nor invariably makes the dependent eventuality actual.
 The appropriate reading depends on whether the discourse accepts or merely entertains the
 conceded circumstance.
+
+A context in which fatigue is expected to prevent work supplies the
+counter-expectation required by concession. The following schemata distinguish
+accepted fatigue from a condition merely entertained, while the concessive
+ending itself requires no temporal overlap. Here \ird{[[feel-tired]]} names a
+verbal stative whose holder is the direct-case pivot, rather than a nominal
+predicate in the restricted \ird{-eň} construction:
+
+\pex\label{ex:slot-concession-obstacle}
+\a
+\begingl
+\gla Marek [[feel-tired]]-ouc \textnormal{[[work]]}\textsubscript{\Prog{}}.//
+\glb Marek.\Dir{} feel.tired-\Cncs{} work-\Prog{}//
+\glft \trsl{Although Marek feels tired, he is working.}
+\lingcontext{fatigue is accepted; work defeats the salient expectation}//
+\endgl
+\a
+\begingl
+\gla Marek [[feel-tired]]-ouc \textnormal{[[work]]}\textsubscript{\Ctpl{}}.//
+\glb Marek.\Dir{} feel.tired-\Cncs{} work-\Ctpl{}//
+\glft \trsl{Even if Marek feels tired, he will work.}
+\lingcontext{fatigue is entertained rather than asserted}//
+\endgl
+\xe
+
+The difference in actuality follows from the stated contexts, while
+both retain counter-expectation. Merely surprising accompaniment, as when
+someone unexpectedly sings during work, can satisfy integrated \ird{-ěc};
+without an expectation linking the singing to the work's non-occurrence, that
+surprise alone does not supply the concessive relation.
 
 \section{Conditional constructions}\label{sec:conditional}
 
@@ -983,6 +1252,32 @@ natural-language conditions and material implication is discussed by
 \cite[ch.~5]{sweetser1990}. Korean conditional endings likewise differ in
 modality and consequent restrictions, although their distributions do not
 specify the Iridian paradigm \cite[303--306]{sohn2009}.
+
+Completion of a report can be left open or treated as a planned trigger
+without changing the following predicate:
+
+\pex\label{ex:slot-condition-expectation}
+\a
+\begingl
+\gla Marek \textnormal{[[report]]}\textsubscript{\Ind{}} [[complete]]-ic Janek \textnormal{[[depart]]}\textsubscript{\Ctpl{}}.//
+\glb Marek.\Dir{} report.\Ind{} complete-\Cond{} Janek.\Dir{} depart-\Ctpl{}//
+\glft \trsl{If Marek completes the report, Janek will depart.}
+\lingcontext{completion is one contingent possibility}//
+\endgl
+\a
+\begingl
+\gla Marek \textnormal{[[report]]}\textsubscript{\Ind{}} [[complete]]-ezmy Janek \textnormal{[[depart]]}\textsubscript{\Ctpl{}}.//
+\glb Marek.\Dir{} report.\Ind{} complete-\ECond{} Janek.\Dir{} depart-\Ctpl{}//
+\glft \trsl{Once Marek completes the report, Janek will depart.}
+\lingcontext{completion is anticipated as the departure trigger}//
+\endgl
+\xe
+
+Abandoning the report frustrates the expectation in (b), whereas (a)
+does not conventionally supply that expectation. Neither conditional
+antecedent asserts completion of the report. A generic instruction using
+(a) can instead apply to each relevant occasion
+of completing a report, without predicting any particular completion.
 
 \subsection{Formal analysis: converb features in Distributed Morphology}\label{sec:cond-dm}
 
@@ -1214,6 +1509,27 @@ event-complement form (§\,\ref{sec:th-compl-distinction}), the purposive conver
 is licensed wherever the matrix predicate selects an event regarded as
 projected, volitional, incipient, or purpose-oriented rather than a full
 proposition.
+
+An intended activity can remain unfulfilled after the motion undertaken
+for that purpose. The following schema permits continuations in which the
+purpose is fulfilled or frustrated:
+
+\ex\label{ex:slot-purpose-outcome}%
+\begingl
+\gla Marek \textnormal{[[hands]]}\textsubscript{\Ind{}} [[wash]]-it stójek.//
+\glb Marek.\Dir{} hands.\Ind{} wash-\Purp{} go-\Pf{}//
+\glft \trsl{Marek went to wash his hands.}
+\lingcontext{compatible with `and washed them' or `but the water was cut off, so he never washed them'}//
+\endgl
+\xe
+
+The motion is asserted in this episodic reading, while washing is the
+selected prospective event whose actor is controlled by Marek. Replacing
+\ird{-it} with \ird{-u} would put a completed washing before the motion,
+so that the continuation denying washing would conflict with the resulting
+sequence. A matrix predicate meaning `begin' would add inception of its
+complement activity, whereas `want' or `try' would not by itself guarantee
+its fulfilment.
 
 \subsection{The intentional future reanalysis}\label{sec:purp-intentional}
 
