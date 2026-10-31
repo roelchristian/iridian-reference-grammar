@@ -253,9 +253,9 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### S06 — H
 
 - **Source:** `chapters/06-simple-sentence.tex, sec:word-order; 07-information-structure.tex, sec:tc-adverbials`.
-- **String/schema:** bych P.DIR A.TRS V.PF / P.DIR bych A.TRS V.PF
+- **String/schema:** byh P.DIR A.TRS V.PF / P.DIR byh A.TRS V.PF
 - **Context and target reading:** Fix yesterday as an already supplied, neutral temporal frame in the same all-new event report for both orders.
-- **Controlled contrast:** Vary frame–pivot order while holding frame salience, prosody, participants and discourse context constant; test contrastive frame-fronting in a separate context pair. Do not treat bych as low manner.
+- **Controlled contrast:** Vary frame–pivot order while holding frame salience, prosody, participants and discourse context constant; test contrastive frame-fronting in a separate context pair. Do not treat byh as low manner.
 - **Competing predictions:** A/B/C₀: permit a frame outside the clause-internal pivot configuration where independently licensed. Frame-first is not evidence that P occupies TopP.
 
 ### S07 — H
@@ -449,7 +449,7 @@ For every unestablished contrast, record acceptance, intended reading, alternati
 ### I02 — C
 
 - **Source:** `chapters/07-information-structure.tex, sec:tc-multiple-topics`.
-- **String/schema:** Marko tak tóm bych kářnik.
+- **String/schema:** Marko tak tóm byh kářnik.
 - **Context and target reading:** External Marek-topic, with ordinary contextual recovery of the lower agent.
 - **Controlled contrast:** Contrast linked Markuto, not a case-changing operation on the same dependency.
 - **Competing predictions:** A/B/C₀: HT is external with resumption/recovery; it does not establish an A′ chain crossing P. DIR-like topic form does not reassign argument case.

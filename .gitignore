@@ -57,6 +57,8 @@ util/*
 !util/implicit-possession-review.md
 !util/stative-references.tex
 !util/stative-extension-references.tex
+!util/event-existential-comparison.tex
+!util/event-existential-references.tex
 !util/tests/test_pivot_diagnostics.py
 *.draft
 *.draft.md

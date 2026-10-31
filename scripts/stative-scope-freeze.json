@@ -88,7 +88,7 @@
   "files": {
     "scripts/stative-fixtures.json": "357d1d42e020739b8184c396d02424d669b65e452f0c6d97ab33fe41000b6fb0",
     "util/stative-paradigms.md": "6aca294ba7c16ed513dff2417f1cb76a07503c7ef81b12f44c9636ba0fa491dc",
-    "scripts/clausal_diagnostics.py": "5f45559afca421deb04f3e65f8cb1e901899245a10fbd61b75079ac5a7da0139"
+    "scripts/clausal_diagnostics.py": "6d4b356e417b0e47380174e325002533a98ea04fb6d6b82eefeaa6cd2ec1e601"
   },
   "migration": {
     "normalisation": "shallow-headings-whitespace-v1",
@@ -108,8 +108,6 @@
       "53e105852437ed5bef4dcd4cea28e6a5693c53baf28517e2590352a0dfe222de",
       "5636fec444561c98d51c1bad873846472f471ea0874feb21eb2cae7eb9a21971",
       "62423477fde60e2a45dbdc5dd4963dda4137d6a84224804518795b383d543b17",
-      "6531cce0680959bcf8589ec4a736ff42e8d4d0fb581548ba6937e11bb50ec040",
-      "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039",
       "72c48ba5920d5603e3ab436db534846a3d457fcf5bb0051987e8ee0e3a0cd952",
       "284b3f3f6ddc08bacb7f602b3f0fd3fa8b2cd77435de454e512e7ed785a29550",
       "73ada39d2680f953097cdd45b4c53aaafaf4840caca3270c22d4a46a217594cd",
@@ -118,7 +116,6 @@
       "84baa760aab7fce93688466281240e24784a4acc15dd91768d9c5ea58c8d4ce3",
       "9c48cf089c2f63cff496a7fc2b7f58650b1e089f16ffc3dfb3c4a6087277a4e3",
       "a42fd30a738b61c714553faab0e4bf8d14626b72585c66137cd0dcdcc5a4f0af",
-      "a5f3464af5f07cc33d86d674b960671c80d06113ce169a46566a92918190d8b4",
       "ac0e56870b326cafddfea77de06e168175db1ca46453aca3795c51bc143c99fe",
       "aed2d6c851401dc4f4e7be40fdf9f116f80e871404d22997ca04656e92cd0e6f",
       "bc0044270ed728723aa6d07d6658007c4402ba68dbc672d698ff5e2c84b9a120",
@@ -128,8 +125,16 @@
       "d0a389ae821f72c356ce506d7a0b7edc3cca73472ac4a068f1cb683a1eb8d4f4",
       "d14e3152520f6585deb52abd5ffd5a9205887500d159194cdb55a0e1de87d0c1",
       "e0e5fea344a258f7fda2061c1e4e24535d19726754f5f63d9c76b747e422a85b",
-      "ec700ddfe7fa573bdc9f71a86a3d6deedbc410015e726951825e4047c012b303",
-      "fdf22da8086c3337d8716387021b73b9440282bf4f65bac9d25ac44908eb6c12"
+      "fdf22da8086c3337d8716387021b73b9440282bf4f65bac9d25ac44908eb6c12",
+      "0ba7e2c3ea546bb694b71f4cf7e23520bc98677d1ba37ba1e88aefc9646e3149",
+      "47d300a1cac4c6fbdc1f3c37f48bf6ed8f664a4c45c40b7f96b9ec7980bd8670",
+      "4bfb832c33671e63cae61cbc20919a91397e15d6638a279838ccabcefcf470ab",
+      "628e020e6c0bf7e60105a0a0ae013e055cc39a7e86542c5b08b33d7fcfb38be0",
+      "653f0cc9ede6977a3d3f03d86881cd7b671080a4990ebff635c17a42caabf1ba",
+      "7305892468a6c82605de3b804717850be9362781aa08af390bc2cc5ed0cb370b",
+      "b2eb33dfdd88bcc0796152292076cc9b8e430fa42490ef5b96d9746a878ff503",
+      "e6be0585806408aae183b54ff40d8eedfadc1750f1361924fb5164c716b6ab55",
+      "a4e9cb795fc0498ec00af5cead8b05a6c21966814bf0748c0c4358b7b024acd9"
     ],
     "spans": [
       {
@@ -173,7 +178,7 @@
           "9c48cf089c2f63cff496a7fc2b7f58650b1e089f16ffc3dfb3c4a6087277a4e3",
           "aed2d6c851401dc4f4e7be40fdf9f116f80e871404d22997ca04656e92cd0e6f",
           "2158cdbd67f2bf697e1f29cd86c102d5299d6ab967b91d6a64ef0ab751664903",
-          "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039"
+          "a4e9cb795fc0498ec00af5cead8b05a6c21966814bf0748c0c4358b7b024acd9"
         ]
       },
       {
@@ -207,7 +212,7 @@
         ],
         "replacement_units": [
           "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec",
-          "725b76cd470088dca08a40c064aefd3b71fe20486182a687820197887f7d208a",
+          "33299c14a733416b0d8552c1368a7f613ada9732ff084c71ba82069d79fd8cc7",
           "4d54f28c003b3769843798fb00a1568e13ece67e54b2508d05c85bfde9b6bdb5",
           "6d8da3ee2fc749475d113fb10a56d5ebaed6255d6f292045e57e334ba06aa594",
           "e669fad2cb77fb22dff1276544f81ecf5f685fe0ff8a4c87bbc4cb3816cfea1f",
@@ -250,7 +255,10 @@
           "9bba072b92bb3075aa54432298a6af9e3aa4ccd74e543d029f47d3f31f13f8ae",
           "7ccc37dca4d2c7454f876aefc88cecb0d0e2e5863a62239f760c29f3059c2aab",
           "ec57a8b9a524e49429fb367a636c4eb4247deb977094fc699d8717946deed54b",
-          "547774fb2f26ff3ddb51ef2dd77ba532f1f6d0e0cd491f2e93c0bca2c7754808"
+          "547774fb2f26ff3ddb51ef2dd77ba532f1f6d0e0cd491f2e93c0bca2c7754808",
+          "2ef3cff8cd1de83a3c8a6fafcccc5b550a2bd2d41ed7c7730e6ff601393fc2ff",
+          "cc1d58f89c9fbaf6b3d83697749578f19fad6694d3327a11ee62489488ca9ded",
+          "3efbb8224ee4dfd57a48d693466dcf17fe4d6311d0c6cdb8078ca50a5d5a861f"
         ],
         "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
       },
@@ -260,12 +268,12 @@
         "end": "\\section{The overt copular verb",
         "units": [
           "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec",
-          "725b76cd470088dca08a40c064aefd3b71fe20486182a687820197887f7d208a",
           "4d54f28c003b3769843798fb00a1568e13ece67e54b2508d05c85bfde9b6bdb5",
           "6d8da3ee2fc749475d113fb10a56d5ebaed6255d6f292045e57e334ba06aa594",
           "e669fad2cb77fb22dff1276544f81ecf5f685fe0ff8a4c87bbc4cb3816cfea1f",
           "f03618244fe8c9b39bb09f438e2fdd72e390663c926200152bbe5e8b10a05688",
-          "f6cf53a4fffa6ff75d4c2adc8355d8b3b25de74af3926f45724f3680db6c50e0"
+          "f6cf53a4fffa6ff75d4c2adc8355d8b3b25de74af3926f45724f3680db6c50e0",
+          "33299c14a733416b0d8552c1368a7f613ada9732ff084c71ba82069d79fd8cc7"
         ],
         "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
       },
@@ -290,7 +298,7 @@
           "9c48cf089c2f63cff496a7fc2b7f58650b1e089f16ffc3dfb3c4a6087277a4e3",
           "aed2d6c851401dc4f4e7be40fdf9f116f80e871404d22997ca04656e92cd0e6f",
           "2158cdbd67f2bf697e1f29cd86c102d5299d6ab967b91d6a64ef0ab751664903",
-          "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039"
+          "a4e9cb795fc0498ec00af5cead8b05a6c21966814bf0748c0c4358b7b024acd9"
         ],
         "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
       },
@@ -308,7 +316,8 @@
           "303de4008e00589263ceb90ed51698ff40678a9e4b3e811d518465c324455f09",
           "64583777f9e6ffc7dc41a25c88b971444cadaa7581cc73187a9e5c8a8d1c4f1c",
           "ac0e56870b326cafddfea77de06e168175db1ca46453aca3795c51bc143c99fe",
-          "01c5caf8bd50813f17ae1b0a9954f17669690946e40bb7f01dd92dd64fe41e35"
+          "01c5caf8bd50813f17ae1b0a9954f17669690946e40bb7f01dd92dd64fe41e35",
+          "def46dda0e358809718cef4a376f8bff69e78a14cd7aa5cba7cf41b842d346e4"
         ],
         "provenance": "Every unit matches original chapter prose after structural normalisation or the explicitly reviewed equative/nominal editorial consolidation."
       }
@@ -345,6 +354,97 @@
         ],
         "reason": "Three new paragraphs license existing event-nominal case forms as temporal postposition complements, preserve nominal argument case and role ambiguity, and retain the reduced nonfinite domain. Every earlier protected region unit and exponent-bearing paragraph remains unchanged; no relative rule or example is revised."
       }
-    ]
+    ],
+    "event_existential_revision": {
+      "base": "ca3d6cf1972e38cb22e71f4d51c8b66a7a790b5d",
+      "reason": "User-requested event-modified existential revision: nominal syntax retained; actual perfective event entailment, contextual anchoring, agentive heads, conditional identification and unspecified participant plural clarified. Original baseline fields retained; only changed publication hashes and added cross-references are recorded here.",
+      "exponent_paragraphs_removed": [
+        "6531cce0680959bcf8589ec4a736ff42e8d4d0fb581548ba6937e11bb50ec040",
+        "a5f3464af5f07cc33d86d674b960671c80d06113ce169a46566a92918190d8b4",
+        "ec700ddfe7fa573bdc9f71a86a3d6deedbc410015e726951825e4047c012b303"
+      ],
+      "exponent_paragraphs_added": [
+        "0ba7e2c3ea546bb694b71f4cf7e23520bc98677d1ba37ba1e88aefc9646e3149",
+        "47d300a1cac4c6fbdc1f3c37f48bf6ed8f664a4c45c40b7f96b9ec7980bd8670",
+        "4bfb832c33671e63cae61cbc20919a91397e15d6638a279838ccabcefcf470ab",
+        "628e020e6c0bf7e60105a0a0ae013e055cc39a7e86542c5b08b33d7fcfb38be0",
+        "653f0cc9ede6977a3d3f03d86881cd7b671080a4990ebff635c17a42caabf1ba",
+        "7305892468a6c82605de3b804717850be9362781aa08af390bc2cc5ed0cb370b",
+        "b2eb33dfdd88bcc0796152292076cc9b8e430fa42490ef5b96d9746a878ff503",
+        "e6be0585806408aae183b54ff40d8eedfadc1750f1361924fb5164c716b6ab55"
+      ],
+      "regions": [
+        {
+          "source": "chapters/08-derivation-nominalisation.tex",
+          "start": "\\section{Verbal nominalisation}",
+          "removed": [],
+          "added": [
+            "2ef3cff8cd1de83a3c8a6fafcccc5b550a2bd2d41ed7c7730e6ff601393fc2ff",
+            "3efbb8224ee4dfd57a48d693466dcf17fe4d6311d0c6cdb8078ca50a5d5a861f",
+            "cc1d58f89c9fbaf6b3d83697749578f19fad6694d3327a11ee62489488ca9ded"
+          ]
+        },
+        {
+          "source": "chapters/10-predicate-constructions.tex",
+          "start": "\\section{Identificational equatives and participant nominals}",
+          "removed": [
+            "725b76cd470088dca08a40c064aefd3b71fe20486182a687820197887f7d208a"
+          ],
+          "added": [
+            "33299c14a733416b0d8552c1368a7f613ada9732ff084c71ba82069d79fd8cc7"
+          ]
+        },
+        {
+          "source": "chapters/15-embedding.tex",
+          "start": "\\section{Relativisation}",
+          "removed": [],
+          "added": [
+            "def46dda0e358809718cef4a376f8bff69e78a14cd7aa5cba7cf41b842d346e4"
+          ]
+        }
+      ],
+      "consolidation_replacements": [
+        {
+          "original_span": "132e34b9bca71bc93634e33495e5787fcd6970ceb3fe7e0ed7609dddcdc3ee35",
+          "before": "725b76cd470088dca08a40c064aefd3b71fe20486182a687820197887f7d208a",
+          "after": "33299c14a733416b0d8552c1368a7f613ada9732ff084c71ba82069d79fd8cc7"
+        }
+      ]
+    },
+    "h_orthography_revision": {
+      "base": "validated existential-pivot working tree before h reform",
+      "reason": "User-requested orthographic /x/ spelling h in every position. Phonemes, IPA, participant orientation and syntax remain unchanged. Only affected source units and the spelling-adjusted selection script digest are refreshed.",
+      "exponent_paragraphs_removed": [
+        "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039"
+      ],
+      "exponent_paragraphs_added": [
+        "a4e9cb795fc0498ec00af5cead8b05a6c21966814bf0748c0c4358b7b024acd9"
+      ],
+      "span_units": [
+        {
+          "original_span": "c60ae212218903908f28976b03c30595f38b2740fc5bf39b66809f084096b6f2",
+          "before": "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039",
+          "after": "a4e9cb795fc0498ec00af5cead8b05a6c21966814bf0748c0c4358b7b024acd9"
+        }
+      ],
+      "regions": [
+        {
+          "source": "chapters/05-nominal-syntax.tex",
+          "removed": [
+            "6bd32df320a1f366a78a3db3b8b17489c49da65bbae1a871f25771043fcb8039"
+          ],
+          "added": [
+            "a4e9cb795fc0498ec00af5cead8b05a6c21966814bf0748c0c4358b7b024acd9"
+          ]
+        }
+      ],
+      "files": [
+        {
+          "source": "scripts/clausal_diagnostics.py",
+          "before": "5f45559afca421deb04f3e65f8cb1e901899245a10fbd61b75079ac5a7da0139",
+          "after": "6d4b356e417b0e47380174e325002533a98ea04fb6d6b82eefeaa6cd2ec1e601"
+        }
+      ]
+    }
   }
 }
