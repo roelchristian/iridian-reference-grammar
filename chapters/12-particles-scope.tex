@@ -157,18 +157,40 @@ Construction & Relevant preceding stage & Reference stage \\
 
 \input{util/phasal-polarity-diagram}
 
-The English schemata below illustrate physical-state predicates; their
-Iridian lexical forms and morphology are unspecified.
+The physical-state schemata below use the lexical-slot convention of
+§\,\ref{sec:lexical-slot-schemata}. Each predicate slot denotes a complete
+finite form of the indicated aspect and polarity, rather than an uninflected
+English stem; no declension class or stative stem formation is assigned to
+the missing lexeme.
 \pex
-\a \trsl{The western gate is already open.}
-\lingcontext{It was closed at the preceding stage.}
-\a \trsl{The oldest candle is still burning.}
-\lingcontext{It was burning at the preceding stage.}
-\a \trsl{The eastern road is no longer flooded.}
-\lingcontext{It was flooded at the preceding stage.}
-\a \trsl{The eastern road is not flooded yet.}
-\lingcontext{It was not flooded at the preceding stage; later flooding
-is not entailed.}
+\a
+\begingl
+\gla \textnormal{[[western-gate]]}\textsubscript{\Dir{}} vy \textnormal{[[be-open]]}\textsubscript{\Cont{}}.//
+\glb western.gate.\Dir{} already be.open.\Cont{}//
+\glft \trsl{The western gate is already open.}
+\lingcontext{It was closed at the preceding stage.}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[oldest-candle]]}\textsubscript{\Dir{}} so \textnormal{[[burn]]}\textsubscript{\Prog{}}.//
+\glb oldest.candle.\Dir{} still burn.\Prog{}//
+\glft \trsl{The oldest candle is still burning.}
+\lingcontext{It was burning at the preceding stage.}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[eastern-road]]}\textsubscript{\Dir{}} vy \textnormal{[[be-flooded]]}\textsubscript{\textsc{neg.cont}}.//
+\glb eastern.road.\Dir{} already be.flooded.\Neg{}.\Cont{}//
+\glft \trsl{The eastern road is no longer flooded.}
+\lingcontext{It was flooded at the preceding stage.}//
+\endgl
+\a
+\begingl
+\gla \textnormal{[[eastern-road]]}\textsubscript{\Dir{}} so \textnormal{[[be-flooded]]}\textsubscript{\textsc{neg.cont}}.//
+\glb eastern.road.\Dir{} still be.flooded.\Neg{}.\Cont{}//
+\glft \trsl{The eastern road is not flooded yet.}
+\lingcontext{Its non-flooded state continues; later flooding is not entailed.}//
+\endgl
 \a
 \begingl
 \gla Pivo vy zada.//
@@ -470,6 +492,17 @@ window is open and the others are closed.}
 \lingcontext{The alternatives rank reading abilities by difficulty. Several
 easy passages may be readable, although no higher level is attained.}
 \xe
+
+Japanese \textit{sika} and Korean \textit{pakkey} also yield exclusive
+readings, although the constructions discussed by Sells require overt
+negation; his comparison contrasts these with Japanese \textit{dake} and
+Korean \textit{man}, which do not require it
+\cite[§\,3.1, examples~14--15]{sells2022}. Iridian \ird{kamo} likewise
+occurs in affirmative clauses, so translating it as \trsl{only} supplies no
+reason to add \ird{za-} or to analyse it as a negative-concord item. In
+\ird{kamo} with a negative predicate, exclusivity and the independently
+licensed negative prejacent remain separate contributions
+(§\,\ref{sec:th-exclusive-phasal}).
 
 The analysis follows Coppock and Beaver's distinction between a presupposed
 lower bound and an asserted upper bound
