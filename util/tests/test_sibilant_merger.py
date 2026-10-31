@@ -69,6 +69,15 @@ class SibilantMergerChecks(unittest.TestCase):
             r'\ird{ratě} \ird{radě} \ird{raně} \ird{ralě} '
             r'\ird{pjaštou} \ird{pjášček} \ird{ťi} \ird{ti} \ird{pia}'), [])
 
+    def test_lexical_svinek_spelling_does_not_relax_productive_endings(self):
+        self.assertEqual(self.check_spelling(
+            r'\lexentry{sviňek}{}{girl; daughter} \gla Sviňek.// '
+            r'\ird{svíňku} \ird{svíňce} \ird{véně} \ird{hrátě}'), [])
+        for text in (r'\ird{sviňeka}', r'\ird{svíňek}',
+                     r'\gla Sviňek véňe.//', r'\gla Sviňek hráťe.//'):
+            with self.subTest(text=text):
+                self.assertTrue(self.check_spelling(text))
+
     def test_independent_fixtures_preserve_ce_che_and_high_front_contrast(self):
         fixtures = json.loads((checker.ROOT / 'scripts/palatalisation-fixtures.json')
                               .read_text(encoding='utf-8'))
