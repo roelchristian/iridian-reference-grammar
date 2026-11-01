@@ -66,7 +66,7 @@ class EpistemicParticleTests(unittest.TestCase):
                              'affirm' if gloss is None else gloss)
         # The speculative example is now an English schema pending lexemes.
         speculative = source.split(r'\subsection{Kady}', 1)[1].split(r'\subsection{Mlada}', 1)[0]
-        self.assertIn(r'\trsl{Might the oldest candle still be burning?}', speculative)
+        self.assertIn(r'\trsl{Might the large candle still be burning?}', speculative)
         self.assertIn('a tentative assessment', speculative)
         self.assertIn('English schema', speculative)
 

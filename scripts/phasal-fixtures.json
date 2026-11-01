@@ -220,19 +220,19 @@
     {
       "scope": "\\mathrm{EXCL}_{A}(\\mathrm{SO}(P))",
       "context": [
-        "The western and eastern gates were open yesterday",
-        "a third gate has just opened"
+        "The kitchen and bedroom windows were open while cooking",
+        "someone has just opened the bathroom window"
       ],
-      "translation": "Only the western gate is still open.",
-      "diagnostic": "Only the western gate satisfies the continuing profile"
+      "translation": "Only the kitchen window is still open.",
+      "diagnostic": "The bedroom window has since been shut"
     },
     {
       "scope": "\\mathrm{SO}(\\mathrm{EXCL}_{A}(P))",
       "context": [
-        "The western gate was the sole open gate yesterday"
+        "The kitchen window was the only open window during cooking"
       ],
-      "translation": "It is still only the western gate that is open.",
-      "diagnostic": "remains the sole open gate today"
+      "translation": "It is still only the kitchen window that is open.",
+      "diagnostic": "a later check finds exactly the same arrangement"
     }
   ],
   "diagram_bindings": [

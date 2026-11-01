@@ -55,11 +55,44 @@ LEXICAL_FORM_REVISIONS = (
 )
 
 
+# Everyday cooking examples replace benefactive eating in the presentational
+# pairs; the news example gains a conversational context. Normalise only each
+# complete reviewed illustration, preserving the original relative-rule hashes
+# and detecting any further change to its frame.
+PRESENTATIONAL_EXAMPLE_REVISIONS = (
+    (
+        r"\gla Kářnikový senica zada.//" "\n"
+        r"\glb read-\textsc{trs}-\Pf{}-\textsc{rel} news.\Dir{} \NegExst{}-\Cont{}//" "\n"
+        r"\glft \trsl{There is no news that (I) read.} \lingcontext{\ird{zad-} obligatory in the negative presentational}//",
+        r"\gla Kářnikový senica zada.//" "\n"
+        r"\glb read-\textsc{trs}-\Pf{}-\textsc{rel} news.\Dir{} \NegExst{}-\Cont{}//" "\n"
+        r"\glft \trsl{There is no news that I read.}" "\n"
+        r"\lingcontext{asked about the morning's news, the speaker reports having read none}//",
+    ),
+    (
+        r"\gla Pjaštébikový byl jeca.//" "\n"
+        r"\glb eat-\Appl{}-\Pf{}-\textsc{rel} child.\Dir{} \Exst{}-\Cont{}//" "\n"
+        r"\glft \trsl{There is a child for whose benefit someone ate.} \lingcontext{promoted participant introduced}//",
+        r"\gla Staženě marébikový byl jeca.//" "\n"
+        r"\glb dinner.\Ind{} cook-\Appl{}-\Pf{}-\textsc{rel} child.\Dir{} \Exst{}-\Cont{}//" "\n"
+        r"\glft \trsl{There is a child for whom someone cooked dinner.} \lingcontext{promoted participant introduced}//",
+    ),
+    (
+        r"\gla Pjaštébikový byl zada.//" "\n"
+        r"\glb eat-\Appl{}-\Pf{}-\textsc{rel} child.\Dir{} \NegExst{}-\Cont{}//" "\n"
+        r"\glft \trsl{There is no child for whose benefit someone ate.} \lingcontext{negative presentational; promoted participant denied}//",
+        r"\gla Staženě marébikový byl zada.//" "\n"
+        r"\glb dinner.\Ind{} cook-\Appl{}-\Pf{}-\textsc{rel} child.\Dir{} \NegExst{}-\Cont{}//" "\n"
+        r"\glft \trsl{There is no child for whom someone cooked dinner.} \lingcontext{negative presentational; promoted participant denied}//",
+    ),
+)
+
+
 def frozen_reference_text(path, text):
     if path == 'chapters/08-complex-sentences.tex':
         for original, revised in FINITE_REFERENCE_REVISIONS:
             text = text.replace(revised, original)
-    for original, revised in LEXICAL_FORM_REVISIONS:
+    for original, revised in LEXICAL_FORM_REVISIONS + PRESENTATIONAL_EXAMPLE_REVISIONS:
         text = text.replace(revised, original)
     return text
 

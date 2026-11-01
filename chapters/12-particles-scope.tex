@@ -157,39 +157,43 @@ Construction & Relevant preceding stage & Reference stage \\
 
 \input{util/phasal-polarity-diagram}
 
-The physical-state schemata below use the lexical-slot convention of
-§\,\ref{sec:lexical-slot-schemata}. Each predicate slot denotes a complete
-finite form of the indicated aspect and polarity, rather than an uninflected
-English stem; no declension class or stative stem formation is assigned to
-the missing lexeme.
-\pex
+The household-state schemata below use \ird{hvodna} \trsl{is open}
+and its regular negative \ird{zahvodna}, with the same direct-case pivot.
+The bracketed nominal follows the lexical-slot convention of
+§\,\ref{sec:lexical-slot-schemata}, since the full expression
+\trsl{kitchen window} has no established Iridian form.
+\pex\label{ex:phasal-household-states}
 \a
 \begingl
-\gla \textnormal{[[western-gate]]}\textsubscript{\Dir{}} vy \textnormal{[[be-open]]}\textsubscript{\Cont{}}.//
-\glb western.gate.\Dir{} already be.open.\Cont{}//
-\glft \trsl{The western gate is already open.}
-\lingcontext{It was closed at the preceding stage.}//
+\glpreamble \lingcontext{The kitchen window was shut before the speaker left
+the room; on returning, they find that someone has opened it.}//
+\gla \textnormal{[[kitchen-window]]}\textsubscript{\Dir{}} vy hvodna.//
+\glb kitchen.window.\Dir{} already be.open-\Cont{}//
+\glft \trsl{The kitchen window is already open.}//
 \endgl
 \a
 \begingl
-\gla \textnormal{[[oldest-candle]]}\textsubscript{\Dir{}} so \textnormal{[[burn]]}\textsubscript{\Prog{}}.//
-\glb oldest.candle.\Dir{} still burn.\Prog{}//
-\glft \trsl{The oldest candle is still burning.}
-\lingcontext{It was burning at the preceding stage.}//
+\glpreamble \lingcontext{The window was open during cooking; on checking
+the kitchen afterwards, the speaker finds that it has been left open.}//
+\gla \textnormal{[[kitchen-window]]}\textsubscript{\Dir{}} so hvodna.//
+\glb kitchen.window.\Dir{} still be.open-\Cont{}//
+\glft \trsl{The kitchen window is still open.}//
 \endgl
 \a
 \begingl
-\gla \textnormal{[[eastern-road]]}\textsubscript{\Dir{}} vy \textnormal{[[be-flooded]]}\textsubscript{\textsc{neg.cont}}.//
-\glb eastern.road.\Dir{} already be.flooded.\Neg{}.\Cont{}//
-\glft \trsl{The eastern road is no longer flooded.}
-\lingcontext{It was flooded at the preceding stage.}//
+\glpreamble \lingcontext{The window was open during cooking, but someone
+has since shut it.}//
+\gla \textnormal{[[kitchen-window]]}\textsubscript{\Dir{}} vy zahvodna.//
+\glb kitchen.window.\Dir{} already \Neg{}-be.open-\Cont{}//
+\glft \trsl{The kitchen window is no longer open.}//
 \endgl
 \a
 \begingl
-\gla \textnormal{[[eastern-road]]}\textsubscript{\Dir{}} so \textnormal{[[be-flooded]]}\textsubscript{\textsc{neg.cont}}.//
-\glb eastern.road.\Dir{} still be.flooded.\Neg{}.\Cont{}//
-\glft \trsl{The eastern road is not flooded yet.}
-\lingcontext{Its non-flooded state continues; later flooding is not entailed.}//
+\glpreamble \lingcontext{The kitchen is warm; someone checks whether the
+window has been opened and finds it still shut.}//
+\gla \textnormal{[[kitchen-window]]}\textsubscript{\Dir{}} so zahvodna.//
+\glb kitchen.window.\Dir{} still \Neg{}-be.open-\Cont{}//
+\glft \trsl{The kitchen window is not open yet.}//
 \endgl
 \a
 \begingl
@@ -206,8 +210,9 @@ the missing lexeme.
 \xe
 
 \subsection{States, events, thresholds and alternatives.}
-An open gate supplies an attained state, while a burning candle supplies
-a state whose earlier validity licenses persistence. A sufficiency use of
+The same open-window predicate in (\ref{ex:phasal-household-states}a--d)
+thus distinguishes attainment, persistence, cessation and continued absence
+without changing the property described. A sufficiency use of
 \ird{vy} similarly requires a contextual criterion. If the stipulated need is
 beer for two guests, \ird{Pivo vy jeca} \trsl{There is already enough beer}
 can mark that requirement as met; without a salient quantity threshold, the
@@ -250,10 +255,10 @@ itself.
 \xe
 
 Marginal category inclusion instead concerns the boundary at which a predicate
-remains applicable. In the English schema \trsl{The northern window still
+remains applicable. In the English schema \trsl{The kitchen window still
 counts as open}, a very small opening can make classification questionable
 without presupposing another open window. An independently ordered set of
-windows instead licenses scalar-additive \trsl{Even the northern window is
+windows instead licenses scalar-additive \trsl{Even the kitchen window is
 open}. Without either licensing context, the ordinary interpretation is
 temporal persistence.
 The distinction between boundary marginality and focus-sensitive scalar
@@ -358,15 +363,27 @@ corresponds to \trsl{either} or \trsl{neither.}
 \pex
 \a
 \begingl
+\glpreamble \lingcontext{Marek has fallen asleep on the journey; the
+speaker notices that Janek is asleep too.}//
 \gla Janek oh zdrávime.//
 \glb Janek.\Dir{} also sleep-\Prog{}//
 \glft \trsl{Janek is also sleeping.}//
 \endgl
 \a
 \begingl
+\glpreamble \lingcontext{Janek is missing from a family meal; someone
+asks whether Matuš has come.}//
 \gla Matuš oh zaščének.//
 \glb Matuš.\Dir{} also \Neg{}-arrive-\Pf{}//
 \glft \trsl{Matuš has not arrived either.}//
+\endgl
+\a
+\begingl
+\glpreamble \lingcontext{There is no bread left for the meal; a check of
+the drinks supplies another negative update.}//
+\gla Pivo oh zada.//
+\glb beer.\Dir{} also \NegExst{}-\Cont{}//
+\glft \trsl{There is no beer either.}//
 \endgl
 \xe
 
@@ -417,6 +434,16 @@ sees Janek in person and reports back.}//
 \endgl
 \xe
 
+\pex\label{ex:mo-reassurance}
+\begingl
+\glpreamble \lingcontext{A guest thinks that the beer has run out; the
+host knows that another bottle remains.}//
+\gla Pivo mó jeca.//
+\glb beer.\Dir{} affirm \Exst{}-\Cont{}//
+\glft \trsl{There is beer, really.}//
+\endgl
+\xe
+
 In imperatives and hortatives, \ird{mó} keeps this ratifying force, but now
 the speaker presents the urged course of action as one that should by now be
 carried out. The result is often urgency, coaxing, or emphatic insistence.
@@ -424,6 +451,8 @@ With \ird{vy}, the reading commonly approaches \trsl{come on, already}.
 
 \pex
 \begingl
+\glpreamble \lingcontext{The food is on the table; a guest hesitates
+because the host has not started eating.}//
 \gla Mó vy pjaštím!//
 \glb affirm already eat-\Imp{}//
 \glft \trsl{Go on, eat already!}//
@@ -454,6 +483,14 @@ Matuš.}//
 \gla Matuš či zaščének.//
 \glb Matuš.\Dir{} reportedly \Neg{}-arrive-\Pf{}//
 \glft \trsl{They say Matuš has not arrived.}//
+\endgl
+\a
+\begingl
+\glpreamble \lingcontext{A friend has just checked the drinks and told
+the speaker that the beer has run out; the speaker passes this on.}//
+\gla Pivo či zada.//
+\glb beer.\Dir{} reportedly \NegExst{}-\Cont{}//
+\glft \trsl{They say there is no beer left.}//
 \endgl
 \xe
 
@@ -496,13 +533,19 @@ it establishes an upper bound translated as \trsl{only}, \trsl{just} or
 \trsl{merely}. These uses share an alternative-sensitive semantics, although
 the question and its ordering differ.
 
-The following English schemata specify meanings and focus domains; they
-stand in place of lexical Iridian examples and carry no Iridian segmentation
-or morphological analysis.
-\pex
-\a \trsl{Only the northern window is open.}
-\lingcontext{The alternatives identify the relevant windows; the northern
-window is open and the others are closed.}
+Individual exclusivity can concern a familiar set of windows, whereas
+scalar exclusivity can concern levels of reading ability. The window
+example uses lexical slots; the ability example remains an English schema,
+without an Iridian modal construction or morphological analysis.
+\pex\label{ex:kamo-household-alternatives}
+\a
+\begingl
+\glpreamble \lingcontext{Someone asks which windows have been left open;
+the kitchen window is open and the bedroom and bathroom windows are shut.}//
+\gla \textnormal{[[kitchen-window]]}\textsubscript{\Dir{}} kamo hvodna.//
+\glb kitchen.window.\Dir{} only be.open-\Cont{}//
+\glft \trsl{Only the kitchen window is open.}//
+\endgl
 \a \trsl{The child can read only the simplest passages.}
 \lingcontext{The alternatives rank reading abilities by difficulty. Several
 easy passages may be readable, although no higher level is attained.}
@@ -572,15 +615,15 @@ scales without supplying Iridian lexical forms:
 \toprule
 English schema & Alternatives and interpretation \\
 \midrule
-The messenger brought only one letter. & Cardinal alternatives; no additional letters. \\
-The ship sailed only as far as the southern island. & Ordered endpoints along a path. \\
-The repairs consisted merely of replacing the roof. & Contextually ranked accomplishments; comparatively modest extent. \\
+I bought only one apple. & Cardinal alternatives; no additional apples. \\
+We walked only as far as the bridge. & Ordered endpoints along a familiar route. \\
+I only swept the kitchen. & Contextually ranked household tasks; a modest part of the cleaning. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 Focus also determines which material varies. In the English schema
-\trsl{The gardener only watered the roses}, the alternatives may vary the
+\trsl{I only watered the tomatoes}, the alternatives may vary the
 plants watered or the action performed, with the remaining material held
 constant. The pronounced particle position does not select between those
 associates. An existing lexical example illustrates individual focus within
@@ -609,16 +652,16 @@ larger sequence of actions or decisions, whose later stages remain open.
 \pex
 \a
 \begingl
-\glpreamble \lingcontext{The speaker explains the immediate plan before deciding
-what to do next.}//
+\glpreamble \lingcontext{The speaker is tired after arriving home and plans a nap
+before deciding how to spend the rest of the afternoon.}//
 \gla Dá dlí zdrava.//
 \glb I.\Dir{} for.now sleep-\Cont{}//
 \glft \trsl{I'll sleep for now.}//
 \endgl
 \a
 \begingl
-\glpreamble \lingcontext{The speaker urges the addressee to do the eating step
-before anything else.}//
+\glpreamble \lingcontext{A child wants to go outside before lunch; the parent
+asks them to eat before going out.}//
 \gla Dlí pjaštím!//
 \glb first eat-\Imp{}//
 \glft \trsl{Eat first.}//
@@ -732,12 +775,18 @@ independently specified.
 
 Renewed occurrence also applies to a state or an ongoing process, where
 \ird{vy} marks the attained validity of the predication without requiring
-completion of the process. A gate can thus be open again after an intervening
+completion of the process. A window can thus be open again after an intervening
 closure, while progressive sleeping can resume after an interval of wakefulness.
 
 \pex
-\a \trsl{The western gate is open again.}
-\lingcontext{English schema: the gate was open, closed, and has now reopened.}
+\a
+\begingl
+\glpreamble \lingcontext{The kitchen window was open earlier; someone
+shut it because of the cold, but it has now been reopened.}//
+\gla \textnormal{[[kitchen-window]]}\textsubscript{\Dir{}} jas vy hvodna.//
+\glb kitchen.window.\Dir{} contrast already be.open-\Cont{}//
+\glft \trsl{The kitchen window is open again.}//
+\endgl
 \a
 \begingl
 \glpreamble \lingcontext{Janek was sleeping, woke for a while, and is now
@@ -756,7 +805,7 @@ the speaker corrects an assumption that he has woken.}//
 \endgl
 \xe
 
-The state schema requires an earlier open gate, whereas the departure example
+The state schema requires an earlier open window, whereas the departure example
 requires an earlier departure. A general renewed-occurrence reading therefore
 does not identify a single sublexical attachment site. In the technical
 repetitive--restitutive distinction, recurrence of a result state can be
@@ -992,9 +1041,38 @@ obstruent cluster to trigger voicing; \ird{y} represents the central vowel
 Chapter~\ref{ch:phon}).
 
 \pex
-\trsl{Might the oldest candle still be burning?}
+\trsl{Might the large candle still be burning?}
 \lingcontext{English schema: a tentative assessment of the candle's
 continued burning, rather than a report or an inference from stated evidence.}
+\xe
+
+The same ordinary update can be presented as a consequence, an inference
+or a conjecture while the existential predication remains constant:
+\pex\label{ex:stance-household-contrast}
+\a
+\begingl
+\glpreamble \lingcontext{The host has just explained that the last bottle
+was used at lunch; the speaker states the consequence for tonight's meal.}//
+\gla Pivo nadě zada.//
+\glb beer.\Dir{} therefore \NegExst{}-\Cont{}//
+\glft \trsl{So there is no beer left.}//
+\endgl
+\a
+\begingl
+\glpreamble \lingcontext{The speaker sees a pile of empty bottles after
+a gathering and infers that none remains, without checking the cupboard.}//
+\gla Pivo hladě zada.//
+\glb beer.\Dir{} infer \NegExst{}-\Cont{}//
+\glft \trsl{There is probably no beer left.}//
+\endgl
+\a
+\begingl
+\glpreamble \lingcontext{No one has checked the drinks; the speaker
+raises a possibility while deciding what to buy.}//
+\gla Pivo kady zada.//
+\glb beer.\Dir{} speculative \NegExst{}-\Cont{}//
+\glft \trsl{Maybe there is no beer left.}//
+\endgl
 \xe
 
 \subsection{Mlada} \ird{Mlada} is a hypothetical or desiderative particle
@@ -1181,9 +1259,10 @@ likewise continues through the reference stage.}//
 
 \ird{Mó vy} confirms the attained proposition, as in \ird{Janek mó vy
 ščének} \trsl{Janek really has arrived}, while \ird{dlí so} places a
-continuing situation within an interim plan. Thus \ird{Dá dlí so zdrava}
-\trsl{For now I am still sleeping} requires a continuing sleep episode as
-well as an interim course of action. Neither combination assigns the phasal
+continuing situation within an interim plan. Thus \ird{Janek dlí so zdrávime}
+\trsl{For now Janek is still sleeping} can describe the interim arrangement
+while the others prepare breakfast: the same sleep episode continues, and
+waking him remains a later step. Neither combination assigns the phasal
 particle a new lexical meaning. Higher \ird{jas} similarly reorients the
 phasal proposition, although its renewed-occurrence construction with
 \ird{vy} adds a conventional earlier-occurrence condition:
@@ -1195,7 +1274,7 @@ more transparent \ird{jas so}, and with lexical restitutive
 §\,\ref{sec:class2-particles}.
 
 Higher stance particles qualify the phasal content in their respective
-ways. The English schema \trsl{Might the oldest candle still be burning?}
+ways. The English schema \trsl{Might the large candle still be burning?}
 conjectures continued burning, while \ird{Janek nadě vy ščének}
 \trsl{So Janek has already arrived} presents attained arrival as the
 consequence under discussion. The continuative question invokes prior burning as background without
@@ -1246,26 +1325,26 @@ addressee fears that it is too late.}//
 interpretations. In $\mathrm{EXCL}_{A}(\mathrm{PHAS}(P))$, exclusivity
 compares complete phasal profiles; in
 $\mathrm{PHAS}(\mathrm{EXCL}_{A}(P))$, the exclusive proposition itself
-is attained or maintained. The western-gate schemata in
-§\,\ref{sec:th-exclusive-phasal} distinguish \trsl{Only the western gate
-is still open}, which permits a newly opened gate, from \trsl{It is still
-only the western gate that is open}, which requires exclusivity at both
+is attained or maintained. The kitchen-window schemata in
+§\,\ref{sec:th-exclusive-phasal} distinguish \trsl{Only the kitchen window
+is still open}, which permits a newly opened window, from \trsl{It is still
+only the kitchen window that is open}, which requires exclusivity at both
 comparison stages. With fixed alternatives and the same two stages,
 continuing exclusivity entails exclusivity of persistence, so only the first
-reading can be isolated by a context in which another gate has just opened.
+reading can be isolated by a context in which another window has just opened.
 
 Attainment permits separation in either direction. In the following English
-schemata, the alternatives are the same three gates and the predicate is
+schemata, the alternatives are the same three windows and the predicate is
 being open:
 \pex
-\a \trsl{Only the western gate is already open.}
-\lingcontext{The eastern gate was open and remains open; the western gate
-has just opened and the northern gate is closed. Only the western gate
+\a \trsl{Only the kitchen window is already open.}
+\lingcontext{The bedroom window was open and remains open; the kitchen window
+has just opened and the bathroom window is closed. Only the kitchen window
 satisfies the complete transition-to-open profile.}
-\a \trsl{It is already only the western gate that is open.}
-\lingcontext{The western and eastern gates were open; the eastern gate
-has closed and the northern gate remains closed. Exclusivity is newly
-attained, although the western gate was open before.}
+\a \trsl{It is already only the kitchen window that is open.}
+\lingcontext{The kitchen and bedroom windows were open; the bedroom window
+has closed and the bathroom window remains closed. Exclusivity is newly
+attained, although the kitchen window was open before.}
 \xe
 The first context isolates exclusivity over attainment, while the second
 isolates attainment of exclusivity. An alternative lacking the preceding
@@ -1277,13 +1356,13 @@ definitions and polarity diagnostics are given in
 §§\,\ref{sec:th-exclusive-phasal}--\ref{sec:th-polarity-diagnostics}.
 
 Scalar \ird{kamo} under temporal \ird{so} additionally permits a
-restricted low-progress interpretation. The English schemata
-\trsl{The scribe has copied only three folios so far} and
-\trsl{The climbers have reached only the lower ridge so far} compare an
+restricted low-progress interpretation. The illustrations
+\trsl{I have washed only three plates so far} and
+\trsl{We have only reached the bridge so far} compare an
 attained stage with an earlier stage and a salient higher goal. Unlike
 persistence of an entire exclusive proposition, this construction preserves
 the upper bound at the earlier stage while anchoring MIN at the reference
-stage. The scribe may therefore have copied one folio earlier and three now,
+stage. The speaker may therefore have washed one plate earlier and three now,
 without having reached three earlier. The ordered progression must contain
 a genuine advance and a higher relevant attainable stage; further advance
 remains a defeasible expectation. Temporal focus particles can share a
@@ -1302,29 +1381,29 @@ scope relation:
 \toprule
 English schema & Interpretation or diagnostic \\
 \midrule
-Only the oldest candle is still burning. & Exclusivity of persistence; a newly lit candle is permitted. \\
-It is still only the oldest candle that is burning. & Persistence of exclusivity over the same candles. \\
+Only the large candle is still burning. & Exclusivity of persistence; a newly lit candle is permitted. \\
+It is still only the large candle that is burning. & Persistence of exclusivity over the same candles. \\
 Only the eastern road is not flooded yet. & Exclusivity over persistence of a negative state. \\
 The floodwater has risen only to the second step so far. & A low degree can be reassuring; disappointment is not entailed. \\
-The carpenter has repaired only the doorframe so far. & Incremental completion within a larger project. \\
-The child has learned only the first stanza so far. & Sequential attainment of text portions. \\
-Only one bell has stopped ringing already. & A diagnostic for exclusivity with attainment of a change of state. \\
+I have cleaned only the kitchen so far. & Incremental completion within the cleaning of a home. \\
+I have read only the first page so far. & Sequential attainment of text portions. \\
+Only one child has already stopped crying. & A diagnostic for exclusivity with attainment of a change of state. \\
 \bottomrule
 \end{tabularx}
 \end{table}
-The bell schema does not independently license a new scope reading, just as
+The crying schema does not independently license a new scope reading, just as
 the progression schemata do not determine their eventual aspect morphology.
 
 Temporal \ird{so} in this construction differs from scalar-additive
 \ird{so} \trsl{even}. In the English diagnostic
-\trsl{Even the master mason repaired merely the doorway}, addition would
-compare actors, whereas the upper bound would compare repair accomplishments:
+\trsl{Even Dad cleaned only the kitchen}, addition would
+compare people, whereas the upper bound would compare cleaning accomplishments:
 $C_{\mathrm{so}}$ and $C_{\mathrm{kamo}}$ need not coincide. If both
 operators instead compare the same alternatives, an additive requirement
 for another true alternative can conflict with the exclusive upper bound.
 Neither semantic compatibility nor the shared pronunciation \ird{kamo so}
 independently licenses this scalar-additive combination. Likewise,
-\trsl{Only the harbourmaster received another warning} tests an additive
+\trsl{Only Janek had another cup of tea} tests an additive
 event interpretation of \ird{so}, for which the temporal scope rules alone
 supply no constructional licence.
 
@@ -1645,8 +1724,8 @@ retains its presupposed preceding-stage background, while each excluded
 alternative is tested for satisfaction of the complete two-stage profile.
 An alternative that lacks the relevant preceding state therefore fails that
 profile without making the high exclusive construction undefined. Thus a
-newly opened gate does not satisfy the profile of continued openness,
-while a gate that was already open does not satisfy the attainment profile. The scope notation
+newly opened window does not satisfy the profile of continued openness,
+while a window that was already open does not satisfy the attainment profile. The scope notation
 $\mathrm{EXCL}_{A}(\mathrm{PHAS}(P))$ abbreviates this construction-specific
 comparison; it does not negate a partial phasal denotation whose
 presupposition has failed. These profile predicates formalise the ordinary
@@ -1673,32 +1752,41 @@ neither derives Iridian exclusivity nor establishes backward association to a
 topic. Here topic association is explicitly variable binding, and the lower
 alternative-proposition rule is stipulated for the Iridian construction.
 
-The following English schemata specify interpretations and discourse
-conditions; they supply neither Iridian surface forms nor morphological
-analyses.
-
-\pex
-\a \trsl{Only the western gate is still open.}
-\lingcontext{$\mathrm{EXCL}_{A}(\mathrm{SO}(P))$. The western and eastern
- gates were open yesterday; the eastern gate has closed, while a third gate
- has just opened. Only the western gate satisfies the continuing profile.}
-\a \trsl{It is still only the western gate that is open.}
-\lingcontext{$\mathrm{SO}(\mathrm{EXCL}_{A}(P))$. The western gate was the
- sole open gate yesterday and remains the sole open gate today.}
+The two readings of the same particle sequence differ in their discourse
+conditions. The window expression remains a lexical slot, while its stative
+predicate retains the ordinary continuous form:
+\pex\label{ex:kamo-so-window-scope}
+\a
+\begingl
+\glpreamble \lingcontext{$\mathrm{EXCL}_{A}(\mathrm{SO}(P))$. The kitchen and bedroom
+windows were open while cooking. The bedroom window has since been shut,
+but someone has just opened the bathroom window.}//
+\gla \textnormal{[[kitchen-window]]}\textsubscript{\Dir{}} kamo so hvodna.//
+\glb kitchen.window.\Dir{} only still be.open-\Cont{}//
+\glft \trsl{Only the kitchen window is still open.}//
+\endgl
+\a
+\begingl
+\glpreamble \lingcontext{$\mathrm{SO}(\mathrm{EXCL}_{A}(P))$. The kitchen window was the
+only open window during cooking; a later check finds exactly the same arrangement.}//
+\gla \textnormal{[[kitchen-window]]}\textsubscript{\Dir{}} kamo so hvodna.//
+\glb kitchen.window.\Dir{} only still be.open-\Cont{}//
+\glft \trsl{It is still only the kitchen window that is open.}//
+\endgl
 \xe
 
 The lower reading requires prior exclusivity, whereas the high reading
-requires the western gate to be the sole continuing member of the earlier
-set of open gates; a newly opened alternative need not have been open before.
-With the same gate alternatives at both stages,
+requires the kitchen window to be the sole continuing member of the earlier
+set of open windows; a newly opened alternative need not have been open before.
+With the same window alternatives at both stages,
 $\mathrm{SO}(\mathrm{EXCL}_{A}(P))$ entails
 $\mathrm{EXCL}_{A}(\mathrm{SO}(P))$, although the converse fails. The
 first context therefore excludes the lower reading, while the second supports
 it without independently ruling out the high reading. The contrast concerns
 the stronger requirement of continuing exclusivity, rather than two
 mutually exclusive contextual distributions. The corresponding candle
-schemata, \trsl{Only the oldest candle is still burning} and
-\trsl{It is still only the oldest candle that is burning}, admit the same
+schemata, \trsl{Only the large candle is still burning} and
+\trsl{It is still only the large candle that is burning}, admit the same
 comparison: a newly lit candle is compatible with exclusivity of continued
 burning, whereas another current flame contradicts continuing exclusivity.
 
@@ -1751,19 +1839,28 @@ MAX instead requires that every true relevant attainment alternative be
 ranked no higher than $k$. These conditions leave ordinary \ird{so} and
 ordinary persistence of exclusivity unchanged.
 
-\pex
-\a \trsl{The scribe has copied only three folios so far.}
-\lingcontext{One folio was complete at the earlier stage; three are complete
- now, against an expected twenty. The continuing upper bound is fewer than
- four completed folios; attainment of three is required only now.}
-\a \trsl{The climbers have reached only the lower ridge so far.}
-\lingcontext{The party has advanced from the trailhead to the lower ridge;
- the upper ridge and summit remain higher attainable milestones.}
+The washing example uses the Class~A transitive perfective
+\ird{spórnik}, with the speaker as the understood transitive actor and a
+lexical slot for the quantified direct-case patient. The route example
+remains an English schema for an ordered progression.
+\pex\label{ex:kamo-so-washing-progress}
+\a
+\begingl
+\glpreamble \lingcontext{Someone asks how the washing-up is going. One
+plate had been washed a few minutes ago; three have been washed now, out
+of a stack of twenty.}//
+\gla \textnormal{[[three-plates]]}\textsubscript{\Dir{}} kamo so spórnik.//
+\glb three.plates.\Dir{} only still wash-\Trs{}-\Pf{}//
+\glft \trsl{I have washed only three plates so far.}//
+\endgl
+\a \trsl{We have only reached the bridge so far.}
+\lingcontext{The walkers have left home and reached the bridge;
+ the shop and their friend's house lie farther along the same route.}
 \xe
 
-The scribe's earlier stage satisfies MAX but not the current MIN of three;
+The speaker's earlier stage satisfies MAX but not the current MIN of three;
 requiring the entire MIN/MAX package to hold earlier would therefore reject
-this progression. If three folios had already been complete and no further
+this progression. If three plates had already been washed and no further
 progress had occurred, ordinary persistence of exclusivity could hold,
 although the non-vacuous low-progress profile would fail. Cardinal quantities
 and ordered geographical milestones consequently instantiate the same
@@ -1777,13 +1874,13 @@ Temporal \ird{so} in these profiles differs from scalar-additive \ird{so}
 \trsl{even}, whose alternatives require addition and a contextual ordering
 (§\,\ref{sec:class1-particles}). An exclusive upper bound and an additive
 witness cannot be imposed indiscriminately on the same alternatives. In
-\trsl{Even the master mason repaired merely the doorway}, the intended
-scales concern the actor and the extent of the repairs respectively:
+\trsl{Even Dad cleaned only the kitchen}, the intended
+scales concern the person and the extent of the cleaning respectively:
 $C_{\mathrm{so}}$ and $C_{\mathrm{kamo}}$ must be specified separately.
 This is a diagnostic schema, not an additional licensed Iridian particle
-combination. Likewise, \trsl{Only the harbourmaster received another warning}
-tests exclusivity over event addition, while \trsl{Only one bell has stopped
-ringing already} tests a change-of-state prejacent under \ird{vy}; neither
+combination. Likewise, \trsl{Only Janek had another cup of tea}
+tests exclusivity over event addition, while \trsl{Only one child has already
+stopped crying} tests a change-of-state prejacent under \ird{vy}; neither
 English schema settles an unspecified Iridian co-occurrence or association
 rule.
 

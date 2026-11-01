@@ -123,14 +123,14 @@
     "label": "ex:val-directive-appl",
     "examples": [
       {
-        "surface": "Trava bylam pjaštébím.",
-        "gloss": "bread.\\Dir{} child.\\Ind{} eat-\\Appl{}-\\Imp{}",
-        "translation": "\\trsl{Eat the bread for the child's benefit.} \\lingcontext{applicative; beneficiary in \\Ind{}}"
+        "surface": "Stažena bylam marébím.",
+        "gloss": "dinner.\\Dir{} child.\\Ind{} cook-\\Appl{}-\\Imp{}",
+        "translation": "\\trsl{Cook dinner for the child.} \\lingcontext{applicative; beneficiary in \\Ind{}}"
       },
       {
-        "surface": "Jí trava bylam pjaštébím.",
-        "gloss": "2\\textsc{sg}.\\Trs{} bread.\\Dir{} child.\\Ind{} eat-\\Appl{}-\\Imp{}",
-        "translation": "\\trsl{You eat the bread for the child's benefit.} \\lingcontext{overt subject in \\Trs{}}"
+        "surface": "Jí stažena bylam marébím.",
+        "gloss": "2\\textsc{sg}.\\Trs{} dinner.\\Dir{} child.\\Ind{} cook-\\Appl{}-\\Imp{}",
+        "translation": "\\trsl{You cook dinner for the child.} \\lingcontext{overt subject in \\Trs{}}"
       }
     ]
   },
