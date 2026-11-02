@@ -101,9 +101,327 @@ Iridian forms are italicised, translations appear in single quotation marks,
 and phonetic transcriptions are enclosed in square brackets; angle brackets
 identify orthographic representations. An asterisk marks an ungrammatical form
 or, in an explicitly historical discussion, a reconstructed form.
-Functional heads and projections retain their symbolic names: \synhead{DP}
-for the nominal domain, \synhead{AspP} for aspect, \synhead{VoiceP} for
-participant structure, and \synhead{PolP} for clause typing. Their structural
-relations are set out in §\,\ref{sec:grammatical-architecture}, while nominal
+Functional heads and projections retain their symbolic names; the inventory
+below supplies their expansions and construction-specific uses. Nominal
 inflection is treated in Chapter~\ref{ch:nominal-morphology} and anchoring
 in Chapter~\ref{ch:nominal-syntax}.
+
+\section{Syntactic symbols and labels}\label{sec:syntax-symbols}
+
+This inventory covers the notation in the maintained chapters, including
+prose, trees, structural schemata and their interpretation. It records the
+analysis actually used here, rather than a universal inventory of possible
+projections. The working hierarchies in §\,\ref{sec:grammatical-architecture}
+and §\,\ref{sec:nm-funcseq} contain optional and construction-selected layers;
+a label's inclusion does not require that layer in every expression.
+Small-capital morpheme glosses in the preceding list are a separate system:
+for example, \mk{state}, \mk{cop} and \mk{q} label morphological meanings,
+not the projections StateP, EquP and PolP respectively. Capitalisation matters:
+lexical N/V, categorising $n$/$v$, a quantifier Q and interrogative features
+must not be identified merely because their names resemble one another.
+
+\subsection{Reading heads, projections and dependencies}
+\label{sec:syntax-symbol-conventions}
+
+\begingroup\small
+\begin{longtable}{@{}p{0.25\textwidth}p{0.69\textwidth}@{}}
+\toprule
+Symbol & Expansion and use \\
+\midrule\endfirsthead
+\toprule Symbol & Expansion and use \\
+\midrule\endhead
+\bottomrule\endfoot
+$X$, $X^0$, $X'$, XP & Category variable, head (zero-level), intermediate
+projection and maximal projection. A bare head name such as Neg or Pol also
+stands for Neg$^0$ or Pol$^0$; Top$'$, Foc$'$, Ord$'$, Asp$'$ and similar
+nodes show constituent structure, not new categories
+(Figure~\ref{fig:th-left-periphery}). \\
+Spec,XP; SpecFocP & Specifier of the named projection; SpecFocP is the
+compressed notation for Spec,FocP in the wh analysis, not another projection
+(§\,\ref{sec:th-wh-interrogation}). Multiple ordered specifiers are licensed
+in OrdP under the stated placement rule (§\,\ref{sec:pivot-placement}). \\
+A, A$'$ & Argumental and non-argumental dependency types. Linked topics have
+an A$'$ dependency; ordinary placement is not uniformly A-movement
+(§§\,\ref{sec:grammatical-architecture}, \ref{sec:pivot-placement}). \\
+$i,j$; $t_i,t_j$ & Indices identify linked occurrences; $t$ marks a lower
+copy/trace. Subscripts on a moved phrase and its lower occurrence identify
+one chain, not two referents. The equative derivation uses $D_i$ for the
+participant and $[\mathrm{EquP}]_j$ for the displaced predication
+(§\,\ref{sec:negative-equatives}). Reflexive coindexation relates the
+anaphor to its local actor (§\,\ref{sec:nm-pron-refl}). \\
+$\mathrm{Op}_{\neg}$ & Silent negative operator. It carries interpretable
+negation in Spec,NegP in indicatives, or is adjoined to AspP under negative
+Mood; it is not a second pronounced negative or an extra functional head
+(§§\,\ref{sec:vm-neg}, \ref{sec:vm-moodp}). \\
+Operator / gap & The silent relative operator abstracts over the participant
+selected by the reduced predicate's Voice and aspect; its gap is not a
+freely deletable finite argument (§\,\ref{sec:th-rel-gap}). \\
+$\varnothing$ & No overt exponent (and, where explicitly indicated, an absent
+optional dependent). A null exponent does not itself entail absent syntax or
+semantic negation (§§\,\ref{sec:nm-bare-noun}, \ref{sec:vm-neg}). \\
+PF; LF; DM; VI & Phonological Form, the pronunciation interface; Logical Form,
+the interpretation interface; Distributed Morphology, the realisation
+framework; Vocabulary Insertion
+(or a Vocabulary Item where the context names an exponent). Syntactic heads
+and pronounced affixes need not correspond one to one
+(§§\,\ref{sec:th-background}, \ref{sec:nm-funcseq}). \\
+\end{longtable}\endgroup
+
+\subsection{Nominal categories and reduced predicates}
+\label{sec:syntax-symbol-nominal}
+
+\begingroup\small
+\begin{longtable}{@{}p{0.25\textwidth}p{0.69\textwidth}@{}}
+\toprule Symbol & Expansion and use \\
+\midrule\endfirsthead
+\toprule Symbol & Expansion and use \\
+\midrule\endhead
+\bottomrule\endfoot
+N; NP; $\surd$P & Noun head and noun phrase; $\surd$P is the root-domain
+notation in Table~\ref{tab:nm-projections}. NP names the lexical constituent,
+not automatically a complete unanchored argument (§\,\ref{sec:nm-root}). \\
+D; DP & Determiner layer; determiner phrase. DP is the cover label for the
+complete extended nominal, including existential pivots and predicative
+nominals. AnchP names this grammar's particular D-layer; DP does not require
+an overt article or an individual-denoting meaning (§\,\ref{sec:nm-root}). \\
+Anch; AnchP & Anchoring head and anchoring phrase. The alternative bundles
+realise shared retrieval, speaker selection or unmarked anchoring; speaker
+\ird{si} receives its left-edge position at PF (§\,\ref{sec:nm-def}). \\
+K; KP & Case head and case phrase. K licenses nominal case; it is distinct
+from Num before their PF fusion (§§\,\ref{sec:nm-case}, \ref{sec:nm-funcseq}). \\
+Num; NumP & Number head and number phrase. Singular/plural features combine
+with K in the cumulative case-number exponent (§\,\ref{sec:nm-num}). \\
+PossP & Possessor phrase/layer. Hosts the prenominal indirect possessor below
+case and anchoring; the possessor retains its own nominal domain
+(§\,\ref{sec:nm-poss}). \\
+DemP & Demonstrative phrase. The noun-internal demonstrative domain above
+the lower nominal spine (§\,\ref{sec:nm-dem}). \\
+QP & Quantifier phrase, used conservatively for the prenominal
+quantificational field. It does not establish separate numeral and quantifier
+heads or every possible quantifier--anchor combination
+(§\,\ref{sec:nm-funcseq}). \\
+PropP; PropertyP & Property phrase labels with different local descriptions:
+PropP is the property-root adjunct to NP in Table~\ref{tab:nm-projections};
+PropertyP is the property-denoting input to ATTR in §\,\ref{sec:stative-attr}.
+Their exact structural identity is not specified; these spellings do not
+establish two successive heads. \\
+ATTR; AttrP & Attributive head/derivation and attributive phrase. Ordinary
+ATTR selects a property base or reduced StateP, without finite aspect; its
+class-selected endings differ from relative \ird{-ový}
+(§\,\ref{sec:stative-attr}). \\
+$n$; nP & Nominal categoriser and its projection. $n_{\mathrm{lex}}$ forms
+lexical derivatives, $n_{\mathrm{evt}}$ event nominals, and
+$n_{\mathrm{part}}$ participant nominals. The last selects actual AspP and
+abstracts over its privileged participant, without finite case valuation
+(§\,\ref{sec:nominalised}). \\
+Rel; RelP & Relative head and relative phrase. Reduced \ird{-ový} selects
+AspP and supplies a participant property restricting the overt nominal head;
+it excludes the higher finite operator layers (§\,\ref{sec:th-rel-structure}). \\
+Post$^0$; PostP; PP & Postposition head and postpositional phrase; PP is the
+shorter adpositional-phrase label used for locative/possessive adjuncts.
+Post selects at least an indirect KP, optionally expanded by higher nominal
+layers (§\,\ref{sec:nm-postp-structure}); existential PPs are adjuncts to
+ExistP (§\,\ref{sec:existence-possession}). \\
+\end{longtable}\endgroup
+
+\subsection{Predicate, inflectional and peripheral categories}
+\label{sec:syntax-symbol-clausal}
+
+\begingroup\small
+\begin{longtable}{@{}p{0.25\textwidth}p{0.69\textwidth}@{}}
+\toprule Symbol & Expansion and use \\
+\midrule\endfirsthead
+\toprule Symbol & Expansion and use \\
+\midrule\endhead
+\bottomrule\endfoot
+V; VP; $v$; vP & Verb head and verb phrase; verbal categoriser and its
+projection. Categorisation, actor introduction and orientation are distinct;
+VP contains the lexical predicate and its complements (§\,\ref{sec:vm-root}). \\
+State; StateP & State-forming head and state phrase. Introduces a state with
+a lexically licensed holder/experiencer; a lexical state need not entail a
+preceding event (§\,\ref{sec:vm-tension-stative}). \\
+Become; BecomeP & Change-of-state head and phrase. Licensed overt inchoative
+\ird{-él-}/\ird{-el-} selects a state and introduces transition
+(§\,\ref{sec:stative-inchoative}). \\
+Manifest; ManifestP & Manifestative head and phrase. Restricted derivation of
+outward display; it does not assert the underlying feeling or supply an
+evidential source (§\,\ref{sec:stative-manifest}). \\
+ResP & Result-state phrase. Used only where an independently licensed
+predicate entails a preceding event and its state; it is not a universal
+retrospective or lexical-state layer (§\,\ref{sec:vm-tension-stative}). \\
+Voice; VoiceP & Voice head and phrase. Inner Voice hosts antipassive
+($\mathrm{VoiceP}_{\mathrm{AP}}$); the separately distinguished
+actor-introducing layer has a zero exponent. Outer
+$\mathrm{VoiceP}_{\mathrm{orient}}$ determines orientation over the derived
+predicate. AP means antipassive here, not adjective phrase
+(§§\,\ref{sec:vm-root}, \ref{sec:vm-overview}). \\
+Appl; ApplP & Applicative head and phrase. Adds/promotes the licensed applied
+participant below Caus; $\mathrm{Appl}_{\mathrm{STIM}}$ names the
+lexically restricted psychological stimulus extension, distinct from ordinary
+benefactive application (§§\,\ref{sec:vm-appl}, \ref{sec:stative-valency}). \\
+Caus; CausP & Causative head and phrase. Builds the higher causal predicate;
+outer orientation and aspect evaluate the derived frame
+(§\,\ref{sec:vm-caus}). \\
+Asp; Asp.Align; AspP; Asp.AlignP & Aspect--alignment head and its projection.
+AspP is the usual projection name; Asp.AlignP occurs in the stative
+containment schema. The head combines viewpoint and alignment features;
+finite case valuation is absent in participant nominals
+(§§\,\ref{sec:vm-overview}, \ref{sec:vm-asp-case}). The isolated
+Asp$^0\circ$Align$^0$ notation in §\,\ref{sec:purp-motion-structure}
+is in tension with the explicitly single-head analysis; it does not establish
+an additional AlignP in the adopted spine ($\circ$ marks composition there). \\
+Neg; NegP & Negative head and phrase. Indicative Neg selects AspP or EquP;
+its exponents are verbal \ird{za-}/\ird{z-}, equative \ird{staly}, or zero
+conditioning existential root suppletion. Semantic negation belongs to
+$\mathrm{Op}_{\neg}$ (§\,\ref{sec:vm-neg}). \\
+Phas; PhasP & Phasal head/domain and phasal phrase. \ird{vy}/\ird{so}
+evaluate polarised predication across stages, above indicative Neg
+(§\,\ref{sec:class1-particles}). \\
+Mood; MoodP & Mood head and phrase. Mood/finiteness, with null indicative
+exponence and overt non-indicative suffixes. Negative Mood licenses a low
+negative operator without separate NegP (§\,\ref{sec:vm-moodp}). \\
+I; IP & Inflectional domain/phrase. Abbreviates the finite domain including
+Mood and inner Evid when present; it asserts neither person agreement nor
+a tense category (§\,\ref{sec:grammatical-architecture}). \\
+T; T$'$; TP & Conventional tense-head/intermediate/phrase notation retained
+for the embedded finite domain and conditional matrix schemata. Here TP
+functions as the finite-clause label alongside IP, not evidence for an
+independently established Iridian tense head
+(§§\,\ref{sec:vm-tension-linker}, \ref{sec:cond-insub}). \\
+Evid; EvidP & Evidential head/domain and phrase.
+$\mathrm{EvidP}_{\mathrm{inner}}$ hosts verbal indirect \ird{-al}/\ird{-l};
+$\mathrm{EvidP}_{\mathrm{outer}}$ covers evidential/epistemic particles above
+PolP. Inner/outer are structural qualifiers, not interchangeable exponents
+(§§\,\ref{sec:vm-evid}, \ref{sec:th-particle-framework}). \\
+Pol; PolP & Interrogative clause-typing head and phrase. Locally head-initial
+\ird{by} or its null counterpart; Pol does not name the indicative negation
+head (§\,\ref{sec:by-pol-head}). \\
+SpeechActP; SA$^0$ & Speech-act phrase and the abbreviated head label in the
+insubordinate tree. Illocutionary/discourse framing, outside outer Evid
+(§§\,\ref{sec:th-particle-framework}, \ref{sec:cond-insub}). \\
+Ord; OrdP & Ordinary-placement head and phrase. Silent Ord orders eligible
+arguments/modifiers above the particle field; it neither assigns topic status
+nor values case (§\,\ref{sec:pivot-placement}). \\
+Foc; FocP & Focus head and phrase. Marked focus or one marked wh-fronting
+dependency, above OrdP (§\,\ref{sec:th-wh-interrogation}). \\
+Top; TopP & Topic head and phrase. Optional linked aboutness topic, with case
+retained; direct-case pivot selection alone does not place a DP here
+(§\,\ref{sec:tc-marked-topics}). \\
+Eq$^0$; Cop$^0$; EquP & Equative head (Eq in trees, Cop in the prose
+analysis) and equative phrase. Licenses zero-copula nominal predication
+without verbal AspP; overt finite \ird{neh-} instead projects VP
+(§§\,\ref{sec:copula}, \ref{sec:neh}). \\
+Exist$^0$; ExistP & Existential head and phrase. Introduces the direct-case
+existential pivot; \ird{jec-}/\ird{zad-} alternate with the absence/presence
+of NegP. ExistP is selected by Asp, and possessors/locations are PP adjuncts
+(§\,\ref{sec:existence-and-presence}). \\
+C; CP & Complementiser head and phrase. Head-final C selects the embedded
+finite domain; \ird{po}/\ird{poby} and null C license clause-edge linker
+\ird{-e} (§§\,\ref{sec:vm-tension-linker}, \ref{sec:vm-po-comp}). \\
+Conv$^0$; ConvP; CondConvP & Converb head and phrase; conditional converb
+phrase. Reduced verbal structure lacks finite Asp.Align and Mood;
+CondConvP specifies the conditional subtype, not another finite projection
+(§§\,\ref{sec:vm-purp-comp}, \ref{sec:cond-dm}). \\
+Frame$^0$; FrameP & Null framing head and phrase in the adopted local analysis
+of insubordinate conditionals. Selects CondConvP under SpeechActP without a
+matrix consequent (§\,\ref{sec:cond-insub}). \\
+\end{longtable}\endgroup
+
+The Comm-field (also abbreviated Comm) is the descriptive region for
+heterogeneous comment operators, not a single established comment phrase
+(CommP) head or semantic type (§\,\ref{sec:particle-combinations}). PredP (predicate phrase) is explicitly
+\emph{not} an additional projection in the verbal predicate domain
+(§\,\ref{sec:grammatical-architecture}). Provisional
+$pro_{\mathrm{POSS}}$ is a possible silent possessor, not a demonstrated
+universal component of possessed nouns (§\,\ref{sec:nm-implicit-poss}).
+Comparative analyses and their labels do not add Iridian projections merely
+by being cited; the bounded uses of QP, ResP and FrameP above retain their
+stated evidential limits.
+
+\subsection{Features, schematic variables and formal relations}
+\label{sec:syntax-symbol-features}
+
+\begingroup\small
+\begin{longtable}{@{}p{0.25\textwidth}p{0.69\textwidth}@{}}
+\toprule Symbol & Expansion and use \\
+\midrule\endfirsthead
+\toprule Symbol & Expansion and use \\
+\midrule\endhead
+\bottomrule\endfoot
+$[\pm\mathrm{anch}]$, $[\pm\mathrm{shr}]$ & Anchoring and shared-retrieval
+features: [+anch,+shr] shared, [+anch,$-$shr] speaker-selected, [$-$anch]
+unmarked. The minus value of shr is not semantic negation
+(§\,\ref{sec:nm-def}). \\
+$[i\textsc{neg}]$, $[u\textsc{neg}]$ & Interpretable and uninterpretable
+negative features. One local operator contributes negation; Neg/Mood and
+negative indefinites participate in concord rather than each contributing
+another negation (§\,\ref{sec:vm-negative-concord}). \\
+$[\pm\textsc{pfv-domain}]$ & Coarse perfective-domain opposition under
+non-indicative Mood, with constructional orientation requirements; distinct
+from the full indicative aspect inventory (§\,\ref{sec:vm-moodp}). \\
+[+fin,+sub] & Finite and subordinate features at the embedded clause edge,
+spelled out by linker \ird{-e} under C selection
+(§\,\ref{sec:vm-tension-linker}). \\
+[conv, cond, open / expected]; [+purposive] & Converb, conditional and stance
+features selecting \ird{-ej}/\ird{-ezmy}; purposive feature on Conv selecting
+\ird{-it}. These do not introduce finite alignment or conditional negation
+(§§\,\ref{sec:cond-dm}, \ref{sec:purp-motion-structure}). \\
+[+top]; wh; placement & Topic licensing, interrogative dependency and the
+separate ordinary-placement requirement. The placement feature has no fixed
+symbolic name here and is distinct from Case/agreement; no additional EPP
+head follows from it (§§\,\ref{sec:tc-topicless},
+\ref{sec:th-wh-interrogation}, \ref{sec:pivot-placement}). \\
+A, S, P; T, B, C, E & Role variables, not projection names: transitive actor,
+sole argument and patient; placement schemata also use T for theme/patient,
+B for applied participant, C for causer and E for embedded causee.
+A's role use differs from A-movement, and T/C here are not finite heads
+(§§\,\ref{sec:vm-asp-case}, \ref{sec:pivot-placement}). \\
+$M$, $\Pi$; XP$_1\ldots$XP$_n$ & Manner modifier, licensed particle sequence,
+and ordered arbitrary constituents in placement schemata. XP is a category
+variable, not a specific Iridian projection (§\,\ref{sec:pivot-placement}). \\
+$D_a,a,M,N\text{--K}$ & In nominal linearisation only: designated anchoring
+pronunciation domain, its anchoring terminal, prenominal material, and lexical
+host plus fused case-number terminal. Here $D_a$ is a domain, not a D head,
+and M is not the manner variable (§\,\ref{sec:nm-si-linearisation}). \\
+$\operatorname{Lin}$; $\alpha,\beta$; $\frown$; $\langle a\rangle$ &
+Linearisation function, ordered terminal sequences, concatenation, and the
+singleton anchoring-terminal sequence. These angle brackets are formal
+sequence notation, rather than orthographic brackets in this context
+(§\,\ref{sec:nm-si-linearisation}). \\
+$H$; $+$ & Complete inflected verbal host, including licensed preverbs and
+suffixes; in $\mathrm{Neg}^{0}_{\mathrm{verbal}}+H$, $+$ expresses the PF
+realisation dependency yielding \ird{za-} before H, rather than surface
+precedence. Elsewhere $+$ separates morphological template slots
+(§\,\ref{sec:vm-neg}). \\
+$[\ ]$, $(\ )$, /, $\ldots$ & Constituent brackets, independently licensed
+optional structure, alternatives and omitted structure in syntactic schemata.
+Brackets instead enclose feature bundles when attached to a head; parentheses
+do not license free combinations (§\,\ref{sec:vm-tension-stative}). \\
+$>$; $\subset$; $\longrightarrow$, $\longmapsto$ & Context-dependent relations:
+$>$ gives precedence or hierarchical height as stated by the diagram/table;
+$\subset$ gives structural containment in spine schemata. Arrows mark
+successive derivational/realisation steps, not necessarily syntactic movement
+(§§\,\ref{sec:grammatical-architecture}, \ref{sec:nm-si-linearisation}). \\
+$P,Q,p,q$; $x,e,s$ & Semantic variables at the syntax--interpretation
+interface: properties/predicates, propositions, individuals, events and
+situations as locally defined ($s$ also denotes a state in the stimulus
+applicative schema). Semantic P/Q are not adpositional or quantifier
+heads (§§\,\ref{sec:nm-anchor-types}, \ref{sec:exst-quantification}). \\
+$\mathrm{PHAS}$, $\mathrm{VY}$, $\mathrm{SO}$;
+$\mathrm{EXCL}_A$, $\mathrm{ADD}_A$ & Semantic phasal, exclusive and additive
+operators, not projection names. In scope formulae, A is the alternative set,
+C the comment contribution and M the Mood operator; these differ from actor,
+complementiser and manner uses. $p_x(t)$ is a stagewise alternative,
+$r/r^{-}$ the reference/preceding stages, $E_A$ the exclusive truth condition,
+and $h_{\mathrm{VY}}/h_{\mathrm{SO}}$ the phasal profile predicates
+(§\,\ref{sec:th-exclusive-phasal}). \\
+$i,g,c,v$; $P_s$ & In anchoring semantics: discourse index, assignment,
+context, speaker's referential choice, and situation-relative nominal
+property. This $v$ is not the verbal categoriser, and an index does not itself
+contribute uniqueness (§\,\ref{sec:nm-anchor-indices}). \\
+$\lambda$, $\exists$, $\forall$, $\neg$, $\land$, $\rightarrow$ & Abstraction,
+existential and universal quantification, negation, conjunction and implication
+in denotations; $\iota$ is the definite shift selecting a unique satisfier. $\langle e,t\rangle$ is an individual-property type;
+semantic formulae interpret the structures rather than add projections
+(§§\,\ref{sec:nm-anchor-types}, \ref{sec:exst-quantification}). \\
+\end{longtable}\endgroup

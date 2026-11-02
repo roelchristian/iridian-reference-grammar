@@ -41,7 +41,10 @@ nested inputs and reruns LuaLaTeX until references and contents settle. Running
 control file changes, then reruns LuaLaTeX to resolve citations. No separate
 manual bibliography command is needed, including for chapter builds.
 `make doctor` checks for Biber and BibLaTeX; `make check-source` checks citation
-keys against the database. `make check` rejects missing
+keys against the database and Appendix A coverage of projection names and
+explicitly zero-marked heads from the maintained source. This lexical inventory
+check includes provisional and rejected labels; their analytical status and
+definitions require editorial review. `make check` rejects missing
 glyphs, unresolved references, duplicate labels, and compilation errors, and
 runs the collector tests. It reports overfull boxes for visual review.
 
