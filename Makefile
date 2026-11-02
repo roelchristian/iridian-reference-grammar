@@ -85,6 +85,7 @@ lexicon-tsv:
 .PHONY: check check-source
 check-source:
 	$(PYTHON) scripts/check-grammar.py
+	$(PYTHON) scripts/check-syntax-inventory.py
 	$(PYTHON) -m unittest discover -s util/tests -v
 
 check: all cover check-source
