@@ -202,60 +202,62 @@ morphology.
 \centering
 \caption{Lexical and applicative licensing of psychological arguments.}
 \label{fig:psychological-argument-frames}
-\begin{minipage}[t]{0.32\textwidth}
-\centering\small
-\textbf{(a) Experiencer only}\par\medskip
 \begin{tikzpicture}[
-  font=\small,
-  predicate/.style={draw,rectangle,align=center,text width=2.7cm,minimum height=10mm},
-  role/.style={draw,circle,minimum size=7mm,inner sep=0pt},
-  link/.style={-{Latex[length=1.6mm]},semithick}]
-\path[use as bounding box] (-2.25,-3.65) rectangle (2.25,0.6);
-\node[predicate] (state) at (0,0) {Lexical state\\predicate};
-\node[role] (exp) at (0,-1.7) {$E$};
-\draw[link] (state) -- node[right,font=\scriptsize]{selects} (exp);
+  x=1cm, y=1cm,
+  font=\footnotesize,
+  panel title/.style={font=\small\bfseries,align=center},
+  state/.style={draw=black!68,fill=black!2,rounded corners=1.5pt,
+    align=center,minimum width=26mm,minimum height=11mm,inner sep=2.5pt},
+  applicative/.style={draw=black!85,fill=black!10,rounded corners=1.5pt,
+    align=center,minimum width=20mm,minimum height=10mm,inner sep=2pt},
+  argument/.style={circle,draw=black!70,fill=white,minimum size=9mm,
+    inner sep=0pt,font=\small},
+  lexical/.style={-{Latex[length=1.8mm]},draw=black!75,line width=.6pt},
+  introduced/.style={-{Latex[length=1.8mm]},draw=black!85,
+    densely dashed,line width=.7pt},
+  composition/.style={draw=black!60,line width=.6pt}
+]
+  % One fixed grid and shared styles for the three licensing configurations.
+  \path[use as bounding box] (0,-4.52) rectangle (15.6,0.20);
+  \draw[black!20,line width=.4pt] (5.2,-4.38) -- (5.2,0.06);
+  \draw[black!20,line width=.4pt] (10.4,-4.38) -- (10.4,0.06);
+  \node[panel title] at (2.6,-.18) {(a) Experiencer only};
+  \node[panel title] at (7.8,-.18) {(b) Lexical stimulus};
+  \node[panel title] at (13.0,-.18) {(c) Applicative stimulus};
+
+  % (a) A one-place lexical psychological state.
+  \node[state] (only-state) at (2.6,-1.43) {Stative\\predicate};
+  \node[argument] (only-e) at (2.6,-3.05) {$E$};
+  \draw[lexical] (only-state.south) -- (only-e.north);
+  \node[fill=white,inner sep=1pt,font=\scriptsize,text=black!70]
+    at (3.16,-2.25) {selects};
+
+  % (b) Both arguments are selected by the lexical predicate.
+  \node[state] (two-state) at (7.8,-1.43) {Stative\\predicate};
+  \node[argument] (two-e) at (6.65,-3.05) {$E$};
+  \node[argument] (two-s) at (8.95,-3.05) {$S$};
+  \draw[lexical] (two-state.south west) -- (two-e.north);
+  \draw[lexical] (two-state.south east) -- (two-s.north);
+  \node[fill=white,inner sep=1pt,font=\scriptsize,text=black!70]
+    at (7.8,-2.28) {selects};
+
+  % (c) The stative base selects E; overt Appl introduces S.
+  \node[applicative] (appl) at (12.96,-1.36) {Appl\\\ird{-éb-}};
+  \node[state,minimum width=22mm] (appl-state) at (11.87,-2.83)
+    {Stative\\predicate};
+  \node[argument] (appl-s) at (14.35,-2.83) {$S$};
+  \node[argument] (appl-e) at (11.87,-4.04) {$E$};
+  \draw[composition] (appl.south west) -- (appl-state.north);
+  \draw[introduced] (appl.south east) -- (appl-s.north west);
+  \draw[lexical] (appl-state.south) -- (appl-e.north);
 \end{tikzpicture}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.32\textwidth}
-\centering\small
-\textbf{(b) Lexical stimulus}\par\medskip
-\begin{tikzpicture}[
-  font=\small,
-  predicate/.style={draw,rectangle,align=center,text width=2.7cm,minimum height=10mm},
-  role/.style={draw,circle,minimum size=7mm,inner sep=0pt},
-  link/.style={-{Latex[length=1.6mm]},semithick}]
-\path[use as bounding box] (-2.25,-3.65) rectangle (2.25,0.6);
-\node[predicate] (state) at (0,0) {Lexical state\\predicate};
-\node[role] (exp) at (-0.95,-1.7) {$E$};
-\node[role] (stim) at (0.95,-1.7) {$S$};
-\draw[link] (state.south) -- node[sloped,above,font=\scriptsize]{selects} (exp);
-\draw[link] (state.south) -- node[sloped,above,font=\scriptsize]{selects} (stim);
-\end{tikzpicture}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.32\textwidth}
-\centering\small
-\textbf{(c) Applicative stimulus}\par\medskip
-\begin{tikzpicture}[
-  font=\small,
-  predicate/.style={draw,rectangle,align=center,minimum height=10mm},
-  role/.style={draw,circle,minimum size=7mm,inner sep=0pt},
-  link/.style={-{Latex[length=1.6mm]},semithick}]
-\path[use as bounding box] (-2.25,-3.65) rectangle (2.25,0.6);
-\node[predicate,text width=1.3cm] (appl) at (0,0) {Appl\\\ird{-éb-}};
-\node[predicate,text width=1.9cm] (state) at (-0.7,-1.65) {State\\predicate};
-\node[role] (stim) at (1.45,-1.65) {$S$};
-\node[role] (exp) at (-0.7,-3.2) {$E$};
-\draw[link] (appl.south west) -- node[left,font=\scriptsize]{selects} (state.north);
-\draw[link] (appl.east) -| node[pos=0.75,left,font=\scriptsize]{introduces} (stim.north);
-\draw[link] (state.south) -- node[right,font=\scriptsize]{selects} (exp);
-\end{tikzpicture}
-\end{minipage}
 \par\smallskip
 \parbox{\textwidth}{\footnotesize
-$E$ = experiencer; $S$ = stimulus or content. Arrows show selection or
-argument introduction, not causation or surface order. Panel (c) represents
-the Iridian applicative; the common predicate boxes identify lexical
-licensing without imposing a shared syntactic structure on the three languages.}
+$E$ = experiencer; $S$ = stimulus or content. Solid arrows show lexical
+argument selection; the dashed arrow shows applicative introduction.
+The plain line in (c) connects Appl to its stative base. Arrows indicate
+neither causation nor surface order; the panels compare licensing relations
+without imposing a shared cross-linguistic syntactic structure.}
 \end{figure}
 
 \begin{table}[!ht]
