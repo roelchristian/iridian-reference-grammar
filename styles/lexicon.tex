@@ -1,0 +1,70 @@
+% Dictionary typography; the three source fields remain available to collectors.
+\DeclareMathSizes{9.2}{9}{7}{5}
+\ExplSyntaxOn
+\tl_new:N \l_iridian_lexicon_notes_tl
+\NewDocumentCommand{\lexsetnotes}{m}{
+  \tl_set:Nn \l_iridian_lexicon_notes_tl {#1}
+}
+\NewDocumentCommand{\lexomit}{m}{
+  \tl_replace_all:Nnn \l_iridian_lexicon_notes_tl {#1} {}
+}
+\NewDocumentCommand{\lexprintnotes}{}{
+  \regex_replace_all:nnN { [;,] \s* [;,] } { ; } \l_iridian_lexicon_notes_tl
+  \regex_replace_once:nnN { \A \s* [;,] \s* } {} \l_iridian_lexicon_notes_tl
+  \regex_replace_once:nnN { \s* [;,] \s* \Z } {} \l_iridian_lexicon_notes_tl
+  \tl_trim_spaces:N \l_iridian_lexicon_notes_tl
+  \tl_if_empty:NF \l_iridian_lexicon_notes_tl {
+    \par\nobreak
+    \group_begin:
+      \fontsize{9.2}{10.8}\selectfont
+      \setlength{\parskip}{0pt}
+      \hangindent=1em
+      \hangafter=0
+      \noindent\tl_use:N \l_iridian_lexicon_notes_tl\par
+    \group_end:
+  }
+}
+\ExplSyntaxOff
+
+% Category/class and homograph number are optional print fields. Original
+% headword, notes and gloss arguments retain their order and literal contents.
+\NewDocumentCommand{\lexentry}{m m m O{} O{}}{%
+  \par\begingroup
+  \interlinepenalty=10000
+  \hangindent=1em
+  \hangafter=1
+  \noindent\textbf{#1}%
+  \if\relax\detokenize{#5}\relax\else\textsuperscript{#5}\fi
+  \if\relax\detokenize{#4}\relax\else\ {\fontsize{9.2}{11.8}\selectfont\itshape #4}\fi
+  \enspace #3.\par
+  \lexsetnotes{#2}%
+  % Class information is printed with the category. Unassigned classes remain
+  % in the source record; their absence is explained in the dictionary guide.
+  \if\relax\detokenize{#4}\relax\else
+  \lexomit{quantity Class~A}%
+  \lexomit{quantity Class~B}%
+  \lexomit{quantity Class~C}%
+  \lexomit{Class VIII}%
+  \lexomit{Class VII}%
+  \lexomit{Class III}%
+  \lexomit{Class IX}%
+  \lexomit{Class VI}%
+  \lexomit{Class IV}%
+  \lexomit{Class II}%
+  \lexomit{Class V}%
+  \lexomit{Class I}%
+  \fi
+  \lexomit{finite, Become and ordinary ATTR classes unassigned}%
+  \lexomit{finite, Become and ordinary attributive classes unassigned}%
+  \lexomit{finite quantity and ordinary ATTR classes unassigned}%
+  \lexomit{declension and quantity class unassigned}%
+  \lexomit{quantity class unspecified}%
+  \lexprintnotes
+  \endgroup
+}
+
+\newcommand{\lexletter}[1]{%
+  \par\addvspace{0.65\baselineskip}%
+  \noindent{\sffamily\bfseries #1}\par\nobreak
+  \vspace{0.15\baselineskip}\nobreak
+}

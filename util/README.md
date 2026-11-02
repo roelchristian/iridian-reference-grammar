@@ -179,6 +179,18 @@ does not expand TeX macros, evaluate conditionals, or parse verbatim environment
 `util/lexicon.tex` remains the curated PDF appendix. Collection never overwrites
 it or the separate working JSON datasets.
 
+The dictionary renderer in `styles/lexicon.tex` retains the three source
+arguments of `\lexentry{form}{notes}{gloss}`. Optional trailing fields
+`[category and class][homograph number]` supply print labels, for example
+`\lexentry{po-}{...}{...}[prev.][1]`. The collector continues to retain the
+literal headword, notes and gloss; it does not collect the optional print
+fields. Unassigned-class diagnostics stay in the source notes but are omitted
+in print, where the guide explains missing class labels. Class labels appear
+beside the headword rather than being repeated in the morphological notes.
+Entries are ordered without case, spaces, hyphens or vowel diacritics, with
+caron consonants following their plain counterparts; alphabet headings mark
+the resulting groups.
+
 ## Generate new candidate words
 
 `lexgen/` is a separate local Node.js word-generator UI, rather than a collector.
