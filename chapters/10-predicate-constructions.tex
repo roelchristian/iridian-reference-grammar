@@ -1012,15 +1012,22 @@ by virtue of containing an experiencer (Figure~\ref{fig:stative-appl-syntax}).
 
 \begin{figure}[!ht]
 \centering
-\caption{Stimulus applicative over a psychological state.}
+\caption{Stimulus applicative over a psychological state, with lower stem structure abbreviated.}
 \label{fig:stative-appl-syntax}
 \label{ex:stative-appl-syntax}
-\[
- [_{\mathrm{ApplP}}\ \mathrm{DP}_{B}\
-   [_{\mathrm{Appl}'}\
-     [_{\mathrm{StateP}}\ \mathrm{DP}_{H}\ \ldots]\
-     \mathrm{Appl}^{0}]].
-\]
+\begin{forest}
+  syntax tree
+  [\synhead{ApplP}
+    [{\synhead{DP}$_B$\\{\footnotesize stimulus}}]
+    [{Appl$'$}
+      [\synhead{StateP}
+        [{\synhead{DP}$_H$\\{\footnotesize experiencer}}]
+        [{$\ldots$\\{\footnotesize\ird{všihn-} \trsl{be happy}}}]
+      ]
+      [{Appl$^{0}$\\\ird{-éb-}}]
+    ]
+  ]
+\end{forest}
 \end{figure}
 \noindent Here $B$ is the applied stimulus and $H$ the lower experiencer. Writing
 $P_H(s)$ for the state description with that experiencer relation included,
