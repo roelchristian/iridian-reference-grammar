@@ -850,6 +850,13 @@ remains subject to lexical selection.
 \subsection{Syntactic analysis of stative verbs}
 \label{sec:vm-tension-stative}
 
+Stative predicates retain their restricted aspectual inventory when a stimulus
+is added, whereas an inchoative introduces a transition without adding a
+participant (§§\,\ref{sec:stative-stability}, \ref{sec:stative-valency}).
+These contrasts are represented syntactically by distinguishing eventuality
+structure from argument licensing within the general verbal hierarchy
+(§§\,\ref{sec:vm-overview}, \ref{sec:vm-selection-domains}).
+
 Property roots such as \ird{muž} \trsl{beauty} form stative verbal
 stems in \ird{-n-}, whose finite continuous \ird{mužna}
 \trsl{is beautiful} predicates the property of a holder
@@ -860,10 +867,18 @@ predicate's lexical licensing: \ird{-n-} realises stativisation without
 adding an agent, causer or further participant. For a monovalent property
 stative, the relevant constituency may be represented schematically as
 \ex\label{ex:stative-state-syntax}
- $[\mathrm{StateP}\ \mathrm{DP}_{H}\
-   [\mathrm{State}'\ \sqrt{\mathrm{PROPERTY}}\ \mathrm{State}^{0}]],$
+\begin{forest}
+  syntax tree
+  [\synhead{StateP}, baseline, anchor=base
+    [{\synhead{DP}$_H$\\{\footnotesize holder / experiencer}}]
+    [{State$'$}
+      [{$\sqrt{\mathrm{PROPERTY}}$\\{\footnotesize\ird{muž} \trsl{beauty}}}]
+      [{State$^{0}$\\\ird{-n-}}]
+    ]
+  ]
+\end{forest}
 \xe
-\noindent where $H$ is the state holder, interpreted as an experiencer where the
+\noindent Here $H$ is the state holder, interpreted as an experiencer where the
 lexical semantics requires one. The head-final representation identifies
 the state description and its holder relation; it does not assign every
 lexical stative the morphological decomposition of productive
