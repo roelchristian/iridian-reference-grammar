@@ -173,6 +173,11 @@
         "translation": "\\trsl{Marek is making the problem bigger.}"
       },
       {
+        "surface": "Marek problemam svornélrime.",
+        "gloss": "Marek.\\Dir{} problem.\\Ind{} be.big-\\textsc{inch}-\\Caus{}-\\Prog{}",
+        "translation": "\\trsl{Marek is causing the problem to become bigger.}"
+      },
+      {
         "surface": "Problem Marku svornéranik.",
         "gloss": "problem.\\Dir{} Marek.\\Trs{} be.big-\\Caus{}-\\textsc{trs}-\\Pf{}",
         "translation": "\\trsl{Marek made the problem bigger.}"
