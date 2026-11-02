@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--latexmk', default='latexmk')
 args = parser.parse_args()
 missing = []
-for command in (args.latexmk, 'lualatex', 'kpsewhich'):
+for command in (args.latexmk, 'lualatex', 'biber', 'kpsewhich'):
     executable = shutil.which(command)
     print(f'{command}: {executable or "MISSING"}')
     if executable is None:
@@ -38,6 +38,6 @@ if shutil.which('kpsewhich'):
 if missing:
     print('\nMissing prerequisites: ' + ', '.join(missing), file=sys.stderr)
     print('Install a full TeX Live distribution (MacTeX on macOS), including LuaLaTeX, '
-          'latexmk, and the listed packages; then rerun make doctor.', file=sys.stderr)
+          'latexmk, Biber, and the listed packages; then rerun make doctor.', file=sys.stderr)
     sys.exit(1)
 print('\nReady. Run make; the first build populates build/cache with LuaTeX font data.')

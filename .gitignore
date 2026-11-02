@@ -42,6 +42,7 @@ drafts/
 util/*
 !util/lexicon.tex
 !util/references.tex
+!util/references.bib
 !util/abbreviations.tex
 !util/paradigms.tex
 !util/paradigm-tables/

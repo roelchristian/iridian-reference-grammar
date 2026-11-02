@@ -14,6 +14,8 @@ patterns = (
     r'LaTeX Warning: There were undefined (?:references|citations).*',
     r'LaTeX Warning: Label\(s\) may have changed.*',
     r'LaTeX Warning: There were multiply-defined labels.*',
+    r'LaTeX Warning: Empty bibliography.*',
+    r'Package biblatex Warning: (?:Citation .*undefined|The following entry could not be found|Please \(re\)run Biber|Please rerun LaTeX).*',
     r'^! .*',
     r'^.*: (?:LaTeX|Package \S+) Error:.*',
     r'.*Fatal error.*',

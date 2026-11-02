@@ -8,8 +8,8 @@ The current grammar is in `grammar.tex` and `chapters/`. Indicative verbal negat
 
 ## Build the PDF
 
-Install a full **TeX Live** distribution (MacTeX on macOS), with `latexmk`
-and LuaLaTeX on `PATH`. The sources use TeX-distributed Libertinus Serif
+Install a full **TeX Live** distribution (MacTeX on macOS), with `latexmk`,
+LuaLaTeX, and Biber on `PATH`. The sources use TeX-distributed Libertinus Serif
 and Source Sans Pro fonts; no separately installed system fonts
 are needed. Python 3 is used for prerequisite checks and lexicon extraction.
 
@@ -34,7 +34,14 @@ writable local font cache in `build/cache/`, so it also runs in restricted
 workspaces without writing to your home directory. The first build can take
 longer while it indexes fonts; later builds reuse that cache. `latexmk` tracks
 nested inputs and reruns LuaLaTeX until references and contents settle. Running
-`make` again without edits performs no TeX pass. `make check` rejects missing
+`make` again without edits performs no TeX pass. Bibliographic metadata lives in
+`util/references.bib`; `grammar.tex` loads it with BibLaTeX, and
+`util/references.tex` prints the numbered, alphabetically sorted reference list.
+`latexmk` runs Biber with data-model validation whenever the database or its
+control file changes, then reruns LuaLaTeX to resolve citations. No separate
+manual bibliography command is needed, including for chapter builds.
+`make doctor` checks for Biber and BibLaTeX; `make check-source` checks citation
+keys against the database. `make check` rejects missing
 glyphs, unresolved references, duplicate labels, and compilation errors, and
 runs the collector tests. It reports overfull boxes for visual review.
 

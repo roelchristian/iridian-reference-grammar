@@ -9,4 +9,8 @@ make_path($ENV{'TEXMFVAR'}, $ENV{'TEXMFCACHE'});
 
 $pdf_mode = 4; # LuaLaTeX
 $lualatex = 'lualatex %O %S';
+# Biblatex writes the .bcf control file; latexmk runs Biber and subsequent TeX
+# passes automatically, in the selected full or chapter output directory.
+# Report incomplete source metadata without inventing unknown dates or editors.
+$biber = 'biber --validate-datamodel %O %S';
 $max_repeat = 6;

@@ -608,6 +608,18 @@ def check():
     failures.extend(sibilant_spelling_checks(sources))
     labels, bibliography = Counter(), Counter()
     references, citations = [], []
+    # Biber validates BibTeX syntax and fields during the build. Read entry
+    # headers here to retain source-only undefined/duplicate citation checks.
+    resources = {name for text in publication_sources.values()
+                 for name in re.findall(r'\\addbibresource(?:\[[^\]]*\])?\{([^}]+)\}', text)}
+    for name in sorted(resources):
+        resource = ROOT / name
+        if not resource.is_file():
+            failures.append(f'missing bibliography resource {name}')
+            continue
+        bibliography.update(re.findall(
+            r'(?mi)^[ \t]*@(?!comment\b|string\b|preamble\b)[a-z]+\s*[{(]\s*([^,\s]+)\s*,',
+            resource.read_text(encoding='utf-8')))
     aligned = 0
     for path, text in publication_sources.items():
         labels.update(re.findall(r'\\label\{([^}]+)\}', text))
