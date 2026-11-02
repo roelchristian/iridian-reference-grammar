@@ -1099,26 +1099,50 @@ orientation and inflection and abbreviates the internal branching of StateP.
 \label{fig:stative-caus-syntax}
 \label{ex:stative-caus-syntax}
 \captionsetup[subfigure]{position=top,justification=centering,singlelinecheck=true}
-\begin{subfigure}{\textwidth}
+\begin{subfigure}[t]{0.44\textwidth}
 \centering
 \caption{Direct state causative}
 \label{fig:stative-caus-state-syntax}
 \label{ex:stative-caus-state-syntax}
-\[
- [_{\mathrm{CausP}}\ C\ [_{\mathrm{StateP}}\ H\ P]\ \mathrm{Caus}^{0}],
-\]
-\end{subfigure}
-\par\medskip
-\begin{subfigure}{\textwidth}
+\small
+\begin{forest}
+  syntax tree,
+  for tree={s sep=6pt}
+  [\synhead{CausP}
+    [{\synhead{DP}$_C$\\{\footnotesize causer}}]
+    [{Caus$'$}
+      [\synhead{StateP}
+        [{\synhead{DP}$_H$\\{\footnotesize holder / causee}}]
+        [{$P$\\{\footnotesize\ird{svorn-} \trsl{be big}}}]
+      ]
+      [{Caus$^{0}$\\\ird{-ér-}}]
+    ]
+  ]
+\end{forest}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.54\textwidth}
 \centering
 \caption{Inchoative causative}
 \label{fig:stative-caus-become-syntax}
 \label{ex:stative-caus-become-syntax}
-\[
- [_{\mathrm{CausP}}\ C\
-   [_{\mathrm{BecomeP}}\ [_{\mathrm{StateP}}\ H\ P]\
-     \mathrm{Become}^{0}]\ \mathrm{Caus}^{0}].
-\]
+\small
+\begin{forest}
+  syntax tree,
+  for tree={s sep=6pt}
+  [\synhead{CausP}
+    [{\synhead{DP}$_C$\\{\footnotesize causer}}]
+    [{Caus$'$}
+      [\synhead{BecomeP}
+        [\synhead{StateP}
+          [{\synhead{DP}$_H$\\{\footnotesize holder / causee}}]
+          [{$P$\\{\footnotesize\ird{svorn-} \trsl{be big}}}]
+        ]
+        [{Become$^{0}$\\\ird{-él-}}]
+      ]
+      [{Caus$^{0}$\\\ird{-r-}}]
+    ]
+  ]
+\end{forest}
 \end{subfigure}
 \end{figure}
 \noindent Here $C$ is the causer, while $H$ retains its lower property relation and
