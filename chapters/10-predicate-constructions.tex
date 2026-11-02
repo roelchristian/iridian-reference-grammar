@@ -859,11 +859,11 @@ predicate in the lower verbal domain. The holder relation belongs to that
 predicate's lexical licensing: \ird{-n-} realises stativisation without
 adding an agent, causer or further participant. For a monovalent property
 stative, the relevant constituency may be represented schematically as
-\[
- [\mathrm{StateP}\ \mathrm{DP}_{H}\
-   [\mathrm{State}'\ \sqrt{\mathrm{PROPERTY}}\ \mathrm{State}^{0}]],
-\]
-where $H$ is the state holder, interpreted as an experiencer where the
+\ex\label{ex:stative-state-syntax}
+ $[\mathrm{StateP}\ \mathrm{DP}_{H}\
+   [\mathrm{State}'\ \sqrt{\mathrm{PROPERTY}}\ \mathrm{State}^{0}]],$
+\xe
+\noindent where $H$ is the state holder, interpreted as an experiencer where the
 lexical semantics requires one. The head-final representation identifies
 the state description and its holder relation; it does not assign every
 lexical stative the morphological decomposition of productive
@@ -942,8 +942,8 @@ The stative stem and its licensed extensions occupy the same relative
 positions as other derived predicates within the verbal template
 (§§\,\ref{sec:vm-overview}, \ref{sec:vm-selection-domains}). Their
 structural heights are summarised by
-\[
-\begin{aligned}
+\ex\label{ex:stative-syntactic-hierarchy}
+$\begin{aligned}
  \mathrm{StateP}
  &\prec \{\mathrm{BecomeP},\mathrm{ManifestP}\}
  \prec \{\mathrm{ApplP},\mathrm{VoiceP}_{\mathrm{AP}}\} \\
@@ -951,10 +951,10 @@ structural heights are summarised by
  \prec \mathrm{CausP}
  \prec \mathrm{VoiceP}_{\mathrm{orient}}
  \prec \mathrm{AspP}.
-\end{aligned}
-\]
+\end{aligned}$
+\xe
 \end{samepage}
-Here $\prec$ means `structurally lower than', and the braces identify
+\noindent Here $\prec$ means `structurally lower than', and the braces identify
 alternative heads at the indicated height; the schema records relative
 positions, with any unlicensed or unselected derivational layers omitted.
 \synhead{AspP} is the projection of the single feature-bearing head
@@ -989,21 +989,21 @@ The stimulus in \ird{Senica Marku všihnébav}
 \ird{Marku} retains the experiencer relation licensed within StateP.
 The constituent structure consequently contains no additional actor solely
 by virtue of containing an experiencer:
-\[
- [_{\mathrm{ApplP}}\ \mathrm{DP}_{B}\
+\ex\label{ex:stative-appl-syntax}
+ $[_{\mathrm{ApplP}}\ \mathrm{DP}_{B}\
    [_{\mathrm{Appl}'}\
      [_{\mathrm{StateP}}\ \mathrm{DP}_{H}\ \ldots]\
-     \mathrm{Appl}^{0}]].
-\]
-Here $B$ is the applied stimulus and $H$ the lower experiencer. Writing
+     \mathrm{Appl}^{0}]].$
+\xe
+\noindent Here $B$ is the applied stimulus and $H$ the lower experiencer. Writing
 $P_H(s)$ for the state description with that experiencer relation included,
 the interpretation in (\ref{ex:stative-appl-semantics}) can be made explicit
 as
-\[
- \operatorname{Appl}_{\mathrm{STIM}}(P_H)(B)
- =\lambda s\,[P_H(s)\land\operatorname{Stimulus}(s,B)].
-\]
-The same state variable remains available to viewpoint aspect; neither a
+\ex\label{ex:stative-appl-composition}
+ $\operatorname{Appl}_{\mathrm{STIM}}(P_H)(B)
+ =\lambda s\,[P_H(s)\land\operatorname{Stimulus}(s,B)].$
+\xe
+\noindent The same state variable remains available to viewpoint aspect; neither a
 causing event nor a causal initiator is added by this operation.
 
 The state-related stimulus and the productive event-benefactive occupy the
@@ -1055,17 +1055,21 @@ independently derived transition below Caus
 (\ref{ex:val-stative-caus}a--b). Their lower constituent selection is
 represented in the following schemata, which omit higher orientation and
 inflection and abbreviate the internal branching of StateP:
-\[
-\begin{gathered}
+\pex\label{ex:stative-caus-syntax}
+\a\label{ex:stative-caus-state-syntax}
+$\begin{gathered}[t]
  \text{Direct state causative:}\\
- [_{\mathrm{CausP}}\ C\ [_{\mathrm{StateP}}\ H\ P]\ \mathrm{Caus}^{0}],\\[6pt]
+ [_{\mathrm{CausP}}\ C\ [_{\mathrm{StateP}}\ H\ P]\ \mathrm{Caus}^{0}],
+\end{gathered}$
+\a\label{ex:stative-caus-become-syntax}
+$\begin{gathered}[t]
  \text{Inchoative causative:}\\
  [_{\mathrm{CausP}}\ C\
    [_{\mathrm{BecomeP}}\ [_{\mathrm{StateP}}\ H\ P]\
      \mathrm{Become}^{0}]\ \mathrm{Caus}^{0}].
-\end{gathered}
-\]
-Here $C$ is the causer, while $H$ retains its lower property relation and
+\end{gathered}$
+\xe
+\noindent Here $C$ is the causer, while $H$ retains its lower property relation and
 becomes the causee. Direct Caus supplies a dynamic causing eventuality even
 when its complement is stative; in the second structure it takes scope over
 the transition already supplied by Become. Cuervo's distinction between
@@ -1111,11 +1115,11 @@ whereas \ird{Byl všihnal} attributes happiness on indirect evidence
 the lower state description without asserting that a state satisfying it
 actually obtains. If $P$ denotes that description, $H$ its holder and $e$
 an outward display, the interpretation has the following non-entailment:
-\[
- \operatorname{Manifest}(P)(H)(e)
- \ \not\Rightarrow\ \exists s\,P(H)(s).
-\]
-The asserted eventuality is the display; the selected description determines
+\ex\label{ex:stative-manifest-nonentailment}
+ $\operatorname{Manifest}(P)(H)(e)
+ \ \not\Rightarrow\ \exists s\,P(H)(s).$
+\xe
+\noindent The asserted eventuality is the display; the selected description determines
 what the behaviour expresses. StateP inside ManifestP consequently supplies
 descriptive content rather than an independently asserted internal state.
 Become instead describes a transition whose target is the selected state,
