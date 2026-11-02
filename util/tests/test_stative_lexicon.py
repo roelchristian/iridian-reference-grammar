@@ -22,7 +22,7 @@ from quantity_grades import QuantityGrades,QuantityLicence
 SPELL=dict(zip('abdehiklmnoprstuvyz',
  ('a','b','d','ɛ','x','ɪ','k','l','m','n','ɔ','p','r','s','t','ʊ','v','ɨ','z')))
 SPELL.update({'á':'aː','é':'eː','í':'iː','ó':'oː','ú':'uː','ý':'ɨː',
- 'š':'ʃ','ž':'ʒ','č':'tʃ','c':'ts','ň':'ɲ','ľ':'ʎ'})
+ 'š':'ʃ','ž':'ʒ','č':'tʃ','c':'ts','ň':'ɲ','ľ':'ʎ','ř':'ʒ','j':'j'})
 def tokens(form):
     # A narrow expected-form decoder; morphology is asserted independently.
     segments = []
@@ -45,11 +45,11 @@ class StativeLexiconTests(unittest.TestCase):
         cls.aspects=('continuous','progressive','perfective','retrospective','contemplative')
 
     def test_eleven_records_separate_meaning_from_morphological_class(self):
-        self.assertEqual(set(self.entries),{'mužn','hradn','svorn','četn','ptakn',
-            'smrn','všihn','žbirn','hvodn','torban','tvírzn'})
+        self.assertEqual(set(self.entries),{'mužn','hradn','svorn','četn','řejn',
+            'sledn','všihn','žbirn','hvodn','torban','tvírzn'})
         self.assertEqual(self.entries['tvírzn']['finite_class'],'C')
         self.assertEqual(self.entries['všihn']['manifest_class'],'ESH-A')
-        self.assertIsNone(self.entries['ptakn']['manifest_class'])
+        self.assertIsNone(self.entries['řejn']['manifest_class'])
         self.assertEqual(self.entries['žbirn']['attributive_class'],'III')
         self.assertIsNone(self.entries['hvodn']['attributive_class'])
 
@@ -114,7 +114,7 @@ class StativeLexiconTests(unittest.TestCase):
         self.assertEqual(ordinary_attributive(self.entries['tvírzn']),tokens('tvírzná'))
 
     def test_attribute_class_does_not_follow_condition_semantics(self):
-        for stem in ('ptakn','hvodn'):
+        for stem in ('řejn','hvodn'):
             with self.subTest(stem=stem),self.assertRaises(LexicalLicenceError):
                 ordinary_attributive(self.entries[stem])
         for entry in self.entries.values():
@@ -184,7 +184,7 @@ class StativeLexiconTests(unittest.TestCase):
                          stimulus_present=True),tokens('všihnébik'))
         with self.assertRaises(LexicalLicenceError):
             stimulus_applicative(self.entries['všihn'],'perfective')
-        for stem in ('mužn','ptakn','žbirn'):
+        for stem in ('mužn','řejn','žbirn'):
             with self.subTest(stem=stem),self.assertRaises(LexicalLicenceError):
                 stimulus_applicative(self.entries[stem],'continuous',stimulus_present=True)
         self.assertEqual(self.entries['všihn']['argument_frame'],'experiencer-only')
@@ -210,14 +210,16 @@ class StativeLexiconTests(unittest.TestCase):
         self.assertTrue(perspective_licensed(self.entries['žbirn'],experiencer='Marek'))
         self.assertTrue(perspective_licensed(entry,experiencer='Marek',kind='manifest'))
         self.assertFalse(perspective_licensed(entry,experiencer='Marek',internal_reading=False))
-        self.assertFalse(perspective_licensed(self.entries['ptakn'],experiencer='Marek'))
-        self.assertTrue(perspective_licensed(self.entries['ptakn'],experiencer='Marek',internal_reading=False))
+        self.assertFalse(perspective_licensed(self.entries['řejn'],experiencer='Marek'))
+        self.assertTrue(perspective_licensed(self.entries['řejn'],experiencer='Marek',internal_reading=False))
         with self.assertRaises(LexicalLicenceError):
-            perspective_licensed(self.entries['ptakn'],experiencer='Marek',kind='manifest')
+            perspective_licensed(self.entries['řejn'],experiencer='Marek',kind='manifest')
 
-    def test_missing_vocalism_and_lexical_classes_do_not_generate_forms(self):
-        self.assertIsNone(self.entries['smrn']['quantity_target'])
-        for stem in ('smrn','torban'):
+    def test_unassigned_lexical_classes_do_not_generate_forms(self):
+        self.assertEqual(self.entries['sledn']['segments'],list(tokens('sledn')))
+        self.assertEqual(self.entries['sledn']['quantity_target'],2)
+        self.assertEqual(self.entries['sledn']['principal_part_status'],'class-unresolved')
+        for stem in ('sledn','torban'):
             entry=self.entries[stem]
             for kind in ('state','become','manifest'):
                 with self.subTest(stem=stem,kind=kind),self.assertRaises(LexicalLicenceError):

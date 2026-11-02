@@ -90,7 +90,7 @@ so this transfer failure leaves no implementation blocker.
 
 ## Deliberately unadopted
 
-Simple attributive grades for `ptakn-/všihn-/hvodn-`, a third attributive grade,
+Simple attributive grades for `řejn-/všihn-/hvodn-`, a third attributive grade,
 fabricated irregular histories, expanded analytic `neh-` selection, a dedicated
 threshold exponent, and a universal Res exponent remain unspecified. The
 paradigms report these limits rather than inventing forms. The diagnostics do

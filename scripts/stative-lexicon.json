@@ -236,18 +236,17 @@
       "nominalisation": "selected-participant"
     },
     {
-      "stem": "ptakn",
+      "stem": "řejn",
       "subclass": "experiential-condition",
       "morphological_class": "property-n",
       "finite_class": "A",
       "segments": [
-        "p",
-        "t",
-        "a",
-        "k",
+        "ʒ",
+        "ɛ",
+        "j",
         "n"
       ],
-      "quantity_target": 2,
+      "quantity_target": 1,
       "argument_frame": "affected-holder",
       "gradability": "intensity-or-condition-scale",
       "aspect_licences": {
@@ -267,45 +266,46 @@
       "principal_part_status": "listed",
       "expected": {
         "state": [
-          "ptakna",
-          "ptáknime",
-          "ptáknik",
-          "ptaknáv",
-          "ptaknáž"
+          "řejna",
+          "řéjnime",
+          "řéjnik",
+          "řejnáv",
+          "řejnáž"
         ],
         "become": [
-          "ptaknéla",
-          "ptaknélime",
-          "ptaknélek",
-          "ptaknélav",
-          "ptaknélaž"
+          "řejnéla",
+          "řejnélime",
+          "řejnélek",
+          "řejnélav",
+          "řejnélaž"
         ],
         "attribute": null,
-        "manner": "ptakně",
+        "manner": "řejně",
         "operations": [
-          "ptaknal",
-          "ptaknova",
-          "ptaknérime",
-          "ptaknélal",
-          "ptaknélova",
-          "ptaknélrime"
+          "řejnal",
+          "řejnova",
+          "řejnérime",
+          "řejnélal",
+          "řejnélova",
+          "řejnélrime"
         ]
       },
       "protected_quantity": false,
       "nominalisation": "selected-participant"
     },
     {
-      "stem": "smrn",
+      "stem": "sledn",
       "subclass": "experiential-condition",
-      "morphological_class": "opaque-unresolved",
+      "morphological_class": "property-n",
       "finite_class": null,
       "segments": [
         "s",
-        "m",
-        "r",
+        "l",
+        "ɛ",
+        "d",
         "n"
       ],
-      "quantity_target": null,
+      "quantity_target": 2,
       "argument_frame": "affected-holder",
       "gradability": "intensity-or-condition-scale",
       "aspect_licences": {
@@ -322,7 +322,7 @@
       "perspective": "internal-anchored",
       "causative": "unresolved",
       "manner": "unresolved",
-      "principal_part_status": "unresolved",
+      "principal_part_status": "class-unresolved",
       "expected": {
         "state": [
           null,

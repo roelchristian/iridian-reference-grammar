@@ -51,8 +51,9 @@ lexical metadata outside those entries can be updated. Negative mutation tests
 reject changed rules, changed examples, new relative material and changed earlier
 paradigm fixtures. The complete Chapter 8 relative section is unchanged.
 
-The earlier paradigm report and fixture matrix remain the historical first-pass
-baseline. The new report supersedes only their former unassigned ordinary
+The earlier paradigm report and fixture matrix retain the first-pass analysis,
+with subsequent lexical replacements reflected in their forms and phonological
+notes. The new report supersedes only their former unassigned ordinary
 happiness-attributive/third-class status, without editing their relative material.
 
 Final scope comparison: **zero discrepancies**. `git diff --check` passed.
@@ -63,8 +64,9 @@ Grammar implementation, primary research and lexical diagnostics had separate
 owners. Four fresh reviewers independently checked PF, syntax, academic evidence
 and lexical/corpus consistency. Supported findings fixed and rechecked were:
 
-1. smrn- lacks a recorded eligible vowel. Its PF forms remain withheld;
-   no new repair or syllabic liquid is supplied.
+1. sledn- has the eligible root vowel e, but its finite, Become and ordinary
+   ATTR classes remain unassigned. Its PF forms remain withheld because those
+   lexical licences have not been supplied.
 2. torban- has the phonologically licit stem /tɔr.ban/ and final-root a
    as quantity target. Its finite, Become and ordinary ATTR classes remain
    unassigned. Conditional Class A / EL-S outputs are separate from licensed
@@ -102,7 +104,7 @@ romanisation, and Wandl's actual title/DOI/final pagination. Comparative researc
 does not establish any Iridian form or history.
 
 Unadopted: smerňa, attributive doublets, an asserted -ja history,
-new smrn- repairs, unassigned torban- principal parts, broader Manifest productivity,
+unassigned sledn-/torban- principal parts, broader Manifest productivity,
 unlisted ordinary ATTR classes and expanded analytic neh- selection. The
 remaining PF gaps need independent lexical evidence rather than decorative
 irregularity. The separate result-state/threshold exponent remains unintroduced.

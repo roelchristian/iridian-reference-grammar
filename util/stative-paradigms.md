@@ -126,32 +126,32 @@ Simple attributive: `četná`.
 
 Indicative negative and phase cells are explicit in the JSON matrix: `začetna`, `vy četna`, `so četna`, with the same operations on all ten aspectual cells.
 
-### ptakn- (condition)
+### řejn- (condition)
 
 | Aspect | State | Become |
 | --- | --- | --- |
-| continuous | `ptakna` | `ptaknéla` |
-| progressive | `ptáknime` | `ptaknélime` |
-| perfective | `ptáknik` | `ptaknélek` |
-| retrospective | `ptaknáv` | `ptaknélav` |
-| contemplative | `ptaknáž` | `ptaknélaž` |
+| continuous | `řejna` | `řejnéla` |
+| progressive | `řéjnime` | `řejnélime` |
+| perfective | `řéjnik` | `řejnélek` |
+| retrospective | `řejnáv` | `řejnélav` |
+| contemplative | `řejnáž` | `řejnélaž` |
 
 Simple attributive: unassigned: no new attributive grade is invented.
 
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
-| `ptakna` | `ptakne` | `ptaknova` | `ptaknový` | `ptaknal` | `ptaknalě` |
-| `ptáknime` | `ptáknimně` | `ptáknimou` | `ptáknimový` | `ptáknimel` | `ptáknimelě` |
-| `ptáknik` | `ptáknice` | `ptáknikou` | `ptáknikový` | `ptáknikal` | `ptáknikalě` |
-| `ptaknáv` | `ptaknávě` | `ptaknávou` | `ptaknávový` | `ptaknával` | `ptaknávalě` |
-| `ptaknáž` | `ptaknáže` | `ptaknážou` | `ptaknážový` | `ptaknážal` | `ptaknážalě` |
-| `ptaknéla` | `ptaknéle` | `ptaknélova` | `ptaknélový` | `ptaknélal` | `ptaknélalě` |
-| `ptaknélime` | `ptaknélimně` | `ptaknélimou` | `ptaknélimový` | `ptaknélimel` | `ptaknélimelě` |
-| `ptaknélek` | `ptaknélice` | `ptaknélikou` | `ptaknélikový` | `ptaknélekal` | `ptaknélekalě` |
-| `ptaknélav` | `ptaknélavě` | `ptaknélavou` | `ptaknélavový` | `ptaknélaval` | `ptaknélavalě` |
-| `ptaknélaž` | `ptaknélaže` | `ptaknélažou` | `ptaknélažový` | `ptaknélažal` | `ptaknélažalě` |
+| `řejna` | `řejne` | `řejnova` | `řejnový` | `řejnal` | `řejnalě` |
+| `řéjnime` | `řéjnimně` | `řéjnimou` | `řéjnimový` | `řéjnimel` | `řéjnimelě` |
+| `řéjnik` | `řéjnice` | `řéjnikou` | `řéjnikový` | `řéjnikal` | `řéjnikalě` |
+| `řejnáv` | `řejnávě` | `řejnávou` | `řejnávový` | `řejnával` | `řejnávalě` |
+| `řejnáž` | `řejnáže` | `řejnážou` | `řejnážový` | `řejnážal` | `řejnážalě` |
+| `řejnéla` | `řejnéle` | `řejnélova` | `řejnélový` | `řejnélal` | `řejnélalě` |
+| `řejnélime` | `řejnélimně` | `řejnélimou` | `řejnélimový` | `řejnélimel` | `řejnélimelě` |
+| `řejnélek` | `řejnélice` | `řejnélikou` | `řejnélikový` | `řejnélekal` | `řejnélekalě` |
+| `řejnélav` | `řejnélavě` | `řejnélavou` | `řejnélavový` | `řejnélaval` | `řejnélavalě` |
+| `řejnélaž` | `řejnélaže` | `řejnélažou` | `řejnélažový` | `řejnélažal` | `řejnélažalě` |
 
-Indicative negative and phase cells are explicit in the JSON matrix: `zaptakna`, `vy ptakna`, `so ptakna`, with the same operations on all ten aspectual cells.
+Indicative negative and phase cells are explicit in the JSON matrix: `zařejna`, `vy řejna`, `so řejna`, with the same operations on all ten aspectual cells.
 
 ### všihn- (psychological)
 
@@ -250,8 +250,8 @@ Direct State in `-n-` takes expanded causative `-ér-` (short `-er-` after prote
 | svorn | inchoative-causative | `svornélra` | `svornélrime` | `svornélranik` | `svornélranav` | `svornélraž` |
 | četn | state-causative | `četnéra` | `četnérime` | `četnéranik` | `četnéranav` | `četnéraž` |
 | četn | inchoative-causative | `četnélra` | `četnélrime` | `četnélranik` | `četnélranav` | `četnélraž` |
-| ptakn | state-causative | `ptaknéra` | `ptaknérime` | `ptaknéranik` | `ptaknéranav` | `ptaknéraž` |
-| ptakn | inchoative-causative | `ptaknélra` | `ptaknélrime` | `ptaknélranik` | `ptaknélranav` | `ptaknélraž` |
+| řejn | state-causative | `řejnéra` | `řejnérime` | `řejnéranik` | `řejnéranav` | `řejnéraž` |
+| řejn | inchoative-causative | `řejnélra` | `řejnélrime` | `řejnélranik` | `řejnélranav` | `řejnélraž` |
 | všihn | state-causative | `všihnéra` | `všihnérime` | `všihnéranik` | `všihnéranav` | `všihnéraž` |
 | všihn | inchoative-causative | `všihnélra` | `všihnélrime` | `všihnélranik` | `všihnélranav` | `všihnélraž` |
 | hvodn | state-causative | `hvodnéra` | `hvodnérime` | `hvodnéranik` | `hvodnéranav` | `hvodnéraž` |
@@ -291,7 +291,7 @@ These are underlying selected segment strings before ordinary contextual voicing
 | hradn- | /xra.dna/ | /xra.dneː.la/ | strong simple state /aː/; Become leaves /a/ |
 | svorn- | /svɔr.na/ | /svɔr.neː.la/ | strong simple state /oː/; root r remains non-syllabic |
 | četn- | /tʃɛ.tna/ | /tʃɛ.tneː.la/ | strong simple state /eː/; no second PAL on č |
-| ptakn- | /pta.kna/ | /pta.kneː.la/ | strong simple state /aː/; k+n unchanged |
+| řejn- | /ʒɛj.na/ | /ʒɛj.neː.la/ | strong simple state /eː/; j remains a non-syllabic coda |
 | všihn- | /vʃɪ.xna/ | /vʃɪ.xneː.la/ | strong simple state /iː/; no extra vocalic nucleus |
 | hvodn- | /xvɔ.dna/ | /xvɔ.dneː.la/ | strong simple state /oː/; onset obstruent plateau |
 | tvírzn- | /tviːr.zna/ | /tviːr.znɛ.la/ | protected /iː/ and short Become /ɛ/ |
@@ -308,4 +308,4 @@ The test suite covers all 80 finite State/Become cells, the complete operation-m
 
 The tests do not compute arbitrary lexical semantic licences, scale selection, phonetic assimilation, syllabification, stress or the full non-indicative paradigm. They reuse the existing negative-Mood and case checks rather than claiming that an indicative stem can simply take a mood suffix. The current root/case/pivot architecture and reduced-selection exclusions remain independently tested by the original suite.
 
-Unadopted extensions remain outside normative prose: new simple-attributive classes for `ptakn-/všihn-/hvodn-`, a third attributive grade, fabricated irregular histories, expansion of `neh-` selection, and a separate exponent or unrestricted target/resultant taxonomy for Res.
+Unadopted extensions remain outside normative prose: new simple-attributive classes for `řejn-/všihn-/hvodn-`, a third attributive grade, fabricated irregular histories, expansion of `neh-` selection, and a separate exponent or unrestricted target/resultant taxonomy for Res.

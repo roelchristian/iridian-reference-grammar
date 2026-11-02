@@ -2,7 +2,7 @@
 
 The machine-readable records are in `scripts/stative-lexicon.json`; the bounded selector is `scripts/stative_lexicon.py`. These are constructed grammatical specifications, not native attestations or an automatically inferred lexicon. Each lexical licence is explicit. Semantic context, available perspective relations and causability remain independent inputs.
 
-The earlier `util/stative-paradigms.md` is retained exactly as the first PR19 review baseline. Its former unassigned status for the happiness attributive and its statement that no third ordinary attributive class was adopted are superseded by this ordinary-ATTR extension. Its protected relative paradigms and analysis are not revised here. This report adds no relative forms.
+The earlier `util/stative-paradigms.md` retains the first PR19 analysis, with subsequent lexical replacements reflected in its forms and phonological notes. Its former unassigned status for the happiness attributive and its statement that no third ordinary attributive class was adopted are superseded by this ordinary-ATTR extension. Its protected relative analysis is not revised here. This report adds no relative forms.
 
 ## Lexical records
 
@@ -14,8 +14,8 @@ Finite class, argument structure, semantic subclass and ordinary ATTR class are 
 | hradn- | quality | A / property-n | holder | EL-S | unlisted | II | none | listed |
 | svorn- | dimensional | A / property-n | holder | EL-S | unlisted | II | none | listed |
 | četn- | dimensional | A / property-n | holder | EL-S | unlisted | II | none | listed |
-| ptakn- | experiential-condition | A / property-n | affected-holder | EL-S | unlisted | unlisted | internal-anchored | listed |
-| smrn- | experiential-condition | unassigned / opaque-unresolved | affected-holder | withheld | unlisted | unlisted | internal-anchored | unresolved |
+| řejn- | experiential-condition | A / property-n | affected-holder | EL-S | unlisted | unlisted | internal-anchored | listed |
+| sledn- | experiential-condition | unassigned / property-n | affected-holder | withheld | unlisted | unlisted | internal-anchored | class-unresolved |
 | všihn- | experiential-condition | A / property-n | experiencer-only | EL-S | ESH-A | III | psych-anchored | listed |
 | žbirn- | experiential-condition | A / property-n | affected-holder | EL-S | unlisted | III | none | listed |
 | hvodn- | experiential-condition | A / property-n | holder | EL-S | unlisted | unlisted | none | listed |
@@ -36,7 +36,7 @@ These nine records have sufficiently specified principal parts for the bounded m
 | hradn- | `hradna` | `hrádnime` | `hrádnik` | `hradnáv` | `hradnáž` |
 | svorn- | `svorna` | `svórnime` | `svórnik` | `svornáv` | `svornáž` |
 | četn- | `četna` | `čétnime` | `čétnik` | `četnáv` | `četnáž` |
-| ptakn- | `ptakna` | `ptáknime` | `ptáknik` | `ptaknáv` | `ptaknáž` |
+| řejn- | `řejna` | `řéjnime` | `řéjnik` | `řejnáv` | `řejnáž` |
 | všihn- | `všihna` | `všíhnime` | `všíhnik` | `všihnáv` | `všihnáž` |
 | žbirn- | `žbirna` | `žbírnime` | `žbírnik` | `žbirnáv` | `žbirnáž` |
 | hvodn- | `hvodna` | `hvódnime` | `hvódnik` | `hvodnáv` | `hvodnáž` |
@@ -48,7 +48,7 @@ These nine records have sufficiently specified principal parts for the bounded m
 | hradn- | `hradnéla` | `hradnélime` | `hradnélek` | `hradnélav` | `hradnélaž` |
 | svorn- | `svornéla` | `svornélime` | `svornélek` | `svornélav` | `svornélaž` |
 | četn- | `četnéla` | `četnélime` | `četnélek` | `četnélav` | `četnélaž` |
-| ptakn- | `ptaknéla` | `ptaknélime` | `ptaknélek` | `ptaknélav` | `ptaknélaž` |
+| řejn- | `řejnéla` | `řejnélime` | `řejnélek` | `řejnélav` | `řejnélaž` |
 | všihn- | `všihnéla` | `všihnélime` | `všihnélek` | `všihnélav` | `všihnélaž` |
 | žbirn- | `žbirnéla` | `žbirnélime` | `žbirnélek` | `žbirnélav` | `žbirnélaž` |
 | hvodn- | `hvodnéla` | `hvodnélime` | `hvodnélek` | `hvodnélav` | `hvodnélaž` |
@@ -66,7 +66,7 @@ These are selected-participant nominals, not automatic state or event abstractio
 | hradn- | `hradnal` | `hradnova` | `hradnérime` | `hradně` | `hradná` |
 | svorn- | `svornal` | `svornova` | `svornérime` | `svorně` | `svorná` |
 | četn- | `četnal` | `četnova` | `četnérime` | `četně` | `četná` |
-| ptakn- | `ptaknal` | `ptaknova` | `ptaknérime` | `ptakně` | unlisted |
+| řejn- | `řejnal` | `řejnova` | `řejnérime` | `řejně` | unlisted |
 | všihn- | `všihnal` | `všihnova` | `všihnérime` | `všihně` | `všihňa` |
 | žbirn- | `žbirnal` | `žbirnova` | `žbirnérime` | `žbirně` | `žbirňa` |
 | hvodn- | `hvodnal` | `hvodnova` | `hvodnérime` | `hvodně` | unlisted |
@@ -78,7 +78,7 @@ These are selected-participant nominals, not automatic state or event abstractio
 | hradn- | `hradnélal` | `hradnélova` | `hradnélrime` | unlisted |
 | svorn- | `svornélal` | `svornélova` | `svornélrime` | unlisted |
 | četn- | `četnélal` | `četnélova` | `četnélrime` | unlisted |
-| ptakn- | `ptaknélal` | `ptaknélova` | `ptaknélrime` | unlisted |
+| řejn- | `řejnélal` | `řejnélova` | `řejnélrime` | unlisted |
 | všihn- | `všihnélal` | `všihnélova` | `všihnélrime` | `všihnébik` (bounded state with overt stimulus) |
 | žbirn- | `žbirnélal` | `žbirnélova` | `žbirnélrime` | unlisted |
 | hvodn- | `hvodnélal` | `hvodnélova` | `hvodnélrime` | unlisted |
@@ -90,7 +90,7 @@ Evidential `-al/-l` is unchanged and marks propositional source. The existing `v
 
 Class I selects root G1 plus short `-a`; Class II selects its base grade plus long `-á`. Class III is enumerated for `všihn-` and `žbirn-` and selects the existing front grade at the final stative boundary plus short `-a`: `všihňa`, `žbirňa`. The distinct manner boundary gives `všihně`, `žbirně`. No earlier consonant is mutated and no root lengthening accompanies the soft class. No definiteness, agreement or temporal anchor is assigned by class.
 
-The shared experiential/condition label does not give `ptakn-` or `hvodn-` an automatic Class III form. Their ordinary attributives remain unlisted. Soft-class membership does not enlarge the separately restricted emphatic `-ěsk-` derivation. No new doublet or universal dispositional/episodic contrast is specified. A historical `-ja` source is an unconfirmed comparative reconstruction, not an asserted Iridian history.
+The shared experiential/condition label does not give `řejn-` or `hvodn-` an automatic Class III form. Their ordinary attributives remain unlisted. Soft-class membership does not enlarge the separately restricted emphatic `-ěsk-` derivation. No new doublet or universal dispositional/episodic contrast is specified. A historical `-ja` source is an unconfirmed comparative reconstruction, not an asserted Iridian history.
 
 ## Restricted Manifest
 
@@ -124,8 +124,8 @@ The following IPA strings show selected segments and possible syllable margins b
 | hradn- | /ˈxrad.na/ | /ˈxrad.neː.la/ | d+n retained; simple root G1 a→á |
 | svorn- | /ˈsvɔr.na/ | /ˈsvɔr.neː.la/ | r remains a margin; root G1 o→ó |
 | četn- | /ˈtʃɛt.na/ | /ˈtʃɛt.neː.la/ | final n remains plain; no added mutation of č |
-| ptakn- | /ˈptak.na/ | /ˈptak.neː.la/ | obstruent plateau pt, licensed k+n distribution |
-| smrn- | withheld | withheld | no recorded eligible root nucleus; /smrn/ onset cannot be rescued by syllabic r |
+| řejn- | /ˈʒɛj.na/ | /ˈʒɛj.neː.la/ | lexical ř represents /ʒ/; root e is the quantity target; j remains a coda |
+| sledn- | withheld | withheld | eligible root e at segment index 2; finite and Become classes unassigned |
 | všihn- | /ˈvʃɪx.na/ | /ˈvʃɪx.neː.la/ | initial v assimilates before voiceless obstruents; no extra vowel |
 | žbirn- | /ˈʒbɪr.na/ | /ˈʒbɪr.neː.la/ | initial voiced-obstruent plateau; soft ATTR targets only final n |
 | hvodn- | /ˈxvɔd.na/ | /ˈxvɔd.neː.la/ | onset obstruents obey ordinary voicing; d+n retained |
@@ -138,7 +138,7 @@ Negative indicative `za-` remains outside the lexical stress domain; integrated 
 
 ## Withheld principal parts and irregular candidates
 
-`smrn-` has no eligible vowel target. Its principal parts, ordinary ATTR, manner and derived nominalisations are withheld: no unrecorded *smer-* stem or syllabic liquid is introduced.
+`sledn-` ‘be sick’ has the eligible root vowel e (segment index 2). Its finite, Become and ordinary ATTR classes remain unassigned, and its manner form and derived nominalisations remain unlisted; the presence of a vowel does not supply those lexical licences.
 
 `torba` ‘badness’ supplies stative `torban-` ‘be bad’, syllabified /tɔr.ban/. Its quantity target is the final root a (segment index 4), giving conditional G1 `torbán-` while initial o remains short. Finite class, Become class, ordinary ATTR and manner are unassigned. The machine file isolates its Class A / EL-S paradigms under `conditional_predictions`, outside licensed `expected` forms. The isolated and linked conditional outputs are listed in the grammar's `tab:torban-conditional`; they are unreachable through the lexical selector. The manner candidate `torbaně` likewise needs an independent licence. No ordinary attributive principal part is selected.
 

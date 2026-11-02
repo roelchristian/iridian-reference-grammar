@@ -24,7 +24,7 @@ from pivot_diagnostics import configurational_case
 SPELLING = dict(zip('abdehiklmnoprstuvyz',
                     ('a','b','d','ɛ','x','ɪ','k','l','m','n','ɔ','p','r','s','t','ʊ','v','ɨ','z')))
 SPELLING.update({'á':'aː','é':'eː','í':'iː','ó':'oː','ú':'uː','ý':'ɨː',
-                 'š':'ʃ','ž':'ʒ','č':'tʃ','c':'ts','ň':'ɲ','ľ':'ʎ'})
+                 'š':'ʃ','ž':'ʒ','č':'tʃ','c':'ts','ň':'ɲ','ľ':'ʎ','ř':'ʒ','j':'j'})
 
 def tokens(form):
     # A narrow expected-form decoder; morphology is asserted independently.
@@ -45,7 +45,7 @@ class StativeDiagnosticsTests(unittest.TestCase):
     def setUpClass(cls):
         cls.fixtures = json.loads((ROOT / 'scripts/stative-fixtures.json').read_text())
         cls.targets = {'mužn':1,'hradn':2,'svorn':2,'četn':1,
-                       'ptakn':2,'všihn':2,'hvodn':2,'tvírzn':2}
+                       'řejn':1,'všihn':2,'hvodn':2,'tvírzn':2}
 
     def test_eighty_independent_finite_cells(self):
         count = 0

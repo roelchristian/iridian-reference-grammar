@@ -1,6 +1,6 @@
 {
   "base": "5a29478c793f0f15234a2c062cb5c3cc6e74cd9b",
-  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined. Exponent-bearing lexical examples incorporate the kař- and kan- entries; protected rule spans and earlier fixture files retain their reviewed baseline. Orthographic spellings reflect the unified soft-coronal and labial conventions; protected linguistic content is unchanged.",
+  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined. Exponent-bearing lexical examples incorporate the kař- and kan- entries; protected rule spans and earlier fixture files retain their reviewed baseline. Orthographic spellings reflect the unified soft-coronal and labial conventions; protected linguistic content is unchanged. The earlier paradigm fixtures now reflect the user-authorised tiredness-stem replacement, including its quantity grade and phonological notes; the protected relative rules are unchanged.",
   "paragraphs": {
     "chapters/01-overview.tex": [],
     "chapters/02-phonology.tex": [
@@ -86,8 +86,8 @@
     }
   ],
   "files": {
-    "scripts/stative-fixtures.json": "357d1d42e020739b8184c396d02424d669b65e452f0c6d97ab33fe41000b6fb0",
-    "util/stative-paradigms.md": "6aca294ba7c16ed513dff2417f1cb76a07503c7ef81b12f44c9636ba0fa491dc",
+    "scripts/stative-fixtures.json": "e3b8d1a8d76df84c7b68dc9f23caf58028726b7f936f78681642e9d1943c40b3",
+    "util/stative-paradigms.md": "d6e9ce90e22128fc0500df6adb89939fc6ebbb10b418e33f1b66f8acc73dc16a",
     "scripts/clausal_diagnostics.py": "6d4b356e417b0e47380174e325002533a98ea04fb6d6b82eefeaa6cd2ec1e601"
   },
   "migration": {
