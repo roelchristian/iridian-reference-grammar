@@ -24,23 +24,23 @@ Finite class, argument structure, semantic subclass and ordinary ATTR class are 
 
 `EL-S` is a listed Become strength class selecting `-él-`; `EL-P` selects protected short `-el-`. A short root does not itself establish membership. A test with the same short segment string and its Become class removed must fail. A deliberately hypothetical EL-P assignment to that string illustrates the selector's dependence on an explicit class; it is not a new lexical entry.
 
-The records additionally preserve gradability, the five aspect licences, protected quantity, the eligible nucleus, manner availability, selected-participant nominalisation, stimulus licensing and conditional Caus availability. State progressive needs a licensed stage-level/expressive context; state PF needs a bounded-state context. An anterior state need not have ceased and a contemplative projection need not be unstarted. Contextual gradability does not automatically license a causable transition.
+The records additionally preserve gradability, the three simple-state aspect licences and the separately licensed derived-event inventory, protected quantity, the eligible nucleus, manner availability, selected-participant nominalisation, stimulus licensing and conditional Caus availability. Simple-State progressive and perfective are unavailable; stage-level, expressive and bounded contexts do not override this selection. An anterior state need not have ceased and a contemplative projection need not be unstarted. Contextual gradability does not automatically license a causable transition.
 
 ## Finite principal parts
 
-These nine records have sufficiently specified principal parts for the bounded model. All simple-state progressive/PF forms carry their contextual qualifications. The input vocabulary includes eleven records; the other two are withheld below rather than silently repaired.
+These nine records have sufficiently specified principal parts for the bounded model. Simple-State progressive and perfective have no licensed principal parts. The input vocabulary includes eleven records; the other two are withheld below rather than silently repaired.
 
-| Stem | Continuous state | Progressive state | Perfective state | Retrospective state | Contemplative state |
-| --- | --- | --- | --- | --- | --- |
-| mužn- | `mužna` | `múžnime` | `múžnik` | `mužnáv` | `mužnáž` |
-| hradn- | `hradna` | `hrádnime` | `hrádnik` | `hradnáv` | `hradnáž` |
-| svorn- | `svorna` | `svórnime` | `svórnik` | `svornáv` | `svornáž` |
-| četn- | `četna` | `čétnime` | `čétnik` | `četnáv` | `četnáž` |
-| řejn- | `řejna` | `řéjnime` | `řéjnik` | `řejnáv` | `řejnáž` |
-| všihn- | `všihna` | `všíhnime` | `všíhnik` | `všihnáv` | `všihnáž` |
-| žbirn- | `žbirna` | `žbírnime` | `žbírnik` | `žbirnáv` | `žbirnáž` |
-| hvodn- | `hvodna` | `hvódnime` | `hvódnik` | `hvodnáv` | `hvodnáž` |
-| tvírzn- | `tvírzna` | `tvírznime` | `tvírznik` | `tvírznav` | `tvírznaž` |
+| Stem | Continuous state | Retrospective state | Contemplative state |
+| --- | --- | --- | --- |
+| mužn- | `mužna` | `mužnáv` | `mužnáž` |
+| hradn- | `hradna` | `hradnáv` | `hradnáž` |
+| svorn- | `svorna` | `svornáv` | `svornáž` |
+| četn- | `četna` | `četnáv` | `četnáž` |
+| řejn- | `řejna` | `řejnáv` | `řejnáž` |
+| všihn- | `všihna` | `všihnáv` | `všihnáž` |
+| žbirn- | `žbirna` | `žbirnáv` | `žbirnáž` |
+| hvodn- | `hvodna` | `hvodnáv` | `hvodnáž` |
+| tvírzn- | `tvírzna` | `tvírznav` | `tvírznaž` |
 
 | Stem | Continuous Become | Progressive Become | Perfective Become | Retrospective Become | Contemplative Become |
 | --- | --- | --- | --- | --- | --- |
@@ -79,7 +79,7 @@ These are selected-participant nominals, not automatic state or event abstractio
 | svorn- | `svornélal` | `svornélova` | `svornélrime` | unlisted |
 | četn- | `četnélal` | `četnélova` | `četnélrime` | unlisted |
 | řejn- | `řejnélal` | `řejnélova` | `řejnélrime` | unlisted |
-| všihn- | `všihnélal` | `všihnélova` | `všihnélrime` | `všihnébik` (bounded state with overt stimulus) |
+| všihn- | `všihnélal` | `všihnélova` | `všihnélrime` | `všihnébav` (anterior state with overt stimulus) |
 | žbirn- | `žbirnélal` | `žbirnélova` | `žbirnélrime` | unlisted |
 | hvodn- | `hvodnélal` | `hvodnélova` | `hvodnélrime` | unlisted |
 | tvírzn- | `tvírznelal` | `tvírznelova` | `tvírznelrime` | unlisted |
@@ -121,8 +121,8 @@ The following IPA strings show selected segments and possible syllable margins b
 | Record | State continuous, selected IPA | Become continuous, selected IPA | Quantity and cluster assessment |
 | --- | --- | --- | --- |
 | mužn- | /ˈmʊʒ.na/ | /ˈmʊʒ.neː.la/ | ž+n retained; local Become é, root u remains short |
-| hradn- | /ˈxrad.na/ | /ˈxrad.neː.la/ | d+n retained; simple root G1 a→á |
-| svorn- | /ˈsvɔr.na/ | /ˈsvɔr.neː.la/ | r remains a margin; root G1 o→ó |
+| hradn- | /ˈxrad.na/ | /ˈxrad.neː.la/ | d+n retained; state root a remains short in licensed indicative cells |
+| svorn- | /ˈsvɔr.na/ | /ˈsvɔr.neː.la/ | r remains a margin; state root o remains short in licensed indicative cells |
 | četn- | /ˈtʃɛt.na/ | /ˈtʃɛt.neː.la/ | final n remains plain; no added mutation of č |
 | řejn- | /ˈʒɛj.na/ | /ˈʒɛj.neː.la/ | lexical ř represents /ʒ/; root e is the quantity target; j remains a coda |
 | sledn- | withheld | withheld | eligible root e at segment index 2; finite and Become classes unassigned |
@@ -134,7 +134,7 @@ The following IPA strings show selected segments and possible syllable margins b
 
 Broad Manifest pronunciations include `[ˈfʃɪx.nɛ.ʃa]` (three short nuclei) and `[ˈfʃɪx.neː.ʃɪ.mɛ]` (local é, initial stress). Class III contrasts are `[ˈfʃɪx.ɲa]` / `[ˈfʃɪx.ɲɛ]` and `[ˈʒbɪr.ɲa]` / `[ˈʒbɪr.ɲɛ]`. Compact Manifest Caus permits an obstruent–liquid onset in `/vʃɪx.neː.ʃrɪ.mɛ/`; no epenthesis is required. Become lateral before compact r may instead occupy a coda, undergoing ordinary [w] realisation. Final retrospective v is coda [w]; evidential l is likewise coda [w] before further linking makes it prevocalic [ʎ]. These positional realisations do not alter underlying quantity or the licensed boundary operations.
 
-Negative indicative `za-` remains outside the lexical stress domain; integrated degree prefixes belong inside it. Simple State permits its listed local root grade; an intervening Become or Manifest blocks new root grading through that head. Prefix scope supplies no additional quantity licence. Tests use selected phonological segment tokens and explicit licences; they do not infer words' syllabification or surface voicing from spelling.
+Negative indicative `za-` remains outside the lexical stress domain; integrated degree prefixes belong inside it. Simple State retains its listed base grade in the licensed indicative inventory; an intervening Become or Manifest blocks new root grading through that head. Prefix scope supplies no additional quantity licence. Tests use selected phonological segment tokens and explicit licences; they do not infer words' syllabification or surface voicing from spelling.
 
 ## Withheld principal parts and irregular candidates
 
@@ -142,7 +142,7 @@ Negative indicative `za-` remains outside the lexical stress domain; integrated 
 
 `torba` ‘badness’ supplies stative `torban-` ‘be bad’, syllabified /tɔr.ban/. Its quantity target is the final root a (segment index 4), giving conditional G1 `torbán-` while initial o remains short. Finite class, Become class, ordinary ATTR and manner are unassigned. The machine file isolates its Class A / EL-S paradigms under `conditional_predictions`, outside licensed `expected` forms. The isolated and linked conditional outputs are listed in the grammar's `tab:torban-conditional`; they are unreachable through the lexical selector. The manner candidate `torbaně` likewise needs an independent licence. No ordinary attributive principal part is selected.
 
-The nine resolved records supply 90 State/Become cells; Manifest supplies five more finite cells. Both unresolved records have explicit rejection tests. `smerňa`, novel attributive doublets and fabricated irregular histories remain unadopted. There is no productive stativiser deletion, unsupported vowel-preservation allomorph or global palatalisation rule.
+The nine resolved records supply 72 licensed State/Become cells; Manifest supplies five more finite cells. Both unresolved records have explicit rejection tests. `smerňa`, novel attributive doublets and fabricated irregular histories remain unadopted. There is no productive stativiser deletion, unsupported vowel-preservation allomorph or global palatalisation rule.
 
 ## Verification limits
 

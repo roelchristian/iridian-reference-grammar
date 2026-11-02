@@ -1,5 +1,11 @@
 # Stative reform: integration and independent review
 
+Historical integration record. Its productive simple-State progressive/perfective
+licences and associated principal parts are superseded by the restricted
+CONT/RET/CTPL inventory adopted on 2 November 2026; current specifications
+are in `stative-paradigms.md`, `stative-extension-paradigms.md` and the normative
+chapters. The adoption history below is retained as a record.
+
 Implemented locally on branch `stative-reform` in `/workspace/iridian-reference-grammar`.
 Base: remote master `b6c87551397faa5d661e2690b2ee72745d7bae40` (PR #18), including the
 reduced-relative suffix typesetting correction. No commit, push, PR, merge or PDF

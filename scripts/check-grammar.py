@@ -305,6 +305,26 @@ def check_prescribed_pronunciations(sources, fixtures, context):
     return failures
 
 
+def table_cells(row):
+    """Split top-level alignment cells, preserving grouped/escaped ampersands."""
+    cells, cell, depth, escaped = [], [], 0, False
+    for character in row:
+        if escaped:
+            cell.append(character)
+            escaped = False
+        elif character == '\\':
+            cell.append(character)
+            escaped = True
+        elif character == '&' and depth == 0:
+            cells.append(''.join(cell).strip())
+            cell = []
+        else:
+            cell.append(character)
+            depth += (character == '{') - (character == '}')
+    cells.append(''.join(cell).strip())
+    return cells
+
+
 def check_quantity_sources(sources, fixtures):
     """Keep independent grade/declension/aspect cells paired in source tables."""
     failures = []
@@ -313,8 +333,34 @@ def check_quantity_sources(sources, fixtures):
         marker = r'\label{' + table['label'] + '}'
         bodies = re.findall(re.escape(marker) + r'(.*?)\\end\{table\}', text, re.S)
         width = table['width']
-        rows = [forms[-width:] for body in bodies for row in body.split(r'\\')
-                for forms in [re.findall(r'\\ird\{([^{}]+)\}', row)] if len(forms) >= width]
+        if table.get('allow_unavailable') is True:
+            rows = []
+            leading = table.get('leading_columns', 0)
+            for body in bodies:
+                for row in body.split(r'\\'):
+                    cells = table_cells(row)
+                    data = cells[leading:]
+                    # Ignore headings and rules, but retain any malformed data
+                    # row so missing, added or shifted cells cannot disappear.
+                    if not any(r'\ird{' in cell or cell == '---' for cell in data):
+                        continue
+                    if len(cells) != leading + width:
+                        rows.append([])
+                        continue
+                    values = []
+                    for cell in data:
+                        form = re.fullmatch(r'\\ird\{([^{}]+)\}', cell)
+                        if cell == '---':
+                            values.append(None)
+                        elif form:
+                            values.append(form[1])
+                        else:
+                            values = []
+                            break
+                    rows.append(values)
+        else:
+            rows = [forms[-width:] for body in bodies for row in body.split(r'\\')
+                    for forms in [re.findall(r'\\ird\{([^{}]+)\}', row)] if len(forms) >= width]
         if rows != table['rows']:
             failures.append('quantity paradigm: ' + table['label'] + ': reviewed cells changed')
     for passage in fixtures.get('source_paragraphs', []):

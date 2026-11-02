@@ -107,12 +107,12 @@ of a declared boundary does not establish automatic boundary detection.
 
 `scripts/stative_diagnostics.py` supplies bounded State/Become, scalar,
 perspective and selection checks. Independent literal fixtures cover eight
-stems, 80 finite aspect cells, their negative/phasal and bound derivatives,
+stems, 64 licensed finite aspect cells, their negative/phasal and bound derivatives,
 16 conditional causative paradigms and three reduced-Mood examples. See
 `util/stative-paradigms.md` for the morphological and PF audit,
 `util/stative-source-audit.md` for primary-source access limits, and
 `util/stative-integration-review.md` for adoption decisions and independent
-review. The model takes explicit licences and semantic standards; it does not
+review. Simple states select continuous, retrospective or contemplative; progressive and perfective are rejected even with expressive or bounded-context flags. Dynamic derivatives retain their own aspectual licences. The model takes explicit licences and semantic standards; it does not
 infer attestation, phonetic output or arbitrary lexical selection from spelling.
 
 ## Ordinary ATTR and experiential extension
@@ -120,11 +120,12 @@ infer attestation, phonetic output or arbitrary lexical selection from spelling.
 `scripts/stative-lexicon.json` and `scripts/stative_lexicon.py` add explicit
 lexical licences for the second pass. The latest ordinary attributive and
 Manifest specifications are recorded in `util/stative-extension-paradigms.md`.
-The earlier `util/stative-paradigms.md` and its fixture matrix remain the
-reviewed historical baseline at `5a29478`; their unassigned happy-attributive
-and unadopted-third-class status is superseded by the new ordinary ATTR
-metadata. Their existing relative examples and construction rules remain
-unchanged. `scripts/stative_scope_guard.py` checks the preserved source spans
+The current `util/stative-paradigms.md` and its fixture matrix implement the
+restricted State inventory adopted on 2 November 2026. The earlier baseline
+at `5a29478` remains the scope reference for unrelated relative construction
+rules; the authorised aspect restrictions also apply to reduced derivatives.
+The former unassigned happy-attributive and unadopted-third-class status is
+superseded by the ordinary ATTR metadata. `scripts/stative_scope_guard.py` checks the preserved source spans
 and earlier files against baseline hashes, including negative mutation tests.
 See `util/stative-extension-source-audit.md` for primary-source access limits.
 

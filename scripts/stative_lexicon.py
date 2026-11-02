@@ -11,7 +11,7 @@ from pathlib import Path
 from boundary_transducer import BoundaryLicence, BoundaryState, BoundaryTransducer
 from quantity_grades import QuantityGrades, QuantityLicence
 from evidential_realisation import attach_indirect_evidential
-from stative_diagnostics import ASPECTS, SHORT, StativeStem, inflect
+from stative_diagnostics import ASPECTS, STATE_ASPECTS, SHORT, StativeStem, inflect
 
 
 class LexicalLicenceError(ValueError):
@@ -44,6 +44,11 @@ def load_lexicon(path=None):
             raise LexicalLicenceError('unlisted Manifest class')
         if entry['attributive_class'] not in ('I','II','III',None):
             raise LexicalLicenceError('unlisted attributive class')
+        if set(entry['aspect_licences']) != set(STATE_ASPECTS):
+            raise LexicalLicenceError('simple-State inventory must be continuous, retrospective and contemplative')
+        for kind, aspects in (('state', STATE_ASPECTS), ('become', ASPECTS)):
+            if len(entry['expected'][kind]) != len(aspects):
+                raise LexicalLicenceError('principal-part inventory disagrees with its predicate type')
         if entry['principal_part_status'] == 'unresolved':
             if entry['quantity_target'] is not None or entry['finite_class'] is not None:
                 raise LexicalLicenceError('unresolved principal part cannot acquire a quantity target')
@@ -95,6 +100,8 @@ def finite(entry, kind, aspect, *, stage_level=False, bounded=False):
         raise LexicalLicenceError('unknown aspect')
     segments,target = derive(entry,kind)
     if kind == 'state':
+        if aspect not in entry['aspect_licences'] or aspect not in STATE_ASPECTS:
+            raise LexicalLicenceError('simple State has no indicative progressive or perfective')
         return inflect(StativeStem(segments,entry['finite_class'],target,
                                    entry['finite_class']=='C'),aspect,
                        stage_level=stage_level,bounded=bounded)
@@ -170,10 +177,10 @@ def causative(entry, kind, aspect, *, causable=False):
 def stimulus_applicative(entry, aspect, *, stimulus_present=False, kind='state'):
     if kind!='state' or entry['stimulus']!='applicative-eb' or stimulus_present is not True:
         raise LexicalLicenceError('this frame has no licensed overt stimulus applicative')
+    if aspect not in STATE_ASPECTS or aspect not in entry['aspect_licences']:
+        raise LexicalLicenceError('stimulus Appl preserves the simple-State aspect inventory')
     segments = _available(entry)+('eː','b')
-    if aspect not in ASPECTS:
-        raise LexicalLicenceError('unknown aspect')
-    return segments+(('ɪ','k') if aspect=='perfective' else SHORT[aspect])
+    return segments+SHORT[aspect]
 
 
 def perspective_licensed(entry, *, experiencer, anchor='speaker',

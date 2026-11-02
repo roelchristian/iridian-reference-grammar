@@ -31,10 +31,29 @@ and remain outside the normative implementation.
 
 ## Bibliography integration
 
-`util/stative-references.tex` contains eight plain `\bibitem` entries intended
-for inclusion within the existing `thebibliography` environment in
-`util/negation-references.tex`. Existing source access is documented above rather
+The current bibliography is `util/references.tex`, included from `grammar.tex`.
+Existing source access is documented above rather
 than implied by an entry's presence. Bibliographic keys are
 `smithhopperdietzelkoontzgarboden2025`, `kimaeryung2024`,
 `oshimaakitasano2019`, `limzubizarreta2012`, `sakaba2026`,
 `satocho2024aspect`, `kimdonggwan2026causative`, and `nam2024`.
+
+## Aspect selection review, 2 November 2026
+
+The adopted simple-State indicative inventory is CONT/RET/CTPL. PROG and PFV
+are unavailable as productive state constructions; temporary duration,
+expressive salience and bounded observation intervals supply no exception.
+This is an Iridian selection rule, not a universal consequence of stativity
+or of having an overt inchoative. Dynamic Become, Manifest and Caus outputs
+retain their independently licensed viewpoints. The earlier integration
+reviews record the superseded symmetric design.
+
+| Verified source | Material read and licensed comparison | Limits |
+| --- | --- | --- |
+| Shiao Wei Tham. 2013. *Change of state verbs and result state adjectives in Mandarin Chinese*. **Journal of Linguistics** 49(3):647–701. DOI 10.1017/S0022226713000261. [Author PDF](https://www1.wellesley.edu/sites/default/files/assets/departments/eall/tham/tham2013-jl.pdf). | Full primary text, especially §3.3, pp. 668–670, examples 38–43. Perfective *xiangxin-le* ‘believe-PFV’ can denote prior belief without asserting inception; property predicates and lexical stative verbs have different distributions. | Tham's category analysis distinguishes adjectives from stative verbs. The belief example does not establish a perfective of every property predicate or require Iridian to admit one. Key: `tham2013cos`. |
+| Ana Krajinović, Jozina Vander Klok and Kilu von Prince. 2025. *When (not) to establish a new category: The case of perfect, ‘already’ and iamitives*. **Studies in Language** 49(3):546–586. DOI 10.1075/sl.23066.kra. [Publisher](https://benjamins.com/catalog/sl.23066.kra), [author manuscript](https://anakrajinovic.com/wp-content/uploads/2023/03/Manuscript_When_not_to_establish_a_new_category.pdf). | The dated 10 March 2023 manuscript was read, especially §4.1 after example 15. Nafsan experiential and universal perfect readings permit states without change-of-state interpretation, whereas the resultative reading triggers inchoative coercion. Final 2025 metadata and §4.1 heading verified against the publisher. | Final published PDF was not obtained. Use the section locator, not manuscript pagination as final pagination. This supports anterior state predication as a possibility; it does not fix Iridian RET's denotation. Key: `krajinovicvanderklokvonprince2025`. |
+| Smith, Hopperdietzel and Koontz-Garboden 2025 (existing key above). [Full primary text](https://pmc.ncbi.nlm.nih.gov/articles/PMC12354558/). | §§3.2–3.3 describe Washo overt *-etiʔ* above an already stativised predicate alongside aspect-triggered change readings. Their structural blocking proposal permits that coexistence when the overt alternative is more complex. | The original Bochnak 2023 source for the bare stative-plus-progressive example was inaccessible; the example and analysis were verified through Smith et al. A blanket argument that Iridian *-él-* automatically blocks all covert change would misapply this proposal. |
+
+No new suffix, head or lexical contrast was adopted from these comparisons.
+Korean tense-marked adjectives remain relevant to lexical category and
+state/change distinctions, not evidence for Iridian's aspectual inventory.

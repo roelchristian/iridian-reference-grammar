@@ -88,11 +88,40 @@ PRESENTATIONAL_EXAMPLE_REVISIONS = (
 )
 
 
+# Exact user-authorised State-selection edits in relative-bearing prose are
+# normalised; every earlier relative rule and example remains compared with
+# the reviewed baseline, as do further edits to these passages.
+STATE_SELECTION_REVISIONS = (
+    (
+        "Inchoative perfective is eventive:\n"
+        r"\ird{mužnélek}, not a mechanical extension of the stative \ird{-ik}.",
+        "Inchoative perfective selects the\n"
+        r"ordinary eventive exponent, as in \ird{mužnélek}.",
+    ),
+    (
+        r"\subsection{Nominalisation and aspectual attribution of statives}" "\n\n",
+        r"\subsection{Nominalisation and aspectual attribution of statives}" "\n\n"
+        "Aspectual selection is preserved under participant nominalisation and\n"
+        "relative formation: a simple state admits continuous, retrospective and\n"
+        "contemplative viewpoint, while progressive and perfective require an\n"
+        "independently licensed dynamic predicate.\n\n",
+    ),
+    (
+        r"other relatives. \synhead{StateP}, \synhead{BecomeP} and event-derived",
+        "other relatives. Relative embedding preserves the aspectual restrictions of\n"
+        "its selected predicate: a stative output admits continuous, retrospective or\n"
+        "contemplative aspect, while an eventive derivative has its independently\n"
+        r"licensed viewpoint inventory. \synhead{StateP}, \synhead{BecomeP} and event-derived",
+    ),
+)
+
+
 def frozen_reference_text(path, text):
     if path == 'chapters/08-complex-sentences.tex':
         for original, revised in FINITE_REFERENCE_REVISIONS:
             text = text.replace(revised, original)
-    for original, revised in LEXICAL_FORM_REVISIONS + PRESENTATIONAL_EXAMPLE_REVISIONS:
+    for original, revised in (LEXICAL_FORM_REVISIONS + PRESENTATIONAL_EXAMPLE_REVISIONS
+                              + STATE_SELECTION_REVISIONS):
         text = text.replace(revised, original)
     return text
 

@@ -978,14 +978,14 @@
           "torbanéle"
         ],
         [
-          "torbánime",
-          "torbánimně",
+          null,
+          null,
           "torbanélime",
           "torbanélimně"
         ],
         [
-          "torbánik",
-          "torbánice",
+          null,
+          null,
           "torbanélek",
           "torbanélice"
         ],
@@ -1001,7 +1001,9 @@
           "torbanélaž",
           "torbanélaže"
         ]
-      ]
+      ],
+      "allow_unavailable": true,
+      "leading_columns": 1
     }
   ],
   "pronunciations": [

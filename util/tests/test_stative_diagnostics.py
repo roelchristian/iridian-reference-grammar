@@ -11,7 +11,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from source_domains import read_domain, domain_sources
 
 sys.path.insert(0, str(ROOT / 'scripts'))
-from stative_diagnostics import (ASPECTS, StativeStem, check_stative_sources,
+from stative_diagnostics import (ASPECTS, STATE_ASPECTS, StativeStem, check_stative_sources,
     event_derived_state, experiential_source, inflect, phased_state, relative_context, scalar_reading)
 from quantity_grades import QuantityGrades, QuantityLicence
 from boundary_transducer import BoundaryLicence, BoundaryState, BoundaryTransducer
@@ -47,24 +47,24 @@ class StativeDiagnosticsTests(unittest.TestCase):
         cls.targets = {'mužn':1,'hradn':2,'svorn':2,'četn':1,
                        'řejn':1,'všihn':2,'hvodn':2,'tvírzn':2}
 
-    def test_eighty_independent_finite_cells(self):
+    def test_restricted_state_and_full_inchoative_finite_cells(self):
         count = 0
         for row in self.fixtures['paradigms']:
             stem = StativeStem(tokens(row['stem']), row['quantity_class'],
                                self.targets[row['stem']], row['quantity_class'] == 'C')
             for cell in row['forms']:
                 with self.subTest(stem=row['stem'],kind=cell['kind'],aspect=cell['aspect']):
-                    result = inflect(stem, cell['aspect'], inchoative=cell['kind']=='inchoative',
-                                     stage_level=True, bounded=True)
+                    result = inflect(stem, cell['aspect'], inchoative=cell['kind']=='inchoative')
                     self.assertEqual(result, tokens(cell['finite']))
                     count += 1
-        self.assertEqual(count, 80)
+        self.assertEqual(count, len(self.targets)*(len(STATE_ASPECTS)+len(ASPECTS)))
 
     def test_fixture_operation_matrix_is_complete_and_conditional(self):
         self.assertEqual({r['stem'] for r in self.fixtures['paradigms']}, set(self.targets))
         for row in self.fixtures['paradigms']:
             self.assertEqual({(c['kind'],c['aspect']) for c in row['forms']},
-                {(kind, aspect) for kind in ('state','inchoative') for aspect in ASPECTS})
+                {('state', aspect) for aspect in STATE_ASPECTS}
+                | {('inchoative', aspect) for aspect in ASPECTS})
             for cell in row['forms']:
                 for field in ('finite','negative','vy','so','linked','participant','relative',
                               'evidential','evidential_linked','licence'):
@@ -77,15 +77,22 @@ class StativeDiagnosticsTests(unittest.TestCase):
         self.assertEqual(row['forms'][0]['relative'], 'mužnový')
         self.assertEqual(row['forms'][0]['licence'], 'marked-stage-relative')
 
-    def test_state_aspect_does_not_supply_covert_become(self):
+    def test_state_progressive_and_perfective_reject_contextual_rescue(self):
+        for stem in (StativeStem(tokens('mužn'),'A',1),
+                     StativeStem(tokens('tvírzn'),'C',2,True)):
+            for aspect in ('progressive','perfective'):
+                for flags in ({}, {'stage_level':True}, {'bounded':True},
+                              {'stage_level':True,'bounded':True}):
+                    with self.subTest(stem=stem,aspect=aspect,flags=flags), self.assertRaises(ValueError):
+                        inflect(stem,aspect,**flags)
+
+    def test_state_anterior_and_projection_retain_distinct_endings(self):
         stem = StativeStem(tokens('mužn'),'A',1)
-        for aspect in ('progressive','perfective'):
-            with self.subTest(aspect=aspect), self.assertRaises(ValueError):
-                inflect(stem,aspect)
-        self.assertEqual(inflect(stem,'progressive',stage_level=True),tokens('múžnime'))
-        self.assertEqual(inflect(stem,'perfective',bounded=True),tokens('múžnik'))
         self.assertEqual(inflect(stem,'retrospective'),tokens('mužnáv'))
         self.assertEqual(inflect(stem,'contemplative'),tokens('mužnáž'))
+        protected = StativeStem(tokens('tvírzn'),'C',2,True)
+        self.assertEqual(inflect(protected,'retrospective'),tokens('tvírznav'))
+        self.assertEqual(inflect(protected,'contemplative'),tokens('tvírznaž'))
 
     def test_become_quantity_blocks_outer_root_regrading(self):
         stem = StativeStem(tokens('mužn'),'A',1)
@@ -113,7 +120,8 @@ class StativeDiagnosticsTests(unittest.TestCase):
             BoundaryLicence('linker','front',True,True),('ɛ',))
         self.assertEqual(result.segments,tokens('mužnélice'))
         self.assertNotEqual(result.segments,tokens('mužnéliče'))
-        pf = self.fixtures['paradigms'][0]['forms'][7]
+        pf = next(cell for cell in self.fixtures['paradigms'][0]['forms']
+                  if cell['kind']=='inchoative' and cell['aspect']=='perfective')
         self.assertEqual((pf['finite'],pf['participant'],pf['relative']),
                          ('mužnélek','mužnélikou','mužnélikový'))
 
@@ -191,6 +199,10 @@ class StativeDiagnosticsTests(unittest.TestCase):
             self.assertTrue(relative_context('state','continuous',**{condition:True}))
         self.assertTrue(relative_context('inchoative','continuous'))
         self.assertTrue(relative_context('state','retrospective'))
+        for aspect in ('progressive','perfective'):
+            self.assertFalse(relative_context('state',aspect,episodic=True,
+                                              temporal=True,contrastive=True))
+            self.assertTrue(relative_context('inchoative',aspect))
         with self.assertRaises(ValueError):
             relative_context('state','continuous',episodic='yes')
 
@@ -234,6 +246,22 @@ class StativeDiagnosticsTests(unittest.TestCase):
         comparative=copy.deepcopy(sources)
         comparative['chapters/06-simple-sentence.tex']=comparative['chapters/06-simple-sentence.tex'].replace('četnélime','čétnime')
         self.assertTrue(check_stative_sources(comparative,self.fixtures))
+
+    def test_source_checks_reject_positive_state_eventive_aspects_and_onset_projection(self):
+        source=read_domain('chapters/06-simple-sentence.tex')
+        changes={
+            'progressive':source.replace(r'\gla *Nužo múžnime.',r'\gla Nužo múžnime.',1),
+            'perfective':source.replace(r'\gla *Dá řéjnik.',r'\gla Dá řéjnik.',1),
+            'projection':source.replace(
+                'the speaker is tired already and expects the condition to hold during the afternoon walk',
+                'the speaker must be rested now because the projected state has not begun',1),
+        }
+        for name,changed in changes.items():
+            with self.subTest(change=name):
+                self.assertNotEqual(source,changed)
+                self.assertTrue(check_stative_sources({
+                    'chapters/03-verbs.tex':read_domain('chapters/03-verbs.tex'),
+                    'chapters/06-simple-sentence.tex':changed},self.fixtures))
 
     def test_source_binding_detects_lost_locality_constraint(self):
         source=read_domain('chapters/03-verbs.tex').replace('Asp cannot reach through Become',

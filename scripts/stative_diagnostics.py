@@ -8,11 +8,11 @@ written cluster, establish causative selection, or compute arbitrary Mood forms.
 from dataclasses import dataclass
 import re
 
-from quantity_grades import QuantityGrades, QuantityLicence
 from boundary_transducer import BoundaryLicence, BoundaryState, BoundaryTransducer
 from phasal_diagnostics import ordinary_phase
 
 ASPECTS = ('continuous', 'progressive', 'perfective', 'retrospective', 'contemplative')
+STATE_ASPECTS = ('continuous', 'retrospective', 'contemplative')
 SHORT = {'continuous': ('a',), 'progressive': ('ɪ', 'm', 'ɛ'),
          'perfective': ('ɛ', 'k'), 'retrospective': ('a', 'v'),
          'contemplative': ('a', 'ʒ')}
@@ -29,9 +29,10 @@ class StativeStem:
 def inflect(stem, aspect, *, inchoative=False, stage_level=False, bounded=False):
     """Select a supplied State or Become stem before higher operations.
 
-    State progressive/PF require explicit contextual licences. Become creates
-    a local stem; Aspect cannot select an inner root grade through that head.
-    Only indicative, single-participant forms are implemented here.
+    Simple State admits only continuous, retrospective and contemplative.
+    The legacy contextual flags cannot rescue progressive/perfective State.
+    Become creates a local stem; Aspect cannot select an inner root grade
+    through that head. Only indicative, single-participant forms are modelled.
     """
     if (not isinstance(stem, StativeStem) or stem.quantity_class not in ('A', 'C')
             or aspect not in ASPECTS or type(inchoative) is not bool
@@ -39,27 +40,18 @@ def inflect(stem, aspect, *, inchoative=False, stage_level=False, bounded=False)
         raise ValueError('explicit stative stem, class and aspect required')
     if (stem.quantity_class == 'C') != stem.protected:
         raise ValueError('these fixtures require independently protected Class C')
-    if not inchoative and aspect == 'progressive' and not stage_level:
-        raise ValueError('simple-state progressive needs a licensed marked context')
-    if not inchoative and aspect == 'perfective' and not bounded:
-        raise ValueError('simple-state perfective needs a bounded-state context')
+    if not inchoative and aspect not in STATE_ASPECTS:
+        raise ValueError('simple State has no indicative progressive or perfective')
     if inchoative:
         # Plain attachment selects no PAL or root quantity mutation.
         extension = ('ɛ', 'l') if stem.protected else ('eː', 'l')
         state = BoundaryTransducer.from_file().apply(BoundaryState(stem.segments),
             BoundaryLicence('Become', 'plain', True), extension)
         return state.segments + SHORT[aspect]
-    selected = stem.segments
-    if stem.quantity_class == 'A' and aspect in ('progressive', 'perfective'):
-        selected = QuantityGrades.from_file().apply(selected,
-            QuantityLicence('State-Asp', 'G1', True, (0, len(selected)),
-                            (stem.target,), stem.target))
     ending = SHORT[aspect]
-    if aspect == 'perfective':
-        ending = ('ɪ', 'k')  # STATE's independently selected high-vowel PF
-    elif stem.quantity_class == 'A' and aspect in ('retrospective', 'contemplative'):
+    if stem.quantity_class == 'A' and aspect in ('retrospective', 'contemplative'):
         ending = ('aː', 'v' if aspect == 'retrospective' else 'ʒ')
-    return selected + ending
+    return stem.segments + ending
 
 
 def scalar_reading(kind, before, after, *, threshold=None, caused=False):
@@ -125,6 +117,9 @@ def check_stative_sources(sources, fixtures):
         for required in binding['required']:
             if normalise(required) not in section:
                 failures.append('stative source: missing prescribed form/constraint ' + required)
+        for forbidden in binding.get('forbidden', []):
+            if normalise(forbidden) in section:
+                failures.append('stative source: unavailable State form in paradigm ' + forbidden)
     for example in fixtures.get('source_examples', []):
         blocks = re.findall(r'\\begingl(.*?)\\endgl',
                             sources.get(example['source'], ''), re.S)
@@ -149,4 +144,6 @@ def relative_context(kind, aspect, *, episodic=False, temporal=False, contrastiv
         raise ValueError('supply state/inchoative and a licensed aspect')
     if any(type(value) is not bool for value in (episodic, temporal, contrastive)):
         raise ValueError('contextual licences must be explicit Booleans')
+    if kind == 'state' and aspect not in STATE_ASPECTS:
+        return False
     return kind != 'state' or aspect != 'continuous' or episodic or temporal or contrastive

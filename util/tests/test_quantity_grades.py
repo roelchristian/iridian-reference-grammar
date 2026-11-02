@@ -150,6 +150,55 @@ class QuantityGradesTests(unittest.TestCase):
                 self.assertTrue(checker.check_quantity_sources(
                     {'test.tex': correct.replace(before, after)}, fixture))
 
+    def test_table_cells_preserve_grouped_and_escaped_ampersands(self):
+        row = r'\textnormal{State & Become} & A\&B & \ird{torbanélime}'
+        self.assertEqual(checker.table_cells(row),
+                         [r'\textnormal{State & Become}',r'A\&B',r'\ird{torbanélime}'])
+
+    def test_unavailable_state_cells_preserve_become_quantity_and_column_alignment(self):
+        table = {'path':'test.tex','label':'tab:state-selection','width':4,
+                 'allow_unavailable':True,'leading_columns':1,
+                 'rows':[[None,None,'torbanélime','torbanélimně']]}
+        fixture = {'source_tables':[table]}
+        correct = (r'\label{tab:state-selection}'
+                   r'Aspect & State & Linked state & Become & Linked Become \\ '
+                   r'Progressive & --- & --- & \ird{torbanélime} & \ird{torbanélimně} \\ '
+                   r'\end{table}')
+        self.assertEqual(checker.check_quantity_sources({'test.tex':correct},fixture),[])
+        for name,changed in {
+            'state restored':correct.replace('---',r'\ird{torbánime}',1),
+            'missing cell':correct.replace('--- & ---','---',1),
+            'empty cell':correct.replace('--- & ---','--- & ',1),
+            'shifted form':correct.replace('--- & --- &',r'\ird{torbanélime} & --- &',1),
+            'extra cell':correct.replace('--- & ---','--- & --- & ---',1),
+            'Become grade':correct.replace('torbanélime','torbánelime'),
+            'linked grade':correct.replace('torbanélimně','torbanélimne'),
+        }.items():
+            with self.subTest(change=name):
+                self.assertNotEqual(changed,correct)
+                self.assertTrue(checker.check_quantity_sources({'test.tex':changed},fixture))
+        # Unavailable cells are an explicit table-specific permission.
+        unlicensed=copy.deepcopy(fixture)
+        unlicensed['source_tables'][0].pop('allow_unavailable')
+        self.assertTrue(checker.check_quantity_sources({'test.tex':correct},unlicensed))
+
+    def test_conditional_torban_keeps_five_rows_and_excludes_two_state_aspects(self):
+        table=next(table for table in self.fixtures['source_tables']
+                   if table['label']=='tab:torban-conditional')
+        self.assertEqual(table['width'],4)
+        self.assertEqual(len(table['rows']),5)
+        self.assertEqual(table['rows'][1],[None,None,'torbanélime','torbanélimně'])
+        self.assertEqual(table['rows'][2],[None,None,'torbanélek','torbanélice'])
+        sources=domain_sources(checker.active_sources(ROOT/'grammar.tex'))
+        fixture={'source_tables':[table]}
+        self.assertEqual(checker.check_quantity_sources(sources,fixture),[])
+        changed=dict(sources)
+        changed[table['path']]=sources[table['path']].replace(
+            r'Perfective & --- & --- & \ird{torbanélek}',
+            r'Perfective & \ird{torbánik} & \ird{torbánice} & \ird{torbanélek}',1)
+        self.assertNotEqual(changed,sources)
+        self.assertTrue(checker.check_quantity_sources(changed,fixture))
+
     def test_run_pronunciations_preserve_initial_stress_second_nucleus_length_and_ts(self):
         fixtures = [case for case in self.fixtures['pronunciations']
                     if case['form'] in {'zemácime', 'zemácek'}]

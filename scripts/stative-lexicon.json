@@ -1,5 +1,5 @@
 {
-  "description": "Constructed lexical specifications, with semantic and PF licences explicitly supplied. Missing principal parts are withheld, not repaired. Existing relative constructions are outside this matrix.",
+  "description": "Constructed lexical specifications, with semantic and PF licences explicitly supplied. Simple indicative State has continuous, retrospective and contemplative principal parts; dynamic derivatives retain their separately licensed aspect paradigms. Missing principal parts are withheld, not repaired. Existing relative constructions preserve the input predicate's aspect selection.",
   "entries": [
     {
       "stem": "mužn",
@@ -17,8 +17,6 @@
       "gradability": "context-sensitive",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -33,8 +31,6 @@
       "expected": {
         "state": [
           "mužna",
-          "múžnime",
-          "múžnik",
           "mužnáv",
           "mužnáž"
         ],
@@ -76,8 +72,6 @@
       "gradability": "context-sensitive",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -92,8 +86,6 @@
       "expected": {
         "state": [
           "hradna",
-          "hrádnime",
-          "hrádnik",
           "hradnáv",
           "hradnáž"
         ],
@@ -135,8 +127,6 @@
       "gradability": "scalar",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -151,8 +141,6 @@
       "expected": {
         "state": [
           "svorna",
-          "svórnime",
-          "svórnik",
           "svornáv",
           "svornáž"
         ],
@@ -193,8 +181,6 @@
       "gradability": "scalar",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -209,8 +195,6 @@
       "expected": {
         "state": [
           "četna",
-          "čétnime",
-          "čétnik",
           "četnáv",
           "četnáž"
         ],
@@ -251,8 +235,6 @@
       "gradability": "intensity-or-condition-scale",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -267,8 +249,6 @@
       "expected": {
         "state": [
           "řejna",
-          "řéjnime",
-          "řéjnik",
           "řejnáv",
           "řejnáž"
         ],
@@ -310,8 +290,6 @@
       "gradability": "intensity-or-condition-scale",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -325,8 +303,6 @@
       "principal_part_status": "class-unresolved",
       "expected": {
         "state": [
-          null,
-          null,
           null,
           null,
           null
@@ -361,8 +337,6 @@
       "gradability": "intensity-or-condition-scale",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -377,8 +351,6 @@
       "expected": {
         "state": [
           "všihna",
-          "všíhnime",
-          "všíhnik",
           "všihnáv",
           "všihnáž"
         ],
@@ -420,8 +392,6 @@
       "gradability": "intensity-or-condition-scale",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -436,8 +406,6 @@
       "expected": {
         "state": [
           "žbirna",
-          "žbírnime",
-          "žbírnik",
           "žbirnáv",
           "žbirnáž"
         ],
@@ -479,8 +447,6 @@
       "gradability": "intensity-or-condition-scale",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -495,8 +461,6 @@
       "expected": {
         "state": [
           "hvodna",
-          "hvódnime",
-          "hvódnik",
           "hvodnáv",
           "hvodnáž"
         ],
@@ -539,8 +503,6 @@
       "gradability": "context-sensitive",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -554,8 +516,6 @@
       "principal_part_status": "class-unresolved",
       "expected": {
         "state": [
-          null,
-          null,
           null,
           null,
           null
@@ -591,8 +551,6 @@
       "gradability": "contextual-relational",
       "aspect_licences": {
         "continuous": "obtaining-state",
-        "progressive": "stage-level-or-expressive",
-        "perfective": "bounded-state",
         "retrospective": "anterior-no-cessation-entailment",
         "contemplative": "projection-not-noninitiation"
       },
@@ -607,8 +565,6 @@
       "expected": {
         "state": [
           "tvírzna",
-          "tvírznime",
-          "tvírznik",
           "tvírznav",
           "tvírznaž"
         ],
@@ -677,8 +633,6 @@
       "hypothetical_finite_class": "A",
       "state": [
         "torbana",
-        "torbánime",
-        "torbánik",
         "torbanáv",
         "torbanáž"
       ],
@@ -693,8 +647,6 @@
       "hypothetical_become_class": "EL-S",
       "linked_state": [
         "torbane",
-        "torbánimně",
-        "torbánice",
         "torbanávě",
         "torbanáže"
       ],

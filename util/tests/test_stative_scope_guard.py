@@ -101,3 +101,12 @@ class StativeScopeGuardTests(unittest.TestCase):
         source = read_domain(path)
         changed = source.replace('mužnový', 'revised-relative', 1)
         self.assertTrue(check_scope(overrides={path: changed}))
+
+    def test_authorised_state_selection_does_not_open_relative_scope(self):
+        path = 'chapters/15-embedding.tex'
+        source = (ROOT / path).read_text()
+        original = 'a stative output admits continuous, retrospective or\ncontemplative aspect'
+        self.assertIn(original, source)
+        changed = source.replace(original,
+                                 'a stative output admits progressive and perfective aspect', 1)
+        self.assertTrue(check_scope(overrides={path: changed}))

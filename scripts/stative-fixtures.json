@@ -1,5 +1,5 @@
 {
-  "description": "Constructed design specifications, not native attestation. State progressive/PF cells require their stated contexts; continuous state relatives require an explicit episodic/temporal/contrastive context. Unsupported simple-attributive classes are deliberately unassigned. Forms are underlying orthographic selections before contextual phonetics.",
+  "description": "Constructed design specifications, not native attestation. Simple indicative State admits continuous, retrospective and contemplative only; progressive and perfective require an independently licensed dynamic predicate. Continuous state relatives require an explicit episodic/temporal/contrastive context. Unsupported simple-attributive classes are deliberately unassigned. Forms are underlying orthographic selections before contextual phonetics.",
   "paradigms": [
     {
       "stem": "mužn",
@@ -21,34 +21,6 @@
           "evidential": "mužnal",
           "evidential_linked": "mužnalě",
           "licence": "marked-stage-relative"
-        },
-        {
-          "kind": "state",
-          "aspect": "progressive",
-          "finite": "múžnime",
-          "negative": "zamúžnime",
-          "vy": "vy múžnime",
-          "so": "so múžnime",
-          "linked": "múžnimně",
-          "participant": "múžnimou",
-          "relative": "múžnimový",
-          "evidential": "múžnimel",
-          "evidential_linked": "múžnimelě",
-          "licence": "stage-level-or-expressive"
-        },
-        {
-          "kind": "state",
-          "aspect": "perfective",
-          "finite": "múžnik",
-          "negative": "zamúžnik",
-          "vy": "vy múžnik",
-          "so": "so múžnik",
-          "linked": "múžnice",
-          "participant": "múžnikou",
-          "relative": "múžnikový",
-          "evidential": "múžnikal",
-          "evidential_linked": "múžnikalě",
-          "licence": "bounded-state"
         },
         {
           "kind": "state",
@@ -173,34 +145,6 @@
         },
         {
           "kind": "state",
-          "aspect": "progressive",
-          "finite": "hrádnime",
-          "negative": "zahrádnime",
-          "vy": "vy hrádnime",
-          "so": "so hrádnime",
-          "linked": "hrádnimně",
-          "participant": "hrádnimou",
-          "relative": "hrádnimový",
-          "evidential": "hrádnimel",
-          "evidential_linked": "hrádnimelě",
-          "licence": "stage-level-or-expressive"
-        },
-        {
-          "kind": "state",
-          "aspect": "perfective",
-          "finite": "hrádnik",
-          "negative": "zahrádnik",
-          "vy": "vy hrádnik",
-          "so": "so hrádnik",
-          "linked": "hrádnice",
-          "participant": "hrádnikou",
-          "relative": "hrádnikový",
-          "evidential": "hrádnikal",
-          "evidential_linked": "hrádnikalě",
-          "licence": "bounded-state"
-        },
-        {
-          "kind": "state",
           "aspect": "retrospective",
           "finite": "hradnáv",
           "negative": "zahradnáv",
@@ -319,34 +263,6 @@
           "evidential": "svornal",
           "evidential_linked": "svornalě",
           "licence": "marked-stage-relative"
-        },
-        {
-          "kind": "state",
-          "aspect": "progressive",
-          "finite": "svórnime",
-          "negative": "zasvórnime",
-          "vy": "vy svórnime",
-          "so": "so svórnime",
-          "linked": "svórnimně",
-          "participant": "svórnimou",
-          "relative": "svórnimový",
-          "evidential": "svórnimel",
-          "evidential_linked": "svórnimelě",
-          "licence": "stage-level-or-expressive"
-        },
-        {
-          "kind": "state",
-          "aspect": "perfective",
-          "finite": "svórnik",
-          "negative": "zasvórnik",
-          "vy": "vy svórnik",
-          "so": "so svórnik",
-          "linked": "svórnice",
-          "participant": "svórnikou",
-          "relative": "svórnikový",
-          "evidential": "svórnikal",
-          "evidential_linked": "svórnikalě",
-          "licence": "bounded-state"
         },
         {
           "kind": "state",
@@ -471,34 +387,6 @@
         },
         {
           "kind": "state",
-          "aspect": "progressive",
-          "finite": "čétnime",
-          "negative": "začétnime",
-          "vy": "vy čétnime",
-          "so": "so čétnime",
-          "linked": "čétnimně",
-          "participant": "čétnimou",
-          "relative": "čétnimový",
-          "evidential": "čétnimel",
-          "evidential_linked": "čétnimelě",
-          "licence": "stage-level-or-expressive"
-        },
-        {
-          "kind": "state",
-          "aspect": "perfective",
-          "finite": "čétnik",
-          "negative": "začétnik",
-          "vy": "vy čétnik",
-          "so": "so čétnik",
-          "linked": "čétnice",
-          "participant": "čétnikou",
-          "relative": "čétnikový",
-          "evidential": "čétnikal",
-          "evidential_linked": "čétnikalě",
-          "licence": "bounded-state"
-        },
-        {
-          "kind": "state",
           "aspect": "retrospective",
           "finite": "četnáv",
           "negative": "začetnáv",
@@ -617,34 +505,6 @@
           "evidential": "řejnal",
           "evidential_linked": "řejnalě",
           "licence": "marked-stage-relative"
-        },
-        {
-          "kind": "state",
-          "aspect": "progressive",
-          "finite": "řéjnime",
-          "negative": "zařéjnime",
-          "vy": "vy řéjnime",
-          "so": "so řéjnime",
-          "linked": "řéjnimně",
-          "participant": "řéjnimou",
-          "relative": "řéjnimový",
-          "evidential": "řéjnimel",
-          "evidential_linked": "řéjnimelě",
-          "licence": "stage-level-or-expressive"
-        },
-        {
-          "kind": "state",
-          "aspect": "perfective",
-          "finite": "řéjnik",
-          "negative": "zařéjnik",
-          "vy": "vy řéjnik",
-          "so": "so řéjnik",
-          "linked": "řéjnice",
-          "participant": "řéjnikou",
-          "relative": "řéjnikový",
-          "evidential": "řéjnikal",
-          "evidential_linked": "řéjnikalě",
-          "licence": "bounded-state"
         },
         {
           "kind": "state",
@@ -769,34 +629,6 @@
         },
         {
           "kind": "state",
-          "aspect": "progressive",
-          "finite": "všíhnime",
-          "negative": "zavšíhnime",
-          "vy": "vy všíhnime",
-          "so": "so všíhnime",
-          "linked": "všíhnimně",
-          "participant": "všíhnimou",
-          "relative": "všíhnimový",
-          "evidential": "všíhnimel",
-          "evidential_linked": "všíhnimelě",
-          "licence": "stage-level-or-expressive"
-        },
-        {
-          "kind": "state",
-          "aspect": "perfective",
-          "finite": "všíhnik",
-          "negative": "zavšíhnik",
-          "vy": "vy všíhnik",
-          "so": "so všíhnik",
-          "linked": "všíhnice",
-          "participant": "všíhnikou",
-          "relative": "všíhnikový",
-          "evidential": "všíhnikal",
-          "evidential_linked": "všíhnikalě",
-          "licence": "bounded-state"
-        },
-        {
-          "kind": "state",
           "aspect": "retrospective",
           "finite": "všihnáv",
           "negative": "zavšihnáv",
@@ -915,34 +747,6 @@
           "evidential": "hvodnal",
           "evidential_linked": "hvodnalě",
           "licence": "marked-stage-relative"
-        },
-        {
-          "kind": "state",
-          "aspect": "progressive",
-          "finite": "hvódnime",
-          "negative": "zahvódnime",
-          "vy": "vy hvódnime",
-          "so": "so hvódnime",
-          "linked": "hvódnimně",
-          "participant": "hvódnimou",
-          "relative": "hvódnimový",
-          "evidential": "hvódnimel",
-          "evidential_linked": "hvódnimelě",
-          "licence": "stage-level-or-expressive"
-        },
-        {
-          "kind": "state",
-          "aspect": "perfective",
-          "finite": "hvódnik",
-          "negative": "zahvódnik",
-          "vy": "vy hvódnik",
-          "so": "so hvódnik",
-          "linked": "hvódnice",
-          "participant": "hvódnikou",
-          "relative": "hvódnikový",
-          "evidential": "hvódnikal",
-          "evidential_linked": "hvódnikalě",
-          "licence": "bounded-state"
         },
         {
           "kind": "state",
@@ -1067,34 +871,6 @@
         },
         {
           "kind": "state",
-          "aspect": "progressive",
-          "finite": "tvírznime",
-          "negative": "zatvírznime",
-          "vy": "vy tvírznime",
-          "so": "so tvírznime",
-          "linked": "tvírznimně",
-          "participant": "tvírznimou",
-          "relative": "tvírznimový",
-          "evidential": "tvírznimel",
-          "evidential_linked": "tvírznimelě",
-          "licence": "stage-level-or-expressive"
-        },
-        {
-          "kind": "state",
-          "aspect": "perfective",
-          "finite": "tvírznik",
-          "negative": "zatvírznik",
-          "vy": "vy tvírznik",
-          "so": "so tvírznik",
-          "linked": "tvírznice",
-          "participant": "tvírznikou",
-          "relative": "tvírznikový",
-          "evidential": "tvírznikal",
-          "evidential_linked": "tvírznikalě",
-          "licence": "bounded-state"
-        },
-        {
-          "kind": "state",
           "aspect": "retrospective",
           "finite": "tvírznav",
           "negative": "zatvírznav",
@@ -1200,15 +976,19 @@
       "end": "\\end{table}",
       "required": [
         "\\ird{mužna}",
-        "\\ird{múžnime}",
-        "\\ird{múžnik}",
         "\\ird{mužnáv}",
         "\\ird{mužnáž}",
         "\\ird{mužnéla}",
         "\\ird{mužnélime}",
         "\\ird{mužnélek}",
         "\\ird{mužnélav}",
-        "\\ird{mužnélaž}"
+        "\\ird{mužnélaž}",
+        "Progressive & --- & \\ird{mužnélime}",
+        "Perfective & --- & \\ird{mužnélek}"
+      ],
+      "forbidden": [
+        "\\ird{múžnime}",
+        "\\ird{múžnik}"
       ]
     },
     {
@@ -1231,6 +1011,17 @@
         "\\ird{Marcí stá četná pres}",
         "\\gla Janek Marcí stá četnélime.",
         "\\gla Janek Marcí stá četnélek."
+      ]
+    },
+    {
+      "anchor": "\\label{tab:stative-become}",
+      "end": "\\subsection{Overt inchoative derivation}",
+      "required": [
+        "Simple state predicates admit continuous, retrospective and contemplative viewpoint",
+        "the dashes mark unavailable progressive and perfective cells",
+        "Neither temporariness nor an expressive context extends that inventory",
+        "Retrospective state predication concerns an earlier holding interval",
+        "contemplative viewpoint anticipates a later interval at which the state may continue to hold"
       ]
     }
   ],
@@ -1464,6 +1255,40 @@
       "required": [
         "be.tall-\\textsc{inch}-\\Pf{}",
         "Janek became taller than Marek."
+      ]
+    },
+    {
+      "source": "chapters/06-simple-sentence.tex",
+      "form": "*Nužo múžnime.",
+      "required": [
+        "be.beautiful-\\Prog{}",
+        "(intended: The city looks particularly beautiful.)"
+      ]
+    },
+    {
+      "source": "chapters/06-simple-sentence.tex",
+      "form": "*Dá řéjnik.",
+      "required": [
+        "be.tired-\\Pf{}",
+        "(intended: I was tired on that occasion.)"
+      ]
+    },
+    {
+      "source": "chapters/06-simple-sentence.tex",
+      "form": "Dá řejnáv.",
+      "required": [
+        "be.tired-\\Ret{}",
+        "I had been tired.",
+        "tiredness held during an interval before departure; the same condition continues now"
+      ]
+    },
+    {
+      "source": "chapters/06-simple-sentence.tex",
+      "form": "Dá řejnáž.",
+      "required": [
+        "be.tired-\\Ctpl{}",
+        "I am expected to be tired.",
+        "the speaker is tired already and expects the condition to hold during the afternoon walk"
       ]
     }
   ],

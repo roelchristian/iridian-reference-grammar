@@ -1,5 +1,11 @@
 # Ordinary ATTR and experiential extension: integration review
 
+Historical integration record. Its productive simple-State progressive/perfective
+licences and associated principal parts are superseded by the restricted
+CONT/RET/CTPL inventory adopted on 2 November 2026; current specifications
+are in `stative-paradigms.md`, `stative-extension-paradigms.md` and the normative
+chapters. The adoption history below is retained as a record.
+
 This pass extends draft PR #19 on `stative-reform`, beginning at reviewed head
 `5a29478c793f0f15234a2c062cb5c3cc6e74cd9b`. Remote master remained
 `b6c87551397faa5d661e2690b2ee72745d7bae40`; its PR #18 typesetting fix is

@@ -4,11 +4,13 @@ import json
 from pathlib import Path
 import sys
 import unittest
+from unittest.mock import patch
 
 ROOT=Path(__file__).resolve().parents[2]
 import sys
 sys.path.insert(0, str(ROOT / 'scripts'))
 from source_domains import read_domain, domain_sources
+from stative_diagnostics import ASPECTS, STATE_ASPECTS
 
 sys.path.insert(0,str(ROOT/'scripts'))
 from stative_lexicon import (LexicalLicenceError,load_lexicon,derive,finite,
@@ -42,7 +44,7 @@ class StativeLexiconTests(unittest.TestCase):
     def setUpClass(cls):
         cls.data=load_lexicon()
         cls.entries={entry['stem']:entry for entry in cls.data['entries']}
-        cls.aspects=('continuous','progressive','perfective','retrospective','contemplative')
+        cls.aspects=ASPECTS
 
     def test_eleven_records_separate_meaning_from_morphological_class(self):
         self.assertEqual(set(self.entries),{'mužn','hradn','svorn','četn','řejn',
@@ -53,18 +55,19 @@ class StativeLexiconTests(unittest.TestCase):
         self.assertEqual(self.entries['žbirn']['attributive_class'],'III')
         self.assertIsNone(self.entries['hvodn']['attributive_class'])
 
-    def test_ninety_independent_validated_state_and_become_cells(self):
+    def test_independent_restricted_state_and_full_become_cells(self):
         count=0
         for entry in self.entries.values():
             if entry['principal_part_status']!='listed':
                 continue
-            for kind in ('state','become'):
-                for aspect,expected in zip(self.aspects,entry['expected'][kind]):
+            for kind,aspects in (('state',STATE_ASPECTS),('become',ASPECTS)):
+                for aspect,expected in zip(aspects,entry['expected'][kind]):
                     with self.subTest(stem=entry['stem'],kind=kind,aspect=aspect):
-                        self.assertEqual(finite(entry,kind,aspect,stage_level=True,bounded=True),
+                        self.assertEqual(finite(entry,kind,aspect),
                                          tokens(expected))
                         count+=1
-        self.assertEqual(count,90)
+        listed=sum(entry['principal_part_status']=='listed' for entry in self.entries.values())
+        self.assertEqual(count,listed*(len(STATE_ASPECTS)+len(ASPECTS)))
 
     def test_el_strength_requires_a_lexical_class_not_short_root(self):
         entry=copy.deepcopy(self.entries['mužn'])
@@ -90,15 +93,55 @@ class StativeLexiconTests(unittest.TestCase):
                     self.assertEqual(causative(entry,kind,'progressive',causable=True),tokens(expected[offset+2]))
             self.assertEqual(manner(entry),tokens(entry['expected']['manner']))
 
-    def test_state_aspect_still_requires_the_explicit_contexts(self):
+    def test_state_aspect_restriction_survives_context_and_embedding_operations(self):
+        for entry in self.entries.values():
+            if entry['principal_part_status']!='listed':
+                continue
+            for aspect in ('progressive','perfective'):
+                for operation in (finite,participant,evidential):
+                    for flags in ({}, {'stage_level':True}, {'bounded':True},
+                                  {'stage_level':True,'bounded':True}):
+                        with self.subTest(stem=entry['stem'],aspect=aspect,
+                                          operation=operation.__name__,flags=flags), self.assertRaises(LexicalLicenceError):
+                            operation(entry,'state',aspect,**flags)
+
+    def test_state_anteriority_and_projection_are_distinct_from_becoming(self):
         entry=self.entries['mužn']
-        for aspect in ('progressive','perfective'):
-            with self.assertRaises(ValueError):
-                finite(entry,'state',aspect)
+        self.assertEqual(finite(entry,'state','retrospective'),tokens('mužnáv'))
+        self.assertEqual(finite(entry,'state','contemplative'),tokens('mužnáž'))
+        self.assertEqual(finite(entry,'become','retrospective'),tokens('mužnélav'))
+        self.assertEqual(finite(entry,'become','contemplative'),tokens('mužnélaž'))
         self.assertEqual(entry['aspect_licences']['retrospective'],
                          'anterior-no-cessation-entailment')
         self.assertEqual(entry['aspect_licences']['contemplative'],
                          'projection-not-noninitiation')
+
+    def test_lexical_inventory_omits_unavailable_state_principal_parts(self):
+        for entry in self.entries.values():
+            self.assertEqual(set(entry['aspect_licences']),set(STATE_ASPECTS))
+            self.assertEqual(len(entry['expected']['state']),len(STATE_ASPECTS))
+            self.assertEqual(len(entry['expected']['become']),len(ASPECTS))
+
+    def test_loader_rejects_reintroduced_state_aspect_and_mismatched_inventory(self):
+        for change in ('aspect','principal-parts'):
+            data=copy.deepcopy(self.data)
+            entry=data['entries'][0]
+            if change=='aspect':
+                entry['aspect_licences']['perfective']='bounded-state'
+            else:
+                entry['expected']['state'].append('múžnik')
+            with self.subTest(change=change), patch('stative_lexicon.Path.read_text',
+                    return_value=json.dumps(data)), self.assertRaises(LexicalLicenceError):
+                load_lexicon()
+
+    def test_dynamic_derivatives_keep_eventive_aspects(self):
+        entry=self.entries['mužn']
+        self.assertEqual(finite(entry,'become','progressive'),tokens('mužnélime'))
+        self.assertEqual(finite(entry,'become','perfective'),tokens('mužnélek'))
+        self.assertEqual(causative(entry,'state','progressive',causable=True),
+                         tokens('mužnérime'))
+        self.assertEqual(causative(entry,'state','perfective',causable=True),
+                         tokens('mužnéranik'))
 
     def test_soft_attribute_uses_only_its_own_front_boundary(self):
         for stem,attribute,adverb in [('všihn','všihňa','všihně'),
@@ -180,10 +223,16 @@ class StativeLexiconTests(unittest.TestCase):
             causative(self.entries['všihn'],'manifest','progressive')
 
     def test_stimulus_requires_its_frame_and_never_establishes_actual_cause(self):
-        self.assertEqual(stimulus_applicative(self.entries['všihn'],'perfective',
-                         stimulus_present=True),tokens('všihnébik'))
+        for aspect,form in (('continuous','všihnéba'),
+                            ('retrospective','všihnébav'),
+                            ('contemplative','všihnébaž')):
+            self.assertEqual(stimulus_applicative(self.entries['všihn'],aspect,
+                             stimulus_present=True),tokens(form))
+        for aspect in ('progressive','perfective'):
+            with self.subTest(aspect=aspect),self.assertRaises(LexicalLicenceError):
+                stimulus_applicative(self.entries['všihn'],aspect,stimulus_present=True)
         with self.assertRaises(LexicalLicenceError):
-            stimulus_applicative(self.entries['všihn'],'perfective')
+            stimulus_applicative(self.entries['všihn'],'retrospective')
         for stem in ('mužn','řejn','žbirn'):
             with self.subTest(stem=stem),self.assertRaises(LexicalLicenceError):
                 stimulus_applicative(self.entries[stem],'continuous',stimulus_present=True)
@@ -243,15 +292,15 @@ class StativeLexiconTests(unittest.TestCase):
         self.assertIsNone(entry['finite_class'])
         self.assertIsNone(entry['become_class'])
         self.assertIsNone(entry['attributive_class'])
-        self.assertEqual(entry['expected']['state'],[None]*5)
-        self.assertEqual(entry['expected']['become'],[None]*5)
+        self.assertEqual(entry['expected']['state'],[None]*len(STATE_ASPECTS))
+        self.assertEqual(entry['expected']['become'],[None]*len(ASPECTS))
         entry['principal_part_status']='listed'
         entry['finite_class']=predictions['hypothetical_finite_class']
         entry['become_class']=predictions['hypothetical_become_class']
-        for kind in ('state','become'):
-            for aspect,expected in zip(self.aspects,predictions[kind]):
+        for kind,aspects in (('state',STATE_ASPECTS),('become',ASPECTS)):
+            for aspect,expected in zip(aspects,predictions[kind]):
                 with self.subTest(kind=kind,aspect=aspect):
-                    self.assertEqual(finite(entry,kind,aspect,stage_level=True,bounded=True),
+                    self.assertEqual(finite(entry,kind,aspect),
                                      tokens(expected))
         with self.assertRaises(LexicalLicenceError):
             manner(entry)
