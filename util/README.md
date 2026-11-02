@@ -105,8 +105,8 @@ of a declared boundary does not establish automatic boundary detection.
 
 ## Stative design diagnostics
 
-`scripts/stative_diagnostics.py` supplies bounded State/Become, scalar,
-perspective and selection checks. Independent literal fixtures cover eight
+`scripts/stative_diagnostics.py` supplies bounded State/Become, scalar
+and selection checks. Independent literal fixtures cover eight
 stems, 64 licensed finite aspect cells, their negative/phasal and bound derivatives,
 16 conditional causative paradigms and three reduced-Mood examples. See
 `util/stative-paradigms.md` for the morphological and PF audit,

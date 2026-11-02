@@ -25,7 +25,7 @@ def load_lexicon(path=None):
         required = {'stem','subclass','morphological_class','finite_class','segments',
                     'quantity_target','argument_frame','gradability','aspect_licences',
                     'become_class','manifest_class','attributive_class','stimulus',
-                    'perspective','causative','manner','principal_part_status','expected',
+                    'causative','manner','principal_part_status','expected',
                     'protected_quantity','nominalisation'}
         if set(entry) != required:
             raise LexicalLicenceError('lexical record has missing or unknown fields')
@@ -181,38 +181,6 @@ def stimulus_applicative(entry, aspect, *, stimulus_present=False, kind='state')
         raise LexicalLicenceError('stimulus Appl preserves the simple-State aspect inventory')
     segments = _available(entry)+('eː','b')
     return segments+SHORT[aspect]
-
-
-def perspective_licensed(entry, *, experiencer, anchor='speaker',
-                         clause_type='declarative', shifted=False, evidence=False,
-                         kind='state', internal_reading=True):
-    """Check a supplied anchoring dependency, not infer one from person.
-
-    This is an internal-state assertion check, not an emotion detector.
-    Clause type alone cannot establish the independent report/attitude relation.
-    Indirect evidence may support a proposition without shifting the anchor.
-    A licensed Manifest display or an observable bodily reading does not assert
-    genuine internal experience and therefore does not inherit this dependency.
-    """
-    if (clause_type not in ('declarative','question','report','narrative','embedded')
-            or type(shifted) is not bool or type(evidence) is not bool
-            or type(internal_reading) is not bool or kind not in ('state','manifest')
-            or not isinstance(anchor,str) or not anchor
-            or not isinstance(experiencer,str) or not experiencer):
-        raise LexicalLicenceError('explicit clause and anchoring conditions required')
-    if kind=='manifest':
-        derive(entry,'manifest')  # The observation reading still needs its head.
-        return True
-    if not internal_reading:
-        return entry['perspective'] != 'psych-anchored'
-    if entry['perspective']=='none':
-        return True
-    if evidence:
-        return True
-    if anchor=='speaker':
-        return experiencer=='speaker'
-    return (shifted and clause_type in ('question','report','narrative','embedded')
-            and experiencer==anchor)
 
 
 def manifestation_holds(display, genuine_feeling):

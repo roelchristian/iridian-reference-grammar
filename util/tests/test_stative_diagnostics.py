@@ -12,7 +12,7 @@ from source_domains import read_domain, domain_sources
 
 sys.path.insert(0, str(ROOT / 'scripts'))
 from stative_diagnostics import (ASPECTS, STATE_ASPECTS, StativeStem, check_stative_sources,
-    event_derived_state, experiential_source, inflect, phased_state, relative_context, scalar_reading)
+    event_derived_state, inflect, phased_state, relative_context, scalar_reading)
 from quantity_grades import QuantityGrades, QuantityLicence
 from boundary_transducer import BoundaryLicence, BoundaryState, BoundaryTransducer
 from evidential_realisation import attach_indirect_evidential
@@ -157,17 +157,6 @@ class StativeDiagnosticsTests(unittest.TestCase):
         self.assertTrue(negative_mood_prejacent('imperative','vy',[True],[False]))
         with self.assertRaises(ValueError):
             negative_mood_prejacent('imperative','vy',[True],[False],indicative_neg=True)
-
-    def test_psych_perspective_is_selective_and_not_person_ban(self):
-        self.assertEqual(experiential_source(psychological=True,other_person=True,
-                                             access='inferred'),'indirect-preferred')
-        for access in ('reported','narrative','direct'):
-            self.assertEqual(experiential_source(psychological=True,other_person=True,
-                                                 access=access),'licensed')
-        self.assertEqual(experiential_source(psychological=False,other_person=True,
-                                             access='observable'),'licensed')
-        self.assertEqual(experiential_source(psychological=False,other_person=True,
-                                             access='inferred'),'licensed')
 
     def test_result_state_requires_event_but_lexical_state_does_not(self):
         self.assertTrue(event_derived_state(True,False))

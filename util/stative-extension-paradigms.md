@@ -1,26 +1,26 @@
 # Ordinary stative extension: lexical and PF audit
 
-The machine-readable records are in `scripts/stative-lexicon.json`; the bounded selector is `scripts/stative_lexicon.py`. These are constructed grammatical specifications, not native attestations or an automatically inferred lexicon. Each lexical licence is explicit. Semantic context, available perspective relations and causability remain independent inputs.
+The machine-readable records are in `scripts/stative-lexicon.json`; the bounded selector is `scripts/stative_lexicon.py`. These are constructed grammatical specifications, not native attestations or an automatically inferred lexicon. Each lexical licence is explicit. Semantic context and causability remain independent inputs; the selector does not determine evidential access or perspective.
 
 The earlier `util/stative-paradigms.md` retains the first PR19 analysis, with subsequent lexical replacements reflected in its forms and phonological notes. Its former unassigned status for the happiness attributive and its statement that no third ordinary attributive class was adopted are superseded by this ordinary-ATTR extension. Its protected relative analysis is not revised here. This report adds no relative forms.
 
 ## Lexical records
 
-Finite class, argument structure, semantic subclass and ordinary ATTR class are independent fields. The four broad subclasses remain quality, dimensional, experiential-condition and relational; an observable condition need not share a psychological perspective flag. A lexical experiencer–stimulus frame is a possible record type, but none of the present inputs is invented merely to populate it. `všihn-` has an experiencer-only base with an independently licensed overt stimulus applicative. Content/stimulus never entails actual cause.
+Finite class, argument structure, semantic subclass and ordinary ATTR class are independent fields. The four broad subclasses remain quality, dimensional, experiential-condition and relational; these fields impose no experiencer–perspective identity requirement. A lexical experiencer–stimulus frame is a possible record type, but none of the present inputs is invented merely to populate it. `všihn-` has an experiencer-only base with an independently licensed overt stimulus applicative. Content/stimulus never entails actual cause.
 
-| Stem | Broad subclass | Finite class / stem class | Frame | Become class | Manifest class | Ordinary ATTR | Perspective | Status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| mužn- | quality | A / property-n | holder | EL-S | unlisted | I | none | listed |
-| hradn- | quality | A / property-n | holder | EL-S | unlisted | II | none | listed |
-| svorn- | dimensional | A / property-n | holder | EL-S | unlisted | II | none | listed |
-| četn- | dimensional | A / property-n | holder | EL-S | unlisted | II | none | listed |
-| řejn- | experiential-condition | A / property-n | affected-holder | EL-S | unlisted | unlisted | internal-anchored | listed |
-| sledn- | experiential-condition | unassigned / property-n | affected-holder | withheld | unlisted | unlisted | internal-anchored | class-unresolved |
-| všihn- | experiential-condition | A / property-n | experiencer-only | EL-S | ESH-A | III | psych-anchored | listed |
-| žbirn- | experiential-condition | A / property-n | affected-holder | EL-S | unlisted | III | none | listed |
-| hvodn- | experiential-condition | A / property-n | holder | EL-S | unlisted | unlisted | none | listed |
-| torban- | quality | unassigned / property-n | holder | withheld | unlisted | unlisted | none | class-unresolved |
-| tvírzn- | relational | C / relational-zn | holder | EL-P | unlisted | II | none | listed |
+| Stem | Broad subclass | Finite class / stem class | Frame | Become class | Manifest class | Ordinary ATTR | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| mužn- | quality | A / property-n | holder | EL-S | unlisted | I | listed |
+| hradn- | quality | A / property-n | holder | EL-S | unlisted | II | listed |
+| svorn- | dimensional | A / property-n | holder | EL-S | unlisted | II | listed |
+| četn- | dimensional | A / property-n | holder | EL-S | unlisted | II | listed |
+| řejn- | experiential-condition | A / property-n | affected-holder | EL-S | unlisted | unlisted | listed |
+| sledn- | experiential-condition | unassigned / property-n | affected-holder | withheld | unlisted | unlisted | class-unresolved |
+| všihn- | experiential-condition | A / property-n | experiencer-only | EL-S | ESH-A | III | listed |
+| žbirn- | experiential-condition | A / property-n | affected-holder | EL-S | unlisted | III | listed |
+| hvodn- | experiential-condition | A / property-n | holder | EL-S | unlisted | unlisted | listed |
+| torban- | quality | unassigned / property-n | holder | withheld | unlisted | unlisted | class-unresolved |
+| tvírzn- | relational | C / relational-zn | holder | EL-P | unlisted | II | listed |
 
 `EL-S` is a listed Become strength class selecting `-él-`; `EL-P` selects protected short `-el-`. A short root does not itself establish membership. A test with the same short segment string and its Become class removed must fail. A deliberately hypothetical EL-P assignment to that string illustrates the selector's dependence on an explicit class; it is not a new lexical entry.
 
@@ -110,9 +110,9 @@ Free eventive PF `všihnéšek` has bound participant `všihnéšikou` and direc
 
 ## Perspective and source
 
-For a listed internally experienced reading, an unmediated independent declarative defaults to speaker anchoring. A report, question, narrative or attitude context permits a different resolved holder only when the appropriate relation is independently supplied: a clause-type label alone is insufficient. The diagnostic therefore requires both an identified anchor matching the experiencer and an explicitly licensed shift. It rejects `shifted=True` when the anchor is still speaker but the experiencer is another person. A suitable indirect-source interpretation can independently support the proposition without claiming a perspective shift.
+Ordinary finite statives leave evidential access unspecified. The lexical records identify a holder or experiencer without requiring that participant to coincide with an epistemic anchor; no general person restriction or independently licensed perspective shift is inferred from an unsuffixed stative. The former `perspective` flags and anchoring selector have therefore been removed, together with the source-preference diagnostic. Tests of those stipulations were checks of the supplied design, not independent evidence for a grammatical dependency.
 
-The API distinguishes genuine internal state from `kind='manifest'` and observable bodily readings. A licensed display assertion does not inherit the internal-state anchoring condition. Likewise an observable reading of tiredness is not automatically restricted, whereas its directly felt internal reading is checked. The psych lexical flag cannot be bypassed merely by relabelling genuine happiness as an observable condition. No categorical person ban or automatic evidential suffix follows.
+The indirect evidential remains independently available, while the restricted Manifest derivation describes outward display without entailing genuine feeling. Personal experience and observable indications may support descriptions of bodily conditions without requiring separate lexical senses. The selector continues to enforce the listed morphological, aspectual and argument-structural licences; it makes no acceptability judgement from the identity of an experiencer or information source.
 
 ## PF, nuclei and stress
 
@@ -146,6 +146,6 @@ The nine resolved records supply 72 licensed State/Become cells; Manifest suppli
 
 ## Verification limits
 
-The new suite checks the eleven-record inventory, 90 independently written finite cells, all nine resolved entries' Evid/participant/Caus/manner operations, the five Manifest cells and derived operations, source-prescription mutations, lexical selection failures, local quantity, the soft ATTR/manner opposition, explicit perspective shifts and display/feeling counterexamples. The parent source checker also retains the original morphology, case, phasal and pivot regressions and the separate protected-construction scope guard.
+The new suite checks the eleven-record inventory, 90 independently written finite cells, all nine resolved entries' Evid/participant/Caus/manner operations, the five Manifest cells and derived operations, source-prescription mutations, lexical selection failures, local quantity, the soft ATTR/manner opposition and display/feeling counterexamples. The parent source checker also retains the original morphology, case, phasal and pivot regressions and the separate protected-construction scope guard.
 
 The model does not discover new lexical licences, provide an automatic pronunciation engine, establish historical reconstructions or expand the frozen relative system. Conditional Caus cells are morphology under a supplied causability relation; they do not claim every state or social relation is freely causable. Unlisted Appl/ATTR cells are not silently generated.

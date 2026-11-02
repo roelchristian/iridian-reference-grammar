@@ -87,7 +87,7 @@
   ],
   "files": {
     "scripts/stative-fixtures.json": "f45ff0aaab9032912a27bb9cb23d0c7925812fea50cbea5be7cb9bcadf069646",
-    "util/stative-paradigms.md": "b770066db9cf3a1b507ea18e578d7912bd46e264f737bd555ec7f10c3398558d",
+    "util/stative-paradigms.md": "e94f5cae201c135f980d6ba572cf41ae1687c534184ad13b88bac758b4926307",
     "scripts/clausal_diagnostics.py": "6d4b356e417b0e47380174e325002533a98ea04fb6d6b82eefeaa6cd2ec1e601"
   },
   "migration": {
@@ -458,5 +458,15 @@
       "util/stative-paradigms.md": "b770066db9cf3a1b507ea18e578d7912bd46e264f737bd555ec7f10c3398558d"
     },
     "protected_source_hashes": "Unchanged; narrow exact-text normalisation preserves the original reviewed rules, morphology, case frames and examples."
+  },
+  "reviewed_psychological_perspective_revision": {
+    "reason": "User-requested review and implementation of psychological predication in section 10.1.1 removes the unsupported experiencer–perspective anchoring stipulation. The paradigm audit changes only its information-source statement and removes the superseded perspective-check claim from its test inventory. Relative rules, examples, aspect selection and all paradigm cells are unchanged.",
+    "previous_file_hashes": {
+      "util/stative-paradigms.md": "b770066db9cf3a1b507ea18e578d7912bd46e264f737bd555ec7f10c3398558d"
+    },
+    "replacement_file_hashes": {
+      "util/stative-paradigms.md": "e94f5cae201c135f980d6ba572cf41ae1687c534184ad13b88bac758b4926307"
+    },
+    "protected_source_hashes": "Unchanged; only the reviewed whole-file digest of the two psychological-perspective documentation edits is replaced. All original relative source hashes, rules and fixture digests remain protected."
   }
 }

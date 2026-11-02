@@ -12,7 +12,7 @@ These are constructed grammatical specifications, not native attestations. The i
 - Simple-state progressive and perfective are unavailable, including in a temporary, expressive or bounded context; no such context supplies a missing event predicate. A retrospective state does not entail entry into the state; contemplative is projective rather than a future tense.
 - A continuous State relative is marked and needs explicit episodic, temporal or contrastive context. A simple property attributive has a smaller projection. Full relative means Asp-containing within the existing reduced selection boundary: internal Neg, Mood, Evid, Phas and comment operators remain excluded.
 - Participant `-ou` abstracts the independently selected participant (the sole holder in underived State/Become); it does not automatically denote a state, transition event or result. Lexical/event `-ou` formations require their own construction and interpretation. Res requires a preceding event where lexical openness need not.
-- Psychological other-person inferred experience favours the existing indirect evidential. Reporting, expressed feelings and narrative perspective remain possible; this is neither a categorical first-person restriction nor a rule for beauty, size, colour or observable bodily conditions.
+- Ordinary statives leave information source unspecified. The indirect evidential is independently available, without a grammatical person restriction or a prescribed source preference for psychological predicates. Experiencer, information source and outward manifestation remain distinct.
 
 ## Finite principal parts
 
@@ -288,7 +288,7 @@ Conditional constructed directives include `Byl svornérím` (IPFV, `svorn-ér-�
 
 ## Verification and limits
 
-The test suite covers all 64 licensed finite State/Become cells, rejection of simple-State progressive and perfective even with contextual flags, the complete operation-matrix inventory, quantity locality, the ž+n boundary, one-step PAL, evidential blocking, state versus scalar change versus threshold attainment, separately stipulated causation, selective psychological perspective, lexical versus event-derived result states, phasal polarity, negative-Mood licensing, one-participant and causative case, marked continuous relatives, and exclusion of internal higher operators. Current chapter rows and comparative surface/gloss/translation pairs are bound to the fixtures, with mutations that must fail.
+The test suite covers all 64 licensed finite State/Become cells, rejection of simple-State progressive and perfective even with contextual flags, the complete operation-matrix inventory, quantity locality, the ž+n boundary, one-step PAL, evidential blocking, state versus scalar change versus threshold attainment, separately stipulated causation, lexical versus event-derived result states, phasal polarity, negative-Mood licensing, one-participant and causative case, marked continuous relatives, and exclusion of internal higher operators. Current chapter rows and comparative surface/gloss/translation pairs are bound to the fixtures, with mutations that must fail.
 
 The tests do not compute arbitrary lexical semantic licences, scale selection, phonetic assimilation, syllabification, stress or the full non-indicative paradigm. They reuse the existing negative-Mood and case checks rather than claiming that an indicative stem can simply take a mood suffix. The current root/case/pivot architecture and reduced-selection exclusions remain independently tested by the original suite.
 

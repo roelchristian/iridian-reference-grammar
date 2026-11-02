@@ -15,7 +15,7 @@ from stative_diagnostics import ASPECTS, STATE_ASPECTS
 sys.path.insert(0,str(ROOT/'scripts'))
 from stative_lexicon import (LexicalLicenceError,load_lexicon,derive,finite,
     ordinary_attributive,manner,participant,evidential,causative,
-    stimulus_applicative,perspective_licensed,manifestation_holds,check_lexical_extension_sources)
+    stimulus_applicative,manifestation_holds,check_lexical_extension_sources)
 from boundary_transducer import BoundaryLicence,BoundaryState,BoundaryTransducer
 from quantity_grades import QuantityGrades,QuantityLicence
 
@@ -238,31 +238,6 @@ class StativeLexiconTests(unittest.TestCase):
                 stimulus_applicative(self.entries[stem],'continuous',stimulus_present=True)
         self.assertEqual(self.entries['všihn']['argument_frame'],'experiencer-only')
         self.assertEqual(self.entries['všihn']['stimulus'],'applicative-eb')
-
-    def test_anchoring_is_not_person_or_an_automatic_evidential_suffix(self):
-        entry=self.entries['všihn']
-        self.assertTrue(perspective_licensed(entry,experiencer='speaker'))
-        self.assertFalse(perspective_licensed(entry,experiencer='Marek'))
-        self.assertFalse(perspective_licensed(entry,experiencer='Marek',anchor='Marek'))
-        self.assertTrue(perspective_licensed(entry,experiencer='Marek',anchor='Marek',
-                                             shifted=True,clause_type='report'))
-        self.assertTrue(perspective_licensed(entry,experiencer='Marek',evidence=True))
-        for clause in ('question','report','narrative','embedded'):
-            self.assertFalse(perspective_licensed(entry,experiencer='Marek',clause_type=clause))
-            self.assertFalse(perspective_licensed(entry,experiencer='Marek',clause_type=clause,
-                                                   shifted=True))
-            self.assertTrue(perspective_licensed(entry,experiencer='Marek',anchor='Marek',
-                                                  clause_type=clause,shifted=True))
-            self.assertFalse(perspective_licensed(entry,experiencer='Marek',anchor='Janek',
-                                                   clause_type=clause,shifted=True))
-        self.assertFalse(perspective_licensed(entry,experiencer='Marek',shifted=True))
-        self.assertTrue(perspective_licensed(self.entries['žbirn'],experiencer='Marek'))
-        self.assertTrue(perspective_licensed(entry,experiencer='Marek',kind='manifest'))
-        self.assertFalse(perspective_licensed(entry,experiencer='Marek',internal_reading=False))
-        self.assertFalse(perspective_licensed(self.entries['řejn'],experiencer='Marek'))
-        self.assertTrue(perspective_licensed(self.entries['řejn'],experiencer='Marek',internal_reading=False))
-        with self.assertRaises(LexicalLicenceError):
-            perspective_licensed(self.entries['řejn'],experiencer='Marek',kind='manifest')
 
     def test_unassigned_lexical_classes_do_not_generate_forms(self):
         self.assertEqual(self.entries['sledn']['segments'],list(tokens('sledn')))

@@ -80,18 +80,6 @@ def phased_state(particle, before, now, *, negative=False):
                           not now if negative else now)
 
 
-def experiential_source(*, psychological, other_person, access):
-    """Return the specified evidential preference, never an inflectional ban.
-
-    Reports and narrative perspective license another person's direct state
-    description; observable bodily conditions do not inherit a psych rule.
-    """
-    if (type(psychological) is not bool or type(other_person) is not bool
-            or access not in ('direct', 'inferred', 'reported', 'narrative', 'observable')):
-        raise ValueError('supply predicate subclass, perspective and evidence')
-    return 'indirect-preferred' if psychological and other_person and access == 'inferred' else 'licensed'
-
-
 def event_derived_state(state_holds, event_occurred, *, result=False):
     """Lexical openness need not entail an opening; Res requires that event."""
     if any(type(x) is not bool for x in (state_holds, event_occurred, result)):
