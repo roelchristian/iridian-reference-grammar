@@ -227,19 +227,17 @@ morphology.
 
   % (a) A one-place lexical psychological state.
   \node[state] (only-state) at (2.6,-1.43) {Stative\\predicate};
-  \node[argument] (only-e) at (2.6,-3.05) {$E$};
+  \node[argument] (only-e) at (2.6,-3.18) {$E$};
   \draw[lexical] (only-state.south) -- (only-e.north);
-  \node[fill=white,inner sep=1pt,font=\scriptsize,text=black!70]
-    at (3.16,-2.25) {selects};
 
-  % (b) Both arguments are selected by the lexical predicate.
+  % (b) Two arguments of the same lexical head, in an aligned fork.
   \node[state] (two-state) at (7.8,-1.43) {Stative\\predicate};
-  \node[argument] (two-e) at (6.65,-3.05) {$E$};
-  \node[argument] (two-s) at (8.95,-3.05) {$S$};
-  \draw[lexical] (two-state.south west) -- (two-e.north);
-  \draw[lexical] (two-state.south east) -- (two-s.north);
-  \node[fill=white,inner sep=1pt,font=\scriptsize,text=black!70]
-    at (7.8,-2.28) {selects};
+  \node[argument] (two-e) at (6.82,-3.18) {$E$};
+  \node[argument] (two-s) at (8.78,-3.18) {$S$};
+  \draw[black!75,line width=.6pt] (two-state.south) -- (7.8,-2.25);
+  \draw[black!75,line width=.6pt] (6.82,-2.25) -- (8.78,-2.25);
+  \draw[lexical] (6.82,-2.25) -- (two-e.north);
+  \draw[lexical] (8.78,-2.25) -- (two-s.north);
 
   % (c) The stative base selects E; overt Appl introduces S.
   \node[applicative] (appl) at (12.96,-1.36) {Appl\\\ird{-éb-}};
