@@ -10,36 +10,31 @@ LATEXMK ?= latexmk
 PYTHON ?= python3
 LMKFLAGS ?= -lualatex -interaction=nonstopmode -halt-on-error -file-line-error
 FULL_DIR := build/full
+BUILD_PDF := $(PYTHON) scripts/build-pdf.py
 
 .PHONY: all cover watch doctor clean distclean list help
 
 # Always ask latexmk: its recorder tracks nested inputs and config changes,
 # unlike a Makefile timestamp check against only chapters/*.tex.
-all: | $(FULL_DIR)
-	$(LATEXMK) $(LMKFLAGS) -outdir=$(FULL_DIR) $(MAIN).tex
+all:
+	$(BUILD_PDF) --output $(FULL_DIR)/$(MAIN).pdf -- $(LATEXMK) $(LMKFLAGS) $(MAIN).tex
 
 cover:
-	mkdir -p build/cover
-	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover cover.tex
+	$(BUILD_PDF) --output build/cover/cover.pdf -- $(LATEXMK) $(LMKFLAGS) cover.tex
 
-watch: | $(FULL_DIR)
-	$(LATEXMK) $(LMKFLAGS) -pvc -outdir=$(FULL_DIR) $(MAIN).tex
-
-$(FULL_DIR):
-	mkdir -p $@/chapters $@/util
+watch:
+	$(BUILD_PDF) --output $(FULL_DIR)/$(MAIN).pdf --watch -- $(LATEXMK) $(LMKFLAGS) $(MAIN).tex
 
 # Independent output directories prevent includeonly builds from replacing the
 # full PDF or teaching latexmk that a partial document is the complete book.
 define CHAPTER_RULE
 .PHONY: ch-$(1) ch-$(patsubst $(word 1,$(subst -, ,$(1)))-%,%,$(1)) ch-$(word 1,$(subst -, ,$(1)))
 ch-$(1) ch-$(patsubst $(word 1,$(subst -, ,$(1)))-%,%,$(1)) ch-$(word 1,$(subst -, ,$(1))):
-	mkdir -p build/chapters/$(1)/chapters build/chapters/$(1)/util
-	$(LATEXMK) $(LMKFLAGS) -outdir=build/chapters/$(1) \
+	$(BUILD_PDF) --output build/chapters/$(1)/$(MAIN).pdf -- $(LATEXMK) $(LMKFLAGS) \
 		-pretex='\includeonly{chapters/$(1)}' -usepretex $(MAIN).tex
 .PHONY: watch-$(1) watch-$(patsubst $(word 1,$(subst -, ,$(1)))-%,%,$(1)) watch-$(word 1,$(subst -, ,$(1)))
 watch-$(1) watch-$(patsubst $(word 1,$(subst -, ,$(1)))-%,%,$(1)) watch-$(word 1,$(subst -, ,$(1))):
-	mkdir -p build/chapters/$(1)/chapters build/chapters/$(1)/util
-	$(LATEXMK) $(LMKFLAGS) -pvc -outdir=build/chapters/$(1) \
+	$(BUILD_PDF) --output build/chapters/$(1)/$(MAIN).pdf --watch -- $(LATEXMK) $(LMKFLAGS) \
 		-pretex='\includeonly{chapters/$(1)}' -usepretex $(MAIN).tex
 endef
 $(foreach ch,$(CHAPTERS),$(eval $(call CHAPTER_RULE,$(ch))))
@@ -95,10 +90,10 @@ check: all cover check-source
 # all variants share the same vector artwork and typography as the full book.
 .PHONY: cover-design
 cover-design: cover
-	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover design/cover/concepts.tex
-	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover design/cover/review.tex
-	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover design/cover/specification.tex
-	$(LATEXMK) $(LMKFLAGS) -outdir=build/cover design/cover/print.tex
+	$(BUILD_PDF) --output build/cover/concepts.pdf -- $(LATEXMK) $(LMKFLAGS) design/cover/concepts.tex
+	$(BUILD_PDF) --output build/cover/review.pdf -- $(LATEXMK) $(LMKFLAGS) design/cover/review.tex
+	$(BUILD_PDF) --output build/cover/specification.pdf -- $(LATEXMK) $(LMKFLAGS) design/cover/specification.tex
+	$(BUILD_PDF) --output build/cover/print.pdf -- $(LATEXMK) $(LMKFLAGS) design/cover/print.tex
 	$(PYTHON) scripts/check-log.py build/cover/concepts.log
 	$(PYTHON) scripts/check-log.py build/cover/review.log
 	$(PYTHON) scripts/check-log.py build/cover/specification.log
