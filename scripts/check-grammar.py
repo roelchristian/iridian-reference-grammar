@@ -205,11 +205,15 @@ def sibilant_spelling_checks(sources):
         for form, line in examples:
             if form.lstrip().startswith('*'):
                 continue
-            # The supplied citation spelling sviňek preserves ňe before its
-            # fleeting vowel; the exception does not cover derived spellings
-            # or another malformed word on the same interlinear line.
+            # Lexical sviňek and traversal ňe retain explicit ň before e.
+            # Limit traversal's bound spelling to the described root families;
+            # neither exception may hide a malformed productive ending or a
+            # second word on the same interlinear line.
             regular_spelling = re.sub(r'(?<!\w)sviňek(?![\w-])', '', form,
                                       flags=re.IGNORECASE)
+            regular_spelling = re.sub(
+                r'(?<!\w)(?:za)?ňe(?=\W|$|(?:kař|kář|vad|vád|nočk|nóčk|stoj|stój))',
+                '', regular_spelling, flags=re.IGNORECASE)
             if explicit_soft_e.search(regular_spelling):
                 failures.append(f'{path}:{line}: soft coronals before ɛ require tě/dě/ně/lě: {form}')
             if silent_labial_i.search(form):

@@ -78,6 +78,18 @@ class SibilantMergerChecks(unittest.TestCase):
             with self.subTest(text=text):
                 self.assertTrue(self.check_spelling(text))
 
+    def test_traversal_ne_preserves_its_lexical_spelling_only(self):
+        self.assertEqual(self.check_spelling(
+            r'\lexentry{ňe}{}{through, via} \ird{ňe-} '
+            r'\ird{ňekař-} \ird{ňekářime} \ird{zaňekářime} '
+            r'\ird{ňevádime} \ird{ňenóčkime} \ird{ňestójime} '
+            r'\gla Leše ňe ňestójek.//'), [])
+        for text in (r'\ird{raňe}', r'\ird{véňe}', r'\ird{ňekářraňe}',
+                     r'\ird{ňepiaštou}', r'\gla Leše ňe véňe.//',
+                     r'\gla Zaňekářime hráťe.//'):
+            with self.subTest(text=text):
+                self.assertTrue(self.check_spelling(text))
+
     def test_independent_fixtures_preserve_ce_che_and_high_front_contrast(self):
         fixtures = json.loads((checker.ROOT / 'scripts/palatalisation-fixtures.json')
                               .read_text(encoding='utf-8'))

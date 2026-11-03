@@ -20,24 +20,31 @@ SPEC.loader.exec_module(checker)
 
 
 class ReversativePoTests(unittest.TestCase):
-    def test_lexical_preverb_is_added_without_removing_its_homophones(self):
+    def test_lexical_preverbs_preserve_their_distinct_homophones(self):
         entries = [record for record in checker.extract(
             (ROOT / 'util/lexicon.tex').read_text(), 'util/lexicon.tex')
             if record['macro'] == 'lexentry']
         prefixes = [entry for entry in entries if entry['form'] == 'po-']
-        self.assertEqual(len(prefixes), 2)
+        self.assertEqual(len(prefixes), 3)
         self.assertEqual({entry['gloss'] for entry in prefixes},
-                         {'reverse a resultant condition; remove; dismantle', 'slightly; somewhat'})
-        self.assertIn('declarative complementizer',
-                      next(entry['gloss'] for entry in entries if entry['form'] == 'po'))
+                         {'reverse a resultant condition; remove; dismantle',
+                          'slightly; somewhat', 'below, under'})
+        self.assertEqual({entry['gloss'] for entry in entries if entry['form'] == 'po'},
+                         {'declarative complementizer', 'under, below'})
         verbs = read_domain('chapters/03-verbs.tex')
         self.assertIn(r'\ird{pomužna}  & \ird{pomúžna}', verbs)
         source = read_domain('chapters/10-derivational.tex')
-        table = source.split(r'\label{tab:lexical-preverbs}', 1)[1].split(r'\end{table}', 1)[0]
-        inventory = re.findall(r'^\s*\\ird\{([^}]+)\} &', table, re.M)
-        self.assertEqual(len(inventory), 11)
-        self.assertIn('po-', inventory)
-        self.assertIn('ne-', inventory)
+        for label, expected in (
+                ('tab:lexical-preverbs',
+                 {'de-', 'cy-', 'le-', 'ra-', 'je-', 'o-', 'vra-', 'ňe-',
+                  'pře-', 'nad-', 'ny-', 'po-'}),
+                ('tab:preverbs-configuration-result',
+                 {'ša-', 'na-', 'ru-', 'pře-', 'po-', 'ne-'})):
+            with self.subTest(table=label):
+                table = source.split(r'\label{' + label + '}', 1)[1].split(r'\end{table}', 1)[0]
+                inventory = re.findall(r'^\s*\\ird\{([^}]+)\} &', table, re.M)
+                self.assertEqual(set(inventory), expected)
+                self.assertEqual(len(inventory), len(expected))
 
     def test_prefix_and_suffix_nuclei_are_outside_the_root_grade_target(self):
         selected = QuantityGrades.from_file().apply(
