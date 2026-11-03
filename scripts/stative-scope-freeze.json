@@ -265,8 +265,8 @@
       },
       {
         "source": "chapters/10-predicate-constructions.tex",
-        "start": "\\section{Identificational equatives and participant nominals}",
-        "end": "\\section{The overt copular verb",
+        "start": "\\subsection{Identificational equatives and participant nominals}",
+        "end": "\\section{Finite copular predication with \\ird{neh-}}",
         "units": [
           "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec",
           "4d54f28c003b3769843798fb00a1568e13ece67e54b2508d05c85bfde9b6bdb5",

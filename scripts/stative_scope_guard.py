@@ -116,12 +116,107 @@ STATE_SELECTION_REVISIONS = (
 )
 
 
+# Exact nominal-predication revisions preserve the frozen relative rules and
+# examples while repairing semantic composition and the derivational reference.
+# Only these reviewed complete passages are normalised; further changes to
+# their analysis or any relative construction remain visible to the guard.
+NOMINAL_PREDICATION_REVISIONS = (
+    (
+        r"""When the predicative complement of a zero-copula equative clause is a
+\term{participant nominal} (a nominalised verb form,
+§\,\ref{sec:nmlz-predicative}), the construction is
+\term{identificational}: the topic \synhead{DP} is identified with the referent
+of the nominal description, which is interpreted as definite in the following example.
+The English definite descriptions here and in the related existential examples
+presume contextually recoverable referents; neither unanchored indirect
+\ird{lúbcí} nor participant \ird{-ou} itself encodes definiteness or uniqueness:""",
+        r"""A participant nominal can predicate an event-participant description of an
+independently supplied referent. Its internal derivation supplies a property
+rather than an obligatorily definite individual
+(§\,\ref{sec:nm-derived-participant}); in an identificational context,
+the clause relates a candidate to the participant description supplied by an
+established event. The finite clause and the participant-nominal
+construction differ in the following pair:""",
+    ),
+    (
+        r"""\noindent In both clauses, bare \ird{lobek} permits the contextually
+recoverable reading expressed by English \trsl{the apple}; shared-anchored
+\ird{lúbko} would explicitly mark retrieval through the common discourse
+model (§\,\ref{sec:nm-def}). That anchoring contrast leaves the predication
+type unchanged: transitive \ird{Janku} with finite \ird{pjaštník} forms the
+verbal clause, whereas indirect \ird{Jancí} with participant nominal
+\ird{pjaštníkou} forms the equative. In (b), the apple is identified with the
+referent of the nominalised description. An
+agent-nominal equative identifies the topic as the agent of the nominalised
+event:""",
+        r"""\noindent In both clauses, bare \ird{lobek} permits the contextually
+recoverable reading expressed by English \trsl{the apple}; shared-anchored
+\ird{lúbko} would explicitly mark retrieval through the common discourse
+model (§\,\ref{sec:nm-def}). Transitive \ird{Janku} with finite
+\ird{pjaštník} forms the verbal clause, whereas indirect \ird{Jancí}
+with participant nominal \ird{pjaštníkou} forms the non-verbal
+predication. The latter's event reference frame remains internal to the
+nominal description, independently of the matrix zero-copula relation.
+
+Let \(j\) denote Janek, \(a\) the apple and \(R_e\) the embedded
+event reference frame. At a fixed evaluation situation, the patient nominal
+supplies the following property, whose application to \(a\) states that
+the apple satisfies the description:
+\[
+\begin{aligned}
+ P_{R_e}&=\lambda x\,\exists e[\operatorname{eat}(e)
+   \land\operatorname{Theme}(e,x)\\
+   &\qquad\land\operatorname{Agent}(e,j)
+   \land\operatorname{PF}(e,R_e)],\\
+ \mathrm{Eq}(P_{R_e})(a)&=P_{R_e}(a).
+\end{aligned}
+\]
+The nominal relational head supplies the agent restriction before event
+closure (§\,\ref{sec:nm-derived-participant}). Where the context
+identifies a unique relevant satisfier, the description can instead receive
+the individual interpretation \(y=\iota x P_{R_e}(x)\), with the identity
+composition \(\mathrm{IDENT}(y)(a)=[a=y]\)
+(§\,\ref{sec:nominal-predicate-semantics}). This definite shift requires
+a context supporting its definedness; neither participant \ird{-ou} nor
+the indirect dependent supplies uniqueness. The English free relative
+\trsl{what Janek ate} is compatible with the contextual identification, but
+does not by itself distinguish property application from referential
+equation in Iridian.
+
+The agent-nominal counterpart characterises Janek as a participant in an
+eating event whose theme is the contextually recoverable apple:""",
+    ),
+    (
+        r"""Identificational negation rejects the proposed participant identification;
+its interpretation and its contrast with finite verbal negation are illustrated
+in §\,\ref{sec:negative-identificational-constructions}.""",
+        r"""The agent nominal similarly supplies a property of eaters, with its theme
+restriction introduced in the nominal domain. In its property interpretation,
+the clause asserts that Janek satisfies this description; an identity
+interpretation additionally requires a contextually identified individual
+satisfying it. Identificational use thus concerns the relation between a
+candidate and an event-participant description, without automatically
+constituting a distinct specificational construction. The examples do not
+independently establish the property--value organisation described in
+analyses of specificational clauses \cite[§4.1]{djarv2021}.
+
+Identificational negation rejects satisfaction of the description or the
+contextually licensed equation, according to its interpretation; it does not
+itself presuppose an event or a unique participant. The established-event
+contexts that support the English definite readings, and the contrast with
+finite verbal negation, are illustrated in
+§\,\ref{sec:negative-identificational-constructions}.""",
+    ),
+)
+
+
 def frozen_reference_text(path, text):
     if path == 'chapters/08-complex-sentences.tex':
         for original, revised in FINITE_REFERENCE_REVISIONS:
             text = text.replace(revised, original)
     for original, revised in (LEXICAL_FORM_REVISIONS + PRESENTATIONAL_EXAMPLE_REVISIONS
-                              + STATE_SELECTION_REVISIONS):
+                              + STATE_SELECTION_REVISIONS
+                              + NOMINAL_PREDICATION_REVISIONS):
         text = text.replace(revised, original)
     return text
 
