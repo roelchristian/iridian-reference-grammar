@@ -630,10 +630,15 @@ stimulus without altering the stative character of the predicate. Where the
 property or condition denoted by the base is susceptible to causal
 influence, causativisation introduces both an additional causer and a
 dynamic causing predicate. Within this hierarchy, stativising \ird{-n-}
-itself contributes no further participant, while State and optional Become
-remain internal to the lexical stem, below inner valency, Caus and outer
-orientation
-(§§\,\ref{sec:stative-inchoative}, \ref{sec:morph-template}).
+itself contributes no further participant, while State and its licensed
+eventive extensions remain internal to the lexical stem, below inner valency,
+Caus and outer orientation
+(§§\,\ref{sec:stative-inchoative}, \ref{sec:morph-template}). Manifest
+likewise derives a single-participant event predicate, whose bearer displays
+the selected internal condition without necessarily experiencing it. Its
+constituent structure and its independently licensed causative extension are
+examined in §\,\ref{sec:vm-tension-stative}; its morphological paradigm
+is given in §\,\ref{sec:stative-manifest}.
 
 The distinction between stative and inchoative causativisation depends, in
 turn, upon the constituent selected by Caus, which in \ird{svorn-ér-} is
@@ -991,8 +996,9 @@ separate contribution of Appl follows the argument-building distinction
 developed by Pylkkänen \cite[ch.~2]{pylkkanen2008}. These comparisons
 motivate distinct licensing relations without establishing an Iridian
 lexical bivalent paradigm. In the representations below, $H$ consistently
-denotes the lower holder or experiencer, $B$ an applied participant and
-$C$ a causer. The $E$ of
+denotes the lower participant, interpreted as holder or experiencer in a
+state predicate, as undergoer of change under Become and as display bearer
+under Manifest; $B$ denotes an applied participant and $C$ a causer. The $E$ of
 Figure~\ref{fig:psychological-argument-frames} thus corresponds to $H$
 here; when Caus selects the predicate, the same lower participant is the
 causee, denoted by $E$ in §\,\ref{sec:vm-selection-domains}.
@@ -1042,6 +1048,104 @@ and selectional restrictions of Iridian State, Become, Manifest and Appl
 to their language-specific descriptions. In particular, the lower
 stativising \ird{-n-} remains distinct from homophonous outer orientation,
 whose position is above Caus.
+
+The state in \ird{Dá všihna} \trsl{I am happy}, the transition in
+\ird{Dá všihnéla} \trsl{I am becoming happy} and the display in
+\ird{Dá všihneša} \trsl{I am displaying happiness} share the lower
+predicate \ird{všihn-}, while differing in the eventuality to which
+viewpoint applies. Figure~\ref{fig:stative-eventive-alternatives} represents
+the two eventive extensions as alternative heads selecting StateP, with the
+same lower participant in each structure. The trees retain head-final order
+and abbreviate the internal branching of StateP; finite continuous
+\ird{-a} belongs to the higher Asp.Align and is omitted.
+
+\begin{figure}[!ht]
+\centering
+\caption{Alternative eventive extensions of a psychological StateP.}
+\label{fig:stative-eventive-alternatives}
+\captionsetup[subfigure]{position=top,justification=centering,singlelinecheck=true}
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\caption{Transition: \ird{všihn-él-}}
+\small
+\begin{forest}
+  syntax tree,
+  for tree={s sep=6pt}
+  [\synhead{BecomeP}
+    [\synhead{StateP}
+      [{\synhead{DP}$_H$}]
+      [{$P$\\{\footnotesize\ird{všihn-}}}]
+    ]
+    [{Become$^{0}$\\\ird{-él-}}]
+  ]
+\end{forest}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\caption{Display: \ird{všihn-eš-}}
+\small
+\begin{forest}
+  syntax tree,
+  for tree={s sep=6pt}
+  [\synhead{ManifestP}
+    [\synhead{StateP}
+      [{\synhead{DP}$_H$}]
+      [{$P$\\{\footnotesize\ird{všihn-}}}]
+    ]
+    [{Manifest$^{0}$\\\ird{-eš-}}]
+  ]
+\end{forest}
+\end{subfigure}
+\end{figure}
+
+Writing $P_H$ for the lower state description, including its participant
+relation, the grammar represents the shared StateP input and the two
+eventive contributions schematically as
+\ex\label{ex:stative-eventive-composition}
+$\begin{aligned}
+ P_H &=\lambda s\,P(H)(s),\\
+ \operatorname{Become}(P_H)
+   &=\lambda e\,\operatorname{Transition}(e,P_H),\\
+ \operatorname{Manifest}(P_H)
+   &=\lambda e\,[\operatorname{Display}(e,H)
+                 \land\operatorname{Expresses}(e,P_H)].
+\end{aligned}$
+\xe
+\noindent Here \emph{Transition} relates a change to its target state description,
+whose scalar standard and attainment conditions are those described in
+§\,\ref{sec:stative-inchoative}. An ongoing transition need not have
+reached its target. \emph{Display} identifies an outward behavioural or
+expressive event borne by $H$, while \emph{Expresses} relates that event
+to the content supplied by $P_H$. This latter relation does not
+existentially bind a state satisfying the description:
+\ex\label{ex:stative-manifest-nonentailment}
+ $\operatorname{Manifest}(P_H)(e)
+ \ \not\Rightarrow\ \exists s\,P_H(s).$
+\xe
+\noindent The child in \ird{Byl všihneša} can consequently smile and laugh while
+feeling unhappy (\ref{ex:deriv-slot-display}a): $H$ participates in the
+actual display, while its relation to happiness belongs to the content
+expressed. StateP supplies that content without independently asserting
+that the corresponding internal state obtains. Neither eventive head adds
+a second DP, and the behavioural interpretation of Manifest does not by
+itself license an actor layer or require intentional feigning. The internal
+state thus has a different status from the actual causal component in
+Kim's analysis of Korean expressive psychological predicates
+\cite[abstract]{kimyoonshin2026}.
+
+The alternative heads at the same structural height represent the Iridian
+analysis of these licensed derivations: their common StateP input, valency-neutral eventive
+contribution and restrictions on combination motivate the parallel, while
+suffix order alone establishes neither identical structural height nor the
+interpretation of either head. Become and Manifest are not freely
+stackable, and the licence of Manifest on \ird{všihn-} does not extend
+to other experiential or bodily-condition statives solely because they
+denote internal states. Nor does \ird{všihn-eš-} inherit the stimulus
+applicative of \ird{všihn-}. Since Appl occupies a higher position in
+(\ref{ex:stative-syntactic-hierarchy}), that restriction follows from the
+lexical selection of the derived display predicate, rather than from a
+structural ban on placing Appl above Manifest
+(§§\,\ref{sec:stative-manifest}, \ref{sec:stative-valency}).
 
 The stimulus in \ird{Senica Marku všihnébav}
 \trsl{Marek had been happy about the news}
@@ -1215,42 +1319,60 @@ endpoint-oriented interpretations \cite[§§3.1--3.3]{kennedylevin2008}; the
 Iridian distribution of comparative and positive standards remains that of
 Table~\ref{tab:stative-scalar-contrasts}.
 
-A separately causable display permits Caus to select ManifestP, as in
-\ird{všihnéšrime} (§\,\ref{sec:stative-manifest}). Its complement is the
-display predicate rather than an assertion of genuine happiness, so that
-causing the display carries no entailment of causing the corresponding
-internal state. The non-entailing interpretation of Manifest is preserved
-under this higher causative.
+The independently licensed \ird{všihnéšrime}
+\trsl{is causing a display of happiness} places Caus above ManifestP
+(§\,\ref{sec:stative-manifest}). Figure~\ref{fig:stative-caus-manifest-syntax}
+shows the lower display bearer as the causee and the additional causer in
+Spec,CausP, with orientation and viewpoint again omitted.
 
-The child in \ird{Byl všihneša} can smile and laugh while feeling unhappy,
-whereas \ird{Byl všihnal} attributes happiness on indirect evidence
-(\ref{ex:deriv-slot-display}). Manifest therefore selects the content of
-the lower state description without asserting that a state satisfying it
-actually obtains. If $P$ denotes that description, $H$ its holder and $e$
-an outward display, the interpretation has the following non-entailment:
-\ex\label{ex:stative-manifest-nonentailment}
- $\operatorname{Manifest}(P)(H)(e)
- \ \not\Rightarrow\ \exists s\,P(H)(s).$
-\xe
-\noindent The asserted eventuality is the display; the selected description determines
-what the behaviour expresses. StateP inside ManifestP consequently supplies
-descriptive content rather than an independently asserted internal state.
-Become instead describes a transition whose target is the selected state,
-whereas Manifest imposes no corresponding attainment condition. This
-interpretation follows from the Iridian contrast itself, independently of
-analyses in which an expressive psychological predicate contains an actual
-internal state as a causal component, as in Kim's account of Korean
-\cite[abstract]{kimyoonshin2026}.
+\begin{figure}[!ht]
+\centering
+\caption{Causation of a manifestative display.}
+\label{fig:stative-caus-manifest-syntax}
+\small
+\begin{forest}
+  syntax tree,
+  for tree={s sep=6pt}
+  [\synhead{CausP}
+    [{\synhead{DP}$_C$\\{\footnotesize causer}}]
+    [{Caus$'$}
+      [\synhead{ManifestP}
+        [\synhead{StateP}
+          [{\synhead{DP}$_H$\\{\footnotesize display bearer / causee}}]
+          [{$P$\\{\footnotesize\ird{všihn-}}}]
+        ]
+        [{Manifest$^{0}$\\\ird{-éš-}}]
+      ]
+      [{Caus$^{0}$\\\ird{-r-}}]
+    ]
+  ]
+\end{forest}
+\end{figure}
 
-Manifest also establishes a distinct derived predicate for lexical
-selection. Its licence on \ird{všihn-} does not extend to other experiential
-or bodily-condition statives solely because they denote internal states,
-and the stimulus applicative licensed on \ird{všihn-} is not inherited by
-\ird{všihn-eš-}. Become and Manifest are likewise not freely stackable.
-These restrictions govern which lower predicates may enter the structural
-hierarchy, while the separately licensed higher causative acts on the
-display that Manifest supplies
-(§§\,\ref{sec:stative-manifest}, \ref{sec:stative-valency}).
+The morphological sequence is \ird{všihn-éš-r-ime}: compact Caus
+\ird{-r-} selects G1 on the accessible Manifest nucleus, giving
+\ird{é} from plain \ird{e}, while the inner state stem remains
+unchanged. The strengthened \ird{-éš-} is a contextual realisation of
+Manifest, not a distinct underlying display morpheme. Higher progressive
+\ird{-ime} presents the causing eventuality as ongoing; the display is
+the lower eventuality to which its causal relation applies.
+
+Substituting the display predicate in the general causative interpretation
+of §\,\ref{sec:causative-productivity} gives
+\[
+\begin{aligned}
+ &\mathrm{CAUS}(\operatorname{Manifest}(P_H))(C)\\
+ &\quad=\lambda e.\exists e'\,[\operatorname{Cause}(e,e')
+   \land\operatorname{Initiator}(C,e)\\
+ &\hspace{6em}\land\operatorname{Display}(e',H)
+   \land\operatorname{Expresses}(e',P_H)].
+\end{aligned}
+\]
+The causal relation holds between the event initiated by $C$ and the display
+borne by $H$, without asserting that $H$ genuinely experiences happiness. Caus
+preserves the lower non-entailment while introducing its own causing
+eventuality and participant; neither the causee relation nor the new causer
+requires an actor within ManifestP.
 
 The aspectual contrast between \ird{*Nužo múžnime} and
 \ird{Nužo mužnélime}, and between \ird{*Dá řéjnik} and
@@ -1279,6 +1401,7 @@ Predicate & Lower eventuality & Indicative aspect selection \\
 \ird{všihn-eš-} & Outward display & Eventive inventory \\
 \ird{svorn-ér-} & Causing eventuality over a state & Eventive inventory \\
 \ird{mužn-él-r-} & Causing eventuality over a transition & Eventive inventory \\
+\ird{všihn-éš-r-} & Causing eventuality over a display & Eventive inventory \\
 \bottomrule
 \end{tabularx}
 \par\smallskip
@@ -1368,7 +1491,10 @@ lexically derived display predicate. Since Manifest changes the lower
 eventuality description while Evid specifies access to a proposition,
 manifestative predicates can themselves receive evidential marking under
 the ordinary finite rules; the established \ird{všihnéšekal}
-contains both layers (\S\,\ref{sec:stative-manifest}).
+contains both layers (\S\,\ref{sec:stative-manifest}). Its perfective
+bounds the display event, while Evid marks indirect access to the proposition
+that this display occurred; the evidential does not convert the display
+predicate into an assertion of genuine happiness.
 
 \begin{table}[!ht]
 \footnotesize
@@ -1443,10 +1569,11 @@ verbal inflection, although all three formations may draw upon a common
 lexical base.
 
 The case distribution of the licensed constructions follows the
-completed aspect--orientation configuration, while the lower predicate
-preserves the holder's lexical relation. Table~\ref{tab:stative-syntax-case}
-compares the ordinary indicative frames, using $H$ for that holder,
-$B$ for the applied stimulus and $C$ for the causer. The single-participant
+completed aspect--orientation configuration, independently of the lower
+participant's interpretation as state holder, undergoer of change or display
+bearer. Table~\ref{tab:stative-syntax-case} compares the ordinary indicative
+frames, using $H$ for that lower participant, $B$ for the applied stimulus
+and $C$ for the causer. The single-participant
 rows concern the monovalent frames described above; they impose no case
 paradigm on the separately recognised lexical experiencer--stimulus class.
 
@@ -1476,6 +1603,9 @@ Active direct stative causative
 Active inchoative causative
  & $C_{\mathrm{DIR}}, H_{\mathrm{IND}}$
  & $H_{\mathrm{DIR}}, C_{\mathrm{TRS}}$ \\
+Active Manifest causative
+ & $C_{\mathrm{DIR}}, H_{\mathrm{IND}}$ (predicted)
+ & $H_{\mathrm{DIR}}, C_{\mathrm{TRS}}$ (predicted) \\
 \bottomrule
 \end{tabularx}
 \par\smallskip
@@ -1484,18 +1614,20 @@ Each domain includes only the independently licensed aspects of that
 predicate. The psychological applicative's NOM frame follows the general
 mapping but has no independently illustrated paradigm; its established
 retrospective frame is shown in (\ref{ex:stative-stimulus-appl}b).
+The Manifest causative applies the ordinary intransitive-base causative
+mapping to the licensed display predicate; no separate case paradigm is
+illustrated (Table~\ref{tab:causative-frames}).
 Causative NOM rows give active zero orientation; overt patient orientation
 licenses the separately described passive
 (\S\,\ref{sec:vm-passive}).}
 \end{table}
 
-Become and single-participant Manifest add no causer or applied
-participant, so their ordinary monovalent frames retain the lower
-participant in direct case. Stimulus Appl adds $B$, which is selected as
-direct while the original experiencer receives the constructionally
-licensed non-pivot case. Caus instead adds $C$, and the original holder
-functions as the causee of the selected lower predicate. With neither a
-retained theme nor an applied participant in that complement, active NOM
+Become and single-participant Manifest preserve the monovalent frame, with
+$H$ in direct case. Stimulus Appl adds $B$ as direct, while the original
+experiencer receives the domain-conditioned non-pivot case. Caus instead
+adds $C$ above the lower participant, which functions as the causee of the
+selected state, transition or display predicate. Where the complement
+contains neither a retained theme nor an applied participant, active NOM
 selects the causer, whereas ERG selects the causee and licenses the causer
 as transitive (\S\S\,\ref{sec:vm-asp-case},
 \ref{sec:vm-selection-domains}). The direct-case \ird{problem} in
