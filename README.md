@@ -1,105 +1,127 @@
-# A reference grammar of the Iridian language
+# A Reference Grammar of the Iridian Language
 
-This is a rewrite of the (incomplete) reference grammar of Iridian I worked on in May/June 2019.
+Iridian (*ircevná malno*) is a naturalistic constructed language conceived as
+a language isolate in a fictional Central European setting. Within that
+setting, the Iridian Republic lies between the Czech Republic, Slovakia,
+Poland and Ukraine, and its language has developed through sustained contact
+with its Slavic neighbours. Its vocabulary, sound system and orthography
+bear a distinctly West Slavic character, while its grammatical organisation
+combines predominantly head-final syntax, extensive verbal morphology and a
+central role for discourse topics.
 
-This work is licenced under an [MIT Licence](https://github.com/roelchristian/iridian-reference-grammar/blob/master/LICENSE). Some rights are reserved, but otherwise, feel free to fork this repository or adapt portions of the code for your personal use.
+*A Reference Grammar of the Iridian Language*, by Roel Christian Yambao,
+describes the language's phonology, morphology, syntax and discourse. The
+current work is an ongoing scholarly project whose descriptive chapters
+develop both the forms of Iridian and the analyses through which their
+distribution is understood.
 
-The current grammar is in `grammar.tex` and `chapters/`. Indicative verbal negation uses unstressed **za-** before consonants and **z-** before vowels; **ž-** is not a negative allomorph. The `archive/2020/` sources and working notes in `util/stub/` document earlier analyses and are not normative for the current system.
+## Linguistic profile
 
-## Build the PDF
+Iridian distinguishes short and long vowels independently of stress, which
+falls on the first syllable of the lexical word. Its Latin orthography uses
+acute accents to mark vowel length and a háček in letters such as *š*, *č*
+and *ě*. Hard and soft consonant stems participate in palatalisation and
+other alternations, while final devoicing and voicing assimilation shape
+pronunciation. The
+[phonology chapter](chapters/02-phonology.tex) distinguishes these contextual
+processes from the contrasts and stem grades that carry lexical or
+grammatical information.
 
-Install a full **TeX Live** distribution (MacTeX on macOS), with `latexmk`,
-LuaLaTeX, and Biber on `PATH`. The sources use TeX-distributed Libertinus Serif
-and Source Sans Pro fonts; no separately installed system fonts
-are needed. Python 3 is used for safe PDF publication, prerequisite checks and
-lexicon extraction.
+Nouns have three productive cases—direct, transitive and indirect—and
+distinguish singular from plural through endings distributed across nine
+declension classes. A restricted vocative survives in particular words used
+for direct address. There is no grammatical gender. Inflection frequently
+combines an ending with a change in the stem: vowels may disappear, change
+height or alternate in length, and consonants may take a different grade.
+Nominal morphology also expresses shared anchoring, which marks a referent
+as accessible within the discourse. These patterns give the nominal system
+considerable variety despite its small inventory of productive cases.
 
-```sh
-make doctor              # Check executables, packages, and font files
-make                     # Build build/full/grammar.pdf
-make check               # Build book/cover, check diagnostics, run collector tests
-make check-source        # Check source links, linguistic regressions and collector tests
-make cover               # Standalone front cover: build/cover/cover.pdf
-make watch               # Rebuild when sources change; Ctrl-C stops watching
-make ch-nouns            # Build only chapter 4
-make ch-04               # Equivalent numeric alias
-make ch-04-nouns          # Equivalent full-name alias
-make watch-nouns         # Watch only chapter 4
-make list                # List all chapter names
-```
+The finite verb marks aspect rather than grammatical tense, so temporal
+location depends on context and adverbials. Its five aspectual categories
+are perfective, retrospective, continuous, progressive and contemplative,
+although individual predicate classes admit particular subsets. Aspect also
+conditions split ergativity: ordinary perfective and retrospective
+transitives place the patient in direct case and the agent in transitive
+case, whereas ordinary active imperfective clauses place the agent
+in direct case and the patient in indirect case. Antipassive, applicative,
+causative and patient-selecting constructions interact with this system,
+altering the available participants or their grammatical selection. The
+relationship between verbal morphology and argument structure therefore
+extends well beyond the expression of an event's temporal contour.
 
-The PDF uses an A4 monograph layout with facing-page margins, a full-colour
-vector front cover, a separate interior title page, and running heads. All new
-auxiliary files and PDFs live under `build/`. LuaTeX uses a
-writable local font cache in `build/cache/`, so it also runs in restricted
-workspaces without writing to your home directory. The first build can take
-longer while it indexes fonts; later builds reuse that cache. `latexmk` tracks
-nested inputs and reruns LuaLaTeX until references and contents settle. Running
-`make` again without edits performs no TeX pass.
+The finite predicate ordinarily closes the clause, nominal modifiers precede
+their noun, and adpositions follow their complements. Within this head-final
+organisation, the direct-case argument serves as a grammatical pivot and is
+a default candidate for the discourse topic. Topicalisation remains
+independent: another participant can become the topic while retaining its
+case, and presentational clauses need no referential topic. Pronominal
+arguments are commonly omitted when recoverable from discourse, although
+the verb carries no person agreement. Particles contribute further
+distinctions of phase, polarity, interrogation, evidentiality and speaker
+stance.
 
-Compilation runs in a `.staging/` subdirectory of each output directory. The
-published PDF (for example, `build/full/grammar.pdf`) stays readable throughout
-a rebuild and is replaced atomically only when `latexmk` succeeds. Failed or
-interrupted builds leave the last successful PDF in place. This also applies
-to cover, chapter and watch builds. Watch mode previews the published PDF.
-The log alongside each published PDF belongs to its last successful build;
-the latest compilation log and auxiliary files remain in `.staging/` for
-diagnosing failures. The first build with this layout creates a new auxiliary
-cache; subsequent builds are incremental as before.
+## An illustration of Iridian
 
-Bibliographic metadata lives in
-`util/references.bib`; `grammar.tex` loads it with BibLaTeX, and
-`util/references.tex` prints the numbered, alphabetically sorted reference list.
-`latexmk` runs Biber with data-model validation whenever the database or its
-control file changes, then reruns LuaLaTeX to resolve citations. No separate
-manual bibliography command is needed, including for chapter builds.
-`make doctor` checks for Biber and BibLaTeX; `make check-source` checks citation
-keys against the database and Appendix A coverage of projection names and
-explicitly zero-marked heads from the maintained source. This lexical inventory
-check includes provisional and rejected labels; their analytical status and
-definitions require editorial review. `make check` rejects missing
-glyphs, unresolved references, duplicate labels, and compilation errors, and
-runs the collector tests. It reports overfull boxes for visual review.
+The following pair, used in the grammar's treatments of nominal case,
+argument structure and information structure, illustrates the aspectual
+alignment split:
 
-Chapter PDFs are in `build/chapters/<chapter>/grammar.pdf`, independent of the
-full book. They use `includeonly`, so references into omitted chapters may be
-unresolved and their numbering may differ from the full book. Use the full
-build for publication and final reference checks.
+| Iridian | English |
+| --- | --- |
+| *Marek travě pjaštíme.* | ‘Marek is eating bread.’ |
+| *Travó Marku pjaštník.* | ‘Marek ate the bread.’ |
 
-```sh
-make clean               # Remove full/chapter outputs; retain font caches
-make distclean           # Also remove the local font caches
-```
+In the progressive sentence, *Marek* is direct and *travě* ‘bread’ is
+indirect. In the perfective sentence, *Marku* is transitive and the anchored
+form *travó* is direct. Marek remains the eater in both, although the
+grammatical pivot changes. The English present and past suit the illustrated
+contexts; Iridian expresses the aspectual contrast without tense inflection.
+Neither aspect by itself requires the agent or the bread to be the discourse
+topic. The fuller examples and their glosses appear in
+[Chapter 7](chapters/07-argument-structure.tex), with their discourse
+interpretation developed in [Chapter 14](chapters/14-information-structure.tex).
 
-Cleanup is limited to the current pipeline's build directories. Older PDFs
-and auxiliary files in the repository root or archive are left alone. The
-canonical current PDF is `build/full/grammar.pdf`, not a pre-existing root PDF.
+## About the grammar
 
-## Gather tagged lexicon items
+The grammar comprises seventeen chapters in four parts. *Foundations*
+introduces the language, its sounds and orthography, and the interactions
+between phonology and morphology. *Words and Phrases* develops nominal
+morphology and syntax, verbal inflection, argument structure, derivation and
+nominalisation. *The Clause* treats clause structure, predication, negation,
+particles, clause types and information structure, while *Complex Syntax and
+Discourse* brings together embedding, clause linking and discourse
+organisation. Appendices provide glossing abbreviations, paradigms, a
+lexicon and historical notes.
 
-```sh
-make lexicon             # Write build/lexicon.json
-make lexicon-tsv         # Write build/lexicon.tsv
-```
+Descriptive exposition, paradigms and interlinear examples are accompanied
+by formal analyses of how words and clauses are organised. These analyses
+connect case, aspect and participant selection with the broader structure of
+the language; their assumptions and unresolved questions are distinguished
+from the established grammatical patterns. The
+[introductory chapter](chapters/01-overview.tex) provides a fuller overview
+and explains the conventions used throughout.
 
-These collect tagged forms from the current chapters with their source
-locations. See [the utility documentation](util/README.md) for coverage and
-limitations. The manually curated `util/lexicon.tex` remains the book's lexicon
-appendix; extraction does not overwrite it.
+## Development and current status
 
-## Typography and cover
+The project began with an incomplete grammar written in May and June 2019,
+followed by revisions preserved in the repository. The present 2026 rewrite
+substantially develops the description and its theoretical treatment. This
+project history is separate from the fictional history of Iridian and its
+neighbours.
 
-The interior uses Libertinus Serif with slightly open leading, Source Sans Pro
-for the heading hierarchy. IPA spans retain the surrounding font through the
-semantic `\ipagloss` macro. Interlinear examples use 11-point type; tables use
-tabular lining figures and booktabs rules.
-Sections, tables, and figures carry chapter-based numbers. Caption spacing and
-table spacing are set centrally rather than added by individual chapters.
+The current chapters and `grammar.tex` constitute the operative description.
+Earlier sources in `archive/2020/` and working material in `util/stub/`
+preserve previous analyses and proposals; they have historical value but do
+not establish rules for the current language.
 
-`styles/monograph.tex` holds the chapter, heading, contents, and running-page
-styles. Font selection is shared in `styles/fonts.tex`; fonts resolve from the
-TeX distribution rather than a user font directory. Microtype settings and
-example/caption spacing are in `grammar.tex`. `styles/cover.tex` supplies one
-vector cover shared by the book and the standalone `cover.tex` document. The front cover is A4 with no bleed or
-spine; a printer-specific wraparound cover can be prepared once the binding,
-stock, and final trim are specified.
+## Reading and documentation
+
+- Begin with the [Introduction and Grammatical Overview](chapters/01-overview.tex),
+  browse the [source chapters](chapters/), or consult the
+  [complete book source](grammar.tex).
+- To produce the full PDF, follow the [build guide](docs/BUILDING.md).
+- For source organisation, editorial conventions and validation, see the
+  [development guide](docs/DEVELOPMENT.md); lexicon extraction has its own
+  [utility documentation](util/README.md).
+- The work is distributed under the [MIT licence](LICENSE).
