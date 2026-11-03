@@ -119,6 +119,18 @@ lexical structure and aspectual selection. The distinction between
 of this restriction without presupposing that the same division is enforced
 in other languages.
 
+Since membership in a lexical-semantic class does not, in itself, determine
+which eventive derivations or valency extensions a stative predicate admits,
+§\,\ref{sec:stative-stability} begins by examining the principal state
+types and their aspectual interpretations, distinguishing the holding of a
+state from entry into it and, where applicable, its outward manifestation.
+The discussion then turns in §\,\ref{sec:stative-valency} to the effects
+of inchoative, applicative and causative formation on eventuality structure,
+valency and case, before §\,\ref{sec:vm-tension-stative} situates these
+patterns within the general verbal hierarchy, examining the distinct
+contributions of lower predicate structure, argument introduction,
+viewpoint and case licensing.
+
 \subsection{State types and aspectual interpretation}\label{sec:stative-stability}
 
 Four principal lexical-semantic groups are distinguished among Iridian
@@ -850,41 +862,543 @@ remains subject to lexical selection.
 \subsection{Syntactic analysis of stative verbs}
 \label{sec:vm-tension-stative}
 
-The lower stativising head projects \synhead{StateP}, whose holder or
-experiencer is licensed by the predicate's lexical structure. Overt
-\synhead{BecomeP} selects that state and introduces change, while restricted
-\synhead{ManifestP} derives its outward display; both belong below inner
-valency, Caus and orientation and require their separately listed input licences. The resulting predicate is selected by ordinary
-Asp.Align, whose available values depend on that predicate's aspectual
-type. A stative output admits continuous, retrospective and contemplative
-indicative Asp.Align; where Become, Manifest or causative derivation supplies
-an eventive output, ordinary eventive aspect is available under its own
-licensing conditions. The schematic containment relation is
-\[
-\begin{aligned}
-\mathrm{StateP}&\subset(\mathrm{BecomeP}/\mathrm{ManifestP})\subset
-(\mathrm{ApplP}/\mathrm{VoiceP}_{\mathrm{AP}})\\
-&\subset(\mathrm{CausP})\subset\mathrm{VoiceP}_{\mathrm{orient}}
-\subset\mathrm{Asp.AlignP}.
-\end{aligned}
-\]
-Parentheses mark independently licensed structure, not freely combinable
-slots: in particular, underived states lack the patient frame required for
-antipassive. The established actor-introducing layer and the restrictions on
-inner Appl/Voice retain their positions in the general clause spine.
+Within the general verbal hierarchy (§§\,\ref{sec:vm-overview},
+\ref{sec:vm-selection-domains}), the distinction between eventuality structure
+and argument licensing accounts for the fact that an applied stimulus leaves
+the restricted aspectual inventory of a stative predicate unchanged, whereas
+inchoativisation introduces a transition without adding a participant
+(§§\,\ref{sec:stative-stability}, \ref{sec:stative-valency}). The applicative
+extends the argument structure associated with an existing state without
+changing its aspectual character, while inchoative morphology alters the
+eventuality description without independently licensing an additional argument.
 
-A lower \synhead{ResP} represents an event-derived state when the
-construction independently entails a preceding event. Lexical
-\ird{hvodna} \trsl{is open} entails openness without entailing an opening
-event; a result-state interpretation of an independently licensed opening
-predicate entails that event as well as its relevant state. ResP has no new
-universal exponent here. Retrospective relevance alone does not force a
-persisting result state, and a lexical state is not automatically reanalysed
-as ResP. More specific target/resultant-state distinctions require separate
-constructional evidence and are not assigned by terminology alone.
+Property roots such as \ird{muž} \trsl{beauty} form stative verbal stems
+through \ird{-n-}, as in finite continuous \ird{mužna} \trsl{is beautiful},
+which predicates the property of a holder
+(§§\,\ref{sec:stative}, \ref{sec:stative-derivation}). Although the root supplies
+the lexical property and stativising \ird{-n-} forms the corresponding state
+predicate within the lower verbal domain, the suffix does not itself introduce
+an agent, causer or additional participant, the holder relation being determined
+by the lexical licensing of the predicate. Figure~\ref{fig:stative-state-syntax}
+represents the lower constituency of such a monovalent property stative in
+head-final order, with $H$ designating the state holder, whose interpretation
+as an experiencer depends upon the lexical semantics of the particular stem.
+This representation identifies the structural relation between the state
+description and its licensed argument, without presupposing that every member
+of the lexical stative class exhibits the productive morphological decomposition
+illustrated by \ird{muž-n-}, since positional, possessive and locative statives
+may equally belong to that class without containing the stativising suffix.
 
-The distinction between a finite stative predicate and a nominal predicate is
-also reflected in negation, even where neither clause contains an overt copula:
+\begin{figure}[!ht]
+\centering
+\caption{StateP and holder licensing in productive stativisation.}
+\label{fig:stative-state-syntax}
+\label{ex:stative-state-syntax}
+\begin{forest}
+  syntax tree
+  [\synhead{StateP}, baseline, anchor=base
+    [{\synhead{DP}$_H$\\{\footnotesize holder / experiencer}}]
+    [{State$'$}
+      [{$\sqrt{\mathrm{PROPERTY}}$\\{\footnotesize\ird{muž} \trsl{beauty}}}]
+      [{State$^{0}$\\\ird{-n-}}]
+    ]
+  ]
+\end{forest}
+\end{figure}
+When \ird{-n-} forms \ird{mužn-} \trsl{be beautiful} from \ird{muž}
+\trsl{beauty}, the resulting predicate attributes the property to a holder
+whose relation to the state is licensed within StateP, without introducing
+an actor. Although productive stativisation requires no additional overt
+verbaliser beyond \ird{-n-}, this morphological pattern does not establish
+whether State and the verbal categoriser $v$ correspond to distinct
+syntactic heads. The separation of verbalisation from argument introduction
+is consistent with Harley's (2013)
+\cite[§1]{harley2013a} distinction between verbalising $v$ and
+argument-introducing Voice, under which a root may acquire verbal structure
+without thereby acquiring an external argument.
+
+A useful comparison comes from Malayalam, where Menon and Pancheva (2014)
+\cite[§3.1, pp.~291--293]{menonpancheva2014} analyse \textit{nalla}
+\trsl{good} in \textit{nalla kuʈʈi} \trsl{a good child} as a relative
+form in \textit{-a} built upon a property root categorised by a null
+possessive $v$. Since \textit{-a} also occurs independently as a verbal
+relative marker, they argue that the form contains verbal structure, while
+the possessive relation allows the quality of goodness to be predicated
+of an individual. Their account offers a compositional parallel to Iridian
+\ird{muž} \trsl{beauty} and \ird{mužn-} \trsl{be beautiful}, insofar as
+both analyses distinguish a property-denoting root from the structure
+through which it becomes a predicate of individuals. The comparison
+remains limited, however, since nothing in the Iridian evidence requires
+\ird{-n-} to express possession or ordinary attributive forms to derive
+from relative clauses.
+
+Although Menon and Pancheva analyse property-concept roots as uniformly
+quality-denoting, Hanink and Koontz-Garboden (2025)
+\cite[§§1--2]{haninkkoontzgarboden2025} distinguish different root
+semantic types in Wá⋅šiw, even where the resulting property predicates
+belong to the verbal category. A common stative structure therefore need
+not imply that the roots entering it share a single semantic type,
+although Iridian would require independent evidence before such
+differences could be established for its own roots. Its statives already
+differ, however, in which derivatives they license: \ird{všihn-}
+\trsl{be happy} and \ird{řejn-} \trsl{be tired} belong to the same finite
+quantitative class and both permit inchoative derivation, yet only
+\ird{všihn-} licenses Manifest (§\,\ref{sec:stative-stability}). Their
+shared StateP structure consequently provides no grounds for extending
+the derivational possibilities of one stem to the other. The grammar
+therefore specifies finite quantitative class, eventive derivation,
+valency extensions and attributive class independently, according to the
+lexical restrictions that govern each formation.
+
+Psychological statives distinguish lexical argument selection from the
+introduction of an applied participant. The simple \ird{všihn-}
+\trsl{be happy} licenses only an experiencer, whereas
+\ird{všihn-éb-} retains that experiencer and adds the stimulus through
+Appl (§\,\ref{sec:stative-valency}). A lexical experiencer--stimulus
+frame is also recognised in §\,\ref{sec:stative-stability}, but has no
+specified Iridian lexeme or case paradigm; the comparative examples in
+Table~\ref{tab:psychological-argument-frames} do not supply one.
+Table~\ref{tab:stative-syntactic-arguments} records the three licensing
+configurations without attributing a lexical two-place frame to
+\ird{všihn-}.
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Lexical and applicative argument licensing in psychological statives.}
+\label{tab:stative-syntactic-arguments}
+\begin{tabularx}{\textwidth}{L L L}
+\toprule
+Configuration & Source of the arguments & Iridian specification \\
+\midrule
+Experiencer only & State predicate licenses $H$ & \ird{všihn-} \\
+Lexical stimulus & State predicate licenses $H$ and stimulus $S$
+  & Lexical class recognised; no individual paradigm specified \\
+Applied stimulus & State predicate licenses $H$; Appl introduces $B$
+  & \ird{všihn-éb-} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A lexically selected stimulus belongs to the original state predicate's
+argument frame, whereas the applied stimulus depends upon a separate
+argument-introducing head, even where the completed predicates have
+comparable experiencer--stimulus interpretations. Kim's comparison of
+Korean experiencer-only and experiencer--stimulus predicates illustrates
+the lexical distinction \cite[abstract]{kimyoonshin2026}, while the
+separate contribution of Appl follows the argument-building distinction
+developed by Pylkkänen \cite[ch.~2]{pylkkanen2008}. These comparisons
+motivate distinct licensing relations without establishing an Iridian
+lexical bivalent paradigm. In the representations below, $H$ consistently
+denotes the lower holder or experiencer, $B$ an applied participant and
+$C$ a causer. The $E$ of
+Figure~\ref{fig:psychological-argument-frames} thus corresponds to $H$
+here; when Caus selects the predicate, the same lower participant is the
+causee, denoted by $E$ in §\,\ref{sec:vm-selection-domains}.
+
+\begin{samepage}
+The stative stem and its licensed extensions occupy the same relative
+positions as other derived predicates within the verbal template
+(§§\,\ref{sec:vm-overview}, \ref{sec:vm-selection-domains}). Their
+structural heights are summarised by
+\ex\label{ex:stative-syntactic-hierarchy}
+$\begin{aligned}
+ \mathrm{StateP}
+ &\prec \{\mathrm{BecomeP},\mathrm{ManifestP}\}
+ \prec \{\mathrm{ApplP},\mathrm{VoiceP}_{\mathrm{AP}}\} \\
+ &\prec \text{inner actor layer}
+ \prec \mathrm{CausP}
+ \prec \mathrm{VoiceP}_{\mathrm{orient}}
+ \prec \mathrm{AspP}.
+\end{aligned}$
+\xe
+\end{samepage}
+\noindent Here $\prec$ means `structurally lower than', and the braces identify
+alternative heads at the indicated height; the schema records relative
+positions, with any unlicensed or unselected derivational layers omitted.
+\synhead{AspP} is the projection of the single feature-bearing head
+Asp.Align. Become selects a state and introduces a transition, whereas
+Manifest selects a state description and derives an outward display
+(§§\,\ref{sec:stative-inchoative}, \ref{sec:stative-manifest}); their
+distinct lexical licences do not permit free stacking. Inner Appl and
+antipassive are also alternatives, and the monovalent statives illustrated
+here lack the lexical patient required for antipassive. The actor layer
+occurs only where the selected predicate independently licenses an actor;
+the existence of a holder or experiencer does not itself require that
+head. Higher Caus can select a licensed state, transition or display
+predicate, beneath outer orientation and aspect.
+
+The state relation, the head introducing an additional participant and
+the exponent realising the completed morphological configuration therefore
+require distinct specifications. Suffix order constrains the structural
+analysis under the working interpretation of the Mirror Principle
+(§\,\ref{sec:vm-mirror}), while the connection between syntactic height
+and linear exponence can involve head movement, affix-specific direction
+and morphological merger \cite{harley2011}. The distinction between
+syntactic composition and Vocabulary Insertion follows the Distributed
+Morphology framework \cite{embicknoyer2007}; it leaves the interpretation
+and selectional restrictions of Iridian State, Become, Manifest and Appl
+to their language-specific descriptions. In particular, the lower
+stativising \ird{-n-} remains distinct from homophonous outer orientation,
+whose position is above Caus.
+
+The stimulus in \ird{Senica Marku všihnébav}
+\trsl{Marek had been happy about the news}
+(\ref{ex:stative-stimulus-appl}b) is introduced by Appl, whereas
+\ird{Marku} retains the experiencer relation licensed within StateP.
+The constituent structure consequently contains no additional actor solely
+by virtue of containing an experiencer (Figure~\ref{fig:stative-appl-syntax}).
+
+\begin{figure}[!ht]
+\centering
+\caption{Stimulus applicative over a psychological state, with lower stem structure abbreviated.}
+\label{fig:stative-appl-syntax}
+\label{ex:stative-appl-syntax}
+\begin{forest}
+  syntax tree
+  [\synhead{ApplP}
+    [{\synhead{DP}$_B$\\{\footnotesize stimulus}}]
+    [{Appl$'$}
+      [\synhead{StateP}
+        [{\synhead{DP}$_H$\\{\footnotesize experiencer}}]
+        [{$\ldots$\\{\footnotesize\ird{všihn-} \trsl{be happy}}}]
+      ]
+      [{Appl$^{0}$\\\ird{-éb-}}]
+    ]
+  ]
+\end{forest}
+\end{figure}
+\noindent Here $B$ is the applied stimulus and $H$ the lower experiencer. Writing
+$P_H(s)$ for the state description with that experiencer relation included,
+the interpretation in (\ref{ex:stative-appl-semantics}) can be made explicit
+as
+\ex\label{ex:stative-appl-composition}
+ $\operatorname{Appl}_{\mathrm{STIM}}(P_H)(B)
+ =\lambda s\,[P_H(s)\land\operatorname{Stimulus}(s,B)].$
+\xe
+\noindent The same state variable remains available to viewpoint aspect; neither a
+causing event nor a causal initiator is added by this operation.
+
+The state-related stimulus and the productive event-benefactive occupy the
+same Appl position, although the relation licensed by the lower predicate
+differs. Pylkkänen's distinction between high applicatives, which relate an
+individual to an event, and low applicatives, which express transfer of
+possession, motivates the structural comparison
+\cite[ch.~2]{pylkkanen2008}; the extension of the higher position to a
+stimulus relation over a state is an Iridian specification
+(§§\,\ref{sec:vm-appl}, \ref{sec:stative-valency}). The availability of
+\ird{-éb-} with \ird{všihn-} therefore depends on its lexical stimulus
+licence, independently of the productive benefactive interpretation.
+
+Case is licensed by the completed aspect--orientation configuration,
+separately from these thematic relations
+(§§\,\ref{sec:vm-asp-case}, \ref{sec:vm-selection-domains}). The simple
+applicative selects $B$ as direct, while its original sole participant
+receives the domain-conditioned non-pivot case, whether that participant is
+an activity's actor or a state's experiencer. Thus the retrospective
+\ird{Marku} is transitive without acquiring an Actor role. Table~\ref{tab:stative-appl-syntax}
+distinguishes this illustrated frame from the NOM-domain application of the
+general rule, for which individual psychological forms are not separately
+illustrated. The separation of argument introduction from case licensing
+also accords with Baker and Vinokurova's distinction between configurational
+case and licensing by functional heads \cite{bakervinokurova2010}, without
+deriving Iridian's particular mapping from Sakha. Progressive and perfective
+remain unavailable to this simple applied state.
+
+\begin{table}[htbp]
+\footnotesize
+\caption{Case licensing in the simple stimulus applicative.}
+\label{tab:stative-appl-syntax}
+\begin{tabularx}{\textwidth}{L l l L}
+\toprule
+Domain & Stimulus $B$ & Experiencer $H$ & Descriptive status \\
+\midrule
+NOM: continuous, contemplative & Direct & Indirect
+  & Prediction of the general mapping; no individual forms illustrated \\
+ERG: retrospective & Direct & Transitive
+  & Illustrated by \ird{Senica Marku \mbox{všihnébav}} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The causer of \ird{Marek problemam svornérime}
+\trsl{Marek is making the problem bigger} is introduced above the state
+predicate, whereas the corresponding \ird{svornélrime} contains an
+independently derived transition below Caus
+(\ref{ex:val-stative-caus}a--b). Their lower constituent selection is
+represented in Figure~\ref{fig:stative-caus-syntax}, which omits higher
+orientation and inflection and abbreviates the internal branching of StateP.
+
+\begin{figure}[!ht]
+\centering
+\caption{Constituents selected by Caus in stative and inchoative causatives.}
+\label{fig:stative-caus-syntax}
+\label{ex:stative-caus-syntax}
+\captionsetup[subfigure]{position=top,justification=centering,singlelinecheck=true}
+\begin{subfigure}[t]{0.44\textwidth}
+\centering
+\caption{Direct state causative}
+\label{fig:stative-caus-state-syntax}
+\label{ex:stative-caus-state-syntax}
+\small
+\begin{forest}
+  syntax tree,
+  for tree={s sep=6pt}
+  [\synhead{CausP}
+    [{\synhead{DP}$_C$\\{\footnotesize causer}}]
+    [{Caus$'$}
+      [\synhead{StateP}
+        [{\synhead{DP}$_H$\\{\footnotesize holder / causee}}]
+        [{$P$\\{\footnotesize\ird{svorn-} \trsl{be big}}}]
+      ]
+      [{Caus$^{0}$\\\ird{-ér-}}]
+    ]
+  ]
+\end{forest}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.54\textwidth}
+\centering
+\caption{Inchoative causative}
+\label{fig:stative-caus-become-syntax}
+\label{ex:stative-caus-become-syntax}
+\small
+\begin{forest}
+  syntax tree,
+  for tree={s sep=6pt}
+  [\synhead{CausP}
+    [{\synhead{DP}$_C$\\{\footnotesize causer}}]
+    [{Caus$'$}
+      [\synhead{BecomeP}
+        [\synhead{StateP}
+          [{\synhead{DP}$_H$\\{\footnotesize holder / causee}}]
+          [{$P$\\{\footnotesize\ird{svorn-} \trsl{be big}}}]
+        ]
+        [{Become$^{0}$\\\ird{-él-}}]
+      ]
+      [{Caus$^{0}$\\\ird{-r-}}]
+    ]
+  ]
+\end{forest}
+\end{subfigure}
+\end{figure}
+\noindent Here $C$ is the causer, while $H$ retains its lower property relation and
+becomes the causee. Direct Caus supplies a dynamic causing eventuality even
+when its complement is stative; in the second structure it takes scope over
+the transition already supplied by Become. Cuervo's distinction between
+dynamic causative structure over a lower state and inchoative structure
+provides a comparison \cite{cuervo2015causation}, although her
+nonderivational relation between causatives and inchoatives differs from
+Iridian's independently licensed attachment of Caus above Become.
+
+The morphological contrast follows the selected stem. Stative final
+\ird{-n-} selects expanded \ird{-er-}, realised with local strength as
+\ird{-ér-} in \ird{svorn-ér-ime}, whereas liquid-final Become takes
+compact \ird{-r-}, as in \ird{svorn-él-r-ime}. The same attachment pattern
+gives constructed \ird{mužn-él-r-ime} where a causable transition is
+independently licensed. Where patient orientation is overt,
+\ird{-an-} follows the rhotic Caus independently, giving
+\ird{svorn-ér-an-ik} and \ird{mužn-él-r-an-ik}; it is not part of a
+joint causative--orientation exponent
+(§§\,\ref{sec:causative-grades}, \ref{sec:vm-caus}). The shared
+progressive ending of the two causing predicates accordingly leaves their
+different lower structures intact.
+
+The scalar standard is interpreted within the selected state description
+(§\,\ref{sec:stative-inchoative}), so that caused increase need not attain
+the positive threshold for counting as big or beautiful. A supplied
+positive standard can determine the transition's target, while neither
+Caus nor perfective viewpoint independently introduces an arbitrary
+endpoint. Kennedy and Levin's analysis of measures of change and variable
+telicity supplies a comparative distinction between scalar increase and
+endpoint-oriented interpretations \cite[§§3.1--3.3]{kennedylevin2008}; the
+Iridian distribution of comparative and positive standards remains that of
+Table~\ref{tab:stative-scalar-contrasts}.
+
+A separately causable display permits Caus to select ManifestP, as in
+\ird{všihnéšrime} (§\,\ref{sec:stative-manifest}). Its complement is the
+display predicate rather than an assertion of genuine happiness, so that
+causing the display carries no entailment of causing the corresponding
+internal state. The non-entailing interpretation of Manifest is preserved
+under this higher causative.
+
+The child in \ird{Byl všihneša} can smile and laugh while feeling unhappy,
+whereas \ird{Byl všihnal} attributes happiness on indirect evidence
+(\ref{ex:deriv-slot-display}). Manifest therefore selects the content of
+the lower state description without asserting that a state satisfying it
+actually obtains. If $P$ denotes that description, $H$ its holder and $e$
+an outward display, the interpretation has the following non-entailment:
+\ex\label{ex:stative-manifest-nonentailment}
+ $\operatorname{Manifest}(P)(H)(e)
+ \ \not\Rightarrow\ \exists s\,P(H)(s).$
+\xe
+\noindent The asserted eventuality is the display; the selected description determines
+what the behaviour expresses. StateP inside ManifestP consequently supplies
+descriptive content rather than an independently asserted internal state.
+Become instead describes a transition whose target is the selected state,
+whereas Manifest imposes no corresponding attainment condition. This
+interpretation follows from the Iridian contrast itself, independently of
+analyses in which an expressive psychological predicate contains an actual
+internal state as a causal component, as in Kim's account of Korean
+\cite[abstract]{kimyoonshin2026}.
+
+Manifest also establishes a distinct derived predicate for lexical
+selection. Its licence on \ird{všihn-} does not extend to other experiential
+or bodily-condition statives solely because they denote internal states,
+and the stimulus applicative licensed on \ird{všihn-} is not inherited by
+\ird{všihn-eš-}. Become and Manifest are likewise not freely stackable.
+These restrictions govern which lower predicates may enter the structural
+hierarchy, while the separately licensed higher causative acts on the
+display that Manifest supplies
+(§§\,\ref{sec:stative-manifest}, \ref{sec:stative-valency}).
+
+The aspectual contrast between \ird{*Nužo múžnime} and
+\ird{Nužo mužnélime}, and between \ird{*Dá řéjnik} and
+\ird{Dá řejnélek}, follows the eventuality supplied to
+\synhead{AspP} (\ref{ex:stative-progressive-contrast}--\ref{ex:stative-perfective-contrast}).
+Asp.Align composes with the completed lower predicate: with a simple
+\synhead{StateP} it presents the state, with \synhead{BecomeP} the
+transition, with \synhead{ManifestP} the display, and with \synhead{CausP}
+the higher causing eventuality. The stativising \ird{-n-} inside an
+extended stem consequently does not determine the aspectual inventory of
+that entire stem. By the same principle, stimulus Appl preserves the state
+variable and therefore preserves the simple stative inventory, as shown in
+Table~\ref{tab:stative-syntax-aspect}.
+
+\begin{table}[!ht]
+\footnotesize
+\caption{Lower eventualities selected by indicative Asp.Align.}
+\label{tab:stative-syntax-aspect}
+\begin{tabularx}{\textwidth}{l L L}
+\toprule
+Predicate & Lower eventuality & Indicative aspect selection \\
+\midrule
+\ird{všihn-} & State & \Cont{}, \Ret{}, \Ctpl{} \\
+\ird{všihn-éb-} & State with applied stimulus & \Cont{}, \Ret{}, \Ctpl{} \\
+\ird{řejn-él-} & Transition into a state & Eventive inventory, subject to temporal structure \\
+\ird{všihn-eš-} & Outward display & Eventive inventory \\
+\ird{svorn-ér-} & Causing eventuality over a state & Eventive inventory \\
+\ird{mužn-él-r-} & Causing eventuality over a transition & Eventive inventory \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize
+Each row presupposes the lexical licence for the displayed derivation.
+Eventivity satisfies a basic selectional requirement; it does not guarantee
+that every viewpoint is appropriate to every temporal structure.}
+\end{table}
+
+Progressive and perfective viewpoint cannot supply the missing transition
+by contextual reinterpretation of a simple Iridian state. The eventive
+structure must already be present through Become, Manifest, Caus or another
+independently licensed operation. Where Become yields a punctual
+transition, a progressive interpretation additionally requires a licensed
+extended or preparatory phase; gradual change supplies an internal phase
+more directly (\S\S\,\ref{sec:stative-inchoative}, \ref{sec:aspect-ipf}).
+This requirement for independent eventive derivation is specific to
+Iridian: overt inchoative morphology and aspectually induced change can
+coexist in Washo, as discussed by Smith, Hopperdietzel and
+Koontz-Garboden \cite[\S\S3.2--3.3]{smithhopperdietzelkoontzgarboden2025}.
+
+Retrospective \ird{Dá řejnáv} and contemplative \ird{Dá řejnáž}
+respectively locate tiredness before the reference point and project its
+holding at a later interval, without entailing its onset or cessation.
+Their inchoative counterparts, \ird{Dá řejnélav} and
+\ird{Dá řejnélaž}, apply the same higher temporal relations to the
+transition supplied by Become
+(\ref{ex:stative-retrospective-contrast}--\ref{ex:stative-contemplative-contrast}).
+The difference between anterior state predication and anterior change
+therefore belongs to the selected lower predicate. Tham's discussion of
+Mandarin lexical stative verbs with anterior state readings provides a comparison for distinguishing an earlier state
+from entry into that state \cite[\S3.3, pp.~668--670]{tham2013cos}.
+
+Lexical \ird{hvodna} \trsl{is open} asserts openness without
+asserting an earlier opening event, whereas \ird{hvodnél-} contains
+Become and describes a transition into that condition
+(\S\,\ref{sec:stative-inchoative}). A state following an independently
+licensed opening event may be understood as its result, although that
+inference alone supplies no evidence for a separately accessible
+result-state constituent. Retrospective viewpoint likewise relates an
+earlier eventuality to a later reference point without entailing that a
+resulting condition persists. The lexical state, the transition and a
+predicate asserting an event-derived result state consequently require
+distinct descriptive criteria. Embick's analysis of English simply
+stative and resultative participles provides a structural comparison for
+this distinction \cite[\S1]{embick2004resultative}; it does not establish
+an equivalent Iridian participial construction.
+
+The present structures therefore contain no independently motivated
+\synhead{ResP}. Such a projection would require a construction whose
+event entailments, modification or scope distinguish an accessible
+result state, together with a specified position relative to Become and
+viewpoint aspect. Spathas and Michelioudakis
+\cite[\S\S1--3]{spathasmichelioudakis2021} use the presuppositions of
+Greek additive operators to diagnose accessible stative subevents,
+showing that an inference to a result state is insufficient by itself.
+A corresponding Iridian diagnostic would depend on the independently
+established scope of its additive particles; the Greek distribution
+does not supply an Iridian grammatical judgement.
+
+The experiencer of a psychological state remains an argument of the
+lower predicate when its description is embedded, questioned or presented
+on indirect evidence. This relation is distinct both from the perspective
+through which the state is represented and from the information source
+supporting the proposition. In \ird{Dá všihna}, for example, the
+speaker can describe their own feeling, so that experiencer and
+perspective holder coincide in that context. Neither first-person
+reference nor the absence of overt Evid grammatically encodes direct
+experiential access. An interrogative expressed through the independent
+\synhead{Pol} structure (\S\,\ref{sec:by-pol-head}) can similarly ask
+about an addressee's feeling without adding a participant to StateP or
+establishing an obligatory shift of perspective. In the attitude pair
+(\ref{ex:stative-attitude-perspective}), \ird{i} continues to refer to
+Marek when the matrix thinker changes from Marek to Janek; the lexical
+experiencer, the attitude holder and the grounds for identifying the
+feeling consequently remain separate relations.
+
+The verbal indirect evidential occupies the established
+\synhead{EvidP}$_{\mathrm{inner}}$, above aspect and Mood and inside the linker
+(\S\,\ref{sec:vm-evid}). Its \ird{-al}/\ird{-l} marks indirect
+access independently of the lexical stative class, so a third-person
+psychological assertion requires no special evidential exponent merely
+because its experiencer differs from the speaker.
+Table~\ref{tab:stative-syntax-perspective} contrasts a contextual
+first-person reading, indirect access to an internal state and the
+lexically derived display predicate. Since Manifest changes the lower
+eventuality description while Evid specifies access to a proposition,
+manifestative predicates can themselves receive evidential marking under
+the ordinary finite rules; the established \ird{všihnéšekal}
+contains both layers (\S\,\ref{sec:stative-manifest}).
+
+\begin{table}[!ht]
+\footnotesize
+\caption{State, contextual perspective and evidential access.}
+\label{tab:stative-syntax-perspective}
+\begin{tabularx}{\textwidth}{l L L}
+\toprule
+Form & Lower predicate & Relevant interpretation \\
+\midrule
+\ird{Dá všihna} & Experiencer state & Speaker describes their own feeling in the specified context \\
+\ird{Byl všihnal} & Experiencer state & Indirect evidence concerns the child's internal state \\
+\ird{Byl všihneša} & Display event & Outward happiness is displayed; genuine happiness is not entailed \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The separation of experiencer and perspective holder has a comparative
+parallel in Nam's account of Korean psychological predicates
+\cite[\S2.2]{nam2024}, while Park relates Korean perspective restrictions
+to Mood-mediated anchoring through an additional participant projection
+\cite[abstract]{park2026perspective}. Iridian assigns no such projection
+or obligatory person restriction to the constructions described here:
+the existing lexical, attitude, clause-type and evidential structures
+supply the relevant distinctions. Murray's treatment of evidentials and
+sentential mood provides a broader semantic comparison
+\cite[ch.~5]{murray2017}, while the open anchoring questions for embedded
+Iridian Evid retain the qualifications of
+\S\,\ref{sec:evidential-embedded-perspective}.
+
+Finite statives and zero-copula nominal predicates differ in their
+negative realisation even though neither affirmative clause requires an
+overt copula:
 
 \begin{center}
 \begin{tabular}{l l l}
@@ -898,37 +1412,103 @@ Stative verbal & \ird{Nužo mužna} & \ird{Nužo zamužna} \\
 \end{center}
 
 \medskip
-\noindent The nominal predicate \ird{doktor} takes clause-final
-\ird{staly}, whereas \ird{mužna}, formed from \ird{mužn-} with continuous
-\ird{-a}, takes \ird{za-}. Both clauses lack an overt copula, but the stative
-predicate bears verbal and aspectual morphology.
+\noindent The finite stative \ird{mužna} contains the verbal stem
+\ird{mužn-} and obligatory indicative continuous \ird{-a}; Neg
+selects its \synhead{AspP} and is realised as \ird{za-} at the left
+edge of the inflected verbal host. In the equative, Neg selects the
+nominal predication without intervening verbal AspP and is realised as
+post-predicative \ird{staly} (\S\,\ref{sec:vm-neg}). The distribution
+thus follows the construction and the host available at morphological
+realisation. Productively formed property statives contain stem-internal
+\ird{-n-}, whereas lexical stativity alone requires no such suffix.
+Stativising \ird{-n-} is also distinct from outer orientation, whose
+\ird{-an-} follows Caus in \ird{svorn-ér-an-ik}; the two nasals
+occupy different positions and express different grammatical relations.
 
-Neg is analysed as selecting a nominal predication in the equative and an
-aspectually inflected verbal predicate in the stative clause
-(§\,\ref{sec:vm-neg}). Finite property predicates contain the verbalising
-suffix \ird{-n-} and inflect for Asp.Align; predicative use of underived
-property forms is undocumented.
+Ordinary attribution instead selects a property-denoting base or reduced
+\synhead{StateP} within \synhead{AttrP}, without an intervening finite
+\synhead{AspP} (\S\,\ref{sec:stative-attr}). Its class-selected
+exponents do not realise viewpoint or alignment, and surface resemblance
+to a finite stative supplies no evidence for a hidden finite clause.
+Thus \ird{Nužo mužna} contains a finite predicate, whereas ordinary
+ATTR \ird{múžna} is excluded in \ird{*Nužo múžna}; predicative use
+of bare property roots remains undocumented. The independently licensed
+manner derivative in \ird{-ě}, such as \ird{skorně}
+\trsl{quickly}, forms a lexical adjunct in the preverbal field
+(\S\S\,\ref{sec:stative-adv}, \ref{sec:lex-adv}). Its derivational
+licence and function remain distinct from attributive class and finite
+verbal inflection, although all three formations may draw upon a common
+lexical base.
 
-The syntactic infrastructure of the stative domain therefore distinguishes
-three outputs from the same lexical base. First, the finite stative verb heads
-the clause's verbal predicate and requires no copula in ordinary property
-predication. Second, a class-selected ordinary ATTR form is a non-finite derivative
-inside the \synhead{DP}, corresponding to the adnominal strategy discussed in
-Chapter~\ref{ch:nouns}; it is not a finite predicate and cannot bear aspect or
-alignment. Third, the \ird{-ě} form is a lexical adverbial derivative that
-functions as a clausal adjunct in the preverbal field, not as an inflectional
-member of the verbal paradigm. The same lexical base thus feeds clause-level
-predication, \synhead{DP}-internal attribution, and adverbial modification through three
-distinct syntactic realisations.
+The case distribution of the licensed constructions follows the
+completed aspect--orientation configuration, while the lower predicate
+preserves the holder's lexical relation. Table~\ref{tab:stative-syntax-case}
+compares the ordinary indicative frames, using $H$ for that holder,
+$B$ for the applied stimulus and $C$ for the causer. The single-participant
+rows concern the monovalent frames described above; they impose no case
+paradigm on the separately recognised lexical experiencer--stimulus class.
 
-Underived stative predicates retain a single direct-case participant in
-continuous, retrospective and contemplative clauses. Alignment alternations
-arise where valency-changing morphology licenses additional participants.
-Causativised statives behave like other derived transitives, showing
-nominative alignment in the continuous, progressive and contemplative and
-ergative alignment in the perfective and retrospective. A single-participant
-inchoative retains direct case in every licensed aspect, since Become
-introduces no additional participant or transitive orientation.
+\begin{table}[!ht]
+\footnotesize
+\caption{Ordinary indicative case selection with stative bases.}
+\label{tab:stative-syntax-case}
+\begin{tabularx}{\textwidth}{L L L}
+\toprule
+Construction & NOM domain & ERG domain \\
+\midrule
+Simple monovalent state
+ & $H_{\mathrm{DIR}}$
+ & $H_{\mathrm{DIR}}$ in \Ret{}; simple \Pf{} excluded \\
+Single-participant inchoative
+ & $H_{\mathrm{DIR}}$
+ & $H_{\mathrm{DIR}}$ \\
+Single-participant Manifest
+ & $H_{\mathrm{DIR}}$
+ & $H_{\mathrm{DIR}}$ \\
+Simple state applicative
+ & $B_{\mathrm{DIR}}, H_{\mathrm{IND}}$ (predicted)
+ & $B_{\mathrm{DIR}}, H_{\mathrm{TRS}}$ in \Ret{} \\
+Active direct stative causative
+ & $C_{\mathrm{DIR}}, H_{\mathrm{IND}}$
+ & $H_{\mathrm{DIR}}, C_{\mathrm{TRS}}$ \\
+Active inchoative causative
+ & $C_{\mathrm{DIR}}, H_{\mathrm{IND}}$
+ & $H_{\mathrm{DIR}}, C_{\mathrm{TRS}}$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize
+Each domain includes only the independently licensed aspects of that
+predicate. The psychological applicative's NOM frame follows the general
+mapping but has no independently illustrated paradigm; its established
+retrospective frame is shown in (\ref{ex:stative-stimulus-appl}b).
+Causative NOM rows give active zero orientation; overt patient orientation
+licenses the separately described passive
+(\S\,\ref{sec:vm-passive}).}
+\end{table}
+
+Become and single-participant Manifest add no causer or applied
+participant, so their ordinary monovalent frames retain the lower
+participant in direct case. Stimulus Appl adds $B$, which is selected as
+direct while the original experiencer receives the constructionally
+licensed non-pivot case. Caus instead adds $C$, and the original holder
+functions as the causee of the selected lower predicate. With neither a
+retained theme nor an applied participant in that complement, active NOM
+selects the causer, whereas ERG selects the causee and licenses the causer
+as transitive (\S\S\,\ref{sec:vm-asp-case},
+\ref{sec:vm-selection-domains}). The direct-case \ird{problem} in
+\ird{Problem Marku svornéranik} consequently retains its lower property
+relation even though the higher causative frame determines its case.
+
+Neutral pivot-first placement is supplied separately by \synhead{OrdP}
+(\S\,\ref{sec:pivot-placement}). Its first placement requirement targets
+the participant selected by the completed configuration, whose lower
+argument relation survives displacement. The initial stimulus in
+\ird{Senica Marku všihnébav} therefore does not acquire its thematic
+origin from its pronounced position: Appl introduces the stimulus,
+StateP licenses the experiencer, and ordinary placement arranges those
+arguments after selection and case licensing
+(\S\,\ref{sec:vm-pivot-derivations}).
 
 \section{Copular and nominal predication}\label{sec:copula}
 

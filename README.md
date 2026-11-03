@@ -11,7 +11,8 @@ The current grammar is in `grammar.tex` and `chapters/`. Indicative verbal negat
 Install a full **TeX Live** distribution (MacTeX on macOS), with `latexmk`,
 LuaLaTeX, and Biber on `PATH`. The sources use TeX-distributed Libertinus Serif
 and Source Sans Pro fonts; no separately installed system fonts
-are needed. Python 3 is used for prerequisite checks and lexicon extraction.
+are needed. Python 3 is used for safe PDF publication, prerequisite checks and
+lexicon extraction.
 
 ```sh
 make doctor              # Check executables, packages, and font files
@@ -34,7 +35,19 @@ writable local font cache in `build/cache/`, so it also runs in restricted
 workspaces without writing to your home directory. The first build can take
 longer while it indexes fonts; later builds reuse that cache. `latexmk` tracks
 nested inputs and reruns LuaLaTeX until references and contents settle. Running
-`make` again without edits performs no TeX pass. Bibliographic metadata lives in
+`make` again without edits performs no TeX pass.
+
+Compilation runs in a `.staging/` subdirectory of each output directory. The
+published PDF (for example, `build/full/grammar.pdf`) stays readable throughout
+a rebuild and is replaced atomically only when `latexmk` succeeds. Failed or
+interrupted builds leave the last successful PDF in place. This also applies
+to cover, chapter and watch builds. Watch mode previews the published PDF.
+The log alongside each published PDF belongs to its last successful build;
+the latest compilation log and auxiliary files remain in `.staging/` for
+diagnosing failures. The first build with this layout creates a new auxiliary
+cache; subsequent builds are incremental as before.
+
+Bibliographic metadata lives in
 `util/references.bib`; `grammar.tex` loads it with BibLaTeX, and
 `util/references.tex` prints the numbered, alphabetically sorted reference list.
 `latexmk` runs Biber with data-model validation whenever the database or its

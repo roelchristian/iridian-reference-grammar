@@ -85,9 +85,10 @@ not make the copular clause transitive or require patient-selecting
 Valency morphology modifies the argument inventory before orientation and case
 are determined. A simple antipassive licenses only its actor as an independent
 core participant, and that actor takes direct case. A simple applicative
-selects the applied participant as direct; its actor takes indirect case in the
-NOM domain and transitive case in the ERG domain, while any retained theme is
-indirect. A higher causative establishes a new orientation domain, in which the
+selects the applied participant as direct; the original actor, or the lower
+holder or experiencer in a licensed stative extension, takes indirect case in
+the NOM domain and transitive case in the ERG domain, while any retained theme
+is indirect (§\,\ref{sec:vm-tension-stative}). A higher causative establishes a new orientation domain, in which the
 causer is direct in NOM aspects; in ERG aspects the selected participant is the
 retained lexical theme, otherwise the applied participant, otherwise the
 causee (§\,\ref{sec:vm-caus}). These are constructional extensions of the
@@ -263,13 +264,17 @@ case, and the position in which an argument is pronounced are distinct parts
 of the analysis. The following notation makes the first two explicit without
 presupposing a particular landing site. $A$ is the lexical actor, $T$ a
 retained transitive theme, $B$ an applied participant, $C$ a causer, and $E$
-the causee. In a causative, the base actor or sole participant becomes $E$;
+the causee. The stative extension uses $H$ for the lower holder or experiencer
+(§\,\ref{sec:vm-tension-stative}). In a causative, the base actor or sole participant becomes $E$;
 a theme-like sole argument of an intransitive is not a separate $T$.
 
 Argument structure is built before the completed construction determines its
 orientation. V takes $T$ as its complement where the lexical frame licenses
-one. Appl introduces $B$ in relation to the lexical event, below the layer
-introducing $A$; Caus then introduces $C$ above that event predicate.
+one. Appl introduces $B$ in relation to the lexical eventuality, below the layer
+introducing $A$ where an actor is independently licensed. In a stimulus
+applicative, StateP instead licenses $H$ internally, without an additional
+actor-introducing head. Higher Caus introduces $C$ above a lexically licensed
+state or event predicate (§\,\ref{sec:vm-tension-stative}).
 Antipassive instead removes the independently licensed lexical theme from the
 base inventory. The ordering of argument-building and orientation heads is
 \[
@@ -307,7 +312,7 @@ Construction & Licensed inventory & Finite case obligations \\
 \midrule
 Ordinary ERG transitive & $A,T$ & $T$: direct; $A$: transitive \\
 Active NOM transitive & $A,T$ & $A$: direct; $T$: indirect \\
-Simple indicative applicative & $A,B$; $T$ if retained & $B$: direct; $A$: indirect in NOM, transitive in ERG; retained $T$: indirect \\
+Simple indicative applicative & $A,B$ (activity) or $H,B$ (state); $T$ if retained & $B$: direct; $A$ or $H$: indirect in NOM, transitive in ERG; retained $T$: indirect \\
 ERG causative of intransitive & $C,E$ & $E$: direct; $C$: transitive \\
 ERG causative of transitive & $C,E,T$ & $T$: direct; $C$: transitive; $E$: indirect \\
 ERG causative of applied transitive & $C,E,B,T$ & $T$: direct; $C$: transitive; $E,B$: indirect \\
@@ -320,7 +325,9 @@ Directive with retained theme & $A,T$; optionally $B$, or $C,E$ in a causative &
 \end{table}
 
 The ERG dependency relates the highest external actor or causer to the
-construction's distinct selected participant. Residual indirect arguments are
+construction's distinct selected participant. The licensed state applicative
+extends the ERG case mapping to the lower holder or experiencer, without
+assigning that participant an Actor role. Residual indirect arguments are
 licensed in their own roles; they are not automatically additional competitors
 for transitive case. Otherwise a causee above a retained theme would wrongly
 receive the same transitive marking as the causer. NOM passive agent licensing
@@ -559,12 +566,15 @@ an obligatory topic.
 \subsection{The applicative (\ird{-éb-})}\label{sec:vm-appl}
 
 The applicative \ird{-éb-} licenses one additional participant in relation to
-the event and, in a simple indicative applicative, selects that participant as
+the eventuality and, in a simple indicative applicative, selects that participant as
 the direct-case pivot. Its productive default is benefactive: the event is
 performed for an individual's benefit, without entailing that the individual
 performs the lexical action or receives its theme. The actor receives indirect
 case in the NOM-aspect domain and transitive case in the ERG-aspect domain;
-a retained lexical theme receives indirect case in either domain.
+a retained lexical theme receives indirect case in either domain. A licensed
+stimulus applicative assigns the corresponding non-pivot case to the lower
+experiencer, whose state relation requires no actor-introducing head
+(§\,\ref{sec:vm-tension-stative}).
 
 The following constructed contrast retains the same actor, theme, and
 beneficiary. In the first clause, \ird{my} heads a benefactive phrase; in the
@@ -966,8 +976,9 @@ The causal contribution is represented here schematically as
  [\operatorname{Cause}(e,e')\land\operatorname{Initiator}(c,e)
  \land P(e')].
 \]
-Here $P$ is an event predicate with its lower participant relations,
-$c$ the causer, $e$ the causing event and $e'$ the caused eventuality;
+Here $P$ is the selected stative or eventive predicate with its lower
+participant relations, $c$ the causer, $e$ the causing event and $e'$ the
+caused eventuality, which may be a state or event according to the complement;
 \emph{Initiator} identifies the source of causation without requiring
 intentional action. This representation states the grammar's analysis of
 Iridian before the contribution of viewpoint and modality. It permits a
@@ -1489,8 +1500,11 @@ decausative use follows from the reflexive paradigm.
 \subsection{Causative structure and participant selection}
 \label{sec:vm-caus}
 
-Caus combines with an already formed event predicate, introducing its causer
-above the base actor and any applied argument. The outer orientation head
+Caus combines with a lexically licensed state or event predicate, introducing
+its causer above the lower participant relations. A directly selected stative
+complement retains its state description while the higher causing eventuality
+is dynamic; an inchoative complement independently contains Become
+(§\,\ref{sec:stative-valency}). The outer orientation head
 subsequently selects the derived predicate's privileged participant, while
 Asp.Align supplies the alignment domain. The distinction between productive
 causative structure and other verbal heads follows the analytical issues
