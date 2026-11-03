@@ -3,43 +3,287 @@
 \section{Theoretical background and analytical conventions}
 \label{sec:th-background}
 
-The syntactic analyses in this grammar adopt a Minimalist
-architecture in which clause structure is built by Merge, with the restricted
-ordered-edge insertion defined in §\,\ref{sec:pivot-placement}, and interpreted through
-hierarchies of lexical and functional projections, and linearised according to
-the strongly head-final character of Iridian. Recurrent clause properties are
-analysed through a shared structural spine comprising a predicate domain,
-inflectional and operator projections, and an articulated left periphery.
+The analysis of clause structure and word order developed in this chapter
+adopts a derivational Minimalist framework, in which syntactic objects are
+assembled hierarchically through Merge and the resulting structures supply
+representations for interpretation and pronunciation at Logical Form (LF)
+and Phonological Form (PF), respectively
+\cites[ch.~3]{chomsky1995}{chomsky2000}. Although this architecture
+specifies the general operations by which syntactic structure is
+constructed, the organisation of the resulting clause is informed by the
+articulated conception of functional syntax developed within the
+cartographic tradition, particularly Rizzi's~\cite[§1]{rizzi1997} analysis
+of the clausal periphery and its relation to the inflectional domain. The
+distinction between the restricted inventory of operations responsible for
+structure building and the more elaborate functional configurations thereby
+generated follows Cinque and Rizzi~\cite[§5]{cinquerizzi2010}, whose account
+permits a finely articulated hierarchy without requiring a corresponding
+proliferation of primitive syntactic operations. The relationship between
+this abstract structure and its phonological expression is treated within
+Distributed Morphology, under which morphological exponents are inserted
+into structures whose hierarchical organisation has already been established
+by the syntax \cite{embicknoyer2007}. Taken together, these assumptions
+provide the basis for analysing argument structure, case licensing, operator
+scope and constituent placement within the Iridian clause, while permitting
+the positions in which syntactic dependencies are established, the
+configurations in which they receive interpretation and the forms through
+which they are pronounced to be distinguished. The particular functional
+projections proposed in Table~\ref{tab:th-clause-spine} nevertheless
+constitute an Iridian-specific working analysis, whose individual
+distinctions must be supported by morphological, distributional or
+interpretive evidence, without presupposing that every functional category
+distinguished in the comparative literature is independently represented in
+the language.
 
-Within that architecture, the clause edge comprises an ordered sequence of
-projections for topic, focus, ordinary placement, clause typing, evidential
-and epistemic operators, and speech-act marking. Topic placement, wh-licensing, polar questions,
-complementation, and the order of high particles are analysed through these
-positions, with information structure encoded especially in
-\synhead{TopP} and \synhead{FocP}.
+The need to distinguish hierarchical relations from surface precedence is
+evident in ordinary active transitive clauses, where the actor precedes the
+patient in the progressive but follows it in the perfective, although the
+finite verb remains clause-final in both constructions
+(§\,\ref{sec:vm-asp-case}). Since the patient retains its lower relation to
+the verb as its complement (§\,\ref{sec:vm-root}), and since participant
+selection and case licensing depend upon the completed verbal configuration
+(§\,\ref{sec:vm-selection-domains}), the alternation cannot be understood as
+a difference in thematic relations merely because the arguments occur in
+different linear positions. Under the distinction formulated by
+Chomsky~\cite[p.~140]{chomsky2008}, \term{External Merge} combines distinct
+syntactic objects, whereas \term{Internal Merge} establishes a higher
+occurrence of an object already present in the derivation, so that
+displacement may alter the pronounced position of an argument while
+preserving the structural relation in which its thematic interpretation is
+established. Where feature-sensitive dependencies are implicated,
+\term{Agree} provides an additional operation through which syntactic
+features may be related without requiring displacement of either
+participant, as in the probe--goal conception developed by
+Chomsky~\cite[p.~101]{chomsky2000} and the broader treatment of agreement
+dependencies in Deal~\cite{deal2025}. Although Iridian lacks verbal person
+agreement, for which no dedicated $\varphi$-agreement projection is
+consequently posited, the absence of such morphology does not determine the
+computation of nominal case, whose possible mechanisms remain distinguished
+in §\,\ref{sec:vm-selection-domains}. Configurational licensing may coexist
+with licensing by functional heads, as Baker and
+Vinokurova~\cite[§1]{bakervinokurova2010} argue for Sakha, while
+dependent-case patterns may alternatively be derived through successive
+applications of Agree, as proposed for Shawi by Clem and
+Deal~\cite[§1]{clemdeal2026}. These comparative accounts establish distinct
+computational possibilities against which the Iridian distribution may be
+evaluated, although neither the occurrence of case morphology nor the
+ordering of arguments is taken, independently of further evidence, to
+determine which mechanism the grammar requires.
 
-The morphology discussed in this grammar is interpreted in the same way as
-elsewhere in the grammar: broadly within a Distributed Morphology model.
-Syntactic structure is built first, and the exponence of heads and feature
-bundles is determined at spellout. This matters directly for Iridian because
-many contrasts that look at first glance like separate `constructions' are
-better treated as alternative realisations of the same structural heads:
-Neg\textsuperscript{0} surfaces as \ird{za-}, \ird{staly}, or zero-plus-root
-suppletion depending on the host available at PF; converb suffixes realise
-feature bundles on non-finite heads; and case morphology spells out configurations established in the syntax.
+The articulation of the higher clause follows the cartographic method of
+distinguishing functional positions through recurrent structural
+dependencies \cites{rizzi1997}[§§2.1--2.2]{rizzibocci2017}, whereby
+differences in interpretation, although potentially relevant, do not by
+themselves establish the existence of separate syntactic heads. Where
+constituent ordering, scope restrictions and connectivity converge, distinct
+positions may be motivated even when the corresponding heads lack overt
+exponence, while the comparison of adverbial ordering and functional-head
+sequences undertaken by Cinque \cite{cinque1999} provides a methodological
+precedent without requiring that his proposed universal hierarchy be imposed
+upon Iridian. Within the present analysis, the upper clausal sequence is
+TopP $>$ FocP $>$ OrdP $>$ SpeechActP $>$ outer EvidP $>$ PolP, beneath
+which the lower Comm-field groups heterogeneous operators without assigning
+them to a single functional head. The designation \term{Pol} is reserved for
+the interrogative operator, realised by \ird{by} or zero, whose contribution
+to whole-clause typing in polar and content questions is independent of
+focus (§\,\ref{sec:by-pol-head}). It is accordingly distinguished from
+indicative NegP, while neither its name nor its position entails the
+existence of a general polarity projection or the adoption of the
+cartographic ordering associated with Int and Force. The proposed hierarchy
+thus identifies those functional distinctions required by the Iridian
+analysis, leaving their precise constituency and relative order subject to
+the evidence supplied by the constructions in which they occur.
 
-The central descriptive claim of the syntactic analysis is therefore more
-specific than a general appeal to `topic-comment structure'. Iridian clause
-structure is organised by a head-final functional sequence in which the
-absolutive pivot is strongly privileged for topical interpretation, but topic,
-focus, polarity, evidentiality, and clause combining are all represented by
-independent structural positions. The split-ergative alignment, the ordering of
-particles, the placement of subordinate clauses, the distribution of wh-phrases,
-and the complement system are analysed as consequences of that shared
-architecture. This section sets out the main information-structural
-assumptions and terminological conventions used throughout the grammar; the
-clause spine itself is given in Table~\ref{tab:th-clause-spine} in this chapter, and the particle framework is analysed in detail in
-§\,\ref{sec:th-particle-framework} in Chapter~\ref{ch:function-words}.
+Within this articulated periphery, the interpretation of higher constituents
+depends upon discourse relations which, although capable of receiving
+structural expression, must be distinguished from the grammatical relations
+established within the lower clause. An \term{aboutness topic} supplies the
+discourse subject matter with respect to which a comment is interpreted
+\cite[chs.~4--5]{lambrecht1994}, its pragmatic function being distinct from
+logical predication \cite[§4]{gecseg2006} and implicated in the organisation
+and management of the common ground \cite[§2.2]{krifka2008}. \term{Focus},
+by comparison, introduces alternatives relevant to the discourse context
+\cite{rooth1992}, while the distinction between information focus and
+identificational focus developed by É.~Kiss \cite{ekiss1998} motivates
+separating ordinary focus interpretation from marked displacement without
+extending the exhaustivity properties of Hungarian identificational focus to
+Iridian. The grammatical selection of the direct-case pivot is independent
+of these discourse functions: direct case serves nominative and absolutive
+functions in the NOM- and ERG-aspect domains respectively, while the
+designation \term{absolutive pivot}, where employed more broadly, remains a
+descriptive convention. Although a referential pivot preferentially receives
+an aboutness interpretation where the discourse supports one, this
+preference does not entail occupation of Spec,\synhead{TopP}, since
+grammatical pivot selection and the establishment of an aboutness relation
+need not coincide in a single structural position. Linked topicalisation and
+marked focus consequently involve independently licensed high dependencies,
+whereas OrdP provides a position for constituent placement without itself
+assigning either discourse function, and ordinary wh-placement does not
+require movement to \synhead{FocP} (Chapter~\ref{ch:infstr};
+§\,\ref{sec:th-wh-interrogation}).
+
+Because arguments may be pronounced before the particle field while
+retaining dependencies established within the lower predicate, including
+those relevant to negative concord and actor-oriented reflexive binding,
+their higher placement must be reconciled with the locality conditions
+governing displacement and interpretation. The analysis accordingly assumes
+that movement may proceed through accessible intermediate positions, subject
+to the restrictions imposed by a phase-based derivational architecture. A
+\term{phase}, in this framework, defines a locality domain whose completed
+material is submitted to \term{Transfer}, through which syntactic structure
+is delivered to the interfaces \cite[p.~142]{chomsky2008}. Under the
+\term{Phase Impenetrability Condition} formulated by
+Chomsky~\cite[pp.~12--14]{chomsky2001}, the complement of a phase head
+becomes inaccessible to subsequent syntactic operations once transferred,
+whereas the phase edge remains accessible, permitting successive-cyclic
+displacement through intermediate landing sites. The availability of
+functional positions through which movement may pass does not, however,
+establish that every such projection constitutes a phase, whose
+identification requires independent syntactic and interpretive evidence, of
+the kind investigated by Legate~\cite{legate2003} through reconstruction and
+interface diagnostics. Where displacement has occurred, the higher and lower
+occurrences form a movement chain, whose syntactic representation is
+distinguished from the determination of which occurrence receives
+phonological realisation, following the treatment of chain pronunciation in
+Nunes~\cite{nunes2011}. The availability of lower occurrences for
+interpretation does not, in turn, require uniform reconstruction, since
+different dependencies may permit or require interpretation at different
+positions within the chain, as illustrated by the selective reconstruction
+effects examined by Fox~\cite[pp.~157--158]{fox1999}. The particular
+connectivity conditions governing Iridian are specified in
+§\,\ref{sec:pivot-scope-connectivity}, while the derivation of ordinary
+constituent placement additionally requires the multiple ordered edge
+positions and restricted \term{tucking-in} operation defined in
+§\,\ref{sec:pivot-placement}. This latter operation has a formal precedent
+in the analysis of multiple movement developed by
+Richards~\cite[§2]{richards2002}, and its departure from strict root
+extension is compatible with the possibility recognised by
+Chomsky~\cite[p.~141]{chomsky2008}; the particular conditions under which it
+applies nevertheless remain an independent commitment of the Iridian
+analysis, requiring justification from the ordering and connectivity
+properties of the language itself.
+
+Although hierarchical constituency and movement dependencies determine the
+structural relations among constituents, their linear order requires further
+assumptions concerning the mapping of syntactic structure to pronunciation.
+The lower Iridian predicate follows a predominantly head-final convention,
+under which a complement precedes its selecting head
+(§\,\ref{sec:vm-obj-base}), while the cross-linguistic word-order
+correlations documented by Dryer \cite{dryer1992} provide a typological
+comparison without constituting a derivation of that convention. Kayne's
+proposal to derive linear precedence from asymmetric c-command
+\cite{kayne1994} represents a stronger alternative, whose assumptions are
+not adopted here as a general account of Iridian head-finality. Within the
+higher clause, where arguments and modifiers may precede the particle field,
+their ordering requires the positions supplied by OrdP, while selected
+finite complements additionally make use of its separately licensed external
+edge (§\,\ref{sec:vm-po-comp}). The interrogative particle \ird{by}, which
+is locally head-initial (§\,\ref{sec:th-head-finality}), presents an
+exception to the predominant head-final pattern, and its relation to higher
+silent final heads raises a further question concerning the
+\term{Final-over-Final Condition}, which restricts configurations in which a
+head-final head immediately dominates a head-initial phrase within a single
+extended projection \cite{biberauerholmbergroberts2014}. Whether the
+relevant domain restriction applies to the Iridian periphery remains
+unresolved, since the surface order of the particle and neighbouring
+constituents does not alone establish the extended-projection relations upon
+which the condition depends.
+
+The distinction between abstract syntactic structure and phonological
+realisation extends to the internal organisation of morphologically complex
+words, for which the grammar adopts the framework of \term{Distributed
+Morphology} \cite{hallemarantz1993}. Its principal commitments include
+\term{Late Insertion}, whereby phonological exponents are supplied only
+after the relevant syntactic structure has been assembled;
+\term{Underspecification}, whereby a Vocabulary Item need not specify every
+feature of the terminal it realises; and the preservation of syntactically
+hierarchical structure throughout word formation, subject to independently
+specified morphological operations \cite[pp.~275--276]{hallemarantz1994}.
+Under this architecture, \term{Vocabulary Insertion} selects the most
+specific compatible phonological exponent through competition among
+Vocabulary Items, whose applicability is determined by their feature
+specifications and contextual conditions, while morphological operations
+capable of altering the configuration available for insertion remain
+distinct from insertion itself \cite{embicknoyer2007}. The resulting
+correspondence between abstract structure and overt form consequently
+permits zero exponence, whereby a syntactic position receives no pronounced
+exponent; cumulative exponence, whereby several features are realised
+together; and contextual allomorphy, whereby alternative exponents are
+selected in restricted environments \cite{embicknoyer2007,embick2010}. The
+relation between the order of morphological constituents and the hierarchy
+of functional heads is further constrained by the qualified correspondence
+associated with the \term{Mirror Principle}, whose application to Iridian
+verbal structure is developed in §\,\ref{sec:vm-overview}
+\cite{baker1985,harley2013b}. These principles permit morphological ordering
+and exponence to inform the analysis of functional structure, without
+requiring every syntactic head to possess a distinct overt exponent or every
+morphological segment to correspond independently to a single syntactic
+projection.
+
+The relevance of this distinction is illustrated by several independently
+established patterns of Iridian verbal morphology, whose exponents reflect
+different relations between syntactic configuration and phonological
+realisation. Asp.Align cumulatively realises aspect and alignment on a
+single head, without requiring a separate AlignP (§\,\ref{sec:vm-asp}),
+while indicative verbal \ird{za-} and equative \ird{staly} realise
+Neg\textsuperscript{0} in different predicational environments. Negative
+existential \ird{zad-}, by contrast, realises Exist\textsuperscript{0}
+suppletively under negation, with Neg itself receiving zero exponence
+(§\,\ref{sec:vm-neg}). The inner indirect evidential exhibits a further
+pattern of contextually conditioned exponence, selecting \ird{-al} after a
+consonant and \ird{-l} after a vowel in the completed finite host
+(§\,\ref{sec:vm-evid}). Although these constructions all involve the
+realisation of syntactically represented features, their particular mappings
+differ, and the locality conditions governing each must therefore be
+established with reference to the relevant morphological and syntactic
+environment. The licensing of nominal case and the selection of participants
+remain dependent upon Asp.Align, orientation, Mood and the constructional
+configuration (Chapter~\ref{ch:argument-structure}), whereas case exponents
+realise features licensed within that configuration. Neither a particular
+verbal ending nor Vocabulary Insertion consequently determines,
+independently of the syntax, which argument receives direct case or where
+that argument is pronounced.
+
+The clause spine proposed in Table~\ref{tab:th-clause-spine} thus assembles
+structural distinctions whose justification derives from several related,
+though independently assessable, classes of evidence. Verbal morphology and
+argument structure constrain the lower functional hierarchy, while the
+distribution and interpretation of particles motivate the ordering of
+operator positions (Chapter~\ref{ch:particles}), and the discourse functions
+and connectivity properties of higher constituents provide evidence for
+distinctions within the periphery (Chapter~\ref{ch:infstr}). The resulting
+representation is intended to account for these relations within a common
+derivational architecture, without attributing the same evidential status to
+every projection it contains. \synhead{OrdP}, in particular, remains a
+structural hypothesis whose necessity, internal articulation and position in
+the hierarchy must be justified by the constituent-order, locality and
+connectivity conditions examined in §\,\ref{sec:pivot-placement}.
+
+Section~\ref{sec:grammatical-architecture} sets out the working hierarchy,
+whose implications for constituent order are developed in
+§\,\ref{sec:th-head-finality} through the head-final convention and its local
+exception, and in §\,\ref{sec:word-order} through the account of ordinary
+placement, its connectivity conditions and the ordering of lexical adverbs.
+Against this structural background,
+§§\,\ref{sec:vm-comp-headfinal}--\ref{sec:vm-preverbal-zone} examine how the
+base positions of complements relate to the preverbal fields and to
+construction-specific placement, before §\,\ref{sec:vm-summary} brings the
+resulting account of clause structure into correspondence with the
+distribution of verbal exponents.
+
+The structural commitments established here inform the analyses in
+Chapters~\ref{ch:predicates}--\ref{ch:infstr}, which address predicate
+constructions, negation and concord, particle scope, clause typing and
+modality, and information structure, respectively, while preserving
+throughout the analytical distinctions between syntactic licensing,
+morphological realisation and discourse interpretation.
+Chapters~\ref{ch:embedding}--\ref{ch:clause-linking} extend the account to
+embedding, relativisation and clause linking, examining the conditions that
+finite and reduced domains impose upon argument licensing, constituent
+placement and operator interpretation. These dependencies provide the
+background for Chapter~\ref{ch:discourse}, which considers how the
+distinctions between pivothood, topicality and stance bear upon reference
+management and spoken interaction.
 
 
 \section{Grammatical architecture}\label{sec:grammatical-architecture}
