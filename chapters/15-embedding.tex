@@ -173,19 +173,19 @@ morphology. The full template is:
 (\textsc{evid}) + \ird{-e}
 \end{center}
 
-\noindent The linker is therefore exterior to \synhead{EvidP}$_\text{inner}$,
-the outermost projection in the finite inflectional spine
-(§\,\ref{sec:vm-evid}). This position is significant: if \ird{-e} were an
-agreement or mood morpheme, it would be expected inside the inflectional spine.
-Its consistent extra-clausal position supports an analysis in which it marks the
-edge of the finite complex as it interfaces with a higher projection --- a
-\synhead{CP}-boundary marker, not an inflectional head.
+\noindent The linker therefore follows any inner evidential suffix, which
+occupies the outermost position within finite inflection
+(§\,\ref{sec:vm-evid}). Its attachment outside finite inflection is
+compatible with the clause-edge analysis developed in
+§\,\ref{sec:vm-tension-linker}, under which \ird{-e} marks the clause's
+interface with C. This suffixal position does not itself delimit the full
+finite clause selected by C.
 
 In clause linking, the linker appears in exactly three environments:
 
 \begin{enumerate}
   \item \textit{The finite \ird{po}-complement} (§\,\ref{sec:vm-po-comp}): the
-    linker marks the right edge of the embedded finite \synhead{TP} before the
+    linker marks the right edge of the embedded finite clause before the
     complement C head \ird{po} or \ird{poby}. It is obligatory here when the
     embedded predicate is verbal; an embedded finite verbal clause without the
     linker is ungrammatical before \ird{po}/\ird{poby}. With zero-copula
@@ -212,7 +212,7 @@ In clause linking, the linker appears in exactly three environments:
 \end{enumerate}
 
 These licensing environments contrast with two contexts in which the linker
-is absent. First, independent finite clauses lack \ird{-e}: when no C head embeds the \synhead{TP}, the linker
+is absent. First, independent finite clauses lack \ird{-e}: when no C head embeds the finite clause, the linker
 is not licensed. Second, converb forms --- the non-finite clause-linking
 morphology of simultaneous, sequential, conditional, and other converbs --- do
 not take \ird{-e}. This follows naturally: converbs are already non-finite (they
@@ -231,17 +231,19 @@ in the syntactic contexts that license the suffix.
 
 The grammar adopts a unified \synhead{CP}-edge analysis.
 Its core claim is that \ird{-e} spells out the feature \textsc{[+fin, +sub]} ---
-roughly, `finite clause under subordination' --- on the embedded \synhead{TP}'s
-outermost layer, and that this feature is valued whenever a C head (overt or
-null) selects the finite \synhead{TP}. The front grade selected by
+roughly, `finite clause under subordination' --- at the outer edge of the
+embedded finite domain, and that this feature is valued whenever a C head
+(overt or null) selects the finite clause. The front grade selected by
 \ird{-e} is then part of the PF realisation of this morphosyntactic feature,
 parallel to the corresponding nominal mutation class. The exponent's vowel
 does not itself derive this specification.
 
 The position of \ird{-e} outside \synhead{EvidP}$_\text{inner}$ in the template
-supports this analysis directly: the linker is the last element added to the
-verbal complex before the clause exits the finite inflectional domain, which is
-exactly where a \synhead{TP}-edge or C-interface marker would be expected.
+is compatible with this analysis: the linker attaches outside finite
+inflection and realises the feature associated with the clause's interface
+with C. The edge of the inflected verbal host does not delimit the full
+syntactic complement of C, which also contains independently licensed higher
+placement and particle structure (§\,\ref{sec:vm-po-comp}).
 
 Morphological locality provides a further point of correspondence: the
 evidential supplies a consonantal boundary between the inner finite ending
@@ -575,19 +577,25 @@ occupies the complement position of the matrix predicate. The prototypical
 structure of the complement \synhead{CP} is:
 
 \begin{center}
-\term{[\synhead{CP} [\synhead{TP} embedded-clause-\ird{e}] \ird{po}]}
+\term{[\synhead{CP} [finite clause-\ird{e}] \ird{po}]}
 \end{center}
 
-\noindent \ird{Po} is the head of the complement \synhead{CP} (a
-complementizer), and the embedded finite clause is the \synhead{TP} whose
-head is marked by the linker \ird{-e}. In head-final structure,
-the C head follows its complement \synhead{TP}:
+\noindent \ird{Po} heads the complement \synhead{CP}, selecting a finite
+clause whose verbal host bears the linker \ird{-e}. Within that clause,
+\synhead{IP} abbreviates the inflectional constituent comprising Mood,
+inner Evid when present, and their selected lower structure
+(§\,\ref{sec:grammatical-architecture}); independently licensed ordinary
+placement and the higher interrogative, outer evidential and speech-act
+projections belong to the embedded periphery.
+The whole finite clause, rather than IP alone, is represented below, so the
+schema implies no separate T head and does not collapse that periphery into
+the inflectional constituent. Head-final C follows the completed clause:
 
 \begin{center}
 \begin{forest}
   syntax tree
   [\synhead{CP}
-    [{\synhead{TP}\\\textit{embedded clause}\\\textit{(verb + -e)}}]
+    [{\textit{Finite clause}\\\textit{IP and licensed periphery}\\\textit{(verb + -e)}}]
     [{C\\\ird{po}}]
   ]
 \end{forest}
@@ -610,7 +618,7 @@ matrix V. The construction-specific placement of the whole selected clause
 before ordinary matrix arguments yields the following surface order:
 
 \begin{center}
-\term{[embedded-\synhead{TP} + \ird{-e}] [\ird{po}] [matrix arguments] [matrix V]}
+\term{[embedded finite clause + \ird{-e}] [\ird{po}] [matrix arguments] [matrix V]}
 \end{center}
 
 \noindent This is the order illustrated (§\,\ref{sec:complementation}).
@@ -701,7 +709,7 @@ adposition or particle) is supported by the following diagnostics:
   alignment and mood morphology); this is what is
   expected of a \synhead{CP} complement, not a reduced \synhead{VP}.
 \item \ird{Po} appears after the embedded clause-final verb
-  (the right edge of \synhead{TP} in a head-final \synhead{CP}), in exactly the
+  (the right edge of the finite clause in a head-final \synhead{CP}), in exactly the
   position predicted for a head-final C.
 \item \ird{Poby} (the non-assertive counterpart) parallels \ird{po}
   structurally and has the semantics of a complementizer: it
@@ -710,7 +718,7 @@ adposition or particle) is supported by the following diagnostics:
   assertive declarative. Complementizer alternation is a
   \synhead{CP}-level phenomenon.
 \item The linker \ird{-e} on the embedded verb is the edge-marking
-  morpheme at the \synhead{TP}-\synhead{CP} boundary; where no verbal host is
+  morpheme at the finite-clause/C boundary; where no verbal host is
   present because the predicate is zero-copular, the support form \ird{ce}
   appears instead. This is consistent with analysing the complement edge as a
   suffixal boundary marker on finite verbal clauses and as a support position

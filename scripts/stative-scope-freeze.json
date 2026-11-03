@@ -1,6 +1,6 @@
 {
   "base": "5a29478c793f0f15234a2c062cb5c3cc6e74cd9b",
-  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined. Exponent-bearing lexical examples incorporate the kař- and kan- entries; protected rule spans and earlier fixture files retain their reviewed baseline. Orthographic spellings reflect the unified soft-coronal and labial conventions; protected linguistic content is unchanged. The earlier paradigm fixtures now reflect the user-authorised tiredness-stem replacement, including its quantity grade and phonological notes; the protected relative rules are unchanged. The user-authorised restricted-State revision replaces the earlier full indicative State inventory by continuous, retrospective and contemplative; its fixture and paradigm file digests are updated explicitly, while original relative-rule hashes and dynamic derivative paradigms remain protected.",
+  "description": "Pass-two scope guard: original relative construction source spans, all active paragraphs containing its exponent, and earlier paradigm fixtures remain unchanged. Lexicon records are individual entry lines, so unrelated lexical entries can be refined. Exponent-bearing lexical examples incorporate the kař- and kan- entries; protected rule spans and earlier fixture files retain their reviewed baseline. Orthographic spellings reflect the unified soft-coronal and labial conventions; protected linguistic content is unchanged. The earlier paradigm fixtures now reflect the user-authorised tiredness-stem replacement, including its quantity grade and phonological notes; the protected relative rules are unchanged. The user-authorised restricted-State revision replaces the earlier full indicative State inventory by continuous, retrospective and contemplative; its fixture and paradigm file digests are updated explicitly, while original relative-rule hashes and dynamic derivative paradigms remain protected. The canonical clause-architecture revision adds one exactly reviewed overview paragraph; all earlier protected content remains unchanged.",
   "paragraphs": {
     "chapters/01-overview.tex": [],
     "chapters/02-phonology.tex": [
@@ -134,7 +134,8 @@
       "7305892468a6c82605de3b804717850be9362781aa08af390bc2cc5ed0cb370b",
       "b2eb33dfdd88bcc0796152292076cc9b8e430fa42490ef5b96d9746a878ff503",
       "e6be0585806408aae183b54ff40d8eedfadc1750f1361924fb5164c716b6ab55",
-      "a4e9cb795fc0498ec00af5cead8b05a6c21966814bf0748c0c4358b7b024acd9"
+      "a4e9cb795fc0498ec00af5cead8b05a6c21966814bf0748c0c4358b7b024acd9",
+      "14b42100b638a1b2b8ee90f410a4be665a877af202836f211864d520ba330dab"
     ],
     "spans": [
       {
@@ -445,7 +446,18 @@
           "after": "6d4b356e417b0e47380174e325002533a98ea04fb6d6b82eefeaa6cd2ec1e601"
         }
       ]
-    }
+    },
+    "reviewed_architecture_summary_additions": [
+      {
+        "base": "70f3a9f2c16f30faf664efcbac692bfaa81a7cfd",
+        "source": "chapters/09-clause-structure.tex",
+        "section": "sec:grammatical-architecture",
+        "added_units": [
+          "14b42100b638a1b2b8ee90f410a4be665a877af202836f211864d520ba330dab"
+        ],
+        "reason": "User-requested canonical clause-architecture revision adds one overview paragraph summarising the existing construction-specific State, existential, equative and reduced-predicate structures. Its reduced -ový relative selects AspP and excludes higher finite operators exactly as established in the unchanged specialist treatment. All 42 earlier exponent-bearing paragraphs, protected regions, examples and fixture/selection files retain their reviewed hashes; no scope-check logic is relaxed."
+      }
+    ]
   },
   "reviewed_state_selection_revision": {
     "reason": "User-authorised restriction of simple indicative State to continuous, retrospective and contemplative. Unavailable State progressive/perfective cells and their generated operations are removed; independent Become/Manifest/Caus paradigms are retained. Two exact inheritance sentences in nominalisation/relative prose and removal of the obsolete simple-State perfective comparison in the Become allomorphy paragraph are normalised by STATE_SELECTION_REVISIONS without accepting other changes to protected regions.",
