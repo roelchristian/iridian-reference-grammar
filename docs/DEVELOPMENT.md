@@ -28,13 +28,20 @@ compilation, output locations and troubleshooting are covered in the
 | `util/collect_lexicon.py` | Extraction of explicitly tagged forms with source locations |
 | `build/` | Generated PDFs, staging files, extracted inventories and local font caches |
 
-`grammar.tex` assembles Foundations, Words and Phrases, The Clause, and Complex
-Syntax and Discourse, followed by the appendices and references. Preserve this
+`grammar.tex` assembles Foundations, Words and phrases, The clause, and Complex
+syntax and discourse, followed by the appendices and references. Preserve this
 include structure and the existing macros, labels and symbolic cross-references
 when editing a treatment. Formatting shared across the book belongs in the
 central settings or styles rather than in repeated local spacing adjustments.
 
 ## Editorial conventions
+
+Use sentence case for the book title and all part, chapter, appendix, section
+and subsection headings, including short titles, contents entries and running
+heads. Capitalise the first word and retain proper names, language names,
+acronyms, syntactic symbols and intentional Iridian spelling. Preserve the
+capitalisation of cited work titles. Apply the same convention to captions
+and front-matter list headings. For example, write “One title among many”.
 
 Describe Iridian forms, distributions and interpretations before developing
 their analysis, using connected scholarly prose and British spelling. Keep
