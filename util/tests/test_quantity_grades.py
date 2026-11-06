@@ -84,7 +84,7 @@ class QuantityGradesTests(unittest.TestCase):
         for target in (0, 3):
             with self.subTest(target=target), self.assertRaises(QuantityError):
                 grades.apply(('p', 'ɛ', 'r', 'ɛ', 'k'),
-                             QuantityLicence('perek-retained-root', 'G1', True, (0, 5), (1,), target))
+                             QuantityLicence('perėk-retained-root', 'G1', True, (0, 5), (1,), target))
 
     def test_raising_requires_membership_and_a_defined_mid_nucleus(self):
         grades = QuantityGrades.from_file()
@@ -119,7 +119,7 @@ class QuantityGradesTests(unittest.TestCase):
         for value in (False, 1, 'yes'):
             with self.subTest(value=value), self.assertRaises(QuantityError):
                 grades.apply(('ɛ',), QuantityLicence('root', 'G1', value, (0, 1), (0,), 0))
-        for source in ('perek', (), ('ě',), ('á',), ('p', 'i', 'a')):
+        for source in ('perėk', (), ('ě',), ('á',), ('p', 'i', 'a')):
             with self.subTest(source=source), self.assertRaises(QuantityError):
                 grades.apply(source, QuantityLicence('root', 'G1', True, (0, 1), (0,), 0))
 

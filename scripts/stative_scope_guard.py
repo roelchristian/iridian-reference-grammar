@@ -211,6 +211,30 @@ finite verbal negation, are illustrated in
 
 
 def frozen_reference_text(path, text):
+    # Migration comparison uses reviewed old spellings, never newly generated
+    # hashes of current grammatical content. These exact lexical replacements
+    # and the relative suffix alone are reversible within the frozen material.
+    # Old characters here are historical comparison input, not modern forms.
+    for modern, original in (
+            ('Janėk', 'Janek'), ('janėk', 'janek'), ('perėk', 'perek'),
+            ('lobėk', 'lobek'), ('obėl', 'obel'), ('sviňėk', 'sviňek'),
+            ('tězėň', 'tězeň'), ('kolėn', 'kolen'), ('razėň', 'razeň'),
+            ('stólėk', 'stólek'), ('Merėk', 'Merek'), ('berėl', 'berel'),
+            ('pěštėl', 'pěštel'), ('Marėk', 'Marek'), ('marėk', 'marek'),
+            ('uzėl', 'uzel')):
+        text = text.replace(modern, original)
+        text = text.replace(modern[0].upper() + modern[1:], original[0].upper() + original[1:])
+    # The separately inflected nominal transitive -ovy was already short.
+    # Preserve its exact reviewed row when reversing relative -ovy spellings;
+    # a changed cell or an added example still changes the protected unit hash.
+    nominal_row = (r'Transitive singular & \ird{pjáščikovy / pjáščikovyte} '
+                   r'& \ird{pjaštovy / pjaštovyte}')
+    text = text.replace(nominal_row, 'FROZEN_NOMINAL_TRANSITIVE_ROW')
+    # Lexical novy 'new' already had short y and is not the relative exponent.
+    text = re.sub(r'(?<!\w)novy(?!\w)', 'FROZEN_LEXICAL_NEW', text)
+    text = re.sub(r'ovy(?=\W|$)', 'ový', text)
+    text = text.replace('FROZEN_LEXICAL_NEW', 'novy')
+    text = text.replace('FROZEN_NOMINAL_TRANSITIVE_ROW', nominal_row)
     if path == 'chapters/08-complex-sentences.tex':
         for original, revised in FINITE_REFERENCE_REVISIONS:
             text = text.replace(revised, original)
@@ -270,7 +294,8 @@ def check_scope(root=ROOT, fixtures=None, overrides=None):
     failures = []
     paragraphs = []
     units = []
-    sources = publication_sources(root, overrides)
+    sources = {path: frozen_reference_text('chapters/08-complex-sentences.tex', text)
+               for path, text in publication_sources(root, overrides).items()}
     for path, text in sources.items():
         # Exact reviewed revisions retain the original migration hashes.
         text = frozen_reference_text('chapters/08-complex-sentences.tex', text)
@@ -283,6 +308,7 @@ def check_scope(root=ROOT, fixtures=None, overrides=None):
     lexicon = overrides.get('util/lexicon.tex')
     if lexicon is None:
         lexicon = (root / 'util/lexicon.tex').read_text()
+    lexicon = frozen_reference_text('util/lexicon.tex', lexicon)
     paragraphs.extend(digest(structural_text(line)) for line in lexicon.splitlines()
                       if 'ový' in line and structural_text(line))
     if Counter(paragraphs) != Counter(migration['paragraphs']):
@@ -321,6 +347,11 @@ def check_scope(root=ROOT, fixtures=None, overrides=None):
             failures.append(region['source'] + ': protected relative region changed or added')
     for path, expected in fixtures['files'].items():
         text = overrides[path] if path in overrides else (root / path).read_text()
+        spelling = fixtures.get('vowel_spelling_migration', {}).get('files', {}).get(path)
+        if spelling:
+            if spelling['original_sha256'] != expected:
+                failures.append(f'{path}: spelling migration lost its reviewed provenance')
+            expected = spelling['migrated_sha256']
         if digest(text) != expected:
             failures.append(f'{path}: earlier protected fixture or selection file changed')
     return failures

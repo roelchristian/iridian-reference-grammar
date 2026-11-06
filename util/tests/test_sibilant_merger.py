@@ -29,7 +29,7 @@ class SibilantMergerChecks(unittest.TestCase):
 
     def test_preserves_other_e_hook_and_explicit_rejected_spellings(self):
         text = (r'\ird{pě} \ird{bě} \ird{mě} \ird{vě} \ird{kěda} '
-                r'\ird{hě} \ird{tězeň} \ird{travě} '
+                r'\ird{hě} \ird{tězėň} \ird{travě} '
                 r'\ird{*sěbec} \ird{*čě} % \ird{sěbec}')
         self.assertEqual(self.check_spelling(text), [])
 
@@ -71,10 +71,10 @@ class SibilantMergerChecks(unittest.TestCase):
 
     def test_lexical_svinek_spelling_does_not_relax_productive_endings(self):
         self.assertEqual(self.check_spelling(
-            r'\lexentry{sviňek}{}{girl; daughter} \gla Sviňek.// '
+            r'\lexentry{sviňėk}{}{girl; daughter} \gla Sviňėk.// '
             r'\ird{svíňku} \ird{svíňce} \ird{véně} \ird{hrátě}'), [])
         for text in (r'\ird{sviňeka}', r'\ird{svíňek}',
-                     r'\gla Sviňek véňe.//', r'\gla Sviňek hráťe.//'):
+                     r'\gla Sviňėk véňe.//', r'\gla Sviňėk hráťe.//'):
             with self.subTest(text=text):
                 self.assertTrue(self.check_spelling(text))
 

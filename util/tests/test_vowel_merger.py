@@ -19,11 +19,11 @@ class VowelMergerTests(unittest.TestCase):
             with self.subTest(variety=variety):
                 self.assertEqual(realise_vowel_classes(source, variety), expected)
 
-    def test_six_short_and_four_long_principal_categories(self):
-        short = ('a', 'ɛ', 'ɪ', 'ɨ', 'ɔ', 'ʊ')
-        long = ('aː', 'eː', 'iː', 'ɨː', 'oː', 'uː')
+    def test_seven_short_and_three_long_principal_categories(self):
+        short = ('a', 'ɛ', 'ɪ', 'ɨ', 'ə', 'ɔ', 'ʊ')
+        long = ('aː', 'eː', 'iː', 'oː', 'uː')
         self.assertEqual(realise_vowel_classes(short), short)
-        self.assertEqual(set(realise_vowel_classes(long)), {'aː', 'iː', 'ɨː', 'uː'})
+        self.assertEqual(set(realise_vowel_classes(long)), {'aː', 'iː', 'uː'})
         self.assertEqual(realise_vowel_classes(('ou̯',)), ('ou̯',))
 
     def test_short_mid_grades_converge_only_after_variety_selection(self):
@@ -48,8 +48,8 @@ class VowelMergerTests(unittest.TestCase):
                     self.assertEqual(realise_vowel_classes(selected), (target,))
 
     def test_realisation_preserves_consonantal_grades_stress_and_quantity(self):
-        source = ('ˈ', 't', 'eː', '.', 'd', 'oː', 'ˌ', 'ts', 'ɨː')
-        expected = ('ˈ', 't', 'iː', '.', 'd', 'uː', 'ˌ', 'ts', 'ɨː')
+        source = ('ˈ', 't', 'eː', '.', 'd', 'oː', 'ˌ', 'ts', 'ɨ')
+        expected = ('ˈ', 't', 'iː', '.', 'd', 'uː', 'ˌ', 'ts', 'ɨ')
         self.assertEqual(realise_vowel_classes(source), expected)
         self.assertEqual(sum('ː' in token for token in source),
                          sum('ː' in token for token in expected))

@@ -33,14 +33,16 @@ class QuantityGrades:
     def __init__(self, rules, inventory):
         self.rules = rules
         self.inventory = set(inventory)
-        if set(rules) != {'long_pairs', 'raised_pairs'}:
-            raise QuantityError('quantity rules require length pairs and licensed raising pairs')
+        if set(rules) != {'vowels', 'long_pairs', 'raised_pairs'}:
+            raise QuantityError('quantity rules require vowel membership, length pairs and licensed raising pairs')
+        self.vowels = set(rules['vowels'])
+        if not self.vowels or not self.vowels <= self.inventory:
+            raise QuantityError('vowel membership must belong to the phonological inventory')
         pairs = rules['long_pairs']
-        if any(source not in self.inventory or output not in self.inventory
+        if any(source not in self.vowels or output not in self.vowels
                or 'ː' in source or output.count('ː') != 1
                for source, output in pairs.items()):
             raise QuantityError('length pairs must map short nuclei to one ordinary long degree')
-        self.vowels = set(pairs) | set(pairs.values()) | {'ou̯'}
         if not set(rules['raised_pairs']) <= self.vowels:
             raise QuantityError('raising input must be a vowel nucleus')
         if not set(rules['raised_pairs'].values()) <= self.vowels:
@@ -64,7 +66,8 @@ class QuantityGrades:
         Domain bounds are token offsets [start, stop), not written-letter or
         syllable counts. Eligibility excludes fleeting nuclei and morphological
         material outside the selected root/stem; its lexical assignment belongs
-        to the caller. G0 preserves the input, including lexical length.
+        to the caller. G0 preserves the input, including lexical length. G1
+        preserves a selected /ɨ/ or /ə/: identity never redirects the target.
         """
         if (not isinstance(segments, tuple) or not segments
                 or any(not isinstance(token, str) for token in segments)):

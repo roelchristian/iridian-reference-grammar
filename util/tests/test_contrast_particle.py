@@ -23,10 +23,10 @@ class ContrastParticleTests(unittest.TestCase):
 
     def test_isolated_and_combined_examples_keep_gloss_and_order(self):
         source = read_domain('chapters/05-function-words.tex')
-        for phrase in ('Janek zdrava. Marek jas znóhtime.',
+        for phrase in ('Janėk zdrava. Marėk jas znóhtime.',
                        'Dá graže jas pjašta.',
-                       'Marek zdrávime. Janek oh jas zdrávime.',
-                       'Janek jas vy váržek.', 'Janek jas vy zaščének.',
+                       'Marėk zdrávime. Janėk oh jas zdrávime.',
+                       'Janėk jas vy váržek.', 'Janėk jas vy zaščének.',
                        'Čas jas so jeca.', 'Tak jas so staly.', 'Jas okouzé!'):
             with self.subTest(phrase=phrase):
                 match = re.search(r'\\gla\s+' + re.escape(phrase) + r'//\s*\\glb\s+(.*?)//', source, re.S)

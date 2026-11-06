@@ -17,7 +17,7 @@
           "so": "so mužna",
           "linked": "mužne",
           "participant": "mužnova",
-          "relative": "mužnový",
+          "relative": "mužnovy",
           "evidential": "mužnal",
           "evidential_linked": "mužnalě",
           "licence": "marked-stage-relative"
@@ -31,7 +31,7 @@
           "so": "so mužnáv",
           "linked": "mužnávě",
           "participant": "mužnávou",
-          "relative": "mužnávový",
+          "relative": "mužnávovy",
           "evidential": "mužnával",
           "evidential_linked": "mužnávalě",
           "licence": "ordinary"
@@ -45,7 +45,7 @@
           "so": "so mužnáž",
           "linked": "mužnáže",
           "participant": "mužnážou",
-          "relative": "mužnážový",
+          "relative": "mužnážovy",
           "evidential": "mužnážal",
           "evidential_linked": "mužnážalě",
           "licence": "ordinary"
@@ -59,7 +59,7 @@
           "so": "so mužnéla",
           "linked": "mužnéle",
           "participant": "mužnélova",
-          "relative": "mužnélový",
+          "relative": "mužnélovy",
           "evidential": "mužnélal",
           "evidential_linked": "mužnélalě",
           "licence": "ordinary"
@@ -73,7 +73,7 @@
           "so": "so mužnélime",
           "linked": "mužnélimně",
           "participant": "mužnélimou",
-          "relative": "mužnélimový",
+          "relative": "mužnélimovy",
           "evidential": "mužnélimel",
           "evidential_linked": "mužnélimelě",
           "licence": "ordinary"
@@ -87,7 +87,7 @@
           "so": "so mužnélek",
           "linked": "mužnélice",
           "participant": "mužnélikou",
-          "relative": "mužnélikový",
+          "relative": "mužnélikovy",
           "evidential": "mužnélekal",
           "evidential_linked": "mužnélekalě",
           "licence": "ordinary"
@@ -101,7 +101,7 @@
           "so": "so mužnélav",
           "linked": "mužnélavě",
           "participant": "mužnélavou",
-          "relative": "mužnélavový",
+          "relative": "mužnélavovy",
           "evidential": "mužnélaval",
           "evidential_linked": "mužnélavalě",
           "licence": "ordinary"
@@ -115,7 +115,7 @@
           "so": "so mužnélaž",
           "linked": "mužnélaže",
           "participant": "mužnélažou",
-          "relative": "mužnélažový",
+          "relative": "mužnélažovy",
           "evidential": "mužnélažal",
           "evidential_linked": "mužnélažalě",
           "licence": "ordinary"
@@ -138,7 +138,7 @@
           "so": "so hradna",
           "linked": "hradne",
           "participant": "hradnova",
-          "relative": "hradnový",
+          "relative": "hradnovy",
           "evidential": "hradnal",
           "evidential_linked": "hradnalě",
           "licence": "marked-stage-relative"
@@ -152,7 +152,7 @@
           "so": "so hradnáv",
           "linked": "hradnávě",
           "participant": "hradnávou",
-          "relative": "hradnávový",
+          "relative": "hradnávovy",
           "evidential": "hradnával",
           "evidential_linked": "hradnávalě",
           "licence": "ordinary"
@@ -166,7 +166,7 @@
           "so": "so hradnáž",
           "linked": "hradnáže",
           "participant": "hradnážou",
-          "relative": "hradnážový",
+          "relative": "hradnážovy",
           "evidential": "hradnážal",
           "evidential_linked": "hradnážalě",
           "licence": "ordinary"
@@ -180,7 +180,7 @@
           "so": "so hradnéla",
           "linked": "hradnéle",
           "participant": "hradnélova",
-          "relative": "hradnélový",
+          "relative": "hradnélovy",
           "evidential": "hradnélal",
           "evidential_linked": "hradnélalě",
           "licence": "ordinary"
@@ -194,7 +194,7 @@
           "so": "so hradnélime",
           "linked": "hradnélimně",
           "participant": "hradnélimou",
-          "relative": "hradnélimový",
+          "relative": "hradnélimovy",
           "evidential": "hradnélimel",
           "evidential_linked": "hradnélimelě",
           "licence": "ordinary"
@@ -208,7 +208,7 @@
           "so": "so hradnélek",
           "linked": "hradnélice",
           "participant": "hradnélikou",
-          "relative": "hradnélikový",
+          "relative": "hradnélikovy",
           "evidential": "hradnélekal",
           "evidential_linked": "hradnélekalě",
           "licence": "ordinary"
@@ -222,7 +222,7 @@
           "so": "so hradnélav",
           "linked": "hradnélavě",
           "participant": "hradnélavou",
-          "relative": "hradnélavový",
+          "relative": "hradnélavovy",
           "evidential": "hradnélaval",
           "evidential_linked": "hradnélavalě",
           "licence": "ordinary"
@@ -236,7 +236,7 @@
           "so": "so hradnélaž",
           "linked": "hradnélaže",
           "participant": "hradnélažou",
-          "relative": "hradnélažový",
+          "relative": "hradnélažovy",
           "evidential": "hradnélažal",
           "evidential_linked": "hradnélažalě",
           "licence": "ordinary"
@@ -259,7 +259,7 @@
           "so": "so svorna",
           "linked": "svorne",
           "participant": "svornova",
-          "relative": "svornový",
+          "relative": "svornovy",
           "evidential": "svornal",
           "evidential_linked": "svornalě",
           "licence": "marked-stage-relative"
@@ -273,7 +273,7 @@
           "so": "so svornáv",
           "linked": "svornávě",
           "participant": "svornávou",
-          "relative": "svornávový",
+          "relative": "svornávovy",
           "evidential": "svornával",
           "evidential_linked": "svornávalě",
           "licence": "ordinary"
@@ -287,7 +287,7 @@
           "so": "so svornáž",
           "linked": "svornáže",
           "participant": "svornážou",
-          "relative": "svornážový",
+          "relative": "svornážovy",
           "evidential": "svornážal",
           "evidential_linked": "svornážalě",
           "licence": "ordinary"
@@ -301,7 +301,7 @@
           "so": "so svornéla",
           "linked": "svornéle",
           "participant": "svornélova",
-          "relative": "svornélový",
+          "relative": "svornélovy",
           "evidential": "svornélal",
           "evidential_linked": "svornélalě",
           "licence": "ordinary"
@@ -315,7 +315,7 @@
           "so": "so svornélime",
           "linked": "svornélimně",
           "participant": "svornélimou",
-          "relative": "svornélimový",
+          "relative": "svornélimovy",
           "evidential": "svornélimel",
           "evidential_linked": "svornélimelě",
           "licence": "ordinary"
@@ -329,7 +329,7 @@
           "so": "so svornélek",
           "linked": "svornélice",
           "participant": "svornélikou",
-          "relative": "svornélikový",
+          "relative": "svornélikovy",
           "evidential": "svornélekal",
           "evidential_linked": "svornélekalě",
           "licence": "ordinary"
@@ -343,7 +343,7 @@
           "so": "so svornélav",
           "linked": "svornélavě",
           "participant": "svornélavou",
-          "relative": "svornélavový",
+          "relative": "svornélavovy",
           "evidential": "svornélaval",
           "evidential_linked": "svornélavalě",
           "licence": "ordinary"
@@ -357,7 +357,7 @@
           "so": "so svornélaž",
           "linked": "svornélaže",
           "participant": "svornélažou",
-          "relative": "svornélažový",
+          "relative": "svornélažovy",
           "evidential": "svornélažal",
           "evidential_linked": "svornélažalě",
           "licence": "ordinary"
@@ -380,7 +380,7 @@
           "so": "so četna",
           "linked": "četne",
           "participant": "četnova",
-          "relative": "četnový",
+          "relative": "četnovy",
           "evidential": "četnal",
           "evidential_linked": "četnalě",
           "licence": "marked-stage-relative"
@@ -394,7 +394,7 @@
           "so": "so četnáv",
           "linked": "četnávě",
           "participant": "četnávou",
-          "relative": "četnávový",
+          "relative": "četnávovy",
           "evidential": "četnával",
           "evidential_linked": "četnávalě",
           "licence": "ordinary"
@@ -408,7 +408,7 @@
           "so": "so četnáž",
           "linked": "četnáže",
           "participant": "četnážou",
-          "relative": "četnážový",
+          "relative": "četnážovy",
           "evidential": "četnážal",
           "evidential_linked": "četnážalě",
           "licence": "ordinary"
@@ -422,7 +422,7 @@
           "so": "so četnéla",
           "linked": "četnéle",
           "participant": "četnélova",
-          "relative": "četnélový",
+          "relative": "četnélovy",
           "evidential": "četnélal",
           "evidential_linked": "četnélalě",
           "licence": "ordinary"
@@ -436,7 +436,7 @@
           "so": "so četnélime",
           "linked": "četnélimně",
           "participant": "četnélimou",
-          "relative": "četnélimový",
+          "relative": "četnélimovy",
           "evidential": "četnélimel",
           "evidential_linked": "četnélimelě",
           "licence": "ordinary"
@@ -450,7 +450,7 @@
           "so": "so četnélek",
           "linked": "četnélice",
           "participant": "četnélikou",
-          "relative": "četnélikový",
+          "relative": "četnélikovy",
           "evidential": "četnélekal",
           "evidential_linked": "četnélekalě",
           "licence": "ordinary"
@@ -464,7 +464,7 @@
           "so": "so četnélav",
           "linked": "četnélavě",
           "participant": "četnélavou",
-          "relative": "četnélavový",
+          "relative": "četnélavovy",
           "evidential": "četnélaval",
           "evidential_linked": "četnélavalě",
           "licence": "ordinary"
@@ -478,7 +478,7 @@
           "so": "so četnélaž",
           "linked": "četnélaže",
           "participant": "četnélažou",
-          "relative": "četnélažový",
+          "relative": "četnélažovy",
           "evidential": "četnélažal",
           "evidential_linked": "četnélažalě",
           "licence": "ordinary"
@@ -501,7 +501,7 @@
           "so": "so řejna",
           "linked": "řejne",
           "participant": "řejnova",
-          "relative": "řejnový",
+          "relative": "řejnovy",
           "evidential": "řejnal",
           "evidential_linked": "řejnalě",
           "licence": "marked-stage-relative"
@@ -515,7 +515,7 @@
           "so": "so řejnáv",
           "linked": "řejnávě",
           "participant": "řejnávou",
-          "relative": "řejnávový",
+          "relative": "řejnávovy",
           "evidential": "řejnával",
           "evidential_linked": "řejnávalě",
           "licence": "ordinary"
@@ -529,7 +529,7 @@
           "so": "so řejnáž",
           "linked": "řejnáže",
           "participant": "řejnážou",
-          "relative": "řejnážový",
+          "relative": "řejnážovy",
           "evidential": "řejnážal",
           "evidential_linked": "řejnážalě",
           "licence": "ordinary"
@@ -543,7 +543,7 @@
           "so": "so řejnéla",
           "linked": "řejnéle",
           "participant": "řejnélova",
-          "relative": "řejnélový",
+          "relative": "řejnélovy",
           "evidential": "řejnélal",
           "evidential_linked": "řejnélalě",
           "licence": "ordinary"
@@ -557,7 +557,7 @@
           "so": "so řejnélime",
           "linked": "řejnélimně",
           "participant": "řejnélimou",
-          "relative": "řejnélimový",
+          "relative": "řejnélimovy",
           "evidential": "řejnélimel",
           "evidential_linked": "řejnélimelě",
           "licence": "ordinary"
@@ -571,7 +571,7 @@
           "so": "so řejnélek",
           "linked": "řejnélice",
           "participant": "řejnélikou",
-          "relative": "řejnélikový",
+          "relative": "řejnélikovy",
           "evidential": "řejnélekal",
           "evidential_linked": "řejnélekalě",
           "licence": "ordinary"
@@ -585,7 +585,7 @@
           "so": "so řejnélav",
           "linked": "řejnélavě",
           "participant": "řejnélavou",
-          "relative": "řejnélavový",
+          "relative": "řejnélavovy",
           "evidential": "řejnélaval",
           "evidential_linked": "řejnélavalě",
           "licence": "ordinary"
@@ -599,7 +599,7 @@
           "so": "so řejnélaž",
           "linked": "řejnélaže",
           "participant": "řejnélažou",
-          "relative": "řejnélažový",
+          "relative": "řejnélažovy",
           "evidential": "řejnélažal",
           "evidential_linked": "řejnélažalě",
           "licence": "ordinary"
@@ -622,7 +622,7 @@
           "so": "so všihna",
           "linked": "všihne",
           "participant": "všihnova",
-          "relative": "všihnový",
+          "relative": "všihnovy",
           "evidential": "všihnal",
           "evidential_linked": "všihnalě",
           "licence": "marked-stage-relative"
@@ -636,7 +636,7 @@
           "so": "so všihnáv",
           "linked": "všihnávě",
           "participant": "všihnávou",
-          "relative": "všihnávový",
+          "relative": "všihnávovy",
           "evidential": "všihnával",
           "evidential_linked": "všihnávalě",
           "licence": "ordinary"
@@ -650,7 +650,7 @@
           "so": "so všihnáž",
           "linked": "všihnáže",
           "participant": "všihnážou",
-          "relative": "všihnážový",
+          "relative": "všihnážovy",
           "evidential": "všihnážal",
           "evidential_linked": "všihnážalě",
           "licence": "ordinary"
@@ -664,7 +664,7 @@
           "so": "so všihnéla",
           "linked": "všihnéle",
           "participant": "všihnélova",
-          "relative": "všihnélový",
+          "relative": "všihnélovy",
           "evidential": "všihnélal",
           "evidential_linked": "všihnélalě",
           "licence": "ordinary"
@@ -678,7 +678,7 @@
           "so": "so všihnélime",
           "linked": "všihnélimně",
           "participant": "všihnélimou",
-          "relative": "všihnélimový",
+          "relative": "všihnélimovy",
           "evidential": "všihnélimel",
           "evidential_linked": "všihnélimelě",
           "licence": "ordinary"
@@ -692,7 +692,7 @@
           "so": "so všihnélek",
           "linked": "všihnélice",
           "participant": "všihnélikou",
-          "relative": "všihnélikový",
+          "relative": "všihnélikovy",
           "evidential": "všihnélekal",
           "evidential_linked": "všihnélekalě",
           "licence": "ordinary"
@@ -706,7 +706,7 @@
           "so": "so všihnélav",
           "linked": "všihnélavě",
           "participant": "všihnélavou",
-          "relative": "všihnélavový",
+          "relative": "všihnélavovy",
           "evidential": "všihnélaval",
           "evidential_linked": "všihnélavalě",
           "licence": "ordinary"
@@ -720,7 +720,7 @@
           "so": "so všihnélaž",
           "linked": "všihnélaže",
           "participant": "všihnélažou",
-          "relative": "všihnélažový",
+          "relative": "všihnélažovy",
           "evidential": "všihnélažal",
           "evidential_linked": "všihnélažalě",
           "licence": "ordinary"
@@ -743,7 +743,7 @@
           "so": "so hvodna",
           "linked": "hvodne",
           "participant": "hvodnova",
-          "relative": "hvodnový",
+          "relative": "hvodnovy",
           "evidential": "hvodnal",
           "evidential_linked": "hvodnalě",
           "licence": "marked-stage-relative"
@@ -757,7 +757,7 @@
           "so": "so hvodnáv",
           "linked": "hvodnávě",
           "participant": "hvodnávou",
-          "relative": "hvodnávový",
+          "relative": "hvodnávovy",
           "evidential": "hvodnával",
           "evidential_linked": "hvodnávalě",
           "licence": "ordinary"
@@ -771,7 +771,7 @@
           "so": "so hvodnáž",
           "linked": "hvodnáže",
           "participant": "hvodnážou",
-          "relative": "hvodnážový",
+          "relative": "hvodnážovy",
           "evidential": "hvodnážal",
           "evidential_linked": "hvodnážalě",
           "licence": "ordinary"
@@ -785,7 +785,7 @@
           "so": "so hvodnéla",
           "linked": "hvodnéle",
           "participant": "hvodnélova",
-          "relative": "hvodnélový",
+          "relative": "hvodnélovy",
           "evidential": "hvodnélal",
           "evidential_linked": "hvodnélalě",
           "licence": "ordinary"
@@ -799,7 +799,7 @@
           "so": "so hvodnélime",
           "linked": "hvodnélimně",
           "participant": "hvodnélimou",
-          "relative": "hvodnélimový",
+          "relative": "hvodnélimovy",
           "evidential": "hvodnélimel",
           "evidential_linked": "hvodnélimelě",
           "licence": "ordinary"
@@ -813,7 +813,7 @@
           "so": "so hvodnélek",
           "linked": "hvodnélice",
           "participant": "hvodnélikou",
-          "relative": "hvodnélikový",
+          "relative": "hvodnélikovy",
           "evidential": "hvodnélekal",
           "evidential_linked": "hvodnélekalě",
           "licence": "ordinary"
@@ -827,7 +827,7 @@
           "so": "so hvodnélav",
           "linked": "hvodnélavě",
           "participant": "hvodnélavou",
-          "relative": "hvodnélavový",
+          "relative": "hvodnélavovy",
           "evidential": "hvodnélaval",
           "evidential_linked": "hvodnélavalě",
           "licence": "ordinary"
@@ -841,7 +841,7 @@
           "so": "so hvodnélaž",
           "linked": "hvodnélaže",
           "participant": "hvodnélažou",
-          "relative": "hvodnélažový",
+          "relative": "hvodnélažovy",
           "evidential": "hvodnélažal",
           "evidential_linked": "hvodnélažalě",
           "licence": "ordinary"
@@ -864,7 +864,7 @@
           "so": "so tvírzna",
           "linked": "tvírzne",
           "participant": "tvírznova",
-          "relative": "tvírznový",
+          "relative": "tvírznovy",
           "evidential": "tvírznal",
           "evidential_linked": "tvírznalě",
           "licence": "marked-stage-relative"
@@ -878,7 +878,7 @@
           "so": "so tvírznav",
           "linked": "tvírznavě",
           "participant": "tvírznavou",
-          "relative": "tvírznavový",
+          "relative": "tvírznavovy",
           "evidential": "tvírznaval",
           "evidential_linked": "tvírznavalě",
           "licence": "ordinary"
@@ -892,7 +892,7 @@
           "so": "so tvírznaž",
           "linked": "tvírznaže",
           "participant": "tvírznažou",
-          "relative": "tvírznažový",
+          "relative": "tvírznažovy",
           "evidential": "tvírznažal",
           "evidential_linked": "tvírznažalě",
           "licence": "ordinary"
@@ -906,7 +906,7 @@
           "so": "so tvírznela",
           "linked": "tvírznele",
           "participant": "tvírznelova",
-          "relative": "tvírznelový",
+          "relative": "tvírznelovy",
           "evidential": "tvírznelal",
           "evidential_linked": "tvírznelalě",
           "licence": "ordinary"
@@ -920,7 +920,7 @@
           "so": "so tvírznelime",
           "linked": "tvírznelimně",
           "participant": "tvírznelimou",
-          "relative": "tvírznelimový",
+          "relative": "tvírznelimovy",
           "evidential": "tvírznelimel",
           "evidential_linked": "tvírznelimelě",
           "licence": "ordinary"
@@ -934,7 +934,7 @@
           "so": "so tvírznelek",
           "linked": "tvírznelice",
           "participant": "tvírznelikou",
-          "relative": "tvírznelikový",
+          "relative": "tvírznelikovy",
           "evidential": "tvírznelekal",
           "evidential_linked": "tvírznelekalě",
           "licence": "ordinary"
@@ -948,7 +948,7 @@
           "so": "so tvírznelav",
           "linked": "tvírznelavě",
           "participant": "tvírznelavou",
-          "relative": "tvírznelavový",
+          "relative": "tvírznelavovy",
           "evidential": "tvírznelaval",
           "evidential_linked": "tvírznelavalě",
           "licence": "ordinary"
@@ -962,7 +962,7 @@
           "so": "so tvírznelaž",
           "linked": "tvírznelaže",
           "participant": "tvírznelažou",
-          "relative": "tvírznelažový",
+          "relative": "tvírznelažovy",
           "evidential": "tvírznelažal",
           "evidential_linked": "tvírznelažalě",
           "licence": "ordinary"
@@ -996,7 +996,7 @@
       "end": "\\subsection",
       "required": [
         "\\ird{mužnélikou}",
-        "\\ird{mužnélikový}",
+        "\\ird{mužnélikovy}",
         "\\ird{mužnélice}",
         "\\ird{tvírznel-}",
         "Asp cannot reach through Become"
@@ -1009,8 +1009,8 @@
       "required": [
         "\\ird{stá četná pres}",
         "\\ird{Marcí stá četná pres}",
-        "\\gla Janek Marcí stá četnélime.",
-        "\\gla Janek Marcí stá četnélek."
+        "\\gla Janėk Marcí stá četnélime.",
+        "\\gla Janėk Marcí stá četnélek."
       ]
     },
     {
@@ -1035,7 +1035,7 @@
       "retrospective": "mužnéranav",
       "contemplative": "mužnéraž",
       "participant_perfective": "mužnéranikou",
-      "relative_perfective": "mužnéranikový",
+      "relative_perfective": "mužnéranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1048,7 +1048,7 @@
       "retrospective": "mužnélranav",
       "contemplative": "mužnélraž",
       "participant_perfective": "mužnélranikou",
-      "relative_perfective": "mužnélranikový",
+      "relative_perfective": "mužnélranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1061,7 +1061,7 @@
       "retrospective": "hradnéranav",
       "contemplative": "hradnéraž",
       "participant_perfective": "hradnéranikou",
-      "relative_perfective": "hradnéranikový",
+      "relative_perfective": "hradnéranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1074,7 +1074,7 @@
       "retrospective": "hradnélranav",
       "contemplative": "hradnélraž",
       "participant_perfective": "hradnélranikou",
-      "relative_perfective": "hradnélranikový",
+      "relative_perfective": "hradnélranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1087,7 +1087,7 @@
       "retrospective": "svornéranav",
       "contemplative": "svornéraž",
       "participant_perfective": "svornéranikou",
-      "relative_perfective": "svornéranikový",
+      "relative_perfective": "svornéranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1100,7 +1100,7 @@
       "retrospective": "svornélranav",
       "contemplative": "svornélraž",
       "participant_perfective": "svornélranikou",
-      "relative_perfective": "svornélranikový",
+      "relative_perfective": "svornélranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1113,7 +1113,7 @@
       "retrospective": "četnéranav",
       "contemplative": "četnéraž",
       "participant_perfective": "četnéranikou",
-      "relative_perfective": "četnéranikový",
+      "relative_perfective": "četnéranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1126,7 +1126,7 @@
       "retrospective": "četnélranav",
       "contemplative": "četnélraž",
       "participant_perfective": "četnélranikou",
-      "relative_perfective": "četnélranikový",
+      "relative_perfective": "četnélranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1139,7 +1139,7 @@
       "retrospective": "řejnéranav",
       "contemplative": "řejnéraž",
       "participant_perfective": "řejnéranikou",
-      "relative_perfective": "řejnéranikový",
+      "relative_perfective": "řejnéranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1152,7 +1152,7 @@
       "retrospective": "řejnélranav",
       "contemplative": "řejnélraž",
       "participant_perfective": "řejnélranikou",
-      "relative_perfective": "řejnélranikový",
+      "relative_perfective": "řejnélranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1165,7 +1165,7 @@
       "retrospective": "všihnéranav",
       "contemplative": "všihnéraž",
       "participant_perfective": "všihnéranikou",
-      "relative_perfective": "všihnéranikový",
+      "relative_perfective": "všihnéranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1178,7 +1178,7 @@
       "retrospective": "všihnélranav",
       "contemplative": "všihnélraž",
       "participant_perfective": "všihnélranikou",
-      "relative_perfective": "všihnélranikový",
+      "relative_perfective": "všihnélranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1191,7 +1191,7 @@
       "retrospective": "hvodnéranav",
       "contemplative": "hvodnéraž",
       "participant_perfective": "hvodnéranikou",
-      "relative_perfective": "hvodnéranikový",
+      "relative_perfective": "hvodnéranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1204,7 +1204,7 @@
       "retrospective": "hvodnélranav",
       "contemplative": "hvodnélraž",
       "participant_perfective": "hvodnélranikou",
-      "relative_perfective": "hvodnélranikový",
+      "relative_perfective": "hvodnélranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1217,7 +1217,7 @@
       "retrospective": "tvírzneranav",
       "contemplative": "tvírzneraž",
       "participant_perfective": "tvírzneranikou",
-      "relative_perfective": "tvírzneranikový",
+      "relative_perfective": "tvírzneranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     },
@@ -1230,7 +1230,7 @@
       "retrospective": "tvírznelranav",
       "contemplative": "tvírznelraž",
       "participant_perfective": "tvírznelranikou",
-      "relative_perfective": "tvírznelranikový",
+      "relative_perfective": "tvírznelranikovy",
       "licence": "constructed conditional paradigm: independently licensed causable state/change and context; relational classification alone does not supply a transition",
       "alignment": "NOM causer DIR, holder IND; ERG holder DIR, causer TRS"
     }
@@ -1243,18 +1243,18 @@
   "source_examples": [
     {
       "source": "chapters/06-simple-sentence.tex",
-      "form": "Janek Marcí stá četnélime.",
+      "form": "Janėk Marcí stá četnélime.",
       "required": [
         "be.tall-\\textsc{inch}-\\Prog{}",
-        "Janek is becoming taller than Marek."
+        "Janėk is becoming taller than Marėk."
       ]
     },
     {
       "source": "chapters/06-simple-sentence.tex",
-      "form": "Janek Marcí stá četnélek.",
+      "form": "Janėk Marcí stá četnélek.",
       "required": [
         "be.tall-\\textsc{inch}-\\Pf{}",
-        "Janek became taller than Marek."
+        "Janėk became taller than Marėk."
       ]
     },
     {

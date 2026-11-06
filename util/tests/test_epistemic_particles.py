@@ -56,9 +56,9 @@ class EpistemicParticleTests(unittest.TestCase):
 
     def test_existing_particle_combinations_and_glosses_remain_paired(self):
         source = self.sources['chapters/05-function-words.tex']
-        for phrase, gloss in [('Janek hladě vy ščének.', 'infer'),
-                              (r'\ljudge{\#}Janek hladě vy ščének.', 'infer'),
-                              ('Janek mó vy ščének.', None),
+        for phrase, gloss in [('Janėk hladě vy ščének.', 'infer'),
+                              (r'\ljudge{\#}Janėk hladě vy ščének.', 'infer'),
+                              ('Janėk mó vy ščének.', None),
                               ('Mó vy pjaštím!', 'affirm')]:
             match = re.search(r'\\gla\s+' + re.escape(phrase) + r'//\s*\\glb\s+(.*?)//', source, re.S)
             self.assertIsNotNone(match)

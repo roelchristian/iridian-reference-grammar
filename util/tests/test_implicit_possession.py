@@ -23,7 +23,7 @@ class ImplicitPossessionTests(unittest.TestCase):
         self.assertEqual(pairs, [
             ('Čás konca.', r'head.\Dir{} hurt-\Cont{}'),
             ('Že čás konca.', r'1\textsc{sg}.\Ind{} head.\Dir{} hurt-\Cont{}'),
-            ('Marcí čás konca.', r'Marek.\Ind{} head.\Dir{} hurt-\Cont{}')])
+            ('Marcí čás konca.', r'Marėk.\Ind{} head.\Dir{} hurt-\Cont{}')])
         for surface, gloss in pairs:
             self.assertEqual(len(checker.gloss_tokens(surface)), len(checker.gloss_tokens(gloss)))
             self.assertEqual(gloss.count(r'\Dir{}'), 1)

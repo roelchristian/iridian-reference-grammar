@@ -9,12 +9,20 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from source_domains import read_domain, domain_sources
 
 sys.path.insert(0, str(ROOT / 'scripts'))
-from stative_scope_guard import check_scope
+from stative_scope_guard import check_scope, frozen_reference_text
 
 
 class StativeScopeGuardTests(unittest.TestCase):
     def test_reviewed_relative_scope_is_unchanged(self):
         self.assertEqual(check_scope(), [])
+
+    def test_relative_spelling_migration_preserves_independent_short_ovy(self):
+        # Old characters in this expectation are historical comparison input.
+        row = (r'Transitive singular & \ird{pjáščikovy / pjáščikovyte} '
+               r'& \ird{pjaštovy / pjaštovyte}')
+        source = r'\ird{-ovy} \ird{mužnovy} \ird{novy}' + '\n' + row
+        expected = r'\ird{-ový} \ird{mužnový} \ird{novy}' + '\n' + row
+        self.assertEqual(frozen_reference_text('probe.tex', source), expected)
 
     def test_rejects_rule_change_without_repeated_exponent(self):
         path = 'chapters/08-complex-sentences.tex'
@@ -27,9 +35,9 @@ class StativeScopeGuardTests(unittest.TestCase):
     def test_rejects_changed_example_and_added_relative(self):
         path = 'chapters/03-verbs.tex'
         source = read_domain(path)
-        for changed in (source.replace('mužnový nuž', 'mužnový dum', 1),
-                        source + '\n\n' + r'\ird{new-ový}' + '\n'):
-            with self.subTest(added=changed.endswith('new-ový}\n')):
+        for changed in (source.replace('mužnovy nuž', 'mužnovy dum', 1),
+                        source + '\n\n' + r'\ird{new-ovy}' + '\n'):
+            with self.subTest(added=changed.endswith('new-ovy}\n')):
                 self.assertTrue(check_scope(overrides={path: changed}))
 
     def test_reviewed_finite_reference_update_preserves_reduced_rule_guard(self):
@@ -55,7 +63,7 @@ class StativeScopeGuardTests(unittest.TestCase):
         path = 'chapters/08-derivation-nominalisation.tex'
         source = (ROOT / path).read_text()
         revised = (r'\ird{Marcí travěte pjaštově cy} '
-                   r"\trsl{since/after Marek's eating of the" + '\n'
+                   r"\trsl{since/after Marėk's eating of the" + '\n'
                    r'bread}, the event head bears the case required by \ird{cy}, while')
         self.assertIn(revised, source)
         self.assertIn('retain their nominal indirect forms', source)
@@ -75,9 +83,9 @@ class StativeScopeGuardTests(unittest.TestCase):
         path = 'chapters/16-clause-linking.tex'
         source = (ROOT / path).read_text()
         self.assertEqual(check_scope(overrides={path: source}), [])
-        original = r'Prenominal participant-oriented relative in \ird{-ový}'
+        original = r'Prenominal participant-oriented relative in \ird{-ovy}'
         self.assertIn(original, source)
-        changed = source.replace(original, r'Unrestricted relative in \ird{-ový}', 1)
+        changed = source.replace(original, r'Unrestricted relative in \ird{-ovy}', 1)
         self.assertTrue(check_scope(overrides={path: changed}))
 
     def test_consolidated_equative_case_rule_remains_protected(self):
@@ -99,7 +107,7 @@ class StativeScopeGuardTests(unittest.TestCase):
     def test_earlier_paradigm_examples_cannot_be_rewritten(self):
         path = 'scripts/stative-fixtures.json'
         source = read_domain(path)
-        changed = source.replace('mužnový', 'revised-relative', 1)
+        changed = source.replace('mužnovy', 'revised-relative', 1)
         self.assertTrue(check_scope(overrides={path: changed}))
 
     def test_authorised_state_selection_does_not_open_relative_scope(self):

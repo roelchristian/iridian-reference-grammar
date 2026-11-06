@@ -20,7 +20,7 @@ class ClausalDiagnosticsTests(unittest.TestCase):
         source = read_domain(path)
         self.assertEqual(check_clausal_sources({path: source}), [])
         for old, new in ((r'$D(A(S(\neg P)))$', r'$D(A(\neg S(P)))$'),
-                         ('Marek oh so zazdrávime.', 'Marek so oh zazdrávime.'),
+                         ('Marėk oh so zazdrávime.', 'Marėk so oh zazdrávime.'),
                          ('Kamo so pjaštir.', 'Kamo so zapjaštir.'),
                          ('$R(E(V(\\neg P)))$ & L', '$R(E(V(\\neg P)))$ & M')):
             with self.subTest(change=new):

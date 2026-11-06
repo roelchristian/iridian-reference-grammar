@@ -1,0 +1,722 @@
+{
+  "baseline_commit": "e84091424a701bedd56fe7e11c184f1e575a0026",
+  "scope": "All tracked UTF-8 source files, plus the newly added migration records and acceptance tests. The audit itself is excluded to avoid recursive audit data. Historical evidence includes dated pre-reform design, review and source snapshots; these are not normative descriptions of the modern language.",
+  "summary": {
+    "historical evidence": 62,
+    "migration-test input": 24,
+    "bibliographic material": 1
+  },
+  "occurrences": [
+    {
+      "path": "anchoring-morphology-audit.md",
+      "line": 44,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "anchoring-morphology-audit.md",
+      "line": 60,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/02-phonology.tex",
+      "line": 62,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/02-phonology.tex",
+      "line": 69,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/02-phonology.tex",
+      "line": 70,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/02-phonology.tex",
+      "line": 542,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/02-phonology.tex",
+      "line": 543,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/02-phonology.tex",
+      "line": 596,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/03-verbal-morphology.tex",
+      "line": 545,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/04-nominal-morphology.tex",
+      "line": 200,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/04-nominal-morphology.tex",
+      "line": 217,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/04-nominal-morphology.tex",
+      "line": 239,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/04-nominal-morphology.tex",
+      "line": 260,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/04-nominal-morphology.tex",
+      "line": 269,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/04-nominal-morphology.tex",
+      "line": 994,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/04-nominal-morphology.tex",
+      "line": 1000,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/04-nominal-morphology.tex",
+      "line": 1059,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1197,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1209,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1221,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1222,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1223,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1224,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1238,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1239,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1268,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1289,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1305,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1306,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1314,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1327,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/05-minor-word-classes.tex",
+      "line": 1328,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/07-clause-structure.tex",
+      "line": 368,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/07-clause-structure.tex",
+      "line": 374,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/07-clause-structure.tex",
+      "line": 385,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "archive/2020/chapters/07-clause-structure.tex",
+      "line": 592,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "docs/CENTRAL-VOWEL-MIGRATION.md",
+      "line": 7,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "docs/CENTRAL-VOWEL-MIGRATION.md",
+      "line": 57,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "docs/CENTRAL-VOWEL-MIGRATION.md",
+      "line": 58,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "docs/CENTRAL-VOWEL-MIGRATION.md",
+      "line": 62,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "docs/CENTRAL-VOWEL-MIGRATION.md",
+      "line": 101,
+      "category": "migration-test input",
+      "tokens": [
+        "ý",
+        "Ý",
+        "ɨː"
+      ]
+    },
+    {
+      "path": "nominalisation-gap-proposals.md",
+      "line": 153,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "nominalisation-gap-proposals.md",
+      "line": 194,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative-scope-freeze.json",
+      "line": 77,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative-scope-freeze.json",
+      "line": 296,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative-scope-freeze.json",
+      "line": 331,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative-scope-freeze.json",
+      "line": 458,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative-scope-freeze.json",
+      "line": 487,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative-scope-freeze.json",
+      "line": 488,
+      "category": "migration-test input",
+      "tokens": [
+        "Ý"
+      ]
+    },
+    {
+      "path": "scripts/stative-scope-freeze.json",
+      "line": 489,
+      "category": "migration-test input",
+      "tokens": [
+        "ɨː"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 64,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 67,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 73,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 76,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 81,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 84,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 235,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 306,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 313,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "scripts/stative_scope_guard.py",
+      "line": 329,
+      "category": "migration-test input",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/grammar-metahistory.md",
+      "line": 18,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/grammar-metahistory.md",
+      "line": 237,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/historical-notes.tex",
+      "line": 73,
+      "category": "historical evidence",
+      "tokens": [
+        "ɨː"
+      ]
+    },
+    {
+      "path": "util/pivot-analysis-status.md",
+      "line": 55,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-binding-scope.md",
+      "line": 76,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-independent-review.md",
+      "line": 78,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-integration-corpus-review.md",
+      "line": 12,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-integration-corpus-review.md",
+      "line": 67,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-integration-corpus-review.md",
+      "line": 137,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-integration-theory-review.md",
+      "line": 74,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-integration-theory-review.md",
+      "line": 120,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 256,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 258,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 394,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 402,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 410,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 452,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 460,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 508,
+      "category": "historical evidence",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 518,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 574,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/pivot-syntax-diagnostics.md",
+      "line": 620,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/references.bib",
+      "line": 1739,
+      "category": "bibliographic material",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/stative-integration-review.md",
+      "line": 25,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/stative-integration-review.md",
+      "line": 36,
+      "category": "historical evidence",
+      "tokens": [
+        "ý"
+      ]
+    },
+    {
+      "path": "util/tests/test_central_vowels.py",
+      "line": 88,
+      "category": "migration-test input",
+      "tokens": [
+        "ɨː"
+      ]
+    },
+    {
+      "path": "util/tests/test_stative_scope_guard.py",
+      "line": 24,
+      "category": "migration-test input",
+      "tokens": [
+        "ý",
+        "ý"
+      ]
+    }
+  ]
+}

@@ -33,9 +33,9 @@ class AbundanceAtTests(unittest.TestCase):
         records = {record['form']: record for record in checker.extract(
             (ROOT / 'util/lexicon.tex').read_text(), 'util/lexicon.tex')
             if record['macro'] == 'lexentry'}
-        self.assertEqual(records['kolen']['gloss'], 'grass')
-        self.assertIn(r'reduced G0 \ird{koln-}', records['kolen']['notes'])
-        self.assertIn('declension and quantity class unassigned', records['kolen']['notes'])
+        self.assertEqual(records['kolėn']['gloss'], 'grass')
+        self.assertIn(r'reduced G0 \ird{koln-}', records['kolėn']['notes'])
+        self.assertIn('declension and quantity class unassigned', records['kolėn']['notes'])
         self.assertIn('finite quantity and ordinary ATTR classes unassigned',
                       records['kolnat-']['notes'])
         source = read_domain('chapters/10-derivational.tex')

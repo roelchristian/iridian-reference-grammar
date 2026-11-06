@@ -19,7 +19,7 @@ class ValencyChecks(unittest.TestCase):
 
     def test_reviewed_pair_passes(self):
         surface = 'Byl Marcí travě pjaštébime.'
-        gloss = r'child.\Dir{} Marek.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}'
+        gloss = r'child.\Dir{} Marėk.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}'
         self.assertEqual([], checker.check_valency(self.source(surface, gloss),
                                                   self.fixture(surface, gloss)))
 
@@ -30,14 +30,14 @@ class ValencyChecks(unittest.TestCase):
         self.assertTrue(any('pairs changed' in failure for failure in failures))
 
     def test_two_direct_arguments_are_rejected(self):
-        surface = 'Marek byl pjaštébime.'
-        gloss = r'Marek.\Dir{} child.\Dir{} eat-\Appl{}-\Prog{}'
+        surface = 'Marėk byl pjaštébime.'
+        gloss = r'Marėk.\Dir{} child.\Dir{} eat-\Appl{}-\Prog{}'
         failures = checker.check_valency(self.source(surface, gloss), self.fixture(surface, gloss))
         self.assertTrue(any('one direct-case' in failure for failure in failures))
 
     def test_translation_change_is_rejected(self):
         surface = 'Byl Marcí travě pjaštébime.'
-        gloss = r'child.\Dir{} Marek.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}'
+        gloss = r'child.\Dir{} Marėk.\Ind{} bread.\Ind{} eat-\Appl{}-\Prog{}'
         fixture = self.fixture(surface, gloss)
         fixture[0]['examples'][0]['translation'] = 'Translation'
         source = self.source(surface, gloss)

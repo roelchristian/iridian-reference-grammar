@@ -1,5 +1,8 @@
 """Regression tests for lexical source extraction (no external dependencies)."""
 
+import csv
+import io
+import json
 import importlib.util
 from pathlib import Path
 import tempfile
@@ -53,6 +56,21 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(entries[0]["occurrences"][0]["path"], "sample.tex")
         self.assertIn("sample.tex:2", collector.render(entries, "tsv"))
 
+
+    def test_dotted_e_nfc_identity_and_output_round_trip(self):
+        source = "\\ird{e}\n\\ird{ė}\n\\ird{e\u0307}\n\\ird{ě}\n\\ird{Ė}\n\\ird{E\u0307}\n"
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "sample.tex"
+            path.write_text(source, encoding="utf-8")
+            entries = collector.collect([path], Path(directory))
+        by_form = {entry["form"]: entry for entry in entries}
+        self.assertEqual(set(by_form), {"e", "ė", "ě", "Ė"})
+        self.assertEqual([o["line"] for o in by_form["ė"]["occurrences"]], [2, 3])
+        self.assertEqual([o["line"] for o in by_form["Ė"]["occurrences"]], [5, 6])
+        self.assertEqual(json.loads(collector.render(entries, "json")), entries)
+        rows = list(csv.DictReader(io.StringIO(collector.render(entries, "tsv")), delimiter="\t"))
+        self.assertEqual({row["form"] for row in rows}, {"e", "ė", "ě", "Ė"})
+        self.assertIn("sample.tex:3", next(row["sources"] for row in rows if row["form"] == "ė"))
 
 if __name__ == "__main__":
     unittest.main()

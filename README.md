@@ -20,8 +20,10 @@ distribution is understood.
 Iridian distinguishes short and long vowels independently of stress, which
 falls on the first syllable of the lexical word. Its Latin orthography uses
 acute accents to mark vowel length and a háček in letters such as *š*, *č*
-and *ě*. Hard and soft consonant stems participate in palatalisation and
-other alternations, while final devoicing and voicing assimilation shape
+and *ě*. Short *y* represents /ɨ/, with audible movement under primary or
+secondary lexical stress, while dotted *ė* represents short /ə/. The strong
+grade of *y* retains the same short vowel. Hard and soft consonant stems
+participate in palatalisation and other alternations, while final devoicing and voicing assimilation shape
 pronunciation. The
 [phonology chapter](chapters/02-phonology.tex) distinguishes these contextual
 processes from the contrasts and stem grades that carry lexical or

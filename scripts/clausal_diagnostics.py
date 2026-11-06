@@ -87,7 +87,7 @@ def check_clausal_sources(sources):
         p = r'\neg P' if negative else 'P'
         for comment, operator in (('oh', 'A'), ('kamo', 'E')):
             for phase, symbol in (('vy', 'V'), ('so', 'S')):
-                expected.append((f'Marek {comment} {phase} {host}.',
+                expected.append((f'Marėk {comment} {phase} {host}.',
                                  f'{operator}({symbol}({p}))', 'L'))
     for host, force in (('pjašté', 'D'), ('pjaštku', 'H'), ('pjaštir', 'R')):
         for comment, operator in (('Oh', 'A'), ('Kamo', 'E')):

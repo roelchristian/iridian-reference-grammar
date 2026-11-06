@@ -39,17 +39,17 @@ class FinitePlacementTests(unittest.TestCase):
     def test_question_order_and_gloss_connectivity(self):
         inventory = examples(self.simple + '\n' + self.particles)
         for surface, gloss in [
-                ('Marek jena mulša?', r'Marek.\Dir{} where live-\Cont{}'),
-                ('Marek jena by mulša?', r'Marek.\Dir{} where \textsc{q} live-\Cont{}'),
-                ('Jena Marek mulša?', r'where Marek.\Dir{} live-\Cont{}'),
-                ('Jena Marek by mulša?', r'where Marek.\Dir{} \textsc{q} live-\Cont{}')]:
+                ('Marėk jena mulša?', r'Marėk.\Dir{} where live-\Cont{}'),
+                ('Marėk jena by mulša?', r'Marėk.\Dir{} where \textsc{q} live-\Cont{}'),
+                ('Jena Marėk mulša?', r'where Marėk.\Dir{} live-\Cont{}'),
+                ('Jena Marėk by mulša?', r'where Marėk.\Dir{} \textsc{q} live-\Cont{}')]:
             with self.subTest(surface=surface):
                 self.assertEqual(inventory[surface][0], gloss)
-                self.assertIn('Where does Marek live?', inventory[surface][1])
-        for obsolete in ('Jena by Marek mulša?', 'Oče tak tóm by Janku vy koupnik?',
-                         'Jas Janek by vy ščének?'):
+                self.assertIn('Where does Marėk live?', inventory[surface][1])
+        for obsolete in ('Jena by Marėk mulša?', 'Oče tak tóm by Janku vy koupnik?',
+                         'Jas Janėk by vy ščének?'):
             self.assertNotIn(obsolete, inventory)
-        self.assertIn('Janek by jas vy ščének?', inventory)
+        self.assertIn('Janėk by jas vy ščének?', inventory)
         self.assertIn('Tak tóm Janku oče by vy koupnik?', inventory)
 
     def test_every_repeated_purchase_question_preserves_case_gloss(self):
@@ -61,7 +61,7 @@ class FinitePlacementTests(unittest.TestCase):
             with self.subTest(gloss=gloss):
                 # Lexical labels (mirative/question versus MIR/Q) may differ;
                 # the direct patient and transitive actor may not lose case.
-                self.assertTrue(gloss.startswith(r'this book.\Dir{} Janek.\Trs{} '))
+                self.assertTrue(gloss.startswith(r'this book.\Dir{} Janėk.\Trs{} '))
                 self.assertTrue(gloss.endswith(r'already buy-\Trs{}-\Pf{}'))
 
     def test_wh_and_quantified_placement_are_not_necessarily_topics(self):
@@ -91,8 +91,8 @@ class FinitePlacementTests(unittest.TestCase):
                           r"\exists r_0<r^{-}\,[Q(r_0)]"):
             self.assertIn(condition, self.particles)
         inventory = examples(self.particles)
-        self.assertIn('again', inventory['Janek jas vy zdrávime.'][1])
-        self.assertIn('still sleeping', inventory['Janek jas so zdrávime.'][1])
+        self.assertIn('again', inventory['Janėk jas vy zdrávime.'][1])
+        self.assertIn('still sleeping', inventory['Janėk jas so zdrávime.'][1])
         self.assertIn('without interruption', self.particles)
         self.assertIn('waiting for a first arrival', self.particles)
 
@@ -101,8 +101,8 @@ class FinitePlacementTests(unittest.TestCase):
         self.assertIn('Pivo vy zada.', inventory)
         # Equative order remains explicit; household state examples retain
         # their ordinary finite stative predicate.
-        self.assertIn(r'\ird{Marek doktor vy staly}', self.particles)
-        self.assertIn(r'\ird{Marek doktor so staly}', self.particles)
+        self.assertIn(r'\ird{Marėk doktor vy staly}', self.particles)
+        self.assertIn(r'\ird{Marėk doktor so staly}', self.particles)
         self.assertIn(r'\trsl{The kitchen window is already open.}', self.particles)
         placement = self.simple.split(r'\label{sec:pivot-placement}', 1)[1]
         self.assertRegex(placement, r'Operator particles, predicate heads and material internal to\s+a nominal or selected clause are ineligible goals')

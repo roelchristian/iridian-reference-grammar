@@ -12,6 +12,7 @@ from pathlib import Path
 import json
 import re
 import sys
+import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'util'))
@@ -180,7 +181,16 @@ def spelling_nuclei(form):
 
     The diphthong ou has one nucleus; lexical softness does not alter counting.
     """
-    return len(re.findall(r'[aeiouyáéíóúýě]', form.lower().replace('ou', 'o')))
+    return len(re.findall(r'[aeiouyáéíóúěė]', unicodedata.normalize('NFC', form).lower().replace('ou', 'o')))
+
+
+def ipa_nuclei(ipa):
+    """Count nuclei while excluding explicitly nonsyllabic vowel endpoints.
+
+    Moving y [ɯ̯ɨ] and [ɨi̯], like [ou̯], each supply a single nucleus.
+    """
+    syllabic = re.sub(r'.[\u032f\u0311]', '', ipa)
+    return len(re.findall(r'[aeiouyɑɐɒæɛɜɞəɘɤɨɪɔœøɵʊʌʉɯɶ]', syllabic))
 
 
 def sibilant_spelling_checks(sources):
@@ -205,15 +215,14 @@ def sibilant_spelling_checks(sources):
         for form, line in examples:
             if form.lstrip().startswith('*'):
                 continue
-            # Lexical sviňek and traversal ňe retain explicit ň before e.
+            # Traversal ňe retains explicit ň before ordinary e. Before ė,
+            # explicit soft coronals need no lexical spelling exception.
             # Limit traversal's bound spelling to the described root families;
-            # neither exception may hide a malformed productive ending or a
+            # the exception may not hide a malformed productive ending or a
             # second word on the same interlinear line.
-            regular_spelling = re.sub(r'(?<!\w)sviňek(?![\w-])', '', form,
-                                      flags=re.IGNORECASE)
             regular_spelling = re.sub(
                 r'(?<!\w)(?:za)?ňe(?=\W|$|(?:kař|kář|vad|vád|nočk|nóčk|stoj|stój))',
-                '', regular_spelling, flags=re.IGNORECASE)
+                '', form, flags=re.IGNORECASE)
             if explicit_soft_e.search(regular_spelling):
                 failures.append(f'{path}:{line}: soft coronals before ɛ require tě/dě/ně/lě: {form}')
             if silent_labial_i.search(form):
@@ -674,7 +683,7 @@ def check():
     # Count actual IPA vowels, excluding the nonsyllabic second part of /ou̯/.
     expected = {'pjaštník': (2, 0, 1), 'zapjaštník': (3, 1, 1),
                 'premužna': (3, 0, 0), 'šarc': (1, 0, 0),
-                'pjaštou': (2, 0, 0), 'perek': (2, 0, 0),
+                'pjaštou': (2, 0, 0), 'perėk': (2, 0, 0),
                 'pérku': (2, 0, 1), 'pérce': (2, 0, 1)}
     valency_fixtures = json.loads(
         (ROOT / 'scripts/valency-fixtures.json').read_text(encoding='utf-8'))
@@ -692,10 +701,8 @@ def check():
             failures.append(f'stress table: missing {form}')
             continue
         ipa, stated = rows[form]
-        syllabic = re.sub(r'.[\u032f\u0311]', '', ipa)
-        vowels = r'[aeiouyɑɐɒæɛɜɞəɘɤɨɪɔœøɵʊʌʉɯɶ]'
-        actual = len(re.findall(vowels, syllabic))
-        preceding = len(re.findall(vowels, syllabic.split('ˈ')[0]))
+        actual = ipa_nuclei(ipa)
+        preceding = ipa_nuclei(ipa.split('ˈ')[0])
         if stated != nuclei or actual != nuclei or preceding != before_stress or ipa.count('ˈ') != 1:
             failures.append(f'stress table: {form}: unexpected nuclei or stress in [{ipa}], stated {stated}')
         if re.search(r'[rl]\u0329', ipa) or ipa.count('ː') != long_nuclei:
@@ -711,10 +718,10 @@ def check():
             # The glide letter j and diphthong ou do not add a nucleus.
             # Sibilants and lexical kě retain their stated segmental values.
             count = spelling_nuclei(form)
-            ipa_nuclei = len(re.findall(vowels, re.sub(r'.[\u032f\u0311]', '', ipa)))
-            if count != ipa_nuclei:
-                failures.append(f"{path}:{record['line']}: {form}: spelling/IPA nucleus mismatch ({count}/{ipa_nuclei})")
-            if len(re.findall('[áéíóúý]', form)) != ipa.count('ː'):
+            ipa_count = ipa_nuclei(ipa)
+            if count != ipa_count:
+                failures.append(f"{path}:{record['line']}: {form}: spelling/IPA nucleus mismatch ({count}/{ipa_count})")
+            if len(re.findall('[áéíóú]', form)) != ipa.count('ː'):
                 failures.append(f"{path}:{record['line']}: {form}: orthographic/IPA quantity mismatch")
             if re.search(r'[rl]\u0329', ipa):
                 failures.append(f"{path}:{record['line']}: {form}: syllabic liquid in pronunciation")

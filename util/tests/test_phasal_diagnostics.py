@@ -50,7 +50,7 @@ class PhasalDiagnosticsTests(unittest.TestCase):
         sources = {path: source, syntax_path: read_domain(syntax_path)}
         self.assertEqual(check_phasal_sources(sources, self.fixtures), [])
         for old, new in [('Ježe Marku so pjaštník?', 'Mám Marku so pjaštník?'),
-                         ('Janek visited on Friday', 'Janek had never visited'),
+                         ('Janėk visited on Friday', 'Janėk had never visited'),
                          ('another arrival', 'the only arrival'),
                          ('least likely', 'equally likely'),
                          ('does not assert', 'asserts'),

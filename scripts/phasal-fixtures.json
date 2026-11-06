@@ -148,16 +148,16 @@
   ],
   "source_examples": [
     {
-      "form": "Janek sobotě so ščének.",
+      "form": "Janėk sobotě so ščének.",
       "context": [
-        "Janek visited on Friday",
+        "Janėk visited on Friday",
         "another arrival"
       ],
       "gloss": "additional arrive-\\Pf{}",
-      "translation": "Janek arrived on Saturday too."
+      "translation": "Janėk arrived on Saturday too."
     },
     {
-      "form": "Magazinam de býh so stójek!",
+      "form": "Magazinam de byh so stójek!",
       "context": [
         "least likely"
       ],
@@ -173,20 +173,20 @@
     {
       "form": "Ježe Marku so pjaštník?",
       "context": [
-        "Marek has eaten bread",
+        "Marėk has eaten bread",
         "another item"
       ],
-      "gloss": "what Marek.\\Trs{} additional eat-\\Trs{}-\\Pf{}",
-      "translation": "What else did Marek eat?"
+      "gloss": "what Marėk.\\Trs{} additional eat-\\Trs{}-\\Pf{}",
+      "translation": "What else did Marėk eat?"
     },
     {
-      "form": "Janek mlada so ščének.",
+      "form": "Janėk mlada so ščének.",
       "context": [
         "His coming was already a desired possibility and remains one",
-        "Janek has not arrived"
+        "Janėk has not arrived"
       ],
-      "gloss": "Janek.\\Dir{} desiderative still arrive-\\Pf{}",
-      "translation": "I hope Janek still comes."
+      "gloss": "Janėk.\\Dir{} desiderative still arrive-\\Pf{}",
+      "translation": "I hope Janėk still comes."
     }
   ],
   "source_paragraphs": [
@@ -194,7 +194,7 @@
       "anchor": "Contemplative predicates contribute",
       "end": "\\begin{table}",
       "required": [
-        "the particle alone does not assert that Janek will have completed his arrival by Saturday",
+        "the particle alone does not assert that Janėk will have completed his arrival by Saturday",
         "not a presupposed actual occurrence"
       ]
     },

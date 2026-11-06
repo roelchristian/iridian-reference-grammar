@@ -50,8 +50,11 @@ mapping. Its input is an already selected tuple of IPA tokens plus an explicit
 licensed local domain, eligible nucleus indices and chosen target. Domain bounds
 are token offsets, not written vowels: lexical labial palatality and the new
 run stem `zemac-` therefore do not invite a spelling-based syllable heuristic.
-`scripts/quantity-grades.json` specifies short/long pairs and the separately
-licensed mid-vowel raising pairs. G0 preserves lexical length, G2 preserves
+`scripts/quantity-grades.json` records vowel membership independently of
+short/long correspondences and the separately licensed mid-vowel raising pairs.
+A selected `/ɨ/` stays `/ɨ/` under G1 without redirecting the target to an
+earlier vowel. Retained `/ə/` is a nucleus even when its fleeting class excludes
+it from the eligible target set. G0 preserves lexical length, G2 preserves
 quantity while raising, and repeated strength does not create a third length.
 
 Independent literal outputs in `scripts/quantity-fixtures.json` cover retained
@@ -163,15 +166,17 @@ The collector recognizes these source macros:
 | `\lexentry{form}{notes}{gloss}` | Curated form, notes, and gloss |
 
 JSON groups exact forms, normalized to Unicode NFC, and retains every occurrence
-with its macro, source path, and line number. Explicit glosses and pronunciations
+with its macro, source path, and line number. Canonical `ė` and `Ė` round-trip
+through JSON and TSV; decomposed e plus combining dot is normalised at import,
+while `e`, `ė` and `ě` remain distinct forms. Explicit glosses and pronunciations
 are deduplicated in source order. TSV gives one row per form with glosses,
 pronunciations, and source locations. Output is deterministic and files are only
 rewritten when their contents change.
 
 This is a source-review inventory, not an automatically authored dictionary.
 Marked forms include inflected words, phrases, morphemes, and invented examples.
-For instance, the current chapters explicitly gloss `byl` as both “ash” and
-“child”; both readings remain visible with their source locations. Definitions
+Conflicting explicit glosses, when supplied, remain visible with their source
+locations rather than being reconciled automatically. Definitions
 in prose and interlinear glosses are not inferred or aligned automatically.
 TeX markup in arguments is preserved verbatim, nested braces and comments are
 handled, and malformed macro arguments fail with a source location. The tool
@@ -191,6 +196,11 @@ beside the headword rather than being repeated in the morphological notes.
 Entries are ordered without case, spaces, hyphens or vowel diacritics, with
 caron consonants following their plain counterparts; alphabet headings mark
 the resulting groups.
+
+The [central-vowel migration record](../docs/CENTRAL-VOWEL-MIGRATION.md)
+identifies the audited schwa slots, their unchanged reduced stems and baseline
+source locations. It also distinguishes the nominal alternating `-ėk` from
+verbal perfective `-ek ~ -ik-`.
 
 ## Generate new candidate words
 

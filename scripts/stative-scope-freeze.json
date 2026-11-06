@@ -480,5 +480,44 @@
       "util/stative-paradigms.md": "e94f5cae201c135f980d6ba572cf41ae1687c534184ad13b88bac758b4926307"
     },
     "protected_source_hashes": "Unchanged; only the reviewed whole-file digest of the two psychological-perspective documentation edits is replaced. All original relative source hashes, rules and fixture digests remain protected."
+  },
+  "vowel_spelling_migration": {
+    "description": "User-authorised central-vowel reform. Original reviewed hashes above remain provenance. These file digests are derived exclusively from the reviewed HEAD texts by the listed spelling replacements, not regenerated from current grammatical outputs. Source comparison reverses only the approved lexical spellings and relative -ovy suffix; case, licensing, semantic prose and negative tests remain protected.",
+    "replacements": {
+      "ý": "y",
+      "Ý": "Y",
+      "ɨː": "ɨ",
+      "Janek": "Janėk",
+      "janek": "janėk",
+      "perek": "perėk",
+      "lobek": "lobėk",
+      "obel": "obėl",
+      "sviňek": "sviňėk",
+      "Sviňek": "Sviňėk",
+      "tězeň": "tězėň",
+      "kolen": "kolėn",
+      "razeň": "razėň",
+      "stólek": "stólėk",
+      "Merek": "Merėk",
+      "berel": "berėl",
+      "pěštel": "pěštėl",
+      "Marek": "Marėk",
+      "marek": "marėk",
+      "uzel": "uzėl"
+    },
+    "files": {
+      "scripts/stative-fixtures.json": {
+        "original_sha256": "f45ff0aaab9032912a27bb9cb23d0c7925812fea50cbea5be7cb9bcadf069646",
+        "migrated_sha256": "bd915250b9c2882245d5c03089c97395e78f1642acaf95ed9f0a49cfcbb5914e"
+      },
+      "util/stative-paradigms.md": {
+        "original_sha256": "e94f5cae201c135f980d6ba572cf41ae1687c534184ad13b88bac758b4926307",
+        "migrated_sha256": "0cdf34305d68f21819504ae41d909cd7dda00dff566a4c46bae32aec4cf21f59"
+      },
+      "scripts/clausal_diagnostics.py": {
+        "original_sha256": "6d4b356e417b0e47380174e325002533a98ea04fb6d6b82eefeaa6cd2ec1e601",
+        "migrated_sha256": "c56a660cea8de097120ab9d580c8d0e661f14e64ec016b2ba0784229522c8ae0"
+      }
+    }
   }
 }

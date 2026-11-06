@@ -23,7 +23,7 @@ from quantity_grades import QuantityGrades,QuantityLicence
 # not a phonetic renderer and makes no claim about stress or syllabification.
 SPELL=dict(zip('abdehiklmnoprstuvyz',
  ('a','b','d','ɛ','x','ɪ','k','l','m','n','ɔ','p','r','s','t','ʊ','v','ɨ','z')))
-SPELL.update({'á':'aː','é':'eː','í':'iː','ó':'oː','ú':'uː','ý':'ɨː',
+SPELL.update({'á':'aː','é':'eː','í':'iː','ó':'oː','ú':'uː','ė':'ə',
  'š':'ʃ','ž':'ʒ','č':'tʃ','c':'ts','ň':'ɲ','ľ':'ʎ','ř':'ʒ','j':'j'})
 def tokens(form):
     # A narrow expected-form decoder; morphology is asserted independently.

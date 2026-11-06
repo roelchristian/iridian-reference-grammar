@@ -50,7 +50,7 @@ class ReadSingTests(unittest.TestCase):
                    if record['macro'] == 'lexentry'}
         self.assertIn(r'\ird{kanžek}', entries['kan-']['notes'])
         self.assertIn(r'\ird{káž-}', entries['kař-']['notes'])
-        self.assertIn(r'\ird{kářnikový}', entries['kař-']['notes'])
+        self.assertIn(r'\ird{kářnikovy}', entries['kař-']['notes'])
         self.assertEqual(entries['kař-']['gloss'], 'read')
 
 

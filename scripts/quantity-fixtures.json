@@ -11,7 +11,7 @@
       ],
       "expected": [
         "b",
-        "ɨː",
+        "ɨ",
         "l"
       ],
       "domain": [
@@ -777,24 +777,24 @@
       "rows": [
         [
           "byl",
-          "býle",
+          "byle",
           "bylo",
-          "býlete"
+          "bylete"
         ],
         [
           "byla",
-          "býlov",
+          "bylov",
           "bylato",
-          "býlove"
+          "bylove"
         ],
         [
           "bylam",
-          "býlac",
+          "bylac",
           "bylamo",
-          "býlace"
+          "bylace"
         ],
         [
-          "lobek",
+          "lobėk",
           "lúbce",
           "lúbko",
           "lúbcé"
@@ -812,7 +812,7 @@
           "lúbceme"
         ],
         [
-          "perek",
+          "perėk",
           "pérce",
           "pérko",
           "pércé"

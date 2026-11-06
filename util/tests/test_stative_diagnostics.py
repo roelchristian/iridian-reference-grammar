@@ -23,7 +23,7 @@ from pivot_diagnostics import configurational_case
 # voicing, coda vocalisation, syllabification, stress and standard spelling.
 SPELLING = dict(zip('abdehiklmnoprstuvyz',
                     ('a','b','d','ɛ','x','ɪ','k','l','m','n','ɔ','p','r','s','t','ʊ','v','ɨ','z')))
-SPELLING.update({'á':'aː','é':'eː','í':'iː','ó':'oː','ú':'uː','ý':'ɨː',
+SPELLING.update({'á':'aː','é':'eː','í':'iː','ó':'oː','ú':'uː','ė':'ə',
                  'š':'ʃ','ž':'ʒ','č':'tʃ','c':'ts','ň':'ɲ','ľ':'ʎ','ř':'ʒ','j':'j'})
 
 def tokens(form):
@@ -74,7 +74,7 @@ class StativeDiagnosticsTests(unittest.TestCase):
                 self.assertEqual(cell['so'], 'so '+cell['finite'])
         row = self.fixtures['paradigms'][0]
         self.assertEqual(row['simple_attributive'], 'múžna')
-        self.assertEqual(row['forms'][0]['relative'], 'mužnový')
+        self.assertEqual(row['forms'][0]['relative'], 'mužnovy')
         self.assertEqual(row['forms'][0]['licence'], 'marked-stage-relative')
 
     def test_state_progressive_and_perfective_reject_contextual_rescue(self):
@@ -123,7 +123,7 @@ class StativeDiagnosticsTests(unittest.TestCase):
         pf = next(cell for cell in self.fixtures['paradigms'][0]['forms']
                   if cell['kind']=='inchoative' and cell['aspect']=='perfective')
         self.assertEqual((pf['finite'],pf['participant'],pf['relative']),
-                         ('mužnélek','mužnélikou','mužnélikový'))
+                         ('mužnélek','mužnélikou','mužnélikovy'))
 
     def test_evidential_protects_finite_host_from_linker_allomorphy(self):
         for host, expected in [('mužnélek','mužnélekalě'),('mužnélime','mužnélimelě'),
