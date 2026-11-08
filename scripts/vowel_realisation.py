@@ -12,17 +12,20 @@ from boundary_transducer import BoundaryTransducer
 def realise_vowel_classes(segments, variety='principal'):
     """Map traditional long mid classes in one explicitly selected variety.
 
-    `principal` has both mergers; `back-merged` retains the front mid class;
-    `conservative` retains both. Existing high vowels and every short vowel
-    remain unchanged. Inputs are segment tokens, never orthographic strings.
+    `principal` and `conservative` retain both long-mid contrasts. Regional
+    `front-merged` and `back-merged` each merge one series; `fully-merged`
+    merges both. Existing high vowels, short vowels and the atomic /uɔ/
+    nucleus remain unchanged. Inputs are segment tokens, never orthographic strings.
     """
     mappings = {
-        'principal': {'eː': 'iː', 'oː': 'uː'},
+        'principal': {},
+        'front-merged': {'eː': 'iː'},
+        'fully-merged': {'eː': 'iː', 'oː': 'uː'},
         'back-merged': {'oː': 'uː'},
         'conservative': {},
     }
     if not isinstance(variety, str) or variety not in mappings:
-        raise ValueError('choose principal, back-merged or conservative realisation')
+        raise ValueError('choose principal, conservative, front-merged, back-merged or fully-merged realisation')
     if (not isinstance(segments, tuple)
             or any(not isinstance(token, str) or not token for token in segments)):
         raise ValueError('provide a tuple of nonempty phonological segment tokens')

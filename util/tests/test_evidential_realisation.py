@@ -52,7 +52,7 @@ class EvidentialRealisationTests(unittest.TestCase):
     def test_all_vowel_tokens_select_l_without_losing_quantity(self):
         # Test this helper's edge selection, without asserting lexical words.
         mapper = BoundaryTransducer.from_file()
-        for vowel in ('a', 'aː', 'ɛ', 'eː', 'ɪ', 'iː', 'ɨ', 'ə', 'ɔ', 'oː', 'ʊ', 'uː', 'ou̯'):
+        for vowel in ('a', 'aː', 'ɛ', 'eː', 'ɪ', 'iː', 'ɨ', 'ə', 'ɔ', 'oː', 'ʊ', 'uː', 'ou̯', 'uɔ'):
             with self.subTest(vowel=vowel):
                 result = attach_indirect_evidential(BoundaryState(('t', vowel)), 'evid', True, mapper)
                 self.assertEqual(result.segments, ('t', vowel, 'l'))

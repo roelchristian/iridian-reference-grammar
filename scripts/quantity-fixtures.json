@@ -1,5 +1,5 @@
 {
-  "description": "Independent literal expectations for local vowel selection. Labels identify the reviewed design; strings already reflect independently selected bound/consonantal stems and retain traditional conservative vowel classes before variety realisation. The helper does not select exponents or derive attested words from these labels.",
+  "description": "Independent literal expectations for local vowel selection. Labels identify the reviewed design; strings already reflect independently selected bound/consonantal stems and retain distinct standard vowel classes before variety realisation. The helper does not select exponents or derive attested words from these labels.",
   "cases": [
     {
       "id": "nominal-I-plural",
@@ -746,6 +746,236 @@
       ],
       "target": 1,
       "raising_licensed": false
+    },
+    {
+      "id": "back-mid-contrast-G0",
+      "grade": "G0",
+      "input": [
+        "s",
+        "ɔ",
+        "t"
+      ],
+      "expected": [
+        "s",
+        "ɔ",
+        "t"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "back-mid-contrast-G1",
+      "grade": "G1",
+      "input": [
+        "s",
+        "ɔ",
+        "t"
+      ],
+      "expected": [
+        "s",
+        "oː",
+        "t"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "back-mid-contrast-G2",
+      "grade": "G2",
+      "input": [
+        "s",
+        "ɔ",
+        "t"
+      ],
+      "expected": [
+        "s",
+        "ʊ",
+        "t"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": true
+    },
+    {
+      "id": "back-mid-contrast-G3",
+      "grade": "G3",
+      "input": [
+        "s",
+        "ɔ",
+        "t"
+      ],
+      "expected": [
+        "s",
+        "uː",
+        "t"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": true
+    },
+    {
+      "id": "front-mid-contrast-G0",
+      "grade": "G0",
+      "input": [
+        "s",
+        "ɛ",
+        "t"
+      ],
+      "expected": [
+        "s",
+        "ɛ",
+        "t"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "front-mid-contrast-G1",
+      "grade": "G1",
+      "input": [
+        "s",
+        "ɛ",
+        "t"
+      ],
+      "expected": [
+        "s",
+        "eː",
+        "t"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "front-mid-contrast-G2",
+      "grade": "G2",
+      "input": [
+        "s",
+        "ɛ",
+        "t"
+      ],
+      "expected": [
+        "s",
+        "ɪ",
+        "t"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": true
+    },
+    {
+      "id": "front-mid-contrast-G3",
+      "grade": "G3",
+      "input": [
+        "s",
+        "ɛ",
+        "t"
+      ],
+      "expected": [
+        "s",
+        "iː",
+        "t"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": true
+    },
+    {
+      "id": "uo-inherent-length-G0",
+      "grade": "G0",
+      "input": [
+        "ʃ",
+        "uɔ",
+        "r"
+      ],
+      "expected": [
+        "ʃ",
+        "uɔ",
+        "r"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
+    },
+    {
+      "id": "uo-inherent-length-G1",
+      "grade": "G1",
+      "input": [
+        "ʃ",
+        "uɔ",
+        "r"
+      ],
+      "expected": [
+        "ʃ",
+        "uɔ",
+        "r"
+      ],
+      "domain": [
+        0,
+        3
+      ],
+      "eligible": [
+        1
+      ],
+      "target": 1,
+      "raising_licensed": false
     }
   ],
   "source_tables": [
@@ -1077,23 +1307,23 @@
     },
     {
       "form": "poshódime",
-      "ipa": "ˈpɔ.sxuː.dɪ.mɛ"
+      "ipa": "ˈpɔ.sxoː.dɪ.mɛ"
     },
     {
       "form": "zaposhódime",
-      "ipa": "zaˈpɔ.sxuː.dɪ.mɛ"
+      "ipa": "zaˈpɔ.sxoː.dɪ.mɛ"
     },
     {
       "form": "pérku",
-      "ipa": "ˈpʲiːr.kʊ"
+      "ipa": "ˈpeːr.kʊ"
     },
     {
       "form": "pérce",
-      "ipa": "ˈpʲiːr.tsɛ"
+      "ipa": "ˈpeːr.tsɛ"
     },
     {
       "form": "všihnéšime",
-      "ipa": "ˈfʃɪx.niː.ʃɪ.mɛ"
+      "ipa": "ˈfʃɪx.neː.ʃɪ.mɛ"
     }
   ],
   "source_paragraphs": [

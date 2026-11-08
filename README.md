@@ -18,7 +18,11 @@ distribution is understood.
 ## Linguistic profile
 
 Iridian distinguishes short and long vowels independently of stress, which
-falls on the first syllable of the lexical word. Its Latin orthography uses
+falls on the first syllable of the lexical word. Standard é /eː/ and í /iː/,
+and ó /oː/ and ú /uː/, remain distinct within a twelve-monophthong system.
+The closing diphthong ou /ou̯/ and opening uo /uɔ/ each occupy one nucleus;
+uo is inherently long. Front and back long-vowel mergers belong to regional
+varieties. Its Latin orthography uses
 acute accents to mark vowel length and a háček in letters such as *š*, *č*
 and *ě*. Short *y* represents /ɨ/, with audible movement under primary or
 secondary lexical stress, while dotted *ė* represents short /ə/. The strong

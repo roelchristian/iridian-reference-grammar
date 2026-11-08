@@ -4,9 +4,10 @@ The caller supplies the eligible nucleus and its morphological domain. This
 module neither finds roots in written words nor selects fleeting-vowel stems,
 consonantal grades, aspect endings, or rhythmic allomorphs. Its output can be
 passed separately to the consonantal boundary mapper. The selected nuclei
-retain traditional, conservative vowel classes: eː and oː are not additional
-phonemes of the principal spoken variety. Apply vowel_realisation.realise_vowel_classes after
-morphological selection to obtain the chosen variety's vowel categories.
+retain the distinct standard vowel classes /eː/ and /oː/. The inherently long
+/uɔ/ nucleus is preserved by G0 and G1 and has no productive raised grade.
+Apply vowel_realisation.realise_vowel_classes after morphological selection to
+obtain the chosen variety's vowel categories.
 """
 from dataclasses import dataclass
 import json
