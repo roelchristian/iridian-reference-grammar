@@ -1,3 +1,5 @@
+> Historical pivot-research record. Its anchored forms and nominal-anchoring controls describe the recorded baseline, not the modern articleless norm. Ordinary case, pivot and extraction distinctions remain relevant, but current forms and contextual reference must be checked against the active chapters. The original body is preserved verbatim.
+
 # Binding, modifier placement and scope: investigation record
 
 Revision baseline: `16329d4`; checked 29 October 2026. This file records

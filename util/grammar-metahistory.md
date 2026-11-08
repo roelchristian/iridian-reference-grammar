@@ -1,3 +1,5 @@
+> Historical editorial register. Entries below concerning AnchP, si and anchored alternatives are superseded by the articleless reform, and older lexical spellings remain archival. The original record is retained verbatim; consult the active grammar for the current analysis.
+
 # Grammar metahistory: editorial questions and superseded analyses
 
 **Record date:** 29 October 2026. **Source:** the active Iridian reference grammar following the newer evidential and quantity-grade pass. This is a record of editorial alternatives and incomplete investigations, **not a second normative grammar**. Source passages below are archival, even where their phrasing once treated a now-resolved matter as a live question.

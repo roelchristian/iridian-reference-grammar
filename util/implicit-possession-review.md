@@ -1,3 +1,5 @@
+> Comparative review retained as research evidence. Item 5’s speaker/shared-anchoring controls are superseded by the articleless reform; the current reference controls vary context, demonstratives and topic independently. The original review body is retained verbatim.
+
 # Implicit nominal possession: evidence and diagnostic limits
 
 This review distinguishes comparative evidence from Iridian design specifications. It adds no external possessor, experiencer dative, applicative, agreement, declension class or new reflexive-binding rule. The adopted nominal account must distinguish permission to leave a semantic possessor unexpressed from the subsequent resolution of its reference. A continuing discourse topic can guide resolution; neither the latest grammatical pivot nor converb pivot continuity identifies an implicit possessor automatically.

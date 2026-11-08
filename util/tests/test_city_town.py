@@ -1,4 +1,4 @@
-"""Class I quantity, anchoring and lexical meanings for nuž and vruh."""
+"""Class I quantity, case--number and lexical meanings for nuž and vruh."""
 import importlib.util
 import json
 from pathlib import Path
@@ -23,13 +23,13 @@ class CityTownTests(unittest.TestCase):
         cls.table = {'source_tables': [table for table in fixtures['source_tables']
                      if table['label'] == 'tab:city-town-paradigms']}
         cls.pronunciations = [case for case in fixtures['pronunciations']
-                              if case['form'] in {'nuž', 'nužo', 'vruh', 'vrúhe'}]
+                              if case['form'] in {'nuž', 'nužam', 'vruh', 'vrúhe'}]
 
-    def test_case_number_and_anchoring_keep_their_licensed_quantities(self):
+    def test_case_number_keep_their_licensed_quantities(self):
         self.assertEqual(checker.check_quantity_sources({self.path: self.source}, self.table), [])
         for before, after in [('núže', 'nuže'), ('nužam', 'núžam'), ('vrúhe', 'vrúže'),
-                              ('vruham', 'vruhe'), ('vrúhove', 'vruhove'),
-                              ('núžete', 'núžé'), ('vruhato', 'vruhá')]:
+                              ('vruham', 'vruhe'), ('vrúhov', 'vruhov'),
+                              ('núžac', 'nužac'), ('núžov', 'nužov')]:
             with self.subTest(form=before):
                 changed = self.source.replace(before, after)
                 self.assertTrue(checker.check_quantity_sources({self.path: changed}, self.table))
@@ -37,7 +37,7 @@ class CityTownTests(unittest.TestCase):
     def test_pronunciations_keep_devoicing_quantity_and_velar(self):
         self.assertEqual(checker.check_prescribed_pronunciations(
             {self.path: self.source}, self.pronunciations, 'city/town'), [])
-        for before, after in [('nʊʃ', 'nʊʒ'), ('ˈnʊ.ʒɔ', 'ˈnʊ.ʃɔ'),
+        for before, after in [('nʊʃ', 'nʊʒ'), ('ˈnʊ.ʒam', 'ˈnʊ.ʃam'),
                               ('vrʊx', 'vrʊʒ'), ('ˈvruː.xɛ', 'ˈvrʊ.xɛ')]:
             with self.subTest(ipa=before):
                 changed = self.source.replace(before, after)

@@ -1,3 +1,5 @@
+> Superseded research record. The articleless reform removes the productive anchoring analysis described below. This historical body is preserved verbatim; it does not establish the modern nominal norm.
+
 # Anchoring revision: implementation and evidence record
 
 The six priorities in the supplied review are implemented in order, with an implementation agent, a literature agent and an independent reviewer for each phase. Each phase is validated and committed before the next begins. The supplied review is a proposal to assess against current sources, not an independent source of Iridian acceptability judgements. Current chapter names supersede its older references. Unrelated nominalisation proposals are outside this revision.

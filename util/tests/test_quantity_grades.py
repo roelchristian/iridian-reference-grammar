@@ -109,11 +109,12 @@ class QuantityGradesTests(unittest.TestCase):
 
     def test_plain_does_not_shorten_and_strong_has_no_third_length(self):
         grades = QuantityGrades.from_file()
-        source = ('p', 'eː', 'r', 'ts', 'eː')
+        # Lexical long í and an independently protected attributive á (tvírzná).
+        source = ('t', 'v', 'iː', 'r', 'z', 'n', 'aː')
         for grade in ('G0', 'G1'):
             with self.subTest(grade=grade):
-                self.assertEqual(grades.apply(source, QuantityLicence('protected-anchor', grade, True,
-                                                                     (0, 5), (1, 4), 4)), source)
+                self.assertEqual(grades.apply(source, QuantityLicence('protected-attributive-domain', grade, True,
+                                                                     (4, 7), (6,), 6)), source)
         bad = copy.deepcopy(grades.rules)
         bad['long_pairs']['eː'] = 'eːː'
         with self.assertRaises(QuantityError):
@@ -152,13 +153,13 @@ class QuantityGradesTests(unittest.TestCase):
 
     def test_source_rows_keep_independent_quantity_cells_paired(self):
         table = {'path': 'test.tex', 'label': 'tab:quantity', 'width': 4,
-                 'rows': [['pérce', 'pércem', 'pércé', 'pérceme']]}
+                 'rows': [['pérce', 'pércem', 'lúbcí', 'lúbcem']]}
         fixture = {'source_tables': [table]}
         correct = (r'\label{tab:quantity}\ird{pérce} & \ird{pércem} & '
-                   r'\ird{pércé} & \ird{pérceme} \\ \end{table}')
+                   r'\ird{lúbcí} & \ird{lúbcem} \\ \end{table}')
         self.assertEqual(checker.check_quantity_sources({'test.tex': correct}, fixture), [])
-        for before, after in [('pércem', 'percem'), ('pércé', 'pérce'),
-                              ('pérceme', 'pércéme')]:
+        for before, after in [('pércem', 'percem'), ('lúbcí', 'lúbci'),
+                              ('lúbcem', 'lubcem')]:
             with self.subTest(after=after):
                 self.assertTrue(checker.check_quantity_sources(
                     {'test.tex': correct.replace(before, after)}, fixture))

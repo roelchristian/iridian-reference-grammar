@@ -210,6 +210,30 @@ finite verbal negation, are illustrated in
 )
 
 
+
+def articleless_reference_text(path, text, root=ROOT, migrations=None):
+    """Undo only literal reviewed anchoring edits for original-hash comparison.
+
+    This is a comparison adapter, never a production surface realiser. Source
+    paths prevent a matching quotation elsewhere from acquiring a licence;
+    logical-domain overrides are limited to their established chapter inputs.
+    Additional edits defeat the exact match and remain visible to the frozen
+    relative-source checks. The original freeze fixture is never regenerated.
+    """
+    if migrations is None:
+        fixture = root / 'scripts/articleless-scope-migrations.json'
+        if not fixture.exists():
+            return text
+        migrations = json.loads(fixture.read_text(encoding='utf-8'))
+    allowed = {path}
+    if path.startswith('chapters/'):
+        allowed.update(f'chapters/{chapter}.tex'
+                       for chapter in DOMAIN_CHAPTERS.get(Path(path).stem, ()))
+    for passage in migrations['passages']:
+        if passage['source'] in allowed:
+            text = text.replace(passage['revised'], passage['original'])
+    return text
+
 def frozen_reference_text(path, text):
     # Migration comparison uses reviewed old spellings, never newly generated
     # hashes of current grammatical content. These exact lexical replacements
@@ -294,7 +318,15 @@ def check_scope(root=ROOT, fixtures=None, overrides=None):
     failures = []
     paragraphs = []
     units = []
-    sources = {path: frozen_reference_text('chapters/08-complex-sentences.tex', text)
+    scope_migration = root / 'scripts/articleless-scope-migrations.json'
+    if scope_migration.exists():
+        provenance = json.loads(scope_migration.read_text(encoding='utf-8'))
+        if hashlib.sha256((root / 'scripts/stative-scope-freeze.json').read_bytes()).hexdigest() != provenance['freeze_sha256']:
+            failures.append('articleless: original stative-scope freeze fixture changed')
+        if any(digest(p['original']) != p['original_sha256'] for p in provenance['passages']):
+            failures.append('articleless: exact source-migration provenance changed')
+    sources = {path: frozen_reference_text('chapters/08-complex-sentences.tex',
+                                         articleless_reference_text(path, text, root))
                for path, text in publication_sources(root, overrides).items()}
     for path, text in sources.items():
         # Exact reviewed revisions retain the original migration hashes.

@@ -1,3 +1,5 @@
+> Historical implementation record. References below to nominal anchoring describe its earlier baseline and are superseded by the articleless reform. Ordinary event-nominal case and clause-linkage remain as specified in the active grammar. The original body is preserved verbatim.
+
 # Clause-linking reform: editorial change record
 
 ## Phase I — Inventory audit

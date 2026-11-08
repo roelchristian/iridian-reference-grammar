@@ -239,7 +239,7 @@ class StativeDiagnosticsTests(unittest.TestCase):
     def test_source_checks_reject_positive_state_eventive_aspects_and_onset_projection(self):
         source=read_domain('chapters/06-simple-sentence.tex')
         changes={
-            'progressive':source.replace(r'\gla *Nužo múžnime.',r'\gla Nužo múžnime.',1),
+            'progressive':source.replace(r'\gla *Nuž múžnime.',r'\gla Nuž múžnime.',1),
             'perfective':source.replace(r'\gla *Dá řéjnik.',r'\gla Dá řéjnik.',1),
             'projection':source.replace(
                 'the speaker is tired already and expects the condition to hold during the afternoon walk',

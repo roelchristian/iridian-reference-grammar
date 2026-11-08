@@ -1,3 +1,5 @@
+> Historical vowel-migration record. References below to anchored counterparts describe its baseline, not the present articleless nominal inventory. The vowel reform remains in force; the original record is retained verbatim.
+
 # Central-vowel migration
 
 This record implements the approved y/ė brief against baseline

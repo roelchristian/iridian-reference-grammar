@@ -1,3 +1,5 @@
+> Unadopted historical proposal. Its anchored alternatives and proposed completion of missing cells are not current grammar. Consult Chapter 8 for the preserved ordinary forms and remaining paradigm gaps. The original proposal is retained verbatim.
+
 # Proposals for the remaining nominalisation gaps
 
 Status: working proposals, not implemented in the reference grammar. Prepared 28 October 2026 against commit `fe7489524df4a171b760c4bfc64a6325171018e6`, which has been pushed to `origin/master`. This file is intentionally untracked.
