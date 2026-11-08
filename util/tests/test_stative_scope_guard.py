@@ -2,6 +2,8 @@
 from pathlib import Path
 import sys
 import unittest
+import json
+import hashlib
 
 ROOT = Path(__file__).resolve().parents[2]
 import sys
@@ -9,7 +11,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from source_domains import read_domain, domain_sources
 
 sys.path.insert(0, str(ROOT / 'scripts'))
-from stative_scope_guard import check_scope, frozen_reference_text
+from stative_scope_guard import check_scope, frozen_reference_text, articleless_reference_text
 
 
 class StativeScopeGuardTests(unittest.TestCase):
@@ -23,6 +25,37 @@ class StativeScopeGuardTests(unittest.TestCase):
         source = r'\ird{-ovy} \ird{mužnovy} \ird{novy}' + '\n' + row
         expected = r'\ird{-ový} \ird{mužnový} \ird{novy}' + '\n' + row
         self.assertEqual(frozen_reference_text('probe.tex', source), expected)
+
+    def test_articleless_literal_migrations_preserve_original_freeze_provenance(self):
+        fixture = json.loads((ROOT / 'scripts/articleless-scope-migrations.json').read_text())
+        self.assertEqual(fixture['base_sha'], '2ea86f3046beff0d55ee9f7f7e0f06bb31932e26')
+        self.assertEqual(hashlib.sha256((ROOT / 'scripts/stative-scope-freeze.json').read_bytes()).hexdigest(),
+                         fixture['freeze_sha256'])
+        for passage in fixture['passages']:
+            with self.subTest(source=passage['source'], original=passage['original_sha256'][:10]):
+                self.assertEqual(hashlib.sha256(passage['original'].encode()).hexdigest(),
+                                 passage['original_sha256'])
+                self.assertEqual(articleless_reference_text(passage['source'], passage['revised']),
+                                 passage['original'])
+                self.assertEqual(articleless_reference_text('unrelated.tex', passage['revised']),
+                                 passage['revised'])
+
+    def test_articleless_migrations_reject_further_form_rule_and_case_changes(self):
+        fixture = json.loads((ROOT / 'scripts/articleless-scope-migrations.json').read_text())
+        for passage in fixture['passages']:
+            path = passage['source']
+            source = (ROOT / path).read_text()
+            revised = passage['revised']
+            self.assertIn(revised, source)
+            # A changed relative slot, participant form, or example no longer
+            # matches the complete approved source-specific passage. Existing
+            # original hashes must detect it, even inside migrated material.
+            changed = revised.replace(r'\ird{', r'\ird{INVALID-', 1)
+            if changed == revised:
+                changed = revised.replace('ovy', 'INVALID', 1)
+            self.assertNotEqual(changed, revised)
+            with self.subTest(source=path, original=passage['original_sha256'][:10]):
+                self.assertTrue(check_scope(overrides={path: source.replace(revised, changed, 1)}))
 
     def test_rejects_rule_change_without_repeated_exponent(self):
         path = 'chapters/08-complex-sentences.tex'
@@ -62,7 +95,7 @@ class StativeScopeGuardTests(unittest.TestCase):
     def test_source_lexeme_revision_preserves_nominal_case_rule_guard(self):
         path = 'chapters/08-derivation-nominalisation.tex'
         source = (ROOT / path).read_text()
-        revised = (r'\ird{Marcí travěte pjaštově cy} '
+        revised = (r'\ird{Marcí travě pjaštově cy} '
                    r"\trsl{since/after Marėk's eating of the" + '\n'
                    r'bread}, the event head bears the case required by \ird{cy}, while')
         self.assertIn(revised, source)

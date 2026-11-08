@@ -1,3 +1,5 @@
+> Superseded research record. The articleless reform removes the productive anchoring analysis described below. This historical body is preserved verbatim; it does not establish the modern nominal norm.
+
 # Anchoring morphology and linearisation audit
 
 Baseline: `c0b0410`, before the six-phase anchoring revision. This audit compares current normative sources, not the older chapter paths named in the supplied review. The semantic analysis preserves the established exponent inventory, case-number paradigms, stem selection, prosodic attachment, and feature-conditioned `si` precedence rule.

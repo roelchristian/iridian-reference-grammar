@@ -588,31 +588,34 @@
       "raising_licensed": false
     },
     {
-      "id": "anchor-two-protected-long-nuclei",
+      "id": "attributive-protected-outer-domain-tvírzná",
       "grade": "G0",
       "input": [
-        "p",
-        "eː",
+        "t",
+        "v",
+        "iː",
         "r",
-        "ts",
-        "eː"
+        "z",
+        "n",
+        "aː"
       ],
       "expected": [
-        "p",
-        "eː",
+        "t",
+        "v",
+        "iː",
         "r",
-        "ts",
-        "eː"
+        "z",
+        "n",
+        "aː"
       ],
       "domain": [
-        0,
-        5
+        4,
+        7
       ],
       "eligible": [
-        1,
-        4
+        6
       ],
-      "target": 4,
+      "target": 6,
       "raising_licensed": false
     },
     {
@@ -1003,97 +1006,67 @@
     {
       "path": "chapters/04-nouns.tex",
       "label": "tab:nm-plural-paradigm",
-      "width": 4,
+      "width": 2,
       "rows": [
         [
           "byl",
-          "byle",
-          "bylo",
-          "bylete"
+          "byle"
         ],
         [
           "byla",
-          "bylov",
-          "bylato",
-          "bylove"
+          "bylov"
         ],
         [
           "bylam",
-          "bylac",
-          "bylamo",
-          "bylace"
+          "bylac"
         ],
         [
           "lobėk",
-          "lúbce",
-          "lúbko",
-          "lúbcé"
+          "lúbce"
         ],
         [
           "lúbku",
-          "lúbkov",
-          "lúbkuto",
-          "lúbkove"
+          "lúbkov"
         ],
         [
           "lúbcí",
-          "lúbcem",
-          "lúbcíte",
-          "lúbceme"
+          "lúbcem"
         ],
         [
           "perėk",
-          "pérce",
-          "pérko",
-          "pércé"
+          "pérce"
         ],
         [
           "pérku",
-          "pérkov",
-          "pérkuto",
-          "pérkove"
+          "pérkov"
         ],
         [
           "pérce",
-          "pércem",
-          "pércé",
-          "pérceme"
+          "pércem"
         ],
         [
           "trava",
-          "trávy",
-          "travó",
-          "trávyte"
+          "trávy"
         ],
         [
           "travy",
-          "tráv",
-          "travyte",
-          "tráve"
+          "tráv"
         ],
         [
           "travě",
-          "trávam",
-          "travěte",
-          "trávame"
+          "trávam"
         ],
         [
           "stráz",
-          "strazy",
-          "stráze",
-          "strazyte"
+          "strazy"
         ],
         [
           "strazy",
-          "stráz",
-          "strazyte",
-          "stráze"
+          "stráz"
         ],
         [
           "straže",
-          "strazám",
-          "stražete",
-          "strazáme"
+          "strazám"
         ]
       ]
     },
@@ -1156,43 +1129,31 @@
     {
       "path": "chapters/04-nouns.tex",
       "label": "tab:city-town-paradigms",
-      "width": 4,
+      "width": 2,
       "rows": [
         [
           "nuž",
-          "núže",
-          "nužo",
-          "núžete"
+          "núže"
         ],
         [
           "nuža",
-          "núžov",
-          "nužato",
-          "núžove"
+          "núžov"
         ],
         [
           "nužam",
-          "núžac",
-          "nužamo",
-          "núžace"
+          "núžac"
         ],
         [
           "vruh",
-          "vrúhe",
-          "vruho",
-          "vrúhete"
+          "vrúhe"
         ],
         [
           "vruha",
-          "vrúhov",
-          "vruhato",
-          "vrúhove"
+          "vrúhov"
         ],
         [
           "vruham",
-          "vrúhac",
-          "vruhamo",
-          "vrúhace"
+          "vrúhac"
         ]
       ]
     },
@@ -1290,8 +1251,8 @@
       "ipa": "nʊʃ"
     },
     {
-      "form": "nužo",
-      "ipa": "ˈnʊ.ʒɔ"
+      "form": "nužam",
+      "ipa": "ˈnʊ.ʒam"
     },
     {
       "form": "vruh",

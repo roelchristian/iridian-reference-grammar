@@ -1,0 +1,918 @@
+{
+  "base_sha": "2ea86f3046beff0d55ee9f7f7e0f06bb31932e26",
+  "ordinary_cell_count": 102,
+  "cells": [
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{pres} (I)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{pres}",
+      "anchored": "\\ird{preso}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{pres} (I)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{préše}",
+      "anchored": "\\ird{préšete}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{pres} (I)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{presa}",
+      "anchored": "\\ird{presato}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{pres} (I)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{préšov}",
+      "anchored": "\\ird{préšove}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{pres} (I)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{presam}",
+      "anchored": "\\ird{presamo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{pres} (I)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{préšac}",
+      "anchored": "\\ird{préšace}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{tóm} (I)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{tóm}",
+      "anchored": "\\ird{tómo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{tóm} (I)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{tome}",
+      "anchored": "\\ird{tomete}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{tóm} (I)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{toma}",
+      "anchored": "\\ird{tomato}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{tóm} (I)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{tomóv}",
+      "anchored": "\\ird{tomóve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{tóm} (I)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{tomem}",
+      "anchored": "\\ird{tomemo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{tóm} (I)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{tomac}",
+      "anchored": "\\ird{tomace}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{študent} (mixed)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{študent}",
+      "anchored": "\\ird{študento}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{študent} (mixed)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\shortstack[l]{\\ird{študentí}\\\\\\ird{študencí}}",
+      "anchored": "\\shortstack[l]{\\ird{študentíte}\\\\\\ird{študencíte}}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{študent} (mixed)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{študenta}",
+      "anchored": "\\ird{študentato}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{študent} (mixed)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{študentóv}",
+      "anchored": "\\ird{študentóve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{študent} (mixed)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{študencí}",
+      "anchored": "\\ird{študencíte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-irregular-paradigms.tex",
+      "noun": "\\ird{študent} (mixed)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{študencím}",
+      "anchored": "\\ird{študencíme}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{red} (IV)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{red}",
+      "anchored": "\\ird{redo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{red} (IV)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{redě}",
+      "anchored": "\\ird{reďé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{red} (IV)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{rezy}",
+      "anchored": "\\ird{rezyte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{red} (IV)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{redóv}",
+      "anchored": "\\ird{redóve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{red} (IV)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{redě}",
+      "anchored": "\\ird{reďé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{red} (IV)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{redím}",
+      "anchored": "\\ird{redíme}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{rán} (V)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{rán}",
+      "anchored": "\\ird{ráno}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{rán} (V)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{rána}",
+      "anchored": "\\ird{ránato}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{rán} (V)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{ránou}",
+      "anchored": "\\ird{ránouto}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{rán} (V)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{rán}",
+      "anchored": "\\ird{ráne}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{rán} (V)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{ráne}",
+      "anchored": "\\ird{ránete}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{rán} (V)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{ránom}",
+      "anchored": "\\ird{ránome}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{pět} (VI)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{pět}",
+      "anchored": "\\ird{pěto}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{pět} (VI)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{pětove}",
+      "anchored": "\\ird{pětové}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{pět} (VI)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{pětim}",
+      "anchored": "\\ird{pětimo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{pět} (VI)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{pětóv}",
+      "anchored": "\\ird{pětóve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{pět} (VI)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{pěty}",
+      "anchored": "\\ird{pětyte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-iv-vi.tex",
+      "noun": "\\ird{pět} (VI)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{pětovim}",
+      "anchored": "\\ird{pětovime}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{tězėň} (VII)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{tězėň}",
+      "anchored": "\\ird{tězno}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{tězėň} (VII)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{tězňa}",
+      "anchored": "\\ird{tězňate}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{tězėň} (VII)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{těznu}",
+      "anchored": "\\ird{těznuto}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{tězėň} (VII)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{těznóv}",
+      "anchored": "\\ird{těznóve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{tězėň} (VII)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{tězně}",
+      "anchored": "\\ird{tězňé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{tězėň} (VII)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{těznem}",
+      "anchored": "\\ird{tězneme}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{obėl} (VII)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{obėl}",
+      "anchored": "\\ird{oblo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{obėl} (VII)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{obľa}",
+      "anchored": "\\ird{obľate}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{obėl} (VII)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{oblu}",
+      "anchored": "\\ird{obluto}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{obėl} (VII)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{oblóv}",
+      "anchored": "\\ird{oblóve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{obėl} (VII)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{oblě}",
+      "anchored": "\\ird{obľé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{obėl} (VII)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{oblem}",
+      "anchored": "\\ird{obleme}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{pivo} (VIII)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{pivo}",
+      "anchored": "\\ird{pivó}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{pivo} (VIII)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{piva}",
+      "anchored": "\\ird{pivá}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{pivo} (VIII)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{piva}",
+      "anchored": "\\ird{pivato}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{pivo} (VIII)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{pivóv}",
+      "anchored": "\\ird{pivóve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{pivo} (VIII)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{pivum}",
+      "anchored": "\\ird{pivumo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{pivo} (VIII)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{pivem}",
+      "anchored": "\\ird{piveme}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{mamka} (IX)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{mamka}",
+      "anchored": "\\ird{mamká}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{mamka} (IX)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{mamce}",
+      "anchored": "\\ird{mamcé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{mamka} (IX)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{mamky}",
+      "anchored": "\\ird{mamkyte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{mamka} (IX)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{mamkóv}",
+      "anchored": "\\ird{mamkóve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{mamka} (IX)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{mamce}",
+      "anchored": "\\ird{mamcé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-paradigms-vii-ix.tex",
+      "noun": "\\ird{mamka} (IX)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{mamcám}",
+      "anchored": "\\ird{mamcáme}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{byl} (I)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{byl}",
+      "anchored": "\\ird{bylo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{byl} (I)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{byle}",
+      "anchored": "\\ird{bylete}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{byl} (I)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{byla}",
+      "anchored": "\\ird{bylato}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{byl} (I)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{bylov}",
+      "anchored": "\\ird{bylove}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{byl} (I)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{bylam}",
+      "anchored": "\\ird{bylamo}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{byl} (I)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{bylac}",
+      "anchored": "\\ird{bylace}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{lobėk} (II)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{lobėk}",
+      "anchored": "\\ird{lúbko}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{lobėk} (II)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{lúbce}",
+      "anchored": "\\ird{lúbcé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{lobėk} (II)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{lúbku}",
+      "anchored": "\\ird{lúbkuto}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{lobėk} (II)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{lúbkov}",
+      "anchored": "\\ird{lúbkove}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{lobėk} (II)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{lúbcí}",
+      "anchored": "\\ird{lúbcíte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{lobėk} (II)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{lúbcem}",
+      "anchored": "\\ird{lúbceme}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{perėk} (II)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{perėk}",
+      "anchored": "\\ird{pérko}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{perėk} (II)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{pérce}",
+      "anchored": "\\ird{pércé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{perėk} (II)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{pérku}",
+      "anchored": "\\ird{pérkuto}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{perėk} (II)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{pérkov}",
+      "anchored": "\\ird{pérkove}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{perėk} (II)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{pérce}",
+      "anchored": "\\ird{pércé}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{perėk} (II)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{pércem}",
+      "anchored": "\\ird{pérceme}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{trava} (III)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{trava}",
+      "anchored": "\\ird{travó}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{trava} (III)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{trávy}",
+      "anchored": "\\ird{trávyte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{trava} (III)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{travy}",
+      "anchored": "\\ird{travyte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{trava} (III)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{tráv}",
+      "anchored": "\\ird{tráve}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{trava} (III)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{travě}",
+      "anchored": "\\ird{travěte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{trava} (III)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{trávam}",
+      "anchored": "\\ird{trávame}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{stráz} (III)",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{stráz}",
+      "anchored": "\\ird{stráze}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{stráz} (III)",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{strazy}",
+      "anchored": "\\ird{strazyte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{stráz} (III)",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{strazy}",
+      "anchored": "\\ird{strazyte}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{stráz} (III)",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{stráz}",
+      "anchored": "\\ird{stráze}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{stráz} (III)",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{straže}",
+      "anchored": "\\ird{stražete}"
+    },
+    {
+      "file": "util/paradigm-tables/nm-plural-paradigm.tex",
+      "noun": "\\ird{stráz} (III)",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{strazám}",
+      "anchored": "\\ird{strazáme}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{nuž}",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{nuž}",
+      "anchored": "\\ird{nužo}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{nuž}",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{núže}",
+      "anchored": "\\ird{núžete}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{nuž}",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{nuža}",
+      "anchored": "\\ird{nužato}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{nuž}",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{núžov}",
+      "anchored": "\\ird{núžove}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{nuž}",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{nužam}",
+      "anchored": "\\ird{nužamo}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{nuž}",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{núžac}",
+      "anchored": "\\ird{núžace}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{vruh}",
+      "case": "\\textsc{dir}",
+      "number": "sg",
+      "ordinary": "\\ird{vruh}",
+      "anchored": "\\ird{vruho}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{vruh}",
+      "case": "\\textsc{dir}",
+      "number": "pl",
+      "ordinary": "\\ird{vrúhe}",
+      "anchored": "\\ird{vrúhete}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{vruh}",
+      "case": "\\textsc{trs}",
+      "number": "sg",
+      "ordinary": "\\ird{vruha}",
+      "anchored": "\\ird{vruhato}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{vruh}",
+      "case": "\\textsc{trs}",
+      "number": "pl",
+      "ordinary": "\\ird{vrúhov}",
+      "anchored": "\\ird{vrúhove}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{vruh}",
+      "case": "\\textsc{ind}",
+      "number": "sg",
+      "ordinary": "\\ird{vruham}",
+      "anchored": "\\ird{vruhamo}"
+    },
+    {
+      "file": "util/paradigm-tables/city-town-paradigms.tex",
+      "noun": "\\ird{vruh}",
+      "case": "\\textsc{ind}",
+      "number": "pl",
+      "ordinary": "\\ird{vrúhac}",
+      "anchored": "\\ird{vrúhace}"
+    }
+  ],
+  "description": "Pristine master ordinary cells, recorded before anchoring removal. Cells retain merged PR25 vowel spellings and all ordinary allomorphs; old anchored counterparts are migration evidence, never production licences.",
+  "historical_bodies": {
+    "anchoring-diagnostics.md": "c186ef52871b362340cc764df9eb6929c9fcdd17fef0c84a88eca98f40b0734f",
+    "anchoring-morphology-audit.md": "1f99a47491b4a7beb22ee8929a5a1a9b468bfbb7ae824af2d168ae3f5e040ef3",
+    "anchoring-revision-review.md": "a1d3cb9c8b269bb1ebc113ba942e8e57d3e186650f18a54dac8ef6f7e29ca2ab",
+    "nominalisation-gap-proposals.md": "d9cb4ab125052c41498d06ae0e3cb73b16df0c3981ebf476b7578ca1e5ab4556",
+    "util/implicit-possession-review.md": "bd9d9a3b177965c264afba8d339eea6ebff34dc06b5e7a2c0631495950101c1e",
+    "util/grammar-metahistory.md": "64bbf6dba86d12470147bd27b23f184d614ff9da32fd67147c0961a534601765",
+    "docs/CENTRAL-VOWEL-MIGRATION.md": "158bd8e1e5c62ae97430dbf7c3f116d210f709dbafbf8ef65d3589ba2dc596c9",
+    "util/pivot-syntax-diagnostics.md": "375001a8204a67b92e3456c576b2ca1581f523e38290c743d6a03da42f4f7870",
+    "util/pivot-extraction-analysis.md": "4233fb6a508d78d89ae6b75925fc6bba3e38f255340d53754f6f7c7ddce3c84f",
+    "util/pivot-binding-scope.md": "7b562d4afb7ad1c227a29c48ef9d55708006cc533e7d03c723d4b3cc7b1b4a62",
+    "clause-linking-reform.md": "34cef3f08ab985bf3dc12ea10e521ff4a08be3870833f185bdfe9c70dfb066a6"
+  },
+  "baseline_sources": {
+    "util/paradigm-tables/city-town-paradigms.tex": "cdd9c56fe351bb89de02309874d258008029e7ff39c4e3d35dad7be3f744dd04",
+    "util/paradigm-tables/nm-irregular-paradigms.tex": "252d98d3ec1c8fd28fcbfa62feaa9d108961ccfeb917ccf000106fdaa74d2ccf",
+    "util/paradigm-tables/nm-paradigms-iv-vi.tex": "42321575215ea11dfffdb305eaa41ac25409fcc5e9c159f6778f93975a4665ea",
+    "util/paradigm-tables/nm-paradigms-vii-ix.tex": "4580fb5df33ff51dda7f953dc6dd707af0dc98d9917457b2af46fb59436ef1d5",
+    "util/paradigm-tables/nm-plural-paradigm.tex": "43a29c34134de467cb4b7b1fade09f34a640b7b06c681f675c96f670289e9dee"
+  },
+  "phonological_si_exception": {
+    "path": "chapters/02-phonology.tex",
+    "text": "Schematic \\ird{si} [sɪ] and \\ird{ši} [ʃɪ], \\ird{zi} [zɪ] and"
+  },
+  "derived_singular_cells": [
+    [
+      "pjáščikou",
+      "pjaštou"
+    ],
+    [
+      "pjáščikovy",
+      "pjaštovy"
+    ],
+    [
+      "pjáščikově",
+      "pjaštově"
+    ]
+  ],
+  "retired_nonparadigm_surfaces": {
+    "marko": {
+      "ordinary": "Marėk",
+      "source": "chapters/17-discourse.tex",
+      "analysis": "anchored direct singular of the established proper name"
+    },
+    "markuto": {
+      "ordinary": "Marku",
+      "source": "chapters/17-discourse.tex",
+      "analysis": "anchored transitive singular; alternate ordinary Marka remains independently licensed"
+    },
+    "janko": {
+      "ordinary": "Janėk",
+      "source": "chapters/17-discourse.tex",
+      "analysis": "anchored direct singular of the established proper name"
+    },
+    "veňo": {
+      "ordinary": "veň",
+      "source": "chapters/08-derivation-nominalisation.tex",
+      "analysis": "anchored direct singular in the two reversative interlinear examples"
+    },
+    "pjáščikovat": {
+      "ordinary": "pjáščikou",
+      "source": "chapters/08-derivation-nominalisation.tex",
+      "analysis": "retired construction-specific anchored direct participant form"
+    },
+    "pjaštovat": {
+      "ordinary": "pjaštou",
+      "source": "chapters/08-derivation-nominalisation.tex",
+      "analysis": "retired construction-specific anchored direct event form"
+    },
+    "pjáščikovyte": {
+      "ordinary": "pjáščikovy",
+      "source": "chapters/08-derivation-nominalisation.tex",
+      "analysis": "retired anchored transitive participant form"
+    },
+    "pjaštovyte": {
+      "ordinary": "pjaštovy",
+      "source": "chapters/08-derivation-nominalisation.tex",
+      "analysis": "retired anchored transitive event form"
+    },
+    "pjáščikověte": {
+      "ordinary": "pjáščikově",
+      "source": "chapters/08-derivation-nominalisation.tex",
+      "analysis": "retired anchored indirect participant form"
+    },
+    "pjaštověte": {
+      "ordinary": "pjaštově",
+      "source": "chapters/08-derivation-nominalisation.tex",
+      "analysis": "retired anchored indirect event form"
+    },
+    "zvěrato": {
+      "ordinary": null,
+      "source": "chapters/06-verbal-morphology.tex",
+      "analysis": "old anchored hunting example had no independently established ordinary lexeme; replace illustration with established vlak, not invented suffix stripping"
+    }
+  }
+}

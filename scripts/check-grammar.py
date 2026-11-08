@@ -25,6 +25,7 @@ from phasal_diagnostics import check_phasal_diagram, check_phasal_sources  # noq
 from clausal_diagnostics import check_clausal_sources  # noqa: E402
 from stative_diagnostics import check_stative_sources  # noqa: E402
 from stative_scope_guard import check_scope  # noqa: E402
+from articleless_diagnostics import check_articleless  # noqa: E402
 from stative_lexicon import load_lexicon, check_lexical_extension_sources  # noqa: E402
 
 
@@ -583,6 +584,7 @@ def check():
     publication_sources = active_sources(ROOT / 'grammar.tex')
     sources = domain_sources(publication_sources)
     failures = lexical_velar_checks(sources)
+    failures.extend(check_articleless(sources=publication_sources))
     failures.extend(dorsal_spelling_checks(publication_sources))
     failures.extend(verbs_heading_checks(publication_sources))
     failures.extend(renamed_particle_checks(sources))

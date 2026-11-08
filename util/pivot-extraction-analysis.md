@@ -1,3 +1,5 @@
+> Historical pivot-research record. Its anchored forms and nominal-anchoring controls describe the recorded baseline, not the modern articleless norm. Ordinary case, pivot and extraction distinctions remain relevant, but current forms and contextual reference must be checked against the active chapters. The original body is preserved verbatim.
+
 # Pivot dependencies and extraction: controlled comparison
 
 Status: analytical record for the 29 October 2026 revision, based on remote

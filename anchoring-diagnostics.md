@@ -1,3 +1,5 @@
+> Superseded research record. The articleless reform removes the productive anchoring analysis described below. This historical body is preserved verbatim; it does not establish the modern nominal norm.
+
 # Anchoring: controlled interpretation diagnostics
 
 These working diagnostics distinguish established Iridian forms and descriptions from unresolved contextual judgements. A form's presence in the current grammar verifies its morphology and the reading given there; it does not establish its felicity in every context below. No question in the matrices supplies a positive or negative acceptability judgement. English bridging and scope schemas are semantic prompts, not newly licensed Iridian examples.

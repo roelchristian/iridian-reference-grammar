@@ -1,3 +1,5 @@
+> Historical pivot-research record. Its anchored forms and nominal-anchoring controls describe the recorded baseline, not the modern articleless norm. Ordinary case, pivot and extraction distinctions remain relevant, but current forms and contextual reference must be checked against the active chapters. The original body is preserved verbatim.
+
 # Pivot syntax: controlled diagnostic corpus
 
 Research began on `16329d482d621e09492badeaa654651975735a18`; integrated and reviewed against PR16 master `87c23bbcb8ea59f62e415cb315a45f79613e1dc6` (29 October 2026).

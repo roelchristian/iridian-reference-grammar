@@ -59,7 +59,7 @@ quantity while raising, and repeated strength does not create a third length.
 
 Independent literal outputs in `scripts/quantity-fixtures.json` cover retained
 bound nuclei, the second-nucleus target of `zemac-`, root-strong and suffix-strong
-domains, valency morphology, irrealis locality, derivation, protected anchoring
+domains, valency morphology, irrealis locality, derivation, protected outer morphological domains
 and evidential/linker attachment. The same file independently fixes the paired
 nominal I--III and verbal A--C cells in the grammar's tables. These are bounded
 regressions, not a general morphological analyser: the caller still selects

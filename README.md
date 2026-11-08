@@ -39,9 +39,11 @@ declension classes. A restricted vocative survives in particular words used
 for direct address. There is no grammatical gender. Inflection frequently
 combines an ending with a change in the stem: vowels may disappear, change
 height or alternate in length, and consonants may take a different grade.
-Nominal morphology also expresses shared anchoring, which marks a referent
-as accessible within the discourse. These patterns give the nominal system
-considerable variety despite its small inventory of productive cases.
+Iridian is articleless: definite, indefinite, specific and generic readings
+depend on discourse and the nominal construction rather than on a dedicated
+article or suffix. An ordinary noun can identify a previously introduced
+referent without changing its case--number form. These contextual readings
+coexist with the nominal system's substantial inflectional variety.
 
 The finite verb marks aspect rather than grammatical tense, so temporal
 location depends on context and adverbials. Its five aspectual categories
@@ -75,16 +77,17 @@ alignment split:
 
 | Iridian | English |
 | --- | --- |
-| *Marek travě pjaštíme.* | ‘Marek is eating bread.’ |
-| *Travó Marku pjaštník.* | ‘Marek ate the bread.’ |
+| *Marėk travě pjaštíme.* | ‘Marek is eating bread.’ |
+| *Trava Marku pjaštník.* | ‘Marek ate the bread.’ |
 
-In the progressive sentence, *Marek* is direct and *travě* ‘bread’ is
-indirect. In the perfective sentence, *Marku* is transitive and the anchored
-form *travó* is direct. Marek remains the eater in both, although the
-grammatical pivot changes. The English present and past suit the illustrated
+In the progressive sentence, *Marėk* is direct and *travě* ‘bread’ is
+indirect. In the perfective sentence, *Marku* is transitive and *trava* is
+direct. Marėk remains the eater in both, although the grammatical pivot changes. The English present and past suit the illustrated
 contexts; Iridian expresses the aspectual contrast without tense inflection.
 Neither aspect by itself requires the agent or the bread to be the discourse
-topic. The fuller examples and their glosses appear in
+topic, and neither the direct nor the indirect case determines whether the
+bread is identifiable to the interlocutors. The fuller examples and their
+glosses appear in
 [Chapter 7](chapters/07-argument-structure.tex), with their discourse
 interpretation developed in [Chapter 14](chapters/14-information-structure.tex).
 
