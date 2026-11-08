@@ -1,4 +1,4 @@
-# A Reference Grammar of the Iridian Language
+# A reference grammar of the Iridian language
 
 Iridian (*ircevná malno*) is a naturalistic constructed language conceived as
 a language isolate in a fictional Central European setting. Within that
@@ -9,7 +9,7 @@ bear a distinctly West Slavic character, while its grammatical organisation
 combines predominantly head-final syntax, extensive verbal morphology and a
 central role for discourse topics.
 
-*A Reference Grammar of the Iridian Language*, by Roel Christian Yambao,
+*A reference grammar of the Iridian language*, by Roel Christian Yambao,
 describes the language's phonology, morphology, syntax and discourse. The
 current work is an ongoing scholarly project whose descriptive chapters
 develop both the forms of Iridian and the analyses through which their
@@ -88,11 +88,11 @@ interpretation developed in [Chapter 14](chapters/14-information-structure.tex).
 
 The grammar comprises seventeen chapters in four parts. *Foundations*
 introduces the language, its sounds and orthography, and the interactions
-between phonology and morphology. *Words and Phrases* develops nominal
+between phonology and morphology. *Words and phrases* develops nominal
 morphology and syntax, verbal inflection, argument structure, derivation and
-nominalisation. *The Clause* treats clause structure, predication, negation,
-particles, clause types and information structure, while *Complex Syntax and
-Discourse* brings together embedding, clause linking and discourse
+nominalisation. *The clause* treats clause structure, predication, negation,
+particles, clause types and information structure, while *Complex syntax and
+discourse* brings together embedding, clause linking and discourse
 organisation. Appendices provide glossing abbreviations, paradigms, a
 lexicon and historical notes.
 
@@ -119,7 +119,7 @@ not establish rules for the current language.
 
 ## Reading and documentation
 
-- Begin with the [Introduction and Grammatical Overview](chapters/01-overview.tex),
+- Begin with the [Introduction and grammatical overview](chapters/01-overview.tex),
   browse the [source chapters](chapters/), or consult the
   [complete book source](grammar.tex).
 - To produce the full PDF, follow the [build guide](docs/BUILDING.md).
