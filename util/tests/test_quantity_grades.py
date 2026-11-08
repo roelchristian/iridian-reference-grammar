@@ -43,6 +43,19 @@ class QuantityGradesTests(unittest.TestCase):
             BoundaryState(selected), BoundaryLicence('perfective', 'plain', True), ('ɛ', 'k'))
         self.assertEqual(finite.segments, ('z', 'ɛ', 'm', 'aː', 'ts', 'ɛ', 'k'))
 
+    def test_uo_retains_inherent_length_and_has_no_productive_raising(self):
+        grades = QuantityGrades.from_file()
+        for grade in ('G0', 'G1'):
+            self.assertEqual(grades.apply(('ʃ', 'uɔ', 'r'), QuantityLicence(
+                'schematic-uo', grade, True, (0, 3), (1,), 1)), ('ʃ', 'uɔ', 'r'))
+        for grade in ('G2', 'G3'):
+            with self.subTest(grade=grade), self.assertRaisesRegex(
+                    QuantityError, 'no licensed raised grade'):
+                grades.apply(('uɔ',), QuantityLicence(
+                    'schematic-uo', grade, True, (0, 1), (0,), 0, True))
+        self.assertNotIn('uɔ', grades.rules['long_pairs'])
+        self.assertNotIn('uɔ', grades.rules['raised_pairs'])
+
     def test_bound_quantity_and_consonant_grade_remain_independent(self):
         grades, consonants = QuantityGrades.from_file(), BoundaryTransducer.from_file()
         for stem, grade, raising, expected in [

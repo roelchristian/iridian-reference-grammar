@@ -179,18 +179,27 @@ def check_palatalisation(phonology, fixtures):
 def spelling_nuclei(form):
     """Count native written nuclei: i is vocalic and j never adds a nucleus.
 
-    The diphthong ou has one nucleus; lexical softness does not alter counting.
+    Licensed lexical ou and uo each have one nucleus. Explicit boundaries
+    interrupt digraph matching (u-o is hiatus); softness does not affect counts.
+    Unmarked morphological hiatus requires a separately supplied representation.
     """
-    return len(re.findall(r'[aeiouyáéíóúěė]', unicodedata.normalize('NFC', form).lower().replace('ou', 'o')))
+    return len(re.findall(r'ou|uo|[aeiouyáéíóúěė]', unicodedata.normalize('NFC', form).lower()))
 
 
 def ipa_nuclei(ipa):
-    """Count nuclei while excluding explicitly nonsyllabic vowel endpoints.
+    """Count complex nuclei atomically, preserving explicit hiatus boundaries.
 
-    Moving y [ɯ̯ɨ] and [ɨi̯], like [ou̯], each supply a single nucleus.
+    Moving y [ɯ̯ɨ] and [ɨi̯] each remain one short nucleus.
+    A nonsyllabic vowel contributes no independent nucleus. Long monophthongs
+    and uɔ are single nuclei; a dot or boundary between u and ɔ prevents joining.
     """
-    syllabic = re.sub(r'.[\u032f\u0311]', '', ipa)
-    return len(re.findall(r'[aeiouyɑɐɒæɛɜɞəɘɤɨɪɔœøɵʊʌʉɯɶ]', syllabic))
+    return len(re.findall(
+        r'ou̯|uɔ|[aeiouyɑɐɒæɛɜɞəɘɤɨɪɔœøɵʊʌʉɯɶ](?![\u032f\u0311])', ipa))
+
+
+def ipa_long_nuclei(ipa):
+    """Count long nuclei, including bimoraic diphthongs without a length mark."""
+    return ipa.count('ː') + len(re.findall(r'ou̯|uɔ', ipa))
 
 
 def sibilant_spelling_checks(sources):
@@ -555,7 +564,7 @@ def renamed_particle_checks(sources):
     lexicon = sources.get('util/lexicon.tex', '')
     for form, ipa, gloss in [('hladě', 'ˈxla.ɟɛ', 'inferential particle, must'),
                              ('kady', 'ˈka.dɨ̞', 'speculative particle, perhaps'),
-                             ('mó', 'ˈmuː', 'affirmative, confirmatory particle')]:
+                             ('mó', 'ˈmoː', 'affirmative, confirmatory particle')]:
         entries = [record for record in extract(lexicon, 'util/lexicon.tex')
                    if record['macro'] == 'lexentry' and record['form'] == form]
         if (len(entries) != 1 or entries[0]['gloss'] != gloss
@@ -715,13 +724,13 @@ def check():
             form, ipa = record['form'], record['pronunciation']
             pronunciations += 1
             # Only explicit examples are checked, not inferred dictionary IPA.
-            # The glide letter j and diphthong ou do not add a nucleus.
+            # j is nonvocalic; licensed ou and uo are atomic nuclei.
             # Sibilants and lexical kě retain their stated segmental values.
             count = spelling_nuclei(form)
-            ipa_count = ipa_nuclei(ipa)
-            if count != ipa_count:
-                failures.append(f"{path}:{record['line']}: {form}: spelling/IPA nucleus mismatch ({count}/{ipa_count})")
-            if len(re.findall('[áéíóú]', form)) != ipa.count('ː'):
+            pronounced_nuclei = ipa_nuclei(ipa)
+            if count != pronounced_nuclei:
+                failures.append(f"{path}:{record['line']}: {form}: spelling/IPA nucleus mismatch ({count}/{pronounced_nuclei})")
+            if len(re.findall('[áéíóú]', unicodedata.normalize('NFC', form))) != ipa.count('ː'):
                 failures.append(f"{path}:{record['line']}: {form}: orthographic/IPA quantity mismatch")
             if re.search(r'[rl]\u0329', ipa):
                 failures.append(f"{path}:{record['line']}: {form}: syllabic liquid in pronunciation")

@@ -43,6 +43,22 @@ class BoundaryTransducerTests(unittest.TestCase):
         with self.assertRaises(BoundaryError):
             BoundaryTransducer(rules)
 
+    def test_uo_is_atomic_and_does_not_trigger_consonantal_grades(self):
+        mapper = BoundaryTransducer(self.rules)
+        for vowel in ('uɔ', 'ou̯'):
+            for grade, edge in [('plain', 't'), ('front', 'c'),
+                                ('mixed', 'c'), ('restricted', 't')]:
+                with self.subTest(vowel=vowel, grade=grade):
+                    result = mapper.apply(BoundaryState(('kʲ', vowel, 't')),
+                        BoundaryLicence('suffix', grade, True), (vowel,))
+                    self.assertEqual(result.segments, ('kʲ', vowel, edge, vowel))
+        plain = mapper.apply(BoundaryState(('t', 'uɔ')),
+                             BoundaryLicence('plain', 'plain', True))
+        self.assertEqual(plain.segments, ('t', 'uɔ'))
+        with self.assertRaises(BoundaryError):
+            mapper.apply(BoundaryState(('t', 'uɔ')),
+                         BoundaryLicence('front', 'front', True))
+
     def test_rejects_velar_rule_inside_coronal_labial_mapping(self):
         rules = copy.deepcopy(self.rules)
         rules['pal_correspondences']['k'] = 'ts'
