@@ -4,7 +4,8 @@ The fixture records pre-reform ordinary paradigms at master 2ea86f3, rather
 than deriving expected forms from the edited tables. Retired anchored strings
 are compared as whole words only: ordinary homophones (notably ráne) remain
 licensed. The active include graph is inspected, including literal utility
-inputs. Historical research bodies are checked separately, not rewritten.
+inputs, together with the explicitly maintained diagnostic banks. Historical
+research bodies are checked separately, not rewritten.
 These checks are guardrails, not a grammatical acceptability analyser.
 """
 import hashlib
@@ -196,6 +197,12 @@ def check_historical_bodies(root, fixtures, overrides=None):
 def check_articleless(root=ROOT, sources=None, fixtures=None, archive_overrides=None):
     if fixtures is None:
         fixtures = json.loads((root / 'scripts/articleless-fixtures.json').read_text(encoding='utf-8'))
-    sources = read_active_sources(root) if sources is None else sources
+    sources = dict(read_active_sources(root) if sources is None else sources)
+    # Maintained example banks sit outside the TeX include graph but still
+    # prescribe current forms. Missing files must fail rather than lose coverage;
+    # caller-supplied text permits the same independent mutation checks as TeX.
+    for path in fixtures['maintained_diagnostics']:
+        if path not in sources:
+            sources[path] = (root / path).read_text(encoding='utf-8')
     return (check_articleless_sources(sources, fixtures)
             + check_historical_bodies(root, fixtures, archive_overrides))

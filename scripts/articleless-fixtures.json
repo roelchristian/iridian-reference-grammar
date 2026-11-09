@@ -1,6 +1,9 @@
 {
   "base_sha": "2ea86f3046beff0d55ee9f7f7e0f06bb31932e26",
   "ordinary_cell_count": 102,
+  "maintained_diagnostics": [
+    "clause-linking-diagnostics.md"
+  ],
   "cells": [
     {
       "file": "util/paradigm-tables/nm-irregular-paradigms.tex",

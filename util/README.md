@@ -3,11 +3,20 @@
 ## Morphophonological source checks
 
 `make check-source` checks the active book's references, examples and prescribed
-forms, then runs the utility tests. The boundary reference implementation in
-`scripts/boundary_transducer.py` reads the four named grade bundles and IPA-token
-correspondences from `scripts/boundary-mapping.json`. Its expected outputs and
-negative cases are written separately in `scripts/boundary-fixtures.json`;
-they are not generated from the mapping table.
+forms, then runs the utility tests.
+
+The articleless-reference checks also inspect the maintained
+[`clause-linking-diagnostics.md`](../clause-linking-diagnostics.md) example bank,
+which is listed in `scripts/articleless-fixtures.json` alongside the publication
+checks. Retired marked forms are rejected there even without a definiteness
+gloss; ordinary homophones remain valid, while explicitly historical records
+retain their recorded forms.
+
+The boundary reference implementation in `scripts/boundary_transducer.py` reads
+the four named grade bundles and IPA-token correspondences from
+`scripts/boundary-mapping.json`. Its expected outputs and negative cases are
+written separately in `scripts/boundary-fixtures.json`; they are not generated
+from the mapping table.
 
 The caller must supply the selected stem, its participating velar class, and a
 licensed, exposed morphological boundary. The transducer maps that input edge

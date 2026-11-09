@@ -61,6 +61,43 @@ class ArticlelessDiagnosticsTests(unittest.TestCase):
         changed['chapters/02-phonology.tex'] += r'\ird{si} \ird{byl}'
         self.assertTrue(check_articleless_sources(changed, self.fixtures))
 
+    def test_maintained_diagnostics_are_checked_outside_the_tex_graph(self):
+        path = 'clause-linking-diagnostics.md'
+        self.assertIn(path, self.fixtures['maintained_diagnostics'])
+        self.assertNotIn(path, self.sources)
+        current = (ROOT / path).read_text(encoding='utf-8')
+        self.assertIn('Marcí travě pjaštou', current)
+        self.assertEqual(check_articleless(sources=self.sources), [])
+        for added in ('Marcí travěte pjaštou', 'bread.IND.DEF', 'AnchP'):
+            changed = self.sources.copy()
+            changed[path] = current + '\n' + added + '\n'
+            with self.subTest(added=added):
+                failures = check_articleless(sources=changed)
+                self.assertTrue(any(failure.startswith(path + ':') for failure in failures))
+
+        allowed = self.sources.copy()
+        allowed[path] = current + '\n`ráne` `pivo`\n'
+        self.assertEqual(check_articleless(sources=allowed), [])
+        self.assertNotIn(path, self.sources)
+        historical = {name: (ROOT / name).read_text(encoding='utf-8')
+                      for name in self.fixtures['historical_bodies']}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            diagnostic = root / path
+            diagnostic.write_text(current.replace('Marcí travě pjaštou',
+                                                   'Marcí travěte pjaštou'),
+                                  encoding='utf-8')
+            failures = check_articleless(root=root, sources=self.sources,
+                                         fixtures=self.fixtures,
+                                         archive_overrides=historical)
+            self.assertTrue(any(failure.startswith(path + ': retired anchored surfaces:')
+                                for failure in failures))
+            diagnostic.unlink()
+            with self.assertRaises(FileNotFoundError) as missing:
+                check_articleless(root=Path(directory), sources=self.sources,
+                                  fixtures=self.fixtures, archive_overrides=historical)
+            self.assertEqual(missing.exception.filename, str(diagnostic))
+
     def test_include_graph_follows_new_literal_utility_inputs(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
