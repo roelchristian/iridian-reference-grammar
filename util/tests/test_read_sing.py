@@ -29,7 +29,7 @@ class ReadSingTests(unittest.TestCase):
     def test_principal_parts_preserve_quantity_and_orientation(self):
         self.assertEqual(checker.check_quantity_sources({self.path: self.source}, self.table), [])
         for before, after in [('kářime', 'kařime'), ('kařáž', 'kářaž'),
-                              ('kánnik', 'kánik'), ('kannáv', 'kanáv')]:
+                              ('kánnik', 'kánik'), ('kannais', 'kanais')]:
             with self.subTest(form=before):
                 changed = self.source.replace(before, after)
                 self.assertTrue(checker.check_quantity_sources({self.path: changed}, self.table))

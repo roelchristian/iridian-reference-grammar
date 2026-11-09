@@ -686,7 +686,7 @@ def check():
     combined = '\n'.join(sources.values())
     for form in ('ratě', 'radě', 'raně', 'ralě', 'ruce', 'lúbcí', 'Marcí',
                  'zděcir', 'zďíčev', 'pjáščev', 'pjáščice', 'pjáščikou',
-                 'pjáščavě', 'pjaštnávě', 'pjaštire', 'pjaštovire'):
+                 'pjáščaiše', 'pjaštnaiše', 'pjaštire', 'pjaštovire'):
         if not re.search(r'(?<!\w)' + re.escape(form) + r'(?!\w)', combined):
             failures.append(f'missing grade regression example: {form}')
 

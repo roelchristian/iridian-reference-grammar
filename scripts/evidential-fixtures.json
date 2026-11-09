@@ -46,9 +46,9 @@
       "id": "retrospective",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "pjaštnáv",
-        "pjaštnával",
-        "pjaštnávalě"
+        "pjaštnais",
+        "pjaštnaisal",
+        "pjaštnaisalě"
       ],
       "host_segments": [
         "pʲ",
@@ -56,8 +56,9 @@
         "ʃ",
         "t",
         "n",
-        "aː",
-        "v"
+        "a",
+        "ɪ",
+        "s"
       ],
       "evidential_segments": [
         "pʲ",
@@ -65,8 +66,9 @@
         "ʃ",
         "t",
         "n",
-        "aː",
-        "v",
+        "a",
+        "ɪ",
+        "s",
         "a",
         "l"
       ],
@@ -76,8 +78,9 @@
         "ʃ",
         "t",
         "n",
-        "aː",
-        "v",
+        "a",
+        "ɪ",
+        "s",
         "a",
         "ʎ",
         "ɛ"
@@ -235,9 +238,9 @@
       "id": "antipassive-retrospective",
       "status": "Selected indicative host, before contextual coda realisation and spelling.",
       "forms": [
-        "pjáščav",
-        "pjáščaval",
-        "pjáščavalě"
+        "pjáščais",
+        "pjáščaisal",
+        "pjáščaisalě"
       ],
       "host_segments": [
         "pʲ",
@@ -245,7 +248,8 @@
         "ʃ",
         "tʃ",
         "a",
-        "v"
+        "ɪ",
+        "s"
       ],
       "evidential_segments": [
         "pʲ",
@@ -253,7 +257,8 @@
         "ʃ",
         "tʃ",
         "a",
-        "v",
+        "ɪ",
+        "s",
         "a",
         "l"
       ],
@@ -263,7 +268,8 @@
         "ʃ",
         "tʃ",
         "a",
-        "v",
+        "ɪ",
+        "s",
         "a",
         "ʎ",
         "ɛ"

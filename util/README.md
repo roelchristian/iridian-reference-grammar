@@ -36,7 +36,7 @@ linker-specific `-ice` or `-imně` allomorph through the evidential. The
 consonantal mapping's rejection of vowel-final PAL inputs is unchanged.
 
 Literal expectations in `scripts/evidential-fixtures.json` cover isolated and
-linked forms, current retrospective `-áv/-av`, antipassive `-ek` retention,
+linked forms, invariant retrospective `-ais`, antipassive `-ek` retention,
 causative hosts and vowel quantity. Conditional mood-host tests check segmental
 attachment only; callers still supply evidential licensing. Source checks pair
 the forms within their canonical Chapter 3 table rows, including the modal

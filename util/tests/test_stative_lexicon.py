@@ -107,9 +107,9 @@ class StativeLexiconTests(unittest.TestCase):
 
     def test_state_anteriority_and_projection_are_distinct_from_becoming(self):
         entry=self.entries['mužn']
-        self.assertEqual(finite(entry,'state','retrospective'),tokens('mužnáv'))
+        self.assertEqual(finite(entry,'state','retrospective'),tokens('mužnais'))
         self.assertEqual(finite(entry,'state','contemplative'),tokens('mužnáž'))
-        self.assertEqual(finite(entry,'become','retrospective'),tokens('mužnélav'))
+        self.assertEqual(finite(entry,'become','retrospective'),tokens('mužnélais'))
         self.assertEqual(finite(entry,'become','contemplative'),tokens('mužnélaž'))
         self.assertEqual(entry['aspect_licences']['retrospective'],
                          'anterior-no-cessation-entailment')
@@ -224,7 +224,7 @@ class StativeLexiconTests(unittest.TestCase):
 
     def test_stimulus_requires_its_frame_and_never_establishes_actual_cause(self):
         for aspect,form in (('continuous','všihnéba'),
-                            ('retrospective','všihnébav'),
+                            ('retrospective','všihnébais'),
                             ('contemplative','všihnébaž')):
             self.assertEqual(stimulus_applicative(self.entries['všihn'],aspect,
                              stimulus_present=True),tokens(form))

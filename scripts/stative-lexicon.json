@@ -30,14 +30,14 @@
       "expected": {
         "state": [
           "mužna",
-          "mužnáv",
+          "mužnais",
           "mužnáž"
         ],
         "become": [
           "mužnéla",
           "mužnélime",
           "mužnélek",
-          "mužnélav",
+          "mužnélais",
           "mužnélaž"
         ],
         "attribute": "múžna",
@@ -84,14 +84,14 @@
       "expected": {
         "state": [
           "hradna",
-          "hradnáv",
+          "hradnais",
           "hradnáž"
         ],
         "become": [
           "hradnéla",
           "hradnélime",
           "hradnélek",
-          "hradnélav",
+          "hradnélais",
           "hradnélaž"
         ],
         "attribute": "hradná",
@@ -138,14 +138,14 @@
       "expected": {
         "state": [
           "svorna",
-          "svornáv",
+          "svornais",
           "svornáž"
         ],
         "become": [
           "svornéla",
           "svornélime",
           "svornélek",
-          "svornélav",
+          "svornélais",
           "svornélaž"
         ],
         "attribute": "svorná",
@@ -191,14 +191,14 @@
       "expected": {
         "state": [
           "četna",
-          "četnáv",
+          "četnais",
           "četnáž"
         ],
         "become": [
           "četnéla",
           "četnélime",
           "četnélek",
-          "četnélav",
+          "četnélais",
           "četnélaž"
         ],
         "attribute": "četná",
@@ -244,14 +244,14 @@
       "expected": {
         "state": [
           "řejna",
-          "řejnáv",
+          "řejnais",
           "řejnáž"
         ],
         "become": [
           "řejnéla",
           "řejnélime",
           "řejnélek",
-          "řejnélav",
+          "řejnélais",
           "řejnélaž"
         ],
         "attribute": null,
@@ -344,14 +344,14 @@
       "expected": {
         "state": [
           "všihna",
-          "všihnáv",
+          "všihnais",
           "všihnáž"
         ],
         "become": [
           "všihnéla",
           "všihnélime",
           "všihnélek",
-          "všihnélav",
+          "všihnélais",
           "všihnélaž"
         ],
         "attribute": "všihňa",
@@ -398,14 +398,14 @@
       "expected": {
         "state": [
           "žbirna",
-          "žbirnáv",
+          "žbirnais",
           "žbirnáž"
         ],
         "become": [
           "žbirnéla",
           "žbirnélime",
           "žbirnélek",
-          "žbirnélav",
+          "žbirnélais",
           "žbirnélaž"
         ],
         "attribute": "žbirňa",
@@ -452,14 +452,14 @@
       "expected": {
         "state": [
           "hvodna",
-          "hvodnáv",
+          "hvodnais",
           "hvodnáž"
         ],
         "become": [
           "hvodnéla",
           "hvodnélime",
           "hvodnélek",
-          "hvodnélav",
+          "hvodnélais",
           "hvodnélaž"
         ],
         "attribute": null,
@@ -554,14 +554,14 @@
       "expected": {
         "state": [
           "tvírzna",
-          "tvírznav",
+          "tvírznais",
           "tvírznaž"
         ],
         "become": [
           "tvírznela",
           "tvírznelime",
           "tvírznelek",
-          "tvírznelav",
+          "tvírznelais",
           "tvírznelaž"
         ],
         "attribute": "tvírzná",
@@ -587,28 +587,28 @@
       "všihneša",
       "všihnéšime",
       "všihnéšek",
-      "všihnešáv",
+      "všihnešais",
       "všihnešáž"
     ],
     "participant": [
       "všihnešova",
       "všihnéšimou",
       "všihnéšikou",
-      "všihnešávou",
+      "všihnešaisou",
       "všihnešážou"
     ],
     "evidential": [
       "všihnešal",
       "všihnéšimel",
       "všihnéšekal",
-      "všihnešával",
+      "všihnešaisal",
       "všihnešážal"
     ],
     "causative": [
       "všihnéšra",
       "všihnéšrime",
       "všihnéšranik",
-      "všihnéšranav",
+      "všihnéšranais",
       "všihnéšraž"
     ]
   },
@@ -622,28 +622,28 @@
       "hypothetical_finite_class": "A",
       "state": [
         "torbana",
-        "torbanáv",
+        "torbanais",
         "torbanáž"
       ],
       "become": [
         "torbanéla",
         "torbanélime",
         "torbanélek",
-        "torbanélav",
+        "torbanélais",
         "torbanélaž"
       ],
       "manner": "torbaně",
       "hypothetical_become_class": "EL-S",
       "linked_state": [
         "torbane",
-        "torbanávě",
+        "torbanaiše",
         "torbanáže"
       ],
       "linked_become": [
         "torbanéle",
         "torbanélimně",
         "torbanélice",
-        "torbanélavě",
+        "torbanélaiše",
         "torbanélaže"
       ],
       "manner_status": "conditional on an independent manner licence"

@@ -111,8 +111,8 @@ def finite(entry, kind, aspect, *, stage_level=False, bounded=False):
     if aspect in ('progressive','perfective'):
         segments = _strength(segments,target,'Manifest-local-Asp')
     ending = SHORT[aspect]
-    if aspect in ('retrospective','contemplative'):
-        ending = ('aː','v' if aspect=='retrospective' else 'ʒ')
+    if aspect == 'contemplative':
+        ending = ('aː','ʒ')
     return segments+ending
 
 
@@ -170,7 +170,7 @@ def causative(entry, kind, aspect, *, causable=False):
     if aspect == 'perfective':
         return selected+('a','n','ɪ','k')
     if aspect == 'retrospective':
-        return selected+('a','n','a','v')
+        return selected+('a','n')+SHORT[aspect]
     return selected+SHORT[aspect]
 
 

@@ -38,6 +38,48 @@ FINITE_REFERENCE_REVISIONS = (
 )
 
 
+# User-authorised retrospective replacement. Reverse only these exact forms
+# and descriptions when comparing protected relative material with its original
+# hashes; surrounding selection, case and interpretation remain significant.
+RETROSPECTIVE_REVISIONS = (
+    (r'\ird{mužnávovy nuž}', r'\ird{mužnaisovy nuž}'),
+    (r'\ird{pjáščavou}', r'\ird{pjáščaisou}'),
+    (r'\ird{pjaštnávou}', r'\ird{pjaštnaisou}'),
+    (
+        "aspect exponents are short " r"\ird{-a}, \ird{-ime}, free perfective" "\n"
+        r"\ird{-ek}, \ird{-av} and \ird{-až}. Inchoative perfective selects the",
+        "aspect exponents are short " r"\ird{-a}, \ird{-ime}, free perfective" "\n"
+        r"\ird{-ek} and \ird{-až}, alongside invariant retrospective \ird{-ais}." "\n"
+        "Inchoative perfective selects the",
+    ),
+    (
+        r"Retrospective \ird{-av}/\ird{-áv} similarly gives" "\n"
+        r"\ird{-avou}/\ird{-ávou}. Continuous Asp together with",
+        r"Retrospective \ird{-ais} similarly gives \ird{-aisou}." "\n"
+        "Continuous Asp together with",
+    ),
+    (
+        "blocks outer causative root lengthening. Immediately following aspect endings\n"
+        r"are short: \ird{-ime, -ek/-ik, -av, -až}. This restricted rhythmic",
+        "blocks outer causative root lengthening. Immediately following progressive,\n"
+        r"perfective and contemplative endings are short: \ird{-ime, -ek/-ik, -až};" "\n"
+        r"retrospective \ird{-ais} is invariant. This restricted rhythmic",
+    ),
+)
+
+
+# Preserve both the prior spelling-migrated digests and the exact replacement
+# digests. This does not regenerate the original freeze or admit further edits.
+RETROSPECTIVE_FILE_REVISIONS = {
+    'scripts/stative-fixtures.json': (
+        'bd915250b9c2882245d5c03089c97395e78f1642acaf95ed9f0a49cfcbb5914e',
+        'cf178e0d981f14a6c3563fecea7e6980cc6ec28d4f6905c81a81644822a63c5f'),
+    'util/stative-paradigms.md': (
+        '0cdf34305d68f21819504ae41d909cd7dda00dff566a4c46bae32aec4cf21f59',
+        '4314fc15582e991ca4b29b15e79cf2abf6a4b01c22d1f5834e65babb25f17f7f'),
+}
+
+
 # The source postposition and open conditional were explicitly renamed.
 # Normalise only their exact phrases in the protected example and overview;
 # the surrounding case rules and relative constructions remain significant.
@@ -220,6 +262,9 @@ def articleless_reference_text(path, text, root=ROOT, migrations=None):
     Additional edits defeat the exact match and remain visible to the frozen
     relative-source checks. The original freeze fixture is never regenerated.
     """
+    # Restore the retrospective wording before matching older complete passages.
+    for original, revised in RETROSPECTIVE_REVISIONS:
+        text = text.replace(revised, original)
     if migrations is None:
         fixture = root / 'scripts/articleless-scope-migrations.json'
         if not fixture.exists():
@@ -235,6 +280,8 @@ def articleless_reference_text(path, text, root=ROOT, migrations=None):
     return text
 
 def frozen_reference_text(path, text):
+    for original, revised in RETROSPECTIVE_REVISIONS:
+        text = text.replace(revised, original)
     # Migration comparison uses reviewed old spellings, never newly generated
     # hashes of current grammatical content. These exact lexical replacements
     # and the relative suffix alone are reversible within the frozen material.
@@ -384,6 +431,11 @@ def check_scope(root=ROOT, fixtures=None, overrides=None):
             if spelling['original_sha256'] != expected:
                 failures.append(f'{path}: spelling migration lost its reviewed provenance')
             expected = spelling['migrated_sha256']
+        retrospective = RETROSPECTIVE_FILE_REVISIONS.get(path)
+        if retrospective:
+            if retrospective[0] != expected:
+                failures.append(f'{path}: retrospective migration lost its prior provenance')
+            expected = retrospective[1]
         if digest(text) != expected:
             failures.append(f'{path}: earlier protected fixture or selection file changed')
     return failures

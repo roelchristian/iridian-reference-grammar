@@ -32,29 +32,29 @@ These nine records have sufficiently specified principal parts for the bounded m
 
 | Stem | Continuous state | Retrospective state | Contemplative state |
 | --- | --- | --- | --- |
-| mužn- | `mužna` | `mužnáv` | `mužnáž` |
-| hradn- | `hradna` | `hradnáv` | `hradnáž` |
-| svorn- | `svorna` | `svornáv` | `svornáž` |
-| četn- | `četna` | `četnáv` | `četnáž` |
-| řejn- | `řejna` | `řejnáv` | `řejnáž` |
-| všihn- | `všihna` | `všihnáv` | `všihnáž` |
-| žbirn- | `žbirna` | `žbirnáv` | `žbirnáž` |
-| hvodn- | `hvodna` | `hvodnáv` | `hvodnáž` |
-| tvírzn- | `tvírzna` | `tvírznav` | `tvírznaž` |
+| mužn- | `mužna` | `mužnais` | `mužnáž` |
+| hradn- | `hradna` | `hradnais` | `hradnáž` |
+| svorn- | `svorna` | `svornais` | `svornáž` |
+| četn- | `četna` | `četnais` | `četnáž` |
+| řejn- | `řejna` | `řejnais` | `řejnáž` |
+| všihn- | `všihna` | `všihnais` | `všihnáž` |
+| žbirn- | `žbirna` | `žbirnais` | `žbirnáž` |
+| hvodn- | `hvodna` | `hvodnais` | `hvodnáž` |
+| tvírzn- | `tvírzna` | `tvírznais` | `tvírznaž` |
 
 | Stem | Continuous Become | Progressive Become | Perfective Become | Retrospective Become | Contemplative Become |
 | --- | --- | --- | --- | --- | --- |
-| mužn- | `mužnéla` | `mužnélime` | `mužnélek` | `mužnélav` | `mužnélaž` |
-| hradn- | `hradnéla` | `hradnélime` | `hradnélek` | `hradnélav` | `hradnélaž` |
-| svorn- | `svornéla` | `svornélime` | `svornélek` | `svornélav` | `svornélaž` |
-| četn- | `četnéla` | `četnélime` | `četnélek` | `četnélav` | `četnélaž` |
-| řejn- | `řejnéla` | `řejnélime` | `řejnélek` | `řejnélav` | `řejnélaž` |
-| všihn- | `všihnéla` | `všihnélime` | `všihnélek` | `všihnélav` | `všihnélaž` |
-| žbirn- | `žbirnéla` | `žbirnélime` | `žbirnélek` | `žbirnélav` | `žbirnélaž` |
-| hvodn- | `hvodnéla` | `hvodnélime` | `hvodnélek` | `hvodnélav` | `hvodnélaž` |
-| tvírzn- | `tvírznela` | `tvírznelime` | `tvírznelek` | `tvírznelav` | `tvírznelaž` |
+| mužn- | `mužnéla` | `mužnélime` | `mužnélek` | `mužnélais` | `mužnélaž` |
+| hradn- | `hradnéla` | `hradnélime` | `hradnélek` | `hradnélais` | `hradnélaž` |
+| svorn- | `svornéla` | `svornélime` | `svornélek` | `svornélais` | `svornélaž` |
+| četn- | `četnéla` | `četnélime` | `četnélek` | `četnélais` | `četnélaž` |
+| řejn- | `řejnéla` | `řejnélime` | `řejnélek` | `řejnélais` | `řejnélaž` |
+| všihn- | `všihnéla` | `všihnélime` | `všihnélek` | `všihnélais` | `všihnélaž` |
+| žbirn- | `žbirnéla` | `žbirnélime` | `žbirnélek` | `žbirnélais` | `žbirnélaž` |
+| hvodn- | `hvodnéla` | `hvodnélime` | `hvodnélek` | `hvodnélais` | `hvodnélaž` |
+| tvírzn- | `tvírznela` | `tvírznelime` | `tvírznelek` | `tvírznelais` | `tvírznelaž` |
 
-Become remains a single-participant transition below established valency and alignment. It does not supply a causer or a threshold merely by taking PF. Its locally protected stem takes short outer endings, with free dynamic PF `-ek` and ordinary bound `-ik-`.
+Become remains a single-participant transition below established valency and alignment. It does not supply a causer or a threshold merely by taking PF. Its locally protected stem takes short progressive, perfective and contemplative endings, with free dynamic PF `-ek` and ordinary bound `-ik-`; retrospective `-ais` is invariant.
 
 ## Ordinary derived operations
 
@@ -79,7 +79,7 @@ These are selected-participant nominals, not automatic state or event abstractio
 | svorn- | `svornélal` | `svornélova` | `svornélrime` | unlisted |
 | četn- | `četnélal` | `četnélova` | `četnélrime` | unlisted |
 | řejn- | `řejnélal` | `řejnélova` | `řejnélrime` | unlisted |
-| všihn- | `všihnélal` | `všihnélova` | `všihnélrime` | `všihnébav` (anterior state with overt stimulus) |
+| všihn- | `všihnélal` | `všihnélova` | `všihnélrime` | `všihnébais` (anterior state with overt stimulus) |
 | žbirn- | `žbirnélal` | `žbirnélova` | `žbirnélrime` | unlisted |
 | hvodn- | `hvodnélal` | `hvodnélova` | `hvodnélrime` | unlisted |
 | tvírzn- | `tvírznelal` | `tvírznelova` | `tvírznelrime` | unlisted |
@@ -101,7 +101,7 @@ The sole listed input is `všihn-`. `ESH-A` is its own derived quantitative clas
 | Continuous | `všihneša` | `všihnešova` | `všihnešal` | `všihnéšra` |
 | Progressive | `všihnéšime` | `všihnéšimou` | `všihnéšimel` | `všihnéšrime` |
 | Perfective | `všihnéšek` | `všihnéšikou` | `všihnéšekal` | `všihnéšranik` |
-| Retrospective | `všihnešáv` | `všihnešávou` | `všihnešával` | `všihnéšranav` |
+| Retrospective | `všihnešais` | `všihnešaisou` | `všihnešaisal` | `všihnéšranais` |
 | Contemplative | `všihnešáž` | `všihnešážou` | `všihnešážal` | `všihnéšraž` |
 
 A display can be genuine or feigned: display truth does not require genuine happiness. Conversely genuine happiness without observable display does not satisfy Manifest. This derivation is neither an Evid exponent nor causer introduction. Conditional higher Caus can cause a display without causing an emotion; it selects G1 on the accessible Manifest `e`. No Become–Manifest stack or inherited stimulus Appl is licensed. Other experiential, bodily, dimensional and relational records do not acquire Manifest by semantic analogy.
@@ -132,7 +132,7 @@ The following IPA strings show selected segments and possible syllable margins b
 | torban- | conditional /ˈtɔr.ba.na/ | conditional /ˈtɔr.ba.neː.la/ | phonological stem /tɔr.ban/; final root a is the quantity target; finite/Become classes unassigned |
 | tvírzn- | /ˈtviːr.zna/ | /ˈtviːr.znɛ.la/ | protected lexical í with short Become e; r/z/n are margins |
 
-Broad Manifest pronunciations include `[ˈfʃɪx.nɛ.ʃa]` (three short nuclei) and `[ˈfʃɪx.neː.ʃɪ.mɛ]` (local é, initial stress). Class III contrasts are `[ˈfʃɪx.ɲa]` / `[ˈfʃɪx.ɲɛ]` and `[ˈʒbɪr.ɲa]` / `[ˈʒbɪr.ɲɛ]`. Compact Manifest Caus permits an obstruent–liquid onset in `/vʃɪx.neː.ʃrɪ.mɛ/`; no epenthesis is required. Become lateral before compact r may instead occupy a coda, undergoing ordinary [w] realisation. Final retrospective v is coda [w]; evidential l is likewise coda [w] before further linking makes it prevocalic [ʎ]. These positional realisations do not alter underlying quantity or the licensed boundary operations.
+Broad Manifest pronunciations include `[ˈfʃɪx.nɛ.ʃa]` (three short nuclei) and `[ˈfʃɪx.neː.ʃɪ.mɛ]` (local é, initial stress). Class III contrasts are `[ˈfʃɪx.ɲa]` / `[ˈfʃɪx.ɲɛ]` and `[ˈʒbɪr.ɲa]` / `[ˈʒbɪr.ɲɛ]`. Compact Manifest Caus permits an obstruent–liquid onset in `/vʃɪx.neː.ʃrɪ.mɛ/`; no epenthesis is required. Become lateral before compact r may instead occupy a coda, undergoing ordinary [w] realisation. Retrospective final s selects [ʃ] under direct front-grade linking; evidential l is coda [w] before further linking makes it prevocalic [ʎ]. These positional realisations do not alter underlying quantity or the licensed boundary operations.
 
 Negative indicative `za-` remains outside the lexical stress domain; integrated degree prefixes belong inside it. Simple State retains its listed base grade in the licensed indicative inventory; an intervening Become or Manifest blocks new root grading through that head. Prefix scope supplies no additional quantity licence. Tests use selected phonological segment tokens and explicit licences; they do not infer words' syllabification or surface voicing from spelling.
 

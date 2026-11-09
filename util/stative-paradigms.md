@@ -4,9 +4,9 @@ These are constructed grammatical specifications, not native attestations. The i
 
 ## Adopted selection
 
-- The seven short stems below have explicitly adopted finite Class A principal parts. Their licensed simple-state inventory is continuous, retrospective and contemplative, retaining G0 with a long ending in the latter two. Finite class does not determine attributive class.
-- Protected `tvírzn-` has Class C short aspect endings and lexical `í`. Its separately selected simple attributive `tvírzná` retains both long vowels.
-- Become takes base-grade State, selecting `-él-` after an unprotected short stem and `-el-` with independently protected length. Its short outer endings are `-a/-ime/-ek/-av/-až`; Aspect does not reach through Become to regrade the property root.
+- The seven short stems below have explicitly adopted finite Class A principal parts. Their licensed simple-state inventory is continuous, retrospective and contemplative, retaining G0 with invariant retrospective `-ais` and long contemplative `-áž`. Finite class does not determine attributive class.
+- Protected `tvírzn-` has lexical `í`, short continuous and contemplative endings, and invariant retrospective `-ais`. Its separately selected simple attributive `tvírzná` retains both long vowels.
+- Become takes base-grade State, selecting `-él-` after an unprotected short stem and `-el-` with independently protected length. Its short outer endings are `-a/-ime/-ek/-až`, alongside invariant retrospective `-ais`; Aspect does not reach through Become to regrade the property root.
 - Free inchoative PF `-ek` has ordinary bound `-ik-` before participant `-ou` and relative `-ovy`, and bound `-ice` before the direct linker. Simple-state perfective is unavailable; eventive derivatives retain their own perfective allomorphy.
 - Negative indicative `za-` scopes above Asp, remains unstressed, and precedes every consonant-initial stem here. `vy` and `so` are external phasal particles. Neither supplies a covert morphological Become, although phase over a state can convey an onset as a discourse inference.
 - Simple-state progressive and perfective are unavailable, including in a temporary, expressive or bounded context; no such context supplies a missing event predicate. A retrospective state does not entail entry into the state; contemplative is projective rather than a future tense.
@@ -25,7 +25,7 @@ Dashes mark unavailable simple-state progressive and perfective cells. Become fo
 | continuous | `mužna` | `mužnéla` |
 | progressive | — | `mužnélime` |
 | perfective | — | `mužnélek` |
-| retrospective | `mužnáv` | `mužnélav` |
+| retrospective | `mužnais` | `mužnélais` |
 | contemplative | `mužnáž` | `mužnélaž` |
 
 Simple attributive: `múžna`.
@@ -33,12 +33,12 @@ Simple attributive: `múžna`.
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
 | `mužna` | `mužne` | `mužnova` | `mužnovy` | `mužnal` | `mužnalě` |
-| `mužnáv` | `mužnávě` | `mužnávou` | `mužnávovy` | `mužnával` | `mužnávalě` |
+| `mužnais` | `mužnaiše` | `mužnaisou` | `mužnaisovy` | `mužnaisal` | `mužnaisalě` |
 | `mužnáž` | `mužnáže` | `mužnážou` | `mužnážovy` | `mužnážal` | `mužnážalě` |
 | `mužnéla` | `mužnéle` | `mužnélova` | `mužnélovy` | `mužnélal` | `mužnélalě` |
 | `mužnélime` | `mužnélimně` | `mužnélimou` | `mužnélimovy` | `mužnélimel` | `mužnélimelě` |
 | `mužnélek` | `mužnélice` | `mužnélikou` | `mužnélikovy` | `mužnélekal` | `mužnélekalě` |
-| `mužnélav` | `mužnélavě` | `mužnélavou` | `mužnélavovy` | `mužnélaval` | `mužnélavalě` |
+| `mužnélais` | `mužnélaiše` | `mužnélaisou` | `mužnélaisovy` | `mužnélaisal` | `mužnélaisalě` |
 | `mužnélaž` | `mužnélaže` | `mužnélažou` | `mužnélažovy` | `mužnélažal` | `mužnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zamužna`, `vy mužna`, `so mužna`, with the same operations on all eight licensed state/inchoative cells.
@@ -50,7 +50,7 @@ Indicative negative and phase cells are explicit in the JSON matrix: `zamužna`,
 | continuous | `hradna` | `hradnéla` |
 | progressive | — | `hradnélime` |
 | perfective | — | `hradnélek` |
-| retrospective | `hradnáv` | `hradnélav` |
+| retrospective | `hradnais` | `hradnélais` |
 | contemplative | `hradnáž` | `hradnélaž` |
 
 Simple attributive: `hradná`.
@@ -58,12 +58,12 @@ Simple attributive: `hradná`.
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
 | `hradna` | `hradne` | `hradnova` | `hradnovy` | `hradnal` | `hradnalě` |
-| `hradnáv` | `hradnávě` | `hradnávou` | `hradnávovy` | `hradnával` | `hradnávalě` |
+| `hradnais` | `hradnaiše` | `hradnaisou` | `hradnaisovy` | `hradnaisal` | `hradnaisalě` |
 | `hradnáž` | `hradnáže` | `hradnážou` | `hradnážovy` | `hradnážal` | `hradnážalě` |
 | `hradnéla` | `hradnéle` | `hradnélova` | `hradnélovy` | `hradnélal` | `hradnélalě` |
 | `hradnélime` | `hradnélimně` | `hradnélimou` | `hradnélimovy` | `hradnélimel` | `hradnélimelě` |
 | `hradnélek` | `hradnélice` | `hradnélikou` | `hradnélikovy` | `hradnélekal` | `hradnélekalě` |
-| `hradnélav` | `hradnélavě` | `hradnélavou` | `hradnélavovy` | `hradnélaval` | `hradnélavalě` |
+| `hradnélais` | `hradnélaiše` | `hradnélaisou` | `hradnélaisovy` | `hradnélaisal` | `hradnélaisalě` |
 | `hradnélaž` | `hradnélaže` | `hradnélažou` | `hradnélažovy` | `hradnélažal` | `hradnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zahradna`, `vy hradna`, `so hradna`, with the same operations on all eight licensed state/inchoative cells.
@@ -75,7 +75,7 @@ Indicative negative and phase cells are explicit in the JSON matrix: `zahradna`,
 | continuous | `svorna` | `svornéla` |
 | progressive | — | `svornélime` |
 | perfective | — | `svornélek` |
-| retrospective | `svornáv` | `svornélav` |
+| retrospective | `svornais` | `svornélais` |
 | contemplative | `svornáž` | `svornélaž` |
 
 Simple attributive: `svorná`.
@@ -83,12 +83,12 @@ Simple attributive: `svorná`.
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
 | `svorna` | `svorne` | `svornova` | `svornovy` | `svornal` | `svornalě` |
-| `svornáv` | `svornávě` | `svornávou` | `svornávovy` | `svornával` | `svornávalě` |
+| `svornais` | `svornaiše` | `svornaisou` | `svornaisovy` | `svornaisal` | `svornaisalě` |
 | `svornáž` | `svornáže` | `svornážou` | `svornážovy` | `svornážal` | `svornážalě` |
 | `svornéla` | `svornéle` | `svornélova` | `svornélovy` | `svornélal` | `svornélalě` |
 | `svornélime` | `svornélimně` | `svornélimou` | `svornélimovy` | `svornélimel` | `svornélimelě` |
 | `svornélek` | `svornélice` | `svornélikou` | `svornélikovy` | `svornélekal` | `svornélekalě` |
-| `svornélav` | `svornélavě` | `svornélavou` | `svornélavovy` | `svornélaval` | `svornélavalě` |
+| `svornélais` | `svornélaiše` | `svornélaisou` | `svornélaisovy` | `svornélaisal` | `svornélaisalě` |
 | `svornélaž` | `svornélaže` | `svornélažou` | `svornélažovy` | `svornélažal` | `svornélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zasvorna`, `vy svorna`, `so svorna`, with the same operations on all eight licensed state/inchoative cells.
@@ -100,7 +100,7 @@ Indicative negative and phase cells are explicit in the JSON matrix: `zasvorna`,
 | continuous | `četna` | `četnéla` |
 | progressive | — | `četnélime` |
 | perfective | — | `četnélek` |
-| retrospective | `četnáv` | `četnélav` |
+| retrospective | `četnais` | `četnélais` |
 | contemplative | `četnáž` | `četnélaž` |
 
 Simple attributive: `četná`.
@@ -108,12 +108,12 @@ Simple attributive: `četná`.
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
 | `četna` | `četne` | `četnova` | `četnovy` | `četnal` | `četnalě` |
-| `četnáv` | `četnávě` | `četnávou` | `četnávovy` | `četnával` | `četnávalě` |
+| `četnais` | `četnaiše` | `četnaisou` | `četnaisovy` | `četnaisal` | `četnaisalě` |
 | `četnáž` | `četnáže` | `četnážou` | `četnážovy` | `četnážal` | `četnážalě` |
 | `četnéla` | `četnéle` | `četnélova` | `četnélovy` | `četnélal` | `četnélalě` |
 | `četnélime` | `četnélimně` | `četnélimou` | `četnélimovy` | `četnélimel` | `četnélimelě` |
 | `četnélek` | `četnélice` | `četnélikou` | `četnélikovy` | `četnélekal` | `četnélekalě` |
-| `četnélav` | `četnélavě` | `četnélavou` | `četnélavovy` | `četnélaval` | `četnélavalě` |
+| `četnélais` | `četnélaiše` | `četnélaisou` | `četnélaisovy` | `četnélaisal` | `četnélaisalě` |
 | `četnélaž` | `četnélaže` | `četnélažou` | `četnélažovy` | `četnélažal` | `četnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `začetna`, `vy četna`, `so četna`, with the same operations on all eight licensed state/inchoative cells.
@@ -125,7 +125,7 @@ Indicative negative and phase cells are explicit in the JSON matrix: `začetna`,
 | continuous | `řejna` | `řejnéla` |
 | progressive | — | `řejnélime` |
 | perfective | — | `řejnélek` |
-| retrospective | `řejnáv` | `řejnélav` |
+| retrospective | `řejnais` | `řejnélais` |
 | contemplative | `řejnáž` | `řejnélaž` |
 
 Simple attributive: unassigned: no new attributive grade is invented.
@@ -133,12 +133,12 @@ Simple attributive: unassigned: no new attributive grade is invented.
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
 | `řejna` | `řejne` | `řejnova` | `řejnovy` | `řejnal` | `řejnalě` |
-| `řejnáv` | `řejnávě` | `řejnávou` | `řejnávovy` | `řejnával` | `řejnávalě` |
+| `řejnais` | `řejnaiše` | `řejnaisou` | `řejnaisovy` | `řejnaisal` | `řejnaisalě` |
 | `řejnáž` | `řejnáže` | `řejnážou` | `řejnážovy` | `řejnážal` | `řejnážalě` |
 | `řejnéla` | `řejnéle` | `řejnélova` | `řejnélovy` | `řejnélal` | `řejnélalě` |
 | `řejnélime` | `řejnélimně` | `řejnélimou` | `řejnélimovy` | `řejnélimel` | `řejnélimelě` |
 | `řejnélek` | `řejnélice` | `řejnélikou` | `řejnélikovy` | `řejnélekal` | `řejnélekalě` |
-| `řejnélav` | `řejnélavě` | `řejnélavou` | `řejnélavovy` | `řejnélaval` | `řejnélavalě` |
+| `řejnélais` | `řejnélaiše` | `řejnélaisou` | `řejnélaisovy` | `řejnélaisal` | `řejnélaisalě` |
 | `řejnélaž` | `řejnélaže` | `řejnélažou` | `řejnélažovy` | `řejnélažal` | `řejnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zařejna`, `vy řejna`, `so řejna`, with the same operations on all eight licensed state/inchoative cells.
@@ -150,7 +150,7 @@ Indicative negative and phase cells are explicit in the JSON matrix: `zařejna`,
 | continuous | `všihna` | `všihnéla` |
 | progressive | — | `všihnélime` |
 | perfective | — | `všihnélek` |
-| retrospective | `všihnáv` | `všihnélav` |
+| retrospective | `všihnais` | `všihnélais` |
 | contemplative | `všihnáž` | `všihnélaž` |
 
 Simple attributive: unassigned: no new attributive grade is invented.
@@ -158,12 +158,12 @@ Simple attributive: unassigned: no new attributive grade is invented.
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
 | `všihna` | `všihne` | `všihnova` | `všihnovy` | `všihnal` | `všihnalě` |
-| `všihnáv` | `všihnávě` | `všihnávou` | `všihnávovy` | `všihnával` | `všihnávalě` |
+| `všihnais` | `všihnaiše` | `všihnaisou` | `všihnaisovy` | `všihnaisal` | `všihnaisalě` |
 | `všihnáž` | `všihnáže` | `všihnážou` | `všihnážovy` | `všihnážal` | `všihnážalě` |
 | `všihnéla` | `všihnéle` | `všihnélova` | `všihnélovy` | `všihnélal` | `všihnélalě` |
 | `všihnélime` | `všihnélimně` | `všihnélimou` | `všihnélimovy` | `všihnélimel` | `všihnélimelě` |
 | `všihnélek` | `všihnélice` | `všihnélikou` | `všihnélikovy` | `všihnélekal` | `všihnélekalě` |
-| `všihnélav` | `všihnélavě` | `všihnélavou` | `všihnélavovy` | `všihnélaval` | `všihnélavalě` |
+| `všihnélais` | `všihnélaiše` | `všihnélaisou` | `všihnélaisovy` | `všihnélaisal` | `všihnélaisalě` |
 | `všihnélaž` | `všihnélaže` | `všihnélažou` | `všihnélažovy` | `všihnélažal` | `všihnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zavšihna`, `vy všihna`, `so všihna`, with the same operations on all eight licensed state/inchoative cells.
@@ -175,7 +175,7 @@ Indicative negative and phase cells are explicit in the JSON matrix: `zavšihna`
 | continuous | `hvodna` | `hvodnéla` |
 | progressive | — | `hvodnélime` |
 | perfective | — | `hvodnélek` |
-| retrospective | `hvodnáv` | `hvodnélav` |
+| retrospective | `hvodnais` | `hvodnélais` |
 | contemplative | `hvodnáž` | `hvodnélaž` |
 
 Simple attributive: unassigned: no new attributive grade is invented.
@@ -183,12 +183,12 @@ Simple attributive: unassigned: no new attributive grade is invented.
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
 | `hvodna` | `hvodne` | `hvodnova` | `hvodnovy` | `hvodnal` | `hvodnalě` |
-| `hvodnáv` | `hvodnávě` | `hvodnávou` | `hvodnávovy` | `hvodnával` | `hvodnávalě` |
+| `hvodnais` | `hvodnaiše` | `hvodnaisou` | `hvodnaisovy` | `hvodnaisal` | `hvodnaisalě` |
 | `hvodnáž` | `hvodnáže` | `hvodnážou` | `hvodnážovy` | `hvodnážal` | `hvodnážalě` |
 | `hvodnéla` | `hvodnéle` | `hvodnélova` | `hvodnélovy` | `hvodnélal` | `hvodnélalě` |
 | `hvodnélime` | `hvodnélimně` | `hvodnélimou` | `hvodnélimovy` | `hvodnélimel` | `hvodnélimelě` |
 | `hvodnélek` | `hvodnélice` | `hvodnélikou` | `hvodnélikovy` | `hvodnélekal` | `hvodnélekalě` |
-| `hvodnélav` | `hvodnélavě` | `hvodnélavou` | `hvodnélavovy` | `hvodnélaval` | `hvodnélavalě` |
+| `hvodnélais` | `hvodnélaiše` | `hvodnélaisou` | `hvodnélaisovy` | `hvodnélaisal` | `hvodnélaisalě` |
 | `hvodnélaž` | `hvodnélaže` | `hvodnélažou` | `hvodnélažovy` | `hvodnélažal` | `hvodnélažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zahvodna`, `vy hvodna`, `so hvodna`, with the same operations on all eight licensed state/inchoative cells.
@@ -200,7 +200,7 @@ Indicative negative and phase cells are explicit in the JSON matrix: `zahvodna`,
 | continuous | `tvírzna` | `tvírznela` |
 | progressive | — | `tvírznelime` |
 | perfective | — | `tvírznelek` |
-| retrospective | `tvírznav` | `tvírznelav` |
+| retrospective | `tvírznais` | `tvírznelais` |
 | contemplative | `tvírznaž` | `tvírznelaž` |
 
 Simple attributive: `tvírzná`.
@@ -208,12 +208,12 @@ Simple attributive: `tvírzná`.
 | Predicate | Direct linker | Participant | Relative | Indirect evidential | Evidential + linker |
 | --- | --- | --- | --- | --- | --- |
 | `tvírzna` | `tvírzne` | `tvírznova` | `tvírznovy` | `tvírznal` | `tvírznalě` |
-| `tvírznav` | `tvírznavě` | `tvírznavou` | `tvírznavovy` | `tvírznaval` | `tvírznavalě` |
+| `tvírznais` | `tvírznaiše` | `tvírznaisou` | `tvírznaisovy` | `tvírznaisal` | `tvírznaisalě` |
 | `tvírznaž` | `tvírznaže` | `tvírznažou` | `tvírznažovy` | `tvírznažal` | `tvírznažalě` |
 | `tvírznela` | `tvírznele` | `tvírznelova` | `tvírznelovy` | `tvírznelal` | `tvírznelalě` |
 | `tvírznelime` | `tvírznelimně` | `tvírznelimou` | `tvírznelimovy` | `tvírznelimel` | `tvírznelimelě` |
 | `tvírznelek` | `tvírznelice` | `tvírznelikou` | `tvírznelikovy` | `tvírznelekal` | `tvírznelekalě` |
-| `tvírznelav` | `tvírznelavě` | `tvírznelavou` | `tvírznelavovy` | `tvírznelaval` | `tvírznelavalě` |
+| `tvírznelais` | `tvírznelaiše` | `tvírznelaisou` | `tvírznelaisovy` | `tvírznelaisal` | `tvírznelaisalě` |
 | `tvírznelaž` | `tvírznelaže` | `tvírznelažou` | `tvírznelažovy` | `tvírznelažal` | `tvírznelažalě` |
 
 Indicative negative and phase cells are explicit in the JSON matrix: `zatvírzna`, `vy tvírzna`, `so tvírzna`, with the same operations on all eight licensed state/inchoative cells.
@@ -226,22 +226,22 @@ Direct State in `-n-` takes expanded causative `-ér-` (short `-er-` after prote
 
 | Base | Derivation | Continuous | Progressive | Perfective | Retrospective | Contemplative |
 | --- | --- | --- | --- | --- | --- | --- |
-| mužn | state-causative | `mužnéra` | `mužnérime` | `mužnéranik` | `mužnéranav` | `mužnéraž` |
-| mužn | inchoative-causative | `mužnélra` | `mužnélrime` | `mužnélranik` | `mužnélranav` | `mužnélraž` |
-| hradn | state-causative | `hradnéra` | `hradnérime` | `hradnéranik` | `hradnéranav` | `hradnéraž` |
-| hradn | inchoative-causative | `hradnélra` | `hradnélrime` | `hradnélranik` | `hradnélranav` | `hradnélraž` |
-| svorn | state-causative | `svornéra` | `svornérime` | `svornéranik` | `svornéranav` | `svornéraž` |
-| svorn | inchoative-causative | `svornélra` | `svornélrime` | `svornélranik` | `svornélranav` | `svornélraž` |
-| četn | state-causative | `četnéra` | `četnérime` | `četnéranik` | `četnéranav` | `četnéraž` |
-| četn | inchoative-causative | `četnélra` | `četnélrime` | `četnélranik` | `četnélranav` | `četnélraž` |
-| řejn | state-causative | `řejnéra` | `řejnérime` | `řejnéranik` | `řejnéranav` | `řejnéraž` |
-| řejn | inchoative-causative | `řejnélra` | `řejnélrime` | `řejnélranik` | `řejnélranav` | `řejnélraž` |
-| všihn | state-causative | `všihnéra` | `všihnérime` | `všihnéranik` | `všihnéranav` | `všihnéraž` |
-| všihn | inchoative-causative | `všihnélra` | `všihnélrime` | `všihnélranik` | `všihnélranav` | `všihnélraž` |
-| hvodn | state-causative | `hvodnéra` | `hvodnérime` | `hvodnéranik` | `hvodnéranav` | `hvodnéraž` |
-| hvodn | inchoative-causative | `hvodnélra` | `hvodnélrime` | `hvodnélranik` | `hvodnélranav` | `hvodnélraž` |
-| tvírzn | state-causative | `tvírznera` | `tvírznerime` | `tvírzneranik` | `tvírzneranav` | `tvírzneraž` |
-| tvírzn | inchoative-causative | `tvírznelra` | `tvírznelrime` | `tvírznelranik` | `tvírznelranav` | `tvírznelraž` |
+| mužn | state-causative | `mužnéra` | `mužnérime` | `mužnéranik` | `mužnéranais` | `mužnéraž` |
+| mužn | inchoative-causative | `mužnélra` | `mužnélrime` | `mužnélranik` | `mužnélranais` | `mužnélraž` |
+| hradn | state-causative | `hradnéra` | `hradnérime` | `hradnéranik` | `hradnéranais` | `hradnéraž` |
+| hradn | inchoative-causative | `hradnélra` | `hradnélrime` | `hradnélranik` | `hradnélranais` | `hradnélraž` |
+| svorn | state-causative | `svornéra` | `svornérime` | `svornéranik` | `svornéranais` | `svornéraž` |
+| svorn | inchoative-causative | `svornélra` | `svornélrime` | `svornélranik` | `svornélranais` | `svornélraž` |
+| četn | state-causative | `četnéra` | `četnérime` | `četnéranik` | `četnéranais` | `četnéraž` |
+| četn | inchoative-causative | `četnélra` | `četnélrime` | `četnélranik` | `četnélranais` | `četnélraž` |
+| řejn | state-causative | `řejnéra` | `řejnérime` | `řejnéranik` | `řejnéranais` | `řejnéraž` |
+| řejn | inchoative-causative | `řejnélra` | `řejnélrime` | `řejnélranik` | `řejnélranais` | `řejnélraž` |
+| všihn | state-causative | `všihnéra` | `všihnérime` | `všihnéranik` | `všihnéranais` | `všihnéraž` |
+| všihn | inchoative-causative | `všihnélra` | `všihnélrime` | `všihnélranik` | `všihnélranais` | `všihnélraž` |
+| hvodn | state-causative | `hvodnéra` | `hvodnérime` | `hvodnéranik` | `hvodnéranais` | `hvodnéraž` |
+| hvodn | inchoative-causative | `hvodnélra` | `hvodnélrime` | `hvodnélranik` | `hvodnélranais` | `hvodnélraž` |
+| tvírzn | state-causative | `tvírznera` | `tvírznerime` | `tvírzneranik` | `tvírzneranais` | `tvírzneraž` |
+| tvírzn | inchoative-causative | `tvírznelra` | `tvírznelrime` | `tvírznelranik` | `tvírznelranais` | `tvírznelraž` |
 
 NOM orientation selects causer DIR and holder IND; ERG orientation selects holder DIR and causer TRS. Become alone preserves one participant. The bounded case diagnostic uses the existing configurational-case helper, with independently supplied argument inventories. It does not establish a new extraction mechanism or make arbitrary embedded participants accessible.
 
@@ -280,7 +280,7 @@ These are underlying selected segment strings before ordinary contextual voicing
 | hvodn- | /xvɔ.dna/ | /xvɔ.dneː.la/ | state root /ɔ/; onset obstruent plateau |
 | tvírzn- | /tviːr.zna/ | /tviːr.znɛ.la/ | protected /iː/ and short Become /ɛ/ |
 
-The inchoative lateral is prevocalic in these continuous forms and therefore remains [l]. Before compact causative r it may close the preceding syllable, as /mʊ.ʒneːl.ra/, giving coda [w] under the existing rule rather than an epenthetic vowel. Retrospective final v likewise occupies a coda and is realised [w]; direct linking moves the same v before the linker vowel and selects palatalised [ʋʲ]. Evidential final l is coda [w] in isolation; linking targets that l and produces prevocalic [ʎ]. The token model intentionally precedes these positional realisations.
+The inchoative lateral is prevocalic in these continuous forms and therefore remains [l]. Before compact causative r it may close the preceding syllable, as /mʊ.ʒneːl.ra/, giving coda [w] under the existing rule rather than an epenthetic vowel. Retrospective final s selects [ʃ] under direct front-grade linking, giving `-aiše`. Evidential final l is coda [w] in isolation; linking targets that l and produces prevocalic [ʎ]. The token model intentionally precedes these positional realisations.
 
 ### Representative reduced-Mood compatibility
 

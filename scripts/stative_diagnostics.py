@@ -14,7 +14,7 @@ from phasal_diagnostics import ordinary_phase
 ASPECTS = ('continuous', 'progressive', 'perfective', 'retrospective', 'contemplative')
 STATE_ASPECTS = ('continuous', 'retrospective', 'contemplative')
 SHORT = {'continuous': ('a',), 'progressive': ('ɪ', 'm', 'ɛ'),
-         'perfective': ('ɛ', 'k'), 'retrospective': ('a', 'v'),
+         'perfective': ('ɛ', 'k'), 'retrospective': ('a', 'ɪ', 's'),
          'contemplative': ('a', 'ʒ')}
 
 
@@ -49,8 +49,8 @@ def inflect(stem, aspect, *, inchoative=False, stage_level=False, bounded=False)
             BoundaryLicence('Become', 'plain', True), extension)
         return state.segments + SHORT[aspect]
     ending = SHORT[aspect]
-    if stem.quantity_class == 'A' and aspect in ('retrospective', 'contemplative'):
-        ending = ('aː', 'v' if aspect == 'retrospective' else 'ʒ')
+    if stem.quantity_class == 'A' and aspect == 'contemplative':
+        ending = ('aː', 'ʒ')
     return stem.segments + ending
 
 

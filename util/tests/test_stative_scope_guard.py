@@ -11,12 +11,21 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from source_domains import read_domain, domain_sources
 
 sys.path.insert(0, str(ROOT / 'scripts'))
-from stative_scope_guard import check_scope, frozen_reference_text, articleless_reference_text
+from stative_scope_guard import (RETROSPECTIVE_REVISIONS, check_scope,
+                                frozen_reference_text, articleless_reference_text)
 
 
 class StativeScopeGuardTests(unittest.TestCase):
     def test_reviewed_relative_scope_is_unchanged(self):
         self.assertEqual(check_scope(), [])
+
+    def test_retrospective_replacement_preserves_relative_selection_guard(self):
+        path = 'chapters/08-derivation-nominalisation.tex'
+        source = (ROOT / path).read_text()
+        self.assertIn(r'\ird{mužnaisovy nuž}', source)
+        self.assertEqual(check_scope(overrides={path: source}), [])
+        changed = source.replace('mužnaisovy nuž', 'mužnaisovy dum', 1)
+        self.assertTrue(check_scope(overrides={path: changed}))
 
     def test_relative_spelling_migration_preserves_independent_short_ovy(self):
         # Old characters in this expectation are historical comparison input.
@@ -46,6 +55,8 @@ class StativeScopeGuardTests(unittest.TestCase):
             path = passage['source']
             source = (ROOT / path).read_text()
             revised = passage['revised']
+            for original, current in RETROSPECTIVE_REVISIONS:
+                revised = revised.replace(original, current)
             self.assertIn(revised, source)
             # A changed relative slot, participant form, or example no longer
             # matches the complete approved source-specific passage. Existing

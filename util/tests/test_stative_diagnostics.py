@@ -88,11 +88,25 @@ class StativeDiagnosticsTests(unittest.TestCase):
 
     def test_state_anterior_and_projection_retain_distinct_endings(self):
         stem = StativeStem(tokens('mužn'),'A',1)
-        self.assertEqual(inflect(stem,'retrospective'),tokens('mužnáv'))
+        self.assertEqual(inflect(stem,'retrospective'),tokens('mužnais'))
         self.assertEqual(inflect(stem,'contemplative'),tokens('mužnáž'))
         protected = StativeStem(tokens('tvírzn'),'C',2,True)
-        self.assertEqual(inflect(protected,'retrospective'),tokens('tvírznav'))
+        self.assertEqual(inflect(protected,'retrospective'),tokens('tvírznais'))
         self.assertEqual(inflect(protected,'contemplative'),tokens('tvírznaž'))
+
+    def test_retrospective_linker_targets_s_and_evidential_blocks_that_mapping(self):
+        mapper = BoundaryTransducer.from_file()
+        for host, direct, outer in (
+                ('mužnais', 'mužnaiše', 'mužnaisalě'),
+                ('mužnélais', 'mužnélaiše', 'mužnélaisalě'),
+                ('tvírznais', 'tvírznaiše', 'tvírznaisalě')):
+            with self.subTest(host=host):
+                state = BoundaryState(tokens(host))
+                linked = mapper.apply(state, BoundaryLicence('linker', 'front', True), ('ɛ',))
+                self.assertEqual(linked.segments, tokens(direct))
+                evid = attach_indirect_evidential(state, 'Evid', True)
+                linked_evid = mapper.apply(evid, BoundaryLicence('outer-linker', 'front', True), ('ɛ',))
+                self.assertEqual(linked_evid.segments, tokens(outer))
 
     def test_become_quantity_blocks_outer_root_regrading(self):
         stem = StativeStem(tokens('mužn'),'A',1)
